@@ -1,0 +1,227 @@
+/* Cell and Rounded Cell use 11%; hollow cells have no fill; borderless fills use 30%.
+   Every alternative is an experiment. Decoration never changes the hitbox. */
+body:has(input[name="marking"][value="cell"]:checked) .answer-radio:checked + .option,
+body:has(input[name="marking"][value="rounded-cell"]:checked) .answer-radio:checked + .option {
+  border-color: var(--state);
+  background: var(--state-cell-fill);
+}
+body:has(input[name="marking"][value="hollow-cell"]:checked) .answer-radio:checked + .option,
+body:has(input[name="marking"][value="hollow-rounded-cell"]:checked) .answer-radio:checked + .option {
+  border-color: var(--state);
+  background: transparent;
+}
+body:has(input[name="marking"][value="fill"]:checked) .answer-radio:checked + .option,
+body:has(input[name="marking"][value="rounded-fill"]:checked) .answer-radio:checked + .option {
+  background: var(--state-fill);
+}
+body:has(input[name="marking"][value="rounded-cell"]:checked) .answer-radio:checked + .option,
+body:has(input[name="marking"][value="hollow-rounded-cell"]:checked) .answer-radio:checked + .option,
+body:has(input[name="marking"][value="rounded-fill"]:checked) .answer-radio:checked + .option {
+  border-radius: .6em;
+}
+
+/* Neon light follows the glyphs, with an unfilled, undecorated answer cell. */
+body:has(input[name="marking"][value="neon"]:checked) .answer-radio:checked + .option :is(.option-number, .option-text),
+.marking-grid label[data-marking="neon"] .mark-icon {
+  color: var(--state-ink, var(--state));
+  text-shadow: 0 0 .035em var(--state), 0 0 .13em var(--state),
+    0 0 .3em var(--state-neon-glow-70),
+    0 0 .6em var(--state-neon-glow-38);
+  animation: neon-text-breathe 2.8s ease-in-out infinite;
+}
+@keyframes neon-text-breathe {
+  0%, 100% { text-shadow: 0 0 .035em var(--state), 0 0 .13em var(--state),
+    0 0 .3em var(--state-neon-glow-70),
+    0 0 .6em var(--state-neon-glow-38); }
+  50% { text-shadow: 0 0 .025em var(--state), 0 0 .1em var(--state),
+    0 0 .23em var(--state-neon-glow-58),
+    0 0 .48em var(--state-neon-glow-28); }
+}
+
+/* A moving hot core and upward trails belong to the text, never to a box.
+   All colors are derived from the current theme's feedback and text roles. */
+body:has(input[name="marking"][value="flame"]:checked) .answer-radio:checked + .option :is(.option-number, .option-text),
+.marking-grid label[data-marking="flame"] .mark-icon {
+  color: var(--state-ink, var(--state));
+  text-shadow: 0 -.02em .025em var(--state), -.035em -.13em .07em var(--state),
+    .025em -.27em .1em var(--state-flame-glow-70),
+    -.02em -.46em .18em var(--state-flame-glow-35);
+  animation: flame-text-rise 1.35s ease-in-out infinite;
+}
+@supports ((background-clip: text) or (-webkit-background-clip: text)) {
+  body:has(input[name="marking"][value="flame"]:checked) .answer-radio:checked + .option :is(.option-number, .option-text),
+  body:has(input[name="marking"][value="great-flame"]:checked) .answer-radio:checked + .option :is(.option-number, .option-text),
+  .marking-grid label[data-marking="flame"] .mark-icon,
+  .marking-grid label[data-marking="great-flame"] .mark-icon {
+    background-image: linear-gradient(0deg, var(--state) 0%,
+      var(--state-flame-core) 32%,
+      var(--state-ink, var(--state)) 55%, var(--state) 74%, var(--state) 100%);
+    background-size: 100% 220%;
+    background-position: 0 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+@keyframes flame-text-rise {
+  0%, 100% { background-position: 0 100%;
+    text-shadow: 0 -.02em .025em var(--state), -.035em -.13em .07em var(--state),
+      .025em -.27em .1em var(--state-flame-glow-70),
+      -.02em -.46em .18em var(--state-flame-glow-35); }
+  35% { background-position: 0 68%;
+    text-shadow: 0 -.015em .025em var(--state), .045em -.16em .06em var(--state),
+      -.055em -.34em .1em var(--state-flame-glow-67),
+      .04em -.56em .19em var(--state-flame-glow-32); }
+  70% { background-position: 0 40%;
+    text-shadow: 0 -.025em .03em var(--state), -.025em -.12em .065em var(--state),
+      .06em -.3em .095em var(--state-flame-glow-75),
+      -.055em -.5em .17em var(--state-flame-glow-38); }
+}
+
+/* Great Flame deliberately rises much farther than Flame. The letter shapes
+   retain a bright core while broad, shifting plumes climb roughly 1.8em.
+   No box is painted and neither the text nor its hitbox changes position. */
+body:has(input[name="marking"][value="great-flame"]:checked) .answer-radio:checked + .option :is(.option-number, .option-text),
+.marking-grid label[data-marking="great-flame"] .mark-icon {
+  color: var(--state);
+  background-size: 100% 320%;
+  text-shadow: 0 0 .025em var(--text), 0 -.045em .055em var(--state),
+    -.05em -.2em .09em var(--state), .08em -.4em .14em var(--state),
+    -.12em -.68em .2em var(--state-great-glow-90),
+    .14em -1em .3em var(--state-great-glow-80),
+    -.08em -1.38em .42em var(--state-great-glow-60),
+    .12em -1.8em .55em var(--state-great-glow-40),
+    0 0 .55em var(--state-great-glow-65);
+  filter: drop-shadow(0 0 .12em var(--state-great-glow-50));
+  animation: great-flame-surge 1.05s ease-in-out infinite;
+}
+@keyframes great-flame-surge {
+  0%, 100% { background-position: 0 100%;
+    text-shadow: 0 0 .025em var(--text), 0 -.045em .055em var(--state),
+      -.05em -.2em .09em var(--state), .08em -.4em .14em var(--state),
+      -.12em -.68em .2em var(--state-great-glow-90),
+      .14em -1em .3em var(--state-great-glow-80),
+      -.08em -1.38em .42em var(--state-great-glow-60),
+      .12em -1.8em .55em var(--state-great-glow-40),
+      0 0 .55em var(--state-great-glow-65); }
+  34% { background-position: 0 55%;
+    text-shadow: 0 0 .02em var(--text), 0 -.04em .06em var(--state),
+      .065em -.23em .075em var(--state), -.1em -.46em .12em var(--state),
+      .16em -.78em .19em var(--state-great-glow-95),
+      -.18em -1.15em .27em var(--state-great-glow-85),
+      .14em -1.55em .39em var(--state-great-glow-67),
+      -.1em -1.95em .52em var(--state-great-glow-42),
+      0 0 .7em var(--state-great-glow-72); }
+  68% { background-position: 0 10%;
+    text-shadow: 0 0 .03em var(--text), 0 -.05em .05em var(--state),
+      -.07em -.19em .085em var(--state), .12em -.37em .13em var(--state),
+      -.14em -.63em .22em var(--state-great-glow-90),
+      .2em -.93em .29em var(--state-great-glow-83),
+      -.13em -1.26em .4em var(--state-great-glow-63),
+      .16em -1.65em .5em var(--state-great-glow-38),
+      0 0 .6em var(--state-great-glow-68); }
+}
+
+body:has(input[name="marking"][value="bold"]:checked) .answer-radio:checked + .option :is(.option-number, .option-text) {
+  color: var(--state-ink, var(--state));
+  font-weight: 700;
+}
+/* Retained .jp fragments use a canonical normal face. In this one experiment
+   they inherit the text mark's weight; this also preserves bold measurement. */
+body:has(input[name="marking"][value="bold"]:checked) .option-text .jp {
+  font-weight: inherit;
+}
+
+/* Number marks live on the numeral alone. No answer-cell fill or border. */
+body:has(input[name="marking"][value="number"]:checked) .answer-radio:checked + .option .option-number {
+  color: var(--state-ink, var(--state));
+}
+body:has(input[name="marking"][value="number"]:checked) .answer-radio[data-correct="true"]:checked + .option .option-number::before {
+  content: "";
+  position: absolute;
+  left: 50%; top: 50%;
+  width: 1.65em; height: 1.65em;
+  border: 1.8px solid var(--state);
+  border-radius: 46% 54% 50% 48%;
+  transform: translate(-50%, -50%) rotate(-11deg);
+  pointer-events: none;
+}
+body:has(input[name="marking"][value="number"]:checked) .answer-radio[data-correct="false"]:checked + .option .option-number::before,
+body:has(input[name="marking"][value="number"]:checked) .answer-radio[data-correct="false"]:checked + .option .option-number::after {
+  content: "";
+  position: absolute;
+  left: 50%; top: 50%;
+  width: 1.7em;
+  border-top: 1.8px solid var(--state);
+  transform: translate(-50%, -50%) rotate(48deg);
+  pointer-events: none;
+}
+body:has(input[name="marking"][value="number"]:checked) .answer-radio[data-correct="false"]:checked + .option .option-number::after {
+  transform: translate(-50%, -50%) rotate(-48deg);
+}
+
+/* One annotation per question. Its reserved gutter and fixed-size box do not
+   depend on the selected option, option row, wrapping or text length. */
+.margin-answer { display: none; }
+.question:has(.answer-radio[value="1"]:checked) { --margin-choice: "1"; }
+.question:has(.answer-radio[value="2"]:checked) { --margin-choice: "2"; }
+.question:has(.answer-radio[value="3"]:checked) { --margin-choice: "3"; }
+.question:has(.answer-radio[value="4"]:checked) { --margin-choice: "4"; }
+.question:has(.answer-radio:checked) { --margin-state: var(--wrong); --margin-symbol: "✕"; }
+.question:has(.answer-radio[data-correct="true"]:checked) { --margin-state: var(--correct-ink); --margin-symbol: "✓"; }
+body:has(input[name="marking"][value="margin"]:checked) .question {
+  padding-inline-start: 2.15em;
+}
+body:has(input[name="marking"][value="margin"]:checked) .margin-answer {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  inset-inline-start: 0;
+  inset-block-start: .05em;
+  inline-size: 1.4em;
+  block-size: 1.5em;
+  font: italic 700 1.25em/1.5 Georgia, serif;
+  font-variant-numeric: tabular-nums;
+  color: var(--margin-state, transparent);
+  transform: rotate(-8deg);
+  transform-origin: center;
+  pointer-events: none;
+}
+.margin-answer::before { content: var(--margin-choice, ""); }
+.margin-answer::after {
+  content: var(--margin-symbol, "");
+  color: var(--state);
+  position: absolute;
+  inset-inline-end: -.25em;
+  inset-block-start: -.05em;
+  font: 700 .45em/1 var(--font-ui);
+  transform: rotate(8deg);
+}
+/* These styles supply their own non-color cue. Keep its original space so
+   selecting an answer never changes its hitbox or text width. */
+body:has(input[name="marking"][value="number"]:checked) .option-feedback,
+body:has(input[name="marking"][value="margin"]:checked) .option-feedback {
+  visibility: hidden;
+}
+
+/* Small live text samples in the settings selector. */
+.marking-grid .mark-icon { --state: var(--correct); --state-ink: var(--correct-ink); }
+.marking-grid label[data-marking="neon"] .mark-icon,
+.marking-grid label[data-marking="flame"] .mark-icon,
+.marking-grid label[data-marking="great-flame"] .mark-icon {
+  font-family: CanonicalRyumin, 'Yu Mincho', serif;
+  font-weight: 400;
+}
+.marking-grid label[data-marking="margin"] .mark-icon {
+  font: italic 700 21px/1.3 Georgia, serif;
+  transform: rotate(-8deg);
+}
+@media (prefers-reduced-motion: reduce) {
+  .option-number, .option-text, .mark-icon { animation: none !important; }
+}
+
+/* Twelve experiments: two rows on a wide settings panel, readable cards on phones. */
+.marking-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+.marking-grid label > span { height: 100%; text-align: center; }
+@media (max-width: 850px) { .marking-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 480px) { .marking-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }

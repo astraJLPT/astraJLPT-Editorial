@@ -1,0 +1,101 @@
+{
+  "contract": "historical-artwork-1.0",
+  "id": "H22-F05-recycling-pies",
+  "kind": "recycling_pies",
+  "unit": "N1_1999",
+  "item_id": "reading-b007",
+  "source": {
+    "source_path": "src/CodexDownloads/UserApprovedReferenceScans/日本語能力1991～1999年試験問題集1級.pdf",
+    "source_sha256": "8560bf8ef92b4e2d58559b3e14882b76d3307586f5d55b0e7fa33cc2f5fa931f",
+    "physical_page": 423,
+    "crop_original_pixels": [
+      530,
+      824,
+      992,
+      1354
+    ],
+    "page_rotation": 0
+  },
+  "raw_crop": {
+    "path": "preprocess/assets/handoff22/written/source-crops-02/H22-F05-recycling-pies/raw-crop.png",
+    "sha256": "d2dcfa967d319f732746913ed7934aef7671a95a349e440660a0258ed7ef3199"
+  },
+  "selection_note": "All 21 printed percentages directly read from source physical 423 and original embedded pixels. Values used directly, category order and separate pattern families preserved; neighboring table is outside this asset.",
+  "limits": "No audio evidence. Native artwork is an editorial reconstruction of the visible printed figure; it does not authenticate the scan.",
+  "data": {
+    "normalization": "none_use_printed_percentages",
+    "start": "noon_clockwise",
+    "charts": [
+      {
+        "title": "テレビ",
+        "categories": [
+          "鉄",
+          "銅",
+          "アルミ",
+          "プラスチック",
+          "ガラス",
+          "その他"
+        ],
+        "percentages": [
+          12,
+          3,
+          1,
+          26,
+          53,
+          5
+        ]
+      },
+      {
+        "title": "冷蔵庫",
+        "categories": [
+          "鉄",
+          "銅",
+          "アルミ",
+          "プラスチック",
+          "その他"
+        ],
+        "percentages": [
+          49,
+          4,
+          1,
+          43,
+          3
+        ]
+      },
+      {
+        "title": "エアコン",
+        "categories": [
+          "鉄",
+          "銅",
+          "アルミ",
+          "プラスチック",
+          "その他"
+        ],
+        "percentages": [
+          54,
+          18,
+          9,
+          16,
+          3
+        ]
+      },
+      {
+        "title": "洗濯機",
+        "categories": [
+          "鉄",
+          "銅",
+          "アルミ",
+          "プラスチック",
+          "その他"
+        ],
+        "percentages": [
+          52,
+          2,
+          4,
+          33,
+          9
+        ]
+      }
+    ]
+  }
+}

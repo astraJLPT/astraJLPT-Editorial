@@ -1,0 +1,34 @@
+# N4_2008 — H19 written-content audit
+
+The first full content audit is complete. All 87 written questions are playable and gradable: 40 vocabulary, 40 grammar and seven reading questions, with 17 contexts and five worked examples in ten sections. The reconstruction is authored directly in historical v3. No prior editorial existed. Font/default calibration, native H19 PDFs and every-page output inspection remain pending.
+
+## Evidence and coverage
+
+Principal: `src/CodexDownloads/UserApprovedReferenceScans/pdf-jlpt3-4kyuu2008_compress.pdf`, SHA-256 `90f934091cf24e333a6a05e58e8c047fc1562793aa07265245562882e0bc6d0f` (RC04_2008_L3_L4). All eighteen written question pages 45–51, 63–68 and 70–74 were directly read at 150 dpi and then reread as normalized full-page derivatives. Focused orthographic regions on page 47 and the bakery illustration on page 73 were also inspected at 300 dpi. Original bytes remain unchanged. Derivative transformations are recorded in `audit_work/handoff19/normalized/transformations.json`; remaining local warp is scan damage, not design.
+
+Covers 44 and 62 establish 2008 and old Level 4, vocabulary 100 points/25 minutes and reading/grammar 200 points/50 minutes. December is attributed from the official JLPT guide's statement that the test was annual in December through 2008, as recorded in admission preparation; the storage ID itself supplies no month. Written key regions 84 (top vocabulary table only) and 85 (reading/grammar) were read as fallible answer evidence. All 87 answers and five example marks agree with the authored choices and question/context reasoning. No item scoring weights or modern timing were inferred.
+
+Every instruction, example, passage, option, key, target association, underline and selective printed ruby was checked. Thirteen vocabulary contexts retain their targets and boxed reference numbers. Reading retains the restaurant dialogue (twelve spoken turns plus its stage paragraph), a framed directions memo, a framed bakery notice and a five-turn sisters' dialogue. The two notice numbers remain outside their frames. The directions preserve three circled steps, the hospital/library relationship and the ten-minute note. The bakery notice preserves its four bullets, opening/discount dates, centered emphasized title/closing and the three printed bakers. All example answer rows remain tables. All content and meaningful associations were recovered; listening, forms and pattern page 69 are excluded. Added stamps, source folios, gutter damage and skew are not layout features. Pin and folded-corner decoration is represented by a plain semantic frame, with the source labels and content boundaries retained for final visual calibration.
+
+## Principal choice and consequential differences
+
+The indexed Word retype `2008年日语四级JLPT4级真题试卷.doc`, SHA-256 `7d612fb5522a1533750f35f65276e8d45c7dee8a1a611452b56a62dce67b94ec`, was checked through focused legible contiguous UTF-16LE byte windows. Exact offsets and text are retained in `secondary_focused_windows.json`. This is a focused text comparison, not a complete Word parser or visual layout audit. No uninspected retype content is claimed as reviewed; listening documents were not read.
+
+Vocabulary q17 has four distinct foot-like stroke constructions in the scan. The retype substitutes 足/歩/哫/是, losing the intended contrasts. Four small exact scan crops preserve all choices without inventing Unicode equivalents; their final pixels were individually checked. Vocabulary q22 option 2 is 士 and option 4 is 土, confirmed at 300 dpi. Other wrong choices, including ウジオ/ウヅオ/ラジオ/ラヅオ and ヨ/山/川/由, remain native text as printed. Only printed ruby is retained; none is inferred.
+
+Reading q18 is おとといは 雨＿＿、きのうは ゆきでした, with options で / だ / だった / だったで. The original answer table gives 1; the Word retype gives 4. 雨で joins the first nominal predicate to the following clause; だったで is not the required connective. Both primary evidence and grammar support 1, so the reconstruction retains it with high confidence. The remaining 46 reading keys in the fully legible retype key window agree with the source. The conflict and reasoning are attached to the q18 creation record; no unresolved material choice remains.
+
+The scan was chosen for its complete observable examples, reading aids, text and glyph contrasts, not because it is a PDF, newly approved or presumed authentic. Custody remains unverified. Principal method-1 index is 100: provenance 100 with no documented metadata/content penalties. The byte-identical inspection copy keeps the original filename. No meaningful current departure from the principal remains. Empty public case/departure files express that content finding, not authentication. The unit-local legacy TSV was read in full and is header-only; source-index and candidate bytes are preserved.
+
+## Validation and remaining work
+
+The append-only unit ledger records every initial section field and whole item with null before-values, plus configuration, admission and principal assessment. Creation replay reconstructs the content exactly. Historical v3 schema, semantic, case/fixlog, scoped historical principal checks and native TeX content emission are required before application and are bound in the transaction receipt. Five unrelated modern catalogue mapping failures already existed at H19 launch; those protected records remain unchanged.
+
+Fonts, cross-paper defaults, final complete/body PDFs, every-page review, size/repeatability and final modern regression remain separate H19 work. This content audit accepts no final PDF.
+
+
+## H19 final rendering and closure — 2026-10-23 UTC
+
+The rendering work described as pending above is complete. Font investigation, independent historical defaults, native composition and final candidate 06 validation pass. [Complete PDF](../../../pdf-render/output-h19/N4_2008.restored.pdf): 21 pages, 436,158 bytes; [body-only PDF](../../../pdf-render/diagnostics/handoff19/N4_2008.restored.body-only.pdf): 20 pages. Both outputs repeat byte for byte. Every final page has direct readable inspection or an explicitly recorded transfer from an earlier passing page with identical RGB pixels and native text. Every body page matches its complete-edition counterpart. See the [final page review](../../../pdf-render/qa/handoff19/candidate-06/N4_2008/visual_review.json) and [scoped record validation](../../audit_runs/2026-10-23_handoff19/scoped-records-06/RESULT.json).
+
+The final historical content/configuration hash is `da775690f7f4f25f6096af42879a40c90662e29bc723227367dc042e0a7f50c0`. All 117 modern owners retain accepted H18 behavior. This is primary validation, with user review still pending. Earlier content findings and append-only evidence remain preserved; the [H19 report](../../../pdf-render/HANDOFF19_REPORT.md) records the full scope and retained 2009 limitations.

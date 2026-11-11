@@ -1,0 +1,1965 @@
+{
+  "unit": "N3_07_2026",
+  "sources": [
+    {
+      "path": "src\\日语JLPT历年真题\\N3真题（2010-2026.07）\\2026\\2026.07非完整版，后续更新\\2026年07月日语N3真题.pdf",
+      "sha256": "5a26560b8b7d5efb634861d02bb6722c476557ffd9ebf11e69b7db2a2a043e40",
+      "Tier": 1,
+      "bytes": 8305722,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N3\\N3_07_2026\\PaddleOCR\\pdf_1",
+      "VisionOCR": "preprocess\\N3\\N3_07_2026\\VisionOCR\\pdf_1"
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N3真题（2010-2026.07）\\2026\\2026.07非完整版，后续更新\\答案解析和听力原文\\2026年07月日语N3参考答案.pdf",
+      "sha256": "bdb05a95402a0e83b577d1a07bfaac2da619e95002beaad25b57336893f40714",
+      "Tier": "unranked",
+      "bytes": 708657,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N3\\N3_07_2026\\PaddleOCR\\pdf_2",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N3真题（2010-2026.07）\\N3分数计算说明.xls",
+      "sha256": "41ca46105be02fb10a68f4089462f70bd9c587299feaf8782250c093ba5a13c3",
+      "Tier": "unranked",
+      "bytes": 26624,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N3真题\\N3分数计算说明.xls",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N3历年真题\\N3分数计算说明.xls"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N3真题（2010-2026.07）\\N3答题卡.pdf",
+      "sha256": "bfbc89f3a6c67b5f2f96269af6c8bed60b47ef86f3aa26d37e08bc61f769dc4a",
+      "Tier": "unranked",
+      "bytes": 706587,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N3真题\\N3答题卡.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N3历年真题\\N3答题卡.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N3\\N3_multiple\\PaddleOCR\\pdf_1",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/hujiang-grammar-01.jpg",
+      "sha256": "93732a28309b7239acb11a20a735e305c0daa855ee852d6b4be64c323234830b",
+      "bytes": 708302,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "hujiang-grammar-01.jpg",
+      "source_urls": [
+        "https://n1image.hjfile.cn/hj-mh/2026/07/05/de49770b04f2efdc842e39b3cbac8809.jpg"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_image_manifest_2.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/hujiang-grammar-01.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        3174,
+        4490
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/hujiang-grammar-02.jpg",
+      "sha256": "e894076ee8dbaeb328551484c9ec696ec4ffd09873708034d8a305f7513fa657",
+      "bytes": 722670,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "hujiang-grammar-02.jpg",
+      "source_urls": [
+        "https://n1image.hjfile.cn/hj-mh/2026/07/05/76a032f0cdf55db8c99d5b879fcf4cc2.jpg"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_image_manifest_2.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/hujiang-grammar-02.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        3174,
+        4490
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/hujiang-grammar-03.jpg",
+      "sha256": "5421e4fd256f2970a4c5320ea5402ef69c31e03eb1792ec4e8c79ed342aa3e76",
+      "bytes": 656623,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "hujiang-grammar-03.jpg",
+      "source_urls": [
+        "https://n1image.hjfile.cn/hj-mh/2026/07/05/bbf3b1eed1125960cafd59f56809fd07.jpg"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_image_manifest_2.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/hujiang-grammar-03.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        3174,
+        4490
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/hujiang-grammar-04.jpg",
+      "sha256": "b1f37b6182723e27f1a3b13d5207b244d45d1bd30668c7eb48865609a8d0bfdb",
+      "bytes": 826439,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "hujiang-grammar-04.jpg",
+      "source_urls": [
+        "https://n1image.hjfile.cn/hj-mh/2026/07/05/8c135fda3976e1b0fade7ea39dd4e010.jpg"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_image_manifest_2.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/hujiang-grammar-04.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        3174,
+        4490
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/hujiang-grammar-05.jpg",
+      "sha256": "794b2730aaeadcf6941a058b6d8a177a0b1e475aa72080adf17964a90d5b7d17",
+      "bytes": 801811,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "hujiang-grammar-05.jpg",
+      "source_urls": [
+        "https://n1image.hjfile.cn/hj-mh/2026/07/05/32fe6552aa43192d9665d8bc149aa041.jpg"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_image_manifest_2.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/hujiang-grammar-05.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        3174,
+        4490
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/hujiang-grammar-06.jpg",
+      "sha256": "03f1385a041f7e73842cd3d31c02c501603d48727b7df435754440890235cf34",
+      "bytes": 771805,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "hujiang-grammar-06.jpg",
+      "source_urls": [
+        "https://n1image.hjfile.cn/hj-mh/2026/07/05/26511a8b7785a1b583c279b8272a192e.jpg"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_image_manifest_2.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/hujiang-grammar-06.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        3174,
+        4490
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/hujiang-grammar-07.jpg",
+      "sha256": "6e5a38799d16b4d4ce843f94749c529b1b4d319386cbbc2baac3fcd26c212f22",
+      "bytes": 655602,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "hujiang-grammar-07.jpg",
+      "source_urls": [
+        "https://n1image.hjfile.cn/hj-mh/2026/07/05/a8429f33f54728df3c387dc7a51914a3.jpg"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_image_manifest_1.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/hujiang-grammar-07.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        3174,
+        4490
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/hujiang-grammar-08.jpg",
+      "sha256": "a98a7cd16f77b59280f121c05e9e80e4d51d0cd725652d9a7c3264296c3ec831",
+      "bytes": 694712,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "hujiang-grammar-08.jpg",
+      "source_urls": [
+        "https://n1image.hjfile.cn/qa/2026/07/05/b33e42bb3199ea83a75dafd9844a4fbd.jpg"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_image_manifest_1.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/hujiang-grammar-08.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        3174,
+        4490
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/hujiang-grammar-09.jpg",
+      "sha256": "293594f2733ca8a8446a1cb709b9c1b796ff4f437f3a64dca16ed21167cd5df4",
+      "bytes": 328736,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "hujiang-grammar-09.jpg",
+      "source_urls": [
+        "https://n1image.hjfile.cn/qa/2026/07/05/3c5a44fde73461a8844c02e2bdbce909.jpg"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_image_manifest_2.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/hujiang-grammar-09.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        3174,
+        4490
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/hujiang-grammar-10.jpg",
+      "sha256": "6af8ae766dbed9d8942fa619e84df41e74b469da6369937d23ed9fba383348a1",
+      "bytes": 685708,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "hujiang-grammar-10.jpg",
+      "source_urls": [
+        "https://n1image.hjfile.cn/hj-mh/2026/07/08/aa184a7a312606674023e50526113e55.jpg"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_image_manifest_2.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/hujiang-grammar-10.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        3174,
+        4490
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/hujiang-grammar-11.jpg",
+      "sha256": "12757c2a7651493d9cfc5a089fafed55888a98a5d31e69681e1a6b3818dfb5c5",
+      "bytes": 736798,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "hujiang-grammar-11.jpg",
+      "source_urls": [
+        "https://n1image.hjfile.cn/hj-mh/2026/07/08/5fd867b5a97cb4fc2985cd480e4d3f76.jpg"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_image_manifest_2.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/hujiang-grammar-11.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        3174,
+        4490
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/hujiang-vocab-01.jpg",
+      "sha256": "486aff6db17e2c15d515b63e23bd8cb4565550188e54c9f793fc9678d932e18c",
+      "bytes": 623248,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "hujiang-vocab-01.jpg",
+      "source_urls": [
+        "https://n1image.hjfile.cn/hj-mh/2026/07/05/47b6c45bc3f4c72599f1baeee77f2070.jpg"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_gallery_manifest.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/hujiang-vocab-01.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        3174,
+        4490
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/hujiang-vocab-02.jpg",
+      "sha256": "6a5223875dd75b08dc92b492bff5248c2729b5205363b575484cbe994418e977",
+      "bytes": 631261,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "hujiang-vocab-02.jpg",
+      "source_urls": [
+        "https://n1image.hjfile.cn/hj-mh/2026/07/05/e8c221fe76bf10e0ab9fe11aec828f63.jpg"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_gallery_manifest.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/hujiang-vocab-02.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        3174,
+        4490
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/hujiang-vocab-03.jpg",
+      "sha256": "e209e596ac14aebe47811ec9d62e3a50ca0ba49e9eb3921731b622ce4aac1ac1",
+      "bytes": 540226,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "hujiang-vocab-03.jpg",
+      "source_urls": [
+        "https://n1image.hjfile.cn/hj-mh/2026/07/05/bbfcac4fc4619011f26121901cd699ba.jpg"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_gallery_manifest.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/hujiang-vocab-03.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        3174,
+        4490
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/hujiang-vocab-04.jpg",
+      "sha256": "1ed7a72503792544e61d9c87f18b434848d55d5c1742f5b52e5bea6c8ccc64ca",
+      "bytes": 587899,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "hujiang-vocab-04.jpg",
+      "source_urls": [
+        "https://n1image.hjfile.cn/hj-mh/2026/07/05/107516b347ef1c96148192eca34c8509.jpg"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_gallery_manifest.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/hujiang-vocab-04.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        3174,
+        4490
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/hujiang-vocab-05.jpg",
+      "sha256": "689e86bfd5d2165bcb3b169a996d70bc696a02f31cb02677f633bd0b1db28cf2",
+      "bytes": 628370,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "hujiang-vocab-05.jpg",
+      "source_urls": [
+        "https://n1image.hjfile.cn/hj-mh/2026/07/05/ad8c543fdf2b2f7dd694903d55f1e235.jpg"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_gallery_manifest.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/hujiang-vocab-05.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        3174,
+        4490
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/hujiang-vocab-06.jpg",
+      "sha256": "8debce17c581b5be48f32d55bea406d5081cbeb8b9d954385c115cd35c5aadd5",
+      "bytes": 377215,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "hujiang-vocab-06.jpg",
+      "source_urls": [
+        "https://n1image.hjfile.cn/hj-mh/2026/07/05/020d449a7a2d0df18dc45a10ab47eed7.jpg"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_gallery_manifest.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/hujiang-vocab-06.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        3174,
+        4490
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/hujiang-vocab-07.jpg",
+      "sha256": "92491d42a33fd914631b9c9bd62e367d5815725a68a9e9e0f341ed8c37389800",
+      "bytes": 687692,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "hujiang-vocab-07.jpg",
+      "source_urls": [
+        "https://n1image.hjfile.cn/hj-mh/2026/07/05/d5f7007c26686783e0834f12ddae8dfd.jpg"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_gallery_manifest.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/hujiang-vocab-07.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        3174,
+        4490
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/hujiang-vocab-08.jpg",
+      "sha256": "139dd0c8fd13cb1d510f40a52d5ef5bf4b6b0101d390a791965ea7c9c8f02676",
+      "bytes": 633552,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "hujiang-vocab-08.jpg",
+      "source_urls": [
+        "https://n1image.hjfile.cn/hj-mh/2026/07/05/159342a67e3a5e72476b16f50f1fceee.jpg"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_gallery_manifest.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/hujiang-vocab-08.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        3174,
+        4490
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/hujiang-vocab-09.jpg",
+      "sha256": "482966e9b4263f45ad803d235450266f6bf2cee4b11b9b54ff4105575b7e39cd",
+      "bytes": 696291,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "hujiang-vocab-09.jpg",
+      "source_urls": [
+        "https://n1image.hjfile.cn/hj-mh/2026/07/05/858adc4608b671e70a66c7175e0e252b.jpg"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_gallery_manifest.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/hujiang-vocab-09.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        3174,
+        4490
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/hujiang-vocab-10.jpg",
+      "sha256": "8f2e9eb725b92824dec9cd1864a5c9abdb49c24f615f267fcc62fa8343ade2da",
+      "bytes": 626264,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "hujiang-vocab-10.jpg",
+      "source_urls": [
+        "https://n1image.hjfile.cn/hj-mh/2026/07/05/54d3d273d89fa57fe058534b5caf55e0.jpg"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_gallery_manifest.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/hujiang-vocab-10.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        3174,
+        4490
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/hujiang-vocab-11.jpg",
+      "sha256": "f6a56f10138256104e38f0222b82b4f17a8fe719c4b8d68a80b2e1a87287bd8d",
+      "bytes": 339738,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "hujiang-vocab-11.jpg",
+      "source_urls": [
+        "https://n1image.hjfile.cn/hj-mh/2026/07/05/ecfc0f7996894405bcbd54b4ae7efe82.jpg"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_gallery_manifest.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/hujiang-vocab-11.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        3174,
+        4490
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/hujiang-vocab-12.jpg",
+      "sha256": "802ef329572e9057b81221151f9e928fc5b55210835c385924a56cd4888bc94c",
+      "bytes": 507155,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "hujiang-vocab-12.jpg",
+      "source_urls": [
+        "https://n1image.hjfile.cn/qa/2026/07/05/f6b79573bad52930b082c025377ddbd9.jpg"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_gallery_manifest.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/hujiang-vocab-12.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        3174,
+        4490
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/hujiang-vocab-13.jpg",
+      "sha256": "972ad574679088278e5aec009a3d0fc579c527af2c399759bda8f050ac1fcf44",
+      "bytes": 520595,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "hujiang-vocab-13.jpg",
+      "source_urls": [
+        "https://n1image.hjfile.cn/qa/2026/07/05/508e50050603f31fb3558ba5b5805418.jpg"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_gallery_manifest.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/hujiang-vocab-13.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        3174,
+        4490
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/telegram-photo-01.jpg",
+      "sha256": "e824f3b5ff67ba7306bc0332166a123bbb9db33e6c35fa8f612c58b31420403b",
+      "bytes": 49823,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "telegram-photo-01.jpg",
+      "source_urls": [
+        "https://cdn5.telesco.pe/file/pxdRJD5msadftVfPGXddZMQGe40-oRNRuQ5Tvs_0P1Hmd8Fw8M5CA_8fwS2ukP_DXwbys4FJCCorqs0kLQrLhnLbdpgznv0PdjH63yJy7lErt4_nTeGuTGitaZF3oshakW97cYrlU3MkjXPf6LnkXJrC-Sn-AUx0KUcWny9Gj1dcIkFdQ0D9ef3kSBmxCnj8xk0s0JcRP1n9MoaM7TmLJY2YcJMPdK_frumscx6BlnA_6CIHZxwU_xX0_LT_JrLAiDNz_gzydpqppSGZVlQ_8AZpXUAnZ0h34QBTAz-x0aqhrRF5wvbKuYTuQBBbrbYEr3qkoj8MbzdwJCe4P4XNpw.jpg",
+        "https://t.me/jlptn3global/2?single"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_gallery_manifest.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/telegram-photo-01.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        562,
+        800
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/telegram-photo-02.jpg",
+      "sha256": "b486d4934340c566ace633d69d715b8c93423760028742dc25e89f52d69848e4",
+      "bytes": 51698,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "telegram-photo-02.jpg",
+      "source_urls": [
+        "https://cdn5.telesco.pe/file/RijpcoVSPeXHgic2zVV3gRXa5JJZEPX_okLZdGl_lSl9IEuBS8yyf7hXN_IeYCoH2x6UTqTq7IrsCjmkKKG3dfiqR426xo-81VIHlsdF5rcfKHHGWyHxogi8Z2028VmPiTBrr4SfFbDQWNIIxm3ycMFA1gITMBwSmbq--YZ_u88IaqD2vn-BgWwqmrsjJcYqIlQIJ9pW-ZWy6UHKwAMnOmzuXXOCcMWJB_OLFmWOzFlO5N8LwKS17NnQEeN4qUlGZgViNnvww0-w3IGPREk70ytyxr0LGeim9qkCpTgBlChzqTb0slHU6oWh2UQUIvecQrwum7X0vdqFlUsAdGcHjg.jpg",
+        "https://t.me/jlptn3global/3?single"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_gallery_manifest.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/telegram-photo-02.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        572,
+        800
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/telegram-photo-03.jpg",
+      "sha256": "321fda42e133eccdc6ea1c4bb351bd6279e0a7689a02d97c91a4ba96b3eb6750",
+      "bytes": 22581,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "telegram-photo-03.jpg",
+      "source_urls": [
+        "https://cdn5.telesco.pe/file/Fn-MReUkDr2FNMONpeHRxocSf143vTzYrafXfR6uJ8MypWDGQzmNp_2MHJj1jaCc2zhDpvZR4gVsDs734IvVnKekbpYaUUWVHxpOY0ScOGRe_2klaPue4h6XeIlrlA-GvCvPfPFGB90NaXMJcjnyiUIRtoOqYTGQCUf_M9DNoWzsiwBOH2kCBoF7C-sbpcukkIpGN1fjbmfDa4OXKQDD8cHAKejsu6cDELtxBpGJ-wH-C8DjGp1CoOAsNat4X0NNgVDCx8fUD1hvGHO1Mi7SbQOA2wcFx9pIghnLVK69ZQWW4mPmLaznRlz5ozAijgbmgjq7SzhkPMaUnDXQ-7WEOQ.jpg",
+        "https://t.me/jlptn3global/4?single"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_gallery_manifest.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/telegram-photo-03.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        571,
+        800
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/telegram-photo-04.jpg",
+      "sha256": "51bb2aee5f68b512b5d323686bc83a512630754beb855691c80e1f36f686bcc0",
+      "bytes": 22077,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "telegram-photo-04.jpg",
+      "source_urls": [
+        "https://cdn5.telesco.pe/file/XbxKKsIo96zPHJg_tmY-wr2YYvBLwT7qM-A66fnc6pm-jjW3eUTeIdf61TATBl6EvF7WJNaBSZUXRoYLBo3_05hInCGVJOqAK82CgmaCQ4O2VfD8Bb-YAQxStCecgLN5FDQT1e4W5GvycWKCbT8uOy1wWMPfGRxNpMKFJy3__4Njr03CLX2aYkMzrnDMGky6zCoATUkbQAHwV4CnJDvLcKTx8sA_5_4KJmgIcfFZj-JMUNLoAq6GPr5S1gYwEFCOikV9ltKb7uNm33IRYLkgmoMqqw4hxVzL2CnJJpKh8QWjAbFkpI0mg4c7j8UocFNvMEqTdYw4E1RBqOw7RAiGBg.jpg",
+        "https://t.me/jlptn3global/5?single"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_gallery_manifest.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/telegram-photo-04.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        580,
+        800
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/telegram-photo-05.jpg",
+      "sha256": "4c6dce1d2ca85d4a5c89e087540f3f87cbc2ff3676d7b5ae38f2883233044d60",
+      "bytes": 20909,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "telegram-photo-05.jpg",
+      "source_urls": [
+        "https://cdn5.telesco.pe/file/GNXHhanW6RApzon4Ehoruvncr6WwMLYu46IK7cU0Nc_A4W2JVIlnrsfaUUPQc7kJjpDAm0yOltMW4WAIBdNEvWr9VViRR1IYAas6TqrmpJGHMvF0wKEXwosJRpVHVgHlK8MOxt1bgADEimD5OPrvUZAkL3weEqL8UR0dRF1hQjlosT-uLR-5sYOUeki0M4TV041NdqWqUceK6BU746stPLwhTK1eZ35HQjMsLv5rcleFb4BSAOejCJXDoNqJzIJXJtYMMlL93Oy7L6bUZ8HG8BMDRL_1BpzWQOCq1j8KUn4eJbH-nJISVsQLg3umLSaMW08N_MUY8gkSY5z8ofQZ8g.jpg",
+        "https://t.me/jlptn3global/6?single"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_gallery_manifest.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/telegram-photo-05.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        579,
+        800
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/telegram-photo-06.jpg",
+      "sha256": "b2a1c459b3521ce9582457e3ff2431e0ea5e8b67534565f8e4b8f3c66b6b492e",
+      "bytes": 18460,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "telegram-photo-06.jpg",
+      "source_urls": [
+        "https://cdn5.telesco.pe/file/YXEWLZIsheWOzUCM4p2IPqpwpBZLfxv4L7hEXbLkVrqVP9xhd-q57zbdMwyGmRft1LGbcuY1f_GrkeGQOkHuaCME3--4EBby0iK4bX6OXvKIje7RCul3_7Oo4bS93gwvFgY51XFJ8yIOFPGO1SkUxRDj5v62N4_2hPO37mtu8XmFjZU_BoyHtY9wH6aN2BPj7wXdDE8c3SWnTamdl0nFWBDs-nYGcJLRegpaJdGY77iQAhL75ajoeg7eTRaLg9r0wnSePZMamYBYvaNqFzHIDkKdDRbURZwDk4heZsQo7JFS8GtVoxW9Kc95zQoZPtjfLtKEALhb5H0XD5kbofBvDQ.jpg",
+        "https://t.me/jlptn3global/7?single"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_gallery_manifest.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/telegram-photo-06.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        595,
+        800
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/telegram-photo-07.jpg",
+      "sha256": "ce130714cf91706e173760b6fce054ddf2fe19df1530ffd70ac159481936752f",
+      "bytes": 24662,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "telegram-photo-07.jpg",
+      "source_urls": [
+        "https://cdn5.telesco.pe/file/rjsQ8WjUCzHBj3F2hmcYwZZ3AB-BSydon7wXWDikyabQf-aFNsj2ZFfqs09b1akzUJmCfYbO92LIaDmwazSUwKG48Fv73ICvJ8YevMjH8YN-2RGwoeB5CsBRfkVRQ7kQIjI8PEsTkpHfRDdjK0C8fmtGy8VovumykhGsgY_Jh5c1c2UMsbFQvsVQTZzYZsSMuSF3LUoPTl70W12FEwAwuI1SWTmdNbGh30WtGtWj-jvJkJT71EWpysOaiwHcbqnSxh8W4sgWf6Mh0zin-tqJPIU352LrGT3F7HKon0apNe66skUWpuA01kNb0sbpbRs6nWE8WZ5WhOrbrqf2XfgW2w.jpg",
+        "https://t.me/jlptn3global/8?single"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_gallery_manifest.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/telegram-photo-07.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        582,
+        800
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/telegram-photo-08.jpg",
+      "sha256": "6019d39f81c62d42e70139644c1a9384e36009ce3719e66592fde0638592eb18",
+      "bytes": 12608,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "telegram-photo-08.jpg",
+      "source_urls": [
+        "https://cdn5.telesco.pe/file/oi3hRxa3jKpxMCyX3czPhGjEzIeVDCxo-Ykr2nPtVw4CT9Kz7hQrOOg7nqrxIxFXJHy_VqR0f-uDlMLQU9Thv1XbFdd9WjZqXgm2PpStz1lcay9N6Wss5B-cxdYiu0Ct03IM9XpGfsO9OtPaHUmrCR8EAROuaS4g6zOf81r1W5j-xschF0N0iLGmhQB4J2v6SE5mQANsoQNwSb184JM_xrPpMJrJWD_BXV9apA7tkEZ4m8X2GiJlBDO2eHW1ScQ5Qm19Y_m249oxZlzmOU78SEewPo6wcmVRqgX_twUZfpnAqqJYYkSWRCvW7yA_q9XPc_xkgDo91_SE185YZWqWhA.jpg",
+        "https://t.me/jlptn3global/9?single"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_gallery_manifest.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/telegram-photo-08.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        575,
+        800
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/telegram-photo-09.jpg",
+      "sha256": "fefee2958220e091fdc6a48878679c162d8eefd9606c13786655f62949599795",
+      "bytes": 21824,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "telegram-photo-09.jpg",
+      "source_urls": [
+        "https://cdn5.telesco.pe/file/S2n-RJg9VSkqsKhkQ0CanKm8uneEmIsB5hTFHETDBF9u8lNjd3lS4bE7lzas4bIRErpxb46K9SeUSk4ti8dfPTKmRW4gRqChUqqoIyUhtHOeZ25gDxDiRm8qaV7xsK8A7mXeQNVGvMJr5DjTRj2mGl7THxxK9OR5jupe0a1q9SbH_eyI2l-_61dysocuvkFyKYcjMl7pR8akCv-TvXsewAyFwrU3jww_JP0DYZg5CXoOm3DxfQOgl7YU2XgaP0GCsTZ0-LUDCsEvjesLAfEoLGRFYG1NtJgdM9vkFf_Kq90M_cxMfdtH4NTv9zF0uYcD4v0Qyp7SVMXwOkMUB7GxAQ.jpg",
+        "https://t.me/jlptn3global/10?single"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_gallery_manifest.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/telegram-photo-09.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        582,
+        800
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/telegram-photo-10.jpg",
+      "sha256": "1d1b8a350f0bb289fabc7000ba211b3788cb8c488ed68522c240c6e1a8ae2520",
+      "bytes": 25296,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "telegram-photo-10.jpg",
+      "source_urls": [
+        "https://cdn5.telesco.pe/file/N63o1hWr2y5cLoZPiAu9n4wSVO4MEU6qb1OSKfna_uPZXaFCHkIIKhhD7kqUM6drm7xAe03j_Kqaa56IFkbu3R2CWFgSp_Le9zh3EP15e9Qz_-0g-455QTDx_8algqnIT2kCJK9z04NcfWiRi_S2U73vWmpZJRMis2iag2k5i4GYC_SQ3FI_4Z3hxDQYliZw3prCFIhJ_yg6zN7y_eMAXclBf8VuE5KkroVZc5Dq_wcfc2ow8zOFH71kIFGw9Gr17z_al_qyjVLsinb6dvSJx13A1Qt950zgibc5vZdPy610UK5hM0APzpmlUYzsTjx6HyddVMNB5BoR_EvlwLvq3g.jpg",
+        "https://t.me/jlptn3global/11?single"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_gallery_manifest.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/telegram-photo-10.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        577,
+        800
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/telegram-photo-11.jpg",
+      "sha256": "8f27b688db7f983eef7e4f4be4213f4f96af2112d76025622059c84aa4fe955e",
+      "bytes": 86114,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "telegram-photo-11.jpg",
+      "source_urls": [
+        "https://cdn5.telesco.pe/file/LMANdNf0X2kwkcxm6ItbNxDdMrzKqz0XfbFuN9Temufd2oOJGM0UiWV97aipxgFq0BBKGujyZovH0Gq2e-oeX9HVa99IdB0Oo7uRScFhdCzV7mF9XnHn5YLiZggTnK9eAEMwm5_5m16lo_SHHNlO851UGyVQcViQirRtzF6QkKuzijxB5_7diznp-2Wx2hy0ZPlW1QX7D0gAovnKXnDfPXfinozLqpwYZ6z3kSuPuMZSUwSUFNVHylcmDs6G-ZIbpQf1h58jJvMq7eUI_ErkOc3Z62sok1Iy46ITbLjjK33XJMSxq-gwYYDXqxElPxhCWnKTuPCTrQVxoBdIXowbgQ.jpg",
+        "https://t.me/jlptn3global/12?single"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_gallery_manifest.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/telegram-photo-11.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        567,
+        800
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/telegram-photo-12.jpg",
+      "sha256": "624ed610e34a6fd930b747726cdd64bd1e034162d8cd6580583ab5b35517cde3",
+      "bytes": 51301,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "telegram-photo-12.jpg",
+      "source_urls": [
+        "https://cdn5.telesco.pe/file/Fh0uTlxnZYBr8W_hNluMlD6vOKmPuB-diT-CwN4bbX417XV5q6ssAU8oj80l85RiZIr8eYJZ65o8Q7hEyFLW7W29IN-jCIduHpI9wn-MuroN49NA_NMc6-V9uoI_Xdr5Qe0W1bfY3LHYeU2s3aVnrf32HT33L-iDAc76vl1iLKoXSaZilRHEBkjTv2rr1JAPJmNt5B3T_7VkZyTlt0_Np_EySoTF1f5v4NGJqH1qVzLIoCiSaWzvlKrMhUxtYofXVMyKDGeOXvOjZESbvyVZyo-Hk5qqdtfYtF4mjcyihsLm5EF44etdocfq-8yG-T3GEYnDFLjf4yBiP7vtAgfxYw.jpg",
+        "https://t.me/jlptn3global/13?single"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_gallery_manifest.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/telegram-photo-12.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        571,
+        800
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/telegram-photo-13.jpg",
+      "sha256": "276acd59290b14e71b30b003dbc12e9c25e70e702e58f5bd06aaf0874a9e877e",
+      "bytes": 46587,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "telegram-photo-13.jpg",
+      "source_urls": [
+        "https://cdn5.telesco.pe/file/ALwkcVKezY75fWpgXwMTlT2tvgQVHoYdLVzDVW7_rUCU4aaVW6rOt4XbIuwjZUpu9Ah9EbBWL1xpjz7PgyF4A9WIM7-LfftCASW1uWlJdZqj0hohTmSfdcQd7NZA0wMoPKCGBTCI-4Rpk2jiTavUxK7iiYv7FD3KxPrFgAXh5G1DUfLQWkkT_Hz-XlBd_EPwDMdra9lcwdKtkzRrH27wfQ07--uIigwaAtk0C0dci9LeIQgC1rIpwVdKpXu2mnBamXywL2W7v7Ssq5rEL4bmcRumF55cJOTH5ejiZ56G2Iem4T-FAe3qanNLiUvrJwIe9iaqsx3CeRuVDEKYAZfV4w.jpg",
+        "https://t.me/jlptn3global/14?single"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_gallery_manifest.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/telegram-photo-13.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        571,
+        800
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/telegram-photo-14.jpg",
+      "sha256": "b9e5bbe5828d686499a7e740bdf2a585f930b401d02da745805de0ed35c5e2ac",
+      "bytes": 70781,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "telegram-photo-14.jpg",
+      "source_urls": [
+        "https://cdn5.telesco.pe/file/eCVhGvR8nA8PMlN-Po2-yJzPH-poHKmAi4dGvuoQkRzqcBLkc9DBT64CRxLexh_RIzJNC8EE5pegsIzl_x-xmECkTXNDNhb9no_3lSDtNviznEP_aMY8uStUuZgebpP2cvFcvF1Hi0vIdAnyH9nxmx54lLtc9h0U_-zXjMsZy1TvwzN3W3Nv_RijkukSGanAzxBDCrgccZ_GKXqv7pUHrqPq2zqvvK84QtuyB5rIPcKgl8o0lxF2N_iOqAcf9Skzv1Q-6iIZIZxLmvM8lkHDYZgyZGgQNEDQ7hAOdGDku2Khg6HA2YkAerir0P_ph88U69pYItmCdq-TyKGJiuJYgg.jpg",
+        "https://t.me/jlptn3global/15?single"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_gallery_manifest.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/telegram-photo-14.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        571,
+        800
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/telegram-photo-15.jpg",
+      "sha256": "11c7c7d531525c9159551006140bad2078c8374d756d9b42f64ec4a3b6250d06",
+      "bytes": 46595,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "telegram-photo-15.jpg",
+      "source_urls": [
+        "https://cdn5.telesco.pe/file/o4p0shP_kaAgw2ipmqvCEB4tuM_m6kxEwyMDnMFiu4sOD_l5Ks9_fzNENJPqirarDDIU4QSrCcKJsgGMuY3LSm1g_Nq6niNqpV-Jwd73Z7bkBkQ0xz9ETJ_IYfOcZ1M78aP0kyzhb4VdY4L0EFgd7D1l57cd5Qa_VSw5Jqdhg-CeASb_0gY8MhKk6WJ-rsTemSn9d5jW6dL7a6SLDKE-cZbAvgq2lxyzxgqxteGTJClEMC83fF9w-mfXaw3U3CoDLeh24PEDx5zAxDD9mE3_bSqwRO8nwRgv1QHuiR954PWHU_WMgPa7PZ3XiCdJN6bcdOsCXR-YIyrFaTx9Ke3H2w.jpg",
+        "https://t.me/jlptn3global/16?single"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_gallery_manifest.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/telegram-photo-15.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        571,
+        800
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/telegram-photo-16.jpg",
+      "sha256": "0dcd61f7811edf98926cc022af23ec6eee5c31f86f51704765e2b26d0dbf2cc8",
+      "bytes": 47700,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "telegram-photo-16.jpg",
+      "source_urls": [
+        "https://cdn5.telesco.pe/file/J7iXS3Uta2E6e5ZsHwMZT8Asw0Ix7ArzXQYY8xZuu__gwCD_ToV2zi3wpbI2WAB_FDPP-lgNnJDCow4CKnq35aydeS9nEn6g3hblXscnrHx-4xWQZ1T8ubdRb-zHLBi6wx46Sin1JCbrO9G7mpc27DdJi_J_EhwQiYgptwjxASPk3V8kaBsjKpikaG5VR6CKnTD8Q8BqJ8GkIGZ4a0mbFsC_yQi7U18UQy7iK_4NeqP5g6UG0-9t4MjhyjSoKJaHDelGZF47KkGD4M3pZQIX_8Z6XlAXPp-_ZfOWhfjRao9rmw40_3nWNia6dd78czfRYNpnXMJw3e-55bPc_m2y-w.jpg",
+        "https://t.me/jlptn3global/17?single"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_gallery_manifest.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/telegram-photo-16.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        566,
+        800
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/telegram-photo-17.jpg",
+      "sha256": "58caff13bd830126bbaf6ed98eb4bbf7442e88d6c9199912beb4818292af9fe5",
+      "bytes": 86261,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "telegram-photo-17.jpg",
+      "source_urls": [
+        "https://cdn5.telesco.pe/file/VpJVaJKLFeBw6GtGE2SPPTLc5vCcK-QH874l3u6qeWdgsuWHyNGeZq1QpdSlIdvFQCHz-ntKH8MoqKjziJznT2FlgRCAqTftVV4IJfy4v7Oot9Tg8f0yOv9qzSKjjB1K2FRQxCkpmUNSnKZcWnmAdm_2RDI_rP3foRA9qzIXFuweux2n8QqeQpKymXaUs0Pkk2jvYfTxtXSL-h17LeeTZXu-pbyCQR9n9XsZDq-aV20hIRwmNocTtc2I4sj7Dh50hcN7C5ds2Cqb-yEQudn-6TLU5_htjKPxBcGfJgDrUVKrf6Cus2Z4NBXSpt2nQS1JTDL5XKHUGGEn-Kj6GMNFmA.jpg",
+        "https://t.me/jlptn3global/19?single"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_gallery_manifest.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/telegram-photo-17.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        571,
+        800
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/telegram-photo-18.jpg",
+      "sha256": "7c784b35cd6d403b9fb5f7fd0a16177ab8df977f29e2e64a5f7b023fd8ecb47e",
+      "bytes": 68988,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "telegram-photo-18.jpg",
+      "source_urls": [
+        "https://cdn5.telesco.pe/file/Ku4bE9a-s14TMvySTdO4UfQ4Q6LaD3qhkdwHDoBFh8J0-EJL67BEtUTtuqV882oXBb5YZE-6gMrZ0f9q8kHcHKMEUM1XHCK7bWI7ZiC4VEgY96plZUKzO9mx9qnD0evHe-ScplCevbHVj0vrTrP9ttzusMvNk1cm84hrJ7kwN9vKyMRHPFa09d0TKezLa9p53_odwJBR4WNTv8FvgSrMfk034Om383jWfGeS2PMYPnOjSunRN5DegD-Z6Rthm9XWPmT-bNRDremtktWBKrWoS2-KGmlUsiOjEqXXeEBpjVLRJjQkWDpB_etEWy3pjsUOnJTwTuxl5DgL7aqUy4GtCg.jpg",
+        "https://t.me/jlptn3global/20?single"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_gallery_manifest.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/telegram-photo-18.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        566,
+        800
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/telegram-photo-19.jpg",
+      "sha256": "cf1d15abc5b951dd4dd27ca323bcbaf59a90b2db593912812fa19e75f7377484",
+      "bytes": 48305,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "telegram-photo-19.jpg",
+      "source_urls": [
+        "https://cdn5.telesco.pe/file/Cb4iGSWNhbc45KWjVS88ce-w2qYPJoZ4350DfUSU8B4zDauzEPCUNqoBxmxbsaayCv0t22WBKYGA_YdZr_YEkZ0D1FcKhBejvWG2FEGnP3mKn8VPO4QbO88ZtXVLSOdqbcQQmMK9wk3vPMfAtfDLlxDzFWvyGcGKhS7NyUNj3CpVx2IO1chh4RNRGE2_lVMpH_wAU0rImpEk6rSjvJa3qcJJNmmvtCQHllGHIuDyPwO-o1oj6og75mzMAaEtiM2vknjOI6_IUCvYzn2zF_a2xmoPCdeJxAxhIaYFne_2647udXCp4SmBpnkQqbbq7VsMsAwSlOc5sawH0-fqKL9Kww.jpg",
+        "https://t.me/jlptn3global/21?single"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_gallery_manifest.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/telegram-photo-19.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        571,
+        800
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/telegram-photo-20.jpg",
+      "sha256": "89a71bc535bfc4fa65beb6308b9f38bb2d3ca6899d3108f31ffc96b813970327",
+      "bytes": 67050,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "telegram-photo-20.jpg",
+      "source_urls": [
+        "https://cdn5.telesco.pe/file/a7z6SjL-nR0ULrBDPvKQWRKXS9NpFw6AzvCE87MyhBzhpkkopGQof6UZMq55RQ7NYhmzCCFhdbaxPNCd_pgfOIS7dn-NSuR08yai4jZMNTm9dPVZTX6EPoIN252CqvhDAcg-jx9BlEwUvJXePH1K2J9TO7FQk6RVDOkorU50PINJlz-4O3hVnCRK2FvESeTqrobdSilKKaqGehWaOxEUbVwrXJH1leyGWsKYuf1zxm0IBbXukpJXFOCXQ7FT9nXQaaRM32QHlB3HpvI-4fPHP1IPEJ1E6Lh-Ctzj0KT24IFbLjJNVwcL06749hotie6hS74VkGu2uWzRgGQ6XCe3gg.jpg",
+        "https://t.me/jlptn3global/22?single"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_gallery_manifest.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/telegram-photo-20.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        571,
+        800
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/telegram-photo-21.jpg",
+      "sha256": "93c02ae82737bb03aeaa65aa91b1ff137e0f74a5fe2c41b975aa6d519bec14ea",
+      "bytes": 35472,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "telegram-photo-21.jpg",
+      "source_urls": [
+        "https://cdn5.telesco.pe/file/s-5kjnO8WKu6KDz9WIG_q4JunK0g2YKyo4cFZd7QmA5ZuuFQSzFJlmh1YNgLWaqn-WXMdMammYUSAYTABANHKU1oYDpPVjuXAzoobb-YNEe-CIsCVtMUiC7c5DcCvO5ZTasMVmkUSwNxo3e1R-fh3bki-WyYzrFrvDRN3M34LG3JCyCHLhfWR1QMTIqK8epmswNm9B0vF9NoMJLzRs904_d0f_FE23eigyKLme_DhN9i28MHNc-GpdDNHvjudWxWY57D1AJ0ZVFY3glV6r7CEtskyDaBTkl8ksoN2weP7_vB24X9few6crsByvdKZEj2a9MR2gp1LblYlN9M64P11A.jpg",
+        "https://t.me/jlptn3global/23?single"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_gallery_manifest.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/telegram-photo-21.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        571,
+        800
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/telegram-photo-22.jpg",
+      "sha256": "fb482f9965a91ddb27479ca73cea35e72fa6833e00eae81d318ce852bdc2e4f0",
+      "bytes": 40229,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "telegram-photo-22.jpg",
+      "source_urls": [
+        "https://cdn5.telesco.pe/file/atbD5natt3YnvOSCkSIxizKpYUMZ15K3Jl4TRVUOaR0YTF1CGePoSr6MXuc_B-ulYF5-TA0JeqBv5GfObNFo9WUcLqh1xfs_cCG16cMzVB1bqm94RqiWuImyBXVIu5zPjpXl7Mvm6Vic5B_YkPEA30UgJThM0I_tZ8nbIJn65lzmya-JLQQ_WBCJvnmV73vBUYSg5MuWF2Gjfrz3AUtc8e938GIphfro_zWuzphywuyfeFwHYRn-POy8KuVJB_EtslgJeXLkXNhYo6W6q1-915z1ZBEY2wCYKbFDWdNGMm32kuATLTL9mpRDF-Cx3756gDEjvqiLvGhHumlIbv65yA.jpg",
+        "https://t.me/jlptn3global/24?single"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_gallery_manifest.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/telegram-photo-22.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        571,
+        800
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/telegram-photo-23.jpg",
+      "sha256": "73eaa670ecaf04d787e75932676cdbc1b8216bd80655a103dc57440b8fc9d1b0",
+      "bytes": 46413,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "telegram-photo-23.jpg",
+      "source_urls": [
+        "https://cdn5.telesco.pe/file/Lwdf5EOHPUwkBsZSf9tln2vhnlpgtytj4_unJ2_3mXsmN1V1oORlRWXGYWMa-siwQDZR5KOKcU-277ZM5VBEPYe--68IbSsFbaFbkSXDIXj9kHq8NVqiWfCiju6Beos1j2JWEwO-K-dR84F26Nhfue1nighjbzrbzjKAPA0Hnd1qFvvP9855f3ycxTfsjhf5vO1dEaxDQoMvklAeUc76q2NE23Tx2IPLTw34DAgX6iNzgLrzbYSfv_ETekFoUmZPRTwkFZmDnrqb0NOmq8SRWpsKjl2VaGA37dXNtFTghSc8Fv5gXSoWD3vPUgX7SNdnbfK2OpVf0mhIoEgOz19jYw.jpg",
+        "https://t.me/jlptn3global/25?single"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_gallery_manifest.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/telegram-photo-23.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        565,
+        800
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/telegram-photo-24.jpg",
+      "sha256": "a22d53d6cb4af44289f0d3dd89900c071d0c4de8d19d175c2ab69262a8f4a399",
+      "bytes": 34064,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "telegram-photo-24.jpg",
+      "source_urls": [
+        "https://cdn5.telesco.pe/file/TtySCQh5XF3ciG4Zw2AifIxw-8UbV7G127hGPe8t3h2WgvdeTH7NE1W-wbWp0fJNfZQXVHwiIMwqjD2J_e_q5Oxd_85loFurAC1oTyYkgU49ENM-ENWrfyBNhNHVyM6JqgSKdodnTtE3_Pdzl9tnxKbYDq2Lc-xoMRVewdyB_HQLDTnBZFqtRg-VoT8R48BKpiJUibdq3LcM2LQjbq7M4E15BOTyleYj5DxpTFTrwLxNMLh7YwFgOmGhKhnPhR8xyD2CGHGz7pIsryAzaELWMjl3tXu0YNO2e_9GCgWcFlJR9Q3AA7o4u7VksTMhMDIUQtADmAE4uZZOU_VnBn8htw.jpg",
+        "https://t.me/jlptn3global/26?single"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_gallery_manifest.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/telegram-photo-24.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        565,
+        800
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/telegram-photo-25.jpg",
+      "sha256": "e9234b7c91e7b1dd1b4bf5efe5a70605700d95a6539a4f621f984bea4855cf36",
+      "bytes": 42338,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "telegram-photo-25.jpg",
+      "source_urls": [
+        "https://cdn5.telesco.pe/file/LS1i7TPUdewbeBlAm1qliupu2vEI0Ow8FPZIkBGPwOmpUCkgWET2Oa_rnQzJhBz0pGfJWxj0KMklGQhCB7rg2fr5vg31UVchYTwJAj80fQt7ENna4wQRdCyXb7sL_lWOjnl6cyRZxKGjbaOh4CZysLeG_hxhsO0jZ-svM3xfp7VlVkbghlwfDCdNW4Md--CbBsvCHbL54Hr4e6Iy__K9AZyhKbnPZu3ueybx0Ya8HKcvG-1KeBv73sMV-ROxqKFLbGlJ1lzXpvhbkafAjvSPIG5wWitfIzlQEz3pPGTdJfxqPFQAS7AKuOrLB6INVNHebFg7vem1Sn-bTwLHdcZ5oA.jpg",
+        "https://t.me/jlptn3global/27?single"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_gallery_manifest.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/telegram-photo-25.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        571,
+        800
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/telegram-photo-26.jpg",
+      "sha256": "01da621cfbd3cad99b6a86cd476b41ca1021bb65b4fb7f827cd6753dd269eb1a",
+      "bytes": 36764,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "telegram-photo-26.jpg",
+      "source_urls": [
+        "https://cdn5.telesco.pe/file/pHwkkB7CJHqUZxdUalJ_cy0yBlzTYU7OBmHG5a_fC-8049AQawzG9XlE9qDYYTlLKCyZWYgo2ddnh5gTHBe5lCuiFYSkyL0xtRDEIZ-1rTjM8ZZb46JBnE0psT0iushY3Efd5c5y9eAuKYF0ixd0ugZIluSigOBrqG9ubC7HT93gz6GB4bRAC2AlWIOR9vtChmkg4aDa6plYvRmcO2LoWcPcUGlibanNQcUkrU3KKcqk--27X50EZ6-mY-AOFy-H70FItr3GJCov0KRmwtoo47MAVAjlsFdRXS9jqMmVubsgi9ZX7yYvLQpihzdCL_6qSXpyDNLkDRTsAOKyXjUkCA.jpg",
+        "https://t.me/jlptn3global/28?single"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_gallery_manifest.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/telegram-photo-26.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        567,
+        800
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/telegram-photo-27.jpg",
+      "sha256": "255d08c95c2b8d31ce4c75b769a98c9c667dea7d375ed356def195be39822c43",
+      "bytes": 48613,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "telegram-photo-27.jpg",
+      "source_urls": [
+        "https://cdn5.telesco.pe/file/muRy_hwok7temrat6t9HW4GTNb26SRxBdXKHyMeiYALo6ta8JE-qCz1BvXPwGGFgJ3SByfZ3j2dGrOgNj4_q7nljf9dqTKAtirjrUrliQOcEphGyJZ0OBjgQj-Q1_5PrwDlnu3H_fKNIZ0u4V-25JzQsx7cy6QUePZnVW5yWP4RbVhtbObmuYTM3eYUafI9n0SzQaXYONg6qWOC16AkwAcvnjZrtaBTUwDHMNGT2w1_TF46QKYNgyH76L0CWH8NDuzxV4c8d3yDXmt0up1v78cd243u2y-gBZJ1R9cnP3W11Mfh1BKvdrlQy10vscpuEkAMlNxN_Uh5bc759G9Tz5w.jpg",
+        "https://t.me/jlptn3global/29?single"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_gallery_manifest.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/telegram-photo-27.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        567,
+        800
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/telegram-photo-28.jpg",
+      "sha256": "be1ba9dee3e64a629cd2f9c8538d8f7d839f2c665680d964746837f996add99b",
+      "bytes": 41874,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "telegram-photo-28.jpg",
+      "source_urls": [
+        "https://cdn5.telesco.pe/file/EAQhjpWqtyxhbkoAbDplEaLgucGPvC7ExAZdy60ygT85NKn76xtPDAD0WR4cpL018ARqEOniJkQAflRxz9ehEwA6B_j441ATWON3xm2gPDQwAgxSas3RPvJt1BJlty9qyKheGJkM5IcPJeE870PO5e2JVvaAlGd1RWFV3h8RyUnFJMUPflsKB3DRm_o6GhJ5vApv4zyNqoa1_GqNQpYxlY0b79o_1Y1ZoB8haLnqktEJ7bGiohjWItXmxb0XvnqQjWh_n3raW_oI1Zc_zcbS-S2PtLv_1B7VOfLcK68DcmWn2Z1v8ZiUUYeiRr2WlIy2r0kg3S09ysx3QnAh8t23Jw.jpg",
+        "https://t.me/jlptn3global/30?single"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_gallery_manifest.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/telegram-photo-28.jpg",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        567,
+        800
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/uno-preview-01.png",
+      "sha256": "3f2aa7d149d4437cd6ded9683cfef0c207eb89d787d4f3a926833e075cf53403",
+      "bytes": 569077,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "uno-preview-01.png",
+      "source_urls": [
+        "https://unojapano.com/storage/2026/07/image-29-731x1024.png"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_image_manifest_1.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/uno-preview-01.png",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "PNG",
+      "image_dimensions": [
+        731,
+        1024
+      ]
+    },
+    {
+      "path": "src/CodexDownloads/N3_07_2026/uno-preview-02.png",
+      "sha256": "00e05de294e90874d90e14bbb40bb4835a44acd8488e89aee6f4bf001b86d73f",
+      "bytes": 188133,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "partial_recollection_gallery_or_explanation",
+      "related_units": [
+        "N3_07_2026"
+      ],
+      "display_title": "uno-preview-02.png",
+      "source_urls": [
+        "https://unojapano.com/storage/2026/07/image-30-720x1024.png"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N3_07_2026/web_image_manifest_1.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N3/N3_07_2026/audit_work/uno-preview-02.png",
+      "audit_review_scope_at_acquisition": "All 28 public gallery images, 24 Hujiang explanation images and two Uno previews were inspected. Shared summary ancestry; missing complete questions/choices/passages remain gaps. Cached HTML records acquisition context.",
+      "prior_audit_record": "preprocess/N3/N3_07_2026/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: recall / explanation images",
+      "coverage_note": "28 Telegram gallery images, 24 Hujiang analysis images and two Uno previews. Reset text, highlighted answers and missing choices/passages occur throughout the contact-sheet overview. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "PNG",
+      "image_dimensions": [
+        720,
+        1024
+      ]
+    }
+  ]
+}

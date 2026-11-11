@@ -1,0 +1,180 @@
+{
+  "unit": "N5_12_2012",
+  "sources": [
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N5\\N5-2012年12月-真题+解析+听力原文-高清打印版..pdf",
+      "sha256": "75d9a6a8928f64bb302a43e334488100f0a7903875cb3dddf8319013249c3540",
+      "Tier": 3,
+      "bytes": 8033674,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N5真题\\2012年\\资源二\\N5-2012年12月-真题+解析+听力原文-高清打印版..pdf"
+      ],
+      "PaddleOCR": "preprocess\\N5\\N5_12_2012\\PaddleOCR\\pdf_1",
+      "VisionOCR": "preprocess\\N5\\N5_12_2012\\VisionOCR\\pdf_1"
+    },
+    {
+      "path": "src\\munjaJLPT\\N5\\2012-12_N5\\2012-12_N5.json",
+      "sha256": "b8d202e2951184bd372fd0899090d8343be4ae48f0905498d6d39bc2e817b6a6",
+      "Tier": "unranked",
+      "bytes": 100471,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N4-N5 các năm Yuuki Bùi\\2012年12月\\N5-2012年12月.pdf",
+      "sha256": "4320847c1f89415c21169ad9e24dfec3b4d534c5c2594726125ccacded5facab",
+      "Tier": 3,
+      "bytes": 43738703,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N5\\N5_12_2012\\PaddleOCR\\pdf_2",
+      "VisionOCR": "preprocess\\N5\\N5_12_2012\\VisionOCR\\pdf_2"
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N5真题（2010-2025.12）\\2012年12月N5\\2012年12月N5真题+解析+听力原文.pdf",
+      "sha256": "f1b08dd9c40e8e2fce0260f860c7dbc9e4473550b98af3917c4e6ae09a51aa93",
+      "Tier": 3,
+      "bytes": 9568950,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N5历年真题\\2012年12月N5\\2012年12月N5真题+解析+听力原文.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N5\\N5_12_2012\\PaddleOCR\\pdf_3",
+      "VisionOCR": "preprocess\\N5\\N5_12_2012\\VisionOCR\\pdf_3"
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N5真题\\2012年\\2012年12月日语N5真题试卷.pdf",
+      "sha256": "d888c59fdcc7f5daa290105a73fdbf8aef063cb6f14437a8ea0898e2bd7fee67",
+      "Tier": 1,
+      "bytes": 9159887,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N5\\N5_12_2012\\PaddleOCR\\pdf_4",
+      "VisionOCR": "preprocess\\N5\\N5_12_2012\\VisionOCR\\pdf_4"
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N5真题\\2012年\\2012年12月日语N5答案解析+听力原文.pdf",
+      "sha256": "296c16e3eaf9eab1783fdd01710c3bc8f9ab5055c5f86c2907c2a880cff3a651",
+      "Tier": "unranked",
+      "bytes": 7284544,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N5\\N5_12_2012\\PaddleOCR\\pdf_5",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N5\\2012-12_N5\\images\\2012-12_N5_l-p1-q01-img01.jpg",
+      "sha256": "c4a87c53d12df497f31f30e9a426c3098567e48ff8496d19b5112b13c7cf6e7f",
+      "Tier": "unranked",
+      "bytes": 19627,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N5\\2012-12_N5\\images\\2012-12_N5_l-p1-q02-img01.jpg",
+      "sha256": "745de78ca11f0378c151f3badd20b103b8268280c405ad85b4422aa2d9376ed2",
+      "Tier": "unranked",
+      "bytes": 29218,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N5\\2012-12_N5\\images\\2012-12_N5_l-p1-q04-img01.jpg",
+      "sha256": "5a3cb507c1c412530a21dea687c0a2822aa2ed3f75e1c2334576dbe1eea20b18",
+      "Tier": "unranked",
+      "bytes": 46619,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N5\\2012-12_N5\\images\\2012-12_N5_l-p1-q06-img01.jpg",
+      "sha256": "bc253b0fcb436c5f8bef5360c82e2bd839cc4c5215ec8c82b90024ae4549433e",
+      "Tier": "unranked",
+      "bytes": 38013,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N5\\2012-12_N5\\images\\2012-12_N5_l-p2-q01-img01.jpg",
+      "sha256": "06442b338439bfd502300cbc26f8e3ecc7b9ce789025c77b771de6d2e899a5ea",
+      "Tier": "unranked",
+      "bytes": 35021,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N5\\2012-12_N5\\images\\2012-12_N5_l-p2-q03-img01.jpg",
+      "sha256": "d99a6c354a1fe5ed7ce79179808549aa1f58c535aa849009c071059576e92dfc",
+      "Tier": "unranked",
+      "bytes": 44521,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N5\\2012-12_N5\\images\\2012-12_N5_l-p3-q01-img01.jpg",
+      "sha256": "868c743ea45cdc710498b7168ad8b4a8de96713503be25f5dcb0448f91e3a6fa",
+      "Tier": "unranked",
+      "bytes": 25398,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N5\\2012-12_N5\\images\\2012-12_N5_l-p3-q02-img01.jpg",
+      "sha256": "d46a69d90a799d1d20c86eb99a75cc04b10d60a441409ba80c2816b1f010ff89",
+      "Tier": "unranked",
+      "bytes": 27651,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N5\\2012-12_N5\\images\\2012-12_N5_l-p3-q03-img01.jpg",
+      "sha256": "a76a1d9c42756a207748f75b2401c471b4bc828a1a917c6c5c96f4949442bc0b",
+      "Tier": "unranked",
+      "bytes": 33989,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N5\\2012-12_N5\\images\\2012-12_N5_l-p3-q04-img01.jpg",
+      "sha256": "b0e0ba384af096059cf718120c9dafded48c886b16c7b6d6337162987fd0f809",
+      "Tier": "unranked",
+      "bytes": 46486,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N5\\2012-12_N5\\images\\2012-12_N5_l-p3-q05-img01.jpg",
+      "sha256": "87a8a33a0dfeb12c7b799406704ff611b968c0ac7c85dc2a3b7232275751d5de",
+      "Tier": "unranked",
+      "bytes": 43797,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N5\\2012-12_N5\\images\\2012-12_N5_s10-q01-img01.jpg",
+      "sha256": "37a0e66d8753c9b6e4d11f9245378cddc0ccaccaa15e984272cfd8350665aece",
+      "Tier": "unranked",
+      "bytes": 67687,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N5真题\\2012年\\资源二\\该卷第六页缺失，有了会更新哦\\微信截图_20230319225459.png",
+      "sha256": "d3e2073ef1b65b4f5c0b6b7aa192ccc8b86eeaced41d55e618d0c151651064b7",
+      "Tier": "unranked",
+      "bytes": 262241,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    }
+  ]
+}

@@ -1,0 +1,230 @@
+{
+  "format": "norubi-retained-image-exceptions-v1",
+  "exception_id": "retained-original-images-20261108-v1",
+  "status": "user_accepted_originals_unchanged",
+  "utc": "2026-11-08T11:09:57.038761+00:00",
+  "authority": "Explicit user scope change in this goal; supersedes the handoff only for these13 exact raster images.",
+  "user_instruction": "Resume the goal with this scope change: do not perform the proposed pixel edits on the 13 pending raster images. Reuse those original images unchanged in the no-rubi editions, including their embedded furigana. This explicitly overrides the handoff’s requirement to remove every furigana surface for those images. Continue removing furigana from the other supported text surfaces as already implemented. Document the retained image furigana as an accepted exception, and do not describe the editions as completely furigana-free. Finish all 201 paired editions, verification and local installation. Keep the accepted ruby preservation rules and no-subagents instruction.",
+  "display_notice": "Text furigana removed; some original images retain embedded furigana.",
+  "image_edits_authorized": false,
+  "scope": {
+    "images": 13,
+    "owners": 9
+  },
+  "assets": {
+    "b026832b5ab19e24663bb374f9d17f6abc453efc35902d0af0ec734b2aa21497": {
+      "source": {
+        "path": "astraJLPT/assets/illustrations/b026832b5ab19e24663b.png",
+        "sha256": "b026832b5ab19e24663bb374f9d17f6abc453efc35902d0af0ec734b2aa21497"
+      },
+      "review_key": "large-002",
+      "owners": [
+        "N1_1994"
+      ],
+      "pixels": [
+        738,
+        225
+      ],
+      "retained_reading": "こうかんばん",
+      "base_label": "後甲板"
+    },
+    "eae0871737ce818b87a9f0457315cb69d5cb732be8b820fa5f7a836bd577c3a1": {
+      "source": {
+        "path": "astraJLPT/assets/illustrations/eae0871737ce818b87a9.png",
+        "sha256": "eae0871737ce818b87a9f0457315cb69d5cb732be8b820fa5f7a836bd577c3a1"
+      },
+      "review_key": "large-006",
+      "owners": [
+        "N1_1998"
+      ],
+      "pixels": [
+        781,
+        530
+      ],
+      "retained_reading": "おおさか; なごや",
+      "base_label": "大阪; 名古屋"
+    },
+    "d04246b5395dc5ca687adaa0c0b4429de8e7adf81cd98de6927f6f82c31dbc3e": {
+      "source": {
+        "path": "astraJLPT/assets/illustrations/d04246b5395dc5ca687a.png",
+        "sha256": "d04246b5395dc5ca687adaa0c0b4429de8e7adf81cd98de6927f6f82c31dbc3e"
+      },
+      "review_key": "large-012",
+      "owners": [
+        "N2_1994"
+      ],
+      "pixels": [
+        217,
+        161
+      ],
+      "retained_reading": "くき",
+      "base_label": "茎"
+    },
+    "e416aec38ddcf6a4e8cfa2073f25daf3938a51152fcf84ad0dda378339e0f6f2": {
+      "source": {
+        "path": "astraJLPT/assets/illustrations/e416aec38ddcf6a4e8cf.png",
+        "sha256": "e416aec38ddcf6a4e8cfa2073f25daf3938a51152fcf84ad0dda378339e0f6f2"
+      },
+      "review_key": "large-013",
+      "owners": [
+        "N2_1994"
+      ],
+      "pixels": [
+        286,
+        184
+      ],
+      "retained_reading": "さく",
+      "base_label": "柵"
+    },
+    "548db8163e0ea660e6b8383f253e9933f2be8070567e9f46bdd78e49116af22f": {
+      "source": {
+        "path": "astraJLPT/assets/illustrations/548db8163e0ea660e6b8.png",
+        "sha256": "548db8163e0ea660e6b8383f253e9933f2be8070567e9f46bdd78e49116af22f"
+      },
+      "review_key": "large-029",
+      "owners": [
+        "N2_1998"
+      ],
+      "pixels": [
+        781,
+        530
+      ],
+      "retained_reading": "おおさか; なごや",
+      "base_label": "大阪; 名古屋"
+    },
+    "607c3a4416ffc0cf97a5a6b29ca49d7140fceea2d6c72eed3c48bde604cb9be4": {
+      "source": {
+        "path": "astraJLPT/assets/illustrations/607c3a4416ffc0cf97a5.png",
+        "sha256": "607c3a4416ffc0cf97a5a6b29ca49d7140fceea2d6c72eed3c48bde604cb9be4"
+      },
+      "review_key": "large-044",
+      "owners": [
+        "N3_1991"
+      ],
+      "pixels": [
+        238,
+        364
+      ],
+      "retained_reading": "でんごんばん",
+      "base_label": "伝言板"
+    },
+    "f056629a471f311e5d3aaa90383837bc7c6b5ae3c4038992140c25c2441299fa": {
+      "source": {
+        "path": "astraJLPT/assets/illustrations/f056629a471f311e5d3a.png",
+        "sha256": "f056629a471f311e5d3aaa90383837bc7c6b5ae3c4038992140c25c2441299fa"
+      },
+      "review_key": "large-149",
+      "owners": [
+        "N4_1992"
+      ],
+      "pixels": [
+        376,
+        172
+      ],
+      "retained_reading": "だいがくせい",
+      "base_label": "大学生"
+    },
+    "e4bfef2e284b2ab424eaabe480f9636caf2a72c89b368c11914af303bcab0ec4": {
+      "source": {
+        "path": "astraJLPT/assets/illustrations/e4bfef2e284b2ab424ea.png",
+        "sha256": "e4bfef2e284b2ab424eaabe480f9636caf2a72c89b368c11914af303bcab0ec4"
+      },
+      "review_key": "large-160",
+      "owners": [
+        "N4_2007"
+      ],
+      "pixels": [
+        2147,
+        361
+      ],
+      "retained_reading": "えき × 3",
+      "base_label": "駅 × 3"
+    },
+    "a1aa279d70df32799eee82cfe480d4e9aee2b195af0683e7ba2ae2c6ec8e2ca6": {
+      "source": {
+        "path": "astraJLPT/assets/illustrations/a1aa279d70df32799eee.png",
+        "sha256": "a1aa279d70df32799eee82cfe480d4e9aee2b195af0683e7ba2ae2c6ec8e2ca6"
+      },
+      "review_key": "large-161",
+      "owners": [
+        "N4_2007"
+      ],
+      "pixels": [
+        2147,
+        361
+      ],
+      "retained_reading": "えき × 3",
+      "base_label": "駅 × 3"
+    },
+    "85276f72c7380ac482863db1cced8d37904251946b48ae01d5e78878997a6e9c": {
+      "source": {
+        "path": "astraJLPT/assets/illustrations/85276f72c7380ac48286.png",
+        "sha256": "85276f72c7380ac482863db1cced8d37904251946b48ae01d5e78878997a6e9c"
+      },
+      "review_key": "large-162",
+      "owners": [
+        "N4_2007"
+      ],
+      "pixels": [
+        2147,
+        339
+      ],
+      "retained_reading": "えき × 3",
+      "base_label": "駅 × 3"
+    },
+    "f179144231a5b5293bfe7f4fed1c0dc1912d41e13d6290d9881d612c556672b4": {
+      "source": {
+        "path": "astraJLPT/assets/illustrations/f179144231a5b5293bfe.png",
+        "sha256": "f179144231a5b5293bfe7f4fed1c0dc1912d41e13d6290d9881d612c556672b4"
+      },
+      "review_key": "large-163",
+      "owners": [
+        "N4_2007"
+      ],
+      "pixels": [
+        2147,
+        334
+      ],
+      "retained_reading": "えき × 3",
+      "base_label": "駅 × 3"
+    },
+    "99f50490d955f239087262f1f7297d7774906435c53c2c3c5e57375fe85d0d54": {
+      "source": {
+        "path": "astraJLPT/assets/illustrations/99f50490d955f2390872.png",
+        "sha256": "99f50490d955f239087262f1f7297d7774906435c53c2c3c5e57375fe85d0d54"
+      },
+      "review_key": "large-170",
+      "owners": [
+        "N4_sample_2009"
+      ],
+      "pixels": [
+        756,
+        333
+      ],
+      "retained_reading": "ばこ × 4",
+      "base_label": "箱 × 4"
+    },
+    "88d424b3a3373cba5b29ce180272d0cd1bf09eeb0a714bd59104f38a4feaa80e": {
+      "source": {
+        "path": "astraJLPT/assets/illustrations/88d424b3a3373cba5b29.png",
+        "sha256": "88d424b3a3373cba5b29ce180272d0cd1bf09eeb0a714bd59104f38a4feaa80e"
+      },
+      "review_key": "large-197",
+      "owners": [
+        "N5_sample_2009"
+      ],
+      "pixels": [
+        895,
+        183
+      ],
+      "retained_reading": "でんしゃ; じかん",
+      "base_label": "電車; 時間"
+    }
+  },
+  "unchanged_contracts": [
+    "Accepted regular ruby preserved except the authorized Q72 space correction and two 金額 additions.",
+    "Remove furigana from all other supported text/cover/vector surfaces as implemented.",
+    "Preserve original asset bytes, all questions/keys, ownership and listening/exclusion boundaries.",
+    "One agent; no subagents."
+  ]
+}

@@ -1,0 +1,1433 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark light"><title>Developer review · N4_12_2021 · astraJLPT</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../assets/fonts-b3161f97fe399912.css?v=c16ef3ef7e1a"><link rel="stylesheet" href="../assets/themes.css?v=7ad0820747dc"><link rel="stylesheet" href="../assets/answer-marking.css?v=bec6b4920050"><link rel="stylesheet" href="../assets/site.css?v=7ae9ae7c768b"><link rel="stylesheet" href="../assets/pdf-typography.css?v=ba55af25606f"><link rel="stylesheet" href="../assets/paper-shared.css?v=8f3ca38dca80"></head><body class="catalog-page"><a class="skip-link" href="#content">Skip to content</a><header class="topbar" id="page-top" tabindex="-1"><a class="wordmark" id="brand" href="../index.html">astra<span>JLPT</span></a><details id="settings" class="settings"><summary aria-label="Open settings" title="Settings"><span aria-hidden="true">⚙</span><span class="sr-only">Settings</span></summary><div class="settings-panel"><div class="settings-title"><h2>settings</h2><button type="button" id="close-settings" class="js-only" aria-label="Close settings">×</button></div><div class="settings-tabs" role="group" aria-label="Settings categories"><label><input type="radio" name="settings-view" value="appearance" checked><span>theme</span></label><label><input type="radio" name="settings-view" value="browser"><span>browser</span></label></div><section data-settings="appearance"><div class="theme-workspace"><div class="theme-picker"><div class="setting-heading"><h3>theme</h3></div><div class="theme-grid originals"><label class="theme-card ps-gh"><input type="radio" name="theme" id="theme-jlpt_paper" value="jlpt_paper"><span>jlpt_paper</span></label><label class="theme-card ps-ck"><input type="radio" name="theme" id="theme-astraJLPT_dark" value="astraJLPT_dark" checked><span>astraJLPT_dark</span></label><label class="theme-card ps-ga"><input type="radio" name="theme" id="theme-astraJLPT_sepia" value="astraJLPT_sepia"><span>astraJLPT_sepia</span></label></div><div class="js-only"><p class="settings-label">three random picks</p><div class="theme-grid" id="quick-picks"></div></div><details><summary>all 187 Monkeytype palettes</summary><label class="theme-search js-only">find a palette<input id="theme-search" type="search" placeholder="search themes" autocomplete="off"></label><div class="theme-grid theme-catalog"><label class="theme-card ps-e9"><input type="radio" name="theme" id="theme-8008" value="8008"><span>8008</span></label><label class="theme-card ps-cw"><input type="radio" name="theme" id="theme-80s_after_dark" value="80s_after_dark"><span>80s after dark</span></label><label class="theme-card ps-fq"><input type="radio" name="theme" id="theme-9009" value="9009"><span>9009</span></label><label class="theme-card ps-cc"><input type="radio" name="theme" id="theme-aether" value="aether"><span>aether</span></label><label class="theme-card ps-cz"><input type="radio" name="theme" id="theme-alduin" value="alduin"><span>alduin</span></label><label class="theme-card ps-el"><input type="radio" name="theme" id="theme-alpine" value="alpine"><span>alpine</span></label><label class="theme-card ps-bg"><input type="radio" name="theme" id="theme-anti_hero" value="anti_hero"><span>anti hero</span></label><label class="theme-card ps-c3"><input type="radio" name="theme" id="theme-arch" value="arch"><span>arch</span></label><label class="theme-card ps-bt"><input type="radio" name="theme" id="theme-aurora" value="aurora"><span>aurora</span></label><label class="theme-card ps-g8"><input type="radio" name="theme" id="theme-beach" value="beach"><span>beach</span></label><label class="theme-card ps-dz"><input type="radio" name="theme" id="theme-bento" value="bento"><span>bento</span></label><label class="theme-card ps-f1"><input type="radio" name="theme" id="theme-bingsu" value="bingsu"><span>bingsu</span></label><label class="theme-card ps-dl"><input type="radio" name="theme" id="theme-bliss" value="bliss"><span>bliss</span></label><label class="theme-card ps-bn"><input type="radio" name="theme" id="theme-blue_dolphin" value="blue_dolphin"><span>blue dolphin</span></label><label class="theme-card ps-dd"><input type="radio" name="theme" id="theme-blueberry_dark" value="blueberry_dark"><span>blueberry dark</span></label><label class="theme-card ps-fd"><input type="radio" name="theme" id="theme-blueberry_light" value="blueberry_light"><span>blueberry light</span></label><label class="theme-card ps-ep"><input type="radio" name="theme" id="theme-botanical" value="botanical"><span>botanical</span></label><label class="theme-card ps-cl"><input type="radio" name="theme" id="theme-bouquet" value="bouquet"><span>bouquet</span></label><label class="theme-card ps-fk"><input type="radio" name="theme" id="theme-breeze" value="breeze"><span>breeze</span></label><label class="theme-card ps-dk"><input type="radio" name="theme" id="theme-bushido" value="bushido"><span>bushido</span></label><label class="theme-card ps-f5"><input type="radio" name="theme" id="theme-cafe" value="cafe"><span>cafe</span></label><label class="theme-card ps-g1"><input type="radio" name="theme" id="theme-camping" value="camping"><span>camping</span></label><label class="theme-card ps-e4"><input type="radio" name="theme" id="theme-carbon" value="carbon"><span>carbon</span></label><label class="theme-card ps-d3"><input type="radio" name="theme" id="theme-catppuccin" value="catppuccin"><span>catppuccin</span></label><label class="theme-card ps-ch"><input type="radio" name="theme" id="theme-chaos_theory" value="chaos_theory"><span>chaos theory</span></label><label class="theme-card ps-g3"><input type="radio" name="theme" id="theme-cheesecake" value="cheesecake"><span>cheesecake</span></label><label class="theme-card ps-e7"><input type="radio" name="theme" id="theme-cherry_blossom" value="cherry_blossom"><span>cherry blossom</span></label><label class="theme-card ps-eh"><input type="radio" name="theme" id="theme-comfy" value="comfy"><span>comfy</span></label><label class="theme-card ps-ef"><input type="radio" name="theme" id="theme-copper" value="copper"><span>copper</span></label><label class="theme-card ps-g6"><input type="radio" name="theme" id="theme-creamsicle" value="creamsicle"><span>creamsicle</span></label><label class="theme-card ps-em"><input type="radio" name="theme" id="theme-cy_red" value="cy_red"><span>cy red</span></label><label class="theme-card ps-co"><input type="radio" name="theme" id="theme-cyberspace" value="cyberspace"><span>cyberspace</span></label><label class="theme-card ps-cd"><input type="radio" name="theme" id="theme-dark" value="dark"><span>dark</span></label><label class="theme-card ps-bz"><input type="radio" name="theme" id="theme-dark_magic_girl" value="dark_magic_girl"><span>dark magic girl</span></label><label class="theme-card ps-d6"><input type="radio" name="theme" id="theme-dark_note" value="dark_note"><span>dark note</span></label><label class="theme-card ps-g5"><input type="radio" name="theme" id="theme-darling" value="darling"><span>darling</span></label><label class="theme-card ps-bw"><input type="radio" name="theme" id="theme-deku" value="deku"><span>deku</span></label><label class="theme-card ps-g9"><input type="radio" name="theme" id="theme-desert_oasis" value="desert_oasis"><span>desert oasis</span></label><label class="theme-card ps-cx"><input type="radio" name="theme" id="theme-dev" value="dev"><span>dev</span></label><label class="theme-card ps-ek"><input type="radio" name="theme" id="theme-diner" value="diner"><span>diner</span></label><label class="theme-card ps-gi"><input type="radio" name="theme" id="theme-dino" value="dino"><span>dino</span></label><label class="theme-card ps-e6"><input type="radio" name="theme" id="theme-discord" value="discord"><span>discord</span></label><label class="theme-card ps-fc"><input type="radio" name="theme" id="theme-dmg" value="dmg"><span>dmg</span></label><label class="theme-card ps-fj"><input type="radio" name="theme" id="theme-dollar" value="dollar"><span>dollar</span></label><label class="theme-card ps-ce"><input type="radio" name="theme" id="theme-dots" value="dots"><span>dots</span></label><label class="theme-card ps-dq"><input type="radio" name="theme" id="theme-dracula" value="dracula"><span>dracula</span></label><label class="theme-card ps-cq"><input type="radio" name="theme" id="theme-drowning" value="drowning"><span>drowning</span></label><label class="theme-card ps-eo"><input type="radio" name="theme" id="theme-dualshot" value="dualshot"><span>dualshot</span></label><label class="theme-card ps-dr"><input type="radio" name="theme" id="theme-earthsong" value="earthsong"><span>earthsong</span></label><label class="theme-card ps-ci"><input type="radio" name="theme" id="theme-everblush" value="everblush"><span>everblush</span></label><label class="theme-card ps-bq"><input type="radio" name="theme" id="theme-evil_eye" value="evil_eye"><span>evil eye</span></label><label class="theme-card ps-bp"><input type="radio" name="theme" id="theme-ez_mode" value="ez_mode"><span>ez mode</span></label><label class="theme-card ps-c8"><input type="radio" name="theme" id="theme-fire" value="fire"><span>fire</span></label><label class="theme-card ps-eb"><input type="radio" name="theme" id="theme-fledgling" value="fledgling"><span>fledgling</span></label><label class="theme-card ps-f3"><input type="radio" name="theme" id="theme-fleuriste" value="fleuriste"><span>fleuriste</span></label><label class="theme-card ps-bl"><input type="radio" name="theme" id="theme-floret" value="floret"><span>floret</span></label><label class="theme-card ps-fh"><input type="radio" name="theme" id="theme-froyo" value="froyo"><span>froyo</span></label><label class="theme-card ps-et"><input type="radio" name="theme" id="theme-frozen_llama" value="frozen_llama"><span>frozen llama</span></label><label class="theme-card ps-f9"><input type="radio" name="theme" id="theme-fruit_chew" value="fruit_chew"><span>fruit chew</span></label><label class="theme-card ps-en"><input type="radio" name="theme" id="theme-fundamentals" value="fundamentals"><span>fundamentals</span></label><label class="theme-card ps-e0"><input type="radio" name="theme" id="theme-future_funk" value="future_funk"><span>future funk</span></label><label class="theme-card ps-dc"><input type="radio" name="theme" id="theme-github" value="github"><span>github</span></label><label class="theme-card ps-fn"><input type="radio" name="theme" id="theme-godspeed" value="godspeed"><span>godspeed</span></label><label class="theme-card ps-e3"><input type="radio" name="theme" id="theme-graen" value="graen"><span>graen</span></label><label class="theme-card ps-ea"><input type="radio" name="theme" id="theme-grand_prix" value="grand_prix"><span>grand prix</span></label><label class="theme-card ps-dv"><input type="radio" name="theme" id="theme-grape" value="grape"><span>grape</span></label><label class="theme-card ps-dp"><input type="radio" name="theme" id="theme-gruvbox_dark" value="gruvbox_dark"><span>gruvbox dark</span></label><label class="theme-card ps-g2"><input type="radio" name="theme" id="theme-gruvbox_light" value="gruvbox_light"><span>gruvbox light</span></label><label class="theme-card ps-bu"><input type="radio" name="theme" id="theme-hammerhead" value="hammerhead"><span>hammerhead</span></label><label class="theme-card ps-fa"><input type="radio" name="theme" id="theme-hanok" value="hanok"><span>hanok</span></label><label class="theme-card ps-ed"><input type="radio" name="theme" id="theme-hedge" value="hedge"><span>hedge</span></label><label class="theme-card ps-fu"><input type="radio" name="theme" id="theme-honey" value="honey"><span>honey</span></label><label class="theme-card ps-d0"><input type="radio" name="theme" id="theme-horizon" value="horizon"><span>horizon</span></label><label class="theme-card ps-bf"><input type="radio" name="theme" id="theme-husqy" value="husqy"><span>husqy</span></label><label class="theme-card ps-cj"><input type="radio" name="theme" id="theme-iceberg_dark" value="iceberg_dark"><span>iceberg dark</span></label><label class="theme-card ps-fl"><input type="radio" name="theme" id="theme-iceberg_light" value="iceberg_light"><span>iceberg light</span></label><label class="theme-card ps-c7"><input type="radio" name="theme" id="theme-incognito" value="incognito"><span>incognito</span></label><label class="theme-card ps-d8"><input type="radio" name="theme" id="theme-ishtar" value="ishtar"><span>ishtar</span></label><label class="theme-card ps-eu"><input type="radio" name="theme" id="theme-iv_clover" value="iv_clover"><span>iv clover</span></label><label class="theme-card ps-c2"><input type="radio" name="theme" id="theme-iv_spade" value="iv_spade"><span>iv spade</span></label><label class="theme-card ps-cu"><input type="radio" name="theme" id="theme-joker" value="joker"><span>joker</span></label><label class="theme-card ps-de"><input type="radio" name="theme" id="theme-laser" value="laser"><span>laser</span></label><label class="theme-card ps-ex"><input type="radio" name="theme" id="theme-lavender" value="lavender"><span>lavender</span></label><label class="theme-card ps-ew"><input type="radio" name="theme" id="theme-leather" value="leather"><span>leather</span></label><label class="theme-card ps-fo"><input type="radio" name="theme" id="theme-lil_dragon" value="lil_dragon"><span>lil dragon</span></label><label class="theme-card ps-gd"><input type="radio" name="theme" id="theme-lilac_mist" value="lilac_mist"><span>lilac mist</span></label><label class="theme-card ps-er"><input type="radio" name="theme" id="theme-lime" value="lime"><span>lime</span></label><label class="theme-card ps-df"><input type="radio" name="theme" id="theme-luna" value="luna"><span>luna</span></label><label class="theme-card ps-ez"><input type="radio" name="theme" id="theme-macroblank" value="macroblank"><span>macroblank</span></label><label class="theme-card ps-gk"><input type="radio" name="theme" id="theme-magic_girl" value="magic_girl"><span>magic girl</span></label><label class="theme-card ps-du"><input type="radio" name="theme" id="theme-mashu" value="mashu"><span>mashu</span></label><label class="theme-card ps-ei"><input type="radio" name="theme" id="theme-matcha_moccha" value="matcha_moccha"><span>matcha moccha</span></label><label class="theme-card ps-dn"><input type="radio" name="theme" id="theme-material" value="material"><span>material</span></label><label class="theme-card ps-be"><input type="radio" name="theme" id="theme-matrix" value="matrix"><span>matrix</span></label><label class="theme-card ps-br"><input type="radio" name="theme" id="theme-menthol" value="menthol"><span>menthol</span></label><label class="theme-card ps-dg"><input type="radio" name="theme" id="theme-metaverse" value="metaverse"><span>metaverse</span></label><label class="theme-card ps-ca"><input type="radio" name="theme" id="theme-metropolis" value="metropolis"><span>metropolis</span></label><label class="theme-card ps-g0"><input type="radio" name="theme" id="theme-mexican" value="mexican"><span>mexican</span></label><label class="theme-card ps-fv"><input type="radio" name="theme" id="theme-miami" value="miami"><span>miami</span></label><label class="theme-card ps-cn"><input type="radio" name="theme" id="theme-miami_nights" value="miami_nights"><span>miami nights</span></label><label class="theme-card ps-c0"><input type="radio" name="theme" id="theme-midnight" value="midnight"><span>midnight</span></label><label class="theme-card ps-gf"><input type="radio" name="theme" id="theme-milkshake" value="milkshake"><span>milkshake</span></label><label class="theme-card ps-bv"><input type="radio" name="theme" id="theme-mint" value="mint"><span>mint</span></label><label class="theme-card ps-ey"><input type="radio" name="theme" id="theme-mizu" value="mizu"><span>mizu</span></label><label class="theme-card ps-dy"><input type="radio" name="theme" id="theme-modern_dolch" value="modern_dolch"><span>modern dolch</span></label><label class="theme-card ps-fe"><input type="radio" name="theme" id="theme-modern_dolch_light" value="modern_dolch_light"><span>modern dolch light</span></label><label class="theme-card ps-gm"><input type="radio" name="theme" id="theme-modern_ink" value="modern_ink"><span>modern ink</span></label><label class="theme-card ps-do"><input type="radio" name="theme" id="theme-monokai" value="monokai"><span>monokai</span></label><label class="theme-card ps-cs"><input type="radio" name="theme" id="theme-moonlight" value="moonlight"><span>moonlight</span></label><label class="theme-card ps-c9"><input type="radio" name="theme" id="theme-mountain" value="mountain"><span>mountain</span></label><label class="theme-card ps-f8"><input type="radio" name="theme" id="theme-mr_sleeves" value="mr_sleeves"><span>mr sleeves</span></label><label class="theme-card ps-gj"><input type="radio" name="theme" id="theme-ms_cupcakes" value="ms_cupcakes"><span>ms cupcakes</span></label><label class="theme-card ps-ej"><input type="radio" name="theme" id="theme-muted" value="muted"><span>muted</span></label><label class="theme-card ps-cg"><input type="radio" name="theme" id="theme-nautilus" value="nautilus"><span>nautilus</span></label><label class="theme-card ps-db"><input type="radio" name="theme" id="theme-nebula" value="nebula"><span>nebula</span></label><label class="theme-card ps-da"><input type="radio" name="theme" id="theme-night_runner" value="night_runner"><span>night runner</span></label><label class="theme-card ps-dj"><input type="radio" name="theme" id="theme-nord" value="nord"><span>nord</span></label><label class="theme-card ps-fp"><input type="radio" name="theme" id="theme-nord_light" value="nord_light"><span>nord light</span></label><label class="theme-card ps-di"><input type="radio" name="theme" id="theme-norse" value="norse"><span>norse</span></label><label class="theme-card ps-e5"><input type="radio" name="theme" id="theme-oblivion" value="oblivion"><span>oblivion</span></label><label class="theme-card ps-fm"><input type="radio" name="theme" id="theme-olive" value="olive"><span>olive</span></label><label class="theme-card ps-cy"><input type="radio" name="theme" id="theme-olivia" value="olivia"><span>olivia</span></label><label class="theme-card ps-e2"><input type="radio" name="theme" id="theme-onedark" value="onedark"><span>onedark</span></label><label class="theme-card ps-f4"><input type="radio" name="theme" id="theme-our_theme" value="our_theme"><span>our theme</span></label><label class="theme-card ps-ee"><input type="radio" name="theme" id="theme-pale_nimbus" value="pale_nimbus"><span>pale nimbus</span></label><label class="theme-card ps-fr"><input type="radio" name="theme" id="theme-paper" value="paper"><span>paper</span></label><label class="theme-card ps-eq"><input type="radio" name="theme" id="theme-passion_fruit" value="passion_fruit"><span>passion fruit</span></label><label class="theme-card ps-ff"><input type="radio" name="theme" id="theme-pastel" value="pastel"><span>pastel</span></label><label class="theme-card ps-ds"><input type="radio" name="theme" id="theme-peach_blossom" value="peach_blossom"><span>peach blossom</span></label><label class="theme-card ps-fg"><input type="radio" name="theme" id="theme-peaches" value="peaches"><span>peaches</span></label><label class="theme-card ps-bk"><input type="radio" name="theme" id="theme-phantom" value="phantom"><span>phantom</span></label><label class="theme-card ps-fz"><input type="radio" name="theme" id="theme-pink_lemonade" value="pink_lemonade"><span>pink lemonade</span></label><label class="theme-card ps-cm"><input type="radio" name="theme" id="theme-pulse" value="pulse"><span>pulse</span></label><label class="theme-card ps-d4"><input type="radio" name="theme" id="theme-purpleish" value="purpleish"><span>purpleish</span></label><label class="theme-card ps-fy"><input type="radio" name="theme" id="theme-rainbow_trail" value="rainbow_trail"><span>rainbow trail</span></label><label class="theme-card ps-ct"><input type="radio" name="theme" id="theme-red_dragon" value="red_dragon"><span>red dragon</span></label><label class="theme-card ps-es"><input type="radio" name="theme" id="theme-red_samurai" value="red_samurai"><span>red samurai</span></label><label class="theme-card ps-e1"><input type="radio" name="theme" id="theme-repose_dark" value="repose_dark"><span>repose dark</span></label><label class="theme-card ps-fs"><input type="radio" name="theme" id="theme-repose_light" value="repose_light"><span>repose light</span></label><label class="theme-card ps-fb"><input type="radio" name="theme" id="theme-retro" value="retro"><span>retro</span></label><label class="theme-card ps-bx"><input type="radio" name="theme" id="theme-retrocast" value="retrocast"><span>retrocast</span></label><label class="theme-card ps-cd"><input type="radio" name="theme" id="theme-rgb" value="rgb"><span>rgb</span></label><label class="theme-card ps-d5"><input type="radio" name="theme" id="theme-rose_pine" value="rose_pine"><span>rose pine</span></label><label class="theme-card ps-gc"><input type="radio" name="theme" id="theme-rose_pine_dawn" value="rose_pine_dawn"><span>rose pine dawn</span></label><label class="theme-card ps-dt"><input type="radio" name="theme" id="theme-rose_pine_moon" value="rose_pine_moon"><span>rose pine moon</span></label><label class="theme-card ps-cv"><input type="radio" name="theme" id="theme-rudy" value="rudy"><span>rudy</span></label><label class="theme-card ps-by"><input type="radio" name="theme" id="theme-ryujinscales" value="ryujinscales"><span>ryujinscales</span></label><label class="theme-card ps-fi"><input type="radio" name="theme" id="theme-serika" value="serika"><span>serika</span></label><label class="theme-card ps-e8"><input type="radio" name="theme" id="theme-serika_dark" value="serika_dark"><span>serika dark</span></label><label class="theme-card ps-dh"><input type="radio" name="theme" id="theme-sewing_tin" value="sewing_tin"><span>sewing tin</span></label><label class="theme-card ps-gg"><input type="radio" name="theme" id="theme-sewing_tin_light" value="sewing_tin_light"><span>sewing tin light</span></label><label class="theme-card ps-bi"><input type="radio" name="theme" id="theme-shadow" value="shadow"><span>shadow</span></label><label class="theme-card ps-f6"><input type="radio" name="theme" id="theme-shoko" value="shoko"><span>shoko</span></label><label class="theme-card ps-ge"><input type="radio" name="theme" id="theme-slambook" value="slambook"><span>slambook</span></label><label class="theme-card ps-f2"><input type="radio" name="theme" id="theme-snes" value="snes"><span>snes</span></label><label class="theme-card ps-gb"><input type="radio" name="theme" id="theme-soaring_skies" value="soaring_skies"><span>soaring skies</span></label><label class="theme-card ps-bm"><input type="radio" name="theme" id="theme-solarized_dark" value="solarized_dark"><span>solarized dark</span></label><label class="theme-card ps-g4"><input type="radio" name="theme" id="theme-solarized_light" value="solarized_light"><span>solarized light</span></label><label class="theme-card ps-bj"><input type="radio" name="theme" id="theme-solarized_osaka" value="solarized_osaka"><span>solarized osaka</span></label><label class="theme-card ps-dw"><input type="radio" name="theme" id="theme-sonokai" value="sonokai"><span>sonokai</span></label><label class="theme-card ps-c5"><input type="radio" name="theme" id="theme-spiderman" value="spiderman"><span>spiderman</span></label><label class="theme-card ps-bs"><input type="radio" name="theme" id="theme-stealth" value="stealth"><span>stealth</span></label><label class="theme-card ps-fw"><input type="radio" name="theme" id="theme-strawberry" value="strawberry"><span>strawberry</span></label><label class="theme-card ps-cf"><input type="radio" name="theme" id="theme-striker" value="striker"><span>striker</span></label><label class="theme-card ps-ec"><input type="radio" name="theme" id="theme-suisei" value="suisei"><span>suisei</span></label><label class="theme-card ps-d9"><input type="radio" name="theme" id="theme-sunset" value="sunset"><span>sunset</span></label><label class="theme-card ps-dm"><input type="radio" name="theme" id="theme-superuser" value="superuser"><span>superuser</span></label><label class="theme-card ps-bo"><input type="radio" name="theme" id="theme-sweden" value="sweden"><span>sweden</span></label><label class="theme-card ps-g7"><input type="radio" name="theme" id="theme-tangerine" value="tangerine"><span>tangerine</span></label><label class="theme-card ps-f0"><input type="radio" name="theme" id="theme-taro" value="taro"><span>taro</span></label><label class="theme-card ps-cr"><input type="radio" name="theme" id="theme-terminal" value="terminal"><span>terminal</span></label><label class="theme-card ps-c4"><input type="radio" name="theme" id="theme-terra" value="terra"><span>terra</span></label><label class="theme-card ps-ft"><input type="radio" name="theme" id="theme-terrazzo" value="terrazzo"><span>terrazzo</span></label><label class="theme-card ps-c1"><input type="radio" name="theme" id="theme-terror_below" value="terror_below"><span>terror below</span></label><label class="theme-card ps-f7"><input type="radio" name="theme" id="theme-tiramisu" value="tiramisu"><span>tiramisu</span></label><label class="theme-card ps-eg"><input type="radio" name="theme" id="theme-trackday" value="trackday"><span>trackday</span></label><label class="theme-card ps-bh"><input type="radio" name="theme" id="theme-trance" value="trance"><span>trance</span></label><label class="theme-card ps-c6"><input type="radio" name="theme" id="theme-tron_orange" value="tron_orange"><span>tron orange</span></label><label class="theme-card ps-ev"><input type="radio" name="theme" id="theme-vaporwave" value="vaporwave"><span>vaporwave</span></label><label class="theme-card ps-cb"><input type="radio" name="theme" id="theme-vesper" value="vesper"><span>vesper</span></label><label class="theme-card ps-gl"><input type="radio" name="theme" id="theme-vesper_light" value="vesper_light"><span>vesper light</span></label><label class="theme-card ps-dx"><input type="radio" name="theme" id="theme-viridescent" value="viridescent"><span>viridescent</span></label><label class="theme-card ps-cp"><input type="radio" name="theme" id="theme-voc" value="voc"><span>voc</span></label><label class="theme-card ps-d2"><input type="radio" name="theme" id="theme-vscode" value="vscode"><span>vscode</span></label><label class="theme-card ps-d7"><input type="radio" name="theme" id="theme-watermelon" value="watermelon"><span>watermelon</span></label><label class="theme-card ps-d1"><input type="radio" name="theme" id="theme-wavez" value="wavez"><span>wavez</span></label><label class="theme-card ps-fx"><input type="radio" name="theme" id="theme-witch_girl" value="witch_girl"><span>witch girl</span></label></div></details><div class="js-only ps-14h" id="monkeytype-text-source">
+<h3>reading text color</h3>
+<p class="control-help">Auto chooses the more readable palette color. Choose sub or text to set it yourself; answer colors adapt.</p>
+<div aria-label="Monkeytype reading text color" class="segmented" role="group">
+<label><input checked="" name="text-source" type="radio" value="auto"/><span>auto</span></label>
+<label><input name="text-source" type="radio" value="sub"/><span>sub</span></label>
+<label><input name="text-source" type="radio" value="text"/><span>text</span></label>
+</div>
+<p aria-live="polite" class="control-help ps-14i" id="monkeytype-text-status" role="status"></p>
+</div></div><aside class="theme-editor js-only" aria-label="Customize theme colors"><div class="color-editor-heading"><h3>colors</h3><button type="button" id="reset-theme-colors" aria-label="Reset this theme">reset</button></div><span class="sr-only" id="color-format-help">Choose a swatch or enter hex. Transparent borders accept #RRGGBBAA. Reset restores the theme color.</span><span class="sr-only" id="color-edit-status" role="status" aria-live="polite"></span><div class="main-colors"><div class="color-row" data-color-row="bg">
+<label for="color-bg">background</label>
+<div class="color-inputs"><input type="color" id="swatch-bg" aria-label="background swatch" data-color-swatch="bg">
+<input type="text" id="color-bg" data-color-hex="bg" aria-label="background hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="bg" aria-label="Reset background" title="Reset background">↺</button></div></div><div class="color-row" data-color-row="text">
+<label for="color-text">reading text</label>
+<div class="color-inputs"><input type="color" id="swatch-text" aria-label="reading text swatch" data-color-swatch="text">
+<input type="text" id="color-text" data-color-hex="text" aria-label="reading text hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="text" aria-label="Reset reading text" title="Reset reading text">↺</button></div></div><div class="color-row" data-color-row="muted">
+<label for="color-muted">secondary text</label>
+<div class="color-inputs"><input type="color" id="swatch-muted" aria-label="secondary text swatch" data-color-swatch="muted">
+<input type="text" id="color-muted" data-color-hex="muted" aria-label="secondary text hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="muted" aria-label="Reset secondary text" title="Reset secondary text">↺</button></div></div><div class="color-row" data-color-row="accent">
+<label for="color-accent">interface accent</label>
+<div class="color-inputs"><input type="color" id="swatch-accent" aria-label="interface accent swatch" data-color-swatch="accent">
+<input type="text" id="color-accent" data-color-hex="accent" aria-label="interface accent hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="accent" aria-label="Reset interface accent" title="Reset interface accent">↺</button></div></div><div class="color-row" data-color-row="correct">
+<label for="color-correct">correct</label>
+<div class="color-inputs"><input type="color" id="swatch-correct" aria-label="correct swatch" data-color-swatch="correct">
+<input type="text" id="color-correct" data-color-hex="correct" aria-label="correct hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="correct" aria-label="Reset correct" title="Reset correct">↺</button></div></div><div class="color-row" data-color-row="wrong">
+<label for="color-wrong">wrong</label>
+<div class="color-inputs"><input type="color" id="swatch-wrong" aria-label="wrong swatch" data-color-swatch="wrong">
+<input type="text" id="color-wrong" data-color-hex="wrong" aria-label="wrong hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="wrong" aria-label="Reset wrong" title="Reset wrong">↺</button></div></div></div><details class="advanced-colors"><summary>more colors</summary><div class="advanced-color-grid"><div class="color-row" data-color-row="raised">
+<label for="color-raised">buttons &amp; controls</label>
+<div class="color-inputs"><input type="color" id="swatch-raised" aria-label="buttons &amp; controls swatch" data-color-swatch="raised">
+<input type="text" id="color-raised" data-color-hex="raised" aria-label="buttons &amp; controls hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="raised" aria-label="Reset buttons &amp; controls" title="Reset buttons &amp; controls">↺</button></div></div><div class="color-row" data-color-row="correct-ink">
+<label for="color-correct-ink">correct text &amp; numbers</label>
+<div class="color-inputs"><input type="color" id="swatch-correct-ink" aria-label="correct text &amp; numbers swatch" data-color-swatch="correct-ink">
+<input type="text" id="color-correct-ink" data-color-hex="correct-ink" aria-label="correct text &amp; numbers hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="correct-ink" aria-label="Reset correct text &amp; numbers" title="Reset correct text &amp; numbers">↺</button></div></div><div class="color-row" data-color-row="edge">
+<label for="color-edge">paper outline</label>
+<div class="color-inputs"><input type="color" id="swatch-edge" aria-label="paper outline swatch" data-color-swatch="edge">
+<input type="text" id="color-edge" data-color-hex="edge" aria-label="paper outline hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge" aria-label="Reset paper outline" title="Reset paper outline">↺</button></div></div><div class="color-row" data-color-row="edge-soft">
+<label for="color-edge-soft">soft dividers</label>
+<div class="color-inputs"><input type="color" id="swatch-edge-soft" aria-label="soft dividers swatch" data-color-swatch="edge-soft">
+<input type="text" id="color-edge-soft" data-color-hex="edge-soft" aria-label="soft dividers hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge-soft" aria-label="Reset soft dividers" title="Reset soft dividers">↺</button></div><label class="color-opacity">opacity<input type="range" min="0" max="100" step="0.1" data-color-alpha="edge-soft" aria-label="soft dividers opacity"><output></output></label></div><div class="color-row" data-color-row="edge-strong">
+<label for="color-edge-strong">strong borders</label>
+<div class="color-inputs"><input type="color" id="swatch-edge-strong" aria-label="strong borders swatch" data-color-swatch="edge-strong">
+<input type="text" id="color-edge-strong" data-color-hex="edge-strong" aria-label="strong borders hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge-strong" aria-label="Reset strong borders" title="Reset strong borders">↺</button></div><label class="color-opacity">opacity<input type="range" min="0" max="100" step="0.1" data-color-alpha="edge-strong" aria-label="strong borders opacity"><output></output></label></div><div class="color-row" data-color-row="logo-secondary">
+<label for="color-logo-secondary">wordmark · JLPT</label>
+<div class="color-inputs"><input type="color" id="swatch-logo-secondary" aria-label="wordmark · JLPT swatch" data-color-swatch="logo-secondary">
+<input type="text" id="color-logo-secondary" data-color-hex="logo-secondary" aria-label="wordmark · JLPT hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="logo-secondary" aria-label="Reset wordmark · JLPT" title="Reset wordmark · JLPT">↺</button></div></div></div><div class="fill-opacity-controls"><h4>fill opacity</h4><p>Applies to correct and wrong answers.</p><div class="fill-opacity-row"><label for="opacity-cell-fill">cell fill<output id="opacity-cell-fill-output">11%</output></label><div><input id="opacity-cell-fill" type="range" min="0" max="100" step="1" value="11" data-fill-opacity="cell-fill" aria-label="cell fill opacity"><button type="button" data-fill-reset="cell-fill" aria-label="Reset cell fill opacity" title="Reset cell fill opacity">↺</button></div></div><div class="fill-opacity-row"><label for="opacity-fill">fill style<output id="opacity-fill-output">30%</output></label><div><input id="opacity-fill" type="range" min="0" max="100" step="1" value="30" data-fill-opacity="fill" aria-label="fill style opacity"><button type="button" data-fill-reset="fill" aria-label="Reset fill style opacity" title="Reset fill style opacity">↺</button></div></div></div></details></aside></div></section><section data-settings="browser"><div class="setting-row js-only"><div><h3>remember this browser</h3><p id="save-status">Saving is on by default. No account required.</p></div><label class="switch"><input id="remember" type="checkbox" checked>save preferences, answers and position</label></div><div class="button-row browser-actions js-only"><button id="reset-preferences" type="button">reset preferences</button><button id="forget" type="button">forget saved data</button></div><div class="developer-only developer-settings"><h3>developer mode</h3><p>Principal differences and editorial cases are visible. This local switch is not authentication.</p><button id="disable-dev" type="button">hide developer tools</button></div><div class="settings-about"><button type="button" id="developer-unlock" class="js-only" title="astraJLPT build information">astraJLPT · 2020–2026 collection</button><span id="developer-hint" role="status"></span></div></section></div></details></header><main id="content" class="review-page"><div class="review-content"><a href="../levels/N4.html">← N4 papers</a><h1>N4 · December 2021</h1><p>Uncertainty index: <strong>1033</strong> · 16 differences · 8 unresolved · 2 provisional fixes</p><p>Evidence base 1000 + source concerns 33 = 1033. Concerns are uncapped; browsing order uses evidence tier before concern points.</p><p>This is an editorial evidence assessment, not a probability, an error rate or a practice score.</p><details><summary>Assessment evidence and original source scores</summary><pre>{
+  &quot;unit&quot;: &quot;N4_12_2021&quot;,
+  &quot;sample&quot;: false,
+  &quot;year&quot;: 2021,
+  &quot;month&quot;: 12,
+  &quot;evidence_base&quot;: 1000,
+  &quot;evidence_tier&quot;: 3,
+  &quot;concern_points&quot;: 33,
+  &quot;index&quot;: 1033,
+  &quot;concern_counts&quot;: {
+    &quot;metadata_flags&quot;: 0,
+    &quot;missing_units&quot;: 0,
+    &quot;major_defects&quot;: 3,
+    &quot;minor_defects&quot;: 5,
+    &quot;uncertain_fields&quot;: 8
+  },
+  &quot;principal_history&quot;: {
+    &quot;unit&quot;: &quot;N4_12_2021&quot;,
+    &quot;level&quot;: &quot;N4&quot;,
+    &quot;year&quot;: 2021,
+    &quot;month&quot;: 12,
+    &quot;principal_path&quot;: &quot;src/日语JLPT真题1992～2025.12（及时转存，避免丢失）/渠道一/日语N4真题/2021年12月/2021年12月N4真题.pdf&quot;,
+    &quot;principal_sha256&quot;: &quot;d28e50f14fd508168cae93c215f1307be4f8c133b96ce51401b3f59868f7df9f&quot;,
+    &quot;initial_tier&quot;: 2,
+    &quot;written_physical_pages&quot;: &quot;1-11&quot;,
+    &quot;review_status&quot;: &quot;complete_written_review&quot;,
+    &quot;provenance_status&quot;: &quot;unverified&quot;,
+    &quot;provenance_points&quot;: 100,
+    &quot;metadata_flags&quot;: 0,
+    &quot;missing_units&quot;: 0,
+    &quot;major_defects&quot;: 3,
+    &quot;minor_defects&quot;: 5,
+    &quot;uncertain_fields&quot;: 8,
+    &quot;uncertainty_index&quot;: 133,
+    &quot;score_evidence&quot;: [
+      {
+        &quot;kind&quot;: &quot;major_defects&quot;,
+        &quot;item_id&quot;: &quot;vocab-q006&quot;,
+        &quot;field&quot;: &quot;/options/1&quot;,
+        &quot;locator&quot;: &quot;Physical 1; vocab-q006 /options/1&quot;,
+        &quot;evidence&quot;: &quot;Retain the complete reading ふゆ supported by the alternate question, native transcript and word-bearing answer reference. The principal loses ふ from its correct winter reading.&quot;,
+        &quot;id&quot;: &quot;N4_12_2021-S-001&quot;
+      },
+      {
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;vocab-q016&quot;,
+        &quot;field&quot;: &quot;/options/1&quot;,
+        &quot;locator&quot;: &quot;Physical 3; vocab-q016 /options/1&quot;,
+        &quot;evidence&quot;: &quot;Retain the comparison-supported long-vowel ending. Both spellings are possible historical distractors; answer3アンケート does not decide the ending.&quot;,
+        &quot;id&quot;: &quot;N4_12_2021-S-002&quot;
+      },
+      {
+        &quot;kind&quot;: &quot;major_defects&quot;,
+        &quot;item_id&quot;: &quot;vocab-q020&quot;,
+        &quot;field&quot;: &quot;/options/3&quot;,
+        &quot;locator&quot;: &quot;Physical 3; vocab-q020 /options/3&quot;,
+        &quot;evidence&quot;: &quot;Retain the alternate original’s correct connective form of つつむ. Wrapping dishes in paper before putting them in a box requires つつんで; the principal loses the dakuten in the correct option.&quot;,
+        &quot;id&quot;: &quot;N4_12_2021-S-003&quot;
+      },
+      {
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;vocab-q024&quot;,
+        &quot;field&quot;: &quot;/options/2&quot;,
+        &quot;locator&quot;: &quot;Physical 4; vocab-q024 /options/2&quot;,
+        &quot;evidence&quot;: &quot;Retain the intact ですね ending printed in the alternate question and native transcript. The principal corrupts the incidental sentence particle; the temperature/cleanliness claims remain incorrect paraphrases of soft.&quot;,
+        &quot;id&quot;: &quot;N4_12_2021-S-004&quot;
+      },
+      {
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;vocab-q024&quot;,
+        &quot;field&quot;: &quot;/options/3&quot;,
+        &quot;locator&quot;: &quot;Physical 4; vocab-q024 /options/3&quot;,
+        &quot;evidence&quot;: &quot;Retain the intact ですね ending printed in the alternate question and native transcript. The principal corrupts the incidental sentence particle; the temperature/cleanliness claims remain incorrect paraphrases of soft.&quot;,
+        &quot;id&quot;: &quot;N4_12_2021-S-005&quot;
+      },
+      {
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;vocab-s05&quot;,
+        &quot;field&quot;: &quot;/heading&quot;,
+        &quot;locator&quot;: &quot;Physical 4; vocab-s05 /heading&quot;,
+        &quot;evidence&quot;: &quot;Retain the fixed instruction つぎのことば: the following word is to be used. Missing dakuten is an incidental rubric error, not a tested alternative.&quot;,
+        &quot;id&quot;: &quot;N4_12_2021-S-006&quot;
+      },
+      {
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-q016&quot;,
+        &quot;field&quot;: &quot;/stem&quot;,
+        &quot;locator&quot;: &quot;Physical 7; reading-q016 /stem&quot;,
+        &quot;evidence&quot;: &quot;Retain the closing quotation mark supported by the native dialogue and the paired opening mark. The principal leaves the quotation unclosed.&quot;,
+        &quot;id&quot;: &quot;N4_12_2021-S-007&quot;
+      },
+      {
+        &quot;kind&quot;: &quot;major_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-q017&quot;,
+        &quot;field&quot;: &quot;/options/1&quot;,
+        &quot;locator&quot;: &quot;Physical 7; reading-q017 /options/1&quot;,
+        &quot;evidence&quot;: &quot;Retain the alternate original’s negative manner construction 入れないで. All four pieces must form the grammatical sentence about usually drinking without sugar but sometimes wanting sweet coffee.&quot;,
+        &quot;id&quot;: &quot;N4_12_2021-S-008&quot;
+      },
+      {
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-q029&quot;,
+        &quot;field&quot;: &quot;/stem&quot;,
+        &quot;locator&quot;: &quot;Physical 10; reading-q029 /stem&quot;,
+        &quot;evidence&quot;: &quot;Retain the grammatical subject particle が from the alternate transcript. The principal drops its dakuten outside the tested date choices; the September7 deadline is unchanged.&quot;,
+        &quot;id&quot;: &quot;N4_12_2021-S-009&quot;
+      },
+      {
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;vocab-b003&quot;,
+        &quot;field&quot;: &quot;&quot;,
+        &quot;locator&quot;: &quot;Physical 2; vocab-b003 &quot;,
+        &quot;evidence&quot;: &quot;Provisionally reconstruct glasses as the fourth clothing/accessory distractor. The principal literally prints a nonword; that could itself have been intentional, so the linguistic conjecture is medium confidence and publicly documented.&quot;,
+        &quot;id&quot;: &quot;N4_12_2021-S-010&quot;
+      },
+      {
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;vocab-q001&quot;,
+        &quot;field&quot;: &quot;/options&quot;,
+        &quot;locator&quot;: &quot;Physical 1; vocab-q001 /options&quot;,
+        &quot;evidence&quot;: &quot;Largeゆ in two wrong readings competes with the20-page original’s smallゅ; the correct reading remains3.&quot;,
+        &quot;id&quot;: &quot;N4_12_2021-S-011&quot;
+      },
+      {
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;vocab-q007&quot;,
+        &quot;field&quot;: &quot;/options&quot;,
+        &quot;locator&quot;: &quot;Physical 1; vocab-q007 /options&quot;,
+        &quot;evidence&quot;: &quot;Native choices and explicit explanation swap the second and third wrong readings; the two question copies retain the current order.&quot;,
+        &quot;id&quot;: &quot;N4_12_2021-S-012&quot;
+      },
+      {
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;vocab-q008&quot;,
+        &quot;field&quot;: &quot;&quot;,
+        &quot;locator&quot;: &quot;Physical 2; vocab-q008 &quot;,
+        &quot;evidence&quot;: &quot;The native English-book stem/key2 competes with the printed movie-book stem/key4; both complete versions are coherent.&quot;,
+        &quot;id&quot;: &quot;N4_12_2021-S-013&quot;
+      },
+      {
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;vocab-q024&quot;,
+        &quot;field&quot;: &quot;/stem/html&quot;,
+        &quot;locator&quot;: &quot;Physical 4; vocab-q024 /stem/html&quot;,
+        &quot;evidence&quot;: &quot;The20-page original adds finalね; the principal and native transcript omit it.&quot;,
+        &quot;id&quot;: &quot;N4_12_2021-S-014&quot;
+      },
+      {
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;reading-q011&quot;,
+        &quot;field&quot;: &quot;/stem&quot;,
+        &quot;locator&quot;: &quot;Physical 6; reading-q011 /stem&quot;,
+        &quot;evidence&quot;: &quot;Two versus three digits in the supplied fictional phone number’s middle group remain disputed.&quot;,
+        &quot;id&quot;: &quot;N4_12_2021-S-015&quot;
+      },
+      {
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;reading-q024&quot;,
+        &quot;field&quot;: &quot;/options/3&quot;,
+        &quot;locator&quot;: &quot;Physical 9; reading-q024 /options/3&quot;,
+        &quot;evidence&quot;: &quot;The native food distractor adds optionalの beforeか; both question originals omit it.&quot;,
+        &quot;id&quot;: &quot;N4_12_2021-S-016&quot;
+      }
+    ],
+    &quot;method_version&quot;: 1,
+    &quot;reviewed_on&quot;: &quot;2026-09-27&quot;,
+    &quot;assessed_on&quot;: &quot;2026-09-27&quot;,
+    &quot;assessment_notes&quot;: &quot;Original written physical1–11 fully reviewed, including December2021 N4 identity on1; listening12–18 excluded. This layout contains all57 scored questions,6 contexts and7 worked examples, including vocabulary12 absent from the20-page alternative. All alternate written originals1–12 and separate written answer references were reviewed. The companion18-page edition’s written images8–18 are byte-identical to this principal’s1–11, not independent witnesses. No issuer acquisition chain or exact-file reconstruction declaration was established. Principal contains3 damaged option spellings,5 minor rubric/particle/quotation errors and8 material uncertain field groups. One highest category per item/field; two small-kana distractors count as one option-set issue. The example’s literal nonword is uncertain rather than a proven error. Complete initial examples/underlines omitted by the editorial import do not inflate source defect counts; no printed furigana was found. Harmless kana/kanji instruction variants and decorative/reflow representation are not source defects. The separate key is not principal content, and native q8 disagreement is assessed as a coherent whole-item variant.&quot;
+  },
+  &quot;evidence&quot;: []
+}</pre></details><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span><ul></ul><div class="review-controls"><label>Show <select id="review-filter"><option value="all">All records</option><option value="difference">Principal differences</option><option value="unresolved">Unresolved cases</option><option value="provisional_fix">Provisional fixes</option></select></label><label>Find <input id="review-search" type="search" placeholder="Item, wording, evidence…"></label></div><p id="review-count" class="control-help" role="status"></p><section class="review-group" id="review-vocab-q001" data-kinds="unresolved"><div class="review-group-heading"><h2>vocab-q001</h2><a href="../papers/N4_12_2021.html#vocab-q001">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">1. バスが8時に<u>出発</u>します。<ol><li>しゆっはつ</li><li>しゆうはつ</li><li>しゅっぱつ</li><li>しゅうぱつ</li></ol><p>Editorial key: 3</p></div></details><div class="review-record" id="unresolved_cases-N4_12_2021-vocab-q001-small-kana-distractors"><div class="review-label">Unresolved · /options · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>[
+  &quot;し<mark class="diff-old">ゅ</mark>っはつ&quot;,
+  &quot;し<mark class="diff-old">ゅ</mark>うはつ&quot;,
+  &quot;しゅっぱつ&quot;,
+  &quot;しゅうぱつ&quot;
+]</pre></div><div><h4>Editorial</h4><pre>[
+  &quot;し<mark class="diff-new">ゆ</mark>っはつ&quot;,
+  &quot;し<mark class="diff-new">ゆ</mark>うはつ&quot;,
+  &quot;しゅっぱつ&quot;,
+  &quot;しゅうぱつ&quot;
+]</pre></div></div><p>Retain the principal and native transcript’s large ゆ. Both complete versions leave only しゅっぱつ correct. A wrong reading may deliberately contain large kana, so neither grammatical correction nor the stable key3 resolves which distractors were printed historically.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>The exact historical reading remains unproven. An authenticated page or independently traceable contemporary reproduction of this span could settle it; grammatical plausibility, distributor copies and their explanations do not establish independent provenance.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Vocabulary q1 tests 出発. The first two incorrect readings differ in large ゆ versus small ゅ.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=1): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · q1 complete choices, enlarged original<p>1しゆっはつ 2しゆうはつ 3しゅっぱつ 4しゅうぱつ</p></li><li><span class="principal-repository-source">Principal source (page=1): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · q1 complete original choices<p>1しゅっはつ 2しゅうはつ 3しゅっぱつ 4しゅうぱつ</p></li><li><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Vocabulary section1 q1 options and explanations<p>First two readings use large ゆ.</p></li></ul><details><summary>Full published record · unresolved_cases-N4_12_2021-vocab-q001-small-kana-distractors</summary><pre>{
+  &quot;case_id&quot;: &quot;N4_12_2021-vocab-q001-small-kana-distractors&quot;,
+  &quot;unit&quot;: &quot;N4_12_2021&quot;,
+  &quot;item_id&quot;: &quot;vocab-q001&quot;,
+  &quot;field&quot;: &quot;/options&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: [
+    &quot;しゆっはつ&quot;,
+    &quot;しゆうはつ&quot;,
+    &quot;しゅっぱつ&quot;,
+    &quot;しゅうぱつ&quot;
+  ],
+  &quot;context&quot;: &quot;Vocabulary q1 tests 出発. The first two incorrect readings differ in large ゆ versus small ゅ.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: [
+        &quot;しゅっはつ&quot;,
+        &quot;しゅうはつ&quot;,
+        &quot;しゅっぱつ&quot;,
+        &quot;しゅうぱつ&quot;
+      ],
+      &quot;assessment&quot;: &quot;The20-page question original prints small ゅ in both distractors.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;2021年12月N4真题 — 渠道一 18-page edition, written pages1–11&quot;,
+      &quot;sha256&quot;: &quot;d28e50f14fd508168cae93c215f1307be4f8c133b96ce51401b3f59868f7df9f&quot;,
+      &quot;physical_pages&quot;: [
+        1
+      ],
+      &quot;locator&quot;: &quot;q1 complete choices, enlarged original&quot;,
+      &quot;reading&quot;: &quot;1しゆっはつ 2しゆうはつ 3しゅっぱつ 4しゅうぱつ&quot;,
+      &quot;lineage&quot;: &quot;Question editions and derivative answer/transcript copies have unestablished acquisition; repeated copies are not independent authentication. The written page images of the two18-page editions are identical.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;Đề N4 T12-2021 Mark — Yuuki Bùi (20 pages)&quot;,
+      &quot;sha256&quot;: &quot;2224d3381bfdd399721ae646cb862f8f1ddf56212304772de53afcdf923a24e5&quot;,
+      &quot;physical_pages&quot;: [
+        1
+      ],
+      &quot;locator&quot;: &quot;q1 complete original choices&quot;,
+      &quot;reading&quot;: &quot;1しゅっはつ 2しゅうはつ 3しゅっぱつ 4しゅうぱつ&quot;,
+      &quot;lineage&quot;: &quot;Question editions and derivative answer/transcript copies have unestablished acquisition; repeated copies are not independent authentication. The written page images of the two18-page editions are identical.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;Munja JLPT — December2021 N4 native transcript&quot;,
+      &quot;sha256&quot;: &quot;a621e7082fa2b8b366e72868ba0fd1da66280601431f89a8e0b7eff07d4205ec&quot;,
+      &quot;locator&quot;: &quot;Vocabulary section1 q1 options and explanations&quot;,
+      &quot;reading&quot;: &quot;First two readings use large ゆ.&quot;,
+      &quot;lineage&quot;: &quot;Native secondary transcript; independently acquired historical wording is not established.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Retain the principal and native transcript’s large ゆ. Both complete versions leave only しゅっぱつ correct. A wrong reading may deliberately contain large kana, so neither grammatical correction nor the stable key3 resolves which distractors were printed historically.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Read both complete original choice sets and enlarged the principal to compare large and small kana within the same line.&quot;,
+    &quot;Checked native choices and corresponding explanation, and the inherited archive lineage.&quot;,
+    &quot;Tested every alternative as a reading distractor rather than automatically normalizing small kana.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;The exact historical reading remains unproven. An authenticated page or independently traceable contemporary reproduction of this span could settle it; grammatical plausibility, distributor copies and their explanations do not establish independent provenance.&quot;
+}</pre></details></div></section><section class="review-group" id="review-vocab-q006" data-kinds="difference provisional_fix"><div class="review-group-heading"><h2>vocab-q006</h2><a href="../papers/N4_12_2021.html#vocab-q006">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">6. おととしの<u>冬</u>、日本をりょこうしました。<ol><li>あき</li><li>ふゆ</li><li>なつ</li><li>はる</li></ol><p>Editorial key: 2</p></div></details><div class="review-record" id="unresolved_cases-N4_12_2021-PD-002"><div class="review-label">Provisional fix · /stem/html · medium</div><div class="comparison"><div><h4>Before</h4><pre>6. おととしの&lt;u&gt;冬&lt;/u&gt;、日本を<mark class="diff-old">旅行</mark>しました。</pre></div><div><h4>Editorial</h4><pre>6. おととしの&lt;u&gt;冬&lt;/u&gt;、日本を<mark class="diff-new">りょこう</mark>しました。</pre></div></div><p>Retain HK1&#x27;s 旅行→りょこう choice. Exact principal pixels and the approved 2025 N4 incidental travel clause support the kana form, while the competing Yuuki Q6 prints 旅行. The full reading task, all choices and key 2 show that 冬 alone is tested; preserve its underline and the independently supported complete ふゆ answer. The stronger comparison supports the editorial preference but cannot establish the historical spelling of the 2021 incidental word, so keep a provisional record.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>Two unverified exact-item layouts disagree on りょこう/旅行. The approved same-level comparison supports the kana preference without authenticating the 2021 wording.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">N4_12_2021-PD-002 — calibrated review of vocab-q006 /stem/html. The current spelling agrees with the principal on the restored fragment; the historical question remains OPEN.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=1): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · q6 travel clause<p>日本をりょこうしました。</p></li><li><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · N4_12_2025 vocab-q013 /stem; editorial JSON snapshot inspected 2026-10-03<p>先月 りょこうを した とき、とても いい ホテルに (　　)。</p></li><li><span class="principal-repository-source">Principal source (page=1): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Entire Q6 winter-reading task and Q16 manga-preference stem across pages 2–3 with all four options<p>Q6 日本をりょこうしました; Q16 option 2 コンピュータ</p></li><li><span class="principal-repository-source">Principal source (page=1): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Full Q6 and Q16 in this copy&#x27;s actual physical pages 1–2; older case evidence&#x27;s page-3 locator for Q16 is not reused<p>Q6 旅行; Q16 option 2 コンピューター</p></li><li><span class="principal-repository-source">Principal source (page=16): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Printed vocabulary page 3: complete Q13 hotel/travel sentence and four verb choices<p>先月 りょこうを した とき、とても いい ホテルに …</p></li></ul><details><summary>Full published record · unresolved_cases-N4_12_2021-PD-002</summary><pre>{
+  &quot;case_id&quot;: &quot;N4_12_2021-PD-002&quot;,
+  &quot;unit&quot;: &quot;N4_12_2021&quot;,
+  &quot;item_id&quot;: &quot;vocab-q006&quot;,
+  &quot;field&quot;: &quot;/stem/html&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;6. おととしの&lt;u&gt;冬&lt;/u&gt;、日本をりょこうしました。&quot;,
+  &quot;context&quot;: &quot;N4_12_2021-PD-002 — calibrated review of vocab-q006 /stem/html. The current spelling agrees with the principal on the restored fragment; the historical question remains OPEN.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;6. おととしの&lt;u&gt;冬&lt;/u&gt;、日本を旅行しました。&quot;,
+      &quot;assessment&quot;: &quot;Editorial value before this housekeeping pass; retained here as review history, not automatically preferred.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;日本をりょこうしました。&quot;,
+      &quot;assessment&quot;: &quot;Published principal comparison fragment (not a complete substitute for the field). Source trust does not make every difference an error.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;2021年12月N4真题 — 渠道一 18-page edition, written pages1–11&quot;,
+      &quot;sha256&quot;: &quot;d28e50f14fd508168cae93c215f1307be4f8c133b96ce51401b3f59868f7df9f&quot;,
+      &quot;physical_pages&quot;: [
+        1
+      ],
+      &quot;locator&quot;: &quot;q6 travel clause&quot;,
+      &quot;reading&quot;: &quot;日本をりょこうしました。&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;N4_12_2025 — user-trusted principal, editorial style witness&quot;,
+      &quot;sha256&quot;: &quot;412722cc724a5a42a5b8cb363d6aaf0a1fd0f15e3c45ce903636c615c699557f&quot;,
+      &quot;locator&quot;: &quot;N4_12_2025 vocab-q013 /stem; editorial JSON snapshot inspected 2026-10-03&quot;,
+      &quot;reading&quot;: &quot;先月 りょこうを した とき、とても いい ホテルに (　　)。&quot;,
+      &quot;lineage&quot;: &quot;Style observation from the existing editorial JSON, excluding the affected spans of registered departures. This is a proxy for this trusted principal, not an independent transcript or authentication.&quot;
+    },
+    {
+      &quot;sha256&quot;: &quot;d28e50f14fd508168cae93c215f1307be4f8c133b96ce51401b3f59868f7df9f&quot;,
+      &quot;physical_pages&quot;: [
+        1,
+        2,
+        3
+      ],
+      &quot;locator&quot;: &quot;Entire Q6 winter-reading task and Q16 manga-preference stem across pages 2–3 with all four options&quot;,
+      &quot;reading&quot;: &quot;Q6 日本をりょこうしました; Q16 option 2 コンピュータ&quot;,
+      &quot;source_label&quot;: &quot;2021年12月N4真题.pdf&quot;,
+      &quot;lineage&quot;: &quot;One paper/source lineage. Aliases and repeat observations are not independent witnesses. exact unverified principal; only written pages 1–3 inspected&quot;
+    },
+    {
+      &quot;sha256&quot;: &quot;2224d3381bfdd399721ae646cb862f8f1ddf56212304772de53afcdf923a24e5&quot;,
+      &quot;physical_pages&quot;: [
+        1,
+        2
+      ],
+      &quot;locator&quot;: &quot;Full Q6 and Q16 in this copy&#x27;s actual physical pages 1–2; older case evidence&#x27;s page-3 locator for Q16 is not reused&quot;,
+      &quot;reading&quot;: &quot;Q6 旅行; Q16 option 2 コンピューター&quot;,
+      &quot;source_label&quot;: &quot;Đề N4 T12-2021 Mark.pdf&quot;,
+      &quot;lineage&quot;: &quot;One paper/source lineage. Aliases and repeat observations are not independent witnesses. distinct unverified question layout; not independent issuer evidence&quot;
+    },
+    {
+      &quot;physical_pages&quot;: [
+        16
+      ],
+      &quot;locator&quot;: &quot;Printed vocabulary page 3: complete Q13 hotel/travel sentence and four verb choices&quot;,
+      &quot;reading&quot;: &quot;先月 りょこうを した とき、とても いい ホテルに …&quot;,
+      &quot;sha256&quot;: &quot;38525b613a28dbec20003f7d2a2cbda6a4a5fc7ca96d0a9788b6955cc294ea1c&quot;,
+      &quot;source_label&quot;: &quot;25年12月N4真题.pdf&quot;,
+      &quot;lineage&quot;: &quot;One paper/source lineage. Aliases and repeat observations are not independent witnesses. approved same-level incidental travel spelling in a lexical-choice task; not a reading target&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Retain HK1&#x27;s 旅行→りょこう choice. Exact principal pixels and the approved 2025 N4 incidental travel clause support the kana form, while the competing Yuuki Q6 prints 旅行. The full reading task, all choices and key 2 show that 冬 alone is tested; preserve its underline and the independently supported complete ふゆ answer. The stronger comparison supports the editorial preference but cannot establish the historical spelling of the 2021 incidental word, so keep a provisional record.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Reviewed the user’s item-specific calibration and exact-scope limits.&quot;,
+    &quot;Compared the current editorial field and published principal reading; used existing trusted-paper editorial JSON for level/style evidence where applicable.&quot;,
+    &quot;Retained independent repairs and left unsupported candidate fragments unchanged.&quot;,
+    &quot;5 November 2026 final housekeeping: visually inspected the exact listed pages and complete dependent task; checked all choices, contextual alternatives, current v3 value and source lineage. Q6 tests the underlined 冬, whose current correct answer is ふゆ (2); the incidental travel clause cannot supply that reading. The principal prints りょこう and the alternate 旅行. Approved December 2025 N4 Q13 visibly prints りょこう in an incidental travel clause whose actual blank asks for hotel-stay verb とまりました (2), a closer functional match than an isolated word list. Retain the scoped kana choice without changing 冬 or any option. Q16 asks what was conducted with elementary pupils about favorite manga: アンケート (3), while コンサート, either コンピュータ or コンピューター, and アルコール remain wrong. Both exact copies&#x27; full options were inspected. Approved N2 July 2018 clearly uses コンピュータ in a complete passage about artifacts&#x27; unforeseen social effects (Q66–68 answers 2/1/3), confirming that the short form is legitimate. It does not choose the spelling of this unrelated N4 distractor. The existing native-transcript agreement with the principal is retained as prior evidence, not newly inspected independent corroboration. No linguistic necessity or authenticated historical evidence favors changing the current long form. The separate one-space removal after 出られません。 in an old departure snapshot was inspected as existing typography only.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;Two unverified exact-item layouts disagree on りょこう/旅行. The approved same-level comparison supports the kana preference without authenticating the 2021 wording.&quot;,
+  &quot;before&quot;: &quot;6. おととしの&lt;u&gt;冬&lt;/u&gt;、日本を旅行しました。&quot;
+}</pre></details></div><div class="review-record" id="principal_differences-N4_12_2021-PD-003"><div class="review-label">Principal difference · /options/1 · high</div><div class="comparison"><div><h4>Principal</h4><pre>ゆ</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">ふ</mark>ゆ</pre></div></div><p>Retain the complete reading ふゆ supported by the alternate question, native transcript and word-bearing answer reference. The principal loses ふ from its correct winter reading.</p><span class="principal-repository-source">Principal source (page=1): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">q6 choice2, enlarged original</span><details><summary>Full published record · principal_differences-N4_12_2021-PD-003</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N4_12_2021-PD-003&quot;,
+  &quot;unit&quot;: &quot;N4_12_2021&quot;,
+  &quot;item_id&quot;: &quot;vocab-q006&quot;,
+  &quot;field&quot;: &quot;/options/1&quot;,
+  &quot;current_value&quot;: &quot;ふゆ&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2021年12月N4真题 — 渠道一 18-page edition, written pages1–11&quot;,
+    &quot;sha256&quot;: &quot;d28e50f14fd508168cae93c215f1307be4f8c133b96ce51401b3f59868f7df9f&quot;,
+    &quot;physical_pages&quot;: [
+      1
+    ],
+    &quot;locator&quot;: &quot;q6 choice2, enlarged original&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;ゆ&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;ふゆ&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Retain the complete reading ふゆ supported by the alternate question, native transcript and word-bearing answer reference. The principal loses ふ from its correct winter reading.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-vocab-q007" data-kinds="unresolved"><div class="review-group-heading"><h2>vocab-q007</h2><a href="../papers/N4_12_2021.html#vocab-q007">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">7. あしたのじゅぎょうの<u>予習</u>をします。<ol><li>よしゅう</li><li>ようしゅう</li><li>よしゅ</li><li>ようしゅ</li></ol><p>Editorial key: 1</p></div></details><div class="review-record" id="unresolved_cases-N4_12_2021-vocab-q007-distractor-order"><div class="review-label">Unresolved · /options · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>[
+  &quot;よしゅう&quot;,
+  &quot;よしゅ&quot;,
+  &quot;ようしゅ<mark class="diff-old">う&quot;,
+  &quot;ようしゅ</mark>&quot;
+]</pre></div><div><h4>Editorial</h4><pre>[
+  &quot;よ<mark class="diff-new">しゅう&quot;,
+  &quot;よう</mark>しゅう&quot;,
+  &quot;よしゅ&quot;,
+  &quot;ようしゅ&quot;
+]</pre></div></div><p>Retain the two question originals’ order. The native explanation confirms that its swap is a coherent transcription variant, rather than a display-only artifact. Both wrong readings remain wrong and the answer1 cannot determine their historical order.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>The exact historical reading remains unproven. An authenticated page or independently traceable contemporary reproduction of this span could settle it; grammatical plausibility, distributor copies and their explanations do not establish independent provenance.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Vocabulary q7 tests 予習; the middle two wrong readings exchange order.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=1): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · q7 original choices<p>1よしゅう 2ようしゅう 3よしゅ 4ようしゅ</p></li><li><span class="principal-repository-source">Principal source (page=1): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · q7 original choices<p>Same order as the principal.</p></li><li><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Vocabulary section1 q7 options and numbered explanation<p>1よしゅう 2よしゅ 3ようしゅう 4ようしゅ</p></li></ul><details><summary>Full published record · unresolved_cases-N4_12_2021-vocab-q007-distractor-order</summary><pre>{
+  &quot;case_id&quot;: &quot;N4_12_2021-vocab-q007-distractor-order&quot;,
+  &quot;unit&quot;: &quot;N4_12_2021&quot;,
+  &quot;item_id&quot;: &quot;vocab-q007&quot;,
+  &quot;field&quot;: &quot;/options&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: [
+    &quot;よしゅう&quot;,
+    &quot;ようしゅう&quot;,
+    &quot;よしゅ&quot;,
+    &quot;ようしゅ&quot;
+  ],
+  &quot;context&quot;: &quot;Vocabulary q7 tests 予習; the middle two wrong readings exchange order.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: [
+        &quot;よしゅう&quot;,
+        &quot;よしゅ&quot;,
+        &quot;ようしゅう&quot;,
+        &quot;ようしゅ&quot;
+      ],
+      &quot;assessment&quot;: &quot;The native transcript and its explicit numbered explanation put よしゅ second and ようしゅう third.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;2021年12月N4真题 — 渠道一 18-page edition, written pages1–11&quot;,
+      &quot;sha256&quot;: &quot;d28e50f14fd508168cae93c215f1307be4f8c133b96ce51401b3f59868f7df9f&quot;,
+      &quot;physical_pages&quot;: [
+        1
+      ],
+      &quot;locator&quot;: &quot;q7 original choices&quot;,
+      &quot;reading&quot;: &quot;1よしゅう 2ようしゅう 3よしゅ 4ようしゅ&quot;,
+      &quot;lineage&quot;: &quot;Question editions and derivative answer/transcript copies have unestablished acquisition; repeated copies are not independent authentication. The written page images of the two18-page editions are identical.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;Đề N4 T12-2021 Mark — Yuuki Bùi (20 pages)&quot;,
+      &quot;sha256&quot;: &quot;2224d3381bfdd399721ae646cb862f8f1ddf56212304772de53afcdf923a24e5&quot;,
+      &quot;physical_pages&quot;: [
+        1
+      ],
+      &quot;locator&quot;: &quot;q7 original choices&quot;,
+      &quot;reading&quot;: &quot;Same order as the principal.&quot;,
+      &quot;lineage&quot;: &quot;Question editions and derivative answer/transcript copies have unestablished acquisition; repeated copies are not independent authentication. The written page images of the two18-page editions are identical.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;Munja JLPT — December2021 N4 native transcript&quot;,
+      &quot;sha256&quot;: &quot;a621e7082fa2b8b366e72868ba0fd1da66280601431f89a8e0b7eff07d4205ec&quot;,
+      &quot;locator&quot;: &quot;Vocabulary section1 q7 options and numbered explanation&quot;,
+      &quot;reading&quot;: &quot;1よしゅう 2よしゅ 3ようしゅう 4ようしゅ&quot;,
+      &quot;lineage&quot;: &quot;Native secondary transcript; independently acquired historical wording is not established.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Retain the two question originals’ order. The native explanation confirms that its swap is a coherent transcription variant, rather than a display-only artifact. Both wrong readings remain wrong and the answer1 cannot determine their historical order.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Compared the four original choices in both complete layouts.&quot;,
+    &quot;Read the native item’s full explanation, which repeats its order, and checked the immutable archive’s matching principal order.&quot;,
+    &quot;Verified 予習=よしゅう independently of the swapped distractors.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;The exact historical reading remains unproven. An authenticated page or independently traceable contemporary reproduction of this span could settle it; grammatical plausibility, distributor copies and their explanations do not establish independent provenance.&quot;
+}</pre></details></div></section><section class="review-group" id="review-vocab-s02" data-kinds="difference"><div class="review-group-heading"><h2>vocab-s02</h2><a href="../papers/N4_12_2021.html#vocab-s02">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">もんだい2 <span class="answer-slot"><span class="slot-glyph">_</span></span><span class="answer-slot"><span class="slot-glyph">_</span></span><span class="answer-slot"><span class="slot-glyph">_</span></span><span class="answer-slot"><span class="slot-glyph">_</span></span>のことばをどう かきますか。 1・2・3・4 から いちばんいいものをひとつ えらんでください。</div></details><div class="review-record" id="principal_differences-N4_12_2021-PD-001"><div class="review-label">Principal difference · /heading · high</div><div class="comparison"><div><h4>Principal</h4><pre>____のことば<mark class="diff-old">は</mark>どうかきますか。</pre></div><div><h4>Editorial</h4><pre>____のことば<mark class="diff-new">を</mark>どうかきますか。</pre></div></div><p>Retain the inherited object-particle instruction also present in the20-page copy. Both forms give the same task; this is a harmless wording variant, not a repair of the principal.</p><span class="principal-repository-source">Principal source (page=1): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Problem2 instruction</span><details><summary>Full published record · principal_differences-N4_12_2021-PD-001</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N4_12_2021-PD-001&quot;,
+  &quot;unit&quot;: &quot;N4_12_2021&quot;,
+  &quot;item_id&quot;: &quot;vocab-s02&quot;,
+  &quot;field&quot;: &quot;/heading&quot;,
+  &quot;current_value&quot;: &quot;もんだい2 ____のことばをどう かきますか。 1・2・3・4 から いちばんいいものをひとつ えらんでください。&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2021年12月N4真题 — 渠道一 18-page edition, written pages1–11&quot;,
+    &quot;sha256&quot;: &quot;d28e50f14fd508168cae93c215f1307be4f8c133b96ce51401b3f59868f7df9f&quot;,
+    &quot;physical_pages&quot;: [
+      1
+    ],
+    &quot;locator&quot;: &quot;Problem2 instruction&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;____のことばはどうかきますか。&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;____のことばをどうかきますか。&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;retained_variant&quot;,
+  &quot;rationale&quot;: &quot;Retain the inherited object-particle instruction also present in the20-page copy. Both forms give the same task; this is a harmless wording variant, not a repair of the principal.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-vocab-q008" data-kinds="unresolved"><div class="review-group-heading"><h2>vocab-q008</h2><a href="../papers/N4_12_2021.html#vocab-q008">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">8. としょかんで<u>えいが</u>の本をかりました。<ol><li>映語</li><li>英語</li><li>英画</li><li>映画</li></ol><p>Editorial key: 4</p></div></details><div class="review-record" id="unresolved_cases-N4_12_2021-vocab-q008-movie-or-english"><div class="review-label">Unresolved ·  · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>{
+  &quot;id&quot;: &quot;vocab-q008&quot;,
+  &quot;line&quot;: 1801,
+  &quot;stem&quot;: {
+    &quot;html&quot;: &quot;8. としょかんで&lt;u&gt;えい<mark class="diff-old">ご</mark>&lt;/u&gt;の本をかりました。&quot;
+  },
+  &quot;options&quot;: [
+    &quot;映語&quot;,
+    &quot;英語&quot;,
+    &quot;英画&quot;,
+    &quot;映画&quot;
+  ],
+  &quot;key&quot;: <mark class="diff-old">2</mark>
+}</pre></div><div><h4>Editorial</h4><pre>{
+  &quot;id&quot;: &quot;vocab-q008&quot;,
+  &quot;line&quot;: 1801,
+  &quot;stem&quot;: {
+    &quot;html&quot;: &quot;8. としょかんで&lt;u&gt;えい<mark class="diff-new">が</mark>&lt;/u&gt;の本をかりました。&quot;
+  },
+  &quot;options&quot;: [
+    &quot;映語&quot;,
+    &quot;英語&quot;,
+    &quot;英画&quot;,
+    &quot;映画&quot;
+  ],
+  &quot;key&quot;: <mark class="diff-new">4</mark>
+}</pre></div></div><p>Retain the movie version directly printed in both question layouts and supported by the written answer references. The native English version is internally coherent and cannot be dismissed solely because the other copies agree. No isolated key change is appropriate: the stem and key must be considered together.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>The exact historical reading remains unproven. An authenticated page or independently traceable contemporary reproduction of this span could settle it; grammatical plausibility, distributor copies and their explanations do not establish independent provenance.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Vocabulary q8 borrows a library book; the coherent alternatives ask for 映画 or 英語.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=2): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · q8 original stem and choices<p>としょかんで&lt;u&gt;えいが&lt;/u&gt;の本をかりました。 / choice4映画</p></li><li><span class="principal-repository-source">Principal source (page=2): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · q8 original stem<p>えいが</p></li><li><span class="principal-repository-source">Principal source (page=1): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Written vocabulary q8 answer/explanation<p>映画, answer4</p></li><li><span class="principal-repository-source">Principal source (page=1): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Written vocabulary answer table q8<p>4</p></li><li><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Vocabulary section2 q8 full stem, key and explanation<p>えいご / answer2英語 / English-book translation</p></li></ul><details><summary>Full published record · unresolved_cases-N4_12_2021-vocab-q008-movie-or-english</summary><pre>{
+  &quot;case_id&quot;: &quot;N4_12_2021-vocab-q008-movie-or-english&quot;,
+  &quot;unit&quot;: &quot;N4_12_2021&quot;,
+  &quot;item_id&quot;: &quot;vocab-q008&quot;,
+  &quot;field&quot;: &quot;&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: {
+    &quot;id&quot;: &quot;vocab-q008&quot;,
+    &quot;line&quot;: 1801,
+    &quot;stem&quot;: {
+      &quot;html&quot;: &quot;8. としょかんで&lt;u&gt;えいが&lt;/u&gt;の本をかりました。&quot;
+    },
+    &quot;options&quot;: [
+      &quot;映語&quot;,
+      &quot;英語&quot;,
+      &quot;英画&quot;,
+      &quot;映画&quot;
+    ],
+    &quot;key&quot;: 4
+  },
+  &quot;context&quot;: &quot;Vocabulary q8 borrows a library book; the coherent alternatives ask for 映画 or 英語.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: {
+        &quot;id&quot;: &quot;vocab-q008&quot;,
+        &quot;line&quot;: 1801,
+        &quot;stem&quot;: {
+          &quot;html&quot;: &quot;8. としょかんで&lt;u&gt;えいご&lt;/u&gt;の本をかりました。&quot;
+        },
+        &quot;options&quot;: [
+          &quot;映語&quot;,
+          &quot;英語&quot;,
+          &quot;英画&quot;,
+          &quot;映画&quot;
+        ],
+        &quot;key&quot;: 2
+      },
+      &quot;assessment&quot;: &quot;The native transcript explicitly asks えいご, selects2英語 and translates it as an English book.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;2021年12月N4真题 — 渠道一 18-page edition, written pages1–11&quot;,
+      &quot;sha256&quot;: &quot;d28e50f14fd508168cae93c215f1307be4f8c133b96ce51401b3f59868f7df9f&quot;,
+      &quot;physical_pages&quot;: [
+        2
+      ],
+      &quot;locator&quot;: &quot;q8 original stem and choices&quot;,
+      &quot;reading&quot;: &quot;としょかんで&lt;u&gt;えいが&lt;/u&gt;の本をかりました。 / choice4映画&quot;,
+      &quot;lineage&quot;: &quot;Question editions and derivative answer/transcript copies have unestablished acquisition; repeated copies are not independent authentication. The written page images of the two18-page editions are identical.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;Đề N4 T12-2021 Mark — Yuuki Bùi (20 pages)&quot;,
+      &quot;sha256&quot;: &quot;2224d3381bfdd399721ae646cb862f8f1ddf56212304772de53afcdf923a24e5&quot;,
+      &quot;physical_pages&quot;: [
+        2
+      ],
+      &quot;locator&quot;: &quot;q8 original stem&quot;,
+      &quot;reading&quot;: &quot;えいが&quot;,
+      &quot;lineage&quot;: &quot;Question editions and derivative answer/transcript copies have unestablished acquisition; repeated copies are not independent authentication. The written page images of the two18-page editions are identical.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;Đáp án đề N4 T12-2021 Mark — Yuuki Bùi (4 pages)&quot;,
+      &quot;sha256&quot;: &quot;21367df40e142b086cd8f82d2f44ba71d9267ee8738007b1f687e94f2837dfbd&quot;,
+      &quot;physical_pages&quot;: [
+        1
+      ],
+      &quot;locator&quot;: &quot;Written vocabulary q8 answer/explanation&quot;,
+      &quot;reading&quot;: &quot;映画, answer4&quot;,
+      &quot;lineage&quot;: &quot;Question editions and derivative answer/transcript copies have unestablished acquisition; repeated copies are not independent authentication. The written page images of the two18-page editions are identical.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2021年12月N4答案 — 2-page answer grid&quot;,
+      &quot;sha256&quot;: &quot;9db69f563e07eeffd789ba5ec74b9eeb64b02d92beefef835097230860e7920a&quot;,
+      &quot;physical_pages&quot;: [
+        1
+      ],
+      &quot;locator&quot;: &quot;Written vocabulary answer table q8&quot;,
+      &quot;reading&quot;: &quot;4&quot;,
+      &quot;lineage&quot;: &quot;Question editions and derivative answer/transcript copies have unestablished acquisition; repeated copies are not independent authentication. The written page images of the two18-page editions are identical.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;Munja JLPT — December2021 N4 native transcript&quot;,
+      &quot;sha256&quot;: &quot;a621e7082fa2b8b366e72868ba0fd1da66280601431f89a8e0b7eff07d4205ec&quot;,
+      &quot;locator&quot;: &quot;Vocabulary section2 q8 full stem, key and explanation&quot;,
+      &quot;reading&quot;: &quot;えいご / answer2英語 / English-book translation&quot;,
+      &quot;lineage&quot;: &quot;Native secondary transcript; independently acquired historical wording is not established.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Retain the movie version directly printed in both question layouts and supported by the written answer references. The native English version is internally coherent and cannot be dismissed solely because the other copies agree. No isolated key change is appropriate: the stem and key must be considered together.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Read both original question pages and all four kanji alternatives.&quot;,
+    &quot;Checked the word-bearing Yuuki answer explanation and separate numeric key grid.&quot;,
+    &quot;Read the native stem, zero-based answer and full English-book explanation, and checked the movie wording in the immutable archive.&quot;,
+    &quot;Compared each complete stem/key pair: えいが selects4映画; えいご selects2英語.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;The exact historical reading remains unproven. An authenticated page or independently traceable contemporary reproduction of this span could settle it; grammatical plausibility, distributor copies and their explanations do not establish independent provenance.&quot;
+}</pre></details></div></section><section class="review-group" id="review-vocab-b003" data-kinds="difference provisional_fix"><div class="review-group-heading"><h2>vocab-b003</h2><a href="../papers/N4_12_2021.html#vocab-b003">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><p>（れい）あの（　）をかぶっている人がたなかさんです。</p><p>1 くつした　2 とけい　3 ぼうし　4 めがね</p><p>（かいとうようし）<br/>（れい）① ② ● ④</p></div></details><div class="review-record" id="unresolved_cases-N4_12_2021-vocab-b003-object-distractor"><div class="review-label">Provisional fix ·  · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>…&quot;,
+  &quot;content&quot;: {
+    &quot;html&quot;: &quot;&lt;p&gt;（れい）あの（　）をかぶっている人がたなかさんです。&lt;/p&gt;&lt;p&gt;1 くつした　2 とけい　3 ぼうし　4 めが<mark class="diff-old">わ</mark>&lt;/p&gt;&lt;p&gt;（かいとうようし）&lt;br&gt;（れい）① ② ● ④&lt;/p&gt;&quot;
+  },
+  &quot;options&quot;: [
+    &quot;くつした&quot;,
+    &quot;とけい&quot;,
+    &quot;ぼうし&quot;,
+    &quot;めが<mark class="diff-old">わ</mark>&quot;
+  ],
+  &quot;key&quot;: 3
+}</pre></div><div><h4>Editorial</h4><pre>…&quot;,
+  &quot;content&quot;: {
+    &quot;html&quot;: &quot;&lt;p&gt;（れい）あの（　）をかぶっている人がたなかさんです。&lt;/p&gt;&lt;p&gt;1 くつした　2 とけい　3 ぼうし　4 めが<mark class="diff-new">ね</mark>&lt;/p&gt;&lt;p&gt;（かいとうようし）&lt;br&gt;（れい）① ② ● ④&lt;/p&gt;&quot;
+  },
+  &quot;options&quot;: [
+    &quot;くつした&quot;,
+    &quot;とけい&quot;,
+    &quot;ぼうし&quot;,
+    &quot;めが<mark class="diff-new">ね</mark>&quot;
+  ],
+  &quot;key&quot;: 3
+}</pre></div></div><p>Provisionally reconstruct めがね. Socks, a watch, a hat and glasses form a plausible set of clothing/accessory nouns, with かぶる selecting only the hat. Confusion of ね and わ is a plausible copying defect. That reasoning favors glasses but does not prove the literal nonword was accidental; therefore the addition is medium confidence and the full literal version remains available.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>The exact historical reading remains unproven. An authenticated page or independently traceable contemporary reproduction of this span could settle it; grammatical plausibility, distributor copies and their explanations do not establish independent provenance.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Unscored vocabulary fill-blank example: the person wearing a hat is Tanaka.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=2): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Example above vocabulary q13, enlarged original<p>くつした / とけい / ぼうし / めがわ; filled bubble3</p></li><li><span class="principal-repository-source">Principal source (page=9): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Same printed example in companion edition<p>The embedded page image is byte-identical to the principal’s page2.</p></li><li><span class="principal-repository-source">Principal source (page=2): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Transition into vocabularyProblem3<p>This edition omits the worked example; it supplies no alternative reading of the fourth choice.</p></li><li><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · VocabularyProblem3 section boundary<p>No worked example is present in the native transcript.</p></li></ul><details><summary>Full published record · unresolved_cases-N4_12_2021-vocab-b003-object-distractor</summary><pre>{
+  &quot;case_id&quot;: &quot;N4_12_2021-vocab-b003-object-distractor&quot;,
+  &quot;unit&quot;: &quot;N4_12_2021&quot;,
+  &quot;item_id&quot;: &quot;vocab-b003&quot;,
+  &quot;field&quot;: &quot;&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;japanese_reasoning&quot;,
+  &quot;current_value&quot;: {
+    &quot;id&quot;: &quot;vocab-b003&quot;,
+    &quot;type&quot;: &quot;example&quot;,
+    &quot;content&quot;: {
+      &quot;html&quot;: &quot;&lt;p&gt;（れい）あの（　）をかぶっている人がたなかさんです。&lt;/p&gt;&lt;p&gt;1 くつした　2 とけい　3 ぼうし　4 めがね&lt;/p&gt;&lt;p&gt;（かいとうようし）&lt;br&gt;（れい）① ② ● ④&lt;/p&gt;&quot;
+    },
+    &quot;options&quot;: [
+      &quot;くつした&quot;,
+      &quot;とけい&quot;,
+      &quot;ぼうし&quot;,
+      &quot;めがね&quot;
+    ],
+    &quot;key&quot;: 3
+  },
+  &quot;context&quot;: &quot;Unscored vocabulary fill-blank example: the person wearing a hat is Tanaka.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: {
+        &quot;id&quot;: &quot;vocab-b003&quot;,
+        &quot;type&quot;: &quot;example&quot;,
+        &quot;content&quot;: {
+          &quot;html&quot;: &quot;&lt;p&gt;（れい）あの（　）をかぶっている人がたなかさんです。&lt;/p&gt;&lt;p&gt;1 くつした　2 とけい　3 ぼうし　4 めがわ&lt;/p&gt;&lt;p&gt;（かいとうようし）&lt;br&gt;（れい）① ② ● ④&lt;/p&gt;&quot;
+        },
+        &quot;options&quot;: [
+          &quot;くつした&quot;,
+          &quot;とけい&quot;,
+          &quot;ぼうし&quot;,
+          &quot;めがわ&quot;
+        ],
+        &quot;key&quot;: 3
+      },
+      &quot;assessment&quot;: &quot;The principal literally prints めがわ as the fourth wrong option; an intentionally malformed distractor cannot be excluded.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;2021年12月N4真题 — 渠道一 18-page edition, written pages1–11&quot;,
+      &quot;sha256&quot;: &quot;d28e50f14fd508168cae93c215f1307be4f8c133b96ce51401b3f59868f7df9f&quot;,
+      &quot;physical_pages&quot;: [
+        2
+      ],
+      &quot;locator&quot;: &quot;Example above vocabulary q13, enlarged original&quot;,
+      &quot;reading&quot;: &quot;くつした / とけい / ぼうし / めがわ; filled bubble3&quot;,
+      &quot;lineage&quot;: &quot;Question editions and derivative answer/transcript copies have unestablished acquisition; repeated copies are not independent authentication. The written page images of the two18-page editions are identical.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2021年12月N4真题 — 18-page edition, written pages8–18&quot;,
+      &quot;sha256&quot;: &quot;a5362b2bcbf716765f842631f4660a05d20fe57d3360fdb0b909ac61382573fe&quot;,
+      &quot;physical_pages&quot;: [
+        9
+      ],
+      &quot;locator&quot;: &quot;Same printed example in companion edition&quot;,
+      &quot;reading&quot;: &quot;The embedded page image is byte-identical to the principal’s page2.&quot;,
+      &quot;lineage&quot;: &quot;Question editions and derivative answer/transcript copies have unestablished acquisition; repeated copies are not independent authentication. The written page images of the two18-page editions are identical.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;Đề N4 T12-2021 Mark — Yuuki Bùi (20 pages)&quot;,
+      &quot;sha256&quot;: &quot;2224d3381bfdd399721ae646cb862f8f1ddf56212304772de53afcdf923a24e5&quot;,
+      &quot;physical_pages&quot;: [
+        2
+      ],
+      &quot;locator&quot;: &quot;Transition into vocabularyProblem3&quot;,
+      &quot;reading&quot;: &quot;This edition omits the worked example; it supplies no alternative reading of the fourth choice.&quot;,
+      &quot;lineage&quot;: &quot;Question editions and derivative answer/transcript copies have unestablished acquisition; repeated copies are not independent authentication. The written page images of the two18-page editions are identical.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;Munja JLPT — December2021 N4 native transcript&quot;,
+      &quot;sha256&quot;: &quot;a621e7082fa2b8b366e72868ba0fd1da66280601431f89a8e0b7eff07d4205ec&quot;,
+      &quot;locator&quot;: &quot;VocabularyProblem3 section boundary&quot;,
+      &quot;reading&quot;: &quot;No worked example is present in the native transcript.&quot;,
+      &quot;lineage&quot;: &quot;Native secondary transcript; independently acquired historical wording is not established.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Provisionally reconstruct めがね. Socks, a watch, a hat and glasses form a plausible set of clothing/accessory nouns, with かぶる selecting only the hat. Confusion of ね and わ is a plausible copying defect. That reasoning favors glasses but does not prove the literal nonword was accidental; therefore the addition is medium confidence and the full literal version remains available.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Read and enlarged the actual fourth choice; confirmed めがわ, not an OCR-only anomaly.&quot;,
+    &quot;Compared the companion page’s embedded image hash; it is the same witness and supplies no independent correction.&quot;,
+    &quot;Checked both the alternate complete question layout and native transcript for the example; both omit it.&quot;,
+    &quot;Tested めがね and the literal めがわ against the four-option example and its printed answer3.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;The exact historical reading remains unproven. An authenticated page or independently traceable contemporary reproduction of this span could settle it; grammatical plausibility, distributor copies and their explanations do not establish independent provenance.&quot;,
+  &quot;before&quot;: null
+}</pre></details></div><div class="review-record" id="principal_differences-N4_12_2021-PD-017"><div class="review-label">Principal difference ·  · high</div><div class="comparison"><div><h4>Principal</h4><pre>めが<mark class="diff-old">わ</mark></pre></div><div><h4>Editorial</h4><pre>めが<mark class="diff-new">ね</mark></pre></div></div><p>Provisionally reconstruct glasses as the fourth clothing/accessory distractor. The principal literally prints a nonword; that could itself have been intentional, so the linguistic conjecture is medium confidence and publicly documented.</p><span class="principal-repository-source">Principal source (page=2): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Problem3 worked example choice4, enlarged original</span><details><summary>Full published record · principal_differences-N4_12_2021-PD-017</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N4_12_2021-PD-017&quot;,
+  &quot;unit&quot;: &quot;N4_12_2021&quot;,
+  &quot;item_id&quot;: &quot;vocab-b003&quot;,
+  &quot;field&quot;: &quot;&quot;,
+  &quot;current_value&quot;: {
+    &quot;id&quot;: &quot;vocab-b003&quot;,
+    &quot;type&quot;: &quot;example&quot;,
+    &quot;content&quot;: {
+      &quot;html&quot;: &quot;&lt;p&gt;（れい）あの（　）をかぶっている人がたなかさんです。&lt;/p&gt;&lt;p&gt;1 くつした　2 とけい　3 ぼうし　4 めがね&lt;/p&gt;&lt;p&gt;（かいとうようし）&lt;br&gt;（れい）① ② ● ④&lt;/p&gt;&quot;
+    },
+    &quot;options&quot;: [
+      &quot;くつした&quot;,
+      &quot;とけい&quot;,
+      &quot;ぼうし&quot;,
+      &quot;めがね&quot;
+    ],
+    &quot;key&quot;: 3
+  },
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2021年12月N4真题 — 渠道一 18-page edition, written pages1–11&quot;,
+    &quot;sha256&quot;: &quot;d28e50f14fd508168cae93c215f1307be4f8c133b96ce51401b3f59868f7df9f&quot;,
+    &quot;physical_pages&quot;: [
+      2
+    ],
+    &quot;locator&quot;: &quot;Problem3 worked example choice4, enlarged original&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;めがわ&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;めがね&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;conjectural_repair&quot;,
+  &quot;rationale&quot;: &quot;Provisionally reconstruct glasses as the fourth clothing/accessory distractor. The principal literally prints a nonword; that could itself have been intentional, so the linguistic conjecture is medium confidence and publicly documented.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;N4_12_2021-vocab-b003-object-distractor&quot;
+  ]
+}</pre></details></div></section><section class="review-group" id="review-vocab-q016" data-kinds="difference unresolved"><div class="review-group-heading"><h2>vocab-q016</h2><a href="../papers/N4_12_2021.html#vocab-q016">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">16. どんなまんががすきか、 小学生に（　　）をしました。<ol><li>コンサート</li><li>コンピューター</li><li>アンケート</li><li>アルコール</li></ol><p>Editorial key: 3</p></div></details><div class="review-record" id="unresolved_cases-N4_12_2021-vocab-q016-computer-ending"><div class="review-label">Unresolved · /options/1 · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>コンピュータ</pre></div><div><h4>Editorial</h4><pre>コンピュータ<mark class="diff-new">ー</mark></pre></div></div><p>Recheck this linked older case with PD-004 and retain the current long form without claiming it is necessary. The complete manga-preference question, every option, both source endings and the approved N2 short-form passage were visually inspected. アンケート is uniquely correct under either computer spelling. The new comparison confirms the principal&#x27;s short form is linguistically legitimate but does not settle the exact-item conflict, so the earlier preference and public uncertainty remain. The newly observed alternate Q16 is on physical page 2; preserve the older locator as history and append this corrected observation.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>The two exact question layouts disagree and their historical independence is unestablished. The native transcript and approved cross-task parallel do not authenticate either terminal mark.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Vocabulary q16 asks what was conducted with elementary pupils about their favorite manga; computer is a wrong option.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=3): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · q16 choice2<p>コンピュータ</p></li><li><span class="principal-repository-source">Principal source (page=3): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · q16 choice2<p>コンピューター</p></li><li><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Vocabulary section3 q16 choice2<p>コンピュータ</p></li><li><span class="principal-repository-source">Principal source (page=1): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Entire Q6 winter-reading task and Q16 manga-preference stem across pages 2–3 with all four options<p>Q6 日本をりょこうしました; Q16 option 2 コンピュータ</p></li><li><span class="principal-repository-source">Principal source (page=1): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Full Q6 and Q16 in this copy&#x27;s actual physical pages 1–2; older case evidence&#x27;s page-3 locator for Q16 is not reused<p>Q6 旅行; Q16 option 2 コンピューター</p></li><li><span class="principal-repository-source">Principal source (page=22): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Printed 24–25: complete artificial-objects passage, computer example and questions 66–68<p>コンピュータ, including the Q66 stem</p></li></ul><details><summary>Full published record · unresolved_cases-N4_12_2021-vocab-q016-computer-ending</summary><pre>{
+  &quot;case_id&quot;: &quot;N4_12_2021-vocab-q016-computer-ending&quot;,
+  &quot;unit&quot;: &quot;N4_12_2021&quot;,
+  &quot;item_id&quot;: &quot;vocab-q016&quot;,
+  &quot;field&quot;: &quot;/options/1&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;コンピューター&quot;,
+  &quot;context&quot;: &quot;Vocabulary q16 asks what was conducted with elementary pupils about their favorite manga; computer is a wrong option.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;コンピュータ&quot;,
+      &quot;assessment&quot;: &quot;The principal and native transcript omit the final long-vowel mark.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;2021年12月N4真题 — 渠道一 18-page edition, written pages1–11&quot;,
+      &quot;sha256&quot;: &quot;d28e50f14fd508168cae93c215f1307be4f8c133b96ce51401b3f59868f7df9f&quot;,
+      &quot;physical_pages&quot;: [
+        3
+      ],
+      &quot;locator&quot;: &quot;q16 choice2&quot;,
+      &quot;reading&quot;: &quot;コンピュータ&quot;,
+      &quot;lineage&quot;: &quot;Question editions and derivative answer/transcript copies have unestablished acquisition; repeated copies are not independent authentication. The written page images of the two18-page editions are identical.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;Đề N4 T12-2021 Mark — Yuuki Bùi (20 pages)&quot;,
+      &quot;sha256&quot;: &quot;2224d3381bfdd399721ae646cb862f8f1ddf56212304772de53afcdf923a24e5&quot;,
+      &quot;physical_pages&quot;: [
+        3
+      ],
+      &quot;locator&quot;: &quot;q16 choice2&quot;,
+      &quot;reading&quot;: &quot;コンピューター&quot;,
+      &quot;lineage&quot;: &quot;Question editions and derivative answer/transcript copies have unestablished acquisition; repeated copies are not independent authentication. The written page images of the two18-page editions are identical.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;Munja JLPT — December2021 N4 native transcript&quot;,
+      &quot;sha256&quot;: &quot;a621e7082fa2b8b366e72868ba0fd1da66280601431f89a8e0b7eff07d4205ec&quot;,
+      &quot;locator&quot;: &quot;Vocabulary section3 q16 choice2&quot;,
+      &quot;reading&quot;: &quot;コンピュータ&quot;,
+      &quot;lineage&quot;: &quot;Native secondary transcript; independently acquired historical wording is not established.&quot;
+    },
+    {
+      &quot;sha256&quot;: &quot;d28e50f14fd508168cae93c215f1307be4f8c133b96ce51401b3f59868f7df9f&quot;,
+      &quot;physical_pages&quot;: [
+        1,
+        2,
+        3
+      ],
+      &quot;locator&quot;: &quot;Entire Q6 winter-reading task and Q16 manga-preference stem across pages 2–3 with all four options&quot;,
+      &quot;reading&quot;: &quot;Q6 日本をりょこうしました; Q16 option 2 コンピュータ&quot;,
+      &quot;source_label&quot;: &quot;2021年12月N4真题.pdf&quot;,
+      &quot;lineage&quot;: &quot;One paper/source lineage. Aliases and repeat observations are not independent witnesses. exact unverified principal; only written pages 1–3 inspected&quot;
+    },
+    {
+      &quot;sha256&quot;: &quot;2224d3381bfdd399721ae646cb862f8f1ddf56212304772de53afcdf923a24e5&quot;,
+      &quot;physical_pages&quot;: [
+        1,
+        2
+      ],
+      &quot;locator&quot;: &quot;Full Q6 and Q16 in this copy&#x27;s actual physical pages 1–2; older case evidence&#x27;s page-3 locator for Q16 is not reused&quot;,
+      &quot;reading&quot;: &quot;Q6 旅行; Q16 option 2 コンピューター&quot;,
+      &quot;source_label&quot;: &quot;Đề N4 T12-2021 Mark.pdf&quot;,
+      &quot;lineage&quot;: &quot;One paper/source lineage. Aliases and repeat observations are not independent witnesses. distinct unverified question layout; not independent issuer evidence&quot;
+    },
+    {
+      &quot;physical_pages&quot;: [
+        22,
+        23
+      ],
+      &quot;locator&quot;: &quot;Printed 24–25: complete artificial-objects passage, computer example and questions 66–68&quot;,
+      &quot;reading&quot;: &quot;コンピュータ, including the Q66 stem&quot;,
+      &quot;sha256&quot;: &quot;58f26b8a8b300047480495f64daa76b90359b7f4d1631c8f0e9c8f78c9ed6013&quot;,
+      &quot;source_label&quot;: &quot;2018年7月日语N2真题-第一版（官方试卷版）.pdf&quot;,
+      &quot;lineage&quot;: &quot;One paper/source lineage. Aliases and repeat observations are not independent witnesses. approved harder-level comparison demonstrating the short noun form in ordinary content; different task and not proof of the N4 distractor&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Recheck this linked older case with PD-004 and retain the current long form without claiming it is necessary. The complete manga-preference question, every option, both source endings and the approved N2 short-form passage were visually inspected. アンケート is uniquely correct under either computer spelling. The new comparison confirms the principal&#x27;s short form is linguistically legitimate but does not settle the exact-item conflict, so the earlier preference and public uncertainty remain. The newly observed alternate Q16 is on physical page 2; preserve the older locator as history and append this corrected observation.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Compared the actual word ending in both original layouts.&quot;,
+    &quot;Checked native transcript and immutable archive lineage.&quot;,
+    &quot;Evaluated all choices in the full manga-preference context; neither spelling changes the answer.&quot;,
+    &quot;2026-10-03 housekeeping calibration: updated the current field and preserved this open case.&quot;,
+    &quot;5 November 2026 final housekeeping: visually inspected the exact listed pages and complete dependent task; checked all choices, contextual alternatives, current v3 value and source lineage. Q6 tests the underlined 冬, whose current correct answer is ふゆ (2); the incidental travel clause cannot supply that reading. The principal prints りょこう and the alternate 旅行. Approved December 2025 N4 Q13 visibly prints りょこう in an incidental travel clause whose actual blank asks for hotel-stay verb とまりました (2), a closer functional match than an isolated word list. Retain the scoped kana choice without changing 冬 or any option. Q16 asks what was conducted with elementary pupils about favorite manga: アンケート (3), while コンサート, either コンピュータ or コンピューター, and アルコール remain wrong. Both exact copies&#x27; full options were inspected. Approved N2 July 2018 clearly uses コンピュータ in a complete passage about artifacts&#x27; unforeseen social effects (Q66–68 answers 2/1/3), confirming that the short form is legitimate. It does not choose the spelling of this unrelated N4 distractor. The existing native-transcript agreement with the principal is retained as prior evidence, not newly inspected independent corroboration. No linguistic necessity or authenticated historical evidence favors changing the current long form. The separate one-space removal after 出られません。 in an old departure snapshot was inspected as existing typography only.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;The two exact question layouts disagree and their historical independence is unestablished. The native transcript and approved cross-task parallel do not authenticate either terminal mark.&quot;
+}</pre></details></div><div class="review-record" id="unresolved_cases-N4_12_2021-PD-004"><div class="review-label">Unresolved · /options/1 · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>コンピューター</pre></div><div><h4>Editorial</h4><pre>コンピューター</pre></div></div><p>Retain the current コンピューター and keep the proposed shortening open after the expanded check. Full principal and alternate Q16 copies disagree; both forms remain legitimate computer nouns and intentional wrong options beside the correct アンケート. The approved N2 computer passage supplies the previously missing stronger-source example of コンピュータ, but its ordinary passage/stem use does not establish this N4 distractor&#x27;s original terminal mark. That comparison defeats any claim that short コンピュータ needs correction; it does not outweigh the exact conflicting witness enough to justify another edit. No option is repaired for fluency and key 3 remains unchanged.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>コンピュータ and コンピューター are both supported in viable exact-item copies. Further unrelated occurrences cannot establish which historical distractor was issued; traceable exact-item evidence is still needed.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">N4_12_2021-PD-004 — calibrated review of vocab-q016 /options/1. This case remains OPEN regardless of acceptance, rejection or deferral.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=3): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · q16 choice2<p>コンピュータ</p></li><li><span class="principal-repository-source">Principal source (page=1): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Entire Q6 winter-reading task and Q16 manga-preference stem across pages 2–3 with all four options<p>Q6 日本をりょこうしました; Q16 option 2 コンピュータ</p></li><li><span class="principal-repository-source">Principal source (page=1): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Full Q6 and Q16 in this copy&#x27;s actual physical pages 1–2; older case evidence&#x27;s page-3 locator for Q16 is not reused<p>Q6 旅行; Q16 option 2 コンピューター</p></li><li><span class="principal-repository-source">Principal source (page=22): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Printed 24–25: complete artificial-objects passage, computer example and questions 66–68<p>コンピュータ, including the Q66 stem</p></li></ul><details><summary>Full published record · unresolved_cases-N4_12_2021-PD-004</summary><pre>{
+  &quot;case_id&quot;: &quot;N4_12_2021-PD-004&quot;,
+  &quot;unit&quot;: &quot;N4_12_2021&quot;,
+  &quot;item_id&quot;: &quot;vocab-q016&quot;,
+  &quot;field&quot;: &quot;/options/1&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;コンピューター&quot;,
+  &quot;context&quot;: &quot;N4_12_2021-PD-004 — calibrated review of vocab-q016 /options/1. This case remains OPEN regardless of acceptance, rejection or deferral.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;コンピューター&quot;,
+      &quot;assessment&quot;: &quot;Editorial value before this housekeeping pass; retained here as review history, not automatically preferred.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;コンピュータ&quot;,
+      &quot;assessment&quot;: &quot;Published principal comparison fragment (not a complete substitute for the field). Source trust does not make every difference an error.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;コンピュータ&quot;,
+      &quot;assessment&quot;: &quot;Deferred candidate fragments only. No corresponding edit has been applied; evaluate their exact scope in housekeeping 2.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;2021年12月N4真题 — 渠道一 18-page edition, written pages1–11&quot;,
+      &quot;sha256&quot;: &quot;d28e50f14fd508168cae93c215f1307be4f8c133b96ce51401b3f59868f7df9f&quot;,
+      &quot;physical_pages&quot;: [
+        3
+      ],
+      &quot;locator&quot;: &quot;q16 choice2&quot;,
+      &quot;reading&quot;: &quot;コンピュータ&quot;
+    },
+    {
+      &quot;sha256&quot;: &quot;d28e50f14fd508168cae93c215f1307be4f8c133b96ce51401b3f59868f7df9f&quot;,
+      &quot;physical_pages&quot;: [
+        1,
+        2,
+        3
+      ],
+      &quot;locator&quot;: &quot;Entire Q6 winter-reading task and Q16 manga-preference stem across pages 2–3 with all four options&quot;,
+      &quot;reading&quot;: &quot;Q6 日本をりょこうしました; Q16 option 2 コンピュータ&quot;,
+      &quot;source_label&quot;: &quot;2021年12月N4真题.pdf&quot;,
+      &quot;lineage&quot;: &quot;One paper/source lineage. Aliases and repeat observations are not independent witnesses. exact unverified principal; only written pages 1–3 inspected&quot;
+    },
+    {
+      &quot;sha256&quot;: &quot;2224d3381bfdd399721ae646cb862f8f1ddf56212304772de53afcdf923a24e5&quot;,
+      &quot;physical_pages&quot;: [
+        1,
+        2
+      ],
+      &quot;locator&quot;: &quot;Full Q6 and Q16 in this copy&#x27;s actual physical pages 1–2; older case evidence&#x27;s page-3 locator for Q16 is not reused&quot;,
+      &quot;reading&quot;: &quot;Q6 旅行; Q16 option 2 コンピューター&quot;,
+      &quot;source_label&quot;: &quot;Đề N4 T12-2021 Mark.pdf&quot;,
+      &quot;lineage&quot;: &quot;One paper/source lineage. Aliases and repeat observations are not independent witnesses. distinct unverified question layout; not independent issuer evidence&quot;
+    },
+    {
+      &quot;physical_pages&quot;: [
+        22,
+        23
+      ],
+      &quot;locator&quot;: &quot;Printed 24–25: complete artificial-objects passage, computer example and questions 66–68&quot;,
+      &quot;reading&quot;: &quot;コンピュータ, including the Q66 stem&quot;,
+      &quot;sha256&quot;: &quot;58f26b8a8b300047480495f64daa76b90359b7f4d1631c8f0e9c8f78c9ed6013&quot;,
+      &quot;source_label&quot;: &quot;2018年7月日语N2真题-第一版（官方试卷版）.pdf&quot;,
+      &quot;lineage&quot;: &quot;One paper/source lineage. Aliases and repeat observations are not independent witnesses. approved harder-level comparison demonstrating the short noun form in ordinary content; different task and not proof of the N4 distractor&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Retain the current コンピューター and keep the proposed shortening open after the expanded check. Full principal and alternate Q16 copies disagree; both forms remain legitimate computer nouns and intentional wrong options beside the correct アンケート. The approved N2 computer passage supplies the previously missing stronger-source example of コンピュータ, but its ordinary passage/stem use does not establish this N4 distractor&#x27;s original terminal mark. That comparison defeats any claim that short コンピュータ needs correction; it does not outweigh the exact conflicting witness enough to justify another edit. No option is repaired for fluency and key 3 remains unchanged.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Reviewed the user’s item-specific calibration and exact-scope limits.&quot;,
+    &quot;Compared the current editorial field and published principal reading; used existing trusted-paper editorial JSON for level/style evidence where applicable.&quot;,
+    &quot;Retained independent repairs and left unsupported candidate fragments unchanged.&quot;,
+    &quot;5 November 2026 final housekeeping: visually inspected the exact listed pages and complete dependent task; checked all choices, contextual alternatives, current v3 value and source lineage. Q6 tests the underlined 冬, whose current correct answer is ふゆ (2); the incidental travel clause cannot supply that reading. The principal prints りょこう and the alternate 旅行. Approved December 2025 N4 Q13 visibly prints りょこう in an incidental travel clause whose actual blank asks for hotel-stay verb とまりました (2), a closer functional match than an isolated word list. Retain the scoped kana choice without changing 冬 or any option. Q16 asks what was conducted with elementary pupils about favorite manga: アンケート (3), while コンサート, either コンピュータ or コンピューター, and アルコール remain wrong. Both exact copies&#x27; full options were inspected. Approved N2 July 2018 clearly uses コンピュータ in a complete passage about artifacts&#x27; unforeseen social effects (Q66–68 answers 2/1/3), confirming that the short form is legitimate. It does not choose the spelling of this unrelated N4 distractor. The existing native-transcript agreement with the principal is retained as prior evidence, not newly inspected independent corroboration. No linguistic necessity or authenticated historical evidence favors changing the current long form. The separate one-space removal after 出られません。 in an old departure snapshot was inspected as existing typography only.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;コンピュータ and コンピューター are both supported in viable exact-item copies. Further unrelated occurrences cannot establish which historical distractor was issued; traceable exact-item evidence is still needed.&quot;
+}</pre></details></div><div class="review-record" id="principal_differences-N4_12_2021-PD-004"><div class="review-label">Principal difference · /options/1 · high</div><div class="comparison"><div><h4>Principal</h4><pre>コンピュータ</pre></div><div><h4>Editorial</h4><pre>コンピュータ<mark class="diff-new">ー</mark></pre></div></div><p>Housekeeping 1 (2026-10-03): User calibration applied only where the evidence gate was met. Deferred: コンピューター → コンピュータ. Exact scope: The printed コンピュータ is a wrong choice here. It remains a valid historical distractor; adding ー is not required to preserve the keyed answer アンケート. The remaining comparison stays open.</p><span class="principal-repository-source">Principal source (page=3): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">q16 choice2</span><details><summary>Full published record · principal_differences-N4_12_2021-PD-004</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N4_12_2021-PD-004&quot;,
+  &quot;unit&quot;: &quot;N4_12_2021&quot;,
+  &quot;item_id&quot;: &quot;vocab-q016&quot;,
+  &quot;field&quot;: &quot;/options/1&quot;,
+  &quot;current_value&quot;: &quot;コンピューター&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2021年12月N4真题 — 渠道一 18-page edition, written pages1–11&quot;,
+    &quot;sha256&quot;: &quot;d28e50f14fd508168cae93c215f1307be4f8c133b96ce51401b3f59868f7df9f&quot;,
+    &quot;physical_pages&quot;: [
+      3
+    ],
+    &quot;locator&quot;: &quot;q16 choice2&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;コンピュータ&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;コンピューター&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;retained_variant&quot;,
+  &quot;rationale&quot;: &quot;Housekeeping 1 (2026-10-03): User calibration applied only where the evidence gate was met. Deferred: コンピューター → コンピュータ. Exact scope: The printed コンピュータ is a wrong choice here. It remains a valid historical distractor; adding ー is not required to preserve the keyed answer アンケート. The remaining comparison stays open.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;N4_12_2021-vocab-q016-computer-ending&quot;,
+    &quot;N4_12_2021-PD-004&quot;
+  ]
+}</pre></details></div></section><section class="review-group" id="review-vocab-q020" data-kinds="difference"><div class="review-group-heading"><h2>vocab-q020</h2><a href="../papers/N4_12_2021.html#vocab-q020">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">20. ひっこしのとき、さらはかみで（　　）はこに入れます。<ol><li>ひろって</li><li>かたづけて</li><li>つかまえて</li><li>つつんで</li></ol><p>Editorial key: 4</p></div></details><div class="review-record" id="principal_differences-N4_12_2021-PD-005"><div class="review-label">Principal difference · /options/3 · high</div><div class="comparison"><div><h4>Principal</h4><pre>つつん<mark class="diff-old">て</mark></pre></div><div><h4>Editorial</h4><pre>つつん<mark class="diff-new">で</mark></pre></div></div><p>Retain the alternate original’s correct connective form of つつむ. Wrapping dishes in paper before putting them in a box requires つつんで; the principal loses the dakuten in the correct option.</p><span class="principal-repository-source">Principal source (page=3): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">q20 correct choice4, enlarged original</span><details><summary>Full published record · principal_differences-N4_12_2021-PD-005</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N4_12_2021-PD-005&quot;,
+  &quot;unit&quot;: &quot;N4_12_2021&quot;,
+  &quot;item_id&quot;: &quot;vocab-q020&quot;,
+  &quot;field&quot;: &quot;/options/3&quot;,
+  &quot;current_value&quot;: &quot;つつんで&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2021年12月N4真题 — 渠道一 18-page edition, written pages1–11&quot;,
+    &quot;sha256&quot;: &quot;d28e50f14fd508168cae93c215f1307be4f8c133b96ce51401b3f59868f7df9f&quot;,
+    &quot;physical_pages&quot;: [
+      3
+    ],
+    &quot;locator&quot;: &quot;q20 correct choice4, enlarged original&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;つつんて&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;つつんで&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Retain the alternate original’s correct connective form of つつむ. Wrapping dishes in paper before putting them in a box requires つつんで; the principal loses the dakuten in the correct option.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-vocab-q024" data-kinds="difference unresolved"><div class="review-group-heading"><h2>vocab-q024</h2><a href="../papers/N4_12_2021.html#vocab-q024">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">24. <u>これはやわらかいです</u>。<ol><li>これはかたくないですね。</li><li>これはにがくないですね。</li><li>これはつめたくないですね。</li><li>これはきたなくないですね。</li></ol><p>Editorial key: 1</p></div></details><div class="review-record" id="unresolved_cases-N4_12_2021-vocab-q024-sentence-particle"><div class="review-label">Unresolved · /stem/html · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>24. &lt;u&gt;これはやわらかいです<mark class="diff-old">ね</mark>&lt;/u&gt;。</pre></div><div><h4>Editorial</h4><pre>24. &lt;u&gt;これはやわらかいです&lt;/u&gt;。</pre></div></div><p>Retain the principal’s です. Both です and ですね are natural statements compatible with かたくないですね=1. Removing ね is supported as a variant choice but cannot be called a uniquely established historical correction. The separate corrupt れ/枚 endings in principal choices3/4 are repaired independently.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>The exact historical reading remains unproven. An authenticated page or independently traceable contemporary reproduction of this span could settle it; grammatical plausibility, distributor copies and their explanations do not establish independent provenance.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Vocabulary q24 paraphrases the statement that something is soft.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=4): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · q24 original underlined stem<p>これはやわらかいです。</p></li><li><span class="principal-repository-source">Principal source (page=3): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · q24 original underlined stem<p>これはやわらかいですね。</p></li><li><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Vocabulary section4 q24 stem and explanation<p>これはやわらかいです。</p></li></ul><details><summary>Full published record · unresolved_cases-N4_12_2021-vocab-q024-sentence-particle</summary><pre>{
+  &quot;case_id&quot;: &quot;N4_12_2021-vocab-q024-sentence-particle&quot;,
+  &quot;unit&quot;: &quot;N4_12_2021&quot;,
+  &quot;item_id&quot;: &quot;vocab-q024&quot;,
+  &quot;field&quot;: &quot;/stem/html&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;24. &lt;u&gt;これはやわらかいです&lt;/u&gt;。&quot;,
+  &quot;context&quot;: &quot;Vocabulary q24 paraphrases the statement that something is soft.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;24. &lt;u&gt;これはやわらかいですね&lt;/u&gt;。&quot;,
+      &quot;assessment&quot;: &quot;The20-page original and immutable archive include final ね in the underlined statement.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;2021年12月N4真题 — 渠道一 18-page edition, written pages1–11&quot;,
+      &quot;sha256&quot;: &quot;d28e50f14fd508168cae93c215f1307be4f8c133b96ce51401b3f59868f7df9f&quot;,
+      &quot;physical_pages&quot;: [
+        4
+      ],
+      &quot;locator&quot;: &quot;q24 original underlined stem&quot;,
+      &quot;reading&quot;: &quot;これはやわらかいです。&quot;,
+      &quot;lineage&quot;: &quot;Question editions and derivative answer/transcript copies have unestablished acquisition; repeated copies are not independent authentication. The written page images of the two18-page editions are identical.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;Đề N4 T12-2021 Mark — Yuuki Bùi (20 pages)&quot;,
+      &quot;sha256&quot;: &quot;2224d3381bfdd399721ae646cb862f8f1ddf56212304772de53afcdf923a24e5&quot;,
+      &quot;physical_pages&quot;: [
+        3
+      ],
+      &quot;locator&quot;: &quot;q24 original underlined stem&quot;,
+      &quot;reading&quot;: &quot;これはやわらかいですね。&quot;,
+      &quot;lineage&quot;: &quot;Question editions and derivative answer/transcript copies have unestablished acquisition; repeated copies are not independent authentication. The written page images of the two18-page editions are identical.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;Munja JLPT — December2021 N4 native transcript&quot;,
+      &quot;sha256&quot;: &quot;a621e7082fa2b8b366e72868ba0fd1da66280601431f89a8e0b7eff07d4205ec&quot;,
+      &quot;locator&quot;: &quot;Vocabulary section4 q24 stem and explanation&quot;,
+      &quot;reading&quot;: &quot;これはやわらかいです。&quot;,
+      &quot;lineage&quot;: &quot;Native secondary transcript; independently acquired historical wording is not established.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Retain the principal’s です. Both です and ですね are natural statements compatible with かたくないですね=1. Removing ね is supported as a variant choice but cannot be called a uniquely established historical correction. The separate corrupt れ/枚 endings in principal choices3/4 are repaired independently.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Compared both original stems and all four complete choices, enlarging the principal’s corrupted distractor endings.&quot;,
+    &quot;Read the native item and explanation and the immutable archive’s inherited ですね.&quot;,
+    &quot;Tested the optional sentence particle against the paraphrase task; the answer remains1.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;The exact historical reading remains unproven. An authenticated page or independently traceable contemporary reproduction of this span could settle it; grammatical plausibility, distributor copies and their explanations do not establish independent provenance.&quot;
+}</pre></details></div><div class="review-record" id="principal_differences-N4_12_2021-PD-006"><div class="review-label">Principal difference · /options/2 · high</div><div class="comparison"><div><h4>Principal</h4><pre>これはつめたくないです<mark class="diff-old">れ</mark>。</pre></div><div><h4>Editorial</h4><pre>これはつめたくないです<mark class="diff-new">ね</mark>。</pre></div></div><p>Retain the intact ですね ending printed in the alternate question and native transcript. The principal corrupts the incidental sentence particle; the temperature/cleanliness claims remain incorrect paraphrases of soft.</p><span class="principal-repository-source">Principal source (page=4): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">q24 wrong-choice sentence ending, enlarged original</span><details><summary>Full published record · principal_differences-N4_12_2021-PD-006</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N4_12_2021-PD-006&quot;,
+  &quot;unit&quot;: &quot;N4_12_2021&quot;,
+  &quot;item_id&quot;: &quot;vocab-q024&quot;,
+  &quot;field&quot;: &quot;/options/2&quot;,
+  &quot;current_value&quot;: &quot;これはつめたくないですね。&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2021年12月N4真题 — 渠道一 18-page edition, written pages1–11&quot;,
+    &quot;sha256&quot;: &quot;d28e50f14fd508168cae93c215f1307be4f8c133b96ce51401b3f59868f7df9f&quot;,
+    &quot;physical_pages&quot;: [
+      4
+    ],
+    &quot;locator&quot;: &quot;q24 wrong-choice sentence ending, enlarged original&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;これはつめたくないですれ。&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;これはつめたくないですね。&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Retain the intact ですね ending printed in the alternate question and native transcript. The principal corrupts the incidental sentence particle; the temperature/cleanliness claims remain incorrect paraphrases of soft.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div><div class="review-record" id="principal_differences-N4_12_2021-PD-007"><div class="review-label">Principal difference · /options/3 · high</div><div class="comparison"><div><h4>Principal</h4><pre>これはきたなくないです<mark class="diff-old">枚</mark>。</pre></div><div><h4>Editorial</h4><pre>これはきたなくないです<mark class="diff-new">ね</mark>。</pre></div></div><p>Retain the intact ですね ending printed in the alternate question and native transcript. The principal corrupts the incidental sentence particle; the temperature/cleanliness claims remain incorrect paraphrases of soft.</p><span class="principal-repository-source">Principal source (page=4): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">q24 wrong-choice sentence ending, enlarged original</span><details><summary>Full published record · principal_differences-N4_12_2021-PD-007</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N4_12_2021-PD-007&quot;,
+  &quot;unit&quot;: &quot;N4_12_2021&quot;,
+  &quot;item_id&quot;: &quot;vocab-q024&quot;,
+  &quot;field&quot;: &quot;/options/3&quot;,
+  &quot;current_value&quot;: &quot;これはきたなくないですね。&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2021年12月N4真题 — 渠道一 18-page edition, written pages1–11&quot;,
+    &quot;sha256&quot;: &quot;d28e50f14fd508168cae93c215f1307be4f8c133b96ce51401b3f59868f7df9f&quot;,
+    &quot;physical_pages&quot;: [
+      4
+    ],
+    &quot;locator&quot;: &quot;q24 wrong-choice sentence ending, enlarged original&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;これはきたなくないです枚。&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;これはきたなくないですね。&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Retain the intact ですね ending printed in the alternate question and native transcript. The principal corrupts the incidental sentence particle; the temperature/cleanliness claims remain incorrect paraphrases of soft.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-vocab-s05" data-kinds="difference"><div class="review-group-heading"><h2>vocab-s05</h2><a href="../papers/N4_12_2021.html#vocab-s05">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">もんだい 5 つぎのことばのつかいかたでいちばんいいものを 1・2・3・4からひとつえらんでください。</div></details><div class="review-record" id="principal_differences-N4_12_2021-PD-008"><div class="review-label">Principal difference · /heading · high</div><div class="comparison"><div><h4>Principal</h4><pre>つ<mark class="diff-old">き</mark>のことば</pre></div><div><h4>Editorial</h4><pre>つ<mark class="diff-new">ぎ</mark>のことば</pre></div></div><p>Retain the fixed instruction つぎのことば: the following word is to be used. Missing dakuten is an incidental rubric error, not a tested alternative.</p><span class="principal-repository-source">Principal source (page=4): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Problem5 first word</span><details><summary>Full published record · principal_differences-N4_12_2021-PD-008</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N4_12_2021-PD-008&quot;,
+  &quot;unit&quot;: &quot;N4_12_2021&quot;,
+  &quot;item_id&quot;: &quot;vocab-s05&quot;,
+  &quot;field&quot;: &quot;/heading&quot;,
+  &quot;current_value&quot;: &quot;もんだい 5 つぎのことばのつかいかたでいちばんいいものを 1・2・3・4からひとつえらんでください。&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2021年12月N4真题 — 渠道一 18-page edition, written pages1–11&quot;,
+    &quot;sha256&quot;: &quot;d28e50f14fd508168cae93c215f1307be4f8c133b96ce51401b3f59868f7df9f&quot;,
+    &quot;physical_pages&quot;: [
+      4
+    ],
+    &quot;locator&quot;: &quot;Problem5 first word&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;つきのことば&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;つぎのことば&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Retain the fixed instruction つぎのことば: the following word is to be used. Missing dakuten is an incidental rubric error, not a tested alternative.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-s01" data-kinds="difference"><div class="review-group-heading"><h2>reading-s01</h2><a href="../papers/N4_12_2021.html#reading-s01">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">もんだい1 （ ）に何を入れますか。1・2・3・4 から いちばん いいものをひとつえらんでください。</div></details><div class="review-record" id="principal_differences-N4_12_2021-PD-009"><div class="review-label">Principal difference · /heading · high</div><div class="comparison"><div><h4>Principal</h4><pre><mark class="diff-old">一</mark>つえらんでください。</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">ひと</mark>つえらんでください。</pre></div></div><p>Retain inherited kana spelling for the equivalent selection instruction.</p><span class="principal-repository-source">Principal source (page=5): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">GrammarProblem1 rubric</span><details><summary>Full published record · principal_differences-N4_12_2021-PD-009</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N4_12_2021-PD-009&quot;,
+  &quot;unit&quot;: &quot;N4_12_2021&quot;,
+  &quot;item_id&quot;: &quot;reading-s01&quot;,
+  &quot;field&quot;: &quot;/heading&quot;,
+  &quot;current_value&quot;: &quot;もんだい1 （ ）に何を入れますか。1・2・3・4 から いちばん いいものをひとつえらんでください。&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2021年12月N4真题 — 渠道一 18-page edition, written pages1–11&quot;,
+    &quot;sha256&quot;: &quot;d28e50f14fd508168cae93c215f1307be4f8c133b96ce51401b3f59868f7df9f&quot;,
+    &quot;physical_pages&quot;: [
+      5
+    ],
+    &quot;locator&quot;: &quot;GrammarProblem1 rubric&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;一つえらんでください。&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;ひとつえらんでください。&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;retained_variant&quot;,
+  &quot;rationale&quot;: &quot;Retain inherited kana spelling for the equivalent selection instruction.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-q011" data-kinds="unresolved"><div class="review-group-heading"><h2>reading-q011</h2><a href="../papers/N4_12_2021.html#reading-q011">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">11. A 「すみません。 山田さんのけいたい電話のばんごうを（　　）。」<br/>B「いいですよ。090-111-1111です。」<ol><li><ruby data-rubi-id="rr4-09012a8098a5643eb313" data-rubi-origin="project_rubi_restore">教<rt>おし</rt></ruby>えてくれませんか</li><li><ruby data-rubi-id="rr4-75a82ba686201b8c8ff8" data-rubi-origin="project_rubi_restore">教<rt>おし</rt></ruby>えましょうか</li><li><ruby data-rubi-id="rr4-5b9edc1afe4a233e5404" data-rubi-origin="project_rubi_restore">教<rt>おし</rt></ruby>えてもいいです</li><li><ruby data-rubi-id="rr4-13af356ba417809a2d88" data-rubi-origin="project_rubi_restore">教<rt>おし</rt></ruby>えましょう</li></ol><p>Editorial key: 1</p></div></details><div class="review-record" id="unresolved_cases-N4_12_2021-reading-q011-telephone-digits"><div class="review-label">Unresolved · /stem · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>11. A 「すみません。 山田さんのけいたい電話のばんごうを<mark class="diff-old">(</mark>　　<mark class="diff-old">)</mark>。」
+B「いいですよ。090-11-1111です。」</pre></div><div><h4>Editorial</h4><pre>11. A 「すみません。 山田さんのけいたい電話のばんごうを<mark class="diff-new">（</mark>　　<mark class="diff-new">）</mark>。」
+B「いいですよ。090-11<mark class="diff-new">1</mark>-1111です。」</pre></div></div><p>Retain the principal/native three-digit middle group. Neither string has the usual total length of a Japanese mobile number, but inventing another digit would not establish the printed fictional contact. 教えてくれませんか=1 depends on the request, not the digits.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>The exact historical reading remains unproven. An authenticated page or independently traceable contemporary reproduction of this span could settle it; grammatical plausibility, distributor copies and their explanations do not establish independent provenance.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Grammar q11 politely asks for Yamada’s mobile number; the supplied response contains a fictional phone string.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=6): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · q11 response phone string<p>090-111-1111</p></li><li><span class="principal-repository-source">Principal source (page=6): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · q11 response phone string<p>090-11-1111</p></li><li><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Grammar section1 q11 full dialogue<p>090-111-1111</p></li></ul><details><summary>Full published record · unresolved_cases-N4_12_2021-reading-q011-telephone-digits</summary><pre>{
+  &quot;case_id&quot;: &quot;N4_12_2021-reading-q011-telephone-digits&quot;,
+  &quot;unit&quot;: &quot;N4_12_2021&quot;,
+  &quot;item_id&quot;: &quot;reading-q011&quot;,
+  &quot;field&quot;: &quot;/stem&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;11. A 「すみません。 山田さんのけいたい電話のばんごうを（　　）。」\nB「いいですよ。090-111-1111です。」&quot;,
+  &quot;context&quot;: &quot;Grammar q11 politely asks for Yamada’s mobile number; the supplied response contains a fictional phone string.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;11. A 「すみません。 山田さんのけいたい電話のばんごうを(　　)。」\nB「いいですよ。090-11-1111です。」&quot;,
+      &quot;assessment&quot;: &quot;The20-page question original and immutable archive use two1s in the middle group.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;2021年12月N4真题 — 渠道一 18-page edition, written pages1–11&quot;,
+      &quot;sha256&quot;: &quot;d28e50f14fd508168cae93c215f1307be4f8c133b96ce51401b3f59868f7df9f&quot;,
+      &quot;physical_pages&quot;: [
+        6
+      ],
+      &quot;locator&quot;: &quot;q11 response phone string&quot;,
+      &quot;reading&quot;: &quot;090-111-1111&quot;,
+      &quot;lineage&quot;: &quot;Question editions and derivative answer/transcript copies have unestablished acquisition; repeated copies are not independent authentication. The written page images of the two18-page editions are identical.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;Đề N4 T12-2021 Mark — Yuuki Bùi (20 pages)&quot;,
+      &quot;sha256&quot;: &quot;2224d3381bfdd399721ae646cb862f8f1ddf56212304772de53afcdf923a24e5&quot;,
+      &quot;physical_pages&quot;: [
+        6
+      ],
+      &quot;locator&quot;: &quot;q11 response phone string&quot;,
+      &quot;reading&quot;: &quot;090-11-1111&quot;,
+      &quot;lineage&quot;: &quot;Question editions and derivative answer/transcript copies have unestablished acquisition; repeated copies are not independent authentication. The written page images of the two18-page editions are identical.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;Munja JLPT — December2021 N4 native transcript&quot;,
+      &quot;sha256&quot;: &quot;a621e7082fa2b8b366e72868ba0fd1da66280601431f89a8e0b7eff07d4205ec&quot;,
+      &quot;locator&quot;: &quot;Grammar section1 q11 full dialogue&quot;,
+      &quot;reading&quot;: &quot;090-111-1111&quot;,
+      &quot;lineage&quot;: &quot;Native secondary transcript; independently acquired historical wording is not established.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Retain the principal/native three-digit middle group. Neither string has the usual total length of a Japanese mobile number, but inventing another digit would not establish the printed fictional contact. 教えてくれませんか=1 depends on the request, not the digits.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Compared the actual phone strings in both original dialogue layouts.&quot;,
+    &quot;Read the native dialogue and explanation and the immutable archive’s shorter form.&quot;,
+    &quot;Checked the request construction with all four answers; did not contact or search for ownership of the number.&quot;,
+    &quot;5 November 2026: Rebind this public-case snapshot to the existing v3 typography. Exact comparison permits only ASCII-to-fullwidth parentheses, escaped-to-print angle brackets and explicitly reviewed per-record space removals. The editorial is byte-identical; the original substantive rationale, confidence, status and alternatives remain unchanged. This is record maintenance, not a new source review or resolution.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;The exact historical reading remains unproven. An authenticated page or independently traceable contemporary reproduction of this span could settle it; grammatical plausibility, distributor copies and their explanations do not establish independent provenance.&quot;
+}</pre></details></div></section><section class="review-group" id="review-reading-s02" data-kinds="difference"><div class="review-group-heading"><h2>reading-s02</h2><a href="../papers/N4_12_2021.html#reading-s02">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">もんだい2 つぎの文の <span class="star-slot"><span class="slot-glyph star-glyph">★</span></span> に入るものはどれですか。 1・2・3・4からいちばんいいものを 一つ えらんでください。</div></details><div class="review-record" id="principal_differences-N4_12_2021-PD-010"><div class="review-label">Principal difference · /heading · high</div><div class="comparison"><div><h4>Principal</h4><pre>★に入るものはどれですか。</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">つぎの文の</mark>★に入るものはどれですか。</pre></div></div><p>Retain the inherited introductory phrase つぎの文の. It makes the same STAR task explicit and does not alter the four slots or answer mapping.</p><span class="principal-repository-source">Principal source (page=6): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">GrammarProblem2 rubric</span><details><summary>Full published record · principal_differences-N4_12_2021-PD-010</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N4_12_2021-PD-010&quot;,
+  &quot;unit&quot;: &quot;N4_12_2021&quot;,
+  &quot;item_id&quot;: &quot;reading-s02&quot;,
+  &quot;field&quot;: &quot;/heading&quot;,
+  &quot;current_value&quot;: &quot;もんだい2 つぎの文の ★ に入るものはどれですか。 1・2・3・4からいちばんいいものを 一つ えらんでください。&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2021年12月N4真题 — 渠道一 18-page edition, written pages1–11&quot;,
+    &quot;sha256&quot;: &quot;d28e50f14fd508168cae93c215f1307be4f8c133b96ce51401b3f59868f7df9f&quot;,
+    &quot;physical_pages&quot;: [
+      6
+    ],
+    &quot;locator&quot;: &quot;GrammarProblem2 rubric&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;★に入るものはどれですか。&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;つぎの文の★に入るものはどれですか。&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;retained_variant&quot;,
+  &quot;rationale&quot;: &quot;Retain the inherited introductory phrase つぎの文の. It makes the same STAR task explicit and does not alter the four slots or answer mapping.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-q016" data-kinds="difference"><div class="review-group-heading"><h2>reading-q016</h2><a href="../papers/N4_12_2021.html#reading-q016">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">16. （<ruby data-rubi-id="rr4-9dadf12e6521ab74e5c1" data-rubi-origin="project_rubi_restore">学校<rt>がっこう</rt></ruby>で）
+<ruby data-rubi-id="rr4-5564fb0a3692246a2e71" data-rubi-origin="project_rubi_restore">先生<rt>せんせい</rt></ruby>「<ruby data-rubi-id="rr4-e2a193f9bb448b4c4f91" data-rubi-origin="project_rubi_restore">日本語<rt>にほんご</rt></ruby>Aのじゅぎょうの<ruby data-rubi-id="rr4-15ef53e44dc36ded7e3e" data-rubi-origin="project_rubi_restore">日<rt>ひ</rt></ruby>は、じしょを <span class="answer-slot"><span class="slot-glyph">_</span></span><span class="answer-slot"><span class="slot-glyph">_</span></span> <span class="star-slot"><span class="slot-glyph star-glyph">★</span></span> <span class="answer-slot"><span class="slot-glyph">_</span></span>ようにしてください。」<ol><li><ruby data-rubi-id="rr4-361baca59babe0fe394b" data-rubi-origin="project_rubi_restore">持<rt>も</rt></ruby>ってくる</li><li><ruby data-rubi-id="rr4-21539ccaf235bc703836" data-rubi-origin="project_rubi_restore">忘<rt>わす</rt></ruby>れない</li><li>を</li><li>の</li></ol><p>Editorial key: 3</p></div></details><div class="review-record" id="principal_differences-N4_12_2021-PD-014"><div class="review-label">Principal difference · /stem · high</div><div class="comparison"><div><h4>Principal</h4><pre>ようにしてください。</pre></div><div><h4>Editorial</h4><pre>ようにしてください。<mark class="diff-new">」</mark></pre></div></div><p>Retain the closing quotation mark supported by the native dialogue and the paired opening mark. The principal leaves the quotation unclosed.</p><span class="principal-repository-source">Principal source (page=7): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Teacher dialogue ending</span><details><summary>Full published record · principal_differences-N4_12_2021-PD-014</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N4_12_2021-PD-014&quot;,
+  &quot;unit&quot;: &quot;N4_12_2021&quot;,
+  &quot;item_id&quot;: &quot;reading-q016&quot;,
+  &quot;field&quot;: &quot;/stem&quot;,
+  &quot;current_value&quot;: &quot;16. （学校で）\n先生「日本語Aのじゅぎょうの日は、じしょを _ _ ★ _ようにしてください。」&quot;,
+  &quot;categories&quot;: [
+    &quot;punctuation&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2021年12月N4真题 — 渠道一 18-page edition, written pages1–11&quot;,
+    &quot;sha256&quot;: &quot;d28e50f14fd508168cae93c215f1307be4f8c133b96ce51401b3f59868f7df9f&quot;,
+    &quot;physical_pages&quot;: [
+      7
+    ],
+    &quot;locator&quot;: &quot;Teacher dialogue ending&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;ようにしてください。&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;ようにしてください。」&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Retain the closing quotation mark supported by the native dialogue and the paired opening mark. The principal leaves the quotation unclosed.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-q017" data-kinds="difference"><div class="review-group-heading"><h2>reading-q017</h2><a href="../papers/N4_12_2021.html#reading-q017">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">17. <ruby data-rubi-id="rr4-76ce3565f05c273e14a5" data-rubi-origin="project_rubi_restore">私<rt>わたし</rt></ruby>はいつもコーヒーは <span class="answer-slot"><span class="slot-glyph">_</span></span><span class="answer-slot"><span class="slot-glyph">_</span></span> <span class="star-slot"><span class="slot-glyph star-glyph">★</span></span> <span class="answer-slot"><span class="slot-glyph">_</span></span> コーヒーも<ruby data-rubi-id="rr4-666323106708c9a393c0" data-rubi-origin="project_rubi_restore">飲<rt>の</rt></ruby>みたくなる。<ol><li>ときどき</li><li>さとうを<ruby data-rubi-id="rr4-7046ef625d71416516d0" data-rubi-origin="project_rubi_restore">入<rt>い</rt></ruby>れないで</li><li>あまい</li><li><ruby data-rubi-id="rr4-e7c942c1fb1b3e18f1e8" data-rubi-origin="project_rubi_restore">飲<rt>の</rt></ruby>むが</li></ol><p>Editorial key: 1</p></div></details><div class="review-record" id="principal_differences-N4_12_2021-PD-015"><div class="review-label">Principal difference · /options/1 · high</div><div class="comparison"><div><h4>Principal</h4><pre>さとうを入れない<mark class="diff-old">て</mark></pre></div><div><h4>Editorial</h4><pre>さとうを入れない<mark class="diff-new">で</mark></pre></div></div><p>Retain the alternate original’s negative manner construction 入れないで. All four pieces must form the grammatical sentence about usually drinking without sugar but sometimes wanting sweet coffee.</p><span class="principal-repository-source">Principal source (page=7): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">STAR q17 choice2, enlarged original</span><details><summary>Full published record · principal_differences-N4_12_2021-PD-015</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N4_12_2021-PD-015&quot;,
+  &quot;unit&quot;: &quot;N4_12_2021&quot;,
+  &quot;item_id&quot;: &quot;reading-q017&quot;,
+  &quot;field&quot;: &quot;/options/1&quot;,
+  &quot;current_value&quot;: &quot;さとうを入れないで&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2021年12月N4真题 — 渠道一 18-page edition, written pages1–11&quot;,
+    &quot;sha256&quot;: &quot;d28e50f14fd508168cae93c215f1307be4f8c133b96ce51401b3f59868f7df9f&quot;,
+    &quot;physical_pages&quot;: [
+      7
+    ],
+    &quot;locator&quot;: &quot;STAR q17 choice2, enlarged original&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;さとうを入れないて&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;さとうを入れないで&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Retain the alternate original’s negative manner construction 入れないで. All four pieces must form the grammatical sentence about usually drinking without sugar but sometimes wanting sweet coffee.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-s03" data-kinds="difference"><div class="review-group-heading"><h2>reading-s03</h2><a href="../papers/N4_12_2021.html#reading-s03">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">もんだい3 （18） から （21） に 何を入れますか。 ぶんしょうのいみを考えて、1・2・3・4 から いちばんいいものをひとつ えらんでください。</div></details><div class="review-record" id="principal_differences-N4_12_2021-PD-011"><div class="review-label">Principal difference · /heading · high</div><div class="comparison"><div><h4>Principal</h4><pre><mark class="diff-old">文章</mark>の<mark class="diff-old">意味</mark> / <mark class="diff-old">一</mark>つ</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">ぶんしょう</mark>の<mark class="diff-new">いみ</mark> / <mark class="diff-new">ひと</mark>つ</pre></div></div><p>Retain inherited kana orthography. The printed18–21 range and all four passage blanks are preserved.</p><span class="principal-repository-source">Principal source (page=7): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">GrammarProblem3 rubric</span><details><summary>Full published record · principal_differences-N4_12_2021-PD-011</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N4_12_2021-PD-011&quot;,
+  &quot;unit&quot;: &quot;N4_12_2021&quot;,
+  &quot;item_id&quot;: &quot;reading-s03&quot;,
+  &quot;field&quot;: &quot;/heading&quot;,
+  &quot;current_value&quot;: &quot;もんだい3 （18） から （21） に 何を入れますか。 ぶんしょうのいみを考えて、1・2・3・4 から いちばんいいものをひとつ えらんでください。&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2021年12月N4真题 — 渠道一 18-page edition, written pages1–11&quot;,
+    &quot;sha256&quot;: &quot;d28e50f14fd508168cae93c215f1307be4f8c133b96ce51401b3f59868f7df9f&quot;,
+    &quot;physical_pages&quot;: [
+      7
+    ],
+    &quot;locator&quot;: &quot;GrammarProblem3 rubric&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;文章の意味 / 一つ&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;ぶんしょうのいみ / ひとつ&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;retained_variant&quot;,
+  &quot;rationale&quot;: &quot;Retain inherited kana orthography. The printed18–21 range and all four passage blanks are preserved.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-s04" data-kinds="difference"><div class="review-group-heading"><h2>reading-s04</h2><a href="../papers/N4_12_2021.html#reading-s04">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">もんだい4 つぎの（1）から（3）のぶんしょうをよんで、しつもんにこたえてください。こたえは、1・2・3・4 から いちばんいいものを ひとつ えらんでください。</div></details><div class="review-record" id="principal_differences-N4_12_2021-PD-012"><div class="review-label">Principal difference · /heading · high</div><div class="comparison"><div><h4>Principal</h4><pre><mark class="diff-old">文章</mark>を<mark class="diff-old">読</mark>んで、<mark class="diff-old">質問</mark>に<mark class="diff-old">答</mark>えてください。<mark class="diff-old">答</mark>えは / <mark class="diff-old">一</mark>つ</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">ぶんしょう</mark>を<mark class="diff-new">よ</mark>んで、<mark class="diff-new">しつもん</mark>に<mark class="diff-new">こた</mark>えてください。<mark class="diff-new">こた</mark>えは / <mark class="diff-new">ひと</mark>つ</pre></div></div><p>Retain the equivalent inherited kana instruction. The short-reading range(1)–(3), where applicable, is restored to match the principal.</p><span class="principal-repository-source">Principal source (page=8): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Reading instruction</span><details><summary>Full published record · principal_differences-N4_12_2021-PD-012</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N4_12_2021-PD-012&quot;,
+  &quot;unit&quot;: &quot;N4_12_2021&quot;,
+  &quot;item_id&quot;: &quot;reading-s04&quot;,
+  &quot;field&quot;: &quot;/heading&quot;,
+  &quot;current_value&quot;: &quot;もんだい4 つぎの（1）から（3）のぶんしょうをよんで、しつもんにこたえてください。こたえは、1・2・3・4 から いちばんいいものを ひとつ えらんでください。&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2021年12月N4真题 — 渠道一 18-page edition, written pages1–11&quot;,
+    &quot;sha256&quot;: &quot;d28e50f14fd508168cae93c215f1307be4f8c133b96ce51401b3f59868f7df9f&quot;,
+    &quot;physical_pages&quot;: [
+      8
+    ],
+    &quot;locator&quot;: &quot;Reading instruction&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;文章を読んで、質問に答えてください。答えは / 一つ&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;ぶんしょうをよんで、しつもんにこたえてください。こたえは / ひとつ&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;retained_variant&quot;,
+  &quot;rationale&quot;: &quot;Retain the equivalent inherited kana instruction. The short-reading range(1)–(3), where applicable, is restored to match the principal.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-q024" data-kinds="unresolved"><div class="review-group-heading"><h2>reading-q024</h2><a href="../papers/N4_12_2021.html#reading-q024">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">24. 田中さんはリンさんに<ruby data-rubi-id="rr4-ae798ce387eb9cb013d3" data-rubi-origin="project_rubi_restore">返事<rt>へんじ</rt></ruby>を書きたいと思っていますが、こまっています。どうしてですか。<ol><li>リンさんが東京にいつ来るかわからないから</li><li>リンさんが東京になぜ来たのかわからないから</li><li>リンさんが東京でどこにとまるかわからないから</li><li>リンさんが東京で何を食べたいかわからないから</li></ol><p>Editorial key: 1</p></div></details><div class="review-record" id="unresolved_cases-N4_12_2021-reading-q024-embedded-question-particle"><div class="review-label">Unresolved · /options/3 · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>リンさんが東京で何を食べたい<mark class="diff-old">の</mark>かわからないから</pre></div><div><h4>Editorial</h4><pre>リンさんが東京で何を食べたいかわからないから</pre></div></div><p>Retain the two question originals’ shorter embedded question. Adding の is also grammatical and does not change this distractor’s role. Lin already proposes sushi; the missing information is the date of arrival in Tokyo, answer1.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>The exact historical reading remains unproven. An authenticated page or independently traceable contemporary reproduction of this span could settle it; grammatical plausibility, distributor copies and their explanations do not establish independent provenance.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Reading q24 asks why Tanaka cannot yet reply to Lin; the fourth distractor asks what Lin wants to eat.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=9): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · q24 choice4<p>リンさんが東京で何を食べたいかわからないから</p></li><li><span class="principal-repository-source">Principal source (page=10): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · q24 choice4<p>Same wording without の.</p></li><li><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Reading short-passage section, Lin email q24 option4 and explanation<p>何を食べたいのかわからないから</p></li></ul><details><summary>Full published record · unresolved_cases-N4_12_2021-reading-q024-embedded-question-particle</summary><pre>{
+  &quot;case_id&quot;: &quot;N4_12_2021-reading-q024-embedded-question-particle&quot;,
+  &quot;unit&quot;: &quot;N4_12_2021&quot;,
+  &quot;item_id&quot;: &quot;reading-q024&quot;,
+  &quot;field&quot;: &quot;/options/3&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;リンさんが東京で何を食べたいかわからないから&quot;,
+  &quot;context&quot;: &quot;Reading q24 asks why Tanaka cannot yet reply to Lin; the fourth distractor asks what Lin wants to eat.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;リンさんが東京で何を食べたいのかわからないから&quot;,
+      &quot;assessment&quot;: &quot;The native transcript includes の before か.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;2021年12月N4真题 — 渠道一 18-page edition, written pages1–11&quot;,
+      &quot;sha256&quot;: &quot;d28e50f14fd508168cae93c215f1307be4f8c133b96ce51401b3f59868f7df9f&quot;,
+      &quot;physical_pages&quot;: [
+        9
+      ],
+      &quot;locator&quot;: &quot;q24 choice4&quot;,
+      &quot;reading&quot;: &quot;リンさんが東京で何を食べたいかわからないから&quot;,
+      &quot;lineage&quot;: &quot;Question editions and derivative answer/transcript copies have unestablished acquisition; repeated copies are not independent authentication. The written page images of the two18-page editions are identical.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;Đề N4 T12-2021 Mark — Yuuki Bùi (20 pages)&quot;,
+      &quot;sha256&quot;: &quot;2224d3381bfdd399721ae646cb862f8f1ddf56212304772de53afcdf923a24e5&quot;,
+      &quot;physical_pages&quot;: [
+        10
+      ],
+      &quot;locator&quot;: &quot;q24 choice4&quot;,
+      &quot;reading&quot;: &quot;Same wording without の.&quot;,
+      &quot;lineage&quot;: &quot;Question editions and derivative answer/transcript copies have unestablished acquisition; repeated copies are not independent authentication. The written page images of the two18-page editions are identical.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;Munja JLPT — December2021 N4 native transcript&quot;,
+      &quot;sha256&quot;: &quot;a621e7082fa2b8b366e72868ba0fd1da66280601431f89a8e0b7eff07d4205ec&quot;,
+      &quot;locator&quot;: &quot;Reading short-passage section, Lin email q24 option4 and explanation&quot;,
+      &quot;reading&quot;: &quot;何を食べたいのかわからないから&quot;,
+      &quot;lineage&quot;: &quot;Native secondary transcript; independently acquired historical wording is not established.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Retain the two question originals’ shorter embedded question. Adding の is also grammatical and does not change this distractor’s role. Lin already proposes sushi; the missing information is the date of arrival in Tokyo, answer1.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Read the complete original email and all choices in both layouts.&quot;,
+    &quot;Read the native fourth choice and full explanation and checked immutable archive wording.&quot;,
+    &quot;Recomputed the answer from one week in Osaka followed by Tokyo, with no specific arrival date; neither form of the food distractor resolves historical wording.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;The exact historical reading remains unproven. An authenticated page or independently traceable contemporary reproduction of this span could settle it; grammatical plausibility, distributor copies and their explanations do not establish independent provenance.&quot;
+}</pre></details></div></section><section class="review-group" id="review-reading-s05" data-kinds="difference"><div class="review-group-heading"><h2>reading-s05</h2><a href="../papers/N4_12_2021.html#reading-s05">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">もんだい5 つぎのぶんしょうをよんで、 しつもんにこたえてください。 こたえは、1・2・3・4 からいちばんいいものをひとつえらんでください。</div></details><div class="review-record" id="principal_differences-N4_12_2021-PD-013"><div class="review-label">Principal difference · /heading · high</div><div class="comparison"><div><h4>Principal</h4><pre><mark class="diff-old">文章</mark>を<mark class="diff-old">読</mark>んで、<mark class="diff-old">質問</mark>に<mark class="diff-old">答</mark>えてください。<mark class="diff-old">答</mark>えは / <mark class="diff-old">一</mark>つ</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">ぶんしょう</mark>を<mark class="diff-new">よ</mark>んで、<mark class="diff-new">しつもん</mark>に<mark class="diff-new">こた</mark>えてください。<mark class="diff-new">こた</mark>えは / <mark class="diff-new">ひと</mark>つ</pre></div></div><p>Retain the equivalent inherited kana instruction. The short-reading range(1)–(3), where applicable, is restored to match the principal.</p><span class="principal-repository-source">Principal source (page=9): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Reading instruction</span><details><summary>Full published record · principal_differences-N4_12_2021-PD-013</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N4_12_2021-PD-013&quot;,
+  &quot;unit&quot;: &quot;N4_12_2021&quot;,
+  &quot;item_id&quot;: &quot;reading-s05&quot;,
+  &quot;field&quot;: &quot;/heading&quot;,
+  &quot;current_value&quot;: &quot;もんだい5 つぎのぶんしょうをよんで、 しつもんにこたえてください。 こたえは、1・2・3・4 からいちばんいいものをひとつえらんでください。&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2021年12月N4真题 — 渠道一 18-page edition, written pages1–11&quot;,
+    &quot;sha256&quot;: &quot;d28e50f14fd508168cae93c215f1307be4f8c133b96ce51401b3f59868f7df9f&quot;,
+    &quot;physical_pages&quot;: [
+      9
+    ],
+    &quot;locator&quot;: &quot;Reading instruction&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;文章を読んで、質問に答えてください。答えは / 一つ&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;ぶんしょうをよんで、しつもんにこたえてください。こたえは / ひとつ&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;retained_variant&quot;,
+  &quot;rationale&quot;: &quot;Retain the equivalent inherited kana instruction. The short-reading range(1)–(3), where applicable, is restored to match the principal.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-q029" data-kinds="difference"><div class="review-group-heading"><h2>reading-q029</h2><a href="../papers/N4_12_2021.html#reading-q029">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">29. ジェーンさんは、パソコン教室で勉強したいと思っていますが、
+9月1日の<ruby data-rubi-id="rr4-a17a24c9ef8a749a870b" data-rubi-origin="project_rubi_restore">説明会<rt>せつめいかい</rt></ruby>には出られません。ジェーンさんは、いつまでにお金を<ruby data-rubi-id="rr4-d109450604c290a5ca8a" data-rubi-origin="project_rubi_restore">払<rt>はら</rt></ruby>う<ruby data-rubi-id="rr4-739320c40433dfb78719" data-rubi-origin="project_rubi_restore">必要<rt>ひつよう</rt></ruby>がありますか。<ol><li>8月24日</li><li>9月1日</li><li>9月7日</li><li>9月8日</li></ol><p>Editorial key: 3</p></div></details><div class="review-record" id="principal_differences-N4_12_2021-PD-016"><div class="review-label">Principal difference · /stem · high</div><div class="comparison"><div><h4>Principal</h4><pre>払う必要<mark class="diff-old">か</mark>ありますか。</pre></div><div><h4>Editorial</h4><pre>払う必要<mark class="diff-new">が</mark>ありますか。</pre></div></div><p>Retain the grammatical subject particle が from the alternate transcript. The principal drops its dakuten outside the tested date choices; the September7 deadline is unchanged.</p><span class="principal-repository-source">Principal source (page=10): <code>additional-assets/principals/N4_12_2021.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">q29 question ending</span><details><summary>Full published record · principal_differences-N4_12_2021-PD-016</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N4_12_2021-PD-016&quot;,
+  &quot;unit&quot;: &quot;N4_12_2021&quot;,
+  &quot;item_id&quot;: &quot;reading-q029&quot;,
+  &quot;field&quot;: &quot;/stem&quot;,
+  &quot;current_value&quot;: &quot;29. ジェーンさんは、パソコン教室で勉強したいと思っていますが、\n9月1日の説明会には出られません。ジェーンさんは、いつまでにお金を払う必要がありますか。&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2021年12月N4真题 — 渠道一 18-page edition, written pages1–11&quot;,
+    &quot;sha256&quot;: &quot;d28e50f14fd508168cae93c215f1307be4f8c133b96ce51401b3f59868f7df9f&quot;,
+    &quot;physical_pages&quot;: [
+      10
+    ],
+    &quot;locator&quot;: &quot;q29 question ending&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;払う必要かありますか。&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;払う必要がありますか。&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Retain the grammatical subject particle が from the alternate transcript. The principal drops its dakuten outside the tested date choices; the September7 deadline is unchanged.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section></div></main><footer class="site-footer"><span class="developer-only">Developer mode</span></footer><div id="toast" role="status" class="toast" hidden></div><script id="page-data" type="application/json">{"review":true}</script><script id="theme-data" src="../assets/theme-data.js?v=f06ad9e2434b" defer></script><script src="../assets/app.js?v=0d75deb05ae3" defer></script></body></html>

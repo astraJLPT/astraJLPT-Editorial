@@ -1,0 +1,76 @@
+{
+  "contract": "historical-source-pixels-1.0",
+  "id": "H27-N3_2007-c0a3a559494a2dc0",
+  "unit": "N3_2007",
+  "canonical_image_sha256": "c0a3a559494a2dc0aef3f455d822c6e84c66d8950696998a9138af6ecaa21bc0",
+  "canonical_pixels": [
+    774,
+    482
+  ],
+  "image": {
+    "path": "preprocess/assets/handoff27-source-pixels-06/N3_2007-c0a3a559494a2dc0.png",
+    "sha256": "e4eb55f7abf3800ec8708791ab88c1150f45332fe75717aa651b9d1a7688b116"
+  },
+  "source": {
+    "source_path": "src/CodexDownloads/UserApprovedReferenceScans/pdf-20074_compress.pdf",
+    "source_sha256": "6902181b1ced1babb1aa2eb9ae4f9bc58bb96aa1780141628ff13ed7c03d03f6",
+    "physical_page": 40
+  },
+  "evidence": {
+    "source_path": "src/CodexDownloads/UserApprovedReferenceScans/pdf-20074_compress.pdf",
+    "source_sha256": "6902181b1ced1babb1aa2eb9ae4f9bc58bb96aa1780141628ff13ed7c03d03f6",
+    "physical_pages": [
+      40
+    ],
+    "state": "approved",
+    "historical_claim": false,
+    "region": "H27 original decoded source-pixel crop replacing the H19 300dpi derivative. Canonical image and all registered occurrences remain unchanged; see exact crop provenance in the bound asset.",
+    "reference_id": "RC04_2007_L3_L4",
+    "approval_registry_sha256": "c0fc4d24494a9569dd539d237018014213045d6224ae9035fa282ab610be0384",
+    "subject": "question_page_layout",
+    "exclusions_acknowledged": true
+  },
+  "occurrences": [
+    {
+      "owner": "reading-q047",
+      "pointer": "/sections/9/items/4/options/1",
+      "ordinal": 1,
+      "field_sha256": "c41d6a0859118ba61f42c1b022fd5708d157447284a66b50478bd16874e13799"
+    }
+  ],
+  "source_pixels": {
+    "xref": 119,
+    "source_dimensions": [
+      2866,
+      4047
+    ],
+    "source_pixel_box": [
+      1450,
+      1569,
+      2483,
+      2212
+    ],
+    "dimensions": [
+      1033,
+      643
+    ],
+    "mode": "1",
+    "filter": "/JBIG2Decode",
+    "image_transform": [
+      515.8800048828125,
+      0.0,
+      -0.0,
+      728.4600219726562,
+      0.0,
+      0.02996826171875
+    ],
+    "source_stream_sha256": "868e5c5363af61317f939c6fe1c0c55461c1eb55e40d98964cde6e664132c305",
+    "decoded_source_rgb_sha256": "f645ac86e5845da831a0aba2703b83d884c874c1cbe19049aa74bc686e169e91",
+    "decoded_crop_rgb_sha256": "b30261353ae8372cd3a51dd910336ef0a0a8901a4bdcac0f16a44c06009dbb7d",
+    "polarity": "complement PDF stencil mask to black-on-white",
+    "resampling": false,
+    "lossy_steps": []
+  },
+  "selection_note": "Retain every decoded source pixel inside the outward-rounded original crop. Preserve prior displayed width and height using a PDF placement matrix; do not resize or recompress pixels. Original scan compression remains a source limitation.",
+  "limits": "Integer outward rounding may add less than one original pixel at each edge. The prior display aspect is retained, so tiny rounding differences do not repaginate the page. The source itself may contain JPEG or JBIG2 compression; this extraction adds none."
+}

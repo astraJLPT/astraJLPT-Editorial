@@ -1,0 +1,1076 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.jlpt/schema-v3/historical-1991-2009/listening-documents-1.0",
+  "title": "Old JLPT separately selected listening document components",
+  "type": "object",
+  "properties": {
+    "contract": {
+      "const": "historical-listening-documents-1.0"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+          },
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "role": {
+            "enum": [
+              "question_layout",
+              "script_content",
+              "answer_key"
+            ]
+          },
+          "authority": {
+            "enum": [
+              "uars_question_layout",
+              "published_script",
+              "transcript_copy",
+              "answer_key"
+            ]
+          },
+          "evidence_note": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "path",
+          "sha256",
+          "role",
+          "authority",
+          "evidence_note"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "uniqueItems": false
+    },
+    "inventory": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+          },
+          "group": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+          },
+          "number": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "kind": {
+            "enum": [
+              "scored",
+              "example"
+            ]
+          },
+          "printed_state": {
+            "enum": [
+              "printed",
+              "none",
+              "unrecovered"
+            ]
+          },
+          "printed_options": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 0,
+            "uniqueItems": true
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "source_id": {
+                  "type": "string",
+                  "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+                },
+                "physical_pages": {
+                  "type": "array",
+                  "items": {
+                    "type": "integer",
+                    "minimum": 1
+                  },
+                  "minItems": 0,
+                  "uniqueItems": true
+                },
+                "region": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "extraction_pointer": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "source_id",
+                "physical_pages",
+                "region"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 1,
+            "uniqueItems": false
+          }
+        },
+        "required": [
+          "id",
+          "group",
+          "number",
+          "kind",
+          "printed_state",
+          "printed_options",
+          "evidence"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "uniqueItems": false
+    },
+    "questions": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+        },
+        "kind": {
+          "const": "listening_questions"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "pages": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+              },
+              "printed_folio": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "evidence": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "source_id": {
+                      "type": "string",
+                      "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+                    },
+                    "physical_pages": {
+                      "type": "array",
+                      "items": {
+                        "type": "integer",
+                        "minimum": 1
+                      },
+                      "minItems": 0,
+                      "uniqueItems": true
+                    },
+                    "region": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "extraction_pointer": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "source_id",
+                    "physical_pages",
+                    "region"
+                  ],
+                  "additionalProperties": false
+                },
+                "minItems": 1,
+                "uniqueItems": false
+              },
+              "blocks": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+                    },
+                    "kind": {
+                      "enum": [
+                        "heading",
+                        "instruction",
+                        "question_label",
+                        "text",
+                        "figure",
+                        "blank",
+                        "editorial_note"
+                      ]
+                    },
+                    "question_ids": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+                      },
+                      "minItems": 0,
+                      "uniqueItems": true
+                    },
+                    "evidence": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "source_id": {
+                            "type": "string",
+                            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+                          },
+                          "physical_pages": {
+                            "type": "array",
+                            "items": {
+                              "type": "integer",
+                              "minimum": 1
+                            },
+                            "minItems": 0,
+                            "uniqueItems": true
+                          },
+                          "region": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "extraction_pointer": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        },
+                        "required": [
+                          "source_id",
+                          "physical_pages",
+                          "region"
+                        ],
+                        "additionalProperties": false
+                      },
+                      "minItems": 0,
+                      "uniqueItems": false
+                    },
+                    "content": {
+                      "oneOf": [
+                        {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "html": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "html"
+                          ],
+                          "additionalProperties": false
+                        }
+                      ]
+                    },
+                    "asset": {
+                      "type": "object",
+                      "properties": {
+                        "path": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "sha256": {
+                          "type": "string",
+                          "pattern": "^[a-f0-9]{64}$"
+                        },
+                        "provenance": {
+                          "type": "object",
+                          "properties": {
+                            "path": {
+                              "type": "string",
+                              "minLength": 1
+                            },
+                            "sha256": {
+                              "type": "string",
+                              "pattern": "^[a-f0-9]{64}$"
+                            }
+                          },
+                          "required": [
+                            "path",
+                            "sha256"
+                          ],
+                          "additionalProperties": false
+                        }
+                      },
+                      "required": [
+                        "path",
+                        "sha256",
+                        "provenance"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "width_mm": {
+                      "type": "number",
+                      "exclusiveMinimum": 0,
+                      "maximum": 175
+                    },
+                    "height_mm": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 230
+                    },
+                    "style": {
+                      "enum": [
+                        "body",
+                        "small",
+                        "centered",
+                        "bold",
+                        "boxed"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "kind",
+                    "question_ids",
+                    "evidence"
+                  ],
+                  "additionalProperties": false,
+                  "allOf": [
+                    {
+                      "if": {
+                        "properties": {
+                          "kind": {
+                            "const": "figure"
+                          }
+                        }
+                      },
+                      "then": {
+                        "required": [
+                          "asset",
+                          "width_mm"
+                        ],
+                        "not": {
+                          "required": [
+                            "content"
+                          ]
+                        }
+                      },
+                      "else": {
+                        "not": {
+                          "required": [
+                            "asset"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "if": {
+                        "properties": {
+                          "kind": {
+                            "const": "blank"
+                          }
+                        }
+                      },
+                      "then": {
+                        "required": [
+                          "height_mm"
+                        ],
+                        "not": {
+                          "required": [
+                            "content"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "if": {
+                        "properties": {
+                          "kind": {
+                            "not": {
+                              "enum": [
+                                "figure",
+                                "blank"
+                              ]
+                            }
+                          }
+                        }
+                      },
+                      "then": {
+                        "required": [
+                          "content"
+                        ]
+                      }
+                    }
+                  ]
+                },
+                "minItems": 1,
+                "uniqueItems": false
+              }
+            },
+            "required": [
+              "id",
+              "printed_folio",
+              "evidence",
+              "blocks"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 1,
+          "uniqueItems": false
+        },
+        "coverage": {
+          "type": "object",
+          "properties": {
+            "state": {
+              "enum": [
+                "complete_available",
+                "partial_available"
+              ]
+            },
+            "known_total_scored": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "available_scored_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "reviewed_scored_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "known_missing_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "unknown_extent": {
+              "type": "boolean"
+            },
+            "note": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "state",
+            "known_total_scored",
+            "available_scored_ids",
+            "reviewed_scored_ids",
+            "known_missing_ids",
+            "unknown_extent",
+            "note"
+          ],
+          "additionalProperties": false
+        },
+        "gaps": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+              },
+              "question_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+                },
+                "minItems": 0,
+                "uniqueItems": true
+              },
+              "description": {
+                "type": "string",
+                "minLength": 1
+              },
+              "severity": {
+                "enum": [
+                  "informational",
+                  "material",
+                  "blocking"
+                ]
+              },
+              "source_attempts": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "source_id": {
+                      "type": "string",
+                      "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+                    },
+                    "physical_pages": {
+                      "type": "array",
+                      "items": {
+                        "type": "integer",
+                        "minimum": 1
+                      },
+                      "minItems": 0,
+                      "uniqueItems": true
+                    },
+                    "region": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "extraction_pointer": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "source_id",
+                    "physical_pages",
+                    "region"
+                  ],
+                  "additionalProperties": false
+                },
+                "minItems": 0,
+                "uniqueItems": false
+              },
+              "case_id": {
+                "type": "string",
+                "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+              }
+            },
+            "required": [
+              "id",
+              "question_ids",
+              "description",
+              "severity",
+              "source_attempts",
+              "case_id"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 0,
+          "uniqueItems": false
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "title",
+        "pages",
+        "coverage",
+        "gaps"
+      ],
+      "additionalProperties": false
+    },
+    "script": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+        },
+        "kind": {
+          "const": "listening_script"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "pages": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+              },
+              "printed_folio": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "evidence": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "source_id": {
+                      "type": "string",
+                      "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+                    },
+                    "physical_pages": {
+                      "type": "array",
+                      "items": {
+                        "type": "integer",
+                        "minimum": 1
+                      },
+                      "minItems": 0,
+                      "uniqueItems": true
+                    },
+                    "region": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "extraction_pointer": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "source_id",
+                    "physical_pages",
+                    "region"
+                  ],
+                  "additionalProperties": false
+                },
+                "minItems": 1,
+                "uniqueItems": false
+              },
+              "blocks": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+                    },
+                    "kind": {
+                      "enum": [
+                        "heading",
+                        "instruction",
+                        "question_label",
+                        "text",
+                        "figure",
+                        "blank",
+                        "editorial_note",
+                        "dialogue",
+                        "answer"
+                      ]
+                    },
+                    "question_ids": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+                      },
+                      "minItems": 0,
+                      "uniqueItems": true
+                    },
+                    "evidence": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "source_id": {
+                            "type": "string",
+                            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+                          },
+                          "physical_pages": {
+                            "type": "array",
+                            "items": {
+                              "type": "integer",
+                              "minimum": 1
+                            },
+                            "minItems": 0,
+                            "uniqueItems": true
+                          },
+                          "region": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "extraction_pointer": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        },
+                        "required": [
+                          "source_id",
+                          "physical_pages",
+                          "region"
+                        ],
+                        "additionalProperties": false
+                      },
+                      "minItems": 0,
+                      "uniqueItems": false
+                    },
+                    "content": {
+                      "oneOf": [
+                        {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "html": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "html"
+                          ],
+                          "additionalProperties": false
+                        }
+                      ]
+                    },
+                    "asset": {
+                      "type": "object",
+                      "properties": {
+                        "path": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "sha256": {
+                          "type": "string",
+                          "pattern": "^[a-f0-9]{64}$"
+                        },
+                        "provenance": {
+                          "type": "object",
+                          "properties": {
+                            "path": {
+                              "type": "string",
+                              "minLength": 1
+                            },
+                            "sha256": {
+                              "type": "string",
+                              "pattern": "^[a-f0-9]{64}$"
+                            }
+                          },
+                          "required": [
+                            "path",
+                            "sha256"
+                          ],
+                          "additionalProperties": false
+                        }
+                      },
+                      "required": [
+                        "path",
+                        "sha256",
+                        "provenance"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "width_mm": {
+                      "type": "number",
+                      "exclusiveMinimum": 0,
+                      "maximum": 175
+                    },
+                    "height_mm": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 230
+                    },
+                    "style": {
+                      "enum": [
+                        "body",
+                        "small",
+                        "centered",
+                        "bold",
+                        "boxed"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "kind",
+                    "question_ids",
+                    "evidence"
+                  ],
+                  "additionalProperties": false,
+                  "allOf": [
+                    {
+                      "if": {
+                        "properties": {
+                          "kind": {
+                            "const": "figure"
+                          }
+                        }
+                      },
+                      "then": {
+                        "required": [
+                          "asset",
+                          "width_mm"
+                        ],
+                        "not": {
+                          "required": [
+                            "content"
+                          ]
+                        }
+                      },
+                      "else": {
+                        "not": {
+                          "required": [
+                            "asset"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "if": {
+                        "properties": {
+                          "kind": {
+                            "const": "blank"
+                          }
+                        }
+                      },
+                      "then": {
+                        "required": [
+                          "height_mm"
+                        ],
+                        "not": {
+                          "required": [
+                            "content"
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "if": {
+                        "properties": {
+                          "kind": {
+                            "not": {
+                              "enum": [
+                                "figure",
+                                "blank"
+                              ]
+                            }
+                          }
+                        }
+                      },
+                      "then": {
+                        "required": [
+                          "content"
+                        ]
+                      }
+                    }
+                  ]
+                },
+                "minItems": 1,
+                "uniqueItems": false
+              }
+            },
+            "required": [
+              "id",
+              "printed_folio",
+              "evidence",
+              "blocks"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 1,
+          "uniqueItems": false
+        },
+        "coverage": {
+          "type": "object",
+          "properties": {
+            "state": {
+              "enum": [
+                "complete_available",
+                "partial_available"
+              ]
+            },
+            "known_total_scored": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "available_scored_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "reviewed_scored_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "known_missing_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "unknown_extent": {
+              "type": "boolean"
+            },
+            "note": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "state",
+            "known_total_scored",
+            "available_scored_ids",
+            "reviewed_scored_ids",
+            "known_missing_ids",
+            "unknown_extent",
+            "note"
+          ],
+          "additionalProperties": false
+        },
+        "gaps": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+              },
+              "question_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+                },
+                "minItems": 0,
+                "uniqueItems": true
+              },
+              "description": {
+                "type": "string",
+                "minLength": 1
+              },
+              "severity": {
+                "enum": [
+                  "informational",
+                  "material",
+                  "blocking"
+                ]
+              },
+              "source_attempts": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "source_id": {
+                      "type": "string",
+                      "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+                    },
+                    "physical_pages": {
+                      "type": "array",
+                      "items": {
+                        "type": "integer",
+                        "minimum": 1
+                      },
+                      "minItems": 0,
+                      "uniqueItems": true
+                    },
+                    "region": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "extraction_pointer": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "source_id",
+                    "physical_pages",
+                    "region"
+                  ],
+                  "additionalProperties": false
+                },
+                "minItems": 0,
+                "uniqueItems": false
+              },
+              "case_id": {
+                "type": "string",
+                "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]*$"
+              }
+            },
+            "required": [
+              "id",
+              "question_ids",
+              "description",
+              "severity",
+              "source_attempts",
+              "case_id"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 0,
+          "uniqueItems": false
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "title",
+        "pages",
+        "coverage",
+        "gaps"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "contract",
+    "sources",
+    "inventory",
+    "questions",
+    "script"
+  ],
+  "additionalProperties": false
+}

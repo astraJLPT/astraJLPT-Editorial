@@ -1,0 +1,30 @@
+{
+  "contract": "historical-artwork-1.0",
+  "id": "H23-N1-1997-family-4",
+  "kind": "family_relationship_option",
+  "unit": "N1_1997",
+  "item_id": "reading-q014",
+  "source": {
+    "source_path": "src/JLPT N1-N5, Past papers/N1/1995-2009.12日本语能力测试真题详解N1.pdf",
+    "source_sha256": "e3555741c8f14b855a32e7d09b42eb790492e3818a85a875f99d84703c752e00",
+    "physical_page": 536,
+    "crop_original_pixels": [
+      1568,
+      1482,
+      2503,
+      1850
+    ],
+    "page_rotation": 180
+  },
+  "raw_crop": {
+    "path": "preprocess/assets/handoff23/written/N1_1997/assets-03/family-4-raw.png",
+    "sha256": "d8d1b1decfadf05e2eb4ddfe112a5fb2a9e75df3f87f1ac8cbf76ffc572bf1c9"
+  },
+  "data": {
+    "option": 4,
+    "relationship_geometry": "secondary536_exact_edges",
+    "appearance_status": "inferred_secondary_not_approved"
+  },
+  "selection_note": "Directly read exact source page. Preserve all choice identities, relation edges, axis labels and patterns. Secondary536 is content recovery with inferred presentation, not approved appearance evidence.",
+  "limits": "Unlabelled bar heights are approximate scan traces, not recovered numeric data. No original print dimensions or authentic custody asserted. Family connections preserve the inspected secondary only. Crop coordinates for536 refer to pixels after lossless180-degree page rotation; the small page skew is not resampled. Mirror raw evidence includes adjacent folio ink, which is not part of the diagram and is excluded from native output."
+}

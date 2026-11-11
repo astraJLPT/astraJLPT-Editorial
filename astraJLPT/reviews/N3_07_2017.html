@@ -1,0 +1,1496 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark light"><title>Developer review · N3_07_2017 · astraJLPT</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../assets/fonts.css?v=f9f44384a837"><link rel="stylesheet" href="../assets/themes.css?v=7ad0820747dc"><link rel="stylesheet" href="../assets/answer-marking.css?v=bec6b4920050"><link rel="stylesheet" href="../assets/site.css?v=7ae9ae7c768b"><link rel="stylesheet" href="../assets/pdf-typography.css?v=ba55af25606f"><link rel="stylesheet" href="../assets/paper-shared.css?v=8f3ca38dca80"></head><body class="catalog-page"><a class="skip-link" href="#content">Skip to content</a><header class="topbar" id="page-top" tabindex="-1"><a class="wordmark" id="brand" href="../index.html">astra<span>JLPT</span></a><details id="settings" class="settings"><summary aria-label="Open settings" title="Settings"><span aria-hidden="true">⚙</span><span class="sr-only">Settings</span></summary><div class="settings-panel"><div class="settings-title"><h2>settings</h2><button type="button" id="close-settings" class="js-only" aria-label="Close settings">×</button></div><div class="settings-tabs" role="group" aria-label="Settings categories"><label><input type="radio" name="settings-view" value="appearance" checked><span>theme</span></label><label><input type="radio" name="settings-view" value="browser"><span>browser</span></label></div><section data-settings="appearance"><div class="theme-workspace"><div class="theme-picker"><div class="setting-heading"><h3>theme</h3></div><div class="theme-grid originals"><label class="theme-card ps-gh"><input type="radio" name="theme" id="theme-jlpt_paper" value="jlpt_paper"><span>jlpt_paper</span></label><label class="theme-card ps-ck"><input type="radio" name="theme" id="theme-astraJLPT_dark" value="astraJLPT_dark" checked><span>astraJLPT_dark</span></label><label class="theme-card ps-ga"><input type="radio" name="theme" id="theme-astraJLPT_sepia" value="astraJLPT_sepia"><span>astraJLPT_sepia</span></label></div><div class="js-only"><p class="settings-label">three random picks</p><div class="theme-grid" id="quick-picks"></div></div><details><summary>all 187 Monkeytype palettes</summary><label class="theme-search js-only">find a palette<input id="theme-search" type="search" placeholder="search themes" autocomplete="off"></label><div class="theme-grid theme-catalog"><label class="theme-card ps-e9"><input type="radio" name="theme" id="theme-8008" value="8008"><span>8008</span></label><label class="theme-card ps-cw"><input type="radio" name="theme" id="theme-80s_after_dark" value="80s_after_dark"><span>80s after dark</span></label><label class="theme-card ps-fq"><input type="radio" name="theme" id="theme-9009" value="9009"><span>9009</span></label><label class="theme-card ps-cc"><input type="radio" name="theme" id="theme-aether" value="aether"><span>aether</span></label><label class="theme-card ps-cz"><input type="radio" name="theme" id="theme-alduin" value="alduin"><span>alduin</span></label><label class="theme-card ps-el"><input type="radio" name="theme" id="theme-alpine" value="alpine"><span>alpine</span></label><label class="theme-card ps-bg"><input type="radio" name="theme" id="theme-anti_hero" value="anti_hero"><span>anti hero</span></label><label class="theme-card ps-c3"><input type="radio" name="theme" id="theme-arch" value="arch"><span>arch</span></label><label class="theme-card ps-bt"><input type="radio" name="theme" id="theme-aurora" value="aurora"><span>aurora</span></label><label class="theme-card ps-g8"><input type="radio" name="theme" id="theme-beach" value="beach"><span>beach</span></label><label class="theme-card ps-dz"><input type="radio" name="theme" id="theme-bento" value="bento"><span>bento</span></label><label class="theme-card ps-f1"><input type="radio" name="theme" id="theme-bingsu" value="bingsu"><span>bingsu</span></label><label class="theme-card ps-dl"><input type="radio" name="theme" id="theme-bliss" value="bliss"><span>bliss</span></label><label class="theme-card ps-bn"><input type="radio" name="theme" id="theme-blue_dolphin" value="blue_dolphin"><span>blue dolphin</span></label><label class="theme-card ps-dd"><input type="radio" name="theme" id="theme-blueberry_dark" value="blueberry_dark"><span>blueberry dark</span></label><label class="theme-card ps-fd"><input type="radio" name="theme" id="theme-blueberry_light" value="blueberry_light"><span>blueberry light</span></label><label class="theme-card ps-ep"><input type="radio" name="theme" id="theme-botanical" value="botanical"><span>botanical</span></label><label class="theme-card ps-cl"><input type="radio" name="theme" id="theme-bouquet" value="bouquet"><span>bouquet</span></label><label class="theme-card ps-fk"><input type="radio" name="theme" id="theme-breeze" value="breeze"><span>breeze</span></label><label class="theme-card ps-dk"><input type="radio" name="theme" id="theme-bushido" value="bushido"><span>bushido</span></label><label class="theme-card ps-f5"><input type="radio" name="theme" id="theme-cafe" value="cafe"><span>cafe</span></label><label class="theme-card ps-g1"><input type="radio" name="theme" id="theme-camping" value="camping"><span>camping</span></label><label class="theme-card ps-e4"><input type="radio" name="theme" id="theme-carbon" value="carbon"><span>carbon</span></label><label class="theme-card ps-d3"><input type="radio" name="theme" id="theme-catppuccin" value="catppuccin"><span>catppuccin</span></label><label class="theme-card ps-ch"><input type="radio" name="theme" id="theme-chaos_theory" value="chaos_theory"><span>chaos theory</span></label><label class="theme-card ps-g3"><input type="radio" name="theme" id="theme-cheesecake" value="cheesecake"><span>cheesecake</span></label><label class="theme-card ps-e7"><input type="radio" name="theme" id="theme-cherry_blossom" value="cherry_blossom"><span>cherry blossom</span></label><label class="theme-card ps-eh"><input type="radio" name="theme" id="theme-comfy" value="comfy"><span>comfy</span></label><label class="theme-card ps-ef"><input type="radio" name="theme" id="theme-copper" value="copper"><span>copper</span></label><label class="theme-card ps-g6"><input type="radio" name="theme" id="theme-creamsicle" value="creamsicle"><span>creamsicle</span></label><label class="theme-card ps-em"><input type="radio" name="theme" id="theme-cy_red" value="cy_red"><span>cy red</span></label><label class="theme-card ps-co"><input type="radio" name="theme" id="theme-cyberspace" value="cyberspace"><span>cyberspace</span></label><label class="theme-card ps-cd"><input type="radio" name="theme" id="theme-dark" value="dark"><span>dark</span></label><label class="theme-card ps-bz"><input type="radio" name="theme" id="theme-dark_magic_girl" value="dark_magic_girl"><span>dark magic girl</span></label><label class="theme-card ps-d6"><input type="radio" name="theme" id="theme-dark_note" value="dark_note"><span>dark note</span></label><label class="theme-card ps-g5"><input type="radio" name="theme" id="theme-darling" value="darling"><span>darling</span></label><label class="theme-card ps-bw"><input type="radio" name="theme" id="theme-deku" value="deku"><span>deku</span></label><label class="theme-card ps-g9"><input type="radio" name="theme" id="theme-desert_oasis" value="desert_oasis"><span>desert oasis</span></label><label class="theme-card ps-cx"><input type="radio" name="theme" id="theme-dev" value="dev"><span>dev</span></label><label class="theme-card ps-ek"><input type="radio" name="theme" id="theme-diner" value="diner"><span>diner</span></label><label class="theme-card ps-gi"><input type="radio" name="theme" id="theme-dino" value="dino"><span>dino</span></label><label class="theme-card ps-e6"><input type="radio" name="theme" id="theme-discord" value="discord"><span>discord</span></label><label class="theme-card ps-fc"><input type="radio" name="theme" id="theme-dmg" value="dmg"><span>dmg</span></label><label class="theme-card ps-fj"><input type="radio" name="theme" id="theme-dollar" value="dollar"><span>dollar</span></label><label class="theme-card ps-ce"><input type="radio" name="theme" id="theme-dots" value="dots"><span>dots</span></label><label class="theme-card ps-dq"><input type="radio" name="theme" id="theme-dracula" value="dracula"><span>dracula</span></label><label class="theme-card ps-cq"><input type="radio" name="theme" id="theme-drowning" value="drowning"><span>drowning</span></label><label class="theme-card ps-eo"><input type="radio" name="theme" id="theme-dualshot" value="dualshot"><span>dualshot</span></label><label class="theme-card ps-dr"><input type="radio" name="theme" id="theme-earthsong" value="earthsong"><span>earthsong</span></label><label class="theme-card ps-ci"><input type="radio" name="theme" id="theme-everblush" value="everblush"><span>everblush</span></label><label class="theme-card ps-bq"><input type="radio" name="theme" id="theme-evil_eye" value="evil_eye"><span>evil eye</span></label><label class="theme-card ps-bp"><input type="radio" name="theme" id="theme-ez_mode" value="ez_mode"><span>ez mode</span></label><label class="theme-card ps-c8"><input type="radio" name="theme" id="theme-fire" value="fire"><span>fire</span></label><label class="theme-card ps-eb"><input type="radio" name="theme" id="theme-fledgling" value="fledgling"><span>fledgling</span></label><label class="theme-card ps-f3"><input type="radio" name="theme" id="theme-fleuriste" value="fleuriste"><span>fleuriste</span></label><label class="theme-card ps-bl"><input type="radio" name="theme" id="theme-floret" value="floret"><span>floret</span></label><label class="theme-card ps-fh"><input type="radio" name="theme" id="theme-froyo" value="froyo"><span>froyo</span></label><label class="theme-card ps-et"><input type="radio" name="theme" id="theme-frozen_llama" value="frozen_llama"><span>frozen llama</span></label><label class="theme-card ps-f9"><input type="radio" name="theme" id="theme-fruit_chew" value="fruit_chew"><span>fruit chew</span></label><label class="theme-card ps-en"><input type="radio" name="theme" id="theme-fundamentals" value="fundamentals"><span>fundamentals</span></label><label class="theme-card ps-e0"><input type="radio" name="theme" id="theme-future_funk" value="future_funk"><span>future funk</span></label><label class="theme-card ps-dc"><input type="radio" name="theme" id="theme-github" value="github"><span>github</span></label><label class="theme-card ps-fn"><input type="radio" name="theme" id="theme-godspeed" value="godspeed"><span>godspeed</span></label><label class="theme-card ps-e3"><input type="radio" name="theme" id="theme-graen" value="graen"><span>graen</span></label><label class="theme-card ps-ea"><input type="radio" name="theme" id="theme-grand_prix" value="grand_prix"><span>grand prix</span></label><label class="theme-card ps-dv"><input type="radio" name="theme" id="theme-grape" value="grape"><span>grape</span></label><label class="theme-card ps-dp"><input type="radio" name="theme" id="theme-gruvbox_dark" value="gruvbox_dark"><span>gruvbox dark</span></label><label class="theme-card ps-g2"><input type="radio" name="theme" id="theme-gruvbox_light" value="gruvbox_light"><span>gruvbox light</span></label><label class="theme-card ps-bu"><input type="radio" name="theme" id="theme-hammerhead" value="hammerhead"><span>hammerhead</span></label><label class="theme-card ps-fa"><input type="radio" name="theme" id="theme-hanok" value="hanok"><span>hanok</span></label><label class="theme-card ps-ed"><input type="radio" name="theme" id="theme-hedge" value="hedge"><span>hedge</span></label><label class="theme-card ps-fu"><input type="radio" name="theme" id="theme-honey" value="honey"><span>honey</span></label><label class="theme-card ps-d0"><input type="radio" name="theme" id="theme-horizon" value="horizon"><span>horizon</span></label><label class="theme-card ps-bf"><input type="radio" name="theme" id="theme-husqy" value="husqy"><span>husqy</span></label><label class="theme-card ps-cj"><input type="radio" name="theme" id="theme-iceberg_dark" value="iceberg_dark"><span>iceberg dark</span></label><label class="theme-card ps-fl"><input type="radio" name="theme" id="theme-iceberg_light" value="iceberg_light"><span>iceberg light</span></label><label class="theme-card ps-c7"><input type="radio" name="theme" id="theme-incognito" value="incognito"><span>incognito</span></label><label class="theme-card ps-d8"><input type="radio" name="theme" id="theme-ishtar" value="ishtar"><span>ishtar</span></label><label class="theme-card ps-eu"><input type="radio" name="theme" id="theme-iv_clover" value="iv_clover"><span>iv clover</span></label><label class="theme-card ps-c2"><input type="radio" name="theme" id="theme-iv_spade" value="iv_spade"><span>iv spade</span></label><label class="theme-card ps-cu"><input type="radio" name="theme" id="theme-joker" value="joker"><span>joker</span></label><label class="theme-card ps-de"><input type="radio" name="theme" id="theme-laser" value="laser"><span>laser</span></label><label class="theme-card ps-ex"><input type="radio" name="theme" id="theme-lavender" value="lavender"><span>lavender</span></label><label class="theme-card ps-ew"><input type="radio" name="theme" id="theme-leather" value="leather"><span>leather</span></label><label class="theme-card ps-fo"><input type="radio" name="theme" id="theme-lil_dragon" value="lil_dragon"><span>lil dragon</span></label><label class="theme-card ps-gd"><input type="radio" name="theme" id="theme-lilac_mist" value="lilac_mist"><span>lilac mist</span></label><label class="theme-card ps-er"><input type="radio" name="theme" id="theme-lime" value="lime"><span>lime</span></label><label class="theme-card ps-df"><input type="radio" name="theme" id="theme-luna" value="luna"><span>luna</span></label><label class="theme-card ps-ez"><input type="radio" name="theme" id="theme-macroblank" value="macroblank"><span>macroblank</span></label><label class="theme-card ps-gk"><input type="radio" name="theme" id="theme-magic_girl" value="magic_girl"><span>magic girl</span></label><label class="theme-card ps-du"><input type="radio" name="theme" id="theme-mashu" value="mashu"><span>mashu</span></label><label class="theme-card ps-ei"><input type="radio" name="theme" id="theme-matcha_moccha" value="matcha_moccha"><span>matcha moccha</span></label><label class="theme-card ps-dn"><input type="radio" name="theme" id="theme-material" value="material"><span>material</span></label><label class="theme-card ps-be"><input type="radio" name="theme" id="theme-matrix" value="matrix"><span>matrix</span></label><label class="theme-card ps-br"><input type="radio" name="theme" id="theme-menthol" value="menthol"><span>menthol</span></label><label class="theme-card ps-dg"><input type="radio" name="theme" id="theme-metaverse" value="metaverse"><span>metaverse</span></label><label class="theme-card ps-ca"><input type="radio" name="theme" id="theme-metropolis" value="metropolis"><span>metropolis</span></label><label class="theme-card ps-g0"><input type="radio" name="theme" id="theme-mexican" value="mexican"><span>mexican</span></label><label class="theme-card ps-fv"><input type="radio" name="theme" id="theme-miami" value="miami"><span>miami</span></label><label class="theme-card ps-cn"><input type="radio" name="theme" id="theme-miami_nights" value="miami_nights"><span>miami nights</span></label><label class="theme-card ps-c0"><input type="radio" name="theme" id="theme-midnight" value="midnight"><span>midnight</span></label><label class="theme-card ps-gf"><input type="radio" name="theme" id="theme-milkshake" value="milkshake"><span>milkshake</span></label><label class="theme-card ps-bv"><input type="radio" name="theme" id="theme-mint" value="mint"><span>mint</span></label><label class="theme-card ps-ey"><input type="radio" name="theme" id="theme-mizu" value="mizu"><span>mizu</span></label><label class="theme-card ps-dy"><input type="radio" name="theme" id="theme-modern_dolch" value="modern_dolch"><span>modern dolch</span></label><label class="theme-card ps-fe"><input type="radio" name="theme" id="theme-modern_dolch_light" value="modern_dolch_light"><span>modern dolch light</span></label><label class="theme-card ps-gm"><input type="radio" name="theme" id="theme-modern_ink" value="modern_ink"><span>modern ink</span></label><label class="theme-card ps-do"><input type="radio" name="theme" id="theme-monokai" value="monokai"><span>monokai</span></label><label class="theme-card ps-cs"><input type="radio" name="theme" id="theme-moonlight" value="moonlight"><span>moonlight</span></label><label class="theme-card ps-c9"><input type="radio" name="theme" id="theme-mountain" value="mountain"><span>mountain</span></label><label class="theme-card ps-f8"><input type="radio" name="theme" id="theme-mr_sleeves" value="mr_sleeves"><span>mr sleeves</span></label><label class="theme-card ps-gj"><input type="radio" name="theme" id="theme-ms_cupcakes" value="ms_cupcakes"><span>ms cupcakes</span></label><label class="theme-card ps-ej"><input type="radio" name="theme" id="theme-muted" value="muted"><span>muted</span></label><label class="theme-card ps-cg"><input type="radio" name="theme" id="theme-nautilus" value="nautilus"><span>nautilus</span></label><label class="theme-card ps-db"><input type="radio" name="theme" id="theme-nebula" value="nebula"><span>nebula</span></label><label class="theme-card ps-da"><input type="radio" name="theme" id="theme-night_runner" value="night_runner"><span>night runner</span></label><label class="theme-card ps-dj"><input type="radio" name="theme" id="theme-nord" value="nord"><span>nord</span></label><label class="theme-card ps-fp"><input type="radio" name="theme" id="theme-nord_light" value="nord_light"><span>nord light</span></label><label class="theme-card ps-di"><input type="radio" name="theme" id="theme-norse" value="norse"><span>norse</span></label><label class="theme-card ps-e5"><input type="radio" name="theme" id="theme-oblivion" value="oblivion"><span>oblivion</span></label><label class="theme-card ps-fm"><input type="radio" name="theme" id="theme-olive" value="olive"><span>olive</span></label><label class="theme-card ps-cy"><input type="radio" name="theme" id="theme-olivia" value="olivia"><span>olivia</span></label><label class="theme-card ps-e2"><input type="radio" name="theme" id="theme-onedark" value="onedark"><span>onedark</span></label><label class="theme-card ps-f4"><input type="radio" name="theme" id="theme-our_theme" value="our_theme"><span>our theme</span></label><label class="theme-card ps-ee"><input type="radio" name="theme" id="theme-pale_nimbus" value="pale_nimbus"><span>pale nimbus</span></label><label class="theme-card ps-fr"><input type="radio" name="theme" id="theme-paper" value="paper"><span>paper</span></label><label class="theme-card ps-eq"><input type="radio" name="theme" id="theme-passion_fruit" value="passion_fruit"><span>passion fruit</span></label><label class="theme-card ps-ff"><input type="radio" name="theme" id="theme-pastel" value="pastel"><span>pastel</span></label><label class="theme-card ps-ds"><input type="radio" name="theme" id="theme-peach_blossom" value="peach_blossom"><span>peach blossom</span></label><label class="theme-card ps-fg"><input type="radio" name="theme" id="theme-peaches" value="peaches"><span>peaches</span></label><label class="theme-card ps-bk"><input type="radio" name="theme" id="theme-phantom" value="phantom"><span>phantom</span></label><label class="theme-card ps-fz"><input type="radio" name="theme" id="theme-pink_lemonade" value="pink_lemonade"><span>pink lemonade</span></label><label class="theme-card ps-cm"><input type="radio" name="theme" id="theme-pulse" value="pulse"><span>pulse</span></label><label class="theme-card ps-d4"><input type="radio" name="theme" id="theme-purpleish" value="purpleish"><span>purpleish</span></label><label class="theme-card ps-fy"><input type="radio" name="theme" id="theme-rainbow_trail" value="rainbow_trail"><span>rainbow trail</span></label><label class="theme-card ps-ct"><input type="radio" name="theme" id="theme-red_dragon" value="red_dragon"><span>red dragon</span></label><label class="theme-card ps-es"><input type="radio" name="theme" id="theme-red_samurai" value="red_samurai"><span>red samurai</span></label><label class="theme-card ps-e1"><input type="radio" name="theme" id="theme-repose_dark" value="repose_dark"><span>repose dark</span></label><label class="theme-card ps-fs"><input type="radio" name="theme" id="theme-repose_light" value="repose_light"><span>repose light</span></label><label class="theme-card ps-fb"><input type="radio" name="theme" id="theme-retro" value="retro"><span>retro</span></label><label class="theme-card ps-bx"><input type="radio" name="theme" id="theme-retrocast" value="retrocast"><span>retrocast</span></label><label class="theme-card ps-cd"><input type="radio" name="theme" id="theme-rgb" value="rgb"><span>rgb</span></label><label class="theme-card ps-d5"><input type="radio" name="theme" id="theme-rose_pine" value="rose_pine"><span>rose pine</span></label><label class="theme-card ps-gc"><input type="radio" name="theme" id="theme-rose_pine_dawn" value="rose_pine_dawn"><span>rose pine dawn</span></label><label class="theme-card ps-dt"><input type="radio" name="theme" id="theme-rose_pine_moon" value="rose_pine_moon"><span>rose pine moon</span></label><label class="theme-card ps-cv"><input type="radio" name="theme" id="theme-rudy" value="rudy"><span>rudy</span></label><label class="theme-card ps-by"><input type="radio" name="theme" id="theme-ryujinscales" value="ryujinscales"><span>ryujinscales</span></label><label class="theme-card ps-fi"><input type="radio" name="theme" id="theme-serika" value="serika"><span>serika</span></label><label class="theme-card ps-e8"><input type="radio" name="theme" id="theme-serika_dark" value="serika_dark"><span>serika dark</span></label><label class="theme-card ps-dh"><input type="radio" name="theme" id="theme-sewing_tin" value="sewing_tin"><span>sewing tin</span></label><label class="theme-card ps-gg"><input type="radio" name="theme" id="theme-sewing_tin_light" value="sewing_tin_light"><span>sewing tin light</span></label><label class="theme-card ps-bi"><input type="radio" name="theme" id="theme-shadow" value="shadow"><span>shadow</span></label><label class="theme-card ps-f6"><input type="radio" name="theme" id="theme-shoko" value="shoko"><span>shoko</span></label><label class="theme-card ps-ge"><input type="radio" name="theme" id="theme-slambook" value="slambook"><span>slambook</span></label><label class="theme-card ps-f2"><input type="radio" name="theme" id="theme-snes" value="snes"><span>snes</span></label><label class="theme-card ps-gb"><input type="radio" name="theme" id="theme-soaring_skies" value="soaring_skies"><span>soaring skies</span></label><label class="theme-card ps-bm"><input type="radio" name="theme" id="theme-solarized_dark" value="solarized_dark"><span>solarized dark</span></label><label class="theme-card ps-g4"><input type="radio" name="theme" id="theme-solarized_light" value="solarized_light"><span>solarized light</span></label><label class="theme-card ps-bj"><input type="radio" name="theme" id="theme-solarized_osaka" value="solarized_osaka"><span>solarized osaka</span></label><label class="theme-card ps-dw"><input type="radio" name="theme" id="theme-sonokai" value="sonokai"><span>sonokai</span></label><label class="theme-card ps-c5"><input type="radio" name="theme" id="theme-spiderman" value="spiderman"><span>spiderman</span></label><label class="theme-card ps-bs"><input type="radio" name="theme" id="theme-stealth" value="stealth"><span>stealth</span></label><label class="theme-card ps-fw"><input type="radio" name="theme" id="theme-strawberry" value="strawberry"><span>strawberry</span></label><label class="theme-card ps-cf"><input type="radio" name="theme" id="theme-striker" value="striker"><span>striker</span></label><label class="theme-card ps-ec"><input type="radio" name="theme" id="theme-suisei" value="suisei"><span>suisei</span></label><label class="theme-card ps-d9"><input type="radio" name="theme" id="theme-sunset" value="sunset"><span>sunset</span></label><label class="theme-card ps-dm"><input type="radio" name="theme" id="theme-superuser" value="superuser"><span>superuser</span></label><label class="theme-card ps-bo"><input type="radio" name="theme" id="theme-sweden" value="sweden"><span>sweden</span></label><label class="theme-card ps-g7"><input type="radio" name="theme" id="theme-tangerine" value="tangerine"><span>tangerine</span></label><label class="theme-card ps-f0"><input type="radio" name="theme" id="theme-taro" value="taro"><span>taro</span></label><label class="theme-card ps-cr"><input type="radio" name="theme" id="theme-terminal" value="terminal"><span>terminal</span></label><label class="theme-card ps-c4"><input type="radio" name="theme" id="theme-terra" value="terra"><span>terra</span></label><label class="theme-card ps-ft"><input type="radio" name="theme" id="theme-terrazzo" value="terrazzo"><span>terrazzo</span></label><label class="theme-card ps-c1"><input type="radio" name="theme" id="theme-terror_below" value="terror_below"><span>terror below</span></label><label class="theme-card ps-f7"><input type="radio" name="theme" id="theme-tiramisu" value="tiramisu"><span>tiramisu</span></label><label class="theme-card ps-eg"><input type="radio" name="theme" id="theme-trackday" value="trackday"><span>trackday</span></label><label class="theme-card ps-bh"><input type="radio" name="theme" id="theme-trance" value="trance"><span>trance</span></label><label class="theme-card ps-c6"><input type="radio" name="theme" id="theme-tron_orange" value="tron_orange"><span>tron orange</span></label><label class="theme-card ps-ev"><input type="radio" name="theme" id="theme-vaporwave" value="vaporwave"><span>vaporwave</span></label><label class="theme-card ps-cb"><input type="radio" name="theme" id="theme-vesper" value="vesper"><span>vesper</span></label><label class="theme-card ps-gl"><input type="radio" name="theme" id="theme-vesper_light" value="vesper_light"><span>vesper light</span></label><label class="theme-card ps-dx"><input type="radio" name="theme" id="theme-viridescent" value="viridescent"><span>viridescent</span></label><label class="theme-card ps-cp"><input type="radio" name="theme" id="theme-voc" value="voc"><span>voc</span></label><label class="theme-card ps-d2"><input type="radio" name="theme" id="theme-vscode" value="vscode"><span>vscode</span></label><label class="theme-card ps-d7"><input type="radio" name="theme" id="theme-watermelon" value="watermelon"><span>watermelon</span></label><label class="theme-card ps-d1"><input type="radio" name="theme" id="theme-wavez" value="wavez"><span>wavez</span></label><label class="theme-card ps-fx"><input type="radio" name="theme" id="theme-witch_girl" value="witch_girl"><span>witch girl</span></label></div></details><div class="js-only ps-14h" id="monkeytype-text-source">
+<h3>reading text color</h3>
+<p class="control-help">Auto chooses the more readable palette color. Choose sub or text to set it yourself; answer colors adapt.</p>
+<div aria-label="Monkeytype reading text color" class="segmented" role="group">
+<label><input checked="" name="text-source" type="radio" value="auto"/><span>auto</span></label>
+<label><input name="text-source" type="radio" value="sub"/><span>sub</span></label>
+<label><input name="text-source" type="radio" value="text"/><span>text</span></label>
+</div>
+<p aria-live="polite" class="control-help ps-14i" id="monkeytype-text-status" role="status"></p>
+</div></div><aside class="theme-editor js-only" aria-label="Customize theme colors"><div class="color-editor-heading"><h3>colors</h3><button type="button" id="reset-theme-colors" aria-label="Reset this theme">reset</button></div><span class="sr-only" id="color-format-help">Choose a swatch or enter hex. Transparent borders accept #RRGGBBAA. Reset restores the theme color.</span><span class="sr-only" id="color-edit-status" role="status" aria-live="polite"></span><div class="main-colors"><div class="color-row" data-color-row="bg">
+<label for="color-bg">background</label>
+<div class="color-inputs"><input type="color" id="swatch-bg" aria-label="background swatch" data-color-swatch="bg">
+<input type="text" id="color-bg" data-color-hex="bg" aria-label="background hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="bg" aria-label="Reset background" title="Reset background">↺</button></div></div><div class="color-row" data-color-row="text">
+<label for="color-text">reading text</label>
+<div class="color-inputs"><input type="color" id="swatch-text" aria-label="reading text swatch" data-color-swatch="text">
+<input type="text" id="color-text" data-color-hex="text" aria-label="reading text hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="text" aria-label="Reset reading text" title="Reset reading text">↺</button></div></div><div class="color-row" data-color-row="muted">
+<label for="color-muted">secondary text</label>
+<div class="color-inputs"><input type="color" id="swatch-muted" aria-label="secondary text swatch" data-color-swatch="muted">
+<input type="text" id="color-muted" data-color-hex="muted" aria-label="secondary text hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="muted" aria-label="Reset secondary text" title="Reset secondary text">↺</button></div></div><div class="color-row" data-color-row="accent">
+<label for="color-accent">interface accent</label>
+<div class="color-inputs"><input type="color" id="swatch-accent" aria-label="interface accent swatch" data-color-swatch="accent">
+<input type="text" id="color-accent" data-color-hex="accent" aria-label="interface accent hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="accent" aria-label="Reset interface accent" title="Reset interface accent">↺</button></div></div><div class="color-row" data-color-row="correct">
+<label for="color-correct">correct</label>
+<div class="color-inputs"><input type="color" id="swatch-correct" aria-label="correct swatch" data-color-swatch="correct">
+<input type="text" id="color-correct" data-color-hex="correct" aria-label="correct hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="correct" aria-label="Reset correct" title="Reset correct">↺</button></div></div><div class="color-row" data-color-row="wrong">
+<label for="color-wrong">wrong</label>
+<div class="color-inputs"><input type="color" id="swatch-wrong" aria-label="wrong swatch" data-color-swatch="wrong">
+<input type="text" id="color-wrong" data-color-hex="wrong" aria-label="wrong hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="wrong" aria-label="Reset wrong" title="Reset wrong">↺</button></div></div></div><details class="advanced-colors"><summary>more colors</summary><div class="advanced-color-grid"><div class="color-row" data-color-row="raised">
+<label for="color-raised">buttons &amp; controls</label>
+<div class="color-inputs"><input type="color" id="swatch-raised" aria-label="buttons &amp; controls swatch" data-color-swatch="raised">
+<input type="text" id="color-raised" data-color-hex="raised" aria-label="buttons &amp; controls hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="raised" aria-label="Reset buttons &amp; controls" title="Reset buttons &amp; controls">↺</button></div></div><div class="color-row" data-color-row="correct-ink">
+<label for="color-correct-ink">correct text &amp; numbers</label>
+<div class="color-inputs"><input type="color" id="swatch-correct-ink" aria-label="correct text &amp; numbers swatch" data-color-swatch="correct-ink">
+<input type="text" id="color-correct-ink" data-color-hex="correct-ink" aria-label="correct text &amp; numbers hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="correct-ink" aria-label="Reset correct text &amp; numbers" title="Reset correct text &amp; numbers">↺</button></div></div><div class="color-row" data-color-row="edge">
+<label for="color-edge">paper outline</label>
+<div class="color-inputs"><input type="color" id="swatch-edge" aria-label="paper outline swatch" data-color-swatch="edge">
+<input type="text" id="color-edge" data-color-hex="edge" aria-label="paper outline hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge" aria-label="Reset paper outline" title="Reset paper outline">↺</button></div></div><div class="color-row" data-color-row="edge-soft">
+<label for="color-edge-soft">soft dividers</label>
+<div class="color-inputs"><input type="color" id="swatch-edge-soft" aria-label="soft dividers swatch" data-color-swatch="edge-soft">
+<input type="text" id="color-edge-soft" data-color-hex="edge-soft" aria-label="soft dividers hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge-soft" aria-label="Reset soft dividers" title="Reset soft dividers">↺</button></div><label class="color-opacity">opacity<input type="range" min="0" max="100" step="0.1" data-color-alpha="edge-soft" aria-label="soft dividers opacity"><output></output></label></div><div class="color-row" data-color-row="edge-strong">
+<label for="color-edge-strong">strong borders</label>
+<div class="color-inputs"><input type="color" id="swatch-edge-strong" aria-label="strong borders swatch" data-color-swatch="edge-strong">
+<input type="text" id="color-edge-strong" data-color-hex="edge-strong" aria-label="strong borders hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge-strong" aria-label="Reset strong borders" title="Reset strong borders">↺</button></div><label class="color-opacity">opacity<input type="range" min="0" max="100" step="0.1" data-color-alpha="edge-strong" aria-label="strong borders opacity"><output></output></label></div><div class="color-row" data-color-row="logo-secondary">
+<label for="color-logo-secondary">wordmark · JLPT</label>
+<div class="color-inputs"><input type="color" id="swatch-logo-secondary" aria-label="wordmark · JLPT swatch" data-color-swatch="logo-secondary">
+<input type="text" id="color-logo-secondary" data-color-hex="logo-secondary" aria-label="wordmark · JLPT hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="logo-secondary" aria-label="Reset wordmark · JLPT" title="Reset wordmark · JLPT">↺</button></div></div></div><div class="fill-opacity-controls"><h4>fill opacity</h4><p>Applies to correct and wrong answers.</p><div class="fill-opacity-row"><label for="opacity-cell-fill">cell fill<output id="opacity-cell-fill-output">11%</output></label><div><input id="opacity-cell-fill" type="range" min="0" max="100" step="1" value="11" data-fill-opacity="cell-fill" aria-label="cell fill opacity"><button type="button" data-fill-reset="cell-fill" aria-label="Reset cell fill opacity" title="Reset cell fill opacity">↺</button></div></div><div class="fill-opacity-row"><label for="opacity-fill">fill style<output id="opacity-fill-output">30%</output></label><div><input id="opacity-fill" type="range" min="0" max="100" step="1" value="30" data-fill-opacity="fill" aria-label="fill style opacity"><button type="button" data-fill-reset="fill" aria-label="Reset fill style opacity" title="Reset fill style opacity">↺</button></div></div></div></details></aside></div></section><section data-settings="browser"><div class="setting-row js-only"><div><h3>remember this browser</h3><p id="save-status">Saving is on by default. No account required.</p></div><label class="switch"><input id="remember" type="checkbox" checked>save preferences, answers and position</label></div><div class="button-row browser-actions js-only"><button id="reset-preferences" type="button">reset preferences</button><button id="forget" type="button">forget saved data</button></div><div class="developer-only developer-settings"><h3>developer mode</h3><p>Principal differences and editorial cases are visible. This local switch is not authentication.</p><button id="disable-dev" type="button">hide developer tools</button></div><div class="settings-about"><button type="button" id="developer-unlock" class="js-only" title="astraJLPT build information">astraJLPT · 2020–2026 collection</button><span id="developer-hint" role="status"></span></div></section></div></details></header><main id="content" class="review-page"><div class="review-content"><a href="../levels/N3.html">← N3 papers</a><h1>N3 · July 2017</h1><p>Uncertainty index: <strong>2024</strong> · 25 differences · 3 unresolved · 4 provisional fixes</p><p>Evidence base 2000 + source concerns 24 = 2024. Concerns are uncapped; browsing order uses evidence tier before concern points.</p><p>This is an editorial evidence assessment, not a probability, an error rate or a practice score.</p><details><summary>Assessment evidence and original source scores</summary><pre>{
+  &quot;unit&quot;: &quot;N3_07_2017&quot;,
+  &quot;sample&quot;: false,
+  &quot;year&quot;: 2017,
+  &quot;month&quot;: 7,
+  &quot;evidence_base&quot;: 2000,
+  &quot;evidence_tier&quot;: 4,
+  &quot;concern_points&quot;: 24,
+  &quot;index&quot;: 2024,
+  &quot;concern_counts&quot;: {
+    &quot;metadata_flags&quot;: 0,
+    &quot;missing_units&quot;: 1,
+    &quot;major_defects&quot;: 1,
+    &quot;minor_defects&quot;: 2,
+    &quot;uncertain_fields&quot;: 5
+  },
+  &quot;principal_history&quot;: {
+    &quot;unit&quot;: &quot;N3_07_2017&quot;,
+    &quot;level&quot;: &quot;N3&quot;,
+    &quot;year&quot;: 2017,
+    &quot;month&quot;: 7,
+    &quot;principal_path&quot;: &quot;src/日语JLPT真题1992～2025.12（及时转存，避免丢失）/渠道一/日语N3真题/2010年-2020年/2017年7月/【2】2017年07月N3 真题.pdf&quot;,
+    &quot;principal_sha256&quot;: &quot;fee1b9d8c22313bc06d59c55a6c7cbea0abde81820a127be9191750cc5857f1c&quot;,
+    &quot;initial_tier&quot;: 1,
+    &quot;written_physical_pages&quot;: &quot;2-11&quot;,
+    &quot;review_status&quot;: &quot;complete_written_review&quot;,
+    &quot;provenance_status&quot;: &quot;known_reconstruction&quot;,
+    &quot;provenance_points&quot;: 200,
+    &quot;metadata_flags&quot;: 0,
+    &quot;missing_units&quot;: 1,
+    &quot;major_defects&quot;: 1,
+    &quot;minor_defects&quot;: 2,
+    &quot;uncertain_fields&quot;: 5,
+    &quot;uncertainty_index&quot;: 224,
+    &quot;score_evidence&quot;: [
+      {
+        &quot;id&quot;: &quot;N3_07_2017-S-001&quot;,
+        &quot;kind&quot;: &quot;missing_units&quot;,
+        &quot;item_id&quot;: &quot;reading-b010&quot;,
+        &quot;field&quot;: &quot;&quot;,
+        &quot;locator&quot;: &quot;Physical5, Problem2 before Q14&quot;,
+        &quot;evidence&quot;: &quot;The complete same-sitting example in the external compilation is absent from this principal. Count one whole missing block, not its parts.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N3_07_2017-S-002&quot;,
+        &quot;kind&quot;: &quot;major_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-s07&quot;,
+        &quot;field&quot;: &quot;/heading&quot;,
+        &quot;locator&quot;: &quot;Physical11, Problem7 heading&quot;,
+        &quot;evidence&quot;: &quot;動物園のポスター misidentifies the mountain-tour notice; its own body and the coherent Yuuki heading establish the subject error.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N3_07_2017-S-003&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-b008&quot;,
+        &quot;field&quot;: &quot;/content/html&quot;,
+        &quot;locator&quot;: &quot;Physical10, baby-visit passage&quot;,
+        &quot;evidence&quot;: &quot;生まれで約半年 is a grammatical typo; compact and bound witnesses give 生まれて. The disputed 実際的 adverb is dominated by this one confirmed minor field, not separately counted.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N3_07_2017-S-004&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-q026&quot;,
+        &quot;field&quot;: &quot;/options/3&quot;,
+        &quot;locator&quot;: &quot;Physical8, Q26 option4&quot;,
+        &quot;evidence&quot;: &quot;スービス is misspelled relative to サービス repeatedly printed in the accompanying passage.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N3_07_2017-S-005&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;vocab-q009&quot;,
+        &quot;field&quot;: &quot;/options/3&quot;,
+        &quot;locator&quot;: &quot;Physical2, Q9 option4&quot;,
+        &quot;evidence&quot;: &quot;Legible 囚 versus alternative 図; both possible intentional distractors.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N3_07_2017-S-006&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;vocab-q027&quot;,
+        &quot;field&quot;: &quot;/options/2&quot;,
+        &quot;locator&quot;: &quot;Physical3, Q27 option3&quot;,
+        &quot;evidence&quot;: &quot;Principal 遠く versus compact/Yuuki 遠; historical distractor form remains disputed.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N3_07_2017-S-007&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;reading-b003&quot;,
+        &quot;field&quot;: &quot;/content&quot;,
+        &quot;locator&quot;: &quot;Physical7, email signature&quot;,
+        &quot;evidence&quot;: &quot;Principal .jo versus bound .jp; plausible repair does not establish original address.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N3_07_2017-S-008&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;reading-b007&quot;,
+        &quot;field&quot;: &quot;/content/html&quot;,
+        &quot;locator&quot;: &quot;Physical9, leaf passage opening&quot;,
+        &quot;evidence&quot;: &quot;All editions print 水; 木 is a contextual conjecture rather than directly established source wording.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N3_07_2017-S-009&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;reading-b009&quot;,
+        &quot;field&quot;: &quot;/content/html&quot;,
+        &quot;locator&quot;: &quot;Physical11, notice footer&quot;,
+        &quot;evidence&quot;: &quot;Principal short local part versus Yuuki image longer tanoshimu local part; contact wording uncertain.&quot;
+      }
+    ],
+    &quot;method_version&quot;: 1,
+    &quot;reviewed_at&quot;: &quot;2026-10-06&quot;,
+    &quot;assessment_note&quot;: &quot;Cover1 and all written2–11 visually inspected. Cover explicitly states this is not a final/perfect version; compressed retyped body, secondary labels, omitted example and wrong zoo heading provide positive reconstruction evidence. No issuer chain. Preferred for complete coherent written coverage over compact and Yuuki retypes, while their genuine variants remain public. Listening12–14 excluded.&quot;
+  },
+  &quot;evidence&quot;: []
+}</pre></details><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span><ul></ul><div class="review-controls"><label>Show <select id="review-filter"><option value="all">All records</option><option value="difference">Principal differences</option><option value="unresolved">Unresolved cases</option><option value="provisional_fix">Provisional fixes</option></select></label><label>Find <input id="review-search" type="search" placeholder="Item, wording, evidence…"></label></div><p id="review-count" class="control-help" role="status"></p><section class="review-group" id="review-vocab-q009" data-kinds="difference unresolved"><div class="review-group-heading"><h2>vocab-q009</h2><a href="../papers/N3_07_2017.html#vocab-q009">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">9. バスがなかなか来なくて<u>こまりました</u>。<ol><li>因りました</li><li>困りました</li><li>固りました</li><li>図りました</li></ol><p>Editorial key: 2</p></div></details><div class="review-record" id="unresolved_cases-N3_07_2017-vocab-q009-glyph-variant"><div class="review-label">Unresolved · /options/3 · medium</div><div class="comparison"><div><h4>Alternative</h4><pre><mark class="diff-old">囚</mark>りました</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">図</mark>りました</pre></div></div><p>Retain the existing 図 variant pending stronger historical evidence. Neither wrong glyph can be chosen by grammar or answer-key agreement, and repeated secondary witnesses may share a source. Key2 is secure.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>An original page or independently traceable reproduction is needed to settle the fourth glyph.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Kanji-choice Q9 asks for こまりました; the correct answer is option2 困りました.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=2): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q9 option4 enlarged<p>囚りました</p></li><li><span class="principal-repository-source">Principal source (page=3): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q9 option4 enlarged<p>囚りました</p></li><li><span class="principal-repository-source">Principal source (page=1): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q9 option4<p>囚りました</p></li><li><span class="principal-repository-source">Principal source (page=2): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q9 option4<p>図りました</p></li></ul><details><summary>Full published record · unresolved_cases-N3_07_2017-vocab-q009-glyph-variant</summary><pre>{
+  &quot;case_id&quot;: &quot;N3_07_2017-vocab-q009-glyph-variant&quot;,
+  &quot;unit&quot;: &quot;N3_07_2017&quot;,
+  &quot;item_id&quot;: &quot;vocab-q009&quot;,
+  &quot;field&quot;: &quot;/options/3&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;図りました&quot;,
+  &quot;context&quot;: &quot;Kanji-choice Q9 asks for こまりました; the correct answer is option2 困りました.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;囚りました&quot;,
+      &quot;assessment&quot;: &quot;Legible in the selected nonfinal edition, Yuuki retype and bound edition; remains a credible rival.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;図りました&quot;,
+      &quot;assessment&quot;: &quot;Current text, directly present in the compact comparison edition; also a viable intentionally incorrect kanji distractor.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;【2】2017年07月N3 真题.pdf&quot;,
+      &quot;sha256&quot;: &quot;fee1b9d8c22313bc06d59c55a6c7cbea0abde81820a127be9191750cc5857f1c&quot;,
+      &quot;physical_pages&quot;: [
+        2
+      ],
+      &quot;locator&quot;: &quot;Q9 option4 enlarged&quot;,
+      &quot;reading&quot;: &quot;囚りました&quot;,
+      &quot;lineage&quot;: &quot;Secondary witness; common ancestry is possible and no issuer custody has been established.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2017年7月N3试卷_解析_听力原文_高清扫描.PDF&quot;,
+      &quot;sha256&quot;: &quot;8c18b28da0691af92bf429f5b9b05311bd9a3197b03e869d617af88d48c2087f&quot;,
+      &quot;physical_pages&quot;: [
+        3
+      ],
+      &quot;locator&quot;: &quot;Q9 option4 enlarged&quot;,
+      &quot;reading&quot;: &quot;囚りました&quot;,
+      &quot;lineage&quot;: &quot;Secondary witness; common ancestry is possible and no issuer custody has been established.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2017.07.N3.pdf&quot;,
+      &quot;sha256&quot;: &quot;7e344f31e70109c4b25bac64a6bde2863d72bf57406e0efa034bf71de99d862b&quot;,
+      &quot;physical_pages&quot;: [
+        1
+      ],
+      &quot;locator&quot;: &quot;Q9 option4&quot;,
+      &quot;reading&quot;: &quot;囚りました&quot;,
+      &quot;lineage&quot;: &quot;Secondary witness; common ancestry is possible and no issuer custody has been established.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2017年07月N3.pdf&quot;,
+      &quot;sha256&quot;: &quot;898b578ff5f166d7280d31b5cab4de52993fd7050d5af4ded19063160bee01af&quot;,
+      &quot;physical_pages&quot;: [
+        2
+      ],
+      &quot;locator&quot;: &quot;Q9 option4&quot;,
+      &quot;reading&quot;: &quot;図りました&quot;,
+      &quot;lineage&quot;: &quot;Secondary witness; common ancestry is possible and no issuer custody has been established.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Retain the existing 図 variant pending stronger historical evidence. Neither wrong glyph can be chosen by grammar or answer-key agreement, and repeated secondary witnesses may share a source. Key2 is secure.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Enlarged principal and bound glyphs with the whole Q9 row in view.&quot;,
+    &quot;Read the Yuuki and compact edition option rows and the native transcript.&quot;,
+    &quot;Compared all four distractor shapes and verified the key under both readings.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;An original page or independently traceable reproduction is needed to settle the fourth glyph.&quot;
+}</pre></details></div><div class="review-record" id="principal_differences-N3_07_2017-PD-001"><div class="review-label">Principal difference · /options/3 · high</div><div class="comparison"><div><h4>Principal</h4><pre><mark class="diff-old">囚</mark>りました</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">図</mark>りました</pre></div></div><p>Retain the existing compact-edition variant. Both are possible wrong-character distractors; the public case preserves the contrary legible principal.</p><span class="principal-repository-source">Principal source (page=2): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">vocab-q009 /options/3: affected span</span><details><summary>Full published record · principal_differences-N3_07_2017-PD-001</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N3_07_2017-PD-001&quot;,
+  &quot;unit&quot;: &quot;N3_07_2017&quot;,
+  &quot;item_id&quot;: &quot;vocab-q009&quot;,
+  &quot;field&quot;: &quot;/options/3&quot;,
+  &quot;current_value&quot;: &quot;図りました&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;【2】2017年07月N3 真题.pdf — nonfinal secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;fee1b9d8c22313bc06d59c55a6c7cbea0abde81820a127be9191750cc5857f1c&quot;,
+    &quot;physical_pages&quot;: [
+      2
+    ],
+    &quot;locator&quot;: &quot;vocab-q009 /options/3: affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;囚りました&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;図りました&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;retained_variant&quot;,
+  &quot;rationale&quot;: &quot;Retain the existing compact-edition variant. Both are possible wrong-character distractors; the public case preserves the contrary legible principal.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;N3_07_2017-vocab-q009-glyph-variant&quot;
+  ]
+}</pre></details></div></section><section class="review-group" id="review-vocab-q027" data-kinds="provisional_fix"><div class="review-group-heading"><h2>vocab-q027</h2><a href="../papers/N3_07_2017.html#vocab-q027">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">27. 山口さんは<u>逆</u>のほうに<ruby data-rubi-id="rr4-989ba65310b92a793688" data-rubi-origin="project_rubi_restore">行<rt>い</rt></ruby>きましたよ。<ol><li>反対</li><li>外</li><li>遠く</li><li>奥</li></ol><p>Editorial key: 1</p></div></details><div class="review-record" id="unresolved_cases-N3_07_2017-vocab-q027-distance-adverb"><div class="review-label">Provisional fix · /options/2 · medium</div><div class="comparison"><div><h4>Before</h4><pre>遠</pre></div><div><h4>Editorial</h4><pre>遠<mark class="diff-new">く</mark></pre></div></div><p>Prefer 遠く because the principal preserves the kana and the same alternative is explicitly discussed, making accidental omission of く a plausible explanation. This is not proof of original exam wording.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>A traceable original option row would settle 遠 versus 遠く.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Synonym Q27 targets 逆 in 山口さんは逆のほうに行きましたよ; answer1 反対 remains unchanged.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=3): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q27 option3<p>遠く</p></li><li><span class="principal-repository-source">Principal source (page=4): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q27 option3 and its analysis<p>遠く; the analysis explicitly explains 遠く as a distant place.</p></li><li><span class="principal-repository-source">Principal source (page=3): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q27 option3<p>遠</p></li><li><span class="principal-repository-source">Principal source (page=3): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q27 option3<p>遠</p></li></ul><details><summary>Full published record · unresolved_cases-N3_07_2017-vocab-q027-distance-adverb</summary><pre>{
+  &quot;case_id&quot;: &quot;N3_07_2017-vocab-q027-distance-adverb&quot;,
+  &quot;unit&quot;: &quot;N3_07_2017&quot;,
+  &quot;item_id&quot;: &quot;vocab-q027&quot;,
+  &quot;field&quot;: &quot;/options/2&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;遠く&quot;,
+  &quot;context&quot;: &quot;Synonym Q27 targets 逆 in 山口さんは逆のほうに行きましたよ; answer1 反対 remains unchanged.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;遠&quot;,
+      &quot;assessment&quot;: &quot;Printed by the compact and Yuuki editions; as a distractor its grammatical awkwardness alone does not prove corruption.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;遠く&quot;,
+      &quot;assessment&quot;: &quot;Printed by the principal and bound question, and specifically explained as 遠く in the bound analysis.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;【2】2017年07月N3 真题.pdf&quot;,
+      &quot;sha256&quot;: &quot;fee1b9d8c22313bc06d59c55a6c7cbea0abde81820a127be9191750cc5857f1c&quot;,
+      &quot;physical_pages&quot;: [
+        3
+      ],
+      &quot;locator&quot;: &quot;Q27 option3&quot;,
+      &quot;reading&quot;: &quot;遠く&quot;,
+      &quot;lineage&quot;: &quot;Secondary witness; common ancestry is possible and no issuer custody has been established.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2017年7月N3试卷_解析_听力原文_高清扫描.PDF&quot;,
+      &quot;sha256&quot;: &quot;8c18b28da0691af92bf429f5b9b05311bd9a3197b03e869d617af88d48c2087f&quot;,
+      &quot;physical_pages&quot;: [
+        4,
+        18
+      ],
+      &quot;locator&quot;: &quot;Q27 option3 and its analysis&quot;,
+      &quot;reading&quot;: &quot;遠く; the analysis explicitly explains 遠く as a distant place.&quot;,
+      &quot;lineage&quot;: &quot;Secondary witness; common ancestry is possible and no issuer custody has been established.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2017年07月N3.pdf&quot;,
+      &quot;sha256&quot;: &quot;898b578ff5f166d7280d31b5cab4de52993fd7050d5af4ded19063160bee01af&quot;,
+      &quot;physical_pages&quot;: [
+        3
+      ],
+      &quot;locator&quot;: &quot;Q27 option3&quot;,
+      &quot;reading&quot;: &quot;遠&quot;,
+      &quot;lineage&quot;: &quot;Secondary witness; common ancestry is possible and no issuer custody has been established.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2017.07.N3.pdf&quot;,
+      &quot;sha256&quot;: &quot;7e344f31e70109c4b25bac64a6bde2863d72bf57406e0efa034bf71de99d862b&quot;,
+      &quot;physical_pages&quot;: [
+        3
+      ],
+      &quot;locator&quot;: &quot;Q27 option3&quot;,
+      &quot;reading&quot;: &quot;遠&quot;,
+      &quot;lineage&quot;: &quot;Secondary witness; common ancestry is possible and no issuer custody has been established.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Prefer 遠く because the principal preserves the kana and the same alternative is explicitly discussed, making accidental omission of く a plausible explanation. This is not proof of original exam wording.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Read all four options in the complete principal and comparison editions.&quot;,
+    &quot;Read the bound Q27 row and the dedicated option explanation on physical18.&quot;,
+    &quot;Checked the native transcript and confirmed the answer remains 反対.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;A traceable original option row would settle 遠 versus 遠く.&quot;,
+  &quot;before&quot;: &quot;遠&quot;
+}</pre></details></div></section><section class="review-group" id="review-reading-b010" data-kinds="difference provisional_fix"><div class="review-group-heading"><h2>reading-b010</h2><a href="../papers/N3_07_2017.html#reading-b010">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><p>（問題例）</p><p>あそこで <span class="answer-slot"><span class="slot-glyph">_</span></span><span class="answer-slot"><span class="slot-glyph">_</span></span> ☆ <span class="answer-slot"><span class="slot-glyph">_</span></span> は山田さんです。</p><p>（解答の仕方）</p><p>1. 正しい文はこうです。</p><table><tr><td>あそこで</td><td><span class="answer-slot"><span class="slot-glyph">_</span></span></td><td><span class="answer-slot"><span class="slot-glyph">_</span></span></td><td>☆</td><td><span class="answer-slot"><span class="slot-glyph">_</span></span></td><td>は山田さんです。</td></tr><tr><td></td><td>1 テレビ</td><td>3 を</td><td>2 見ている</td><td>4 人</td><td></td></tr></table><p>2. <span class="answer-slot"><span class="slot-glyph">_</span></span><span class="answer-slot"><span class="slot-glyph">_</span></span><span class="answer-slot"><span class="slot-glyph">_</span></span>に入れる番号を解答用紙にマークします。</p><p>（解答用紙）</p><table><tr><th>（例）</th><td>①　❷　③　④</td></tr></table></div></details><div class="review-record" id="unresolved_cases-N3_07_2017-reading-b010-worked-example"><div class="review-label">Provisional fix ·  · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>No alternative recorded</pre></div><div><h4>Editorial</h4><pre>{
+  &quot;id&quot;: &quot;reading-b010&quot;,
+  &quot;type&quot;: &quot;example&quot;,
+  &quot;content&quot;: {
+    &quot;html&quot;: &quot;&lt;p&gt;（問題例）&lt;/p&gt;&lt;p&gt;あそこで _ _ ☆ _ は山田さんです。&lt;/p&gt;&lt;p&gt;（解答の仕方）&lt;/p&gt;&lt;p&gt;1. 正しい文はこうです。&lt;/p&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;あそこで&lt;/td&gt;&lt;td&gt;_&lt;/td&gt;&lt;td&gt;_&lt;/td&gt;&lt;td&gt;☆&lt;/td&gt;&lt;td&gt;_&lt;/td&gt;&lt;td&gt;は山田さんです。&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;1 テレビ&lt;/td&gt;&lt;td&gt;3 を&lt;/td&gt;&lt;td&gt;2 見ている&lt;/td&gt;&lt;td&gt;4 人&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;2. ___に入れる番号を解答用紙にマークします。&lt;/p&gt;&lt;p&gt;（解答用紙）&lt;/p&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;（例）&lt;/th&gt;&lt;td&gt;①　❷　③　④&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&quot;
+  },
+  &quot;options&quot;: [
+    &quot;テレビ&quot;,
+    &quot;見ている&quot;,
+    &quot;を&quot;,
+    &quot;人&quot;
+  ],
+  &quot;key&quot;: 2
+}</pre></div></div><p>The same-sitting compilation places this example after the matching Q13 and before the matching Q14–18. Its choices determine テレビを見ている人, order1-3-2-4 and third-slot answer2. Correcting the two worked labels is the smallest coherent repair. The example may nevertheless be a conventional secondary insertion.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>An original same-sitting example page would establish its historical presence and exact configuration.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Unscored STAR worked example before Q14, with its options, solution steps, worked order and marked answer row.</span><ul class="evidence-list"><li><a href="https://www.scribd.com/document/803893085/%C4%90%E1%BB%81-thi-N3" target="_blank" rel="noopener">Đề thi N3 — 390-page secondary compilation, July2017 section</a> · Printed July2017 p5: complete example between Q13 and Q14; compiled physical281<p>Choices1テレビ 2見ている 3を 4人; third-slot outline star; worked labels1テレビ 2を 3見ている 4人; two instruction steps; marked answer2.</p></li><li><span class="principal-repository-source">Principal source (page=5): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Problem2 heading directly followed by Q14<p>No worked example.</p></li><li><span class="principal-repository-source">Principal source (page=5): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Problem2 transition<p>No worked example.</p></li><li><span class="principal-repository-source">Principal source (page=5): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Problem7 transition before Q14<p>No worked example.</p></li><li><span class="principal-repository-source">Principal source (page=6): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Problem2 transition before Q14<p>No worked example.</p></li><li><span class="principal-repository-source">Principal source (page=5): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Problem2 transition<p>No worked example.</p></li><li><span class="principal-repository-source">Principal source (page=5): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Problem2 transition<p>No worked example.</p></li></ul><details><summary>Full published record · unresolved_cases-N3_07_2017-reading-b010-worked-example</summary><pre>{
+  &quot;case_id&quot;: &quot;N3_07_2017-reading-b010-worked-example&quot;,
+  &quot;unit&quot;: &quot;N3_07_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-b010&quot;,
+  &quot;field&quot;: &quot;&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: {
+    &quot;id&quot;: &quot;reading-b010&quot;,
+    &quot;type&quot;: &quot;example&quot;,
+    &quot;content&quot;: {
+      &quot;html&quot;: &quot;&lt;p&gt;（問題例）&lt;/p&gt;&lt;p&gt;あそこで _ _ ☆ _ は山田さんです。&lt;/p&gt;&lt;p&gt;（解答の仕方）&lt;/p&gt;&lt;p&gt;1. 正しい文はこうです。&lt;/p&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;あそこで&lt;/td&gt;&lt;td&gt;_&lt;/td&gt;&lt;td&gt;_&lt;/td&gt;&lt;td&gt;☆&lt;/td&gt;&lt;td&gt;_&lt;/td&gt;&lt;td&gt;は山田さんです。&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;1 テレビ&lt;/td&gt;&lt;td&gt;3 を&lt;/td&gt;&lt;td&gt;2 見ている&lt;/td&gt;&lt;td&gt;4 人&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;2. ___に入れる番号を解答用紙にマークします。&lt;/p&gt;&lt;p&gt;（解答用紙）&lt;/p&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;（例）&lt;/th&gt;&lt;td&gt;①　❷　③　④&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&quot;
+    },
+    &quot;options&quot;: [
+      &quot;テレビ&quot;,
+      &quot;見ている&quot;,
+      &quot;を&quot;,
+      &quot;人&quot;
+    ],
+    &quot;key&quot;: 2
+  },
+  &quot;context&quot;: &quot;Unscored STAR worked example before Q14, with its options, solution steps, worked order and marked answer row.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: null,
+      &quot;assessment&quot;: &quot;The principal and all six inspected local question layouts omit the example; original presence is not established.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;Worked row1テレビ 2を 3見ている 4人&quot;,
+      &quot;assessment&quot;: &quot;Literal compilation labels contradict the initial choice numbers and marked answer2.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;Reorder the initial choices and mark answer3&quot;,
+      &quot;assessment&quot;: &quot;Logically possible, but alters two additional features and is not supplied as a complete configuration by the inspected example.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;Đề thi N3 — 390-page secondary compilation, July2017 section&quot;,
+      &quot;url&quot;: &quot;https://www.scribd.com/document/803893085/%C4%90%E1%BB%81-thi-N3&quot;,
+      &quot;physical_pages&quot;: [
+        277,
+        281,
+        282
+      ],
+      &quot;locator&quot;: &quot;Printed July2017 p5: complete example between Q13 and Q14; compiled physical281&quot;,
+      &quot;reading&quot;: &quot;Choices1テレビ 2見ている 3を 4人; third-slot outline star; worked labels1テレビ 2を 3見ている 4人; two instruction steps; marked answer2.&quot;,
+      &quot;lineage&quot;: &quot;Public ad-supported preview visually inspected; compilation and worked-label error are positive reconstruction evidence. No independent provenance.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;【2】2017年07月N3 真题.pdf&quot;,
+      &quot;sha256&quot;: &quot;fee1b9d8c22313bc06d59c55a6c7cbea0abde81820a127be9191750cc5857f1c&quot;,
+      &quot;physical_pages&quot;: [
+        5
+      ],
+      &quot;locator&quot;: &quot;Problem2 heading directly followed by Q14&quot;,
+      &quot;reading&quot;: &quot;No worked example.&quot;,
+      &quot;lineage&quot;: &quot;Secondary witness; common ancestry is possible and no issuer custody has been established.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2017年07月N3.pdf&quot;,
+      &quot;sha256&quot;: &quot;898b578ff5f166d7280d31b5cab4de52993fd7050d5af4ded19063160bee01af&quot;,
+      &quot;physical_pages&quot;: [
+        5
+      ],
+      &quot;locator&quot;: &quot;Problem2 transition&quot;,
+      &quot;reading&quot;: &quot;No worked example.&quot;,
+      &quot;lineage&quot;: &quot;Secondary witness; common ancestry is possible and no issuer custody has been established.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2017.07.N3.pdf&quot;,
+      &quot;sha256&quot;: &quot;7e344f31e70109c4b25bac64a6bde2863d72bf57406e0efa034bf71de99d862b&quot;,
+      &quot;physical_pages&quot;: [
+        5
+      ],
+      &quot;locator&quot;: &quot;Problem7 transition before Q14&quot;,
+      &quot;reading&quot;: &quot;No worked example.&quot;,
+      &quot;lineage&quot;: &quot;Secondary witness; common ancestry is possible and no issuer custody has been established.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2017年7月N3试卷_解析_听力原文_高清扫描.PDF&quot;,
+      &quot;sha256&quot;: &quot;8c18b28da0691af92bf429f5b9b05311bd9a3197b03e869d617af88d48c2087f&quot;,
+      &quot;physical_pages&quot;: [
+        6
+      ],
+      &quot;locator&quot;: &quot;Problem2 transition before Q14&quot;,
+      &quot;reading&quot;: &quot;No worked example.&quot;,
+      &quot;lineage&quot;: &quot;Secondary witness; common ancestry is possible and no issuer custody has been established.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;N3-2017-07-真题.pdf&quot;,
+      &quot;sha256&quot;: &quot;8596194753db5920080b992ae7525d264bd4779e9ed7854f9d9fa6d38a24fff4&quot;,
+      &quot;physical_pages&quot;: [
+        5
+      ],
+      &quot;locator&quot;: &quot;Problem2 transition&quot;,
+      &quot;reading&quot;: &quot;No worked example.&quot;,
+      &quot;lineage&quot;: &quot;Secondary witness; common ancestry is possible and no issuer custody has been established.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;【1】2017年07月N3 真题.pdf&quot;,
+      &quot;sha256&quot;: &quot;947a04c8f84f02f5b87d3825f1abbf9475a7bb53aa8d78379767b79aa5567ed7&quot;,
+      &quot;physical_pages&quot;: [
+        5
+      ],
+      &quot;locator&quot;: &quot;Problem2 transition&quot;,
+      &quot;reading&quot;: &quot;No worked example.&quot;,
+      &quot;lineage&quot;: &quot;Secondary witness; common ancestry is possible and no issuer custody has been established.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;The same-sitting compilation places this example after the matching Q13 and before the matching Q14–18. Its choices determine テレビを見ている人, order1-3-2-4 and third-slot answer2. Correcting the two worked labels is the smallest coherent repair. The example may nevertheless be a conventional secondary insertion.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Visually inspected the public compilation complete example on physical281, both its choices and worked/marked-answer portions, after using its offered ad-supported preview.&quot;,
+    &quot;Verified surrounding Q10–13 and Q14–18 and the July2017 section identity in the public text.&quot;,
+    &quot;Inspected all six local STAR transitions and the native section inventory; focused analysis-file searches supplied no complete example.&quot;,
+    &quot;Compared competing choice/label/key configurations and preserved both solution steps.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;An original same-sitting example page would establish its historical presence and exact configuration.&quot;,
+  &quot;before&quot;: null
+}</pre></details></div><div class="review-record" id="principal_differences-N3_07_2017-PD-008"><div class="review-label">Principal difference ·  · high</div><div class="comparison"><div><h4>Principal</h4><pre>No alternative recorded</pre></div><div><h4>Editorial</h4><pre>&lt;p&gt;（問題例）&lt;/p&gt;&lt;p&gt;あそこで _ _ ☆ _ は山田さんです。&lt;/p&gt;&lt;p&gt;（解答の仕方）&lt;/p&gt;&lt;p&gt;1. 正しい文はこうです。&lt;/p&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;あそこで&lt;/td&gt;&lt;td&gt;_&lt;/td&gt;&lt;td&gt;_&lt;/td&gt;&lt;td&gt;☆&lt;/td&gt;&lt;td&gt;_&lt;/td&gt;&lt;td&gt;は山田さんです。&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;1 テレビ&lt;/td&gt;&lt;td&gt;3 を&lt;/td&gt;&lt;td&gt;2 見ている&lt;/td&gt;&lt;td&gt;4 人&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;2. ___に入れる番号を解答用紙にマークします。&lt;/p&gt;&lt;p&gt;（解答用紙）&lt;/p&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;（例）&lt;/th&gt;&lt;td&gt;①　❷　③　④&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</pre></div></div><p>Restore a complete same-sitting secondary example absent from the principal, with its internally coherent worked mapping and explicit residual doubt.</p><span class="principal-repository-source">Principal source (page=5): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-b010 : affected span</span><details><summary>Full published record · principal_differences-N3_07_2017-PD-008</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N3_07_2017-PD-008&quot;,
+  &quot;unit&quot;: &quot;N3_07_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-b010&quot;,
+  &quot;field&quot;: &quot;&quot;,
+  &quot;current_value&quot;: {
+    &quot;id&quot;: &quot;reading-b010&quot;,
+    &quot;type&quot;: &quot;example&quot;,
+    &quot;content&quot;: {
+      &quot;html&quot;: &quot;&lt;p&gt;（問題例）&lt;/p&gt;&lt;p&gt;あそこで _ _ ☆ _ は山田さんです。&lt;/p&gt;&lt;p&gt;（解答の仕方）&lt;/p&gt;&lt;p&gt;1. 正しい文はこうです。&lt;/p&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;あそこで&lt;/td&gt;&lt;td&gt;_&lt;/td&gt;&lt;td&gt;_&lt;/td&gt;&lt;td&gt;☆&lt;/td&gt;&lt;td&gt;_&lt;/td&gt;&lt;td&gt;は山田さんです。&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;1 テレビ&lt;/td&gt;&lt;td&gt;3 を&lt;/td&gt;&lt;td&gt;2 見ている&lt;/td&gt;&lt;td&gt;4 人&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;2. ___に入れる番号を解答用紙にマークします。&lt;/p&gt;&lt;p&gt;（解答用紙）&lt;/p&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;（例）&lt;/th&gt;&lt;td&gt;①　❷　③　④&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&quot;
+    },
+    &quot;options&quot;: [
+      &quot;テレビ&quot;,
+      &quot;見ている&quot;,
+      &quot;を&quot;,
+      &quot;人&quot;
+    ],
+    &quot;key&quot;: 2
+  },
+  &quot;categories&quot;: [
+    &quot;missing_printed_content&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;【2】2017年07月N3 真题.pdf — nonfinal secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;fee1b9d8c22313bc06d59c55a6c7cbea0abde81820a127be9191750cc5857f1c&quot;,
+    &quot;physical_pages&quot;: [
+      5
+    ],
+    &quot;locator&quot;: &quot;reading-b010 : affected span&quot;,
+    &quot;reading_status&quot;: &quot;absent&quot;,
+    &quot;reading&quot;: null
+  },
+  &quot;editorial_reading&quot;: &quot;&lt;p&gt;（問題例）&lt;/p&gt;&lt;p&gt;あそこで _ _ ☆ _ は山田さんです。&lt;/p&gt;&lt;p&gt;（解答の仕方）&lt;/p&gt;&lt;p&gt;1. 正しい文はこうです。&lt;/p&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;あそこで&lt;/td&gt;&lt;td&gt;_&lt;/td&gt;&lt;td&gt;_&lt;/td&gt;&lt;td&gt;☆&lt;/td&gt;&lt;td&gt;_&lt;/td&gt;&lt;td&gt;は山田さんです。&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;1 テレビ&lt;/td&gt;&lt;td&gt;3 を&lt;/td&gt;&lt;td&gt;2 見ている&lt;/td&gt;&lt;td&gt;4 人&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;2. ___に入れる番号を解答用紙にマークします。&lt;/p&gt;&lt;p&gt;（解答用紙）&lt;/p&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;（例）&lt;/th&gt;&lt;td&gt;①　❷　③　④&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;conjectural_repair&quot;,
+  &quot;rationale&quot;: &quot;Restore a complete same-sitting secondary example absent from the principal, with its internally coherent worked mapping and explicit residual doubt.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;N3_07_2017-reading-b010-worked-example&quot;
+  ]
+}</pre></details></div></section><section class="review-group" id="review-reading-b003" data-kinds="difference provisional_fix"><div class="review-group-heading"><h2>reading-b003</h2><a href="../papers/N3_07_2017.html#reading-b003">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">（2） これは池中電気の池中さんが東山機械のダオさんに書いたメールである。<br/><br/><br/>東山機械<br/>ダオ様<br/>いつもお世話になっております。<br/><br/>池中電気では、現在の建物が古くなったため、同じ場所に新しく建て直すことにいたしました。工事期間中は、以下の住所で営業いたします。電話番号とファクス番号は今までと変わりません。<br/><br/><br/>しばらくの間ご不便をおかけしますが、どうぞよろしくお願い申し上げます。<br/><br/>〈工事期間〉<br/>8月1日から11月30日まで<br/><br/><br/>〈工事中の住所・連絡先〉<br/><br/>〒148-0015　中区緑町3-2-1<br/><br/>電話/ファクス:014-853-1982<br/><br/><br/>池中電気<br/>池中 正（ikenaka.t@ikenaka-denki.co.jp）</div></details><div class="review-record" id="unresolved_cases-N3_07_2017-reading-b003-email-suffix"><div class="review-label">Provisional fix · /content · medium</div><div class="comparison"><div><h4>Before</h4><pre><mark class="diff-old">(</mark>2<mark class="diff-old">)</mark> これは池中電気の池中さんが東山機械のダオさんに書いたメールである。
+
+
+東山機械
+ダオ様
+いつもお世話になっております。
+
+池中電気では、現在の建物が古くなったため、同じ場所に新しく建て直すことにいたしました。工事期間中は、以下の住所で営業いたします。電話番号とファクス番号…</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">（</mark>2<mark class="diff-new">）</mark> これは池中電気の池中さんが東山機械のダオさんに書いたメールである。
+
+
+東山機械
+ダオ様
+いつもお世話になっております。
+
+池中電気では、現在の建物が古くなったため、同じ場所に新しく建て直すことにいたしました。工事期間中は、以下の住所で営業いたします。電話番号とファクス番号…</pre></div></div><p>The bound page supplies the complete .jp address directly. Context supports it, but the repeated .jo alternative is legible and cannot be rejected as an OCR-only artifact. No attempt was made to contact or test this address.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>An original signature is needed to establish the intended suffix.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">The company relocation email supplies a signature address. Q25 asks where business operates during construction, not its domain.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=7): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Pool of email contact details<p>ikenaka.t@ikenaka-denki.co.jo</p></li><li><span class="principal-repository-source">Principal source (page=6): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Email signature<p>ikenaka.t@ikenaka-denki.co.jo</p></li><li><span class="principal-repository-source">Principal source (page=8): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Email signature, visually read<p>ikenaka.t@ikenaka-denki.co.jp</p></li></ul><details><summary>Full published record · unresolved_cases-N3_07_2017-reading-b003-email-suffix</summary><pre>{
+  &quot;case_id&quot;: &quot;N3_07_2017-reading-b003-email-suffix&quot;,
+  &quot;unit&quot;: &quot;N3_07_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-b003&quot;,
+  &quot;field&quot;: &quot;/content&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;（2） これは池中電気の池中さんが東山機械のダオさんに書いたメールである。\n\n\n東山機械\nダオ様\nいつもお世話になっております。\n\n池中電気では、現在の建物が古くなったため、同じ場所に新しく建て直すことにいたしました。工事期間中は、以下の住所で営業いたします。電話番号とファクス番号は今までと変わりません。\n\n\nしばらくの間ご不便をおかけしますが、どうぞよろしくお願い申し上げます。\n\n〈工事期間〉\n8月1日から11月30日まで\n\n\n〈工事中の住所・連絡先〉\n\n〒148-0015　中区緑町3-2-1\n\n電話/ファクス:014-853-1982\n\n\n池中電気\n池中 正（ikenaka.t@ikenaka-denki.co.jp）&quot;,
+  &quot;context&quot;: &quot;The company relocation email supplies a signature address. Q25 asks where business operates during construction, not its domain.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;ikenaka.t@ikenaka-denki.co.jo&quot;,
+      &quot;assessment&quot;: &quot;Literal principal, compact edition, Yuuki and native transcript reading; it may preserve a fictional or foreign-domain address.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;ikenaka.t@ikenaka-denki.co.jp&quot;,
+      &quot;assessment&quot;: &quot;Literal bound-edition reading, consistent with the Japanese company and address; preferred provisionally.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;【2】2017年07月N3 真题.pdf&quot;,
+      &quot;sha256&quot;: &quot;fee1b9d8c22313bc06d59c55a6c7cbea0abde81820a127be9191750cc5857f1c&quot;,
+      &quot;physical_pages&quot;: [
+        7
+      ],
+      &quot;locator&quot;: &quot;Pool of email contact details&quot;,
+      &quot;reading&quot;: &quot;ikenaka.t@ikenaka-denki.co.jo&quot;,
+      &quot;lineage&quot;: &quot;Secondary witness; common ancestry is possible and no issuer custody has been established.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2017年07月N3.pdf&quot;,
+      &quot;sha256&quot;: &quot;898b578ff5f166d7280d31b5cab4de52993fd7050d5af4ded19063160bee01af&quot;,
+      &quot;physical_pages&quot;: [
+        6
+      ],
+      &quot;locator&quot;: &quot;Email signature&quot;,
+      &quot;reading&quot;: &quot;ikenaka.t@ikenaka-denki.co.jo&quot;,
+      &quot;lineage&quot;: &quot;Secondary witness; common ancestry is possible and no issuer custody has been established.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2017年7月N3试卷_解析_听力原文_高清扫描.PDF&quot;,
+      &quot;sha256&quot;: &quot;8c18b28da0691af92bf429f5b9b05311bd9a3197b03e869d617af88d48c2087f&quot;,
+      &quot;physical_pages&quot;: [
+        8
+      ],
+      &quot;locator&quot;: &quot;Email signature, visually read&quot;,
+      &quot;reading&quot;: &quot;ikenaka.t@ikenaka-denki.co.jp&quot;,
+      &quot;lineage&quot;: &quot;Secondary witness; common ancestry is possible and no issuer custody has been established.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;The bound page supplies the complete .jp address directly. Context supports it, but the repeated .jo alternative is legible and cannot be rejected as an OCR-only artifact. No attempt was made to contact or test this address.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Visually read the full signature in principal physical7, compact physical6 and bound physical8.&quot;,
+    &quot;Compared native email text and the complete surrounding company/contact details.&quot;,
+    &quot;Re-solved Q25; answer4 is unaffected by either address.&quot;,
+    &quot;5 November 2026: Public snapshot rebound to the earlier, verified current field. Only the historical presentation edit is replayed; this snapshot repair does not change the original witness or its confidence.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;An original signature is needed to establish the intended suffix.&quot;,
+  &quot;before&quot;: &quot;(2) これは池中電気の池中さんが東山機械のダオさんに書いたメールである。\n\n\n東山機械\nダオ様\nいつもお世話になっております。\n\n池中電気では、現在の建物が古くなったため、同じ場所に新しく建て直すことにいたしました。工事期間中は、以下の住所で営業いたします。電話番号とファクス番号は今までと変わりません。\n\n\nしばらくの間ご不便をおかけしますが、どうぞよろしくお願い申し上げます。\n\n&lt;工事期間&gt;\n8月1日から11月30日まで\n\n\n&lt;工事中の住所・連絡先&gt;\n\n〒148-0015　中区緑町3-2-1\n\n電話/ファクス:014-853-1982\n\n\n池中電気\n池中 正(ikenaka.t@ikenaka-denki.co.jo)&quot;
+}</pre></details></div><div class="review-record" id="principal_differences-N3_07_2017-PD-002"><div class="review-label">Principal difference · /content · high</div><div class="comparison"><div><h4>Principal</h4><pre>ikenaka.t@ikenaka-denki.co.j<mark class="diff-old">o</mark></pre></div><div><h4>Editorial</h4><pre>ikenaka.t@ikenaka-denki.co.j<mark class="diff-new">p</mark></pre></div></div><p>The bound witness directly supplies .jp, but the principal and other retypes retain .jo. The contact suffix remains provisional.</p><span class="principal-repository-source">Principal source (page=7): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-b003 /content: affected span</span><details><summary>Full published record · principal_differences-N3_07_2017-PD-002</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N3_07_2017-PD-002&quot;,
+  &quot;unit&quot;: &quot;N3_07_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-b003&quot;,
+  &quot;field&quot;: &quot;/content&quot;,
+  &quot;current_value&quot;: &quot;（2） これは池中電気の池中さんが東山機械のダオさんに書いたメールである。\n\n\n東山機械\nダオ様\nいつもお世話になっております。\n\n池中電気では、現在の建物が古くなったため、同じ場所に新しく建て直すことにいたしました。工事期間中は、以下の住所で営業いたします。電話番号とファクス番号は今までと変わりません。\n\n\nしばらくの間ご不便をおかけしますが、どうぞよろしくお願い申し上げます。\n\n〈工事期間〉\n8月1日から11月30日まで\n\n\n〈工事中の住所・連絡先〉\n\n〒148-0015　中区緑町3-2-1\n\n電話/ファクス:014-853-1982\n\n\n池中電気\n池中 正（ikenaka.t@ikenaka-denki.co.jp）&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;【2】2017年07月N3 真题.pdf — nonfinal secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;fee1b9d8c22313bc06d59c55a6c7cbea0abde81820a127be9191750cc5857f1c&quot;,
+    &quot;physical_pages&quot;: [
+      7
+    ],
+    &quot;locator&quot;: &quot;reading-b003 /content: affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;ikenaka.t@ikenaka-denki.co.jo&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;ikenaka.t@ikenaka-denki.co.jp&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;conjectural_repair&quot;,
+  &quot;rationale&quot;: &quot;The bound witness directly supplies .jp, but the principal and other retypes retain .jo. The contact suffix remains provisional.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;N3_07_2017-reading-b003-email-suffix&quot;
+  ]
+}</pre></details></div></section><section class="review-group" id="review-reading-q026" data-kinds="difference"><div class="review-group-heading"><h2>reading-q026</h2><a href="../papers/N3_07_2017.html#reading-q026">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">26. このホテルは、どのような場合にホテル代が安くなるか。<ol><li><ruby data-rubi-id="rr4-84c58d644ec4970bf173" data-rubi-origin="project_rubi_restore">泊<rt>と</rt></ruby>まっている間に、大雪が降った場合</li><li>決められた時間の間に、0度以下になった場合</li><li>到着日より出発日のほうが、<ruby data-rubi-id="rr4-d7ace42e417ce066693a" data-rubi-origin="project_rubi_restore">最低<rt>さいてい</rt></ruby><ruby data-rubi-id="rr4-57c211980ec145e2d4a9" data-rubi-origin="project_rubi_restore">気温<rt>きおん</rt></ruby>が低かった場合</li><li>到着したときに、冬のサービスを利用したいと言った場合</li></ol><p>Editorial key: 2</p></div></details><div class="review-record" id="principal_differences-N3_07_2017-PD-006"><div class="review-label">Principal difference · /options/3 · high</div><div class="comparison"><div><h4>Principal</h4><pre>到着したときに、冬の<mark class="diff-old">ス</mark>ービスを利用したいと言った場合</pre></div><div><h4>Editorial</h4><pre>到着したときに、冬の<mark class="diff-new">サ</mark>ービスを利用したいと言った場合</pre></div></div><p>Retain the ordinary サービス spelling already supplied repeatedly in the same hotel passage; スービス is a source spelling defect.</p><span class="principal-repository-source">Principal source (page=8): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-q026 /options/3: affected span</span><details><summary>Full published record · principal_differences-N3_07_2017-PD-006</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N3_07_2017-PD-006&quot;,
+  &quot;unit&quot;: &quot;N3_07_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-q026&quot;,
+  &quot;field&quot;: &quot;/options/3&quot;,
+  &quot;current_value&quot;: &quot;到着したときに、冬のサービスを利用したいと言った場合&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;【2】2017年07月N3 真题.pdf — nonfinal secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;fee1b9d8c22313bc06d59c55a6c7cbea0abde81820a127be9191750cc5857f1c&quot;,
+    &quot;physical_pages&quot;: [
+      8
+    ],
+    &quot;locator&quot;: &quot;reading-q026 /options/3: affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;到着したときに、冬のスービスを利用したいと言った場合&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;到着したときに、冬のサービスを利用したいと言った場合&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Retain the ordinary サービス spelling already supplied repeatedly in the same hotel passage; スービス is a source spelling defect.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-q027" data-kinds="difference"><div class="review-group-heading"><h2>reading-q027</h2><a href="../papers/N3_07_2017.html#reading-q027">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">27. 7月11日の<ruby data-rubi-id="rr4-0bcf30779229a6cef141" data-rubi-origin="project_rubi_restore">授業<rt>じゅぎょう</rt></ruby>について、このプリントからわかることはどれか。<ol><li>「国際経済学」の授業を受けている学生が参加するかしないかは、自由である</li><li>アジアで働いてみたいと考えている学生以外の参加は、自由である</li><li>「国際経済学」の授業を受けている学生は、翌週、レポートを出す必要がある</li><li>アジアで働いてみたいと考えている学生だけが、翌週、レポートを出す必要がある</li></ol><p>Editorial key: 3</p></div></details><div class="review-record" id="principal_differences-N3_07_2017-PD-009"><div class="review-label">Principal difference · /options · high</div><div class="comparison"><div><h4>Principal</h4><pre>1. 「国際経済学」の授業を受けている学生が参加するかしないかは、自由である<mark class="diff-old">。</mark>
+2. アジアで働いてみたいと考えている学生以外の参加は、自由である<mark class="diff-old">。</mark>
+3. 「国際経済学」の授業を受けている学生は、翌週、レポートを出す必要がある<mark class="diff-old">。</mark>
+4. アジアで働いてみたいと考えている学生だけが、翌週、レポートを出す必要がある<mark class="diff-old">。</mark></pre></div><div><h4>Editorial</h4><pre>1. 「国際経済学」の授業を受けている学生が参加するかしないかは、自由である
+2. アジアで働いてみたいと考えている学生以外の参加は、自由である
+3. 「国際経済学」の授業を受けている学生は、翌週、レポートを出す必要がある
+4. アジアで働いてみたいと考えている学生だけが、翌週、レポートを出す必要がある</pre></div></div><p>Retain the inherited four sentence-final-stop omissions, directly supported by the compact comparison edition. The principal and Yuuki version visibly supply the stops. This is a disclosed witness variant, not a principal defect.</p><span class="principal-repository-source">Principal source (page=8): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-q027 /options: affected span</span><details><summary>Full published record · principal_differences-N3_07_2017-PD-009</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N3_07_2017-PD-009&quot;,
+  &quot;unit&quot;: &quot;N3_07_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-q027&quot;,
+  &quot;field&quot;: &quot;/options&quot;,
+  &quot;current_value&quot;: [
+    &quot;「国際経済学」の授業を受けている学生が参加するかしないかは、自由である&quot;,
+    &quot;アジアで働いてみたいと考えている学生以外の参加は、自由である&quot;,
+    &quot;「国際経済学」の授業を受けている学生は、翌週、レポートを出す必要がある&quot;,
+    &quot;アジアで働いてみたいと考えている学生だけが、翌週、レポートを出す必要がある&quot;
+  ],
+  &quot;categories&quot;: [
+    &quot;punctuation&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;【2】2017年07月N3 真题.pdf — nonfinal secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;fee1b9d8c22313bc06d59c55a6c7cbea0abde81820a127be9191750cc5857f1c&quot;,
+    &quot;physical_pages&quot;: [
+      8
+    ],
+    &quot;locator&quot;: &quot;reading-q027 /options: affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;1. 「国際経済学」の授業を受けている学生が参加するかしないかは、自由である。\n2. アジアで働いてみたいと考えている学生以外の参加は、自由である。\n3. 「国際経済学」の授業を受けている学生は、翌週、レポートを出す必要がある。\n4. アジアで働いてみたいと考えている学生だけが、翌週、レポートを出す必要がある。&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;1. 「国際経済学」の授業を受けている学生が参加するかしないかは、自由である\n2. アジアで働いてみたいと考えている学生以外の参加は、自由である\n3. 「国際経済学」の授業を受けている学生は、翌週、レポートを出す必要がある\n4. アジアで働いてみたいと考えている学生だけが、翌週、レポートを出す必要がある&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;retained_variant&quot;,
+  &quot;rationale&quot;: &quot;Retain the inherited four sentence-final-stop omissions, directly supported by the compact comparison edition. The principal and Yuuki version visibly supply the stops. This is a disclosed witness variant, not a principal defect.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-b006" data-kinds="difference"><div class="review-group-heading"><h2>reading-b006</h2><a href="../papers/N3_07_2017.html#reading-b006">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">（1）
+先日、友人と話していて「久しぶりに旅行に行きたいね。」という話になりました。予定を確認すると、次の週末なら二人とも空いていたので、急いで温泉旅館を予約しました。<br/> ふだん、私は旅行の三か月くらい前から情報を集めてしっかり計画を立てます。でも今回は、時間がなく、ガイドブックを一冊買っただけで出発しました。<br/><br/>
+①<u>こんな旅行</u>は初めてで、少し不安でしたが、心配はいりませんでした。一日目は温泉を楽しみ、翌日は町の中を見て歩きました。夕方からは、バスに乗って夕日で有名な海岸に行くことにしました。そこで、夕日が海に沈むところが見たかったのですが、町から海岸までは思ったより時間がかかり、着いたころにはすっかり暗くなっていました。しかたないので、駅で夕日の絵はがきを買って帰ってきました。
+<br/><br/>今回の旅行はいつもとは少し違いましたが、楽しかったです。②<u>失敗</u>もいい思い出になりました。いつものような旅行のほうが安心ですが、たまにはこんな旅行もいいと思いました。</div></details><div class="review-record" id="principal_differences-N3_07_2017-PD-015"><div class="review-label">Principal difference · /content/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>&lt;u&gt;<mark class="diff-old">①</mark>こんな旅行&lt;/u&gt;; &lt;u&gt;<mark class="diff-old">②</mark>失敗&lt;/u&gt;</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">①</mark>&lt;u&gt;こんな旅行&lt;/u&gt;; <mark class="diff-new">②</mark>&lt;u&gt;失敗&lt;/u&gt;</pre></div></div><p>Retain the inherited placement of the circled reference outside the underline, as in the native transcript. The target words and reference association are unchanged; the principal underlines the circle together with the words. No source-defect points apply.</p><span class="principal-repository-source">Principal source (page=8): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-b006 /content/html: affected span</span><details><summary>Full published record · principal_differences-N3_07_2017-PD-015</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N3_07_2017-PD-015&quot;,
+  &quot;unit&quot;: &quot;N3_07_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-b006&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;current_value&quot;: &quot;（1）\n先日、友人と話していて「久しぶりに旅行に行きたいね。」という話になりました。予定を確認すると、次の週末なら二人とも空いていたので、急いで温泉旅館を予約しました。&lt;br&gt; ふだん、私は旅行の三か月くらい前から情報を集めてしっかり計画を立てます。でも今回は、時間がなく、ガイドブックを一冊買っただけで出発しました。&lt;br&gt;&lt;br&gt;\n①&lt;u&gt;こんな旅行&lt;/u&gt;は初めてで、少し不安でしたが、心配はいりませんでした。一日目は温泉を楽しみ、翌日は町の中を見て歩きました。夕方からは、バスに乗って夕日で有名な海岸に行くことにしました。そこで、夕日が海に沈むところが見たかったのですが、町から海岸までは思ったより時間がかかり、着いたころにはすっかり暗くなっていました。しかたないので、駅で夕日の絵はがきを買って帰ってきました。\n&lt;br&gt;&lt;br&gt;今回の旅行はいつもとは少し違いましたが、楽しかったです。②&lt;u&gt;失敗&lt;/u&gt;もいい思い出になりました。いつものような旅行のほうが安心ですが、たまにはこんな旅行もいいと思いました。&quot;,
+  &quot;categories&quot;: [
+    &quot;underline&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;【2】2017年07月N3 真题.pdf — nonfinal secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;fee1b9d8c22313bc06d59c55a6c7cbea0abde81820a127be9191750cc5857f1c&quot;,
+    &quot;physical_pages&quot;: [
+      8
+    ],
+    &quot;locator&quot;: &quot;reading-b006 /content/html: affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;&lt;u&gt;①こんな旅行&lt;/u&gt;; &lt;u&gt;②失敗&lt;/u&gt;&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;①&lt;u&gt;こんな旅行&lt;/u&gt;; ②&lt;u&gt;失敗&lt;/u&gt;&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;retained_variant&quot;,
+  &quot;rationale&quot;: &quot;Retain the inherited placement of the circled reference outside the underline, as in the native transcript. The target words and reference association are unchanged; the principal underlines the circle together with the words. No source-defect points apply.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-q028" data-kinds="difference"><div class="review-group-heading"><h2>reading-q028</h2><a href="../papers/N3_07_2017.html#reading-q028">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">28. ①<u>こんな旅行</u>とあるが、それはどのような旅行か。<ol><li>何も<ruby data-rubi-id="rr4-bd7fefb291c293468f04" data-rubi-origin="project_rubi_restore">予約<rt>よやく</rt></ruby>せずに行く旅行</li><li>友人と<ruby data-rubi-id="rr4-e8195dc17fa99db78ea8" data-rubi-origin="project_rubi_restore">温泉<rt>おんせん</rt></ruby>旅館に<ruby data-rubi-id="rr4-6dd725f2c73ef71afd38" data-rubi-origin="project_rubi_restore">泊<rt>と</rt></ruby>まりに行く旅行</li><li>三か月くらい前から<ruby data-rubi-id="rr4-202b036f9e89d361a099" data-rubi-origin="project_rubi_restore">情報<rt>じょうほう</rt></ruby>を集めて行く旅行</li><li>しっかりした計画を立てずに行く旅行</li></ol><p>Editorial key: 4</p></div></details><div class="review-record" id="principal_differences-N3_07_2017-PD-018"><div class="review-label">Principal difference · /stem/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>&lt;u&gt;<mark class="diff-old">①</mark>こんな旅行&lt;/u&gt;</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">①</mark>&lt;u&gt;こんな旅行&lt;/u&gt;</pre></div></div><p>Retain the inherited placement of the circled reference outside the underline, as in the native transcript. The target words and reference association are unchanged; the principal underlines the circle together with the words. No source-defect points apply.</p><span class="principal-repository-source">Principal source (page=8): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-q028 /stem/html: affected span</span><details><summary>Full published record · principal_differences-N3_07_2017-PD-018</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N3_07_2017-PD-018&quot;,
+  &quot;unit&quot;: &quot;N3_07_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-q028&quot;,
+  &quot;field&quot;: &quot;/stem/html&quot;,
+  &quot;current_value&quot;: &quot;28. ①&lt;u&gt;こんな旅行&lt;/u&gt;とあるが、それはどのような旅行か。&quot;,
+  &quot;categories&quot;: [
+    &quot;underline&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;【2】2017年07月N3 真题.pdf — nonfinal secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;fee1b9d8c22313bc06d59c55a6c7cbea0abde81820a127be9191750cc5857f1c&quot;,
+    &quot;physical_pages&quot;: [
+      8
+    ],
+    &quot;locator&quot;: &quot;reading-q028 /stem/html: affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;&lt;u&gt;①こんな旅行&lt;/u&gt;&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;①&lt;u&gt;こんな旅行&lt;/u&gt;&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;retained_variant&quot;,
+  &quot;rationale&quot;: &quot;Retain the inherited placement of the circled reference outside the underline, as in the native transcript. The target words and reference association are unchanged; the principal underlines the circle together with the words. No source-defect points apply.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-q029" data-kinds="difference"><div class="review-group-heading"><h2>reading-q029</h2><a href="../papers/N3_07_2017.html#reading-q029">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">29. ②<u>失敗</u>とあるが、どんな失敗をしたのか。<ol><li>時間がなかったので、ガイドブックを一冊しか買わなかった</li><li>楽しみにしていたのに、あまり温泉に入れなかった</li><li>旅館でゆっくりしすぎたので、あまり観光ができなかった</li><li>バスで海に沈む夕日を見に行ったのに、間に合わなかった</li></ol><p>Editorial key: 4</p></div></details><div class="review-record" id="principal_differences-N3_07_2017-PD-010"><div class="review-label">Principal difference · /options · high</div><div class="comparison"><div><h4>Principal</h4><pre>1. 時間がなかったので、ガイドブックを一冊しか買わなかった<mark class="diff-old">。</mark>
+2. 楽しみにしていたのに、あまり温泉に入れなかった<mark class="diff-old">。</mark>
+3. 旅館でゆっくりしすぎたので、あまり観光ができなかった<mark class="diff-old">。</mark>
+4. バスで海に沈む夕日を見に行ったのに、間に合わなかった<mark class="diff-old">。</mark></pre></div><div><h4>Editorial</h4><pre>1. 時間がなかったので、ガイドブックを一冊しか買わなかった
+2. 楽しみにしていたのに、あまり温泉に入れなかった
+3. 旅館でゆっくりしすぎたので、あまり観光ができなかった
+4. バスで海に沈む夕日を見に行ったのに、間に合わなかった</pre></div></div><p>Retain the inherited four sentence-final-stop omissions, directly supported by the compact comparison edition. The principal and Yuuki version visibly supply the stops. This is a disclosed witness variant, not a principal defect.</p><span class="principal-repository-source">Principal source (page=9): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-q029 /options: affected span</span><details><summary>Full published record · principal_differences-N3_07_2017-PD-010</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N3_07_2017-PD-010&quot;,
+  &quot;unit&quot;: &quot;N3_07_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-q029&quot;,
+  &quot;field&quot;: &quot;/options&quot;,
+  &quot;current_value&quot;: [
+    &quot;時間がなかったので、ガイドブックを一冊しか買わなかった&quot;,
+    &quot;楽しみにしていたのに、あまり温泉に入れなかった&quot;,
+    &quot;旅館でゆっくりしすぎたので、あまり観光ができなかった&quot;,
+    &quot;バスで海に沈む夕日を見に行ったのに、間に合わなかった&quot;
+  ],
+  &quot;categories&quot;: [
+    &quot;punctuation&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;【2】2017年07月N3 真题.pdf — nonfinal secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;fee1b9d8c22313bc06d59c55a6c7cbea0abde81820a127be9191750cc5857f1c&quot;,
+    &quot;physical_pages&quot;: [
+      9
+    ],
+    &quot;locator&quot;: &quot;reading-q029 /options: affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;1. 時間がなかったので、ガイドブックを一冊しか買わなかった。\n2. 楽しみにしていたのに、あまり温泉に入れなかった。\n3. 旅館でゆっくりしすぎたので、あまり観光ができなかった。\n4. バスで海に沈む夕日を見に行ったのに、間に合わなかった。&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;1. 時間がなかったので、ガイドブックを一冊しか買わなかった\n2. 楽しみにしていたのに、あまり温泉に入れなかった\n3. 旅館でゆっくりしすぎたので、あまり観光ができなかった\n4. バスで海に沈む夕日を見に行ったのに、間に合わなかった&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;retained_variant&quot;,
+  &quot;rationale&quot;: &quot;Retain the inherited four sentence-final-stop omissions, directly supported by the compact comparison edition. The principal and Yuuki version visibly supply the stops. This is a disclosed witness variant, not a principal defect.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div><div class="review-record" id="principal_differences-N3_07_2017-PD-019"><div class="review-label">Principal difference · /stem/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>&lt;u&gt;<mark class="diff-old">②</mark>失敗&lt;/u&gt;</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">②</mark>&lt;u&gt;失敗&lt;/u&gt;</pre></div></div><p>Retain the inherited placement of the circled reference outside the underline, as in the native transcript. The target words and reference association are unchanged; the principal underlines the circle together with the words. No source-defect points apply.</p><span class="principal-repository-source">Principal source (page=9): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-q029 /stem/html: affected span</span><details><summary>Full published record · principal_differences-N3_07_2017-PD-019</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N3_07_2017-PD-019&quot;,
+  &quot;unit&quot;: &quot;N3_07_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-q029&quot;,
+  &quot;field&quot;: &quot;/stem/html&quot;,
+  &quot;current_value&quot;: &quot;29. ②&lt;u&gt;失敗&lt;/u&gt;とあるが、どんな失敗をしたのか。&quot;,
+  &quot;categories&quot;: [
+    &quot;underline&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;【2】2017年07月N3 真题.pdf — nonfinal secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;fee1b9d8c22313bc06d59c55a6c7cbea0abde81820a127be9191750cc5857f1c&quot;,
+    &quot;physical_pages&quot;: [
+      9
+    ],
+    &quot;locator&quot;: &quot;reading-q029 /stem/html: affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;&lt;u&gt;②失敗&lt;/u&gt;&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;②&lt;u&gt;失敗&lt;/u&gt;&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;retained_variant&quot;,
+  &quot;rationale&quot;: &quot;Retain the inherited placement of the circled reference outside the underline, as in the native transcript. The target words and reference association are unchanged; the principal underlines the circle together with the words. No source-defect points apply.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-q030" data-kinds="difference"><div class="review-group-heading"><h2>reading-q030</h2><a href="../papers/N3_07_2017.html#reading-q030">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">30. <ruby data-rubi-id="rr4-935dd8ded2e870c2e2d0" data-rubi-origin="project_rubi_restore">今回<rt>こんかい</rt></ruby>の旅行を終えて、旅行について「私」はどう考えているか。<ol><li>失敗があったので、これからはもう今回のような旅行はしたくない</li><li>失敗を繰り返すのは嫌なので、これからはもう旅行はしないつもりだ</li><li>失敗があっても楽しかったので、時々は今回のような旅行をするのもいい</li><li>失敗する旅行が続くのは嫌なので、時々は計画的な旅行をするつもりだ</li></ol><p>Editorial key: 3</p></div></details><div class="review-record" id="principal_differences-N3_07_2017-PD-011"><div class="review-label">Principal difference · /options · high</div><div class="comparison"><div><h4>Principal</h4><pre>1. 失敗があったので、これからはもう今回のような旅行はしたくない<mark class="diff-old">。</mark>
+2. 失敗を繰り返すのは嫌なので、これからはもう旅行はしないつもりだ<mark class="diff-old">。</mark>
+3. 失敗があっても楽しかったので、時々は今回のような旅行をするのもいい<mark class="diff-old">。</mark>
+4. 失敗する旅行が続くのは嫌なので、時々は計画的な旅行をするつもりだ<mark class="diff-old">。</mark></pre></div><div><h4>Editorial</h4><pre>1. 失敗があったので、これからはもう今回のような旅行はしたくない
+2. 失敗を繰り返すのは嫌なので、これからはもう旅行はしないつもりだ
+3. 失敗があっても楽しかったので、時々は今回のような旅行をするのもいい
+4. 失敗する旅行が続くのは嫌なので、時々は計画的な旅行をするつもりだ</pre></div></div><p>Retain the inherited four sentence-final-stop omissions, directly supported by the compact comparison edition. The principal and Yuuki version visibly supply the stops. This is a disclosed witness variant, not a principal defect.</p><span class="principal-repository-source">Principal source (page=9): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-q030 /options: affected span</span><details><summary>Full published record · principal_differences-N3_07_2017-PD-011</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N3_07_2017-PD-011&quot;,
+  &quot;unit&quot;: &quot;N3_07_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-q030&quot;,
+  &quot;field&quot;: &quot;/options&quot;,
+  &quot;current_value&quot;: [
+    &quot;失敗があったので、これからはもう今回のような旅行はしたくない&quot;,
+    &quot;失敗を繰り返すのは嫌なので、これからはもう旅行はしないつもりだ&quot;,
+    &quot;失敗があっても楽しかったので、時々は今回のような旅行をするのもいい&quot;,
+    &quot;失敗する旅行が続くのは嫌なので、時々は計画的な旅行をするつもりだ&quot;
+  ],
+  &quot;categories&quot;: [
+    &quot;punctuation&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;【2】2017年07月N3 真题.pdf — nonfinal secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;fee1b9d8c22313bc06d59c55a6c7cbea0abde81820a127be9191750cc5857f1c&quot;,
+    &quot;physical_pages&quot;: [
+      9
+    ],
+    &quot;locator&quot;: &quot;reading-q030 /options: affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;1. 失敗があったので、これからはもう今回のような旅行はしたくない。\n2. 失敗を繰り返すのは嫌なので、これからはもう旅行はしないつもりだ。\n3. 失敗があっても楽しかったので、時々は今回のような旅行をするのもいい。\n4. 失敗する旅行が続くのは嫌なので、時々は計画的な旅行をするつもりだ。&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;1. 失敗があったので、これからはもう今回のような旅行はしたくない\n2. 失敗を繰り返すのは嫌なので、これからはもう旅行はしないつもりだ\n3. 失敗があっても楽しかったので、時々は今回のような旅行をするのもいい\n4. 失敗する旅行が続くのは嫌なので、時々は計画的な旅行をするつもりだ&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;retained_variant&quot;,
+  &quot;rationale&quot;: &quot;Retain the inherited four sentence-final-stop omissions, directly supported by the compact comparison edition. The principal and Yuuki version visibly supply the stops. This is a disclosed witness variant, not a principal defect.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-b007" data-kinds="difference provisional_fix"><div class="review-group-heading"><h2>reading-b007</h2><a href="../papers/N3_07_2017.html#reading-b007">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">（2）
+木や草の葉をお年寄りに集めてもらい、商品として売ることを考えた町がある。日本料理の店ではさしみなどに、緑や赤、黄色のきれいな葉を飾りとして付けるが、都会の店では、このような葉がなかなか手に入らなかった。それを知ったある田舎の町の役所の人が、町の85%もある森林の葉を商品として売ることを思いついた。これが、大成功。葉はいくらでもあるし、軽くて簡単に集められる。お年寄りが多い①<u>この町にぴったりの仕事だったのだ</u>。<br/>
+<br/>お年寄りは皆、町が貸し出したパソコンを使い、多くの注文の中からやりたいものを選んで、必要な量を集める。採った葉はすぐお金になるので、暇があれば山に入る。皆、頭や体を使うようになり、「忙しくて病気になる暇がない。」と笑っている。そして、本当に町では、②<u>病院に通う人が減った</u>のだそうだ。この仕事のおかげで、元気で過ごせるお年寄りも多いのだろう。<br/>
+<br/>③<u>この町</u>のことは次第に有名になり、今では映画にもなっている。</div></details><div class="review-record" id="unresolved_cases-N3_07_2017-reading-b007-tree-leaves"><div class="review-label">Provisional fix · /content/html · medium</div><div class="comparison"><div><h4>Before</h4><pre><mark class="diff-old">(</mark>2<mark class="diff-old">)</mark>
+<mark class="diff-old">水</mark>や草の葉をお年寄りに集めてもらい、商品として売ることを考えた町がある。日本料理の店ではさしみなどに、緑や赤、黄色のきれいな葉を飾りとして付けるが、都会の店では、このような葉がなかなか手に入らなかった。それを知ったある田舎の町の役所の人が、町の85%もある森林の葉を商品とし…</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">（</mark>2<mark class="diff-new">）</mark>
+<mark class="diff-new">木</mark>や草の葉をお年寄りに集めてもらい、商品として売ることを考えた町がある。日本料理の店ではさしみなどに、緑や赤、黄色のきれいな葉を飾りとして付けるが、都会の店では、このような葉がなかなか手に入らなかった。それを知ったある田舎の町の役所の人が、町の85%もある森林の葉を商品とし…</pre></div></div><p>Prefer 木 as a one-character coherence repair, but distinguish contextual plausibility from historical evidence. Neither distributor agreement nor correct Japanese proves what the original exam printed. The three answer keys remain3,2,2.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>An original opening line could confirm 木, establish original 水, or reveal another lost phrase.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">The passage describes elderly residents collecting decorative leaves from a town whose land is85% forest, then selling them to restaurants.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=9): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Leaf-business opening<p>水や草の葉をお年寄りに集めてもらい</p></li><li><span class="principal-repository-source">Principal source (page=8): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Same opening<p>水や草の葉</p></li><li><span class="principal-repository-source">Principal source (page=9): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Same opening<p>水や草の葉</p></li><li><span class="principal-repository-source">Principal source (page=10): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Same opening<p>水や草の葉</p></li></ul><details><summary>Full published record · unresolved_cases-N3_07_2017-reading-b007-tree-leaves</summary><pre>{
+  &quot;case_id&quot;: &quot;N3_07_2017-reading-b007-tree-leaves&quot;,
+  &quot;unit&quot;: &quot;N3_07_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-b007&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;（2）\n木や草の葉をお年寄りに集めてもらい、商品として売ることを考えた町がある。日本料理の店ではさしみなどに、緑や赤、黄色のきれいな葉を飾りとして付けるが、都会の店では、このような葉がなかなか手に入らなかった。それを知ったある田舎の町の役所の人が、町の85%もある森林の葉を商品として売ることを思いついた。これが、大成功。葉はいくらでもあるし、軽くて簡単に集められる。お年寄りが多い①&lt;u&gt;この町にぴったりの仕事だったのだ&lt;/u&gt;。&lt;br&gt;\n&lt;br&gt;お年寄りは皆、町が貸し出したパソコンを使い、多くの注文の中からやりたいものを選んで、必要な量を集める。採った葉はすぐお金になるので、暇があれば山に入る。皆、頭や体を使うようになり、「忙しくて病気になる暇がない。」と笑っている。そして、本当に町では、②&lt;u&gt;病院に通う人が減った&lt;/u&gt;のだそうだ。この仕事のおかげで、元気で過ごせるお年寄りも多いのだろう。&lt;br&gt;\n&lt;br&gt;③&lt;u&gt;この町&lt;/u&gt;のことは次第に有名になり、今では映画にもなっている。&quot;,
+  &quot;context&quot;: &quot;The passage describes elderly residents collecting decorative leaves from a town whose land is85% forest, then selling them to restaurants.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;水や草の葉&quot;,
+      &quot;assessment&quot;: &quot;Legible in every inspected same-sitting layout and native text. It could be historical source wording, including an original typo.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;木や草の葉&quot;,
+      &quot;assessment&quot;: &quot;Unwitnessed conjecture: the smallest character repair that makes the opening match the repeated forest-leaf subject.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;【2】2017年07月N3 真题.pdf&quot;,
+      &quot;sha256&quot;: &quot;fee1b9d8c22313bc06d59c55a6c7cbea0abde81820a127be9191750cc5857f1c&quot;,
+      &quot;physical_pages&quot;: [
+        9
+      ],
+      &quot;locator&quot;: &quot;Leaf-business opening&quot;,
+      &quot;reading&quot;: &quot;水や草の葉をお年寄りに集めてもらい&quot;,
+      &quot;lineage&quot;: &quot;Secondary witness; common ancestry is possible and no issuer custody has been established.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2017年07月N3.pdf&quot;,
+      &quot;sha256&quot;: &quot;898b578ff5f166d7280d31b5cab4de52993fd7050d5af4ded19063160bee01af&quot;,
+      &quot;physical_pages&quot;: [
+        8
+      ],
+      &quot;locator&quot;: &quot;Same opening&quot;,
+      &quot;reading&quot;: &quot;水や草の葉&quot;,
+      &quot;lineage&quot;: &quot;Secondary witness; common ancestry is possible and no issuer custody has been established.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2017.07.N3.pdf&quot;,
+      &quot;sha256&quot;: &quot;7e344f31e70109c4b25bac64a6bde2863d72bf57406e0efa034bf71de99d862b&quot;,
+      &quot;physical_pages&quot;: [
+        9
+      ],
+      &quot;locator&quot;: &quot;Same opening&quot;,
+      &quot;reading&quot;: &quot;水や草の葉&quot;,
+      &quot;lineage&quot;: &quot;Secondary witness; common ancestry is possible and no issuer custody has been established.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2017年7月N3试卷_解析_听力原文_高清扫描.PDF&quot;,
+      &quot;sha256&quot;: &quot;8c18b28da0691af92bf429f5b9b05311bd9a3197b03e869d617af88d48c2087f&quot;,
+      &quot;physical_pages&quot;: [
+        10
+      ],
+      &quot;locator&quot;: &quot;Same opening&quot;,
+      &quot;reading&quot;: &quot;水や草の葉&quot;,
+      &quot;lineage&quot;: &quot;Secondary witness; common ancestry is possible and no issuer custody has been established.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Prefer 木 as a one-character coherence repair, but distinguish contextual plausibility from historical evidence. Neither distributor agreement nor correct Japanese proves what the original exam printed. The three answer keys remain3,2,2.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Read the complete passage and its three question/option sets in both full editions.&quot;,
+    &quot;Checked the corresponding opening in the Yuuki page, bound page and native transcript/translation.&quot;,
+    &quot;Ran a focused exact-phrase web search for 木や草の葉 with お年寄り; no independent original wording was recovered.&quot;,
+    &quot;5 November 2026: Public snapshot rebound to the earlier, verified current field. Only the historical presentation edit is replayed; this snapshot repair does not change the original witness or its confidence.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;An original opening line could confirm 木, establish original 水, or reveal another lost phrase.&quot;,
+  &quot;before&quot;: &quot;(2)\n水や草の葉をお年寄りに集めてもらい、商品として売ることを考えた町がある。日本料理の店ではさしみなどに、緑や赤、黄色のきれいな葉を飾りとして付けるが、都会の店では、このような葉がなかなか手に入らなかった。それを知ったある田舎の町の役所の人が、町の85%もある森林の葉を商品として売ることを思いついた。これが、大成功。葉はいくらでもあるし、軽くて簡単に集められる。お年寄りが多い①&lt;u&gt;この町にぴったりの仕事だったのだ&lt;/u&gt;。&lt;br&gt;\n&lt;br&gt;お年寄りは皆、町が貸し出したパソコンを使い、多くの注文の中からやりたいものを選んで、必要な量を集める。採った葉はすぐお金になるので、暇があれば山に入る。皆、頭や体を使うようになり、「忙しくて病気になる暇がない。」と笑っている。そして、本当に町では、②&lt;u&gt;病院に通う人が減った&lt;/u&gt;のだそうだ。この仕事のおかげで、元気で過ごせるお年寄りも多いのだろう。&lt;br&gt;\n&lt;br&gt;③&lt;u&gt;この町&lt;/u&gt;のことは次第に有名になり、今では映画にもなっている。&quot;
+}</pre></details></div><div class="review-record" id="principal_differences-N3_07_2017-PD-003"><div class="review-label">Principal difference · /content/html · high</div><div class="comparison"><div><h4>Principal</h4><pre><mark class="diff-old">水</mark>や草の葉</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">木</mark>や草の葉</pre></div></div><p>A one-character contextual conjecture for the forest-leaf subject; all inspected editions print 水.</p><span class="principal-repository-source">Principal source (page=9): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-b007 /content/html: affected span</span><details><summary>Full published record · principal_differences-N3_07_2017-PD-003</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N3_07_2017-PD-003&quot;,
+  &quot;unit&quot;: &quot;N3_07_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-b007&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;current_value&quot;: &quot;（2）\n木や草の葉をお年寄りに集めてもらい、商品として売ることを考えた町がある。日本料理の店ではさしみなどに、緑や赤、黄色のきれいな葉を飾りとして付けるが、都会の店では、このような葉がなかなか手に入らなかった。それを知ったある田舎の町の役所の人が、町の85%もある森林の葉を商品として売ることを思いついた。これが、大成功。葉はいくらでもあるし、軽くて簡単に集められる。お年寄りが多い①&lt;u&gt;この町にぴったりの仕事だったのだ&lt;/u&gt;。&lt;br&gt;\n&lt;br&gt;お年寄りは皆、町が貸し出したパソコンを使い、多くの注文の中からやりたいものを選んで、必要な量を集める。採った葉はすぐお金になるので、暇があれば山に入る。皆、頭や体を使うようになり、「忙しくて病気になる暇がない。」と笑っている。そして、本当に町では、②&lt;u&gt;病院に通う人が減った&lt;/u&gt;のだそうだ。この仕事のおかげで、元気で過ごせるお年寄りも多いのだろう。&lt;br&gt;\n&lt;br&gt;③&lt;u&gt;この町&lt;/u&gt;のことは次第に有名になり、今では映画にもなっている。&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;【2】2017年07月N3 真题.pdf — nonfinal secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;fee1b9d8c22313bc06d59c55a6c7cbea0abde81820a127be9191750cc5857f1c&quot;,
+    &quot;physical_pages&quot;: [
+      9
+    ],
+    &quot;locator&quot;: &quot;reading-b007 /content/html: affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;水や草の葉&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;木や草の葉&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;conjectural_repair&quot;,
+  &quot;rationale&quot;: &quot;A one-character contextual conjecture for the forest-leaf subject; all inspected editions print 水.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;N3_07_2017-reading-b007-tree-leaves&quot;
+  ]
+}</pre></details></div><div class="review-record" id="principal_differences-N3_07_2017-PD-016"><div class="review-label">Principal difference · /content/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>&lt;u&gt;<mark class="diff-old">①</mark>この町にぴったりの仕事だったのだ&lt;/u&gt;; &lt;u&gt;<mark class="diff-old">②</mark>病院に通う人が減った&lt;/u&gt;; &lt;u&gt;<mark class="diff-old">③</mark>この町&lt;/u&gt;</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">①</mark>&lt;u&gt;この町にぴったりの仕事だったのだ&lt;/u&gt;; <mark class="diff-new">②</mark>&lt;u&gt;病院に通う人が減った&lt;/u&gt;; <mark class="diff-new">③</mark>&lt;u&gt;この町&lt;/u&gt;</pre></div></div><p>Retain the inherited placement of the circled reference outside the underline, as in the native transcript. The target words and reference association are unchanged; the principal underlines the circle together with the words. No source-defect points apply.</p><span class="principal-repository-source">Principal source (page=9): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-b007 /content/html: affected span</span><details><summary>Full published record · principal_differences-N3_07_2017-PD-016</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N3_07_2017-PD-016&quot;,
+  &quot;unit&quot;: &quot;N3_07_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-b007&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;current_value&quot;: &quot;（2）\n木や草の葉をお年寄りに集めてもらい、商品として売ることを考えた町がある。日本料理の店ではさしみなどに、緑や赤、黄色のきれいな葉を飾りとして付けるが、都会の店では、このような葉がなかなか手に入らなかった。それを知ったある田舎の町の役所の人が、町の85%もある森林の葉を商品として売ることを思いついた。これが、大成功。葉はいくらでもあるし、軽くて簡単に集められる。お年寄りが多い①&lt;u&gt;この町にぴったりの仕事だったのだ&lt;/u&gt;。&lt;br&gt;\n&lt;br&gt;お年寄りは皆、町が貸し出したパソコンを使い、多くの注文の中からやりたいものを選んで、必要な量を集める。採った葉はすぐお金になるので、暇があれば山に入る。皆、頭や体を使うようになり、「忙しくて病気になる暇がない。」と笑っている。そして、本当に町では、②&lt;u&gt;病院に通う人が減った&lt;/u&gt;のだそうだ。この仕事のおかげで、元気で過ごせるお年寄りも多いのだろう。&lt;br&gt;\n&lt;br&gt;③&lt;u&gt;この町&lt;/u&gt;のことは次第に有名になり、今では映画にもなっている。&quot;,
+  &quot;categories&quot;: [
+    &quot;underline&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;【2】2017年07月N3 真题.pdf — nonfinal secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;fee1b9d8c22313bc06d59c55a6c7cbea0abde81820a127be9191750cc5857f1c&quot;,
+    &quot;physical_pages&quot;: [
+      9
+    ],
+    &quot;locator&quot;: &quot;reading-b007 /content/html: affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;&lt;u&gt;①この町にぴったりの仕事だったのだ&lt;/u&gt;; &lt;u&gt;②病院に通う人が減った&lt;/u&gt;; &lt;u&gt;③この町&lt;/u&gt;&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;①&lt;u&gt;この町にぴったりの仕事だったのだ&lt;/u&gt;; ②&lt;u&gt;病院に通う人が減った&lt;/u&gt;; ③&lt;u&gt;この町&lt;/u&gt;&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;retained_variant&quot;,
+  &quot;rationale&quot;: &quot;Retain the inherited placement of the circled reference outside the underline, as in the native transcript. The target words and reference association are unchanged; the principal underlines the circle together with the words. No source-defect points apply.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-q031" data-kinds="difference"><div class="review-group-heading"><h2>reading-q031</h2><a href="../papers/N3_07_2017.html#reading-q031">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">31. ①<u>この町にぴったりの仕事だったのだ</u>とあるが、この文章を書いた人は、なぜそう言っているのか。<ol><li>この町には、料理に<ruby data-rubi-id="rr4-29908dbcee0bc9643e73" data-rubi-origin="project_rubi_restore">美<rt>うつく</rt></ruby>しい<ruby data-rubi-id="rr4-1d80652ffe3ab145a61c" data-rubi-origin="project_rubi_restore">葉<rt>は</rt></ruby>を<ruby data-rubi-id="rr4-bdb08622d5f98e8c000e" data-rubi-origin="project_rubi_restore">飾<rt>かざ</rt></ruby>って出す日本料理店が多かったから</li><li>この町には、<ruby data-rubi-id="rr4-f6fb3c58b9b98f6fc2b0" data-rubi-origin="project_rubi_restore">都会<rt>とかい</rt></ruby>に<ruby data-rubi-id="rr4-2eab358dd5292b026ca9" data-rubi-origin="project_rubi_restore">葉<rt>は</rt></ruby>を売りたいと考えているお<ruby data-rubi-id="rr4-1a582e4275278972d315" data-rubi-origin="project_rubi_restore">年寄<rt>としよ</rt></ruby>りが<ruby data-rubi-id="rr4-eea0424eddcfeab00feb" data-rubi-origin="project_rubi_restore">大勢<rt>おおぜい</rt></ruby>いたから</li><li>この町には、<ruby data-rubi-id="rr4-dd3fb6d7ec6ef42e37cd" data-rubi-origin="project_rubi_restore">葉<rt>は</rt></ruby>はいくらでもあり、お<ruby data-rubi-id="rr4-eb50ecbc890c4d847811" data-rubi-origin="project_rubi_restore">年寄<rt>としよ</rt></ruby>りにも楽に集められるから</li><li>この町には、<ruby data-rubi-id="rr4-04df9bc0f664a10f6fd6" data-rubi-origin="project_rubi_restore">森林<rt>しんりん</rt></ruby>が多く、<ruby data-rubi-id="rr4-6c2bdbf048e1d662c271" data-rubi-origin="project_rubi_restore">昔<rt>むかし</rt></ruby>から<ruby data-rubi-id="rr4-5d784cf6e6a5bc6ddc3c" data-rubi-origin="project_rubi_restore">美<rt>うつく</rt></ruby>しい<ruby data-rubi-id="rr4-4d608d8e33a2f269e3c6" data-rubi-origin="project_rubi_restore">葉<rt>は</rt></ruby>を集めて売っていたから</li></ol><p>Editorial key: 3</p></div></details><div class="review-record" id="principal_differences-N3_07_2017-PD-020"><div class="review-label">Principal difference · /stem/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>&lt;u&gt;<mark class="diff-old">①</mark>この町にぴったりの仕事だったのだ&lt;/u&gt;</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">①</mark>&lt;u&gt;この町にぴったりの仕事だったのだ&lt;/u&gt;</pre></div></div><p>Retain the inherited placement of the circled reference outside the underline, as in the native transcript. The target words and reference association are unchanged; the principal underlines the circle together with the words. No source-defect points apply.</p><span class="principal-repository-source">Principal source (page=9): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-q031 /stem/html: affected span</span><details><summary>Full published record · principal_differences-N3_07_2017-PD-020</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N3_07_2017-PD-020&quot;,
+  &quot;unit&quot;: &quot;N3_07_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-q031&quot;,
+  &quot;field&quot;: &quot;/stem/html&quot;,
+  &quot;current_value&quot;: &quot;31. ①&lt;u&gt;この町にぴったりの仕事だったのだ&lt;/u&gt;とあるが、この文章を書いた人は、なぜそう言っているのか。&quot;,
+  &quot;categories&quot;: [
+    &quot;underline&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;【2】2017年07月N3 真题.pdf — nonfinal secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;fee1b9d8c22313bc06d59c55a6c7cbea0abde81820a127be9191750cc5857f1c&quot;,
+    &quot;physical_pages&quot;: [
+      9
+    ],
+    &quot;locator&quot;: &quot;reading-q031 /stem/html: affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;&lt;u&gt;①この町にぴったりの仕事だったのだ&lt;/u&gt;&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;①&lt;u&gt;この町にぴったりの仕事だったのだ&lt;/u&gt;&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;retained_variant&quot;,
+  &quot;rationale&quot;: &quot;Retain the inherited placement of the circled reference outside the underline, as in the native transcript. The target words and reference association are unchanged; the principal underlines the circle together with the words. No source-defect points apply.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-q032" data-kinds="difference"><div class="review-group-heading"><h2>reading-q032</h2><a href="../papers/N3_07_2017.html#reading-q032">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">32. ②<u>病院に通う人が減った</u>とあるが、この文章を書いた人は、その理由は何だと考えているか。<ol><li>お<ruby data-rubi-id="rr4-66a9e7cf52d2bb8b9e31" data-rubi-origin="project_rubi_restore">年寄<rt>としよ</rt></ruby>りがパソコンで調べて、自分で病気を治すようになったこと</li><li>お<ruby data-rubi-id="rr4-b55d5552221e56096168" data-rubi-origin="project_rubi_restore">年寄<rt>としよ</rt></ruby>りが<ruby data-rubi-id="rr4-0084569d7c9996121414" data-rubi-origin="project_rubi_restore">頭<rt>あたま</rt></ruby>と体を使って、どんどん仕事をするようになったこと</li><li>仕事が<ruby data-rubi-id="rr4-68d948685e2a2910c0a8" data-rubi-origin="project_rubi_restore">忙<rt>いそが</rt></ruby>しくなって、お<ruby data-rubi-id="rr4-11839cfe1be09f0fc75f" data-rubi-origin="project_rubi_restore">年寄<rt>としよ</rt></ruby>りが病院に通う時間がなくなったこと</li><li><ruby data-rubi-id="rr4-a97ff0cfa9b61e1d60a6" data-rubi-origin="project_rubi_restore">収入<rt>しゅうにゅう</rt></ruby>が増えて、お<ruby data-rubi-id="rr4-b03027119b8de3bb545f" data-rubi-origin="project_rubi_restore">年寄<rt>としよ</rt></ruby>りが<ruby data-rubi-id="rr4-9ea71ca5d5cb92bd6fcd" data-rubi-origin="project_rubi_restore">健康<rt>けんこう</rt></ruby>のためにお金をかけるようになったこと</li></ol><p>Editorial key: 2</p></div></details><div class="review-record" id="principal_differences-N3_07_2017-PD-021"><div class="review-label">Principal difference · /stem/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>&lt;u&gt;<mark class="diff-old">②</mark>病院に通う人が減った&lt;/u&gt;</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">②</mark>&lt;u&gt;病院に通う人が減った&lt;/u&gt;</pre></div></div><p>Retain the inherited placement of the circled reference outside the underline, as in the native transcript. The target words and reference association are unchanged; the principal underlines the circle together with the words. No source-defect points apply.</p><span class="principal-repository-source">Principal source (page=9): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-q032 /stem/html: affected span</span><details><summary>Full published record · principal_differences-N3_07_2017-PD-021</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N3_07_2017-PD-021&quot;,
+  &quot;unit&quot;: &quot;N3_07_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-q032&quot;,
+  &quot;field&quot;: &quot;/stem/html&quot;,
+  &quot;current_value&quot;: &quot;32. ②&lt;u&gt;病院に通う人が減った&lt;/u&gt;とあるが、この文章を書いた人は、その理由は何だと考えているか。&quot;,
+  &quot;categories&quot;: [
+    &quot;underline&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;【2】2017年07月N3 真题.pdf — nonfinal secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;fee1b9d8c22313bc06d59c55a6c7cbea0abde81820a127be9191750cc5857f1c&quot;,
+    &quot;physical_pages&quot;: [
+      9
+    ],
+    &quot;locator&quot;: &quot;reading-q032 /stem/html: affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;&lt;u&gt;②病院に通う人が減った&lt;/u&gt;&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;②&lt;u&gt;病院に通う人が減った&lt;/u&gt;&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;retained_variant&quot;,
+  &quot;rationale&quot;: &quot;Retain the inherited placement of the circled reference outside the underline, as in the native transcript. The target words and reference association are unchanged; the principal underlines the circle together with the words. No source-defect points apply.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-q033" data-kinds="difference"><div class="review-group-heading"><h2>reading-q033</h2><a href="../papers/N3_07_2017.html#reading-q033">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">33. ③<u>この町</u>はどのような町か。<ol><li>お<ruby data-rubi-id="rr4-015efde34070fa074f32" data-rubi-origin="project_rubi_restore">年寄<rt>としよ</rt></ruby>りのアイデアで、町の<ruby data-rubi-id="rr4-b7f37fd0c7cbfc6e8499" data-rubi-origin="project_rubi_restore">資源<rt>しげん</rt></ruby>を<ruby data-rubi-id="rr4-7da2c37bda037a8fb931" data-rubi-origin="project_rubi_restore">利用<rt>りよう</rt></ruby>した<ruby data-rubi-id="rr4-f7703c24e7146720ba02" data-rubi-origin="project_rubi_restore">新製品<rt>しんせいひん</rt></ruby>を作って<ruby data-rubi-id="rr4-fcc601f1f2d4f53666e5" data-rubi-origin="project_rubi_restore">成功<rt>せいこう</rt></ruby>した町</li><li>町の<ruby data-rubi-id="rr4-a09f9075a04f1243eba3" data-rubi-origin="project_rubi_restore">資源<rt>しげん</rt></ruby>を<ruby data-rubi-id="rr4-99cb7fc88a9551ae6457" data-rubi-origin="project_rubi_restore">利用<rt>りよう</rt></ruby>した新しい仕事を考えだして、お<ruby data-rubi-id="rr4-be7b49244b1a74911deb" data-rubi-origin="project_rubi_restore">年寄<rt>としよ</rt></ruby>りと<ruby data-rubi-id="rr4-7c8b7a394fbd0fd5fe15" data-rubi-origin="project_rubi_restore">協力<rt>きょうりょく</rt></ruby>して<ruby data-rubi-id="rr4-5e298d7bf4818e0ac393" data-rubi-origin="project_rubi_restore">成功<rt>せいこう</rt></ruby>した町</li><li><ruby data-rubi-id="rr4-6b49bf04ce014426e0a3" data-rubi-origin="project_rubi_restore">森林<rt>しんりん</rt></ruby>以外の少ない土地を<ruby data-rubi-id="rr4-286febc7c6001bc1970b" data-rubi-origin="project_rubi_restore">利用<rt>りよう</rt></ruby>して、お<ruby data-rubi-id="rr4-3ed471e897b7760c3565" data-rubi-origin="project_rubi_restore">年寄<rt>としよ</rt></ruby>りが新しい<ruby data-rubi-id="rr4-36368f247160150e358f" data-rubi-origin="project_rubi_restore">産業<rt>さんぎょう</rt></ruby>を始めた町</li><li>町を有名にするために、お<ruby data-rubi-id="rr4-88a03aa020e171fd54f6" data-rubi-origin="project_rubi_restore">年寄<rt>としよ</rt></ruby>りが自分たちで映画を作り始めた町</li></ol><p>Editorial key: 2</p></div></details><div class="review-record" id="principal_differences-N3_07_2017-PD-022"><div class="review-label">Principal difference · /stem/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>&lt;u&gt;<mark class="diff-old">③</mark>この町&lt;/u&gt;</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">③</mark>&lt;u&gt;この町&lt;/u&gt;</pre></div></div><p>Retain the inherited placement of the circled reference outside the underline, as in the native transcript. The target words and reference association are unchanged; the principal underlines the circle together with the words. No source-defect points apply.</p><span class="principal-repository-source">Principal source (page=9): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-q033 /stem/html: affected span</span><details><summary>Full published record · principal_differences-N3_07_2017-PD-022</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N3_07_2017-PD-022&quot;,
+  &quot;unit&quot;: &quot;N3_07_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-q033&quot;,
+  &quot;field&quot;: &quot;/stem/html&quot;,
+  &quot;current_value&quot;: &quot;33. ③&lt;u&gt;この町&lt;/u&gt;はどのような町か。&quot;,
+  &quot;categories&quot;: [
+    &quot;underline&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;【2】2017年07月N3 真题.pdf — nonfinal secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;fee1b9d8c22313bc06d59c55a6c7cbea0abde81820a127be9191750cc5857f1c&quot;,
+    &quot;physical_pages&quot;: [
+      9
+    ],
+    &quot;locator&quot;: &quot;reading-q033 /stem/html: affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;&lt;u&gt;③この町&lt;/u&gt;&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;③&lt;u&gt;この町&lt;/u&gt;&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;retained_variant&quot;,
+  &quot;rationale&quot;: &quot;Retain the inherited placement of the circled reference outside the underline, as in the native transcript. The target words and reference association are unchanged; the principal underlines the circle together with the words. No source-defect points apply.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-b008" data-kinds="difference unresolved"><div class="review-group-heading"><h2>reading-b008</h2><a href="../papers/N3_07_2017.html#reading-b008">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">水川小学校には、生まれて約半年の赤ちゃんと親に学校に来てもらい、6年生の子供たちと一緒に過ごしてもらう授業がある。①<u>授業</u>は月に1回、全部で3回行われる。一人の赤ちゃんとその親と生徒二人がグループを作る。各グループのメンバーは毎回変わらない。命を大切にする心や親に感謝する気持ちを育てることが目的だそうだ。<br/><br/>
+実際に見学させてもらった。授業の前には、生徒たちは赤ちゃんと過ごすときの注意点や抱き方などを習う。それでも、一回目の授業で初めて赤ちゃんが来たときは、みんな不安そうな顔をしていた。<br/><br/>
+初めは、赤ちゃんを見ながら、お母さんに赤ちゃんの名前や一日の生活について聞いているだけだったが、しばらくすると、あちこちから「わあ、かわいい。」「あっ、笑った。」などという声が聞こえ始めた。そして、赤ちゃんに触ったり、抱いてみたりする生徒も出てきて、だんだんにぎやかになった。中には、赤ちゃんを笑わせようとして泣かれてしまう生徒もいた。<br/><br/>
+2回目からは、生徒たちは赤ちゃんに会うのをとても楽しみにしていた。そして、会うたびに②<u>びっくりしていた</u>。1か月見ない間に、赤ちゃんはとても大きくなり、よく動くようになっていたのだ。<br/><br/>
+授業の後には、「柔らかくてこわれそうだった。」「守ってあげなきゃと思った。」「お母さんたちはミルクをあげたり、おむつを替えたりして、忙しそうだった。」「私のお父さん、お母さんも大変だったんだろうな。」などの感想が出た。<br/><br/>
+生徒たちのようすを見ると、<u>③授業の目的がきちんと伝わっているようだと感じ</u>、いい授業だと思った。</div></details><div class="review-record" id="unresolved_cases-N3_07_2017-reading-b008-actual-visit-adverb"><div class="review-label">Unresolved · /content/html · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>実際<mark class="diff-old">的</mark>に見学させてもらった。</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">水川小学校には、生まれて約半年の赤ちゃんと親に学校に来てもらい、6年生の子供たちと一緒に過ごしてもらう授業がある。①&lt;u&gt;授業&lt;/u&gt;は月に1回、全部で3回行われる。一人の赤ちゃんとその親と生徒二人がグループを作る。各グループのメンバーは毎回変わらない。命を大切にする心や親に感謝する気持ちを育てることが目的だそうだ。&lt;br&gt;&lt;br&gt;
+</mark>実際に見学させてもらった。<mark class="diff-new">授業の前には、生徒たちは赤ちゃんと過ごすときの注意点や抱き方などを習う。それでも、一回目の授業で初めて赤ちゃんが来たときは、みんな不安そうな顔をしていた。&lt;br&gt;&lt;br&gt;
+初めは、赤ちゃんを見ながら、お母さんに赤ちゃんの名前や一日の生活について聞いている</mark>…</pre></div></div><p>The inherited repair is coherent, but the earlier claim that the compact source directly printed 実際に was incorrect. Keep current wording while disclosing that its historical correctness remains unresolved. The separate 生まれで typo is repaired by the directly witnessed 生まれて.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>An original or independently traceable paragraph is needed; naturalness alone cannot settle the omitted 的.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">The existing reconstruction says 実際に見学させてもらった; the narrator then recounts observations of baby visits at school.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=10): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Baby-visit paragraph opening<p>実際的に見学させてもらった。</p></li><li><span class="principal-repository-source">Principal source (page=9): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Same paragraph opening<p>実際的に見学させてもらった。</p></li><li><span class="principal-repository-source">Principal source (page=11): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Same paragraph opening<p>実際的に見学させてもらった。</p></li></ul><details><summary>Full published record · unresolved_cases-N3_07_2017-reading-b008-actual-visit-adverb</summary><pre>{
+  &quot;case_id&quot;: &quot;N3_07_2017-reading-b008-actual-visit-adverb&quot;,
+  &quot;unit&quot;: &quot;N3_07_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-b008&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;水川小学校には、生まれて約半年の赤ちゃんと親に学校に来てもらい、6年生の子供たちと一緒に過ごしてもらう授業がある。①&lt;u&gt;授業&lt;/u&gt;は月に1回、全部で3回行われる。一人の赤ちゃんとその親と生徒二人がグループを作る。各グループのメンバーは毎回変わらない。命を大切にする心や親に感謝する気持ちを育てることが目的だそうだ。&lt;br&gt;&lt;br&gt;\n実際に見学させてもらった。授業の前には、生徒たちは赤ちゃんと過ごすときの注意点や抱き方などを習う。それでも、一回目の授業で初めて赤ちゃんが来たときは、みんな不安そうな顔をしていた。&lt;br&gt;&lt;br&gt;\n初めは、赤ちゃんを見ながら、お母さんに赤ちゃんの名前や一日の生活について聞いているだけだったが、しばらくすると、あちこちから「わあ、かわいい。」「あっ、笑った。」などという声が聞こえ始めた。そして、赤ちゃんに触ったり、抱いてみたりする生徒も出てきて、だんだんにぎやかになった。中には、赤ちゃんを笑わせようとして泣かれてしまう生徒もいた。&lt;br&gt;&lt;br&gt;\n2回目からは、生徒たちは赤ちゃんに会うのをとても楽しみにしていた。そして、会うたびに②&lt;u&gt;びっくりしていた&lt;/u&gt;。1か月見ない間に、赤ちゃんはとても大きくなり、よく動くようになっていたのだ。&lt;br&gt;&lt;br&gt;\n授業の後には、「柔らかくてこわれそうだった。」「守ってあげなきゃと思った。」「お母さんたちはミルクをあげたり、おむつを替えたりして、忙しそうだった。」「私のお父さん、お母さんも大変だったんだろうな。」などの感想が出た。&lt;br&gt;&lt;br&gt;\n生徒たちのようすを見ると、&lt;u&gt;③授業の目的がきちんと伝わっているようだと感じ&lt;/u&gt;、いい授業だと思った。&quot;,
+  &quot;context&quot;: &quot;The existing reconstruction says 実際に見学させてもらった; the narrator then recounts observations of baby visits at school.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;実際的に見学させてもらった。&quot;,
+      &quot;assessment&quot;: &quot;Legible secondary-source wording. 実際的 can mean practical and cannot be ruled out solely because another adverb is more natural.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;実際に見学させてもらった。&quot;,
+      &quot;assessment&quot;: &quot;Inherited editorial repair, natural as an actual visit following the introduction; retained provisionally.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;【2】2017年07月N3 真题.pdf&quot;,
+      &quot;sha256&quot;: &quot;fee1b9d8c22313bc06d59c55a6c7cbea0abde81820a127be9191750cc5857f1c&quot;,
+      &quot;physical_pages&quot;: [
+        10
+      ],
+      &quot;locator&quot;: &quot;Baby-visit paragraph opening&quot;,
+      &quot;reading&quot;: &quot;実際的に見学させてもらった。&quot;,
+      &quot;lineage&quot;: &quot;Secondary witness; common ancestry is possible and no issuer custody has been established.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2017年07月N3.pdf&quot;,
+      &quot;sha256&quot;: &quot;898b578ff5f166d7280d31b5cab4de52993fd7050d5af4ded19063160bee01af&quot;,
+      &quot;physical_pages&quot;: [
+        9
+      ],
+      &quot;locator&quot;: &quot;Same paragraph opening&quot;,
+      &quot;reading&quot;: &quot;実際的に見学させてもらった。&quot;,
+      &quot;lineage&quot;: &quot;Secondary witness; common ancestry is possible and no issuer custody has been established.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2017年7月N3试卷_解析_听力原文_高清扫描.PDF&quot;,
+      &quot;sha256&quot;: &quot;8c18b28da0691af92bf429f5b9b05311bd9a3197b03e869d617af88d48c2087f&quot;,
+      &quot;physical_pages&quot;: [
+        11
+      ],
+      &quot;locator&quot;: &quot;Same paragraph opening&quot;,
+      &quot;reading&quot;: &quot;実際的に見学させてもらった。&quot;,
+      &quot;lineage&quot;: &quot;Secondary witness; common ancestry is possible and no issuer custody has been established.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;The inherited repair is coherent, but the earlier claim that the compact source directly printed 実際に was incorrect. Keep current wording while disclosing that its historical correctness remains unresolved. The separate 生まれで typo is repaired by the directly witnessed 生まれて.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Re-read the complete baby passage, all four questions and all options.&quot;,
+    &quot;Visually checked the principal, compact and bound paragraph openings; compared the native transcript.&quot;,
+    &quot;Distinguished the semantic choice 実際に/実際的に from the independently supported 生まれて and paragraph-boundary repairs.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;An original or independently traceable paragraph is needed; naturalness alone cannot settle the omitted 的.&quot;
+}</pre></details></div><div class="review-record" id="principal_differences-N3_07_2017-PD-004"><div class="review-label">Principal difference · /content/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>生まれ<mark class="diff-old">で</mark>約半年</pre></div><div><h4>Editorial</h4><pre>生まれ<mark class="diff-new">て</mark>約半年</pre></div></div><p>Retain the supported grammatical repair, directly supplied in the compact and bound editions.</p><span class="principal-repository-source">Principal source (page=10): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-b008 /content/html: affected span</span><details><summary>Full published record · principal_differences-N3_07_2017-PD-004</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N3_07_2017-PD-004&quot;,
+  &quot;unit&quot;: &quot;N3_07_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-b008&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;current_value&quot;: &quot;水川小学校には、生まれて約半年の赤ちゃんと親に学校に来てもらい、6年生の子供たちと一緒に過ごしてもらう授業がある。①&lt;u&gt;授業&lt;/u&gt;は月に1回、全部で3回行われる。一人の赤ちゃんとその親と生徒二人がグループを作る。各グループのメンバーは毎回変わらない。命を大切にする心や親に感謝する気持ちを育てることが目的だそうだ。&lt;br&gt;&lt;br&gt;\n実際に見学させてもらった。授業の前には、生徒たちは赤ちゃんと過ごすときの注意点や抱き方などを習う。それでも、一回目の授業で初めて赤ちゃんが来たときは、みんな不安そうな顔をしていた。&lt;br&gt;&lt;br&gt;\n初めは、赤ちゃんを見ながら、お母さんに赤ちゃんの名前や一日の生活について聞いているだけだったが、しばらくすると、あちこちから「わあ、かわいい。」「あっ、笑った。」などという声が聞こえ始めた。そして、赤ちゃんに触ったり、抱いてみたりする生徒も出てきて、だんだんにぎやかになった。中には、赤ちゃんを笑わせようとして泣かれてしまう生徒もいた。&lt;br&gt;&lt;br&gt;\n2回目からは、生徒たちは赤ちゃんに会うのをとても楽しみにしていた。そして、会うたびに②&lt;u&gt;びっくりしていた&lt;/u&gt;。1か月見ない間に、赤ちゃんはとても大きくなり、よく動くようになっていたのだ。&lt;br&gt;&lt;br&gt;\n授業の後には、「柔らかくてこわれそうだった。」「守ってあげなきゃと思った。」「お母さんたちはミルクをあげたり、おむつを替えたりして、忙しそうだった。」「私のお父さん、お母さんも大変だったんだろうな。」などの感想が出た。&lt;br&gt;&lt;br&gt;\n生徒たちのようすを見ると、&lt;u&gt;③授業の目的がきちんと伝わっているようだと感じ&lt;/u&gt;、いい授業だと思った。&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;【2】2017年07月N3 真题.pdf — nonfinal secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;fee1b9d8c22313bc06d59c55a6c7cbea0abde81820a127be9191750cc5857f1c&quot;,
+    &quot;physical_pages&quot;: [
+      10
+    ],
+    &quot;locator&quot;: &quot;reading-b008 /content/html: affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;生まれで約半年&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;生まれて約半年&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Retain the supported grammatical repair, directly supplied in the compact and bound editions.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div><div class="review-record" id="principal_differences-N3_07_2017-PD-005"><div class="review-label">Principal difference · /content/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>実際<mark class="diff-old">的</mark>に見学させてもらった。</pre></div><div><h4>Editorial</h4><pre>実際に見学させてもらった。</pre></div></div><p>This inherited omission of 的 improves the expected adverb but is not literal source agreement. Historical wording remains unresolved.</p><span class="principal-repository-source">Principal source (page=10): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-b008 /content/html: affected span</span><details><summary>Full published record · principal_differences-N3_07_2017-PD-005</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N3_07_2017-PD-005&quot;,
+  &quot;unit&quot;: &quot;N3_07_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-b008&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;current_value&quot;: &quot;水川小学校には、生まれて約半年の赤ちゃんと親に学校に来てもらい、6年生の子供たちと一緒に過ごしてもらう授業がある。①&lt;u&gt;授業&lt;/u&gt;は月に1回、全部で3回行われる。一人の赤ちゃんとその親と生徒二人がグループを作る。各グループのメンバーは毎回変わらない。命を大切にする心や親に感謝する気持ちを育てることが目的だそうだ。&lt;br&gt;&lt;br&gt;\n実際に見学させてもらった。授業の前には、生徒たちは赤ちゃんと過ごすときの注意点や抱き方などを習う。それでも、一回目の授業で初めて赤ちゃんが来たときは、みんな不安そうな顔をしていた。&lt;br&gt;&lt;br&gt;\n初めは、赤ちゃんを見ながら、お母さんに赤ちゃんの名前や一日の生活について聞いているだけだったが、しばらくすると、あちこちから「わあ、かわいい。」「あっ、笑った。」などという声が聞こえ始めた。そして、赤ちゃんに触ったり、抱いてみたりする生徒も出てきて、だんだんにぎやかになった。中には、赤ちゃんを笑わせようとして泣かれてしまう生徒もいた。&lt;br&gt;&lt;br&gt;\n2回目からは、生徒たちは赤ちゃんに会うのをとても楽しみにしていた。そして、会うたびに②&lt;u&gt;びっくりしていた&lt;/u&gt;。1か月見ない間に、赤ちゃんはとても大きくなり、よく動くようになっていたのだ。&lt;br&gt;&lt;br&gt;\n授業の後には、「柔らかくてこわれそうだった。」「守ってあげなきゃと思った。」「お母さんたちはミルクをあげたり、おむつを替えたりして、忙しそうだった。」「私のお父さん、お母さんも大変だったんだろうな。」などの感想が出た。&lt;br&gt;&lt;br&gt;\n生徒たちのようすを見ると、&lt;u&gt;③授業の目的がきちんと伝わっているようだと感じ&lt;/u&gt;、いい授業だと思った。&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;【2】2017年07月N3 真题.pdf — nonfinal secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;fee1b9d8c22313bc06d59c55a6c7cbea0abde81820a127be9191750cc5857f1c&quot;,
+    &quot;physical_pages&quot;: [
+      10
+    ],
+    &quot;locator&quot;: &quot;reading-b008 /content/html: affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;実際的に見学させてもらった。&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;実際に見学させてもらった。&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;retained_variant&quot;,
+  &quot;rationale&quot;: &quot;This inherited omission of 的 improves the expected adverb but is not literal source agreement. Historical wording remains unresolved.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;N3_07_2017-reading-b008-actual-visit-adverb&quot;
+  ]
+}</pre></details></div><div class="review-record" id="principal_differences-N3_07_2017-PD-017"><div class="review-label">Principal difference · /content/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>&lt;u&gt;<mark class="diff-old">①</mark>授業&lt;/u&gt;; &lt;u&gt;<mark class="diff-old">②</mark>びっくりしていた&lt;/u&gt;</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">①</mark>&lt;u&gt;授業&lt;/u&gt;; <mark class="diff-new">②</mark>&lt;u&gt;びっくりしていた&lt;/u&gt;</pre></div></div><p>Retain the inherited placement of the circled reference outside the underline, as in the native transcript. The target words and reference association are unchanged; the principal underlines the circle together with the words. No source-defect points apply.</p><span class="principal-repository-source">Principal source (page=10): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-b008 /content/html: affected span</span><details><summary>Full published record · principal_differences-N3_07_2017-PD-017</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N3_07_2017-PD-017&quot;,
+  &quot;unit&quot;: &quot;N3_07_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-b008&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;current_value&quot;: &quot;水川小学校には、生まれて約半年の赤ちゃんと親に学校に来てもらい、6年生の子供たちと一緒に過ごしてもらう授業がある。①&lt;u&gt;授業&lt;/u&gt;は月に1回、全部で3回行われる。一人の赤ちゃんとその親と生徒二人がグループを作る。各グループのメンバーは毎回変わらない。命を大切にする心や親に感謝する気持ちを育てることが目的だそうだ。&lt;br&gt;&lt;br&gt;\n実際に見学させてもらった。授業の前には、生徒たちは赤ちゃんと過ごすときの注意点や抱き方などを習う。それでも、一回目の授業で初めて赤ちゃんが来たときは、みんな不安そうな顔をしていた。&lt;br&gt;&lt;br&gt;\n初めは、赤ちゃんを見ながら、お母さんに赤ちゃんの名前や一日の生活について聞いているだけだったが、しばらくすると、あちこちから「わあ、かわいい。」「あっ、笑った。」などという声が聞こえ始めた。そして、赤ちゃんに触ったり、抱いてみたりする生徒も出てきて、だんだんにぎやかになった。中には、赤ちゃんを笑わせようとして泣かれてしまう生徒もいた。&lt;br&gt;&lt;br&gt;\n2回目からは、生徒たちは赤ちゃんに会うのをとても楽しみにしていた。そして、会うたびに②&lt;u&gt;びっくりしていた&lt;/u&gt;。1か月見ない間に、赤ちゃんはとても大きくなり、よく動くようになっていたのだ。&lt;br&gt;&lt;br&gt;\n授業の後には、「柔らかくてこわれそうだった。」「守ってあげなきゃと思った。」「お母さんたちはミルクをあげたり、おむつを替えたりして、忙しそうだった。」「私のお父さん、お母さんも大変だったんだろうな。」などの感想が出た。&lt;br&gt;&lt;br&gt;\n生徒たちのようすを見ると、&lt;u&gt;③授業の目的がきちんと伝わっているようだと感じ&lt;/u&gt;、いい授業だと思った。&quot;,
+  &quot;categories&quot;: [
+    &quot;underline&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;【2】2017年07月N3 真题.pdf — nonfinal secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;fee1b9d8c22313bc06d59c55a6c7cbea0abde81820a127be9191750cc5857f1c&quot;,
+    &quot;physical_pages&quot;: [
+      10
+    ],
+    &quot;locator&quot;: &quot;reading-b008 /content/html: affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;&lt;u&gt;①授業&lt;/u&gt;; &lt;u&gt;②びっくりしていた&lt;/u&gt;&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;①&lt;u&gt;授業&lt;/u&gt;; ②&lt;u&gt;びっくりしていた&lt;/u&gt;&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;retained_variant&quot;,
+  &quot;rationale&quot;: &quot;Retain the inherited placement of the circled reference outside the underline, as in the native transcript. The target words and reference association are unchanged; the principal underlines the circle together with the words. No source-defect points apply.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-q034" data-kinds="difference"><div class="review-group-heading"><h2>reading-q034</h2><a href="../papers/N3_07_2017.html#reading-q034">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">34. ①<u>授業</u>は、どのように行われるか。<ol><li>月に1回、毎回同じメンバーのグループで、全部で3回一緒に過ごす</li><li>月に3回、毎回同じメンバーのグループで、全部で3回一緒に過ごす</li><li>月に1回、毎回違うメンバーのグループで、全部で3回一緒に過ごす</li><li>月に3回、毎回違うメンバーのグループで、全部で3回一緒に過ごす</li></ol><p>Editorial key: 1</p></div></details><div class="review-record" id="principal_differences-N3_07_2017-PD-012"><div class="review-label">Principal difference · /options · high</div><div class="comparison"><div><h4>Principal</h4><pre>1. 月に1回、毎回同じメンバーのグループで、全部で3回一緒に過ごす<mark class="diff-old">。</mark>
+2. 月に3回、毎回同じメンバーのグループで、全部で3回一緒に過ごす<mark class="diff-old">。</mark>
+3. 月に1回、毎回違うメンバーのグループで、全部で3回一緒に過ごす<mark class="diff-old">。</mark>
+4. 月に3回、毎回違うメンバーのグループで、全部で3回一緒に過ごす<mark class="diff-old">。</mark></pre></div><div><h4>Editorial</h4><pre>1. 月に1回、毎回同じメンバーのグループで、全部で3回一緒に過ごす
+2. 月に3回、毎回同じメンバーのグループで、全部で3回一緒に過ごす
+3. 月に1回、毎回違うメンバーのグループで、全部で3回一緒に過ごす
+4. 月に3回、毎回違うメンバーのグループで、全部で3回一緒に過ごす</pre></div></div><p>Retain the inherited four sentence-final-stop omissions, directly supported by the compact comparison edition. The principal and Yuuki version visibly supply the stops. This is a disclosed witness variant, not a principal defect.</p><span class="principal-repository-source">Principal source (page=10): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-q034 /options: affected span</span><details><summary>Full published record · principal_differences-N3_07_2017-PD-012</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N3_07_2017-PD-012&quot;,
+  &quot;unit&quot;: &quot;N3_07_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-q034&quot;,
+  &quot;field&quot;: &quot;/options&quot;,
+  &quot;current_value&quot;: [
+    &quot;月に1回、毎回同じメンバーのグループで、全部で3回一緒に過ごす&quot;,
+    &quot;月に3回、毎回同じメンバーのグループで、全部で3回一緒に過ごす&quot;,
+    &quot;月に1回、毎回違うメンバーのグループで、全部で3回一緒に過ごす&quot;,
+    &quot;月に3回、毎回違うメンバーのグループで、全部で3回一緒に過ごす&quot;
+  ],
+  &quot;categories&quot;: [
+    &quot;punctuation&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;【2】2017年07月N3 真题.pdf — nonfinal secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;fee1b9d8c22313bc06d59c55a6c7cbea0abde81820a127be9191750cc5857f1c&quot;,
+    &quot;physical_pages&quot;: [
+      10
+    ],
+    &quot;locator&quot;: &quot;reading-q034 /options: affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;1. 月に1回、毎回同じメンバーのグループで、全部で3回一緒に過ごす。\n2. 月に3回、毎回同じメンバーのグループで、全部で3回一緒に過ごす。\n3. 月に1回、毎回違うメンバーのグループで、全部で3回一緒に過ごす。\n4. 月に3回、毎回違うメンバーのグループで、全部で3回一緒に過ごす。&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;1. 月に1回、毎回同じメンバーのグループで、全部で3回一緒に過ごす\n2. 月に3回、毎回同じメンバーのグループで、全部で3回一緒に過ごす\n3. 月に1回、毎回違うメンバーのグループで、全部で3回一緒に過ごす\n4. 月に3回、毎回違うメンバーのグループで、全部で3回一緒に過ごす&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;retained_variant&quot;,
+  &quot;rationale&quot;: &quot;Retain the inherited four sentence-final-stop omissions, directly supported by the compact comparison edition. The principal and Yuuki version visibly supply the stops. This is a disclosed witness variant, not a principal defect.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div><div class="review-record" id="principal_differences-N3_07_2017-PD-023"><div class="review-label">Principal difference · /stem/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>&lt;u&gt;<mark class="diff-old">①</mark>授業&lt;/u&gt;</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">①</mark>&lt;u&gt;授業&lt;/u&gt;</pre></div></div><p>Retain the inherited placement of the circled reference outside the underline, as in the native transcript. The target words and reference association are unchanged; the principal underlines the circle together with the words. No source-defect points apply.</p><span class="principal-repository-source">Principal source (page=10): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-q034 /stem/html: affected span</span><details><summary>Full published record · principal_differences-N3_07_2017-PD-023</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N3_07_2017-PD-023&quot;,
+  &quot;unit&quot;: &quot;N3_07_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-q034&quot;,
+  &quot;field&quot;: &quot;/stem/html&quot;,
+  &quot;current_value&quot;: &quot;34. ①&lt;u&gt;授業&lt;/u&gt;は、どのように行われるか。&quot;,
+  &quot;categories&quot;: [
+    &quot;underline&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;【2】2017年07月N3 真题.pdf — nonfinal secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;fee1b9d8c22313bc06d59c55a6c7cbea0abde81820a127be9191750cc5857f1c&quot;,
+    &quot;physical_pages&quot;: [
+      10
+    ],
+    &quot;locator&quot;: &quot;reading-q034 /stem/html: affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;&lt;u&gt;①授業&lt;/u&gt;&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;①&lt;u&gt;授業&lt;/u&gt;&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;retained_variant&quot;,
+  &quot;rationale&quot;: &quot;Retain the inherited placement of the circled reference outside the underline, as in the native transcript. The target words and reference association are unchanged; the principal underlines the circle together with the words. No source-defect points apply.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-q035" data-kinds="difference"><div class="review-group-heading"><h2>reading-q035</h2><a href="../papers/N3_07_2017.html#reading-q035">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">35. 1<ruby data-rubi-id="rr4-4dcedaaa7f965427a597" data-rubi-origin="project_rubi_restore">回<rt>かい</rt></ruby><ruby data-rubi-id="rr4-bb1af0c37cc46136213f" data-rubi-origin="project_rubi_restore">目<rt>め</rt></ruby>の<ruby data-rubi-id="rr4-61a67d1492a97f0013ff" data-rubi-origin="project_rubi_restore">授業<rt>じゅぎょう</rt></ruby>での<ruby data-rubi-id="rr4-5168790b94881e4b87f1" data-rubi-origin="project_rubi_restore">生徒<rt>せいと</rt></ruby>のようすはどうだったか。<ol><li>ずっと赤ちゃんを見ているだけで、不安そうな顔をしていた</li><li>授業の前に習ったことが全然できなくて、とても困っていた</li><li>初めから積極的に赤ちゃんにかかわっていて、とてもにぎやかだった</li><li>初めは見ているだけだったが、次第に自分から赤ちゃんにかかわり始めた</li></ol><p>Editorial key: 4</p></div></details><div class="review-record" id="principal_differences-N3_07_2017-PD-013"><div class="review-label">Principal difference · /options · high</div><div class="comparison"><div><h4>Principal</h4><pre>1. ずっと赤ちゃんを見ているだけで、不安そうな顔をしていた<mark class="diff-old">。</mark>
+2. 授業の前に習ったことが全然できなくて、とても困っていた<mark class="diff-old">。</mark>
+3. 初めから積極的に赤ちゃんにかかわっていて、とてもにぎやかだった<mark class="diff-old">。</mark>
+4. 初めは見ているだけだったが、次第に自分から赤ちゃんにかかわり始めた<mark class="diff-old">。</mark></pre></div><div><h4>Editorial</h4><pre>1. ずっと赤ちゃんを見ているだけで、不安そうな顔をしていた
+2. 授業の前に習ったことが全然できなくて、とても困っていた
+3. 初めから積極的に赤ちゃんにかかわっていて、とてもにぎやかだった
+4. 初めは見ているだけだったが、次第に自分から赤ちゃんにかかわり始めた</pre></div></div><p>Retain the inherited four sentence-final-stop omissions, directly supported by the compact comparison edition. The principal and Yuuki version visibly supply the stops. This is a disclosed witness variant, not a principal defect.</p><span class="principal-repository-source">Principal source (page=10): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-q035 /options: affected span</span><details><summary>Full published record · principal_differences-N3_07_2017-PD-013</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N3_07_2017-PD-013&quot;,
+  &quot;unit&quot;: &quot;N3_07_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-q035&quot;,
+  &quot;field&quot;: &quot;/options&quot;,
+  &quot;current_value&quot;: [
+    &quot;ずっと赤ちゃんを見ているだけで、不安そうな顔をしていた&quot;,
+    &quot;授業の前に習ったことが全然できなくて、とても困っていた&quot;,
+    &quot;初めから積極的に赤ちゃんにかかわっていて、とてもにぎやかだった&quot;,
+    &quot;初めは見ているだけだったが、次第に自分から赤ちゃんにかかわり始めた&quot;
+  ],
+  &quot;categories&quot;: [
+    &quot;punctuation&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;【2】2017年07月N3 真题.pdf — nonfinal secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;fee1b9d8c22313bc06d59c55a6c7cbea0abde81820a127be9191750cc5857f1c&quot;,
+    &quot;physical_pages&quot;: [
+      10
+    ],
+    &quot;locator&quot;: &quot;reading-q035 /options: affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;1. ずっと赤ちゃんを見ているだけで、不安そうな顔をしていた。\n2. 授業の前に習ったことが全然できなくて、とても困っていた。\n3. 初めから積極的に赤ちゃんにかかわっていて、とてもにぎやかだった。\n4. 初めは見ているだけだったが、次第に自分から赤ちゃんにかかわり始めた。&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;1. ずっと赤ちゃんを見ているだけで、不安そうな顔をしていた\n2. 授業の前に習ったことが全然できなくて、とても困っていた\n3. 初めから積極的に赤ちゃんにかかわっていて、とてもにぎやかだった\n4. 初めは見ているだけだったが、次第に自分から赤ちゃんにかかわり始めた&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;retained_variant&quot;,
+  &quot;rationale&quot;: &quot;Retain the inherited four sentence-final-stop omissions, directly supported by the compact comparison edition. The principal and Yuuki version visibly supply the stops. This is a disclosed witness variant, not a principal defect.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-q036" data-kinds="difference"><div class="review-group-heading"><h2>reading-q036</h2><a href="../papers/N3_07_2017.html#reading-q036">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">36. 何に②<u>びっくりしていた</u>のか。<ol><li><ruby data-rubi-id="rr4-965ed902f12787590180" data-rubi-origin="project_rubi_restore">赤<rt>あか</rt></ruby>ちゃんに<ruby data-rubi-id="rr4-60c39194b23bf53a0f06" data-rubi-origin="project_rubi_restore">触<rt>さわ</rt></ruby>ってみたら、とても<ruby data-rubi-id="rr4-c0e0d4c5df49b76fdf99" data-rubi-origin="project_rubi_restore">柔<rt>やわ</rt></ruby>らかかったこと</li><li>赤ちゃんを<ruby data-rubi-id="rr4-7087b987974c411bcb71" data-rubi-origin="project_rubi_restore">笑<rt>わら</rt></ruby>わせようとしたら、<ruby data-rubi-id="rr4-a4ad5496c70d97dc8c4c" data-rubi-origin="project_rubi_restore">泣<rt>な</rt></ruby>きだしてしまったこと</li><li><ruby data-rubi-id="rr4-37a6f7b3888d591b6d8c" data-rubi-origin="project_rubi_restore">赤<rt>あか</rt></ruby>ちゃんが大きくなり、よく動くようになっていたこと</li><li>赤ちゃんがよく<ruby data-rubi-id="rr4-6e842ce0e7c3f935cda0" data-rubi-origin="project_rubi_restore">笑<rt>わら</rt></ruby>うようになり、かわいくなっていたこと</li></ol><p>Editorial key: 3</p></div></details><div class="review-record" id="principal_differences-N3_07_2017-PD-024"><div class="review-label">Principal difference · /stem/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>&lt;u&gt;<mark class="diff-old">②</mark>びっくりしていた&lt;/u&gt;</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">②</mark>&lt;u&gt;びっくりしていた&lt;/u&gt;</pre></div></div><p>Retain the inherited placement of the circled reference outside the underline, as in the native transcript. The target words and reference association are unchanged; the principal underlines the circle together with the words. No source-defect points apply.</p><span class="principal-repository-source">Principal source (page=10): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-q036 /stem/html: affected span</span><details><summary>Full published record · principal_differences-N3_07_2017-PD-024</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N3_07_2017-PD-024&quot;,
+  &quot;unit&quot;: &quot;N3_07_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-q036&quot;,
+  &quot;field&quot;: &quot;/stem/html&quot;,
+  &quot;current_value&quot;: &quot;36. 何に②&lt;u&gt;びっくりしていた&lt;/u&gt;のか。&quot;,
+  &quot;categories&quot;: [
+    &quot;underline&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;【2】2017年07月N3 真题.pdf — nonfinal secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;fee1b9d8c22313bc06d59c55a6c7cbea0abde81820a127be9191750cc5857f1c&quot;,
+    &quot;physical_pages&quot;: [
+      10
+    ],
+    &quot;locator&quot;: &quot;reading-q036 /stem/html: affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;&lt;u&gt;②びっくりしていた&lt;/u&gt;&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;②&lt;u&gt;びっくりしていた&lt;/u&gt;&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;retained_variant&quot;,
+  &quot;rationale&quot;: &quot;Retain the inherited placement of the circled reference outside the underline, as in the native transcript. The target words and reference association are unchanged; the principal underlines the circle together with the words. No source-defect points apply.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-s07" data-kinds="difference"><div class="review-group-heading"><h2>reading-s07</h2><a href="../papers/N3_07_2017.html#reading-s07">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">問題7 右のページは、山登りのお知らせである。これを読んで、下の質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。</div></details><div class="review-record" id="principal_differences-N3_07_2017-PD-007"><div class="review-label">Principal difference · /heading · high</div><div class="comparison"><div><h4>Principal</h4><pre>右のページは、<mark class="diff-old">動物園</mark>の<mark class="diff-old">ポスター</mark>である。</pre></div><div><h4>Editorial</h4><pre>右のページは、<mark class="diff-new">山登り</mark>の<mark class="diff-new">お知らせ</mark>である。</pre></div></div><p>The principal zoo label contradicts the mountain notice on its own page. Yuuki physical11 directly supplies the retained full mountain heading; bound physical12 also identifies 登山.</p><span class="principal-repository-source">Principal source (page=11): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-s07 /heading: affected span</span><details><summary>Full published record · principal_differences-N3_07_2017-PD-007</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N3_07_2017-PD-007&quot;,
+  &quot;unit&quot;: &quot;N3_07_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-s07&quot;,
+  &quot;field&quot;: &quot;/heading&quot;,
+  &quot;current_value&quot;: &quot;問題7 右のページは、山登りのお知らせである。これを読んで、下の質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;【2】2017年07月N3 真题.pdf — nonfinal secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;fee1b9d8c22313bc06d59c55a6c7cbea0abde81820a127be9191750cc5857f1c&quot;,
+    &quot;physical_pages&quot;: [
+      11
+    ],
+    &quot;locator&quot;: &quot;reading-s07 /heading: affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;右のページは、動物園のポスターである。&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;右のページは、山登りのお知らせである。&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;The principal zoo label contradicts the mountain notice on its own page. Yuuki physical11 directly supplies the retained full mountain heading; bound physical12 also identifies 登山.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-q039" data-kinds="difference"><div class="review-group-heading"><h2>reading-q039</h2><a href="../papers/N3_07_2017.html#reading-q039">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">39. <ruby data-rubi-id="rr4-90f93408158da9bb6fb0" data-rubi-origin="project_rubi_restore">山登<rt>やまのぼ</rt></ruby>りに<ruby data-rubi-id="rr4-2ccbc0435ff0683fcb0e" data-rubi-origin="project_rubi_restore">申<rt>もう</rt></ruby>し<ruby data-rubi-id="rr4-4d931c3f69301e3f5fed" data-rubi-origin="project_rubi_restore">込<rt>こ</rt></ruby>みたいと思っている人が、気をつけなければならないことはどれか。<ol><li>参加者が一人しかいない場合、山登りは行われない</li><li>申し込みは、EメールかFAXでしか行えない</li><li>料金は、山登りに行く日の三日前までに支払う必要がある</li><li>山登り前日までに、説明会に参加する必要がある</li></ol><p>Editorial key: 1</p></div></details><div class="review-record" id="principal_differences-N3_07_2017-PD-014"><div class="review-label">Principal difference · /options · high</div><div class="comparison"><div><h4>Principal</h4><pre>1. 参加者が一人しかいない場合、山登りは行われない<mark class="diff-old">。</mark>
+2. 申し込みは、EメールかFAXでしか行えない<mark class="diff-old">。</mark>
+3. 料金は、山登りに行く日の三日前までに支払う必要がある<mark class="diff-old">。</mark>
+4. 山登り前日までに、説明会に参加する必要がある<mark class="diff-old">。</mark></pre></div><div><h4>Editorial</h4><pre>1. 参加者が一人しかいない場合、山登りは行われない
+2. 申し込みは、EメールかFAXでしか行えない
+3. 料金は、山登りに行く日の三日前までに支払う必要がある
+4. 山登り前日までに、説明会に参加する必要がある</pre></div></div><p>Retain the inherited four sentence-final-stop omissions, directly supported by the compact comparison edition. The principal and Yuuki version visibly supply the stops. This is a disclosed witness variant, not a principal defect.</p><span class="principal-repository-source">Principal source (page=11): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-q039 /options: affected span</span><details><summary>Full published record · principal_differences-N3_07_2017-PD-014</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N3_07_2017-PD-014&quot;,
+  &quot;unit&quot;: &quot;N3_07_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-q039&quot;,
+  &quot;field&quot;: &quot;/options&quot;,
+  &quot;current_value&quot;: [
+    &quot;参加者が一人しかいない場合、山登りは行われない&quot;,
+    &quot;申し込みは、EメールかFAXでしか行えない&quot;,
+    &quot;料金は、山登りに行く日の三日前までに支払う必要がある&quot;,
+    &quot;山登り前日までに、説明会に参加する必要がある&quot;
+  ],
+  &quot;categories&quot;: [
+    &quot;punctuation&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;【2】2017年07月N3 真题.pdf — nonfinal secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;fee1b9d8c22313bc06d59c55a6c7cbea0abde81820a127be9191750cc5857f1c&quot;,
+    &quot;physical_pages&quot;: [
+      11
+    ],
+    &quot;locator&quot;: &quot;reading-q039 /options: affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;1. 参加者が一人しかいない場合、山登りは行われない。\n2. 申し込みは、EメールかFAXでしか行えない。\n3. 料金は、山登りに行く日の三日前までに支払う必要がある。\n4. 山登り前日までに、説明会に参加する必要がある。&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;1. 参加者が一人しかいない場合、山登りは行われない\n2. 申し込みは、EメールかFAXでしか行えない\n3. 料金は、山登りに行く日の三日前までに支払う必要がある\n4. 山登り前日までに、説明会に参加する必要がある&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;retained_variant&quot;,
+  &quot;rationale&quot;: &quot;Retain the inherited four sentence-final-stop omissions, directly supported by the compact comparison edition. The principal and Yuuki version visibly supply the stops. This is a disclosed witness variant, not a principal defect.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-b009" data-kinds="difference unresolved"><div class="review-group-heading"><h2>reading-b009</h2><a href="../papers/N3_07_2017.html#reading-b009">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><center><b>安見山へ山登りに行きませんか。</b></center><br/> 
+山に登って、頂上近くにある丸岩池から見る景色は最高です。<br/><br/>
+<b>【Aコース】</b> 山の途中まではバスを利用します。<br/>
+<b>7月19日（水）、7月29日（土）</b><br/>
+安見山北駅・川上寺間はバスを利用し、丸岩池まで歩いて登ります。<br/>
+〈集合〉安見山北駅に午前9時 <br/>〈徒歩時間〉約3時間<br/>
+〈料金〉 3000円 （往復バス料金も入っています。） <br/><br/>
+<b>【Bコース】</b> 最初から歩くので、Aコースより歩く距離、時間が長くなります。<br/>
+<b>7月15日（土）、7月26日（水）</b> <br/>
+安見山駅前から登りはじめ、丸岩池まで歩きます。 <br/>〈集合〉安見山駅に午前8時30分<br/> 〈徒歩時間〉約6時間 
+<br/>〈料金〉2500円 <br/><br/>
+<b>【注意点】</b> （Aコース、Bコース共通）<br/>
+・参加者が二人以上集まらなければ、山登りは行われません。<br/>
+・料金に集合場所までの交通費は入っていません。 <br/><br/>
+<b>【申し込みについて】</b> <br/>
+・Eメール、FAX、または郵送でお申し込みください。申し込みのときには、以下の①②を忘れずにお書きください。申し込みを確認した後で、詳しい案内をお送りします。<br/>
+①参加者全員のお名前、年齢、性別　　②代表者の電話番号、Eメールアドレス
+<br/>・申し込みの締め切りは、参加日の三日前です。（参加者が10人になったら締め切ります。） 
+<br/>・料金は集合時にお支払いください。 <br/><br/>
+<b>【説明会について】</b><br/>
+山登りの経験が少なくて準備などが心配な方には、説明会も行っています。説明会に参加を希望される方はお電話ください。<br/>
+<div>山登りを楽しむ会事務所 〒139-0001 中川市大田町58
+<br/>電話/FAX：0315-55-9004　Eメール：yamanobori<span class="answer-slot"><span class="slot-glyph">_</span></span>kai@xxmail.com</div></div></details><div class="review-record" id="unresolved_cases-N3_07_2017-reading-b009-mountain-email"><div class="review-label">Unresolved · /content/html · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>yamanobori_kai@xxmail.com</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">&lt;center&gt;&lt;b&gt;安見山へ山登りに行きませんか。&lt;/b&gt;&lt;/center&gt;&lt;br&gt; 
+山に登って、頂上近くにある丸岩池から見る景色は最高です。&lt;br&gt;&lt;br&gt;
+&lt;b&gt;【Aコース】&lt;/b&gt; 山の途中まではバスを利用します。&lt;br&gt;
+&lt;b&gt;7月19日（水）、7月29日（土）&lt;/b&gt;&lt;br&gt;
+安見山北駅・川上寺間はバスを利用し、丸岩池まで歩いて登ります。&lt;br&gt;
+〈集合〉安見山北駅に午前9時 &lt;br&gt;〈徒歩時間〉約3時間&lt;br&gt;
+〈料金〉 3000円 （往復バス料金も入っています。） &lt;br&gt;&lt;br&gt;
+&lt;b&gt;【Bコース】&lt;/b&gt; 最初から歩くので、Aコースより歩く距離、時間が長くなります。&lt;br&gt;
+&lt;b&gt;7月15日（土）、7月26日（水）&lt;/b&gt; &lt;br&gt;
+安見山駅前から登りはじめ、丸岩池まで歩きます。 &lt;br&gt;〈集合〉安見山駅に午前8時30分&lt;br&gt; 〈徒歩時間〉約6時間 
+&lt;br&gt;〈料金〉2500円 &lt;br&gt;&lt;br&gt;
+&lt;b&gt;【注意点】&lt;/b&gt; （Aコース、Bコース共通）&lt;br&gt;
+・参加者が二人以上集まらなければ、山登りは行われません。&lt;br&gt;
+・料金に集合場所までの交通費は入っていません。 &lt;br&gt;&lt;br&gt;
+&lt;b&gt;【申し込みについて】&lt;/b&gt; &lt;br&gt;
+・Eメール、FAX、または郵送でお申し込みください。申し込みのときには、以下の①②を忘れずにお書きください。申し込みを確認した後で、詳しい案内をお送りします。&lt;br&gt;
+①参加者全員のお名前、年齢、性別　　②代表者の電話番号、Eメールアドレス
+&lt;br&gt;・申し込みの締め切りは、参加日の三日前です。（参加者が10人になったら締め切ります。） 
+&lt;br&gt;・料金は集合時にお支払いください。 &lt;br&gt;&lt;br&gt;
+&lt;b&gt;【説明会について】&lt;/b&gt;&lt;br&gt;
+山登りの経験が少なくて準備などが心配な方には、説明会も行っています。説明会に参加を希望される方はお電話ください。&lt;br&gt;
+&lt;div&gt;山登りを楽しむ会事務所 〒139-0001 中川市大田町58
+&lt;br&gt;電話/FAX：0315-55-9004　Eメール：</mark>yamanobori_kai@xxmail.com<mark class="diff-new">&lt;/div&gt;</mark></pre></div></div><p>Retain the principal-supported current address. The longer local part is a genuine secondary variant; no chain of custody establishes which notice is earlier. Q38=3 and Q39=1 depend on conditions, not the email spelling.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>A traceable original notice is needed to determine the full intended address.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">The mountain-tour notice footer gives the contact email; course selection and booking conditions are unchanged.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=11): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Mountain notice footer<p>yamanobori_kai@xxmail.com</p></li><li><span class="principal-repository-source">Principal source (page=12): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Mountain notice footer<p>yamanobori_kai@xxmail.com</p></li><li><span class="principal-repository-source">Principal source (page=12): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Embedded notice image footer<p>yamanobori_tanoshimu_kai@xxmail.com</p></li><li><span class="principal-repository-source">Principal source (page=10): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Mountain notice footer<p>yamanobori_kai@xxmail.comm</p></li></ul><details><summary>Full published record · unresolved_cases-N3_07_2017-reading-b009-mountain-email</summary><pre>{
+  &quot;case_id&quot;: &quot;N3_07_2017-reading-b009-mountain-email&quot;,
+  &quot;unit&quot;: &quot;N3_07_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-b009&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;&lt;center&gt;&lt;b&gt;安見山へ山登りに行きませんか。&lt;/b&gt;&lt;/center&gt;&lt;br&gt; \n山に登って、頂上近くにある丸岩池から見る景色は最高です。&lt;br&gt;&lt;br&gt;\n&lt;b&gt;【Aコース】&lt;/b&gt; 山の途中まではバスを利用します。&lt;br&gt;\n&lt;b&gt;7月19日（水）、7月29日（土）&lt;/b&gt;&lt;br&gt;\n安見山北駅・川上寺間はバスを利用し、丸岩池まで歩いて登ります。&lt;br&gt;\n〈集合〉安見山北駅に午前9時 &lt;br&gt;〈徒歩時間〉約3時間&lt;br&gt;\n〈料金〉 3000円 （往復バス料金も入っています。） &lt;br&gt;&lt;br&gt;\n&lt;b&gt;【Bコース】&lt;/b&gt; 最初から歩くので、Aコースより歩く距離、時間が長くなります。&lt;br&gt;\n&lt;b&gt;7月15日（土）、7月26日（水）&lt;/b&gt; &lt;br&gt;\n安見山駅前から登りはじめ、丸岩池まで歩きます。 &lt;br&gt;〈集合〉安見山駅に午前8時30分&lt;br&gt; 〈徒歩時間〉約6時間 \n&lt;br&gt;〈料金〉2500円 &lt;br&gt;&lt;br&gt;\n&lt;b&gt;【注意点】&lt;/b&gt; （Aコース、Bコース共通）&lt;br&gt;\n・参加者が二人以上集まらなければ、山登りは行われません。&lt;br&gt;\n・料金に集合場所までの交通費は入っていません。 &lt;br&gt;&lt;br&gt;\n&lt;b&gt;【申し込みについて】&lt;/b&gt; &lt;br&gt;\n・Eメール、FAX、または郵送でお申し込みください。申し込みのときには、以下の①②を忘れずにお書きください。申し込みを確認した後で、詳しい案内をお送りします。&lt;br&gt;\n①参加者全員のお名前、年齢、性別　　②代表者の電話番号、Eメールアドレス\n&lt;br&gt;・申し込みの締め切りは、参加日の三日前です。（参加者が10人になったら締め切ります。） \n&lt;br&gt;・料金は集合時にお支払いください。 &lt;br&gt;&lt;br&gt;\n&lt;b&gt;【説明会について】&lt;/b&gt;&lt;br&gt;\n山登りの経験が少なくて準備などが心配な方には、説明会も行っています。説明会に参加を希望される方はお電話ください。&lt;br&gt;\n&lt;div&gt;山登りを楽しむ会事務所 〒139-0001 中川市大田町58\n&lt;br&gt;電話/FAX：0315-55-9004　Eメール：yamanobori_kai@xxmail.com&lt;/div&gt;&quot;,
+  &quot;context&quot;: &quot;The mountain-tour notice footer gives the contact email; course selection and booking conditions are unchanged.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;yamanobori_kai@xxmail.com&quot;,
+      &quot;assessment&quot;: &quot;Current and principal/bound reading; retained.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;yamanobori_tanoshimu_kai@xxmail.com&quot;,
+      &quot;assessment&quot;: &quot;Legible longer address in the Yuuki embedded notice; that image also has selective ruby and visible Word paragraph marks.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;yamanobori_kai@xxmail.comm&quot;,
+      &quot;assessment&quot;: &quot;Compact edition and native image add a final m; likely secondary corruption but not evidence for the exact local part.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;【2】2017年07月N3 真题.pdf&quot;,
+      &quot;sha256&quot;: &quot;fee1b9d8c22313bc06d59c55a6c7cbea0abde81820a127be9191750cc5857f1c&quot;,
+      &quot;physical_pages&quot;: [
+        11
+      ],
+      &quot;locator&quot;: &quot;Mountain notice footer&quot;,
+      &quot;reading&quot;: &quot;yamanobori_kai@xxmail.com&quot;,
+      &quot;lineage&quot;: &quot;Secondary witness; common ancestry is possible and no issuer custody has been established.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2017年7月N3试卷_解析_听力原文_高清扫描.PDF&quot;,
+      &quot;sha256&quot;: &quot;8c18b28da0691af92bf429f5b9b05311bd9a3197b03e869d617af88d48c2087f&quot;,
+      &quot;physical_pages&quot;: [
+        12
+      ],
+      &quot;locator&quot;: &quot;Mountain notice footer&quot;,
+      &quot;reading&quot;: &quot;yamanobori_kai@xxmail.com&quot;,
+      &quot;lineage&quot;: &quot;Secondary witness; common ancestry is possible and no issuer custody has been established.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2017.07.N3.pdf&quot;,
+      &quot;sha256&quot;: &quot;7e344f31e70109c4b25bac64a6bde2863d72bf57406e0efa034bf71de99d862b&quot;,
+      &quot;physical_pages&quot;: [
+        12
+      ],
+      &quot;locator&quot;: &quot;Embedded notice image footer&quot;,
+      &quot;reading&quot;: &quot;yamanobori_tanoshimu_kai@xxmail.com&quot;,
+      &quot;lineage&quot;: &quot;Secondary witness; common ancestry is possible and no issuer custody has been established.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2017年07月N3.pdf&quot;,
+      &quot;sha256&quot;: &quot;898b578ff5f166d7280d31b5cab4de52993fd7050d5af4ded19063160bee01af&quot;,
+      &quot;physical_pages&quot;: [
+        10
+      ],
+      &quot;locator&quot;: &quot;Mountain notice footer&quot;,
+      &quot;reading&quot;: &quot;yamanobori_kai@xxmail.comm&quot;,
+      &quot;lineage&quot;: &quot;Secondary witness; common ancestry is possible and no issuer custody has been established.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Retain the principal-supported current address. The longer local part is a genuine secondary variant; no chain of custody establishes which notice is earlier. Q38=3 and Q39=1 depend on conditions, not the email spelling.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Read the complete principal notice, compact notice, bound notice and native image.&quot;,
+    &quot;Visually inspected the Yuuki embedded notice on physical12, including its full footer.&quot;,
+    &quot;Compared the address alongside organization name, postal address, phone and booking requirements.&quot;,
+    &quot;5 November 2026: Public snapshot rebound to the earlier, verified current field. Only the historical presentation edit is replayed; this snapshot repair does not change the original witness or its confidence.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;A traceable original notice is needed to determine the full intended address.&quot;
+}</pre></details></div><div class="review-record" id="principal_differences-N3_07_2017-PD-025"><div class="review-label">Principal difference · /content/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>安見山へ山登りに行きませんか</pre></div><div><h4>Editorial</h4><pre>安見山へ山登りに行きませんか<mark class="diff-new">。</mark></pre></div></div><p>The inherited title stop follows the compact edition and native image; the principal title has none. Keep this disclosed terminal-punctuation variant.</p><span class="principal-repository-source">Principal source (page=11): <code>additional-assets/principals/N3_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-b009 /content/html: affected span</span><details><summary>Full published record · principal_differences-N3_07_2017-PD-025</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N3_07_2017-PD-025&quot;,
+  &quot;unit&quot;: &quot;N3_07_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-b009&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;current_value&quot;: &quot;&lt;center&gt;&lt;b&gt;安見山へ山登りに行きませんか。&lt;/b&gt;&lt;/center&gt;&lt;br&gt; \n山に登って、頂上近くにある丸岩池から見る景色は最高です。&lt;br&gt;&lt;br&gt;\n&lt;b&gt;【Aコース】&lt;/b&gt; 山の途中まではバスを利用します。&lt;br&gt;\n&lt;b&gt;7月19日（水）、7月29日（土）&lt;/b&gt;&lt;br&gt;\n安見山北駅・川上寺間はバスを利用し、丸岩池まで歩いて登ります。&lt;br&gt;\n〈集合〉安見山北駅に午前9時 &lt;br&gt;〈徒歩時間〉約3時間&lt;br&gt;\n〈料金〉 3000円 （往復バス料金も入っています。） &lt;br&gt;&lt;br&gt;\n&lt;b&gt;【Bコース】&lt;/b&gt; 最初から歩くので、Aコースより歩く距離、時間が長くなります。&lt;br&gt;\n&lt;b&gt;7月15日（土）、7月26日（水）&lt;/b&gt; &lt;br&gt;\n安見山駅前から登りはじめ、丸岩池まで歩きます。 &lt;br&gt;〈集合〉安見山駅に午前8時30分&lt;br&gt; 〈徒歩時間〉約6時間 \n&lt;br&gt;〈料金〉2500円 &lt;br&gt;&lt;br&gt;\n&lt;b&gt;【注意点】&lt;/b&gt; （Aコース、Bコース共通）&lt;br&gt;\n・参加者が二人以上集まらなければ、山登りは行われません。&lt;br&gt;\n・料金に集合場所までの交通費は入っていません。 &lt;br&gt;&lt;br&gt;\n&lt;b&gt;【申し込みについて】&lt;/b&gt; &lt;br&gt;\n・Eメール、FAX、または郵送でお申し込みください。申し込みのときには、以下の①②を忘れずにお書きください。申し込みを確認した後で、詳しい案内をお送りします。&lt;br&gt;\n①参加者全員のお名前、年齢、性別　　②代表者の電話番号、Eメールアドレス\n&lt;br&gt;・申し込みの締め切りは、参加日の三日前です。（参加者が10人になったら締め切ります。） \n&lt;br&gt;・料金は集合時にお支払いください。 &lt;br&gt;&lt;br&gt;\n&lt;b&gt;【説明会について】&lt;/b&gt;&lt;br&gt;\n山登りの経験が少なくて準備などが心配な方には、説明会も行っています。説明会に参加を希望される方はお電話ください。&lt;br&gt;\n&lt;div&gt;山登りを楽しむ会事務所 〒139-0001 中川市大田町58\n&lt;br&gt;電話/FAX：0315-55-9004　Eメール：yamanobori_kai@xxmail.com&lt;/div&gt;&quot;,
+  &quot;categories&quot;: [
+    &quot;punctuation&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;【2】2017年07月N3 真题.pdf — nonfinal secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;fee1b9d8c22313bc06d59c55a6c7cbea0abde81820a127be9191750cc5857f1c&quot;,
+    &quot;physical_pages&quot;: [
+      11
+    ],
+    &quot;locator&quot;: &quot;reading-b009 /content/html: affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;安見山へ山登りに行きませんか&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;安見山へ山登りに行きませんか。&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;retained_variant&quot;,
+  &quot;rationale&quot;: &quot;The inherited title stop follows the compact edition and native image; the principal title has none. Keep this disclosed terminal-punctuation variant.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section></div></main><footer class="site-footer"><span class="developer-only">Developer mode</span></footer><div id="toast" role="status" class="toast" hidden></div><script id="page-data" type="application/json">{"review":true}</script><script id="theme-data" src="../assets/theme-data.js?v=f06ad9e2434b" defer></script><script src="../assets/app.js?v=0d75deb05ae3" defer></script></body></html>

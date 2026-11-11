@@ -1,0 +1,217 @@
+{
+  "unit": "N1_07_2018",
+  "sources": [
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\2016.12\\N1能力考试计算方法.xlsx",
+      "sha256": "509844a08048d2cb05c14dd4645d8a885a027af4caa2cc5f4f4b0fcf640e092b",
+      "Tier": "unranked",
+      "bytes": 9627,
+      "aliases": [
+        "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\N1能力考试计算方法.xlsx",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\N1能力考试计算方法.xlsx",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\N1能力考试计算方法.xlsx"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\2018\\2018.07\\1. 真题 2018年7月 N1.pdf",
+      "sha256": "82a19d1cb6bc91498c38cba742ee1c2a9e0c4a72aa83b32e53e5d788634c8ec9",
+      "Tier": 3,
+      "bytes": 1872840,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2018\\PaddleOCR\\pdf_1",
+      "VisionOCR": "preprocess\\N1\\N1_07_2018\\VisionOCR\\pdf_1"
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\2018\\2018.07\\2. 答案 + 解析 + 听力 2018年7月 N1.pdf",
+      "sha256": "c576a1b6479309d76575562f79c8d573ef62af96d3138a0cf7d350352bbb27b5",
+      "Tier": "unranked",
+      "bytes": 5251535,
+      "aliases": [
+        "src\\Yuuki Bui\\Đề thi N1 các năm Yuuki Bùi\\N1 7-2018\\Đáp án+Script N1 7-2018.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2018\\PaddleOCR\\pdf_2",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\N1答题卡.pdf",
+      "sha256": "99d0ff9ea60c01b3c211c680c0c527a1604e0c91a52ece360e2873186b8dcef9",
+      "Tier": "unranked",
+      "bytes": 683222,
+      "aliases": [
+        "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\N1答题卡.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\N1答题卡.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\N1答题卡.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N1\\N1_multiple\\PaddleOCR\\pdf_2",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N1\\2018-07_N1\\2018-07_N1.json",
+      "sha256": "d7494587e881eb9dbd77dc9b72447b07cd181a9186d92fd8b9c9b3f024178de2",
+      "Tier": "unranked",
+      "bytes": 251454,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N1 các năm Yuuki Bùi\\N1 7-2018\\Đề N1 7-2018.pdf",
+      "sha256": "a9a2cef7bd2bae36d6060a9928572ac721ddead0ef49ba421473e7e60dd9e2c9",
+      "Tier": 1,
+      "bytes": 1904706,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2018\\PaddleOCR\\pdf_4",
+      "VisionOCR": "preprocess\\N1\\N1_07_2018\\VisionOCR\\pdf_4"
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N1\\listening\\N1_07_2018_listening.html",
+      "sha256": "9247c9cf7f99ff1f4128ad5bbafe5739fc92adc55c9e10f9ac2735bde5acb569",
+      "Tier": "unranked",
+      "bytes": 114184,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N1\\reading\\N1_07_2018_reading.html",
+      "sha256": "eaa1b77be903053114c40108edeb39513157b09a9bae6f6cf20d6c3b05e8cdea",
+      "Tier": "unranked",
+      "bytes": 112186,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N1\\vocab\\N1_07_2018_vocab.html",
+      "sha256": "f2cf0b126c19287acf16255d8ac6319273ff3dd49e6dffc968c3371db79035ca",
+      "Tier": "unranked",
+      "bytes": 118536,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\2018\\2018.07\\2018年07月N1真题.pdf",
+      "sha256": "ebcb564ad9a4b29900b60c3b0df2205a129e2d0f7bfe31168125672c2ebec753",
+      "Tier": 2,
+      "bytes": 3812680,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2018\\PaddleOCR\\pdf_5",
+      "VisionOCR": "preprocess\\N1\\N1_07_2018\\VisionOCR\\pdf_5"
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\2018\\2018.07\\答案解析和听力原文\\2018年07月N1听力原文.pdf",
+      "sha256": "724e32ab88d297110611bf354fcf6c59d559ab6ec97c129b431c625ecb6e9d74",
+      "Tier": "unranked",
+      "bytes": 10463086,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2018\\PaddleOCR\\pdf_6",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\2018\\2018.07\\答案解析和听力原文\\2018年07月N1听力译文.pdf",
+      "sha256": "794f547eb8d204def20b971631e449c7ba8740ea007fcfe3c4897fd1e6d9bc97",
+      "Tier": "unranked",
+      "bytes": 2370006,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2010年-2020年\\2018年7月\\2018年07月N1听力译文.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2018\\PaddleOCR\\pdf_7",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\2018\\2018.07\\答案解析和听力原文\\2018年07月N1答案解析.pdf",
+      "sha256": "43508cd62031e52cf58e0662bebd1ee1b083c9f7590017f4bb0064731aa7f74b",
+      "Tier": "unranked",
+      "bytes": 12590686,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2018\\PaddleOCR\\pdf_8",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\2018\\2018.07\\答案解析和听力原文\\2018年07月N1阅读译文.pdf",
+      "sha256": "b248e56280db890429c6e445a52ef5c5980449ebdc42736f4060a5922a68f381",
+      "Tier": "unranked",
+      "bytes": 2775922,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2010年-2020年\\2018年7月\\2018年07月N1阅读译文.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2018\\PaddleOCR\\pdf_9",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2010年-2020年\\2018年7月\\【1】2018年07月N1 真题.pdf",
+      "sha256": "12de1af83a2c0aecc64717029a1c031663e2300e7158778aff1f7f856ac77a8e",
+      "Tier": 2,
+      "bytes": 6075185,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2018\\PaddleOCR\\pdf_10",
+      "VisionOCR": "preprocess\\N1\\N1_07_2018\\VisionOCR\\pdf_10"
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2010年-2020年\\2018年7月\\【1】2018年07月N1答案解析+听力原文.pdf",
+      "sha256": "291f6f5b0f3de2a10d3627a54c64ae29f79b564779834858c2590f1ab9ba467b",
+      "Tier": "unranked",
+      "bytes": 3059757,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2018\\PaddleOCR\\pdf_11",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2010年-2020年\\2018年7月\\【2】2018年07月N1 真题.pdf",
+      "sha256": "7546585823dc093d4f8b4c295e55389c7593381b323ce11f49f1499359420120",
+      "Tier": 2,
+      "bytes": 1419871,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2018\\PaddleOCR\\pdf_12",
+      "VisionOCR": "preprocess\\N1\\N1_07_2018\\VisionOCR\\pdf_12"
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2010年-2020年\\2018年7月\\【2】2018年07月N1答案解析+听力原文.pdf",
+      "sha256": "93f0eae00d9979c96925711b8f52ca999ef949b0fd4a0d11446ca8ebc8289320",
+      "Tier": "unranked",
+      "bytes": 891854,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2018\\PaddleOCR\\pdf_13",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2010年-2020年\\2018年7月\\【3】2018年07月N1 真题.pdf",
+      "sha256": "9c7f918a36a849091be20cf36f3c1ba88ec8f8dfeb9cbef7407be7817183b03c",
+      "Tier": 2,
+      "bytes": 1287891,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2018\\PaddleOCR\\pdf_14",
+      "VisionOCR": "preprocess\\N1\\N1_07_2018\\VisionOCR\\pdf_14"
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2010年-2020年\\2018年7月\\【3】2018年07月N1答案解析+听力原文+译文.pdf",
+      "sha256": "fe83cd66cc302b90b572cba5d0a04b4bcd472a35bf44cf1063deb0d262f9f253",
+      "Tier": "unranked",
+      "bytes": 1274134,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2018\\PaddleOCR\\pdf_15",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\2018.07\\2018年7月N1试卷_解析_听力原文_高清扫描.PDF",
+      "sha256": "ee876e677d23ea1e0084092b18fe256cf9c450cc4c182928397047178600d98f",
+      "Tier": 3,
+      "bytes": 3719261,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2018\\PaddleOCR\\pdf_16",
+      "VisionOCR": "preprocess\\N1\\N1_07_2018\\VisionOCR\\pdf_16"
+    },
+    {
+      "path": "src\\munjaJLPT\\N1\\2018-07_N1\\images\\2018-07_N1_s13-q01-img01.jpg",
+      "sha256": "7c6c1df1875c058c773839c7e66c4679de79481a398795617c2bbb4d1506c0e6",
+      "Tier": "unranked",
+      "bytes": 858478,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    }
+  ]
+}

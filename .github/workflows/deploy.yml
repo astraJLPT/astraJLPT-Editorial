@@ -1,0 +1,43 @@
+name: Deploy astraJLPT
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'astraJLPT/**'
+      - '.github/workflows/deploy.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/configure-pages@v5
+      - name: Check published directory size
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          root = Path('astraJLPT')
+          size = sum(p.stat().st_size for p in root.rglob('*') if p.is_file())
+          assert size <= 1_000_000_000, f'Website exceeds the conservative 1 GB budget: {size}'
+          assert not any(p.is_symlink() for p in root.rglob('*')), 'Symlinks are not supported'
+          print(f'Website payload: {size:,} bytes')
+          PY
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: astraJLPT
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,36 @@
+\directlua{token.set_macro("AstraRoot",assert(os.getenv("ASTRAJLPT_ROOT")),"global")}
+% Maintained native cover component; migrated from preserved native-covers-20261010-r1.
+\usepackage{luatexja-fontspec,graphicx,eso-pic}
+\directlua{dofile(assert(os.getenv("ASTRAJLPT_ROOT")) .. "/pdf-render/tex/font-cache.lua")}
+\usepackage[paperwidth=210mm,paperheight=297mm,margin=0pt]{geometry}
+\pagestyle{empty}
+\pdfvariable suppressoptionalinfo 767
+\directlua{local n=pdf.immediateobj("<< /Type /ExtGState /ca " .. token.get_macro("CoverMarkOpacity") .. " /CA " .. token.get_macro("CoverMarkOpacity") .. " >>"); pdf.setpageresources("/ExtGState << /EditorialAlpha "..n.." 0 R >>")}
+\setmainfont[Path={\AstraRoot/pdf-render/fonts/}]{2cff2a03d803-times.ttf}
+\setmainjfont[Path={\AstraRoot/pdf-render/fonts/}]{86e2572e8b69-1738155121_A-OTF-RyuminPr5-Regular.otf}
+\newfontfamily\Latin[Path={\AstraRoot/pdf-render/fonts/}]{2cff2a03d803-times.ttf}
+\newfontfamily\LatinSans[Path={\AstraRoot/pdf-render/fonts/}]{c9b76220a5be-arial.ttf}
+\newfontfamily\LatinBold[Path={\AstraRoot/pdf-render/fonts/}]{766f06ac8761-arialbd.ttf}
+\newfontfamily\LatinKyoka[Path={\AstraRoot/pdf-render/fonts/}]{1bca3052abd0-1738154924_A-OTF-KyokaICAPro-Regular.otf}
+\newjfontfamily\JRegular[YokoFeatures={JFM=mono},Path={\AstraRoot/pdf-render/fonts/}]{05817e8ecde2-NotoSansJP-Regular.ttf}
+\newjfontfamily\JGothic[YokoFeatures={JFM=mono},Path={\AstraRoot/pdf-render/fonts/}]{15be144b9a98-NotoSansJP-Medium.ttf}
+\newjfontfamily\JHeading[YokoFeatures={JFM=mono},Path={\AstraRoot/pdf-render/fonts/}]{7ba6039e34d8-NotoSansJP-Bold.ttf}
+\newjfontfamily\JHeavy[YokoFeatures={JFM=mono},Path={\AstraRoot/pdf-render/fonts/}]{dc7ceb728c25-NotoSansJP-Black.ttf}
+\newjfontfamily\JMincho[YokoFeatures={JFM=mono},Path={\AstraRoot/pdf-render/fonts/}]{86e2572e8b69-1738155121_A-OTF-RyuminPr5-Regular.otf}
+\newjfontfamily\JKyoka[YokoFeatures={JFM=mono},Path={\AstraRoot/pdf-render/fonts/}]{1bca3052abd0-1738154924_A-OTF-KyokaICAPro-Regular.otf}
+\newcommand\Sans{\LatinSans\JRegular}
+\newcommand\SansBold{\LatinBold\JGothic}
+\newcommand\Date{\LatinSans\JRegular}
+\newcommand\Gothic{\LatinSans\JGothic}
+\newcommand\Heading{\LatinBold\JHeading}
+\newcommand\Heavy{\LatinBold\JHeavy}
+\newcommand\Mincho{\Latin\JMincho}
+\newcommand\Kyoka{\LatinKyoka\JKyoka}
+\ltjsetparameter{autospacing=false,autoxspacing=false}
+\newcommand\Run[6]{\put(#1,-#2){\resizebox{#3mm}{\height}{{\fontsize{#4bp}{#4bp}\selectfont\csname #5\endcsname #6}}}}
+\newcommand\RuleRect[5]{\put(#1,-#2){\linethickness{#5bp}\put(0,-#4){\framebox(#3,#4){}}}}
+\ExplSyntaxOn
+\NewDocumentCommand{\RuleLine}{mmmmm}{\put(#1,-#2){\pdfextension literal{q~#5~w~0~0~m~\dim_to_decimal_in_bp:n{#3mm-#1mm}~\dim_to_decimal_in_bp:n{#2mm-#4mm}~l~S~Q}}}
+\ExplSyntaxOff
+\newcommand\CodeCircle[3]{\put(#1,-#2){\linethickness{.45bp}\circle{9.2}}\put(#1,-#2){\makebox(0,0){\Latin\fontsize{23bp}{23bp}\selectfont #3}}}
+\newcommand\EditorialMark{\put(105,-10.85){\makebox(0,0)[b]{\pdfextension literal{q /EditorialAlpha gs}\SansBold\fontsize{\CoverMarkSize bp}{\CoverMarkSize bp}\selectfont astraJLPT Editorial\pdfextension literal{Q}}}}

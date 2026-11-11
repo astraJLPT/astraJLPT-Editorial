@@ -1,0 +1,1363 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark light"><title>Developer review · N2_07_2015 · astraJLPT</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../assets/fonts-a06115dea7095078.css?v=541b58204da7"><link rel="stylesheet" href="../assets/themes.css?v=7ad0820747dc"><link rel="stylesheet" href="../assets/answer-marking.css?v=bec6b4920050"><link rel="stylesheet" href="../assets/site.css?v=7ae9ae7c768b"><link rel="stylesheet" href="../assets/pdf-typography.css?v=ba55af25606f"><link rel="stylesheet" href="../assets/paper-shared.css?v=8f3ca38dca80"></head><body class="catalog-page"><a class="skip-link" href="#content">Skip to content</a><header class="topbar" id="page-top" tabindex="-1"><a class="wordmark" id="brand" href="../index.html">astra<span>JLPT</span></a><details id="settings" class="settings"><summary aria-label="Open settings" title="Settings"><span aria-hidden="true">⚙</span><span class="sr-only">Settings</span></summary><div class="settings-panel"><div class="settings-title"><h2>settings</h2><button type="button" id="close-settings" class="js-only" aria-label="Close settings">×</button></div><div class="settings-tabs" role="group" aria-label="Settings categories"><label><input type="radio" name="settings-view" value="appearance" checked><span>theme</span></label><label><input type="radio" name="settings-view" value="browser"><span>browser</span></label></div><section data-settings="appearance"><div class="theme-workspace"><div class="theme-picker"><div class="setting-heading"><h3>theme</h3></div><div class="theme-grid originals"><label class="theme-card ps-gh"><input type="radio" name="theme" id="theme-jlpt_paper" value="jlpt_paper"><span>jlpt_paper</span></label><label class="theme-card ps-ck"><input type="radio" name="theme" id="theme-astraJLPT_dark" value="astraJLPT_dark" checked><span>astraJLPT_dark</span></label><label class="theme-card ps-ga"><input type="radio" name="theme" id="theme-astraJLPT_sepia" value="astraJLPT_sepia"><span>astraJLPT_sepia</span></label></div><div class="js-only"><p class="settings-label">three random picks</p><div class="theme-grid" id="quick-picks"></div></div><details><summary>all 187 Monkeytype palettes</summary><label class="theme-search js-only">find a palette<input id="theme-search" type="search" placeholder="search themes" autocomplete="off"></label><div class="theme-grid theme-catalog"><label class="theme-card ps-e9"><input type="radio" name="theme" id="theme-8008" value="8008"><span>8008</span></label><label class="theme-card ps-cw"><input type="radio" name="theme" id="theme-80s_after_dark" value="80s_after_dark"><span>80s after dark</span></label><label class="theme-card ps-fq"><input type="radio" name="theme" id="theme-9009" value="9009"><span>9009</span></label><label class="theme-card ps-cc"><input type="radio" name="theme" id="theme-aether" value="aether"><span>aether</span></label><label class="theme-card ps-cz"><input type="radio" name="theme" id="theme-alduin" value="alduin"><span>alduin</span></label><label class="theme-card ps-el"><input type="radio" name="theme" id="theme-alpine" value="alpine"><span>alpine</span></label><label class="theme-card ps-bg"><input type="radio" name="theme" id="theme-anti_hero" value="anti_hero"><span>anti hero</span></label><label class="theme-card ps-c3"><input type="radio" name="theme" id="theme-arch" value="arch"><span>arch</span></label><label class="theme-card ps-bt"><input type="radio" name="theme" id="theme-aurora" value="aurora"><span>aurora</span></label><label class="theme-card ps-g8"><input type="radio" name="theme" id="theme-beach" value="beach"><span>beach</span></label><label class="theme-card ps-dz"><input type="radio" name="theme" id="theme-bento" value="bento"><span>bento</span></label><label class="theme-card ps-f1"><input type="radio" name="theme" id="theme-bingsu" value="bingsu"><span>bingsu</span></label><label class="theme-card ps-dl"><input type="radio" name="theme" id="theme-bliss" value="bliss"><span>bliss</span></label><label class="theme-card ps-bn"><input type="radio" name="theme" id="theme-blue_dolphin" value="blue_dolphin"><span>blue dolphin</span></label><label class="theme-card ps-dd"><input type="radio" name="theme" id="theme-blueberry_dark" value="blueberry_dark"><span>blueberry dark</span></label><label class="theme-card ps-fd"><input type="radio" name="theme" id="theme-blueberry_light" value="blueberry_light"><span>blueberry light</span></label><label class="theme-card ps-ep"><input type="radio" name="theme" id="theme-botanical" value="botanical"><span>botanical</span></label><label class="theme-card ps-cl"><input type="radio" name="theme" id="theme-bouquet" value="bouquet"><span>bouquet</span></label><label class="theme-card ps-fk"><input type="radio" name="theme" id="theme-breeze" value="breeze"><span>breeze</span></label><label class="theme-card ps-dk"><input type="radio" name="theme" id="theme-bushido" value="bushido"><span>bushido</span></label><label class="theme-card ps-f5"><input type="radio" name="theme" id="theme-cafe" value="cafe"><span>cafe</span></label><label class="theme-card ps-g1"><input type="radio" name="theme" id="theme-camping" value="camping"><span>camping</span></label><label class="theme-card ps-e4"><input type="radio" name="theme" id="theme-carbon" value="carbon"><span>carbon</span></label><label class="theme-card ps-d3"><input type="radio" name="theme" id="theme-catppuccin" value="catppuccin"><span>catppuccin</span></label><label class="theme-card ps-ch"><input type="radio" name="theme" id="theme-chaos_theory" value="chaos_theory"><span>chaos theory</span></label><label class="theme-card ps-g3"><input type="radio" name="theme" id="theme-cheesecake" value="cheesecake"><span>cheesecake</span></label><label class="theme-card ps-e7"><input type="radio" name="theme" id="theme-cherry_blossom" value="cherry_blossom"><span>cherry blossom</span></label><label class="theme-card ps-eh"><input type="radio" name="theme" id="theme-comfy" value="comfy"><span>comfy</span></label><label class="theme-card ps-ef"><input type="radio" name="theme" id="theme-copper" value="copper"><span>copper</span></label><label class="theme-card ps-g6"><input type="radio" name="theme" id="theme-creamsicle" value="creamsicle"><span>creamsicle</span></label><label class="theme-card ps-em"><input type="radio" name="theme" id="theme-cy_red" value="cy_red"><span>cy red</span></label><label class="theme-card ps-co"><input type="radio" name="theme" id="theme-cyberspace" value="cyberspace"><span>cyberspace</span></label><label class="theme-card ps-cd"><input type="radio" name="theme" id="theme-dark" value="dark"><span>dark</span></label><label class="theme-card ps-bz"><input type="radio" name="theme" id="theme-dark_magic_girl" value="dark_magic_girl"><span>dark magic girl</span></label><label class="theme-card ps-d6"><input type="radio" name="theme" id="theme-dark_note" value="dark_note"><span>dark note</span></label><label class="theme-card ps-g5"><input type="radio" name="theme" id="theme-darling" value="darling"><span>darling</span></label><label class="theme-card ps-bw"><input type="radio" name="theme" id="theme-deku" value="deku"><span>deku</span></label><label class="theme-card ps-g9"><input type="radio" name="theme" id="theme-desert_oasis" value="desert_oasis"><span>desert oasis</span></label><label class="theme-card ps-cx"><input type="radio" name="theme" id="theme-dev" value="dev"><span>dev</span></label><label class="theme-card ps-ek"><input type="radio" name="theme" id="theme-diner" value="diner"><span>diner</span></label><label class="theme-card ps-gi"><input type="radio" name="theme" id="theme-dino" value="dino"><span>dino</span></label><label class="theme-card ps-e6"><input type="radio" name="theme" id="theme-discord" value="discord"><span>discord</span></label><label class="theme-card ps-fc"><input type="radio" name="theme" id="theme-dmg" value="dmg"><span>dmg</span></label><label class="theme-card ps-fj"><input type="radio" name="theme" id="theme-dollar" value="dollar"><span>dollar</span></label><label class="theme-card ps-ce"><input type="radio" name="theme" id="theme-dots" value="dots"><span>dots</span></label><label class="theme-card ps-dq"><input type="radio" name="theme" id="theme-dracula" value="dracula"><span>dracula</span></label><label class="theme-card ps-cq"><input type="radio" name="theme" id="theme-drowning" value="drowning"><span>drowning</span></label><label class="theme-card ps-eo"><input type="radio" name="theme" id="theme-dualshot" value="dualshot"><span>dualshot</span></label><label class="theme-card ps-dr"><input type="radio" name="theme" id="theme-earthsong" value="earthsong"><span>earthsong</span></label><label class="theme-card ps-ci"><input type="radio" name="theme" id="theme-everblush" value="everblush"><span>everblush</span></label><label class="theme-card ps-bq"><input type="radio" name="theme" id="theme-evil_eye" value="evil_eye"><span>evil eye</span></label><label class="theme-card ps-bp"><input type="radio" name="theme" id="theme-ez_mode" value="ez_mode"><span>ez mode</span></label><label class="theme-card ps-c8"><input type="radio" name="theme" id="theme-fire" value="fire"><span>fire</span></label><label class="theme-card ps-eb"><input type="radio" name="theme" id="theme-fledgling" value="fledgling"><span>fledgling</span></label><label class="theme-card ps-f3"><input type="radio" name="theme" id="theme-fleuriste" value="fleuriste"><span>fleuriste</span></label><label class="theme-card ps-bl"><input type="radio" name="theme" id="theme-floret" value="floret"><span>floret</span></label><label class="theme-card ps-fh"><input type="radio" name="theme" id="theme-froyo" value="froyo"><span>froyo</span></label><label class="theme-card ps-et"><input type="radio" name="theme" id="theme-frozen_llama" value="frozen_llama"><span>frozen llama</span></label><label class="theme-card ps-f9"><input type="radio" name="theme" id="theme-fruit_chew" value="fruit_chew"><span>fruit chew</span></label><label class="theme-card ps-en"><input type="radio" name="theme" id="theme-fundamentals" value="fundamentals"><span>fundamentals</span></label><label class="theme-card ps-e0"><input type="radio" name="theme" id="theme-future_funk" value="future_funk"><span>future funk</span></label><label class="theme-card ps-dc"><input type="radio" name="theme" id="theme-github" value="github"><span>github</span></label><label class="theme-card ps-fn"><input type="radio" name="theme" id="theme-godspeed" value="godspeed"><span>godspeed</span></label><label class="theme-card ps-e3"><input type="radio" name="theme" id="theme-graen" value="graen"><span>graen</span></label><label class="theme-card ps-ea"><input type="radio" name="theme" id="theme-grand_prix" value="grand_prix"><span>grand prix</span></label><label class="theme-card ps-dv"><input type="radio" name="theme" id="theme-grape" value="grape"><span>grape</span></label><label class="theme-card ps-dp"><input type="radio" name="theme" id="theme-gruvbox_dark" value="gruvbox_dark"><span>gruvbox dark</span></label><label class="theme-card ps-g2"><input type="radio" name="theme" id="theme-gruvbox_light" value="gruvbox_light"><span>gruvbox light</span></label><label class="theme-card ps-bu"><input type="radio" name="theme" id="theme-hammerhead" value="hammerhead"><span>hammerhead</span></label><label class="theme-card ps-fa"><input type="radio" name="theme" id="theme-hanok" value="hanok"><span>hanok</span></label><label class="theme-card ps-ed"><input type="radio" name="theme" id="theme-hedge" value="hedge"><span>hedge</span></label><label class="theme-card ps-fu"><input type="radio" name="theme" id="theme-honey" value="honey"><span>honey</span></label><label class="theme-card ps-d0"><input type="radio" name="theme" id="theme-horizon" value="horizon"><span>horizon</span></label><label class="theme-card ps-bf"><input type="radio" name="theme" id="theme-husqy" value="husqy"><span>husqy</span></label><label class="theme-card ps-cj"><input type="radio" name="theme" id="theme-iceberg_dark" value="iceberg_dark"><span>iceberg dark</span></label><label class="theme-card ps-fl"><input type="radio" name="theme" id="theme-iceberg_light" value="iceberg_light"><span>iceberg light</span></label><label class="theme-card ps-c7"><input type="radio" name="theme" id="theme-incognito" value="incognito"><span>incognito</span></label><label class="theme-card ps-d8"><input type="radio" name="theme" id="theme-ishtar" value="ishtar"><span>ishtar</span></label><label class="theme-card ps-eu"><input type="radio" name="theme" id="theme-iv_clover" value="iv_clover"><span>iv clover</span></label><label class="theme-card ps-c2"><input type="radio" name="theme" id="theme-iv_spade" value="iv_spade"><span>iv spade</span></label><label class="theme-card ps-cu"><input type="radio" name="theme" id="theme-joker" value="joker"><span>joker</span></label><label class="theme-card ps-de"><input type="radio" name="theme" id="theme-laser" value="laser"><span>laser</span></label><label class="theme-card ps-ex"><input type="radio" name="theme" id="theme-lavender" value="lavender"><span>lavender</span></label><label class="theme-card ps-ew"><input type="radio" name="theme" id="theme-leather" value="leather"><span>leather</span></label><label class="theme-card ps-fo"><input type="radio" name="theme" id="theme-lil_dragon" value="lil_dragon"><span>lil dragon</span></label><label class="theme-card ps-gd"><input type="radio" name="theme" id="theme-lilac_mist" value="lilac_mist"><span>lilac mist</span></label><label class="theme-card ps-er"><input type="radio" name="theme" id="theme-lime" value="lime"><span>lime</span></label><label class="theme-card ps-df"><input type="radio" name="theme" id="theme-luna" value="luna"><span>luna</span></label><label class="theme-card ps-ez"><input type="radio" name="theme" id="theme-macroblank" value="macroblank"><span>macroblank</span></label><label class="theme-card ps-gk"><input type="radio" name="theme" id="theme-magic_girl" value="magic_girl"><span>magic girl</span></label><label class="theme-card ps-du"><input type="radio" name="theme" id="theme-mashu" value="mashu"><span>mashu</span></label><label class="theme-card ps-ei"><input type="radio" name="theme" id="theme-matcha_moccha" value="matcha_moccha"><span>matcha moccha</span></label><label class="theme-card ps-dn"><input type="radio" name="theme" id="theme-material" value="material"><span>material</span></label><label class="theme-card ps-be"><input type="radio" name="theme" id="theme-matrix" value="matrix"><span>matrix</span></label><label class="theme-card ps-br"><input type="radio" name="theme" id="theme-menthol" value="menthol"><span>menthol</span></label><label class="theme-card ps-dg"><input type="radio" name="theme" id="theme-metaverse" value="metaverse"><span>metaverse</span></label><label class="theme-card ps-ca"><input type="radio" name="theme" id="theme-metropolis" value="metropolis"><span>metropolis</span></label><label class="theme-card ps-g0"><input type="radio" name="theme" id="theme-mexican" value="mexican"><span>mexican</span></label><label class="theme-card ps-fv"><input type="radio" name="theme" id="theme-miami" value="miami"><span>miami</span></label><label class="theme-card ps-cn"><input type="radio" name="theme" id="theme-miami_nights" value="miami_nights"><span>miami nights</span></label><label class="theme-card ps-c0"><input type="radio" name="theme" id="theme-midnight" value="midnight"><span>midnight</span></label><label class="theme-card ps-gf"><input type="radio" name="theme" id="theme-milkshake" value="milkshake"><span>milkshake</span></label><label class="theme-card ps-bv"><input type="radio" name="theme" id="theme-mint" value="mint"><span>mint</span></label><label class="theme-card ps-ey"><input type="radio" name="theme" id="theme-mizu" value="mizu"><span>mizu</span></label><label class="theme-card ps-dy"><input type="radio" name="theme" id="theme-modern_dolch" value="modern_dolch"><span>modern dolch</span></label><label class="theme-card ps-fe"><input type="radio" name="theme" id="theme-modern_dolch_light" value="modern_dolch_light"><span>modern dolch light</span></label><label class="theme-card ps-gm"><input type="radio" name="theme" id="theme-modern_ink" value="modern_ink"><span>modern ink</span></label><label class="theme-card ps-do"><input type="radio" name="theme" id="theme-monokai" value="monokai"><span>monokai</span></label><label class="theme-card ps-cs"><input type="radio" name="theme" id="theme-moonlight" value="moonlight"><span>moonlight</span></label><label class="theme-card ps-c9"><input type="radio" name="theme" id="theme-mountain" value="mountain"><span>mountain</span></label><label class="theme-card ps-f8"><input type="radio" name="theme" id="theme-mr_sleeves" value="mr_sleeves"><span>mr sleeves</span></label><label class="theme-card ps-gj"><input type="radio" name="theme" id="theme-ms_cupcakes" value="ms_cupcakes"><span>ms cupcakes</span></label><label class="theme-card ps-ej"><input type="radio" name="theme" id="theme-muted" value="muted"><span>muted</span></label><label class="theme-card ps-cg"><input type="radio" name="theme" id="theme-nautilus" value="nautilus"><span>nautilus</span></label><label class="theme-card ps-db"><input type="radio" name="theme" id="theme-nebula" value="nebula"><span>nebula</span></label><label class="theme-card ps-da"><input type="radio" name="theme" id="theme-night_runner" value="night_runner"><span>night runner</span></label><label class="theme-card ps-dj"><input type="radio" name="theme" id="theme-nord" value="nord"><span>nord</span></label><label class="theme-card ps-fp"><input type="radio" name="theme" id="theme-nord_light" value="nord_light"><span>nord light</span></label><label class="theme-card ps-di"><input type="radio" name="theme" id="theme-norse" value="norse"><span>norse</span></label><label class="theme-card ps-e5"><input type="radio" name="theme" id="theme-oblivion" value="oblivion"><span>oblivion</span></label><label class="theme-card ps-fm"><input type="radio" name="theme" id="theme-olive" value="olive"><span>olive</span></label><label class="theme-card ps-cy"><input type="radio" name="theme" id="theme-olivia" value="olivia"><span>olivia</span></label><label class="theme-card ps-e2"><input type="radio" name="theme" id="theme-onedark" value="onedark"><span>onedark</span></label><label class="theme-card ps-f4"><input type="radio" name="theme" id="theme-our_theme" value="our_theme"><span>our theme</span></label><label class="theme-card ps-ee"><input type="radio" name="theme" id="theme-pale_nimbus" value="pale_nimbus"><span>pale nimbus</span></label><label class="theme-card ps-fr"><input type="radio" name="theme" id="theme-paper" value="paper"><span>paper</span></label><label class="theme-card ps-eq"><input type="radio" name="theme" id="theme-passion_fruit" value="passion_fruit"><span>passion fruit</span></label><label class="theme-card ps-ff"><input type="radio" name="theme" id="theme-pastel" value="pastel"><span>pastel</span></label><label class="theme-card ps-ds"><input type="radio" name="theme" id="theme-peach_blossom" value="peach_blossom"><span>peach blossom</span></label><label class="theme-card ps-fg"><input type="radio" name="theme" id="theme-peaches" value="peaches"><span>peaches</span></label><label class="theme-card ps-bk"><input type="radio" name="theme" id="theme-phantom" value="phantom"><span>phantom</span></label><label class="theme-card ps-fz"><input type="radio" name="theme" id="theme-pink_lemonade" value="pink_lemonade"><span>pink lemonade</span></label><label class="theme-card ps-cm"><input type="radio" name="theme" id="theme-pulse" value="pulse"><span>pulse</span></label><label class="theme-card ps-d4"><input type="radio" name="theme" id="theme-purpleish" value="purpleish"><span>purpleish</span></label><label class="theme-card ps-fy"><input type="radio" name="theme" id="theme-rainbow_trail" value="rainbow_trail"><span>rainbow trail</span></label><label class="theme-card ps-ct"><input type="radio" name="theme" id="theme-red_dragon" value="red_dragon"><span>red dragon</span></label><label class="theme-card ps-es"><input type="radio" name="theme" id="theme-red_samurai" value="red_samurai"><span>red samurai</span></label><label class="theme-card ps-e1"><input type="radio" name="theme" id="theme-repose_dark" value="repose_dark"><span>repose dark</span></label><label class="theme-card ps-fs"><input type="radio" name="theme" id="theme-repose_light" value="repose_light"><span>repose light</span></label><label class="theme-card ps-fb"><input type="radio" name="theme" id="theme-retro" value="retro"><span>retro</span></label><label class="theme-card ps-bx"><input type="radio" name="theme" id="theme-retrocast" value="retrocast"><span>retrocast</span></label><label class="theme-card ps-cd"><input type="radio" name="theme" id="theme-rgb" value="rgb"><span>rgb</span></label><label class="theme-card ps-d5"><input type="radio" name="theme" id="theme-rose_pine" value="rose_pine"><span>rose pine</span></label><label class="theme-card ps-gc"><input type="radio" name="theme" id="theme-rose_pine_dawn" value="rose_pine_dawn"><span>rose pine dawn</span></label><label class="theme-card ps-dt"><input type="radio" name="theme" id="theme-rose_pine_moon" value="rose_pine_moon"><span>rose pine moon</span></label><label class="theme-card ps-cv"><input type="radio" name="theme" id="theme-rudy" value="rudy"><span>rudy</span></label><label class="theme-card ps-by"><input type="radio" name="theme" id="theme-ryujinscales" value="ryujinscales"><span>ryujinscales</span></label><label class="theme-card ps-fi"><input type="radio" name="theme" id="theme-serika" value="serika"><span>serika</span></label><label class="theme-card ps-e8"><input type="radio" name="theme" id="theme-serika_dark" value="serika_dark"><span>serika dark</span></label><label class="theme-card ps-dh"><input type="radio" name="theme" id="theme-sewing_tin" value="sewing_tin"><span>sewing tin</span></label><label class="theme-card ps-gg"><input type="radio" name="theme" id="theme-sewing_tin_light" value="sewing_tin_light"><span>sewing tin light</span></label><label class="theme-card ps-bi"><input type="radio" name="theme" id="theme-shadow" value="shadow"><span>shadow</span></label><label class="theme-card ps-f6"><input type="radio" name="theme" id="theme-shoko" value="shoko"><span>shoko</span></label><label class="theme-card ps-ge"><input type="radio" name="theme" id="theme-slambook" value="slambook"><span>slambook</span></label><label class="theme-card ps-f2"><input type="radio" name="theme" id="theme-snes" value="snes"><span>snes</span></label><label class="theme-card ps-gb"><input type="radio" name="theme" id="theme-soaring_skies" value="soaring_skies"><span>soaring skies</span></label><label class="theme-card ps-bm"><input type="radio" name="theme" id="theme-solarized_dark" value="solarized_dark"><span>solarized dark</span></label><label class="theme-card ps-g4"><input type="radio" name="theme" id="theme-solarized_light" value="solarized_light"><span>solarized light</span></label><label class="theme-card ps-bj"><input type="radio" name="theme" id="theme-solarized_osaka" value="solarized_osaka"><span>solarized osaka</span></label><label class="theme-card ps-dw"><input type="radio" name="theme" id="theme-sonokai" value="sonokai"><span>sonokai</span></label><label class="theme-card ps-c5"><input type="radio" name="theme" id="theme-spiderman" value="spiderman"><span>spiderman</span></label><label class="theme-card ps-bs"><input type="radio" name="theme" id="theme-stealth" value="stealth"><span>stealth</span></label><label class="theme-card ps-fw"><input type="radio" name="theme" id="theme-strawberry" value="strawberry"><span>strawberry</span></label><label class="theme-card ps-cf"><input type="radio" name="theme" id="theme-striker" value="striker"><span>striker</span></label><label class="theme-card ps-ec"><input type="radio" name="theme" id="theme-suisei" value="suisei"><span>suisei</span></label><label class="theme-card ps-d9"><input type="radio" name="theme" id="theme-sunset" value="sunset"><span>sunset</span></label><label class="theme-card ps-dm"><input type="radio" name="theme" id="theme-superuser" value="superuser"><span>superuser</span></label><label class="theme-card ps-bo"><input type="radio" name="theme" id="theme-sweden" value="sweden"><span>sweden</span></label><label class="theme-card ps-g7"><input type="radio" name="theme" id="theme-tangerine" value="tangerine"><span>tangerine</span></label><label class="theme-card ps-f0"><input type="radio" name="theme" id="theme-taro" value="taro"><span>taro</span></label><label class="theme-card ps-cr"><input type="radio" name="theme" id="theme-terminal" value="terminal"><span>terminal</span></label><label class="theme-card ps-c4"><input type="radio" name="theme" id="theme-terra" value="terra"><span>terra</span></label><label class="theme-card ps-ft"><input type="radio" name="theme" id="theme-terrazzo" value="terrazzo"><span>terrazzo</span></label><label class="theme-card ps-c1"><input type="radio" name="theme" id="theme-terror_below" value="terror_below"><span>terror below</span></label><label class="theme-card ps-f7"><input type="radio" name="theme" id="theme-tiramisu" value="tiramisu"><span>tiramisu</span></label><label class="theme-card ps-eg"><input type="radio" name="theme" id="theme-trackday" value="trackday"><span>trackday</span></label><label class="theme-card ps-bh"><input type="radio" name="theme" id="theme-trance" value="trance"><span>trance</span></label><label class="theme-card ps-c6"><input type="radio" name="theme" id="theme-tron_orange" value="tron_orange"><span>tron orange</span></label><label class="theme-card ps-ev"><input type="radio" name="theme" id="theme-vaporwave" value="vaporwave"><span>vaporwave</span></label><label class="theme-card ps-cb"><input type="radio" name="theme" id="theme-vesper" value="vesper"><span>vesper</span></label><label class="theme-card ps-gl"><input type="radio" name="theme" id="theme-vesper_light" value="vesper_light"><span>vesper light</span></label><label class="theme-card ps-dx"><input type="radio" name="theme" id="theme-viridescent" value="viridescent"><span>viridescent</span></label><label class="theme-card ps-cp"><input type="radio" name="theme" id="theme-voc" value="voc"><span>voc</span></label><label class="theme-card ps-d2"><input type="radio" name="theme" id="theme-vscode" value="vscode"><span>vscode</span></label><label class="theme-card ps-d7"><input type="radio" name="theme" id="theme-watermelon" value="watermelon"><span>watermelon</span></label><label class="theme-card ps-d1"><input type="radio" name="theme" id="theme-wavez" value="wavez"><span>wavez</span></label><label class="theme-card ps-fx"><input type="radio" name="theme" id="theme-witch_girl" value="witch_girl"><span>witch girl</span></label></div></details><div class="js-only ps-14h" id="monkeytype-text-source">
+<h3>reading text color</h3>
+<p class="control-help">Auto chooses the more readable palette color. Choose sub or text to set it yourself; answer colors adapt.</p>
+<div aria-label="Monkeytype reading text color" class="segmented" role="group">
+<label><input checked="" name="text-source" type="radio" value="auto"/><span>auto</span></label>
+<label><input name="text-source" type="radio" value="sub"/><span>sub</span></label>
+<label><input name="text-source" type="radio" value="text"/><span>text</span></label>
+</div>
+<p aria-live="polite" class="control-help ps-14i" id="monkeytype-text-status" role="status"></p>
+</div></div><aside class="theme-editor js-only" aria-label="Customize theme colors"><div class="color-editor-heading"><h3>colors</h3><button type="button" id="reset-theme-colors" aria-label="Reset this theme">reset</button></div><span class="sr-only" id="color-format-help">Choose a swatch or enter hex. Transparent borders accept #RRGGBBAA. Reset restores the theme color.</span><span class="sr-only" id="color-edit-status" role="status" aria-live="polite"></span><div class="main-colors"><div class="color-row" data-color-row="bg">
+<label for="color-bg">background</label>
+<div class="color-inputs"><input type="color" id="swatch-bg" aria-label="background swatch" data-color-swatch="bg">
+<input type="text" id="color-bg" data-color-hex="bg" aria-label="background hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="bg" aria-label="Reset background" title="Reset background">↺</button></div></div><div class="color-row" data-color-row="text">
+<label for="color-text">reading text</label>
+<div class="color-inputs"><input type="color" id="swatch-text" aria-label="reading text swatch" data-color-swatch="text">
+<input type="text" id="color-text" data-color-hex="text" aria-label="reading text hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="text" aria-label="Reset reading text" title="Reset reading text">↺</button></div></div><div class="color-row" data-color-row="muted">
+<label for="color-muted">secondary text</label>
+<div class="color-inputs"><input type="color" id="swatch-muted" aria-label="secondary text swatch" data-color-swatch="muted">
+<input type="text" id="color-muted" data-color-hex="muted" aria-label="secondary text hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="muted" aria-label="Reset secondary text" title="Reset secondary text">↺</button></div></div><div class="color-row" data-color-row="accent">
+<label for="color-accent">interface accent</label>
+<div class="color-inputs"><input type="color" id="swatch-accent" aria-label="interface accent swatch" data-color-swatch="accent">
+<input type="text" id="color-accent" data-color-hex="accent" aria-label="interface accent hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="accent" aria-label="Reset interface accent" title="Reset interface accent">↺</button></div></div><div class="color-row" data-color-row="correct">
+<label for="color-correct">correct</label>
+<div class="color-inputs"><input type="color" id="swatch-correct" aria-label="correct swatch" data-color-swatch="correct">
+<input type="text" id="color-correct" data-color-hex="correct" aria-label="correct hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="correct" aria-label="Reset correct" title="Reset correct">↺</button></div></div><div class="color-row" data-color-row="wrong">
+<label for="color-wrong">wrong</label>
+<div class="color-inputs"><input type="color" id="swatch-wrong" aria-label="wrong swatch" data-color-swatch="wrong">
+<input type="text" id="color-wrong" data-color-hex="wrong" aria-label="wrong hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="wrong" aria-label="Reset wrong" title="Reset wrong">↺</button></div></div></div><details class="advanced-colors"><summary>more colors</summary><div class="advanced-color-grid"><div class="color-row" data-color-row="raised">
+<label for="color-raised">buttons &amp; controls</label>
+<div class="color-inputs"><input type="color" id="swatch-raised" aria-label="buttons &amp; controls swatch" data-color-swatch="raised">
+<input type="text" id="color-raised" data-color-hex="raised" aria-label="buttons &amp; controls hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="raised" aria-label="Reset buttons &amp; controls" title="Reset buttons &amp; controls">↺</button></div></div><div class="color-row" data-color-row="correct-ink">
+<label for="color-correct-ink">correct text &amp; numbers</label>
+<div class="color-inputs"><input type="color" id="swatch-correct-ink" aria-label="correct text &amp; numbers swatch" data-color-swatch="correct-ink">
+<input type="text" id="color-correct-ink" data-color-hex="correct-ink" aria-label="correct text &amp; numbers hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="correct-ink" aria-label="Reset correct text &amp; numbers" title="Reset correct text &amp; numbers">↺</button></div></div><div class="color-row" data-color-row="edge">
+<label for="color-edge">paper outline</label>
+<div class="color-inputs"><input type="color" id="swatch-edge" aria-label="paper outline swatch" data-color-swatch="edge">
+<input type="text" id="color-edge" data-color-hex="edge" aria-label="paper outline hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge" aria-label="Reset paper outline" title="Reset paper outline">↺</button></div></div><div class="color-row" data-color-row="edge-soft">
+<label for="color-edge-soft">soft dividers</label>
+<div class="color-inputs"><input type="color" id="swatch-edge-soft" aria-label="soft dividers swatch" data-color-swatch="edge-soft">
+<input type="text" id="color-edge-soft" data-color-hex="edge-soft" aria-label="soft dividers hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge-soft" aria-label="Reset soft dividers" title="Reset soft dividers">↺</button></div><label class="color-opacity">opacity<input type="range" min="0" max="100" step="0.1" data-color-alpha="edge-soft" aria-label="soft dividers opacity"><output></output></label></div><div class="color-row" data-color-row="edge-strong">
+<label for="color-edge-strong">strong borders</label>
+<div class="color-inputs"><input type="color" id="swatch-edge-strong" aria-label="strong borders swatch" data-color-swatch="edge-strong">
+<input type="text" id="color-edge-strong" data-color-hex="edge-strong" aria-label="strong borders hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge-strong" aria-label="Reset strong borders" title="Reset strong borders">↺</button></div><label class="color-opacity">opacity<input type="range" min="0" max="100" step="0.1" data-color-alpha="edge-strong" aria-label="strong borders opacity"><output></output></label></div><div class="color-row" data-color-row="logo-secondary">
+<label for="color-logo-secondary">wordmark · JLPT</label>
+<div class="color-inputs"><input type="color" id="swatch-logo-secondary" aria-label="wordmark · JLPT swatch" data-color-swatch="logo-secondary">
+<input type="text" id="color-logo-secondary" data-color-hex="logo-secondary" aria-label="wordmark · JLPT hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="logo-secondary" aria-label="Reset wordmark · JLPT" title="Reset wordmark · JLPT">↺</button></div></div></div><div class="fill-opacity-controls"><h4>fill opacity</h4><p>Applies to correct and wrong answers.</p><div class="fill-opacity-row"><label for="opacity-cell-fill">cell fill<output id="opacity-cell-fill-output">11%</output></label><div><input id="opacity-cell-fill" type="range" min="0" max="100" step="1" value="11" data-fill-opacity="cell-fill" aria-label="cell fill opacity"><button type="button" data-fill-reset="cell-fill" aria-label="Reset cell fill opacity" title="Reset cell fill opacity">↺</button></div></div><div class="fill-opacity-row"><label for="opacity-fill">fill style<output id="opacity-fill-output">30%</output></label><div><input id="opacity-fill" type="range" min="0" max="100" step="1" value="30" data-fill-opacity="fill" aria-label="fill style opacity"><button type="button" data-fill-reset="fill" aria-label="Reset fill style opacity" title="Reset fill style opacity">↺</button></div></div></div></details></aside></div></section><section data-settings="browser"><div class="setting-row js-only"><div><h3>remember this browser</h3><p id="save-status">Saving is on by default. No account required.</p></div><label class="switch"><input id="remember" type="checkbox" checked>save preferences, answers and position</label></div><div class="button-row browser-actions js-only"><button id="reset-preferences" type="button">reset preferences</button><button id="forget" type="button">forget saved data</button></div><div class="developer-only developer-settings"><h3>developer mode</h3><p>Principal differences and editorial cases are visible. This local switch is not authentication.</p><button id="disable-dev" type="button">hide developer tools</button></div><div class="settings-about"><button type="button" id="developer-unlock" class="js-only" title="astraJLPT build information">astraJLPT · 2020–2026 collection</button><span id="developer-hint" role="status"></span></div></section></div></details></header><main id="content" class="review-page"><div class="review-content"><a href="../levels/N2.html">← N2 papers</a><h1>N2 · July 2015</h1><p>Uncertainty index: <strong>1030</strong> · 10 differences · 4 unresolved · 11 provisional fixes</p><p>Evidence base 1000 + source concerns 30 = 1030. Concerns are uncapped; browsing order uses evidence tier before concern points.</p><p>This is an editorial evidence assessment, not a probability, an error rate or a practice score.</p><details><summary>Assessment evidence and original source scores</summary><pre>{
+  &quot;unit&quot;: &quot;N2_07_2015&quot;,
+  &quot;sample&quot;: false,
+  &quot;year&quot;: 2015,
+  &quot;month&quot;: 7,
+  &quot;evidence_base&quot;: 1000,
+  &quot;evidence_tier&quot;: 3,
+  &quot;concern_points&quot;: 30,
+  &quot;index&quot;: 1030,
+  &quot;concern_counts&quot;: {
+    &quot;metadata_flags&quot;: 0,
+    &quot;missing_units&quot;: 1,
+    &quot;major_defects&quot;: 1,
+    &quot;minor_defects&quot;: 1,
+    &quot;uncertain_fields&quot;: 13
+  },
+  &quot;principal_history&quot;: {
+    &quot;unit&quot;: &quot;N2_07_2015&quot;,
+    &quot;level&quot;: &quot;N2&quot;,
+    &quot;year&quot;: 2015,
+    &quot;month&quot;: 7,
+    &quot;principal_path&quot;: &quot;src/日语JLPT真题1992～2025.12（及时转存，避免丢失）/渠道一/日语N2真题/2010年-2020年/2015年7月/【2】2015年07月N2 真题.pdf&quot;,
+    &quot;principal_sha256&quot;: &quot;288a11fa37794d38faf8c190807cde1f3a284bc4e227134c1278933d72ba6c03&quot;,
+    &quot;initial_tier&quot;: 2,
+    &quot;written_physical_pages&quot;: &quot;2-15,18&quot;,
+    &quot;review_status&quot;: &quot;complete_written_review&quot;,
+    &quot;provenance_status&quot;: &quot;unverified&quot;,
+    &quot;provenance_points&quot;: 100,
+    &quot;metadata_flags&quot;: 0,
+    &quot;missing_units&quot;: 1,
+    &quot;major_defects&quot;: 1,
+    &quot;minor_defects&quot;: 1,
+    &quot;uncertain_fields&quot;: 13,
+    &quot;uncertainty_index&quot;: 130,
+    &quot;score_evidence&quot;: [
+      {
+        &quot;id&quot;: &quot;N2_07_2015-P-001&quot;,
+        &quot;kind&quot;: &quot;missing_units&quot;,
+        &quot;item_id&quot;: &quot;vocab-b002&quot;,
+        &quot;field&quot;: &quot;&quot;,
+        &quot;locator&quot;: &quot;Physical5 between Problem8 andQ45&quot;,
+        &quot;evidence&quot;: &quot;Complete worked example omitted, but preserved by same-sitting fuller layouts. Count one block; missing category dominates its residual original-identity uncertainty.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N2_07_2015-P-002&quot;,
+        &quot;kind&quot;: &quot;major_defects&quot;,
+        &quot;item_id&quot;: &quot;vocab-s03&quot;,
+        &quot;field&quot;: &quot;/heading&quot;,
+        &quot;locator&quot;: &quot;Physical2 Problem3 instruction&quot;,
+        &quot;evidence&quot;: &quot;入るのに最も近い misstates the word-completion task; fuller layout and structured question set support 入れるのに最もよい. Count the task-selection condition once.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N2_07_2015-P-003&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-b001&quot;,
+        &quot;field&quot;: &quot;/content/html&quot;,
+        &quot;locator&quot;: &quot;Physical7 short passage1 citation ending&quot;,
+        &quot;evidence&quot;: &quot;The opening parenthesis has no closing counterpart. Alternative layout preserves the complete citation; one punctuation defect.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N2_07_2015-P-004&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;vocab-q008&quot;,
+        &quot;field&quot;: &quot;/stem/html&quot;,
+        &quot;locator&quot;: &quot;Q8 surname&quot;,
+        &quot;evidence&quot;: &quot;The original exam is needed to establish the historical presence and placement of this reading aid. The secondary principal visibly prints an inline parenthetical reading; it does not prove original ruby placement.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N2_07_2015-P-005&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;vocab-q022&quot;,
+        &quot;field&quot;: &quot;/stem&quot;,
+        &quot;locator&quot;: &quot;Q22 verb&quot;,
+        &quot;evidence&quot;: &quot;The original exam is needed to establish the historical presence and placement of this reading aid. The secondary principal visibly prints an inline parenthetical reading; it does not prove original ruby placement.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N2_07_2015-P-006&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;vocab-q034&quot;,
+        &quot;field&quot;: &quot;/stem&quot;,
+        &quot;locator&quot;: &quot;Q34 verb&quot;,
+        &quot;evidence&quot;: &quot;The original exam is needed to establish the historical presence and placement of this reading aid. The secondary principal visibly prints an inline parenthetical reading; it does not prove original ruby placement.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N2_07_2015-P-007&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;vocab-q035&quot;,
+        &quot;field&quot;: &quot;/stem&quot;,
+        &quot;locator&quot;: &quot;Q35 noun&quot;,
+        &quot;evidence&quot;: &quot;The original exam is needed to establish the historical presence and placement of this reading aid. The secondary principal visibly prints an inline parenthetical reading; it does not prove original ruby placement.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N2_07_2015-P-008&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;reading-b003&quot;,
+        &quot;field&quot;: &quot;/content/html&quot;,
+        &quot;locator&quot;: &quot;Instrument passage referent and glossary&quot;,
+        &quot;evidence&quot;: &quot;The exact historical combination of the referent underline and glossary reading is unverified. Each selected feature has direct same-sitting visual support; the answer is unaffected.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N2_07_2015-P-009&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;reading-q003&quot;,
+        &quot;field&quot;: &quot;/stem&quot;,
+        &quot;locator&quot;: &quot;Q57 referent&quot;,
+        &quot;evidence&quot;: &quot;The original Q57 page would settle the underline. The visible alternate supports the current provisional reconstruction.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N2_07_2015-P-010&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;reading-b006&quot;,
+        &quot;field&quot;: &quot;/content/html&quot;,
+        &quot;locator&quot;: &quot;Q60 passage reference1, enlarged&quot;,
+        &quot;evidence&quot;: &quot;The original page would establish the exact word endpoint. The external circled reference retains the same reference association as both layouts.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N2_07_2015-P-011&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;reading-b010&quot;,
+        &quot;field&quot;: &quot;/content/html&quot;,
+        &quot;locator&quot;: &quot;Shared A/B glossary note4&quot;,
+        &quot;evidence&quot;: &quot;The original exam is needed to establish the historical presence and placement of this reading aid. The secondary principal visibly prints an inline parenthetical reading; it does not prove original ruby placement.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N2_07_2015-P-012&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;reading-b011&quot;,
+        &quot;field&quot;: &quot;/content/html&quot;,
+        &quot;locator&quot;: &quot;Long passage paragraph1 and notes2/5, enlarged&quot;,
+        &quot;evidence&quot;: &quot;The exact historical kana size and glossary annotations require the original passage. The printed principal and distinct alternative favor the present reconstruction, without authenticating it.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N2_07_2015-P-013&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;reading-b012&quot;,
+        &quot;field&quot;: &quot;/content/html&quot;,
+        &quot;locator&quot;: &quot;Notice second daily slot&quot;,
+        &quot;evidence&quot;: &quot;No authenticated original notice establishes whether the end time or duration was originally different. The four-hour arithmetic and directly printed19:00 alternative favor this repair.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N2_07_2015-P-014&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;reading-q006&quot;,
+        &quot;field&quot;: &quot;/stem/html&quot;,
+        &quot;locator&quot;: &quot;Q60 question target, enlarged&quot;,
+        &quot;evidence&quot;: &quot;The original page would establish the historical question underline endpoint; answer4 is unaffected.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N2_07_2015-P-015&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;reading-b004&quot;,
+        &quot;field&quot;: &quot;/content/html&quot;,
+        &quot;locator&quot;: &quot;Parenting glossary note&quot;,
+        &quot;evidence&quot;: &quot;The original exam is needed to establish the historical presence and placement of this reading aid. The secondary principal visibly prints an inline parenthetical reading; it does not prove original ruby placement.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N2_07_2015-P-016&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;reading-b008&quot;,
+        &quot;field&quot;: &quot;/content/html&quot;,
+        &quot;locator&quot;: &quot;Review/study glossary notes1/4/5&quot;,
+        &quot;evidence&quot;: &quot;The original exam is needed to establish the historical presence and placement of this reading aid. The secondary principal visibly prints an inline parenthetical reading; it does not prove original ruby placement.&quot;
+      }
+    ],
+    &quot;method_version&quot;: 1,
+    &quot;reviewed_at&quot;: &quot;2026-10-06&quot;,
+    &quot;assessment_note&quot;: &quot;Complete written questions2-15 and written key portion18 visually reviewed; cover1 confirms sitting and was read, listening16-17 excluded. Cleanest complete representative of the shared0/17 body. Cover distributor warning that this is not a perfect final version does not prove recollection/retyping; no issuer custody is established. Score100+10+5+2+13=130. One event per item/field: note/underline combination and long-passage kana/aids each count once; notice time and same-day wording count once. Imported defects already correct in principal add no points. Circled-reference linework, numeral width, ordinary reflow and missing decorative furniture add none. Public count15 is not the score formula.&quot;
+  },
+  &quot;evidence&quot;: []
+}</pre></details><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span><ul></ul><div class="review-controls"><label>Show <select id="review-filter"><option value="all">All records</option><option value="difference">Principal differences</option><option value="unresolved">Unresolved cases</option><option value="provisional_fix">Provisional fixes</option></select></label><label>Find <input id="review-search" type="search" placeholder="Item, wording, evidence…"></label></div><p id="review-count" class="control-help" role="status"></p><section class="review-group" id="review-vocab-q008" data-kinds="provisional_fix"><div class="review-group-heading"><h2>vocab-q008</h2><a href="../papers/N2_07_2015.html#vocab-q008">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">8. 森（もり）さんは塾の<u>こうし</u>をしています。<ol><li>構師</li><li>構士</li><li>講師</li><li>講士</li></ol><p>Editorial key: 3</p></div></details><div class="review-record" id="unresolved_cases-N2_07_2015-vocab-q008-reading-aid"><div class="review-label">Provisional fix · /stem/html · medium</div><div class="comparison"><div><h4>Before</h4><pre>8. 森さんは塾の&lt;u&gt;こうし&lt;/u&gt;をしています。</pre></div><div><h4>Editorial</h4><pre>8. 森<mark class="diff-new">（もり）</mark>さんは塾の&lt;u&gt;こうし&lt;/u&gt;をしています。</pre></div></div><p>Prefer the principal’s selective, directly printed reading aid, away from the tested answer span. Do not add the book copy’s pervasive teaching annotations.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>The original exam is needed to establish the historical presence and placement of this reading aid. The secondary principal visibly prints an inline parenthetical reading; it does not prove original ruby placement.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Q8 asks for the kanji of こうし; the disputed aid annotates the surname 森.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=2): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q8 surname<p>森(もり)さん</p></li><li><span class="principal-repository-source">Principal source (page=2): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q8 surname<p>森(もり)さん</p></li><li><span class="principal-repository-source">Principal source (page=2): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q8 surname<p>森さん without an aid</p></li></ul><details><summary>Full published record · unresolved_cases-N2_07_2015-vocab-q008-reading-aid</summary><pre>{
+  &quot;case_id&quot;: &quot;N2_07_2015-vocab-q008-reading-aid&quot;,
+  &quot;unit&quot;: &quot;N2_07_2015&quot;,
+  &quot;item_id&quot;: &quot;vocab-q008&quot;,
+  &quot;field&quot;: &quot;/stem/html&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;8. 森（もり）さんは塾の&lt;u&gt;こうし&lt;/u&gt;をしています。&quot;,
+  &quot;context&quot;: &quot;Q8 asks for the kanji of こうし; the disputed aid annotates the surname 森.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;森さん&quot;,
+      &quot;assessment&quot;: &quot;The fuller 14-page question layout prints this span without a reading; absence may preserve the original.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;【2】2015年07月N2 真题 (18-page question/key copy)&quot;,
+      &quot;sha256&quot;: &quot;288a11fa37794d38faf8c190807cde1f3a284bc4e227134c1278933d72ba6c03&quot;,
+      &quot;locator&quot;: &quot;Q8 surname&quot;,
+      &quot;reading&quot;: &quot;森(もり)さん&quot;,
+      &quot;lineage&quot;: &quot;Unapproved secondary witness; acquisition is unestablished. Related copies are not independent votes.&quot;,
+      &quot;physical_pages&quot;: [
+        2
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;N2-2015-07-真题 (17-page question copy)&quot;,
+      &quot;sha256&quot;: &quot;b51349fca296b5fd72224556b17be8baca3285fa36e291f445f52e338f1bea45&quot;,
+      &quot;locator&quot;: &quot;Q8 surname&quot;,
+      &quot;reading&quot;: &quot;森(もり)さん&quot;,
+      &quot;lineage&quot;: &quot;Unapproved secondary witness; acquisition is unestablished. Related copies are not independent votes.&quot;,
+      &quot;physical_pages&quot;: [
+        2
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;Đề N2 7-2015 (14-page question copy)&quot;,
+      &quot;sha256&quot;: &quot;c1d83e0f6f04b987519e87b709b064152ba75093c3016f883cdc77d2001cfb18&quot;,
+      &quot;locator&quot;: &quot;Q8 surname&quot;,
+      &quot;reading&quot;: &quot;森さん without an aid&quot;,
+      &quot;lineage&quot;: &quot;Unapproved secondary witness; acquisition is unestablished. Related copies are not independent votes.&quot;,
+      &quot;physical_pages&quot;: [
+        2
+      ]
+    }
+  ],
+  &quot;rationale&quot;: &quot;Prefer the principal’s selective, directly printed reading aid, away from the tested answer span. Do not add the book copy’s pervasive teaching annotations.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Compared 【2】2015年07月N2 真题 (18-page question/key copy), physical pages [2], Q8 surname: 森(もり)さん&quot;,
+    &quot;Compared N2-2015-07-真题 (17-page question copy), physical pages [2], Q8 surname: 森(もり)さん&quot;,
+    &quot;Compared Đề N2 7-2015 (14-page question copy), physical pages [2], Q8 surname: 森さん without an aid&quot;,
+    &quot;5 November 2026: Public snapshot rebound to the earlier, verified current field. Only the historical presentation edit is replayed; this snapshot repair does not change the original witness or its confidence.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;The original exam is needed to establish the historical presence and placement of this reading aid. The secondary principal visibly prints an inline parenthetical reading; it does not prove original ruby placement.&quot;,
+  &quot;before&quot;: &quot;8. 森さんは塾の&lt;u&gt;こうし&lt;/u&gt;をしています。&quot;
+}</pre></details></div></section><section class="review-group" id="review-vocab-s03" data-kinds="difference"><div class="review-group-heading"><h2>vocab-s03</h2><a href="../papers/N2_07_2015.html#vocab-s03">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">問題3（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。</div></details><div class="review-record" id="principal_differences-N2_07_2015-PD-001"><div class="review-label">Principal difference · /heading · high</div><div class="comparison"><div><h4>Principal</h4><pre>（ ）に入るのに最も<mark class="diff-old">近</mark>いものを</pre></div><div><h4>Editorial</h4><pre>（ ）に入<mark class="diff-new">れ</mark>るのに最も<mark class="diff-new">よ</mark>いものを</pre></div></div><p>The principal incorrectly asks for the nearest answer in a word-completion task. The fuller layout and structured question set preserve 最もよい; this is an inherited supported correction.</p><span class="principal-repository-source">Principal source (page=2): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Problem3 instruction</span><details><summary>Full published record · principal_differences-N2_07_2015-PD-001</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N2_07_2015-PD-001&quot;,
+  &quot;unit&quot;: &quot;N2_07_2015&quot;,
+  &quot;item_id&quot;: &quot;vocab-s03&quot;,
+  &quot;field&quot;: &quot;/heading&quot;,
+  &quot;current_value&quot;: &quot;問題3（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;【2】2015年07月N2 真题 (18-page question/key copy)&quot;,
+    &quot;sha256&quot;: &quot;288a11fa37794d38faf8c190807cde1f3a284bc4e227134c1278933d72ba6c03&quot;,
+    &quot;physical_pages&quot;: [
+      2
+    ],
+    &quot;locator&quot;: &quot;Problem3 instruction&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;（ ）に入るのに最も近いものを&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;（ ）に入れるのに最もよいものを&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;The principal incorrectly asks for the nearest answer in a word-completion task. The fuller layout and structured question set preserve 最もよい; this is an inherited supported correction.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-vocab-q022" data-kinds="provisional_fix"><div class="review-group-heading"><h2>vocab-q022</h2><a href="../papers/N2_07_2015.html#vocab-q022">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">22. 一つの考え方に縛（しば）られず、（ ） 思考を持つことで、新しい発想が生まれるだろう。<ol><li>快適な</li><li>柔軟な</li><li>円満な</li><li>順調な</li></ol><p>Editorial key: 2</p></div></details><div class="review-record" id="unresolved_cases-N2_07_2015-vocab-q022-reading-aid"><div class="review-label">Provisional fix · /stem · medium</div><div class="comparison"><div><h4>Before</h4><pre>22. 一つの考え方に縛られず、<mark class="diff-old">(</mark> <mark class="diff-old">)</mark> 思考を持つことで、新しい発想が生まれるだろう。</pre></div><div><h4>Editorial</h4><pre>22. 一つの考え方に縛<mark class="diff-new">（しば）</mark>られず、<mark class="diff-new">（</mark> <mark class="diff-new">）</mark> 思考を持つことで、新しい発想が生まれるだろう。</pre></div></div><p>Prefer the principal’s selective, directly printed reading aid, away from the tested answer span. Do not add the book copy’s pervasive teaching annotations.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>The original exam is needed to establish the historical presence and placement of this reading aid. The secondary principal visibly prints an inline parenthetical reading; it does not prove original ruby placement.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Q22 asks for the adjective describing flexible thought; the aid annotates 縛 in the stem.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=3): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q22 verb<p>縛(しば)られず</p></li><li><span class="principal-repository-source">Principal source (page=3): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q22 verb<p>縛(しば)られず</p></li><li><span class="principal-repository-source">Principal source (page=3): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q22 verb<p>縛られず without an aid</p></li></ul><details><summary>Full published record · unresolved_cases-N2_07_2015-vocab-q022-reading-aid</summary><pre>{
+  &quot;case_id&quot;: &quot;N2_07_2015-vocab-q022-reading-aid&quot;,
+  &quot;unit&quot;: &quot;N2_07_2015&quot;,
+  &quot;item_id&quot;: &quot;vocab-q022&quot;,
+  &quot;field&quot;: &quot;/stem&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;22. 一つの考え方に縛（しば）られず、（ ） 思考を持つことで、新しい発想が生まれるだろう。&quot;,
+  &quot;context&quot;: &quot;Q22 asks for the adjective describing flexible thought; the aid annotates 縛 in the stem.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;縛られず&quot;,
+      &quot;assessment&quot;: &quot;The fuller 14-page question layout prints this span without a reading; absence may preserve the original.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;【2】2015年07月N2 真题 (18-page question/key copy)&quot;,
+      &quot;sha256&quot;: &quot;288a11fa37794d38faf8c190807cde1f3a284bc4e227134c1278933d72ba6c03&quot;,
+      &quot;locator&quot;: &quot;Q22 verb&quot;,
+      &quot;reading&quot;: &quot;縛(しば)られず&quot;,
+      &quot;lineage&quot;: &quot;Unapproved secondary witness; acquisition is unestablished. Related copies are not independent votes.&quot;,
+      &quot;physical_pages&quot;: [
+        3
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;N2-2015-07-真题 (17-page question copy)&quot;,
+      &quot;sha256&quot;: &quot;b51349fca296b5fd72224556b17be8baca3285fa36e291f445f52e338f1bea45&quot;,
+      &quot;locator&quot;: &quot;Q22 verb&quot;,
+      &quot;reading&quot;: &quot;縛(しば)られず&quot;,
+      &quot;lineage&quot;: &quot;Unapproved secondary witness; acquisition is unestablished. Related copies are not independent votes.&quot;,
+      &quot;physical_pages&quot;: [
+        3
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;Đề N2 7-2015 (14-page question copy)&quot;,
+      &quot;sha256&quot;: &quot;c1d83e0f6f04b987519e87b709b064152ba75093c3016f883cdc77d2001cfb18&quot;,
+      &quot;locator&quot;: &quot;Q22 verb&quot;,
+      &quot;reading&quot;: &quot;縛られず without an aid&quot;,
+      &quot;lineage&quot;: &quot;Unapproved secondary witness; acquisition is unestablished. Related copies are not independent votes.&quot;,
+      &quot;physical_pages&quot;: [
+        3
+      ]
+    }
+  ],
+  &quot;rationale&quot;: &quot;Prefer the principal’s selective, directly printed reading aid, away from the tested answer span. Do not add the book copy’s pervasive teaching annotations.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Compared 【2】2015年07月N2 真题 (18-page question/key copy), physical pages [3], Q22 verb: 縛(しば)られず&quot;,
+    &quot;Compared N2-2015-07-真题 (17-page question copy), physical pages [3], Q22 verb: 縛(しば)られず&quot;,
+    &quot;Compared Đề N2 7-2015 (14-page question copy), physical pages [3], Q22 verb: 縛られず without an aid&quot;,
+    &quot;5 November 2026: Public snapshot rebound to the earlier, verified current field. Only the historical presentation edit is replayed; this snapshot repair does not change the original witness or its confidence.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;The original exam is needed to establish the historical presence and placement of this reading aid. The secondary principal visibly prints an inline parenthetical reading; it does not prove original ruby placement.&quot;,
+  &quot;before&quot;: &quot;22. 一つの考え方に縛られず、( ) 思考を持つことで、新しい発想が生まれるだろう。&quot;
+}</pre></details></div></section><section class="review-group" id="review-vocab-q034" data-kinds="provisional_fix"><div class="review-group-heading"><h2>vocab-q034</h2><a href="../papers/N2_07_2015.html#vocab-q034">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">34. この曲は、私には難しすぎて （ ）弾（ひ）けそうにない。<ol><li>だんだん</li><li>今にも</li><li>必ず</li><li>とても</li></ol><p>Editorial key: 4</p></div></details><div class="review-record" id="unresolved_cases-N2_07_2015-vocab-q034-reading-aid"><div class="review-label">Provisional fix · /stem · medium</div><div class="comparison"><div><h4>Before</h4><pre>34. この曲は、私には難しすぎて <mark class="diff-old">(</mark> <mark class="diff-old">)</mark>弾けそうにない。</pre></div><div><h4>Editorial</h4><pre>34. この曲は、私には難しすぎて <mark class="diff-new">（</mark> <mark class="diff-new">）</mark>弾<mark class="diff-new">（ひ）</mark>けそうにない。</pre></div></div><p>Prefer the principal’s selective, directly printed reading aid, away from the tested answer span. Do not add the book copy’s pervasive teaching annotations.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>The original exam is needed to establish the historical presence and placement of this reading aid. The secondary principal visibly prints an inline parenthetical reading; it does not prove original ruby placement.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Q34 asks whether a difficult piece can be played; the aid annotates 弾.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=4): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q34 verb<p>弾(ひ)けそう</p></li><li><span class="principal-repository-source">Principal source (page=4): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q34 verb<p>弾(ひ)けそう</p></li><li><span class="principal-repository-source">Principal source (page=4): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q34 verb<p>弾けそう without an aid</p></li></ul><details><summary>Full published record · unresolved_cases-N2_07_2015-vocab-q034-reading-aid</summary><pre>{
+  &quot;case_id&quot;: &quot;N2_07_2015-vocab-q034-reading-aid&quot;,
+  &quot;unit&quot;: &quot;N2_07_2015&quot;,
+  &quot;item_id&quot;: &quot;vocab-q034&quot;,
+  &quot;field&quot;: &quot;/stem&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;34. この曲は、私には難しすぎて （ ）弾（ひ）けそうにない。&quot;,
+  &quot;context&quot;: &quot;Q34 asks whether a difficult piece can be played; the aid annotates 弾.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;弾けそう&quot;,
+      &quot;assessment&quot;: &quot;The fuller 14-page question layout prints this span without a reading; absence may preserve the original.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;【2】2015年07月N2 真题 (18-page question/key copy)&quot;,
+      &quot;sha256&quot;: &quot;288a11fa37794d38faf8c190807cde1f3a284bc4e227134c1278933d72ba6c03&quot;,
+      &quot;locator&quot;: &quot;Q34 verb&quot;,
+      &quot;reading&quot;: &quot;弾(ひ)けそう&quot;,
+      &quot;lineage&quot;: &quot;Unapproved secondary witness; acquisition is unestablished. Related copies are not independent votes.&quot;,
+      &quot;physical_pages&quot;: [
+        4
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;N2-2015-07-真题 (17-page question copy)&quot;,
+      &quot;sha256&quot;: &quot;b51349fca296b5fd72224556b17be8baca3285fa36e291f445f52e338f1bea45&quot;,
+      &quot;locator&quot;: &quot;Q34 verb&quot;,
+      &quot;reading&quot;: &quot;弾(ひ)けそう&quot;,
+      &quot;lineage&quot;: &quot;Unapproved secondary witness; acquisition is unestablished. Related copies are not independent votes.&quot;,
+      &quot;physical_pages&quot;: [
+        4
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;Đề N2 7-2015 (14-page question copy)&quot;,
+      &quot;sha256&quot;: &quot;c1d83e0f6f04b987519e87b709b064152ba75093c3016f883cdc77d2001cfb18&quot;,
+      &quot;locator&quot;: &quot;Q34 verb&quot;,
+      &quot;reading&quot;: &quot;弾けそう without an aid&quot;,
+      &quot;lineage&quot;: &quot;Unapproved secondary witness; acquisition is unestablished. Related copies are not independent votes.&quot;,
+      &quot;physical_pages&quot;: [
+        4
+      ]
+    }
+  ],
+  &quot;rationale&quot;: &quot;Prefer the principal’s selective, directly printed reading aid, away from the tested answer span. Do not add the book copy’s pervasive teaching annotations.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Compared 【2】2015年07月N2 真题 (18-page question/key copy), physical pages [4], Q34 verb: 弾(ひ)けそう&quot;,
+    &quot;Compared N2-2015-07-真题 (17-page question copy), physical pages [4], Q34 verb: 弾(ひ)けそう&quot;,
+    &quot;Compared Đề N2 7-2015 (14-page question copy), physical pages [4], Q34 verb: 弾けそう without an aid&quot;,
+    &quot;5 November 2026: Public snapshot rebound to the earlier, verified current field. Only the historical presentation edit is replayed; this snapshot repair does not change the original witness or its confidence.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;The original exam is needed to establish the historical presence and placement of this reading aid. The secondary principal visibly prints an inline parenthetical reading; it does not prove original ruby placement.&quot;,
+  &quot;before&quot;: &quot;34. この曲は、私には難しすぎて ( )弾けそうにない。&quot;
+}</pre></details></div></section><section class="review-group" id="review-vocab-q035" data-kinds="provisional_fix"><div class="review-group-heading"><h2>vocab-q035</h2><a href="../papers/N2_07_2015.html#vocab-q035">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">35. 入社試験の面接で、緊（きん）張（ちょう）の（ ）、声が震えてしまった。<ol><li>わけで</li><li>あまり</li><li>ことに</li><li>中を</li></ol><p>Editorial key: 2</p></div></details><div class="review-record" id="unresolved_cases-N2_07_2015-vocab-q035-reading-aid"><div class="review-label">Provisional fix · /stem · medium</div><div class="comparison"><div><h4>Before</h4><pre>35. 入社試験の面接で、緊張の<mark class="diff-old">(</mark> <mark class="diff-old">)</mark>、声が震えてしまった。</pre></div><div><h4>Editorial</h4><pre>35. 入社試験の面接で、緊<mark class="diff-new">（きん）</mark>張<mark class="diff-new">（ちょう）</mark>の<mark class="diff-new">（</mark> <mark class="diff-new">）</mark>、声が震えてしまった。</pre></div></div><p>Prefer the principal’s selective, directly printed reading aid, away from the tested answer span. Do not add the book copy’s pervasive teaching annotations.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>The original exam is needed to establish the historical presence and placement of this reading aid. The secondary principal visibly prints an inline parenthetical reading; it does not prove original ruby placement.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Q35 describes a trembling voice at an interview; the aid annotates 緊張.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=4): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q35 noun<p>緊(きん)張(ちょう)</p></li><li><span class="principal-repository-source">Principal source (page=4): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q35 noun<p>緊(きん)張(ちょう)</p></li><li><span class="principal-repository-source">Principal source (page=4): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q35 noun<p>緊張 without an aid</p></li></ul><details><summary>Full published record · unresolved_cases-N2_07_2015-vocab-q035-reading-aid</summary><pre>{
+  &quot;case_id&quot;: &quot;N2_07_2015-vocab-q035-reading-aid&quot;,
+  &quot;unit&quot;: &quot;N2_07_2015&quot;,
+  &quot;item_id&quot;: &quot;vocab-q035&quot;,
+  &quot;field&quot;: &quot;/stem&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;35. 入社試験の面接で、緊（きん）張（ちょう）の（ ）、声が震えてしまった。&quot;,
+  &quot;context&quot;: &quot;Q35 describes a trembling voice at an interview; the aid annotates 緊張.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;緊張&quot;,
+      &quot;assessment&quot;: &quot;The fuller 14-page question layout prints this span without a reading; absence may preserve the original.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;【2】2015年07月N2 真题 (18-page question/key copy)&quot;,
+      &quot;sha256&quot;: &quot;288a11fa37794d38faf8c190807cde1f3a284bc4e227134c1278933d72ba6c03&quot;,
+      &quot;locator&quot;: &quot;Q35 noun&quot;,
+      &quot;reading&quot;: &quot;緊(きん)張(ちょう)&quot;,
+      &quot;lineage&quot;: &quot;Unapproved secondary witness; acquisition is unestablished. Related copies are not independent votes.&quot;,
+      &quot;physical_pages&quot;: [
+        4
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;N2-2015-07-真题 (17-page question copy)&quot;,
+      &quot;sha256&quot;: &quot;b51349fca296b5fd72224556b17be8baca3285fa36e291f445f52e338f1bea45&quot;,
+      &quot;locator&quot;: &quot;Q35 noun&quot;,
+      &quot;reading&quot;: &quot;緊(きん)張(ちょう)&quot;,
+      &quot;lineage&quot;: &quot;Unapproved secondary witness; acquisition is unestablished. Related copies are not independent votes.&quot;,
+      &quot;physical_pages&quot;: [
+        4
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;Đề N2 7-2015 (14-page question copy)&quot;,
+      &quot;sha256&quot;: &quot;c1d83e0f6f04b987519e87b709b064152ba75093c3016f883cdc77d2001cfb18&quot;,
+      &quot;locator&quot;: &quot;Q35 noun&quot;,
+      &quot;reading&quot;: &quot;緊張 without an aid&quot;,
+      &quot;lineage&quot;: &quot;Unapproved secondary witness; acquisition is unestablished. Related copies are not independent votes.&quot;,
+      &quot;physical_pages&quot;: [
+        4
+      ]
+    }
+  ],
+  &quot;rationale&quot;: &quot;Prefer the principal’s selective, directly printed reading aid, away from the tested answer span. Do not add the book copy’s pervasive teaching annotations.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Compared 【2】2015年07月N2 真题 (18-page question/key copy), physical pages [4], Q35 noun: 緊(きん)張(ちょう)&quot;,
+    &quot;Compared N2-2015-07-真题 (17-page question copy), physical pages [4], Q35 noun: 緊(きん)張(ちょう)&quot;,
+    &quot;Compared Đề N2 7-2015 (14-page question copy), physical pages [4], Q35 noun: 緊張 without an aid&quot;,
+    &quot;5 November 2026: Public snapshot rebound to the earlier, verified current field. Only the historical presentation edit is replayed; this snapshot repair does not change the original witness or its confidence.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;The original exam is needed to establish the historical presence and placement of this reading aid. The secondary principal visibly prints an inline parenthetical reading; it does not prove original ruby placement.&quot;,
+  &quot;before&quot;: &quot;35. 入社試験の面接で、緊張の( )、声が震えてしまった。&quot;
+}</pre></details></div></section><section class="review-group" id="review-vocab-b002" data-kinds="difference provisional_fix"><div class="review-group-heading"><h2>vocab-b002</h2><a href="../papers/N2_07_2015.html#vocab-b002">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><p>（問題例）</p><p>あそこで <span class="answer-slot"><span class="slot-glyph">_</span></span><span class="answer-slot"><span class="slot-glyph">_</span></span> <span class="star-slot"><span class="slot-glyph star-glyph">★</span></span> <span class="answer-slot"><span class="slot-glyph">_</span></span> は山田さんです。</p><p>（解答の仕方）</p><p>1. 正しい文はこうです。</p><table><tr><td>あそこで</td><td><span class="answer-slot"><span class="slot-glyph">_</span></span></td><td><span class="answer-slot"><span class="slot-glyph">_</span></span></td><td><span class="star-slot"><span class="slot-glyph star-glyph">★</span></span></td><td><span class="answer-slot"><span class="slot-glyph">_</span></span></td><td>は山田さんです。</td></tr><tr><td></td><td>1 テレビ</td><td>3 を</td><td>2 見ている</td><td>4 人</td><td></td></tr></table><p>2. <u><span class="star-slot"><span class="slot-glyph star-glyph">★</span></span></u>に入る番号を解答用紙にマークします。</p><p>（解答用紙）</p><table><tr><th>（例）</th><td>①</td><td>●</td><td>③</td><td>④</td></tr></table></div></details><div class="review-record" id="unresolved_cases-N2_07_2015-vocab-b002-example"><div class="review-label">Provisional fix ·  · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>No alternative recorded</pre></div><div><h4>Editorial</h4><pre>{
+  &quot;id&quot;: &quot;vocab-b002&quot;,
+  &quot;type&quot;: &quot;example&quot;,
+  &quot;content&quot;: {
+    &quot;html&quot;: &quot;&lt;p&gt;（問題例）&lt;/p&gt;&lt;p&gt;あそこで _ _ ★ _ は山田さんです。&lt;/p&gt;&lt;p&gt;（解答の仕方）&lt;/p&gt;&lt;p&gt;1. 正しい文はこうです。&lt;/p&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;あそこで&lt;/td&gt;&lt;td&gt;_&lt;/td&gt;&lt;td&gt;_&lt;/td&gt;&lt;td&gt;★&lt;/td&gt;&lt;td&gt;_&lt;/td&gt;&lt;td&gt;は山田さんです。&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;1 テレビ&lt;/td&gt;&lt;td&gt;3 を&lt;/td&gt;&lt;td&gt;2 見ている&lt;/td&gt;&lt;td&gt;4 人&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;2. &lt;u&gt;★&lt;/u&gt;に入る番号を解答用紙にマークします。&lt;/p&gt;&lt;p&gt;（解答用紙）&lt;/p&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;（例）&lt;/th&gt;&lt;td&gt;①&lt;/td&gt;&lt;td&gt;●&lt;/td&gt;&lt;td&gt;③&lt;/td&gt;&lt;td&gt;④&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&quot;
+  },
+  &quot;options&quot;: [
+    &quot;テレビ&quot;,
+    &quot;見ている&quot;,
+    &quot;を&quot;,
+    &quot;人&quot;
+  ],
+  &quot;key&quot;: 2
+}</pre></div></div><p>Restore the same-sitting full worked example, correcting its solved labels to1-3-2-4 against its own option identities and marked bubble2. The principal omits it, and original presence/typography remain unverified.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>No verified original establishes the historical full example; the available same-sitting example supports this coherent provisional reconstruction.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Unscored sentence-order worked example before Q45.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=5): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Complete worked example before Q45<p>あそこで _ _ ★ _ は山田さんです。; options1テレビ/2見ている/3を/4人; solved labels incorrectly1-2-3-4; answer bubble2.</p></li><li><span class="principal-repository-source">Principal source (page=4): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Same worked example body<p>Same wording, options, labels and bubble; related layout, not independent acquisition.</p></li><li><span class="principal-repository-source">Principal source (page=5): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Problem8 instruction immediately followed by Q45<p>No example reproduced.</p></li></ul><details><summary>Full published record · unresolved_cases-N2_07_2015-vocab-b002-example</summary><pre>{
+  &quot;case_id&quot;: &quot;N2_07_2015-vocab-b002-example&quot;,
+  &quot;unit&quot;: &quot;N2_07_2015&quot;,
+  &quot;item_id&quot;: &quot;vocab-b002&quot;,
+  &quot;field&quot;: &quot;&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: {
+    &quot;id&quot;: &quot;vocab-b002&quot;,
+    &quot;type&quot;: &quot;example&quot;,
+    &quot;content&quot;: {
+      &quot;html&quot;: &quot;&lt;p&gt;（問題例）&lt;/p&gt;&lt;p&gt;あそこで _ _ ★ _ は山田さんです。&lt;/p&gt;&lt;p&gt;（解答の仕方）&lt;/p&gt;&lt;p&gt;1. 正しい文はこうです。&lt;/p&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;あそこで&lt;/td&gt;&lt;td&gt;_&lt;/td&gt;&lt;td&gt;_&lt;/td&gt;&lt;td&gt;★&lt;/td&gt;&lt;td&gt;_&lt;/td&gt;&lt;td&gt;は山田さんです。&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;1 テレビ&lt;/td&gt;&lt;td&gt;3 を&lt;/td&gt;&lt;td&gt;2 見ている&lt;/td&gt;&lt;td&gt;4 人&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;2. &lt;u&gt;★&lt;/u&gt;に入る番号を解答用紙にマークします。&lt;/p&gt;&lt;p&gt;（解答用紙）&lt;/p&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;（例）&lt;/th&gt;&lt;td&gt;①&lt;/td&gt;&lt;td&gt;●&lt;/td&gt;&lt;td&gt;③&lt;/td&gt;&lt;td&gt;④&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&quot;
+    },
+    &quot;options&quot;: [
+      &quot;テレビ&quot;,
+      &quot;見ている&quot;,
+      &quot;を&quot;,
+      &quot;人&quot;
+    ],
+    &quot;key&quot;: 2
+  },
+  &quot;context&quot;: &quot;Unscored sentence-order worked example before Q45.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: null,
+      &quot;assessment&quot;: &quot;Principal and other shorter layouts omit the entire example.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;Same example with solved labels1-2-3-4&quot;,
+      &quot;assessment&quot;: &quot;Fuller copies print this internally wrong order despite option2 being 見ている and answer bubble2 being marked.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;Đề N2 7-2015 (14-page question copy)&quot;,
+      &quot;sha256&quot;: &quot;c1d83e0f6f04b987519e87b709b064152ba75093c3016f883cdc77d2001cfb18&quot;,
+      &quot;locator&quot;: &quot;Complete worked example before Q45&quot;,
+      &quot;reading&quot;: &quot;あそこで _ _ ★ _ は山田さんです。; options1テレビ/2見ている/3を/4人; solved labels incorrectly1-2-3-4; answer bubble2.&quot;,
+      &quot;lineage&quot;: &quot;Unapproved secondary witness; acquisition is unestablished. Related copies are not independent votes.&quot;,
+      &quot;physical_pages&quot;: [
+        5
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;n2 2015.7真题 (12-page copy)&quot;,
+      &quot;sha256&quot;: &quot;7b8ea328b0301f2f4d41e89bc2a71485ee7d420f361c6479f1cdaad1db7bb7c8&quot;,
+      &quot;locator&quot;: &quot;Same worked example body&quot;,
+      &quot;reading&quot;: &quot;Same wording, options, labels and bubble; related layout, not independent acquisition.&quot;,
+      &quot;lineage&quot;: &quot;Unapproved secondary witness; acquisition is unestablished. Related copies are not independent votes.&quot;,
+      &quot;physical_pages&quot;: [
+        4
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;【2】2015年07月N2 真题 (18-page question/key copy)&quot;,
+      &quot;sha256&quot;: &quot;288a11fa37794d38faf8c190807cde1f3a284bc4e227134c1278933d72ba6c03&quot;,
+      &quot;locator&quot;: &quot;Problem8 instruction immediately followed by Q45&quot;,
+      &quot;reading&quot;: &quot;No example reproduced.&quot;,
+      &quot;lineage&quot;: &quot;Unapproved secondary witness; acquisition is unestablished. Related copies are not independent votes.&quot;,
+      &quot;physical_pages&quot;: [
+        5
+      ]
+    }
+  ],
+  &quot;rationale&quot;: &quot;Restore the same-sitting full worked example, correcting its solved labels to1-3-2-4 against its own option identities and marked bubble2. The principal omits it, and original presence/typography remain unverified.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Compared Đề N2 7-2015 (14-page question copy), physical pages [5], Complete worked example before Q45: あそこで _ _ ★ _ は山田さんです。; options1テレビ/2見ている/3を/4人; solved labels incorrectly1-2-3-4; answer bubble2.&quot;,
+    &quot;Compared n2 2015.7真题 (12-page copy), physical pages [4], Same worked example body: Same wording, options, labels and bubble; related layout, not independent acquisition.&quot;,
+    &quot;Compared 【2】2015年07月N2 真题 (18-page question/key copy), physical pages [5], Problem8 instruction immediately followed by Q45: No example reproduced.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;No verified original establishes the historical full example; the available same-sitting example supports this coherent provisional reconstruction.&quot;,
+  &quot;before&quot;: null
+}</pre></details></div><div class="review-record" id="principal_differences-N2_07_2015-PD-002"><div class="review-label">Principal difference ·  · high</div><div class="comparison"><div><h4>Principal</h4><pre>No alternative recorded</pre></div><div><h4>Editorial</h4><pre>Full television/Yamada worked example, four options, solved order1-3-2-4 and answer-sheet bubble2.</pre></div></div><p>Same-sitting fuller layouts preserve the example; its original identity and exact full demonstration remain public uncertainty.</p><span class="principal-repository-source">Principal source (page=5): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Between Problem8 instruction and Q45</span><details><summary>Full published record · principal_differences-N2_07_2015-PD-002</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N2_07_2015-PD-002&quot;,
+  &quot;unit&quot;: &quot;N2_07_2015&quot;,
+  &quot;item_id&quot;: &quot;vocab-b002&quot;,
+  &quot;field&quot;: &quot;&quot;,
+  &quot;current_value&quot;: {
+    &quot;id&quot;: &quot;vocab-b002&quot;,
+    &quot;type&quot;: &quot;example&quot;,
+    &quot;content&quot;: {
+      &quot;html&quot;: &quot;&lt;p&gt;（問題例）&lt;/p&gt;&lt;p&gt;あそこで _ _ ★ _ は山田さんです。&lt;/p&gt;&lt;p&gt;（解答の仕方）&lt;/p&gt;&lt;p&gt;1. 正しい文はこうです。&lt;/p&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;あそこで&lt;/td&gt;&lt;td&gt;_&lt;/td&gt;&lt;td&gt;_&lt;/td&gt;&lt;td&gt;★&lt;/td&gt;&lt;td&gt;_&lt;/td&gt;&lt;td&gt;は山田さんです。&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;1 テレビ&lt;/td&gt;&lt;td&gt;3 を&lt;/td&gt;&lt;td&gt;2 見ている&lt;/td&gt;&lt;td&gt;4 人&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;2. &lt;u&gt;★&lt;/u&gt;に入る番号を解答用紙にマークします。&lt;/p&gt;&lt;p&gt;（解答用紙）&lt;/p&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;（例）&lt;/th&gt;&lt;td&gt;①&lt;/td&gt;&lt;td&gt;●&lt;/td&gt;&lt;td&gt;③&lt;/td&gt;&lt;td&gt;④&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&quot;
+    },
+    &quot;options&quot;: [
+      &quot;テレビ&quot;,
+      &quot;見ている&quot;,
+      &quot;を&quot;,
+      &quot;人&quot;
+    ],
+    &quot;key&quot;: 2
+  },
+  &quot;categories&quot;: [
+    &quot;missing_printed_content&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;【2】2015年07月N2 真题 (18-page question/key copy)&quot;,
+    &quot;sha256&quot;: &quot;288a11fa37794d38faf8c190807cde1f3a284bc4e227134c1278933d72ba6c03&quot;,
+    &quot;physical_pages&quot;: [
+      5
+    ],
+    &quot;locator&quot;: &quot;Between Problem8 instruction and Q45&quot;,
+    &quot;reading_status&quot;: &quot;absent&quot;,
+    &quot;reading&quot;: null
+  },
+  &quot;editorial_reading&quot;: &quot;Full television/Yamada worked example, four options, solved order1-3-2-4 and answer-sheet bubble2.&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;conjectural_repair&quot;,
+  &quot;rationale&quot;: &quot;Same-sitting fuller layouts preserve the example; its original identity and exact full demonstration remain public uncertainty.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;N2_07_2015-vocab-b002-example&quot;
+  ]
+}</pre></details></div></section><section class="review-group" id="review-reading-b001" data-kinds="difference"><div class="review-group-heading"><h2>reading-b001</h2><a href="../papers/N2_07_2015.html#reading-b001">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><p>（1）</p><p>学習者は<ruby data-rubi-id="rr4-40e1ec76797fc071030e" data-rubi-origin="project_rubi_restore">真剣<rt>しんけん</rt></ruby>に外国語に取り組んでいるのに、どうしても間違ってしまう。間違えるのは仕方のないことだけれど、せっかく規則を覚えてそれを<ruby data-rubi-id="rr4-48332ed50c1d146c6948" data-rubi-origin="project_rubi_restore">応用<rt>おうよう</rt></ruby>したつもりなのに、「それは例外」とかいわれると、何だかやる気がなくなってしまう。</p><p>このような誤用（注）をきちんと<ruby data-rubi-id="rr4-b9a2b234cbaf996a9cbd" data-rubi-origin="project_rubi_restore">分析<rt>ぶんせき</rt></ruby>すれば、その成果としてすばらしい教科書ができるはずだ。本来教科書とはその対象である学習者のことをよく考えて、難しそうなところ、間違えそうなところをきちんと分かりやすく説明する必要があるのだ。</p><p>（黒田龍之助『外国語の水曜日―学習法としての言語学<ruby data-rubi-id="rr4-4715eec973fbee5a2ef5" data-rubi-origin="project_rubi_restore">入門<rt>にゅうもん</rt></ruby>』による）</p><p>（注）誤用:間違った使い方</p></div></details><div class="review-record" id="principal_differences-N2_07_2015-PD-003"><div class="review-label">Principal difference · /content/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>による</pre></div><div><h4>Editorial</h4><pre>による<mark class="diff-new">)</mark></pre></div></div><p>Retain the necessary closing citation parenthesis, directly supported by the alternative 17-page layout. The principal drops it.</p><span class="principal-repository-source">Principal source (page=7): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Short passage1 citation ending</span><details><summary>Full published record · principal_differences-N2_07_2015-PD-003</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N2_07_2015-PD-003&quot;,
+  &quot;unit&quot;: &quot;N2_07_2015&quot;,
+  &quot;item_id&quot;: &quot;reading-b001&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;current_value&quot;: &quot;&lt;p&gt;（1）&lt;/p&gt;&lt;p&gt;学習者は真剣に外国語に取り組んでいるのに、どうしても間違ってしまう。間違えるのは仕方のないことだけれど、せっかく規則を覚えてそれを応用したつもりなのに、「それは例外」とかいわれると、何だかやる気がなくなってしまう。&lt;/p&gt;&lt;p&gt;このような誤用（注）をきちんと分析すれば、その成果としてすばらしい教科書ができるはずだ。本来教科書とはその対象である学習者のことをよく考えて、難しそうなところ、間違えそうなところをきちんと分かりやすく説明する必要があるのだ。&lt;/p&gt;&lt;p&gt;（黒田龍之助『外国語の水曜日―学習法としての言語学入門』による）&lt;/p&gt;&lt;p&gt;（注）誤用:間違った使い方&lt;/p&gt;&quot;,
+  &quot;categories&quot;: [
+    &quot;punctuation&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;【2】2015年07月N2 真题 (18-page question/key copy)&quot;,
+    &quot;sha256&quot;: &quot;288a11fa37794d38faf8c190807cde1f3a284bc4e227134c1278933d72ba6c03&quot;,
+    &quot;physical_pages&quot;: [
+      7
+    ],
+    &quot;locator&quot;: &quot;Short passage1 citation ending&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;による&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;による)&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Retain the necessary closing citation parenthesis, directly supported by the alternative 17-page layout. The principal drops it.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-b003" data-kinds="difference provisional_fix"><div class="review-group-heading"><h2>reading-b003</h2><a href="../papers/N2_07_2015.html#reading-b003">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><p>（3）</p><p>ある楽器メーカーによって、新しい木材を古い木材のように変化させる技術が開発された。長い年月をかけて木材に起こる変化を、短期間に人工的に起こさせるのだそうだ。バイオリンなどの木製楽器では製造後数百年たったものが素晴らしい音を出すとされている。名器といわれるようなものは数も少なく非常に高価で、手に入れることが難しい。この技術を利用することで、名器並み（注）の優れた楽器が入手しやすくなるだろう。<u>そんな楽器</u>がそろったオーケストラの演奏が聴ける日もそう遠くはないかもしれない。</p><p>（注）～並（な）みの:～と同じような</p></div></details><div class="review-record" id="unresolved_cases-N2_07_2015-reading-b003-annotations"><div class="review-label">Provisional fix · /content/html · medium</div><div class="comparison"><div><h4>Before</h4><pre>&lt;p&gt;<mark class="diff-old">(</mark>3<mark class="diff-old">)</mark>&lt;/p&gt;&lt;p&gt;ある楽器メーカーによって、新しい木材を古い木材のように変化させる技術が開発された。長い年月をかけて木材に起こる変化を、短期間に人工的に起こさせるのだそうだ。バイオリンなどの木製楽器では製造後数百年たったものが素晴らしい音を出すとされている。名器といわれるようなも…</pre></div><div><h4>Editorial</h4><pre>&lt;p&gt;<mark class="diff-new">（</mark>3<mark class="diff-new">）</mark>&lt;/p&gt;&lt;p&gt;ある楽器メーカーによって、新しい木材を古い木材のように変化させる技術が開発された。長い年月をかけて木材に起こる変化を、短期間に人工的に起こさせるのだそうだ。バイオリンなどの木製楽器では製造後数百年たったものが素晴らしい音を出すとされている。名器といわれるようなも…</pre></div></div><p>Prefer the directly witnessed referent underline in the 17-page alternative and the principal’s selective glossary reading. These independent annotation decisions remain provisional.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>The exact historical combination of the referent underline and glossary reading is unverified. Each selected feature has direct same-sitting visual support; the answer is unaffected.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Short instrument passage for Q57: the referred phrase そんな楽器 and glossary ～並みの.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=7): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Instrument passage referent and glossary<p>そんな楽器 without underline; (注)～並(な)みの:～と同じような</p></li><li><span class="principal-repository-source">Principal source (page=6): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Instrument passage referent and glossary<p>&lt;u&gt;そんな楽器&lt;/u&gt;; glossary ～並みの without reading</p></li><li><span class="principal-repository-source">Principal source (page=6): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Instrument glossary<p>～並(な)みの</p></li></ul><details><summary>Full published record · unresolved_cases-N2_07_2015-reading-b003-annotations</summary><pre>{
+  &quot;case_id&quot;: &quot;N2_07_2015-reading-b003-annotations&quot;,
+  &quot;unit&quot;: &quot;N2_07_2015&quot;,
+  &quot;item_id&quot;: &quot;reading-b003&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;&lt;p&gt;（3）&lt;/p&gt;&lt;p&gt;ある楽器メーカーによって、新しい木材を古い木材のように変化させる技術が開発された。長い年月をかけて木材に起こる変化を、短期間に人工的に起こさせるのだそうだ。バイオリンなどの木製楽器では製造後数百年たったものが素晴らしい音を出すとされている。名器といわれるようなものは数も少なく非常に高価で、手に入れることが難しい。この技術を利用することで、名器並み（注）の優れた楽器が入手しやすくなるだろう。&lt;u&gt;そんな楽器&lt;/u&gt;がそろったオーケストラの演奏が聴ける日もそう遠くはないかもしれない。&lt;/p&gt;&lt;p&gt;（注）～並（な）みの:～と同じような&lt;/p&gt;&quot;,
+  &quot;context&quot;: &quot;Short instrument passage for Q57: the referred phrase そんな楽器 and glossary ～並みの.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;Plain そんな楽器; glossary ～並(な)みの&quot;,
+      &quot;assessment&quot;: &quot;Principal preserves the aid but omits the referent underline.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;&lt;u&gt;そんな楽器&lt;/u&gt;; glossary ～並みの&quot;,
+      &quot;assessment&quot;: &quot;Alternative visibly preserves the underline but omits the reading.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;【2】2015年07月N2 真题 (18-page question/key copy)&quot;,
+      &quot;sha256&quot;: &quot;288a11fa37794d38faf8c190807cde1f3a284bc4e227134c1278933d72ba6c03&quot;,
+      &quot;locator&quot;: &quot;Instrument passage referent and glossary&quot;,
+      &quot;reading&quot;: &quot;そんな楽器 without underline; (注)～並(な)みの:～と同じような&quot;,
+      &quot;lineage&quot;: &quot;Unapproved secondary witness; acquisition is unestablished. Related copies are not independent votes.&quot;,
+      &quot;physical_pages&quot;: [
+        7
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;【1】2015年07月N2 question copy (17 pages)&quot;,
+      &quot;sha256&quot;: &quot;83497df825b1de5b9f36ab8c0e681df13f7b9e4be6324dd6c39a4f294f189cf1&quot;,
+      &quot;locator&quot;: &quot;Instrument passage referent and glossary&quot;,
+      &quot;reading&quot;: &quot;&lt;u&gt;そんな楽器&lt;/u&gt;; glossary ～並みの without reading&quot;,
+      &quot;lineage&quot;: &quot;Unapproved secondary witness; acquisition is unestablished. Related copies are not independent votes.&quot;,
+      &quot;physical_pages&quot;: [
+        6
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;Đề N2 7-2015 (14-page question copy)&quot;,
+      &quot;sha256&quot;: &quot;c1d83e0f6f04b987519e87b709b064152ba75093c3016f883cdc77d2001cfb18&quot;,
+      &quot;locator&quot;: &quot;Instrument glossary&quot;,
+      &quot;reading&quot;: &quot;～並(な)みの&quot;,
+      &quot;lineage&quot;: &quot;Unapproved secondary witness; acquisition is unestablished. Related copies are not independent votes.&quot;,
+      &quot;physical_pages&quot;: [
+        6
+      ]
+    }
+  ],
+  &quot;rationale&quot;: &quot;Prefer the directly witnessed referent underline in the 17-page alternative and the principal’s selective glossary reading. These independent annotation decisions remain provisional.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Compared 【2】2015年07月N2 真题 (18-page question/key copy), physical pages [7], Instrument passage referent and glossary: そんな楽器 without underline; (注)～並(な)みの:～と同じような&quot;,
+    &quot;Compared 【1】2015年07月N2 question copy (17 pages), physical pages [6], Instrument passage referent and glossary: &lt;u&gt;そんな楽器&lt;/u&gt;; glossary ～並みの without reading&quot;,
+    &quot;Compared Đề N2 7-2015 (14-page question copy), physical pages [6], Instrument glossary: ～並(な)みの&quot;,
+    &quot;5 November 2026: Public snapshot rebound to the earlier, verified current field. Only the historical presentation edit is replayed; this snapshot repair does not change the original witness or its confidence.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;The exact historical combination of the referent underline and glossary reading is unverified. Each selected feature has direct same-sitting visual support; the answer is unaffected.&quot;,
+  &quot;before&quot;: &quot;&lt;p&gt;(3)&lt;/p&gt;&lt;p&gt;ある楽器メーカーによって、新しい木材を古い木材のように変化させる技術が開発された。長い年月をかけて木材に起こる変化を、短期間に人工的に起こさせるのだそうだ。バイオリンなどの木製楽器では製造後数百年たったものが素晴らしい音を出すとされている。名器といわれるようなものは数も少なく非常に高価で、手に入れることが難しい。この技術を利用することで、名器並み(注)の優れた楽器が入手しやすくなるだろう。そんな楽器がそろったオーケストラの演奏が聴ける日もそう遠くはないかもしれない。&lt;/p&gt;&lt;p&gt;(注)～並みの:～と同じような&lt;/p&gt;&quot;
+}</pre></details></div><div class="review-record" id="principal_differences-N2_07_2015-PD-004"><div class="review-label">Principal difference · /content/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>そんな楽器</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">&lt;u&gt;</mark>そんな楽器<mark class="diff-new">&lt;/u&gt;</mark></pre></div></div><p>Restore the alternate’s directly printed referent underline provisionally. The restored glossary aid matches the principal and is not a departure.</p><span class="principal-repository-source">Principal source (page=7): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Instrument passage near end</span><details><summary>Full published record · principal_differences-N2_07_2015-PD-004</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N2_07_2015-PD-004&quot;,
+  &quot;unit&quot;: &quot;N2_07_2015&quot;,
+  &quot;item_id&quot;: &quot;reading-b003&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;current_value&quot;: &quot;&lt;p&gt;（3）&lt;/p&gt;&lt;p&gt;ある楽器メーカーによって、新しい木材を古い木材のように変化させる技術が開発された。長い年月をかけて木材に起こる変化を、短期間に人工的に起こさせるのだそうだ。バイオリンなどの木製楽器では製造後数百年たったものが素晴らしい音を出すとされている。名器といわれるようなものは数も少なく非常に高価で、手に入れることが難しい。この技術を利用することで、名器並み（注）の優れた楽器が入手しやすくなるだろう。&lt;u&gt;そんな楽器&lt;/u&gt;がそろったオーケストラの演奏が聴ける日もそう遠くはないかもしれない。&lt;/p&gt;&lt;p&gt;（注）～並（な）みの:～と同じような&lt;/p&gt;&quot;,
+  &quot;categories&quot;: [
+    &quot;underline&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;【2】2015年07月N2 真题 (18-page question/key copy)&quot;,
+    &quot;sha256&quot;: &quot;288a11fa37794d38faf8c190807cde1f3a284bc4e227134c1278933d72ba6c03&quot;,
+    &quot;physical_pages&quot;: [
+      7
+    ],
+    &quot;locator&quot;: &quot;Instrument passage near end&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;そんな楽器&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;&lt;u&gt;そんな楽器&lt;/u&gt;&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;conjectural_repair&quot;,
+  &quot;rationale&quot;: &quot;Restore the alternate’s directly printed referent underline provisionally. The restored glossary aid matches the principal and is not a departure.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;N2_07_2015-reading-b003-annotations&quot;
+  ]
+}</pre></details></div></section><section class="review-group" id="review-reading-q003" data-kinds="difference provisional_fix"><div class="review-group-heading"><h2>reading-q003</h2><a href="../papers/N2_07_2015.html#reading-q003">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">57. <u>そんな楽器</u>とは、どのようなものか。<ol><li>新しい技術で作られていて、<ruby data-rubi-id="rr4-6dafa86b5e35a43c0321" data-rubi-origin="project_rubi_restore">名器<rt>めいき</rt></ruby>よりも<ruby data-rubi-id="rr4-65f3258835db03b4b318" data-rubi-origin="project_rubi_restore">素晴<rt>すば</rt></ruby>らしい音が出せるもの</li><li>古い木材で作られていて、<ruby data-rubi-id="rr4-57e1a0a0aad82670cb62" data-rubi-origin="project_rubi_restore">名器<rt>めいき</rt></ruby>よりも<ruby data-rubi-id="rr4-353f54268dd35c0932b6" data-rubi-origin="project_rubi_restore">素晴<rt>すば</rt></ruby>らしい音が出せるもの</li><li>長い年月をかけて作られていて、<ruby data-rubi-id="rr4-5e81e2230954b672b859" data-rubi-origin="project_rubi_restore">名器<rt>めいき</rt></ruby>のような音が出せるもの</li><li>新しい木材で作られていて、<ruby data-rubi-id="rr4-889a7b9dcf4c77484723" data-rubi-origin="project_rubi_restore">名器<rt>めいき</rt></ruby>のような音が出せるもの</li></ol><p>Editorial key: 4</p></div></details><div class="review-record" id="unresolved_cases-N2_07_2015-reading-q003-underline"><div class="review-label">Provisional fix · /stem · medium</div><div class="comparison"><div><h4>Before</h4><pre>57. そんな楽器とは、どのようなものか。</pre></div><div><h4>Editorial</h4><pre>57. <mark class="diff-new">&lt;u&gt;</mark>そんな楽器<mark class="diff-new">&lt;/u&gt;</mark>とは、どのようなものか。</pre></div></div><p>Restore the same referent underline directly shown in the alternate Q57 and its passage; principal absence remains a real difference.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>The original Q57 page would settle the underline. The visible alternate supports the current provisional reconstruction.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Q57 asks what kind of instrument そんな楽器 refers to.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=6): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q57 referent<p>&lt;u&gt;そんな楽器&lt;/u&gt;とは、どのようなものか。</p></li><li><span class="principal-repository-source">Principal source (page=7): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q57 referent<p>そんな楽器とは、どのようなものか。</p></li></ul><details><summary>Full published record · unresolved_cases-N2_07_2015-reading-q003-underline</summary><pre>{
+  &quot;case_id&quot;: &quot;N2_07_2015-reading-q003-underline&quot;,
+  &quot;unit&quot;: &quot;N2_07_2015&quot;,
+  &quot;item_id&quot;: &quot;reading-q003&quot;,
+  &quot;field&quot;: &quot;/stem&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;57. &lt;u&gt;そんな楽器&lt;/u&gt;とは、どのようなものか。&quot;
+  },
+  &quot;context&quot;: &quot;Q57 asks what kind of instrument そんな楽器 refers to.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;そんな楽器 without underline&quot;,
+      &quot;assessment&quot;: &quot;Principal and fuller question layout omit the line; original presence is not settled.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;【1】2015年07月N2 question copy (17 pages)&quot;,
+      &quot;sha256&quot;: &quot;83497df825b1de5b9f36ab8c0e681df13f7b9e4be6324dd6c39a4f294f189cf1&quot;,
+      &quot;locator&quot;: &quot;Q57 referent&quot;,
+      &quot;reading&quot;: &quot;&lt;u&gt;そんな楽器&lt;/u&gt;とは、どのようなものか。&quot;,
+      &quot;lineage&quot;: &quot;Unapproved secondary witness; acquisition is unestablished. Related copies are not independent votes.&quot;,
+      &quot;physical_pages&quot;: [
+        6
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;【2】2015年07月N2 真题 (18-page question/key copy)&quot;,
+      &quot;sha256&quot;: &quot;288a11fa37794d38faf8c190807cde1f3a284bc4e227134c1278933d72ba6c03&quot;,
+      &quot;locator&quot;: &quot;Q57 referent&quot;,
+      &quot;reading&quot;: &quot;そんな楽器とは、どのようなものか。&quot;,
+      &quot;lineage&quot;: &quot;Unapproved secondary witness; acquisition is unestablished. Related copies are not independent votes.&quot;,
+      &quot;physical_pages&quot;: [
+        7
+      ]
+    }
+  ],
+  &quot;rationale&quot;: &quot;Restore the same referent underline directly shown in the alternate Q57 and its passage; principal absence remains a real difference.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Compared 【1】2015年07月N2 question copy (17 pages), physical pages [6], Q57 referent: &lt;u&gt;そんな楽器&lt;/u&gt;とは、どのようなものか。&quot;,
+    &quot;Compared 【2】2015年07月N2 真题 (18-page question/key copy), physical pages [7], Q57 referent: そんな楽器とは、どのようなものか。&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;The original Q57 page would settle the underline. The visible alternate supports the current provisional reconstruction.&quot;,
+  &quot;before&quot;: &quot;57. そんな楽器とは、どのようなものか。&quot;
+}</pre></details></div><div class="review-record" id="principal_differences-N2_07_2015-PD-005"><div class="review-label">Principal difference · /stem · high</div><div class="comparison"><div><h4>Principal</h4><pre>そんな楽器</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">&lt;u&gt;</mark>そんな楽器<mark class="diff-new">&lt;/u&gt;</mark></pre></div></div><p>The alternate visibly underlines the referred phrase in the question and passage.</p><span class="principal-repository-source">Principal source (page=7): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Q57 referent</span><details><summary>Full published record · principal_differences-N2_07_2015-PD-005</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N2_07_2015-PD-005&quot;,
+  &quot;unit&quot;: &quot;N2_07_2015&quot;,
+  &quot;item_id&quot;: &quot;reading-q003&quot;,
+  &quot;field&quot;: &quot;/stem&quot;,
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;57. &lt;u&gt;そんな楽器&lt;/u&gt;とは、どのようなものか。&quot;
+  },
+  &quot;categories&quot;: [
+    &quot;underline&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;【2】2015年07月N2 真题 (18-page question/key copy)&quot;,
+    &quot;sha256&quot;: &quot;288a11fa37794d38faf8c190807cde1f3a284bc4e227134c1278933d72ba6c03&quot;,
+    &quot;physical_pages&quot;: [
+      7
+    ],
+    &quot;locator&quot;: &quot;Q57 referent&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;そんな楽器&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;&lt;u&gt;そんな楽器&lt;/u&gt;&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;conjectural_repair&quot;,
+  &quot;rationale&quot;: &quot;The alternate visibly underlines the referred phrase in the question and passage.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;N2_07_2015-reading-q003-underline&quot;
+  ]
+}</pre></details></div></section><section class="review-group" id="review-reading-b004" data-kinds="difference unresolved"><div class="review-group-heading"><h2>reading-b004</h2><a href="../papers/N2_07_2015.html#reading-b004">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><p>（4）</p><p>子育てでは「褒める」ことが大事とよくいわれますが、私はそれは少し違うと考えています。褒めるということは一つの価値判断であり、親が褒めるのは、より強化したい子どもの行為であり、子どもは親のその価値観を刷り込まれ（注）ながら育っていきます。つまり、「褒める」ということは、親から子どもへの「命令」を含んでいるのです。その意味においては、その行為をするなという「叱る」行為と同じと捉えることができます。</p><p>（小池龍之介『平常心のレッスン』による）</p><p>（注）刷（す）り込まれる:ここでは、身につけさせられる</p></div></details><div class="review-record" id="unresolved_cases-N2_07_2015-reading-b004-reading-aids"><div class="review-label">Unresolved · /content/html · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>刷り込まれる</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">&lt;p&gt;（4）&lt;/p&gt;&lt;p&gt;子育てでは「褒める」ことが大事とよくいわれますが、私はそれは少し違うと考えています。褒めるということは一つの価値判断であり、親が褒めるのは、より強化したい子どもの行為であり、子どもは親のその価値観を</mark>刷り込まれ<mark class="diff-new">（注）ながら育っていきます。つまり、「褒め</mark>る<mark class="diff-new">」ということは、親から子どもへの「命令」を含んでいるのです。その意味においては、その行為をするなという「叱る」行為と同じと捉えることができます。&lt;/p&gt;&lt;p&gt;（小池龍之介『平常心のレッスン』による）&lt;/p&gt;&lt;p&gt;（注）刷（す）</mark>…</pre></div></div><p>Retain the existing directly witnessed selective glossary aids. Their presence is real additional content, not merely equivalent rendering. The principal’s lack of readings does not establish that they were absent historically.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>The original exam is needed to establish the historical presence and placement of this reading aid. The secondary principal visibly prints an inline parenthetical reading; it does not prove original ruby placement.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Parenting glossary note.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=8): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Parenting glossary note<p>刷り込まれる</p></li><li><span class="principal-repository-source">Principal source (page=7): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Parenting glossary note<p>刷(す)り込まれる</p></li></ul><details><summary>Full published record · unresolved_cases-N2_07_2015-reading-b004-reading-aids</summary><pre>{
+  &quot;case_id&quot;: &quot;N2_07_2015-reading-b004-reading-aids&quot;,
+  &quot;unit&quot;: &quot;N2_07_2015&quot;,
+  &quot;item_id&quot;: &quot;reading-b004&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;&lt;p&gt;（4）&lt;/p&gt;&lt;p&gt;子育てでは「褒める」ことが大事とよくいわれますが、私はそれは少し違うと考えています。褒めるということは一つの価値判断であり、親が褒めるのは、より強化したい子どもの行為であり、子どもは親のその価値観を刷り込まれ（注）ながら育っていきます。つまり、「褒める」ということは、親から子どもへの「命令」を含んでいるのです。その意味においては、その行為をするなという「叱る」行為と同じと捉えることができます。&lt;/p&gt;&lt;p&gt;（小池龍之介『平常心のレッスン』による）&lt;/p&gt;&lt;p&gt;（注）刷（す）り込まれる:ここでは、身につけさせられる&lt;/p&gt;&quot;,
+  &quot;context&quot;: &quot;Parenting glossary note.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;刷り込まれる&quot;,
+      &quot;assessment&quot;: &quot;Principal omits these reading aids.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;【2】2015年07月N2 真题 (18-page question/key copy)&quot;,
+      &quot;sha256&quot;: &quot;288a11fa37794d38faf8c190807cde1f3a284bc4e227134c1278933d72ba6c03&quot;,
+      &quot;locator&quot;: &quot;Parenting glossary note&quot;,
+      &quot;reading&quot;: &quot;刷り込まれる&quot;,
+      &quot;lineage&quot;: &quot;Unapproved secondary witness; acquisition is unestablished. Related copies are not independent votes.&quot;,
+      &quot;physical_pages&quot;: [
+        8
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;Đề N2 7-2015 (14-page question copy)&quot;,
+      &quot;sha256&quot;: &quot;c1d83e0f6f04b987519e87b709b064152ba75093c3016f883cdc77d2001cfb18&quot;,
+      &quot;locator&quot;: &quot;Parenting glossary note&quot;,
+      &quot;reading&quot;: &quot;刷(す)り込まれる&quot;,
+      &quot;lineage&quot;: &quot;Unapproved secondary witness; acquisition is unestablished. Related copies are not independent votes.&quot;,
+      &quot;physical_pages&quot;: [
+        7
+      ]
+    }
+  ],
+  &quot;rationale&quot;: &quot;Retain the existing directly witnessed selective glossary aids. Their presence is real additional content, not merely equivalent rendering. The principal’s lack of readings does not establish that they were absent historically.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Compared 【2】2015年07月N2 真题 (18-page question/key copy), physical pages [8], Parenting glossary note: 刷り込まれる&quot;,
+    &quot;Compared Đề N2 7-2015 (14-page question copy), physical pages [7], Parenting glossary note: 刷(す)り込まれる&quot;,
+    &quot;5 November 2026: Public snapshot rebound to the earlier, verified current field. Only the historical presentation edit is replayed; this snapshot repair does not change the original witness or its confidence.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;The original exam is needed to establish the historical presence and placement of this reading aid. The secondary principal visibly prints an inline parenthetical reading; it does not prove original ruby placement.&quot;
+}</pre></details></div><div class="review-record" id="principal_differences-N2_07_2015-PD-007"><div class="review-label">Principal difference · /content/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>刷り込まれる</pre></div><div><h4>Editorial</h4><pre>刷<mark class="diff-new">(す)</mark>り込まれる</pre></div></div><p>Retain the existing selective inline glossary readings, directly witnessed in the fuller copy. The original annotation remains uncertain.</p><span class="principal-repository-source">Principal source (page=8): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Parenting glossary note</span><details><summary>Full published record · principal_differences-N2_07_2015-PD-007</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N2_07_2015-PD-007&quot;,
+  &quot;unit&quot;: &quot;N2_07_2015&quot;,
+  &quot;item_id&quot;: &quot;reading-b004&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;current_value&quot;: &quot;&lt;p&gt;（4）&lt;/p&gt;&lt;p&gt;子育てでは「褒める」ことが大事とよくいわれますが、私はそれは少し違うと考えています。褒めるということは一つの価値判断であり、親が褒めるのは、より強化したい子どもの行為であり、子どもは親のその価値観を刷り込まれ（注）ながら育っていきます。つまり、「褒める」ということは、親から子どもへの「命令」を含んでいるのです。その意味においては、その行為をするなという「叱る」行為と同じと捉えることができます。&lt;/p&gt;&lt;p&gt;（小池龍之介『平常心のレッスン』による）&lt;/p&gt;&lt;p&gt;（注）刷（す）り込まれる:ここでは、身につけさせられる&lt;/p&gt;&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;【2】2015年07月N2 真题 (18-page question/key copy)&quot;,
+    &quot;sha256&quot;: &quot;288a11fa37794d38faf8c190807cde1f3a284bc4e227134c1278933d72ba6c03&quot;,
+    &quot;physical_pages&quot;: [
+      8
+    ],
+    &quot;locator&quot;: &quot;Parenting glossary note&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;刷り込まれる&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;刷(す)り込まれる&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;retained_variant&quot;,
+  &quot;rationale&quot;: &quot;Retain the existing selective inline glossary readings, directly witnessed in the fuller copy. The original annotation remains uncertain.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;N2_07_2015-reading-b004-reading-aids&quot;
+  ]
+}</pre></details></div></section><section class="review-group" id="review-reading-b006" data-kinds="provisional_fix"><div class="review-group-heading"><h2>reading-b006</h2><a href="../papers/N2_07_2015.html#reading-b006">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">（1）<br/>
+話す場合には、たいがい（注1）、聞き手がすぐ近くにいて、そのとき、その場で自分の考えに表現を与えながら、さらなる考えを進めていく。（中略）<br/><br/>
+それに対して、①<u>書くという表現</u>の場合には、たいていはひとりで、じっくり時間をかけて、ノートやパソコンなどを使って、考えたことを文字にしていったり、あるいは考えながら文字にしていくことが多いはずです。考えたことが消えずに文字として残ることも、話す場合とは大きく違う点です。ちょうど本という活字メディア（注2）が、読者にとって自分のペースで考えながら読んでいくことができるのと同じように、書くという行為は、話すのと違って自分のペースで、行きつもどりつ（注3）しながら、考えを進めていくことができる表現方法なのです。<br/><br/>しかも、考えたことを文字にしていく場合、いい加減であいまいなままの考えでは、なかなか文章になりません。何となくわかっていることでも、話し言葉でなら、「何となく」のニュアンス（注4）を残したまま相手に伝えることも不可能ではありません。それに対して、書き言葉の場合には、その②<u>「何となく」はまったく伝わらない場合が多い</u>のです。身振りも手振りも使えません。顔の表情だって、読み手には伝わりません。それだけ、あいまいではなく、はっきりと考えを定着させることが求められるのです。そのような意味で、書くという行為は、もやもやした（注5）アイデアに明確なことばを与えていくことであり、だからこそ、書くことで考える力もついていくのです。<br/><div>（苅谷剛彦『知的複眼思考法―誰でも持っている創造力のスイッチ』による）</div> <br/>（注1） たいがい:たいてい<br/>
+（注2） 活字メディア : ここでは、活字で書かれたもの <br/>（注3） 行きつもどりつ:行ったり来たり<br/>（注4） ニュアンス : ここでは、微妙な感じ <br/>（注5）もやもやした:ぼんやりした</div></details><div class="review-record" id="unresolved_cases-N2_07_2015-reading-b006-underline"><div class="review-label">Provisional fix · /content/html · medium</div><div class="comparison"><div><h4>Before</h4><pre><mark class="diff-old">(</mark>1<mark class="diff-old">)</mark>&lt;br&gt;
+話す場合には、たいがい<mark class="diff-old">(</mark>注1<mark class="diff-old">)</mark>、聞き手がすぐ近くにいて、そのとき、その場で自分の考えに表現を与えながら、さらなる考えを進めていく。<mark class="diff-old">(</mark>中略<mark class="diff-old">)</mark>&lt;br&gt;&lt;br&gt;
+それに対して、①&lt;u&gt;書くという表現<mark class="diff-old">の場合</mark>&lt;/u&gt;には、たいていはひとりで、じっくり時間をかけて、ノートやパソ…</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">（</mark>1<mark class="diff-new">）</mark>&lt;br&gt;
+話す場合には、たいがい<mark class="diff-new">（</mark>注1<mark class="diff-new">）</mark>、聞き手がすぐ近くにいて、そのとき、その場で自分の考えに表現を与えながら、さらなる考えを進めていく。<mark class="diff-new">（</mark>中略<mark class="diff-new">）</mark>&lt;br&gt;&lt;br&gt;
+それに対して、①&lt;u&gt;書くという表現&lt;/u&gt;<mark class="diff-new">の場合</mark>には、たいていはひとりで、じっくり時間をかけて、ノートやパソ…</pre></div></div><p>Prefer the narrower body target directly printed in the principal and another layout; the fuller layout’s wider target remains plausible.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>The original page would establish the exact word endpoint. The external circled reference retains the same reference association as both layouts.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Writing-versus-speaking passage for Q60–62; first referenced underline.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=8): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q60 passage reference1, enlarged<p>&lt;u&gt;①書くという表現&lt;/u&gt;の場合には</p></li><li><span class="principal-repository-source">Principal source (page=7): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q60 passage reference1<p>①&lt;u&gt;書くという表現&lt;/u&gt;の場合には</p></li><li><span class="principal-repository-source">Principal source (page=7): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q60 passage reference1<p>①&lt;u&gt;書くという表現の場合&lt;/u&gt;には</p></li></ul><details><summary>Full published record · unresolved_cases-N2_07_2015-reading-b006-underline</summary><pre>{
+  &quot;case_id&quot;: &quot;N2_07_2015-reading-b006-underline&quot;,
+  &quot;unit&quot;: &quot;N2_07_2015&quot;,
+  &quot;item_id&quot;: &quot;reading-b006&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;（1）&lt;br&gt;\n話す場合には、たいがい（注1）、聞き手がすぐ近くにいて、そのとき、その場で自分の考えに表現を与えながら、さらなる考えを進めていく。（中略）&lt;br&gt;&lt;br&gt;\nそれに対して、①&lt;u&gt;書くという表現&lt;/u&gt;の場合には、たいていはひとりで、じっくり時間をかけて、ノートやパソコンなどを使って、考えたことを文字にしていったり、あるいは考えながら文字にしていくことが多いはずです。考えたことが消えずに文字として残ることも、話す場合とは大きく違う点です。ちょうど本という活字メディア（注2）が、読者にとって自分のペースで考えながら読んでいくことができるのと同じように、書くという行為は、話すのと違って自分のペースで、行きつもどりつ（注3）しながら、考えを進めていくことができる表現方法なのです。&lt;br&gt;&lt;br&gt;しかも、考えたことを文字にしていく場合、いい加減であいまいなままの考えでは、なかなか文章になりません。何となくわかっていることでも、話し言葉でなら、「何となく」のニュアンス（注4）を残したまま相手に伝えることも不可能ではありません。それに対して、書き言葉の場合には、その②&lt;u&gt;「何となく」はまったく伝わらない場合が多い&lt;/u&gt;のです。身振りも手振りも使えません。顔の表情だって、読み手には伝わりません。それだけ、あいまいではなく、はっきりと考えを定着させることが求められるのです。そのような意味で、書くという行為は、もやもやした（注5）アイデアに明確なことばを与えていくことであり、だからこそ、書くことで考える力もついていくのです。&lt;br&gt;&lt;div&gt;（苅谷剛彦『知的複眼思考法―誰でも持っている創造力のスイッチ』による）&lt;/div&gt; &lt;br&gt;（注1） たいがい:たいてい&lt;br&gt;\n（注2） 活字メディア : ここでは、活字で書かれたもの &lt;br&gt;（注3） 行きつもどりつ:行ったり来たり&lt;br&gt;（注4） ニュアンス : ここでは、微妙な感じ &lt;br&gt;（注5）もやもやした:ぼんやりした&quot;,
+  &quot;context&quot;: &quot;Writing-versus-speaking passage for Q60–62; first referenced underline.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;①&lt;u&gt;書くという表現の場合&lt;/u&gt;には&quot;,
+      &quot;assessment&quot;: &quot;The fuller question copy includes の場合 within the underline.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;【2】2015年07月N2 真题 (18-page question/key copy)&quot;,
+      &quot;sha256&quot;: &quot;288a11fa37794d38faf8c190807cde1f3a284bc4e227134c1278933d72ba6c03&quot;,
+      &quot;locator&quot;: &quot;Q60 passage reference1, enlarged&quot;,
+      &quot;reading&quot;: &quot;&lt;u&gt;①書くという表現&lt;/u&gt;の場合には&quot;,
+      &quot;lineage&quot;: &quot;Unapproved secondary witness; acquisition is unestablished. Related copies are not independent votes.&quot;,
+      &quot;physical_pages&quot;: [
+        8
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;【1】2015年07月N2 question copy (17 pages)&quot;,
+      &quot;sha256&quot;: &quot;83497df825b1de5b9f36ab8c0e681df13f7b9e4be6324dd6c39a4f294f189cf1&quot;,
+      &quot;locator&quot;: &quot;Q60 passage reference1&quot;,
+      &quot;reading&quot;: &quot;①&lt;u&gt;書くという表現&lt;/u&gt;の場合には&quot;,
+      &quot;lineage&quot;: &quot;Unapproved secondary witness; acquisition is unestablished. Related copies are not independent votes.&quot;,
+      &quot;physical_pages&quot;: [
+        7
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;Đề N2 7-2015 (14-page question copy)&quot;,
+      &quot;sha256&quot;: &quot;c1d83e0f6f04b987519e87b709b064152ba75093c3016f883cdc77d2001cfb18&quot;,
+      &quot;locator&quot;: &quot;Q60 passage reference1&quot;,
+      &quot;reading&quot;: &quot;①&lt;u&gt;書くという表現の場合&lt;/u&gt;には&quot;,
+      &quot;lineage&quot;: &quot;Unapproved secondary witness; acquisition is unestablished. Related copies are not independent votes.&quot;,
+      &quot;physical_pages&quot;: [
+        7
+      ]
+    }
+  ],
+  &quot;rationale&quot;: &quot;Prefer the narrower body target directly printed in the principal and another layout; the fuller layout’s wider target remains plausible.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Compared 【2】2015年07月N2 真题 (18-page question/key copy), physical pages [8], Q60 passage reference1, enlarged: &lt;u&gt;①書くという表現&lt;/u&gt;の場合には&quot;,
+    &quot;Compared 【1】2015年07月N2 question copy (17 pages), physical pages [7], Q60 passage reference1: ①&lt;u&gt;書くという表現&lt;/u&gt;の場合には&quot;,
+    &quot;Compared Đề N2 7-2015 (14-page question copy), physical pages [7], Q60 passage reference1: ①&lt;u&gt;書くという表現の場合&lt;/u&gt;には&quot;,
+    &quot;5 November 2026: Public snapshot rebound to the earlier, verified current field. Only the historical presentation edit is replayed; this snapshot repair does not change the original witness or its confidence.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;The original page would establish the exact word endpoint. The external circled reference retains the same reference association as both layouts.&quot;,
+  &quot;before&quot;: &quot;(1)&lt;br&gt;\n話す場合には、たいがい(注1)、聞き手がすぐ近くにいて、そのとき、その場で自分の考えに表現を与えながら、さらなる考えを進めていく。(中略)&lt;br&gt;&lt;br&gt;\nそれに対して、①&lt;u&gt;書くという表現の場合&lt;/u&gt;には、たいていはひとりで、じっくり時間をかけて、ノートやパソコンなどを使って、考えたことを文字にしていったり、あるいは考えながら文字にしていくことが多いはずです。考えたことが消えずに文字として残ることも、話す場合とは大きく違う点です。ちょうど本という活字メディア(注2)が、読者にとって自分のペースで考えながら読んでいくことができるのと同じように、書くという行為は、話すのと違って自分のペースで、行きつもどりつ(注3)しながら、考えを進めていくことができる表現方法なのです。&lt;br&gt;&lt;br&gt;しかも、考えたことを文字にしていく場合、いい加減であいまいなままの考えでは、なかなか文章になりません。何となくわかっていることでも、話し言葉でなら、「何となく」のニュアンス(注4)を残したまま相手に伝えることも不可能ではありません。それに対して、書き言葉の場合には、その②&lt;u&gt;「何となく」はまったく伝わらない場合が多い&lt;/u&gt;のです。身振りも手振りも使えません。顔の表情だって、読み手には伝わりません。それだけ、あいまいではなく、はっきりと考えを定着させることが求められるのです。そのような意味で、書くという行為は、もやもやした(注5)アイデアに明確なことばを与えていくことであり、だからこそ、書くことで考える力もついていくのです。&lt;br&gt;&lt;div&gt;(苅谷剛彦『知的複眼思考法―誰でも持っている創造力のスイッチ』による)&lt;/div&gt; &lt;br&gt;(注1) たいがい:たいてい&lt;br&gt;\n(注2) 活字メディア : ここでは、活字で書かれたもの &lt;br&gt;(注3) 行きつもどりつ:行ったり来たり&lt;br&gt;(注4) ニュアンス : ここでは、微妙な感じ &lt;br&gt;(注5)もやもやした:ぼんやりした&quot;
+}</pre></details></div></section><section class="review-group" id="review-reading-q006" data-kinds="difference unresolved"><div class="review-group-heading"><h2>reading-q006</h2><a href="../papers/N2_07_2015.html#reading-q006">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">60. ①<u>書くという表現をする場合</u>の特徴として、筆者が述べているのはどれか。<ol><li>時間をかけるほどうまく書くことができる。</li><li>読み手の<ruby data-rubi-id="rr4-12a209ef72a25fceaf5c" data-rubi-origin="project_rubi_restore">反応<rt>はんのう</rt></ruby>を想像しながら書くことができる。</li><li>道具を利用するので考えを早くまとめることができる。</li><li>何度もやり直しをしながら考えを進めることができる。</li></ol><p>Editorial key: 4</p></div></details><div class="review-record" id="unresolved_cases-N2_07_2015-reading-q006-underline"><div class="review-label">Unresolved · /stem/html · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>①&lt;u&gt;書くという表現<mark class="diff-old">&lt;/u&gt;</mark>をする場合</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">60. </mark>①&lt;u&gt;書くという表現をする場合<mark class="diff-new">&lt;/u&gt;の特徴として、筆者が述べているのはどれか。</mark></pre></div></div><p>Retain the inherited complete question phrase, directly supported by two other layouts. The passage’s narrower target is separately provisional; a question can expand a quoted phrase without changing its referent.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>The original page would establish the historical question underline endpoint; answer4 is unaffected.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Q60 refers to writing as a form of expression.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=9): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q60 question target, enlarged<p>&lt;u&gt;①書くという表現&lt;/u&gt;をする場合の特徴として</p></li><li><span class="principal-repository-source">Principal source (page=8): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q60 question target<p>①&lt;u&gt;書くという表現をする場合&lt;/u&gt;の特徴として</p></li><li><span class="principal-repository-source">Principal source (page=7): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q60 question target<p>①&lt;u&gt;書くという表現をする場合&lt;/u&gt;の特徴として</p></li></ul><details><summary>Full published record · unresolved_cases-N2_07_2015-reading-q006-underline</summary><pre>{
+  &quot;case_id&quot;: &quot;N2_07_2015-reading-q006-underline&quot;,
+  &quot;unit&quot;: &quot;N2_07_2015&quot;,
+  &quot;item_id&quot;: &quot;reading-q006&quot;,
+  &quot;field&quot;: &quot;/stem/html&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;60. ①&lt;u&gt;書くという表現をする場合&lt;/u&gt;の特徴として、筆者が述べているのはどれか。&quot;,
+  &quot;context&quot;: &quot;Q60 refers to writing as a form of expression.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;①&lt;u&gt;書くという表現&lt;/u&gt;をする場合&quot;,
+      &quot;assessment&quot;: &quot;Principal shortens the underlined question target after 表現.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;【2】2015年07月N2 真题 (18-page question/key copy)&quot;,
+      &quot;sha256&quot;: &quot;288a11fa37794d38faf8c190807cde1f3a284bc4e227134c1278933d72ba6c03&quot;,
+      &quot;locator&quot;: &quot;Q60 question target, enlarged&quot;,
+      &quot;reading&quot;: &quot;&lt;u&gt;①書くという表現&lt;/u&gt;をする場合の特徴として&quot;,
+      &quot;lineage&quot;: &quot;Unapproved secondary witness; acquisition is unestablished. Related copies are not independent votes.&quot;,
+      &quot;physical_pages&quot;: [
+        9
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;【1】2015年07月N2 question copy (17 pages)&quot;,
+      &quot;sha256&quot;: &quot;83497df825b1de5b9f36ab8c0e681df13f7b9e4be6324dd6c39a4f294f189cf1&quot;,
+      &quot;locator&quot;: &quot;Q60 question target&quot;,
+      &quot;reading&quot;: &quot;①&lt;u&gt;書くという表現をする場合&lt;/u&gt;の特徴として&quot;,
+      &quot;lineage&quot;: &quot;Unapproved secondary witness; acquisition is unestablished. Related copies are not independent votes.&quot;,
+      &quot;physical_pages&quot;: [
+        8
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;Đề N2 7-2015 (14-page question copy)&quot;,
+      &quot;sha256&quot;: &quot;c1d83e0f6f04b987519e87b709b064152ba75093c3016f883cdc77d2001cfb18&quot;,
+      &quot;locator&quot;: &quot;Q60 question target&quot;,
+      &quot;reading&quot;: &quot;①&lt;u&gt;書くという表現をする場合&lt;/u&gt;の特徴として&quot;,
+      &quot;lineage&quot;: &quot;Unapproved secondary witness; acquisition is unestablished. Related copies are not independent votes.&quot;,
+      &quot;physical_pages&quot;: [
+        7
+      ]
+    }
+  ],
+  &quot;rationale&quot;: &quot;Retain the inherited complete question phrase, directly supported by two other layouts. The passage’s narrower target is separately provisional; a question can expand a quoted phrase without changing its referent.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Compared 【2】2015年07月N2 真题 (18-page question/key copy), physical pages [9], Q60 question target, enlarged: &lt;u&gt;①書くという表現&lt;/u&gt;をする場合の特徴として&quot;,
+    &quot;Compared 【1】2015年07月N2 question copy (17 pages), physical pages [8], Q60 question target: ①&lt;u&gt;書くという表現をする場合&lt;/u&gt;の特徴として&quot;,
+    &quot;Compared Đề N2 7-2015 (14-page question copy), physical pages [7], Q60 question target: ①&lt;u&gt;書くという表現をする場合&lt;/u&gt;の特徴として&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;The original page would establish the historical question underline endpoint; answer4 is unaffected.&quot;
+}</pre></details></div><div class="review-record" id="principal_differences-N2_07_2015-PD-006"><div class="review-label">Principal difference · /stem/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>&lt;u&gt;<mark class="diff-old">①</mark>書くという表現<mark class="diff-old">&lt;/u&gt;</mark>をする場合</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">①</mark>&lt;u&gt;書くという表現をする場合<mark class="diff-new">&lt;/u&gt;</mark></pre></div></div><p>Retain the fuller underlined question phrase attested in the alternate layouts.</p><span class="principal-repository-source">Principal source (page=9): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Q60 referenced question phrase</span><details><summary>Full published record · principal_differences-N2_07_2015-PD-006</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N2_07_2015-PD-006&quot;,
+  &quot;unit&quot;: &quot;N2_07_2015&quot;,
+  &quot;item_id&quot;: &quot;reading-q006&quot;,
+  &quot;field&quot;: &quot;/stem/html&quot;,
+  &quot;current_value&quot;: &quot;60. ①&lt;u&gt;書くという表現をする場合&lt;/u&gt;の特徴として、筆者が述べているのはどれか。&quot;,
+  &quot;categories&quot;: [
+    &quot;underline&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;【2】2015年07月N2 真题 (18-page question/key copy)&quot;,
+    &quot;sha256&quot;: &quot;288a11fa37794d38faf8c190807cde1f3a284bc4e227134c1278933d72ba6c03&quot;,
+    &quot;physical_pages&quot;: [
+      9
+    ],
+    &quot;locator&quot;: &quot;Q60 referenced question phrase&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;&lt;u&gt;①書くという表現&lt;/u&gt;をする場合&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;①&lt;u&gt;書くという表現をする場合&lt;/u&gt;&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;retained_variant&quot;,
+  &quot;rationale&quot;: &quot;Retain the fuller underlined question phrase attested in the alternate layouts.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;N2_07_2015-reading-q006-underline&quot;
+  ]
+}</pre></details></div></section><section class="review-group" id="review-reading-b008" data-kinds="difference unresolved"><div class="review-group-heading"><h2>reading-b008</h2><a href="../papers/N2_07_2015.html#reading-b008">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><p>（3）</p><p>大人になってからの勉強で、なかなか理解が進まないことの大きな原因の一つが、実は、復習をちゃんとしないことにある。学生時代の勉強は、いやでも復習がカリキュラムの中に織り込まれている（注1）ので、知識が定着しやすくなっている。これに対して、大人になって自分で勉強するときには、意識して復習の機会をつくらないと、一回本を読んだだけで「もうわかった。大丈夫」と思い込んでしまいがちになるのだ。</p><p>脳の特性（注2）として、目や耳から入った情報をいったん溜めておいて、その中から必要のないと思われる情報を自動的に脳の奥底にしまい込んでしまう。では、どこで、「必要な情報」と「無用な情報」をより分けている（注3）のかというと、同じ情報が繰り返し入ってくるかどうかということである。この間隔は一カ月と言われており、すなわち、一カ月の間で最低二回繰り返して頭に入れることで、「必要な情報」だと脳が認識し（注4）、知識が定着していくのである。逆に言えば、一度頭に入れて覚えたつもりでも、一カ月の間に繰り返し情報が入ってこなければ、いずれは「無用な情報」として脳がどこかに片付けてしまうのだ。</p><p>この結果、いったん覚えたはずの知識が、しばらくすると記憶の中から掻き消えて（注5）しまったようになり、実際に試験をしてみるとまったく思い出せないということが起こる。そこで、「年をとって記憶力が弱くなった」とか、「できていたはずなのに」と落ち込んでしまうけれど、実際には老化のせいでも何でもなく、単に復習をしていないだけだということが多いのだ。</p><p>（和田秀樹『40代からの勉強法―やる気・集中力をどう高めるか』による）</p><p>（注1）織（お）り込まれる:ここでは、入っている</p><p>（注2）特性:ここでは、特徴的な働き</p><p>（注3）より分ける:ここでは、分類する</p><p>（注4）認（にん）識（しき）する : ここでは、判断する</p><p>（注5）掻（か）き消える: なくなる</p></div></details><div class="review-record" id="unresolved_cases-N2_07_2015-reading-b008-reading-aids"><div class="review-label">Unresolved · /content/html · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>織り込まれる<mark class="diff-old"> </mark>/<mark class="diff-old"> </mark>認識する<mark class="diff-old"> / </mark>掻き消える</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">&lt;p&gt;（3）&lt;/p&gt;&lt;p&gt;大人になってからの勉強で、なかなか理解が進まないことの大きな原因の一つが、実は、復習をちゃんとしないことにある。学生時代の勉強は、いやでも復習がカリキュラムの中に</mark>織り込まれ<mark class="diff-new">てい</mark>る<mark class="diff-new">（注1）ので、知識が定着しやすくなっている。これに対して、大人になって自分で勉強するときには、意識して復習の機会をつくらないと、一回本を読んだだけで「もうわかった。大丈夫」と思い込んでしまいがちになるのだ。&lt;</mark>/<mark class="diff-new">p&gt;&lt;p&gt;脳の特性（注2）として、目や耳から入った情報</mark>…</pre></div></div><p>Retain the existing directly witnessed selective glossary aids. Their presence is real additional content, not merely equivalent rendering. The principal’s lack of readings does not establish that they were absent historically.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>The original exam is needed to establish the historical presence and placement of this reading aid. The secondary principal visibly prints an inline parenthetical reading; it does not prove original ruby placement.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Review/study glossary notes1/4/5.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=10): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Review/study glossary notes1/4/5<p>織り込まれる / 認識する / 掻き消える</p></li><li><span class="principal-repository-source">Principal source (page=9): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Review/study glossary notes1/4/5<p>織(お)り込まれる / 認(にん)識(しき)する / 掻(か)き消える</p></li></ul><details><summary>Full published record · unresolved_cases-N2_07_2015-reading-b008-reading-aids</summary><pre>{
+  &quot;case_id&quot;: &quot;N2_07_2015-reading-b008-reading-aids&quot;,
+  &quot;unit&quot;: &quot;N2_07_2015&quot;,
+  &quot;item_id&quot;: &quot;reading-b008&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;&lt;p&gt;（3）&lt;/p&gt;&lt;p&gt;大人になってからの勉強で、なかなか理解が進まないことの大きな原因の一つが、実は、復習をちゃんとしないことにある。学生時代の勉強は、いやでも復習がカリキュラムの中に織り込まれている（注1）ので、知識が定着しやすくなっている。これに対して、大人になって自分で勉強するときには、意識して復習の機会をつくらないと、一回本を読んだだけで「もうわかった。大丈夫」と思い込んでしまいがちになるのだ。&lt;/p&gt;&lt;p&gt;脳の特性（注2）として、目や耳から入った情報をいったん溜めておいて、その中から必要のないと思われる情報を自動的に脳の奥底にしまい込んでしまう。では、どこで、「必要な情報」と「無用な情報」をより分けている（注3）のかというと、同じ情報が繰り返し入ってくるかどうかということである。この間隔は一カ月と言われており、すなわち、一カ月の間で最低二回繰り返して頭に入れることで、「必要な情報」だと脳が認識し（注4）、知識が定着していくのである。逆に言えば、一度頭に入れて覚えたつもりでも、一カ月の間に繰り返し情報が入ってこなければ、いずれは「無用な情報」として脳がどこかに片付けてしまうのだ。&lt;/p&gt;&lt;p&gt;この結果、いったん覚えたはずの知識が、しばらくすると記憶の中から掻き消えて（注5）しまったようになり、実際に試験をしてみるとまったく思い出せないということが起こる。そこで、「年をとって記憶力が弱くなった」とか、「できていたはずなのに」と落ち込んでしまうけれど、実際には老化のせいでも何でもなく、単に復習をしていないだけだということが多いのだ。&lt;/p&gt;&lt;p&gt;（和田秀樹『40代からの勉強法―やる気・集中力をどう高めるか』による）&lt;/p&gt;&lt;p&gt;（注1）織（お）り込まれる:ここでは、入っている&lt;/p&gt;&lt;p&gt;（注2）特性:ここでは、特徴的な働き&lt;/p&gt;&lt;p&gt;（注3）より分ける:ここでは、分類する&lt;/p&gt;&lt;p&gt;（注4）認（にん）識（しき）する : ここでは、判断する&lt;/p&gt;&lt;p&gt;（注5）掻（か）き消える: なくなる&lt;/p&gt;&quot;,
+  &quot;context&quot;: &quot;Review/study glossary notes1/4/5.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;織り込まれる / 認識する / 掻き消える&quot;,
+      &quot;assessment&quot;: &quot;Principal omits these reading aids.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;【2】2015年07月N2 真题 (18-page question/key copy)&quot;,
+      &quot;sha256&quot;: &quot;288a11fa37794d38faf8c190807cde1f3a284bc4e227134c1278933d72ba6c03&quot;,
+      &quot;locator&quot;: &quot;Review/study glossary notes1/4/5&quot;,
+      &quot;reading&quot;: &quot;織り込まれる / 認識する / 掻き消える&quot;,
+      &quot;lineage&quot;: &quot;Unapproved secondary witness; acquisition is unestablished. Related copies are not independent votes.&quot;,
+      &quot;physical_pages&quot;: [
+        10
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;Đề N2 7-2015 (14-page question copy)&quot;,
+      &quot;sha256&quot;: &quot;c1d83e0f6f04b987519e87b709b064152ba75093c3016f883cdc77d2001cfb18&quot;,
+      &quot;locator&quot;: &quot;Review/study glossary notes1/4/5&quot;,
+      &quot;reading&quot;: &quot;織(お)り込まれる / 認(にん)識(しき)する / 掻(か)き消える&quot;,
+      &quot;lineage&quot;: &quot;Unapproved secondary witness; acquisition is unestablished. Related copies are not independent votes.&quot;,
+      &quot;physical_pages&quot;: [
+        9
+      ]
+    }
+  ],
+  &quot;rationale&quot;: &quot;Retain the existing directly witnessed selective glossary aids. Their presence is real additional content, not merely equivalent rendering. The principal’s lack of readings does not establish that they were absent historically.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Compared 【2】2015年07月N2 真题 (18-page question/key copy), physical pages [10], Review/study glossary notes1/4/5: 織り込まれる / 認識する / 掻き消える&quot;,
+    &quot;Compared Đề N2 7-2015 (14-page question copy), physical pages [9], Review/study glossary notes1/4/5: 織(お)り込まれる / 認(にん)識(しき)する / 掻(か)き消える&quot;,
+    &quot;5 November 2026: Public snapshot rebound to the earlier, verified current field. Only the historical presentation edit is replayed; this snapshot repair does not change the original witness or its confidence.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;The original exam is needed to establish the historical presence and placement of this reading aid. The secondary principal visibly prints an inline parenthetical reading; it does not prove original ruby placement.&quot;
+}</pre></details></div><div class="review-record" id="principal_differences-N2_07_2015-PD-008"><div class="review-label">Principal difference · /content/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>織り込まれる / 認識する / 掻き消える</pre></div><div><h4>Editorial</h4><pre>織<mark class="diff-new">(お)</mark>り込まれる / 認<mark class="diff-new">(にん)</mark>識<mark class="diff-new">(しき)</mark>する / 掻<mark class="diff-new">(か)</mark>き消える</pre></div></div><p>Retain the existing selective inline glossary readings, directly witnessed in the fuller copy. The original annotation remains uncertain.</p><span class="principal-repository-source">Principal source (page=10): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Review/study glossary notes1/4/5</span><details><summary>Full published record · principal_differences-N2_07_2015-PD-008</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N2_07_2015-PD-008&quot;,
+  &quot;unit&quot;: &quot;N2_07_2015&quot;,
+  &quot;item_id&quot;: &quot;reading-b008&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;current_value&quot;: &quot;&lt;p&gt;（3）&lt;/p&gt;&lt;p&gt;大人になってからの勉強で、なかなか理解が進まないことの大きな原因の一つが、実は、復習をちゃんとしないことにある。学生時代の勉強は、いやでも復習がカリキュラムの中に織り込まれている（注1）ので、知識が定着しやすくなっている。これに対して、大人になって自分で勉強するときには、意識して復習の機会をつくらないと、一回本を読んだだけで「もうわかった。大丈夫」と思い込んでしまいがちになるのだ。&lt;/p&gt;&lt;p&gt;脳の特性（注2）として、目や耳から入った情報をいったん溜めておいて、その中から必要のないと思われる情報を自動的に脳の奥底にしまい込んでしまう。では、どこで、「必要な情報」と「無用な情報」をより分けている（注3）のかというと、同じ情報が繰り返し入ってくるかどうかということである。この間隔は一カ月と言われており、すなわち、一カ月の間で最低二回繰り返して頭に入れることで、「必要な情報」だと脳が認識し（注4）、知識が定着していくのである。逆に言えば、一度頭に入れて覚えたつもりでも、一カ月の間に繰り返し情報が入ってこなければ、いずれは「無用な情報」として脳がどこかに片付けてしまうのだ。&lt;/p&gt;&lt;p&gt;この結果、いったん覚えたはずの知識が、しばらくすると記憶の中から掻き消えて（注5）しまったようになり、実際に試験をしてみるとまったく思い出せないということが起こる。そこで、「年をとって記憶力が弱くなった」とか、「できていたはずなのに」と落ち込んでしまうけれど、実際には老化のせいでも何でもなく、単に復習をしていないだけだということが多いのだ。&lt;/p&gt;&lt;p&gt;（和田秀樹『40代からの勉強法―やる気・集中力をどう高めるか』による）&lt;/p&gt;&lt;p&gt;（注1）織（お）り込まれる:ここでは、入っている&lt;/p&gt;&lt;p&gt;（注2）特性:ここでは、特徴的な働き&lt;/p&gt;&lt;p&gt;（注3）より分ける:ここでは、分類する&lt;/p&gt;&lt;p&gt;（注4）認（にん）識（しき）する : ここでは、判断する&lt;/p&gt;&lt;p&gt;（注5）掻（か）き消える: なくなる&lt;/p&gt;&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;【2】2015年07月N2 真题 (18-page question/key copy)&quot;,
+    &quot;sha256&quot;: &quot;288a11fa37794d38faf8c190807cde1f3a284bc4e227134c1278933d72ba6c03&quot;,
+    &quot;physical_pages&quot;: [
+      10
+    ],
+    &quot;locator&quot;: &quot;Review/study glossary notes1/4/5&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;織り込まれる / 認識する / 掻き消える&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;織(お)り込まれる / 認(にん)識(しき)する / 掻(か)き消える&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;retained_variant&quot;,
+  &quot;rationale&quot;: &quot;Retain the existing selective inline glossary readings, directly witnessed in the fuller copy. The original annotation remains uncertain.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;N2_07_2015-reading-b008-reading-aids&quot;
+  ]
+}</pre></details></div></section><section class="review-group" id="review-reading-b010" data-kinds="provisional_fix"><div class="review-group-heading"><h2>reading-b010</h2><a href="../papers/N2_07_2015.html#reading-b010">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><p>B</p><p>最近のスポーツ選手に目標をたずねると「世界で活躍したい」という答えが多く返ってくる。世界的な大会やチームで活躍する選手が増えた結果だろう。だが私が指摘したいのは、目標が大きすぎたり遠すぎたりするために、しなければならないことが具体的にイメージできず、途中でやる気を失ってしまう選手が多いことだ。</p><p>大きな夢を実現するには、長期間にわたる日々の努力が欠かせない。意欲を持続させるためには、少しずつでも前に進んでいると感じられる達成感が必要だ。目標が大きすぎてするべきことが見えなくなってしまった時には、今の自分に一番必要なことを考えて目標を見直してほしい。</p><p>（注1）固定観念:簡単には変わらない考え</p><p>（注2）死守する:ここでは、最後まで守る</p><p>（注3） つきつめる:最後までやる</p><p>（注4） 大（だい）胆（たん）に:思い切って</p></div></details><div class="review-record" id="unresolved_cases-N2_07_2015-reading-b010-reading-aid"><div class="review-label">Provisional fix · /content/html · medium</div><div class="comparison"><div><h4>Before</h4><pre>…しずつでも前に進んでいると感じられる達成感が必要だ。目標が大きすぎてするべきことが見えなくなってしまった時には、今の自分に一番必要なことを考えて目標を見直してほしい。&lt;/p&gt;&lt;p&gt;<mark class="diff-old">(</mark>注1<mark class="diff-old">)</mark>固定観念:簡単には変わらない考え&lt;/p&gt;&lt;p&gt;<mark class="diff-old">(</mark>注2<mark class="diff-old">)</mark>死守する:ここでは、最後まで守る&lt;/p&gt;&lt;p&gt;<mark class="diff-old">(</mark>注3<mark class="diff-old">)</mark> つきつめる:最後までやる&lt;/p&gt;&lt;p&gt;<mark class="diff-old">(</mark>注4<mark class="diff-old">)</mark> 大胆に:思い切って&lt;/p&gt;</pre></div><div><h4>Editorial</h4><pre>…しずつでも前に進んでいると感じられる達成感が必要だ。目標が大きすぎてするべきことが見えなくなってしまった時には、今の自分に一番必要なことを考えて目標を見直してほしい。&lt;/p&gt;&lt;p&gt;<mark class="diff-new">（</mark>注1<mark class="diff-new">）</mark>固定観念:簡単には変わらない考え&lt;/p&gt;&lt;p&gt;<mark class="diff-new">（</mark>注2<mark class="diff-new">）</mark>死守する:ここでは、最後まで守る&lt;/p&gt;&lt;p&gt;<mark class="diff-new">（</mark>注3<mark class="diff-new">）</mark> つきつめる:最後までやる&lt;/p&gt;&lt;p&gt;<mark class="diff-new">（</mark>注4<mark class="diff-new">）</mark> 大<mark class="diff-new">（だい）</mark>胆<mark class="diff-new">（たん）</mark>に:思い切って&lt;/p&gt;</pre></div></div><p>Prefer the principal’s selective glossary reading, preserving its literal inline form while acknowledging the unannotated alternative.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>The original exam is needed to establish the historical presence and placement of this reading aid. The secondary principal visibly prints an inline parenthetical reading; it does not prove original ruby placement.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Shared sports-goal glossary after passage B, note4 explaining 大胆に in passage A.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=12): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Shared A/B glossary note4<p>大(だい)胆(たん)に:思い切って</p></li><li><span class="principal-repository-source">Principal source (page=10): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Shared A/B glossary note4<p>大胆に:思い切って</p></li></ul><details><summary>Full published record · unresolved_cases-N2_07_2015-reading-b010-reading-aid</summary><pre>{
+  &quot;case_id&quot;: &quot;N2_07_2015-reading-b010-reading-aid&quot;,
+  &quot;unit&quot;: &quot;N2_07_2015&quot;,
+  &quot;item_id&quot;: &quot;reading-b010&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;&lt;p&gt;B&lt;/p&gt;&lt;p&gt;最近のスポーツ選手に目標をたずねると「世界で活躍したい」という答えが多く返ってくる。世界的な大会やチームで活躍する選手が増えた結果だろう。だが私が指摘したいのは、目標が大きすぎたり遠すぎたりするために、しなければならないことが具体的にイメージできず、途中でやる気を失ってしまう選手が多いことだ。&lt;/p&gt;&lt;p&gt;大きな夢を実現するには、長期間にわたる日々の努力が欠かせない。意欲を持続させるためには、少しずつでも前に進んでいると感じられる達成感が必要だ。目標が大きすぎてするべきことが見えなくなってしまった時には、今の自分に一番必要なことを考えて目標を見直してほしい。&lt;/p&gt;&lt;p&gt;（注1）固定観念:簡単には変わらない考え&lt;/p&gt;&lt;p&gt;（注2）死守する:ここでは、最後まで守る&lt;/p&gt;&lt;p&gt;（注3） つきつめる:最後までやる&lt;/p&gt;&lt;p&gt;（注4） 大（だい）胆（たん）に:思い切って&lt;/p&gt;&quot;,
+  &quot;context&quot;: &quot;Shared sports-goal glossary after passage B, note4 explaining 大胆に in passage A.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;大胆に:思い切って&quot;,
+      &quot;assessment&quot;: &quot;The alternative glossary has no reading aid.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;【2】2015年07月N2 真题 (18-page question/key copy)&quot;,
+      &quot;sha256&quot;: &quot;288a11fa37794d38faf8c190807cde1f3a284bc4e227134c1278933d72ba6c03&quot;,
+      &quot;locator&quot;: &quot;Shared A/B glossary note4&quot;,
+      &quot;reading&quot;: &quot;大(だい)胆(たん)に:思い切って&quot;,
+      &quot;lineage&quot;: &quot;Unapproved secondary witness; acquisition is unestablished. Related copies are not independent votes.&quot;,
+      &quot;physical_pages&quot;: [
+        12
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;【1】2015年07月N2 question copy (17 pages)&quot;,
+      &quot;sha256&quot;: &quot;83497df825b1de5b9f36ab8c0e681df13f7b9e4be6324dd6c39a4f294f189cf1&quot;,
+      &quot;locator&quot;: &quot;Shared A/B glossary note4&quot;,
+      &quot;reading&quot;: &quot;大胆に:思い切って&quot;,
+      &quot;lineage&quot;: &quot;Unapproved secondary witness; acquisition is unestablished. Related copies are not independent votes.&quot;,
+      &quot;physical_pages&quot;: [
+        10
+      ]
+    }
+  ],
+  &quot;rationale&quot;: &quot;Prefer the principal’s selective glossary reading, preserving its literal inline form while acknowledging the unannotated alternative.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Compared 【2】2015年07月N2 真题 (18-page question/key copy), physical pages [12], Shared A/B glossary note4: 大(だい)胆(たん)に:思い切って&quot;,
+    &quot;Compared 【1】2015年07月N2 question copy (17 pages), physical pages [10], Shared A/B glossary note4: 大胆に:思い切って&quot;,
+    &quot;5 November 2026: Public snapshot rebound to the earlier, verified current field. Only the historical presentation edit is replayed; this snapshot repair does not change the original witness or its confidence.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;The original exam is needed to establish the historical presence and placement of this reading aid. The secondary principal visibly prints an inline parenthetical reading; it does not prove original ruby placement.&quot;,
+  &quot;before&quot;: &quot;&lt;p&gt;B&lt;/p&gt;&lt;p&gt;最近のスポーツ選手に目標をたずねると「世界で活躍したい」という答えが多く返ってくる。世界的な大会やチームで活躍する選手が増えた結果だろう。だが私が指摘したいのは、目標が大きすぎたり遠すぎたりするために、しなければならないことが具体的にイメージできず、途中でやる気を失ってしまう選手が多いことだ。&lt;/p&gt;&lt;p&gt;大きな夢を実現するには、長期間にわたる日々の努力が欠かせない。意欲を持続させるためには、少しずつでも前に進んでいると感じられる達成感が必要だ。目標が大きすぎてするべきことが見えなくなってしまった時には、今の自分に一番必要なことを考えて目標を見直してほしい。&lt;/p&gt;&lt;p&gt;(注1)固定観念:簡単には変わらない考え&lt;/p&gt;&lt;p&gt;(注2)死守する:ここでは、最後まで守る&lt;/p&gt;&lt;p&gt;(注3) つきつめる:最後までやる&lt;/p&gt;&lt;p&gt;(注4) 大胆に:思い切って&lt;/p&gt;&quot;
+}</pre></details></div></section><section class="review-group" id="review-reading-b011" data-kinds="provisional_fix"><div class="review-group-heading"><h2>reading-b011</h2><a href="../papers/N2_07_2015.html#reading-b011">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">以下は、自分の仕事として、さまざまな地域の課題に住民とともに取り組んでいる人が書いた文章である。 <br/><br/>
+よく考えてみれば、幼稚園のころから僕はずっとヨソモノ（注1）だったような気がする。親が転勤族だったため、おおむね4年に一度は転校生になる。クラスに馴染んできた（注2） なぁ、と思ったところに引越しすることになる。幼稚園も小学校も中学校もふたつずつ通った。そのたびに転校生としてクラスをヨソモノの視点から観察する。誰がクラスのボス（注3）なのか。誰と仲良くなると仲間に入れてもらいやすいのか。誰と誰は仲が良くて、誰とは仲が悪いのか。そういうことばかり読み取ろうとしていた。自分でも嫌な小学生だと思っていたが、そうやって自分の立ち位置を見つけなければクラスの中に入っていくのが難しかった。<br/><br/>いまも①<u>同じこと</u>をしているような気がする。集落（注4）へ行っては、誰が権力者（注5）なのか、誰が正しいことをいっているのか、誰の意見が重視されているのか。誰と誰は仲がいいのか。そんなことを読み取ろうとしている。そして、4年くらい経ったらその集落からいなくなる。いまでも転校生のような生活である。<br/><br/>そんな少年時代だったから、「出身地はどこですか?」と聞かれるのがつらい。どこも4年間しか住んでいないので、出身地は適当に決めるしかない。出生地（注6）は明確だが、僕の場合は生後2年間しかその場所に住んでいない。もちろん当時の記憶はない。<br/><br/>だから「ふるさと」を持つ人に対する憧れがある。「いつかは地元に戻って働きたいと思っているんだ」「出身地を元気にしたいと思っています」という言葉を聞くたびに②<u>羨ましくなる</u>。逆に、ふるさとを悪くいう言葉を聞くのはつらい。「田舎だから」「何もないから」「足を引っ張り合う（注7）」「新しいことができない」。せっかくふるさとを持っているのに、それを悪くいうのはもったいない。ふるさとはいい場所であって欲しい。だから、その手伝いがしたいと思う。どこまで行ってもヨソモノだが、その立場から少しでもふるさとがいい状態になるように努力したい。どの場所も、たくさんの人にとってのふるさとであり続けるのだから。<br/><br/><div>（山崎亮『コミュニティデザインの時代』による） </div><br/>（注1）ヨソモノ:よそから来た人<br/>（注2） 馴（な）染（じ）む: 慣れて親しくなる <br/>（注3） ボス: ここでは、力を持った人<br/>（注4） 集落:ここでは、村のようなところ <br/>（注5） 権（けん）力（りょく）者:ここでは、力を持った人 <br/>（注6）出生地:生まれた場所 <br/>（注7）足を引っ張り合う: 成功するのをじゃまし合う</div></details><div class="review-record" id="unresolved_cases-N2_07_2015-reading-b011-kana-and-aids"><div class="review-label">Provisional fix · /content/html · medium</div><div class="comparison"><div><h4>Before</h4><pre>以下は、自分の仕事として、さまざまな地域の課題に住民とともに取り組んでいる人が書いた文章である。 &lt;br&gt;&lt;br&gt;
+よく考えてみれば、幼稚園のころから僕はずっとヨソモノ<mark class="diff-old">(</mark>注1<mark class="diff-old">)</mark>だったような気がする。親が転勤族だったため、おおむね4年に一度は転校生になる。クラスに馴染んできた<mark class="diff-old">(</mark>注2<mark class="diff-old">)</mark> な<mark class="diff-old">あ</mark>、と思ったところに引越しすることになる。幼稚園も小学校も中学校もふたつずつ通った。そのたびに転校生としてクラスをヨソモノの視点から観察する。誰がクラスのボス<mark class="diff-old">(</mark>注3…</pre></div><div><h4>Editorial</h4><pre>以下は、自分の仕事として、さまざまな地域の課題に住民とともに取り組んでいる人が書いた文章である。 &lt;br&gt;&lt;br&gt;
+よく考えてみれば、幼稚園のころから僕はずっとヨソモノ<mark class="diff-new">（</mark>注1<mark class="diff-new">）</mark>だったような気がする。親が転勤族だったため、おおむね4年に一度は転校生になる。クラスに馴染んできた<mark class="diff-new">（</mark>注2<mark class="diff-new">）</mark> な<mark class="diff-new">ぁ</mark>、と思ったところに引越しすることになる。幼稚園も小学校も中学校もふたつずつ通った。そのたびに転校生としてクラスをヨソモノの視点から観察する。誰がクラスのボス<mark class="diff-new">（</mark>注3…</pre></div></div><p>Prefer the directly visible small ぁ and the two selective glossary readings in the principal. Preserve the separately certain ところ repair. Kana size and annotation presence remain historically unverified.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>The exact historical kana size and glossary annotations require the original passage. The printed principal and distinct alternative favor the present reconstruction, without authenticating it.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Long outsider/community passage for Q71–73: first-paragraph exclamation and glossary notes2/5.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=12): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Long passage paragraph1 and notes2/5, enlarged<p>なぁ、と思ったところに; 馴(な)染(じ)む; 権(けん)力(りょく)者</p></li><li><span class="principal-repository-source">Principal source (page=11): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Long passage same spans<p>なぁ; 馴(な)染(じ)む; 権(けん)力(りょく)者</p></li><li><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Long passage paragraph1 and glossary<p>なあ; 馴染む; 権力者</p></li></ul><details><summary>Full published record · unresolved_cases-N2_07_2015-reading-b011-kana-and-aids</summary><pre>{
+  &quot;case_id&quot;: &quot;N2_07_2015-reading-b011-kana-and-aids&quot;,
+  &quot;unit&quot;: &quot;N2_07_2015&quot;,
+  &quot;item_id&quot;: &quot;reading-b011&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;以下は、自分の仕事として、さまざまな地域の課題に住民とともに取り組んでいる人が書いた文章である。 &lt;br&gt;&lt;br&gt;\nよく考えてみれば、幼稚園のころから僕はずっとヨソモノ（注1）だったような気がする。親が転勤族だったため、おおむね4年に一度は転校生になる。クラスに馴染んできた（注2） なぁ、と思ったところに引越しすることになる。幼稚園も小学校も中学校もふたつずつ通った。そのたびに転校生としてクラスをヨソモノの視点から観察する。誰がクラスのボス（注3）なのか。誰と仲良くなると仲間に入れてもらいやすいのか。誰と誰は仲が良くて、誰とは仲が悪いのか。そういうことばかり読み取ろうとしていた。自分でも嫌な小学生だと思っていたが、そうやって自分の立ち位置を見つけなければクラスの中に入っていくのが難しかった。&lt;br&gt;&lt;br&gt;いまも①&lt;u&gt;同じこと&lt;/u&gt;をしているような気がする。集落（注4）へ行っては、誰が権力者（注5）なのか、誰が正しいことをいっているのか、誰の意見が重視されているのか。誰と誰は仲がいいのか。そんなことを読み取ろうとしている。そして、4年くらい経ったらその集落からいなくなる。いまでも転校生のような生活である。&lt;br&gt;&lt;br&gt;そんな少年時代だったから、「出身地はどこですか?」と聞かれるのがつらい。どこも4年間しか住んでいないので、出身地は適当に決めるしかない。出生地（注6）は明確だが、僕の場合は生後2年間しかその場所に住んでいない。もちろん当時の記憶はない。&lt;br&gt;&lt;br&gt;だから「ふるさと」を持つ人に対する憧れがある。「いつかは地元に戻って働きたいと思っているんだ」「出身地を元気にしたいと思っています」という言葉を聞くたびに②&lt;u&gt;羨ましくなる&lt;/u&gt;。逆に、ふるさとを悪くいう言葉を聞くのはつらい。「田舎だから」「何もないから」「足を引っ張り合う（注7）」「新しいことができない」。せっかくふるさとを持っているのに、それを悪くいうのはもったいない。ふるさとはいい場所であって欲しい。だから、その手伝いがしたいと思う。どこまで行ってもヨソモノだが、その立場から少しでもふるさとがいい状態になるように努力したい。どの場所も、たくさんの人にとってのふるさとであり続けるのだから。&lt;br&gt;&lt;br&gt;&lt;div&gt;（山崎亮『コミュニティデザインの時代』による） &lt;/div&gt;&lt;br&gt;（注1）ヨソモノ:よそから来た人&lt;br&gt;（注2） 馴（な）染（じ）む: 慣れて親しくなる &lt;br&gt;（注3） ボス: ここでは、力を持った人&lt;br&gt;（注4） 集落:ここでは、村のようなところ &lt;br&gt;（注5） 権（けん）力（りょく）者:ここでは、力を持った人 &lt;br&gt;（注6）出生地:生まれた場所 &lt;br&gt;（注7）足を引っ張り合う: 成功するのをじゃまし合う&quot;,
+  &quot;context&quot;: &quot;Long outsider/community passage for Q71–73: first-paragraph exclamation and glossary notes2/5.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;なあ / 馴染む / 権力者&quot;,
+      &quot;assessment&quot;: &quot;Inherited archive-based text uses full-sized あ and omits both readings. It may preserve original choices.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;【2】2015年07月N2 真题 (18-page question/key copy)&quot;,
+      &quot;sha256&quot;: &quot;288a11fa37794d38faf8c190807cde1f3a284bc4e227134c1278933d72ba6c03&quot;,
+      &quot;locator&quot;: &quot;Long passage paragraph1 and notes2/5, enlarged&quot;,
+      &quot;reading&quot;: &quot;なぁ、と思ったところに; 馴(な)染(じ)む; 権(けん)力(りょく)者&quot;,
+      &quot;lineage&quot;: &quot;Unapproved secondary witness; acquisition is unestablished. Related copies are not independent votes.&quot;,
+      &quot;physical_pages&quot;: [
+        12,
+        13
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;【1】2015年07月N2 question copy (17 pages)&quot;,
+      &quot;sha256&quot;: &quot;83497df825b1de5b9f36ab8c0e681df13f7b9e4be6324dd6c39a4f294f189cf1&quot;,
+      &quot;locator&quot;: &quot;Long passage same spans&quot;,
+      &quot;reading&quot;: &quot;なぁ; 馴(な)染(じ)む; 権(けん)力(りょく)者&quot;,
+      &quot;lineage&quot;: &quot;Unapproved secondary witness; acquisition is unestablished. Related copies are not independent votes.&quot;,
+      &quot;physical_pages&quot;: [
+        11
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;Archived July 2015 N2 reading transcription&quot;,
+      &quot;sha256&quot;: &quot;b6cf10a231277c8ef387e59509e23c535dee4a4e33ce0ff1bdd4c6eb971d4f02&quot;,
+      &quot;locator&quot;: &quot;Long passage paragraph1 and glossary&quot;,
+      &quot;reading&quot;: &quot;なあ; 馴染む; 権力者&quot;,
+      &quot;lineage&quot;: &quot;Unapproved secondary witness; acquisition is unestablished. Related copies are not independent votes.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Prefer the directly visible small ぁ and the two selective glossary readings in the principal. Preserve the separately certain ところ repair. Kana size and annotation presence remain historically unverified.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Compared 【2】2015年07月N2 真题 (18-page question/key copy), physical pages [12, 13], Long passage paragraph1 and notes2/5, enlarged: なぁ、と思ったところに; 馴(な)染(じ)む; 権(けん)力(りょく)者&quot;,
+    &quot;Compared 【1】2015年07月N2 question copy (17 pages), physical pages [11], Long passage same spans: なぁ; 馴(な)染(じ)む; 権(けん)力(りょく)者&quot;,
+    &quot;Compared Archived July 2015 N2 reading transcription, physical pages not applicable, Long passage paragraph1 and glossary: なあ; 馴染む; 権力者&quot;,
+    &quot;5 November 2026: Public snapshot rebound to the earlier, verified current field. Only the historical presentation edit is replayed; this snapshot repair does not change the original witness or its confidence.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;The exact historical kana size and glossary annotations require the original passage. The printed principal and distinct alternative favor the present reconstruction, without authenticating it.&quot;,
+  &quot;before&quot;: &quot;以下は、自分の仕事として、さまざまな地域の課題に住民とともに取り組んでいる人が書いた文章である。 &lt;br&gt;&lt;br&gt;\nよく考えてみれば、幼稚園のころから僕はずっとヨソモノ(注1)だったような気がする。親が転勤族だったため、おおむね4年に一度は転校生になる。クラスに馴染んできた(注2) なあ、と思ったところに引越しすることになる。幼稚園も小学校も中学校もふたつずつ通った。そのたびに転校生としてクラスをヨソモノの視点から観察する。誰がクラスのボス(注3)なのか。誰と仲良くなると仲間に入れてもらいやすいのか。誰と誰は仲が良くて、誰とは仲が悪いのか。そういうことばかり読み取ろうとしていた。自分でも嫌な小学生だと思っていたが、そうやって自分の立ち位置を見つけなければクラスの中に入っていくのが難しかった。&lt;br&gt;&lt;br&gt;いまも①&lt;u&gt;同じこと&lt;/u&gt;をしているような気がする。集落(注4)へ行っては、誰が権力者(注5)なのか、誰が正しいことをいっているのか、誰の意見が重視されているのか。誰と誰は仲がいいのか。そんなことを読み取ろうとしている。そして、4年くらい経ったらその集落からいなくなる。いまでも転校生のような生活である。&lt;br&gt;&lt;br&gt;そんな少年時代だったから、「出身地はどこですか?」と聞かれるのがつらい。どこも4年間しか住んでいないので、出身地は適当に決めるしかない。出生地(注6)は明確だが、僕の場合は生後2年間しかその場所に住んでいない。もちろん当時の記憶はない。&lt;br&gt;&lt;br&gt;だから「ふるさと」を持つ人に対する憧れがある。「いつかは地元に戻って働きたいと思っているんだ」「出身地を元気にしたいと思っています」という言葉を聞くたびに②&lt;u&gt;羨ましくなる&lt;/u&gt;。逆に、ふるさとを悪くいう言葉を聞くのはつらい。「田舎だから」「何もないから」「足を引っ張り合う(注7)」「新しいことができない」。せっかくふるさとを持っているのに、それを悪くいうのはもったいない。ふるさとはいい場所であって欲しい。だから、その手伝いがしたいと思う。どこまで行ってもヨソモノだが、その立場から少しでもふるさとがいい状態になるように努力したい。どの場所も、たくさんの人にとってのふるさとであり続けるのだから。&lt;br&gt;&lt;br&gt;&lt;div&gt;(山崎亮『コミュニティデザインの時代』による) &lt;/div&gt;&lt;br&gt;(注1)ヨソモノ:よそから来た人&lt;br&gt;(注2) 馴染む: 慣れて親しくなる &lt;br&gt;(注3) ボス: ここでは、力を持った人&lt;br&gt;(注4) 集落:ここでは、村のようなところ &lt;br&gt;(注5) 権力者:ここでは、力を持った人 &lt;br&gt;(注6)出生地:生まれた場所 &lt;br&gt;(注7)足を引っ張り合う: 成功するのをじゃまし合う&quot;
+}</pre></details></div></section><section class="review-group" id="review-reading-b012" data-kinds="difference provisional_fix unresolved"><div class="review-group-heading"><h2>reading-b012</h2><a href="../papers/N2_07_2015.html#reading-b012">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><center><b>バーベキュー会場開設のお知らせ<br/>南の丘公園内で本格的なバーベキューが楽しめます</b></center> <br/>「開設期間」4月1日～11月30日 <br/><br/>「利用時間」①10:30～14:30（4時間）<br/>②15:00～19:00（4時間） <br/><br/>「利用料金」個人: 1200円（1名分） <br/><br/>● 施設および調理器具使用料となります。<br/><br/>● バーベキューの材料は、各自ご持参いただくか、会場内で下記の〈バーベキューセット〉をご購入ください。 <br/><br/>● 飲み物も自由にお持ち込みいただけます。会場内でも販売しております。 <br/><br/>● 利用時間①②を続けて利用される場合、利用料金は2回分必要となります。 <br/><br/>〈団体割引〉 <br/>団体でのご利用は割引料金が適用されます。20名以上:1000円（1名分）<br/><br/> 〈バーベキューセット〉<br/>バーベキューに必要な材料がそろったお得なセットです。以下の2種類のメニューからいずれかをお選びください。<br/><table><tr><td>ボリュームセット</td><td>2000円（1名分）:</td><td>数種類のお肉と野菜がたっぷり</td></tr><tr><td>ミックスセット</td><td>2400円（1名分）:</td><td>お肉と魚介類の両方が楽しめる</td></tr></table><br/><br/>「利用方法」 <br/>● ホームページ、またはお電話で、事前にご予約ください。 <br/>● ご利用日の1か月前から先着順でご予約を受け付けます。団体でご予約のお客様は、2か月前から優先予約が可能です。<br/>● 空きがある場合のみ、当日のご利用も可能です。 <br/>● 料金は、ご利用日当日、会場でお支払いください。 <br/><br/>「注意」 <br/>（1）お客様が調理器具を持ち込むことはできません。 <br/>（2）花火やカラオケなど他の利用者や近隣の住民の方への迷惑となる行為は禁止です。<br/> （3）屋外施設のため、強風などの悪天候により営業を中止する場合があります。<br/><br/><div>南の丘公園バーベキュー予約センター <br/>ホームページ: http://www.mimaminooka-koen.com/bbq　　電話: 0558-055-5555 </div></div></details><div class="review-record" id="unresolved_cases-N2_07_2015-reading-b012-hours"><div class="review-label">Provisional fix · /content/html · medium</div><div class="comparison"><div><h4>Before</h4><pre>…せ&lt;br&gt;南の丘公園内で本格的なバーベキューが楽しめます&lt;/b&gt;&lt;/center&gt; &lt;br&gt;「開設期間」4月1日～11月30日 &lt;br&gt;&lt;br&gt;「利用時間」①10:30～14:30<mark class="diff-old">(</mark>4時間<mark class="diff-old">)</mark>&lt;br&gt;②15:00～19:<mark class="diff-old">3</mark>0<mark class="diff-old">(</mark>4時間<mark class="diff-old">)</mark> &lt;br&gt;&lt;br&gt;「利用料金」個人: 1200円<mark class="diff-old">(</mark>1名分<mark class="diff-old">)</mark> &lt;br&gt;&lt;br&gt;● 施設および調理器具使用料となります。&lt;br&gt;&lt;br&gt;● バーベキューの材料は、各自ご持参いただくか、会場内で下記の〈バーベキューセット〉をご購入くださ…</pre></div><div><h4>Editorial</h4><pre>…せ&lt;br&gt;南の丘公園内で本格的なバーベキューが楽しめます&lt;/b&gt;&lt;/center&gt; &lt;br&gt;「開設期間」4月1日～11月30日 &lt;br&gt;&lt;br&gt;「利用時間」①10:30～14:30<mark class="diff-new">（</mark>4時間<mark class="diff-new">）</mark>&lt;br&gt;②15:00～19:0<mark class="diff-new">0（</mark>4時間<mark class="diff-new">）</mark> &lt;br&gt;&lt;br&gt;「利用料金」個人: 1200円<mark class="diff-new">（</mark>1名分<mark class="diff-new">）</mark> &lt;br&gt;&lt;br&gt;● 施設および調理器具使用料となります。&lt;br&gt;&lt;br&gt;● バーベキューの材料は、各自ご持参いただくか、会場内で下記の〈バーベキューセット〉をご購入くださ…</pre></div></div><p>Prefer the witnessed 19:00 closing time that makes the stated session four hours. Retain public uncertainty because the principal and notice image instead print19:30.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>No authenticated original notice establishes whether the end time or duration was originally different. The four-hour arithmetic and directly printed19:00 alternative favor this repair.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Barbecue notice for Q74–75: second daily session and its stated four-hour duration.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=15): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Notice second daily slot<p>②15:00～19:30(4時間)</p></li><li><span class="principal-repository-source">Principal source (page=12): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Notice second daily slot<p>②15:00～19:00(4時間)</p></li><li><span class="principal-repository-source">Principal source (page=7): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q75 explanation<p>15:00～19:00</p></li><li><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Notice second daily slot<p>②15:00～19:30(4時間)</p></li></ul><details><summary>Full published record · unresolved_cases-N2_07_2015-reading-b012-hours</summary><pre>{
+  &quot;case_id&quot;: &quot;N2_07_2015-reading-b012-hours&quot;,
+  &quot;unit&quot;: &quot;N2_07_2015&quot;,
+  &quot;item_id&quot;: &quot;reading-b012&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;&lt;center&gt;&lt;b&gt;バーベキュー会場開設のお知らせ&lt;br&gt;南の丘公園内で本格的なバーベキューが楽しめます&lt;/b&gt;&lt;/center&gt; &lt;br&gt;「開設期間」4月1日～11月30日 &lt;br&gt;&lt;br&gt;「利用時間」①10:30～14:30（4時間）&lt;br&gt;②15:00～19:00（4時間） &lt;br&gt;&lt;br&gt;「利用料金」個人: 1200円（1名分） &lt;br&gt;&lt;br&gt;● 施設および調理器具使用料となります。&lt;br&gt;&lt;br&gt;● バーベキューの材料は、各自ご持参いただくか、会場内で下記の〈バーベキューセット〉をご購入ください。 &lt;br&gt;&lt;br&gt;● 飲み物も自由にお持ち込みいただけます。会場内でも販売しております。 &lt;br&gt;&lt;br&gt;● 利用時間①②を続けて利用される場合、利用料金は2回分必要となります。 &lt;br&gt;&lt;br&gt;〈団体割引〉 &lt;br&gt;団体でのご利用は割引料金が適用されます。20名以上:1000円（1名分）&lt;br&gt;&lt;br&gt; 〈バーベキューセット〉&lt;br&gt;バーベキューに必要な材料がそろったお得なセットです。以下の2種類のメニューからいずれかをお選びください。&lt;br&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;ボリュームセット&lt;/td&gt;&lt;td&gt;2000円（1名分）:&lt;/td&gt;&lt;td&gt;数種類のお肉と野菜がたっぷり&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ミックスセット&lt;/td&gt;&lt;td&gt;2400円（1名分）:&lt;/td&gt;&lt;td&gt;お肉と魚介類の両方が楽しめる&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;br&gt;&lt;br&gt;「利用方法」 &lt;br&gt;● ホームページ、またはお電話で、事前にご予約ください。 &lt;br&gt;● ご利用日の1か月前から先着順でご予約を受け付けます。団体でご予約のお客様は、2か月前から優先予約が可能です。&lt;br&gt;● 空きがある場合のみ、当日のご利用も可能です。 &lt;br&gt;● 料金は、ご利用日当日、会場でお支払いください。 &lt;br&gt;&lt;br&gt;「注意」 &lt;br&gt;（1）お客様が調理器具を持ち込むことはできません。 &lt;br&gt;（2）花火やカラオケなど他の利用者や近隣の住民の方への迷惑となる行為は禁止です。&lt;br&gt; （3）屋外施設のため、強風などの悪天候により営業を中止する場合があります。&lt;br&gt;&lt;br&gt;&lt;div&gt;南の丘公園バーベキュー予約センター &lt;br&gt;ホームページ: http://www.mimaminooka-koen.com/bbq　　電話: 0558-055-5555 &lt;/div&gt;&quot;,
+  &quot;context&quot;: &quot;Barbecue notice for Q74–75: second daily session and its stated four-hour duration.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;②15:00～19:30(4時間)&quot;,
+      &quot;assessment&quot;: &quot;Principal and image witness show this internally inconsistent duration. Option2 ending19:00 could still be possible if leaving early, so key agreement alone does not resolve the time.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;【2】2015年07月N2 真题 (18-page question/key copy)&quot;,
+      &quot;sha256&quot;: &quot;288a11fa37794d38faf8c190807cde1f3a284bc4e227134c1278933d72ba6c03&quot;,
+      &quot;locator&quot;: &quot;Notice second daily slot&quot;,
+      &quot;reading&quot;: &quot;②15:00～19:30(4時間)&quot;,
+      &quot;lineage&quot;: &quot;Unapproved secondary witness; acquisition is unestablished. Related copies are not independent votes.&quot;,
+      &quot;physical_pages&quot;: [
+        15
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;【1】2015年07月N2 question copy (17 pages)&quot;,
+      &quot;sha256&quot;: &quot;83497df825b1de5b9f36ab8c0e681df13f7b9e4be6324dd6c39a4f294f189cf1&quot;,
+      &quot;locator&quot;: &quot;Notice second daily slot&quot;,
+      &quot;reading&quot;: &quot;②15:00～19:00(4時間)&quot;,
+      &quot;lineage&quot;: &quot;Unapproved secondary witness; acquisition is unestablished. Related copies are not independent votes.&quot;,
+      &quot;physical_pages&quot;: [
+        12
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;【2】2015年07月N2 companion analysis&quot;,
+      &quot;sha256&quot;: &quot;c8250f457cb0854dde6cf6b1cfc0f3e86a62850fb2cae5cfc5b17fe658e2f139&quot;,
+      &quot;locator&quot;: &quot;Q75 explanation&quot;,
+      &quot;reading&quot;: &quot;15:00～19:00&quot;,
+      &quot;lineage&quot;: &quot;Unapproved secondary witness; acquisition is unestablished. Related copies are not independent votes.&quot;,
+      &quot;physical_pages&quot;: [
+        7
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;July 2015 N2 barbecue notice image&quot;,
+      &quot;sha256&quot;: &quot;710a8a00049e6219fd3531a921bab22fadf8abd0ec21a6aa92f4b298bccf9bc8&quot;,
+      &quot;locator&quot;: &quot;Notice second daily slot&quot;,
+      &quot;reading&quot;: &quot;②15:00～19:30(4時間)&quot;,
+      &quot;lineage&quot;: &quot;Unapproved secondary witness; acquisition is unestablished. Related copies are not independent votes.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Prefer the witnessed 19:00 closing time that makes the stated session four hours. Retain public uncertainty because the principal and notice image instead print19:30.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Compared 【2】2015年07月N2 真题 (18-page question/key copy), physical pages [15], Notice second daily slot: ②15:00～19:30(4時間)&quot;,
+    &quot;Compared 【1】2015年07月N2 question copy (17 pages), physical pages [12], Notice second daily slot: ②15:00～19:00(4時間)&quot;,
+    &quot;Compared 【2】2015年07月N2 companion analysis, physical pages [7], Q75 explanation: 15:00～19:00&quot;,
+    &quot;Compared July 2015 N2 barbecue notice image, physical pages not applicable, Notice second daily slot: ②15:00～19:30(4時間)&quot;,
+    &quot;5 November 2026: Public snapshot rebound to the earlier, verified current field. Only the historical presentation edit is replayed; this snapshot repair does not change the original witness or its confidence.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;No authenticated original notice establishes whether the end time or duration was originally different. The four-hour arithmetic and directly printed19:00 alternative favor this repair.&quot;,
+  &quot;before&quot;: &quot;&lt;center&gt;&lt;b&gt;バーベキュー会場開設のお知らせ&lt;br&gt;南の丘公園内で本格的なバーベキューが楽しめます&lt;/b&gt;&lt;/center&gt; &lt;br&gt;「開設期間」4月1日～11月30日 &lt;br&gt;&lt;br&gt;「利用時間」①10:30～14:30(4時間)&lt;br&gt;②15:00～19:30(4時間) &lt;br&gt;&lt;br&gt;「利用料金」個人: 1200円(1名分) &lt;br&gt;&lt;br&gt;● 施設および調理器具使用料となります。&lt;br&gt;&lt;br&gt;● バーベキューの材料は、各自ご持参いただくか、会場内で下記の〈バーベキューセット〉をご購入ください。 &lt;br&gt;&lt;br&gt;● 飲み物も自由にお持ち込みいただけます。会場内でも販売しております。 &lt;br&gt;&lt;br&gt;● 利用時間①②を続けて利用される場合、利用料金は2回分必要となります。 &lt;br&gt;&lt;br&gt;〈団体割引〉 &lt;br&gt;団体でのご利用は割引料金が適用されます。20名以上:1000円(1名分)&lt;br&gt;&lt;br&gt; 〈バーベキューセット〉&lt;br&gt;バーベキューに必要な材料がそろったお得なセットです。以下の2種類のメニューからいずれかをお選びください。&lt;br&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;ボリュームセット&lt;/td&gt;&lt;td&gt;2000円(1名分):&lt;/td&gt;&lt;td&gt;数種類のお肉と野菜がたっぷり&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ミックスセット&lt;/td&gt;&lt;td&gt;2400円(1名分):&lt;/td&gt;&lt;td&gt;お肉と魚介類の両方が楽しめる&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;br&gt;&lt;br&gt;「利用方法」 &lt;br&gt;● ホームページ、またはお電話で、事前にご予約ください。 &lt;br&gt;● ご利用日の1か月前から先着順でご予約を受け付けます。団体でご予約のお客様は、2か月前から優先予約が可能です。&lt;br&gt;● 空きがある場合のみ、当日のご利用も可能です。 &lt;br&gt;● 料金は、ご利用日当日、会場でお支払いください。 &lt;br&gt;&lt;br&gt;「注意」 &lt;br&gt;(1)お客様が調理器具を持ち込むことはできません。 &lt;br&gt;(2)花火やカラオケなど他の利用者や近隣の住民の方への迷惑となる行為は禁止です。&lt;br&gt; (3)屋外施設のため、強風などの悪天候により営業を中止する場合があります。&lt;br&gt;&lt;br&gt;&lt;div&gt;南の丘公園バーベキュー予約センター &lt;br&gt;ホームページ: http://www.mimaminooka-koen.com/bbq　　電話: 0558-055-5555 &lt;/div&gt;&quot;
+}</pre></details></div><div class="review-record" id="unresolved_cases-N2_07_2015-reading-b012-same-day"><div class="review-label">Unresolved · /content/html · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>当日のご<mark class="diff-old">予約</mark>も可能です。</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">&lt;center&gt;&lt;b&gt;バーベキュー会場開設のお知らせ&lt;br&gt;南の丘公園内で本格的なバーベキューが楽しめます&lt;/b&gt;&lt;/center&gt; &lt;br&gt;「開設期間」4月1日～11月30日 &lt;br&gt;&lt;br&gt;「利用時間」①10:30～14:30（4時間）&lt;br&gt;②15:00～19:00（4時間） &lt;br&gt;&lt;br&gt;「利用料金」個人: 1200円（1名分） &lt;br&gt;&lt;br&gt;● 施設および調理器具使用料となります。&lt;br&gt;&lt;br&gt;● バーベキューの材料は、各自ご持参いただくか、会場内で下記の〈バーベキューセット〉をご購入ください。 &lt;br&gt;&lt;br&gt;● 飲み物も自由にお持ち込みいただけます。会場内でも販売しております。 &lt;br&gt;&lt;br&gt;● 利用時間①②を続けて利用される場合、利用料金は2回分必要となります。 &lt;br&gt;&lt;br&gt;〈団体割引〉 &lt;br&gt;団体でのご利用は割引料金が適用されます。20名以上:1000円（1名分）&lt;br&gt;&lt;br&gt; 〈バーベキューセット〉&lt;br&gt;バーベキューに必要な材料がそろったお得なセットです。以下の2種類のメニューからいずれかをお選びください。&lt;br&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;ボリュームセット&lt;/td&gt;&lt;td&gt;2000円（1名分）:&lt;/td&gt;&lt;td&gt;数種類のお肉と野菜がたっぷり&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ミックスセット&lt;/td&gt;&lt;td&gt;2400円（1名分）:&lt;/td&gt;&lt;td&gt;お肉と魚介類の両方が楽しめる&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;br&gt;&lt;br&gt;「利用方法」 &lt;br&gt;● ホームページ、またはお電話で、事前にご予約ください。 &lt;br&gt;● ご利用日の1か月前から先着順でご予約を受け付けます。団体でご予約のお客様は、2か月前から優先予約が可能です。&lt;br&gt;● 空きがある場合のみ、</mark>当日のご<mark class="diff-new">利用</mark>も可能です。<mark class="diff-new"> &lt;br&gt;● 料金は、ご利用日当日、会場でお支払いください。 &lt;br&gt;&lt;br&gt;「注意」 &lt;br&gt;（1）お客様が調理器具を持ち込むことはできません。 &lt;br&gt;（2）花火やカラオケなど他の利用者や近隣の住民の方への迷惑となる行為は禁止です。&lt;br&gt; （3）屋外</mark>…</pre></div></div><p>Retain the existing ご利用 wording, directly supported by the notice image and the alternative question layout. Both forms are meaningful and neither affects the two scored answers.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>The original notice would settle ご利用 versus ご予約; the time disagreement is a separate provisional decision on the same content field.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Barbecue notice condition permitting same-day service when there is space.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=15): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Notice 利用方法 third bullet<p>空きがある場合のみ、当日のご予約も可能です。</p></li><li><span class="principal-repository-source">Principal source (page=12): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Notice same bullet<p>空きがある場合のみ、当日のご利用も可能です。</p></li><li><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Notice same bullet<p>当日のご利用も可能です。</p></li></ul><details><summary>Full published record · unresolved_cases-N2_07_2015-reading-b012-same-day</summary><pre>{
+  &quot;case_id&quot;: &quot;N2_07_2015-reading-b012-same-day&quot;,
+  &quot;unit&quot;: &quot;N2_07_2015&quot;,
+  &quot;item_id&quot;: &quot;reading-b012&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;&lt;center&gt;&lt;b&gt;バーベキュー会場開設のお知らせ&lt;br&gt;南の丘公園内で本格的なバーベキューが楽しめます&lt;/b&gt;&lt;/center&gt; &lt;br&gt;「開設期間」4月1日～11月30日 &lt;br&gt;&lt;br&gt;「利用時間」①10:30～14:30（4時間）&lt;br&gt;②15:00～19:00（4時間） &lt;br&gt;&lt;br&gt;「利用料金」個人: 1200円（1名分） &lt;br&gt;&lt;br&gt;● 施設および調理器具使用料となります。&lt;br&gt;&lt;br&gt;● バーベキューの材料は、各自ご持参いただくか、会場内で下記の〈バーベキューセット〉をご購入ください。 &lt;br&gt;&lt;br&gt;● 飲み物も自由にお持ち込みいただけます。会場内でも販売しております。 &lt;br&gt;&lt;br&gt;● 利用時間①②を続けて利用される場合、利用料金は2回分必要となります。 &lt;br&gt;&lt;br&gt;〈団体割引〉 &lt;br&gt;団体でのご利用は割引料金が適用されます。20名以上:1000円（1名分）&lt;br&gt;&lt;br&gt; 〈バーベキューセット〉&lt;br&gt;バーベキューに必要な材料がそろったお得なセットです。以下の2種類のメニューからいずれかをお選びください。&lt;br&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;ボリュームセット&lt;/td&gt;&lt;td&gt;2000円（1名分）:&lt;/td&gt;&lt;td&gt;数種類のお肉と野菜がたっぷり&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ミックスセット&lt;/td&gt;&lt;td&gt;2400円（1名分）:&lt;/td&gt;&lt;td&gt;お肉と魚介類の両方が楽しめる&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;br&gt;&lt;br&gt;「利用方法」 &lt;br&gt;● ホームページ、またはお電話で、事前にご予約ください。 &lt;br&gt;● ご利用日の1か月前から先着順でご予約を受け付けます。団体でご予約のお客様は、2か月前から優先予約が可能です。&lt;br&gt;● 空きがある場合のみ、当日のご利用も可能です。 &lt;br&gt;● 料金は、ご利用日当日、会場でお支払いください。 &lt;br&gt;&lt;br&gt;「注意」 &lt;br&gt;（1）お客様が調理器具を持ち込むことはできません。 &lt;br&gt;（2）花火やカラオケなど他の利用者や近隣の住民の方への迷惑となる行為は禁止です。&lt;br&gt; （3）屋外施設のため、強風などの悪天候により営業を中止する場合があります。&lt;br&gt;&lt;br&gt;&lt;div&gt;南の丘公園バーベキュー予約センター &lt;br&gt;ホームページ: http://www.mimaminooka-koen.com/bbq　　電話: 0558-055-5555 &lt;/div&gt;&quot;,
+  &quot;context&quot;: &quot;Barbecue notice condition permitting same-day service when there is space.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;当日のご予約も可能です。&quot;,
+      &quot;assessment&quot;: &quot;Principal refers to same-day reservations rather than use.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;【2】2015年07月N2 真题 (18-page question/key copy)&quot;,
+      &quot;sha256&quot;: &quot;288a11fa37794d38faf8c190807cde1f3a284bc4e227134c1278933d72ba6c03&quot;,
+      &quot;locator&quot;: &quot;Notice 利用方法 third bullet&quot;,
+      &quot;reading&quot;: &quot;空きがある場合のみ、当日のご予約も可能です。&quot;,
+      &quot;lineage&quot;: &quot;Unapproved secondary witness; acquisition is unestablished. Related copies are not independent votes.&quot;,
+      &quot;physical_pages&quot;: [
+        15
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;【1】2015年07月N2 question copy (17 pages)&quot;,
+      &quot;sha256&quot;: &quot;83497df825b1de5b9f36ab8c0e681df13f7b9e4be6324dd6c39a4f294f189cf1&quot;,
+      &quot;locator&quot;: &quot;Notice same bullet&quot;,
+      &quot;reading&quot;: &quot;空きがある場合のみ、当日のご利用も可能です。&quot;,
+      &quot;lineage&quot;: &quot;Unapproved secondary witness; acquisition is unestablished. Related copies are not independent votes.&quot;,
+      &quot;physical_pages&quot;: [
+        12
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;July 2015 N2 barbecue notice image&quot;,
+      &quot;sha256&quot;: &quot;710a8a00049e6219fd3531a921bab22fadf8abd0ec21a6aa92f4b298bccf9bc8&quot;,
+      &quot;locator&quot;: &quot;Notice same bullet&quot;,
+      &quot;reading&quot;: &quot;当日のご利用も可能です。&quot;,
+      &quot;lineage&quot;: &quot;Unapproved secondary witness; acquisition is unestablished. Related copies are not independent votes.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Retain the existing ご利用 wording, directly supported by the notice image and the alternative question layout. Both forms are meaningful and neither affects the two scored answers.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Compared 【2】2015年07月N2 真题 (18-page question/key copy), physical pages [15], Notice 利用方法 third bullet: 空きがある場合のみ、当日のご予約も可能です。&quot;,
+    &quot;Compared 【1】2015年07月N2 question copy (17 pages), physical pages [12], Notice same bullet: 空きがある場合のみ、当日のご利用も可能です。&quot;,
+    &quot;Compared July 2015 N2 barbecue notice image, physical pages not applicable, Notice same bullet: 当日のご利用も可能です。&quot;,
+    &quot;5 November 2026: Public snapshot rebound to the earlier, verified current field. Only the historical presentation edit is replayed; this snapshot repair does not change the original witness or its confidence.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;The original notice would settle ご利用 versus ご予約; the time disagreement is a separate provisional decision on the same content field.&quot;
+}</pre></details></div><div class="review-record" id="principal_differences-N2_07_2015-PD-009"><div class="review-label">Principal difference · /content/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>②15:00～19:<mark class="diff-old">3</mark>0(4時間) / 当日のご<mark class="diff-old">予約</mark>も可能です。</pre></div><div><h4>Editorial</h4><pre>②15:00～19:<mark class="diff-new">0</mark>0(4時間) / 当日のご<mark class="diff-new">利用</mark>も可能です。</pre></div></div><p>Prefer the alternate four-hour session and retain the image-supported same-day-use wording. Both issues remain publicly scoped; the field counts once in source scoring.</p><span class="principal-repository-source">Principal source (page=15): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Notice second session and same-day-service bullet</span><details><summary>Full published record · principal_differences-N2_07_2015-PD-009</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N2_07_2015-PD-009&quot;,
+  &quot;unit&quot;: &quot;N2_07_2015&quot;,
+  &quot;item_id&quot;: &quot;reading-b012&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;current_value&quot;: &quot;&lt;center&gt;&lt;b&gt;バーベキュー会場開設のお知らせ&lt;br&gt;南の丘公園内で本格的なバーベキューが楽しめます&lt;/b&gt;&lt;/center&gt; &lt;br&gt;「開設期間」4月1日～11月30日 &lt;br&gt;&lt;br&gt;「利用時間」①10:30～14:30（4時間）&lt;br&gt;②15:00～19:00（4時間） &lt;br&gt;&lt;br&gt;「利用料金」個人: 1200円（1名分） &lt;br&gt;&lt;br&gt;● 施設および調理器具使用料となります。&lt;br&gt;&lt;br&gt;● バーベキューの材料は、各自ご持参いただくか、会場内で下記の〈バーベキューセット〉をご購入ください。 &lt;br&gt;&lt;br&gt;● 飲み物も自由にお持ち込みいただけます。会場内でも販売しております。 &lt;br&gt;&lt;br&gt;● 利用時間①②を続けて利用される場合、利用料金は2回分必要となります。 &lt;br&gt;&lt;br&gt;〈団体割引〉 &lt;br&gt;団体でのご利用は割引料金が適用されます。20名以上:1000円（1名分）&lt;br&gt;&lt;br&gt; 〈バーベキューセット〉&lt;br&gt;バーベキューに必要な材料がそろったお得なセットです。以下の2種類のメニューからいずれかをお選びください。&lt;br&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;ボリュームセット&lt;/td&gt;&lt;td&gt;2000円（1名分）:&lt;/td&gt;&lt;td&gt;数種類のお肉と野菜がたっぷり&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ミックスセット&lt;/td&gt;&lt;td&gt;2400円（1名分）:&lt;/td&gt;&lt;td&gt;お肉と魚介類の両方が楽しめる&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;br&gt;&lt;br&gt;「利用方法」 &lt;br&gt;● ホームページ、またはお電話で、事前にご予約ください。 &lt;br&gt;● ご利用日の1か月前から先着順でご予約を受け付けます。団体でご予約のお客様は、2か月前から優先予約が可能です。&lt;br&gt;● 空きがある場合のみ、当日のご利用も可能です。 &lt;br&gt;● 料金は、ご利用日当日、会場でお支払いください。 &lt;br&gt;&lt;br&gt;「注意」 &lt;br&gt;（1）お客様が調理器具を持ち込むことはできません。 &lt;br&gt;（2）花火やカラオケなど他の利用者や近隣の住民の方への迷惑となる行為は禁止です。&lt;br&gt; （3）屋外施設のため、強風などの悪天候により営業を中止する場合があります。&lt;br&gt;&lt;br&gt;&lt;div&gt;南の丘公園バーベキュー予約センター &lt;br&gt;ホームページ: http://www.mimaminooka-koen.com/bbq　　電話: 0558-055-5555 &lt;/div&gt;&quot;,
+  &quot;categories&quot;: [
+    &quot;numbers&quot;,
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;【2】2015年07月N2 真题 (18-page question/key copy)&quot;,
+    &quot;sha256&quot;: &quot;288a11fa37794d38faf8c190807cde1f3a284bc4e227134c1278933d72ba6c03&quot;,
+    &quot;physical_pages&quot;: [
+      15
+    ],
+    &quot;locator&quot;: &quot;Notice second session and same-day-service bullet&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;②15:00～19:30(4時間) / 当日のご予約も可能です。&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;②15:00～19:00(4時間) / 当日のご利用も可能です。&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;conjectural_repair&quot;,
+  &quot;rationale&quot;: &quot;Prefer the alternate four-hour session and retain the image-supported same-day-use wording. Both issues remain publicly scoped; the field counts once in source scoring.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;N2_07_2015-reading-b012-hours&quot;,
+    &quot;N2_07_2015-reading-b012-same-day&quot;
+  ]
+}</pre></details></div></section><section class="review-group" id="review-reading-q020" data-kinds="difference"><div class="review-group-heading"><h2>reading-q020</h2><a href="../papers/N2_07_2015.html#reading-q020">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><p>74. チェさんは、職場の同僚とバーベキューに行くことになった。費用を調べるように頼まれたので、日時と人数などを聞いてメモをした。費用は一人いくらかかるか。</p><p>チェさんのメモ</p><p>11月15日（日） 10:30～14:30</p><p>参加者 25人</p><p>ボリュームセット 25人分</p><p>飲み物は会社から持参</p><ol><li>利用料金1000円のみ</li><li>利用料金1200円のみ</li><li>利用料金1000円とバーベキューセット代2000円</li><li>利用料金1200円とバーベキューセット代2000円</li></ol><p>Editorial key: 3</p></div></details><div class="review-record" id="principal_differences-N2_07_2015-PD-010"><div class="review-label">Principal difference · /stem · high</div><div class="comparison"><div><h4>Principal</h4><pre>費用は一人いくらかかるか</pre></div><div><h4>Editorial</h4><pre>費用は一人いくらかかるか<mark class="diff-new">。</mark></pre></div></div><p>Retain the inherited sentence stop, directly printed in the fuller and 17-page layouts. No lexical condition or answer changes.</p><span class="principal-repository-source">Principal source (page=14): <code>additional-assets/principals/N2_07_2015.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Q74 question ending before memo</span><details><summary>Full published record · principal_differences-N2_07_2015-PD-010</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N2_07_2015-PD-010&quot;,
+  &quot;unit&quot;: &quot;N2_07_2015&quot;,
+  &quot;item_id&quot;: &quot;reading-q020&quot;,
+  &quot;field&quot;: &quot;/stem&quot;,
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;&lt;p&gt;74. チェさんは、職場の同僚とバーベキューに行くことになった。費用を調べるように頼まれたので、日時と人数などを聞いてメモをした。費用は一人いくらかかるか。&lt;/p&gt;&lt;p&gt;チェさんのメモ&lt;/p&gt;&lt;p&gt;11月15日（日） 10:30～14:30&lt;/p&gt;&lt;p&gt;参加者 25人&lt;/p&gt;&lt;p&gt;ボリュームセット 25人分&lt;/p&gt;&lt;p&gt;飲み物は会社から持参&lt;/p&gt;&quot;
+  },
+  &quot;categories&quot;: [
+    &quot;punctuation&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;【2】2015年07月N2 真题 (18-page question/key copy)&quot;,
+    &quot;sha256&quot;: &quot;288a11fa37794d38faf8c190807cde1f3a284bc4e227134c1278933d72ba6c03&quot;,
+    &quot;physical_pages&quot;: [
+      14
+    ],
+    &quot;locator&quot;: &quot;Q74 question ending before memo&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;費用は一人いくらかかるか&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;費用は一人いくらかかるか。&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;retained_variant&quot;,
+  &quot;rationale&quot;: &quot;Retain the inherited sentence stop, directly printed in the fuller and 17-page layouts. No lexical condition or answer changes.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section></div></main><footer class="site-footer"><span class="developer-only">Developer mode</span></footer><div id="toast" role="status" class="toast" hidden></div><script id="page-data" type="application/json">{"review":true}</script><script id="theme-data" src="../assets/theme-data.js?v=f06ad9e2434b" defer></script><script src="../assets/app.js?v=0d75deb05ae3" defer></script></body></html>

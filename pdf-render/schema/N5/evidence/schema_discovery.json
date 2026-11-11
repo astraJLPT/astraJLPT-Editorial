@@ -1,0 +1,91 @@
+{
+  "schema_version": "3.1.0",
+  "cycle": "pilot-3",
+  "findings": [
+    {
+      "unit": "N5_07_2025",
+      "item_id": "reading-b002",
+      "physical_pages": [
+        9
+      ],
+      "source_path": "src/日语JLPT历年真题/N5真题（2010-2025.12）/【N5真题】2025年7月/【试题】2025年7月JLPT日语N5真题.pdf",
+      "source_sha256": "de138087b9ab4d78e993f8c3360981e9bf7f61f6d1e286b777ef96dccd074a2a",
+      "form": "STAR worked example",
+      "observed_fact": "Source labels, four slot/phrase correspondences, answer sheet grid; N5 continuation dialogue belongs inside solution.",
+      "existing_representation": "Existing example_variant and exact HTML table/paragraphs",
+      "disposition": "component_and_defaults_updated",
+      "action_or_limit": "Versioned per-level width/alignment/answer-grid leading; content-derived edge columns; underlined step-2 STAR. N5 slot/phrase spacing still larger than source."
+    },
+    {
+      "unit": "N5_07_2025",
+      "item_id": "reading-b003",
+      "physical_pages": [
+        11,
+        12
+      ],
+      "source_path": "src/日语JLPT历年真题/N5真题（2010-2025.12）/【N5真题】2025年7月/【试题】2025年7月JLPT日语N5真题.pdf",
+      "source_sha256": "de138087b9ab4d78e993f8c3360981e9bf7f61f6d1e286b777ef96dccd074a2a",
+      "form": "two compositions",
+      "observed_fact": "Authors outside separate composition frames, choices on following page.",
+      "existing_representation": "Existing explicit labels + cloze task",
+      "disposition": "represented_regression_retained",
+      "action_or_limit": "No new fields; existing separation algorithm retained and all pages checked."
+    },
+    {
+      "unit": "N5_07_2025",
+      "item_id": "reading-b007",
+      "physical_pages": [
+        18
+      ],
+      "source_path": "src/日语JLPT历年真题/N5真题（2010-2025.12）/【N5真题】2025年7月/【试题】2025年7月JLPT日语N5真题.pdf",
+      "source_sha256": "de138087b9ab4d78e993f8c3360981e9bf7f61f6d1e286b777ef96dccd074a2a",
+      "form": "course bands",
+      "observed_fact": "Four course groups, each title then date/time/price; horizontal rules only.",
+      "existing_representation": "th scope=rowgroup + rowspan=2; title colspan=3",
+      "disposition": "presentation_override_updated",
+      "action_or_limit": "table_styles consumes existing relationships, uses horizontal group boundaries and inset width. Live cells/spans remain unchanged; compact notice header/overall page balance still differs."
+    },
+    {
+      "unit": "N5_12_2025",
+      "item_id": "reading-b007",
+      "physical_pages": [
+        12
+      ],
+      "source_path": "src/JLPT_N1_N5_202512/25年12月N5/25年12月N5真题.pdf",
+      "source_sha256": "44d6e0e98ca8cff64a0ee987ff4b153f4259129c86a4285dc5e3458961bd790b",
+      "form": "struck prices",
+      "observed_fact": "Nine old prices crossed out before arrows/new prices.",
+      "existing_representation": "s tags, ruby and replacement text already present",
+      "disposition": "parser_fixed",
+      "action_or_limit": "Supports s/del and line-through without new fields. Exact source fixture plus compiled fragment probe; full reference not staged."
+    },
+    {
+      "unit": "N5_12_2025",
+      "item_id": "vocab-b001",
+      "physical_pages": [
+        13
+      ],
+      "source_path": "src/JLPT_N1_N5_202512/25年12月N5/25年12月N5真题.pdf",
+      "source_sha256": "44d6e0e98ca8cff64a0ee987ff4b153f4259129c86a4285dc5e3458961bd790b",
+      "form": "ordinary example two-column choices",
+      "observed_fact": "Four alternatives in row-major 2x2 pattern.",
+      "existing_representation": "Ordered numbered alternatives in a paragraph; no mandatory source coordinates",
+      "disposition": "adaptive_component_updated",
+      "action_or_limit": "Measure whole example choices and choose 4/2/1 columns. Compiled probe verifies two rows; no new numbering or invented options."
+    },
+    {
+      "unit": "N5_07_2025",
+      "item_id": "reading-b007",
+      "physical_pages": [
+        18
+      ],
+      "source_path": "src/日语JLPT历年真题/N5真题（2010-2025.12）/【N5真题】2025年7月/【试题】2025年7月JLPT日语N5真题.pdf",
+      "source_sha256": "de138087b9ab4d78e993f8c3360981e9bf7f61f6d1e286b777ef96dccd074a2a",
+      "form": "optional artwork",
+      "observed_fact": "Kitchen tools occupy upper notice space.",
+      "existing_representation": "Existing optional asset request",
+      "disposition": "unknown_asset_payload_retained",
+      "action_or_limit": "Omitted decorative artwork contributes to balance mismatch; no invented asset or payload rebinding in this cycle."
+    }
+  ]
+}

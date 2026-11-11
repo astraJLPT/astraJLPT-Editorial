@@ -1,0 +1,3211 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "profile_schema_version",
+    "profile_id",
+    "revision",
+    "applicability",
+    "exam_defaults",
+    "renderer_conventions"
+  ],
+  "properties": {
+    "profile_schema_version": {
+      "const": "1.0"
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "applicability": {
+      "type": "object",
+      "required": [
+        "exam_generation",
+        "historical_level"
+      ],
+      "properties": {
+        "exam_generation": {
+          "const": "historical-1991-2009"
+        },
+        "historical_level": {
+          "enum": [
+            "1級",
+            "2級",
+            "3級",
+            "4級"
+          ]
+        }
+      }
+    },
+    "exam_defaults": {
+      "type": "object",
+      "required": [
+        "templates"
+      ],
+      "properties": {
+        "templates": {
+          "type": "object",
+          "maxProperties": 0
+        }
+      }
+    },
+    "renderer_conventions": {
+      "type": "object",
+      "properties": {
+        "body_pt": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "baseline_pt": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "option_baseline_pt": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "note_pt": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "note_baseline_pt": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "question_gap_pt": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "cloze_box": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "width_pt",
+            "height_pt",
+            "font_pt"
+          ],
+          "properties": {
+            "width_pt": {
+              "type": "number",
+              "minimum": 20,
+              "maximum": 60
+            },
+            "height_pt": {
+              "type": "number",
+              "minimum": 12,
+              "maximum": 30
+            },
+            "font_pt": {
+              "type": "number",
+              "minimum": 8,
+              "maximum": 16
+            },
+            "rule_pt": {
+              "type": "number",
+              "minimum": 0.2,
+              "maximum": 2
+            }
+          }
+        },
+        "heading_horizontal_scale": {
+          "type": "number",
+          "minimum": 0.75,
+          "maximum": 1.1
+        },
+        "cloze_clearance_em": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "blank_inner_width_em": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "blank_side_space_em": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "cloze_frame_rule_pt": {
+          "type": "number",
+          "minimum": 0.2,
+          "maximum": 2
+        },
+        "keep_question_tail": {
+          "type": "boolean"
+        },
+        "task_overrides": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "question_right_inset_em": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 6
+              },
+              "question_ragged_right": {
+                "type": "boolean"
+              },
+              "note_before_pt": {
+                "type": "number",
+                "minimum": 0
+              },
+              "heading_word_groups": {
+                "type": "boolean"
+              },
+              "heading_selector_suffix_break": {
+                "type": "boolean"
+              },
+              "word_space_policy": {
+                "enum": [
+                  "preserve",
+                  "continuous_japanese"
+                ]
+              },
+              "ruby_intergap_em": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 0.2
+              },
+              "heading_after_pt": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 60
+              },
+              "heading_after_labeled_pt": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 60
+              },
+              "punctuation_after_em": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 2
+              },
+              "example_baseline_pt": {
+                "type": "number",
+                "minimum": 12,
+                "maximum": 60
+              },
+              "option_baseline_pt": {
+                "type": "number",
+                "minimum": 12,
+                "maximum": 60
+              },
+              "historical_target_rows": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "target_width_em": {
+                    "type": "number",
+                    "minimum": 5,
+                    "maximum": 16
+                  },
+                  "label_width_em": {
+                    "type": "number",
+                    "minimum": 1,
+                    "maximum": 3
+                  },
+                  "left_indent_em": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 3
+                  },
+                  "row_gap_pt": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 12
+                  },
+                  "choice_row_gap_pt": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 12
+                  }
+                }
+              },
+              "heading_after_margin_labeled_pt": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 60
+              },
+              "question_block_origin": {
+                "enum": [
+                  "first_line"
+                ]
+              },
+              "historical_component_metrics": {
+                "type": "object",
+                "additionalProperties": false,
+                "minProperties": 1,
+                "properties": {
+                  "target_group_before_pt": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 30
+                  },
+                  "target_group_after_pt": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 30
+                  },
+                  "target_prose_after_pt": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 30
+                  }
+                }
+              },
+              "page_body_bottom_inset_mm": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 25
+              },
+              "example_body_pt": {
+                "type": "number",
+                "minimum": 9,
+                "maximum": 20
+              }
+            }
+          }
+        },
+        "heading_word_groups": {
+          "type": "boolean"
+        },
+        "heading_selector_suffix_break": {
+          "type": "boolean"
+        },
+        "question_word_groups": {
+          "type": "boolean"
+        },
+        "soft_question_breaks": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "stem_sha256",
+              "break_offsets",
+              "evidence"
+            ],
+            "properties": {
+              "stem_sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "break_offsets": {
+                "type": "array",
+                "minItems": 1,
+                "uniqueItems": true,
+                "items": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              },
+              "evidence": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "option_word_groups": {
+          "type": "boolean"
+        },
+        "passage_word_groups": {
+          "type": "boolean"
+        },
+        "passage_label_parentheses": {
+          "enum": [
+            "japanese",
+            "latin"
+          ]
+        },
+        "option_continuation_pullback_em": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1.5
+        },
+        "examples": {
+          "type": "object",
+          "properties": {
+            "ordinary_word_space_em": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1.5
+            },
+            "ordinary_label_gap_em": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 2
+            },
+            "ordinary_before_pt": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 30
+            },
+            "ordinary_top_padding_pt": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 30
+            },
+            "ordinary_choices_before_pt": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 30
+            },
+            "ordinary_target_answer_before_pt": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 30
+            },
+            "ordinary_prompt_hanging": {
+              "type": "boolean"
+            },
+            "bubble_glyph_size_em": {
+              "type": "number",
+              "minimum": 0.5,
+              "maximum": 1
+            },
+            "choice_numeral_role": {
+              "enum": [
+                "literal",
+                "choice"
+              ]
+            },
+            "answer_label_width_em": {
+              "type": "number",
+              "minimum": 2,
+              "maximum": 5
+            },
+            "answer_label_ruby_base_height_em": {
+              "type": "number",
+              "minimum": 0.65,
+              "maximum": 1
+            },
+            "ordinary_word_groups": {
+              "type": "boolean"
+            },
+            "ordinary_after_by_columns_pt": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "1": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 100
+                },
+                "2": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 100
+                },
+                "4": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 100
+                }
+              }
+            },
+            "ordinary_word_usage_after_pt": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "ordinary_heading_after_pt": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 60
+            },
+            "ordinary_target_label_gap_em": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 5
+            },
+            "ordinary_target_answer_indent_em": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 10
+            },
+            "ordinary_picture_before_pt": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 60
+            },
+            "ordinary_picture_top_padding_pt": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 60
+            },
+            "ordinary_picture_answer_before_pt": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 60
+            },
+            "ordinary_picture_after_pt": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 60
+            },
+            "ordinary_options_prompt_indent_em": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 4
+            },
+            "ordinary_options_label_gap_em": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 5
+            },
+            "ordinary_options_left_indent_em": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 8
+            },
+            "ordinary_options_answer_indent_em": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 10
+            }
+          },
+          "additionalProperties": true
+        },
+        "heading_selector_boundary": {
+          "type": "boolean"
+        },
+        "embedded_image_styles": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "additionalProperties": {
+            "oneOf": [
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "role",
+                  "basis",
+                  "height_em"
+                ],
+                "properties": {
+                  "role": {
+                    "const": "glyph"
+                  },
+                  "basis": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "height_em": {
+                    "type": "number",
+                    "minimum": 0.5,
+                    "maximum": 2.5
+                  },
+                  "raise_em": {
+                    "type": "number",
+                    "minimum": -0.5,
+                    "maximum": 0.5
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "role",
+                  "basis",
+                  "width_fraction"
+                ],
+                "properties": {
+                  "role": {
+                    "const": "illustration"
+                  },
+                  "basis": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "width_fraction": {
+                    "type": "number",
+                    "minimum": 0.1,
+                    "maximum": 1
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "document_bullets": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "item",
+            "heading"
+          ],
+          "properties": {
+            "item": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "scale",
+                "raise_em",
+                "gap_em"
+              ],
+              "properties": {
+                "scale": {
+                  "type": "number",
+                  "minimum": 0.3,
+                  "maximum": 1
+                },
+                "raise_em": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 0.3
+                },
+                "gap_em": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 0.8
+                }
+              }
+            },
+            "heading": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "scale",
+                "raise_em",
+                "gap_em"
+              ],
+              "properties": {
+                "scale": {
+                  "type": "number",
+                  "minimum": 0.3,
+                  "maximum": 1
+                },
+                "raise_em": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 0.3
+                },
+                "gap_em": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 0.8
+                }
+              }
+            }
+          }
+        },
+        "answer_blank_roles": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "body": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "inner_width_em": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 5
+                },
+                "side_space_em": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 2
+                },
+                "punctuation_side_space_em": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 2
+                },
+                "digit_side_space_em": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 2
+                }
+              }
+            },
+            "heading": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "inner_width_em": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 5
+                },
+                "side_space_em": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 2
+                },
+                "punctuation_side_space_em": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 2
+                },
+                "digit_side_space_em": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 2
+                }
+              }
+            },
+            "example": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "inner_width_em": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 5
+                },
+                "side_space_em": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 2
+                },
+                "punctuation_side_space_em": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 2
+                },
+                "digit_side_space_em": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 2
+                }
+              }
+            }
+          }
+        },
+        "blank_digit_side_space_em": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "notice_title_ribbon_overhang_em": {
+          "type": "number",
+          "minimum": 0.5,
+          "maximum": 3
+        },
+        "punctuation_after_em": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "paired_passages": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "label_align": {
+              "enum": [
+                "left",
+                "center",
+                "right"
+              ]
+            },
+            "first_label_before_pt": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 40
+            },
+            "next_label_before_pt": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 40
+            },
+            "label_frame_gap_pt": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 20
+            },
+            "frame_padding_pt": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 30
+            },
+            "frame_side_padding_pt": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 30
+            },
+            "first_paragraph_indent_em": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 2
+            },
+            "rule_pt": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 2
+            },
+            "new_page_before_labels": {
+              "type": "array",
+              "maxItems": 1,
+              "items": {
+                "const": "B"
+              }
+            }
+          }
+        },
+        "font_roles": {
+          "type": "object",
+          "properties": {
+            "ascii_parenthesis": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "path",
+                "sha256"
+              ],
+              "properties": {
+                "path": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "sha256": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                },
+                "features": {
+                  "type": "array",
+                  "items": {
+                    "enum": [
+                      "fwid",
+                      "palt",
+                      "tnum",
+                      "lnum"
+                    ]
+                  }
+                },
+                "horizontal_scale": {
+                  "type": "number",
+                  "minimum": 0.6,
+                  "maximum": 1.4
+                },
+                "bold_same_face": {
+                  "type": "boolean"
+                },
+                "selection_status": {
+                  "type": "string"
+                }
+              }
+            },
+            "body_numeral": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "path",
+                "sha256"
+              ],
+              "properties": {
+                "path": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "sha256": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                },
+                "features": {
+                  "type": "array",
+                  "items": {
+                    "enum": [
+                      "fwid",
+                      "palt",
+                      "tnum",
+                      "lnum"
+                    ]
+                  }
+                },
+                "horizontal_scale": {
+                  "type": "number",
+                  "minimum": 0.6,
+                  "maximum": 1.4
+                },
+                "bold_same_face": {
+                  "type": "boolean"
+                },
+                "selection_status": {
+                  "type": "string"
+                }
+              }
+            },
+            "option_content_numeral": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "path",
+                "sha256"
+              ],
+              "properties": {
+                "path": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "sha256": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                },
+                "features": {
+                  "type": "array",
+                  "items": {
+                    "enum": [
+                      "fwid",
+                      "palt",
+                      "tnum",
+                      "lnum"
+                    ]
+                  }
+                },
+                "horizontal_scale": {
+                  "type": "number",
+                  "minimum": 0.6,
+                  "maximum": 1.4
+                },
+                "bold_same_face": {
+                  "type": "boolean"
+                },
+                "selection_status": {
+                  "type": "string"
+                }
+              }
+            },
+            "notice_numeral": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "path",
+                "sha256"
+              ],
+              "properties": {
+                "path": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "sha256": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                },
+                "features": {
+                  "type": "array",
+                  "items": {
+                    "enum": [
+                      "fwid",
+                      "palt",
+                      "tnum",
+                      "lnum"
+                    ]
+                  }
+                },
+                "horizontal_scale": {
+                  "type": "number",
+                  "minimum": 0.6,
+                  "maximum": 1.4
+                },
+                "bold_same_face": {
+                  "type": "boolean"
+                },
+                "selection_status": {
+                  "type": "string"
+                }
+              }
+            },
+            "retained_chinese": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "path",
+                "sha256"
+              ],
+              "properties": {
+                "path": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "sha256": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                },
+                "features": {
+                  "type": "array",
+                  "items": {
+                    "enum": [
+                      "fwid",
+                      "palt",
+                      "tnum",
+                      "lnum"
+                    ]
+                  }
+                },
+                "horizontal_scale": {
+                  "type": "number",
+                  "minimum": 0.6,
+                  "maximum": 1.4
+                },
+                "bold_same_face": {
+                  "type": "boolean"
+                },
+                "selection_status": {
+                  "type": "string"
+                },
+                "font_index": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              }
+            },
+            "breadcrumb_latin": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "path",
+                "sha256"
+              ],
+              "properties": {
+                "path": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "sha256": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                },
+                "features": {
+                  "type": "array",
+                  "items": {
+                    "enum": [
+                      "fwid",
+                      "palt",
+                      "tnum",
+                      "lnum"
+                    ]
+                  }
+                },
+                "horizontal_scale": {
+                  "type": "number",
+                  "minimum": 0.6,
+                  "maximum": 1.4
+                },
+                "bold_same_face": {
+                  "type": "boolean"
+                },
+                "selection_status": {
+                  "type": "string"
+                }
+              }
+            },
+            "contact_latin": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "path",
+                "sha256"
+              ],
+              "properties": {
+                "path": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "sha256": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                },
+                "features": {
+                  "type": "array",
+                  "items": {
+                    "enum": [
+                      "fwid",
+                      "palt",
+                      "tnum",
+                      "lnum"
+                    ]
+                  }
+                },
+                "horizontal_scale": {
+                  "type": "number",
+                  "minimum": 0.6,
+                  "maximum": 1.4
+                },
+                "bold_same_face": {
+                  "type": "boolean"
+                },
+                "selection_status": {
+                  "type": "string"
+                }
+              }
+            },
+            "historical_instruction_digit": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "path",
+                "sha256"
+              ],
+              "properties": {
+                "path": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "sha256": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                },
+                "features": {
+                  "type": "array",
+                  "items": {
+                    "enum": [
+                      "fwid",
+                      "palt",
+                      "tnum",
+                      "lnum"
+                    ]
+                  }
+                },
+                "horizontal_scale": {
+                  "type": "number",
+                  "minimum": 0.6,
+                  "maximum": 1.4
+                },
+                "bold_same_face": {
+                  "type": "boolean"
+                },
+                "selection_status": {
+                  "type": "string"
+                },
+                "scale": {
+                  "type": "number",
+                  "minimum": 0.8,
+                  "maximum": 1.3
+                }
+              }
+            }
+          }
+        },
+        "content_numeral_overrides": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "content_sha256",
+              "role",
+              "basis",
+              "evidence"
+            ],
+            "properties": {
+              "content_sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "role": {
+                "enum": [
+                  "body_numeral",
+                  "option_content_numeral",
+                  "notice_numeral"
+                ]
+              },
+              "basis": {
+                "type": "string",
+                "minLength": 1
+              },
+              "evidence": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "passage_word_group_tasks": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "cloze",
+              "reading",
+              "reading_test",
+              "orthography_test"
+            ]
+          }
+        },
+        "passage_boundaries": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "content_sha256",
+              "evidence"
+            ],
+            "properties": {
+              "content_sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "evidence": {
+                "type": "object"
+              },
+              "note_before_pt": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 60
+              },
+              "note_after_pt": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 60
+              },
+              "after_pt": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 60
+              },
+              "following_question_gap_pt": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 60
+              },
+              "intro_after_pt": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 60
+              },
+              "cloze_choices": {
+                "enum": [
+                  "next_page",
+                  "flow"
+                ]
+              },
+              "note_keep_with_previous": {
+                "type": "boolean",
+                "description": "Keep authored note definitions with at least the preceding passage tail; local source-bound pagination, without changing leading."
+              },
+              "questions_start": {
+                "const": "next_page"
+              }
+            }
+          }
+        },
+        "embedded_documents": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "content_sha256",
+              "evidence",
+              "role",
+              "container_tag",
+              "text"
+            ],
+            "properties": {
+              "content_sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "evidence": {
+                "type": "object"
+              },
+              "role": {
+                "enum": [
+                  "memo",
+                  "email"
+                ]
+              },
+              "container_tag": {
+                "enum": [
+                  "center",
+                  "div",
+                  "section",
+                  "table",
+                  "p"
+                ]
+              },
+              "text": {
+                "type": "string",
+                "minLength": 1
+              },
+              "title": {
+                "type": "string",
+                "minLength": 1
+              },
+              "width_fraction": {
+                "type": "number",
+                "minimum": 0.5,
+                "maximum": 1
+              },
+              "padding_pt": {
+                "type": "number",
+                "minimum": 8,
+                "maximum": 30
+              },
+              "rows": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "label",
+                    "separator",
+                    "value"
+                  ],
+                  "properties": {
+                    "label": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "separator": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "value": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  }
+                }
+              },
+              "layout": {
+                "enum": [
+                  "colon_rows",
+                  "native_table",
+                  "paragraph_lines",
+                  "native_list",
+                  "explicit_email_lines"
+                ]
+              },
+              "paragraphs": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 12,
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "presentation": {
+                "enum": [
+                  "typed_box",
+                  "handwritten_memo"
+                ]
+              },
+              "lines": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 20,
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "body_pt": {
+                "type": "number",
+                "minimum": 7,
+                "maximum": 14
+              },
+              "baseline_pt": {
+                "type": "number",
+                "minimum": 8,
+                "maximum": 24
+              },
+              "flow_lines": {
+                "const": true
+              },
+              "fold_size_pdf_pt": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "width",
+                  "height"
+                ],
+                "properties": {
+                  "width": {
+                    "type": "number",
+                    "minimum": 12,
+                    "maximum": 33
+                  },
+                  "height": {
+                    "type": "number",
+                    "minimum": 12,
+                    "maximum": 24
+                  }
+                }
+              },
+              "title_after_pt": {
+                "type": "number",
+                "minimum": 4,
+                "maximum": 20
+              },
+              "metadata_columns": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label_width_em",
+                  "rows"
+                ],
+                "properties": {
+                  "label_width_em": {
+                    "type": "number",
+                    "minimum": 1,
+                    "maximum": 6
+                  },
+                  "rows": {
+                    "type": "array",
+                    "minItems": 2,
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "line",
+                        "label",
+                        "separator",
+                        "value"
+                      ],
+                      "properties": {
+                        "line": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 19
+                        },
+                        "label": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "separator": {
+                          "enum": [
+                            ":",
+                            "："
+                          ]
+                        },
+                        "value": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "allOf": [
+              {
+                "if": {
+                  "required": [
+                    "layout"
+                  ],
+                  "properties": {
+                    "layout": {
+                      "const": "explicit_email_lines"
+                    }
+                  }
+                },
+                "then": {
+                  "required": [
+                    "lines",
+                    "body_pt",
+                    "baseline_pt",
+                    "presentation"
+                  ],
+                  "properties": {
+                    "role": {
+                      "const": "email"
+                    },
+                    "container_tag": {
+                      "const": "div"
+                    },
+                    "presentation": {
+                      "const": "typed_box"
+                    }
+                  },
+                  "not": {
+                    "anyOf": [
+                      {
+                        "required": [
+                          "title"
+                        ]
+                      },
+                      {
+                        "required": [
+                          "rows"
+                        ]
+                      },
+                      {
+                        "required": [
+                          "paragraphs"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "else": {
+                  "properties": {
+                    "role": {
+                      "const": "memo"
+                    }
+                  },
+                  "allOf": [
+                    {
+                      "if": {
+                        "required": [
+                          "layout"
+                        ],
+                        "properties": {
+                          "layout": {
+                            "const": "paragraph_lines"
+                          }
+                        }
+                      },
+                      "then": {
+                        "required": [
+                          "title",
+                          "paragraphs",
+                          "presentation"
+                        ],
+                        "properties": {
+                          "container_tag": {
+                            "const": "p"
+                          }
+                        },
+                        "not": {
+                          "required": [
+                            "rows"
+                          ]
+                        }
+                      },
+                      "else": {
+                        "allOf": [
+                          {
+                            "if": {
+                              "required": [
+                                "layout"
+                              ],
+                              "properties": {
+                                "layout": {
+                                  "const": "native_table"
+                                }
+                              }
+                            },
+                            "then": {
+                              "properties": {
+                                "container_tag": {
+                                  "enum": [
+                                    "table",
+                                    "div",
+                                    "section"
+                                  ]
+                                }
+                              },
+                              "not": {
+                                "anyOf": [
+                                  {
+                                    "required": [
+                                      "title"
+                                    ]
+                                  },
+                                  {
+                                    "required": [
+                                      "rows"
+                                    ]
+                                  }
+                                ]
+                              }
+                            },
+                            "else": {
+                              "if": {
+                                "required": [
+                                  "layout"
+                                ],
+                                "properties": {
+                                  "layout": {
+                                    "const": "native_list"
+                                  }
+                                }
+                              },
+                              "then": {
+                                "required": [
+                                  "title"
+                                ],
+                                "properties": {
+                                  "container_tag": {
+                                    "enum": [
+                                      "div",
+                                      "section"
+                                    ]
+                                  }
+                                },
+                                "not": {
+                                  "required": [
+                                    "rows"
+                                  ]
+                                }
+                              },
+                              "else": {
+                                "required": [
+                                  "title",
+                                  "rows"
+                                ]
+                              }
+                            }
+                          }
+                        ],
+                        "not": {
+                          "anyOf": [
+                            {
+                              "required": [
+                                "paragraphs"
+                              ]
+                            },
+                            {
+                              "required": [
+                                "presentation"
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ],
+                  "not": {
+                    "anyOf": [
+                      {
+                        "required": [
+                          "lines"
+                        ]
+                      },
+                      {
+                        "required": [
+                          "body_pt"
+                        ]
+                      },
+                      {
+                        "required": [
+                          "baseline_pt"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "if": {
+                  "required": [
+                    "flow_lines"
+                  ]
+                },
+                "then": {
+                  "required": [
+                    "layout"
+                  ],
+                  "properties": {
+                    "layout": {
+                      "const": "paragraph_lines"
+                    }
+                  }
+                }
+              },
+              {
+                "if": {
+                  "required": [
+                    "fold_size_pdf_pt"
+                  ]
+                },
+                "then": {
+                  "required": [
+                    "layout"
+                  ],
+                  "properties": {
+                    "layout": {
+                      "enum": [
+                        "native_table",
+                        "paragraph_lines"
+                      ]
+                    }
+                  }
+                }
+              },
+              {
+                "if": {
+                  "required": [
+                    "metadata_columns"
+                  ]
+                },
+                "then": {
+                  "properties": {
+                    "layout": {
+                      "const": "explicit_email_lines"
+                    }
+                  }
+                }
+              },
+              {
+                "if": {
+                  "required": [
+                    "title_after_pt"
+                  ]
+                },
+                "then": {
+                  "properties": {
+                    "layout": {
+                      "const": "paragraph_lines"
+                    },
+                    "presentation": {
+                      "const": "handwritten_memo"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "running_header_policy": {
+          "const": {
+            "enabled": true,
+            "identity": "publication_or_sitting",
+            "folio": "generated_booklet",
+            "placement": "alternating_outer"
+          }
+        },
+        "passage_typography": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "content_sha256",
+              "evidence",
+              "baseline_pt"
+            ],
+            "properties": {
+              "content_sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "evidence": {
+                "type": "object"
+              },
+              "baseline_pt": {
+                "type": "number",
+                "minimum": 15,
+                "maximum": 40
+              }
+            }
+          }
+        },
+        "email_family": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "paragraph_skip_pt",
+            "rule_set"
+          ],
+          "properties": {
+            "paragraph_skip_pt": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 30
+            },
+            "rule_set": {
+              "type": "object"
+            },
+            "first_line_indent_em": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 2
+            }
+          }
+        },
+        "table_header_align": {
+          "enum": [
+            "left",
+            "center",
+            "right"
+          ]
+        },
+        "table_mark_align": {
+          "enum": [
+            "left",
+            "center",
+            "right"
+          ]
+        },
+        "heading_introductions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "content_sha256",
+              "evidence",
+              "text",
+              "role"
+            ],
+            "properties": {
+              "content_sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "evidence": {
+                "type": "object"
+              },
+              "text": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^[^\\n]+$"
+              },
+              "role": {
+                "enum": [
+                  "passage",
+                  "document"
+                ]
+              },
+              "inline_terminal": {
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        "booklet_titles": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "content_sha256",
+              "evidence",
+              "text"
+            ],
+            "properties": {
+              "content_sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "evidence": {
+                "type": "object"
+              },
+              "text": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^[^\\n]+$"
+              },
+              "after_pt": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 30
+              }
+            }
+          }
+        },
+        "memo_typography": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "body_pt",
+            "baseline_pt"
+          ],
+          "properties": {
+            "body_pt": {
+              "type": "number",
+              "minimum": 10,
+              "maximum": 16
+            },
+            "baseline_pt": {
+              "type": "number",
+              "minimum": 18,
+              "maximum": 32
+            }
+          }
+        },
+        "section_styles": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "content_sha256",
+              "evidence",
+              "section_count",
+              "frame_style"
+            ],
+            "properties": {
+              "content_sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "evidence": {
+                "type": "object"
+              },
+              "section_count": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "frame_style": {
+                "enum": [
+                  "box",
+                  "folded_corner",
+                  "pinned_corners",
+                  "cloze"
+                ]
+              },
+              "title_align": {
+                "enum": [
+                  "left",
+                  "center"
+                ]
+              },
+              "title_placement": {
+                "enum": [
+                  "before_frame",
+                  "inside_frame",
+                  "preserve"
+                ]
+              },
+              "padding_pt": {
+                "type": "number",
+                "minimum": 0
+              },
+              "title_after_pt": {
+                "type": "number",
+                "minimum": 0
+              },
+              "author_after_pt": {
+                "type": "number",
+                "minimum": 0
+              },
+              "paragraph_indent_em": {
+                "type": "number",
+                "minimum": 0
+              },
+              "first_paragraph_indent_em": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 2
+              },
+              "lead_gap_pt": {
+                "type": "number",
+                "minimum": 0
+              },
+              "before_pt": {
+                "type": "number",
+                "minimum": 0
+              },
+              "selector": {
+                "enum": [
+                  "existing_sections",
+                  "after_first_paragraph",
+                  "after_intro_lines",
+                  "after_intro_text",
+                  "single_section",
+                  "single_div",
+                  "composition_pairs",
+                  "whole_content",
+                  "single_outer_div"
+                ]
+              },
+              "intro_line_count": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "last_paragraph_author": {
+                "type": "boolean"
+              },
+              "intro_text": {
+                "type": "string",
+                "minLength": 1
+              },
+              "line_styles": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "text",
+                    "align"
+                  ],
+                  "properties": {
+                    "text": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "align": {
+                      "enum": [
+                        "left",
+                        "center",
+                        "right"
+                      ]
+                    },
+                    "before_pt": {
+                      "type": "number",
+                      "minimum": 0
+                    },
+                    "after_pt": {
+                      "type": "number",
+                      "minimum": 0
+                    },
+                    "baseline_pt": {
+                      "type": "number",
+                      "exclusiveMinimum": 0
+                    },
+                    "indent_em": {
+                      "type": "number",
+                      "minimum": 0
+                    },
+                    "font_pt": {
+                      "type": "number",
+                      "exclusiveMinimum": 0
+                    },
+                    "line_sizes_pt": {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": {
+                        "type": "number",
+                        "exclusiveMinimum": 0
+                      }
+                    },
+                    "letter_space_em": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 2
+                    },
+                    "attached_bar": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "edge",
+                        "thickness_pt",
+                        "gray",
+                        "gap_pt"
+                      ],
+                      "properties": {
+                        "edge": {
+                          "enum": [
+                            "left",
+                            "right"
+                          ]
+                        },
+                        "thickness_pt": {
+                          "type": "number",
+                          "minimum": 0.1,
+                          "maximum": 5
+                        },
+                        "gray": {
+                          "type": "number",
+                          "minimum": 0,
+                          "maximum": 0.9
+                        },
+                        "gap_pt": {
+                          "type": "number",
+                          "minimum": 0,
+                          "maximum": 8
+                        },
+                        "inner_overhang_pt": {
+                          "type": "number",
+                          "minimum": 0,
+                          "maximum": 60
+                        },
+                        "line_index": {
+                          "type": "integer",
+                          "minimum": 0
+                        }
+                      }
+                    },
+                    "font_family": {
+                      "enum": [
+                        "heading"
+                      ]
+                    },
+                    "slant": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 0.3
+                    },
+                    "inset_frame": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "radius_pt",
+                        "padding_pt"
+                      ],
+                      "properties": {
+                        "radius_pt": {
+                          "type": "number",
+                          "minimum": 0,
+                          "maximum": 24
+                        },
+                        "padding_pt": {
+                          "type": "number",
+                          "minimum": 0,
+                          "maximum": 24
+                        }
+                      }
+                    },
+                    "rule_after_pt": {
+                      "type": "number",
+                      "minimum": 0.1,
+                      "maximum": 2
+                    },
+                    "right_inset_em": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 3
+                    },
+                    "native_down_arrow": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "line",
+                        "width_pt",
+                        "height_pt",
+                        "shaft_width_pt",
+                        "head_height_pt"
+                      ],
+                      "properties": {
+                        "line": {
+                          "type": "integer",
+                          "minimum": 0
+                        },
+                        "width_pt": {
+                          "type": "number",
+                          "minimum": 1,
+                          "maximum": 30
+                        },
+                        "height_pt": {
+                          "type": "number",
+                          "minimum": 1,
+                          "maximum": 30
+                        },
+                        "shaft_width_pt": {
+                          "type": "number",
+                          "minimum": 1,
+                          "maximum": 30
+                        },
+                        "head_height_pt": {
+                          "type": "number",
+                          "minimum": 1,
+                          "maximum": 30
+                        }
+                      }
+                    },
+                    "label_column": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "label",
+                        "width_em"
+                      ],
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "width_em": {
+                          "type": "number",
+                          "minimum": 1,
+                          "maximum": 14
+                        },
+                        "gap_em": {
+                          "type": "number",
+                          "minimum": 0,
+                          "maximum": 2
+                        },
+                        "align": {
+                          "enum": [
+                            "left",
+                            "right"
+                          ]
+                        }
+                      }
+                    },
+                    "inline_list": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "markers"
+                      ],
+                      "properties": {
+                        "markers": {
+                          "type": "array",
+                          "minItems": 2,
+                          "items": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "allOf": [
+                    {
+                      "if": {
+                        "required": [
+                          "right_inset_em"
+                        ]
+                      },
+                      "then": {
+                        "properties": {
+                          "align": {
+                            "const": "right"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "pins": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "shape",
+                  "radius_pdf_pt",
+                  "fill_gray",
+                  "inset_pt"
+                ],
+                "properties": {
+                  "shape": {
+                    "const": "single_circle"
+                  },
+                  "radius_pdf_pt": {
+                    "type": "number",
+                    "minimum": 2,
+                    "maximum": 8
+                  },
+                  "fill_gray": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                  },
+                  "inset_pt": {
+                    "type": "number",
+                    "minimum": 5,
+                    "maximum": 20
+                  }
+                }
+              },
+              "fold_size_pdf_pt": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "width",
+                  "height"
+                ],
+                "properties": {
+                  "width": {
+                    "type": "number",
+                    "minimum": 10,
+                    "maximum": 40
+                  },
+                  "height": {
+                    "type": "number",
+                    "minimum": 10,
+                    "maximum": 40
+                  }
+                }
+              },
+              "number_box_labels": {
+                "type": "array",
+                "minItems": 1,
+                "uniqueItems": true,
+                "items": {
+                  "type": "string",
+                  "pattern": "^[0-9]+$"
+                }
+              },
+              "width_fraction": {
+                "type": "number",
+                "minimum": 0.8,
+                "maximum": 1.1
+              },
+              "frame_top_pt": {
+                "type": "number",
+                "minimum": 0
+              },
+              "frame_bottom_pt": {
+                "type": "number",
+                "minimum": 0
+              },
+              "paragraph_break_before": {
+                "type": "array",
+                "minItems": 1,
+                "uniqueItems": true,
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "body_pt": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "baseline_pt": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "frame_rule_pt": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "font_role": {
+                "enum": [
+                  "body",
+                  "letter",
+                  "memo"
+                ]
+              },
+              "author_before_pt": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 60
+              },
+              "author_latin_role": {
+                "const": "document"
+              },
+              "after_pt": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 60
+              },
+              "label_value_list": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "entries"
+                ],
+                "properties": {
+                  "entries": {
+                    "type": "array",
+                    "minItems": 2,
+                    "maxItems": 20,
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "label",
+                        "value_lines"
+                      ],
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "pattern": "^【[^【】\\s]{1,12}】$"
+                        },
+                        "value_lines": {
+                          "type": "array",
+                          "minItems": 1,
+                          "items": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "before_pt": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 60
+                  },
+                  "after_pt": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 60
+                  },
+                  "indent_em": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 4
+                  },
+                  "gap_em": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 2
+                  }
+                }
+              },
+              "following_question_gap_pt": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 60
+              },
+              "ruby_intergap_em": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 0.2
+              },
+              "ruby_base_height_em": {
+                "type": "number",
+                "minimum": 0.65,
+                "maximum": 1.1
+              },
+              "ruby_size_ratio": {
+                "type": "number",
+                "minimum": 0.35,
+                "maximum": 0.6
+              },
+              "frame_rule": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "style": {
+                    "enum": [
+                      "single",
+                      "double",
+                      "dashed",
+                      "none"
+                    ]
+                  },
+                  "width_pt": {
+                    "type": "number",
+                    "minimum": 0.1,
+                    "maximum": 3
+                  },
+                  "double_gap_pt": {
+                    "type": "number",
+                    "minimum": 0.2,
+                    "maximum": 6
+                  },
+                  "edges": {
+                    "type": "array",
+                    "uniqueItems": true,
+                    "items": {
+                      "enum": [
+                        "top",
+                        "bottom",
+                        "left",
+                        "right"
+                      ]
+                    }
+                  }
+                }
+              },
+              "unwrap_existing_frame": {
+                "type": "boolean"
+              },
+              "unbordered_composition_divs": {
+                "const": true
+              },
+              "split_paragraph_lines": {
+                "type": "boolean"
+              },
+              "list_layout": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "list_count",
+                  "item_count",
+                  "levels"
+                ],
+                "properties": {
+                  "list_count": {
+                    "type": "integer",
+                    "minimum": 1
+                  },
+                  "item_count": {
+                    "type": "integer",
+                    "minimum": 1
+                  },
+                  "levels": {
+                    "type": "array",
+                    "minItems": 1,
+                    "maxItems": 3,
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "indent_em",
+                        "item_before_pt"
+                      ],
+                      "properties": {
+                        "indent_em": {
+                          "type": "number",
+                          "minimum": 0.5,
+                          "maximum": 4
+                        },
+                        "item_before_pt": {
+                          "type": "number",
+                          "minimum": 0,
+                          "maximum": 12
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "metadata_rows": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label_width_em",
+                  "rows"
+                ],
+                "properties": {
+                  "label_width_em": {
+                    "type": "number",
+                    "minimum": 1,
+                    "maximum": 12
+                  },
+                  "rows": {
+                    "type": "array",
+                    "minItems": 2,
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "label",
+                        "separator",
+                        "value"
+                      ],
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "separator": {
+                          "enum": [
+                            ":",
+                            "："
+                          ]
+                        },
+                        "value": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "before_pt": {
+                          "type": "number",
+                          "minimum": 0,
+                          "maximum": 40
+                        },
+                        "after_pt": {
+                          "type": "number",
+                          "minimum": 0,
+                          "maximum": 40
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "typography_family": {
+                "enum": [
+                  "body",
+                  "notice",
+                  "memo"
+                ]
+              },
+              "external_title": {
+                "type": "string",
+                "minLength": 1
+              },
+              "flow_lines": {
+                "type": "boolean",
+                "const": true
+              }
+            }
+          }
+        },
+        "historical_target_rows": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "target_width_em",
+            "label_width_em",
+            "left_indent_em",
+            "row_gap_pt",
+            "choice_row_gap_pt"
+          ],
+          "properties": {
+            "target_width_em": {
+              "type": "number",
+              "minimum": 5,
+              "maximum": 16
+            },
+            "label_width_em": {
+              "type": "number",
+              "minimum": 1,
+              "maximum": 3
+            },
+            "left_indent_em": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 3
+            },
+            "row_gap_pt": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 12
+            },
+            "choice_row_gap_pt": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 12
+            }
+          }
+        },
+        "historical_component_metrics": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "option_label_width_em",
+            "target_group_before_pt",
+            "target_group_after_pt",
+            "target_prose_after_pt",
+            "example_target_before_pt"
+          ],
+          "properties": {
+            "option_label_width_em": {
+              "type": "number",
+              "minimum": 0.8,
+              "maximum": 3
+            },
+            "target_group_before_pt": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 30
+            },
+            "target_group_after_pt": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 30
+            },
+            "target_prose_after_pt": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 30
+            },
+            "example_target_before_pt": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 30
+            },
+            "example_target_after_pt": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 30
+            }
+          }
+        },
+        "historical_typography": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "vocabulary_digit": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "width",
+                "height"
+              ],
+              "properties": {
+                "width": {
+                  "type": "number",
+                  "minimum": 0.75,
+                  "maximum": 1.1
+                },
+                "height": {
+                  "type": "number",
+                  "minimum": 0.75,
+                  "maximum": 1.1
+                }
+              }
+            },
+            "reading_digit": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "width",
+                "height"
+              ],
+              "properties": {
+                "width": {
+                  "type": "number",
+                  "minimum": 0.75,
+                  "maximum": 1.1
+                },
+                "height": {
+                  "type": "number",
+                  "minimum": 0.75,
+                  "maximum": 1.1
+                }
+              }
+            },
+            "boxed_digit_center": {
+              "type": "integer",
+              "enum": [
+                0,
+                1
+              ]
+            },
+            "question_digit_gap_em": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 0.3
+            },
+            "parenthesis_side_em": {
+              "type": "number",
+              "minimum": 0.2,
+              "maximum": 0.5
+            },
+            "two_digit_width": {
+              "type": "number",
+              "minimum": 0.5,
+              "maximum": 1
+            },
+            "inline_box_one_em": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 2.5
+            },
+            "inline_box_two_em": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 3
+            },
+            "question_open_gap_em": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 0.4
+            },
+            "question_close_gap_em": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 0.6
+            },
+            "slot_outer_gap_em": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 0.6
+            },
+            "slot_inner_width_em": {
+              "type": "number",
+              "minimum": 1.5,
+              "maximum": 4
+            },
+            "note_after_chu_em": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 0.5
+            },
+            "note_after_digit_em": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 0.5
+            },
+            "target_reference_pt": {
+              "type": "number",
+              "minimum": 5,
+              "maximum": 8
+            },
+            "target_reference_drop_ex": {
+              "type": "number",
+              "minimum": 0.8,
+              "maximum": 2.5
+            },
+            "example_explanation_tracking_em": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 0.12
+            },
+            "parenthesized_indent_em": {
+              "type": "number",
+              "minimum": 1.8,
+              "maximum": 3
+            },
+            "parenthesized_size_pt": {
+              "type": "number",
+              "minimum": 9,
+              "maximum": 14
+            },
+            "question_continuation_pullback_em": {
+              "type": "number",
+              "minimum": 0.5,
+              "maximum": 1.5
+            },
+            "example_explanation_before_pt": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 40
+            },
+            "example_explanation_inset_em": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 3
+            },
+            "shitsumon_label": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "left_inset_em",
+                "width_em",
+                "font"
+              ],
+              "properties": {
+                "left_inset_em": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 4
+                },
+                "width_em": {
+                  "type": "number",
+                  "minimum": 5,
+                  "maximum": 9
+                },
+                "font": {
+                  "enum": [
+                    "body",
+                    "heading"
+                  ]
+                }
+              }
+            },
+            "embedded_query": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "left_inset_em",
+                "width_em",
+                "continuation_pullback_em",
+                "before_pt"
+              ],
+              "properties": {
+                "left_inset_em": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 4
+                },
+                "width_em": {
+                  "type": "number",
+                  "minimum": 5,
+                  "maximum": 9
+                },
+                "continuation_pullback_em": {
+                  "type": "number",
+                  "minimum": 0.5,
+                  "maximum": 1.5
+                },
+                "before_pt": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 30
+                },
+                "label_font_role": {
+                  "enum": [
+                    "body",
+                    "task_label"
+                  ],
+                  "description": "Source-supported face for the literal embedded query label; omitted retains existing Mincho emission."
+                },
+                "question_gap_pt": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 60,
+                  "description": "Family spacing between consecutive complete reading contexts with bound embedded queries; the first context after a heading retains ordinary spacing."
+                }
+              }
+            },
+            "citation": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "font_pt",
+                "baseline_pt"
+              ],
+              "properties": {
+                "font_pt": {
+                  "type": "number",
+                  "minimum": 8,
+                  "maximum": 12
+                },
+                "baseline_pt": {
+                  "type": "number",
+                  "minimum": 8,
+                  "maximum": 20
+                }
+              }
+            },
+            "bracketed_query_label": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "left_inset_em",
+                "width_em",
+                "font"
+              ],
+              "properties": {
+                "left_inset_em": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 4
+                },
+                "width_em": {
+                  "type": "number",
+                  "minimum": 3,
+                  "maximum": 5
+                },
+                "font": {
+                  "enum": [
+                    "body",
+                    "heading"
+                  ]
+                }
+              }
+            },
+            "letter_brackets": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "body_inset_em",
+                "spine_inset_em",
+                "cap_inset_em",
+                "label_inset_em",
+                "before_pt",
+                "after_pt"
+              ],
+              "properties": {
+                "body_inset_em": {
+                  "type": "number",
+                  "minimum": 2,
+                  "maximum": 4
+                },
+                "spine_inset_em": {
+                  "type": "number",
+                  "minimum": 0.5,
+                  "maximum": 2.5
+                },
+                "cap_inset_em": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "label_inset_em": {
+                  "type": "number",
+                  "minimum": 1,
+                  "maximum": 3.5
+                },
+                "before_pt": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 20
+                },
+                "after_pt": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 20
+                }
+              }
+            },
+            "numbered_context_notes_inset_em": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 3
+            },
+            "numbered_introduction_body_inset": {
+              "type": "boolean"
+            },
+            "phrase_answer_line_width_em": {
+              "type": "number",
+              "minimum": 4,
+              "maximum": 10
+            },
+            "notes_inset_em": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 3
+            },
+            "bracketed_numbered_query_label": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "left_inset_em",
+                "width_em",
+                "font"
+              ],
+              "properties": {
+                "left_inset_em": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 4
+                },
+                "width_em": {
+                  "type": "number",
+                  "minimum": 3,
+                  "maximum": 5
+                },
+                "font": {
+                  "enum": [
+                    "body",
+                    "heading"
+                  ]
+                }
+              }
+            },
+            "query_label": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "left_inset_em",
+                "width_em",
+                "font"
+              ],
+              "properties": {
+                "left_inset_em": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 4
+                },
+                "width_em": {
+                  "type": "number",
+                  "minimum": 2,
+                  "maximum": 4
+                },
+                "font": {
+                  "enum": [
+                    "body",
+                    "heading"
+                  ]
+                }
+              }
+            },
+            "inline_number_box_role": {
+              "type": "string",
+              "enum": [
+                "main_question"
+              ]
+            },
+            "grammar_two_column_section_gap_pt": {
+              "type": "number",
+              "minimum": 12,
+              "maximum": 36
+            }
+          }
+        },
+        "passage_word_space_em": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 2,
+          "description": "Optional Old reading/cloze block spacing. Examples, headings, questions and choices retain their own roles."
+        },
+        "passage_punctuation_after_em": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 2,
+          "description": "Optional Old reading/cloze block spacing. Examples, headings, questions and choices retain their own roles."
+        },
+        "dialogue_passage_after_pt": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 72
+        },
+        "vocabulary_blank_question_gap_pt": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 30
+        },
+        "inline_passage_label_width_em": {
+          "type": "number",
+          "minimum": 1.5,
+          "maximum": 3
+        },
+        "vocabulary_vertical_question_gap_pt": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 30
+        },
+        "reading_context_before_pt": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "historical_source_pixels": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "path",
+              "sha256"
+            ],
+            "properties": {
+              "path": {
+                "type": "string",
+                "minLength": 1
+              },
+              "sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              }
+            }
+          },
+          "description": "Old-only canonical-image hash to an exact source-pixel presentation asset. Original image payloads remain canonical; current occurrence fingerprints, source identity, decoded pixels and display geometry are checked by the native consumer."
+        },
+        "reading_dialogue_turns": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "body_pt",
+            "baseline_pt",
+            "word_space_em"
+          ],
+          "properties": {
+            "body_pt": {
+              "type": "number",
+              "minimum": 8,
+              "maximum": 20
+            },
+            "baseline_pt": {
+              "type": "number",
+              "minimum": 10,
+              "maximum": 40
+            },
+            "word_space_em": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 2
+            }
+          }
+        },
+        "historical_passage_left_inset_em": {
+          "type": "object",
+          "additionalProperties": false,
+          "minProperties": 1,
+          "properties": {
+            "inline_numbered": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 4
+            },
+            "margin_labeled": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 4
+            }
+          }
+        },
+        "reading_context_reservation": {
+          "enum": [
+            "standard",
+            "measured_groups"
+          ]
+        }
+      }
+    },
+    "shared_defaults": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "path",
+        "shared_id",
+        "revision"
+      ],
+      "properties": {
+        "path": {
+          "const": "../shared/defaults.json"
+        },
+        "shared_id": {
+          "const": "jlpt-historical-written"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "style_variants": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "required": [
+          "shared_defaults"
+        ]
+      },
+      "then": {},
+      "else": {
+        "properties": {
+          "renderer_conventions": {
+            "required": [
+              "body_pt",
+              "baseline_pt",
+              "question_gap_pt",
+              "margins_mm",
+              "fonts",
+              "footer",
+              "examples"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "oneOf": [
+        {
+          "properties": {
+            "profile_id": {
+              "const": "historical-1991-2009-level1"
+            },
+            "applicability": {
+              "properties": {
+                "historical_level": {
+                  "const": "1級"
+                }
+              }
+            }
+          }
+        },
+        {
+          "properties": {
+            "profile_id": {
+              "const": "historical-1991-2009-level2"
+            },
+            "applicability": {
+              "properties": {
+                "historical_level": {
+                  "const": "2級"
+                }
+              }
+            }
+          }
+        },
+        {
+          "properties": {
+            "profile_id": {
+              "const": "historical-1991-2009-level3"
+            },
+            "applicability": {
+              "properties": {
+                "historical_level": {
+                  "const": "3級"
+                }
+              }
+            }
+          }
+        },
+        {
+          "properties": {
+            "profile_id": {
+              "const": "historical-1991-2009-level4"
+            },
+            "applicability": {
+              "properties": {
+                "historical_level": {
+                  "const": "4級"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "$id": "https://local.jlpt/schema-v3/historical-1991-2009/defaults",
+  "title": "Historical 1991–2009 old-Level 1–4 defaults"
+}

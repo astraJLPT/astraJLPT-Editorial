@@ -1,0 +1,796 @@
+{
+  "unit": "N1_12_2025",
+  "sources": [
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\2016.12\\N1能力考试计算方法.xlsx",
+      "sha256": "509844a08048d2cb05c14dd4645d8a885a027af4caa2cc5f4f4b0fcf640e092b",
+      "Tier": "unranked",
+      "bytes": 9627,
+      "aliases": [
+        "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\N1能力考试计算方法.xlsx",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\N1能力考试计算方法.xlsx",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\N1能力考试计算方法.xlsx"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\N1答题卡.pdf",
+      "sha256": "99d0ff9ea60c01b3c211c680c0c527a1604e0c91a52ece360e2873186b8dcef9",
+      "Tier": "unranked",
+      "bytes": 683222,
+      "aliases": [
+        "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\N1答题卡.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\N1答题卡.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\N1答题卡.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N1\\N1_multiple\\PaddleOCR\\pdf_2",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT_N1_N5_202512\\25年12月N1\\2025年12月 N1 详细答案.pdf",
+      "sha256": "98b7eb61a3d926f49bc9e452b05428367bf235a341134fc8ceacbd24d2e345cc",
+      "Tier": "unranked",
+      "bytes": 201744,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2025\\PaddleOCR\\pdf_2",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT_N1_N5_202512\\25年12月N1\\2025年12月N1听力原文，译文，答案.pdf",
+      "sha256": "1f55033673a6d983c0e693bf589edd12538771c4adafcd26211bde27bb68076d",
+      "Tier": "unranked",
+      "bytes": 837552,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2025\\PaddleOCR\\pdf_3",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT_N1_N5_202512\\25年12月N1\\A 2025年12月N1完整原卷.pdf",
+      "sha256": "930f74eba01c27aea3403d85541b8310c018660cf9014c1dd88d7e33229eae82",
+      "Tier": 1,
+      "bytes": 7698859,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2025\\PaddleOCR\\pdf_4",
+      "VisionOCR": "preprocess\\N1\\N1_12_2025\\VisionOCR\\pdf_4"
+    },
+    {
+      "path": "src\\JLPT_N1_N5_202512\\25年12月N1\\B 2025年12月N1解析消除水印版.pdf",
+      "sha256": "f26b88c34893e3605c9c2ac3c1996ccce6bdc674216e7a71208e3d3215b023b4",
+      "Tier": "unranked",
+      "bytes": 8771278,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2025\\PaddleOCR\\pdf_5",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT_N1_N5_202512\\25年12月N1\\C 2025年12月N1答案.pdf",
+      "sha256": "32ef08ff2810e75edbacad952ff14cc5003c9095aa5593d4bd98feb9ef05796b",
+      "Tier": "unranked",
+      "bytes": 327582,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2025\\PaddleOCR\\pdf_6",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N1\\2025-12_N1_ocr\\2025-12_N1.json",
+      "sha256": "4293cc875a70240454afa23a1ccceaa134f6820730160a43d00dad67c2625347",
+      "Tier": "unranked",
+      "bytes": 119461,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\2025\\2025.12\\2025年12月N1真题.pdf",
+      "sha256": "445359367643ad6b1e7f466feed05685ab2edca30d3d8b0085bc16ecab40a4c9",
+      "Tier": 2,
+      "bytes": 10588104,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2025\\PaddleOCR\\pdf_7",
+      "VisionOCR": "preprocess\\N1\\N1_12_2025\\VisionOCR\\pdf_7"
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\2025\\2025.12\\答案解析和听力原文\\2025年12月N1听力原文.pdf",
+      "sha256": "2a011600f25a028e0fa57fdc78f99aaf9e8aef1a5967a51ed331cdb626630136",
+      "Tier": "unranked",
+      "bytes": 297508,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2025\\PaddleOCR\\pdf_8",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\2025\\2025.12\\答案解析和听力原文\\2025年12月N1答案.pdf",
+      "sha256": "f9465dc8cc86a6c0e42826cb5b25cad3e2f8a176da57c091b4645f83fcb66ea7",
+      "Tier": "unranked",
+      "bytes": 1366091,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2025\\PaddleOCR\\pdf_9",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\2025\\2025.12\\答案解析和听力原文\\2025年12月N1解析.pdf",
+      "sha256": "268907ed819a5c04ca64cb73710a35af2eb7b3c5b8f46c064e1b9c1483baae51",
+      "Tier": "unranked",
+      "bytes": 1493816,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2025\\PaddleOCR\\pdf_10",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2025年12月\\25年12月N1真题.pdf",
+      "sha256": "f50f78a55e20973d014fe6fb6406f0cacdc4ed66cdb53621a390478f6ed4759e",
+      "Tier": 2,
+      "bytes": 4932354,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\25年12月N1\\25年12月N1真题.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2025\\PaddleOCR\\pdf_11",
+      "VisionOCR": "preprocess\\N1\\N1_12_2025\\VisionOCR\\pdf_11"
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\25年12月N1\\2025年12月N1答案.pdf",
+      "sha256": "16362020f1fe8601ddc94aebe76f4e327bb6df3897ac285dd79597b4ed432541",
+      "Tier": "unranked",
+      "bytes": 612233,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2025\\PaddleOCR\\pdf_12",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N1\\2025-12_N1_ocr\\images\\2025-12_N1_l-p1-q02-img01.jpg",
+      "sha256": "c70276fb70153aa5f7684fea49711ae13f0851e9e8ffb3eb25b4cea9bc8aab26",
+      "Tier": "unranked",
+      "bytes": 238077,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N1\\2025-12_N1_ocr\\images\\2025-12_N1_s13-q02-img01.jpg",
+      "sha256": "a8312314dcad1bd130fb007e2b2e04d294a2ff8692ea91df3555577b532f11f0",
+      "Tier": "unranked",
+      "bytes": 437906,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2025年12月\\25年12月N1答案.jpg",
+      "sha256": "5fc128f926b2e64ecaef5b653892de0df4c579afc8e34610e16be1240c3d51ff",
+      "Tier": "unranked",
+      "bytes": 289413,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2025年12月\\5分钱打印（首单免费1）(1).PNG",
+      "sha256": "ad77c1b1ca35d09b7bfd2b242a43b7b480e7dfb008ac914ae770d67ab386732f",
+      "Tier": "unranked",
+      "bytes": 627620,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2025年7月\\5分钱打印（首单免费1）(1).PNG",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N2真题\\2025年12月\\5分钱打印（首单免费1）(1).PNG",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N2真题\\2025年7月\\5分钱打印（首单免费1）(1).PNG",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\2013年12月\\5分钱打印（首单免费1）(1).PNG",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\2025年12月\\5分钱打印（首单免费1）(1).PNG",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N5真题\\2025年12月\\5分钱打印（首单免费1）(1).PNG",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N5真题\\2025年7月\\5分钱打印（首单免费1）(1).PNG"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src/CodexDownloads/N1_12_2025/hujiang_analysis_01.jpg",
+      "sha256": "5daa8cc1caff615334dc7d4514e4dd2f60fc71c79de21cc6bf3ec0f48e6c6bc2",
+      "bytes": 891444,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "secondary_answer_explanation",
+      "related_units": [
+        "N1_12_2025"
+      ],
+      "display_title": "hujiang_analysis_01.jpg",
+      "source_urls": [
+        "https://n1image.hjfile.cn/hj-mh/2025/12/08/ccd2904c18669632eef923a5fd45c8a3.jpg"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N1_12_2025/public_image_results.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N1/N1_12_2025/audit_work/hujiang_analysis_01.jpg",
+      "audit_review_scope_at_acquisition": "Audit visually reviewed analysis images 05-10 and 14-16 plus the answer image; other downloaded analysis images retained as unreviewed acquisition context.",
+      "prior_audit_record": "preprocess/N1/N1_12_2025/editorial_audit.md",
+      "reference_hunt_disposition": "Skipped: unit already approved",
+      "coverage_note": "The existing approved exam scan already covers this unit. These later answer explanations and author-text sources add no needed scan search target. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        3174,
+        4490
+      ],
+      "used_in_audit_at_acquisition": false
+    },
+    {
+      "path": "src/CodexDownloads/N1_12_2025/hujiang_analysis_02.jpg",
+      "sha256": "96a79629ea5438e21c26eb443fa60276b1d9be3e10ec23b1f8ca43502aa00e53",
+      "bytes": 916300,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "secondary_answer_explanation",
+      "related_units": [
+        "N1_12_2025"
+      ],
+      "display_title": "hujiang_analysis_02.jpg",
+      "source_urls": [
+        "https://n1image.hjfile.cn/hj-mh/2025/12/08/88b29cc122e7965708f2562dd552ef95.jpg"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N1_12_2025/public_image_results.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N1/N1_12_2025/audit_work/hujiang_analysis_02.jpg",
+      "audit_review_scope_at_acquisition": "Audit visually reviewed analysis images 05-10 and 14-16 plus the answer image; other downloaded analysis images retained as unreviewed acquisition context.",
+      "prior_audit_record": "preprocess/N1/N1_12_2025/editorial_audit.md",
+      "reference_hunt_disposition": "Skipped: unit already approved",
+      "coverage_note": "The existing approved exam scan already covers this unit. These later answer explanations and author-text sources add no needed scan search target. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        3174,
+        4490
+      ],
+      "used_in_audit_at_acquisition": false
+    },
+    {
+      "path": "src/CodexDownloads/N1_12_2025/hujiang_analysis_03.jpg",
+      "sha256": "a8cad9e1caa525c0d86b293d6f119f6d1cdd6a9ce53fffe2dcd0968b29f73030",
+      "bytes": 1132216,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "secondary_answer_explanation",
+      "related_units": [
+        "N1_12_2025"
+      ],
+      "display_title": "hujiang_analysis_03.jpg",
+      "source_urls": [
+        "https://n1image.hjfile.cn/hj-mh/2025/12/08/953d302a007bc01e76177a05ff4dc212.jpg"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N1_12_2025/public_image_results.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N1/N1_12_2025/audit_work/hujiang_analysis_03.jpg",
+      "audit_review_scope_at_acquisition": "Audit visually reviewed analysis images 05-10 and 14-16 plus the answer image; other downloaded analysis images retained as unreviewed acquisition context.",
+      "prior_audit_record": "preprocess/N1/N1_12_2025/editorial_audit.md",
+      "reference_hunt_disposition": "Skipped: unit already approved",
+      "coverage_note": "The existing approved exam scan already covers this unit. These later answer explanations and author-text sources add no needed scan search target. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        3174,
+        4490
+      ],
+      "used_in_audit_at_acquisition": false
+    },
+    {
+      "path": "src/CodexDownloads/N1_12_2025/hujiang_analysis_04.jpg",
+      "sha256": "7ea93378a0bb703813eac24b1435d762096d5c95b2454d1da3025fd1a81b8eca",
+      "bytes": 434225,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "secondary_answer_explanation",
+      "related_units": [
+        "N1_12_2025"
+      ],
+      "display_title": "hujiang_analysis_04.jpg",
+      "source_urls": [
+        "https://n1image.hjfile.cn/hj-mh/2025/12/08/72bbf599d5b56702ed35caf9d2e0caef.jpg"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N1_12_2025/public_image_results.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N1/N1_12_2025/audit_work/hujiang_analysis_04.jpg",
+      "audit_review_scope_at_acquisition": "Audit visually reviewed analysis images 05-10 and 14-16 plus the answer image; other downloaded analysis images retained as unreviewed acquisition context.",
+      "prior_audit_record": "preprocess/N1/N1_12_2025/editorial_audit.md",
+      "reference_hunt_disposition": "Skipped: unit already approved",
+      "coverage_note": "The existing approved exam scan already covers this unit. These later answer explanations and author-text sources add no needed scan search target. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        3174,
+        4490
+      ],
+      "used_in_audit_at_acquisition": false
+    },
+    {
+      "path": "src/CodexDownloads/N1_12_2025/hujiang_analysis_05.jpg",
+      "sha256": "9438b9d066915fb3b7e3ad30e3fd8caf31a35c590da6db4bff00769be0c64423",
+      "bytes": 901459,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "secondary_answer_explanation",
+      "related_units": [
+        "N1_12_2025"
+      ],
+      "display_title": "hujiang_analysis_05.jpg",
+      "source_urls": [
+        "https://n1image.hjfile.cn/hj-mh/2025/12/08/43d83895e71079a17252562cbbf26388.jpg"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N1_12_2025/public_image_results.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N1/N1_12_2025/audit_work/hujiang_analysis_05.jpg",
+      "audit_review_scope_at_acquisition": "Audit visually reviewed analysis images 05-10 and 14-16 plus the answer image; other downloaded analysis images retained as unreviewed acquisition context.",
+      "prior_audit_record": "preprocess/N1/N1_12_2025/editorial_audit.md",
+      "reference_hunt_disposition": "Skipped: unit already approved",
+      "coverage_note": "The existing approved exam scan already covers this unit. These later answer explanations and author-text sources add no needed scan search target. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        3174,
+        4490
+      ],
+      "used_in_audit_at_acquisition": true
+    },
+    {
+      "path": "src/CodexDownloads/N1_12_2025/hujiang_analysis_06.jpg",
+      "sha256": "569217bb58c5aff646d6b9dbc78a717b62fa3aea9f857df316386435f687a220",
+      "bytes": 954752,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "secondary_answer_explanation",
+      "related_units": [
+        "N1_12_2025"
+      ],
+      "display_title": "hujiang_analysis_06.jpg",
+      "source_urls": [
+        "https://n1image.hjfile.cn/hj-mh/2025/12/08/fa038124412e86a1e1b342676f900d95.jpg"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N1_12_2025/public_image_results.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N1/N1_12_2025/audit_work/hujiang_analysis_06.jpg",
+      "audit_review_scope_at_acquisition": "Audit visually reviewed analysis images 05-10 and 14-16 plus the answer image; other downloaded analysis images retained as unreviewed acquisition context.",
+      "prior_audit_record": "preprocess/N1/N1_12_2025/editorial_audit.md",
+      "reference_hunt_disposition": "Skipped: unit already approved",
+      "coverage_note": "The existing approved exam scan already covers this unit. These later answer explanations and author-text sources add no needed scan search target. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        3174,
+        4490
+      ],
+      "used_in_audit_at_acquisition": true
+    },
+    {
+      "path": "src/CodexDownloads/N1_12_2025/hujiang_analysis_07.jpg",
+      "sha256": "f3c2d891f1ba384d17910d9f853d9ddc7a5331c29993265523ea6fd9181b146e",
+      "bytes": 1204708,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "secondary_answer_explanation",
+      "related_units": [
+        "N1_12_2025"
+      ],
+      "display_title": "hujiang_analysis_07.jpg",
+      "source_urls": [
+        "https://n1image.hjfile.cn/hj-mh/2025/12/08/becad4b3ebc69e675393e0aaa4a4c4e3.jpg"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N1_12_2025/public_image_results.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N1/N1_12_2025/audit_work/hujiang_analysis_07.jpg",
+      "audit_review_scope_at_acquisition": "Audit visually reviewed analysis images 05-10 and 14-16 plus the answer image; other downloaded analysis images retained as unreviewed acquisition context.",
+      "prior_audit_record": "preprocess/N1/N1_12_2025/editorial_audit.md",
+      "reference_hunt_disposition": "Skipped: unit already approved",
+      "coverage_note": "The existing approved exam scan already covers this unit. These later answer explanations and author-text sources add no needed scan search target. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        3174,
+        4490
+      ],
+      "used_in_audit_at_acquisition": true
+    },
+    {
+      "path": "src/CodexDownloads/N1_12_2025/hujiang_analysis_08.jpg",
+      "sha256": "7f4f2087b45e5e864326457ebffcf38cb9a8c2b7033bc66a457b45860439e949",
+      "bytes": 1056219,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "secondary_answer_explanation",
+      "related_units": [
+        "N1_12_2025"
+      ],
+      "display_title": "hujiang_analysis_08.jpg",
+      "source_urls": [
+        "https://n1image.hjfile.cn/hj-mh/2025/12/08/79c5573ff528631ce5b850bedb4f8481.jpg"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N1_12_2025/public_image_results.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N1/N1_12_2025/audit_work/hujiang_analysis_08.jpg",
+      "audit_review_scope_at_acquisition": "Audit visually reviewed analysis images 05-10 and 14-16 plus the answer image; other downloaded analysis images retained as unreviewed acquisition context.",
+      "prior_audit_record": "preprocess/N1/N1_12_2025/editorial_audit.md",
+      "reference_hunt_disposition": "Skipped: unit already approved",
+      "coverage_note": "The existing approved exam scan already covers this unit. These later answer explanations and author-text sources add no needed scan search target. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        3174,
+        4490
+      ],
+      "used_in_audit_at_acquisition": true
+    },
+    {
+      "path": "src/CodexDownloads/N1_12_2025/hujiang_analysis_09.jpg",
+      "sha256": "dd2f221951d616645050c5009f7c5b6449ea4c4ee1428934ca986bed9035d684",
+      "bytes": 1234807,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "secondary_answer_explanation",
+      "related_units": [
+        "N1_12_2025"
+      ],
+      "display_title": "hujiang_analysis_09.jpg",
+      "source_urls": [
+        "https://n1image.hjfile.cn/hj-mh/2025/12/08/625db624bf00014ad7a5db7b419b1b50.jpg"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N1_12_2025/public_image_results.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N1/N1_12_2025/audit_work/hujiang_analysis_09.jpg",
+      "audit_review_scope_at_acquisition": "Audit visually reviewed analysis images 05-10 and 14-16 plus the answer image; other downloaded analysis images retained as unreviewed acquisition context.",
+      "prior_audit_record": "preprocess/N1/N1_12_2025/editorial_audit.md",
+      "reference_hunt_disposition": "Skipped: unit already approved",
+      "coverage_note": "The existing approved exam scan already covers this unit. These later answer explanations and author-text sources add no needed scan search target. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        3174,
+        4490
+      ],
+      "used_in_audit_at_acquisition": true
+    },
+    {
+      "path": "src/CodexDownloads/N1_12_2025/hujiang_analysis_10.jpg",
+      "sha256": "91c897d20e15687a7967284f4e11f877232e9e20feda6ce7a1172cdbfcbb1ff0",
+      "bytes": 952841,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "secondary_answer_explanation",
+      "related_units": [
+        "N1_12_2025"
+      ],
+      "display_title": "hujiang_analysis_10.jpg",
+      "source_urls": [
+        "https://n1image.hjfile.cn/hj-mh/2025/12/08/d757b9c8927ca5f6296faf52e0597f09.jpg"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N1_12_2025/public_image_results.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N1/N1_12_2025/audit_work/hujiang_analysis_10.jpg",
+      "audit_review_scope_at_acquisition": "Audit visually reviewed analysis images 05-10 and 14-16 plus the answer image; other downloaded analysis images retained as unreviewed acquisition context.",
+      "prior_audit_record": "preprocess/N1/N1_12_2025/editorial_audit.md",
+      "reference_hunt_disposition": "Skipped: unit already approved",
+      "coverage_note": "The existing approved exam scan already covers this unit. These later answer explanations and author-text sources add no needed scan search target. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        3174,
+        4490
+      ],
+      "used_in_audit_at_acquisition": true
+    },
+    {
+      "path": "src/CodexDownloads/N1_12_2025/hujiang_analysis_11.jpg",
+      "sha256": "36fff71fa8df883e6d6cf22846a8118ac25dfdd8aa0a25760054c9ed8428ceba",
+      "bytes": 1102089,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "secondary_answer_explanation",
+      "related_units": [
+        "N1_12_2025"
+      ],
+      "display_title": "hujiang_analysis_11.jpg",
+      "source_urls": [
+        "https://n1image.hjfile.cn/hj-mh/2025/12/08/d1e5569309baf008d246490562f00b7d.jpg"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N1_12_2025/public_image_results.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N1/N1_12_2025/audit_work/hujiang_analysis_11.jpg",
+      "audit_review_scope_at_acquisition": "Audit visually reviewed analysis images 05-10 and 14-16 plus the answer image; other downloaded analysis images retained as unreviewed acquisition context.",
+      "prior_audit_record": "preprocess/N1/N1_12_2025/editorial_audit.md",
+      "reference_hunt_disposition": "Skipped: unit already approved",
+      "coverage_note": "The existing approved exam scan already covers this unit. These later answer explanations and author-text sources add no needed scan search target. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        3174,
+        4490
+      ],
+      "used_in_audit_at_acquisition": false
+    },
+    {
+      "path": "src/CodexDownloads/N1_12_2025/hujiang_analysis_12.jpg",
+      "sha256": "9546f4d7eece8b9d51ba05bccf043a2930fa4ffc82d7227e46721f2045f0e9b4",
+      "bytes": 949910,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "secondary_answer_explanation",
+      "related_units": [
+        "N1_12_2025"
+      ],
+      "display_title": "hujiang_analysis_12.jpg",
+      "source_urls": [
+        "https://n1image.hjfile.cn/hj-mh/2025/12/08/af42ad8c85d345976bbc10102cca1bad.jpg"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N1_12_2025/public_image_results.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N1/N1_12_2025/audit_work/hujiang_analysis_12.jpg",
+      "audit_review_scope_at_acquisition": "Audit visually reviewed analysis images 05-10 and 14-16 plus the answer image; other downloaded analysis images retained as unreviewed acquisition context.",
+      "prior_audit_record": "preprocess/N1/N1_12_2025/editorial_audit.md",
+      "reference_hunt_disposition": "Skipped: unit already approved",
+      "coverage_note": "The existing approved exam scan already covers this unit. These later answer explanations and author-text sources add no needed scan search target. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        3174,
+        4490
+      ],
+      "used_in_audit_at_acquisition": false
+    },
+    {
+      "path": "src/CodexDownloads/N1_12_2025/hujiang_analysis_13.jpg",
+      "sha256": "a1725021543295b39817b4c756c2f8d02bc68ae7b78c2c4a3178cbc70c2eb4b2",
+      "bytes": 1131263,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "secondary_answer_explanation",
+      "related_units": [
+        "N1_12_2025"
+      ],
+      "display_title": "hujiang_analysis_13.jpg",
+      "source_urls": [
+        "https://n1image.hjfile.cn/hj-mh/2025/12/08/205edff4d7a09574609968f6b4cd4679.jpg"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N1_12_2025/public_image_results.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N1/N1_12_2025/audit_work/hujiang_analysis_13.jpg",
+      "audit_review_scope_at_acquisition": "Audit visually reviewed analysis images 05-10 and 14-16 plus the answer image; other downloaded analysis images retained as unreviewed acquisition context.",
+      "prior_audit_record": "preprocess/N1/N1_12_2025/editorial_audit.md",
+      "reference_hunt_disposition": "Skipped: unit already approved",
+      "coverage_note": "The existing approved exam scan already covers this unit. These later answer explanations and author-text sources add no needed scan search target. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        3174,
+        4490
+      ],
+      "used_in_audit_at_acquisition": false
+    },
+    {
+      "path": "src/CodexDownloads/N1_12_2025/hujiang_analysis_14.jpg",
+      "sha256": "d79b773326cb3e1b04a40ed03806d1fdd5cfcbe2d55df7cdf32f73713444dc6c",
+      "bytes": 903279,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "secondary_answer_explanation",
+      "related_units": [
+        "N1_12_2025"
+      ],
+      "display_title": "hujiang_analysis_14.jpg",
+      "source_urls": [
+        "https://n1image.hjfile.cn/hj-mh/2025/12/08/f738e0c48834795598583e54b8d96722.jpg"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N1_12_2025/public_image_results.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N1/N1_12_2025/audit_work/hujiang_analysis_14.jpg",
+      "audit_review_scope_at_acquisition": "Audit visually reviewed analysis images 05-10 and 14-16 plus the answer image; other downloaded analysis images retained as unreviewed acquisition context.",
+      "prior_audit_record": "preprocess/N1/N1_12_2025/editorial_audit.md",
+      "reference_hunt_disposition": "Skipped: unit already approved",
+      "coverage_note": "The existing approved exam scan already covers this unit. These later answer explanations and author-text sources add no needed scan search target. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        3174,
+        4490
+      ],
+      "used_in_audit_at_acquisition": true
+    },
+    {
+      "path": "src/CodexDownloads/N1_12_2025/hujiang_analysis_15.jpg",
+      "sha256": "f8c267ba7af7b4f43e7417fc3f154370e045c8f41c080774b45b94e2bde1894a",
+      "bytes": 1040049,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "secondary_answer_explanation",
+      "related_units": [
+        "N1_12_2025"
+      ],
+      "display_title": "hujiang_analysis_15.jpg",
+      "source_urls": [
+        "https://n1image.hjfile.cn/hj-mh/2025/12/08/974981a8d22ccc80d900735b4f7dfde0.jpg"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N1_12_2025/public_image_results.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N1/N1_12_2025/audit_work/hujiang_analysis_15.jpg",
+      "audit_review_scope_at_acquisition": "Audit visually reviewed analysis images 05-10 and 14-16 plus the answer image; other downloaded analysis images retained as unreviewed acquisition context.",
+      "prior_audit_record": "preprocess/N1/N1_12_2025/editorial_audit.md",
+      "reference_hunt_disposition": "Skipped: unit already approved",
+      "coverage_note": "The existing approved exam scan already covers this unit. These later answer explanations and author-text sources add no needed scan search target. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        3174,
+        4490
+      ],
+      "used_in_audit_at_acquisition": true
+    },
+    {
+      "path": "src/CodexDownloads/N1_12_2025/hujiang_analysis_16.jpg",
+      "sha256": "4fbdde3daa55618bc42ed0ffadc7e3ed5d9ff637fd7853acb473d955c29d329c",
+      "bytes": 506947,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "secondary_answer_explanation",
+      "related_units": [
+        "N1_12_2025"
+      ],
+      "display_title": "hujiang_analysis_16.jpg",
+      "source_urls": [
+        "https://n1image.hjfile.cn/hj-mh/2025/12/08/a0374e4500014a37893c4d5e6d72cc63.jpg"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N1_12_2025/public_image_results.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N1/N1_12_2025/audit_work/hujiang_analysis_16.jpg",
+      "audit_review_scope_at_acquisition": "Audit visually reviewed analysis images 05-10 and 14-16 plus the answer image; other downloaded analysis images retained as unreviewed acquisition context.",
+      "prior_audit_record": "preprocess/N1/N1_12_2025/editorial_audit.md",
+      "reference_hunt_disposition": "Skipped: unit already approved",
+      "coverage_note": "The existing approved exam scan already covers this unit. These later answer explanations and author-text sources add no needed scan search target. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "JPEG",
+      "image_dimensions": [
+        3174,
+        4490
+      ],
+      "used_in_audit_at_acquisition": true
+    },
+    {
+      "path": "src/CodexDownloads/N1_12_2025/hujiang_answers_01.jpg",
+      "sha256": "672df393749cc576463775f81204647177330c85d141d0a853403c5ff268d83f",
+      "bytes": 168884,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "secondary_answer_explanation",
+      "related_units": [
+        "N1_12_2025"
+      ],
+      "display_title": "hujiang_answers_01.jpg",
+      "source_urls": [
+        "https://n1image.hjfile.cn/hj-mh/2025/12/07/7a3a4be76765fd621634d8978c60b0ca.png"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N1_12_2025/public_image_results.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N1/N1_12_2025/audit_work/hujiang_answers_01.jpg",
+      "audit_review_scope_at_acquisition": "Audit visually reviewed analysis images 05-10 and 14-16 plus the answer image; other downloaded analysis images retained as unreviewed acquisition context.",
+      "prior_audit_record": "preprocess/N1/N1_12_2025/editorial_audit.md",
+      "reference_hunt_disposition": "Skipped: unit already approved",
+      "coverage_note": "The existing approved exam scan already covers this unit. These later answer explanations and author-text sources add no needed scan search target. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "image_format": "PNG",
+      "image_dimensions": [
+        669,
+        895
+      ]
+    }
+  ]
+}

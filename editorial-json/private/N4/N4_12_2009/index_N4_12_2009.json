@@ -1,0 +1,38 @@
+{
+  "unit": "N4_12_2009",
+  "sources": [
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N4\\N4-1991-2009年\\（1991年-2009年）N4真题听力\\2009\\2009年日语能力考试四级真题及答案.pdf",
+      "sha256": "e988b85954586320fd139cedf003819db8699a0f15b5458d9e1d528e930384cb",
+      "Tier": 1,
+      "bytes": 1723017,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N4\\N4_12_2009\\PaddleOCR\\pdf_1",
+      "VisionOCR": "preprocess\\N4\\N4_12_2009\\VisionOCR\\pdf_1",
+      "reference_registry": "preprocess/user_approved_reference_scans.md",
+      "reference_id": "RC-L4-2009",
+      "display_title": "Level 4, December 2009",
+      "pages": 19
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N4真题（2010-2025.12）\\1991-2009年N4真题（改版前的题目，参考即可）\\2009\\2009年12月N4真题+答案.pdf",
+      "sha256": "92767f60196c8ec6487b2a2d7fbaf2be994d07632b620f274ef5101641a5b43f",
+      "Tier": 2,
+      "bytes": 31538237,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N4历年真题\\1991-2009年N4真题（改版前的题目，参考即可）\\2009\\2009年12月N4真题+答案.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N4\\N4_12_2009\\PaddleOCR\\pdf_2",
+      "VisionOCR": "preprocess\\N4\\N4_12_2009\\VisionOCR\\pdf_2"
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\2000年-2009年\\2000年~2009年日语4级真题及答案--打印版.doc",
+      "sha256": "ca13a364bac8a3718e65343e803ab4d46bb010ae7c4f452f9907966ce1f19bdc",
+      "Tier": "unranked",
+      "bytes": 816895,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    }
+  ]
+}

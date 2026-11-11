@@ -1,0 +1,789 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark light"><title>Developer review · N2_2001 · astraJLPT</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../assets/fonts-9292332dbb5c5bef.css?v=6421a805aa0a"><link rel="stylesheet" href="../assets/themes.css?v=7ad0820747dc"><link rel="stylesheet" href="../assets/answer-marking.css?v=bec6b4920050"><link rel="stylesheet" href="../assets/site.css?v=7ae9ae7c768b"><link rel="stylesheet" href="../assets/pdf-typography.css?v=ba55af25606f"><link rel="stylesheet" href="../assets/paper-shared.css?v=8f3ca38dca80"></head><body class="catalog-page"><a class="skip-link" href="#content">Skip to content</a><header class="topbar" id="page-top" tabindex="-1"><a class="wordmark" id="brand" href="../index.html">astra<span>JLPT</span></a><details id="settings" class="settings"><summary aria-label="Open settings" title="Settings"><span aria-hidden="true">⚙</span><span class="sr-only">Settings</span></summary><div class="settings-panel"><div class="settings-title"><h2>settings</h2><button type="button" id="close-settings" class="js-only" aria-label="Close settings">×</button></div><div class="settings-tabs" role="group" aria-label="Settings categories"><label><input type="radio" name="settings-view" value="appearance" checked><span>theme</span></label><label><input type="radio" name="settings-view" value="browser"><span>browser</span></label></div><section data-settings="appearance"><div class="theme-workspace"><div class="theme-picker"><div class="setting-heading"><h3>theme</h3></div><div class="theme-grid originals"><label class="theme-card ps-gh"><input type="radio" name="theme" id="theme-jlpt_paper" value="jlpt_paper"><span>jlpt_paper</span></label><label class="theme-card ps-ck"><input type="radio" name="theme" id="theme-astraJLPT_dark" value="astraJLPT_dark" checked><span>astraJLPT_dark</span></label><label class="theme-card ps-ga"><input type="radio" name="theme" id="theme-astraJLPT_sepia" value="astraJLPT_sepia"><span>astraJLPT_sepia</span></label></div><div class="js-only"><p class="settings-label">three random picks</p><div class="theme-grid" id="quick-picks"></div></div><details><summary>all 187 Monkeytype palettes</summary><label class="theme-search js-only">find a palette<input id="theme-search" type="search" placeholder="search themes" autocomplete="off"></label><div class="theme-grid theme-catalog"><label class="theme-card ps-e9"><input type="radio" name="theme" id="theme-8008" value="8008"><span>8008</span></label><label class="theme-card ps-cw"><input type="radio" name="theme" id="theme-80s_after_dark" value="80s_after_dark"><span>80s after dark</span></label><label class="theme-card ps-fq"><input type="radio" name="theme" id="theme-9009" value="9009"><span>9009</span></label><label class="theme-card ps-cc"><input type="radio" name="theme" id="theme-aether" value="aether"><span>aether</span></label><label class="theme-card ps-cz"><input type="radio" name="theme" id="theme-alduin" value="alduin"><span>alduin</span></label><label class="theme-card ps-el"><input type="radio" name="theme" id="theme-alpine" value="alpine"><span>alpine</span></label><label class="theme-card ps-bg"><input type="radio" name="theme" id="theme-anti_hero" value="anti_hero"><span>anti hero</span></label><label class="theme-card ps-c3"><input type="radio" name="theme" id="theme-arch" value="arch"><span>arch</span></label><label class="theme-card ps-bt"><input type="radio" name="theme" id="theme-aurora" value="aurora"><span>aurora</span></label><label class="theme-card ps-g8"><input type="radio" name="theme" id="theme-beach" value="beach"><span>beach</span></label><label class="theme-card ps-dz"><input type="radio" name="theme" id="theme-bento" value="bento"><span>bento</span></label><label class="theme-card ps-f1"><input type="radio" name="theme" id="theme-bingsu" value="bingsu"><span>bingsu</span></label><label class="theme-card ps-dl"><input type="radio" name="theme" id="theme-bliss" value="bliss"><span>bliss</span></label><label class="theme-card ps-bn"><input type="radio" name="theme" id="theme-blue_dolphin" value="blue_dolphin"><span>blue dolphin</span></label><label class="theme-card ps-dd"><input type="radio" name="theme" id="theme-blueberry_dark" value="blueberry_dark"><span>blueberry dark</span></label><label class="theme-card ps-fd"><input type="radio" name="theme" id="theme-blueberry_light" value="blueberry_light"><span>blueberry light</span></label><label class="theme-card ps-ep"><input type="radio" name="theme" id="theme-botanical" value="botanical"><span>botanical</span></label><label class="theme-card ps-cl"><input type="radio" name="theme" id="theme-bouquet" value="bouquet"><span>bouquet</span></label><label class="theme-card ps-fk"><input type="radio" name="theme" id="theme-breeze" value="breeze"><span>breeze</span></label><label class="theme-card ps-dk"><input type="radio" name="theme" id="theme-bushido" value="bushido"><span>bushido</span></label><label class="theme-card ps-f5"><input type="radio" name="theme" id="theme-cafe" value="cafe"><span>cafe</span></label><label class="theme-card ps-g1"><input type="radio" name="theme" id="theme-camping" value="camping"><span>camping</span></label><label class="theme-card ps-e4"><input type="radio" name="theme" id="theme-carbon" value="carbon"><span>carbon</span></label><label class="theme-card ps-d3"><input type="radio" name="theme" id="theme-catppuccin" value="catppuccin"><span>catppuccin</span></label><label class="theme-card ps-ch"><input type="radio" name="theme" id="theme-chaos_theory" value="chaos_theory"><span>chaos theory</span></label><label class="theme-card ps-g3"><input type="radio" name="theme" id="theme-cheesecake" value="cheesecake"><span>cheesecake</span></label><label class="theme-card ps-e7"><input type="radio" name="theme" id="theme-cherry_blossom" value="cherry_blossom"><span>cherry blossom</span></label><label class="theme-card ps-eh"><input type="radio" name="theme" id="theme-comfy" value="comfy"><span>comfy</span></label><label class="theme-card ps-ef"><input type="radio" name="theme" id="theme-copper" value="copper"><span>copper</span></label><label class="theme-card ps-g6"><input type="radio" name="theme" id="theme-creamsicle" value="creamsicle"><span>creamsicle</span></label><label class="theme-card ps-em"><input type="radio" name="theme" id="theme-cy_red" value="cy_red"><span>cy red</span></label><label class="theme-card ps-co"><input type="radio" name="theme" id="theme-cyberspace" value="cyberspace"><span>cyberspace</span></label><label class="theme-card ps-cd"><input type="radio" name="theme" id="theme-dark" value="dark"><span>dark</span></label><label class="theme-card ps-bz"><input type="radio" name="theme" id="theme-dark_magic_girl" value="dark_magic_girl"><span>dark magic girl</span></label><label class="theme-card ps-d6"><input type="radio" name="theme" id="theme-dark_note" value="dark_note"><span>dark note</span></label><label class="theme-card ps-g5"><input type="radio" name="theme" id="theme-darling" value="darling"><span>darling</span></label><label class="theme-card ps-bw"><input type="radio" name="theme" id="theme-deku" value="deku"><span>deku</span></label><label class="theme-card ps-g9"><input type="radio" name="theme" id="theme-desert_oasis" value="desert_oasis"><span>desert oasis</span></label><label class="theme-card ps-cx"><input type="radio" name="theme" id="theme-dev" value="dev"><span>dev</span></label><label class="theme-card ps-ek"><input type="radio" name="theme" id="theme-diner" value="diner"><span>diner</span></label><label class="theme-card ps-gi"><input type="radio" name="theme" id="theme-dino" value="dino"><span>dino</span></label><label class="theme-card ps-e6"><input type="radio" name="theme" id="theme-discord" value="discord"><span>discord</span></label><label class="theme-card ps-fc"><input type="radio" name="theme" id="theme-dmg" value="dmg"><span>dmg</span></label><label class="theme-card ps-fj"><input type="radio" name="theme" id="theme-dollar" value="dollar"><span>dollar</span></label><label class="theme-card ps-ce"><input type="radio" name="theme" id="theme-dots" value="dots"><span>dots</span></label><label class="theme-card ps-dq"><input type="radio" name="theme" id="theme-dracula" value="dracula"><span>dracula</span></label><label class="theme-card ps-cq"><input type="radio" name="theme" id="theme-drowning" value="drowning"><span>drowning</span></label><label class="theme-card ps-eo"><input type="radio" name="theme" id="theme-dualshot" value="dualshot"><span>dualshot</span></label><label class="theme-card ps-dr"><input type="radio" name="theme" id="theme-earthsong" value="earthsong"><span>earthsong</span></label><label class="theme-card ps-ci"><input type="radio" name="theme" id="theme-everblush" value="everblush"><span>everblush</span></label><label class="theme-card ps-bq"><input type="radio" name="theme" id="theme-evil_eye" value="evil_eye"><span>evil eye</span></label><label class="theme-card ps-bp"><input type="radio" name="theme" id="theme-ez_mode" value="ez_mode"><span>ez mode</span></label><label class="theme-card ps-c8"><input type="radio" name="theme" id="theme-fire" value="fire"><span>fire</span></label><label class="theme-card ps-eb"><input type="radio" name="theme" id="theme-fledgling" value="fledgling"><span>fledgling</span></label><label class="theme-card ps-f3"><input type="radio" name="theme" id="theme-fleuriste" value="fleuriste"><span>fleuriste</span></label><label class="theme-card ps-bl"><input type="radio" name="theme" id="theme-floret" value="floret"><span>floret</span></label><label class="theme-card ps-fh"><input type="radio" name="theme" id="theme-froyo" value="froyo"><span>froyo</span></label><label class="theme-card ps-et"><input type="radio" name="theme" id="theme-frozen_llama" value="frozen_llama"><span>frozen llama</span></label><label class="theme-card ps-f9"><input type="radio" name="theme" id="theme-fruit_chew" value="fruit_chew"><span>fruit chew</span></label><label class="theme-card ps-en"><input type="radio" name="theme" id="theme-fundamentals" value="fundamentals"><span>fundamentals</span></label><label class="theme-card ps-e0"><input type="radio" name="theme" id="theme-future_funk" value="future_funk"><span>future funk</span></label><label class="theme-card ps-dc"><input type="radio" name="theme" id="theme-github" value="github"><span>github</span></label><label class="theme-card ps-fn"><input type="radio" name="theme" id="theme-godspeed" value="godspeed"><span>godspeed</span></label><label class="theme-card ps-e3"><input type="radio" name="theme" id="theme-graen" value="graen"><span>graen</span></label><label class="theme-card ps-ea"><input type="radio" name="theme" id="theme-grand_prix" value="grand_prix"><span>grand prix</span></label><label class="theme-card ps-dv"><input type="radio" name="theme" id="theme-grape" value="grape"><span>grape</span></label><label class="theme-card ps-dp"><input type="radio" name="theme" id="theme-gruvbox_dark" value="gruvbox_dark"><span>gruvbox dark</span></label><label class="theme-card ps-g2"><input type="radio" name="theme" id="theme-gruvbox_light" value="gruvbox_light"><span>gruvbox light</span></label><label class="theme-card ps-bu"><input type="radio" name="theme" id="theme-hammerhead" value="hammerhead"><span>hammerhead</span></label><label class="theme-card ps-fa"><input type="radio" name="theme" id="theme-hanok" value="hanok"><span>hanok</span></label><label class="theme-card ps-ed"><input type="radio" name="theme" id="theme-hedge" value="hedge"><span>hedge</span></label><label class="theme-card ps-fu"><input type="radio" name="theme" id="theme-honey" value="honey"><span>honey</span></label><label class="theme-card ps-d0"><input type="radio" name="theme" id="theme-horizon" value="horizon"><span>horizon</span></label><label class="theme-card ps-bf"><input type="radio" name="theme" id="theme-husqy" value="husqy"><span>husqy</span></label><label class="theme-card ps-cj"><input type="radio" name="theme" id="theme-iceberg_dark" value="iceberg_dark"><span>iceberg dark</span></label><label class="theme-card ps-fl"><input type="radio" name="theme" id="theme-iceberg_light" value="iceberg_light"><span>iceberg light</span></label><label class="theme-card ps-c7"><input type="radio" name="theme" id="theme-incognito" value="incognito"><span>incognito</span></label><label class="theme-card ps-d8"><input type="radio" name="theme" id="theme-ishtar" value="ishtar"><span>ishtar</span></label><label class="theme-card ps-eu"><input type="radio" name="theme" id="theme-iv_clover" value="iv_clover"><span>iv clover</span></label><label class="theme-card ps-c2"><input type="radio" name="theme" id="theme-iv_spade" value="iv_spade"><span>iv spade</span></label><label class="theme-card ps-cu"><input type="radio" name="theme" id="theme-joker" value="joker"><span>joker</span></label><label class="theme-card ps-de"><input type="radio" name="theme" id="theme-laser" value="laser"><span>laser</span></label><label class="theme-card ps-ex"><input type="radio" name="theme" id="theme-lavender" value="lavender"><span>lavender</span></label><label class="theme-card ps-ew"><input type="radio" name="theme" id="theme-leather" value="leather"><span>leather</span></label><label class="theme-card ps-fo"><input type="radio" name="theme" id="theme-lil_dragon" value="lil_dragon"><span>lil dragon</span></label><label class="theme-card ps-gd"><input type="radio" name="theme" id="theme-lilac_mist" value="lilac_mist"><span>lilac mist</span></label><label class="theme-card ps-er"><input type="radio" name="theme" id="theme-lime" value="lime"><span>lime</span></label><label class="theme-card ps-df"><input type="radio" name="theme" id="theme-luna" value="luna"><span>luna</span></label><label class="theme-card ps-ez"><input type="radio" name="theme" id="theme-macroblank" value="macroblank"><span>macroblank</span></label><label class="theme-card ps-gk"><input type="radio" name="theme" id="theme-magic_girl" value="magic_girl"><span>magic girl</span></label><label class="theme-card ps-du"><input type="radio" name="theme" id="theme-mashu" value="mashu"><span>mashu</span></label><label class="theme-card ps-ei"><input type="radio" name="theme" id="theme-matcha_moccha" value="matcha_moccha"><span>matcha moccha</span></label><label class="theme-card ps-dn"><input type="radio" name="theme" id="theme-material" value="material"><span>material</span></label><label class="theme-card ps-be"><input type="radio" name="theme" id="theme-matrix" value="matrix"><span>matrix</span></label><label class="theme-card ps-br"><input type="radio" name="theme" id="theme-menthol" value="menthol"><span>menthol</span></label><label class="theme-card ps-dg"><input type="radio" name="theme" id="theme-metaverse" value="metaverse"><span>metaverse</span></label><label class="theme-card ps-ca"><input type="radio" name="theme" id="theme-metropolis" value="metropolis"><span>metropolis</span></label><label class="theme-card ps-g0"><input type="radio" name="theme" id="theme-mexican" value="mexican"><span>mexican</span></label><label class="theme-card ps-fv"><input type="radio" name="theme" id="theme-miami" value="miami"><span>miami</span></label><label class="theme-card ps-cn"><input type="radio" name="theme" id="theme-miami_nights" value="miami_nights"><span>miami nights</span></label><label class="theme-card ps-c0"><input type="radio" name="theme" id="theme-midnight" value="midnight"><span>midnight</span></label><label class="theme-card ps-gf"><input type="radio" name="theme" id="theme-milkshake" value="milkshake"><span>milkshake</span></label><label class="theme-card ps-bv"><input type="radio" name="theme" id="theme-mint" value="mint"><span>mint</span></label><label class="theme-card ps-ey"><input type="radio" name="theme" id="theme-mizu" value="mizu"><span>mizu</span></label><label class="theme-card ps-dy"><input type="radio" name="theme" id="theme-modern_dolch" value="modern_dolch"><span>modern dolch</span></label><label class="theme-card ps-fe"><input type="radio" name="theme" id="theme-modern_dolch_light" value="modern_dolch_light"><span>modern dolch light</span></label><label class="theme-card ps-gm"><input type="radio" name="theme" id="theme-modern_ink" value="modern_ink"><span>modern ink</span></label><label class="theme-card ps-do"><input type="radio" name="theme" id="theme-monokai" value="monokai"><span>monokai</span></label><label class="theme-card ps-cs"><input type="radio" name="theme" id="theme-moonlight" value="moonlight"><span>moonlight</span></label><label class="theme-card ps-c9"><input type="radio" name="theme" id="theme-mountain" value="mountain"><span>mountain</span></label><label class="theme-card ps-f8"><input type="radio" name="theme" id="theme-mr_sleeves" value="mr_sleeves"><span>mr sleeves</span></label><label class="theme-card ps-gj"><input type="radio" name="theme" id="theme-ms_cupcakes" value="ms_cupcakes"><span>ms cupcakes</span></label><label class="theme-card ps-ej"><input type="radio" name="theme" id="theme-muted" value="muted"><span>muted</span></label><label class="theme-card ps-cg"><input type="radio" name="theme" id="theme-nautilus" value="nautilus"><span>nautilus</span></label><label class="theme-card ps-db"><input type="radio" name="theme" id="theme-nebula" value="nebula"><span>nebula</span></label><label class="theme-card ps-da"><input type="radio" name="theme" id="theme-night_runner" value="night_runner"><span>night runner</span></label><label class="theme-card ps-dj"><input type="radio" name="theme" id="theme-nord" value="nord"><span>nord</span></label><label class="theme-card ps-fp"><input type="radio" name="theme" id="theme-nord_light" value="nord_light"><span>nord light</span></label><label class="theme-card ps-di"><input type="radio" name="theme" id="theme-norse" value="norse"><span>norse</span></label><label class="theme-card ps-e5"><input type="radio" name="theme" id="theme-oblivion" value="oblivion"><span>oblivion</span></label><label class="theme-card ps-fm"><input type="radio" name="theme" id="theme-olive" value="olive"><span>olive</span></label><label class="theme-card ps-cy"><input type="radio" name="theme" id="theme-olivia" value="olivia"><span>olivia</span></label><label class="theme-card ps-e2"><input type="radio" name="theme" id="theme-onedark" value="onedark"><span>onedark</span></label><label class="theme-card ps-f4"><input type="radio" name="theme" id="theme-our_theme" value="our_theme"><span>our theme</span></label><label class="theme-card ps-ee"><input type="radio" name="theme" id="theme-pale_nimbus" value="pale_nimbus"><span>pale nimbus</span></label><label class="theme-card ps-fr"><input type="radio" name="theme" id="theme-paper" value="paper"><span>paper</span></label><label class="theme-card ps-eq"><input type="radio" name="theme" id="theme-passion_fruit" value="passion_fruit"><span>passion fruit</span></label><label class="theme-card ps-ff"><input type="radio" name="theme" id="theme-pastel" value="pastel"><span>pastel</span></label><label class="theme-card ps-ds"><input type="radio" name="theme" id="theme-peach_blossom" value="peach_blossom"><span>peach blossom</span></label><label class="theme-card ps-fg"><input type="radio" name="theme" id="theme-peaches" value="peaches"><span>peaches</span></label><label class="theme-card ps-bk"><input type="radio" name="theme" id="theme-phantom" value="phantom"><span>phantom</span></label><label class="theme-card ps-fz"><input type="radio" name="theme" id="theme-pink_lemonade" value="pink_lemonade"><span>pink lemonade</span></label><label class="theme-card ps-cm"><input type="radio" name="theme" id="theme-pulse" value="pulse"><span>pulse</span></label><label class="theme-card ps-d4"><input type="radio" name="theme" id="theme-purpleish" value="purpleish"><span>purpleish</span></label><label class="theme-card ps-fy"><input type="radio" name="theme" id="theme-rainbow_trail" value="rainbow_trail"><span>rainbow trail</span></label><label class="theme-card ps-ct"><input type="radio" name="theme" id="theme-red_dragon" value="red_dragon"><span>red dragon</span></label><label class="theme-card ps-es"><input type="radio" name="theme" id="theme-red_samurai" value="red_samurai"><span>red samurai</span></label><label class="theme-card ps-e1"><input type="radio" name="theme" id="theme-repose_dark" value="repose_dark"><span>repose dark</span></label><label class="theme-card ps-fs"><input type="radio" name="theme" id="theme-repose_light" value="repose_light"><span>repose light</span></label><label class="theme-card ps-fb"><input type="radio" name="theme" id="theme-retro" value="retro"><span>retro</span></label><label class="theme-card ps-bx"><input type="radio" name="theme" id="theme-retrocast" value="retrocast"><span>retrocast</span></label><label class="theme-card ps-cd"><input type="radio" name="theme" id="theme-rgb" value="rgb"><span>rgb</span></label><label class="theme-card ps-d5"><input type="radio" name="theme" id="theme-rose_pine" value="rose_pine"><span>rose pine</span></label><label class="theme-card ps-gc"><input type="radio" name="theme" id="theme-rose_pine_dawn" value="rose_pine_dawn"><span>rose pine dawn</span></label><label class="theme-card ps-dt"><input type="radio" name="theme" id="theme-rose_pine_moon" value="rose_pine_moon"><span>rose pine moon</span></label><label class="theme-card ps-cv"><input type="radio" name="theme" id="theme-rudy" value="rudy"><span>rudy</span></label><label class="theme-card ps-by"><input type="radio" name="theme" id="theme-ryujinscales" value="ryujinscales"><span>ryujinscales</span></label><label class="theme-card ps-fi"><input type="radio" name="theme" id="theme-serika" value="serika"><span>serika</span></label><label class="theme-card ps-e8"><input type="radio" name="theme" id="theme-serika_dark" value="serika_dark"><span>serika dark</span></label><label class="theme-card ps-dh"><input type="radio" name="theme" id="theme-sewing_tin" value="sewing_tin"><span>sewing tin</span></label><label class="theme-card ps-gg"><input type="radio" name="theme" id="theme-sewing_tin_light" value="sewing_tin_light"><span>sewing tin light</span></label><label class="theme-card ps-bi"><input type="radio" name="theme" id="theme-shadow" value="shadow"><span>shadow</span></label><label class="theme-card ps-f6"><input type="radio" name="theme" id="theme-shoko" value="shoko"><span>shoko</span></label><label class="theme-card ps-ge"><input type="radio" name="theme" id="theme-slambook" value="slambook"><span>slambook</span></label><label class="theme-card ps-f2"><input type="radio" name="theme" id="theme-snes" value="snes"><span>snes</span></label><label class="theme-card ps-gb"><input type="radio" name="theme" id="theme-soaring_skies" value="soaring_skies"><span>soaring skies</span></label><label class="theme-card ps-bm"><input type="radio" name="theme" id="theme-solarized_dark" value="solarized_dark"><span>solarized dark</span></label><label class="theme-card ps-g4"><input type="radio" name="theme" id="theme-solarized_light" value="solarized_light"><span>solarized light</span></label><label class="theme-card ps-bj"><input type="radio" name="theme" id="theme-solarized_osaka" value="solarized_osaka"><span>solarized osaka</span></label><label class="theme-card ps-dw"><input type="radio" name="theme" id="theme-sonokai" value="sonokai"><span>sonokai</span></label><label class="theme-card ps-c5"><input type="radio" name="theme" id="theme-spiderman" value="spiderman"><span>spiderman</span></label><label class="theme-card ps-bs"><input type="radio" name="theme" id="theme-stealth" value="stealth"><span>stealth</span></label><label class="theme-card ps-fw"><input type="radio" name="theme" id="theme-strawberry" value="strawberry"><span>strawberry</span></label><label class="theme-card ps-cf"><input type="radio" name="theme" id="theme-striker" value="striker"><span>striker</span></label><label class="theme-card ps-ec"><input type="radio" name="theme" id="theme-suisei" value="suisei"><span>suisei</span></label><label class="theme-card ps-d9"><input type="radio" name="theme" id="theme-sunset" value="sunset"><span>sunset</span></label><label class="theme-card ps-dm"><input type="radio" name="theme" id="theme-superuser" value="superuser"><span>superuser</span></label><label class="theme-card ps-bo"><input type="radio" name="theme" id="theme-sweden" value="sweden"><span>sweden</span></label><label class="theme-card ps-g7"><input type="radio" name="theme" id="theme-tangerine" value="tangerine"><span>tangerine</span></label><label class="theme-card ps-f0"><input type="radio" name="theme" id="theme-taro" value="taro"><span>taro</span></label><label class="theme-card ps-cr"><input type="radio" name="theme" id="theme-terminal" value="terminal"><span>terminal</span></label><label class="theme-card ps-c4"><input type="radio" name="theme" id="theme-terra" value="terra"><span>terra</span></label><label class="theme-card ps-ft"><input type="radio" name="theme" id="theme-terrazzo" value="terrazzo"><span>terrazzo</span></label><label class="theme-card ps-c1"><input type="radio" name="theme" id="theme-terror_below" value="terror_below"><span>terror below</span></label><label class="theme-card ps-f7"><input type="radio" name="theme" id="theme-tiramisu" value="tiramisu"><span>tiramisu</span></label><label class="theme-card ps-eg"><input type="radio" name="theme" id="theme-trackday" value="trackday"><span>trackday</span></label><label class="theme-card ps-bh"><input type="radio" name="theme" id="theme-trance" value="trance"><span>trance</span></label><label class="theme-card ps-c6"><input type="radio" name="theme" id="theme-tron_orange" value="tron_orange"><span>tron orange</span></label><label class="theme-card ps-ev"><input type="radio" name="theme" id="theme-vaporwave" value="vaporwave"><span>vaporwave</span></label><label class="theme-card ps-cb"><input type="radio" name="theme" id="theme-vesper" value="vesper"><span>vesper</span></label><label class="theme-card ps-gl"><input type="radio" name="theme" id="theme-vesper_light" value="vesper_light"><span>vesper light</span></label><label class="theme-card ps-dx"><input type="radio" name="theme" id="theme-viridescent" value="viridescent"><span>viridescent</span></label><label class="theme-card ps-cp"><input type="radio" name="theme" id="theme-voc" value="voc"><span>voc</span></label><label class="theme-card ps-d2"><input type="radio" name="theme" id="theme-vscode" value="vscode"><span>vscode</span></label><label class="theme-card ps-d7"><input type="radio" name="theme" id="theme-watermelon" value="watermelon"><span>watermelon</span></label><label class="theme-card ps-d1"><input type="radio" name="theme" id="theme-wavez" value="wavez"><span>wavez</span></label><label class="theme-card ps-fx"><input type="radio" name="theme" id="theme-witch_girl" value="witch_girl"><span>witch girl</span></label></div></details><div class="js-only ps-14h" id="monkeytype-text-source">
+<h3>reading text color</h3>
+<p class="control-help">Auto chooses the more readable palette color. Choose sub or text to set it yourself; answer colors adapt.</p>
+<div aria-label="Monkeytype reading text color" class="segmented" role="group">
+<label><input checked="" name="text-source" type="radio" value="auto"/><span>auto</span></label>
+<label><input name="text-source" type="radio" value="sub"/><span>sub</span></label>
+<label><input name="text-source" type="radio" value="text"/><span>text</span></label>
+</div>
+<p aria-live="polite" class="control-help ps-14i" id="monkeytype-text-status" role="status"></p>
+</div></div><aside class="theme-editor js-only" aria-label="Customize theme colors"><div class="color-editor-heading"><h3>colors</h3><button type="button" id="reset-theme-colors" aria-label="Reset this theme">reset</button></div><span class="sr-only" id="color-format-help">Choose a swatch or enter hex. Transparent borders accept #RRGGBBAA. Reset restores the theme color.</span><span class="sr-only" id="color-edit-status" role="status" aria-live="polite"></span><div class="main-colors"><div class="color-row" data-color-row="bg">
+<label for="color-bg">background</label>
+<div class="color-inputs"><input type="color" id="swatch-bg" aria-label="background swatch" data-color-swatch="bg">
+<input type="text" id="color-bg" data-color-hex="bg" aria-label="background hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="bg" aria-label="Reset background" title="Reset background">↺</button></div></div><div class="color-row" data-color-row="text">
+<label for="color-text">reading text</label>
+<div class="color-inputs"><input type="color" id="swatch-text" aria-label="reading text swatch" data-color-swatch="text">
+<input type="text" id="color-text" data-color-hex="text" aria-label="reading text hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="text" aria-label="Reset reading text" title="Reset reading text">↺</button></div></div><div class="color-row" data-color-row="muted">
+<label for="color-muted">secondary text</label>
+<div class="color-inputs"><input type="color" id="swatch-muted" aria-label="secondary text swatch" data-color-swatch="muted">
+<input type="text" id="color-muted" data-color-hex="muted" aria-label="secondary text hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="muted" aria-label="Reset secondary text" title="Reset secondary text">↺</button></div></div><div class="color-row" data-color-row="accent">
+<label for="color-accent">interface accent</label>
+<div class="color-inputs"><input type="color" id="swatch-accent" aria-label="interface accent swatch" data-color-swatch="accent">
+<input type="text" id="color-accent" data-color-hex="accent" aria-label="interface accent hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="accent" aria-label="Reset interface accent" title="Reset interface accent">↺</button></div></div><div class="color-row" data-color-row="correct">
+<label for="color-correct">correct</label>
+<div class="color-inputs"><input type="color" id="swatch-correct" aria-label="correct swatch" data-color-swatch="correct">
+<input type="text" id="color-correct" data-color-hex="correct" aria-label="correct hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="correct" aria-label="Reset correct" title="Reset correct">↺</button></div></div><div class="color-row" data-color-row="wrong">
+<label for="color-wrong">wrong</label>
+<div class="color-inputs"><input type="color" id="swatch-wrong" aria-label="wrong swatch" data-color-swatch="wrong">
+<input type="text" id="color-wrong" data-color-hex="wrong" aria-label="wrong hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="wrong" aria-label="Reset wrong" title="Reset wrong">↺</button></div></div></div><details class="advanced-colors"><summary>more colors</summary><div class="advanced-color-grid"><div class="color-row" data-color-row="raised">
+<label for="color-raised">buttons &amp; controls</label>
+<div class="color-inputs"><input type="color" id="swatch-raised" aria-label="buttons &amp; controls swatch" data-color-swatch="raised">
+<input type="text" id="color-raised" data-color-hex="raised" aria-label="buttons &amp; controls hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="raised" aria-label="Reset buttons &amp; controls" title="Reset buttons &amp; controls">↺</button></div></div><div class="color-row" data-color-row="correct-ink">
+<label for="color-correct-ink">correct text &amp; numbers</label>
+<div class="color-inputs"><input type="color" id="swatch-correct-ink" aria-label="correct text &amp; numbers swatch" data-color-swatch="correct-ink">
+<input type="text" id="color-correct-ink" data-color-hex="correct-ink" aria-label="correct text &amp; numbers hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="correct-ink" aria-label="Reset correct text &amp; numbers" title="Reset correct text &amp; numbers">↺</button></div></div><div class="color-row" data-color-row="edge">
+<label for="color-edge">paper outline</label>
+<div class="color-inputs"><input type="color" id="swatch-edge" aria-label="paper outline swatch" data-color-swatch="edge">
+<input type="text" id="color-edge" data-color-hex="edge" aria-label="paper outline hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge" aria-label="Reset paper outline" title="Reset paper outline">↺</button></div></div><div class="color-row" data-color-row="edge-soft">
+<label for="color-edge-soft">soft dividers</label>
+<div class="color-inputs"><input type="color" id="swatch-edge-soft" aria-label="soft dividers swatch" data-color-swatch="edge-soft">
+<input type="text" id="color-edge-soft" data-color-hex="edge-soft" aria-label="soft dividers hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge-soft" aria-label="Reset soft dividers" title="Reset soft dividers">↺</button></div><label class="color-opacity">opacity<input type="range" min="0" max="100" step="0.1" data-color-alpha="edge-soft" aria-label="soft dividers opacity"><output></output></label></div><div class="color-row" data-color-row="edge-strong">
+<label for="color-edge-strong">strong borders</label>
+<div class="color-inputs"><input type="color" id="swatch-edge-strong" aria-label="strong borders swatch" data-color-swatch="edge-strong">
+<input type="text" id="color-edge-strong" data-color-hex="edge-strong" aria-label="strong borders hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge-strong" aria-label="Reset strong borders" title="Reset strong borders">↺</button></div><label class="color-opacity">opacity<input type="range" min="0" max="100" step="0.1" data-color-alpha="edge-strong" aria-label="strong borders opacity"><output></output></label></div><div class="color-row" data-color-row="logo-secondary">
+<label for="color-logo-secondary">wordmark · JLPT</label>
+<div class="color-inputs"><input type="color" id="swatch-logo-secondary" aria-label="wordmark · JLPT swatch" data-color-swatch="logo-secondary">
+<input type="text" id="color-logo-secondary" data-color-hex="logo-secondary" aria-label="wordmark · JLPT hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="logo-secondary" aria-label="Reset wordmark · JLPT" title="Reset wordmark · JLPT">↺</button></div></div></div><div class="fill-opacity-controls"><h4>fill opacity</h4><p>Applies to correct and wrong answers.</p><div class="fill-opacity-row"><label for="opacity-cell-fill">cell fill<output id="opacity-cell-fill-output">11%</output></label><div><input id="opacity-cell-fill" type="range" min="0" max="100" step="1" value="11" data-fill-opacity="cell-fill" aria-label="cell fill opacity"><button type="button" data-fill-reset="cell-fill" aria-label="Reset cell fill opacity" title="Reset cell fill opacity">↺</button></div></div><div class="fill-opacity-row"><label for="opacity-fill">fill style<output id="opacity-fill-output">30%</output></label><div><input id="opacity-fill" type="range" min="0" max="100" step="1" value="30" data-fill-opacity="fill" aria-label="fill style opacity"><button type="button" data-fill-reset="fill" aria-label="Reset fill style opacity" title="Reset fill style opacity">↺</button></div></div></div></details></aside></div></section><section data-settings="browser"><div class="setting-row js-only"><div><h3>remember this browser</h3><p id="save-status">Saving is on by default. No account required.</p></div><label class="switch"><input id="remember" type="checkbox" checked>save preferences, answers and position</label></div><div class="button-row browser-actions js-only"><button id="reset-preferences" type="button">reset preferences</button><button id="forget" type="button">forget saved data</button></div><div class="developer-only developer-settings"><h3>developer mode</h3><p>Principal differences and editorial cases are visible. This local switch is not authentication.</p><button id="disable-dev" type="button">hide developer tools</button></div><div class="settings-about"><button type="button" id="developer-unlock" class="js-only" title="astraJLPT build information">astraJLPT · 2020–2026 collection</button><span id="developer-hint" role="status"></span></div></section></div></details></header><main id="content" class="review-page"><div class="review-content"><a href="../levels/old-2.html">← 2級 papers</a><h1>2級 · December 2001</h1><p>Uncertainty index: <strong>1019</strong> · 7 differences · 4 unresolved · 3 provisional fixes</p><p>Evidence base 1000 + source concerns 19 = 1019. Concerns are uncapped; browsing order uses evidence tier before concern points.</p><p>This is an editorial evidence assessment, not a probability, an error rate or a practice score.</p><details><summary>Assessment evidence and original source scores</summary><pre>{
+  &quot;unit&quot;: &quot;N2_2001&quot;,
+  &quot;sample&quot;: false,
+  &quot;year&quot;: 2001,
+  &quot;month&quot;: 12,
+  &quot;evidence_base&quot;: 1000,
+  &quot;evidence_tier&quot;: 3,
+  &quot;concern_points&quot;: 19,
+  &quot;index&quot;: 1019,
+  &quot;concern_counts&quot;: {
+    &quot;metadata_flags&quot;: 0,
+    &quot;missing_units&quot;: 0,
+    &quot;major_defects&quot;: 1,
+    &quot;minor_defects&quot;: 5,
+    &quot;uncertain_fields&quot;: 4
+  },
+  &quot;principal_history&quot;: {
+    &quot;unit&quot;: &quot;N2_2001&quot;,
+    &quot;level&quot;: &quot;N2&quot;,
+    &quot;year&quot;: 2001,
+    &quot;month&quot;: 12,
+    &quot;historical_level&quot;: &quot;2級&quot;,
+    &quot;sitting_attribution&quot;: {
+      &quot;basis&quot;: &quot;Printed2001 and2級; official guide establishes annual December sittings through2008.&quot;,
+      &quot;source_url&quot;: &quot;https://www.jlpt.jp/reference/pdf/guide2011.pdf&quot;,
+      &quot;locator&quot;: &quot;Guide2011 physical2 footnote; inspected in this run for N1_2003.&quot;
+    },
+    &quot;content_kind&quot;: &quot;exam&quot;,
+    &quot;method_version&quot;: 1,
+    &quot;principal_path&quot;: &quot;src/日语JLPT真题1992～2025.12（及时转存，避免丢失）/渠道一/日语N2真题/1991年-2009年/1995-2009.pdf&quot;,
+    &quot;principal_sha256&quot;: &quot;115e8c098ee3caed702d29a24d2ce0c883c3ad9152e21eee4200fc4e80f2a3fb&quot;,
+    &quot;initial_tier&quot;: 3,
+    &quot;written_physical_pages&quot;: &quot;321-324,328-340,342-350&quot;,
+    &quot;review_status&quot;: &quot;complete_written_review&quot;,
+    &quot;review_date&quot;: &quot;2026-10-26&quot;,
+    &quot;scope_note&quot;: &quot;321–324 above listening;328 below reading heading–336 questions;336/337 written keys;337 below reading keys–340 above listening vocabulary explanations;342 below reading heading–350 above listening script reading explanations. Same-file front matter1–3 reused from earlier N2 audits. Supplementary explanation errors are recorded separately and excluded from printed exam-field score, consistently with H25. No listening audit.&quot;,
+    &quot;provenance_status&quot;: &quot;unverified&quot;,
+    &quot;provenance_points&quot;: 100,
+    &quot;provenance_basis&quot;: &quot;2011 commercial compilation lacks exact issuer chain of custody; typesetting alone does not prove recollection reconstruction.&quot;,
+    &quot;metadata_flags&quot;: 0,
+    &quot;missing_units&quot;: 0,
+    &quot;major_defects&quot;: 1,
+    &quot;minor_defects&quot;: 5,
+    &quot;uncertain_fields&quot;: 4,
+    &quot;uncertainty_index&quot;: 119,
+    &quot;score_evidence&quot;: [
+      {
+        &quot;id&quot;: &quot;H25-N2_2001-SCORE-001&quot;,
+        &quot;kind&quot;: &quot;major_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-b001&quot;,
+        &quot;field&quot;: &quot;/content&quot;,
+        &quot;locator&quot;: &quot;Physical328,329&quot;,
+        &quot;evidence&quot;: &quot;Question5 explicitly quotes the house clause; question6 key2 and explanation342 explain the preceding scarcity argument, not the final economics goal. Restore referential coherence while retaining historical uncertainty because both local transcriptions misplace the marks. No wording or key change.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;H25-N2_2001-SCORE-002&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-b002&quot;,
+        &quot;field&quot;: &quot;/content&quot;,
+        &quot;locator&quot;: &quot;Physical330&quot;,
+        &quot;evidence&quot;: &quot;Correct the particle marking use in training. The same paragraph earlier says 訓練につかわなかった. This minimal grammar repair changes no distinction or answer.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;H25-N2_2001-SCORE-003&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-q008&quot;,
+        &quot;field&quot;: &quot;/stem&quot;,
+        &quot;locator&quot;: &quot;Physical330&quot;,
+        &quot;evidence&quot;: &quot;Correct the location/purpose particle before 使った; the pigeon was used in the experiment. No change to option2 or experimental conditions.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;H25-N2_2001-SCORE-004&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-b003&quot;,
+        &quot;field&quot;: &quot;/content&quot;,
+        &quot;locator&quot;: &quot;Physical331&quot;,
+        &quot;evidence&quot;: &quot;Correct the location particle in the relative clause: solitary eating is often seen in homes. The noun 家庭 is not the subject of 見られる. No substantive interpretation changes.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;H25-N2_2001-SCORE-005&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-b004&quot;,
+        &quot;field&quot;: &quot;/content&quot;,
+        &quot;locator&quot;: &quot;Physical332&quot;,
+        &quot;evidence&quot;: &quot;Correct the publisher spelling; its own product page identifies the exact title and author 日本社 under 講談社. Preserve author 日本社.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;H25-N2_2001-SCORE-006&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-b008&quot;,
+        &quot;field&quot;: &quot;/content&quot;,
+        &quot;locator&quot;: &quot;Physical334&quot;,
+        &quot;evidence&quot;: &quot;Restore と in the malformed 情報して phrase to express organizing the preceding abilities as information for communication; this is the preferred minimal grammatical inference, not recovered original text. 情報化して is a plausible rival. Independently correct note3 ドランカー to the body and DOC referent ドラッカー with high confidence. Key3 remains unchanged. Note3 is a confirmed minor error; the same-field conjectural missing-character concern is not counted again.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;H25-N2_2001-SCORE-007&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;reading-q021&quot;,
+        &quot;field&quot;: &quot;/stem&quot;,
+        &quot;locator&quot;: &quot;Physical334&quot;,
+        &quot;evidence&quot;: &quot;The obligation not to abandon a job after undertaking it calls for 引き受けた. The principal explanation means accepting work, and the official MLC example uses precisely this sentence with 引き受けた. Local DOC and jlpt.info repeat 引き付けた, so the historical form remains provisional.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;H25-N2_2001-SCORE-008&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;vocab-q045&quot;,
+        &quot;field&quot;: &quot;/stem&quot;,
+        &quot;locator&quot;: &quot;323&quot;,
+        &quot;evidence&quot;: &quot;Unresolved は/が temporal-clause concern.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;H25-N2_2001-SCORE-009&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;reading-q011&quot;,
+        &quot;field&quot;: &quot;/options/0&quot;,
+        &quot;locator&quot;: &quot;330,344&quot;,
+        &quot;evidence&quot;: &quot;Printed ハト versus explanatory Monet; potentially deliberate distractor.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;H25-N2_2001-SCORE-010&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;reading-q027&quot;,
+        &quot;field&quot;: &quot;/stem&quot;,
+        &quot;locator&quot;: &quot;334&quot;,
+        &quot;evidence&quot;: &quot;Principal 買う versus related 売る; both coherent.&quot;
+      }
+    ]
+  },
+  &quot;evidence&quot;: []
+}</pre></details><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span><ul></ul><div class="review-controls"><label>Show <select id="review-filter"><option value="all">All records</option><option value="difference">Principal differences</option><option value="unresolved">Unresolved cases</option><option value="provisional_fix">Provisional fixes</option></select></label><label>Find <input id="review-search" type="search" placeholder="Item, wording, evidence…"></label></div><p id="review-count" class="control-help" role="status"></p><section class="review-group" id="review-coverage" data-kinds="unresolved"><div class="review-group-heading"><h2>Paper coverage</h2><a href="../papers/N2_2001.html#content">Open in paper →</a></div><div class="review-record" id="unresolved_cases-H25-N2_2001-original-cover-scoring"><div class="review-label">Unresolved ·  · low</div><div class="comparison"><div><h4>Alternative</h4><pre>No alternative recorded</pre></div><div><h4>Editorial</h4><pre>Not recorded</pre></div></div><p>Retyped scoring fragments are preserved in observations. Do not infer the omitted weight or import the DOC’s Level1 appendix. No known worked examples were observed.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>Original cover, timing, pagination and complete scoring remain unknown.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Original covers and complete point weights.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=321): <code>additional-assets/principals/N2_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Written region physical321,328,336,337<p>No authenticated original cover or complete scoring.</p></li><li><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · V scoring line<p>I–II each1;III–VI number missing before 点;90 raw/100 scaled.</p></li></ul><details><summary>Full published record · unresolved_cases-H25-N2_2001-original-cover-scoring</summary><pre>{
+  &quot;case_id&quot;: &quot;H25-N2_2001-original-cover-scoring&quot;,
+  &quot;unit&quot;: &quot;N2_2001&quot;,
+  &quot;item_id&quot;: null,
+  &quot;field&quot;: &quot;&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;low&quot;,
+  &quot;decision_basis&quot;: &quot;source_comparison&quot;,
+  &quot;current_value&quot;: null,
+  &quot;context&quot;: &quot;Original covers and complete point weights.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: null,
+      &quot;assessment&quot;: &quot;Cover unavailable; no invented per-question points.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;1995–2009.12 N2 question-and-explanation collection,2001 section&quot;,
+      &quot;sha256&quot;: &quot;115e8c098ee3caed702d29a24d2ce0c883c3ad9152e21eee4200fc4e80f2a3fb&quot;,
+      &quot;physical_pages&quot;: [
+        321,
+        328,
+        336,
+        337
+      ],
+      &quot;locator&quot;: &quot;Written region physical321,328,336,337&quot;,
+      &quot;reading&quot;: &quot;No authenticated original cover or complete scoring.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;Standalone Level2 answer image&quot;,
+      &quot;sha256&quot;: &quot;f50b7e5789e579b382e2e891314542cfc1017ac1824a7bb08266f3f5ece653fe&quot;,
+      &quot;locator&quot;: &quot;V scoring line&quot;,
+      &quot;reading&quot;: &quot;I–II each1;III–VI number missing before 点;90 raw/100 scaled.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Retyped scoring fragments are preserved in observations. Do not infer the omitted weight or import the DOC’s Level1 appendix. No known worked examples were observed.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Complete principal and indexed written DOC/key comparison.&quot;,
+    &quot;Focused language review and bounded external checks where material.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;Original cover, timing, pagination and complete scoring remain unknown.&quot;
+}</pre></details></div></section><section class="review-group" id="review-vocab-q045" data-kinds="unresolved"><div class="review-group-heading"><h2>vocab-q045</h2><a href="../papers/N2_2001.html#vocab-q045">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">父は亡くなってから、母は＿＿＿してぼくをそだててくれた。<ol><li>苦情</li><li>苦学</li><li>苦痛</li><li>苦労</li></ol><p>Editorial key: 4</p></div></details><div class="review-record" id="unresolved_cases-H25-N2_2001-vocab45-particle"><div class="review-label">Unresolved · /stem · low</div><div class="comparison"><div><h4>Alternative</h4><pre>父は亡くなってから</pre></div><div><h4>Editorial</h4><pre>父は亡くなってから<mark class="diff-new">、母は＿＿＿してぼくをそだててくれた。</mark></pre></div></div><p>No exact source supports が; contrastive は cannot be categorically excluded. Preserve source with explicit concern; key4 苦労 unchanged.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>Original particle unverified.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Temporal clause before the mother raises the speaker.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=323): <code>additional-assets/principals/N2_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Written region physical323<p>父は亡くなってから</p></li><li><span class="principal-repository-source">Principal source (page=3): <code>additional-assets/principals/N2_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Derivative pages; full written comparison completed<p>Same は</p></li><li><span class="principal-repository-source">Principal source (page=3): <code>additional-assets/principals/N2_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Focused physical3, vocabulary45; related web retype<p>父は亡くなってから</p></li></ul><details><summary>Full published record · unresolved_cases-H25-N2_2001-vocab45-particle</summary><pre>{
+  &quot;case_id&quot;: &quot;H25-N2_2001-vocab45-particle&quot;,
+  &quot;unit&quot;: &quot;N2_2001&quot;,
+  &quot;item_id&quot;: &quot;vocab-q045&quot;,
+  &quot;field&quot;: &quot;/stem&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;low&quot;,
+  &quot;decision_basis&quot;: &quot;source_comparison&quot;,
+  &quot;current_value&quot;: &quot;父は亡くなってから、母は＿＿＿してぼくをそだててくれた。&quot;,
+  &quot;context&quot;: &quot;Temporal clause before the mother raises the speaker.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;父は亡くなってから&quot;,
+      &quot;assessment&quot;: &quot;Retained principal and both related transcriptions; marked contrastive reading possible.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;父が亡くなってから&quot;,
+      &quot;assessment&quot;: &quot;More neutral natural temporal-clause subject; plausible typo repair.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;1995–2009.12 N2 question-and-explanation collection,2001 section&quot;,
+      &quot;sha256&quot;: &quot;115e8c098ee3caed702d29a24d2ce0c883c3ad9152e21eee4200fc4e80f2a3fb&quot;,
+      &quot;physical_pages&quot;: [
+        323
+      ],
+      &quot;locator&quot;: &quot;Written region physical323&quot;,
+      &quot;reading&quot;: &quot;父は亡くなってから&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2001 written Level2 DOC; private32-page conversion&quot;,
+      &quot;sha256&quot;: &quot;ca03d715c9ce19ce1c49ce9bacb7412fbbb7288dbffbf27c65db4ad5f79d5fac&quot;,
+      &quot;physical_pages&quot;: [
+        3
+      ],
+      &quot;locator&quot;: &quot;Derivative pages; full written comparison completed&quot;,
+      &quot;reading&quot;: &quot;Same は&quot;,
+      &quot;lineage&quot;: &quot;Substantial shared defects; not an independent original vote.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;jlpt.info focused PDF&quot;,
+      &quot;sha256&quot;: &quot;6095f339228dacdc87a1c6a36e8542d50613c14874a6768fd84246b1fbe06995&quot;,
+      &quot;physical_pages&quot;: [
+        3
+      ],
+      &quot;reading&quot;: &quot;父は亡くなってから&quot;,
+      &quot;locator&quot;: &quot;Focused physical3, vocabulary45; related web retype&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;No exact source supports が; contrastive は cannot be categorically excluded. Preserve source with explicit concern; key4 苦労 unchanged.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Complete principal and indexed written DOC/key comparison.&quot;,
+    &quot;Focused language review and bounded external checks where material.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;Original particle unverified.&quot;
+}</pre></details></div></section><section class="review-group" id="review-reading-b001" data-kinds="difference provisional_fix"><div class="review-group-heading"><h2>reading-b001</h2><a href="../papers/N2_2001.html#reading-b001">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><p>私は欲望<sup>（注1）</sup>のかたまりです。そして、欲望は膨張<sup>（注2）</sup>をつづける宇宙のように限りがありません。</p><p><u>こんな話</u>を想像してみましょう。ある中学生がお父さんやお母さんから毎月もらうお小遣いが、今までの2000円から一気に<sup>（注3）</sup>20万円になったらどうするでしょうか？彼の欲望はとどまるところを知らず、前からほしいと思っていたものを全部手に入れようと、お小遣いを持って<u>お店に飛んでいく</u>に違いありません。</p><p>（中略）</p><p>しかし、地球上の子供たちが全員、20万円もお小遣いをもらって、好きなものを買うとしましょう。そんなことは可能でしょうか。</p><p>欲望が無限にあるのは、じつは大人だって同じです。大人も買いたいものを何でも買うとしたらどうでしょうか。でも、<u>そんなことはしようと思ってもできっこない</u>話なのです。なぜかというと、地球上に存在する全工場をフル稼働<sup>（注4）</sup>しても、無限にたくさんのものをつくることはできません。<u>人間の技術はまだそこまで進んではいません</u>。</p><p>労働者の数だって限られています。機械設備も限られています。農産物を作るにも、農地には限りがあります。<u>みんなが大きな家に住みたくても住めない</u>のは、土地が足りないというだけでなく、そんなことをすればたちまち、地球上の森林から木が切り出されて、あっという間に地球は丸裸<sup>（注5）</sup>になってしまうからです。</p><p>つまり、最も大事なことは、私たちの欲望は無限だけれど、工場や機械設備、労働力、森林、農地、住宅地、石油など、商品を生産するための経済資源は有限だということです。経済資源は有限だから、私たちの欲望のうち、つまりほしいもののうち、一部分しか手に入らないのです。別の言い方をすると、経済資源が有限なので生産されるものも有限ということになります。だから、私たちの手に入る「所得」<sup>（注6）</sup>も有限。すなわち、商品を買うための予算も有限ということになります。</p><p><u>このこと</u>を説明するのに、経済学では「稀少性」（Scarcity）という言葉を使います。「稀少性」とは、人間の欲望をすべて満足させるだけの経済資源は地球上には存在しないという厳しい現実を示すじつに簡潔な<sup>（注7）</sup>言葉です。</p><p>稀少な経済資源を使って、人間の生活をどうやって豊かにすることができるのか。このことこそ、経済学の最も大きな目標です。</p><p>（中谷巌『痛快！経済学』集英社インターナショナルによる）</p><p>（注1）欲望「よくぼう」：欲しいと思う気持ち</p><p>（注2）膨張「ぼうちょう」：ふくらむこと</p><p>（注3）一気に「いっきに」：一度に</p><p>（注4）フル稼働「かどう」：性能いっぱいにすべてを休みなく動かすこと</p><p>（注5）丸裸「まるはだか」：ここでは、木がすべてなくなった状態</p><p>（注6）所得「しょとく」：収入</p><p>（注7）簡潔な「かんけつな」：簡単でわかりやすい</p></div></details><div class="review-record" id="unresolved_cases-H25-N2_2001-P001"><div class="review-label">Provisional fix · /content · medium</div><div class="comparison"><div><h4>Before</h4><pre>…&lt;/sup&gt;のかたまりです。そして、欲望は膨張&lt;sup&gt;（注2）&lt;/sup&gt;をつづける宇宙のように限りがありません。&lt;/p&gt;&lt;p&gt;&lt;u data-reference-label=&quot;<mark class="diff-old">1&quot; data-reference-circled=&quot;true</mark>&quot;&gt;こんな話&lt;/u&gt;を想像してみましょう。ある中学生がお父さんやお母さんから毎月もらうお小遣いが、今までの2000円から一気に&lt;sup&gt;（注3）&lt;/sup&gt;20万円になったらどうするでしょうか？彼の欲望はとどまるところを知らず、前からほしいと思っていたものを全部手に入れようと、お…</pre></div><div><h4>Editorial</h4><pre>…&lt;/sup&gt;のかたまりです。そして、欲望は膨張&lt;sup&gt;（注2）&lt;/sup&gt;をつづける宇宙のように限りがありません。&lt;/p&gt;&lt;p&gt;&lt;u data-reference-label=&quot;<mark class="diff-new">①</mark>&quot;&gt;こんな話&lt;/u&gt;を想像してみましょう。ある中学生がお父さんやお母さんから毎月もらうお小遣いが、今までの2000円から一気に&lt;sup&gt;（注3）&lt;/sup&gt;20万円になったらどうするでしょうか？彼の欲望はとどまるところを知らず、前からほしいと思っていたものを全部手に入れようと、お…</pre></div></div><p>Question5 explicitly quotes the house clause; question6 key2 and explanation342 explain the preceding scarcity argument, not the final economics goal. Restore referential coherence while retaining historical uncertainty because both local transcriptions misplace the marks. No wording or key change.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>Exact original wording/mark placement remains unrecovered; related transcriptions may share errors.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Complete source field and dependent questions reviewed.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=328): <code>additional-assets/principals/N2_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Written region physical328,329<p>Printed mismatched references and exact question quotations.</p></li><li><span class="principal-repository-source">Principal source (page=342): <code>additional-assets/principals/N2_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Written region physical342<p>Question6 explanation identifies scarce resources preventing satisfaction of all wants.</p></li><li><span class="principal-repository-source">Principal source (page=6): <code>additional-assets/principals/N2_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Derivative pages; full written comparison completed<p>Same shifted reference-mark family.</p></li></ul><details><summary>Full published record · unresolved_cases-H25-N2_2001-P001</summary><pre>{
+  &quot;case_id&quot;: &quot;H25-N2_2001-P001&quot;,
+  &quot;unit&quot;: &quot;N2_2001&quot;,
+  &quot;item_id&quot;: &quot;reading-b001&quot;,
+  &quot;field&quot;: &quot;/content&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;source_comparison&quot;,
+  &quot;before&quot;: {
+    &quot;html&quot;: &quot;&lt;p&gt;私は欲望&lt;sup&gt;（注1）&lt;/sup&gt;のかたまりです。そして、欲望は膨張&lt;sup&gt;（注2）&lt;/sup&gt;をつづける宇宙のように限りがありません。&lt;/p&gt;&lt;p&gt;&lt;u data-reference-label=\&quot;1\&quot; data-reference-circled=\&quot;true\&quot;&gt;こんな話&lt;/u&gt;を想像してみましょう。ある中学生がお父さんやお母さんから毎月もらうお小遣いが、今までの2000円から一気に&lt;sup&gt;（注3）&lt;/sup&gt;20万円になったらどうするでしょうか？彼の欲望はとどまるところを知らず、前からほしいと思っていたものを全部手に入れようと、お小遣いを持って&lt;u data-reference-label=\&quot;2\&quot; data-reference-circled=\&quot;true\&quot;&gt;お店に飛んでいく&lt;/u&gt;に違いありません。&lt;/p&gt;&lt;p&gt;（中略）&lt;/p&gt;&lt;p&gt;しかし、地球上の子供たちが全員、20万円もお小遣いをもらって、好きなものを買うとしましょう。そんなことは可能でしょうか。&lt;/p&gt;&lt;p&gt;欲望が無限にあるのは、じつは大人だって同じです。大人も買いたいものを何でも買うとしたらどうでしょうか。でも、&lt;u data-reference-label=\&quot;3\&quot; data-reference-circled=\&quot;true\&quot;&gt;そんなことはしようと思ってもできっこない&lt;/u&gt;話なのです。なぜかというと、地球上に存在する全工場をフル稼働&lt;sup&gt;（注4）&lt;/sup&gt;しても、無限にたくさんのものをつくることはできません。&lt;u data-reference-label=\&quot;4\&quot; data-reference-circled=\&quot;true\&quot;&gt;人間の技術はまだそこまで進んではいません&lt;/u&gt;。&lt;/p&gt;&lt;p&gt;労働者の数だって限られています。機械設備も限られています。農産物を作るにも、農地には限りがあります。みんなが大きな家に住みたくても住めないのは、土地が足りないというだけでなく、そんなことをすればたちまち、地球上の森林から木が切り出されて、あっという間に地球は丸裸&lt;sup&gt;（注5）&lt;/sup&gt;になってしまうからです。&lt;/p&gt;&lt;p&gt;つまり、最も大事なことは、私たちの欲望は無限だけれど、工場や機械設備、労働力、森林、農地、住宅地、石油など、商品を生産するための経済資源は有限だということです。経済資源は有限だから、私たちの欲望のうち、つまりほしいもののうち、一部分しか手に入らないのです。別の言い方をすると、経済資源が有限なので生産されるものも有限ということになります。だから、私たちの手に入る「所得」&lt;sup&gt;（注6）&lt;/sup&gt;も有限。すなわち、商品を買うための予算も有限ということになります。&lt;/p&gt;&lt;p&gt;&lt;u data-reference-label=\&quot;5\&quot; data-reference-circled=\&quot;true\&quot;&gt;このこと&lt;/u&gt;を説明するのに、経済学では「稀少性」（Scarcity）という言葉を使います。「稀少性」とは、人間の欲望をすべて満足させるだけの経済資源は地球上には存在しないという厳しい現実を示すじつに簡潔な&lt;sup&gt;（注7）&lt;/sup&gt;言葉です。&lt;/p&gt;&lt;p&gt;稀少な経済資源を使って、人間の生活をどうやって豊かにすることができるのか。&lt;u data-reference-label=\&quot;6\&quot; data-reference-circled=\&quot;true\&quot;&gt;このこと&lt;/u&gt;こそ、経済学の最も大きな目標です。&lt;/p&gt;&lt;p&gt;（中谷巌『痛快！経済学』集英社インターナショナルによる）&lt;/p&gt;&lt;p&gt;（注1）欲望「よくぼう」：欲しいと思う気持ち&lt;/p&gt;&lt;p&gt;（注2）膨張「ぼうちょう」：ふくらむこと&lt;/p&gt;&lt;p&gt;（注3）一気に「いっきに」：一度に&lt;/p&gt;&lt;p&gt;（注4）フル稼働「かどう」：性能いっぱいにすべてを休みなく動かすこと&lt;/p&gt;&lt;p&gt;（注5）丸裸「まるはだか」：ここでは、木がすべてなくなった状態&lt;/p&gt;&lt;p&gt;（注6）所得「しょとく」：収入&lt;/p&gt;&lt;p&gt;（注7）簡潔な「かんけつな」：簡単でわかりやすい&lt;/p&gt;&quot;
+  },
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;&lt;p&gt;私は欲望&lt;sup&gt;（注1）&lt;/sup&gt;のかたまりです。そして、欲望は膨張&lt;sup&gt;（注2）&lt;/sup&gt;をつづける宇宙のように限りがありません。&lt;/p&gt;&lt;p&gt;&lt;u data-reference-label=\&quot;①\&quot;&gt;こんな話&lt;/u&gt;を想像してみましょう。ある中学生がお父さんやお母さんから毎月もらうお小遣いが、今までの2000円から一気に&lt;sup&gt;（注3）&lt;/sup&gt;20万円になったらどうするでしょうか？彼の欲望はとどまるところを知らず、前からほしいと思っていたものを全部手に入れようと、お小遣いを持って&lt;u data-reference-label=\&quot;②\&quot;&gt;お店に飛んでいく&lt;/u&gt;に違いありません。&lt;/p&gt;&lt;p&gt;（中略）&lt;/p&gt;&lt;p&gt;しかし、地球上の子供たちが全員、20万円もお小遣いをもらって、好きなものを買うとしましょう。そんなことは可能でしょうか。&lt;/p&gt;&lt;p&gt;欲望が無限にあるのは、じつは大人だって同じです。大人も買いたいものを何でも買うとしたらどうでしょうか。でも、&lt;u data-reference-label=\&quot;③\&quot;&gt;そんなことはしようと思ってもできっこない&lt;/u&gt;話なのです。なぜかというと、地球上に存在する全工場をフル稼働&lt;sup&gt;（注4）&lt;/sup&gt;しても、無限にたくさんのものをつくることはできません。&lt;u data-reference-label=\&quot;④\&quot;&gt;人間の技術はまだそこまで進んではいません&lt;/u&gt;。&lt;/p&gt;&lt;p&gt;労働者の数だって限られています。機械設備も限られています。農産物を作るにも、農地には限りがあります。&lt;u data-reference-label=\&quot;⑤\&quot;&gt;みんなが大きな家に住みたくても住めない&lt;/u&gt;のは、土地が足りないというだけでなく、そんなことをすればたちまち、地球上の森林から木が切り出されて、あっという間に地球は丸裸&lt;sup&gt;（注5）&lt;/sup&gt;になってしまうからです。&lt;/p&gt;&lt;p&gt;つまり、最も大事なことは、私たちの欲望は無限だけれど、工場や機械設備、労働力、森林、農地、住宅地、石油など、商品を生産するための経済資源は有限だということです。経済資源は有限だから、私たちの欲望のうち、つまりほしいもののうち、一部分しか手に入らないのです。別の言い方をすると、経済資源が有限なので生産されるものも有限ということになります。だから、私たちの手に入る「所得」&lt;sup&gt;（注6）&lt;/sup&gt;も有限。すなわち、商品を買うための予算も有限ということになります。&lt;/p&gt;&lt;p&gt;&lt;u data-reference-label=\&quot;⑥\&quot;&gt;このこと&lt;/u&gt;を説明するのに、経済学では「稀少性」（Scarcity）という言葉を使います。「稀少性」とは、人間の欲望をすべて満足させるだけの経済資源は地球上には存在しないという厳しい現実を示すじつに簡潔な&lt;sup&gt;（注7）&lt;/sup&gt;言葉です。&lt;/p&gt;&lt;p&gt;稀少な経済資源を使って、人間の生活をどうやって豊かにすることができるのか。このことこそ、経済学の最も大きな目標です。&lt;/p&gt;&lt;p&gt;（中谷巌『痛快！経済学』集英社インターナショナルによる）&lt;/p&gt;&lt;p&gt;（注1）欲望「よくぼう」：欲しいと思う気持ち&lt;/p&gt;&lt;p&gt;（注2）膨張「ぼうちょう」：ふくらむこと&lt;/p&gt;&lt;p&gt;（注3）一気に「いっきに」：一度に&lt;/p&gt;&lt;p&gt;（注4）フル稼働「かどう」：性能いっぱいにすべてを休みなく動かすこと&lt;/p&gt;&lt;p&gt;（注5）丸裸「まるはだか」：ここでは、木がすべてなくなった状態&lt;/p&gt;&lt;p&gt;（注6）所得「しょとく」：収入&lt;/p&gt;&lt;p&gt;（注7）簡潔な「かんけつな」：簡単でわかりやすい&lt;/p&gt;&quot;
+  },
+  &quot;context&quot;: &quot;Complete source field and dependent questions reviewed.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: {
+        &quot;html&quot;: &quot;&lt;p&gt;私は欲望&lt;sup&gt;（注1）&lt;/sup&gt;のかたまりです。そして、欲望は膨張&lt;sup&gt;（注2）&lt;/sup&gt;をつづける宇宙のように限りがありません。&lt;/p&gt;&lt;p&gt;&lt;u data-reference-label=\&quot;1\&quot; data-reference-circled=\&quot;true\&quot;&gt;こんな話&lt;/u&gt;を想像してみましょう。ある中学生がお父さんやお母さんから毎月もらうお小遣いが、今までの2000円から一気に&lt;sup&gt;（注3）&lt;/sup&gt;20万円になったらどうするでしょうか？彼の欲望はとどまるところを知らず、前からほしいと思っていたものを全部手に入れようと、お小遣いを持って&lt;u data-reference-label=\&quot;2\&quot; data-reference-circled=\&quot;true\&quot;&gt;お店に飛んでいく&lt;/u&gt;に違いありません。&lt;/p&gt;&lt;p&gt;（中略）&lt;/p&gt;&lt;p&gt;しかし、地球上の子供たちが全員、20万円もお小遣いをもらって、好きなものを買うとしましょう。そんなことは可能でしょうか。&lt;/p&gt;&lt;p&gt;欲望が無限にあるのは、じつは大人だって同じです。大人も買いたいものを何でも買うとしたらどうでしょうか。でも、&lt;u data-reference-label=\&quot;3\&quot; data-reference-circled=\&quot;true\&quot;&gt;そんなことはしようと思ってもできっこない&lt;/u&gt;話なのです。なぜかというと、地球上に存在する全工場をフル稼働&lt;sup&gt;（注4）&lt;/sup&gt;しても、無限にたくさんのものをつくることはできません。&lt;u data-reference-label=\&quot;4\&quot; data-reference-circled=\&quot;true\&quot;&gt;人間の技術はまだそこまで進んではいません&lt;/u&gt;。&lt;/p&gt;&lt;p&gt;労働者の数だって限られています。機械設備も限られています。農産物を作るにも、農地には限りがあります。みんなが大きな家に住みたくても住めないのは、土地が足りないというだけでなく、そんなことをすればたちまち、地球上の森林から木が切り出されて、あっという間に地球は丸裸&lt;sup&gt;（注5）&lt;/sup&gt;になってしまうからです。&lt;/p&gt;&lt;p&gt;つまり、最も大事なことは、私たちの欲望は無限だけれど、工場や機械設備、労働力、森林、農地、住宅地、石油など、商品を生産するための経済資源は有限だということです。経済資源は有限だから、私たちの欲望のうち、つまりほしいもののうち、一部分しか手に入らないのです。別の言い方をすると、経済資源が有限なので生産されるものも有限ということになります。だから、私たちの手に入る「所得」&lt;sup&gt;（注6）&lt;/sup&gt;も有限。すなわち、商品を買うための予算も有限ということになります。&lt;/p&gt;&lt;p&gt;&lt;u data-reference-label=\&quot;5\&quot; data-reference-circled=\&quot;true\&quot;&gt;このこと&lt;/u&gt;を説明するのに、経済学では「稀少性」（Scarcity）という言葉を使います。「稀少性」とは、人間の欲望をすべて満足させるだけの経済資源は地球上には存在しないという厳しい現実を示すじつに簡潔な&lt;sup&gt;（注7）&lt;/sup&gt;言葉です。&lt;/p&gt;&lt;p&gt;稀少な経済資源を使って、人間の生活をどうやって豊かにすることができるのか。&lt;u data-reference-label=\&quot;6\&quot; data-reference-circled=\&quot;true\&quot;&gt;このこと&lt;/u&gt;こそ、経済学の最も大きな目標です。&lt;/p&gt;&lt;p&gt;（中谷巌『痛快！経済学』集英社インターナショナルによる）&lt;/p&gt;&lt;p&gt;（注1）欲望「よくぼう」：欲しいと思う気持ち&lt;/p&gt;&lt;p&gt;（注2）膨張「ぼうちょう」：ふくらむこと&lt;/p&gt;&lt;p&gt;（注3）一気に「いっきに」：一度に&lt;/p&gt;&lt;p&gt;（注4）フル稼働「かどう」：性能いっぱいにすべてを休みなく動かすこと&lt;/p&gt;&lt;p&gt;（注5）丸裸「まるはだか」：ここでは、木がすべてなくなった状態&lt;/p&gt;&lt;p&gt;（注6）所得「しょとく」：収入&lt;/p&gt;&lt;p&gt;（注7）簡潔な「かんけつな」：簡単でわかりやすい&lt;/p&gt;&quot;
+      },
+      &quot;assessment&quot;: &quot;Literal principal field.&quot;
+    },
+    {
+      &quot;value&quot;: {
+        &quot;html&quot;: &quot;&lt;p&gt;私は欲望&lt;sup&gt;（注1）&lt;/sup&gt;のかたまりです。そして、欲望は膨張&lt;sup&gt;（注2）&lt;/sup&gt;をつづける宇宙のように限りがありません。&lt;/p&gt;&lt;p&gt;&lt;u data-reference-label=\&quot;1\&quot; data-reference-circled=\&quot;true\&quot;&gt;こんな話&lt;/u&gt;を想像してみましょう。ある中学生がお父さんやお母さんから毎月もらうお小遣いが、今までの2000円から一気に&lt;sup&gt;（注3）&lt;/sup&gt;20万円になったらどうするでしょうか？彼の欲望はとどまるところを知らず、前からほしいと思っていたものを全部手に入れようと、お小遣いを持って&lt;u data-reference-label=\&quot;2\&quot; data-reference-circled=\&quot;true\&quot;&gt;お店に飛んでいく&lt;/u&gt;に違いありません。&lt;/p&gt;&lt;p&gt;（中略）&lt;/p&gt;&lt;p&gt;しかし、地球上の子供たちが全員、20万円もお小遣いをもらって、好きなものを買うとしましょう。そんなことは可能でしょうか。&lt;/p&gt;&lt;p&gt;欲望が無限にあるのは、じつは大人だって同じです。大人も買いたいものを何でも買うとしたらどうでしょうか。でも、&lt;u data-reference-label=\&quot;3\&quot; data-reference-circled=\&quot;true\&quot;&gt;そんなことはしようと思ってもできっこない&lt;/u&gt;話なのです。なぜかというと、地球上に存在する全工場をフル稼働&lt;sup&gt;（注4）&lt;/sup&gt;しても、無限にたくさんのものをつくることはできません。&lt;u data-reference-label=\&quot;4\&quot; data-reference-circled=\&quot;true\&quot;&gt;人間の技術はまだそこまで進んではいません&lt;/u&gt;。&lt;/p&gt;&lt;p&gt;労働者の数だって限られています。機械設備も限られています。農産物を作るにも、農地には限りがあります。&lt;u data-reference-label=\&quot;5\&quot; data-reference-circled=\&quot;true\&quot;&gt;みんなが大きな家に住みたくても住めない&lt;/u&gt;のは、土地が足りないというだけでなく、そんなことをすればたちまち、地球上の森林から木が切り出されて、あっという間に地球は丸裸&lt;sup&gt;（注5）&lt;/sup&gt;になってしまうからです。&lt;/p&gt;&lt;p&gt;つまり、最も大事なことは、私たちの欲望は無限だけれど、工場や機械設備、労働力、森林、農地、住宅地、石油など、商品を生産するための経済資源は有限だということです。経済資源は有限だから、私たちの欲望のうち、つまりほしいもののうち、一部分しか手に入らないのです。別の言い方をすると、経済資源が有限なので生産されるものも有限ということになります。だから、私たちの手に入る「所得」&lt;sup&gt;（注6）&lt;/sup&gt;も有限。すなわち、商品を買うための予算も有限ということになります。&lt;/p&gt;&lt;p&gt;&lt;u data-reference-label=\&quot;6\&quot; data-reference-circled=\&quot;true\&quot;&gt;このこと&lt;/u&gt;を説明するのに、経済学では「稀少性」（Scarcity）という言葉を使います。「稀少性」とは、人間の欲望をすべて満足させるだけの経済資源は地球上には存在しないという厳しい現実を示すじつに簡潔な&lt;sup&gt;（注7）&lt;/sup&gt;言葉です。&lt;/p&gt;&lt;p&gt;稀少な経済資源を使って、人間の生活をどうやって豊かにすることができるのか。このことこそ、経済学の最も大きな目標です。&lt;/p&gt;&lt;p&gt;（中谷巌『痛快！経済学』集英社インターナショナルによる）&lt;/p&gt;&lt;p&gt;（注1）欲望「よくぼう」：欲しいと思う気持ち&lt;/p&gt;&lt;p&gt;（注2）膨張「ぼうちょう」：ふくらむこと&lt;/p&gt;&lt;p&gt;（注3）一気に「いっきに」：一度に&lt;/p&gt;&lt;p&gt;（注4）フル稼働「かどう」：性能いっぱいにすべてを休みなく動かすこと&lt;/p&gt;&lt;p&gt;（注5）丸裸「まるはだか」：ここでは、木がすべてなくなった状態&lt;/p&gt;&lt;p&gt;（注6）所得「しょとく」：収入&lt;/p&gt;&lt;p&gt;（注7）簡潔な「かんけつな」：簡単でわかりやすい&lt;/p&gt;&quot;
+      },
+      &quot;assessment&quot;: &quot;Preferred supported reconstruction; not authenticated original.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;Preserve the literal misplaced marks; this fails the printed question5/6 reference links.&quot;,
+      &quot;assessment&quot;: &quot;Considered rival.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;1995–2009.12 N2 question-and-explanation collection,2001 section&quot;,
+      &quot;sha256&quot;: &quot;115e8c098ee3caed702d29a24d2ce0c883c3ad9152e21eee4200fc4e80f2a3fb&quot;,
+      &quot;physical_pages&quot;: [
+        328,
+        329
+      ],
+      &quot;locator&quot;: &quot;Written region physical328,329&quot;,
+      &quot;reading&quot;: &quot;Printed mismatched references and exact question quotations.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;1995–2009.12 N2 question-and-explanation collection,2001 section&quot;,
+      &quot;sha256&quot;: &quot;115e8c098ee3caed702d29a24d2ce0c883c3ad9152e21eee4200fc4e80f2a3fb&quot;,
+      &quot;physical_pages&quot;: [
+        342
+      ],
+      &quot;locator&quot;: &quot;Written region physical342&quot;,
+      &quot;reading&quot;: &quot;Question6 explanation identifies scarce resources preventing satisfaction of all wants.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2001 written Level2 DOC; private32-page conversion&quot;,
+      &quot;sha256&quot;: &quot;ca03d715c9ce19ce1c49ce9bacb7412fbbb7288dbffbf27c65db4ad5f79d5fac&quot;,
+      &quot;physical_pages&quot;: [
+        6,
+        7,
+        8
+      ],
+      &quot;locator&quot;: &quot;Derivative pages; full written comparison completed&quot;,
+      &quot;reading&quot;: &quot;Same shifted reference-mark family.&quot;,
+      &quot;lineage&quot;: &quot;Substantial shared defects; not an independent original vote.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Question5 explicitly quotes the house clause; question6 key2 and explanation342 explain the preceding scarcity argument, not the final economics goal. Restore referential coherence while retaining historical uncertainty because both local transcriptions misplace the marks. No wording or key change.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Full indexed written source comparison including all explanations and keys.&quot;,
+    &quot;Focused crops and bounded language/source checks.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;Exact original wording/mark placement remains unrecovered; related transcriptions may share errors.&quot;
+}</pre></details></div><div class="review-record" id="principal_differences-H25-N2_2001-D001"><div class="review-label">Principal difference · /content · high</div><div class="comparison"><div><h4>Principal</h4><pre><mark class="diff-old">H</mark>ouse clause<mark class="diff-old"> unmarked</mark>;<mark class="diff-old">⑤</mark> on scarcity このこと;<mark class="diff-old">⑥ on</mark> final goal <mark class="diff-old">このこと</mark>.</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">⑤ on quoted h</mark>ouse clause;<mark class="diff-new">⑥</mark> on scarcity このこと; final goal <mark class="diff-new">unmarked</mark>.</pre></div></div><p>Question5 explicitly quotes the house clause; question6 key2 and explanation342 explain the preceding scarcity argument, not the final economics goal. Restore referential coherence while retaining historical uncertainty because both local transcriptions misplace the marks. No wording or key change.</p><span class="principal-repository-source">Principal source (page=328): <code>additional-assets/principals/N2_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-b001 affected field</span><details><summary>Full published record · principal_differences-H25-N2_2001-D001</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;H25-N2_2001-D001&quot;,
+  &quot;unit&quot;: &quot;N2_2001&quot;,
+  &quot;item_id&quot;: &quot;reading-b001&quot;,
+  &quot;field&quot;: &quot;/content&quot;,
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;&lt;p&gt;私は欲望&lt;sup&gt;（注1）&lt;/sup&gt;のかたまりです。そして、欲望は膨張&lt;sup&gt;（注2）&lt;/sup&gt;をつづける宇宙のように限りがありません。&lt;/p&gt;&lt;p&gt;&lt;u data-reference-label=\&quot;①\&quot;&gt;こんな話&lt;/u&gt;を想像してみましょう。ある中学生がお父さんやお母さんから毎月もらうお小遣いが、今までの2000円から一気に&lt;sup&gt;（注3）&lt;/sup&gt;20万円になったらどうするでしょうか？彼の欲望はとどまるところを知らず、前からほしいと思っていたものを全部手に入れようと、お小遣いを持って&lt;u data-reference-label=\&quot;②\&quot;&gt;お店に飛んでいく&lt;/u&gt;に違いありません。&lt;/p&gt;&lt;p&gt;（中略）&lt;/p&gt;&lt;p&gt;しかし、地球上の子供たちが全員、20万円もお小遣いをもらって、好きなものを買うとしましょう。そんなことは可能でしょうか。&lt;/p&gt;&lt;p&gt;欲望が無限にあるのは、じつは大人だって同じです。大人も買いたいものを何でも買うとしたらどうでしょうか。でも、&lt;u data-reference-label=\&quot;③\&quot;&gt;そんなことはしようと思ってもできっこない&lt;/u&gt;話なのです。なぜかというと、地球上に存在する全工場をフル稼働&lt;sup&gt;（注4）&lt;/sup&gt;しても、無限にたくさんのものをつくることはできません。&lt;u data-reference-label=\&quot;④\&quot;&gt;人間の技術はまだそこまで進んではいません&lt;/u&gt;。&lt;/p&gt;&lt;p&gt;労働者の数だって限られています。機械設備も限られています。農産物を作るにも、農地には限りがあります。&lt;u data-reference-label=\&quot;⑤\&quot;&gt;みんなが大きな家に住みたくても住めない&lt;/u&gt;のは、土地が足りないというだけでなく、そんなことをすればたちまち、地球上の森林から木が切り出されて、あっという間に地球は丸裸&lt;sup&gt;（注5）&lt;/sup&gt;になってしまうからです。&lt;/p&gt;&lt;p&gt;つまり、最も大事なことは、私たちの欲望は無限だけれど、工場や機械設備、労働力、森林、農地、住宅地、石油など、商品を生産するための経済資源は有限だということです。経済資源は有限だから、私たちの欲望のうち、つまりほしいもののうち、一部分しか手に入らないのです。別の言い方をすると、経済資源が有限なので生産されるものも有限ということになります。だから、私たちの手に入る「所得」&lt;sup&gt;（注6）&lt;/sup&gt;も有限。すなわち、商品を買うための予算も有限ということになります。&lt;/p&gt;&lt;p&gt;&lt;u data-reference-label=\&quot;⑥\&quot;&gt;このこと&lt;/u&gt;を説明するのに、経済学では「稀少性」（Scarcity）という言葉を使います。「稀少性」とは、人間の欲望をすべて満足させるだけの経済資源は地球上には存在しないという厳しい現実を示すじつに簡潔な&lt;sup&gt;（注7）&lt;/sup&gt;言葉です。&lt;/p&gt;&lt;p&gt;稀少な経済資源を使って、人間の生活をどうやって豊かにすることができるのか。このことこそ、経済学の最も大きな目標です。&lt;/p&gt;&lt;p&gt;（中谷巌『痛快！経済学』集英社インターナショナルによる）&lt;/p&gt;&lt;p&gt;（注1）欲望「よくぼう」：欲しいと思う気持ち&lt;/p&gt;&lt;p&gt;（注2）膨張「ぼうちょう」：ふくらむこと&lt;/p&gt;&lt;p&gt;（注3）一気に「いっきに」：一度に&lt;/p&gt;&lt;p&gt;（注4）フル稼働「かどう」：性能いっぱいにすべてを休みなく動かすこと&lt;/p&gt;&lt;p&gt;（注5）丸裸「まるはだか」：ここでは、木がすべてなくなった状態&lt;/p&gt;&lt;p&gt;（注6）所得「しょとく」：収入&lt;/p&gt;&lt;p&gt;（注7）簡潔な「かんけつな」：簡単でわかりやすい&lt;/p&gt;&quot;
+  },
+  &quot;categories&quot;: [
+    &quot;underline&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;1995–2009.12 N2 question-and-explanation collection,2001 section&quot;,
+    &quot;sha256&quot;: &quot;115e8c098ee3caed702d29a24d2ce0c883c3ad9152e21eee4200fc4e80f2a3fb&quot;,
+    &quot;physical_pages&quot;: [
+      328,
+      329
+    ],
+    &quot;locator&quot;: &quot;reading-b001 affected field&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;House clause unmarked;⑤ on scarcity このこと;⑥ on final goal このこと.&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;⑤ on quoted house clause;⑥ on scarcity このこと; final goal unmarked.&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;conjectural_repair&quot;,
+  &quot;rationale&quot;: &quot;Question5 explicitly quotes the house clause; question6 key2 and explanation342 explain the preceding scarcity argument, not the final economics goal. Restore referential coherence while retaining historical uncertainty because both local transcriptions misplace the marks. No wording or key change.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;H25-N2_2001-P001&quot;
+  ]
+}</pre></details></div></section><section class="review-group" id="review-reading-b002" data-kinds="difference"><div class="review-group-heading"><h2>reading-b002</h2><a href="../papers/N2_2001.html#reading-b002">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><p>（1）ハトを使って絵画を見わける実験をおこなってみよう。実験では10<ruby data-rubi-id="rr4-fb8a077740542b7aebfd" data-rubi-origin="project_rubi_restore">枚<rt>まい</rt></ruby>のピカソの絵と10枚のモネの絵<sup>（注1）</sup>をつかった。ハトは<ruby data-rubi-id="rr4-3a770ed266480f78092c" data-rubi-origin="project_rubi_restore">訓練<rt>くんれん</rt></ruby>用の小さな実験箱に入れられる。実験箱にはスクリーン<sup>（注2）</sup>があり、スライド・プロジェクター<sup>（注3）</sup>で絵が映しだされる。</p><p>ピカソの絵が映されたときにスクリーンをつつけば<ruby data-rubi-id="rr4-6a0ad2564cd6f0326ae9" data-rubi-origin="project_rubi_restore">餌<rt>えさ</rt></ruby>があたえられ、モネの絵の時には<ruby data-rubi-id="rr4-e65196e8f3c4afaefcd6" data-rubi-origin="project_rubi_restore">餌<rt>えさ</rt></ruby>がもらえない。また、別のハトは逆にモネの絵では<ruby data-rubi-id="rr4-e5f0968c10719c2a4453" data-rubi-origin="project_rubi_restore">餌<rt>えさ</rt></ruby>をもらえ、ピカソの絵ではもらえないという訓練をうける。ハトはおよそ20日間程度の訓練で<u>この区別ができる</u>ようになる。ハトはモネの絵とピカソの絵がわかるようになったのだろうか。</p><p>これはハトがピカソとモネの区別ができるようになったからではなく、20枚の絵を丸暗記<sup>（注4）</sup>しておぼえただけのことかもしれない。実際ハトはこのくらいの数の意味のない図をまるごと<sup>（注5）</sup>おぼえる<ruby data-rubi-id="rr4-cd6b0668ada87838af13" data-rubi-origin="project_rubi_restore">記憶力<rt>きおくりょく</rt></ruby>を持っている。（②）、ハトは訓練につかわなかった、初めて見る絵を見せられた場合でも、それがモネの絵であるかピカソの絵であるかを区別したのである。ハトは訓練につかわれた特定の絵を丸暗記したのではなく、「ピカソ」の作品、「モネ」の作品という<u>作風の区別をおぼえた</u>と考えられる。</p><p>（渡辺茂『ピカソを見わけるハト』日本放送出版協会による）</p><p>（注1）ピカソ、モネ：ヨーロッパの画家の名前</p><p>（注2）スクリーン：スライドを大きく映す<ruby data-rubi-id="rr4-56438d968fdbaf7eda95" data-rubi-origin="project_rubi_restore">幕<rt>まく</rt></ruby></p><p>（注3）スライド・プロジェクター：スライドを映す機械</p><p>（注4）丸暗記する「まるあんきする」：全部そのまま記憶する</p><p>（注5）まるごと：そのまま全部</p></div></details><div class="review-record" id="principal_differences-H25-N2_2001-D002"><div class="review-label">Principal difference · /content · high</div><div class="comparison"><div><h4>Principal</h4><pre>訓練<mark class="diff-old">の</mark>つかわれた</pre></div><div><h4>Editorial</h4><pre>訓練<mark class="diff-new">に</mark>つかわれた</pre></div></div><p>Correct the particle marking use in training. The same paragraph earlier says 訓練につかわなかった. This minimal grammar repair changes no distinction or answer.</p><span class="principal-repository-source">Principal source (page=330): <code>additional-assets/principals/N2_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-b002 affected field</span><details><summary>Full published record · principal_differences-H25-N2_2001-D002</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;H25-N2_2001-D002&quot;,
+  &quot;unit&quot;: &quot;N2_2001&quot;,
+  &quot;item_id&quot;: &quot;reading-b002&quot;,
+  &quot;field&quot;: &quot;/content&quot;,
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;&lt;p&gt;（1）ハトを使って絵画を見わける実験をおこなってみよう。実験では10枚のピカソの絵と10枚のモネの絵&lt;sup&gt;（注1）&lt;/sup&gt;をつかった。ハトは訓練用の小さな実験箱に入れられる。実験箱にはスクリーン&lt;sup&gt;（注2）&lt;/sup&gt;があり、スライド・プロジェクター&lt;sup&gt;（注3）&lt;/sup&gt;で絵が映しだされる。&lt;/p&gt;&lt;p&gt;ピカソの絵が映されたときにスクリーンをつつけば餌があたえられ、モネの絵の時には餌がもらえない。また、別のハトは逆にモネの絵では餌をもらえ、ピカソの絵ではもらえないという訓練をうける。ハトはおよそ20日間程度の訓練で&lt;u data-reference-label=\&quot;①\&quot;&gt;この区別ができる&lt;/u&gt;ようになる。ハトはモネの絵とピカソの絵がわかるようになったのだろうか。&lt;/p&gt;&lt;p&gt;これはハトがピカソとモネの区別ができるようになったからではなく、20枚の絵を丸暗記&lt;sup&gt;（注4）&lt;/sup&gt;しておぼえただけのことかもしれない。実際ハトはこのくらいの数の意味のない図をまるごと&lt;sup&gt;（注5）&lt;/sup&gt;おぼえる記憶力を持っている。（②）、ハトは訓練につかわなかった、初めて見る絵を見せられた場合でも、それがモネの絵であるかピカソの絵であるかを区別したのである。ハトは訓練につかわれた特定の絵を丸暗記したのではなく、「ピカソ」の作品、「モネ」の作品という&lt;u data-reference-label=\&quot;③\&quot;&gt;作風の区別をおぼえた&lt;/u&gt;と考えられる。&lt;/p&gt;&lt;p&gt;（渡辺茂『ピカソを見わけるハト』日本放送出版協会による）&lt;/p&gt;&lt;p&gt;（注1）ピカソ、モネ：ヨーロッパの画家の名前&lt;/p&gt;&lt;p&gt;（注2）スクリーン：スライドを大きく映す幕&lt;/p&gt;&lt;p&gt;（注3）スライド・プロジェクター：スライドを映す機械&lt;/p&gt;&lt;p&gt;（注4）丸暗記する「まるあんきする」：全部そのまま記憶する&lt;/p&gt;&lt;p&gt;（注5）まるごと：そのまま全部&lt;/p&gt;&quot;
+  },
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;1995–2009.12 N2 question-and-explanation collection,2001 section&quot;,
+    &quot;sha256&quot;: &quot;115e8c098ee3caed702d29a24d2ce0c883c3ad9152e21eee4200fc4e80f2a3fb&quot;,
+    &quot;physical_pages&quot;: [
+      330
+    ],
+    &quot;locator&quot;: &quot;reading-b002 affected field&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;訓練のつかわれた&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;訓練につかわれた&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Correct the particle marking use in training. The same paragraph earlier says 訓練につかわなかった. This minimal grammar repair changes no distinction or answer.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-q008" data-kinds="difference"><div class="review-group-heading"><h2>reading-q008</h2><a href="../papers/N2_2001.html#reading-q008">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">問1　筆者は実験に使ったハトにどのように絵を見せたのか。<ol><li>ピカソの絵を見せるハトとモネの絵を見せるハトとに分けた。</li><li>全部のハトにピカソとモネの両方の絵を見せた。</li><li>全部のハトにピカソの描いた絵だけを見せた。</li><li>全部のハトにモネの描いた絵だけを見せた。</li></ol><p>Editorial key: 2</p></div></details><div class="review-record" id="principal_differences-H25-N2_2001-D003"><div class="review-label">Principal difference · /stem · high</div><div class="comparison"><div><h4>Principal</h4><pre>実験<mark class="diff-old">の</mark>使った</pre></div><div><h4>Editorial</h4><pre>実験<mark class="diff-new">に</mark>使った</pre></div></div><p>Correct the location/purpose particle before 使った; the pigeon was used in the experiment. No change to option2 or experimental conditions.</p><span class="principal-repository-source">Principal source (page=330): <code>additional-assets/principals/N2_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-q008 affected field</span><details><summary>Full published record · principal_differences-H25-N2_2001-D003</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;H25-N2_2001-D003&quot;,
+  &quot;unit&quot;: &quot;N2_2001&quot;,
+  &quot;item_id&quot;: &quot;reading-q008&quot;,
+  &quot;field&quot;: &quot;/stem&quot;,
+  &quot;current_value&quot;: &quot;問1　筆者は実験に使ったハトにどのように絵を見せたのか。&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;1995–2009.12 N2 question-and-explanation collection,2001 section&quot;,
+    &quot;sha256&quot;: &quot;115e8c098ee3caed702d29a24d2ce0c883c3ad9152e21eee4200fc4e80f2a3fb&quot;,
+    &quot;physical_pages&quot;: [
+      330
+    ],
+    &quot;locator&quot;: &quot;reading-q008 affected field&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;実験の使った&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;実験に使った&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Correct the location/purpose particle before 使った; the pigeon was used in the experiment. No change to option2 or experimental conditions.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-q011" data-kinds="unresolved"><div class="review-group-heading"><h2>reading-q011</h2><a href="../papers/N2_2001.html#reading-q011">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">問4　③「<u>作風の区別をおぼえた</u>」とあるが、どのようなことか。<ol><li>始めてみた場合でも、ピカソとハトの絵がすぐおぼえられるようになった。</li><li>ピカソとモネの絵を10枚ずつおぼえて、その区別ができるようになった。</li><li>ピカソやモネの絵とほかの画家が描いた絵を区別できるようになった。</li><li>ピカソの絵の<ruby data-rubi-id="rr4-3f2528f6b186f2ff5bb2" data-rubi-origin="project_rubi_restore">特徴<rt>とくちょう</rt></ruby>とモネの絵の特徴が区別できるようになった。</li></ol><p>Editorial key: 4</p></div></details><div class="review-record" id="unresolved_cases-H25-N2_2001-reading11-distractor"><div class="review-label">Unresolved · /options/0 · low</div><div class="comparison"><div><h4>Alternative</h4><pre>ピカソとハトの絵</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">始めてみた場合でも、</mark>ピカソとハトの絵<mark class="diff-new">がすぐおぼえられるようになった。</mark></pre></div></div><p>Do not repair a plausible deliberate wrong option without stronger historical evidence. Key4 unchanged.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>Exact original non-key wording remains unknown.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Wrong alternative about instantly memorizing paintings.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=330): <code>additional-assets/principals/N2_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Written region physical330<p>ピカソとハトの絵</p></li><li><span class="principal-repository-source">Principal source (page=344): <code>additional-assets/principals/N2_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Written region physical344<p>Chinese option1 translation uses Monet.</p></li><li><span class="principal-repository-source">Principal source (page=9): <code>additional-assets/principals/N2_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Derivative pages; full written comparison completed<p>ピカソとハトの絵</p></li></ul><details><summary>Full published record · unresolved_cases-H25-N2_2001-reading11-distractor</summary><pre>{
+  &quot;case_id&quot;: &quot;H25-N2_2001-reading11-distractor&quot;,
+  &quot;unit&quot;: &quot;N2_2001&quot;,
+  &quot;item_id&quot;: &quot;reading-q011&quot;,
+  &quot;field&quot;: &quot;/options/0&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;low&quot;,
+  &quot;decision_basis&quot;: &quot;source_comparison&quot;,
+  &quot;current_value&quot;: &quot;始めてみた場合でも、ピカソとハトの絵がすぐおぼえられるようになった。&quot;,
+  &quot;context&quot;: &quot;Wrong alternative about instantly memorizing paintings.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;ピカソとハトの絵&quot;,
+      &quot;assessment&quot;: &quot;Retained in all local and focused web transcriptions; could be an intentionally wrong distractor.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;ピカソとモネの絵&quot;,
+      &quot;assessment&quot;: &quot;Principal explanation translates Monet; plausible transcription correction.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;1995–2009.12 N2 question-and-explanation collection,2001 section&quot;,
+      &quot;sha256&quot;: &quot;115e8c098ee3caed702d29a24d2ce0c883c3ad9152e21eee4200fc4e80f2a3fb&quot;,
+      &quot;physical_pages&quot;: [
+        330
+      ],
+      &quot;locator&quot;: &quot;Written region physical330&quot;,
+      &quot;reading&quot;: &quot;ピカソとハトの絵&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;1995–2009.12 N2 question-and-explanation collection,2001 section&quot;,
+      &quot;sha256&quot;: &quot;115e8c098ee3caed702d29a24d2ce0c883c3ad9152e21eee4200fc4e80f2a3fb&quot;,
+      &quot;physical_pages&quot;: [
+        344
+      ],
+      &quot;locator&quot;: &quot;Written region physical344&quot;,
+      &quot;reading&quot;: &quot;Chinese option1 translation uses Monet.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2001 written Level2 DOC; private32-page conversion&quot;,
+      &quot;sha256&quot;: &quot;ca03d715c9ce19ce1c49ce9bacb7412fbbb7288dbffbf27c65db4ad5f79d5fac&quot;,
+      &quot;physical_pages&quot;: [
+        9
+      ],
+      &quot;locator&quot;: &quot;Derivative pages; full written comparison completed&quot;,
+      &quot;reading&quot;: &quot;ピカソとハトの絵&quot;,
+      &quot;lineage&quot;: &quot;Substantial shared defects; not an independent original vote.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Do not repair a plausible deliberate wrong option without stronger historical evidence. Key4 unchanged.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Complete principal and indexed written DOC/key comparison.&quot;,
+    &quot;Focused language review and bounded external checks where material.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;Exact original non-key wording remains unknown.&quot;
+}</pre></details></div></section><section class="review-group" id="review-reading-b003" data-kinds="difference"><div class="review-group-heading"><h2>reading-b003</h2><a href="../papers/N2_2001.html#reading-b003">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><p>（2）子供に食事のマナー<sup>（注1）</sup>を教えるときは、“○○すべきである”“○○しなくてはならない”というように、自分の考え方を押し付けるのでは子供たちは<ruby data-rubi-id="rr4-247f48d43ff073c8e2be" data-rubi-origin="project_rubi_restore">納得<rt>なっとく</rt></ruby>しません。子供たちは、「美しい食べ方をしていると、人から“すてきだ”とか“かっこいい”とか思われる」という経験を通して、美しいマナーの意味を納得するのです。</p><p>それには、家庭や学校などの集団の中で、子供自身に<u>自分のありようを意識させる</u><sup>（注2）</sup>ことです。そして、きれいで美しい食べ方ができたときには「きれいに食べられたね」「かっこよく見えるよ」とほめてあげましょう。</p><p>子供はほめられたことで「またこのようにしてみよう」と思います。こうして（中略）美しいマナーが習慣となり、その場に<ruby data-rubi-id="rr4-abb7f5600baf6be3ca8d" data-rubi-origin="project_rubi_restore">応<rt>おう</rt></ruby>じた美しい<ruby data-rubi-id="rr4-dda7cb4f4d5505ec7145" data-rubi-origin="project_rubi_restore">自己<rt>じこ</rt></ruby><sup>（注3）</sup>のふるまいを身につけていくことができるのでしょう。</p><p>ところで、皆さんは食事のマナーが成立するには“他者との関係”が不可欠<sup>（注4）</sup>であることにお気づきでしょうか。</p><p>人は人前で食事をするとき、一人で食べるよりもそれなりに<ruby data-rubi-id="rr4-6e087de3512b1fe0b88f" data-rubi-origin="project_rubi_restore">整<rt>ととの</rt></ruby>った食べ方をしようとするものです。それは「自分をよく見せたい、人からよく見られたい」という気持ちが根底<sup>（注5）</sup>にあるからです。だから食事のマナーを身につける必要性が自然に生ずるのです。</p><p>一方、一人で食事をとるときは、食事のマナーを感じることが少ないのではないでしょうか。<ruby data-rubi-id="rr4-f75061fa2a13eba641ee" data-rubi-origin="project_rubi_restore">近頃<rt>ちかごろ</rt></ruby>の家庭に多く見られる“子供の<ruby data-rubi-id="rr4-2c82bd7c70c72ace6b14" data-rubi-origin="project_rubi_restore">孤食<rt>こしょく</rt></ruby>”は、子供に適切なマナー観<sup>（注6）</sup>を身につけさせるという意味においても<ruby data-rubi-id="rr4-ab492872a4ca4152ac8d" data-rubi-origin="project_rubi_restore">考慮<rt>こうりょ</rt></ruby>すべき問題であるといえるのです。</p><p>（女子栄養大学出版部『栄養と料理』1999年2月号による）</p><p>（注1）マナー：<ruby data-rubi-id="rr4-ab7df357a2b38fc77bd1" data-rubi-origin="project_rubi_restore">行儀<rt>ぎょうぎ</rt></ruby>・作法</p><p>（注2）ありよう：ようす・<ruby data-rubi-id="rr4-c6e260c76f363df14f42" data-rubi-origin="project_rubi_restore">姿<rt>すがた</rt></ruby></p><p>（注3）<ruby data-rubi-id="rr4-b5a918b7a26e58179cb7" data-rubi-origin="project_rubi_restore">自己<rt>じこ</rt></ruby>「じこ」：自分自身</p><p>（注4）不可欠：なくてはならないもの、どうしても必要なもの</p><p>（注5）根底：<ruby data-rubi-id="rr4-6449b79b6a41000bf521" data-rubi-origin="project_rubi_restore">基本<rt>きほん</rt></ruby>、もと</p><p>（注6）マナー観：マナーについての考え方</p></div></details><div class="review-record" id="principal_differences-H25-N2_2001-D004"><div class="review-label">Principal difference · /content · high</div><div class="comparison"><div><h4>Principal</h4><pre>家庭<mark class="diff-old">の</mark>多く見られる</pre></div><div><h4>Editorial</h4><pre>家庭<mark class="diff-new">に</mark>多く見られる</pre></div></div><p>Correct the location particle in the relative clause: solitary eating is often seen in homes. The noun 家庭 is not the subject of 見られる. No substantive interpretation changes.</p><span class="principal-repository-source">Principal source (page=331): <code>additional-assets/principals/N2_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-b003 affected field</span><details><summary>Full published record · principal_differences-H25-N2_2001-D004</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;H25-N2_2001-D004&quot;,
+  &quot;unit&quot;: &quot;N2_2001&quot;,
+  &quot;item_id&quot;: &quot;reading-b003&quot;,
+  &quot;field&quot;: &quot;/content&quot;,
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;&lt;p&gt;（2）子供に食事のマナー&lt;sup&gt;（注1）&lt;/sup&gt;を教えるときは、“○○すべきである”“○○しなくてはならない”というように、自分の考え方を押し付けるのでは子供たちは納得しません。子供たちは、「美しい食べ方をしていると、人から“すてきだ”とか“かっこいい”とか思われる」という経験を通して、美しいマナーの意味を納得するのです。&lt;/p&gt;&lt;p&gt;それには、家庭や学校などの集団の中で、子供自身に&lt;u&gt;自分のありようを意識させる&lt;/u&gt;&lt;sup&gt;（注2）&lt;/sup&gt;ことです。そして、きれいで美しい食べ方ができたときには「きれいに食べられたね」「かっこよく見えるよ」とほめてあげましょう。&lt;/p&gt;&lt;p&gt;子供はほめられたことで「またこのようにしてみよう」と思います。こうして（中略）美しいマナーが習慣となり、その場に応じた美しい自己&lt;sup&gt;（注3）&lt;/sup&gt;のふるまいを身につけていくことができるのでしょう。&lt;/p&gt;&lt;p&gt;ところで、皆さんは食事のマナーが成立するには“他者との関係”が不可欠&lt;sup&gt;（注4）&lt;/sup&gt;であることにお気づきでしょうか。&lt;/p&gt;&lt;p&gt;人は人前で食事をするとき、一人で食べるよりもそれなりに整った食べ方をしようとするものです。それは「自分をよく見せたい、人からよく見られたい」という気持ちが根底&lt;sup&gt;（注5）&lt;/sup&gt;にあるからです。だから食事のマナーを身につける必要性が自然に生ずるのです。&lt;/p&gt;&lt;p&gt;一方、一人で食事をとるときは、食事のマナーを感じることが少ないのではないでしょうか。近頃の家庭に多く見られる“子供の孤食”は、子供に適切なマナー観&lt;sup&gt;（注6）&lt;/sup&gt;を身につけさせるという意味においても考慮すべき問題であるといえるのです。&lt;/p&gt;&lt;p&gt;（女子栄養大学出版部『栄養と料理』1999年2月号による）&lt;/p&gt;&lt;p&gt;（注1）マナー：行儀・作法&lt;/p&gt;&lt;p&gt;（注2）ありよう：ようす・姿&lt;/p&gt;&lt;p&gt;（注3）自己「じこ」：自分自身&lt;/p&gt;&lt;p&gt;（注4）不可欠：なくてはならないもの、どうしても必要なもの&lt;/p&gt;&lt;p&gt;（注5）根底：基本、もと&lt;/p&gt;&lt;p&gt;（注6）マナー観：マナーについての考え方&lt;/p&gt;&quot;
+  },
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;1995–2009.12 N2 question-and-explanation collection,2001 section&quot;,
+    &quot;sha256&quot;: &quot;115e8c098ee3caed702d29a24d2ce0c883c3ad9152e21eee4200fc4e80f2a3fb&quot;,
+    &quot;physical_pages&quot;: [
+      331
+    ],
+    &quot;locator&quot;: &quot;reading-b003 affected field&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;家庭の多く見られる&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;家庭に多く見られる&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Correct the location particle in the relative clause: solitary eating is often seen in homes. The noun 家庭 is not the subject of 見られる. No substantive interpretation changes.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-b004" data-kinds="difference"><div class="review-group-heading"><h2>reading-b004</h2><a href="../papers/N2_2001.html#reading-b004">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><p>（1）日の出、日の入りは太陽の上のへり<sup>（注1）</sup>が<ruby data-rubi-id="rr4-8580d23cf0b90544bcd8" data-rubi-origin="project_rubi_restore">地平線<rt>ちへいせん</rt></ruby>にかかった<ruby data-rubi-id="rr4-17798347251869aad785" data-rubi-origin="project_rubi_restore">瞬間<rt>しゅんかん</rt></ruby>をいうことは<ruby data-rubi-id="rr4-2db816f2a403b9611e30" data-rubi-origin="project_rubi_restore">比較的<rt>ひかくてき</rt></ruby>よく知られています。</p><p>つまり、日の出とは太陽の上のへりが地平線に顔をのぞかせた<sup>（注2）</sup><ruby data-rubi-id="rr4-ed3cdac42ba930530e2f" data-rubi-origin="project_rubi_restore">瞬間<rt>しゅんかん</rt></ruby>、日の入りとは太陽の上のへりが地平線に沈んで、太陽がまったく見えなくなった瞬間です。</p><p>このことから<ruby data-rubi-id="rr4-0f85d243c41f34443162" data-rubi-origin="project_rubi_restore">類推<rt>るいすい</rt></ruby>して<sup>（注3）</sup>、月の出、月の入りも同じように決められているのだろうと思っている人が多いようですが、月の場合は違います。</p><p>月の出、月の入りとは、月の中心が地平線にかかった瞬間をいうのです。</p><p>では、なぜ月の場合は太陽と違う<ruby data-rubi-id="rr4-e29ea44fc6435a30fa50" data-rubi-origin="project_rubi_restore">基準<rt>きじゅん</rt></ruby>を採用して<sup>（注4）</sup>いるのでしょう。</p><p>そのわけは、月には満ち欠けの現象があるからです。上のへりと決めたのでは、三日月のときなど観測が難しくなります。月の中心にしたら、三日月の場合でも、<ruby data-rubi-id="rr4-a8496ee27c985b4fb517" data-rubi-origin="project_rubi_restore">弧<rt>こ</rt></ruby><sup>（注5）</sup>の一部から円の中心を求めるのと同じで、すぐにわかります。</p><p>（日本社『つい<ruby data-rubi-id="rr4-d7516721247531a332d8" data-rubi-origin="project_rubi_restore">誰<rt>だれ</rt></ruby>かに話したくなる雑学の本』講談社による）</p><p>（注1）へり：ふち、はし</p><p>（注2）顔をのぞかせる：一部分が見える</p><p>（注3）<ruby data-rubi-id="rr4-d89f707a92514fadd2f8" data-rubi-origin="project_rubi_restore">類推<rt>るいすい</rt></ruby>する「るいすいする」：すでにわかっていることをもとに、他のことについて判断する</p><p>（注4）採用する「さいようする」：選んで使う</p><p>（注5）弧「こ」：円周の一部分</p></div></details><div class="review-record" id="principal_differences-H25-N2_2001-D005"><div class="review-label">Principal difference · /content · high</div><div class="comparison"><div><h4>Principal</h4><pre><mark class="diff-old">購</mark>談社</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">講</mark>談社</pre></div></div><p>Correct the publisher spelling; its own product page identifies the exact title and author 日本社 under 講談社. Preserve author 日本社.</p><span class="principal-repository-source">Principal source (page=332): <code>additional-assets/principals/N2_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-b004 affected field</span><details><summary>Full published record · principal_differences-H25-N2_2001-D005</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;H25-N2_2001-D005&quot;,
+  &quot;unit&quot;: &quot;N2_2001&quot;,
+  &quot;item_id&quot;: &quot;reading-b004&quot;,
+  &quot;field&quot;: &quot;/content&quot;,
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;&lt;p&gt;（1）日の出、日の入りは太陽の上のへり&lt;sup&gt;（注1）&lt;/sup&gt;が地平線にかかった瞬間をいうことは比較的よく知られています。&lt;/p&gt;&lt;p&gt;つまり、日の出とは太陽の上のへりが地平線に顔をのぞかせた&lt;sup&gt;（注2）&lt;/sup&gt;瞬間、日の入りとは太陽の上のへりが地平線に沈んで、太陽がまったく見えなくなった瞬間です。&lt;/p&gt;&lt;p&gt;このことから類推して&lt;sup&gt;（注3）&lt;/sup&gt;、月の出、月の入りも同じように決められているのだろうと思っている人が多いようですが、月の場合は違います。&lt;/p&gt;&lt;p&gt;月の出、月の入りとは、月の中心が地平線にかかった瞬間をいうのです。&lt;/p&gt;&lt;p&gt;では、なぜ月の場合は太陽と違う基準を採用して&lt;sup&gt;（注4）&lt;/sup&gt;いるのでしょう。&lt;/p&gt;&lt;p&gt;そのわけは、月には満ち欠けの現象があるからです。上のへりと決めたのでは、三日月のときなど観測が難しくなります。月の中心にしたら、三日月の場合でも、弧&lt;sup&gt;（注5）&lt;/sup&gt;の一部から円の中心を求めるのと同じで、すぐにわかります。&lt;/p&gt;&lt;p&gt;（日本社『つい誰かに話したくなる雑学の本』講談社による）&lt;/p&gt;&lt;p&gt;（注1）へり：ふち、はし&lt;/p&gt;&lt;p&gt;（注2）顔をのぞかせる：一部分が見える&lt;/p&gt;&lt;p&gt;（注3）類推する「るいすいする」：すでにわかっていることをもとに、他のことについて判断する&lt;/p&gt;&lt;p&gt;（注4）採用する「さいようする」：選んで使う&lt;/p&gt;&lt;p&gt;（注5）弧「こ」：円周の一部分&lt;/p&gt;&quot;
+  },
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;1995–2009.12 N2 question-and-explanation collection,2001 section&quot;,
+    &quot;sha256&quot;: &quot;115e8c098ee3caed702d29a24d2ce0c883c3ad9152e21eee4200fc4e80f2a3fb&quot;,
+    &quot;physical_pages&quot;: [
+      332
+    ],
+    &quot;locator&quot;: &quot;reading-b004 affected field&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;購談社&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;講談社&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Correct the publisher spelling; its own product page identifies the exact title and author 日本社 under 講談社. Preserve author 日本社.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-b008" data-kinds="difference provisional_fix"><div class="review-group-heading"><h2>reading-b008</h2><a href="../papers/N2_2001.html#reading-b008">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><p>（5）人が所有している<sup>（注1）</sup>働く能力を、（①）能力、（②）能力、概念化能力、（③）能力の四種類で説明する考え方があります。</p><p>（①）能力とは、ものをつくったり販売したり、サービスをする場合の業務を果たす<sup>（注2）</sup>能力のことです。（②）能力は、ドラッカー<sup>（注3）</sup>のいう「他の人間とともに働く能力」のことです。概念化能力とは、物事の論理を言葉に換える能力のことと考えればいいでしょう。そして（③）能力とは、（①）能力、（②）能力、概念化能力を情報としてまとめ、システム<sup>（注4）</sup>に仕上げて他人に伝えやすく、検証しやすい<sup>（注5）</sup>ように変える能力のことです。</p><p>（森清『会社で働くということ』岩波書店による）</p><p>（注1）所有する「しょゆうする」：持つ</p><p>（注2）業務を果たす「ぎょうむをはたす」：仕事をきちんとやる</p><p>（注3）ドラッカー：アメリカの経営学者</p><p>（注4）システム：組織、体系</p><p>（注5）検証する「けんしょうする」：実際に調べて確認する</p></div></details><div class="review-record" id="unresolved_cases-H25-N2_2001-P006"><div class="review-label">Provisional fix · /content · medium</div><div class="comparison"><div><h4>Before</h4><pre>…いう「他の人間とともに働く能力」のことです。概念化能力とは、物事の論理を言葉に換える能力のことと考えればいいでしょう。そして（③）能力とは、（①）能力、（②）能力、概念化能力を情報してまとめ、システム&lt;sup&gt;（注4）&lt;/sup&gt;に仕上げて他人に伝えやすく、検証しやすい&lt;sup&gt;（注5）&lt;/sup&gt;ように変える能力のことです。&lt;/p&gt;&lt;p&gt;（森清『会社で働くということ』岩波書店による）&lt;/p&gt;&lt;p&gt;（注1）所有する「しょゆうする」：持つ&lt;/p&gt;&lt;p&gt;（注2…</pre></div><div><h4>Editorial</h4><pre>…いう「他の人間とともに働く能力」のことです。概念化能力とは、物事の論理を言葉に換える能力のことと考えればいいでしょう。そして（③）能力とは、（①）能力、（②）能力、概念化能力を情報<mark class="diff-new">と</mark>してまとめ、システム&lt;sup&gt;（注4）&lt;/sup&gt;に仕上げて他人に伝えやすく、検証しやすい&lt;sup&gt;（注5）&lt;/sup&gt;ように変える能力のことです。&lt;/p&gt;&lt;p&gt;（森清『会社で働くということ』岩波書店による）&lt;/p&gt;&lt;p&gt;（注1）所有する「しょゆうする」：持つ&lt;/p&gt;&lt;p&gt;（注2…</pre></div></div><p>Restore と in the malformed 情報して phrase to express organizing the preceding abilities as information for communication; this is the preferred minimal grammatical inference, not recovered original text. 情報化して is a plausible rival. Independently correct note3 ドランカー to the body and DOC referent ドラッカー with high confidence. Key3 remains unchanged.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>Exact original wording/mark placement remains unrecovered; related transcriptions may share errors.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Complete source field and dependent questions reviewed.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=334): <code>additional-assets/principals/N2_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Written region physical334<p>Bodyドラッカー versus noteドランカー; 情報してまとめ.</p></li><li><span class="principal-repository-source">Principal source (page=14): <code>additional-assets/principals/N2_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Derivative pages; full written comparison completed<p>Noteドラッカー; same 情報してまとめ corruption.</p></li><li><span class="principal-repository-source">Principal source (page=346): <code>additional-assets/principals/N2_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Written region physical346<p>Explanation describes compiling skills as communicable information.</p></li></ul><details><summary>Full published record · unresolved_cases-H25-N2_2001-P006</summary><pre>{
+  &quot;case_id&quot;: &quot;H25-N2_2001-P006&quot;,
+  &quot;unit&quot;: &quot;N2_2001&quot;,
+  &quot;item_id&quot;: &quot;reading-b008&quot;,
+  &quot;field&quot;: &quot;/content&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;source_comparison&quot;,
+  &quot;before&quot;: {
+    &quot;html&quot;: &quot;&lt;p&gt;（5）人が所有している&lt;sup&gt;（注1）&lt;/sup&gt;働く能力を、（①）能力、（②）能力、概念化能力、（③）能力の四種類で説明する考え方があります。&lt;/p&gt;&lt;p&gt;（①）能力とは、ものをつくったり販売したり、サービスをする場合の業務を果たす&lt;sup&gt;（注2）&lt;/sup&gt;能力のことです。（②）能力は、ドラッカー&lt;sup&gt;（注3）&lt;/sup&gt;のいう「他の人間とともに働く能力」のことです。概念化能力とは、物事の論理を言葉に換える能力のことと考えればいいでしょう。そして（③）能力とは、（①）能力、（②）能力、概念化能力を情報してまとめ、システム&lt;sup&gt;（注4）&lt;/sup&gt;に仕上げて他人に伝えやすく、検証しやすい&lt;sup&gt;（注5）&lt;/sup&gt;ように変える能力のことです。&lt;/p&gt;&lt;p&gt;（森清『会社で働くということ』岩波書店による）&lt;/p&gt;&lt;p&gt;（注1）所有する「しょゆうする」：持つ&lt;/p&gt;&lt;p&gt;（注2）業務を果たす「ぎょうむをはたす」：仕事をきちんとやる&lt;/p&gt;&lt;p&gt;（注3）ドランカー：アメリカの経営学者&lt;/p&gt;&lt;p&gt;（注4）システム：組織、体系&lt;/p&gt;&lt;p&gt;（注5）検証する「けんしょうする」：実際に調べて確認する&lt;/p&gt;&quot;
+  },
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;&lt;p&gt;（5）人が所有している&lt;sup&gt;（注1）&lt;/sup&gt;働く能力を、（①）能力、（②）能力、概念化能力、（③）能力の四種類で説明する考え方があります。&lt;/p&gt;&lt;p&gt;（①）能力とは、ものをつくったり販売したり、サービスをする場合の業務を果たす&lt;sup&gt;（注2）&lt;/sup&gt;能力のことです。（②）能力は、ドラッカー&lt;sup&gt;（注3）&lt;/sup&gt;のいう「他の人間とともに働く能力」のことです。概念化能力とは、物事の論理を言葉に換える能力のことと考えればいいでしょう。そして（③）能力とは、（①）能力、（②）能力、概念化能力を情報としてまとめ、システム&lt;sup&gt;（注4）&lt;/sup&gt;に仕上げて他人に伝えやすく、検証しやすい&lt;sup&gt;（注5）&lt;/sup&gt;ように変える能力のことです。&lt;/p&gt;&lt;p&gt;（森清『会社で働くということ』岩波書店による）&lt;/p&gt;&lt;p&gt;（注1）所有する「しょゆうする」：持つ&lt;/p&gt;&lt;p&gt;（注2）業務を果たす「ぎょうむをはたす」：仕事をきちんとやる&lt;/p&gt;&lt;p&gt;（注3）ドラッカー：アメリカの経営学者&lt;/p&gt;&lt;p&gt;（注4）システム：組織、体系&lt;/p&gt;&lt;p&gt;（注5）検証する「けんしょうする」：実際に調べて確認する&lt;/p&gt;&quot;
+  },
+  &quot;context&quot;: &quot;Complete source field and dependent questions reviewed.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: {
+        &quot;html&quot;: &quot;&lt;p&gt;（5）人が所有している&lt;sup&gt;（注1）&lt;/sup&gt;働く能力を、（①）能力、（②）能力、概念化能力、（③）能力の四種類で説明する考え方があります。&lt;/p&gt;&lt;p&gt;（①）能力とは、ものをつくったり販売したり、サービスをする場合の業務を果たす&lt;sup&gt;（注2）&lt;/sup&gt;能力のことです。（②）能力は、ドラッカー&lt;sup&gt;（注3）&lt;/sup&gt;のいう「他の人間とともに働く能力」のことです。概念化能力とは、物事の論理を言葉に換える能力のことと考えればいいでしょう。そして（③）能力とは、（①）能力、（②）能力、概念化能力を情報してまとめ、システム&lt;sup&gt;（注4）&lt;/sup&gt;に仕上げて他人に伝えやすく、検証しやすい&lt;sup&gt;（注5）&lt;/sup&gt;ように変える能力のことです。&lt;/p&gt;&lt;p&gt;（森清『会社で働くということ』岩波書店による）&lt;/p&gt;&lt;p&gt;（注1）所有する「しょゆうする」：持つ&lt;/p&gt;&lt;p&gt;（注2）業務を果たす「ぎょうむをはたす」：仕事をきちんとやる&lt;/p&gt;&lt;p&gt;（注3）ドランカー：アメリカの経営学者&lt;/p&gt;&lt;p&gt;（注4）システム：組織、体系&lt;/p&gt;&lt;p&gt;（注5）検証する「けんしょうする」：実際に調べて確認する&lt;/p&gt;&quot;
+      },
+      &quot;assessment&quot;: &quot;Literal principal field.&quot;
+    },
+    {
+      &quot;value&quot;: {
+        &quot;html&quot;: &quot;&lt;p&gt;（5）人が所有している&lt;sup&gt;（注1）&lt;/sup&gt;働く能力を、（①）能力、（②）能力、概念化能力、（③）能力の四種類で説明する考え方があります。&lt;/p&gt;&lt;p&gt;（①）能力とは、ものをつくったり販売したり、サービスをする場合の業務を果たす&lt;sup&gt;（注2）&lt;/sup&gt;能力のことです。（②）能力は、ドラッカー&lt;sup&gt;（注3）&lt;/sup&gt;のいう「他の人間とともに働く能力」のことです。概念化能力とは、物事の論理を言葉に換える能力のことと考えればいいでしょう。そして（③）能力とは、（①）能力、（②）能力、概念化能力を情報としてまとめ、システム&lt;sup&gt;（注4）&lt;/sup&gt;に仕上げて他人に伝えやすく、検証しやすい&lt;sup&gt;（注5）&lt;/sup&gt;ように変える能力のことです。&lt;/p&gt;&lt;p&gt;（森清『会社で働くということ』岩波書店による）&lt;/p&gt;&lt;p&gt;（注1）所有する「しょゆうする」：持つ&lt;/p&gt;&lt;p&gt;（注2）業務を果たす「ぎょうむをはたす」：仕事をきちんとやる&lt;/p&gt;&lt;p&gt;（注3）ドラッカー：アメリカの経営学者&lt;/p&gt;&lt;p&gt;（注4）システム：組織、体系&lt;/p&gt;&lt;p&gt;（注5）検証する「けんしょうする」：実際に調べて確認する&lt;/p&gt;&quot;
+      },
+      &quot;assessment&quot;: &quot;Preferred supported reconstruction; not authenticated original.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;情報化してまとめ: also supplies one missing character; original wording not recovered.&quot;,
+      &quot;assessment&quot;: &quot;Considered rival.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;Retain 情報してまとめ: shared by transcriptions but malformed in this context.&quot;,
+      &quot;assessment&quot;: &quot;Considered rival.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;1995–2009.12 N2 question-and-explanation collection,2001 section&quot;,
+      &quot;sha256&quot;: &quot;115e8c098ee3caed702d29a24d2ce0c883c3ad9152e21eee4200fc4e80f2a3fb&quot;,
+      &quot;physical_pages&quot;: [
+        334
+      ],
+      &quot;locator&quot;: &quot;Written region physical334&quot;,
+      &quot;reading&quot;: &quot;Bodyドラッカー versus noteドランカー; 情報してまとめ.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2001 written Level2 DOC; private32-page conversion&quot;,
+      &quot;sha256&quot;: &quot;ca03d715c9ce19ce1c49ce9bacb7412fbbb7288dbffbf27c65db4ad5f79d5fac&quot;,
+      &quot;physical_pages&quot;: [
+        14
+      ],
+      &quot;locator&quot;: &quot;Derivative pages; full written comparison completed&quot;,
+      &quot;reading&quot;: &quot;Noteドラッカー; same 情報してまとめ corruption.&quot;,
+      &quot;lineage&quot;: &quot;Substantial shared defects; not an independent original vote.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;1995–2009.12 N2 question-and-explanation collection,2001 section&quot;,
+      &quot;sha256&quot;: &quot;115e8c098ee3caed702d29a24d2ce0c883c3ad9152e21eee4200fc4e80f2a3fb&quot;,
+      &quot;physical_pages&quot;: [
+        346
+      ],
+      &quot;locator&quot;: &quot;Written region physical346&quot;,
+      &quot;reading&quot;: &quot;Explanation describes compiling skills as communicable information.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Restore と in the malformed 情報して phrase to express organizing the preceding abilities as information for communication; this is the preferred minimal grammatical inference, not recovered original text. 情報化して is a plausible rival. Independently correct note3 ドランカー to the body and DOC referent ドラッカー with high confidence. Key3 remains unchanged.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Full indexed written source comparison including all explanations and keys.&quot;,
+    &quot;Focused crops and bounded language/source checks.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;Exact original wording/mark placement remains unrecovered; related transcriptions may share errors.&quot;
+}</pre></details></div><div class="review-record" id="principal_differences-H25-N2_2001-D006"><div class="review-label">Principal difference · /content · high</div><div class="comparison"><div><h4>Principal</h4><pre>能力を情報してまとめ；注3ドラ<mark class="diff-old">ン</mark>カー</pre></div><div><h4>Editorial</h4><pre>能力を情報<mark class="diff-new">と</mark>してまとめ；注3ドラ<mark class="diff-new">ッ</mark>カー</pre></div></div><p>Restore と in the malformed 情報して phrase to express organizing the preceding abilities as information for communication; this is the preferred minimal grammatical inference, not recovered original text. 情報化して is a plausible rival. Independently correct note3 ドランカー to the body and DOC referent ドラッカー with high confidence. Key3 remains unchanged.</p><span class="principal-repository-source">Principal source (page=334): <code>additional-assets/principals/N2_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-b008 affected field</span><details><summary>Full published record · principal_differences-H25-N2_2001-D006</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;H25-N2_2001-D006&quot;,
+  &quot;unit&quot;: &quot;N2_2001&quot;,
+  &quot;item_id&quot;: &quot;reading-b008&quot;,
+  &quot;field&quot;: &quot;/content&quot;,
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;&lt;p&gt;（5）人が所有している&lt;sup&gt;（注1）&lt;/sup&gt;働く能力を、（①）能力、（②）能力、概念化能力、（③）能力の四種類で説明する考え方があります。&lt;/p&gt;&lt;p&gt;（①）能力とは、ものをつくったり販売したり、サービスをする場合の業務を果たす&lt;sup&gt;（注2）&lt;/sup&gt;能力のことです。（②）能力は、ドラッカー&lt;sup&gt;（注3）&lt;/sup&gt;のいう「他の人間とともに働く能力」のことです。概念化能力とは、物事の論理を言葉に換える能力のことと考えればいいでしょう。そして（③）能力とは、（①）能力、（②）能力、概念化能力を情報としてまとめ、システム&lt;sup&gt;（注4）&lt;/sup&gt;に仕上げて他人に伝えやすく、検証しやすい&lt;sup&gt;（注5）&lt;/sup&gt;ように変える能力のことです。&lt;/p&gt;&lt;p&gt;（森清『会社で働くということ』岩波書店による）&lt;/p&gt;&lt;p&gt;（注1）所有する「しょゆうする」：持つ&lt;/p&gt;&lt;p&gt;（注2）業務を果たす「ぎょうむをはたす」：仕事をきちんとやる&lt;/p&gt;&lt;p&gt;（注3）ドラッカー：アメリカの経営学者&lt;/p&gt;&lt;p&gt;（注4）システム：組織、体系&lt;/p&gt;&lt;p&gt;（注5）検証する「けんしょうする」：実際に調べて確認する&lt;/p&gt;&quot;
+  },
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;1995–2009.12 N2 question-and-explanation collection,2001 section&quot;,
+    &quot;sha256&quot;: &quot;115e8c098ee3caed702d29a24d2ce0c883c3ad9152e21eee4200fc4e80f2a3fb&quot;,
+    &quot;physical_pages&quot;: [
+      334
+    ],
+    &quot;locator&quot;: &quot;reading-b008 affected field&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;能力を情報してまとめ；注3ドランカー&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;能力を情報としてまとめ；注3ドラッカー&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;conjectural_repair&quot;,
+  &quot;rationale&quot;: &quot;Restore と in the malformed 情報して phrase to express organizing the preceding abilities as information for communication; this is the preferred minimal grammatical inference, not recovered original text. 情報化して is a plausible rival. Independently correct note3 ドランカー to the body and DOC referent ドラッカー with high confidence. Key3 remains unchanged.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;H25-N2_2001-P006&quot;
+  ]
+}</pre></details></div></section><section class="review-group" id="review-reading-q021" data-kinds="difference provisional_fix"><div class="review-group-heading"><h2>reading-q021</h2><a href="../papers/N2_2001.html#reading-q021">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">いったん仕事を引き受けた＿＿＿、途中でやめることはできない。<ol><li>わけは</li><li>以上は</li><li>はずは</li><li>しだいは</li></ol><p>Editorial key: 2</p></div></details><div class="review-record" id="unresolved_cases-H25-N2_2001-P007"><div class="review-label">Provisional fix · /stem · medium</div><div class="comparison"><div><h4>Before</h4><pre>いったん仕事を引き<mark class="diff-old">付</mark>けた＿＿＿、途中でやめることはできない。</pre></div><div><h4>Editorial</h4><pre>いったん仕事を引き<mark class="diff-new">受</mark>けた＿＿＿、途中でやめることはできない。</pre></div></div><p>The obligation not to abandon a job after undertaking it calls for 引き受けた. The principal explanation means accepting work, and the official MLC example uses precisely this sentence with 引き受けた. Local DOC and jlpt.info repeat 引き付けた, so the historical form remains provisional.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>Exact original wording/mark placement remains unrecovered; related transcriptions may share errors.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Complete source field and dependent questions reviewed.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=334): <code>additional-assets/principals/N2_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Written region physical334<p>引き付けた</p></li><li><span class="principal-repository-source">Principal source (page=14): <code>additional-assets/principals/N2_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Derivative pages; full written comparison completed<p>引き付けた</p></li><li><span class="principal-repository-source">Principal source (page=347): <code>additional-assets/principals/N2_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Written region physical347<p>Explanation describes accepting a job.</p></li><li><a href="https://www.mlcjapanese.co.jp/Download/N2_Grammar.pdf" target="_blank" rel="noopener">Meguro Language Center own grammar compilation</a> · Indexed search excerpt for いったん仕事; full PDF fetch timed out; Direct teacher-authored example supports language; no exact original JLPT custody.<p>いったん仕事を引き受けた以上は、途中でやめることはできない。</p></li></ul><details><summary>Full published record · unresolved_cases-H25-N2_2001-P007</summary><pre>{
+  &quot;case_id&quot;: &quot;H25-N2_2001-P007&quot;,
+  &quot;unit&quot;: &quot;N2_2001&quot;,
+  &quot;item_id&quot;: &quot;reading-q021&quot;,
+  &quot;field&quot;: &quot;/stem&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;source_comparison&quot;,
+  &quot;before&quot;: &quot;いったん仕事を引き付けた＿＿＿、途中でやめることはできない。&quot;,
+  &quot;current_value&quot;: &quot;いったん仕事を引き受けた＿＿＿、途中でやめることはできない。&quot;,
+  &quot;context&quot;: &quot;Complete source field and dependent questions reviewed.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;いったん仕事を引き付けた＿＿＿、途中でやめることはできない。&quot;,
+      &quot;assessment&quot;: &quot;Literal principal field.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;いったん仕事を引き受けた＿＿＿、途中でやめることはできない。&quot;,
+      &quot;assessment&quot;: &quot;Preferred supported reconstruction; not authenticated original.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;1995–2009.12 N2 question-and-explanation collection,2001 section&quot;,
+      &quot;sha256&quot;: &quot;115e8c098ee3caed702d29a24d2ce0c883c3ad9152e21eee4200fc4e80f2a3fb&quot;,
+      &quot;physical_pages&quot;: [
+        334
+      ],
+      &quot;locator&quot;: &quot;Written region physical334&quot;,
+      &quot;reading&quot;: &quot;引き付けた&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2001 written Level2 DOC; private32-page conversion&quot;,
+      &quot;sha256&quot;: &quot;ca03d715c9ce19ce1c49ce9bacb7412fbbb7288dbffbf27c65db4ad5f79d5fac&quot;,
+      &quot;physical_pages&quot;: [
+        14
+      ],
+      &quot;locator&quot;: &quot;Derivative pages; full written comparison completed&quot;,
+      &quot;reading&quot;: &quot;引き付けた&quot;,
+      &quot;lineage&quot;: &quot;Substantial shared defects; not an independent original vote.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;1995–2009.12 N2 question-and-explanation collection,2001 section&quot;,
+      &quot;sha256&quot;: &quot;115e8c098ee3caed702d29a24d2ce0c883c3ad9152e21eee4200fc4e80f2a3fb&quot;,
+      &quot;physical_pages&quot;: [
+        347
+      ],
+      &quot;locator&quot;: &quot;Written region physical347&quot;,
+      &quot;reading&quot;: &quot;Explanation describes accepting a job.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;Meguro Language Center own grammar compilation&quot;,
+      &quot;url&quot;: &quot;https://www.mlcjapanese.co.jp/Download/N2_Grammar.pdf&quot;,
+      &quot;locator&quot;: &quot;Indexed search excerpt for いったん仕事; full PDF fetch timed out; Direct teacher-authored example supports language; no exact original JLPT custody.&quot;,
+      &quot;reading&quot;: &quot;いったん仕事を引き受けた以上は、途中でやめることはできない。&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;The obligation not to abandon a job after undertaking it calls for 引き受けた. The principal explanation means accepting work, and the official MLC example uses precisely this sentence with 引き受けた. Local DOC and jlpt.info repeat 引き付けた, so the historical form remains provisional.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Full indexed written source comparison including all explanations and keys.&quot;,
+    &quot;Focused crops and bounded language/source checks.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;Exact original wording/mark placement remains unrecovered; related transcriptions may share errors.&quot;
+}</pre></details></div><div class="review-record" id="principal_differences-H25-N2_2001-D007"><div class="review-label">Principal difference · /stem · high</div><div class="comparison"><div><h4>Principal</h4><pre>引き<mark class="diff-old">付</mark>けた</pre></div><div><h4>Editorial</h4><pre>引き<mark class="diff-new">受</mark>けた</pre></div></div><p>The obligation not to abandon a job after undertaking it calls for 引き受けた. The principal explanation means accepting work, and the official MLC example uses precisely this sentence with 引き受けた. Local DOC and jlpt.info repeat 引き付けた, so the historical form remains provisional.</p><span class="principal-repository-source">Principal source (page=334): <code>additional-assets/principals/N2_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-q021 affected field</span><details><summary>Full published record · principal_differences-H25-N2_2001-D007</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;H25-N2_2001-D007&quot;,
+  &quot;unit&quot;: &quot;N2_2001&quot;,
+  &quot;item_id&quot;: &quot;reading-q021&quot;,
+  &quot;field&quot;: &quot;/stem&quot;,
+  &quot;current_value&quot;: &quot;いったん仕事を引き受けた＿＿＿、途中でやめることはできない。&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;1995–2009.12 N2 question-and-explanation collection,2001 section&quot;,
+    &quot;sha256&quot;: &quot;115e8c098ee3caed702d29a24d2ce0c883c3ad9152e21eee4200fc4e80f2a3fb&quot;,
+    &quot;physical_pages&quot;: [
+      334
+    ],
+    &quot;locator&quot;: &quot;reading-q021 affected field&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;引き付けた&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;引き受けた&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;conjectural_repair&quot;,
+  &quot;rationale&quot;: &quot;The obligation not to abandon a job after undertaking it calls for 引き受けた. The principal explanation means accepting work, and the official MLC example uses precisely this sentence with 引き受けた. Local DOC and jlpt.info repeat 引き付けた, so the historical form remains provisional.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;H25-N2_2001-P007&quot;
+  ]
+}</pre></details></div></section><section class="review-group" id="review-reading-q027" data-kinds="unresolved"><div class="review-group-heading"><h2>reading-q027</h2><a href="../papers/N2_2001.html#reading-q027">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">物を買う時は、値段が安ければいい＿＿＿、商品の質を第一に考えるべきだ。<ol><li>というもので</li><li>としたもので</li><li>というものではなく</li><li>としたものではなく</li></ol><p>Editorial key: 3</p></div></details><div class="review-record" id="unresolved_cases-H25-N2_2001-reading27-verb"><div class="review-label">Unresolved · /stem · low</div><div class="comparison"><div><h4>Alternative</h4><pre>物を買う時は</pre></div><div><h4>Editorial</h4><pre>物を買う時は<mark class="diff-new">、値段が安ければいい＿＿＿、商品の質を第一に考えるべきだ。</mark></pre></div></div><p>Both readings are meaningful and preserve key3. Prefer clear principal with disclosed disagreement.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>Original 買う/売る unresolved.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">General advice to prioritize quality over price.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=334): <code>additional-assets/principals/N2_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Written region physical334,347<p>買う; Chinese explanation buys.</p></li><li><span class="principal-repository-source">Principal source (page=14): <code>additional-assets/principals/N2_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Derivative pages; full written comparison completed<p>売る</p></li></ul><details><summary>Full published record · unresolved_cases-H25-N2_2001-reading27-verb</summary><pre>{
+  &quot;case_id&quot;: &quot;H25-N2_2001-reading27-verb&quot;,
+  &quot;unit&quot;: &quot;N2_2001&quot;,
+  &quot;item_id&quot;: &quot;reading-q027&quot;,
+  &quot;field&quot;: &quot;/stem&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;low&quot;,
+  &quot;decision_basis&quot;: &quot;source_comparison&quot;,
+  &quot;current_value&quot;: &quot;物を買う時は、値段が安ければいい＿＿＿、商品の質を第一に考えるべきだ。&quot;,
+  &quot;context&quot;: &quot;General advice to prioritize quality over price.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;物を買う時は&quot;,
+      &quot;assessment&quot;: &quot;Retained principal; coherent consumer advice and principal explanation says buy.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;物を売る時は&quot;,
+      &quot;assessment&quot;: &quot;DOC, jlpt.info and MLC example variant; coherent seller advice.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;1995–2009.12 N2 question-and-explanation collection,2001 section&quot;,
+      &quot;sha256&quot;: &quot;115e8c098ee3caed702d29a24d2ce0c883c3ad9152e21eee4200fc4e80f2a3fb&quot;,
+      &quot;physical_pages&quot;: [
+        334,
+        347
+      ],
+      &quot;locator&quot;: &quot;Written region physical334,347&quot;,
+      &quot;reading&quot;: &quot;買う; Chinese explanation buys.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2001 written Level2 DOC; private32-page conversion&quot;,
+      &quot;sha256&quot;: &quot;ca03d715c9ce19ce1c49ce9bacb7412fbbb7288dbffbf27c65db4ad5f79d5fac&quot;,
+      &quot;physical_pages&quot;: [
+        14
+      ],
+      &quot;locator&quot;: &quot;Derivative pages; full written comparison completed&quot;,
+      &quot;reading&quot;: &quot;売る&quot;,
+      &quot;lineage&quot;: &quot;Substantial shared defects; not an independent original vote.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Both readings are meaningful and preserve key3. Prefer clear principal with disclosed disagreement.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Complete principal and indexed written DOC/key comparison.&quot;,
+    &quot;Focused language review and bounded external checks where material.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;Original 買う/売る unresolved.&quot;
+}</pre></details></div></section></div></main><footer class="site-footer"><span class="developer-only">Developer mode</span></footer><div id="toast" role="status" class="toast" hidden></div><script id="page-data" type="application/json">{"review":true}</script><script id="theme-data" src="../assets/theme-data.js?v=f06ad9e2434b" defer></script><script src="../assets/app.js?v=0d75deb05ae3" defer></script></body></html>

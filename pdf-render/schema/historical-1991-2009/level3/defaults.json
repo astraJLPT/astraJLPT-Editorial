@@ -1,0 +1,198 @@
+{
+  "profile_schema_version": "1.0",
+  "profile_id": "historical-1991-2009-level3",
+  "revision": 38,
+  "applicability": {
+    "exam_generation": "historical-1991-2009",
+    "historical_level": "3級"
+  },
+  "exam_defaults": {
+    "templates": {}
+  },
+  "renderer_conventions": {
+    "version": "handoff27-old-level3-examples-and-targets",
+    "margins_mm": {
+      "left": 20,
+      "right": 20,
+      "top": 22,
+      "bottom": 27
+    },
+    "body_pt": 13,
+    "baseline_pt": 24.0,
+    "question_gap_pt": 15,
+    "notice_body_pt": 11.1,
+    "notice_baseline_pt": 17.5,
+    "note_pt": 11.0,
+    "note_baseline_pt": 20.5,
+    "fonts": {
+      "body": "fonts_official/n45/1738154924_A-OTF-KyokaICAPro-Regular.otf",
+      "bold": "fonts_official/1738154915_A-OTF-KyokaICAPro-Medium.otf",
+      "heading": "fonts_official/A-OTF-GothicMB101Pr6N-Bold.otf",
+      "footer_numerals": "TeX Gyre Heros",
+      "footer_dashes": "fonts_official/n123/1738155121_A-OTF-RyuminPr5-Regular.otf"
+    },
+    "examples": {
+      "star_solution_before_pt": 26,
+      "star_solution_after_pt": 18,
+      "star_box_padding_pt": 16.5,
+      "ordinary_padding_pt": 0,
+      "star_before_pt": 24,
+      "star_box_width_fraction": 0.88,
+      "star_box_align": "center",
+      "star_row_baseline_pt": 17.62,
+      "star_row_sep_pt": 0.8,
+      "answer_baseline_pt": 18.8,
+      "answer_colsep_pt": 6,
+      "body_pt": 13,
+      "baseline_pt": 24.0,
+      "word_space_em": 0.8,
+      "stem_indent_em": 1.8,
+      "choice_indent_em": 3,
+      "after_pt": 12,
+      "answer_before_pt": 10,
+      "star_frame_before_pt": 9.878,
+      "bubble_width_em": 0.74393,
+      "bubble_height_em": 0.95489,
+      "bubble_glyph_size_em": 1,
+      "ordinary_top_padding_pt": 9,
+      "ordinary_choices_before_pt": 6,
+      "ordinary_word_space_em": 1,
+      "ordinary_word_groups": true,
+      "ordinary_prompt_hanging": true
+    },
+    "evidence": "H19 cross-paper observations and readable compromise values: pdf-render/evidence/handoff19/DEFAULTS_MATRIX.md. Exact original face and scanner geometry are not asserted.",
+    "usage_question_gap_pt": 12.5,
+    "option_baseline_pt": 22.0,
+    "question_label_pt": 12.5,
+    "task_overrides": {
+      "vocabulary": {
+        "question_gap_pt": 15
+      },
+      "sentence_composition": {
+        "heading_pt": 12.0,
+        "question_gap_pt": 16,
+        "word_space_em": 0.25
+      },
+      "reading": {
+        "passage_body_pt": 13,
+        "question_gap_pt": 15,
+        "note_before_pt": 22,
+        "passage_after_pt": 24,
+        "heading_after_pt": 13,
+        "heading_after_labeled_pt": 18,
+        "word_space_em": 0.8,
+        "word_space_policy": "preserve"
+      },
+      "reading_test": {
+        "word_space_em": 0.7
+      },
+      "orthography_test": {
+        "word_space_em": 0.7
+      }
+    },
+    "word_space_em": 0.8,
+    "heading_pt": 12,
+    "heading_baseline_pt": 24.0,
+    "heading_word_space_em": 0.8,
+    "heading_label_gap_em": 1.0,
+    "email_paragraph_skip_pt": 24.0,
+    "slot_width_em": 2.9,
+    "passage_body_pt": 13,
+    "passage_baseline_pt": 24.0,
+    "cloze_before_pt": 17,
+    "question_label_padding_pt": 1.8,
+    "question_indent_em": 2.5,
+    "option_indent_em": 1.7,
+    "option_label_gap_em": 1.2,
+    "option_grid_width_fraction": 0.94,
+    "cloze_box": {
+      "width_pt": 33.3,
+      "height_pt": 17.5,
+      "font_pt": 10
+    },
+    "question_box": {
+      "width_pt": 17.1474,
+      "height_pt": 11.9614,
+      "rule_pt": 0.4
+    },
+    "question_continuation_indent_em": 1.5,
+    "composition_before_pt": 16,
+    "table_body_pt": 12.0,
+    "table_baseline_pt": 17.0,
+    "running_pt": 9,
+    "mixed_script_gap_em": 0.12,
+    "blank_side_space_em": 0.45,
+    "blank_inner_width_em": 2.8,
+    "reference_drop_ex": 1.5,
+    "blank_digit_side_space_em": 0.45,
+    "reading_notes_to_question_pt": 26,
+    "memo_typography": {
+      "body_pt": 11.3,
+      "baseline_pt": 21.5
+    },
+    "font_roles": {
+      "body_latin": {
+        "source": "body",
+        "selection_status": "H19 textbook Latin substitute; source A/B and numerals compared, exact identity unproven"
+      },
+      "choice_numeral": {
+        "source": "body",
+        "features": [
+          "fwid"
+        ],
+        "horizontal_scale": 0.82
+      },
+      "answer_bubble_numeral": {
+        "source": "body",
+        "features": [
+          "fwid"
+        ],
+        "horizontal_scale": 0.82
+      },
+      "option_content_numeral": {
+        "path": "fonts_official/n45/1738154924_A-OTF-KyokaICAPro-Regular.otf",
+        "sha256": "1bca3052abd0e35599b8d9e466ef134c1fc90a768cb88a875a425d0b4d794c84",
+        "features": [],
+        "horizontal_scale": 1,
+        "bold_same_face": true,
+        "selection_status": "H19 textbook option-content numerals, distinct from the narrow choice labels"
+      }
+    },
+    "historical_component_metrics": {
+      "option_label_width_em": 1.3,
+      "target_group_before_pt": 12,
+      "target_group_after_pt": 14,
+      "target_prose_after_pt": 16,
+      "example_target_before_pt": 6,
+      "example_target_after_pt": 6
+    },
+    "heading_label_pt": 12.0,
+    "historical_typography": {
+      "inline_box_one_em": 1.5,
+      "inline_box_two_em": 1.8,
+      "question_digit_gap_em": 0.28,
+      "slot_inner_width_em": 3.5,
+      "slot_outer_gap_em": 0.28,
+      "boxed_digit_center": 1,
+      "parenthesized_indent_em": 2.5
+    },
+    "passage_word_groups": true,
+    "question_word_groups": true,
+    "passage_word_space_em": 1,
+    "passage_punctuation_after_em": 0.65,
+    "dialogue_passage_after_pt": 10,
+    "historical_target_rows": {
+      "target_width_em": 8.5,
+      "label_width_em": 1.8,
+      "left_indent_em": 1.0,
+      "row_gap_pt": 1,
+      "choice_row_gap_pt": 1
+    }
+  },
+  "evidence_note": "Independent old Level3 profile. Supported pilot papers and role limitations are documented in the H19 matrix. Other historical years require admission and evidence; no modern equivalence, timing, scoring or worked examples are inferred. H26 selects independent role metrics from the source/native comparisons recorded in pdf-render/evidence/handoff26/PROFILE_SELECTION.json. These are editorial substitutes, not claims of original font identity. Other levels and Modern remain independent. H27 formal four-level selection: pdf-render/evidence/handoff27/defaults/four-level-migration-01/DECISIONS.json. Native and source controls determine roles/date families; final all-owner acceptance is separate. H27 revision9 example/target families and explicit paraphrase consumption: pdf-render/evidence/handoff27/defaults/example-family-migration-02/DECISIONS.json. Final affected-owner native review remains a release gate.",
+  "shared_defaults": {
+    "path": "../shared/defaults.json",
+    "shared_id": "jlpt-historical-written",
+    "revision": 38
+  }
+}

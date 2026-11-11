@@ -1,0 +1,70 @@
+{
+  "contract": "historical-artwork-1.0",
+  "id": "H27-N2_2002-reading-q021-03",
+  "kind": "employment_intent_option",
+  "unit": "N2_2002",
+  "item_id": "reading-q021",
+  "source": {
+    "source_path": "src/日语JLPT真题1992～2025.12（及时转存，避免丢失）/渠道一/日语N2真题/1991年-2009年/1995-2009.pdf",
+    "source_sha256": "115e8c098ee3caed702d29a24d2ce0c883c3ad9152e21eee4200fc4e80f2a3fb",
+    "physical_page": 299
+  },
+  "raw_crop": {
+    "path": "preprocess/assets/handoff27-earlier-statistical-05/N2_2002-reading-q021-03-raw.png",
+    "sha256": "b87e8575042d640a3ebeaef9ec81205b621c17cbb1a6947c8896aae48f8ae94e"
+  },
+  "selection_note": "Native vector/live-text reconstruction after direct individual source and canonical image review. Source numbering remains supplied by the existing option renderer.",
+  "limits": "Original canonical bytes remain unchanged and recoverable. Printed numeric labels are literal; measured unlabelled geometry is approximate. N1/N2 retyped appearance is not original typography evidence; N4 UARS establishes the graphic content but not exact native font identity.",
+  "data": {
+    "option": 3,
+    "coordinate_status": "approximate_pixel_trace_no_invented_segment_value_labels",
+    "rows": [
+      "男性就職前",
+      "男性就職後半年",
+      "女性就職前",
+      "女性就職後半年"
+    ],
+    "categories": [
+      "定年派",
+      "転職派",
+      "その他"
+    ],
+    "patterns": [
+      "north west lines",
+      "black",
+      "dots"
+    ],
+    "axis": {
+      "minimum": 0,
+      "maximum": 100,
+      "tick": 10,
+      "unit": "%"
+    },
+    "trace_witness": {
+      "image_sha256": "8b912d7dbf9516ca920c922c236f1ce3095292c9efe6250bdd92008ef02511ca",
+      "axis": [
+        308,
+        1243
+      ],
+      "breaks": [
+        [
+          721,
+          994
+        ],
+        [
+          558,
+          1042
+        ],
+        [
+          377,
+          739
+        ],
+        [
+          489,
+          645
+        ]
+      ]
+    },
+    "ruby_profile": "N2_2002"
+  }
+}

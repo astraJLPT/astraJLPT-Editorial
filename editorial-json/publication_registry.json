@@ -1,0 +1,1942 @@
+{
+  "format": "publication_registry_v1",
+  "run_id": "2026-10-09_official_workbook_cleanup",
+  "scope": "Verified complete workbook products; partial/shared-item exam relationships are retained separately.",
+  "entries": [
+    {
+      "publication_id": "JLPT_WORKBOOK_2012_N2",
+      "level": "N2",
+      "publication_year": 2012,
+      "content_kind": "workbook",
+      "content_unit": "N2_workbook_2012",
+      "canonical_content_revision": {
+        "path": "preprocess/N2/N2_07_2011/editorial_N2_07_2011.json",
+        "sha256": "8817f4f03819b901e43013c0c5e2297c79b844d922d687cb95a56b4d8695af01"
+      },
+      "source_catalogue": {
+        "path": "src/OfficialWorkbooks/index.json",
+        "sha256": "e8c032f24e7f3c0129e15065596a381a52ffcc84c20bc005664dd3e5cbd600bf"
+      },
+      "publication_sources": [
+        {
+          "path": "src/OfficialWorkbooks/2012/N2/N2V.pdf",
+          "sha256": "7e037f5e7380bc0db46e4b064785da44b81604b77e63c5a2a93b083ee52f3855",
+          "role": "vocabulary_questions",
+          "pdf_pages": 8
+        },
+        {
+          "path": "src/OfficialWorkbooks/2012/N2/N2G.pdf",
+          "sha256": "54e8adda3364c0aa3f9c015c932abeb0ad2511d7d98a4d60134befdfb932b213",
+          "role": "grammar_questions",
+          "pdf_pages": 7
+        },
+        {
+          "path": "src/OfficialWorkbooks/2012/N2/N2R.pdf",
+          "sha256": "c8a56a78a7996c426ffff0cf438162c1af1917a7d6927bce624c69c1e573e9fe",
+          "role": "reading_questions",
+          "pdf_pages": 18
+        },
+        {
+          "path": "src/OfficialWorkbooks/2012/N2/N2answer.pdf",
+          "sha256": "788125e58ad0f1a2e9e8ff5d1452247b9e5799c1ddf10ea55073150647c038a2",
+          "role": "answer_key",
+          "pdf_pages": 2
+        }
+      ],
+      "contributing_units": [
+        "N2_workbook_2012"
+      ],
+      "legacy_aliases": [],
+      "mapping": {
+        "path": "preprocess/N2/N2_07_2011/publication_mapping_N2_07_2011.json",
+        "sha256": "4b6a7b94533f11d09e574b25609481efff1b53da8f55414892a5f5cd3ac966b7"
+      },
+      "history": [
+        {
+          "unit": "N2_07_2011",
+          "baseline_files": {
+            "preprocess/N2/N2_07_2011/audit_work/source_cleanup_20261009/before/editorial_N2_07_2011.json": "f43b44e7dab31b9fa8ab8354e533c59722db49cc13c076b9ef9760a89fe81a4e",
+            "preprocess/N2/N2_07_2011/audit_work/source_cleanup_20261009/before/fixlog_N2_07_2011.jsonl": "eb11f56b01f1fd43f69409224ce211a3c721c4c45eafb0d53548078d0da13959",
+            "preprocess/N2/N2_07_2011/audit_work/source_cleanup_20261009/before/principal_differences_N2_07_2011.jsonl": "10ce2a7681bee391dcc3fd50882288c28a83861667dec50c1e917e7dbddee361",
+            "preprocess/N2/N2_07_2011/audit_work/source_cleanup_20261009/before/unresolved_cases_N2_07_2011.jsonl": "ceb177d2b86eed02c70afd66907d88c3a4184164aca5995ce06ac8b3243be7db",
+            "preprocess/N2/N2_07_2011/audit_work/source_cleanup_20261009/before/editorial_audit.md": "ac6ae1d6e9019333ac2d5f24eb613b839b7bd48c2ca6cd5f001604d829d2c6b1"
+          },
+          "status": "maintained_owner"
+        }
+      ],
+      "owner_reason": "Existing sole maintained unit for this verified workbook publication.",
+      "practice_policy": "Preserve the maintained owner’s existing weights and categories; no scoring redesign or official scaled-score claim.",
+      "scored_questions": 75,
+      "source_review_status": "complete_written_issuer_principal_and_bounded_2009_reference_pending_user_approval",
+      "approval_status": "proposals_only_no_user_approval_inferred",
+      "title": "Official Practice Workbook",
+      "h28_current_binding": {
+        "current_editorial_revision": {
+          "path": "preprocess/N2/N2_07_2011/editorial_N2_07_2011.json",
+          "sha256": "f53b2ac37d867871862158cf873663af9fbd1057a1b80898036c7c872fd9c074",
+          "bytes": 169002
+        },
+        "launch_editorial": {
+          "path": "pdf-render/evidence/handoff28/baseline/files/preprocess/N2/N2_07_2011/editorial_N2_07_2011.json",
+          "sha256": "f53b2ac37d867871862158cf873663af9fbd1057a1b80898036c7c872fd9c074",
+          "bytes": 169002
+        },
+        "historical_registry": {
+          "path": "pdf-render/evidence/handoff28/baseline/files/preprocess/publication_registry.json",
+          "sha256": "82cd481b3cf8181011df37242cac501dab9e24521a891784a126b6b2634d02fc",
+          "bytes": 22652
+        },
+        "basis": "At H28 launch, the v3 canonical file already differed from the 2026-10-09 registry revision. Preserve that historical revision and all frozen mappings/aliases; bind the unchanged launch v3 model for current validation."
+      },
+      "release_content_binding": {
+        "path": "editorial-json/N2/N2_workbook_2012/editorial_N2_workbook_2012.json",
+        "sha256": "237ea2bb55e0c627edf1c8f2952bd9edfdf4f21acc8debdf5143fbf6ec37578a",
+        "unit_aliases": "editorial-json/unit_aliases.json",
+        "note": "Earlier revision bindings and publication mappings below are frozen historical evidence."
+      }
+    },
+    {
+      "publication_id": "JLPT_WORKBOOK_2012_N4",
+      "level": "N4",
+      "publication_year": 2012,
+      "content_kind": "workbook",
+      "content_unit": "N4_workbook_2012",
+      "canonical_content_revision": {
+        "path": "preprocess/N4/N4_07_2012/editorial_N4_07_2012.json",
+        "sha256": "16ecbd248330d0cc4f64f25a08a3890c7d0e23594f8729b3aa8df261ace42500"
+      },
+      "source_catalogue": {
+        "path": "src/OfficialWorkbooks/index.json",
+        "sha256": "e8c032f24e7f3c0129e15065596a381a52ffcc84c20bc005664dd3e5cbd600bf"
+      },
+      "publication_sources": [
+        {
+          "path": "src/OfficialWorkbooks/2012/N4/N4V.pdf",
+          "sha256": "57f23ae9022158d7ab19cd73d5034c0b4569381933856032f38bc25d9af3b10f",
+          "role": "vocabulary_questions",
+          "pdf_pages": 11
+        },
+        {
+          "path": "src/OfficialWorkbooks/2012/N4/N4G.pdf",
+          "sha256": "26a1d87cd5292a64ed121d7db20fdd4ba1479eb70682e1f8e0d14f471ad664c3",
+          "role": "grammar_questions",
+          "pdf_pages": 9
+        },
+        {
+          "path": "src/OfficialWorkbooks/2012/N4/N4R.pdf",
+          "sha256": "458d54165382fc24f81ceb9591e689e3a39316f3fe6684eef2a731a46f457c97",
+          "role": "reading_questions",
+          "pdf_pages": 8
+        },
+        {
+          "path": "src/OfficialWorkbooks/2012/N4/N4answer.pdf",
+          "sha256": "54e544eea090e89bc824b516dc5b99d9d102c94514342dde0a2b07979569655c",
+          "role": "answer_key",
+          "pdf_pages": 2
+        }
+      ],
+      "contributing_units": [
+        "N4_workbook_2012",
+        "N4_07_2017"
+      ],
+      "legacy_aliases": [
+        "N4_07_2017"
+      ],
+      "mapping": {
+        "path": "preprocess/N4/N4_07_2012/publication_mapping_N4_07_2012.json",
+        "sha256": "d065a7593748959cce4606c575eeb6fc4ff07cd8bfb607d50f7576a14f8a6626"
+      },
+      "history": [
+        {
+          "unit": "N4_07_2012",
+          "baseline_files": {
+            "preprocess/N4/N4_07_2012/audit_work/source_cleanup_20261009/before/editorial_N4_07_2012.json": "c3fd4f7a2134345aa4aa37336449334340fdf76d29ff2a171c178560a7aec2ff",
+            "preprocess/N4/N4_07_2012/audit_work/source_cleanup_20261009/before/fixlog_N4_07_2012.jsonl": "73ef0dbaad8d086e9de16dcd039a5a3743d3c83162adb8f26ea8c5e199c053cd",
+            "preprocess/N4/N4_07_2012/audit_work/source_cleanup_20261009/before/principal_differences_N4_07_2012.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "preprocess/N4/N4_07_2012/audit_work/source_cleanup_20261009/before/unresolved_cases_N4_07_2012.jsonl": "47bd3bbfac11ff3f563134d91c499b445eb9de239ee429d3a108d35c8c6cc1e7",
+            "preprocess/N4/N4_07_2012/audit_work/source_cleanup_20261009/before/editorial_audit.md": "6941ec73294101b9265fd9df41d28502decf24cbc1a2cda55dd0b5b3e1d7b222"
+          },
+          "status": "maintained_owner"
+        },
+        {
+          "unit": "N4_07_2017",
+          "baseline_files": {
+            "preprocess/N4/N4_07_2017/audit_work/source_cleanup_20261009/before/editorial_N4_07_2017.json": "6f66769791d7d903cf938ffcf4589bc9d3c360219179d9210ba6491aa0a1d89d",
+            "preprocess/N4/N4_07_2017/audit_work/source_cleanup_20261009/before/fixlog_N4_07_2017.jsonl": "e89565cca84df5e118d0059b34472a6b50431cd6bca00739c190cccb01d8b06a",
+            "preprocess/N4/N4_07_2017/audit_work/source_cleanup_20261009/before/principal_differences_N4_07_2017.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "preprocess/N4/N4_07_2017/audit_work/source_cleanup_20261009/before/unresolved_cases_N4_07_2017.jsonl": "2ef6a7c803b1ffa45c8a7146a4d585abed4c592c26f7791eee73f2fd92c20fba",
+            "preprocess/N4/N4_07_2017/audit_work/source_cleanup_20261009/before/editorial_audit.md": "621f8d8d3853115b910aa78d81d15da215bbb53971caef9f440b14ea509fc8d9"
+          },
+          "status": "frozen_historical_alias",
+          "frozen_live_files": {
+            "preprocess/N4/N4_07_2017/editorial_N4_07_2017.json": "6f66769791d7d903cf938ffcf4589bc9d3c360219179d9210ba6491aa0a1d89d",
+            "preprocess/N4/N4_07_2017/fixlog_N4_07_2017.jsonl": "e89565cca84df5e118d0059b34472a6b50431cd6bca00739c190cccb01d8b06a",
+            "preprocess/N4/N4_07_2017/principal_differences_N4_07_2017.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "preprocess/N4/N4_07_2017/unresolved_cases_N4_07_2017.jsonl": "2ef6a7c803b1ffa45c8a7146a4d585abed4c592c26f7791eee73f2fd92c20fba",
+            "preprocess/N4/N4_07_2017/editorial_audit.md": "621f8d8d3853115b910aa78d81d15da215bbb53971caef9f440b14ea509fc8d9",
+            "preprocess/N4/N4_07_2017/index_N4_07_2017.json": "218cbed2a18dec17776e39eb0e8d8ff85fc3477a13d2e6f780cd407fd94973cb"
+          }
+        }
+      ],
+      "owner_reason": "Promote the established edition-oriented owner, preserving stable IDs, complete examples/contexts and full audited explanations. Individual differences are reconciled from source evidence.",
+      "practice_policy": "Preserve the maintained owner’s existing weights and categories; no scoring redesign or official scaled-score claim.",
+      "scored_questions": 69,
+      "source_review_status": "content_and_principal_comparison_complete_pending_final_build_checks",
+      "approval_status": "proposals_only_no_user_approval_inferred",
+      "dedupe_evidence": {
+        "historical_diff_path": "preprocess/audit_runs/2026-10-08_dead_N3_2010_html_2010/workbook_diff.json",
+        "historical_input_sha256": {
+          "N4_07_2017": "6f66769791d7d903cf938ffcf4589bc9d3c360219179d9210ba6491aa0a1d89d",
+          "N4_07_2012": "c3fd4f7a2134345aa4aa37336449334340fdf76d29ff2a171c178560a7aec2ff"
+        },
+        "adjudication_path": "preprocess/N4/N4_07_2012/audit_work/source_cleanup_20261009/dedupe_field_adjudication.json",
+        "adjudicated_content_fields": 233,
+        "key_changes": 0
+      },
+      "title": "Official Practice Workbook",
+      "h28_current_binding": {
+        "current_editorial_revision": {
+          "path": "preprocess/N4/N4_07_2012/editorial_N4_07_2012.json",
+          "sha256": "070d5f347179d880331366952331cb2f935c42cd6168066da629a8594e92c91e",
+          "bytes": 564343
+        },
+        "launch_editorial": {
+          "path": "pdf-render/evidence/handoff28/baseline/files/preprocess/N4/N4_07_2012/editorial_N4_07_2012.json",
+          "sha256": "070d5f347179d880331366952331cb2f935c42cd6168066da629a8594e92c91e",
+          "bytes": 564343
+        },
+        "historical_registry": {
+          "path": "pdf-render/evidence/handoff28/baseline/files/preprocess/publication_registry.json",
+          "sha256": "82cd481b3cf8181011df37242cac501dab9e24521a891784a126b6b2634d02fc",
+          "bytes": 22652
+        },
+        "basis": "At H28 launch, the v3 canonical file already differed from the 2026-10-09 registry revision. Preserve that historical revision and all frozen mappings/aliases; bind the unchanged launch v3 model for current validation."
+      },
+      "release_content_binding": {
+        "path": "editorial-json/N4/N4_workbook_2012/editorial_N4_workbook_2012.json",
+        "sha256": "768016757e250a72a39d405716acd1883115cd62f219e922d9a1a294f03d7fa9",
+        "unit_aliases": "editorial-json/unit_aliases.json",
+        "note": "Earlier revision bindings and publication mappings below are frozen historical evidence."
+      }
+    },
+    {
+      "publication_id": "JLPT_WORKBOOK_2018_N4",
+      "level": "N4",
+      "publication_year": 2018,
+      "content_kind": "workbook",
+      "content_unit": "N4_workbook_2018",
+      "canonical_content_revision": {
+        "path": "preprocess/N4/N4_07_2018/editorial_N4_07_2018.json",
+        "sha256": "ad54de2effd668177677daf68b69f2aea695896520f670cc3013ac5b57217e54"
+      },
+      "source_catalogue": {
+        "path": "src/OfficialWorkbooks/index.json",
+        "sha256": "e8c032f24e7f3c0129e15065596a381a52ffcc84c20bc005664dd3e5cbd600bf"
+      },
+      "publication_sources": [
+        {
+          "path": "src/OfficialWorkbooks/2018/N4/N4V.pdf",
+          "sha256": "acda221ce269e6e60674ee9f340833eb18cf06a95425e97b0f3feed8fa5a66ec",
+          "role": "vocabulary_questions",
+          "pdf_pages": 11
+        },
+        {
+          "path": "src/OfficialWorkbooks/2018/N4/N4G.pdf",
+          "sha256": "da3bec0d70fef11aa9291b12d56a964b99064c77d1bac4dbe9f17d01c92f08a7",
+          "role": "grammar_questions",
+          "pdf_pages": 9
+        },
+        {
+          "path": "src/OfficialWorkbooks/2018/N4/N4R.pdf",
+          "sha256": "9cbfae13f485f6cb9cbae58dab79efa9f840377016566adaacd41e9586ad9a08",
+          "role": "reading_questions",
+          "pdf_pages": 8
+        },
+        {
+          "path": "src/OfficialWorkbooks/2018/N4/N4answer.pdf",
+          "sha256": "72b4e72cab02780f82653a3e1f08766f11ce698f77df8557d7971a2f48f452c1",
+          "role": "answer_key",
+          "pdf_pages": 2
+        }
+      ],
+      "contributing_units": [
+        "N4_workbook_2018",
+        "N4_12_2018"
+      ],
+      "legacy_aliases": [
+        "N4_12_2018"
+      ],
+      "mapping": {
+        "path": "preprocess/N4/N4_07_2018/publication_mapping_N4_07_2018.json",
+        "sha256": "8952e91ca46b38503f35767ae68f98a5818115756a0ab7a011a1b76a7de7bd1f"
+      },
+      "history": [
+        {
+          "unit": "N4_07_2018",
+          "baseline_files": {
+            "preprocess/N4/N4_07_2018/audit_work/source_cleanup_20261009/before/editorial_N4_07_2018.json": "1b55231897e215f409d51c25c762723c9d8af92b271ffb842b5f703b613ca2e4",
+            "preprocess/N4/N4_07_2018/audit_work/source_cleanup_20261009/before/fixlog_N4_07_2018.jsonl": "652ee14d6a56d6364150b93acd529d209441c1c212268de3a4ac50a5ebbffabb",
+            "preprocess/N4/N4_07_2018/audit_work/source_cleanup_20261009/before/principal_differences_N4_07_2018.jsonl": "deefdad1e9afe4297f87f26b237f2e7a4b2512131415c0472df1b6f5f46f8f41",
+            "preprocess/N4/N4_07_2018/audit_work/source_cleanup_20261009/before/unresolved_cases_N4_07_2018.jsonl": "c73ef12e418468aa34d7365ce53cb7fedbbd2e05f862dae6ad412bbc2610de41",
+            "preprocess/N4/N4_07_2018/audit_work/source_cleanup_20261009/before/editorial_audit.md": "110ca544484da8b0323a65b6857695a71529b3521c2f288190406a3a490f9ccd"
+          },
+          "status": "maintained_owner"
+        },
+        {
+          "unit": "N4_12_2018",
+          "baseline_files": {
+            "preprocess/N4/N4_12_2018/audit_work/source_cleanup_20261009/before/editorial_N4_12_2018.json": "5f34c765b541ea84fbff102b54cd981ede0221ca2878eec4f4a7a7e14ef2868b",
+            "preprocess/N4/N4_12_2018/audit_work/source_cleanup_20261009/before/fixlog_N4_12_2018.jsonl": "169fe28552655f613ad751bf050d3c20cd5524d83e799cfb31b4a8958f3ca3ea",
+            "preprocess/N4/N4_12_2018/audit_work/source_cleanup_20261009/before/principal_differences_N4_12_2018.jsonl": "a923d6688ec6be0455b0c0afbc3b44bacbc2259a56c1a01b71bd618a7ff0fd2c",
+            "preprocess/N4/N4_12_2018/audit_work/source_cleanup_20261009/before/unresolved_cases_N4_12_2018.jsonl": "0f78842925a7ffd3f06b1b719efbb21ef95b39dfed864fad25ba8c17d03bb6a8",
+            "preprocess/N4/N4_12_2018/audit_work/source_cleanup_20261009/before/editorial_audit.md": "d14058a8267ea0728e80f1ce506af9585bada0a28ae4ee10dd4074ddd7587635"
+          },
+          "status": "frozen_historical_alias",
+          "frozen_live_files": {
+            "preprocess/N4/N4_12_2018/editorial_N4_12_2018.json": "5f34c765b541ea84fbff102b54cd981ede0221ca2878eec4f4a7a7e14ef2868b",
+            "preprocess/N4/N4_12_2018/fixlog_N4_12_2018.jsonl": "169fe28552655f613ad751bf050d3c20cd5524d83e799cfb31b4a8958f3ca3ea",
+            "preprocess/N4/N4_12_2018/principal_differences_N4_12_2018.jsonl": "a923d6688ec6be0455b0c0afbc3b44bacbc2259a56c1a01b71bd618a7ff0fd2c",
+            "preprocess/N4/N4_12_2018/unresolved_cases_N4_12_2018.jsonl": "0f78842925a7ffd3f06b1b719efbb21ef95b39dfed864fad25ba8c17d03bb6a8",
+            "preprocess/N4/N4_12_2018/editorial_audit.md": "d14058a8267ea0728e80f1ce506af9585bada0a28ae4ee10dd4074ddd7587635",
+            "preprocess/N4/N4_12_2018/index_N4_12_2018.json": "d1e1b821b350583854e7de64873060650ac0fbedc8f01f260649b7ff8c3b1321"
+          }
+        }
+      ],
+      "owner_reason": "Promote the established edition-oriented owner, preserving stable IDs, complete examples/contexts and full audited explanations. Individual differences are reconciled from source evidence.",
+      "practice_policy": "Preserve the maintained owner’s existing weights and categories; no scoring redesign or official scaled-score claim.",
+      "scored_questions": 70,
+      "source_review_status": "content_and_principal_comparison_complete_pending_final_build_checks",
+      "approval_status": "proposals_only_no_user_approval_inferred",
+      "dedupe_evidence": {
+        "historical_diff_path": "preprocess/audit_runs/2026-10-08_dead_N3_2010_html_2010/workbook_diff.json",
+        "historical_input_sha256": {
+          "N4_12_2018": "5f34c765b541ea84fbff102b54cd981ede0221ca2878eec4f4a7a7e14ef2868b",
+          "N4_07_2018": "1b55231897e215f409d51c25c762723c9d8af92b271ffb842b5f703b613ca2e4"
+        },
+        "adjudication_path": "preprocess/N4/N4_07_2018/audit_work/source_cleanup_20261009/dedupe_field_adjudication.json",
+        "adjudicated_content_fields": 220,
+        "key_changes": 0
+      },
+      "title": "Official Practice Workbook Vol. 2",
+      "h28_current_binding": {
+        "current_editorial_revision": {
+          "path": "preprocess/N4/N4_07_2018/editorial_N4_07_2018.json",
+          "sha256": "8d9fecd201bbc7549039982c55fdcf13e2654891cbb8d21b225fe7a82267296f",
+          "bytes": 444753
+        },
+        "launch_editorial": {
+          "path": "pdf-render/evidence/handoff28/baseline/files/preprocess/N4/N4_07_2018/editorial_N4_07_2018.json",
+          "sha256": "8d9fecd201bbc7549039982c55fdcf13e2654891cbb8d21b225fe7a82267296f",
+          "bytes": 444753
+        },
+        "historical_registry": {
+          "path": "pdf-render/evidence/handoff28/baseline/files/preprocess/publication_registry.json",
+          "sha256": "82cd481b3cf8181011df37242cac501dab9e24521a891784a126b6b2634d02fc",
+          "bytes": 22652
+        },
+        "basis": "At H28 launch, the v3 canonical file already differed from the 2026-10-09 registry revision. Preserve that historical revision and all frozen mappings/aliases; bind the unchanged launch v3 model for current validation."
+      },
+      "release_content_binding": {
+        "path": "editorial-json/N4/N4_workbook_2018/editorial_N4_workbook_2018.json",
+        "sha256": "2d8dfcc60abed894b7ece8be8742b676b3b190c0bac9aa57e0c025631db70f81",
+        "unit_aliases": "editorial-json/unit_aliases.json",
+        "note": "Earlier revision bindings and publication mappings below are frozen historical evidence."
+      }
+    },
+    {
+      "publication_id": "JLPT_WORKBOOK_2012_N5",
+      "level": "N5",
+      "publication_year": 2012,
+      "content_kind": "workbook",
+      "content_unit": "N5_workbook_2012",
+      "canonical_content_revision": {
+        "path": "preprocess/N5/N5_07_2010/editorial_N5_07_2010.json",
+        "sha256": "d1272f31c3aff261427fdc77aa5f37f71002eb59003d89bda52216554ab2d83b"
+      },
+      "source_catalogue": {
+        "path": "src/OfficialWorkbooks/index.json",
+        "sha256": "e8c032f24e7f3c0129e15065596a381a52ffcc84c20bc005664dd3e5cbd600bf"
+      },
+      "publication_sources": [
+        {
+          "path": "src/OfficialWorkbooks/2012/N5/N5V.pdf",
+          "sha256": "33e5648fe40b1c3effb45205fc37f58887e991bd287b06c3c9104e1a6a1c93c4",
+          "role": "vocabulary_questions",
+          "pdf_pages": 10
+        },
+        {
+          "path": "src/OfficialWorkbooks/2012/N5/N5G.pdf",
+          "sha256": "16fe39e16455c658a2095bfa44313b2259c8ea273bdd9660af7f12ea49bb5332",
+          "role": "grammar_questions",
+          "pdf_pages": 9
+        },
+        {
+          "path": "src/OfficialWorkbooks/2012/N5/N5R.pdf",
+          "sha256": "a4caed63529eef176e052737f2d63a9b3c05d143ac919cc9399030c41d42c795",
+          "role": "reading_questions",
+          "pdf_pages": 8
+        },
+        {
+          "path": "src/OfficialWorkbooks/2012/N5/N5answer.pdf",
+          "sha256": "107272e5ade22676331dd27c61d58263a74ba2908c0227024aa552f6aa97cf33",
+          "role": "answer_key",
+          "pdf_pages": 2
+        }
+      ],
+      "contributing_units": [
+        "N5_workbook_2012"
+      ],
+      "legacy_aliases": [],
+      "mapping": {
+        "path": "preprocess/N5/N5_07_2010/publication_mapping_N5_07_2010.json",
+        "sha256": "1fbe4383cceb30fd06ef5c8df0bb4d5fa23ad890f72f72000bbf9ca3578b772a"
+      },
+      "history": [
+        {
+          "unit": "N5_07_2010",
+          "baseline_files": {
+            "preprocess/N5/N5_07_2010/audit_work/source_cleanup_20261009/before/editorial_N5_07_2010.json": "d1272f31c3aff261427fdc77aa5f37f71002eb59003d89bda52216554ab2d83b",
+            "preprocess/N5/N5_07_2010/audit_work/source_cleanup_20261009/before/fixlog_N5_07_2010.jsonl": "05b4b46dcf0c12dc24ced0a892e3c70093c6ab85bb9231bc49dd9147c7090bcf",
+            "preprocess/N5/N5_07_2010/audit_work/source_cleanup_20261009/before/principal_differences_N5_07_2010.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "preprocess/N5/N5_07_2010/audit_work/source_cleanup_20261009/before/unresolved_cases_N5_07_2010.jsonl": "1c887c8482e050970a61b15067d7ed55a03ac0bdf94b2ce938bc0ca86a7bc10a",
+            "preprocess/N5/N5_07_2010/audit_work/source_cleanup_20261009/before/editorial_audit.md": "8006a14af45bb204092b7f657e2afec1c01f00ab43396e7308a1cbc54fa477d0"
+          },
+          "status": "maintained_owner"
+        }
+      ],
+      "owner_reason": "Existing sole maintained unit for this verified workbook publication.",
+      "practice_policy": "Preserve the maintained owner’s existing weights and categories; no scoring redesign or official scaled-score claim.",
+      "scored_questions": 65,
+      "source_review_status": "verified_equivalent_principal_retained_complete_reference_coverage_pending_user_approval",
+      "approval_status": "proposals_only_no_user_approval_inferred",
+      "title": "Official Practice Workbook",
+      "h28_current_binding": {
+        "current_editorial_revision": {
+          "path": "preprocess/N5/N5_07_2010/editorial_N5_07_2010.json",
+          "sha256": "54b57d9982d70a8fb1267d96ad7d7edcd25b6f3fe4db66ac80f71264abba0143",
+          "bytes": 1410389
+        },
+        "launch_editorial": {
+          "path": "pdf-render/evidence/handoff28/baseline/files/preprocess/N5/N5_07_2010/editorial_N5_07_2010.json",
+          "sha256": "54b57d9982d70a8fb1267d96ad7d7edcd25b6f3fe4db66ac80f71264abba0143",
+          "bytes": 1410389
+        },
+        "historical_registry": {
+          "path": "pdf-render/evidence/handoff28/baseline/files/preprocess/publication_registry.json",
+          "sha256": "82cd481b3cf8181011df37242cac501dab9e24521a891784a126b6b2634d02fc",
+          "bytes": 22652
+        },
+        "basis": "At H28 launch, the v3 canonical file already differed from the 2026-10-09 registry revision. Preserve that historical revision and all frozen mappings/aliases; bind the unchanged launch v3 model for current validation."
+      },
+      "release_content_binding": {
+        "path": "editorial-json/N5/N5_workbook_2012/editorial_N5_workbook_2012.json",
+        "sha256": "eed7000beaa79930caa2458e7101ef41b0be59eb735d84e6654c3fbe10ef6f6c",
+        "unit_aliases": "editorial-json/unit_aliases.json",
+        "note": "Earlier revision bindings and publication mappings below are frozen historical evidence."
+      }
+    },
+    {
+      "publication_id": "JLPT_WORKBOOK_2018_N5",
+      "level": "N5",
+      "publication_year": 2018,
+      "content_kind": "workbook",
+      "content_unit": "N5_workbook_2018",
+      "canonical_content_revision": {
+        "path": "preprocess/N5/N5_07_2018/editorial_N5_07_2018.json",
+        "sha256": "576a92122b90305a96dd7027e4fbc55b0bb674a9c95237a3edae7ec334c26d6a"
+      },
+      "source_catalogue": {
+        "path": "src/OfficialWorkbooks/index.json",
+        "sha256": "e8c032f24e7f3c0129e15065596a381a52ffcc84c20bc005664dd3e5cbd600bf"
+      },
+      "publication_sources": [
+        {
+          "path": "src/OfficialWorkbooks/2018/N5/N5V.pdf",
+          "sha256": "44d6c36e877b5cace8cbbb3d96d7d6114d69d8f48520fc2a7bac0a4273307575",
+          "role": "vocabulary_questions",
+          "pdf_pages": 10
+        },
+        {
+          "path": "src/OfficialWorkbooks/2018/N5/N5G.pdf",
+          "sha256": "cba53d2111eec8b33adb85641e5fd41b4c3f775ef4553448b59aa15d638b040a",
+          "role": "grammar_questions",
+          "pdf_pages": 9
+        },
+        {
+          "path": "src/OfficialWorkbooks/2018/N5/N5R.pdf",
+          "sha256": "1a3ff408e7cdc29243a990d503c4d5dde71cdf9c3cf847245932ffa81322ba7c",
+          "role": "reading_questions",
+          "pdf_pages": 8
+        },
+        {
+          "path": "src/OfficialWorkbooks/2018/N5/N5answer.pdf",
+          "sha256": "7cf913bf1ed87c90ed7120319a171ca79cf4ab164a3b1aff74c461f9aa7857c4",
+          "role": "answer_key",
+          "pdf_pages": 2
+        }
+      ],
+      "contributing_units": [
+        "N5_workbook_2018"
+      ],
+      "legacy_aliases": [],
+      "mapping": {
+        "path": "preprocess/N5/N5_07_2018/publication_mapping_N5_07_2018.json",
+        "sha256": "8f337976cefeb132fe444d3bfd93f4b3e55da98d27a86564bc4b49ae27832f9b"
+      },
+      "history": [
+        {
+          "unit": "N5_07_2018",
+          "baseline_files": {
+            "preprocess/N5/N5_07_2018/audit_work/source_cleanup_20261009/before/editorial_N5_07_2018.json": "a4a484002d35f5277036e9fcc2c48b45624a2180f81811eb511e6e22783bbf85",
+            "preprocess/N5/N5_07_2018/audit_work/source_cleanup_20261009/before/fixlog_N5_07_2018.jsonl": "3364c554383a6f5efef5f06d0865cade68742b7cff22adddbb6fa478ea91fd92",
+            "preprocess/N5/N5_07_2018/audit_work/source_cleanup_20261009/before/principal_differences_N5_07_2018.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "preprocess/N5/N5_07_2018/audit_work/source_cleanup_20261009/before/unresolved_cases_N5_07_2018.jsonl": "1e53fdf088b66b113a0de76b1c85c4112b96141f85247dd4f83e86847d5f02a0",
+            "preprocess/N5/N5_07_2018/audit_work/source_cleanup_20261009/before/editorial_audit.md": "cc451b28d3c5ac8a7b482728973022dbe8cafb1372b3c2a8619312bd1e92ed3d"
+          },
+          "status": "maintained_owner"
+        }
+      ],
+      "owner_reason": "Existing sole maintained unit for this verified workbook publication.",
+      "practice_policy": "Preserve the maintained owner’s existing weights and categories; no scoring redesign or official scaled-score claim.",
+      "scored_questions": 67,
+      "source_review_status": "verified_equivalent_principal_retained_complete_reference_coverage_after_layout_reconciliation_pending_user_approval",
+      "approval_status": "proposals_only_no_user_approval_inferred",
+      "title": "Official Practice Workbook Vol. 2",
+      "h28_current_binding": {
+        "current_editorial_revision": {
+          "path": "preprocess/N5/N5_07_2018/editorial_N5_07_2018.json",
+          "sha256": "dbd3564af13100624ed8b6bed1b1bede39ec25e109a78c1a7909d8debc10b75e",
+          "bytes": 453799
+        },
+        "launch_editorial": {
+          "path": "pdf-render/evidence/handoff28/baseline/files/preprocess/N5/N5_07_2018/editorial_N5_07_2018.json",
+          "sha256": "dbd3564af13100624ed8b6bed1b1bede39ec25e109a78c1a7909d8debc10b75e",
+          "bytes": 453799
+        },
+        "historical_registry": {
+          "path": "pdf-render/evidence/handoff28/baseline/files/preprocess/publication_registry.json",
+          "sha256": "82cd481b3cf8181011df37242cac501dab9e24521a891784a126b6b2634d02fc",
+          "bytes": 22652
+        },
+        "basis": "At H28 launch, the v3 canonical file already differed from the 2026-10-09 registry revision. Preserve that historical revision and all frozen mappings/aliases; bind the unchanged launch v3 model for current validation."
+      },
+      "release_content_binding": {
+        "path": "editorial-json/N5/N5_workbook_2018/editorial_N5_workbook_2018.json",
+        "sha256": "569d33602e0082f572eaeafa719c2b167187c5aa3eff5a58d87c60985acbca76",
+        "unit_aliases": "editorial-json/unit_aliases.json",
+        "note": "Earlier revision bindings and publication mappings below are frozen historical evidence."
+      }
+    },
+    {
+      "publication_id": "JLPT_SAMPLE_2009_N1",
+      "level": "N1",
+      "publication_year": 2009,
+      "content_kind": "sample",
+      "content_unit": "N1_sample_2009",
+      "relationship": "independent_sample",
+      "canonical_content_revision": {
+        "path": "preprocess/N1/N1_sample_2009/editorial_N1_sample_2009.json",
+        "sha256": "c025afa04e5c4225d3fb7a3bf55f0fd2965fbdb1b47ace994929a55abd0caa15",
+        "bytes": 61407
+      },
+      "source_catalogue": {
+        "path": "src/OfficialWorkbooks/index.json",
+        "sha256": "e8c032f24e7f3c0129e15065596a381a52ffcc84c20bc005664dd3e5cbd600bf",
+        "bytes": 221692
+      },
+      "publication_sources": [
+        {
+          "path": "src/OfficialWorkbooks/2009/N1/N1-mondai.pdf",
+          "sha256": "07900df7db706fc1c276edbf7625ceb596be89d8c9844d10c69671a790ca4855",
+          "bytes": 5435222,
+          "role": "sample_questions"
+        },
+        {
+          "path": "src/OfficialWorkbooks/2009/N1/N1-seikai.pdf",
+          "sha256": "ac7df008f486b9abb94f7c3d910d86243d01c15de3087948796a9f969c6b9765",
+          "bytes": 44646,
+          "role": "answer_key"
+        }
+      ],
+      "contributing_units": [
+        "N1_sample_2009"
+      ],
+      "legacy_aliases": [],
+      "mapping": {
+        "path": "preprocess/N1/N1_sample_2009/publication_mapping_N1_sample_2009.json",
+        "sha256": "1ed07a8e7ff370e58f4fb32f90e37598e40fd994e34ac2b9aa7711d34f35fcf0",
+        "bytes": 200686
+      },
+      "history": [],
+      "title": "2009 N1 Official Sample Questions — revised 2010 JLPT",
+      "scored_questions": 34,
+      "source_review_status": "complete_written_source_review",
+      "approval_status": "explicit_H28_scope_no_invented_scan_approval",
+      "owner_reason": "All-owner and mutual-sample containment review established no equal or strict containing owner.",
+      "practice_policy": "Written practice question count only; no official scaled score or sitting time asserted."
+    },
+    {
+      "publication_id": "JLPT_SAMPLE_2009_N2",
+      "level": "N2",
+      "publication_year": 2009,
+      "content_kind": "sample",
+      "content_unit": "N2_sample_2009",
+      "relationship": "independent_sample",
+      "canonical_content_revision": {
+        "path": "preprocess/N2/N2_sample_2009/editorial_N2_sample_2009.json",
+        "sha256": "7bc6fd7571b5eba000f32d0cce720a4edfa630f0cec750ac7105dac8158a74e1",
+        "bytes": 53426
+      },
+      "source_catalogue": {
+        "path": "src/OfficialWorkbooks/index.json",
+        "sha256": "e8c032f24e7f3c0129e15065596a381a52ffcc84c20bc005664dd3e5cbd600bf",
+        "bytes": 221692
+      },
+      "publication_sources": [
+        {
+          "path": "src/OfficialWorkbooks/2009/N2/N2-mondai.pdf",
+          "sha256": "f7457d5b2fc9774fa80d9d2346f527cb6a65e85608244bc155911192fffc0369",
+          "bytes": 4130072,
+          "role": "sample_questions"
+        },
+        {
+          "path": "src/OfficialWorkbooks/2009/N2/N2-seikai.pdf",
+          "sha256": "f5d2a8ab6d5929514252c913a0297cd0b4e77e797da24cdd51c1251cdb4bf426",
+          "bytes": 41077,
+          "role": "answer_key"
+        }
+      ],
+      "contributing_units": [
+        "N2_sample_2009"
+      ],
+      "legacy_aliases": [],
+      "mapping": {
+        "path": "preprocess/N2/N2_sample_2009/publication_mapping_N2_sample_2009.json",
+        "sha256": "446480b5c0b8b659b8085b136e9191f4017912fd90b0baafeedc0db2ca83c307",
+        "bytes": 190782
+      },
+      "history": [],
+      "title": "2009 N2 Official Sample Questions — revised 2010 JLPT",
+      "scored_questions": 31,
+      "source_review_status": "complete_written_source_review",
+      "approval_status": "explicit_H28_scope_no_invented_scan_approval",
+      "owner_reason": "All-owner and mutual-sample containment review established no equal or strict containing owner.",
+      "practice_policy": "Written practice question count only; no official scaled score or sitting time asserted."
+    },
+    {
+      "publication_id": "JLPT_SAMPLE_2009_N3",
+      "level": "N3",
+      "publication_year": 2009,
+      "content_kind": "sample",
+      "content_unit": "N3_sample_2009",
+      "relationship": "independent_sample",
+      "canonical_content_revision": {
+        "path": "preprocess/N3/N3_sample_2009/editorial_N3_sample_2009.json",
+        "sha256": "8645c0439616e6335851004e741e9df3960f1787332ef41f6fdc06a5069234ed",
+        "bytes": 87336
+      },
+      "source_catalogue": {
+        "path": "src/OfficialWorkbooks/index.json",
+        "sha256": "e8c032f24e7f3c0129e15065596a381a52ffcc84c20bc005664dd3e5cbd600bf",
+        "bytes": 221692
+      },
+      "publication_sources": [
+        {
+          "path": "src/OfficialWorkbooks/2009/N3/N3-mondai.pdf",
+          "sha256": "ba622e5b3a1d0de40cc390c1abe3aba7928948a3242b88e3afe45b391e8b7444",
+          "bytes": 3283021,
+          "role": "sample_questions"
+        },
+        {
+          "path": "src/OfficialWorkbooks/2009/N3/N3-seikai.pdf",
+          "sha256": "d143b461b95ecc347fe674251aed30ce4eef1a79af4327c9ce0ee6af6f8861d5",
+          "bytes": 39783,
+          "role": "answer_key"
+        }
+      ],
+      "contributing_units": [
+        "N3_sample_2009"
+      ],
+      "legacy_aliases": [],
+      "mapping": {
+        "path": "preprocess/N3/N3_sample_2009/publication_mapping_N3_sample_2009.json",
+        "sha256": "f9bb8fe7b94a885a39337c46199f6608ff508cad65c071acd2050ce5e1f22fa1",
+        "bytes": 190152
+      },
+      "history": [],
+      "title": "2009 N3 Official Sample Questions — revised 2010 JLPT",
+      "scored_questions": 29,
+      "source_review_status": "complete_written_source_review",
+      "approval_status": "explicit_H28_scope_no_invented_scan_approval",
+      "owner_reason": "All-owner and mutual-sample containment review established no equal or strict containing owner.",
+      "practice_policy": "Written practice question count only; no official scaled score or sitting time asserted."
+    },
+    {
+      "publication_id": "JLPT_SAMPLE_2009_N4",
+      "level": "N4",
+      "publication_year": 2009,
+      "content_kind": "sample",
+      "content_unit": "N4_sample_2009",
+      "relationship": "independent_sample",
+      "canonical_content_revision": {
+        "path": "preprocess/N4/N4_sample_2009/editorial_N4_sample_2009.json",
+        "sha256": "6f344beeefe4b64486318f3a2c38444a79c643093d68eedf954e874173f6b9c9",
+        "bytes": 128081
+      },
+      "source_catalogue": {
+        "path": "src/OfficialWorkbooks/index.json",
+        "sha256": "e8c032f24e7f3c0129e15065596a381a52ffcc84c20bc005664dd3e5cbd600bf",
+        "bytes": 221692
+      },
+      "publication_sources": [
+        {
+          "path": "src/OfficialWorkbooks/2009/N4/N4-mondai.pdf",
+          "sha256": "b2528ecf75af9f023fb9ce7250be88c93493e006cc96c40b3dffefc5b50bc423",
+          "bytes": 3812682,
+          "role": "sample_questions"
+        },
+        {
+          "path": "src/OfficialWorkbooks/2009/N4/N4-seikai.pdf",
+          "sha256": "1d4c1970f6930ff0b8874258435cd56d776903c3f6c780712bea23598ba00c9b",
+          "bytes": 37552,
+          "role": "answer_key"
+        }
+      ],
+      "contributing_units": [
+        "N4_sample_2009"
+      ],
+      "legacy_aliases": [],
+      "mapping": {
+        "path": "preprocess/N4/N4_sample_2009/publication_mapping_N4_sample_2009.json",
+        "sha256": "54dfb79bf6f39f2479769a4275e355adcda46472cf5c58407ae596b03c5186e4",
+        "bytes": 184738
+      },
+      "history": [],
+      "title": "2009 N4 Official Sample Questions — revised 2010 JLPT",
+      "scored_questions": 26,
+      "source_review_status": "complete_written_source_review",
+      "approval_status": "explicit_H28_scope_no_invented_scan_approval",
+      "owner_reason": "All-owner and mutual-sample containment review established no equal or strict containing owner.",
+      "practice_policy": "Written practice question count only; no official scaled score or sitting time asserted."
+    },
+    {
+      "publication_id": "JLPT_SAMPLE_2009_N5",
+      "level": "N5",
+      "publication_year": 2009,
+      "content_kind": "sample",
+      "content_unit": "N5_sample_2009",
+      "relationship": "independent_sample",
+      "canonical_content_revision": {
+        "path": "preprocess/N5/N5_sample_2009/editorial_N5_sample_2009.json",
+        "sha256": "340b6598331dbea5837585fa048a036723279b8f930bf4ee91064ee97c160f91",
+        "bytes": 174194
+      },
+      "source_catalogue": {
+        "path": "src/OfficialWorkbooks/index.json",
+        "sha256": "e8c032f24e7f3c0129e15065596a381a52ffcc84c20bc005664dd3e5cbd600bf",
+        "bytes": 221692
+      },
+      "publication_sources": [
+        {
+          "path": "src/OfficialWorkbooks/2009/N5/N5-mondai.pdf",
+          "sha256": "df1bcb6e16629c68dba059b71a9f8b3dc7d4fc40dadb53f2b562fc8274b8f95f",
+          "bytes": 4443728,
+          "role": "sample_questions"
+        },
+        {
+          "path": "src/OfficialWorkbooks/2009/N5/N5-seikai.pdf",
+          "sha256": "3be28c87fcc4ec1488c35bf819dc2e79592fc17106de5f92d7a17e467fdbf174",
+          "bytes": 34996,
+          "role": "answer_key"
+        }
+      ],
+      "contributing_units": [
+        "N5_sample_2009"
+      ],
+      "legacy_aliases": [],
+      "mapping": {
+        "path": "preprocess/N5/N5_sample_2009/publication_mapping_N5_sample_2009.json",
+        "sha256": "92700cb4bbb305cfa536d0ed69a9da965c778792803a699a0e422be064b26f24",
+        "bytes": 193847
+      },
+      "history": [],
+      "title": "2009 N5 Official Sample Questions — revised 2010 JLPT",
+      "scored_questions": 21,
+      "source_review_status": "complete_written_source_review",
+      "approval_status": "explicit_H28_scope_no_invented_scan_approval",
+      "owner_reason": "All-owner and mutual-sample containment review established no equal or strict containing owner.",
+      "practice_policy": "Written practice question count only; no official scaled score or sitting time asserted."
+    },
+    {
+      "publication_id": "JLPT_WORKBOOK_2012_N1",
+      "level": "N1",
+      "publication_year": 2012,
+      "content_kind": "workbook",
+      "content_unit": "N1_set_2011_2012",
+      "relationship": "contained_set",
+      "canonical_content_revision": {
+        "path": "preprocess/N1/N1_07_2011/editorial_N1_07_2011.json",
+        "sha256": "3ca8dfef95a85cedf340809d3ae57b68d5a7750fb9d23c37031d6abdef64f874",
+        "bytes": 138288
+      },
+      "source_catalogue": {
+        "path": "src/OfficialWorkbooks/index.json",
+        "sha256": "e8c032f24e7f3c0129e15065596a381a52ffcc84c20bc005664dd3e5cbd600bf",
+        "bytes": 221692
+      },
+      "publication_sources": [
+        {
+          "path": "src/OfficialWorkbooks/2012/N1/N1V.pdf",
+          "sha256": "75842c9076e08724fc2bec4f0539796c1f9ca1b939e7e5d1c5958d15d3ebcfc7",
+          "role": "vocabulary_questions"
+        },
+        {
+          "path": "src/OfficialWorkbooks/2012/N1/N1G.pdf",
+          "sha256": "32ed971bda7ba60859125e2cc78a0e34f5b5f730410d63fd624a5cf2a15a2d89",
+          "role": "grammar_questions"
+        },
+        {
+          "path": "src/OfficialWorkbooks/2012/N1/N1R.pdf",
+          "sha256": "d8c79e9c8ac33e2e2ff860d0f49bd9c95b84719b51d6498f201eecc4b6698f02",
+          "role": "reading_questions"
+        },
+        {
+          "path": "src/OfficialWorkbooks/2012/N1/N1answer.pdf",
+          "sha256": "472c8d77fa193d5a4dea1c2ce2da34a76ef94509c982d4d14d4d52e6d32f147d",
+          "role": "answer_key"
+        }
+      ],
+      "contributing_units": [
+        "N1_set_2011_2012"
+      ],
+      "legacy_aliases": [],
+      "mapping": {
+        "path": "preprocess/N1/N1_07_2011/publication_mapping_N1_07_2011.json",
+        "sha256": "a88fb154725559191727af07fd40cb4308a40889f9e7f52cfac9b38cbbf8fa2c",
+        "bytes": 557705
+      },
+      "history": [],
+      "title": "Official Practice Workbook",
+      "scored_questions": 72,
+      "publication_scored_questions": 69,
+      "source_review_status": "complete_scored_set_containment_verified",
+      "approval_status": "H28_authorized_bounded_work",
+      "owner_reason": "Preserve one maintained larger set; this source publication redirects through its complete scored-question map.",
+      "practice_policy": "Preserve owner content and scoring; publication is a contained set, not a new owner or exact workbook edition.",
+      "release_content_binding": {
+        "path": "editorial-json/N1/N1_set_2011_2012/editorial_N1_set_2011_2012.json",
+        "sha256": "6d523f10b22081661efa704e6b0cdbfab5522fc08ef547f215faef042e299dde",
+        "unit_aliases": "editorial-json/unit_aliases.json",
+        "note": "Earlier revision bindings and publication mappings below are frozen historical evidence."
+      }
+    },
+    {
+      "publication_id": "JLPT_WORKBOOK_2012_N3",
+      "level": "N3",
+      "publication_year": 2012,
+      "content_kind": "workbook",
+      "content_unit": "N3_set_2011_2012",
+      "relationship": "contained_set",
+      "canonical_content_revision": {
+        "path": "preprocess/N3/N3_07_2011/editorial_N3_07_2011.json",
+        "sha256": "8f4d888b18d408662bbcb29f3f91b57b839294842aec4c495c07f7f7fb70f59a",
+        "bytes": 145042
+      },
+      "source_catalogue": {
+        "path": "src/OfficialWorkbooks/index.json",
+        "sha256": "e8c032f24e7f3c0129e15065596a381a52ffcc84c20bc005664dd3e5cbd600bf",
+        "bytes": 221692
+      },
+      "publication_sources": [
+        {
+          "path": "src/OfficialWorkbooks/2012/N3/N3V.pdf",
+          "sha256": "e80bfe5be25d1c06df901a6f1b0f590cd7927160e374c12ded18e8dfb0b4eb79",
+          "role": "vocabulary_questions"
+        },
+        {
+          "path": "src/OfficialWorkbooks/2012/N3/N3G.pdf",
+          "sha256": "2739ba38b98ba697f5a16a1a99eef59b25b9ac0cf573b7730a87c6d6f41e00e8",
+          "role": "grammar_questions"
+        },
+        {
+          "path": "src/OfficialWorkbooks/2012/N3/N3R.pdf",
+          "sha256": "64bab971e58cac59dfed6486ff6f8786336bd6a6693ff404fc2721cdb65fd35d",
+          "role": "reading_questions"
+        },
+        {
+          "path": "src/OfficialWorkbooks/2012/N3/N3answer.pdf",
+          "sha256": "56ef2377e68e2c4565b976cb45375cb07e35f6931de1ccea360af80b124296b7",
+          "role": "answer_key"
+        }
+      ],
+      "contributing_units": [
+        "N3_set_2011_2012"
+      ],
+      "legacy_aliases": [],
+      "mapping": {
+        "path": "preprocess/N3/N3_07_2011/publication_mapping_N3_07_2011.json",
+        "sha256": "3b8459e7cd7048c44e642ca9d7dd0281d3f23ea2321b41d0873c1b9eb08b2632",
+        "bytes": 613976
+      },
+      "history": [],
+      "title": "Official Practice Workbook",
+      "scored_questions": 74,
+      "publication_scored_questions": 72,
+      "source_review_status": "complete_scored_set_containment_verified",
+      "approval_status": "H28_authorized_bounded_work",
+      "owner_reason": "Preserve one maintained larger set; this source publication redirects through its complete scored-question map.",
+      "practice_policy": "Preserve owner content and scoring; publication is a contained set, not a new owner or exact workbook edition.",
+      "release_content_binding": {
+        "path": "editorial-json/N3/N3_set_2011_2012/editorial_N3_set_2011_2012.json",
+        "sha256": "7697ec495e72dc47d64e54404476102a2038f3208bc450ffbc488ba66b1fd039",
+        "unit_aliases": "editorial-json/unit_aliases.json",
+        "note": "Earlier revision bindings and publication mappings below are frozen historical evidence."
+      }
+    },
+    {
+      "publication_id": "JLPT_WORKBOOK_2018_N1",
+      "level": "N1",
+      "publication_year": 2018,
+      "content_kind": "workbook",
+      "content_unit": "N1_workbook_2018",
+      "canonical_content_revision": {
+        "path": "preprocess/N1/N1_12_2016/editorial_N1_12_2016.json",
+        "sha256": "e642f1959799ac8075246063362758a4d4fdf113a4bcf98b0819d6016c63e3ae",
+        "bytes": 171903
+      },
+      "source_catalogue": {
+        "path": "src/OfficialWorkbooks/index.json",
+        "sha256": "e8c032f24e7f3c0129e15065596a381a52ffcc84c20bc005664dd3e5cbd600bf"
+      },
+      "publication_sources": [
+        {
+          "path": "src/OfficialWorkbooks/2018/N1/N1V.pdf",
+          "sha256": "c315b971250bf68667a8c38d534272c8e3c0bdb4caa517477fcc572b75c01e0d",
+          "edition": 2018,
+          "level": "N1",
+          "role": "vocabulary_questions",
+          "written_physical_pages": [
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "regions": "All printed questions/choices, rubrics, examples, contexts, glossary, tables and citations on selected pages. Decorative furniture excluded.",
+          "item_coverage": [
+            "vocab-q001",
+            "vocab-q002",
+            "vocab-q003",
+            "vocab-q004",
+            "vocab-q005",
+            "vocab-q006",
+            "vocab-q007",
+            "vocab-q008",
+            "vocab-q009",
+            "vocab-q010",
+            "vocab-q011",
+            "vocab-q012",
+            "vocab-q013",
+            "vocab-q014",
+            "vocab-q015",
+            "vocab-q016",
+            "vocab-q017",
+            "vocab-q018",
+            "vocab-q019",
+            "vocab-q020",
+            "vocab-q021",
+            "vocab-q022",
+            "vocab-q023",
+            "vocab-q024",
+            "vocab-q025",
+            "vocab-s01",
+            "vocab-s02",
+            "vocab-s03",
+            "vocab-s04"
+          ],
+          "printed_page_mapping": {
+            "3": "1",
+            "4": "2",
+            "5": "3",
+            "6": "4",
+            "7": "5"
+          },
+          "excluded_pages": [
+            1,
+            2
+          ],
+          "exclusion_reason": "V cover/front instruction pages and R18 hatched blank separator are outside question-content scope.",
+          "approval_status": "proposed_pending_user_review"
+        },
+        {
+          "path": "src/OfficialWorkbooks/2018/N1/N1G.pdf",
+          "sha256": "7c5e73d4f4a89444b1f98679a99a98a953c0b6ae0dca9eeb09815868b152ea83",
+          "edition": 2018,
+          "level": "N1",
+          "role": "grammar_questions",
+          "written_physical_pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "regions": "All printed questions/choices, rubrics, examples, contexts, glossary, tables and citations on selected pages. Decorative furniture excluded.",
+          "item_coverage": [
+            "vocab-q026",
+            "vocab-q027",
+            "vocab-q028",
+            "vocab-q029",
+            "vocab-q030",
+            "vocab-q031",
+            "vocab-q032",
+            "vocab-q033",
+            "vocab-q034",
+            "vocab-q035",
+            "vocab-q036",
+            "vocab-q037",
+            "vocab-q038",
+            "vocab-q039",
+            "vocab-q040",
+            "vocab-q041",
+            "vocab-q042",
+            "vocab-q043",
+            "vocab-q044",
+            "vocab-q045",
+            "vocab-s05",
+            "vocab-s06",
+            "vocab-s07",
+            "vocab-b001",
+            "vocab-b002"
+          ],
+          "printed_page_mapping": {
+            "1": "6",
+            "2": "7",
+            "3": "8",
+            "4": "9",
+            "5": "10",
+            "6": "11"
+          },
+          "excluded_pages": [],
+          "exclusion_reason": "V cover/front instruction pages and R18 hatched blank separator are outside question-content scope.",
+          "approval_status": "proposed_pending_user_review"
+        },
+        {
+          "path": "src/OfficialWorkbooks/2018/N1/N1R.pdf",
+          "sha256": "1a66842a3c8593bc2cc522fb7e8bf6bc840ae49bceb82dff095474c5efff8fac",
+          "edition": 2018,
+          "level": "N1",
+          "role": "reading_questions",
+          "written_physical_pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            19,
+            20
+          ],
+          "regions": "All printed questions/choices, rubrics, examples, contexts, glossary, tables and citations on selected pages. Decorative furniture excluded.",
+          "item_coverage": [
+            "reading-q001",
+            "reading-q002",
+            "reading-q003",
+            "reading-q004",
+            "reading-q005",
+            "reading-q006",
+            "reading-q007",
+            "reading-q008",
+            "reading-q009",
+            "reading-q010",
+            "reading-q011",
+            "reading-q012",
+            "reading-q013",
+            "reading-q014",
+            "reading-q015",
+            "reading-q016",
+            "reading-q017",
+            "reading-q018",
+            "reading-q019",
+            "reading-q020",
+            "reading-q021",
+            "reading-q022",
+            "reading-q023",
+            "reading-q024",
+            "reading-q025",
+            "reading-s01",
+            "reading-s02",
+            "reading-s03",
+            "reading-s04",
+            "reading-s05",
+            "reading-s06",
+            "reading-b001",
+            "reading-b002",
+            "reading-b003",
+            "reading-b004",
+            "reading-b005",
+            "reading-b006",
+            "reading-b007",
+            "reading-b008",
+            "reading-b009",
+            "reading-b010",
+            "reading-b011",
+            "reading-b012"
+          ],
+          "printed_page_mapping": {
+            "1": "12",
+            "2": "13",
+            "3": "14",
+            "4": "15",
+            "5": "16",
+            "6": "17",
+            "7": "18",
+            "8": "19",
+            "9": "20",
+            "10": "21",
+            "11": "22",
+            "12": "23",
+            "13": "24",
+            "14": "25",
+            "15": "26",
+            "16": "27",
+            "17": "28",
+            "19": "30",
+            "20": "31"
+          },
+          "excluded_pages": [
+            18
+          ],
+          "exclusion_reason": "V cover/front instruction pages and R18 hatched blank separator are outside question-content scope.",
+          "approval_status": "proposed_pending_user_review"
+        },
+        {
+          "path": "src/OfficialWorkbooks/2018/N1/N1answer.pdf",
+          "sha256": "0c0e59695dd00bf0a05f2fbaa1bac0f164eb9bf5e5d242a39383febeda2c99c3",
+          "edition": 2018,
+          "level": "N1",
+          "role": "answer_key",
+          "written_physical_pages": [
+            1,
+            2
+          ],
+          "regions": "Page1 written keys1–62; page2 top y0–217pt keys63–70 only. Listening excluded.",
+          "item_coverage": [
+            "vocab-q001",
+            "vocab-q002",
+            "vocab-q003",
+            "vocab-q004",
+            "vocab-q005",
+            "vocab-q006",
+            "vocab-q007",
+            "vocab-q008",
+            "vocab-q009",
+            "vocab-q010",
+            "vocab-q011",
+            "vocab-q012",
+            "vocab-q013",
+            "vocab-q014",
+            "vocab-q015",
+            "vocab-q016",
+            "vocab-q017",
+            "vocab-q018",
+            "vocab-q019",
+            "vocab-q020",
+            "vocab-q021",
+            "vocab-q022",
+            "vocab-q023",
+            "vocab-q024",
+            "vocab-q025",
+            "vocab-q026",
+            "vocab-q027",
+            "vocab-q028",
+            "vocab-q029",
+            "vocab-q030",
+            "vocab-q031",
+            "vocab-q032",
+            "vocab-q033",
+            "vocab-q034",
+            "vocab-q035",
+            "vocab-q036",
+            "vocab-q037",
+            "vocab-q038",
+            "vocab-q039",
+            "vocab-q040",
+            "vocab-q041",
+            "vocab-q042",
+            "vocab-q043",
+            "vocab-q044",
+            "vocab-q045",
+            "reading-q001",
+            "reading-q002",
+            "reading-q003",
+            "reading-q004",
+            "reading-q005",
+            "reading-q006",
+            "reading-q007",
+            "reading-q008",
+            "reading-q009",
+            "reading-q010",
+            "reading-q011",
+            "reading-q012",
+            "reading-q013",
+            "reading-q014",
+            "reading-q015",
+            "reading-q016",
+            "reading-q017",
+            "reading-q018",
+            "reading-q019",
+            "reading-q020",
+            "reading-q021",
+            "reading-q022",
+            "reading-q023",
+            "reading-q024",
+            "reading-q025"
+          ],
+          "approval_status": "proposed_pending_user_review"
+        }
+      ],
+      "contributing_units": [
+        "N1_workbook_2018"
+      ],
+      "legacy_aliases": [],
+      "mapping": {
+        "path": "preprocess/N1/N1_12_2016/publication_mapping_N1_12_2016.json",
+        "sha256": "e2c390c9d64bcd2cd68fb1bfd4cd6f74f254b84760f166c0fc07d18862c5d11e",
+        "bytes": 336503
+      },
+      "history": [],
+      "relationship": "authenticated_equality",
+      "title": "Official Practice Workbook Vol. 2",
+      "scored_questions": 70,
+      "approval_status": "approved_workbook_typography_20261109",
+      "source_review_status": "complete_authenticated_written_publication_mapping_and_keys_verified",
+      "historical_sitting_disclosure": "Former December 2016 label is not authenticated. Original principal events, rival variants and historical reviews remain retained.",
+      "transition_authorization": {
+        "path": "rubi-restore/releases/rubi-typography-20261109-v1/authorization.json",
+        "sha256": "3508327043a2724e1a100581860e6363e51bc2cdb6a5aaec8c3110d06d12c1d3",
+        "bytes": 127215
+      },
+      "release_content_binding": {
+        "path": "editorial-json/N1/N1_workbook_2018/editorial_N1_workbook_2018.json",
+        "sha256": "9bbbde59eb690ccfa5de1b914691ba0e8d951ba6ce7f2394aecfcec1924913a1",
+        "unit_aliases": "editorial-json/unit_aliases.json",
+        "note": "Earlier revision bindings and publication mappings below are frozen historical evidence."
+      }
+    },
+    {
+      "publication_id": "JLPT_WORKBOOK_2018_N2",
+      "level": "N2",
+      "publication_year": 2018,
+      "content_kind": "workbook",
+      "content_unit": "N2_workbook_2018",
+      "canonical_content_revision": {
+        "path": "preprocess/N2/N2_12_2016/editorial_N2_12_2016.json",
+        "sha256": "5828905f466de77d6bce8962a65c62b2f5fd3000a22263d2ad3e1cd73c45dd48",
+        "bytes": 164101
+      },
+      "source_catalogue": {
+        "path": "src/OfficialWorkbooks/index.json",
+        "sha256": "e8c032f24e7f3c0129e15065596a381a52ffcc84c20bc005664dd3e5cbd600bf"
+      },
+      "publication_sources": [
+        {
+          "path": "src/OfficialWorkbooks/2018/N2/N2V.pdf",
+          "sha256": "c16247e1e6dc3c8b06dc0caf0ea94b7201628c3032c18bb2cc2ac0b1e69f79d6",
+          "edition": 2018,
+          "level": "N2",
+          "role": "vocabulary_questions",
+          "written_physical_pages": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "regions": "All question-bearing content: rubrics, questions/choices, examples, full contexts, notes/citations and information tables. Decorative furniture excluded.",
+          "item_coverage": [
+            "vocab-q001",
+            "vocab-q002",
+            "vocab-q003",
+            "vocab-q004",
+            "vocab-q005",
+            "vocab-q006",
+            "vocab-q007",
+            "vocab-q008",
+            "vocab-q009",
+            "vocab-q010",
+            "vocab-q011",
+            "vocab-q012",
+            "vocab-q013",
+            "vocab-q014",
+            "vocab-q015",
+            "vocab-q016",
+            "vocab-q017",
+            "vocab-q018",
+            "vocab-q019",
+            "vocab-q020",
+            "vocab-q021",
+            "vocab-q022",
+            "vocab-q023",
+            "vocab-q024",
+            "vocab-q025",
+            "vocab-q026",
+            "vocab-q027",
+            "vocab-q028",
+            "vocab-q029",
+            "vocab-q030",
+            "vocab-q031",
+            "vocab-q032",
+            "vocab-s01",
+            "vocab-s02",
+            "vocab-s03",
+            "vocab-s04",
+            "vocab-s05",
+            "vocab-s06"
+          ],
+          "printed_page_mapping": {
+            "3": "1",
+            "4": "2",
+            "5": "3",
+            "6": "4",
+            "7": "5",
+            "8": "6"
+          },
+          "excluded_pages": [
+            1,
+            2,
+            9
+          ],
+          "exclusion_reason": "Vocabulary cover/front instruction and blank separators; R4/R8 blank separators. No listening in selected question members.",
+          "approval_status": "proposed_pending_user_review"
+        },
+        {
+          "path": "src/OfficialWorkbooks/2018/N2/N2G.pdf",
+          "sha256": "b48d6e9002c981ca3d4250db4d0961a97d53145402b5eca058c2eb6fe75185e6",
+          "edition": 2018,
+          "level": "N2",
+          "role": "grammar_questions",
+          "written_physical_pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "regions": "All question-bearing content: rubrics, questions/choices, examples, full contexts, notes/citations and information tables. Decorative furniture excluded.",
+          "item_coverage": [
+            "vocab-q033",
+            "vocab-q034",
+            "vocab-q035",
+            "vocab-q036",
+            "vocab-q037",
+            "vocab-q038",
+            "vocab-q039",
+            "vocab-q040",
+            "vocab-q041",
+            "vocab-q042",
+            "vocab-q043",
+            "vocab-q044",
+            "vocab-q045",
+            "vocab-q046",
+            "vocab-q047",
+            "vocab-q048",
+            "vocab-q049",
+            "vocab-q050",
+            "vocab-q051",
+            "vocab-q052",
+            "vocab-q053",
+            "vocab-q054",
+            "vocab-s07",
+            "vocab-s08",
+            "vocab-s09",
+            "vocab-b001",
+            "vocab-b002"
+          ],
+          "printed_page_mapping": {
+            "1": "8",
+            "2": "9",
+            "3": "10",
+            "4": "11",
+            "5": "12",
+            "6": "13"
+          },
+          "excluded_pages": [],
+          "exclusion_reason": "Vocabulary cover/front instruction and blank separators; R4/R8 blank separators. No listening in selected question members.",
+          "approval_status": "proposed_pending_user_review"
+        },
+        {
+          "path": "src/OfficialWorkbooks/2018/N2/N2R.pdf",
+          "sha256": "cae736f4da5baa87fedbc9457964d86ca90cbc1e3f6b3f2d7a405e3a33563f23",
+          "edition": 2018,
+          "level": "N2",
+          "role": "reading_questions",
+          "written_physical_pages": [
+            1,
+            2,
+            3,
+            5,
+            6,
+            7,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "regions": "All question-bearing content: rubrics, questions/choices, examples, full contexts, notes/citations and information tables. Decorative furniture excluded.",
+          "item_coverage": [
+            "reading-q001",
+            "reading-q002",
+            "reading-q003",
+            "reading-q004",
+            "reading-q005",
+            "reading-q006",
+            "reading-q007",
+            "reading-q008",
+            "reading-q009",
+            "reading-q010",
+            "reading-q011",
+            "reading-q012",
+            "reading-q013",
+            "reading-q014",
+            "reading-q015",
+            "reading-q016",
+            "reading-q017",
+            "reading-q018",
+            "reading-q019",
+            "reading-q020",
+            "reading-q021",
+            "reading-s01",
+            "reading-s02",
+            "reading-s03",
+            "reading-s04",
+            "reading-s05",
+            "reading-b001",
+            "reading-b002",
+            "reading-b003",
+            "reading-b004",
+            "reading-b005",
+            "reading-b006",
+            "reading-b007",
+            "reading-b008",
+            "reading-b009",
+            "reading-b010",
+            "reading-b011",
+            "reading-b012"
+          ],
+          "printed_page_mapping": {
+            "1": "14",
+            "2": "15",
+            "3": "16",
+            "5": "18",
+            "6": "19",
+            "7": "20",
+            "9": "22",
+            "10": "23",
+            "11": "24",
+            "12": "25",
+            "13": "26",
+            "14": "27",
+            "15": "28",
+            "16": "29",
+            "17": "30",
+            "18": "31",
+            "19": "32",
+            "20": "33"
+          },
+          "excluded_pages": [
+            4,
+            8
+          ],
+          "exclusion_reason": "Vocabulary cover/front instruction and blank separators; R4/R8 blank separators. No listening in selected question members.",
+          "approval_status": "proposed_pending_user_review"
+        },
+        {
+          "path": "src/OfficialWorkbooks/2018/N2/N2answer.pdf",
+          "sha256": "68265ccb1d63179c77809e4d89d787ccaea1bd083e02e1d6e780d2fb92b67cf8",
+          "edition": 2018,
+          "level": "N2",
+          "role": "answer_key",
+          "written_physical_pages": [
+            1,
+            2
+          ],
+          "regions": "Answer page1 written keys1–59; page2 top y0–283pt written keys60–75 only. Listening below excluded.",
+          "item_coverage": [
+            "vocab-q001",
+            "vocab-q002",
+            "vocab-q003",
+            "vocab-q004",
+            "vocab-q005",
+            "vocab-q006",
+            "vocab-q007",
+            "vocab-q008",
+            "vocab-q009",
+            "vocab-q010",
+            "vocab-q011",
+            "vocab-q012",
+            "vocab-q013",
+            "vocab-q014",
+            "vocab-q015",
+            "vocab-q016",
+            "vocab-q017",
+            "vocab-q018",
+            "vocab-q019",
+            "vocab-q020",
+            "vocab-q021",
+            "vocab-q022",
+            "vocab-q023",
+            "vocab-q024",
+            "vocab-q025",
+            "vocab-q026",
+            "vocab-q027",
+            "vocab-q028",
+            "vocab-q029",
+            "vocab-q030",
+            "vocab-q031",
+            "vocab-q032",
+            "vocab-q033",
+            "vocab-q034",
+            "vocab-q035",
+            "vocab-q036",
+            "vocab-q037",
+            "vocab-q038",
+            "vocab-q039",
+            "vocab-q040",
+            "vocab-q041",
+            "vocab-q042",
+            "vocab-q043",
+            "vocab-q044",
+            "vocab-q045",
+            "vocab-q046",
+            "vocab-q047",
+            "vocab-q048",
+            "vocab-q049",
+            "vocab-q050",
+            "vocab-q051",
+            "vocab-q052",
+            "vocab-q053",
+            "vocab-q054",
+            "reading-q001",
+            "reading-q002",
+            "reading-q003",
+            "reading-q004",
+            "reading-q005",
+            "reading-q006",
+            "reading-q007",
+            "reading-q008",
+            "reading-q009",
+            "reading-q010",
+            "reading-q011",
+            "reading-q012",
+            "reading-q013",
+            "reading-q014",
+            "reading-q015",
+            "reading-q016",
+            "reading-q017",
+            "reading-q018",
+            "reading-q019",
+            "reading-q020",
+            "reading-q021"
+          ],
+          "approval_status": "proposed_pending_user_review"
+        }
+      ],
+      "contributing_units": [
+        "N2_workbook_2018"
+      ],
+      "legacy_aliases": [],
+      "mapping": {
+        "path": "preprocess/N2/N2_12_2016/publication_mapping_N2_12_2016.json",
+        "sha256": "ecdb36417ae9fa6c291c75d509b4f31b06a6bbb6ac68617d306e5471d49cfe2e",
+        "bytes": 359535
+      },
+      "history": [],
+      "relationship": "authenticated_equality",
+      "title": "Official Practice Workbook Vol. 2",
+      "scored_questions": 75,
+      "approval_status": "approved_workbook_typography_20261109",
+      "source_review_status": "complete_authenticated_written_publication_mapping_and_keys_verified",
+      "historical_sitting_disclosure": "Former December 2016 label is not authenticated. Original principal events, rival variants and historical reviews remain retained.",
+      "transition_authorization": {
+        "path": "rubi-restore/releases/rubi-typography-20261109-v1/authorization.json",
+        "sha256": "3508327043a2724e1a100581860e6363e51bc2cdb6a5aaec8c3110d06d12c1d3",
+        "bytes": 127215
+      },
+      "release_content_binding": {
+        "path": "editorial-json/N2/N2_workbook_2018/editorial_N2_workbook_2018.json",
+        "sha256": "6735ad6a40796890475acfff7d49fea7239bedca5af7795d0a58d6c86597d244",
+        "unit_aliases": "editorial-json/unit_aliases.json",
+        "note": "Earlier revision bindings and publication mappings below are frozen historical evidence."
+      }
+    },
+    {
+      "publication_id": "JLPT_WORKBOOK_2018_N3",
+      "level": "N3",
+      "publication_year": 2018,
+      "content_kind": "workbook",
+      "content_unit": "N3_workbook_2018",
+      "canonical_content_revision": {
+        "path": "preprocess/N3/N3_12_2016/editorial_N3_12_2016.json",
+        "sha256": "8a44500efcafdf032453b0646dc60ca9274ef1abb1695a9497d20f55d0942f1b",
+        "bytes": 149847
+      },
+      "source_catalogue": {
+        "path": "src/OfficialWorkbooks/index.json",
+        "sha256": "e8c032f24e7f3c0129e15065596a381a52ffcc84c20bc005664dd3e5cbd600bf"
+      },
+      "publication_sources": [
+        {
+          "path": "src/OfficialWorkbooks/2018/N3/N3V.pdf",
+          "sha256": "66abec06d2e23d2ee66b94cdf905b34cc87f97a5ce0ce5da47dc304053d647ea",
+          "edition": 2018,
+          "level": "N3",
+          "role": "vocabulary_questions",
+          "written_physical_pages": [
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "regions": "All question-bearing content: rubrics, questions/choices, full worked example, contexts, references, memo and full poster. Decorative furniture excluded.",
+          "item_coverage": [
+            "vocab-q001",
+            "vocab-q002",
+            "vocab-q003",
+            "vocab-q004",
+            "vocab-q005",
+            "vocab-q006",
+            "vocab-q007",
+            "vocab-q008",
+            "vocab-q009",
+            "vocab-q010",
+            "vocab-q011",
+            "vocab-q012",
+            "vocab-q013",
+            "vocab-q014",
+            "vocab-q015",
+            "vocab-q016",
+            "vocab-q017",
+            "vocab-q018",
+            "vocab-q019",
+            "vocab-q020",
+            "vocab-q021",
+            "vocab-q022",
+            "vocab-q023",
+            "vocab-q024",
+            "vocab-q025",
+            "vocab-q026",
+            "vocab-q027",
+            "vocab-q028",
+            "vocab-q029",
+            "vocab-q030",
+            "vocab-q031",
+            "vocab-q032",
+            "vocab-q033",
+            "vocab-q034",
+            "vocab-q035",
+            "vocab-s01",
+            "vocab-s02",
+            "vocab-s03",
+            "vocab-s04",
+            "vocab-s05"
+          ],
+          "printed_page_mapping": {
+            "3": "1",
+            "4": "2",
+            "5": "3",
+            "6": "4",
+            "7": "5"
+          },
+          "excluded_pages": [
+            1,
+            2
+          ],
+          "exclusion_reason": "V/G covers/front instructions and R8 blank separator. No listening in selected question members.",
+          "approval_status": "proposed_pending_user_review"
+        },
+        {
+          "path": "src/OfficialWorkbooks/2018/N3/N3G.pdf",
+          "sha256": "fe4e17dec0eae246839a7a32423e9e9fc3beaca3a2c693bd5445cafd6f0bfc06",
+          "edition": 2018,
+          "level": "N3",
+          "role": "grammar_questions",
+          "written_physical_pages": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "regions": "All question-bearing content: rubrics, questions/choices, full worked example, contexts, references, memo and full poster. Decorative furniture excluded.",
+          "item_coverage": [
+            "reading-q001",
+            "reading-q002",
+            "reading-q003",
+            "reading-q004",
+            "reading-q005",
+            "reading-q006",
+            "reading-q007",
+            "reading-q008",
+            "reading-q009",
+            "reading-q010",
+            "reading-q011",
+            "reading-q012",
+            "reading-q013",
+            "reading-q014",
+            "reading-q015",
+            "reading-q016",
+            "reading-q017",
+            "reading-q018",
+            "reading-q019",
+            "reading-q020",
+            "reading-q021",
+            "reading-q022",
+            "reading-q023",
+            "reading-s01",
+            "reading-s02",
+            "reading-s03",
+            "reading-b001",
+            "reading-b011"
+          ],
+          "printed_page_mapping": {
+            "3": "1",
+            "4": "2",
+            "5": "3",
+            "6": "4",
+            "7": "5",
+            "8": "6",
+            "9": "7"
+          },
+          "excluded_pages": [
+            1,
+            2
+          ],
+          "exclusion_reason": "V/G covers/front instructions and R8 blank separator. No listening in selected question members.",
+          "approval_status": "proposed_pending_user_review"
+        },
+        {
+          "path": "src/OfficialWorkbooks/2018/N3/N3R.pdf",
+          "sha256": "1d56df57040ffe1da41c2cb6f152e3926d84fb5a17b7b25b348b01cfb9c89e69",
+          "edition": 2018,
+          "level": "N3",
+          "role": "reading_questions",
+          "written_physical_pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            9,
+            10,
+            11,
+            12
+          ],
+          "regions": "All question-bearing content: rubrics, questions/choices, full worked example, contexts, references, memo and full poster. Decorative furniture excluded.",
+          "item_coverage": [
+            "reading-q024",
+            "reading-q025",
+            "reading-q026",
+            "reading-q027",
+            "reading-q028",
+            "reading-q029",
+            "reading-q030",
+            "reading-q031",
+            "reading-q032",
+            "reading-q033",
+            "reading-q034",
+            "reading-q035",
+            "reading-q036",
+            "reading-q037",
+            "reading-q038",
+            "reading-q039",
+            "reading-s04",
+            "reading-s05",
+            "reading-s06",
+            "reading-s07",
+            "reading-b002",
+            "reading-b003",
+            "reading-b004",
+            "reading-b005",
+            "reading-b006",
+            "reading-b007",
+            "reading-b008",
+            "reading-b009",
+            "reading-b010"
+          ],
+          "printed_page_mapping": {
+            "1": "8",
+            "2": "9",
+            "3": "10",
+            "4": "11",
+            "5": "12",
+            "6": "13",
+            "7": "14",
+            "9": "16",
+            "10": "17",
+            "11": "18",
+            "12": "19"
+          },
+          "excluded_pages": [
+            8
+          ],
+          "exclusion_reason": "V/G covers/front instructions and R8 blank separator. No listening in selected question members.",
+          "approval_status": "proposed_pending_user_review"
+        },
+        {
+          "path": "src/OfficialWorkbooks/2018/N3/N3answer.pdf",
+          "sha256": "c4f1acc6b53add298bb28f8f4759e96242516b96546625c49c75d090d0913d2b",
+          "edition": 2018,
+          "level": "N3",
+          "role": "answer_key",
+          "written_physical_pages": [
+            1,
+            2
+          ],
+          "regions": "Answer page1: all vocabulary keys1–35 and grammar keys1–23; page2 top y0–282pt: reading keys24–39 only. Listening begins below y301 and is excluded.",
+          "item_coverage": [
+            "vocab-q001",
+            "vocab-q002",
+            "vocab-q003",
+            "vocab-q004",
+            "vocab-q005",
+            "vocab-q006",
+            "vocab-q007",
+            "vocab-q008",
+            "vocab-q009",
+            "vocab-q010",
+            "vocab-q011",
+            "vocab-q012",
+            "vocab-q013",
+            "vocab-q014",
+            "vocab-q015",
+            "vocab-q016",
+            "vocab-q017",
+            "vocab-q018",
+            "vocab-q019",
+            "vocab-q020",
+            "vocab-q021",
+            "vocab-q022",
+            "vocab-q023",
+            "vocab-q024",
+            "vocab-q025",
+            "vocab-q026",
+            "vocab-q027",
+            "vocab-q028",
+            "vocab-q029",
+            "vocab-q030",
+            "vocab-q031",
+            "vocab-q032",
+            "vocab-q033",
+            "vocab-q034",
+            "vocab-q035",
+            "reading-q001",
+            "reading-q002",
+            "reading-q003",
+            "reading-q004",
+            "reading-q005",
+            "reading-q006",
+            "reading-q007",
+            "reading-q008",
+            "reading-q009",
+            "reading-q010",
+            "reading-q011",
+            "reading-q012",
+            "reading-q013",
+            "reading-q014",
+            "reading-q015",
+            "reading-q016",
+            "reading-q017",
+            "reading-q018",
+            "reading-q019",
+            "reading-q020",
+            "reading-q021",
+            "reading-q022",
+            "reading-q023",
+            "reading-q024",
+            "reading-q025",
+            "reading-q026",
+            "reading-q027",
+            "reading-q028",
+            "reading-q029",
+            "reading-q030",
+            "reading-q031",
+            "reading-q032",
+            "reading-q033",
+            "reading-q034",
+            "reading-q035",
+            "reading-q036",
+            "reading-q037",
+            "reading-q038",
+            "reading-q039"
+          ],
+          "approval_status": "proposed_pending_user_review"
+        }
+      ],
+      "contributing_units": [
+        "N3_workbook_2018"
+      ],
+      "legacy_aliases": [],
+      "mapping": {
+        "path": "preprocess/N3/N3_12_2016/publication_mapping_N3_12_2016.json",
+        "sha256": "acb735b701bb2352fb3cde557cda008c0d2c1d5eeabf686032c5ab790805f5d6",
+        "bytes": 381457
+      },
+      "history": [],
+      "relationship": "authenticated_equality",
+      "title": "Official Practice Workbook Vol. 2",
+      "scored_questions": 74,
+      "approval_status": "approved_workbook_typography_20261109",
+      "source_review_status": "complete_authenticated_written_publication_mapping_and_keys_verified",
+      "historical_sitting_disclosure": "Former December 2016 label is not authenticated. Original principal events, rival variants and historical reviews remain retained.",
+      "transition_authorization": {
+        "path": "rubi-restore/releases/rubi-typography-20261109-v1/authorization.json",
+        "sha256": "3508327043a2724e1a100581860e6363e51bc2cdb6a5aaec8c3110d06d12c1d3",
+        "bytes": 127215
+      },
+      "release_content_binding": {
+        "path": "editorial-json/N3/N3_workbook_2018/editorial_N3_workbook_2018.json",
+        "sha256": "7812258caf1eb7d75c823d682e041880a8dc62a279aefbf6ebb7d33723865bdc",
+        "unit_aliases": "editorial-json/unit_aliases.json",
+        "note": "Earlier revision bindings and publication mappings below are frozen historical evidence."
+      }
+    }
+  ],
+  "rules": [
+    "One content owner and one practice entry per registered publication",
+    "Historical audit records, source indexes and user decisions are retained",
+    "Aliases never become DEAD and must not receive further content edits",
+    "Publication identity does not authenticate a historical sitting"
+  ],
+  "h28_extension": {
+    "authority": "pdf-render/HANDOFF28.md",
+    "scope": "Five reviewed sample publications; contained workbook mappings added separately; legacy entries and frozen aliases retained."
+  }
+}

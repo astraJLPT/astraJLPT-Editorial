@@ -1,0 +1,78 @@
+{
+  "unit": "N4_07_2025",
+  "sources": [
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N4-N5 các năm Yuuki Bùi\\2025年7月\\N4 T7-2025\\Script Nghe N4  T7-2025.pdf",
+      "sha256": "f79b7ed35670bcadad5b3da4447625ab5796c99d7549d5e3140fdf3e24b25866",
+      "Tier": "unranked",
+      "bytes": 1126474,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N4\\N4_07_2025\\PaddleOCR\\pdf_1",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N4-N5 các năm Yuuki Bùi\\2025年7月\\N4 T7-2025\\Đáp án tham khảo  N4 T7-2025.pdf",
+      "sha256": "c41dd15f92e3008fe7d23d0d83a12b1cdb774ebafb0e5a84d57e06e03da8db46",
+      "Tier": "unranked",
+      "bytes": 962479,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N4\\N4_07_2025\\PaddleOCR\\pdf_2",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N4-N5 các năm Yuuki Bùi\\2025年7月\\N4 T7-2025\\Đề N4 07.2025 [Full] - Mark.pdf",
+      "sha256": "cd16466560df60388e8e0d0bade51a69250cb54351484d29bde5866a671b7d06",
+      "Tier": 1,
+      "bytes": 19645214,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N4\\N4_07_2025\\PaddleOCR\\pdf_3",
+      "VisionOCR": "preprocess\\N4\\N4_07_2025\\VisionOCR\\pdf_3"
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N4真题（2010-2025.12）\\N4-答题卡.pdf",
+      "sha256": "b0c14d3f8645d885a6ddc2ef4cc160271c0850ea5f1d18f7386a6662f95c2053",
+      "Tier": "unranked",
+      "bytes": 383135,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\N4-答题卡.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N4历年真题\\N4-答题卡.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N4\\N4_multiple\\PaddleOCR\\pdf_14",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N4真题（2010-2025.12）\\【N4真题】2025年7月\\【试题】2025年7月JLPT日语N4真题.pdf",
+      "sha256": "cb8f2b97f5774ed15fe12a40e8ac8294ba6ab6e2827cf170379b2a65f4c6b898",
+      "Tier": 2,
+      "bytes": 3865943,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\2025年7月\\【试题】2025年7月JLPT日语N4真题.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N4历年真题\\【N4真题】2025年7月\\【试题】2025年7月JLPT日语N4真题.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N4\\N4_07_2025\\PaddleOCR\\pdf_5",
+      "VisionOCR": "preprocess\\N4\\N4_07_2025\\VisionOCR\\pdf_5"
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N4真题（2010-2025.12）\\【N4真题】2025年7月\\【参考答案】2025年7月JLPT日语N4真题.jpg",
+      "sha256": "3987d4f48147fe2ecd7d3d2e65ae5cec666df2672db40bfa3d6b4f2f5992fa8d",
+      "Tier": "unranked",
+      "bytes": 987428,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\2025年7月\\【参考答案】2025年7月JLPT日语N4真题.jpg",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N4历年真题\\【N4真题】2025年7月\\【参考答案】2025年7月JLPT日语N4真题.jpg"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    }
+  ],
+  "current_editorial": {
+    "path": "preprocess/N4/N4_07_2025/editorial_N4_07_2025.json",
+    "sha256": "5fb62db7678023af9856d8df5932a15a1b99d804aa869b109cbf01f76b9eb23d",
+    "bytes": 48871
+  },
+  "current_audit_snapshot": {
+    "path": "preprocess/N4/N4_07_2025/audit_work/handoff11_current.json",
+    "sha256": "3cba1ec53a88a662f11532d764a75d77671fee880117f29e37625530d18cf04e",
+    "bytes": 3836
+  }
+}

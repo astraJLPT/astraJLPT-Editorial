@@ -1,0 +1,171 @@
+{
+  "unit": "N5_07_2013",
+  "sources": [
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N5\\N5-2013年7月-真题+解析+听力原文-高清打印版..pdf",
+      "sha256": "e63721ce3fefcc1c40a0dfc39cdd221e81073f15fb6c024aa3d7a868e1ef92c5",
+      "Tier": 3,
+      "bytes": 8018373,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N5真题\\2013年\\资源二\\N5-2013年7月-真题+解析+听力原文-高清打印版..pdf"
+      ],
+      "PaddleOCR": "preprocess\\N5\\N5_07_2013\\PaddleOCR\\pdf_1",
+      "VisionOCR": "preprocess\\N5\\N5_07_2013\\VisionOCR\\pdf_1"
+    },
+    {
+      "path": "src\\munjaJLPT\\N5\\2013-07_N5\\2013-07_N5.json",
+      "sha256": "af06344afc59133db8fff5efa112d51c68c24d60dfd353e4a71e4dfa50e18f21",
+      "Tier": "unranked",
+      "bytes": 101360,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N4-N5 các năm Yuuki Bùi\\2013年7月\\2013年7月N5真题 [Edited].pdf",
+      "sha256": "e1e787b10f29adee65e1fc4e7a165e9a6e6a29e6b521f82d37cb0c2479b0fe05",
+      "Tier": 1,
+      "bytes": 4520180,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N5\\N5_07_2013\\PaddleOCR\\pdf_2",
+      "VisionOCR": "preprocess\\N5\\N5_07_2013\\VisionOCR\\pdf_2"
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N5真题（2010-2025.12）\\2013年07月N5\\2013年7月N5真题+答案+解析+听力原文.pdf",
+      "sha256": "90eb2c051e1fc18ed42d6d5f379830435b1ffc5516edcdc99701bd53837adf52",
+      "Tier": 3,
+      "bytes": 7657801,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N5历年真题\\2013年07月N5\\2013年7月N5真题+答案+解析+听力原文.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N5\\N5_07_2013\\PaddleOCR\\pdf_3",
+      "VisionOCR": "preprocess\\N5\\N5_07_2013\\VisionOCR\\pdf_3"
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N5真题\\2013年\\2013年07月日语N5真题试卷.pdf",
+      "sha256": "27f58664e0ae9301cadfbd4392ea051722f01ba967b32ff90028eb77e5ddf16f",
+      "Tier": 2,
+      "bytes": 8964530,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N5\\N5_07_2013\\PaddleOCR\\pdf_4",
+      "VisionOCR": "preprocess\\N5\\N5_07_2013\\VisionOCR\\pdf_4"
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N5真题\\2013年\\2013年07月日语N5答案解析+听力原文.pdf",
+      "sha256": "a40cbe57e57ab5922bcdaa20afe194adc5030c56354909861db5e919e4b7fb15",
+      "Tier": "unranked",
+      "bytes": 7344527,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N5\\N5_07_2013\\PaddleOCR\\pdf_5",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N5\\2013-07_N5\\images\\2013-07_N5_l-p1-q02-img01.jpg",
+      "sha256": "85be6164f72f5c1fe868ddfa4fcd7e777f07ba63267d8d9ba21f8d0548abe5b0",
+      "Tier": "unranked",
+      "bytes": 30569,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N5\\2013-07_N5\\images\\2013-07_N5_l-p1-q03-img01.jpg",
+      "sha256": "f23784ead6974ea65d81ebf77d0fda43a4051d85082337ce11cf51c5b5043b2b",
+      "Tier": "unranked",
+      "bytes": 29217,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N5\\2013-07_N5\\images\\2013-07_N5_l-p1-q04-img01.jpg",
+      "sha256": "f7d0714b2c8efc1bcb0acad9314d2ccdb01bfdc5d064a0727615392d8b024e15",
+      "Tier": "unranked",
+      "bytes": 25815,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N5\\2013-07_N5\\images\\2013-07_N5_l-p1-q05-img01.jpg",
+      "sha256": "0efbd5e433c02c5a72aa6758e4c84ef0525aefdb418d0ff7dd03aa2fa2b3c873",
+      "Tier": "unranked",
+      "bytes": 45707,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N5\\2013-07_N5\\images\\2013-07_N5_l-p1-q06-img01.jpg",
+      "sha256": "87e060e60ee8da5b9ddf02f73c3e0fe051a2b82d48e0bd030516de677f627ba0",
+      "Tier": "unranked",
+      "bytes": 47384,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N5\\2013-07_N5\\images\\2013-07_N5_l-p2-q05-img01.jpg",
+      "sha256": "c3bb671aa502645f79eec32583215bef4890e034a5db753254b5f57df07d13d8",
+      "Tier": "unranked",
+      "bytes": 64729,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N5\\2013-07_N5\\images\\2013-07_N5_l-p3-q01-img01.jpg",
+      "sha256": "d95847d0323da10c5f066c319121722f353606fb9606d2a0da5c634350bc7a32",
+      "Tier": "unranked",
+      "bytes": 48850,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N5\\2013-07_N5\\images\\2013-07_N5_l-p3-q02-img01.jpg",
+      "sha256": "daf603cf822161e25190bef49124fd2fd17bc280b8939a77ac4287decdc115fd",
+      "Tier": "unranked",
+      "bytes": 38092,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N5\\2013-07_N5\\images\\2013-07_N5_l-p3-q03-img01.jpg",
+      "sha256": "8df90cf14a6972a23bac841604f787f5b96e7a83c65a7944a2daf2cbab12c7d8",
+      "Tier": "unranked",
+      "bytes": 50197,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N5\\2013-07_N5\\images\\2013-07_N5_l-p3-q04-img01.jpg",
+      "sha256": "abaf2bcaf6e44484405827354849078944a780d6f6e3766e1d205adf88b6884b",
+      "Tier": "unranked",
+      "bytes": 47698,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N5\\2013-07_N5\\images\\2013-07_N5_l-p3-q05-img01.jpg",
+      "sha256": "46d354533370073bfc5c0308454b17cd8022b44d30d0d9117f1619f31e00d4fa",
+      "Tier": "unranked",
+      "bytes": 43282,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N5\\2013-07_N5\\images\\2013-07_N5_s10-q01-img01.jpg",
+      "sha256": "91afa9347d5c16a9ea7b7ac52a0415d9e932e642e22be461138b20582aa9790d",
+      "Tier": "unranked",
+      "bytes": 95222,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    }
+  ]
+}

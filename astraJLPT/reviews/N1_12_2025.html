@@ -1,0 +1,1659 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark light"><title>Developer review · N1_12_2025 · astraJLPT</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../assets/fonts.css?v=f9f44384a837"><link rel="stylesheet" href="../assets/themes.css?v=7ad0820747dc"><link rel="stylesheet" href="../assets/answer-marking.css?v=bec6b4920050"><link rel="stylesheet" href="../assets/site.css?v=7ae9ae7c768b"><link rel="stylesheet" href="../assets/pdf-typography.css?v=ba55af25606f"><link rel="stylesheet" href="../assets/paper-shared.css?v=8f3ca38dca80"></head><body class="catalog-page"><a class="skip-link" href="#content">Skip to content</a><header class="topbar" id="page-top" tabindex="-1"><a class="wordmark" id="brand" href="../index.html">astra<span>JLPT</span></a><details id="settings" class="settings"><summary aria-label="Open settings" title="Settings"><span aria-hidden="true">⚙</span><span class="sr-only">Settings</span></summary><div class="settings-panel"><div class="settings-title"><h2>settings</h2><button type="button" id="close-settings" class="js-only" aria-label="Close settings">×</button></div><div class="settings-tabs" role="group" aria-label="Settings categories"><label><input type="radio" name="settings-view" value="appearance" checked><span>theme</span></label><label><input type="radio" name="settings-view" value="browser"><span>browser</span></label></div><section data-settings="appearance"><div class="theme-workspace"><div class="theme-picker"><div class="setting-heading"><h3>theme</h3></div><div class="theme-grid originals"><label class="theme-card ps-gh"><input type="radio" name="theme" id="theme-jlpt_paper" value="jlpt_paper"><span>jlpt_paper</span></label><label class="theme-card ps-ck"><input type="radio" name="theme" id="theme-astraJLPT_dark" value="astraJLPT_dark" checked><span>astraJLPT_dark</span></label><label class="theme-card ps-ga"><input type="radio" name="theme" id="theme-astraJLPT_sepia" value="astraJLPT_sepia"><span>astraJLPT_sepia</span></label></div><div class="js-only"><p class="settings-label">three random picks</p><div class="theme-grid" id="quick-picks"></div></div><details><summary>all 187 Monkeytype palettes</summary><label class="theme-search js-only">find a palette<input id="theme-search" type="search" placeholder="search themes" autocomplete="off"></label><div class="theme-grid theme-catalog"><label class="theme-card ps-e9"><input type="radio" name="theme" id="theme-8008" value="8008"><span>8008</span></label><label class="theme-card ps-cw"><input type="radio" name="theme" id="theme-80s_after_dark" value="80s_after_dark"><span>80s after dark</span></label><label class="theme-card ps-fq"><input type="radio" name="theme" id="theme-9009" value="9009"><span>9009</span></label><label class="theme-card ps-cc"><input type="radio" name="theme" id="theme-aether" value="aether"><span>aether</span></label><label class="theme-card ps-cz"><input type="radio" name="theme" id="theme-alduin" value="alduin"><span>alduin</span></label><label class="theme-card ps-el"><input type="radio" name="theme" id="theme-alpine" value="alpine"><span>alpine</span></label><label class="theme-card ps-bg"><input type="radio" name="theme" id="theme-anti_hero" value="anti_hero"><span>anti hero</span></label><label class="theme-card ps-c3"><input type="radio" name="theme" id="theme-arch" value="arch"><span>arch</span></label><label class="theme-card ps-bt"><input type="radio" name="theme" id="theme-aurora" value="aurora"><span>aurora</span></label><label class="theme-card ps-g8"><input type="radio" name="theme" id="theme-beach" value="beach"><span>beach</span></label><label class="theme-card ps-dz"><input type="radio" name="theme" id="theme-bento" value="bento"><span>bento</span></label><label class="theme-card ps-f1"><input type="radio" name="theme" id="theme-bingsu" value="bingsu"><span>bingsu</span></label><label class="theme-card ps-dl"><input type="radio" name="theme" id="theme-bliss" value="bliss"><span>bliss</span></label><label class="theme-card ps-bn"><input type="radio" name="theme" id="theme-blue_dolphin" value="blue_dolphin"><span>blue dolphin</span></label><label class="theme-card ps-dd"><input type="radio" name="theme" id="theme-blueberry_dark" value="blueberry_dark"><span>blueberry dark</span></label><label class="theme-card ps-fd"><input type="radio" name="theme" id="theme-blueberry_light" value="blueberry_light"><span>blueberry light</span></label><label class="theme-card ps-ep"><input type="radio" name="theme" id="theme-botanical" value="botanical"><span>botanical</span></label><label class="theme-card ps-cl"><input type="radio" name="theme" id="theme-bouquet" value="bouquet"><span>bouquet</span></label><label class="theme-card ps-fk"><input type="radio" name="theme" id="theme-breeze" value="breeze"><span>breeze</span></label><label class="theme-card ps-dk"><input type="radio" name="theme" id="theme-bushido" value="bushido"><span>bushido</span></label><label class="theme-card ps-f5"><input type="radio" name="theme" id="theme-cafe" value="cafe"><span>cafe</span></label><label class="theme-card ps-g1"><input type="radio" name="theme" id="theme-camping" value="camping"><span>camping</span></label><label class="theme-card ps-e4"><input type="radio" name="theme" id="theme-carbon" value="carbon"><span>carbon</span></label><label class="theme-card ps-d3"><input type="radio" name="theme" id="theme-catppuccin" value="catppuccin"><span>catppuccin</span></label><label class="theme-card ps-ch"><input type="radio" name="theme" id="theme-chaos_theory" value="chaos_theory"><span>chaos theory</span></label><label class="theme-card ps-g3"><input type="radio" name="theme" id="theme-cheesecake" value="cheesecake"><span>cheesecake</span></label><label class="theme-card ps-e7"><input type="radio" name="theme" id="theme-cherry_blossom" value="cherry_blossom"><span>cherry blossom</span></label><label class="theme-card ps-eh"><input type="radio" name="theme" id="theme-comfy" value="comfy"><span>comfy</span></label><label class="theme-card ps-ef"><input type="radio" name="theme" id="theme-copper" value="copper"><span>copper</span></label><label class="theme-card ps-g6"><input type="radio" name="theme" id="theme-creamsicle" value="creamsicle"><span>creamsicle</span></label><label class="theme-card ps-em"><input type="radio" name="theme" id="theme-cy_red" value="cy_red"><span>cy red</span></label><label class="theme-card ps-co"><input type="radio" name="theme" id="theme-cyberspace" value="cyberspace"><span>cyberspace</span></label><label class="theme-card ps-cd"><input type="radio" name="theme" id="theme-dark" value="dark"><span>dark</span></label><label class="theme-card ps-bz"><input type="radio" name="theme" id="theme-dark_magic_girl" value="dark_magic_girl"><span>dark magic girl</span></label><label class="theme-card ps-d6"><input type="radio" name="theme" id="theme-dark_note" value="dark_note"><span>dark note</span></label><label class="theme-card ps-g5"><input type="radio" name="theme" id="theme-darling" value="darling"><span>darling</span></label><label class="theme-card ps-bw"><input type="radio" name="theme" id="theme-deku" value="deku"><span>deku</span></label><label class="theme-card ps-g9"><input type="radio" name="theme" id="theme-desert_oasis" value="desert_oasis"><span>desert oasis</span></label><label class="theme-card ps-cx"><input type="radio" name="theme" id="theme-dev" value="dev"><span>dev</span></label><label class="theme-card ps-ek"><input type="radio" name="theme" id="theme-diner" value="diner"><span>diner</span></label><label class="theme-card ps-gi"><input type="radio" name="theme" id="theme-dino" value="dino"><span>dino</span></label><label class="theme-card ps-e6"><input type="radio" name="theme" id="theme-discord" value="discord"><span>discord</span></label><label class="theme-card ps-fc"><input type="radio" name="theme" id="theme-dmg" value="dmg"><span>dmg</span></label><label class="theme-card ps-fj"><input type="radio" name="theme" id="theme-dollar" value="dollar"><span>dollar</span></label><label class="theme-card ps-ce"><input type="radio" name="theme" id="theme-dots" value="dots"><span>dots</span></label><label class="theme-card ps-dq"><input type="radio" name="theme" id="theme-dracula" value="dracula"><span>dracula</span></label><label class="theme-card ps-cq"><input type="radio" name="theme" id="theme-drowning" value="drowning"><span>drowning</span></label><label class="theme-card ps-eo"><input type="radio" name="theme" id="theme-dualshot" value="dualshot"><span>dualshot</span></label><label class="theme-card ps-dr"><input type="radio" name="theme" id="theme-earthsong" value="earthsong"><span>earthsong</span></label><label class="theme-card ps-ci"><input type="radio" name="theme" id="theme-everblush" value="everblush"><span>everblush</span></label><label class="theme-card ps-bq"><input type="radio" name="theme" id="theme-evil_eye" value="evil_eye"><span>evil eye</span></label><label class="theme-card ps-bp"><input type="radio" name="theme" id="theme-ez_mode" value="ez_mode"><span>ez mode</span></label><label class="theme-card ps-c8"><input type="radio" name="theme" id="theme-fire" value="fire"><span>fire</span></label><label class="theme-card ps-eb"><input type="radio" name="theme" id="theme-fledgling" value="fledgling"><span>fledgling</span></label><label class="theme-card ps-f3"><input type="radio" name="theme" id="theme-fleuriste" value="fleuriste"><span>fleuriste</span></label><label class="theme-card ps-bl"><input type="radio" name="theme" id="theme-floret" value="floret"><span>floret</span></label><label class="theme-card ps-fh"><input type="radio" name="theme" id="theme-froyo" value="froyo"><span>froyo</span></label><label class="theme-card ps-et"><input type="radio" name="theme" id="theme-frozen_llama" value="frozen_llama"><span>frozen llama</span></label><label class="theme-card ps-f9"><input type="radio" name="theme" id="theme-fruit_chew" value="fruit_chew"><span>fruit chew</span></label><label class="theme-card ps-en"><input type="radio" name="theme" id="theme-fundamentals" value="fundamentals"><span>fundamentals</span></label><label class="theme-card ps-e0"><input type="radio" name="theme" id="theme-future_funk" value="future_funk"><span>future funk</span></label><label class="theme-card ps-dc"><input type="radio" name="theme" id="theme-github" value="github"><span>github</span></label><label class="theme-card ps-fn"><input type="radio" name="theme" id="theme-godspeed" value="godspeed"><span>godspeed</span></label><label class="theme-card ps-e3"><input type="radio" name="theme" id="theme-graen" value="graen"><span>graen</span></label><label class="theme-card ps-ea"><input type="radio" name="theme" id="theme-grand_prix" value="grand_prix"><span>grand prix</span></label><label class="theme-card ps-dv"><input type="radio" name="theme" id="theme-grape" value="grape"><span>grape</span></label><label class="theme-card ps-dp"><input type="radio" name="theme" id="theme-gruvbox_dark" value="gruvbox_dark"><span>gruvbox dark</span></label><label class="theme-card ps-g2"><input type="radio" name="theme" id="theme-gruvbox_light" value="gruvbox_light"><span>gruvbox light</span></label><label class="theme-card ps-bu"><input type="radio" name="theme" id="theme-hammerhead" value="hammerhead"><span>hammerhead</span></label><label class="theme-card ps-fa"><input type="radio" name="theme" id="theme-hanok" value="hanok"><span>hanok</span></label><label class="theme-card ps-ed"><input type="radio" name="theme" id="theme-hedge" value="hedge"><span>hedge</span></label><label class="theme-card ps-fu"><input type="radio" name="theme" id="theme-honey" value="honey"><span>honey</span></label><label class="theme-card ps-d0"><input type="radio" name="theme" id="theme-horizon" value="horizon"><span>horizon</span></label><label class="theme-card ps-bf"><input type="radio" name="theme" id="theme-husqy" value="husqy"><span>husqy</span></label><label class="theme-card ps-cj"><input type="radio" name="theme" id="theme-iceberg_dark" value="iceberg_dark"><span>iceberg dark</span></label><label class="theme-card ps-fl"><input type="radio" name="theme" id="theme-iceberg_light" value="iceberg_light"><span>iceberg light</span></label><label class="theme-card ps-c7"><input type="radio" name="theme" id="theme-incognito" value="incognito"><span>incognito</span></label><label class="theme-card ps-d8"><input type="radio" name="theme" id="theme-ishtar" value="ishtar"><span>ishtar</span></label><label class="theme-card ps-eu"><input type="radio" name="theme" id="theme-iv_clover" value="iv_clover"><span>iv clover</span></label><label class="theme-card ps-c2"><input type="radio" name="theme" id="theme-iv_spade" value="iv_spade"><span>iv spade</span></label><label class="theme-card ps-cu"><input type="radio" name="theme" id="theme-joker" value="joker"><span>joker</span></label><label class="theme-card ps-de"><input type="radio" name="theme" id="theme-laser" value="laser"><span>laser</span></label><label class="theme-card ps-ex"><input type="radio" name="theme" id="theme-lavender" value="lavender"><span>lavender</span></label><label class="theme-card ps-ew"><input type="radio" name="theme" id="theme-leather" value="leather"><span>leather</span></label><label class="theme-card ps-fo"><input type="radio" name="theme" id="theme-lil_dragon" value="lil_dragon"><span>lil dragon</span></label><label class="theme-card ps-gd"><input type="radio" name="theme" id="theme-lilac_mist" value="lilac_mist"><span>lilac mist</span></label><label class="theme-card ps-er"><input type="radio" name="theme" id="theme-lime" value="lime"><span>lime</span></label><label class="theme-card ps-df"><input type="radio" name="theme" id="theme-luna" value="luna"><span>luna</span></label><label class="theme-card ps-ez"><input type="radio" name="theme" id="theme-macroblank" value="macroblank"><span>macroblank</span></label><label class="theme-card ps-gk"><input type="radio" name="theme" id="theme-magic_girl" value="magic_girl"><span>magic girl</span></label><label class="theme-card ps-du"><input type="radio" name="theme" id="theme-mashu" value="mashu"><span>mashu</span></label><label class="theme-card ps-ei"><input type="radio" name="theme" id="theme-matcha_moccha" value="matcha_moccha"><span>matcha moccha</span></label><label class="theme-card ps-dn"><input type="radio" name="theme" id="theme-material" value="material"><span>material</span></label><label class="theme-card ps-be"><input type="radio" name="theme" id="theme-matrix" value="matrix"><span>matrix</span></label><label class="theme-card ps-br"><input type="radio" name="theme" id="theme-menthol" value="menthol"><span>menthol</span></label><label class="theme-card ps-dg"><input type="radio" name="theme" id="theme-metaverse" value="metaverse"><span>metaverse</span></label><label class="theme-card ps-ca"><input type="radio" name="theme" id="theme-metropolis" value="metropolis"><span>metropolis</span></label><label class="theme-card ps-g0"><input type="radio" name="theme" id="theme-mexican" value="mexican"><span>mexican</span></label><label class="theme-card ps-fv"><input type="radio" name="theme" id="theme-miami" value="miami"><span>miami</span></label><label class="theme-card ps-cn"><input type="radio" name="theme" id="theme-miami_nights" value="miami_nights"><span>miami nights</span></label><label class="theme-card ps-c0"><input type="radio" name="theme" id="theme-midnight" value="midnight"><span>midnight</span></label><label class="theme-card ps-gf"><input type="radio" name="theme" id="theme-milkshake" value="milkshake"><span>milkshake</span></label><label class="theme-card ps-bv"><input type="radio" name="theme" id="theme-mint" value="mint"><span>mint</span></label><label class="theme-card ps-ey"><input type="radio" name="theme" id="theme-mizu" value="mizu"><span>mizu</span></label><label class="theme-card ps-dy"><input type="radio" name="theme" id="theme-modern_dolch" value="modern_dolch"><span>modern dolch</span></label><label class="theme-card ps-fe"><input type="radio" name="theme" id="theme-modern_dolch_light" value="modern_dolch_light"><span>modern dolch light</span></label><label class="theme-card ps-gm"><input type="radio" name="theme" id="theme-modern_ink" value="modern_ink"><span>modern ink</span></label><label class="theme-card ps-do"><input type="radio" name="theme" id="theme-monokai" value="monokai"><span>monokai</span></label><label class="theme-card ps-cs"><input type="radio" name="theme" id="theme-moonlight" value="moonlight"><span>moonlight</span></label><label class="theme-card ps-c9"><input type="radio" name="theme" id="theme-mountain" value="mountain"><span>mountain</span></label><label class="theme-card ps-f8"><input type="radio" name="theme" id="theme-mr_sleeves" value="mr_sleeves"><span>mr sleeves</span></label><label class="theme-card ps-gj"><input type="radio" name="theme" id="theme-ms_cupcakes" value="ms_cupcakes"><span>ms cupcakes</span></label><label class="theme-card ps-ej"><input type="radio" name="theme" id="theme-muted" value="muted"><span>muted</span></label><label class="theme-card ps-cg"><input type="radio" name="theme" id="theme-nautilus" value="nautilus"><span>nautilus</span></label><label class="theme-card ps-db"><input type="radio" name="theme" id="theme-nebula" value="nebula"><span>nebula</span></label><label class="theme-card ps-da"><input type="radio" name="theme" id="theme-night_runner" value="night_runner"><span>night runner</span></label><label class="theme-card ps-dj"><input type="radio" name="theme" id="theme-nord" value="nord"><span>nord</span></label><label class="theme-card ps-fp"><input type="radio" name="theme" id="theme-nord_light" value="nord_light"><span>nord light</span></label><label class="theme-card ps-di"><input type="radio" name="theme" id="theme-norse" value="norse"><span>norse</span></label><label class="theme-card ps-e5"><input type="radio" name="theme" id="theme-oblivion" value="oblivion"><span>oblivion</span></label><label class="theme-card ps-fm"><input type="radio" name="theme" id="theme-olive" value="olive"><span>olive</span></label><label class="theme-card ps-cy"><input type="radio" name="theme" id="theme-olivia" value="olivia"><span>olivia</span></label><label class="theme-card ps-e2"><input type="radio" name="theme" id="theme-onedark" value="onedark"><span>onedark</span></label><label class="theme-card ps-f4"><input type="radio" name="theme" id="theme-our_theme" value="our_theme"><span>our theme</span></label><label class="theme-card ps-ee"><input type="radio" name="theme" id="theme-pale_nimbus" value="pale_nimbus"><span>pale nimbus</span></label><label class="theme-card ps-fr"><input type="radio" name="theme" id="theme-paper" value="paper"><span>paper</span></label><label class="theme-card ps-eq"><input type="radio" name="theme" id="theme-passion_fruit" value="passion_fruit"><span>passion fruit</span></label><label class="theme-card ps-ff"><input type="radio" name="theme" id="theme-pastel" value="pastel"><span>pastel</span></label><label class="theme-card ps-ds"><input type="radio" name="theme" id="theme-peach_blossom" value="peach_blossom"><span>peach blossom</span></label><label class="theme-card ps-fg"><input type="radio" name="theme" id="theme-peaches" value="peaches"><span>peaches</span></label><label class="theme-card ps-bk"><input type="radio" name="theme" id="theme-phantom" value="phantom"><span>phantom</span></label><label class="theme-card ps-fz"><input type="radio" name="theme" id="theme-pink_lemonade" value="pink_lemonade"><span>pink lemonade</span></label><label class="theme-card ps-cm"><input type="radio" name="theme" id="theme-pulse" value="pulse"><span>pulse</span></label><label class="theme-card ps-d4"><input type="radio" name="theme" id="theme-purpleish" value="purpleish"><span>purpleish</span></label><label class="theme-card ps-fy"><input type="radio" name="theme" id="theme-rainbow_trail" value="rainbow_trail"><span>rainbow trail</span></label><label class="theme-card ps-ct"><input type="radio" name="theme" id="theme-red_dragon" value="red_dragon"><span>red dragon</span></label><label class="theme-card ps-es"><input type="radio" name="theme" id="theme-red_samurai" value="red_samurai"><span>red samurai</span></label><label class="theme-card ps-e1"><input type="radio" name="theme" id="theme-repose_dark" value="repose_dark"><span>repose dark</span></label><label class="theme-card ps-fs"><input type="radio" name="theme" id="theme-repose_light" value="repose_light"><span>repose light</span></label><label class="theme-card ps-fb"><input type="radio" name="theme" id="theme-retro" value="retro"><span>retro</span></label><label class="theme-card ps-bx"><input type="radio" name="theme" id="theme-retrocast" value="retrocast"><span>retrocast</span></label><label class="theme-card ps-cd"><input type="radio" name="theme" id="theme-rgb" value="rgb"><span>rgb</span></label><label class="theme-card ps-d5"><input type="radio" name="theme" id="theme-rose_pine" value="rose_pine"><span>rose pine</span></label><label class="theme-card ps-gc"><input type="radio" name="theme" id="theme-rose_pine_dawn" value="rose_pine_dawn"><span>rose pine dawn</span></label><label class="theme-card ps-dt"><input type="radio" name="theme" id="theme-rose_pine_moon" value="rose_pine_moon"><span>rose pine moon</span></label><label class="theme-card ps-cv"><input type="radio" name="theme" id="theme-rudy" value="rudy"><span>rudy</span></label><label class="theme-card ps-by"><input type="radio" name="theme" id="theme-ryujinscales" value="ryujinscales"><span>ryujinscales</span></label><label class="theme-card ps-fi"><input type="radio" name="theme" id="theme-serika" value="serika"><span>serika</span></label><label class="theme-card ps-e8"><input type="radio" name="theme" id="theme-serika_dark" value="serika_dark"><span>serika dark</span></label><label class="theme-card ps-dh"><input type="radio" name="theme" id="theme-sewing_tin" value="sewing_tin"><span>sewing tin</span></label><label class="theme-card ps-gg"><input type="radio" name="theme" id="theme-sewing_tin_light" value="sewing_tin_light"><span>sewing tin light</span></label><label class="theme-card ps-bi"><input type="radio" name="theme" id="theme-shadow" value="shadow"><span>shadow</span></label><label class="theme-card ps-f6"><input type="radio" name="theme" id="theme-shoko" value="shoko"><span>shoko</span></label><label class="theme-card ps-ge"><input type="radio" name="theme" id="theme-slambook" value="slambook"><span>slambook</span></label><label class="theme-card ps-f2"><input type="radio" name="theme" id="theme-snes" value="snes"><span>snes</span></label><label class="theme-card ps-gb"><input type="radio" name="theme" id="theme-soaring_skies" value="soaring_skies"><span>soaring skies</span></label><label class="theme-card ps-bm"><input type="radio" name="theme" id="theme-solarized_dark" value="solarized_dark"><span>solarized dark</span></label><label class="theme-card ps-g4"><input type="radio" name="theme" id="theme-solarized_light" value="solarized_light"><span>solarized light</span></label><label class="theme-card ps-bj"><input type="radio" name="theme" id="theme-solarized_osaka" value="solarized_osaka"><span>solarized osaka</span></label><label class="theme-card ps-dw"><input type="radio" name="theme" id="theme-sonokai" value="sonokai"><span>sonokai</span></label><label class="theme-card ps-c5"><input type="radio" name="theme" id="theme-spiderman" value="spiderman"><span>spiderman</span></label><label class="theme-card ps-bs"><input type="radio" name="theme" id="theme-stealth" value="stealth"><span>stealth</span></label><label class="theme-card ps-fw"><input type="radio" name="theme" id="theme-strawberry" value="strawberry"><span>strawberry</span></label><label class="theme-card ps-cf"><input type="radio" name="theme" id="theme-striker" value="striker"><span>striker</span></label><label class="theme-card ps-ec"><input type="radio" name="theme" id="theme-suisei" value="suisei"><span>suisei</span></label><label class="theme-card ps-d9"><input type="radio" name="theme" id="theme-sunset" value="sunset"><span>sunset</span></label><label class="theme-card ps-dm"><input type="radio" name="theme" id="theme-superuser" value="superuser"><span>superuser</span></label><label class="theme-card ps-bo"><input type="radio" name="theme" id="theme-sweden" value="sweden"><span>sweden</span></label><label class="theme-card ps-g7"><input type="radio" name="theme" id="theme-tangerine" value="tangerine"><span>tangerine</span></label><label class="theme-card ps-f0"><input type="radio" name="theme" id="theme-taro" value="taro"><span>taro</span></label><label class="theme-card ps-cr"><input type="radio" name="theme" id="theme-terminal" value="terminal"><span>terminal</span></label><label class="theme-card ps-c4"><input type="radio" name="theme" id="theme-terra" value="terra"><span>terra</span></label><label class="theme-card ps-ft"><input type="radio" name="theme" id="theme-terrazzo" value="terrazzo"><span>terrazzo</span></label><label class="theme-card ps-c1"><input type="radio" name="theme" id="theme-terror_below" value="terror_below"><span>terror below</span></label><label class="theme-card ps-f7"><input type="radio" name="theme" id="theme-tiramisu" value="tiramisu"><span>tiramisu</span></label><label class="theme-card ps-eg"><input type="radio" name="theme" id="theme-trackday" value="trackday"><span>trackday</span></label><label class="theme-card ps-bh"><input type="radio" name="theme" id="theme-trance" value="trance"><span>trance</span></label><label class="theme-card ps-c6"><input type="radio" name="theme" id="theme-tron_orange" value="tron_orange"><span>tron orange</span></label><label class="theme-card ps-ev"><input type="radio" name="theme" id="theme-vaporwave" value="vaporwave"><span>vaporwave</span></label><label class="theme-card ps-cb"><input type="radio" name="theme" id="theme-vesper" value="vesper"><span>vesper</span></label><label class="theme-card ps-gl"><input type="radio" name="theme" id="theme-vesper_light" value="vesper_light"><span>vesper light</span></label><label class="theme-card ps-dx"><input type="radio" name="theme" id="theme-viridescent" value="viridescent"><span>viridescent</span></label><label class="theme-card ps-cp"><input type="radio" name="theme" id="theme-voc" value="voc"><span>voc</span></label><label class="theme-card ps-d2"><input type="radio" name="theme" id="theme-vscode" value="vscode"><span>vscode</span></label><label class="theme-card ps-d7"><input type="radio" name="theme" id="theme-watermelon" value="watermelon"><span>watermelon</span></label><label class="theme-card ps-d1"><input type="radio" name="theme" id="theme-wavez" value="wavez"><span>wavez</span></label><label class="theme-card ps-fx"><input type="radio" name="theme" id="theme-witch_girl" value="witch_girl"><span>witch girl</span></label></div></details><div class="js-only ps-14h" id="monkeytype-text-source">
+<h3>reading text color</h3>
+<p class="control-help">Auto chooses the more readable palette color. Choose sub or text to set it yourself; answer colors adapt.</p>
+<div aria-label="Monkeytype reading text color" class="segmented" role="group">
+<label><input checked="" name="text-source" type="radio" value="auto"/><span>auto</span></label>
+<label><input name="text-source" type="radio" value="sub"/><span>sub</span></label>
+<label><input name="text-source" type="radio" value="text"/><span>text</span></label>
+</div>
+<p aria-live="polite" class="control-help ps-14i" id="monkeytype-text-status" role="status"></p>
+</div></div><aside class="theme-editor js-only" aria-label="Customize theme colors"><div class="color-editor-heading"><h3>colors</h3><button type="button" id="reset-theme-colors" aria-label="Reset this theme">reset</button></div><span class="sr-only" id="color-format-help">Choose a swatch or enter hex. Transparent borders accept #RRGGBBAA. Reset restores the theme color.</span><span class="sr-only" id="color-edit-status" role="status" aria-live="polite"></span><div class="main-colors"><div class="color-row" data-color-row="bg">
+<label for="color-bg">background</label>
+<div class="color-inputs"><input type="color" id="swatch-bg" aria-label="background swatch" data-color-swatch="bg">
+<input type="text" id="color-bg" data-color-hex="bg" aria-label="background hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="bg" aria-label="Reset background" title="Reset background">↺</button></div></div><div class="color-row" data-color-row="text">
+<label for="color-text">reading text</label>
+<div class="color-inputs"><input type="color" id="swatch-text" aria-label="reading text swatch" data-color-swatch="text">
+<input type="text" id="color-text" data-color-hex="text" aria-label="reading text hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="text" aria-label="Reset reading text" title="Reset reading text">↺</button></div></div><div class="color-row" data-color-row="muted">
+<label for="color-muted">secondary text</label>
+<div class="color-inputs"><input type="color" id="swatch-muted" aria-label="secondary text swatch" data-color-swatch="muted">
+<input type="text" id="color-muted" data-color-hex="muted" aria-label="secondary text hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="muted" aria-label="Reset secondary text" title="Reset secondary text">↺</button></div></div><div class="color-row" data-color-row="accent">
+<label for="color-accent">interface accent</label>
+<div class="color-inputs"><input type="color" id="swatch-accent" aria-label="interface accent swatch" data-color-swatch="accent">
+<input type="text" id="color-accent" data-color-hex="accent" aria-label="interface accent hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="accent" aria-label="Reset interface accent" title="Reset interface accent">↺</button></div></div><div class="color-row" data-color-row="correct">
+<label for="color-correct">correct</label>
+<div class="color-inputs"><input type="color" id="swatch-correct" aria-label="correct swatch" data-color-swatch="correct">
+<input type="text" id="color-correct" data-color-hex="correct" aria-label="correct hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="correct" aria-label="Reset correct" title="Reset correct">↺</button></div></div><div class="color-row" data-color-row="wrong">
+<label for="color-wrong">wrong</label>
+<div class="color-inputs"><input type="color" id="swatch-wrong" aria-label="wrong swatch" data-color-swatch="wrong">
+<input type="text" id="color-wrong" data-color-hex="wrong" aria-label="wrong hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="wrong" aria-label="Reset wrong" title="Reset wrong">↺</button></div></div></div><details class="advanced-colors"><summary>more colors</summary><div class="advanced-color-grid"><div class="color-row" data-color-row="raised">
+<label for="color-raised">buttons &amp; controls</label>
+<div class="color-inputs"><input type="color" id="swatch-raised" aria-label="buttons &amp; controls swatch" data-color-swatch="raised">
+<input type="text" id="color-raised" data-color-hex="raised" aria-label="buttons &amp; controls hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="raised" aria-label="Reset buttons &amp; controls" title="Reset buttons &amp; controls">↺</button></div></div><div class="color-row" data-color-row="correct-ink">
+<label for="color-correct-ink">correct text &amp; numbers</label>
+<div class="color-inputs"><input type="color" id="swatch-correct-ink" aria-label="correct text &amp; numbers swatch" data-color-swatch="correct-ink">
+<input type="text" id="color-correct-ink" data-color-hex="correct-ink" aria-label="correct text &amp; numbers hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="correct-ink" aria-label="Reset correct text &amp; numbers" title="Reset correct text &amp; numbers">↺</button></div></div><div class="color-row" data-color-row="edge">
+<label for="color-edge">paper outline</label>
+<div class="color-inputs"><input type="color" id="swatch-edge" aria-label="paper outline swatch" data-color-swatch="edge">
+<input type="text" id="color-edge" data-color-hex="edge" aria-label="paper outline hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge" aria-label="Reset paper outline" title="Reset paper outline">↺</button></div></div><div class="color-row" data-color-row="edge-soft">
+<label for="color-edge-soft">soft dividers</label>
+<div class="color-inputs"><input type="color" id="swatch-edge-soft" aria-label="soft dividers swatch" data-color-swatch="edge-soft">
+<input type="text" id="color-edge-soft" data-color-hex="edge-soft" aria-label="soft dividers hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge-soft" aria-label="Reset soft dividers" title="Reset soft dividers">↺</button></div><label class="color-opacity">opacity<input type="range" min="0" max="100" step="0.1" data-color-alpha="edge-soft" aria-label="soft dividers opacity"><output></output></label></div><div class="color-row" data-color-row="edge-strong">
+<label for="color-edge-strong">strong borders</label>
+<div class="color-inputs"><input type="color" id="swatch-edge-strong" aria-label="strong borders swatch" data-color-swatch="edge-strong">
+<input type="text" id="color-edge-strong" data-color-hex="edge-strong" aria-label="strong borders hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge-strong" aria-label="Reset strong borders" title="Reset strong borders">↺</button></div><label class="color-opacity">opacity<input type="range" min="0" max="100" step="0.1" data-color-alpha="edge-strong" aria-label="strong borders opacity"><output></output></label></div><div class="color-row" data-color-row="logo-secondary">
+<label for="color-logo-secondary">wordmark · JLPT</label>
+<div class="color-inputs"><input type="color" id="swatch-logo-secondary" aria-label="wordmark · JLPT swatch" data-color-swatch="logo-secondary">
+<input type="text" id="color-logo-secondary" data-color-hex="logo-secondary" aria-label="wordmark · JLPT hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="logo-secondary" aria-label="Reset wordmark · JLPT" title="Reset wordmark · JLPT">↺</button></div></div></div><div class="fill-opacity-controls"><h4>fill opacity</h4><p>Applies to correct and wrong answers.</p><div class="fill-opacity-row"><label for="opacity-cell-fill">cell fill<output id="opacity-cell-fill-output">11%</output></label><div><input id="opacity-cell-fill" type="range" min="0" max="100" step="1" value="11" data-fill-opacity="cell-fill" aria-label="cell fill opacity"><button type="button" data-fill-reset="cell-fill" aria-label="Reset cell fill opacity" title="Reset cell fill opacity">↺</button></div></div><div class="fill-opacity-row"><label for="opacity-fill">fill style<output id="opacity-fill-output">30%</output></label><div><input id="opacity-fill" type="range" min="0" max="100" step="1" value="30" data-fill-opacity="fill" aria-label="fill style opacity"><button type="button" data-fill-reset="fill" aria-label="Reset fill style opacity" title="Reset fill style opacity">↺</button></div></div></div></details></aside></div></section><section data-settings="browser"><div class="setting-row js-only"><div><h3>remember this browser</h3><p id="save-status">Saving is on by default. No account required.</p></div><label class="switch"><input id="remember" type="checkbox" checked>save preferences, answers and position</label></div><div class="button-row browser-actions js-only"><button id="reset-preferences" type="button">reset preferences</button><button id="forget" type="button">forget saved data</button></div><div class="developer-only developer-settings"><h3>developer mode</h3><p>Principal differences and editorial cases are visible. This local switch is not authentication.</p><button id="disable-dev" type="button">hide developer tools</button></div><div class="settings-about"><button type="button" id="developer-unlock" class="js-only" title="astraJLPT build information">astraJLPT · 2020–2026 collection</button><span id="developer-hint" role="status"></span></div></section></div></details></header><main id="content" class="review-page"><div class="review-content"><a href="../levels/N1.html">← N1 papers</a><h1>N1 · December 2025</h1><p>Uncertainty index: <strong>510</strong> · 0 differences · 1 unresolved · 2 provisional fixes</p><p>Evidence base 500 + source concerns 10 = 510. Concerns are uncapped; browsing order uses evidence tier before concern points.</p><p>This is an editorial evidence assessment, not a probability, an error rate or a practice score.</p><details><summary>Assessment evidence and original source scores</summary><pre>{
+  &quot;unit&quot;: &quot;N1_12_2025&quot;,
+  &quot;sample&quot;: false,
+  &quot;year&quot;: 2025,
+  &quot;month&quot;: 12,
+  &quot;evidence_base&quot;: 500,
+  &quot;evidence_tier&quot;: 2,
+  &quot;concern_points&quot;: 10,
+  &quot;index&quot;: 510,
+  &quot;concern_counts&quot;: {
+    &quot;metadata_flags&quot;: 0,
+    &quot;missing_units&quot;: 0,
+    &quot;major_defects&quot;: 0,
+    &quot;minor_defects&quot;: 0,
+    &quot;uncertain_fields&quot;: 10
+  },
+  &quot;principal_history&quot;: {
+    &quot;unit&quot;: &quot;N1_12_2025&quot;,
+    &quot;level&quot;: &quot;N1&quot;,
+    &quot;year&quot;: 2025,
+    &quot;month&quot;: 12,
+    &quot;principal_path&quot;: &quot;src/JLPT_N1_N5_202512/25年12月N1/A 2025年12月N1完整原卷.pdf&quot;,
+    &quot;principal_sha256&quot;: &quot;930f74eba01c27aea3403d85541b8310c018660cf9014c1dd88d7e33229eae82&quot;,
+    &quot;initial_tier&quot;: 1,
+    &quot;written_physical_pages&quot;: &quot;2-32&quot;,
+    &quot;review_status&quot;: &quot;complete_written_review&quot;,
+    &quot;provenance_status&quot;: &quot;unverified&quot;,
+    &quot;provenance_points&quot;: 100,
+    &quot;metadata_flags&quot;: 0,
+    &quot;missing_units&quot;: 0,
+    &quot;major_defects&quot;: 0,
+    &quot;minor_defects&quot;: 0,
+    &quot;uncertain_fields&quot;: 10,
+    &quot;uncertainty_index&quot;: 110,
+    &quot;score_evidence&quot;: [
+      {
+        &quot;id&quot;: &quot;N1_12_2025-S-001&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;vocab-q008&quot;,
+        &quot;field&quot;: &quot;/stem&quot;,
+        &quot;locator&quot;: &quot;Physical pages3&quot;,
+        &quot;evidence&quot;: &quot;Original Q8, A-team lead: が versus は in the stem. Retain が, directly printed in the A page family and transcribed by munja. は also forms a natural contrastive topic, so grammar alone does not establish historical wording.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N1_12_2025-S-002&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;vocab-q018&quot;,
+        &quot;field&quot;: &quot;/options/3&quot;,
+        &quot;locator&quot;: &quot;Physical pages4&quot;,
+        &quot;evidence&quot;: &quot;Original Q18, synonym of 当面; fourth distractor 多分 versus ひとまず. Keep 多分 from the clear A page and its matching page family. しばらく is the intended synonym; both competing fourth choices could have been deliberately printed distractors, making historical choice identity uncertain.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N1_12_2025-S-003&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;vocab-q024&quot;,
+        &quot;field&quot;: &quot;/options/2&quot;,
+        &quot;locator&quot;: &quot;Physical pages5&quot;,
+        &quot;evidence&quot;: &quot;Original Q24, incorrect usage of 迫力 in the rain forecast: 増していく versus 増してくる. Retain the A reading 増していく. Both auxiliary directions can describe intensifying rain; the deliberate lexical error remains 迫力 in either reading.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N1_12_2025-S-004&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;vocab-q036&quot;,
+        &quot;field&quot;: &quot;/stem&quot;,
+        &quot;locator&quot;: &quot;Physical pages9&quot;,
+        &quot;evidence&quot;: &quot;Original Q36, ★ dialogue ending だよ versus だね. Retain だよ with the A page family and munja. Both endings fit the shared criticism; neither changes the second-star answer 西山さん. Names, ruby and all four slots follow the inspected A page.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N1_12_2025-S-005&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;vocab-q041&quot;,
+        &quot;field&quot;: &quot;/options/1&quot;,
+        &quot;locator&quot;: &quot;Physical pages12&quot;,
+        &quot;evidence&quot;: &quot;Original Q41, second deliberately wrong cloze option なります versus あります. The clear A page and matching reproduction support よくないことにもなります. Both versions can function as incorrect options; correcting a distractor by fluency would not recover its historical spelling.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N1_12_2025-S-006&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;vocab-q042&quot;,
+        &quot;field&quot;: &quot;/options/1&quot;,
+        &quot;locator&quot;: &quot;Physical pages12&quot;,
+        &quot;evidence&quot;: &quot;Original Q42, second cloze distractor 示しそうです versus 示すそうです. Retain the appearance construction 示しそうです from the A page family. 示すそうです is a distinct, grammatical hearsay form; its existence as a distractor cannot be settled from Japanese correctness.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N1_12_2025-S-007&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;vocab-b002&quot;,
+        &quot;field&quot;: &quot;/content&quot;,
+        &quot;locator&quot;: &quot;Physical pages11&quot;,
+        &quot;evidence&quot;: &quot;Cat cloze passage before [43]: 習性 versus 習慣. Retain 習性, as the passage explains a species-specific behavior, and it is the clear A/munja reading. 習慣 is also plausible Japanese and appears in the retype; source priority does not make the wording certain.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N1_12_2025-S-008&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;reading-b001&quot;,
+        &quot;field&quot;: &quot;/content&quot;,
+        &quot;locator&quot;: &quot;Physical pages13&quot;,
+        &quot;evidence&quot;: &quot;Original Q45 car-recall passage: 論理的 versus 理論的. Retain 論理的 from the A/munja reading: the paragraph draws a practical logical consequence from unavoidable defects. 理論的 can describe an abstract approach, but fits this reasoning less precisely.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N1_12_2025-S-009&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;reading-b007&quot;,
+        &quot;field&quot;: &quot;/content&quot;,
+        &quot;locator&quot;: &quot;Physical pages21&quot;,
+        &quot;evidence&quot;: &quot;Original Q53–54 cleaner-shrimp passage: 治癒する/癒やす and 海底で/海底でも variants. Keep the A wording 治癒したり and 海底で, also transcribed by munja. The retype uses semantically plausible alternatives; observed retype errors elsewhere reduce its priority but do not prove these particular words were accidental.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N1_12_2025-S-010&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;reading-b013&quot;,
+        &quot;field&quot;: &quot;/content&quot;,
+        &quot;locator&quot;: &quot;Physical32, dispatch-time table&quot;,
+        &quot;evidence&quot;: &quot;16時まで and16時以降 both include exactly16:00; literal headings retained. Q66 uses17:00 and is unaffected.&quot;
+      }
+    ],
+    &quot;assessed_on&quot;: &quot;2026-09-26&quot;,
+    &quot;method_version&quot;: 1
+  },
+  &quot;evidence&quot;: [
+    {
+      &quot;kind&quot;: &quot;user_approved_reference_scan&quot;,
+      &quot;binding&quot;: {
+        &quot;path&quot;: &quot;preprocess/user_approved_reference_scans.md&quot;,
+        &quot;sha256&quot;: &quot;c0fc4d24494a9569dd539d237018014213045d6224ae9035fa282ab610be0384&quot;
+      },
+      &quot;reference&quot;: {
+        &quot;path&quot;: &quot;src/JLPT_N1_N5_202512/25年12月N1/A 2025年12月N1完整原卷.pdf&quot;,
+        &quot;sha256&quot;: &quot;930f74eba01c27aea3403d85541b8310c018660cf9014c1dd88d7e33229eae82&quot;,
+        &quot;written_physical_pages&quot;: [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32
+        ]
+      },
+      &quot;scope&quot;: &quot;Exact selected source and approved question pages only; approval does not authenticate issuer custody or remove source concerns.&quot;
+    }
+  ]
+}</pre></details><a href="../assets/principals/N1_12_2025.pdf" target="_blank" rel="noopener">Open principal source ↗</a><ul></ul><div class="review-controls"><label>Show <select id="review-filter"><option value="all">All records</option><option value="difference">Principal differences</option><option value="unresolved">Unresolved cases</option><option value="provisional_fix">Provisional fixes</option></select></label><label>Find <input id="review-search" type="search" placeholder="Item, wording, evidence…"></label></div><p id="review-count" class="control-help" role="status"></p><section class="review-group" id="review-vocab-q008" data-kinds="resolved"><div class="review-group-heading"><h2>vocab-q008</h2><a href="../papers/N1_12_2025.html#vocab-q008">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">試合の前半はAチームが1点（　　　）していたが、後半に2点取られて逆転された。<ol><li>プラス</li><li>アップ</li><li>リード</li><li>キャッチ</li></ol><p>Editorial key: 3</p></div></details><div class="review-record" id="unresolved_cases-N1_12_2025-vocab-q008-reconstruction"><div class="review-label">Resolved ·  · high</div><div class="comparison"><div><h4>Alternative</h4><pre>{
+  &quot;id&quot;: &quot;vocab-q008&quot;,
+  &quot;stem&quot;: &quot;試合の前半はAチーム<mark class="diff-old">は</mark>1点（　　　）していたが、後半に2点取られて逆転された。&quot;,
+  &quot;options&quot;: [
+    &quot;プラス&quot;,
+    &quot;アップ&quot;,
+    &quot;リード&quot;,
+    &quot;キャッチ&quot;
+  ],
+  &quot;key&quot;: 3
+}</pre></div><div><h4>Editorial</h4><pre>{
+  &quot;id&quot;: &quot;vocab-q008&quot;,
+  &quot;stem&quot;: &quot;試合の前半はAチーム<mark class="diff-new">が</mark>1点（　　　）していたが、後半に2点取られて逆転された。&quot;,
+  &quot;options&quot;: [
+    &quot;プラス&quot;,
+    &quot;アップ&quot;,
+    &quot;リード&quot;,
+    &quot;キャッチ&quot;
+  ],
+  &quot;key&quot;: 3
+}</pre></div></div><p>Before half time Aチームが1点…していた; choice 3 リード fits, and the printed particle is が rather than は. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings.</p><a href="../assets/principals/N1_12_2025.pdf" target="_blank" rel="noopener">Source ↗</a> <span class="control-help">Original Q8, A-team lead: が versus は in the stem.</span><ul class="evidence-list"><li><a href="../assets/principals/N1_12_2025.pdf#page=3" target="_blank" rel="noopener">A 2025年12月N1完整原卷.pdf</a> · Physical pages3<p>Aチームが1点</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=3" target="_blank" rel="noopener">2025年12月N1真题.pdf</a> · Physical pages3<p>Aチームは1点</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=2" target="_blank" rel="noopener">25年12月N1真题.pdf</a> · Physical pages2<p>Aチームが1点</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=3" target="_blank" rel="noopener">A 2025年12月N1完整原卷.pdf</a> · vocab-q008 ; physical 3<p>Before half time Aチームが1点…していた; choice 3 リード fits, and the printed particle is が rather than は.</p></li></ul><details><summary>Full published record · unresolved_cases-N1_12_2025-vocab-q008-reconstruction</summary><pre>{
+  &quot;case_id&quot;: &quot;N1_12_2025-vocab-q008-reconstruction&quot;,
+  &quot;unit&quot;: &quot;N1_12_2025&quot;,
+  &quot;item_id&quot;: &quot;vocab-q008&quot;,
+  &quot;field&quot;: &quot;&quot;,
+  &quot;status&quot;: &quot;resolved&quot;,
+  &quot;confidence&quot;: &quot;high&quot;,
+  &quot;decision_basis&quot;: &quot;source_comparison&quot;,
+  &quot;current_value&quot;: {
+    &quot;id&quot;: &quot;vocab-q008&quot;,
+    &quot;stem&quot;: &quot;試合の前半はAチームが1点（　　　）していたが、後半に2点取られて逆転された。&quot;,
+    &quot;options&quot;: [
+      &quot;プラス&quot;,
+      &quot;アップ&quot;,
+      &quot;リード&quot;,
+      &quot;キャッチ&quot;
+    ],
+    &quot;key&quot;: 3
+  },
+  &quot;before&quot;: null,
+  &quot;context&quot;: &quot;Original Q8, A-team lead: が versus は in the stem.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: {
+        &quot;id&quot;: &quot;vocab-q008&quot;,
+        &quot;stem&quot;: &quot;試合の前半はAチームは1点（　　　）していたが、後半に2点取られて逆転された。&quot;,
+        &quot;options&quot;: [
+          &quot;プラス&quot;,
+          &quot;アップ&quot;,
+          &quot;リード&quot;,
+          &quot;キャッチ&quot;
+        ],
+        &quot;key&quot;: 3
+      },
+      &quot;assessment&quot;: &quot;The retype has は; both topic and subject marking can fit, and the correct choice リード remains unchanged.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;A 2025年12月N1完整原卷.pdf&quot;,
+      &quot;sha256&quot;: &quot;930f74eba01c27aea3403d85541b8310c018660cf9014c1dd88d7e33229eae82&quot;,
+      &quot;locator&quot;: &quot;Physical pages3&quot;,
+      &quot;reading&quot;: &quot;Aチームが1点&quot;,
+      &quot;physical_pages&quot;: [
+        3
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;2025年12月N1真题.pdf&quot;,
+      &quot;sha256&quot;: &quot;445359367643ad6b1e7f466feed05685ab2edca30d3d8b0085bc16ecab40a4c9&quot;,
+      &quot;locator&quot;: &quot;Physical pages3&quot;,
+      &quot;reading&quot;: &quot;Aチームは1点&quot;,
+      &quot;physical_pages&quot;: [
+        3
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;25年12月N1真题.pdf&quot;,
+      &quot;sha256&quot;: &quot;f50f78a55e20973d014fe6fb6406f0cacdc4ed66cdb53621a390478f6ed4759e&quot;,
+      &quot;locator&quot;: &quot;Physical pages2&quot;,
+      &quot;reading&quot;: &quot;Aチームが1点&quot;,
+      &quot;physical_pages&quot;: [
+        2
+      ],
+      &quot;lineage&quot;: &quot;Question-page bodies match the A reproduction in inspected spans; not independent confirmation.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;A 2025年12月N1完整原卷.pdf&quot;,
+      &quot;sha256&quot;: &quot;930f74eba01c27aea3403d85541b8310c018660cf9014c1dd88d7e33229eae82&quot;,
+      &quot;locator&quot;: &quot;vocab-q008 ; physical 3&quot;,
+      &quot;physical_pages&quot;: [
+        3
+      ],
+      &quot;reading&quot;: &quot;Before half time Aチームが1点…していた; choice 3 リード fits, and the printed particle is が rather than は.&quot;,
+      &quot;lineage&quot;: &quot;Exact UARS-approved sitting scan; copied editions/alternative reconstructions are not independent print lineages.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Before half time Aチームが1点…していた; choice 3 リード fits, and the printed particle is が rather than は. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Compared the complete item and its surrounding context in the A question reproduction and the materially distinct question retype.&quot;,
+    &quot;Checked the corresponding structured transcript and relevant available explanation/answer witnesses; agreement from shared page bodies or explanation text was not counted as independent.&quot;,
+    &quot;Reassessed the strongest alternative using grammar, discourse and the task while preserving deliberate distractors.&quot;,
+    &quot;5 November 2026 — Before half time Aチームが1点…していた; choice 3 リード fits, and the printed particle is が rather than は. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;&quot;
+}</pre></details></div></section><section class="review-group" id="review-vocab-q018" data-kinds="resolved"><div class="review-group-heading"><h2>vocab-q018</h2><a href="../papers/N1_12_2025.html#vocab-q018">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">今後、同様のことが起こることは<u>当面</u>ないだろう。<ol><li>絶対</li><li>しばらく</li><li>あまり</li><li>多分</li></ol><p>Editorial key: 2</p></div></details><div class="review-record" id="unresolved_cases-N1_12_2025-vocab-q018-reconstruction"><div class="review-label">Resolved ·  · high</div><div class="comparison"><div><h4>Alternative</h4><pre>…今後、同様のことが起こることは&lt;u&gt;当面&lt;/u&gt;ないだろう。&quot;
+  },
+  &quot;options&quot;: [
+    &quot;絶対&quot;,
+    &quot;しばらく&quot;,
+    &quot;あまり&quot;,
+    &quot;<mark class="diff-old">ひとまず</mark>&quot;
+  ],
+  &quot;key&quot;: 2
+}</pre></div><div><h4>Editorial</h4><pre>…今後、同様のことが起こることは&lt;u&gt;当面&lt;/u&gt;ないだろう。&quot;
+  },
+  &quot;options&quot;: [
+    &quot;絶対&quot;,
+    &quot;しばらく&quot;,
+    &quot;あまり&quot;,
+    &quot;<mark class="diff-new">多分</mark>&quot;
+  ],
+  &quot;key&quot;: 2
+}</pre></div></div><p>Q18 tests 当面 in the prediction that the same incident will not recur. Option 4 is 多分. It is not equivalent to しばらく, which sits in position 2. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings.</p><a href="../assets/principals/N1_12_2025.pdf" target="_blank" rel="noopener">Source ↗</a> <span class="control-help">Original Q18, synonym of 当面; fourth distractor 多分 versus ひとまず.</span><ul class="evidence-list"><li><a href="../assets/principals/N1_12_2025.pdf#page=4" target="_blank" rel="noopener">A 2025年12月N1完整原卷.pdf</a> · Physical pages4<p>Option4 多分</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=4" target="_blank" rel="noopener">2025年12月N1真题.pdf</a> · Physical pages4<p>Option4 ひとまず</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=3" target="_blank" rel="noopener">25年12月N1真题.pdf</a> · Physical pages3<p>Option4 多分</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=3" target="_blank" rel="noopener">2025年12月N1解析.pdf</a> · Physical pages3<p>The Q18 option discussion includes ひとまず; it does not authenticate the question page.</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=4" target="_blank" rel="noopener">B 2025年12月N1解析消除水印版.pdf</a> · Physical page4, corresponding item explanation<p>Q18 option4 is 多分, agreeing with the A question pages; the other native explanation gives ひとまず.</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=4" target="_blank" rel="noopener">A 2025年12月N1完整原卷.pdf</a> · vocab-q018 ; physical 4<p>Q18 tests 当面 in the prediction that the same incident will not recur. Option 4 is 多分. It is not equivalent to しばらく, which sits in position 2.</p></li></ul><details><summary>Full published record · unresolved_cases-N1_12_2025-vocab-q018-reconstruction</summary><pre>{
+  &quot;case_id&quot;: &quot;N1_12_2025-vocab-q018-reconstruction&quot;,
+  &quot;unit&quot;: &quot;N1_12_2025&quot;,
+  &quot;item_id&quot;: &quot;vocab-q018&quot;,
+  &quot;field&quot;: &quot;&quot;,
+  &quot;status&quot;: &quot;resolved&quot;,
+  &quot;confidence&quot;: &quot;high&quot;,
+  &quot;decision_basis&quot;: &quot;source_comparison&quot;,
+  &quot;current_value&quot;: {
+    &quot;id&quot;: &quot;vocab-q018&quot;,
+    &quot;stem&quot;: {
+      &quot;html&quot;: &quot;今後、同様のことが起こることは&lt;u&gt;当面&lt;/u&gt;ないだろう。&quot;
+    },
+    &quot;options&quot;: [
+      &quot;絶対&quot;,
+      &quot;しばらく&quot;,
+      &quot;あまり&quot;,
+      &quot;多分&quot;
+    ],
+    &quot;key&quot;: 2
+  },
+  &quot;before&quot;: null,
+  &quot;context&quot;: &quot;Original Q18, synonym of 当面; fourth distractor 多分 versus ひとまず.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: {
+        &quot;id&quot;: &quot;vocab-q018&quot;,
+        &quot;stem&quot;: {
+          &quot;html&quot;: &quot;今後、同様のことが起こることは&lt;u&gt;当面&lt;/u&gt;ないだろう。&quot;
+        },
+        &quot;options&quot;: [
+          &quot;絶対&quot;,
+          &quot;しばらく&quot;,
+          &quot;あまり&quot;,
+          &quot;ひとまず&quot;
+        ],
+        &quot;key&quot;: 2
+      },
+      &quot;assessment&quot;: &quot;Viable distractor in the retype/explanation family; it cannot be dismissed merely because it is not the key.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;A 2025年12月N1完整原卷.pdf&quot;,
+      &quot;sha256&quot;: &quot;930f74eba01c27aea3403d85541b8310c018660cf9014c1dd88d7e33229eae82&quot;,
+      &quot;locator&quot;: &quot;Physical pages4&quot;,
+      &quot;reading&quot;: &quot;Option4 多分&quot;,
+      &quot;physical_pages&quot;: [
+        4
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;2025年12月N1真题.pdf&quot;,
+      &quot;sha256&quot;: &quot;445359367643ad6b1e7f466feed05685ab2edca30d3d8b0085bc16ecab40a4c9&quot;,
+      &quot;locator&quot;: &quot;Physical pages4&quot;,
+      &quot;reading&quot;: &quot;Option4 ひとまず&quot;,
+      &quot;physical_pages&quot;: [
+        4
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;25年12月N1真题.pdf&quot;,
+      &quot;sha256&quot;: &quot;f50f78a55e20973d014fe6fb6406f0cacdc4ed66cdb53621a390478f6ed4759e&quot;,
+      &quot;locator&quot;: &quot;Physical pages3&quot;,
+      &quot;reading&quot;: &quot;Option4 多分&quot;,
+      &quot;physical_pages&quot;: [
+        3
+      ],
+      &quot;lineage&quot;: &quot;Question-page bodies match the A reproduction in inspected spans; not independent confirmation.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2025年12月N1解析.pdf&quot;,
+      &quot;sha256&quot;: &quot;268907ed819a5c04ca64cb73710a35af2eb7b3c5b8f46c064e1b9c1483baae51&quot;,
+      &quot;locator&quot;: &quot;Physical pages3&quot;,
+      &quot;reading&quot;: &quot;The Q18 option discussion includes ひとまず; it does not authenticate the question page.&quot;,
+      &quot;physical_pages&quot;: [
+        3
+      ],
+      &quot;lineage&quot;: &quot;Much of the reading explanation wording also appears in the Hujiang analysis; shared ancestry is likely.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;B 2025年12月N1解析消除水印版.pdf&quot;,
+      &quot;sha256&quot;: &quot;f26b88c34893e3605c9c2ac3c1996ccce6bdc674216e7a71208e3d3215b023b4&quot;,
+      &quot;locator&quot;: &quot;Physical page4, corresponding item explanation&quot;,
+      &quot;physical_pages&quot;: [
+        4
+      ],
+      &quot;reading&quot;: &quot;Q18 option4 is 多分, agreeing with the A question pages; the other native explanation gives ひとまず.&quot;,
+      &quot;lineage&quot;: &quot;A further local explanation witness; parts of its reading commentary share Hujiang wording. Its acquisition independence is unestablished.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;A 2025年12月N1完整原卷.pdf&quot;,
+      &quot;sha256&quot;: &quot;930f74eba01c27aea3403d85541b8310c018660cf9014c1dd88d7e33229eae82&quot;,
+      &quot;locator&quot;: &quot;vocab-q018 ; physical 4&quot;,
+      &quot;physical_pages&quot;: [
+        4
+      ],
+      &quot;reading&quot;: &quot;Q18 tests 当面 in the prediction that the same incident will not recur. Option 4 is 多分. It is not equivalent to しばらく, which sits in position 2.&quot;,
+      &quot;lineage&quot;: &quot;Exact UARS-approved sitting scan; copied editions/alternative reconstructions are not independent print lineages.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Q18 tests 当面 in the prediction that the same incident will not recur. Option 4 is 多分. It is not equivalent to しばらく, which sits in position 2. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Compared the complete item and its surrounding context in the A question reproduction and the materially distinct question retype.&quot;,
+    &quot;Checked the corresponding structured transcript and relevant available explanation/answer witnesses; agreement from shared page bodies or explanation text was not counted as independent.&quot;,
+    &quot;Reassessed the strongest alternative using grammar, discourse and the task while preserving deliberate distractors.&quot;,
+    &quot;Visually checked the corresponding explanation on physical page4; this supports the preferred wording but does not authenticate the original option or passage.&quot;,
+    &quot;5 November 2026 — Q18 tests 当面 in the prediction that the same incident will not recur. Option 4 is 多分. It is not equivalent to しばらく, which sits in position 2. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;&quot;
+}</pre></details></div></section><section class="review-group" id="review-vocab-q024" data-kinds="resolved"><div class="review-group-heading"><h2>vocab-q024</h2><a href="../papers/N1_12_2025.html#vocab-q024">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">迫力<ol><li>新しい掃除機は、ごみを吸う<u>迫力</u>が以前の約2倍となっている。</li><li>初めて動物園で見たライオンは、体が大きくて<u>迫力</u>があった。</li><li>天気予報によると、午後から雨の<u>迫力</u>が増していくらしい。</li><li><ruby>高橋<rt>たかはし</rt></ruby>さんは一日中作業しても元気なので、<u>迫力</u>があると思う。</li></ol><p>Editorial key: 2</p></div></details><div class="review-record" id="unresolved_cases-N1_12_2025-vocab-q024-reconstruction"><div class="review-label">Resolved ·  · high</div><div class="comparison"><div><h4>Alternative</h4><pre>…動物園で見たライオンは、体が大きくて&lt;u&gt;迫力&lt;/u&gt;があった。&quot;
+    },
+    {
+      &quot;html&quot;: &quot;天気予報によると、午後から雨の&lt;u&gt;迫力&lt;/u&gt;が増してく<mark class="diff-old">る</mark>らしい。&quot;
+    },
+    {
+      &quot;html&quot;: &quot;&lt;ruby&gt;高橋&lt;rt&gt;たかはし&lt;/rt&gt;&lt;/ruby&gt;さんは一日中作業しても元気なので、&lt;u&gt;迫力&lt;/u&gt;があると思う。&quot;
+    }
+  ],
+  &quot;key&quot;: 2
+}</pre></div><div><h4>Editorial</h4><pre>…動物園で見たライオンは、体が大きくて&lt;u&gt;迫力&lt;/u&gt;があった。&quot;
+    },
+    {
+      &quot;html&quot;: &quot;天気予報によると、午後から雨の&lt;u&gt;迫力&lt;/u&gt;が増して<mark class="diff-new">い</mark>くらしい。&quot;
+    },
+    {
+      &quot;html&quot;: &quot;&lt;ruby&gt;高橋&lt;rt&gt;たかはし&lt;/rt&gt;&lt;/ruby&gt;さんは一日中作業しても元気なので、&lt;u&gt;迫力&lt;/u&gt;があると思う。&quot;
+    }
+  ],
+  &quot;key&quot;: 2
+}</pre></div></div><p>The wrong third use of 迫力 in Q24 predicts the force of the afternoon rain. Preserve 午後から雨の迫力が増していくらしい; the unsuitable collocation is deliberate. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings.</p><a href="../assets/principals/N1_12_2025.pdf" target="_blank" rel="noopener">Source ↗</a> <span class="control-help">Original Q24, incorrect usage of 迫力 in the rain forecast: 増していく versus 増してくる.</span><ul class="evidence-list"><li><a href="../assets/principals/N1_12_2025.pdf#page=5" target="_blank" rel="noopener">A 2025年12月N1完整原卷.pdf</a> · Physical pages5<p>午後から雨の迫力が増していくらしい。</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=5" target="_blank" rel="noopener">2025年12月N1真题.pdf</a> · Physical pages5<p>午後から雨の迫力が増してくるらしい。</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=4" target="_blank" rel="noopener">25年12月N1真题.pdf</a> · Physical pages4<p>増していくらしい。</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=6" target="_blank" rel="noopener">B 2025年12月N1解析消除水印版.pdf</a> · Physical page6, corresponding item explanation<p>Q24 option3 has 増していく.</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=5" target="_blank" rel="noopener">A 2025年12月N1完整原卷.pdf</a> · vocab-q024 ; physical 5<p>The wrong third use of 迫力 in Q24 predicts the force of the afternoon rain. Preserve 午後から雨の迫力が増していくらしい; the unsuitable collocation is deliberate.</p></li></ul><details><summary>Full published record · unresolved_cases-N1_12_2025-vocab-q024-reconstruction</summary><pre>{
+  &quot;case_id&quot;: &quot;N1_12_2025-vocab-q024-reconstruction&quot;,
+  &quot;unit&quot;: &quot;N1_12_2025&quot;,
+  &quot;item_id&quot;: &quot;vocab-q024&quot;,
+  &quot;field&quot;: &quot;&quot;,
+  &quot;status&quot;: &quot;resolved&quot;,
+  &quot;confidence&quot;: &quot;high&quot;,
+  &quot;decision_basis&quot;: &quot;source_comparison&quot;,
+  &quot;current_value&quot;: {
+    &quot;id&quot;: &quot;vocab-q024&quot;,
+    &quot;stem&quot;: &quot;迫力&quot;,
+    &quot;options&quot;: [
+      {
+        &quot;html&quot;: &quot;新しい掃除機は、ごみを吸う&lt;u&gt;迫力&lt;/u&gt;が以前の約2倍となっている。&quot;
+      },
+      {
+        &quot;html&quot;: &quot;初めて動物園で見たライオンは、体が大きくて&lt;u&gt;迫力&lt;/u&gt;があった。&quot;
+      },
+      {
+        &quot;html&quot;: &quot;天気予報によると、午後から雨の&lt;u&gt;迫力&lt;/u&gt;が増していくらしい。&quot;
+      },
+      {
+        &quot;html&quot;: &quot;&lt;ruby&gt;高橋&lt;rt&gt;たかはし&lt;/rt&gt;&lt;/ruby&gt;さんは一日中作業しても元気なので、&lt;u&gt;迫力&lt;/u&gt;があると思う。&quot;
+      }
+    ],
+    &quot;key&quot;: 2
+  },
+  &quot;before&quot;: null,
+  &quot;context&quot;: &quot;Original Q24, incorrect usage of 迫力 in the rain forecast: 増していく versus 増してくる.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: {
+        &quot;id&quot;: &quot;vocab-q024&quot;,
+        &quot;stem&quot;: &quot;迫力&quot;,
+        &quot;options&quot;: [
+          {
+            &quot;html&quot;: &quot;新しい掃除機は、ごみを吸う&lt;u&gt;迫力&lt;/u&gt;が以前の約2倍となっている。&quot;
+          },
+          {
+            &quot;html&quot;: &quot;初めて動物園で見たライオンは、体が大きくて&lt;u&gt;迫力&lt;/u&gt;があった。&quot;
+          },
+          {
+            &quot;html&quot;: &quot;天気予報によると、午後から雨の&lt;u&gt;迫力&lt;/u&gt;が増してくるらしい。&quot;
+          },
+          {
+            &quot;html&quot;: &quot;&lt;ruby&gt;高橋&lt;rt&gt;たかはし&lt;/rt&gt;&lt;/ruby&gt;さんは一日中作業しても元気なので、&lt;u&gt;迫力&lt;/u&gt;があると思う。&quot;
+          }
+        ],
+        &quot;key&quot;: 2
+      },
+      &quot;assessment&quot;: &quot;The retype auxiliary is linguistically possible but lacks stronger historical support.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;A 2025年12月N1完整原卷.pdf&quot;,
+      &quot;sha256&quot;: &quot;930f74eba01c27aea3403d85541b8310c018660cf9014c1dd88d7e33229eae82&quot;,
+      &quot;locator&quot;: &quot;Physical pages5&quot;,
+      &quot;reading&quot;: &quot;午後から雨の迫力が増していくらしい。&quot;,
+      &quot;physical_pages&quot;: [
+        5
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;2025年12月N1真题.pdf&quot;,
+      &quot;sha256&quot;: &quot;445359367643ad6b1e7f466feed05685ab2edca30d3d8b0085bc16ecab40a4c9&quot;,
+      &quot;locator&quot;: &quot;Physical pages5&quot;,
+      &quot;reading&quot;: &quot;午後から雨の迫力が増してくるらしい。&quot;,
+      &quot;physical_pages&quot;: [
+        5
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;25年12月N1真题.pdf&quot;,
+      &quot;sha256&quot;: &quot;f50f78a55e20973d014fe6fb6406f0cacdc4ed66cdb53621a390478f6ed4759e&quot;,
+      &quot;locator&quot;: &quot;Physical pages4&quot;,
+      &quot;reading&quot;: &quot;増していくらしい。&quot;,
+      &quot;physical_pages&quot;: [
+        4
+      ],
+      &quot;lineage&quot;: &quot;Question-page bodies match the A reproduction in inspected spans; not independent confirmation.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;B 2025年12月N1解析消除水印版.pdf&quot;,
+      &quot;sha256&quot;: &quot;f26b88c34893e3605c9c2ac3c1996ccce6bdc674216e7a71208e3d3215b023b4&quot;,
+      &quot;locator&quot;: &quot;Physical page6, corresponding item explanation&quot;,
+      &quot;physical_pages&quot;: [
+        6
+      ],
+      &quot;reading&quot;: &quot;Q24 option3 has 増していく.&quot;,
+      &quot;lineage&quot;: &quot;A further local explanation witness; parts of its reading commentary share Hujiang wording. Its acquisition independence is unestablished.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;A 2025年12月N1完整原卷.pdf&quot;,
+      &quot;sha256&quot;: &quot;930f74eba01c27aea3403d85541b8310c018660cf9014c1dd88d7e33229eae82&quot;,
+      &quot;locator&quot;: &quot;vocab-q024 ; physical 5&quot;,
+      &quot;physical_pages&quot;: [
+        5
+      ],
+      &quot;reading&quot;: &quot;The wrong third use of 迫力 in Q24 predicts the force of the afternoon rain. Preserve 午後から雨の迫力が増していくらしい; the unsuitable collocation is deliberate.&quot;,
+      &quot;lineage&quot;: &quot;Exact UARS-approved sitting scan; copied editions/alternative reconstructions are not independent print lineages.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;The wrong third use of 迫力 in Q24 predicts the force of the afternoon rain. Preserve 午後から雨の迫力が増していくらしい; the unsuitable collocation is deliberate. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Compared the complete item and its surrounding context in the A question reproduction and the materially distinct question retype.&quot;,
+    &quot;Checked the corresponding structured transcript and relevant available explanation/answer witnesses; agreement from shared page bodies or explanation text was not counted as independent.&quot;,
+    &quot;Reassessed the strongest alternative using grammar, discourse and the task while preserving deliberate distractors.&quot;,
+    &quot;Visually checked the corresponding explanation on physical page6; this supports the preferred wording but does not authenticate the original option or passage.&quot;,
+    &quot;5 November 2026 — The wrong third use of 迫力 in Q24 predicts the force of the afternoon rain. Preserve 午後から雨の迫力が増していくらしい; the unsuitable collocation is deliberate. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;&quot;
+}</pre></details></div></section><section class="review-group" id="review-vocab-q036" data-kinds="resolved"><div class="review-group-heading"><h2>vocab-q036</h2><a href="../papers/N1_12_2025.html#vocab-q036">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">（会社で）<br/><ruby>高橋<rt>たかはし</rt></ruby>「さっき、また課長と<ruby>西山<rt>にしやま</rt></ruby>さんがもめてたね。」<br/><ruby>上田<rt>うえだ</rt></ruby>「自分の主張を譲らない<ruby>西山<rt>にしやま</rt></ruby>さん <span class="answer-slot"><span class="slot-glyph">_</span></span> <span class="star-slot"><span class="slot-glyph star-glyph">★</span></span> <span class="answer-slot"><span class="slot-glyph">_</span></span><span class="answer-slot"><span class="slot-glyph">_</span></span> も課長だよ。すぐ感情的になるんだから。」<ol><li>なら</li><li>も</li><li><ruby>西山<rt>にしやま</rt></ruby>さん</li><li>課長</li></ol><p>Editorial key: 3</p></div></details><div class="review-record" id="unresolved_cases-N1_12_2025-vocab-q036-reconstruction"><div class="review-label">Resolved ·  · high</div><div class="comparison"><div><h4>Alternative</h4><pre>{
+  &quot;id&quot;: &quot;vocab-q036&quot;,
+  &quot;stem&quot;: {
+    &quot;html&quot;: &quot;<mark class="diff-old">(</mark>会社で<mark class="diff-old">)</mark>&lt;br&gt;&lt;ruby&gt;高橋&lt;rt&gt;たかはし&lt;/rt&gt;&lt;/ruby&gt;「さっき、また課長と&lt;ruby&gt;西山&lt;rt&gt;にしやま&lt;/rt&gt;&lt;/ruby&gt;さんがもめてたね。」&lt;br&gt;&lt;ruby&gt;上田&lt;rt&gt;うえだ&lt;/rt&gt;&lt;/ruby&gt;「自分の主張を譲らない&lt;ruby&gt;西山&lt;rt&gt;にし…</pre></div><div><h4>Editorial</h4><pre>{
+  &quot;id&quot;: &quot;vocab-q036&quot;,
+  &quot;stem&quot;: {
+    &quot;html&quot;: &quot;<mark class="diff-new">（</mark>会社で<mark class="diff-new">）</mark>&lt;br&gt;&lt;ruby&gt;高橋&lt;rt&gt;たかはし&lt;/rt&gt;&lt;/ruby&gt;「さっき、また課長と&lt;ruby&gt;西山&lt;rt&gt;にしやま&lt;/rt&gt;&lt;/ruby&gt;さんがもめてたね。」&lt;br&gt;&lt;ruby&gt;上田&lt;rt&gt;うえだ&lt;/rt&gt;&lt;/ruby&gt;「自分の主張を譲らない&lt;ruby&gt;西山&lt;rt&gt;にし…</pre></div></div><p>Office-dialogue STAR after 自分の主張を譲らない西山さん: the fixed tail after the four slots is も課長だよ。 The four fragments are なら, も, 西山さん, 課長; retain the source’s particle and distinction from a fragment. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings.</p><a href="../assets/principals/N1_12_2025.pdf" target="_blank" rel="noopener">Source ↗</a> <span class="control-help">Original Q36, ★ dialogue ending だよ versus だね.</span><ul class="evidence-list"><li><a href="../assets/principals/N1_12_2025.pdf#page=9" target="_blank" rel="noopener">A 2025年12月N1完整原卷.pdf</a> · Physical pages9<p>も課長だよ。</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=9" target="_blank" rel="noopener">2025年12月N1真题.pdf</a> · Physical pages9<p>も課長だね。</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=8" target="_blank" rel="noopener">25年12月N1真题.pdf</a> · Physical pages8<p>も課長だよ。</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=7" target="_blank" rel="noopener">B 2025年12月N1解析消除水印版.pdf</a> · Physical page7, corresponding item explanation<p>Q36 dialogue ends だよ.</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=9" target="_blank" rel="noopener">A 2025年12月N1完整原卷.pdf</a> · vocab-q036 ; physical 9<p>Office-dialogue STAR after 自分の主張を譲らない西山さん: the fixed tail after the four slots is も課長だよ。 The four fragments are なら, も, 西山さん, 課長; retain the source’s particle and distinction from a fragment.</p></li></ul><details><summary>Full published record · unresolved_cases-N1_12_2025-vocab-q036-reconstruction</summary><pre>{
+  &quot;case_id&quot;: &quot;N1_12_2025-vocab-q036-reconstruction&quot;,
+  &quot;unit&quot;: &quot;N1_12_2025&quot;,
+  &quot;item_id&quot;: &quot;vocab-q036&quot;,
+  &quot;field&quot;: &quot;&quot;,
+  &quot;status&quot;: &quot;resolved&quot;,
+  &quot;confidence&quot;: &quot;high&quot;,
+  &quot;decision_basis&quot;: &quot;source_comparison&quot;,
+  &quot;current_value&quot;: {
+    &quot;id&quot;: &quot;vocab-q036&quot;,
+    &quot;stem&quot;: {
+      &quot;html&quot;: &quot;（会社で）&lt;br&gt;&lt;ruby&gt;高橋&lt;rt&gt;たかはし&lt;/rt&gt;&lt;/ruby&gt;「さっき、また課長と&lt;ruby&gt;西山&lt;rt&gt;にしやま&lt;/rt&gt;&lt;/ruby&gt;さんがもめてたね。」&lt;br&gt;&lt;ruby&gt;上田&lt;rt&gt;うえだ&lt;/rt&gt;&lt;/ruby&gt;「自分の主張を譲らない&lt;ruby&gt;西山&lt;rt&gt;にしやま&lt;/rt&gt;&lt;/ruby&gt;さん _ ★ _ _ も課長だよ。すぐ感情的になるんだから。」&quot;
+    },
+    &quot;options&quot;: [
+      &quot;なら&quot;,
+      &quot;も&quot;,
+      {
+        &quot;html&quot;: &quot;&lt;ruby&gt;西山&lt;rt&gt;にしやま&lt;/rt&gt;&lt;/ruby&gt;さん&quot;
+      },
+      &quot;課長&quot;
+    ],
+    &quot;key&quot;: 3
+  },
+  &quot;before&quot;: null,
+  &quot;context&quot;: &quot;Original Q36, ★ dialogue ending だよ versus だね.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: {
+        &quot;id&quot;: &quot;vocab-q036&quot;,
+        &quot;stem&quot;: {
+          &quot;html&quot;: &quot;(会社で)&lt;br&gt;&lt;ruby&gt;高橋&lt;rt&gt;たかはし&lt;/rt&gt;&lt;/ruby&gt;「さっき、また課長と&lt;ruby&gt;西山&lt;rt&gt;にしやま&lt;/rt&gt;&lt;/ruby&gt;さんがもめてたね。」&lt;br&gt;&lt;ruby&gt;上田&lt;rt&gt;うえだ&lt;/rt&gt;&lt;/ruby&gt;「自分の主張を譲らない&lt;ruby&gt;西山&lt;rt&gt;にしやま&lt;/rt&gt;&lt;/ruby&gt;さん _ ★ _ _ も課長だね。すぐ感情的になるんだから。」&quot;
+        },
+        &quot;options&quot;: [
+          &quot;なら&quot;,
+          &quot;も&quot;,
+          {
+            &quot;html&quot;: &quot;&lt;ruby&gt;西山&lt;rt&gt;にしやま&lt;/rt&gt;&lt;/ruby&gt;さん&quot;
+          },
+          &quot;課長&quot;
+        ],
+        &quot;key&quot;: 3
+      },
+      &quot;assessment&quot;: &quot;Natural dialogue variant in the retype; the historical particle remains unconfirmed.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;A 2025年12月N1完整原卷.pdf&quot;,
+      &quot;sha256&quot;: &quot;930f74eba01c27aea3403d85541b8310c018660cf9014c1dd88d7e33229eae82&quot;,
+      &quot;locator&quot;: &quot;Physical pages9&quot;,
+      &quot;reading&quot;: &quot;も課長だよ。&quot;,
+      &quot;physical_pages&quot;: [
+        9
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;2025年12月N1真题.pdf&quot;,
+      &quot;sha256&quot;: &quot;445359367643ad6b1e7f466feed05685ab2edca30d3d8b0085bc16ecab40a4c9&quot;,
+      &quot;locator&quot;: &quot;Physical pages9&quot;,
+      &quot;reading&quot;: &quot;も課長だね。&quot;,
+      &quot;physical_pages&quot;: [
+        9
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;25年12月N1真题.pdf&quot;,
+      &quot;sha256&quot;: &quot;f50f78a55e20973d014fe6fb6406f0cacdc4ed66cdb53621a390478f6ed4759e&quot;,
+      &quot;locator&quot;: &quot;Physical pages8&quot;,
+      &quot;reading&quot;: &quot;も課長だよ。&quot;,
+      &quot;physical_pages&quot;: [
+        8
+      ],
+      &quot;lineage&quot;: &quot;Question-page bodies match the A reproduction in inspected spans; not independent confirmation.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;B 2025年12月N1解析消除水印版.pdf&quot;,
+      &quot;sha256&quot;: &quot;f26b88c34893e3605c9c2ac3c1996ccce6bdc674216e7a71208e3d3215b023b4&quot;,
+      &quot;locator&quot;: &quot;Physical page7, corresponding item explanation&quot;,
+      &quot;physical_pages&quot;: [
+        7
+      ],
+      &quot;reading&quot;: &quot;Q36 dialogue ends だよ.&quot;,
+      &quot;lineage&quot;: &quot;A further local explanation witness; parts of its reading commentary share Hujiang wording. Its acquisition independence is unestablished.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;A 2025年12月N1完整原卷.pdf&quot;,
+      &quot;sha256&quot;: &quot;930f74eba01c27aea3403d85541b8310c018660cf9014c1dd88d7e33229eae82&quot;,
+      &quot;locator&quot;: &quot;vocab-q036 ; physical 9&quot;,
+      &quot;physical_pages&quot;: [
+        9
+      ],
+      &quot;reading&quot;: &quot;Office-dialogue STAR after 自分の主張を譲らない西山さん: the fixed tail after the four slots is も課長だよ。 The four fragments are なら, も, 西山さん, 課長; retain the source’s particle and distinction from a fragment.&quot;,
+      &quot;lineage&quot;: &quot;Exact UARS-approved sitting scan; copied editions/alternative reconstructions are not independent print lineages.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Office-dialogue STAR after 自分の主張を譲らない西山さん: the fixed tail after the four slots is も課長だよ。 The four fragments are なら, も, 西山さん, 課長; retain the source’s particle and distinction from a fragment. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Compared the complete item and its surrounding context in the A question reproduction and the materially distinct question retype.&quot;,
+    &quot;Checked the corresponding structured transcript and relevant available explanation/answer witnesses; agreement from shared page bodies or explanation text was not counted as independent.&quot;,
+    &quot;Reassessed the strongest alternative using grammar, discourse and the task while preserving deliberate distractors.&quot;,
+    &quot;Visually checked the corresponding explanation on physical page7; this supports the preferred wording but does not authenticate the original option or passage.&quot;,
+    &quot;5 November 2026: Rebind this public-case snapshot to the existing v3 typography. Exact comparison permits only ASCII-to-fullwidth parentheses and escaped-to-print angle brackets. The editorial is byte-identical; the original substantive rationale, confidence, status and alternatives remain unchanged. This is record maintenance, not a new source review or resolution.&quot;,
+    &quot;5 November 2026 — Office-dialogue STAR after 自分の主張を譲らない西山さん: the fixed tail after the four slots is も課長だよ。 The four fragments are なら, も, 西山さん, 課長; retain the source’s particle and distinction from a fragment. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;&quot;
+}</pre></details></div></section><section class="review-group" id="review-vocab-b002" data-kinds="resolved"><div class="review-group-heading"><h2>vocab-b002</h2><a href="../papers/N1_12_2025.html#vocab-b002">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><p>ネコの目の前に指先を出すと、必ずクンクンにおいをかぎますね。じつは、これはネコ同士のあいさつに由来するしぐさです。<br/>　私たち人間はおじぎをしたり握手をしてあいさつをしますが、ネコたちにとっては、鼻と鼻を近づけてお互いのにおいをかぐのがあいさつです。ネコの口のまわりには<ruby>臭腺<rt>しゅうせん</rt></ruby>といって、特別なにおいを出す器官があります。そのにおいはネコによって異なるため、鼻を近づけると相手がどこの誰か、そして敵か味方かなどの情報を知ることができるのです。<br/>　このようにネコがにおいで相手を確認するのは、目があまり <span class="cloze-slot">[41]</span> 。ネコは肉食のハンターですから抜群の視力をもっていそうですが、人間にたとえると0.3程度の近眼だとされています。つまり、かなり近づかないと相手の顔を確認できないということ。<br/>　だから、人間の指先を見ても、ネコは鼻を近づけられたと勘違いして同じ反応を<span class="cloze-slot">[42]</span> 。指先だとわかっていても、習慣的に「とりあえず、あいさつだけはしておこう」と考えるのでしょう。おきまりのクンクンが始まります。<br/>　この習性を<span class="cloze-slot">[43]</span> 、初対面のネコとも仲よくできます。いくら<ruby>可愛<rt>かわい</rt></ruby>いネコでも、いきなりなでたり抱っこしようとすれば嫌がります。それは、あなたが何者かわからないからです。 <span class="cloze-slot">[44]</span> 、まずは指先をネコの鼻に近づけてみます。ひととおり指のにおいをかいだ後でネコが逃げなければ、それはあなたに好意をもったという証拠ですから、そっと触れても嫌がらないはずです。</p></div></details><div class="review-record" id="unresolved_cases-N1_12_2025-vocab-b002-reconstruction"><div class="review-label">Resolved ·  · high</div><div class="comparison"><div><h4>Alternative</h4><pre>…られたと勘違いして同じ反応を[42] 。指先だとわかっていても、習慣的に「とりあえず、あいさつだけはしておこう」と考えるのでしょう。おきまりのクンクンが始まります。&lt;br&gt;　この習<mark class="diff-old">慣</mark>を[43] 、初対面のネコとも仲よくできます。いくら&lt;ruby&gt;可愛&lt;rt&gt;かわい&lt;/rt&gt;&lt;/ruby&gt;いネコでも、いきなりなでたり抱っこしようとすれば嫌がります。それは、あなたが何者かわからないからです。 [44] 、まずは指先をネコの鼻に近づけてみます。ひととおり指のにおい…</pre></div><div><h4>Editorial</h4><pre>…られたと勘違いして同じ反応を[42] 。指先だとわかっていても、習慣的に「とりあえず、あいさつだけはしておこう」と考えるのでしょう。おきまりのクンクンが始まります。&lt;br&gt;　この習<mark class="diff-new">性</mark>を[43] 、初対面のネコとも仲よくできます。いくら&lt;ruby&gt;可愛&lt;rt&gt;かわい&lt;/rt&gt;&lt;/ruby&gt;いネコでも、いきなりなでたり抱っこしようとすれば嫌がります。それは、あなたが何者かわからないからです。 [44] 、まずは指先をネコの鼻に近づけてみます。ひととおり指のにおい…</pre></div></div><p>The first-meeting paragraph reads この習性を【43】、初対面のネコとも仲よくできます. Keep the を preceding the box; printed 41–44 remain within the prose. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings.</p><a href="../assets/principals/N1_12_2025.pdf" target="_blank" rel="noopener">Source ↗</a> <span class="control-help">Cat cloze passage before [43]: 習性 versus 習慣.</span><ul class="evidence-list"><li><a href="../assets/principals/N1_12_2025.pdf#page=11" target="_blank" rel="noopener">A 2025年12月N1完整原卷.pdf</a> · Physical pages11<p>この習性を[43]</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=11" target="_blank" rel="noopener">2025年12月N1真题.pdf</a> · Physical pages11<p>この習慣を[43]</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=11" target="_blank" rel="noopener">A 2025年12月N1完整原卷.pdf</a> · vocab-b002 ; physical 11<p>The first-meeting paragraph reads この習性を【43】、初対面のネコとも仲よくできます. Keep the を preceding the box; printed 41–44 remain within the prose.</p></li></ul><details><summary>Full published record · unresolved_cases-N1_12_2025-vocab-b002-reconstruction</summary><pre>{
+  &quot;case_id&quot;: &quot;N1_12_2025-vocab-b002-reconstruction&quot;,
+  &quot;unit&quot;: &quot;N1_12_2025&quot;,
+  &quot;item_id&quot;: &quot;vocab-b002&quot;,
+  &quot;field&quot;: &quot;&quot;,
+  &quot;status&quot;: &quot;resolved&quot;,
+  &quot;confidence&quot;: &quot;high&quot;,
+  &quot;decision_basis&quot;: &quot;source_comparison&quot;,
+  &quot;current_value&quot;: {
+    &quot;id&quot;: &quot;vocab-b002&quot;,
+    &quot;type&quot;: &quot;passage&quot;,
+    &quot;content&quot;: {
+      &quot;html&quot;: &quot;&lt;p&gt;ネコの目の前に指先を出すと、必ずクンクンにおいをかぎますね。じつは、これはネコ同士のあいさつに由来するしぐさです。&lt;br&gt;　私たち人間はおじぎをしたり握手をしてあいさつをしますが、ネコたちにとっては、鼻と鼻を近づけてお互いのにおいをかぐのがあいさつです。ネコの口のまわりには&lt;ruby&gt;臭腺&lt;rt&gt;しゅうせん&lt;/rt&gt;&lt;/ruby&gt;といって、特別なにおいを出す器官があります。そのにおいはネコによって異なるため、鼻を近づけると相手がどこの誰か、そして敵か味方かなどの情報を知ることができるのです。&lt;br&gt;　このようにネコがにおいで相手を確認するのは、目があまり [41] 。ネコは肉食のハンターですから抜群の視力をもっていそうですが、人間にたとえると0.3程度の近眼だとされています。つまり、かなり近づかないと相手の顔を確認できないということ。&lt;br&gt;　だから、人間の指先を見ても、ネコは鼻を近づけられたと勘違いして同じ反応を[42] 。指先だとわかっていても、習慣的に「とりあえず、あいさつだけはしておこう」と考えるのでしょう。おきまりのクンクンが始まります。&lt;br&gt;　この習性を[43] 、初対面のネコとも仲よくできます。いくら&lt;ruby&gt;可愛&lt;rt&gt;かわい&lt;/rt&gt;&lt;/ruby&gt;いネコでも、いきなりなでたり抱っこしようとすれば嫌がります。それは、あなたが何者かわからないからです。 [44] 、まずは指先をネコの鼻に近づけてみます。ひととおり指のにおいをかいだ後でネコが逃げなければ、それはあなたに好意をもったという証拠ですから、そっと触れても嫌がらないはずです。&lt;/p&gt;&quot;
+    }
+  },
+  &quot;before&quot;: null,
+  &quot;context&quot;: &quot;Cat cloze passage before [43]: 習性 versus 習慣.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: {
+        &quot;id&quot;: &quot;vocab-b002&quot;,
+        &quot;type&quot;: &quot;passage&quot;,
+        &quot;content&quot;: {
+          &quot;html&quot;: &quot;&lt;p&gt;ネコの目の前に指先を出すと、必ずクンクンにおいをかぎますね。じつは、これはネコ同士のあいさつに由来するしぐさです。&lt;br&gt;　私たち人間はおじぎをしたり握手をしてあいさつをしますが、ネコたちにとっては、鼻と鼻を近づけてお互いのにおいをかぐのがあいさつです。ネコの口のまわりには&lt;ruby&gt;臭腺&lt;rt&gt;しゅうせん&lt;/rt&gt;&lt;/ruby&gt;といって、特別なにおいを出す器官があります。そのにおいはネコによって異なるため、鼻を近づけると相手がどこの誰か、そして敵か味方かなどの情報を知ることができるのです。&lt;br&gt;　このようにネコがにおいで相手を確認するのは、目があまり [41] 。ネコは肉食のハンターですから抜群の視力をもっていそうですが、人間にたとえると0.3程度の近眼だとされています。つまり、かなり近づかないと相手の顔を確認できないということ。&lt;br&gt;　だから、人間の指先を見ても、ネコは鼻を近づけられたと勘違いして同じ反応を[42] 。指先だとわかっていても、習慣的に「とりあえず、あいさつだけはしておこう」と考えるのでしょう。おきまりのクンクンが始まります。&lt;br&gt;　この習慣を[43] 、初対面のネコとも仲よくできます。いくら&lt;ruby&gt;可愛&lt;rt&gt;かわい&lt;/rt&gt;&lt;/ruby&gt;いネコでも、いきなりなでたり抱っこしようとすれば嫌がります。それは、あなたが何者かわからないからです。 [44] 、まずは指先をネコの鼻に近づけてみます。ひととおり指のにおいをかいだ後でネコが逃げなければ、それはあなたに好意をもったという証拠ですから、そっと触れても嫌がらないはずです。&lt;/p&gt;&quot;
+        }
+      },
+      &quot;assessment&quot;: &quot;習慣 can refer to the repeated behavior, but is less precise for the animal disposition explained here.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;A 2025年12月N1完整原卷.pdf&quot;,
+      &quot;sha256&quot;: &quot;930f74eba01c27aea3403d85541b8310c018660cf9014c1dd88d7e33229eae82&quot;,
+      &quot;locator&quot;: &quot;Physical pages11&quot;,
+      &quot;reading&quot;: &quot;この習性を[43]&quot;,
+      &quot;physical_pages&quot;: [
+        11
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;2025年12月N1真题.pdf&quot;,
+      &quot;sha256&quot;: &quot;445359367643ad6b1e7f466feed05685ab2edca30d3d8b0085bc16ecab40a4c9&quot;,
+      &quot;locator&quot;: &quot;Physical pages11&quot;,
+      &quot;reading&quot;: &quot;この習慣を[43]&quot;,
+      &quot;physical_pages&quot;: [
+        11
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;A 2025年12月N1完整原卷.pdf&quot;,
+      &quot;sha256&quot;: &quot;930f74eba01c27aea3403d85541b8310c018660cf9014c1dd88d7e33229eae82&quot;,
+      &quot;locator&quot;: &quot;vocab-b002 ; physical 11&quot;,
+      &quot;physical_pages&quot;: [
+        11
+      ],
+      &quot;reading&quot;: &quot;The first-meeting paragraph reads この習性を【43】、初対面のネコとも仲よくできます. Keep the を preceding the box; printed 41–44 remain within the prose.&quot;,
+      &quot;lineage&quot;: &quot;Exact UARS-approved sitting scan; copied editions/alternative reconstructions are not independent print lineages.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;The first-meeting paragraph reads この習性を【43】、初対面のネコとも仲よくできます. Keep the を preceding the box; printed 41–44 remain within the prose. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Compared the complete item and its surrounding context in the A question reproduction and the materially distinct question retype.&quot;,
+    &quot;Checked the corresponding structured transcript and relevant available explanation/answer witnesses; agreement from shared page bodies or explanation text was not counted as independent.&quot;,
+    &quot;Reassessed the strongest alternative using grammar, discourse and the task while preserving deliberate distractors.&quot;,
+    &quot;5 November 2026 — The first-meeting paragraph reads この習性を【43】、初対面のネコとも仲よくできます. Keep the を preceding the box; printed 41–44 remain within the prose. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;&quot;
+}</pre></details></div></section><section class="review-group" id="review-vocab-q041" data-kinds="resolved"><div class="review-group-heading"><h2>vocab-q041</h2><a href="../papers/N1_12_2025.html#vocab-q041">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><span class="cloze-slot">[41]</span><ol><li>よくないせいだとします</li><li>よくないことにもなります</li><li>よくないときだといえます</li><li>よくないからでもあります</li></ol><p>Editorial key: 4</p></div></details><div class="review-record" id="unresolved_cases-N1_12_2025-vocab-q041-reconstruction"><div class="review-label">Resolved ·  · high</div><div class="comparison"><div><h4>Alternative</h4><pre>{
+  &quot;id&quot;: &quot;vocab-q041&quot;,
+  &quot;stem&quot;: &quot;[41]&quot;,
+  &quot;options&quot;: [
+    &quot;よくないせいだとします&quot;,
+    &quot;よくないことにも<mark class="diff-old">あ</mark>ります&quot;,
+    &quot;よくないときだといえます&quot;,
+    &quot;よくないからでもあります&quot;
+  ],
+  &quot;key&quot;: 4
+}</pre></div><div><h4>Editorial</h4><pre>{
+  &quot;id&quot;: &quot;vocab-q041&quot;,
+  &quot;stem&quot;: &quot;[41]&quot;,
+  &quot;options&quot;: [
+    &quot;よくないせいだとします&quot;,
+    &quot;よくないことにも<mark class="diff-new">な</mark>ります&quot;,
+    &quot;よくないときだといえます&quot;,
+    &quot;よくないからでもあります&quot;
+  ],
+  &quot;key&quot;: 4
+}</pre></div></div><p>The cat essay says the eyes are not especially good and then describes close vision. The second, incorrect option for 41 is よくないことにもなります; preserve it without smoothing the deliberately unsuitable answer. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings.</p><a href="../assets/principals/N1_12_2025.pdf" target="_blank" rel="noopener">Source ↗</a> <span class="control-help">Original Q41, second deliberately wrong cloze option なります versus あります.</span><ul class="evidence-list"><li><a href="../assets/principals/N1_12_2025.pdf#page=12" target="_blank" rel="noopener">A 2025年12月N1完整原卷.pdf</a> · Physical pages12<p>よくないことにもなります</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=12" target="_blank" rel="noopener">2025年12月N1真题.pdf</a> · Physical pages12<p>よくないことにもあります</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=11" target="_blank" rel="noopener">25年12月N1真题.pdf</a> · Physical pages11<p>よくないことにもなります</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=11" target="_blank" rel="noopener">A 2025年12月N1完整原卷.pdf</a> · vocab-q041 ; physical 11,12<p>The cat essay says the eyes are not especially good and then describes close vision. The second, incorrect option for 41 is よくないことにもなります; preserve it without smoothing the deliberately unsuitable answer.</p></li></ul><details><summary>Full published record · unresolved_cases-N1_12_2025-vocab-q041-reconstruction</summary><pre>{
+  &quot;case_id&quot;: &quot;N1_12_2025-vocab-q041-reconstruction&quot;,
+  &quot;unit&quot;: &quot;N1_12_2025&quot;,
+  &quot;item_id&quot;: &quot;vocab-q041&quot;,
+  &quot;field&quot;: &quot;&quot;,
+  &quot;status&quot;: &quot;resolved&quot;,
+  &quot;confidence&quot;: &quot;high&quot;,
+  &quot;decision_basis&quot;: &quot;source_comparison&quot;,
+  &quot;current_value&quot;: {
+    &quot;id&quot;: &quot;vocab-q041&quot;,
+    &quot;stem&quot;: &quot;[41]&quot;,
+    &quot;options&quot;: [
+      &quot;よくないせいだとします&quot;,
+      &quot;よくないことにもなります&quot;,
+      &quot;よくないときだといえます&quot;,
+      &quot;よくないからでもあります&quot;
+    ],
+    &quot;key&quot;: 4
+  },
+  &quot;before&quot;: null,
+  &quot;context&quot;: &quot;Original Q41, second deliberately wrong cloze option なります versus あります.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: {
+        &quot;id&quot;: &quot;vocab-q041&quot;,
+        &quot;stem&quot;: &quot;[41]&quot;,
+        &quot;options&quot;: [
+          &quot;よくないせいだとします&quot;,
+          &quot;よくないことにもあります&quot;,
+          &quot;よくないときだといえます&quot;,
+          &quot;よくないからでもあります&quot;
+        ],
+        &quot;key&quot;: 4
+      },
+      &quot;assessment&quot;: &quot;The alternative is printed in the retype and remains possible as an intentionally wrong choice.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;A 2025年12月N1完整原卷.pdf&quot;,
+      &quot;sha256&quot;: &quot;930f74eba01c27aea3403d85541b8310c018660cf9014c1dd88d7e33229eae82&quot;,
+      &quot;locator&quot;: &quot;Physical pages12&quot;,
+      &quot;reading&quot;: &quot;よくないことにもなります&quot;,
+      &quot;physical_pages&quot;: [
+        12
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;2025年12月N1真题.pdf&quot;,
+      &quot;sha256&quot;: &quot;445359367643ad6b1e7f466feed05685ab2edca30d3d8b0085bc16ecab40a4c9&quot;,
+      &quot;locator&quot;: &quot;Physical pages12&quot;,
+      &quot;reading&quot;: &quot;よくないことにもあります&quot;,
+      &quot;physical_pages&quot;: [
+        12
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;25年12月N1真题.pdf&quot;,
+      &quot;sha256&quot;: &quot;f50f78a55e20973d014fe6fb6406f0cacdc4ed66cdb53621a390478f6ed4759e&quot;,
+      &quot;locator&quot;: &quot;Physical pages11&quot;,
+      &quot;reading&quot;: &quot;よくないことにもなります&quot;,
+      &quot;physical_pages&quot;: [
+        11
+      ],
+      &quot;lineage&quot;: &quot;Question-page bodies match the A reproduction in inspected spans; not independent confirmation.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;A 2025年12月N1完整原卷.pdf&quot;,
+      &quot;sha256&quot;: &quot;930f74eba01c27aea3403d85541b8310c018660cf9014c1dd88d7e33229eae82&quot;,
+      &quot;locator&quot;: &quot;vocab-q041 ; physical 11,12&quot;,
+      &quot;physical_pages&quot;: [
+        11,
+        12
+      ],
+      &quot;reading&quot;: &quot;The cat essay says the eyes are not especially good and then describes close vision. The second, incorrect option for 41 is よくないことにもなります; preserve it without smoothing the deliberately unsuitable answer.&quot;,
+      &quot;lineage&quot;: &quot;Exact UARS-approved sitting scan; copied editions/alternative reconstructions are not independent print lineages.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;The cat essay says the eyes are not especially good and then describes close vision. The second, incorrect option for 41 is よくないことにもなります; preserve it without smoothing the deliberately unsuitable answer. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Compared the complete item and its surrounding context in the A question reproduction and the materially distinct question retype.&quot;,
+    &quot;Checked the corresponding structured transcript and relevant available explanation/answer witnesses; agreement from shared page bodies or explanation text was not counted as independent.&quot;,
+    &quot;Reassessed the strongest alternative using grammar, discourse and the task while preserving deliberate distractors.&quot;,
+    &quot;5 November 2026 — The cat essay says the eyes are not especially good and then describes close vision. The second, incorrect option for 41 is よくないことにもなります; preserve it without smoothing the deliberately unsuitable answer. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;&quot;
+}</pre></details></div></section><section class="review-group" id="review-vocab-q042" data-kinds="resolved"><div class="review-group-heading"><h2>vocab-q042</h2><a href="../papers/N1_12_2025.html#vocab-q042">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><span class="cloze-slot">[42]</span><ol><li>示すのです</li><li>示しそうです</li><li>示してばかりいます</li><li>示したものです</li></ol><p>Editorial key: 1</p></div></details><div class="review-record" id="unresolved_cases-N1_12_2025-vocab-q042-reconstruction"><div class="review-label">Resolved ·  · high</div><div class="comparison"><div><h4>Alternative</h4><pre>{
+  &quot;id&quot;: &quot;vocab-q042&quot;,
+  &quot;stem&quot;: &quot;[42]&quot;,
+  &quot;options&quot;: [
+    &quot;示すのです&quot;,
+    &quot;示<mark class="diff-old">す</mark>そうです&quot;,
+    &quot;示してばかりいます&quot;,
+    &quot;示したものです&quot;
+  ],
+  &quot;key&quot;: 1
+}</pre></div><div><h4>Editorial</h4><pre>{
+  &quot;id&quot;: &quot;vocab-q042&quot;,
+  &quot;stem&quot;: &quot;[42]&quot;,
+  &quot;options&quot;: [
+    &quot;示すのです&quot;,
+    &quot;示<mark class="diff-new">し</mark>そうです&quot;,
+    &quot;示してばかりいます&quot;,
+    &quot;示したものです&quot;
+  ],
+  &quot;key&quot;: 1
+}</pre></div></div><p>The essay says a cat responds to a human finger as to another cat’s nose; Q42 option 2 is 示しそうです, not the affirmative option 示すのです in position 1. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings.</p><a href="../assets/principals/N1_12_2025.pdf" target="_blank" rel="noopener">Source ↗</a> <span class="control-help">Original Q42, second cloze distractor 示しそうです versus 示すそうです.</span><ul class="evidence-list"><li><a href="../assets/principals/N1_12_2025.pdf#page=12" target="_blank" rel="noopener">A 2025年12月N1完整原卷.pdf</a> · Physical pages12<p>Option2 示しそうです</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=12" target="_blank" rel="noopener">2025年12月N1真题.pdf</a> · Physical pages12<p>Option2 示すそうです</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=11" target="_blank" rel="noopener">25年12月N1真题.pdf</a> · Physical pages11<p>Option2 示しそうです</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=11" target="_blank" rel="noopener">A 2025年12月N1完整原卷.pdf</a> · vocab-q042 ; physical 11,12<p>The essay says a cat responds to a human finger as to another cat’s nose; Q42 option 2 is 示しそうです, not the affirmative option 示すのです in position 1.</p></li></ul><details><summary>Full published record · unresolved_cases-N1_12_2025-vocab-q042-reconstruction</summary><pre>{
+  &quot;case_id&quot;: &quot;N1_12_2025-vocab-q042-reconstruction&quot;,
+  &quot;unit&quot;: &quot;N1_12_2025&quot;,
+  &quot;item_id&quot;: &quot;vocab-q042&quot;,
+  &quot;field&quot;: &quot;&quot;,
+  &quot;status&quot;: &quot;resolved&quot;,
+  &quot;confidence&quot;: &quot;high&quot;,
+  &quot;decision_basis&quot;: &quot;source_comparison&quot;,
+  &quot;current_value&quot;: {
+    &quot;id&quot;: &quot;vocab-q042&quot;,
+    &quot;stem&quot;: &quot;[42]&quot;,
+    &quot;options&quot;: [
+      &quot;示すのです&quot;,
+      &quot;示しそうです&quot;,
+      &quot;示してばかりいます&quot;,
+      &quot;示したものです&quot;
+    ],
+    &quot;key&quot;: 1
+  },
+  &quot;before&quot;: null,
+  &quot;context&quot;: &quot;Original Q42, second cloze distractor 示しそうです versus 示すそうです.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: {
+        &quot;id&quot;: &quot;vocab-q042&quot;,
+        &quot;stem&quot;: &quot;[42]&quot;,
+        &quot;options&quot;: [
+          &quot;示すのです&quot;,
+          &quot;示すそうです&quot;,
+          &quot;示してばかりいます&quot;,
+          &quot;示したものです&quot;
+        ],
+        &quot;key&quot;: 1
+      },
+      &quot;assessment&quot;: &quot;Grammatical alternative with a different meaning, so the retype disagreement is material even though the key remains1.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;A 2025年12月N1完整原卷.pdf&quot;,
+      &quot;sha256&quot;: &quot;930f74eba01c27aea3403d85541b8310c018660cf9014c1dd88d7e33229eae82&quot;,
+      &quot;locator&quot;: &quot;Physical pages12&quot;,
+      &quot;reading&quot;: &quot;Option2 示しそうです&quot;,
+      &quot;physical_pages&quot;: [
+        12
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;2025年12月N1真题.pdf&quot;,
+      &quot;sha256&quot;: &quot;445359367643ad6b1e7f466feed05685ab2edca30d3d8b0085bc16ecab40a4c9&quot;,
+      &quot;locator&quot;: &quot;Physical pages12&quot;,
+      &quot;reading&quot;: &quot;Option2 示すそうです&quot;,
+      &quot;physical_pages&quot;: [
+        12
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;25年12月N1真题.pdf&quot;,
+      &quot;sha256&quot;: &quot;f50f78a55e20973d014fe6fb6406f0cacdc4ed66cdb53621a390478f6ed4759e&quot;,
+      &quot;locator&quot;: &quot;Physical pages11&quot;,
+      &quot;reading&quot;: &quot;Option2 示しそうです&quot;,
+      &quot;physical_pages&quot;: [
+        11
+      ],
+      &quot;lineage&quot;: &quot;Question-page bodies match the A reproduction in inspected spans; not independent confirmation.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;A 2025年12月N1完整原卷.pdf&quot;,
+      &quot;sha256&quot;: &quot;930f74eba01c27aea3403d85541b8310c018660cf9014c1dd88d7e33229eae82&quot;,
+      &quot;locator&quot;: &quot;vocab-q042 ; physical 11,12&quot;,
+      &quot;physical_pages&quot;: [
+        11,
+        12
+      ],
+      &quot;reading&quot;: &quot;The essay says a cat responds to a human finger as to another cat’s nose; Q42 option 2 is 示しそうです, not the affirmative option 示すのです in position 1.&quot;,
+      &quot;lineage&quot;: &quot;Exact UARS-approved sitting scan; copied editions/alternative reconstructions are not independent print lineages.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;The essay says a cat responds to a human finger as to another cat’s nose; Q42 option 2 is 示しそうです, not the affirmative option 示すのです in position 1. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Compared the complete item and its surrounding context in the A question reproduction and the materially distinct question retype.&quot;,
+    &quot;Checked the corresponding structured transcript and relevant available explanation/answer witnesses; agreement from shared page bodies or explanation text was not counted as independent.&quot;,
+    &quot;Reassessed the strongest alternative using grammar, discourse and the task while preserving deliberate distractors.&quot;,
+    &quot;5 November 2026 — The essay says a cat responds to a human finger as to another cat’s nose; Q42 option 2 is 示しそうです, not the affirmative option 示すのです in position 1. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;&quot;
+}</pre></details></div></section><section class="review-group" id="review-reading-b001" data-kinds="resolved"><div class="review-group-heading"><h2>reading-b001</h2><a href="../papers/N1_12_2025.html#reading-b001">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><p>（1）<br/>　自動車メーカーが、製造・販売した自動車に不具合が見つかったとして、無償で修理をするリコールを行うことはよくあります。<br/>　リスクゼロ思考からすると、そもそも不具合のある車を世に出すべきではないということになります。事前に不具合が出ることがわかっているなら、そんな車はつくらないはずです。不具合が絶対に出ない車しかつくってはいけないというのなら、メーカーは何もつくれなくなります。<br/>　それよりも、不具合が出たらリコールして、次につくる車からは同じ不具合が出ないように改善していくのが論理的な発想です。</p></div></details><div class="review-record" id="unresolved_cases-N1_12_2025-reading-b001-reconstruction"><div class="review-label">Resolved ·  · high</div><div class="comparison"><div><h4>Alternative</h4><pre>{
+  &quot;id&quot;: &quot;reading-b001&quot;,
+  &quot;type&quot;: &quot;passage&quot;,
+  &quot;content&quot;: {
+    &quot;html&quot;: &quot;&lt;p&gt;<mark class="diff-old">(</mark>1<mark class="diff-old">)</mark>&lt;br&gt;　自動車メーカーが、製造・販売した自動車に不具合が見つかったとして、無償で修理をするリコールを行うことはよくあります。&lt;br&gt;　リスクゼロ思考からすると、そもそも不具合のある車を世に出すべきではないということになります。事前に不具合が出ることがわかっているなら、そんな…</pre></div><div><h4>Editorial</h4><pre>{
+  &quot;id&quot;: &quot;reading-b001&quot;,
+  &quot;type&quot;: &quot;passage&quot;,
+  &quot;content&quot;: {
+    &quot;html&quot;: &quot;&lt;p&gt;<mark class="diff-new">（</mark>1<mark class="diff-new">）</mark>&lt;br&gt;　自動車メーカーが、製造・販売した自動車に不具合が見つかったとして、無償で修理をするリコールを行うことはよくあります。&lt;br&gt;　リスクゼロ思考からすると、そもそも不具合のある車を世に出すべきではないということになります。事前に不具合が出ることがわかっているなら、そんな…</pre></div></div><p>The manufacturer handles defects by recalling and improving later cars. The last phrase is 改善していくのが論理的な発想です; do not replace the author’s printed 論理的 with a retype’s plausible alternative. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings.</p><a href="../assets/principals/N1_12_2025.pdf" target="_blank" rel="noopener">Source ↗</a> <span class="control-help">Original Q45 car-recall passage: 論理的 versus 理論的.</span><ul class="evidence-list"><li><a href="../assets/principals/N1_12_2025.pdf#page=13" target="_blank" rel="noopener">A 2025年12月N1完整原卷.pdf</a> · Physical pages13<p>改善していくのが論理的な発想です。</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=13" target="_blank" rel="noopener">2025年12月N1真题.pdf</a> · Physical pages13<p>改善していくのが理論的な発想です。</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=9" target="_blank" rel="noopener">B 2025年12月N1解析消除水印版.pdf</a> · Physical page9, corresponding item explanation<p>The Q45 explanation quotes 論理的な発想.</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=13" target="_blank" rel="noopener">A 2025年12月N1完整原卷.pdf</a> · reading-b001 ; physical 13<p>The manufacturer handles defects by recalling and improving later cars. The last phrase is 改善していくのが論理的な発想です; do not replace the author’s printed 論理的 with a retype’s plausible alternative.</p></li></ul><details><summary>Full published record · unresolved_cases-N1_12_2025-reading-b001-reconstruction</summary><pre>{
+  &quot;case_id&quot;: &quot;N1_12_2025-reading-b001-reconstruction&quot;,
+  &quot;unit&quot;: &quot;N1_12_2025&quot;,
+  &quot;item_id&quot;: &quot;reading-b001&quot;,
+  &quot;field&quot;: &quot;&quot;,
+  &quot;status&quot;: &quot;resolved&quot;,
+  &quot;confidence&quot;: &quot;high&quot;,
+  &quot;decision_basis&quot;: &quot;source_comparison&quot;,
+  &quot;current_value&quot;: {
+    &quot;id&quot;: &quot;reading-b001&quot;,
+    &quot;type&quot;: &quot;passage&quot;,
+    &quot;content&quot;: {
+      &quot;html&quot;: &quot;&lt;p&gt;（1）&lt;br&gt;　自動車メーカーが、製造・販売した自動車に不具合が見つかったとして、無償で修理をするリコールを行うことはよくあります。&lt;br&gt;　リスクゼロ思考からすると、そもそも不具合のある車を世に出すべきではないということになります。事前に不具合が出ることがわかっているなら、そんな車はつくらないはずです。不具合が絶対に出ない車しかつくってはいけないというのなら、メーカーは何もつくれなくなります。&lt;br&gt;　それよりも、不具合が出たらリコールして、次につくる車からは同じ不具合が出ないように改善していくのが論理的な発想です。&lt;/p&gt;&quot;
+    }
+  },
+  &quot;before&quot;: null,
+  &quot;context&quot;: &quot;Original Q45 car-recall passage: 論理的 versus 理論的.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: {
+        &quot;id&quot;: &quot;reading-b001&quot;,
+        &quot;type&quot;: &quot;passage&quot;,
+        &quot;content&quot;: {
+          &quot;html&quot;: &quot;&lt;p&gt;(1)&lt;br&gt;　自動車メーカーが、製造・販売した自動車に不具合が見つかったとして、無償で修理をするリコールを行うことはよくあります。&lt;br&gt;　リスクゼロ思考からすると、そもそも不具合のある車を世に出すべきではないということになります。事前に不具合が出ることがわかっているなら、そんな車はつくらないはずです。不具合が絶対に出ない車しかつくってはいけないというのなら、メーカーは何もつくれなくなります。&lt;br&gt;　それよりも、不具合が出たらリコールして、次につくる車からは同じ不具合が出ないように改善していくのが理論的な発想です。&lt;/p&gt;&quot;
+        }
+      },
+      &quot;assessment&quot;: &quot;A meaningful lexical variant in the retype; a pristine original could decide the wording.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;A 2025年12月N1完整原卷.pdf&quot;,
+      &quot;sha256&quot;: &quot;930f74eba01c27aea3403d85541b8310c018660cf9014c1dd88d7e33229eae82&quot;,
+      &quot;locator&quot;: &quot;Physical pages13&quot;,
+      &quot;reading&quot;: &quot;改善していくのが論理的な発想です。&quot;,
+      &quot;physical_pages&quot;: [
+        13
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;2025年12月N1真题.pdf&quot;,
+      &quot;sha256&quot;: &quot;445359367643ad6b1e7f466feed05685ab2edca30d3d8b0085bc16ecab40a4c9&quot;,
+      &quot;locator&quot;: &quot;Physical pages13&quot;,
+      &quot;reading&quot;: &quot;改善していくのが理論的な発想です。&quot;,
+      &quot;physical_pages&quot;: [
+        13
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;B 2025年12月N1解析消除水印版.pdf&quot;,
+      &quot;sha256&quot;: &quot;f26b88c34893e3605c9c2ac3c1996ccce6bdc674216e7a71208e3d3215b023b4&quot;,
+      &quot;locator&quot;: &quot;Physical page9, corresponding item explanation&quot;,
+      &quot;physical_pages&quot;: [
+        9
+      ],
+      &quot;reading&quot;: &quot;The Q45 explanation quotes 論理的な発想.&quot;,
+      &quot;lineage&quot;: &quot;A further local explanation witness; parts of its reading commentary share Hujiang wording. Its acquisition independence is unestablished.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;A 2025年12月N1完整原卷.pdf&quot;,
+      &quot;sha256&quot;: &quot;930f74eba01c27aea3403d85541b8310c018660cf9014c1dd88d7e33229eae82&quot;,
+      &quot;locator&quot;: &quot;reading-b001 ; physical 13&quot;,
+      &quot;physical_pages&quot;: [
+        13
+      ],
+      &quot;reading&quot;: &quot;The manufacturer handles defects by recalling and improving later cars. The last phrase is 改善していくのが論理的な発想です; do not replace the author’s printed 論理的 with a retype’s plausible alternative.&quot;,
+      &quot;lineage&quot;: &quot;Exact UARS-approved sitting scan; copied editions/alternative reconstructions are not independent print lineages.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;The manufacturer handles defects by recalling and improving later cars. The last phrase is 改善していくのが論理的な発想です; do not replace the author’s printed 論理的 with a retype’s plausible alternative. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Compared the complete item and its surrounding context in the A question reproduction and the materially distinct question retype.&quot;,
+    &quot;Checked the corresponding structured transcript and relevant available explanation/answer witnesses; agreement from shared page bodies or explanation text was not counted as independent.&quot;,
+    &quot;Reassessed the strongest alternative using grammar, discourse and the task while preserving deliberate distractors.&quot;,
+    &quot;Visually checked the corresponding explanation on physical page9; this supports the preferred wording but does not authenticate the original option or passage.&quot;,
+    &quot;5 November 2026: Rebind this public-case snapshot to the existing v3 typography. Exact comparison permits only ASCII-to-fullwidth parentheses and escaped-to-print angle brackets. The editorial is byte-identical; the original substantive rationale, confidence, status and alternatives remain unchanged. This is record maintenance, not a new source review or resolution.&quot;,
+    &quot;5 November 2026 — The manufacturer handles defects by recalling and improving later cars. The last phrase is 改善していくのが論理的な発想です; do not replace the author’s printed 論理的 with a retype’s plausible alternative. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;&quot;
+}</pre></details></div></section><section class="review-group" id="review-reading-b004" data-kinds="resolved"><div class="review-group-heading"><h2>reading-b004</h2><a href="../papers/N1_12_2025.html#reading-b004">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><p>（4）<br/>　知性は個人の属性（注1）ではなく、集団的にしか発動しない。だから、ある個人が知性的であるかどうかは、その人の個人が私的に所有する知識量や知能指数や演算能力によっては考量（注2）できない。そうではなくて、その人がいることによって、その人の発言やふるまいによって、彼の属する集団全体の知的パフォーマンスが、彼がいない場合よりも高まった場合に、事後的にその人は「知性的」な人物だったと判定される。</p><p>（注1） 属性：性質<br/>（注2） 考量する：判断する</p></div></details><div class="review-record" id="unresolved_cases-N1_12_2025-reading-b004-intelligence-wording"><div class="review-label">Resolved · /content · high</div><div class="comparison"><div><h4>Alternative</h4><pre>その人個人が私的に所有する</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">&lt;p&gt;（4）&lt;br&gt;　知性は個人の属性（注1）ではなく、集団的にしか発動しない。だから、ある個人が知性的であるかどうかは、</mark>その人<mark class="diff-new">の</mark>個人が私的に所有する<mark class="diff-new">知識量や知能指数や演算能力によっては考量（注2）できない。そうではなくて、その人がいることによって、その人の発言やふるまいによって、彼の属する集団全体の知的パフォーマンスが、彼がいない場合よりも高まった場合に、事後的にその人は「知性的」な人物だったと判</mark>…</pre></div></div><p>The vertical passage really says その人の個人が私的に所有する, despite its unusual wording. Keep this previous correction as already resolved; the page and earlier author-text comparison support the phrase. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings.</p><a href="../assets/principals/N1_12_2025.pdf" target="_blank" rel="noopener">Source ↗</a> <span class="control-help">Intelligence passage, the unusual phrase その人の個人が私的に所有する.</span><ul class="evidence-list"><li><a href="../assets/principals/N1_12_2025.pdf#page=16" target="_blank" rel="noopener">A 2025年12月N1完整原卷.pdf</a> · Physical pages16<p>その人の個人が私的に所有する</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=16" target="_blank" rel="noopener">2025年12月N1真题.pdf</a> · Physical pages16<p>その人の個人が私的に所有する</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=15" target="_blank" rel="noopener">25年12月N1真题.pdf</a> · Physical pages15<p>その人の個人が私的に所有する</p></li><li><a href="http://blog.tatsuru.com/2020/09/03_1232.html" target="_blank" rel="noopener">内田樹「反知性主義者たちの肖像」</a> · 2020-09-03 essay, paragraph beginning 知性は個人の属性ではなく<p>その人の個人が私的に所有する</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=16" target="_blank" rel="noopener">A 2025年12月N1完整原卷.pdf</a> · reading-b004 /content; physical 16<p>The vertical passage really says その人の個人が私的に所有する, despite its unusual wording. Keep this previous correction as already resolved; the page and earlier author-text comparison support the phrase.</p></li></ul><details><summary>Full published record · unresolved_cases-N1_12_2025-reading-b004-intelligence-wording</summary><pre>{
+  &quot;case_id&quot;: &quot;N1_12_2025-reading-b004-intelligence-wording&quot;,
+  &quot;unit&quot;: &quot;N1_12_2025&quot;,
+  &quot;item_id&quot;: &quot;reading-b004&quot;,
+  &quot;field&quot;: &quot;/content&quot;,
+  &quot;status&quot;: &quot;resolved&quot;,
+  &quot;confidence&quot;: &quot;high&quot;,
+  &quot;decision_basis&quot;: &quot;source_comparison&quot;,
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;&lt;p&gt;（4）&lt;br&gt;　知性は個人の属性（注1）ではなく、集団的にしか発動しない。だから、ある個人が知性的であるかどうかは、その人の個人が私的に所有する知識量や知能指数や演算能力によっては考量（注2）できない。そうではなくて、その人がいることによって、その人の発言やふるまいによって、彼の属する集団全体の知的パフォーマンスが、彼がいない場合よりも高まった場合に、事後的にその人は「知性的」な人物だったと判定される。&lt;/p&gt;&lt;p&gt;（注1） 属性：性質&lt;br&gt;（注2） 考量する：判断する&lt;/p&gt;&quot;
+  },
+  &quot;context&quot;: &quot;Intelligence passage, the unusual phrase その人の個人が私的に所有する.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;その人個人が私的に所有する&quot;,
+      &quot;assessment&quot;: &quot;Smoother Japanese, but not the reading in the exam copies or the author-hosted essay.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;A 2025年12月N1完整原卷.pdf&quot;,
+      &quot;sha256&quot;: &quot;930f74eba01c27aea3403d85541b8310c018660cf9014c1dd88d7e33229eae82&quot;,
+      &quot;locator&quot;: &quot;Physical pages16&quot;,
+      &quot;reading&quot;: &quot;その人の個人が私的に所有する&quot;,
+      &quot;physical_pages&quot;: [
+        16
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;2025年12月N1真题.pdf&quot;,
+      &quot;sha256&quot;: &quot;445359367643ad6b1e7f466feed05685ab2edca30d3d8b0085bc16ecab40a4c9&quot;,
+      &quot;locator&quot;: &quot;Physical pages16&quot;,
+      &quot;reading&quot;: &quot;その人の個人が私的に所有する&quot;,
+      &quot;physical_pages&quot;: [
+        16
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;25年12月N1真题.pdf&quot;,
+      &quot;sha256&quot;: &quot;f50f78a55e20973d014fe6fb6406f0cacdc4ed66cdb53621a390478f6ed4759e&quot;,
+      &quot;locator&quot;: &quot;Physical pages15&quot;,
+      &quot;reading&quot;: &quot;その人の個人が私的に所有する&quot;,
+      &quot;physical_pages&quot;: [
+        15
+      ],
+      &quot;lineage&quot;: &quot;Question-page bodies match the A reproduction in inspected spans; not independent confirmation.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;内田樹「反知性主義者たちの肖像」&quot;,
+      &quot;url&quot;: &quot;http://blog.tatsuru.com/2020/09/03_1232.html&quot;,
+      &quot;locator&quot;: &quot;2020-09-03 essay, paragraph beginning 知性は個人の属性ではなく&quot;,
+      &quot;reading&quot;: &quot;その人の個人が私的に所有する&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;A 2025年12月N1完整原卷.pdf&quot;,
+      &quot;sha256&quot;: &quot;930f74eba01c27aea3403d85541b8310c018660cf9014c1dd88d7e33229eae82&quot;,
+      &quot;locator&quot;: &quot;reading-b004 /content; physical 16&quot;,
+      &quot;physical_pages&quot;: [
+        16
+      ],
+      &quot;reading&quot;: &quot;The vertical passage really says その人の個人が私的に所有する, despite its unusual wording. Keep this previous correction as already resolved; the page and earlier author-text comparison support the phrase.&quot;,
+      &quot;lineage&quot;: &quot;Exact UARS-approved sitting scan; copied editions/alternative reconstructions are not independent print lineages.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;The vertical passage really says その人の個人が私的に所有する, despite its unusual wording. Keep this previous correction as already resolved; the page and earlier author-text comparison support the phrase. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Read the vertical passage in both question families and the matching page reproduction.&quot;,
+    &quot;Retrieved the author-hosted essay and checked the exact phrase in its surrounding paragraph.&quot;,
+    &quot;5 November 2026: Rebind this public-case snapshot to the existing v3 typography. Exact comparison permits only ASCII-to-fullwidth parentheses and escaped-to-print angle brackets. The editorial is byte-identical; the original substantive rationale, confidence, status and alternatives remain unchanged. This is record maintenance, not a new source review or resolution.&quot;,
+    &quot;5 November 2026 — The vertical passage really says その人の個人が私的に所有する, despite its unusual wording. Keep this previous correction as already resolved; the page and earlier author-text comparison support the phrase. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;&quot;
+}</pre></details></div></section><section class="review-group" id="review-reading-q007" data-kinds="provisional_fix"><div class="review-group-heading"><h2>reading-q007</h2><a href="../papers/N1_12_2025.html#reading-q007">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><u>一種の〝賭け〟</u>とあるが、どういうことか。<ol><li>自分の適性を教えてもらう機会がなかったのに、仕事を選ばなければならない。</li><li>自分の適性が分からないまま、仕事を選ばなければならない。</li><li>仕事に就かなければ自分の適性が確かめられないのに、仕事を選ばなければならない。</li><li>仕事の内容が分からないまま、仕事を選ばなければならない。</li></ol><p>Editorial key: 3</p></div></details><div class="review-record" id="unresolved_cases-N1_12_2025-reading-q007-reconstruction"><div class="review-label">Provisional fix ·  · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>…事に就かなければ自分の適性が確かめられないのに、仕事を選ばなければならない。&quot;,
+    &quot;仕事の内容が分からないまま、仕事を選ばなければならない。&quot;
+  ],
+  &quot;key&quot;: <mark class="diff-old">2</mark>
+}</pre></div><div><h4>Editorial</h4><pre>…事に就かなければ自分の適性が確かめられないのに、仕事を選ばなければならない。&quot;,
+    &quot;仕事の内容が分からないまま、仕事を選ばなければならない。&quot;
+  ],
+  &quot;key&quot;: <mark class="diff-new">3</mark>
+}</pre></div></div><p>In Q51 the author contrasts choosing a job before working with learning suitability by experience. Choice 3 expresses both facts more directly than choice 2. The alternatives are printed; selecting 3 remains an interpretation without an authoritative key. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings. Interpreted answers, derivative notes and ambiguity are distinguished from what the question actually prints.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>The printed question is verified; no independent authorized scoring key establishes the preferred answer.</p><a href="../assets/principals/N1_12_2025.pdf" target="_blank" rel="noopener">Source ↗</a> <span class="control-help">Original Q51, what makes choosing a career a gamble: key3 versus key2.</span><ul class="evidence-list"><li><a href="../assets/principals/N1_12_2025.pdf#page=19" target="_blank" rel="noopener">A 2025年12月N1完整原卷.pdf</a> · Physical pages19<p>Options2 and3 differ by the explicit requirement to work before confirming suitability.</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=4" target="_blank" rel="noopener">2025年12月 N1 详细答案.pdf</a> · Physical pages4<p>Q51=2</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=2" target="_blank" rel="noopener">C 2025年12月N1答案.pdf</a> · Physical pages2<p>Q51=3</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=10" target="_blank" rel="noopener">2025年12月N1解析.pdf</a> · Physical pages10<p>Q51=3; explains the employment/verification paradox.</p></li><li><a href="https://jp.hujiang.com/new/p1443849/" target="_blank" rel="noopener">沪江网校 December2025 N1 reading analysis</a> · Images8–9, printed analysis pages4–5<p>Q51=3 with essentially the same explanation as the local explanation family.</p></li><li><a href="http://aixinjp.com/a/lianxifangshi/zhentidaan/2025/1208/1243.html" target="_blank" rel="noopener">爱心日语 December2025 N1 reference answers</a> · 問題9（2）, Q51<p>Q51=2; wording matches the detailed-answer PDF.</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=19" target="_blank" rel="noopener">A 2025年12月N1完整原卷.pdf</a> · reading-q007 ; physical 19<p>In Q51 the author contrasts choosing a job before working with learning suitability by experience. Choice 3 expresses both facts more directly than choice 2. The alternatives are printed; selecting 3 remains an interpretation without an authoritative key.</p></li></ul><details><summary>Full published record · unresolved_cases-N1_12_2025-reading-q007-reconstruction</summary><pre>{
+  &quot;case_id&quot;: &quot;N1_12_2025-reading-q007-reconstruction&quot;,
+  &quot;unit&quot;: &quot;N1_12_2025&quot;,
+  &quot;item_id&quot;: &quot;reading-q007&quot;,
+  &quot;field&quot;: &quot;&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: {
+    &quot;id&quot;: &quot;reading-q007&quot;,
+    &quot;stem&quot;: {
+      &quot;html&quot;: &quot;&lt;u&gt;一種の〝賭け〟&lt;/u&gt;とあるが、どういうことか。&quot;
+    },
+    &quot;options&quot;: [
+      &quot;自分の適性を教えてもらう機会がなかったのに、仕事を選ばなければならない。&quot;,
+      &quot;自分の適性が分からないまま、仕事を選ばなければならない。&quot;,
+      &quot;仕事に就かなければ自分の適性が確かめられないのに、仕事を選ばなければならない。&quot;,
+      &quot;仕事の内容が分からないまま、仕事を選ばなければならない。&quot;
+    ],
+    &quot;key&quot;: 3
+  },
+  &quot;before&quot;: null,
+  &quot;context&quot;: &quot;Original Q51, what makes choosing a career a gamble: key3 versus key2.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: {
+        &quot;id&quot;: &quot;reading-q007&quot;,
+        &quot;stem&quot;: {
+          &quot;html&quot;: &quot;&lt;u&gt;一種の〝賭け〟&lt;/u&gt;とあるが、どういうことか。&quot;
+        },
+        &quot;options&quot;: [
+          &quot;自分の適性を教えてもらう機会がなかったのに、仕事を選ばなければならない。&quot;,
+          &quot;自分の適性が分からないまま、仕事を選ばなければならない。&quot;,
+          &quot;仕事に就かなければ自分の適性が確かめられないのに、仕事を選ばなければならない。&quot;,
+          &quot;仕事の内容が分からないまま、仕事を選ばなければならない。&quot;
+        ],
+        &quot;key&quot;: 2
+      },
+      &quot;assessment&quot;: &quot;Option2 is a concise paraphrase of choosing without knowing suitability; the detailed-answer/Aixin family favors it.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;A 2025年12月N1完整原卷.pdf&quot;,
+      &quot;sha256&quot;: &quot;930f74eba01c27aea3403d85541b8310c018660cf9014c1dd88d7e33229eae82&quot;,
+      &quot;locator&quot;: &quot;Physical pages19&quot;,
+      &quot;reading&quot;: &quot;Options2 and3 differ by the explicit requirement to work before confirming suitability.&quot;,
+      &quot;physical_pages&quot;: [
+        19
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;2025年12月 N1 详细答案.pdf&quot;,
+      &quot;sha256&quot;: &quot;98b7eb61a3d926f49bc9e452b05428367bf235a341134fc8ceacbd24d2e345cc&quot;,
+      &quot;locator&quot;: &quot;Physical pages4&quot;,
+      &quot;reading&quot;: &quot;Q51=2&quot;,
+      &quot;physical_pages&quot;: [
+        4
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;C 2025年12月N1答案.pdf&quot;,
+      &quot;sha256&quot;: &quot;32ef08ff2810e75edbacad952ff14cc5003c9095aa5593d4bd98feb9ef05796b&quot;,
+      &quot;locator&quot;: &quot;Physical pages2&quot;,
+      &quot;reading&quot;: &quot;Q51=3&quot;,
+      &quot;physical_pages&quot;: [
+        2
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;2025年12月N1解析.pdf&quot;,
+      &quot;sha256&quot;: &quot;268907ed819a5c04ca64cb73710a35af2eb7b3c5b8f46c064e1b9c1483baae51&quot;,
+      &quot;locator&quot;: &quot;Physical pages10&quot;,
+      &quot;reading&quot;: &quot;Q51=3; explains the employment/verification paradox.&quot;,
+      &quot;physical_pages&quot;: [
+        10
+      ],
+      &quot;lineage&quot;: &quot;Much of the reading explanation wording also appears in the Hujiang analysis; shared ancestry is likely.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;沪江网校 December2025 N1 reading analysis&quot;,
+      &quot;url&quot;: &quot;https://jp.hujiang.com/new/p1443849/&quot;,
+      &quot;locator&quot;: &quot;Images8–9, printed analysis pages4–5&quot;,
+      &quot;reading&quot;: &quot;Q51=3 with essentially the same explanation as the local explanation family.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;爱心日语 December2025 N1 reference answers&quot;,
+      &quot;url&quot;: &quot;http://aixinjp.com/a/lianxifangshi/zhentidaan/2025/1208/1243.html&quot;,
+      &quot;locator&quot;: &quot;問題9（2）, Q51&quot;,
+      &quot;reading&quot;: &quot;Q51=2; wording matches the detailed-answer PDF.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;A 2025年12月N1完整原卷.pdf&quot;,
+      &quot;sha256&quot;: &quot;930f74eba01c27aea3403d85541b8310c018660cf9014c1dd88d7e33229eae82&quot;,
+      &quot;locator&quot;: &quot;reading-q007 ; physical 19&quot;,
+      &quot;physical_pages&quot;: [
+        19
+      ],
+      &quot;reading&quot;: &quot;In Q51 the author contrasts choosing a job before working with learning suitability by experience. Choice 3 expresses both facts more directly than choice 2. The alternatives are printed; selecting 3 remains an interpretation without an authoritative key.&quot;,
+      &quot;lineage&quot;: &quot;Exact UARS-approved sitting scan; copied editions/alternative reconstructions are not independent print lineages.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;In Q51 the author contrasts choosing a job before working with learning suitability by experience. Choice 3 expresses both facts more directly than choice 2. The alternatives are printed; selecting 3 remains an interpretation without an authoritative key. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings. Interpreted answers, derivative notes and ambiguity are distinguished from what the question actually prints.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Compared the complete item and its surrounding context in the A question reproduction and the materially distinct question retype.&quot;,
+    &quot;Checked the corresponding structured transcript and relevant available explanation/answer witnesses; agreement from shared page bodies or explanation text was not counted as independent.&quot;,
+    &quot;Reassessed the strongest alternative using grammar, discourse and the task while preserving deliberate distractors.&quot;,
+    &quot;Inspected Hujiang original analysis images and the Aixin answer text; their agreements trace existing local families rather than add independent votes.&quot;,
+    &quot;5 November 2026 — In Q51 the author contrasts choosing a job before working with learning suitability by experience. Choice 3 expresses both facts more directly than choice 2. The alternatives are printed; selecting 3 remains an interpretation without an authoritative key. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings. Interpreted answers, derivative notes and ambiguity are distinguished from what the question actually prints.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;The printed question is verified; no independent authorized scoring key establishes the preferred answer.&quot;
+}</pre></details></div></section><section class="review-group" id="review-reading-q008" data-kinds="provisional_fix"><div class="review-group-heading"><h2>reading-q008</h2><a href="../papers/N1_12_2025.html#reading-q008">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">キャリア教育のあり方について、筆者の考えに合うのはどれか。<ol><li>自分の特性を生かせる仕事や実現したい社会について、深く考えさせるべきだ。</li><li>自分の特性を把握させ、社会に貢献できる仕事を選ばせることが重要だ。</li><li>どうしたら自分が社会に役立てるのか、現実的な認識をもたせるべきだ。</li><li>仕事や社会について学んだうえで、自分を見つめさせることが重要だ。</li></ol><p>Editorial key: 4</p></div></details><div class="review-record" id="unresolved_cases-N1_12_2025-reading-q008-reconstruction"><div class="review-label">Provisional fix ·  · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>…&quot;どうしたら自分が社会に役立てるのか、現実的な認識をもたせるべきだ。&quot;,
+    &quot;仕事や社会について学んだうえで、自分を見つめさせることが重要だ。&quot;
+  ],
+  &quot;key&quot;: <mark class="diff-old">1</mark>
+}</pre></div><div><h4>Editorial</h4><pre>…&quot;どうしたら自分が社会に役立てるのか、現実的な認識をもたせるべきだ。&quot;,
+    &quot;仕事や社会について学んだうえで、自分を見つめさせることが重要だ。&quot;
+  ],
+  &quot;key&quot;: <mark class="diff-new">4</mark>
+}</pre></div></div><p>Q52 asks for the author’s position on career education. Choice 4 covers realistic knowledge of work/society and examining oneself; choice 1 emphasizes aptitude and desired society. Keep 4 provisional without treating the question page as a printed key. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings. Interpreted answers, derivative notes and ambiguity are distinguished from what the question actually prints.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>The printed question is verified; no independent authorized scoring key establishes the preferred answer.</p><a href="../assets/principals/N1_12_2025.pdf" target="_blank" rel="noopener">Source ↗</a> <span class="control-help">Original Q52, career education: key4 versus key1.</span><ul class="evidence-list"><li><a href="../assets/principals/N1_12_2025.pdf#page=19" target="_blank" rel="noopener">A 2025年12月N1完整原卷.pdf</a> · Physical pages19,20<p>The final two paragraphs discuss industry/workplace knowledge and examining the reasons for the chosen career.</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=4" target="_blank" rel="noopener">2025年12月 N1 详细答案.pdf</a> · Physical pages4<p>Q52=4</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=2" target="_blank" rel="noopener">C 2025年12月N1答案.pdf</a> · Physical pages2<p>Q52=1</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=10" target="_blank" rel="noopener">2025年12月N1解析.pdf</a> · Physical pages10<p>Q52=1, citing the final paragraph only.</p></li><li><a href="https://jp.hujiang.com/new/p1443849/" target="_blank" rel="noopener">沪江网校 December2025 N1 reading analysis</a> · Images9–10, printed analysis pages5–6<p>Q52=1; explanation concentrates on the final paragraph.</p></li><li><a href="http://aixinjp.com/a/lianxifangshi/zhentidaan/2025/1208/1243.html" target="_blank" rel="noopener">爱心日语 December2025 N1 reference answers</a> · 問題9（2）, Q52<p>Q52=4.</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=19" target="_blank" rel="noopener">A 2025年12月N1完整原卷.pdf</a> · reading-q008 ; physical 19,20<p>Q52 asks for the author’s position on career education. Choice 4 covers realistic knowledge of work/society and examining oneself; choice 1 emphasizes aptitude and desired society. Keep 4 provisional without treating the question page as a printed key.</p></li></ul><details><summary>Full published record · unresolved_cases-N1_12_2025-reading-q008-reconstruction</summary><pre>{
+  &quot;case_id&quot;: &quot;N1_12_2025-reading-q008-reconstruction&quot;,
+  &quot;unit&quot;: &quot;N1_12_2025&quot;,
+  &quot;item_id&quot;: &quot;reading-q008&quot;,
+  &quot;field&quot;: &quot;&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: {
+    &quot;id&quot;: &quot;reading-q008&quot;,
+    &quot;stem&quot;: &quot;キャリア教育のあり方について、筆者の考えに合うのはどれか。&quot;,
+    &quot;options&quot;: [
+      &quot;自分の特性を生かせる仕事や実現したい社会について、深く考えさせるべきだ。&quot;,
+      &quot;自分の特性を把握させ、社会に貢献できる仕事を選ばせることが重要だ。&quot;,
+      &quot;どうしたら自分が社会に役立てるのか、現実的な認識をもたせるべきだ。&quot;,
+      &quot;仕事や社会について学んだうえで、自分を見つめさせることが重要だ。&quot;
+    ],
+    &quot;key&quot;: 4
+  },
+  &quot;before&quot;: null,
+  &quot;context&quot;: &quot;Original Q52, career education: key4 versus key1.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: {
+        &quot;id&quot;: &quot;reading-q008&quot;,
+        &quot;stem&quot;: &quot;キャリア教育のあり方について、筆者の考えに合うのはどれか。&quot;,
+        &quot;options&quot;: [
+          &quot;自分の特性を生かせる仕事や実現したい社会について、深く考えさせるべきだ。&quot;,
+          &quot;自分の特性を把握させ、社会に貢献できる仕事を選ばせることが重要だ。&quot;,
+          &quot;どうしたら自分が社会に役立てるのか、現実的な認識をもたせるべきだ。&quot;,
+          &quot;仕事や社会について学んだうえで、自分を見つめさせることが重要だ。&quot;
+        ],
+        &quot;key&quot;: 1
+      },
+      &quot;assessment&quot;: &quot;Option1 has close wording support in the conclusion and is favored by the Hujiang-derived key family.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;A 2025年12月N1完整原卷.pdf&quot;,
+      &quot;sha256&quot;: &quot;930f74eba01c27aea3403d85541b8310c018660cf9014c1dd88d7e33229eae82&quot;,
+      &quot;locator&quot;: &quot;Physical pages19,20&quot;,
+      &quot;reading&quot;: &quot;The final two paragraphs discuss industry/workplace knowledge and examining the reasons for the chosen career.&quot;,
+      &quot;physical_pages&quot;: [
+        19,
+        20
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;2025年12月 N1 详细答案.pdf&quot;,
+      &quot;sha256&quot;: &quot;98b7eb61a3d926f49bc9e452b05428367bf235a341134fc8ceacbd24d2e345cc&quot;,
+      &quot;locator&quot;: &quot;Physical pages4&quot;,
+      &quot;reading&quot;: &quot;Q52=4&quot;,
+      &quot;physical_pages&quot;: [
+        4
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;C 2025年12月N1答案.pdf&quot;,
+      &quot;sha256&quot;: &quot;32ef08ff2810e75edbacad952ff14cc5003c9095aa5593d4bd98feb9ef05796b&quot;,
+      &quot;locator&quot;: &quot;Physical pages2&quot;,
+      &quot;reading&quot;: &quot;Q52=1&quot;,
+      &quot;physical_pages&quot;: [
+        2
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;2025年12月N1解析.pdf&quot;,
+      &quot;sha256&quot;: &quot;268907ed819a5c04ca64cb73710a35af2eb7b3c5b8f46c064e1b9c1483baae51&quot;,
+      &quot;locator&quot;: &quot;Physical pages10&quot;,
+      &quot;reading&quot;: &quot;Q52=1, citing the final paragraph only.&quot;,
+      &quot;physical_pages&quot;: [
+        10
+      ],
+      &quot;lineage&quot;: &quot;Much of the reading explanation wording also appears in the Hujiang analysis; shared ancestry is likely.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;沪江网校 December2025 N1 reading analysis&quot;,
+      &quot;url&quot;: &quot;https://jp.hujiang.com/new/p1443849/&quot;,
+      &quot;locator&quot;: &quot;Images9–10, printed analysis pages5–6&quot;,
+      &quot;reading&quot;: &quot;Q52=1; explanation concentrates on the final paragraph.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;爱心日语 December2025 N1 reference answers&quot;,
+      &quot;url&quot;: &quot;http://aixinjp.com/a/lianxifangshi/zhentidaan/2025/1208/1243.html&quot;,
+      &quot;locator&quot;: &quot;問題9（2）, Q52&quot;,
+      &quot;reading&quot;: &quot;Q52=4.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;A 2025年12月N1完整原卷.pdf&quot;,
+      &quot;sha256&quot;: &quot;930f74eba01c27aea3403d85541b8310c018660cf9014c1dd88d7e33229eae82&quot;,
+      &quot;locator&quot;: &quot;reading-q008 ; physical 19,20&quot;,
+      &quot;physical_pages&quot;: [
+        19,
+        20
+      ],
+      &quot;reading&quot;: &quot;Q52 asks for the author’s position on career education. Choice 4 covers realistic knowledge of work/society and examining oneself; choice 1 emphasizes aptitude and desired society. Keep 4 provisional without treating the question page as a printed key.&quot;,
+      &quot;lineage&quot;: &quot;Exact UARS-approved sitting scan; copied editions/alternative reconstructions are not independent print lineages.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Q52 asks for the author’s position on career education. Choice 4 covers realistic knowledge of work/society and examining oneself; choice 1 emphasizes aptitude and desired society. Keep 4 provisional without treating the question page as a printed key. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings. Interpreted answers, derivative notes and ambiguity are distinguished from what the question actually prints.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Compared the complete item and its surrounding context in the A question reproduction and the materially distinct question retype.&quot;,
+    &quot;Checked the corresponding structured transcript and relevant available explanation/answer witnesses; agreement from shared page bodies or explanation text was not counted as independent.&quot;,
+    &quot;Reassessed the strongest alternative using grammar, discourse and the task while preserving deliberate distractors.&quot;,
+    &quot;Read both original question pages and all four choices in each question family, and compared the final-paragraph-only argument with the whole-passage reading.&quot;,
+    &quot;5 November 2026 — Q52 asks for the author’s position on career education. Choice 4 covers realistic knowledge of work/society and examining oneself; choice 1 emphasizes aptitude and desired society. Keep 4 provisional without treating the question page as a printed key. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings. Interpreted answers, derivative notes and ambiguity are distinguished from what the question actually prints.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;The printed question is verified; no independent authorized scoring key establishes the preferred answer.&quot;
+}</pre></details></div></section><section class="review-group" id="review-reading-b007" data-kinds="resolved"><div class="review-group-heading"><h2>reading-b007</h2><a href="../papers/N1_12_2025.html#reading-b007">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><p>（3）<br/>　2018年に、米国のデューク大学のエレナー・ケイヴスたちは、カリブ海の水深1〜35mのサンゴ<ruby>礁<rt>しょう</rt></ruby>に<ruby>棲息<rt>せいそく</rt></ruby>（注1）するクリーナーシュリンプ（注2）（アンキロメネス・ペデルソニ）がブダイやフエダイ、ハタなどの魚の体や口を掃除するときの行動を調べた。すると魚とクリーナーシュリンプが、それぞれ相手にすごいと思える信号を出していることが明らかになった。<br/>　まず、ハタなどの魚が、白く長い触角（注3）を振るクリーナーシュリンプが<ruby>棲<rt>す</rt></ruby>む場所を訪ねて来て、魚が体表を暗くする。（中略）<br/>　体表の明暗の変化をクリーナーシュリンプが認識すると、自らの長い触角を前後左右に大きく振る。クリーナーシュリンプの一種アンキロメネス・ペデルソニの視力は、相手の魚の色や輪郭ははっきりと認識できないが、魚の体表の明暗の変化は十分に認識できることが明らかになっている。いっぽうでハタなどの魚の<ruby>眼<rt>め</rt></ruby>は、クリーナーシュリンプの体色や輪郭だけでなく、30〜40cmほど前方にいる全長2cmほどの小さなクリーナーシュリンプの細長い触角の動きを明確に識別できる。クリーナーシュリンプの触角に白く長いものが多いことは、触角の動きを薄暗い海底で明確に魚に伝えるためのものと思われる。<br/>　その触角の動きを見て、ハタなどの魚は、クリーナーシュリンプが皮膚や口の中をきれいにしたり傷口を治癒したりすることを了解したと知るのである。こうして<u>両者が合意すれば</u>クリーナーシュリンプは、ハタなどの魚に食べられずに掃除を行うことが可能になる。</p><p>（注1） <ruby>棲息<rt>せいそく</rt></ruby>する：住む<br/>（注2） クリーナーシュリンプ：えびの一種<br/>（注3） 触角：頭の先にある感覚器官</p></div></details><div class="review-record" id="unresolved_cases-N1_12_2025-reading-b007-reconstruction"><div class="review-label">Resolved ·  · high</div><div class="comparison"><div><h4>Alternative</h4><pre>{
+  &quot;id&quot;: &quot;reading-b007&quot;,
+  &quot;type&quot;: &quot;passage&quot;,
+  &quot;content&quot;: {
+    &quot;html&quot;: &quot;&lt;p&gt;<mark class="diff-old">(</mark>3<mark class="diff-old">)</mark>&lt;br&gt;　2018年に、米国のデューク大学のエレナー・ケイヴスたちは、カリブ海の水深1〜35mのサンゴ&lt;ruby&gt;礁&lt;rt&gt;しょう&lt;/rt&gt;&lt;/ruby&gt;に&lt;ruby&gt;棲息&lt;rt&gt;せいそく&lt;/rt&gt;&lt;/ruby&gt;<mark class="diff-old">(</mark>注1<mark class="diff-old">)</mark>するクリーナーシュリンプ<mark class="diff-old">(</mark>注2<mark class="diff-old">)</mark>（アンキロメネス・ペデル…</pre></div><div><h4>Editorial</h4><pre>{
+  &quot;id&quot;: &quot;reading-b007&quot;,
+  &quot;type&quot;: &quot;passage&quot;,
+  &quot;content&quot;: {
+    &quot;html&quot;: &quot;&lt;p&gt;<mark class="diff-new">（</mark>3<mark class="diff-new">）</mark>&lt;br&gt;　2018年に、米国のデューク大学のエレナー・ケイヴスたちは、カリブ海の水深1〜35mのサンゴ&lt;ruby&gt;礁&lt;rt&gt;しょう&lt;/rt&gt;&lt;/ruby&gt;に&lt;ruby&gt;棲息&lt;rt&gt;せいそく&lt;/rt&gt;&lt;/ruby&gt;<mark class="diff-new">（</mark>注1<mark class="diff-new">）</mark>するクリーナーシュリンプ<mark class="diff-new">（</mark>注2<mark class="diff-new">）</mark>（アンキロメネス・ペデル…</pre></div></div><p>In the cleaner-shrimp passage, movement is communicated 薄暗い海底で明確に魚に伝える and fish allow wounds to heal 傷口を治癒したり. Preserve these details independently of the answer to the question about sensing light. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings.</p><a href="../assets/principals/N1_12_2025.pdf" target="_blank" rel="noopener">Source ↗</a> <span class="control-help">Original Q53–54 cleaner-shrimp passage: 治癒する/癒やす and 海底で/海底でも variants.</span><ul class="evidence-list"><li><a href="../assets/principals/N1_12_2025.pdf#page=21" target="_blank" rel="noopener">A 2025年12月N1完整原卷.pdf</a> · Physical pages21<p>薄暗い海底で明確に魚に伝える／傷口を治癒したり</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=21" target="_blank" rel="noopener">2025年12月N1真题.pdf</a> · Physical pages21<p>薄暗い海底でも明確に魚に伝える／傷口を癒やしたり</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=10" target="_blank" rel="noopener">2025年12月N1解析.pdf</a> · Physical pages10<p>Explanation quotes 癒やしたり; this shares wording with the retype/Hujiang family.</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=21" target="_blank" rel="noopener">A 2025年12月N1完整原卷.pdf</a> · reading-b007 ; physical 21<p>In the cleaner-shrimp passage, movement is communicated 薄暗い海底で明確に魚に伝える and fish allow wounds to heal 傷口を治癒したり. Preserve these details independently of the answer to the question about sensing light.</p></li></ul><details><summary>Full published record · unresolved_cases-N1_12_2025-reading-b007-reconstruction</summary><pre>{
+  &quot;case_id&quot;: &quot;N1_12_2025-reading-b007-reconstruction&quot;,
+  &quot;unit&quot;: &quot;N1_12_2025&quot;,
+  &quot;item_id&quot;: &quot;reading-b007&quot;,
+  &quot;field&quot;: &quot;&quot;,
+  &quot;status&quot;: &quot;resolved&quot;,
+  &quot;confidence&quot;: &quot;high&quot;,
+  &quot;decision_basis&quot;: &quot;source_comparison&quot;,
+  &quot;current_value&quot;: {
+    &quot;id&quot;: &quot;reading-b007&quot;,
+    &quot;type&quot;: &quot;passage&quot;,
+    &quot;content&quot;: {
+      &quot;html&quot;: &quot;&lt;p&gt;（3）&lt;br&gt;　2018年に、米国のデューク大学のエレナー・ケイヴスたちは、カリブ海の水深1〜35mのサンゴ&lt;ruby&gt;礁&lt;rt&gt;しょう&lt;/rt&gt;&lt;/ruby&gt;に&lt;ruby&gt;棲息&lt;rt&gt;せいそく&lt;/rt&gt;&lt;/ruby&gt;（注1）するクリーナーシュリンプ（注2）（アンキロメネス・ペデルソニ）がブダイやフエダイ、ハタなどの魚の体や口を掃除するときの行動を調べた。すると魚とクリーナーシュリンプが、それぞれ相手にすごいと思える信号を出していることが明らかになった。&lt;br&gt;　まず、ハタなどの魚が、白く長い触角（注3）を振るクリーナーシュリンプが&lt;ruby&gt;棲&lt;rt&gt;す&lt;/rt&gt;&lt;/ruby&gt;む場所を訪ねて来て、魚が体表を暗くする。（中略）&lt;br&gt;　体表の明暗の変化をクリーナーシュリンプが認識すると、自らの長い触角を前後左右に大きく振る。クリーナーシュリンプの一種アンキロメネス・ペデルソニの視力は、相手の魚の色や輪郭ははっきりと認識できないが、魚の体表の明暗の変化は十分に認識できることが明らかになっている。いっぽうでハタなどの魚の&lt;ruby&gt;眼&lt;rt&gt;め&lt;/rt&gt;&lt;/ruby&gt;は、クリーナーシュリンプの体色や輪郭だけでなく、30〜40cmほど前方にいる全長2cmほどの小さなクリーナーシュリンプの細長い触角の動きを明確に識別できる。クリーナーシュリンプの触角に白く長いものが多いことは、触角の動きを薄暗い海底で明確に魚に伝えるためのものと思われる。&lt;br&gt;　その触角の動きを見て、ハタなどの魚は、クリーナーシュリンプが皮膚や口の中をきれいにしたり傷口を治癒したりすることを了解したと知るのである。こうして&lt;u&gt;両者が合意すれば&lt;/u&gt;クリーナーシュリンプは、ハタなどの魚に食べられずに掃除を行うことが可能になる。&lt;/p&gt;&lt;p&gt;（注1） &lt;ruby&gt;棲息&lt;rt&gt;せいそく&lt;/rt&gt;&lt;/ruby&gt;する：住む&lt;br&gt;（注2） クリーナーシュリンプ：えびの一種&lt;br&gt;（注3） 触角：頭の先にある感覚器官&lt;/p&gt;&quot;
+    }
+  },
+  &quot;before&quot;: null,
+  &quot;context&quot;: &quot;Original Q53–54 cleaner-shrimp passage: 治癒する/癒やす and 海底で/海底でも variants.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: {
+        &quot;id&quot;: &quot;reading-b007&quot;,
+        &quot;type&quot;: &quot;passage&quot;,
+        &quot;content&quot;: {
+          &quot;html&quot;: &quot;&lt;p&gt;(3)&lt;br&gt;　2018年に、米国のデューク大学のエレナー・ケイヴスたちは、カリブ海の水深1〜35mのサンゴ&lt;ruby&gt;礁&lt;rt&gt;しょう&lt;/rt&gt;&lt;/ruby&gt;に&lt;ruby&gt;棲息&lt;rt&gt;せいそく&lt;/rt&gt;&lt;/ruby&gt;(注1)するクリーナーシュリンプ(注2)（アンキロメネス・ペデルソニ）がブダイやフエダイ、ハタなどの魚の体や口を掃除するときの行動を調べた。すると魚とクリーナーシュリンプが、それぞれ相手にすごいと思える信号を出していることが明らかになった。&lt;br&gt;　まず、ハタなどの魚が、白く長い触角(注3)を振るクリーナーシュリンプが&lt;ruby&gt;棲&lt;rt&gt;す&lt;/rt&gt;&lt;/ruby&gt;む場所を訪ねて来て、魚が体表を暗くする。(中略)&lt;br&gt;　体表の明暗の変化をクリーナーシュリンプが認識すると、自らの長い触角を前後左右に大きく振る。クリーナーシュリンプの一種アンキロメネス・ペデルソニの視力は、相手の魚の色や輪郭ははっきりと認識できないが、魚の体表の明暗の変化は十分に認識できることが明らかになっている。いっぽうでハタなどの魚の&lt;ruby&gt;眼&lt;rt&gt;め&lt;/rt&gt;&lt;/ruby&gt;は、クリーナーシュリンプの体色や輪郭だけでなく、30〜40cmほど前方にいる全長2cmほどの小さなクリーナーシュリンプの細長い触角の動きを明確に識別できる。クリーナーシュリンプの触角に白く長いものが多いことは、触角の動きを薄暗い海底でも明確に魚に伝えるためのものと思われる。&lt;br&gt;　その触角の動きを見て、ハタなどの魚は、クリーナーシュリンプが皮膚や口の中をきれいにしたり傷口を癒やしたりすることを了解したと知るのである。こうして&lt;u&gt;両者が合意すれば&lt;/u&gt;クリーナーシュリンプは、ハタなどの魚に食べられずに掃除を行うことが可能になる。&lt;/p&gt;&lt;p&gt;(注1) &lt;ruby&gt;棲息&lt;rt&gt;せいそく&lt;/rt&gt;&lt;/ruby&gt;する：住む&lt;br&gt;(注2) クリーナーシュリンプ：えびの一種&lt;br&gt;(注3) 触角：頭の先にある感覚器官&lt;/p&gt;&quot;
+        }
+      },
+      &quot;assessment&quot;: &quot;The alternative verb preserves the broad meaning but changes the printed expression.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;A 2025年12月N1完整原卷.pdf&quot;,
+      &quot;sha256&quot;: &quot;930f74eba01c27aea3403d85541b8310c018660cf9014c1dd88d7e33229eae82&quot;,
+      &quot;locator&quot;: &quot;Physical pages21&quot;,
+      &quot;reading&quot;: &quot;薄暗い海底で明確に魚に伝える／傷口を治癒したり&quot;,
+      &quot;physical_pages&quot;: [
+        21
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;2025年12月N1真题.pdf&quot;,
+      &quot;sha256&quot;: &quot;445359367643ad6b1e7f466feed05685ab2edca30d3d8b0085bc16ecab40a4c9&quot;,
+      &quot;locator&quot;: &quot;Physical pages21&quot;,
+      &quot;reading&quot;: &quot;薄暗い海底でも明確に魚に伝える／傷口を癒やしたり&quot;,
+      &quot;physical_pages&quot;: [
+        21
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;2025年12月N1解析.pdf&quot;,
+      &quot;sha256&quot;: &quot;268907ed819a5c04ca64cb73710a35af2eb7b3c5b8f46c064e1b9c1483baae51&quot;,
+      &quot;locator&quot;: &quot;Physical pages10&quot;,
+      &quot;reading&quot;: &quot;Explanation quotes 癒やしたり; this shares wording with the retype/Hujiang family.&quot;,
+      &quot;physical_pages&quot;: [
+        10
+      ],
+      &quot;lineage&quot;: &quot;Much of the reading explanation wording also appears in the Hujiang analysis; shared ancestry is likely.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;A 2025年12月N1完整原卷.pdf&quot;,
+      &quot;sha256&quot;: &quot;930f74eba01c27aea3403d85541b8310c018660cf9014c1dd88d7e33229eae82&quot;,
+      &quot;locator&quot;: &quot;reading-b007 ; physical 21&quot;,
+      &quot;physical_pages&quot;: [
+        21
+      ],
+      &quot;reading&quot;: &quot;In the cleaner-shrimp passage, movement is communicated 薄暗い海底で明確に魚に伝える and fish allow wounds to heal 傷口を治癒したり. Preserve these details independently of the answer to the question about sensing light.&quot;,
+      &quot;lineage&quot;: &quot;Exact UARS-approved sitting scan; copied editions/alternative reconstructions are not independent print lineages.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;In the cleaner-shrimp passage, movement is communicated 薄暗い海底で明確に魚に伝える and fish allow wounds to heal 傷口を治癒したり. Preserve these details independently of the answer to the question about sensing light. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Compared the complete item and its surrounding context in the A question reproduction and the materially distinct question retype.&quot;,
+    &quot;Checked the corresponding structured transcript and relevant available explanation/answer witnesses; agreement from shared page bodies or explanation text was not counted as independent.&quot;,
+    &quot;Reassessed the strongest alternative using grammar, discourse and the task while preserving deliberate distractors.&quot;,
+    &quot;5 November 2026: Rebind this public-case snapshot to the existing v3 typography. Exact comparison permits only ASCII-to-fullwidth parentheses and escaped-to-print angle brackets. The editorial is byte-identical; the original substantive rationale, confidence, status and alternatives remain unchanged. This is record maintenance, not a new source review or resolution.&quot;,
+    &quot;5 November 2026 — In the cleaner-shrimp passage, movement is communicated 薄暗い海底で明確に魚に伝える and fish allow wounds to heal 傷口を治癒したり. Preserve these details independently of the answer to the question about sensing light. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;&quot;
+}</pre></details></div></section><section class="review-group" id="review-reading-q012" data-kinds="resolved"><div class="review-group-heading"><h2>reading-q012</h2><a href="../papers/N1_12_2025.html#reading-q012">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">筆者によると、日記を読み返したときに<ruby>羞恥<rt>しゅうち</rt></ruby>や嫌悪を感じるのはなぜか。<ol><li>日記の中の自分は、今の自分とは異なり虚構だったと思い知らされるから</li><li>日記の中の自分は、今の自分にほかならないと認識せざるを得なくなるから</li><li>今の自分が忘れていた「内面」の弱さをいや応なしに自覚させられるから</li><li>今の自分は、日記に書かれた自分から成長していないことを突きつけられるから</li></ol><p>Editorial key: 2</p></div></details><div class="review-record" id="unresolved_cases-N1_12_2025-reading-q012-key"><div class="review-label">Resolved · /key · high</div><div class="comparison"><div><h4>Alternative</h4><pre><mark class="diff-old">1</mark></pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">2</mark></pre></div></div><p>The diary author says identifying the “内面” with the present self causes discomfort, 同一であることを強いられるがゆえに. Q56 choice 2 is the supported answer. The question pages attest the reasoning context, not a printed key. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings. Interpreted answers, derivative notes and ambiguity are distinguished from what the question actually prints.</p><a href="../assets/principals/N1_12_2025.pdf" target="_blank" rel="noopener">Source ↗</a> <span class="control-help">Original Q56: why rereading a diary produces shame or aversion.</span><ul class="evidence-list"><li><a href="../assets/principals/N1_12_2025.pdf#page=23" target="_blank" rel="noopener">A 2025年12月N1完整原卷.pdf</a> · Physical pages23,24<p>Same-self identification is the stated cause; option2 expresses that necessity.</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=11" target="_blank" rel="noopener">2025年12月N1解析.pdf</a> · Physical pages11<p>Q56=2 and explicitly rejects1 for omitting the same-self requirement.</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=16" target="_blank" rel="noopener">B 2025年12月N1解析消除水印版.pdf</a> · Physical pages16<p>Q56=1, although the explanation itself says the selves are forced to be equated.</p></li><li><a href="https://jp.hujiang.com/new/p1443849/" target="_blank" rel="noopener">沪江网校 December2025 N1 reading analysis</a> · Images14–16, printed analysis pages10–12; diary item incorrectly labelled58<p>Prints1 but its own causal explanation says the diary self is forced to be equated with the present self.</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=23" target="_blank" rel="noopener">A 2025年12月N1完整原卷.pdf</a> · reading-q012 /key; physical 23,24<p>The diary author says identifying the “内面” with the present self causes discomfort, 同一であることを強いられるがゆえに. Q56 choice 2 is the supported answer. The question pages attest the reasoning context, not a printed key.</p></li></ul><details><summary>Full published record · unresolved_cases-N1_12_2025-reading-q012-key</summary><pre>{
+  &quot;case_id&quot;: &quot;N1_12_2025-reading-q012-key&quot;,
+  &quot;unit&quot;: &quot;N1_12_2025&quot;,
+  &quot;item_id&quot;: &quot;reading-q012&quot;,
+  &quot;field&quot;: &quot;/key&quot;,
+  &quot;status&quot;: &quot;resolved&quot;,
+  &quot;confidence&quot;: &quot;high&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: 2,
+  &quot;context&quot;: &quot;Original Q56: why rereading a diary produces shame or aversion.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: 1,
+      &quot;assessment&quot;: &quot;The common reference key emphasizes a fictitious self different from the present one, but the passage explicitly locates the discomfort in being forced to identify them as the same self.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;A 2025年12月N1完整原卷.pdf&quot;,
+      &quot;sha256&quot;: &quot;930f74eba01c27aea3403d85541b8310c018660cf9014c1dd88d7e33229eae82&quot;,
+      &quot;locator&quot;: &quot;Physical pages23,24&quot;,
+      &quot;reading&quot;: &quot;Same-self identification is the stated cause; option2 expresses that necessity.&quot;,
+      &quot;physical_pages&quot;: [
+        23,
+        24
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;2025年12月N1解析.pdf&quot;,
+      &quot;sha256&quot;: &quot;268907ed819a5c04ca64cb73710a35af2eb7b3c5b8f46c064e1b9c1483baae51&quot;,
+      &quot;locator&quot;: &quot;Physical pages11&quot;,
+      &quot;reading&quot;: &quot;Q56=2 and explicitly rejects1 for omitting the same-self requirement.&quot;,
+      &quot;physical_pages&quot;: [
+        11
+      ],
+      &quot;lineage&quot;: &quot;Much of the reading explanation wording also appears in the Hujiang analysis; shared ancestry is likely.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;B 2025年12月N1解析消除水印版.pdf&quot;,
+      &quot;sha256&quot;: &quot;f26b88c34893e3605c9c2ac3c1996ccce6bdc674216e7a71208e3d3215b023b4&quot;,
+      &quot;locator&quot;: &quot;Physical pages16&quot;,
+      &quot;reading&quot;: &quot;Q56=1, although the explanation itself says the selves are forced to be equated.&quot;,
+      &quot;physical_pages&quot;: [
+        16
+      ],
+      &quot;lineage&quot;: &quot;Much of the reading explanation wording also appears in the Hujiang analysis; shared ancestry is likely.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;沪江网校 December2025 N1 reading analysis&quot;,
+      &quot;url&quot;: &quot;https://jp.hujiang.com/new/p1443849/&quot;,
+      &quot;locator&quot;: &quot;Images14–16, printed analysis pages10–12; diary item incorrectly labelled58&quot;,
+      &quot;reading&quot;: &quot;Prints1 but its own causal explanation says the diary self is forced to be equated with the present self.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;A 2025年12月N1完整原卷.pdf&quot;,
+      &quot;sha256&quot;: &quot;930f74eba01c27aea3403d85541b8310c018660cf9014c1dd88d7e33229eae82&quot;,
+      &quot;locator&quot;: &quot;reading-q012 /key; physical 23,24&quot;,
+      &quot;physical_pages&quot;: [
+        23,
+        24
+      ],
+      &quot;reading&quot;: &quot;The diary author says identifying the “内面” with the present self causes discomfort, 同一であることを強いられるがゆえに. Q56 choice 2 is the supported answer. The question pages attest the reasoning context, not a printed key.&quot;,
+      &quot;lineage&quot;: &quot;Exact UARS-approved sitting scan; copied editions/alternative reconstructions are not independent print lineages.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;The diary author says identifying the “内面” with the present self causes discomfort, 同一であることを強いられるがゆえに. Q56 choice 2 is the supported answer. The question pages attest the reasoning context, not a printed key. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings. Interpreted answers, derivative notes and ambiguity are distinguished from what the question actually prints.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Read both the full diary passage and all four choices in A, retype and matching page reproduction.&quot;,
+    &quot;Compared every local written key/explanation and the Hujiang original analysis images.&quot;,
+    &quot;Checked that choice order agrees and that the discrepancy is a key error rather than reordered alternatives.&quot;,
+    &quot;5 November 2026 — The diary author says identifying the “内面” with the present self causes discomfort, 同一であることを強いられるがゆえに. Q56 choice 2 is the supported answer. The question pages attest the reasoning context, not a printed key. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings. Interpreted answers, derivative notes and ambiguity are distinguished from what the question actually prints.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;&quot;
+}</pre></details></div></section><section class="review-group" id="review-reading-s06" data-kinds="resolved"><div class="review-group-heading"><h2>reading-s06</h2><a href="../papers/N1_12_2025.html#reading-s06">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">問題13 右のページは、宅配クリーニングのサービスの案内である。下の問いに対する答えとして最もよいものを、1・2・3・4から一つ選びなさい。</div></details><div class="review-record" id="unresolved_cases-N1_12_2025-PD-001"><div class="review-label">Resolved · /heading · high</div><div class="comparison"><div><h4>Before</h4><pre>問題13 <mark class="diff-old">以下</mark>は、宅配クリーニングのサービスの案内である。下の問いに対する答えとして最もよいものを、1・2・3・4から一つ選びなさい。</pre></div><div><h4>Editorial</h4><pre>問題13 <mark class="diff-new">右のページ</mark>は、宅配クリーニングのサービスの案内である。下の問いに対する答えとして最もよいものを、1・2・3・4から一つ選びなさい。</pre></div></div><p>Keep the HK1 restoration of 右のページは. The complete approved instruction and adjacent notice establish the spatial referent; both dependent questions and all choices fit that notice. The earlier 以下は adaptation has no support in these pixels. Other December N2–N5 approved notice tasks corroborate the facing-page function while retaining their own level-specific wording; they are analogies, not duplicate witnesses for N1. Resolve only this source-agreement case, with no content or layout-policy edit.</p><a href="../assets/principals/N1_12_2025.pdf" target="_blank" rel="noopener">Source ↗</a> <span class="control-help">Verified source agreement after complete task review; reading-s06 /heading</span><ul class="evidence-list"><li><a href="../assets/principals/N1_12_2025.pdf#page=31" target="_blank" rel="noopener">A 2025年12月N1完整原卷.pdf</a> · Original 問題13 instruction at top of printed page30<p>問題13 右のページは、宅配クリーニングのサービスの案内である。下の問いに対する答えとして最もよいものを、1・2・3・4から一つ選びなさい。</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=31" target="_blank" rel="noopener">A 2025年12月N1完整原卷.pdf</a> · Printed 30–31: complete problem 13 instruction, questions 65–66 and facing cleaning-service notice with both tables<p>右のページは、宅配クリーニングのサービスの案内である。</p></li></ul><details><summary>Full published record · unresolved_cases-N1_12_2025-PD-001</summary><pre>{
+  &quot;case_id&quot;: &quot;N1_12_2025-PD-001&quot;,
+  &quot;unit&quot;: &quot;N1_12_2025&quot;,
+  &quot;item_id&quot;: &quot;reading-s06&quot;,
+  &quot;field&quot;: &quot;/heading&quot;,
+  &quot;status&quot;: &quot;resolved&quot;,
+  &quot;confidence&quot;: &quot;high&quot;,
+  &quot;decision_basis&quot;: &quot;source_comparison&quot;,
+  &quot;current_value&quot;: &quot;問題13 右のページは、宅配クリーニングのサービスの案内である。下の問いに対する答えとして最もよいものを、1・2・3・4から一つ選びなさい。&quot;,
+  &quot;context&quot;: &quot;Verified source agreement after complete task review; reading-s06 /heading&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;問題13 以下は、宅配クリーニングのサービスの案内である。下の問いに対する答えとして最もよいものを、1・2・3・4から一つ選びなさい。&quot;,
+      &quot;assessment&quot;: &quot;Editorial value before this housekeeping pass; retained here as review history, not automatically preferred.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;問題13 右のページは、宅配クリーニングのサービスの案内である。下の問いに対する答えとして最もよいものを、1・2・3・4から一つ選びなさい。&quot;,
+      &quot;assessment&quot;: &quot;Published principal comparison fragment (not a complete substitute for the field). Source trust does not make every difference an error.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;A 2025年12月N1完整原卷.pdf&quot;,
+      &quot;sha256&quot;: &quot;930f74eba01c27aea3403d85541b8310c018660cf9014c1dd88d7e33229eae82&quot;,
+      &quot;physical_pages&quot;: [
+        31
+      ],
+      &quot;locator&quot;: &quot;Original 問題13 instruction at top of printed page30&quot;,
+      &quot;reading&quot;: &quot;問題13 右のページは、宅配クリーニングのサービスの案内である。下の問いに対する答えとして最もよいものを、1・2・3・4から一つ選びなさい。&quot;
+    },
+    {
+      &quot;physical_pages&quot;: [
+        31,
+        32
+      ],
+      &quot;locator&quot;: &quot;Printed 30–31: complete problem 13 instruction, questions 65–66 and facing cleaning-service notice with both tables&quot;,
+      &quot;reading&quot;: &quot;右のページは、宅配クリーニングのサービスの案内である。&quot;,
+      &quot;sha256&quot;: &quot;930f74eba01c27aea3403d85541b8310c018660cf9014c1dd88d7e33229eae82&quot;,
+      &quot;source_label&quot;: &quot;A 2025年12月N1完整原卷.pdf&quot;,
+      &quot;lineage&quot;: &quot;One paper/source lineage. Aliases and repeat observations are not independent witnesses. exact approved printed evidence&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Keep the HK1 restoration of 右のページは. The complete approved instruction and adjacent notice establish the spatial referent; both dependent questions and all choices fit that notice. The earlier 以下は adaptation has no support in these pixels. Other December N2–N5 approved notice tasks corroborate the facing-page function while retaining their own level-specific wording; they are analogies, not duplicate witnesses for N1. Resolve only this source-agreement case, with no content or layout-policy edit.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Reviewed the user’s item-specific calibration and exact-scope limits.&quot;,
+    &quot;Compared the current editorial field and published principal reading; used existing trusted-paper editorial JSON for level/style evidence where applicable.&quot;,
+    &quot;Retained independent repairs and left unsupported candidate fragments unchanged.&quot;,
+    &quot;5 November 2026 final housekeeping: visually inspected the exact listed pages and complete dependent task; checked all choices, contextual alternatives, current v3 value and source lineage. The instruction names the notice on the facing right page. The ordinary first-time customer receives the 30% cleaning discount but still pays 2,000 yen shipping (Q65 option 2). Special membership dispatch at 17:00 requires four days, plus five for the kimono, so the combined delivery is nine days later (Q66 option 4). The two printed 16:00 interval headings overlap exactly at 16:00, a separately recorded uncertainty unaffected by this 17:00 question. Replacing 右のページ with 以下 would adapt presentation rather than recover the source wording.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;&quot;,
+  &quot;before&quot;: &quot;問題13 以下は、宅配クリーニングのサービスの案内である。下の問いに対する答えとして最もよいものを、1・2・3・4から一つ選びなさい。&quot;
+}</pre></details></div></section><section class="review-group" id="review-reading-b013" data-kinds="unresolved"><div class="review-group-heading"><h2>reading-b013</h2><a href="../papers/N1_12_2025.html#reading-b013">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><h3>宅配クリーニング「ピース」　ご利用案内</h3><p>インターネットで注文して、バッグに衣類を詰めて送るだけ。<br/>日本全国どこからでもご利用いただけます。</p><h4>■ ご利用の流れ</h4><p>① ホームページの注文用フォームからご注文ください（初回は会員登録が必要です）。<br/>② ご注文後、発送用バッグをお送りします。ご自宅にある段ボールや袋を使っていただいても構いません。衣類を詰め、指定の宅配会社に集荷を依頼し、ご発送ください。<br/>③ クリーニング済みの衣類を宅配でご自宅にお届けいたします。</p><h4>■ 会員種別</h4><p>特別会員か普通会員がお選びいただけます。特別会員は、送料の優遇があり、短い日数でのお届けが可能です。特別会員は年会費3,000円、普通会員は年会費無料でご利用いただけます。</p><h4>■ クリーニング基本料金</h4><table><tbody><tr><th>コート</th><td>2,500円</td><th>セーター</th><td>800円</td></tr><tr><th>ジャケット</th><td>1,300円</td><th>ワイシャツ</th><td>400円</td></tr><tr><th>ワンピース</th><td>1,500円</td><th>着物</th><td>5,000円〜</td></tr></tbody></table><p>・初回は、会員種別を問わず上記基本料金の30%引きのお値段でご利用いただけます。<br/>・上記以外の衣類の取り扱いと料金については、ホームページをご確認ください。</p><h4>■ 送料（往復）</h4><table><tbody><tr><th>特別会員</th><td>・クリーニング基本料金の合計が3,000円以上の場合は無料、3,000円未満の場合は2,000円<br/>・初回は、クリーニング基本料金にかかわらず、送料無料</td></tr><tr><th>普通会員</th><td>・クリーニング基本料金の合計が8,000円以上の場合は無料、8,000円未満の場合は2,000円</td></tr></tbody></table><h4>■ お客様のご発送の日からお届けまでの日数（東京都にお住まいの場合）</h4><p>会員種別と、お客様のご発送の時間帯によって異なります。</p><table><thead><tr><th></th><th>16時までのご発送</th><th>16時以降のご発送</th></tr></thead><tbody><tr><th>特別会員</th><td>3日後</td><td>4日後</td></tr><tr><th>普通会員</th><td>6日後</td><td>7日後</td></tr></tbody></table><p>※着物の場合は上記に5日加えた日数になります。その他の衣類と一緒にご注文の場合、着物のクリーニングが終わったあとで、まとめてのお届けになります。<br/>※東京都以外の地域の日数は、ホームページでご確認ください。</p><p>宅配クリーニング「ピース」　〒149-8547 東京都横山市村北1-9-13<br/>電話：069-689-7956　https://www.peace<span class="answer-slot"><span class="slot-glyph">_</span></span>cleaning.jp/</p></div></details><div class="review-record" id="unresolved_cases-N1_12_2025-reading-b013-dispatch-boundary"><div class="review-label">Unresolved · /content · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>16時<mark class="diff-old">未満／</mark>16時以降</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">&lt;h3&gt;宅配クリーニング「ピース」　ご利用案内&lt;/h3&gt;&lt;p&gt;インターネットで注文して、バッグに衣類を詰めて送るだけ。&lt;br&gt;日本全国どこからでもご利用いただけます。&lt;/p&gt;&lt;h4&gt;■ ご利用の流れ&lt;/h4&gt;&lt;p&gt;① ホームページの注文用フォームからご注文ください（初回は会員登録が必要です）。&lt;br&gt;② ご注文後、発送用バッグをお送りします。ご自宅にある段ボールや袋を使っていただいても構いません。衣類を詰め、指定の宅配会社に集荷を依頼し、ご発送ください。&lt;br&gt;③ クリーニング済みの衣類を宅配でご自宅にお届けいたします。&lt;/p&gt;&lt;h4&gt;■ 会員種別&lt;/h4&gt;&lt;p&gt;特別会員か普通会員がお選びいただけます。特別会員は、送料の優遇があり、短い日数でのお届けが可能です。特別会員は年会費3,000円、普通会員は年会費無料でご利用いただけます。&lt;/p&gt;&lt;h4&gt;■ クリーニング基本料金&lt;/h4&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;コート&lt;/th&gt;&lt;td&gt;2,500円&lt;/td&gt;&lt;th scope=&quot;row&quot;&gt;セーター&lt;/th&gt;&lt;td&gt;800円&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;ジャケット&lt;/th&gt;&lt;td&gt;1,300円&lt;/td&gt;&lt;th scope=&quot;row&quot;&gt;ワイシャツ&lt;/th&gt;&lt;td&gt;400円&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;ワンピース&lt;/th&gt;&lt;td&gt;1,500円&lt;/td&gt;&lt;th scope=&quot;row&quot;&gt;着物&lt;/th&gt;&lt;td&gt;5,000円〜&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;・初回は、会員種別を問わず上記基本料金の30%引きのお値段でご利用いただけます。&lt;br&gt;・上記以外の衣類の取り扱いと料金については、ホームページをご確認ください。&lt;/p&gt;&lt;h4&gt;■ 送料（往復）&lt;/h4&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;特別会員&lt;/th&gt;&lt;td&gt;・クリーニング基本料金の合計が3,000円以上の場合は無料、3,000円未満の場合は2,000円&lt;br&gt;・初回は、クリーニング基本料金にかかわらず、送料無料&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;普通会員&lt;/th&gt;&lt;td&gt;・クリーニング基本料金の合計が8,000円以上の場合は無料、8,000円未満の場合は2,000円&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h4&gt;■ お客様のご発送の日からお届けまでの日数（東京都にお住まいの場合）&lt;/h4&gt;&lt;p&gt;会員種別と、お客様のご発送の時間帯によって異なります。&lt;/p&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;</mark>16時<mark class="diff-new">までのご発送&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;</mark>16時以降<mark class="diff-new">のご発送&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;特別会員&lt;/th&gt;&lt;td&gt;3日後&lt;/td&gt;&lt;td&gt;4日後&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th scope=&quot;row</mark>…</pre></div></div><p>The cleaners’ table actually says 16時までのご発送 and 16時以降のご発送, both inclusive at exactly 16:00. Preserve the source ambiguity and the question’s unambiguous 17:00 scenario; neither strict inequality is attested. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings. Interpreted answers, derivative notes and ambiguity are distinguished from what the question actually prints.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>The cleaners’ table actually says 16時までのご発送 and 16時以降のご発送, both inclusive at exactly 16:00. Preserve the source ambiguity and the question’s unambiguous 17:00 scenario; neither strict inequality is attested.</p><a href="../assets/principals/N1_12_2025.pdf" target="_blank" rel="noopener">Source ↗</a> <span class="control-help">Cleaning-service notice, dispatch-time columns both include exactly16:00: 16時まで and16時以降. The scored question ships at17:00.</span><ul class="evidence-list"><li><a href="../assets/principals/N1_12_2025.pdf#page=32" target="_blank" rel="noopener">A 2025年12月N1完整原卷.pdf</a> · Physical pages32<p>16時までのご発送／16時以降のご発送</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=32" target="_blank" rel="noopener">2025年12月N1真题.pdf</a> · Physical pages32<p>The same two inclusive headings.</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=31" target="_blank" rel="noopener">25年12月N1真题.pdf</a> · Physical pages31<p>The same two inclusive headings.</p></li><li><a href="../assets/principals/N1_12_2025.pdf" target="_blank" rel="noopener">2025-12_N1_s13-q02-img01.jpg</a> · Cleaning-service image, delivery-days table<p>The separate image asset reproduces the same inclusive headings.</p></li><li><a href="../assets/principals/N1_12_2025.pdf#page=32" target="_blank" rel="noopener">A 2025年12月N1完整原卷.pdf</a> · reading-b013 /content; physical 32<p>The cleaners’ table actually says 16時までのご発送 and 16時以降のご発送, both inclusive at exactly 16:00. Preserve the source ambiguity and the question’s unambiguous 17:00 scenario; neither strict inequality is attested.</p></li></ul><details><summary>Full published record · unresolved_cases-N1_12_2025-reading-b013-dispatch-boundary</summary><pre>{
+  &quot;case_id&quot;: &quot;N1_12_2025-reading-b013-dispatch-boundary&quot;,
+  &quot;unit&quot;: &quot;N1_12_2025&quot;,
+  &quot;item_id&quot;: &quot;reading-b013&quot;,
+  &quot;field&quot;: &quot;/content&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;&lt;h3&gt;宅配クリーニング「ピース」　ご利用案内&lt;/h3&gt;&lt;p&gt;インターネットで注文して、バッグに衣類を詰めて送るだけ。&lt;br&gt;日本全国どこからでもご利用いただけます。&lt;/p&gt;&lt;h4&gt;■ ご利用の流れ&lt;/h4&gt;&lt;p&gt;① ホームページの注文用フォームからご注文ください（初回は会員登録が必要です）。&lt;br&gt;② ご注文後、発送用バッグをお送りします。ご自宅にある段ボールや袋を使っていただいても構いません。衣類を詰め、指定の宅配会社に集荷を依頼し、ご発送ください。&lt;br&gt;③ クリーニング済みの衣類を宅配でご自宅にお届けいたします。&lt;/p&gt;&lt;h4&gt;■ 会員種別&lt;/h4&gt;&lt;p&gt;特別会員か普通会員がお選びいただけます。特別会員は、送料の優遇があり、短い日数でのお届けが可能です。特別会員は年会費3,000円、普通会員は年会費無料でご利用いただけます。&lt;/p&gt;&lt;h4&gt;■ クリーニング基本料金&lt;/h4&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th scope=\&quot;row\&quot;&gt;コート&lt;/th&gt;&lt;td&gt;2,500円&lt;/td&gt;&lt;th scope=\&quot;row\&quot;&gt;セーター&lt;/th&gt;&lt;td&gt;800円&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th scope=\&quot;row\&quot;&gt;ジャケット&lt;/th&gt;&lt;td&gt;1,300円&lt;/td&gt;&lt;th scope=\&quot;row\&quot;&gt;ワイシャツ&lt;/th&gt;&lt;td&gt;400円&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th scope=\&quot;row\&quot;&gt;ワンピース&lt;/th&gt;&lt;td&gt;1,500円&lt;/td&gt;&lt;th scope=\&quot;row\&quot;&gt;着物&lt;/th&gt;&lt;td&gt;5,000円〜&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;・初回は、会員種別を問わず上記基本料金の30%引きのお値段でご利用いただけます。&lt;br&gt;・上記以外の衣類の取り扱いと料金については、ホームページをご確認ください。&lt;/p&gt;&lt;h4&gt;■ 送料（往復）&lt;/h4&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th scope=\&quot;row\&quot;&gt;特別会員&lt;/th&gt;&lt;td&gt;・クリーニング基本料金の合計が3,000円以上の場合は無料、3,000円未満の場合は2,000円&lt;br&gt;・初回は、クリーニング基本料金にかかわらず、送料無料&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th scope=\&quot;row\&quot;&gt;普通会員&lt;/th&gt;&lt;td&gt;・クリーニング基本料金の合計が8,000円以上の場合は無料、8,000円未満の場合は2,000円&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;h4&gt;■ お客様のご発送の日からお届けまでの日数（東京都にお住まいの場合）&lt;/h4&gt;&lt;p&gt;会員種別と、お客様のご発送の時間帯によって異なります。&lt;/p&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th scope=\&quot;col\&quot;&gt;16時までのご発送&lt;/th&gt;&lt;th scope=\&quot;col\&quot;&gt;16時以降のご発送&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th scope=\&quot;row\&quot;&gt;特別会員&lt;/th&gt;&lt;td&gt;3日後&lt;/td&gt;&lt;td&gt;4日後&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th scope=\&quot;row\&quot;&gt;普通会員&lt;/th&gt;&lt;td&gt;6日後&lt;/td&gt;&lt;td&gt;7日後&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;※着物の場合は上記に5日加えた日数になります。その他の衣類と一緒にご注文の場合、着物のクリーニングが終わったあとで、まとめてのお届けになります。&lt;br&gt;※東京都以外の地域の日数は、ホームページでご確認ください。&lt;/p&gt;&lt;p&gt;宅配クリーニング「ピース」　〒149-8547 東京都横山市村北1-9-13&lt;br&gt;電話：069-689-7956　https://www.peace_cleaning.jp/&lt;/p&gt;&quot;
+  },
+  &quot;context&quot;: &quot;Cleaning-service notice, dispatch-time columns both include exactly16:00: 16時まで and16時以降. The scored question ships at17:00.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;16時未満／16時以降&quot;,
+      &quot;assessment&quot;: &quot;Would remove the overlap, but the left heading is not attested.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;16時まで／16時より後&quot;,
+      &quot;assessment&quot;: &quot;Would also remove the overlap, but the right heading is not attested.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;A 2025年12月N1完整原卷.pdf&quot;,
+      &quot;sha256&quot;: &quot;930f74eba01c27aea3403d85541b8310c018660cf9014c1dd88d7e33229eae82&quot;,
+      &quot;locator&quot;: &quot;Physical pages32&quot;,
+      &quot;reading&quot;: &quot;16時までのご発送／16時以降のご発送&quot;,
+      &quot;physical_pages&quot;: [
+        32
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;2025年12月N1真题.pdf&quot;,
+      &quot;sha256&quot;: &quot;445359367643ad6b1e7f466feed05685ab2edca30d3d8b0085bc16ecab40a4c9&quot;,
+      &quot;locator&quot;: &quot;Physical pages32&quot;,
+      &quot;reading&quot;: &quot;The same two inclusive headings.&quot;,
+      &quot;physical_pages&quot;: [
+        32
+      ]
+    },
+    {
+      &quot;source_label&quot;: &quot;25年12月N1真题.pdf&quot;,
+      &quot;sha256&quot;: &quot;f50f78a55e20973d014fe6fb6406f0cacdc4ed66cdb53621a390478f6ed4759e&quot;,
+      &quot;locator&quot;: &quot;Physical pages31&quot;,
+      &quot;reading&quot;: &quot;The same two inclusive headings.&quot;,
+      &quot;physical_pages&quot;: [
+        31
+      ],
+      &quot;lineage&quot;: &quot;Question-page bodies match the A reproduction in inspected spans; not independent confirmation.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2025-12_N1_s13-q02-img01.jpg&quot;,
+      &quot;sha256&quot;: &quot;a8312314dcad1bd130fb007e2b2e04d294a2ff8692ea91df3555577b532f11f0&quot;,
+      &quot;locator&quot;: &quot;Cleaning-service image, delivery-days table&quot;,
+      &quot;reading&quot;: &quot;The separate image asset reproduces the same inclusive headings.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;A 2025年12月N1完整原卷.pdf&quot;,
+      &quot;sha256&quot;: &quot;930f74eba01c27aea3403d85541b8310c018660cf9014c1dd88d7e33229eae82&quot;,
+      &quot;locator&quot;: &quot;reading-b013 /content; physical 32&quot;,
+      &quot;physical_pages&quot;: [
+        32
+      ],
+      &quot;reading&quot;: &quot;The cleaners’ table actually says 16時までのご発送 and 16時以降のご発送, both inclusive at exactly 16:00. Preserve the source ambiguity and the question’s unambiguous 17:00 scenario; neither strict inequality is attested.&quot;,
+      &quot;lineage&quot;: &quot;Exact UARS-approved sitting scan; copied editions/alternative reconstructions are not independent print lineages.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;The cleaners’ table actually says 16時までのご発送 and 16時以降のご発送, both inclusive at exactly 16:00. Preserve the source ambiguity and the question’s unambiguous 17:00 scenario; neither strict inequality is attested. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings. Interpreted answers, derivative notes and ambiguity are distinguished from what the question actually prints.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Checked the complete notice in all three question reproductions and the high-resolution image asset.&quot;,
+    &quot;Calculated both service questions from the price/discount/shipping and delivery tables.&quot;,
+    &quot;5 November 2026 — The cleaners’ table actually says 16時までのご発送 and 16時以降のご発送, both inclusive at exactly 16:00. Preserve the source ambiguity and the question’s unambiguous 17:00 scenario; neither strict inequality is attested. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings. Interpreted answers, derivative notes and ambiguity are distinguished from what the question actually prints.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;The cleaners’ table actually says 16時までのご発送 and 16時以降のご発送, both inclusive at exactly 16:00. Preserve the source ambiguity and the question’s unambiguous 17:00 scenario; neither strict inequality is attested.&quot;
+}</pre></details></div></section></div></main><footer class="site-footer"><span class="developer-only">Developer mode</span></footer><div id="toast" role="status" class="toast" hidden></div><script id="page-data" type="application/json">{"review":true}</script><script id="theme-data" src="../assets/theme-data.js?v=f06ad9e2434b" defer></script><script src="../assets/app.js?v=0d75deb05ae3" defer></script></body></html>

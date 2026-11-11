@@ -1,0 +1,134 @@
+{
+  "contract": "historical-artwork-1.0",
+  "id": "N2_1992-sleep-distribution",
+  "kind": "sleep_distribution_bars",
+  "unit": "N2_1992",
+  "item_id": "reading-b007",
+  "source": {
+    "source_path": "src/CodexDownloads/UserApprovedReferenceScans/日本語能力1991～1999年試験問題集2級.pdf",
+    "source_sha256": "0a6634758dce0a258ffaf92c6c8ea1a738a4b8ceb52cd75cb44a4d8d340dfa64",
+    "physical_page": 80
+  },
+  "raw_crop": {
+    "path": "preprocess/assets/handoff27/written/N2_1992/sleep-distribution-source.png",
+    "sha256": "123a29a86806e9b9f9d23c3d6528378fed6600aa703b20be54ac9c5493ab4d01"
+  },
+  "selection_note": "Native lines/arrows/dotted connectors and live text; exact original one-bit crop retained canonically.",
+  "limits": "All25printed values retained, including101totals. Bar boundaries approximately trace this specific N2source crop, regularizing horizontal strokes; no percentage rebalancing. Typography/placement formal pass remains pending.",
+  "data": {
+    "title": "「すいみん」時間量分布の変化（平日）",
+    "categories": [
+      "6時間以下",
+      "6～7時間",
+      "7～8時間",
+      "8～9時間",
+      "9時間以上"
+    ],
+    "rows": [
+      {
+        "year": "’70年",
+        "values": [
+          7,
+          18,
+          35,
+          25,
+          15
+        ]
+      },
+      {
+        "year": "’75年",
+        "values": [
+          7,
+          20,
+          35,
+          25,
+          13
+        ]
+      },
+      {
+        "year": "’80年",
+        "values": [
+          8,
+          21,
+          35,
+          24,
+          13
+        ]
+      },
+      {
+        "year": "’85年",
+        "values": [
+          10,
+          24,
+          35,
+          21,
+          11
+        ]
+      },
+      {
+        "year": "’90年",
+        "values": [
+          12,
+          25,
+          32,
+          20,
+          12
+        ]
+      }
+    ],
+    "percent_sign": "first_row_first_cell_only",
+    "boundary_connectors": "dotted",
+    "category_arrows": true,
+    "geometry": "approximate_source_pixel_trace_with_regularized_horizontal_bars_not_recalculated_percentages",
+    "source_crop_boundaries": [
+      [
+        70,
+        94,
+        152,
+        263,
+        343,
+        393
+      ],
+      [
+        70,
+        95,
+        159,
+        270,
+        350,
+        393
+      ],
+      [
+        70,
+        98,
+        165,
+        276,
+        350,
+        393
+      ],
+      [
+        70,
+        104,
+        182,
+        294,
+        358,
+        393
+      ],
+      [
+        70,
+        109,
+        191,
+        294,
+        353,
+        393
+      ]
+    ],
+    "printed_totals": [
+      100,
+      100,
+      101,
+      101,
+      101
+    ],
+    "label_policy": "all25printed_values_unchanged"
+  }
+}

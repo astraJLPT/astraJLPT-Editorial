@@ -1,0 +1,30 @@
+{
+  "overlay_schema_version": 2,
+  "projection_version": "html-base-codepoints-v1",
+  "unit_id": "N1_12_2025",
+  "release_id": "rubi-typography-20261109-v1",
+  "processing_status": "approved_workbook_typography_transition",
+  "binding": "current-editorial-fields-v1",
+  "frozen_origin": {
+    "release_id": "rubi-pass3-context-20261105-v1",
+    "frozen_overlay": {
+      "path": "rubi-restore/releases/rubi-pass3-context-20261105-v1/overlays/N1_12_2025.json",
+      "sha256": "24503ca3f2a70f343d0fc66571a23950ed2be6ce85013e9f04fac6be88534284",
+      "bytes": 556
+    }
+  },
+  "annotations": [],
+  "derivation": {
+    "kind": "approved_workbook_typography_transition",
+    "parent_overlay": {
+      "path": "rubi-restore/releases/rubi-presentation-20261108-v1/overlays/N1_12_2025.json",
+      "sha256": "26818ca75b9ea65bbfcc585f5c3b41a61386659f3b0da3e259b46dc7cc6ef413",
+      "bytes": 1138
+    },
+    "authorization": {
+      "path": "rubi-restore/releases/rubi-typography-20261109-v1/authorization.json",
+      "sha256": "3508327043a2724e1a100581860e6363e51bc2cdb6a5aaec8c3110d06d12c1d3",
+      "bytes": 127215
+    }
+  }
+}

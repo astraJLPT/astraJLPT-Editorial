@@ -1,0 +1,32 @@
+{
+  "contract": "historical-artwork-1.0",
+  "id": "N2_1994-economic-4",
+  "kind": "economic_category_option",
+  "unit": "N2_1994",
+  "item_id": "reading-q017",
+  "source": {
+    "source_path": "src/CodexDownloads/UserApprovedReferenceScans/日本語能力1991～1999年試験問題集2級.pdf",
+    "source_sha256": "0a6634758dce0a258ffaf92c6c8ea1a738a4b8ceb52cd75cb44a4d8d340dfa64",
+    "physical_page": 158
+  },
+  "raw_crop": {
+    "path": "preprocess/assets/handoff27/written/N2_1994/economic-option-4-source.png",
+    "sha256": "47aadcc5bb313310a1fb25f852d62bad65998b524a1b8412217140335dab6d6e"
+  },
+  "selection_note": "Native TeX lines and Japanese labels preserve the independently inspected source option relationships; original one-bit crop stays canonical.",
+  "limits": "Original font and small scan-mark outlines unverified. Rounded category borders regularized; enrolment vertices are approximate image-coordinate traces, never precise historical percentage claims. No added data labels.",
+  "data": {
+    "option": 4,
+    "header": null,
+    "members": [
+      "モノ",
+      "商品",
+      "サービス"
+    ],
+    "relationship": "peer_partition",
+    "member_writing": "vertical",
+    "border": "rounded",
+    "geometry": "source_traced_regularized_curves",
+    "header_in_top_gap": false
+  }
+}

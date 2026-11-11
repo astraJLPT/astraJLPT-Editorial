@@ -1,0 +1,29 @@
+{
+  "contract": "historical-artwork-1.0",
+  "id": "H22-F01-sloth",
+  "kind": "raster",
+  "unit": "N2_07_2009",
+  "item_id": "reading-b006",
+  "source": {
+    "source_path": "src/日语JLPT真题1992～2025.12（及时转存，避免丢失）/渠道一/日语N2真题/1991年-2009年/1995-2009.pdf",
+    "source_sha256": "115e8c098ee3caed702d29a24d2ce0c883c3ad9152e21eee4200fc4e80f2a3fb",
+    "physical_page": 59,
+    "crop_original_pixels": [
+      204,
+      3056,
+      822,
+      3562
+    ],
+    "page_rotation": 180
+  },
+  "raw_crop": {
+    "path": "preprocess/assets/handoff22/written/source-crops-02/H22-F01-sloth/raw-crop.png",
+    "sha256": "89e3f764def7481ee8546c4a185af073a22dd00b915dcc1fa1df321d5b3eaaeb"
+  },
+  "selection_note": "Original 3303 × 4672 image decoded and rotated according to the PDF; 618 × 506 crop. No resampling, sharpening, blur or stroke invention.",
+  "limits": "No audio evidence. Native artwork is an editorial reconstruction of the visible printed figure; it does not authenticate the scan.",
+  "image": {
+    "path": "preprocess/assets/handoff22/written/source-crops-02/H22-F01-sloth/raw-crop.png",
+    "sha256": "89e3f764def7481ee8546c4a185af073a22dd00b915dcc1fa1df321d5b3eaaeb"
+  }
+}

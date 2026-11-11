@@ -1,0 +1,73 @@
+{
+  "unit": "N5_07_2025",
+  "sources": [
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N4-N5 các năm Yuuki Bùi\\2025年7月\\N5 T7-2025\\Script Nghe N5 T7-2025.pdf",
+      "sha256": "efe9f209ecd2692dfe68fc3e2996b77621b378c6bd81b98d6a53306872f5567f",
+      "Tier": "unranked",
+      "bytes": 1039325,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N5\\N5_07_2025\\PaddleOCR\\pdf_1",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N4-N5 các năm Yuuki Bùi\\2025年7月\\N5 T7-2025\\Đáp án tham khảo N5 T7-2025.pdf",
+      "sha256": "f17d8fb8a412defa6c76704ff0195feba7354c736587b2f63262991d45f64b1c",
+      "Tier": "unranked",
+      "bytes": 919935,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N5\\N5_07_2025\\PaddleOCR\\pdf_2",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N4-N5 các năm Yuuki Bùi\\2025年7月\\N5 T7-2025\\Đề N5 07.2025 [Full] - Mark.pdf",
+      "sha256": "de616de7059e372f582d1182e7261b27848e6b15ff03f390e3ccd5cb99ae0f09",
+      "Tier": 1,
+      "bytes": 17808725,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N5\\N5_07_2025\\PaddleOCR\\pdf_3",
+      "VisionOCR": "preprocess\\N5\\N5_07_2025\\VisionOCR\\pdf_3"
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N5真题（2010-2025.12）\\【N5真题】2025年7月\\【试题】2025年7月JLPT日语N5真题.pdf",
+      "sha256": "de138087b9ab4d78e993f8c3360981e9bf7f61f6d1e286b777ef96dccd074a2a",
+      "Tier": 2,
+      "bytes": 3178005,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N5真题\\2025年7月\\【试题】2025年7月JLPT日语N5真题.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N5历年真题\\【N5真题】2025年7月\\【试题】2025年7月JLPT日语N5真题.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N5\\N5_07_2025\\PaddleOCR\\pdf_4",
+      "VisionOCR": "preprocess\\N5\\N5_07_2025\\VisionOCR\\pdf_4"
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N5真题（2010-2025.12）\\【N5真题】2025年7月\\【参考答案】2025年7月JLPT日语N5真题.jpg",
+      "sha256": "52573e85cb8676c3881f34b7104879da1b56cce82e858043454b87cbe46e37ef",
+      "Tier": "unranked",
+      "bytes": 1196950,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N5真题\\2025年7月\\【参考答案】2025年7月JLPT日语N5真题.jpg",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N5历年真题\\【N5真题】2025年7月\\【参考答案】2025年7月JLPT日语N5真题.jpg"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2025年12月\\5分钱打印（首单免费1）(1).PNG",
+      "sha256": "ad77c1b1ca35d09b7bfd2b242a43b7b480e7dfb008ac914ae770d67ab386732f",
+      "Tier": "unranked",
+      "bytes": 627620,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2025年7月\\5分钱打印（首单免费1）(1).PNG",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N2真题\\2025年12月\\5分钱打印（首单免费1）(1).PNG",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N2真题\\2025年7月\\5分钱打印（首单免费1）(1).PNG",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\2013年12月\\5分钱打印（首单免费1）(1).PNG",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\2025年12月\\5分钱打印（首单免费1）(1).PNG",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N5真题\\2025年12月\\5分钱打印（首单免费1）(1).PNG",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N5真题\\2025年7月\\5分钱打印（首单免费1）(1).PNG"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    }
+  ]
+}

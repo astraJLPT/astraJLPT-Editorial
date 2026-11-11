@@ -1,0 +1,103 @@
+{
+  "unit": "N3_1991",
+  "sources": [
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N3\\1991\\1991年日语能力考试3级.doc",
+      "sha256": "751472c727bad0f4b86219278283be140df880eddb27535ade18cc102185490f",
+      "Tier": "unranked",
+      "bytes": 151552,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N3真题\\1991年-2009年\\1991年\\1991年日语能力考试3级.doc",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N3历年真题\\1991~2009\\1991\\1991年日语能力考试3级.doc"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src/CodexDownloads/UserApprovedReferenceScans/日本語能力1991～1999年試験問題集3級.pdf",
+      "sha256": "4af8ec5c1039430637c36a7bd3ac9c1c031536e32a6f5bc89e405b7210d29ae1",
+      "Tier": "unranked",
+      "bytes": 5303857,
+      "aliases": [
+        "src/CodexDownloads/Hunts/1984-2009/2026-10-23_RC03/1991-1999_L3_collection.pdf"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "display_title": "Level 3, 1991-1999",
+      "source_role": "historical_question_volume",
+      "acquisition_batch": "reference_scan_hunt_1984-2009_2026-10-23",
+      "provenance_records": [
+        "preprocess/audit_runs/2026-10-23_reference_scan_rc03_approvals/approvals.json",
+        "preprocess/reference_scan_hunt_rc03_work/all_level_sources.json",
+        "preprocess/reference_scan_hunt_rc03_work/new_sources.json",
+        "src/CodexDownloads/Hunts/1984-2009/2026-10-23_RC03/1991-1999_L3_collection.pdf.provenance.json"
+      ],
+      "source_urls": [
+        "https://drive.google.com/file/d/1CbxUG_RETqSu2b2ry5EMMgmDGcpjkTXE/view",
+        "https://drive.google.com/uc?export=download&id=1CbxUG_RETqSu2b2ry5EMMgmDGcpjkTXE",
+        "https://drive.usercontent.google.com/download?id=1CbxUG_RETqSu2b2ry5EMMgmDGcpjkTXE&export=download",
+        "https://tailieuhoctiengnhat.com/kiem-tra-trinh-do-tieng-nhat-1991-1999-n3.html",
+        "https://www.mediafire.com/file/m67688mvh6nj6s2/JLPT1991-1999_Level1-4_.rar",
+        "https://yuki-nezumi.blogspot.com/2011/01/4kyu-1991-1999.html"
+      ],
+      "previous_paths": [
+        "src/CodexDownloads/UserApprovedReferenceScans/Originals/1991-1999_L3_collection.pdf",
+        "src/CodexDownloads/UserApprovedReferenceScans/Originals/日本語能力1991～1999年試験問題集3級.pdf",
+        "src/CodexDownloads/reference_scan_rc03/1991-1999_L3_collection.pdf",
+        "src/CodexDownloads/reference_scan_rc03/1991-1999_all_levels_extracted/日本語能力1991～1999年試験問題集3級.pdf"
+      ],
+      "filename_at_acquisition": "日本語能力1991～1999年試験問題集3級.pdf",
+      "filename_note": "Filename at acquisition or archive extraction, preserved through this move.",
+      "pages": 382,
+      "reference_registry": "preprocess/user_approved_reference_scans.md",
+      "reference_id": "RC03_L3",
+      "historical_coverage": [
+        {
+          "level": 3,
+          "year": 1991
+        },
+        {
+          "level": 3,
+          "year": 1992
+        },
+        {
+          "level": 3,
+          "year": 1993
+        },
+        {
+          "level": 3,
+          "year": 1994
+        },
+        {
+          "level": 3,
+          "year": 1995
+        },
+        {
+          "level": 3,
+          "year": 1996
+        },
+        {
+          "level": 3,
+          "year": 1997
+        },
+        {
+          "level": 3,
+          "year": 1998
+        },
+        {
+          "level": 3,
+          "year": 1999
+        }
+      ],
+      "acquisition_containers": [
+        {
+          "path": "src/CodexDownloads/Hunts/1984-2009/2026-10-23_RC03/1991-1999_all_levels_original.rar",
+          "sha256": "5369c863ded3b7ce410b658549d55be74d14afab694ba2678ae81abccf2319ca",
+          "member_filename": "日本語能力1991～1999年試験問題集3級.pdf",
+          "note": "Retained downloaded archive; member hash verified separately. Archive membership does not establish independent custody."
+        }
+      ]
+    }
+  ]
+}

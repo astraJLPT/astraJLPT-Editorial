@@ -1,0 +1,48 @@
+{
+  "format": "adapted-audit-guide-provenance-v1",
+  "adapted_on": "2026-11-10",
+  "scope": "Release-facing adaptation; completed queues, old execution paths and unavailable workspace links are not reactivated. Original audit records retain their schemas and identities.",
+  "sources": [
+    {
+      "workspace_path": "preprocess/readme.md",
+      "sha256": "0a51f0e0f76db26423617b21a7fc562d1c6deaf58baa8e0a0bf56d1c151ef47a"
+    },
+    {
+      "workspace_path": "preprocess/audit_order.md",
+      "sha256": "411360e2f5d18188590b78267ef9699f4ec405e068d79e0ab29f04ba8b44b410"
+    },
+    {
+      "workspace_path": "preprocess/editorial_contract.md",
+      "sha256": "ee47c01c6e60fbc52bee989801789c2f93505f5d1d453631c3789416f22e605b"
+    },
+    {
+      "workspace_path": "preprocess/principal_differences.md",
+      "sha256": "d3124a54aa5b7c2b73e9c01e05a876b9d309ac656270470d7f4c08c4592ce87a"
+    },
+    {
+      "workspace_path": "preprocess/principal_uncertainty_method.md",
+      "sha256": "0ac4718e2d20e8119f284f59c3224e528b971044f411ae273d2285301d3038c9"
+    },
+    {
+      "workspace_path": "preprocess/reference_scan_style_notes.md",
+      "sha256": "945b3750fd32eb23010d3bd923618de77543dd9f28e6fb282853fb2b6da45ae4"
+    },
+    {
+      "workspace_path": "preprocess/user_approved_reference_scans.md",
+      "sha256": "c0fc4d24494a9569dd539d237018014213045d6224ae9035fa282ab610be0384"
+    }
+  ],
+  "registry": {
+    "approved_full_source_identities": 62,
+    "modern": 17,
+    "historical": 15,
+    "official_workbook_components": 30,
+    "source_sha256_before": "c0fc4d24494a9569dd539d237018014213045d6224ae9035fa282ab610be0384",
+    "source_sha256_after": "c0fc4d24494a9569dd539d237018014213045d6224ae9035fa282ab610be0384",
+    "local_source_paths": 47,
+    "external_source_paths": 19,
+    "historical_links_labelled_not_packaged": 8,
+    "all_recorded_sha256_values_preserved": true,
+    "page_scopes": "Copied verbatim; only introduction, section order and link destinations adapted."
+  }
+}

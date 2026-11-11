@@ -1,0 +1,41 @@
+{
+  "contract": "historical-artwork-1.0",
+  "id": "H27-N1_2005-reading-b003-01",
+  "kind": "scale_comparison_bars",
+  "unit": "N1_2005",
+  "item_id": "reading-b003",
+  "source": {
+    "source_path": "src/JLPT N1-N5, Past papers/N1/1995-2009.12日本语能力测试真题详解N1.pdf",
+    "source_sha256": "e3555741c8f14b855a32e7d09b42eb790492e3818a85a875f99d84703c752e00",
+    "physical_page": 223
+  },
+  "raw_crop": {
+    "path": "preprocess/assets/handoff27-earlier-statistical-05/N1_2005-reading-b003-01-raw.png",
+    "sha256": "41a9cefe7dba56d2f1ab7b8e5ba95f86f9121d42f008eb0287cd7be9b77ef6b0"
+  },
+  "selection_note": "Native vector/live-text reconstruction after direct individual source and canonical image review. Source numbering remains supplied by the existing option renderer.",
+  "limits": "Original canonical bytes remain unchanged and recoverable. Printed numeric labels are literal; measured unlabelled geometry is approximate. N1/N2 retyped appearance is not original typography evidence; N4 UARS establishes the graphic content but not exact native font identity.",
+  "data": {
+    "coordinate_status": "exact_values_explicit_in_adjacent_source_passage",
+    "values": [
+      10,
+      11,
+      12,
+      13
+    ],
+    "axes": [
+      {
+        "minimum": 0,
+        "maximum": 14,
+        "tick": 2
+      },
+      {
+        "minimum": 9,
+        "maximum": 14,
+        "tick": 1
+      }
+    ],
+    "bar_fill": "black",
+    "point_labels": "none_in_source"
+  }
+}

@@ -1,0 +1,1798 @@
+{
+  "shared_schema_version": "1.0",
+  "shared_id": "jlpt-historical-written",
+  "revision": 38,
+  "renderer_conventions": {
+    "paper": "a4",
+    "paragraph_skip_pt": 0,
+    "paragraph_indent_em": 1,
+    "note_before_pt": 16,
+    "note_after_pt": 10,
+    "ruby_ratio": 0.48,
+    "option_reserve_em": 2.7,
+    "unknown_direction_fallback": "horizontal-tb",
+    "vertical_extent_em": 25,
+    "footer": {
+      "number_pt": 15.67,
+      "dash_pt": 12.8,
+      "gap_em": 0.9
+    },
+    "booklet_start": "sequential",
+    "reading_group_start": "flow",
+    "cloze_choice_start": "after_context_group",
+    "question_keep": "prefer_whole_with_option_fallback",
+    "dialogue_quote_gap_em": 0.4,
+    "dialogue_continuation_pullback_em": 0.5,
+    "option_row_gap_pt": 3,
+    "star_raise_em": 0.15,
+    "mixed_script_gap_em": 0.12,
+    "font_roles": {
+      "body_latin": {
+        "source": "body"
+      },
+      "choice_numeral": {
+        "source": "body"
+      },
+      "answer_bubble_numeral": {
+        "source": "body"
+      },
+      "passage_label": {
+        "source": "body",
+        "features": [
+          "fwid"
+        ],
+        "horizontal_scale": 0.8
+      },
+      "running_latin": {
+        "path": "fonts_official/n123/1738155121_A-OTF-RyuminPr5-Regular.otf",
+        "sha256": "86e2572e8b6916102c0a0e1738f9c0eb73538141f8e5c1ef8da9c2a754fb91b1"
+      },
+      "annotation": {
+        "source": "body"
+      },
+      "letter": {
+        "source": "body"
+      },
+      "boxed_numeral": {
+        "path": "fonts_official/handoff5-pinned/TCCEB.TTF",
+        "sha256": "9e8a6af516706030b8536b2ea6535664cd9bea916fb15304556d8139a6945ff9"
+      },
+      "instruction_latin": {
+        "path": "fonts_official/handoff21-pinned/A-OTF-GothicMB101Pr6N-DeBold.otf",
+        "sha256": "1fd6d7dddab714f8e8513f26b8860322b61a7a4dea49df137e80ac079fbce010",
+        "bold_same_face": true,
+        "selection_status": "H21 full-line natural-ratio Bold/DB comparison; DB chosen for instructions; editorial substitute, not historical identification"
+      },
+      "notice_heading": {
+        "source": "heading",
+        "font_index": 0
+      },
+      "task_label": {
+        "path": "fonts_official/A-OTF-GothicMB101Pr6N-Bold.otf",
+        "sha256": "cf33366000ee2314947c0fae2d25798c71c24fe584c7fa0be615d667642965ea",
+        "bold_same_face": true,
+        "selection_status": "H19 source-compared editorial Gothic substitute; original face unproven"
+      },
+      "paired_label": {
+        "path": "pdf-render/tex/fonts/NotoSansJP-Regular.ttf"
+      },
+      "instruction_japanese": {
+        "path": "fonts_official/handoff21-pinned/A-OTF-GothicMB101Pr6N-DeBold.otf",
+        "sha256": "1fd6d7dddab714f8e8513f26b8860322b61a7a4dea49df137e80ac079fbce010",
+        "bold_same_face": true,
+        "selection_status": "H21 full-line natural-ratio Bold/DB comparison; DB chosen for instructions; editorial substitute, not historical identification"
+      },
+      "task_label_japanese": {
+        "path": "fonts_official/A-OTF-GothicMB101Pr6N-Bold.otf",
+        "sha256": "cf33366000ee2314947c0fae2d25798c71c24fe584c7fa0be615d667642965ea",
+        "bold_same_face": true,
+        "selection_status": "H19 source-compared editorial Gothic substitute; original face unproven"
+      },
+      "running_japanese": {
+        "path": "fonts_official/n123/1738155121_A-OTF-RyuminPr5-Regular.otf",
+        "sha256": "86e2572e8b6916102c0a0e1738f9c0eb73538141f8e5c1ef8da9c2a754fb91b1"
+      },
+      "memo": {
+        "path": "fonts_official/handoff6-pinned/DFTegakiMakotoStd-W3.otf",
+        "sha256": "bc454d70b8f90662227cb202bd9202965de24c2d1bb05b153aa00ee643c5de4f",
+        "features": [
+          "palt"
+        ],
+        "scale": 1.25,
+        "selection_status": "explicit_memo_role_evidence_led_substitute_and_user_restoration_policy"
+      },
+      "ascii_parenthesis": {
+        "path": "fonts_official/1739195082_HiraMinPro-W3.otf",
+        "sha256": "5905a6fb914d6f27a6e9e8995e69a61f86033812ddbeaf9bbec3dabd271d9a95",
+        "features": [],
+        "horizontal_scale": 1,
+        "bold_same_face": true,
+        "selection_status": "H13-C02 compared conditional substitute for Ryumin ASCII only; no canonical character conversion"
+      },
+      "retained_chinese": {
+        "path": "pdf-render/fonts/120a51d2b14e-simsun.ttc",
+        "sha256": "120a51d2b14eb588700a21e15fc301f0ea55d7c1a4e1f3ae61db83b7c8d42cd6",
+        "font_index": 0,
+        "bold_same_face": true,
+        "selection_status": "H13 retained canonical Chinese administrative glyphs only; no historical typography claim"
+      },
+      "breadcrumb_latin": {
+        "path": "fonts_official/handoff5-pinned/ARIALNB.TTF",
+        "sha256": "6c4a4b643461def5411e0217b74a625dcf2fb681252ef5da1db0af4eae80aa7e",
+        "bold_same_face": true
+      },
+      "contact_latin": {
+        "path": "fonts_official/handoff5-pinned/ARIALN.TTF",
+        "sha256": "cad552553cf2a75afca01955751aaa115e2a64fd6c6eea42e1fbd236630b7e0a",
+        "bold_same_face": true
+      },
+      "historical_question_japanese": {
+        "path": "fonts_official/A-OTF-GothicMB101Pr6N-Bold.otf",
+        "sha256": "cf33366000ee2314947c0fae2d25798c71c24fe584c7fa0be615d667642965ea",
+        "bold_same_face": true,
+        "selection_status": "H21 independent Japanese 問/とい role; Bold retained"
+      },
+      "historical_question_digit": {
+        "path": "fonts_official/handoff21-pinned/A-OTF-GothicMB101Pr6N-DeBold.otf",
+        "sha256": "1fd6d7dddab714f8e8513f26b8860322b61a7a4dea49df137e80ac079fbce010",
+        "bold_same_face": true,
+        "selection_status": "H21 independently calibrated 問 digits; not an instruction numeral or body role"
+      }
+    },
+    "cover_common": {
+      "mark": {
+        "text": "astraJLPT Editorial",
+        "size_bp": 24,
+        "opacity": 0.32,
+        "safe_margin_mm": 4
+      },
+      "count_policy": "actual_nonblank_body_pages_excluding_covers",
+      "assembly": {
+        "front": "sequential",
+        "blank_back": false,
+        "body_start": "sequential",
+        "close_even": false,
+        "blank_pages": "forbidden"
+      }
+    },
+    "cloze_clearance_em": 0.28,
+    "blank_inner_width_em": 2.8,
+    "blank_side_space_em": 0.45,
+    "passage_intro_after_pt": 23,
+    "document_intro_after_pt": 6,
+    "underline_drop_ex": 0.45,
+    "underline_thickness_ex": 0.1,
+    "reference_drop_ex": 1.5,
+    "keep_question_tail": false,
+    "task_overrides": {
+      "paired_reading": {
+        "note_before_pt": 5
+      }
+    },
+    "option_continuation_pullback_em": 1.0,
+    "blank_digit_side_space_em": 0.45,
+    "answer_blank_roles": {
+      "heading": {
+        "inner_width_em": 2.6,
+        "side_space_em": 0.35,
+        "digit_side_space_em": 0.35,
+        "punctuation_side_space_em": 0
+      },
+      "body": {
+        "punctuation_side_space_em": 0
+      },
+      "example": {
+        "punctuation_side_space_em": 0
+      }
+    },
+    "notice_title_ribbon_overhang_em": 1.4,
+    "document_bullets": {
+      "item": {
+        "scale": 0.55,
+        "raise_em": 0.12,
+        "gap_em": 0.3
+      },
+      "heading": {
+        "scale": 0.75,
+        "raise_em": 0.06,
+        "gap_em": 0.2
+      }
+    },
+    "punctuation_after_em": 0,
+    "paired_passages": {
+      "first_label_before_pt": 10,
+      "next_label_before_pt": 16,
+      "label_frame_gap_pt": 3,
+      "label_align": "left",
+      "frame_padding_pt": 12,
+      "frame_side_padding_pt": 8,
+      "first_paragraph_indent_em": 1,
+      "rule_pt": 0.5
+    },
+    "examples": {
+      "answer_label_width_em": 2.8,
+      "answer_label_ruby_base_height_em": 0.8,
+      "ordinary_rules": false
+    },
+    "paragraph_roles": {
+      "scene": {
+        "indent_em": 0.5
+      },
+      "omission": {
+        "indent_em": 1
+      }
+    },
+    "document_roles": {
+      "student_composition": {
+        "frame_rule_pt": 0.6
+      },
+      "magazine_column": {
+        "frame_rule_pt": 1.05
+      },
+      "memo": {
+        "font_role": "memo",
+        "ruby_intergap_em": 0,
+        "ruby_base_height_em": 0.8,
+        "frame_style": "folded_corner"
+      }
+    },
+    "running_header_policy": {
+      "enabled": true,
+      "identity": "publication_or_sitting",
+      "folio": "generated_booklet",
+      "placement": "alternating_outer"
+    },
+    "email_family": {
+      "paragraph_skip_pt": 0,
+      "rule_set": {
+        "top": {
+          "width_pt": 2,
+          "gray": 0.55,
+          "pattern": "solid"
+        },
+        "bottom": {
+          "width_pt": 2,
+          "gray": 0.55,
+          "pattern": "solid"
+        },
+        "before_pt": 11,
+        "top_gap_pt": 14,
+        "bottom_gap_pt": 14
+      },
+      "first_line_indent_em": 0
+    },
+    "table_header_align": "center",
+    "table_mark_align": "center",
+    "historical_target_rows": {
+      "target_width_em": 8.5,
+      "label_width_em": 1.8,
+      "left_indent_em": 1.0,
+      "row_gap_pt": 0,
+      "choice_row_gap_pt": 0
+    },
+    "historical_component_metrics": {
+      "option_label_width_em": 1.8,
+      "target_group_before_pt": 8,
+      "target_group_after_pt": 10,
+      "target_prose_after_pt": 8,
+      "example_target_before_pt": 0,
+      "example_target_after_pt": 0
+    },
+    "historical_typography": {
+      "vocabulary_digit": {
+        "width": 0.75,
+        "height": 0.94
+      },
+      "reading_digit": {
+        "width": 0.75,
+        "height": 0.94
+      },
+      "question_digit_gap_em": 0.21,
+      "parenthesis_side_em": 0.28,
+      "two_digit_width": 0.6,
+      "inline_box_one_em": 0,
+      "inline_box_two_em": 0,
+      "question_open_gap_em": 0,
+      "question_close_gap_em": 0,
+      "slot_outer_gap_em": 0.18,
+      "slot_inner_width_em": 2.4,
+      "note_after_chu_em": 0.22,
+      "note_after_digit_em": 0.12,
+      "target_reference_pt": 5.5,
+      "target_reference_drop_ex": 1.5,
+      "example_explanation_tracking_em": 0,
+      "boxed_digit_center": 0
+    },
+    "version": "handoff26-old-semantic-roles"
+  },
+  "variants": {
+    "h27-l1-1991-1994-examples": {
+      "applicability": {
+        "levels": [
+          "1級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 1991,
+        "year_max": 1994
+      },
+      "priority": 10,
+      "renderer_conventions": {
+        "task_overrides": {
+          "vocabulary": {
+            "question_gap_pt": 12
+          },
+          "reading_test": {
+            "question_gap_pt": 12
+          },
+          "orthography_test": {
+            "question_gap_pt": 12
+          }
+        },
+        "examples": {
+          "ordinary_after_by_columns_pt": {
+            "4": 21
+          }
+        }
+      },
+      "evidence_note": "Direct1991-94 full-page vocabulary controls; separate task and option-column roles. Four-level ENTRY_AND_LEVEL4_REVIEW-22 and early/example records."
+    },
+    "h27-l1-1993-1994-vertical-example": {
+      "applicability": {
+        "levels": [
+          "1級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 1993,
+        "year_max": 1994
+      },
+      "priority": 20,
+      "renderer_conventions": {
+        "examples": {
+          "ordinary_after_by_columns_pt": {
+            "1": 21
+          }
+        }
+      },
+      "evidence_note": "Direct1993/1994 vertical-example controls;21pt after gap."
+    },
+    "h27-l1-1991-blank-questions": {
+      "applicability": {
+        "levels": [
+          "1級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 1991,
+        "year_max": 1991
+      },
+      "priority": 20,
+      "renderer_conventions": {
+        "vocabulary_blank_question_gap_pt": 0
+      },
+      "evidence_note": "Explicit1991 source-family exception to later blank-question gap; checked native entry21."
+    },
+    "h27-l1-1995-examples": {
+      "applicability": {
+        "levels": [
+          "1級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 1995,
+        "year_max": 1995
+      },
+      "priority": 10,
+      "renderer_conventions": {
+        "task_overrides": {
+          "reading_test": {
+            "question_gap_pt": 0
+          },
+          "orthography_test": {
+            "question_gap_pt": 12
+          }
+        },
+        "examples": {
+          "ordinary_after_by_columns_pt": {
+            "4": 35
+          }
+        }
+      },
+      "evidence_note": "Direct1995 full-page example and task-entry controls; preserve ordinary vertical default."
+    },
+    "h27-l2-1991-1992-grammar": {
+      "applicability": {
+        "levels": [
+          "2級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 1991,
+        "year_max": 1992
+      },
+      "priority": 10,
+      "renderer_conventions": {
+        "task_overrides": {
+          "grammar": {
+            "baseline_pt": 27.5,
+            "question_gap_pt": 17.5
+          }
+        }
+      },
+      "evidence_note": "Source43/81 and native27: nine questions,55pxleading and135pxpitch. Later1993+ controls retain level base12ptgap."
+    },
+    "h27-l3-1991-1999-spacing": {
+      "applicability": {
+        "levels": [
+          "3級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 1991,
+        "year_max": 1999
+      },
+      "priority": 10,
+      "renderer_conventions": {
+        "question_gap_pt": 12.5,
+        "task_overrides": {
+          "reading": {
+            "question_gap_pt": 12.5
+          }
+        },
+        "examples": {
+          "ordinary_top_padding_pt": 3
+        }
+      },
+      "evidence_note": "Early and intermediate controls including1997 eight-question page. Retain common13ptbody and independent vocabulary/usage gaps."
+    },
+    "h27-l3-1991-target-example": {
+      "applicability": {
+        "levels": [
+          "3級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 1991,
+        "year_max": 1991
+      },
+      "priority": 20,
+      "renderer_conventions": {
+        "historical_component_metrics": {
+          "example_target_after_pt": 0
+        }
+      },
+      "evidence_note": "Source-bound1991 edition exception to target-example clearance, reviewed in round06 early-panel controls."
+    },
+    "h27-l4-1991-1999-metrics": {
+      "applicability": {
+        "levels": [
+          "4級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 1991,
+        "year_max": 1999
+      },
+      "priority": 10,
+      "renderer_conventions": {
+        "body_pt": 13.5,
+        "baseline_pt": 27.5,
+        "heading_pt": 13.5,
+        "heading_baseline_pt": 27.5,
+        "option_baseline_pt": 27.5,
+        "margins_mm": {
+          "left": 20,
+          "right": 20,
+          "top": 22,
+          "bottom": 25
+        },
+        "note_pt": 13.5,
+        "note_baseline_pt": 27.5,
+        "notice_body_pt": 13.5,
+        "notice_baseline_pt": 27.5,
+        "task_overrides": {
+          "grammar": {
+            "question_gap_pt": 13
+          },
+          "reading_test": {
+            "baseline_pt": 27.5,
+            "heading_baseline_pt": 26.5
+          },
+          "orthography_test": {
+            "baseline_pt": 27.5,
+            "heading_baseline_pt": 26.5
+          },
+          "reading": {
+            "body_pt": 13.5,
+            "baseline_pt": 27.5,
+            "passage_body_pt": 13.5,
+            "passage_baseline_pt": 27.5,
+            "heading_pt": 13.5,
+            "heading_word_groups": true
+          }
+        },
+        "examples": {
+          "body_pt": 13.5,
+          "baseline_pt": 27.5,
+          "ordinary_target_baseline_pt": 26.5,
+          "answer_baseline_pt": 27.5,
+          "answer_before_pt": 20
+        },
+        "historical_component_metrics": {
+          "target_group_after_pt": 30,
+          "target_group_before_pt": 20
+        }
+      },
+      "evidence_note": "Early1991-99 approved controls:13.5ptbody,27.5ptleading,55pxvocabulary rows, larger target-group gaps.1997scan-scale variation does not create a special year default; final all-owner review remains required."
+    },
+    "h27-l4-1990-metrics": {
+      "applicability": {
+        "levels": [
+          "4級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 1990,
+        "year_max": 1990
+      },
+      "priority": 10,
+      "renderer_conventions": {
+        "body_pt": 14.5,
+        "baseline_pt": 29.6,
+        "heading_pt": 13.5,
+        "heading_baseline_pt": 29.6,
+        "option_baseline_pt": 29.6,
+        "margins_mm": {
+          "left": 20,
+          "right": 20,
+          "top": 25.5,
+          "bottom": 19.5
+        },
+        "note_pt": 14.5,
+        "note_baseline_pt": 29.6,
+        "notice_body_pt": 14.5,
+        "notice_baseline_pt": 29.6,
+        "task_overrides": {
+          "grammar": {
+            "question_gap_pt": 4
+          },
+          "reading_test": {
+            "baseline_pt": 27.5,
+            "heading_baseline_pt": 26.5
+          },
+          "orthography_test": {
+            "baseline_pt": 27.5,
+            "heading_baseline_pt": 26.5
+          },
+          "reading": {
+            "body_pt": 14.5,
+            "baseline_pt": 29.6,
+            "passage_body_pt": 14.5,
+            "passage_baseline_pt": 29.6,
+            "heading_pt": 13.5,
+            "heading_word_groups": true
+          }
+        },
+        "examples": {
+          "body_pt": 14.5,
+          "baseline_pt": 29.6,
+          "ordinary_target_baseline_pt": 26.5,
+          "answer_baseline_pt": 29.6,
+          "answer_before_pt": 42,
+          "ordinary_choices_before_pt": 7.5,
+          "after_pt": 20
+        },
+        "historical_component_metrics": {
+          "target_group_after_pt": 30
+        }
+      },
+      "evidence_note": "Separately approved1990 source2/24:14.5ptbody,13.5ptheading,29.6ptleading,4ptgrammar gap and large worked-example panel separation. H26 Level4main boxes remain14pt."
+    },
+    "h27-l1-1998-1999-example-measure": {
+      "applicability": {
+        "levels": [
+          "1級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 1998,
+        "year_max": 1999
+      },
+      "priority": 30,
+      "renderer_conventions": {
+        "historical_typography": {
+          "example_explanation_inset_em": 2,
+          "example_explanation_tracking_em": 0.08
+        },
+        "task_overrides": {
+          "usage": {
+            "question_right_inset_em": 3,
+            "question_ragged_right": true
+          }
+        }
+      },
+      "evidence_note": "Reviewed complete1998/1999 explanation and usage controls06; preserve body face,size,leading,left anchors and continuation pullback. All10usage questions consume the same3em measure. See pdf-render/evidence/handoff27/defaults/example-family-migration-02/DECISIONS.json."
+    },
+    "h27-l4-1990-1999-heading-groups": {
+      "applicability": {
+        "levels": [
+          "4級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 1990,
+        "year_max": 1999
+      },
+      "priority": 30,
+      "renderer_conventions": {
+        "heading_label_gap_em": 3,
+        "heading_choice_gap_em": 1,
+        "heading_word_groups": true,
+        "task_overrides": {
+          "grammar": {
+            "heading_selector_suffix_break": true
+          }
+        }
+      },
+      "evidence_note": "All early owners checked in native20/21/24. Retain selector digits together and allow natural suffix continuation; no forced line break. See pdf-render/evidence/handoff27/defaults/example-family-migration-02/DECISIONS.json."
+    },
+    "h27-l4-1991-1999-target-example-clearance": {
+      "applicability": {
+        "levels": [
+          "4級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 1991,
+        "year_max": 1999
+      },
+      "priority": 30,
+      "renderer_conventions": {
+        "historical_component_metrics": {
+          "example_target_after_pt": 0
+        },
+        "examples": {
+          "ordinary_target_answer_before_pt": 8
+        }
+      },
+      "evidence_note": "Reviewed target-example role20/21/24. Preserve independently calibrated1990 spacing. The clearance applies only to bound target examples. See pdf-render/evidence/handoff27/defaults/example-family-migration-02/DECISIONS.json."
+    },
+    "h27-l4-1991-1996-vocabulary-pitch": {
+      "applicability": {
+        "levels": [
+          "4級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 1991,
+        "year_max": 1996
+      },
+      "priority": 30,
+      "renderer_conventions": {
+        "task_overrides": {
+          "vocabulary": {
+            "question_gap_pt": 13.5
+          }
+        }
+      },
+      "evidence_note": "Complete source/native controls20/24; uniform question pitch near135px versus136px.1997/1999retain9pt. See pdf-render/evidence/handoff27/defaults/example-family-migration-02/DECISIONS.json."
+    },
+    "h27-l4-1998-vocabulary-and-selectors": {
+      "applicability": {
+        "levels": [
+          "4級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 1998,
+        "year_max": 1998
+      },
+      "priority": 40,
+      "renderer_conventions": {
+        "heading_choice_gap_em": 0.75,
+        "task_overrides": {
+          "vocabulary": {
+            "question_gap_pt": 13.5
+          }
+        }
+      },
+      "evidence_note": "Native21/23 reproduces the source two-line vocabulary heading with narrower selector pitch. The damaged source bottom is not used to infer page capacity. See pdf-render/evidence/handoff27/defaults/example-family-migration-02/DECISIONS.json."
+    },
+    "h27-l4-1999-vocabulary-suffix": {
+      "applicability": {
+        "levels": [
+          "4級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 1999,
+        "year_max": 1999
+      },
+      "priority": 40,
+      "renderer_conventions": {
+        "task_overrides": {
+          "vocabulary": {
+            "heading_selector_suffix_break": true
+          }
+        }
+      },
+      "evidence_note": "Source320 and native24: digits1–4finish the first line andからstarts the second naturally. See pdf-render/evidence/handoff27/defaults/example-family-migration-02/DECISIONS.json."
+    },
+    "h27-l4-1991-answer-clearance": {
+      "applicability": {
+        "levels": [
+          "4級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 1991,
+        "year_max": 1991
+      },
+      "priority": 30,
+      "renderer_conventions": {
+        "examples": {
+          "answer_before_pt": 42
+        }
+      },
+      "evidence_note": "Source20/22 and native27 support42pt ordinary answer clearance. Vocabulary6+4and paraphrase2+3match the sources; target examples retain their independent8pt clearance. See pdf-render/evidence/handoff27/defaults/example-family-migration-02/DECISIONS.json."
+    },
+    "h27-l4-1990-retained-target-and-paraphrase": {
+      "applicability": {
+        "levels": [
+          "4級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 1990,
+        "year_max": 1990
+      },
+      "priority": 30,
+      "renderer_conventions": {
+        "task_overrides": {
+          "reading_test": {
+            "word_space_em": 0.85
+          },
+          "orthography_test": {
+            "word_space_em": 0.85
+          },
+          "paraphrase": {
+            "baseline_pt": 29.6,
+            "example_baseline_pt": 29.6,
+            "option_baseline_pt": 29.6
+          }
+        }
+      },
+      "evidence_note": "Retain the independent1990 control. Semantic paraphrase classification must not silently replace its29.6pt role or the separately calibrated target context spacing. See pdf-render/evidence/handoff27/defaults/example-family-migration-02/DECISIONS.json."
+    },
+    "h27-l4-1991-1998-paraphrase-leading": {
+      "applicability": {
+        "levels": [
+          "4級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 1991,
+        "year_max": 1998
+      },
+      "priority": 30,
+      "renderer_conventions": {
+        "task_overrides": {
+          "paraphrase": {
+            "baseline_pt": 27.5,
+            "example_baseline_pt": 27.5,
+            "option_baseline_pt": 27.5
+          }
+        }
+      },
+      "evidence_note": "Retain reviewed early-family leading, especially the rejected blanket26.5pt change in1998.1997has a separately accepted combined override. See pdf-render/evidence/handoff27/defaults/example-family-migration-02/DECISIONS.json."
+    },
+    "h27-l4-1991-1994-paraphrase-pitch": {
+      "applicability": {
+        "levels": [
+          "4級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 1991,
+        "year_max": 1994
+      },
+      "priority": 40,
+      "renderer_conventions": {
+        "task_overrides": {
+          "paraphrase": {
+            "question_gap_pt": 13.5
+          }
+        }
+      },
+      "evidence_note": "Preserve the reviewed vertical question pitch when correcting the old generic-vocabulary section classification; no new per-unit ordinary metric is copied into editorials. See pdf-render/evidence/handoff27/defaults/example-family-migration-02/DECISIONS.json."
+    },
+    "h27-l4-1996-1996-paraphrase-pitch": {
+      "applicability": {
+        "levels": [
+          "4級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 1996,
+        "year_max": 1996
+      },
+      "priority": 40,
+      "renderer_conventions": {
+        "task_overrides": {
+          "paraphrase": {
+            "question_gap_pt": 13.5
+          }
+        }
+      },
+      "evidence_note": "Preserve the reviewed vertical question pitch when correcting the old generic-vocabulary section classification; no new per-unit ordinary metric is copied into editorials. See pdf-render/evidence/handoff27/defaults/example-family-migration-02/DECISIONS.json."
+    },
+    "h27-l4-1997-compact-examples": {
+      "applicability": {
+        "levels": [
+          "4級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 1997,
+        "year_max": 1997
+      },
+      "priority": 50,
+      "renderer_conventions": {
+        "examples": {
+          "answer_before_pt": 10,
+          "ordinary_after_by_columns_pt": {
+            "1": 0,
+            "4": 0
+          }
+        },
+        "task_overrides": {
+          "paraphrase": {
+            "baseline_pt": 26.5,
+            "example_baseline_pt": 26.5,
+            "option_baseline_pt": 26.5,
+            "heading_after_pt": 0
+          }
+        }
+      },
+      "evidence_note": "Source250/252/320/322 and native27/28 support shorter ordinary example clearances and three-question paraphrase entry.1999vocabulary retains a disclosed one-line-Q7/whole-group boundary residual; no page-count cut. See pdf-render/evidence/handoff27/defaults/example-family-migration-02/DECISIONS.json."
+    },
+    "h27-l4-1999-compact-examples": {
+      "applicability": {
+        "levels": [
+          "4級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 1999,
+        "year_max": 1999
+      },
+      "priority": 50,
+      "renderer_conventions": {
+        "examples": {
+          "answer_before_pt": 10,
+          "ordinary_after_by_columns_pt": {
+            "1": 0,
+            "4": 0
+          }
+        },
+        "task_overrides": {
+          "paraphrase": {
+            "baseline_pt": 26.5,
+            "example_baseline_pt": 26.5,
+            "option_baseline_pt": 26.5,
+            "heading_after_pt": 0
+          }
+        }
+      },
+      "evidence_note": "Source250/252/320/322 and native27/28 support shorter ordinary example clearances and three-question paraphrase entry.1999vocabulary retains a disclosed one-line-Q7/whole-group boundary residual; no page-count cut. See pdf-render/evidence/handoff27/defaults/example-family-migration-02/DECISIONS.json."
+    },
+    "h27-l4-1991-source-layout": {
+      "applicability": {
+        "levels": [
+          "4級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 1991,
+        "year_max": 1991
+      },
+      "priority": 40,
+      "renderer_conventions": {
+        "examples": {
+          "ordinary_target_answer_before_pt": 30,
+          "ordinary_target_label_gap_em": 3.5,
+          "ordinary_target_answer_indent_em": 7,
+          "ordinary_picture_before_pt": 0,
+          "ordinary_picture_top_padding_pt": 0,
+          "ordinary_picture_answer_before_pt": 14,
+          "ordinary_picture_after_pt": 20.5,
+          "ordinary_options_prompt_indent_em": 0.5,
+          "ordinary_options_label_gap_em": 3.2,
+          "ordinary_options_left_indent_em": 7,
+          "ordinary_options_answer_indent_em": 6.7
+        },
+        "passage_word_group_tasks": [
+          "cloze",
+          "reading",
+          "reading_test",
+          "orthography_test"
+        ],
+        "reading_context_before_pt": 64,
+        "historical_typography": {
+          "shitsumon_label": {
+            "left_inset_em": 2.1,
+            "width_em": 6.1,
+            "font": "body"
+          }
+        }
+      },
+      "evidence_note": "Direct full-source and native reviews R27/attempt03/NATIVE_REVIEW-27.json and R27/attempt04/NATIVE_REVIEW-28.json. Restores target-example spacing, ordinary-example insets and picture-query/group geometry under stable metrics. Explicit source bindings retain panel arrangement and the vocabulary III narrower grid; no canonical content or Level4main-box change."
+    },
+    "h27-l4-1997-source-horizontal-layout": {
+      "applicability": {
+        "levels": [
+          "4級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 1997,
+        "year_max": 1997
+      },
+      "priority": 40,
+      "renderer_conventions": {
+        "historical_target_rows": {
+          "target_width_em": 7.5
+        },
+        "examples": {
+          "ordinary_target_answer_indent_em": 5,
+          "ordinary_options_left_indent_em": 3,
+          "ordinary_options_answer_indent_em": 4.5
+        }
+      },
+      "evidence_note": "Direct source246-252/265and complete native pages2/3/4/5/6/8/11inspected in pdf-render/evidence/handoff27/defaults/n4-1997-layout-followup-28/NATIVE_REVIEW-28.json. Repeated horizontal metrics belong to this family; explicit source249wide-target andsource265narrow-example bindings retain precedence. All vertical metrics, source partitions and canonical content stay unchanged."
+    },
+    "h27-l4-2001-reading-dialogue": {
+      "applicability": {
+        "levels": [
+          "4級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 2001,
+        "year_max": 2001
+      },
+      "priority": 40,
+      "renderer_conventions": {
+        "task_overrides": {
+          "reading": {
+            "passage_body_pt": 14
+          }
+        },
+        "reading_context_before_pt": 6,
+        "historical_typography": {
+          "embedded_query": {
+            "left_inset_em": 1.4,
+            "width_em": 6.3,
+            "continuation_pullback_em": 1,
+            "before_pt": 15
+          }
+        },
+        "passage_word_space_em": 0.65,
+        "reading_dialogue_turns": {
+          "body_pt": 14,
+          "baseline_pt": 29.6,
+          "word_space_em": 0.65
+        }
+      },
+      "evidence_note": "Exact2001Level4source63/65-68and five changed whole pages reviewed in pdf-render/evidence/handoff27/defaults/n4-2001-reading-followup-29/NATIVE_REVIEW-29.json. Dialogue/passages use the measured14ptrole while questions, notice and answers retain15pt. Embedded queries use source-supported label/continuation geometry. Existing source-bound query/answer association controls grouping; no page-specific breaks or font sizes."
+    },
+    "h27-l2-1992-source-reading": {
+      "applicability": {
+        "levels": [
+          "2級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 1992,
+        "year_max": 1992
+      },
+      "priority": 40,
+      "renderer_conventions": {
+        "task_overrides": {
+          "orthography_test": {
+            "historical_target_rows": {
+              "target_width_em": 10
+            }
+          },
+          "reading": {
+            "baseline_pt": 27,
+            "option_baseline_pt": 27,
+            "question_gap_pt": 10.5,
+            "heading_after_margin_labeled_pt": 0,
+            "question_block_origin": "first_line",
+            "question_right_inset_em": 2,
+            "question_ragged_right": true
+          }
+        },
+        "historical_typography": {
+          "citation": {
+            "font_pt": 9,
+            "baseline_pt": 14
+          },
+          "bracketed_query_label": {
+            "left_inset_em": 2,
+            "width_em": 3.5,
+            "font": "heading"
+          }
+        },
+        "reading_context_before_pt": 18,
+        "note_baseline_pt": 27,
+        "historical_passage_left_inset_em": {
+          "inline_numbered": 1,
+          "margin_labeled": 1
+        }
+      },
+      "evidence_note": "Exact source57-58and72-80with all eleven changed whole pages reviewed in pdf-render/evidence/handoff27/defaults/n2-1992-reading-followup-30/NATIVE_REVIEW-30.json. Uniform27ptreading pitch,10.5ptquestion gap,10emorthography target reserve and source-bound passage/query roles preserve source capacities. No page-specific font or break is introduced. All canonical text,keys,weights and charts are unchanged."
+    },
+    "h27-l2-1997-orthography-measure": {
+      "applicability": {
+        "levels": [
+          "2級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 1997,
+        "year_max": 1997
+      },
+      "priority": 40,
+      "renderer_conventions": {
+        "task_overrides": {
+          "orthography_test": {
+            "historical_target_rows": {
+              "target_width_em": 10.75
+            }
+          }
+        }
+      },
+      "evidence_note": "Complete source265-266and native4-5reviewed in pdf-render/evidence/handoff27/defaults/n2-1997-source-followup-31/NATIVE_REVIEW-31.json. A10.75emorthography target reserve restores the source-normalized first selector near400px; all20orthography rows consume it. The20reading targets retain8.5em. No font, leading or page-specific spacing adjustment."
+    },
+    "h27-l2-1995-source-measures": {
+      "applicability": {
+        "levels": [
+          "2級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 1995,
+        "year_max": 1995
+      },
+      "priority": 40,
+      "renderer_conventions": {
+        "task_overrides": {
+          "orthography_test": {
+            "heading_after_pt": 6,
+            "historical_target_rows": {
+              "target_width_em": 10.75
+            },
+            "historical_component_metrics": {
+              "target_group_after_pt": 18
+            }
+          },
+          "reading": {
+            "heading_after_margin_labeled_pt": 11
+          }
+        },
+        "historical_typography": {
+          "letter_brackets": {
+            "body_inset_em": 3,
+            "spine_inset_em": 1.5,
+            "cap_inset_em": 0.6,
+            "label_inset_em": 2.25,
+            "before_pt": 10,
+            "after_pt": 5
+          },
+          "bracketed_query_label": {
+            "left_inset_em": 1.5,
+            "width_em": 4.6,
+            "font": "heading"
+          },
+          "numbered_context_notes_inset_em": 1.5,
+          "numbered_introduction_body_inset": true
+        },
+        "note_pt": 10.8
+      },
+      "evidence_note": "Source177-210and complete native pages reviewed in pdf-render/evidence/handoff27/defaults/n2-1995-source-followup-32/NATIVE_REVIEW-32.json. Uniform orthography target/group metrics, letter-bracket body alignment, slightly smaller note role, and inset short-passage notes/queries. Source-bound ordering geometry and ordinary numbered prose roles remain exact per-item bindings. No page-specific font or arbitrary page break."
+    },
+    "h27-l2-1994-source-measures": {
+      "applicability": {
+        "levels": [
+          "2級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 1994,
+        "year_max": 1994
+      },
+      "priority": 40,
+      "renderer_conventions": {
+        "task_overrides": {
+          "reading_test": {
+            "page_body_bottom_inset_mm": 15
+          },
+          "orthography_test": {
+            "page_body_bottom_inset_mm": 15
+          },
+          "vocabulary": {
+            "page_body_bottom_inset_mm": 15
+          },
+          "grammar": {
+            "page_body_bottom_inset_mm": 15
+          }
+        },
+        "historical_typography": {
+          "phrase_answer_line_width_em": 6,
+          "bracketed_query_label": {
+            "left_inset_em": 1,
+            "width_em": 4.6,
+            "font": "heading"
+          },
+          "numbered_context_notes_inset_em": 1,
+          "numbered_introduction_body_inset": true
+        },
+        "reading_context_before_pt": 12
+      },
+      "evidence_note": "Approved source134-166and complete pages reviewed in pdf-render/evidence/handoff27/defaults/n2-1994-source-followup-33/NATIVE_REVIEW-33.json. Uniform15mm body reserve for question-list tasks preserves source page capacity and physical running matter; reading measure unchanged. Grammar V/VIuse source-bound6emphrase lines. Numbered notes, queries and genuine-introduction body have1eminsets; flowing reading contexts use12pt. Four circled paragraphs retain source-bound hanging labels. No per-page font change or forced page break."
+    },
+    "h27-l2-1993-source-measures": {
+      "applicability": {
+        "levels": [
+          "2級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 1993,
+        "year_max": 1993
+      },
+      "priority": 40,
+      "renderer_conventions": {
+        "task_overrides": {
+          "reading": {
+            "heading_after_pt": 0,
+            "heading_after_labeled_pt": 6,
+            "question_gap_pt": 12,
+            "passage_after_pt": 6
+          },
+          "grammar": {
+            "question_gap_pt": 10.5
+          }
+        },
+        "historical_typography": {
+          "notes_inset_em": 1,
+          "bracketed_query_label": {
+            "left_inset_em": 1,
+            "width_em": 4.6,
+            "font": "heading"
+          },
+          "bracketed_numbered_query_label": {
+            "left_inset_em": 1,
+            "width_em": 4.6,
+            "font": "heading"
+          }
+        },
+        "reading_context_before_pt": 12,
+        "note_pt": 10.8
+      },
+      "evidence_note": "Approved 1993 volume physical 60-74 and full pages reviewed in pdf-render/evidence/handoff27/defaults/n2-1993-source-followup-34/NATIVE_REVIEW-34.json. Uniform reading and grammar gaps restore source capacities. Both source-bound introductions use inset Gothic text; notes and bracketed queries share one-em insets. The compact answer table and paired short passages remain whole. Body font, baseline, vocabulary layout and short answer lines are retained. No page-specific font or break change."
+    },
+    "h27-l2-1991-reading-measures": {
+      "applicability": {
+        "levels": [
+          "2級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 1991,
+        "year_max": 1991
+      },
+      "priority": 40,
+      "renderer_conventions": {
+        "task_overrides": {
+          "reading": {
+            "baseline_pt": 27.5,
+            "option_baseline_pt": 27.5,
+            "passage_baseline_pt": 27.5,
+            "question_gap_pt": 12,
+            "passage_after_pt": 0,
+            "heading_after_pt": 12,
+            "heading_after_labeled_pt": 8
+          }
+        },
+        "historical_typography": {
+          "query_label": {
+            "left_inset_em": 1,
+            "width_em": 2.8,
+            "font": "heading"
+          },
+          "citation": {
+            "font_pt": 9,
+            "baseline_pt": 18
+          }
+        },
+        "reading_context_before_pt": 12,
+        "passage_typography": {
+          "reading-b002": {
+            "content_sha256": "0065c5206ee09bf130635409f088b315a231a078eae51a86823ffb2d0fca9e87",
+            "baseline_pt": 25,
+            "evidence": {
+              "source_path": "src/CodexDownloads/UserApprovedReferenceScans/日本語能力1991～1999年試験問題集2級.pdf",
+              "source_sha256": "0a6634758dce0a258ffaf92c6c8ea1a738a4b8ceb52cd75cb44a4d8d340dfa64",
+              "physical_pages": [
+                36
+              ],
+              "state": "approved",
+              "historical_claim": false,
+              "region": "The second long passage has about49pixel leading at144dpi, versus54pixels for the other reading passages and question options. Retain a source-bound25pt baseline for this denser complete passage; body font remains11.3pt.",
+              "reference_id": "RC03_L2",
+              "approval_registry_sha256": "c0fc4d24494a9569dd539d237018014213045d6224ae9035fa282ab610be0384",
+              "subject": "question_page_layout",
+              "exclusions_acknowledged": true
+            }
+          }
+        }
+      },
+      "evidence_note": "Approved collection physical33-46and all23native pages reviewed in pdf-render/evidence/handoff27/defaults/n2-1991-reading-followup-35/NATIVE_REVIEW-35.json. Ordinary reading and option leading27.5pt, source-bound denser second passage25pt, uniform query/context gaps12pt, source entry gaps12/8pt, smaller citations and plain query inset restore source capacities. Letter date/addressee geometry is exact-paragraph bound. Vocabulary, grammar, body font, canonical text, keys and existing unknown-weight disclosures remain unchanged. No page-specific font or break change."
+    },
+    "h27-l4-1990-example-picture-measures": {
+      "applicability": {
+        "levels": [
+          "4級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 1990,
+        "year_max": 1990
+      },
+      "priority": 40,
+      "renderer_conventions": {
+        "examples": {
+          "ordinary_target_label_gap_em": 3.6,
+          "ordinary_target_answer_indent_em": 6.7,
+          "ordinary_options_left_indent_em": 6.4,
+          "ordinary_options_label_gap_em": 3.3,
+          "ordinary_options_answer_indent_em": 6.4,
+          "ordinary_picture_answer_before_pt": 17
+        },
+        "task_overrides": {
+          "reading": {
+            "body_pt": 14,
+            "passage_body_pt": 14,
+            "baseline_pt": 28.5,
+            "passage_baseline_pt": 28.5,
+            "option_baseline_pt": 28.5,
+            "example_baseline_pt": 28.5,
+            "example_body_pt": 14,
+            "word_space_em": 0.7,
+            "question_gap_pt": 5,
+            "passage_after_pt": 0
+          }
+        },
+        "historical_typography": {
+          "shitsumon_label": {
+            "left_inset_em": 1,
+            "width_em": 6.1,
+            "font": "body"
+          }
+        },
+        "inline_passage_label_width_em": 1.5,
+        "reading_context_reservation": "measured_groups",
+        "reading_context_before_pt": 20
+      },
+      "evidence_note": "Approved1990Level4physical1-8and23-33and all19native pages are compared in R36/NATIVE_REVIEW-36.json. Source-aligned example roles,regular query type,uniform14ptreading body/28.5ptleading and measured complete picture groups restore source1/3/2capacity. Canonical text,ruby,keys,weights,28pictures and vocabulary/grammar typography remain unchanged. Source-bound picture panels retain their exact associations; no page-specific break or type change."
+    },
+    "h27-l3-1997-source-measures": {
+      "applicability": {
+        "levels": [
+          "3級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 1997,
+        "year_max": 1997
+      },
+      "priority": 40,
+      "renderer_conventions": {
+        "task_overrides": {
+          "reading_test": {
+            "page_body_bottom_inset_mm": 15
+          }
+        },
+        "historical_typography": {
+          "phrase_answer_line_width_em": 6
+        }
+      },
+      "evidence_note": "Approved Level3collection physical249-250and278and all21native pages reviewed in pdf-render/evidence/handoff27/defaults/n3-1997-source-followup-37/NATIVE_REVIEW-37.json. A consistent reading-test lower body extent restores four/four complete target groups while retaining13ptfont,24ptleading and footer position. Source-bound reply lines use six em,with an exact question exception of nine em. All canonical content, source glyph pixels, keys and weights remain unchanged. No page-specific breaks or font changes."
+    },
+    "h27-l3-2003-source-roles": {
+      "applicability": {
+        "levels": [
+          "3級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 2003,
+        "year_max": 2003
+      },
+      "priority": 40,
+      "renderer_conventions": {
+        "historical_typography": {
+          "phrase_answer_line_width_em": 6,
+          "inline_number_box_role": "main_question"
+        }
+      },
+      "evidence_note": "Approved2003Level3collection physical14,42–44and all23native pages reviewed in pdf-render/evidence/handoff27/defaults/n3-2003-source-followup-38/NATIVE_REVIEW-38.json. All five dialogue reply rules use six em. Explicit numeric inline boxes use the calibrated main-question numeral face and box, preserving canonical digits and parentheses. Current13ptbody,24ptleading,main12.5ptdigits and all source page capacities are retained. All canonical content,source glyph pixels,keys and weights remain unchanged. No page-specific breaks or font-size changes."
+    },
+    "h27-l3-2004-source-roles": {
+      "applicability": {
+        "levels": [
+          "3級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 2004,
+        "year_max": 2004
+      },
+      "priority": 40,
+      "renderer_conventions": {
+        "historical_typography": {
+          "phrase_answer_line_width_em": 6,
+          "inline_number_box_role": "main_question"
+        }
+      },
+      "evidence_note": "Approved2004Level3physical13,34–38 and all22 native pages reviewed in pdf-render/evidence/handoff27/defaults/n3-2004-source-followup-39/NATIVE_REVIEW-39.json. Five phrase rules use six em and six numeric inline boxes use the calibrated main-number face. Existing source-spatial paragraph roles retain natural letter word gaps,one-moji prose insets,a flush-left date and right signature. The digest-bound complete-letter boundary retains allthree queries on the following page. Body font,leading,canonical content,source pixels,keys and weights are unchanged. No runtime changes."
+    },
+    "h27-l3-2005-source-roles": {
+      "applicability": {
+        "levels": [
+          "3級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 2005,
+        "year_max": 2005
+      },
+      "priority": 40,
+      "renderer_conventions": {
+        "historical_typography": {
+          "phrase_answer_line_width_em": 6,
+          "inline_number_box_role": "main_question"
+        }
+      },
+      "evidence_note": "Approved2005Level3physical13,33-35 and all22 native pages reviewed in pdf-render/evidence/handoff27/defaults/n3-2005-source-followup-40/NATIVE_REVIEW-40.json. Five phrase rules use six em and eight inline boxes use the calibrated main-number face. Exact dialogue roles restore scored continuation alignment; source-bound introduction and four answer-list roles restore the2/2spread. The renderer consumes exact number-only stems once while preserving full prompts. Body font,leading,canonical content,source pixels,keys and weights are unchanged."
+    },
+    "h27-l3-2002-inferred-roles": {
+      "applicability": {
+        "levels": [
+          "3級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 2002,
+        "year_max": 2002
+      },
+      "priority": 40,
+      "renderer_conventions": {
+        "historical_typography": {
+          "phrase_answer_line_width_em": 6,
+          "inline_number_box_role": "main_question"
+        }
+      },
+      "evidence_note": "N3_2002 original appearance remains unavailable. The complete21page partial practice reconstruction was inspected in NATIVE_REVIEW-41.json. Neighboring approved2003-2005Level3controls support six-em phrase rules and calibrated main-number heading boxes. The existing inline clearance is retained. Seven missing scored positions,six missing examples,ten public cases and32principal departures remain disclosed. No canonical content or scoring changes; no new page-specific metrics."
+    },
+    "h27-l3-2009-source-roles": {
+      "applicability": {
+        "levels": [
+          "3級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 2009,
+        "year_max": 2009
+      },
+      "priority": 40,
+      "renderer_conventions": {
+        "historical_typography": {
+          "phrase_answer_line_width_em": 7,
+          "inline_number_box_role": "main_question"
+        },
+        "historical_component_metrics": {
+          "target_prose_after_pt": 8
+        },
+        "dialogue_continuation_pullback_em": 0
+      },
+      "evidence_note": "Approved RC04_2009_L3 written pages were directly compared with all22native pages. Source-supported changes select7emdialogue phrase rules,calibrated main-number heading boxes with retained inline clearance,8pttarget-prose clearance and zero dialogue continuation pullback. One source-bound Q40word boundary survives Old dialogue splitting; source comprehension46/47remain together. All20body-page capacities match. The105questions,420choices,19passages,six examples,all keys and eight lossless glyph assets remain unchanged. Individual raw weights are absent; six listening cases remain outside this review."
+    },
+    "h27-l3-2008-source-roles": {
+      "applicability": {
+        "levels": [
+          "3級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 2008,
+        "year_max": 2008
+      },
+      "priority": 40,
+      "renderer_conventions": {
+        "historical_typography": {
+          "phrase_answer_line_width_em": 6,
+          "inline_number_box_role": "main_question"
+        },
+        "historical_component_metrics": {
+          "target_prose_after_pt": 8
+        }
+      },
+      "evidence_note": "Approved RC04_2008_L3_L4 written pages were directly compared with all22native pages. Existing roles select six-em dialogue phrase rules,calibrated heading number boxes with retained clearance,eight-pttarget clearance and three two-em notice paragraph insets. Existing half-moji dialogue continuation pullback correctly positions the blank-ledQ42wrap. All20body-page capacities match. All105questions,420choices,18passages,one notice,six examples,known keys and16lossless glyph assets remain unchanged. Individual raw weights are absent; listening is preserved."
+    },
+    "h27-l4-2008-source-roles": {
+      "applicability": {
+        "levels": [
+          "4級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 2008,
+        "year_max": 2008
+      },
+      "priority": 40,
+      "renderer_conventions": {
+        "historical_typography": {
+          "phrase_answer_line_width_em": 6
+        }
+      },
+      "evidence_note": "All20native pages compared with approved RC04_2008_L3_L4 written pages. Existing roles select four six-em reply rules and shared two-turn speaker columns. Four source-bound bakery paragraphs use3.5em insets and1.8125em first-line outdents; continuation and first text align within0.01pt. All18source question capacities,87questions,348choices,15passages,two notices,five examples,known keys and five lossless images remain intact. Level4body15pt,29.6ptleading and all numeral metrics are retained. Individual raw weights absent; listening preserved."
+    },
+    "h27-l4-2007-source-roles": {
+      "applicability": {
+        "levels": [
+          "4級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 2007,
+        "year_max": 2007
+      },
+      "priority": 40,
+      "renderer_conventions": {
+        "historical_typography": {
+          "phrase_answer_line_width_em": 6
+        },
+        "answer_blank_roles": {
+          "body": {
+            "inner_width_em": 4.5
+          }
+        }
+      },
+      "evidence_note": "All20baseline native and19approved source pages were directly reviewed. Four existing six-em reply rules and shared two-turn speaker columns restore source grammarIVroles; the two body parenthesized blanks use4.5em. A source-bound single-column image grid may flow between its intact panels, with16pt source inter-panel spacing. All17source question-page capacities,87questions,348choices,16passages,five examples,known keys and24lossless images are preserved. Native panels split1/3versus source2/2under retained15ptLevel4body,29.6ptleading,all numeral metrics and image widths. No forced page cutoff. Individual weights remain absent; eight listening cases remain deferred and listening unchanged."
+    },
+    "h27-l4-2009-source-roles": {
+      "applicability": {
+        "levels": [
+          "4級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 2009,
+        "year_max": 2009
+      },
+      "priority": 40,
+      "renderer_conventions": {
+        "historical_typography": {
+          "phrase_answer_line_width_em": 6
+        },
+        "reading_context_reservation": "measured_groups"
+      },
+      "evidence_note": "All17native pages compared with approved partial RC-L4-2009 written reprint pages. Four six-em phrase rules and explicit speaker columns retain all nine grammarIVturns. Six source-bound circled slots use4.5em inner widths; three measured context/question groups keep each final passage with its question. Preserve H17-STYLE-004plain folded notice frame,all77questions/308choices,13passages,three examples,24lossless glyph images,116ruby groups and77known keys. Native grammarI9/6versus reprint7/8remains explicitly explained by normalized question geometry within2percent and unavailable original opening matter. Retain all partial-source limitations,Level4body15/leading29.6,numeral sizing and listening."
+    },
+    "h27-l4-2006-inferred-phrase-role": {
+      "applicability": {
+        "levels": [
+          "4級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 2006,
+        "year_max": 2006
+      },
+      "priority": 40,
+      "renderer_conventions": {
+        "historical_typography": {
+          "phrase_answer_line_width_em": 6
+        }
+      },
+      "evidence_note": "All19native pages inspected. Exact2006layout unavailable; the admitted primary confirms four grammarIVphrase replies and same-level2007/2008approved controls support six-em rules. A scored-stem-only renderer consumes the existing authored underlinedspaces. Retain all86questions/344choices,16passages,86known keys,missingV24,uncertainQ39option4,12departures,two publiccases,unverifiedmethod1score133,source text,spaces,markup,Level4body15/leading29.6andnumerals. All18other nativepages remain pixel-identical."
+    },
+    "h27-l4-2005-source-roles": {
+      "applicability": {
+        "levels": [
+          "4級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 2005,
+        "year_max": 2005
+      },
+      "priority": 40,
+      "renderer_conventions": {
+        "historical_typography": {
+          "phrase_answer_line_width_em": 6,
+          "inline_number_box_role": "main_question"
+        }
+      },
+      "evidence_note": "All20native and20approved source written/cover pages inspected. Four grammarIVphrase replies use six-em rules with explicit dialogue turns. Three passage references use existing main-question numerals inside source-bound five-em parentheses. Preserve all87questions/348choices,16passages,five examples,28lossless glyph crops,130ruby,87keys/raw weights,55/112raw totals and conversions,zero cases/departures,method1index100/unverified,Level4body15/leading29.6and all numeral dimensions. Existing reading dialogue1/3question distribution versus source2/2is explicitly documented; all18other pages remain pixel-identical."
+    },
+    "h27-l4-2004-source-roles": {
+      "applicability": {
+        "levels": [
+          "4級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 2004,
+        "year_max": 2004
+      },
+      "priority": 40,
+      "renderer_conventions": {
+        "historical_typography": {
+          "phrase_answer_line_width_em": 6,
+          "inline_number_box_role": "main_question",
+          "embedded_query": {
+            "left_inset_em": 1.4,
+            "width_em": 6.3,
+            "continuation_pullback_em": 1,
+            "before_pt": 29.6
+          }
+        }
+      },
+      "evidence_note": "All19native and19approved source written/cover pages inspected. Four grammarIVphrase replies use six-em rules. Two passage references use main-question numerals inside five-em parentheses; two shared-prompt references use the same face. Three answer prompts retain6pt explicit gaps without duplicate interline glue. Three exact terminal queries restore29.6pt blank-line gaps. Preserve87questions/348choices,12standalone passages plus three embedded contexts,five examples,16lossless glyph crops,112ruby,all keys/raw weights,55/112totals,zero cases/departures and method1index100/unverified. Retain Level4body15/leading29.6and numeral dimensions. ReadingV0/4versus source1/3 and readingVI1/2versus source2/1 are explicitly measured density residuals;14other pages are pixel-identical."
+    },
+    "h27-l4-2002-inferred-roles": {
+      "applicability": {
+        "levels": [
+          "4級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 2002,
+        "year_max": 2002
+      },
+      "priority": 40,
+      "renderer_conventions": {
+        "historical_typography": {
+          "phrase_answer_line_width_em": 6
+        }
+      },
+      "evidence_note": "R50/R51: complete native and admitted written retype pages inspected. Preserve all canonical content, keys, raw weights, uncertainty cases and omission gaps. Five grammarIV reply rules use an inferred six-em role. Both orphan contexts retain the existing group-label role without invented questions. Level3 2000 also binds five exact A/B dialogue splits, suppresses a generic unsupported dialogue frame, selects calibrated main-number heading boxes, and removes two exact redundant circles while preserving their ideographic spaces. Original typography remains unavailable; all Level3/4 body, leading and numeral metrics stay unchanged."
+    },
+    "h27-l3-2000-inferred-roles": {
+      "applicability": {
+        "levels": [
+          "3級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 2000,
+        "year_max": 2000
+      },
+      "priority": 40,
+      "renderer_conventions": {
+        "historical_typography": {
+          "phrase_answer_line_width_em": 6,
+          "inline_number_box_role": "main_question"
+        },
+        "content_frames": {
+          "reading-b001": "none"
+        }
+      },
+      "evidence_note": "R50/R51: complete native and admitted written retype pages inspected. Preserve all canonical content, keys, raw weights, uncertainty cases and omission gaps. Five grammarIV reply rules use an inferred six-em role. Both orphan contexts retain the existing group-label role without invented questions. Level3 2000 also binds five exact A/B dialogue splits, suppresses a generic unsupported dialogue frame, selects calibrated main-number heading boxes, and removes two exact redundant circles while preserving their ideographic spaces. Original typography remains unavailable; all Level3/4 body, leading and numeral metrics stay unchanged."
+    },
+    "h27-l4-2000-inferred-roles": {
+      "applicability": {
+        "levels": [
+          "4級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 2000,
+        "year_max": 2000
+      },
+      "priority": 40,
+      "renderer_conventions": {
+        "historical_typography": {
+          "phrase_answer_line_width_em": 6
+        },
+        "content_frames": {
+          "reading-b001": "none"
+        }
+      },
+      "evidence_note": "R52: all19 native pages and11 admitted written source regions inspected. Four grammarIV reply rules use the inferred six-em phrase role. Explicitly suppress the unsupported generic readingV dialogue frame. Preserve all canonical text, 86 keys, five recovered examples, omitted glyph question, uncertain distractor and original scoring. Retain15pt/29.6pt and all H26 Level4 numeral dimensions. Original typography remains unavailable."
+    },
+    "h27-l4-1998-source-dialogue-query": {
+      "applicability": {
+        "levels": [
+          "4級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 1998,
+        "year_max": 1998
+      },
+      "priority": 45,
+      "renderer_conventions": {
+        "historical_typography": {
+          "phrase_answer_line_width_em": 9,
+          "embedded_query": {
+            "left_inset_em": 1.8,
+            "width_em": 6.8,
+            "continuation_pullback_em": 1,
+            "before_pt": 13.5,
+            "label_font_role": "task_label",
+            "question_gap_pt": 49.5
+          }
+        }
+      },
+      "evidence_note": "R53: all18 source/native pages inspected. Measured grammarIV phrase rules9em; exact reply-only blanks9/8em leave query samples ordinary. Three terminal queries use source bold labels and13.5pt extra separation;49.5pt gaps apply only between consecutive complete query contexts. Preserve all87keys,five examples,24 source-pixel crops,two H23 recoveries and scoring. Retain13.5pt/27.5pt,all H26 Level4 numeral dimensions and the explained nonpersistent grammarII9/6versus8/7shift."
+    },
+    "h27-l1-1991-1994-target-prose": {
+      "applicability": {
+        "levels": [
+          "1級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 1991,
+        "year_max": 1994
+      },
+      "priority": 45,
+      "renderer_conventions": {
+        "historical_component_metrics": {
+          "target_prose_after_pt": 8
+        }
+      },
+      "evidence_note": "R57:18exact UARS target pages1991-99. Early1991-94target-to-options is about1.2ordinary pitches versus1.5in1995-99; retain8pt only for the four early controls. All20Level1native controls reviewed. Intergroup18pt is the shared Level1 family setting. No font, leading, measure or arbitrary page break change."
+    },
+    "h27-l2-1996-source-measures": {
+      "applicability": {
+        "levels": [
+          "2級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 1996,
+        "year_max": 1996
+      },
+      "priority": 45,
+      "renderer_conventions": {
+        "historical_typography": {
+          "letter_brackets": {
+            "body_inset_em": 3,
+            "spine_inset_em": 1.5,
+            "cap_inset_em": 0.6,
+            "label_inset_em": 2.25,
+            "before_pt": 5,
+            "after_pt": 0
+          },
+          "numbered_context_notes_inset_em": 1.5,
+          "numbered_introduction_body_inset": true,
+          "bracketed_query_label": {
+            "left_inset_em": 1.5,
+            "width_em": 4.6,
+            "font": "heading"
+          },
+          "bracketed_numbered_query_label": {
+            "left_inset_em": 1.5,
+            "width_em": 4.6,
+            "font": "heading"
+          },
+          "notes_inset_em": 0.5
+        }
+      },
+      "evidence_note": "R59: all26written source/native pages compared. Source66letter-bracket body uses its common three-moji margin; figure pair/citation/notes are outside that scope. Long-reading notes use half-moji inset; numbered short-reading notes and queries use1.5moji. Numbered introduction body continues one moji inset. These are family defaults; exact four-slot geometry and semantic note continuation remain source-bound roles. No page-specific type or count-forcing boundary. See NATIVE_REVIEW-59.json."
+    },
+    "h27-l2-1998-source-measures": {
+      "applicability": {
+        "levels": [
+          "2級"
+        ],
+        "generations": [
+          "historical-1991-2009"
+        ],
+        "year_min": 1998,
+        "year_max": 1998
+      },
+      "priority": 45,
+      "renderer_conventions": {
+        "historical_typography": {
+          "parenthesized_indent_em": 2,
+          "notes_inset_em": 0.5,
+          "numbered_context_notes_inset_em": 1.5,
+          "bracketed_query_label": {
+            "left_inset_em": 1,
+            "width_em": 4.6,
+            "font": "heading"
+          },
+          "bracketed_numbered_query_label": {
+            "left_inset_em": 1,
+            "width_em": 4.6,
+            "font": "heading"
+          },
+          "grammar_two_column_section_gap_pt": 23.2
+        },
+        "task_overrides": {
+          "reading_test": {
+            "historical_target_rows": {
+              "target_width_em": 6.5
+            }
+          },
+          "vocabulary": {
+            "question_gap_pt": 12
+          }
+        }
+      },
+      "evidence_note": "R60: all25 baseline native pages,23 approved primary pages and3 admitted recovery pages compared. Phonology target column, parenthesized stems, note/query insets, vocabulary rhythm and uniform two-column grammar-section rhythm are family measures. Exact short-passage boundaries, note continuation, graph block spacing and mixed insertion geometry remain source-bound roles. Secondary recovery is not layout authority. Canonical content,2 public uncertainties and9 principal departures retained. See NATIVE_REVIEW-60.json."
+    }
+  },
+  "basis": "H19 independent historical composition; source-observed role families and structures, with readable editorial geometry.",
+  "evidence_note": "See pdf-render/evidence/handoff19/DEFAULTS_MATRIX.md and fonts/DECISIONS.json. Source coverage: Levels1/2 1996/1999, Levels3/4 2007/2008, relevant2009 controls. Unobserved compatibility roles remain provisional; no modern timing or examples are inferred. H20 structure-01: source-bound inline target rows; natural reading flow; unruled ordinary examples. Initial geometry is provisional pending level calibration and every-consumer native review. H22-T01: independent gap and width source comparisons in pdf-render/evidence/handoff22/typography/selection-01/DECISION.json. Japanese/digit font identities, height, baseline, headings, parentheses and word spacing retained."
+}

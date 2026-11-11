@@ -1,0 +1,79 @@
+{
+  "unit": "N1_2007",
+  "sources": [
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\1995-2009.12日本语能力测试真题详解N1.pdf",
+      "sha256": "e3555741c8f14b855a32e7d09b42eb790492e3818a85a875f99d84703c752e00",
+      "Tier": 3,
+      "bytes": 23893435,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\1992年~2009年\\1995-2009.12日本语能力测试真题详解N1.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N1\\N1_multiple\\PaddleOCR\\pdf_1",
+      "VisionOCR": "preprocess\\N1\\N1_multiple\\VisionOCR\\pdf_1"
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\2007年\\2007年听力.doc",
+      "sha256": "bc1500cf2d5246b7c096f2c10292fe5c52f40c0124dd57ffa74933dfdf02a330",
+      "Tier": "unranked",
+      "bytes": 388608,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\1992年~2009年\\2007年\\2007年听力.doc"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\2007年\\2007年日语一级听力原文.doc",
+      "sha256": "1c2112426ccaf5114e7c794503aecf53896fe0423ed2a053bd8c31a0572ca374",
+      "Tier": "unranked",
+      "bytes": 451584,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\1992年-2009年\\2007年\\2007年日语一级听力原文.doc",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\1992年~2009年\\2007年\\2007年日语一级听力原文.doc"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\2007年\\2007年日语能力考试1级真题及答案.doc",
+      "sha256": "4857500eaaf4b6714e224fae40b3477664e51be597f5629eff126023670fe1b5",
+      "Tier": "unranked",
+      "bytes": 138240,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\1992年~2009年\\2007年\\2007年日语能力考试1级真题及答案.doc"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\1992年-2009年\\2007年\\2007年日语能力测试1级听力阅读翻译.pdf",
+      "sha256": "e559fa9eaf1736bbb4d8e42bd4ef118b19cea0668c946e11e9a6a323cd9b8ab4",
+      "Tier": "unranked",
+      "bytes": 232042,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\1992年~2009年\\1999-2008年日语能力测试1级听力阅读翻译\\2007年日语能力测试1级听力阅读翻译.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N1\\N1_2007\\PaddleOCR\\pdf_2",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\1992年-2009年\\2007年\\2007年日语能力考试1级真题及答案.pdf",
+      "sha256": "7203e4fed91291d2413a7fde54b03b0e1e9ffdd4e5356d19a586b3dbba4ed9e4",
+      "Tier": 2,
+      "bytes": 1098845,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_2007\\PaddleOCR\\pdf_3",
+      "VisionOCR": "preprocess\\N1\\N1_2007\\VisionOCR\\pdf_3"
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\1992年~2009年\\1999-2008年日语能力测试1级听力阅读翻译\\日语听力应试提高经验谈.pdf",
+      "sha256": "fe21c11b780e2795764b28b610720db9ca8322138155d0cb86a3f5ed6c8aa0c9",
+      "Tier": "unranked",
+      "bytes": 197846,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_multiple\\PaddleOCR\\pdf_3",
+      "VisionOCR": ""
+    }
+  ]
+}

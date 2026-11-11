@@ -1,0 +1,135 @@
+{
+  "unit": "N1_1997",
+  "sources": [
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\1995-2009.12日本语能力测试真题详解N1.pdf",
+      "sha256": "e3555741c8f14b855a32e7d09b42eb790492e3818a85a875f99d84703c752e00",
+      "Tier": 3,
+      "bytes": 23893435,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\1992年~2009年\\1995-2009.12日本语能力测试真题详解N1.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N1\\N1_multiple\\PaddleOCR\\pdf_1",
+      "VisionOCR": "preprocess\\N1\\N1_multiple\\VisionOCR\\pdf_1"
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\1997年\\1997年听力.doc",
+      "sha256": "1cc56cc7841f1a9f97dd209d00a06f3ba14e3313f85eec783ff34bafec44262a",
+      "Tier": "unranked",
+      "bytes": 566784,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\1992年~2009年\\1997年\\1997年听力.doc"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\1997年\\1997年日语一级听力原文.doc",
+      "sha256": "855e2770f5b6d12b6bebe7010b3f057532ca7bf15a02f80ebdb8eb291d1ce29c",
+      "Tier": "unranked",
+      "bytes": 36864,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\1992年-2009年\\1997年\\1997年日语一级听力原文.doc",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\1992年~2009年\\1997年\\1997年日语一级听力原文.doc"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\1997年\\1997日语能力考试1级真题及答案.doc",
+      "sha256": "08794882cd76247c7f688a9f08d844c9356c978e361389e327400f6ab10a5686",
+      "Tier": "unranked",
+      "bytes": 79872,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\1992年~2009年\\1997年\\1997日语能力考试1级真题及答案.doc"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\1992年-2009年\\1997年\\1997日语能力考试1级真题及答案.doc",
+      "sha256": "cf3f500286039ad137652da98d3bb3d3cc3b10828343562dee4c17923560f3ae",
+      "Tier": "unranked",
+      "bytes": 51712,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src/CodexDownloads/UserApprovedReferenceScans/日本語能力1991～1999年試験問題集1級.pdf",
+      "sha256": "8560bf8ef92b4e2d58559b3e14882b76d3307586f5d55b0e7fa33cc2f5fa931f",
+      "Tier": "unranked",
+      "bytes": 6524220,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "display_title": "Level 1, 1991-1999",
+      "source_role": "historical_question_volume",
+      "acquisition_batch": "reference_scan_hunt_1984-2009_2026-10-23",
+      "provenance_records": [
+        "preprocess/audit_runs/2026-10-23_reference_scan_rc03_approvals/approvals.json",
+        "preprocess/reference_scan_hunt_rc03_work/all_level_sources.json"
+      ],
+      "source_urls": [
+        "https://www.mediafire.com/file/m67688mvh6nj6s2/JLPT1991-1999_Level1-4_.rar",
+        "https://yuki-nezumi.blogspot.com/2011/01/4kyu-1991-1999.html"
+      ],
+      "previous_paths": [
+        "src/CodexDownloads/UserApprovedReferenceScans/Originals/日本語能力1991～1999年試験問題集1級.pdf",
+        "src/CodexDownloads/reference_scan_rc03/1991-1999_all_levels_extracted/日本語能力1991～1999年試験問題集1級.pdf"
+      ],
+      "filename_at_acquisition": "日本語能力1991～1999年試験問題集1級.pdf",
+      "filename_note": "Filename at acquisition or archive extraction, preserved through this move.",
+      "pages": 447,
+      "reference_registry": "preprocess/user_approved_reference_scans.md",
+      "reference_id": "RC03_L1",
+      "historical_coverage": [
+        {
+          "level": 1,
+          "year": 1991
+        },
+        {
+          "level": 1,
+          "year": 1992
+        },
+        {
+          "level": 1,
+          "year": 1993
+        },
+        {
+          "level": 1,
+          "year": 1994
+        },
+        {
+          "level": 1,
+          "year": 1995
+        },
+        {
+          "level": 1,
+          "year": 1996
+        },
+        {
+          "level": 1,
+          "year": 1997
+        },
+        {
+          "level": 1,
+          "year": 1998
+        },
+        {
+          "level": 1,
+          "year": 1999
+        }
+      ],
+      "acquisition_containers": [
+        {
+          "path": "src/CodexDownloads/Hunts/1984-2009/2026-10-23_RC03/1991-1999_all_levels_original.rar",
+          "sha256": "5369c863ded3b7ce410b658549d55be74d14afab694ba2678ae81abccf2319ca",
+          "member_filename": "日本語能力1991～1999年試験問題集1級.pdf",
+          "note": "Retained downloaded archive; member hash verified separately. Archive membership does not establish independent custody."
+        }
+      ]
+    }
+  ]
+}

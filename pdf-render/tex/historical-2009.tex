@@ -1,0 +1,297 @@
+% Explicit old-format mechanics, loaded only for admitted historical owners.
+\usepackage{tikz}
+\usetikzlibrary{calc,arrows.meta,shapes.geometric,patterns}
+% Keep the left-edge advance in place, but paint its stroke after the fill.
+% The default mdframed backend can otherwise erase a thin left rule when a
+% rasterizer snaps the adjacent white background to the same pixel column.
+% This patch is Old-only and preserves the box geometry in all split states.
+\makeatletter
+\patchcmd{\mdf@putbox@single}{\mdf@frame@leftline@single}{}{}{\PackageError{JLPT}{Cannot move Old single left rule}{The mdframed implementation changed.}}
+\patchcmd{\mdf@putbox@single}{\mdf@frame@background@single}{\mdf@frame@background@single\ifbool{mdf@leftline}{\mdf@frame@leftline@single}{}}{}{\PackageError{JLPT}{Cannot paint Old single left rule}{The mdframed implementation changed.}}
+\patchcmd{\mdf@putbox@first}{\mdf@frame@leftline@first}{}{}{\PackageError{JLPT}{Cannot move Old first left rule}{The mdframed implementation changed.}}
+\patchcmd{\mdf@putbox@first}{\mdf@frame@background@first}{\mdf@frame@background@first\ifbool{mdf@leftline}{\mdf@frame@leftline@first}{}}{}{\PackageError{JLPT}{Cannot paint Old first left rule}{The mdframed implementation changed.}}
+\patchcmd{\mdf@putbox@second}{\mdf@frame@leftline@second}{}{}{\PackageError{JLPT}{Cannot move Old final left rule}{The mdframed implementation changed.}}
+\patchcmd{\mdf@putbox@second}{\mdf@frame@background@second}{\mdf@frame@background@second\ifbool{mdf@leftline}{\mdf@frame@leftline@second}{}}{}{\PackageError{JLPT}{Cannot paint Old final left rule}{The mdframed implementation changed.}}
+\patchcmd{\mdf@putbox@middle}{\mdf@frame@leftline@middle}{}{}{\PackageError{JLPT}{Cannot move Old middle left rule}{The mdframed implementation changed.}}
+\patchcmd{\mdf@putbox@middle}{\mdf@frame@background@middle}{\mdf@frame@background@middle\ifbool{mdf@leftline}{\mdf@frame@leftline@middle}{}}{}{\PackageError{JLPT}{Cannot paint Old middle left rule}{The mdframed implementation changed.}}
+\makeatother
+\newsavebox\HistoricalBoxNumeralProbe
+\newdimen\HistoricalBoxNumeralRaise
+\let\HistoricalLegacyQNumber\QNumber
+\renewcommand\QNumber[1]{\ifnum\HistoricalBoxDigitCenter=1\relax{%
+ \setlength\fboxsep{0pt}\setlength\fboxrule{\QuestionBoxRule}%
+ \QuestionBoxInnerHeight=\dimexpr\QuestionBoxHeight-2\fboxrule\relax%
+ \sbox\HistoricalBoxNumeralProbe{\BoxNumerals\fontsize{\QuestionLabelSize}{13}\selectfont #1}%
+ \HistoricalBoxNumeralRaise=\dimexpr\QuestionBoxInnerHeight*3/10-\ht\HistoricalBoxNumeralProbe/2+\dp\HistoricalBoxNumeralProbe/2\relax%
+ \fbox{\raisebox{0pt}[.8\QuestionBoxInnerHeight][.2\QuestionBoxInnerHeight]{\makebox[\dimexpr\QuestionBoxWidth-2\fboxrule\relax]{\raisebox{\HistoricalBoxNumeralRaise}{\usebox\HistoricalBoxNumeralProbe}}}}%
+ }\else\HistoricalLegacyQNumber{#1}\fi}
+\newcommand\HistoricalExtraUnderline[1]{\OriginalUnderLine[top=\dimexpr-\UnderlineDrop-\UnderlineThickness-.12ex\relax,height=\UnderlineThickness]{#1}}
+\newcommand\HistoricalDoubleUnderline[1]{\underLine{\HistoricalExtraUnderline{#1}}}
+\newcommand\HistoricalBoxedReference[3]{\UnderlinedReference[1.5]{{\setlength\fboxsep{.7pt}\setlength\fboxrule{.35pt}\fbox{\BoxNumerals\ifdim\HistoricalInlineBoxOneWidth>0pt\relax\ifnum#1<10\relax\makebox[\HistoricalInlineBoxOneWidth]{#2}\else\makebox[\HistoricalInlineBoxTwoWidth]{#2}\fi\else #2\fi}}}{#3}}
+\newcommand\HistoricalQuestionNumber[1]{{\InstructionLatin\InstructionJapanese #1}}
+\newcommand\HistoricalQuestionProse[1]{{\InstructionLatin\InstructionJapanese #1}}
+% Closing answer braces follow the longest alternative, capped by available width.
+\newlength\HistoricalBracedOptionsWidth
+\newlength\HistoricalBracedOptionProbe
+\newcommand\HistoricalParenthesizedQuestionNumber[1]{{\rmfamily\mcfamily\mdseries #1}}
+\newcommand\HistoricalCompactNumber[1]{\mbox{\makebox[\HistoricalParenthesisSide][r]{（}\ifnum#1<10 #1\else\scalebox{\HistoricalTwoDigitWidth}[1]{#1}\fi\makebox[\HistoricalParenthesisSide][l]{）}}}
+% H21 user steering: inherit the shared Modern running-header dash.
+\renewcommand\HeadingContinuationPullback{1em}
+\renewcommand\InstructionPassageNumber[1]{{\InstructionLatin\InstructionJapanese\HistoricalCompactNumber{#1}}}
+% An opening context may be kept only if its section heading also fits.
+% Otherwise flow normally; moving just the context would orphan the heading.
+\newsavebox\HistoricalHeadingMeasure
+\newsavebox\HistoricalContextMeasure
+\newdimen\HistoricalHeadingHeight
+\newdimen\HistoricalContextHeight
+\makeatletter
+\newcommand\HistoricalMeasuredSectionHeading[2]{%
+ \setbox\HistoricalHeadingMeasure=\vbox{\hsize=\linewidth
+  \let\hypertarget\@gobbletwo\let\label\@gobble\SectionHeading{#1}{#2}}%
+ \global\HistoricalHeadingHeight=\dimexpr\ht\HistoricalHeadingMeasure+\dp\HistoricalHeadingMeasure\relax
+ \SectionHeading{#1}{#2}}
+% A fitting context owns its complete group. A nested automatic tail reserve
+% must not push the questions away from the notice after that group was measured.
+% Oversized contexts retain the ordinary tail behavior and can flow across pages.
+\newcommand\HistoricalContextKeepMeasured[3]{%
+ \par\begingroup\setbox\HistoricalContextMeasure=\vbox{\hsize=\linewidth
+  \let\hypertarget\@gobbletwo\let\label\@gobble
+  \long\def\QuestionTailKeep##1{##1}%
+  \long\def\Question##1##2##3##4{\par\addvspace{\QuestionGap}\QuestionWhole{##1}{##2}{##3}{##4}}%
+  #3\par}%
+ \HistoricalContextHeight=\dimexpr\ht\HistoricalContextMeasure+\dp\HistoricalContextMeasure+8pt\relax
+ \typeout{Historical context group geometry: #1; height=\the\HistoricalContextHeight; heading=#2; page=\the\textheight}%
+ \ifdim\HistoricalContextHeight<\dimexpr\textheight-#2\relax
+  \Needspace{\HistoricalContextHeight}%
+  \long\def\QuestionTailKeep##1{##1}%
+ \fi
+ #3\par\endgroup}
+\newcommand\HistoricalContextKeep[2]{\HistoricalContextKeepMeasured{#1}{0pt}{#2}}
+\newcommand\HistoricalOpeningContextKeep[2]{\HistoricalContextKeepMeasured{#1}{\HistoricalHeadingHeight}{#2}}
+\makeatother
+% Stable top origins prevent the first choice's glyph height from changing gaps.
+\renewcommand\QuestionWhole[4]{\par\nointerlineskip\noindent\begin{minipage}[t]{\linewidth}\vspace{0pt}\setlength\parindent{0pt}%
+ \hypertarget{#1}{}\label{#1}\QuestionStem{#2}{#3}\nobreak\nointerlineskip%
+ \vspace{\dimexpr\OptionBaseline pt*3/10-.2em\relax}\noindent\hspace*{\OptionIndent}%
+ \begin{minipage}[t]{\dimexpr\linewidth-\OptionIndent\relax}\vspace{0pt}#4\par\end{minipage}\par%
+ \end{minipage}\par\nointerlineskip}
+\newcommand\HistoricalTargetGroupLabelWidth{3em}
+\newcommand\HistoricalTargetGroupIndent{2em}
+\newcommand\HistoricalTargetGroupProse[2]{\par\noindent\hangindent=\HistoricalTargetGroupIndent\hangafter=1\makebox[\HistoricalTargetGroupLabelWidth][l]{#1}#2\par}
+\newcommand\HistoricalTargetReference[2]{{\renewcommand\ReferenceLabelSize{\HistoricalTargetReferenceSize}\renewcommand\ReferenceLabelBaseline{8}\renewcommand\ReferenceDrop{\HistoricalTargetReferenceDrop}\UnderlinedReference{#1}{#2}}}
+\newcommand\HistoricalCornerAnswerSlot[3]{\mbox{\makebox[.4em][r]{#1}\makebox[3em][c]{#2}\makebox[.4em][l]{#3}}}
+\newcommand\HistoricalMarkedAnswerSlot[3]{\hspace{\HistoricalSlotOuterGap}\mbox{\makebox[.45em][r]{#1}\makebox[\HistoricalSlotInnerWidth][c]{#2}\makebox[.45em][l]{#3}}\hspace{\HistoricalSlotOuterGap}}
+% Source-bound printed notices: curved fold and optional three corner pushpins.
+% Separate from shared Modern notice and handwritten-memo furniture.
+\newsavebox\HistoricalNoticeBox
+\newdimen\HistoricalNoticeTop
+\newcommand\HistoricalNoticeTopPadding{18pt}
+\newcommand\HistoricalNoticeBottomPadding{40pt}
+\newcommand\HistoricalPushpin{\hbox{\pdfextension literal{q .55 w 0 G .55 g 4.6 0 m 4.6 1.66 2.54 3 0 3 c -2.54 3 -4.6 1.66 -4.6 0 c -4.6 -1.66 -2.54 -3 0 -3 c 2.54 -3 4.6 -1.66 4.6 0 c B .7 g -1.6 1 m -1.6 7 l 1.6 7 l 1.6 1 l h B .55 g 3.8 7 m 3.8 8.55 2.1 9.8 0 9.8 c -2.1 9.8 -3.8 8.55 -3.8 7 c -3.8 5.45 -2.1 4.2 0 4.2 c 2.1 4.2 3.8 5.45 3.8 7 c B Q}}}
+\newcommand\HistoricalFoldedNotice[3]{\par\setbox\HistoricalNoticeBox=\vbox{\hsize=\linewidth\begin{NoticeFrame}[nobreak=true,skipabove=0pt,skipbelow=0pt,linewidth=\FoldRuleWidth pt,innerleftmargin=#1pt,innerrightmargin=#1pt,innertopmargin=\HistoricalNoticeTopPadding,innerbottommargin=\HistoricalNoticeBottomPadding]#3\end{NoticeFrame}}%
+ \HistoricalNoticeTop=\dimexpr\ht\HistoricalNoticeBox+\dp\HistoricalNoticeBox\relax\noindent\vbox{\box\HistoricalNoticeBox\nointerlineskip%
+ \ifnum#2=1\hbox to\linewidth{\hspace{3pt}\raisebox{\HistoricalNoticeTop}[0pt][0pt]{\HistoricalPushpin}\hfil\raisebox{\HistoricalNoticeTop}[0pt][0pt]{\HistoricalPushpin}\hspace{3pt}}\nointerlineskip\hbox to\linewidth{\hspace{4pt}\raisebox{15pt}[0pt][0pt]{\HistoricalPushpin}\hfil}\nointerlineskip\fi%
+ \hbox to\linewidth{\hfil\pdfextension literal{q 1 0 0 1 0 7.2 cm \FoldCornerScaleX\space 0 0 \FoldCornerScaleY\space 0 0 cm 1 1 1 rg -33 -1 m 1 -1 l 1 22 l h f 0 G \FoldRuleWidth\space w -33 0 m 0 21 l S -33 0 m -24 22 l -16 16 -6 18 0 21 c S Q}}}\par\vspace{7pt}}
+\newcommand\HistoricalCompactReference[3]{\mbox{\makebox[.35em][r]{#1}#2\makebox[.35em][l]{#3}}}
+% Source-bound inline vocabulary rows. Values are supplied by era/level defaults.
+\newcommand\HistoricalTargetWidth{8.5em}
+\newcommand\HistoricalTargetLabelWidth{1.8em}
+\newcommand\HistoricalTargetIndent{1em}
+\newcommand\HistoricalTargetRowGap{0pt}
+\newcommand\HistoricalTargetRow[4]{\par\nointerlineskip\addvspace{\HistoricalTargetRowGap}\noindent
+ \hspace*{\HistoricalTargetIndent}\begin{minipage}[t]{\dimexpr\linewidth-\HistoricalTargetIndent\relax}\vspace{0pt}
+ \hypertarget{#1}{}\label{#1}\noindent
+ \begin{minipage}[t]{\HistoricalTargetWidth}\vspace{0pt}\parindent=0pt
+ \strut\makebox[\HistoricalTargetLabelWidth][l]{#2}#3\strut\par\end{minipage}%
+ \begin{minipage}[t]{\dimexpr\linewidth-\HistoricalTargetWidth\relax}\vspace{0pt}\parindent=0pt #4\par\end{minipage}
+ \end{minipage}\par\nointerlineskip}
+% Explicit source exception: full target line, choices aligned below the column.
+\newcommand\HistoricalTargetBelow[4]{\par\nointerlineskip\addvspace{\HistoricalTargetRowGap}\noindent
+ \hspace*{\HistoricalTargetIndent}\begin{minipage}[t]{\dimexpr\linewidth-\HistoricalTargetIndent\relax}\vspace{0pt}\parindent=0pt
+ \hypertarget{#1}{}\label{#1}\noindent
+ \strut\makebox[\HistoricalTargetLabelWidth][l]{#2}#3\strut\par\nointerlineskip\noindent
+ \hspace*{\HistoricalTargetWidth}\begin{minipage}[t]{\dimexpr\linewidth-\HistoricalTargetWidth\relax}\vspace{0pt}\parindent=0pt #4\par\end{minipage}
+ \end{minipage}\par\nointerlineskip}
+% Unlike a separate label, this owns the first line and a one-cell continuation.
+\newcommand\HistoricalInlinePassageLabel[1]{\noindent\hangindent=1em\hangafter=1\makebox[2.5em][l]{{\PassageNumerals #1}}}
+\newcommand\HistoricalIntroductionAfter{12pt}
+\newcommand\HistoricalCitationBefore{4pt}
+\newcommand\HistoricalNotesBefore{8pt}
+\newcommand\HistoricalSourceWordGap[2]{\hskip#1em\relax}
+\newcommand\HistoricalSentenceBlank[2]{{\setlength\fboxsep{0pt}\setlength\fboxrule{.4pt}%
+ \fbox{\raisebox{0pt}[#2em][.08em]{\makebox[#1em]{}}}}}
+% In a tate column positive height is the right side. Ordinary ruby keeps its
+% own luatexja placement; these roles own only notes and reference underlines.
+\newcommand\HistoricalVerticalNote[2]{\leavevmode\begingroup\sbox\AnnotationTermProbe{#1}%
+ \rlap{\raisebox{\dimexpr-\dp\AnnotationTermProbe-7.5pt\relax}[0pt][0pt]{\fontsize{6.5}{7}\selectfont #2}}#1\endgroup}
+\newcommand\HistoricalVerticalUnderline[1]{\OriginalUnderLine[top=.58em,height=\UnderlineThickness]{#1}}
+\newcommand\HistoricalVerticalReference[2]{\leavevmode\begingroup%
+ \rlap{\raisebox{.78em}[0pt][0pt]{\fontsize{\ReferenceLabelSize}{\ReferenceLabelBaseline}\selectfont #1}}%
+ \HistoricalVerticalUnderline{#2}\endgroup}
+\newcommand\HistoricalNumberedIntroduction[2]{\par\HistoricalInlinePassageLabel{#1}#2\par\nobreak\vspace{\HistoricalIntroductionAfter}}
+\newcommand\HistoricalCitation[1]{\par\nobreak\addvspace{\HistoricalCitationBefore}{\parindent=0pt\raggedleft #1\par}\nobreak\vspace{\HistoricalNotesBefore}}
+% A source-bound citation stays with its passage, while its notes may flow.
+\newcommand\HistoricalCitationWithNoteBreak[1]{\par\nobreak\addvspace{\HistoricalCitationBefore}{\parindent=0pt\raggedleft #1\par}\vspace{\HistoricalNotesBefore}}
+\newlength\HistoricalDefinitionWidth
+\newcommand\HistoricalDefinitionLabel[1]{（注\if\relax\detokenize{#1}\relax\else\hspace{\HistoricalNoteAfterChu}#1\hspace{\HistoricalNoteAfterDigit}\fi）}
+\newcommand\HistoricalDefinitionColon{\hspace{.08em}：\hspace{.08em}}
+\newcommand\HistoricalDefinition[3]{\par{\fontsize{\NoteSize}{\NoteBaseline}\selectfont\setlength\parindent{0pt}%
+ \settowidth\HistoricalDefinitionWidth{\makebox[3.6em][l]{#1}#2\hspace{.2em}}%
+ \hangindent=\HistoricalDefinitionWidth\hangafter=1\noindent\makebox[3.6em][l]{#1}#2\hspace{.2em}#3\par}}
+% An inspected long source term has its definition on the following line,
+% aligned with the term start; the ordinary measured hanging role is unchanged.
+\newcommand\HistoricalLongDefinition[3]{\par{\fontsize{\NoteSize}{\NoteBaseline}\selectfont\setlength\parindent{0pt}%
+ \hangindent=3.6em\hangafter=1\noindent\makebox[3.6em][l]{#1}#2\par\nobreak
+ \hangindent=3.6em\hangafter=0\noindent #3\par}}
+\newcommand\HistoricalDocumentHeadline[1]{\par{\InstructionLatin\InstructionJapanese%
+ \fontsize{\dimexpr\BodySize pt*118/100\relax}{\dimexpr\baselineskip*118/100\relax}\selectfont%
+ \parindent=0pt\parskip=0pt\leftskip=1em\noindent #1\par}\nobreak\vspace{16pt}}
+\newcommand\HistoricalSourceAnnotation[1]{\par\addvspace{4pt}{%
+ \fontsize{\dimexpr\NoteSize pt*3/4\relax}{\dimexpr\NoteBaseline pt*3/4\relax}\selectfont%
+ \parindent=0pt\hangindent=1em\hangafter=1\noindent #1\par}}
+\newsavebox\HistoricalInsetImage
+\newdimen\HistoricalInsetWidth
+\newdimen\HistoricalInsetShort
+\newdimen\HistoricalInsetContinued
+\newdimen\HistoricalInsetFull
+\newcount\HistoricalInsetCounter
+\newcommand\HistoricalWrappedIllustration[6]{\par\noindent\begin{minipage}{\linewidth}#6%
+ \HistoricalInsetWidth=#1\linewidth\relax%
+ \sbox\HistoricalInsetImage{\begin{minipage}{\HistoricalInsetWidth}\noindent #5\end{minipage}}%
+ \HistoricalInsetShort=\dimexpr\linewidth-\HistoricalInsetWidth-#2em\relax%
+ \HistoricalInsetContinued=\dimexpr\HistoricalInsetShort-1em\relax%
+ \HistoricalInsetFull=\dimexpr\linewidth-1em\relax%
+ \edef\HistoricalInsetShape{0pt \the\HistoricalInsetShort\space}%
+ \HistoricalInsetCounter=1%
+ \loop\ifnum\HistoricalInsetCounter<#3%
+  \edef\HistoricalInsetShape{\HistoricalInsetShape 1em \the\HistoricalInsetContinued\space}%
+  \advance\HistoricalInsetCounter by1%
+ \repeat%
+ \parshape=\numexpr#3+1\relax\HistoricalInsetShape 1em \HistoricalInsetFull%
+ \noindent\rlap{\hspace{\dimexpr\linewidth-\HistoricalInsetWidth\relax}%
+  \raisebox{\dimexpr\ht\strutbox-\ht\HistoricalInsetImage\relax}[0pt][0pt]{\usebox\HistoricalInsetImage}}%
+ #4\par\end{minipage}\par}
+\newcommand\HistoricalReadingDialogue[2]{\par{\parindent=0pt\parskip=0pt%
+ \renewcommand\QuestionIndent{0pt}\renewcommand\QuestionContinuationIndent{0pt}%
+ \renewcommand\DialogueContinuationPullback{0pt}\renewcommand\DialogueSpeakerAlignment{l}%
+ \leftskip=#1em\relax\advance\linewidth by-#1em\relax #2\par}}
+\newcommand\HistoricalDialogueOpeningLabel[1]{\leavevmode\llap{\makebox[2.5em][l]{{\PassageNumerals #1}}}}
+\newcommand\HistoricalDialogueScene[1]{\par\addvspace{12pt}{\leftskip=2.5em\relax\parindent=0pt\noindent #1\par}\nobreak\vspace{12pt}}
+\newsavebox\HistoricalGlossaryRight
+\newlength\HistoricalGlossaryHeight
+\newcommand\HistoricalGlossaryTriplet[4]{\par\noindent{\fontsize{\NoteSize}{\NoteBaseline}\selectfont%
+ \sbox\HistoricalGlossaryRight{\begin{minipage}[t]{.44\linewidth}\vspace{0pt}\noindent%
+  \begin{minipage}[t]{.34\linewidth}\vspace{1.8em}\parindent=0pt #2\par\end{minipage}\hspace{.02\linewidth}%
+  \begin{minipage}[t]{.42\linewidth}\vspace{0pt}#3\par\end{minipage}\end{minipage}}%
+ \HistoricalGlossaryHeight=\dimexpr\ht\HistoricalGlossaryRight+\dp\HistoricalGlossaryRight\relax%
+ \begin{minipage}[t][\HistoricalGlossaryHeight][t]{\linewidth}\vspace{0pt}\noindent%
+  \begin{minipage}[t]{.55\linewidth}\vspace{0pt}#1\end{minipage}\hfill%
+  \raisebox{0pt}[0pt][0pt]{\usebox\HistoricalGlossaryRight}\par\nointerlineskip\vspace{\NoteBaseline pt}\noindent%
+  \begin{minipage}[t]{.55\linewidth}\vspace{0pt}#4\end{minipage}\par%
+ \end{minipage}\par}\vspace{8pt}}
+\newcommand\HistoricalFrameRule{.5pt}
+\newcommand\HistoricalFrameIndent{1em}
+\newcommand\HistoricalFrameBefore{7pt}
+\newcommand\HistoricalFrameAfter{7pt}
+\newcommand\HistoricalFrameXPadding{8pt}
+\newcommand\HistoricalFrameYPadding{6pt}
+\newcommand\HistoricalPassageFrameStyle{\renewcommand\HistoricalFrameRule{.9pt}\renewcommand\HistoricalFrameIndent{1em}}
+\newcommand\HistoricalAlternativeFrameStyle{\renewcommand\HistoricalFrameRule{.4pt}\renewcommand\HistoricalFrameIndent{0em}\renewcommand\HistoricalFrameBefore{3pt}\renewcommand\HistoricalFrameAfter{3pt}\renewcommand\HistoricalFrameYPadding{3pt}}
+\newcommand\HistoricalOrderSequence[1]{\par{\centering\fontsize{\BodySize}{15}\selectfont\setlength\parindent{0pt}#1\par}\vspace{6pt}}
+% H22-D01: source-attached connector, independent from clearance to the first slot.
+\newcommand\HistoricalConnectorLength{10pt}
+\newcommand\HistoricalConnectorWidth{8pt}
+\newcommand\HistoricalConnectorStem{4pt}
+\newcommand\HistoricalConnectorSlotClearance{3pt}
+\newcommand\HistoricalConnectedFrame[3]{\par\addvspace{\HistoricalFrameBefore}\noindent
+ \begin{tikzpicture}
+  \node[draw,line width=\HistoricalFrameRule,#1,inner xsep=\HistoricalFrameXPadding,inner ysep=\HistoricalFrameYPadding,outer sep=0pt](historicalconnectedframe){%
+   \begin{minipage}{\dimexpr\linewidth-17pt\relax}\setlength\parindent{\HistoricalFrameIndent}#2\par\end{minipage}};
+  \begin{scope}[shift={(historicalconnectedframe.south)}]
+   \fill (-.5*\HistoricalConnectorStem,0)--(.5*\HistoricalConnectorStem,0)
+    --(.5*\HistoricalConnectorStem,-.58*\HistoricalConnectorLength)
+    --(.5*\HistoricalConnectorWidth,-.58*\HistoricalConnectorLength)
+    --(0,-\HistoricalConnectorLength)
+    --(-.5*\HistoricalConnectorWidth,-.58*\HistoricalConnectorLength)
+    --(-.5*\HistoricalConnectorStem,-.58*\HistoricalConnectorLength)--cycle;
+  \end{scope}
+ \end{tikzpicture}\par\nobreak\nointerlineskip\vspace{\HistoricalConnectorSlotClearance}%
+ \HistoricalOrderSequence{#3}}
+\newcommand\HistoricalExampleLabelGap{1.4em}
+\newcommand\HistoricalExampleExplanationBefore{10pt}
+\newcommand\HistoricalExampleAnswerIndent{3em}
+\newcommand\HistoricalExampleLabel[1]{{\InstructionLatin\InstructionJapanese #1}}
+\newcommand\HistoricalExamplePrompt[2]{\par\noindent\HistoricalExampleLabel{#1}\hspace{\HistoricalExampleLabelGap}#2\par}
+\newsavebox\HistoricalExamplePromptLabel
+\newcommand\HistoricalHangingExamplePrompt[2]{\par\begingroup
+ \sbox\HistoricalExamplePromptLabel{\HistoricalExampleLabel{#1}}%
+ \hangindent=\dimexpr\wd\HistoricalExamplePromptLabel+\HistoricalExampleLabelGap\relax\hangafter=1
+ \noindent\usebox\HistoricalExamplePromptLabel\hspace{\HistoricalExampleLabelGap}#2\par\endgroup}
+\newcommand\HistoricalFramedExample[6]{\par\noindent
+ \begin{minipage}[t]{#1}\vspace{0pt}\HistoricalExampleLabel{#5}\end{minipage}%
+ \begin{minipage}[t]{\dimexpr\linewidth-#1\relax}\vspace{0pt}\noindent
+ \begin{tikzpicture}\node[draw,line width=#4,inner xsep=#2,inner ysep=#3,outer sep=0pt]{
+  \begin{minipage}{\dimexpr\linewidth-#2-#2-#4-#4\relax}\setlength\parindent{0pt}#6\par\end{minipage}};
+ \end{tikzpicture}\end{minipage}\par\addvspace{7pt}}
+\newcommand\HistoricalExampleTargetRow[4]{\par\nointerlineskip\noindent
+ \hspace*{#1}\begin{minipage}[t]{\dimexpr\linewidth-#1\relax}\vspace{0pt}\noindent
+ \begin{minipage}[t]{#2}\vspace{0pt}\parindent=0pt\strut #3\strut\par\end{minipage}%
+ \begin{minipage}[t]{\dimexpr\linewidth-#2\relax}\vspace{0pt}\parindent=0pt #4\par\end{minipage}
+ \end{minipage}\par\nointerlineskip}
+\newcommand\HistoricalExampleChoices[2]{\par\nointerlineskip\noindent
+ \hspace*{#1}\begin{minipage}[t]{\dimexpr\linewidth-#1\relax}\vspace{0pt}#2\par\end{minipage}\par\nointerlineskip}
+\newcommand\HistoricalExampleExplanationStart{\par\addvspace{\HistoricalExampleExplanationBefore}}
+\newcommand\HistoricalExampleExplanation[1]{\par{\ifdim\HistoricalExampleExplanationTracking>0pt\relax\ltjsetparameter{kanjiskip=\HistoricalExampleExplanationTracking}\fi\parindent=1em\indent #1\par}}
+\renewcommand\AnswerExampleLabel[1]{\makebox[\AnswerLabelWidth][c]{\ltjsetruby{intergap=0,ybaseheight=\AnswerLabelRubyBaseHeight}\HistoricalExampleLabel{#1}}}
+\renewcommand\AnswerLine[2]{\par\nointerlineskip\vspace{\AnswerBefore}\noindent\hspace*{\HistoricalExampleAnswerIndent}#1\hspace{1.4em}{\fontsize{\BodySize}{\AnswerBaseline}\selectfont\setlength\tabcolsep{\AnswerColsep}\renewcommand\arraystretch{1.15}\begin{tabular}{|l|llll|}\hline #2\\\hline\end{tabular}}\par}
+\newsavebox\HistoricalComponentBox
+\newcommand\HistoricalFramed[2]{\par\addvspace{\HistoricalFrameBefore}\noindent
+ \begin{tikzpicture}\node[draw,line width=\HistoricalFrameRule,#1,inner xsep=\HistoricalFrameXPadding,inner ysep=\HistoricalFrameYPadding,outer sep=0pt]{
+  \begin{minipage}{\dimexpr\linewidth-17pt\relax}\setlength\parindent{\HistoricalFrameIndent}#2\par\end{minipage}};
+ \end{tikzpicture}\par\addvspace{\HistoricalFrameAfter}}
+\newcommand\HistoricalFragmentWidth{1}
+\newcommand\HistoricalLabeledFrame[3]{\par\addvspace{8pt}\noindent
+ \begin{minipage}[t]{1.6em}\vspace{6pt}#1\end{minipage}%
+ \begin{minipage}[t]{\dimexpr\HistoricalFragmentWidth\linewidth-1.6em\relax}\vspace{0pt}\HistoricalFramed{#2}{#3}\end{minipage}\par\addvspace{7pt}}
+\newcommand\HistoricalBracket[2]{\par\addvspace{5pt}\noindent
+ \sbox\HistoricalComponentBox{\begin{minipage}{\dimexpr\linewidth-2em\relax}\setlength\parindent{1em}#2\par\end{minipage}}%
+ \begin{tikzpicture}[baseline=(body.north)]
+  \node[inner sep=0pt,outer sep=0pt,anchor=north west](body)at(0,0){\usebox\HistoricalComponentBox};
+  \draw[line width=.5pt] ($(body.north west)+(-2pt,0)$)--($(body.north west)+(-8pt,0)$)--($(body.south west)+(-8pt,0)$)--($(body.south west)+(-2pt,0)$);
+  \node[anchor=east,inner sep=0pt]at($(body.west)+(-12pt,0)$){#1};
+ \end{tikzpicture}\par\addvspace{5pt}}
+\newcommand\HistoricalNumberedBracket[2]{\par\addvspace{5pt}\noindent
+ \sbox\HistoricalComponentBox{\begin{minipage}{\linewidth}\setlength\parindent{1em}#2\par\end{minipage}}%
+ \begin{tikzpicture}[baseline=(body.north)]
+  \node[inner sep=0pt,outer sep=0pt,anchor=north west](body)at(0,0){\usebox\HistoricalComponentBox};
+  \draw[line width=.5pt] ($(body.north west)+(-2pt,0)$)--($(body.north west)+(-8pt,0)$)--($(body.west)+(-8pt,9pt)$);
+  \draw[line width=.5pt] ($(body.west)+(-8pt,-9pt)$)--($(body.south west)+(-8pt,0)$)--($(body.south west)+(-2pt,0)$);
+  \node[anchor=center,inner sep=0pt]at($(body.west)+(-8pt,0)$){#1};
+  \pgfresetboundingbox\path[use as bounding box](body.north west)rectangle(body.south east);
+ \end{tikzpicture}\par\addvspace{5pt}}
+\newcounter{HistoricalSlot}
+\newcommand\HistoricalSlotBottom{2em}
+\newcommand\HistoricalContinuationSlot[2]{\par\addvspace{7pt}\noindent
+ \begin{minipage}{\linewidth}\stepcounter{HistoricalSlot}%
+  \edef\HistoricalSlotName{historical-slot-\arabic{HistoricalSlot}}%
+  \setlength\parindent{1em}#1\tikz[remember picture,overlay]{\coordinate(\HistoricalSlotName);}\par\nointerlineskip\noindent
+  \begin{tikzpicture}[remember picture]
+   \path[use as bounding box](0,-\dimexpr\HistoricalSlotBottom+.4em\relax)rectangle(\linewidth,0);
+   \coordinate(slotleft)at(0,0);\coordinate(slotright)at(\linewidth,0);
+   \draw[line width=.5pt]
+    ($(\HistoricalSlotName)+(.3em,.8em)$)--($(slotright|-\HistoricalSlotName)+(0,.8em)$)--($(slotright)+(0,-\HistoricalSlotBottom)$)--(0,-\HistoricalSlotBottom)--($(slotleft|-\HistoricalSlotName)+(0,-.45em)$)--($(\HistoricalSlotName)+(.3em,-.45em)$)--cycle;
+   \coordinate(slotstep)at($(slotleft|-\HistoricalSlotName)+(0,-.45em)$);
+   \coordinate(slotbottom)at(0,-\HistoricalSlotBottom);
+   \node at($(slotstep)!.5!(slotbottom)+(.5\linewidth,0)$){#2};
+  \end{tikzpicture}\par
+ \end{minipage}\par\addvspace{7pt}}
+\newsavebox\HistoricalVerticalBox
+\newcommand\HistoricalVerticalInset[6]{\par\nobreak\begin{center}%
+ \fontsize{\VerticalBodySize}{\VerticalBodySize}\selectfont
+ \sbox\HistoricalVerticalBox{\hbox{\tate\vbox{\hsize=#1\zw
+  \leftskip=0pt\rightskip=0pt\parfillskip=0pt plus 1fil\parindent=1\zw
+  \baselineskip=#2\zw\parshape #3 #4\par}}}%
+ \begin{tikzpicture}
+  \node[draw,line width=.5pt,inner sep=6pt,outer sep=0pt,anchor=north west](body)at(0,0){\usebox\HistoricalVerticalBox};
+  \node[anchor=south east,inner sep=0pt,outer sep=0pt]at($(body.south east)+(-6pt,6pt)$){\begin{minipage}{#5}#6\end{minipage}};
+ \end{tikzpicture}\end{center}\par}

@@ -1,0 +1,49 @@
+{
+  "unit": "N1_07_2026",
+  "sources": [
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\2016.12\\N1能力考试计算方法.xlsx",
+      "sha256": "509844a08048d2cb05c14dd4645d8a885a027af4caa2cc5f4f4b0fcf640e092b",
+      "Tier": "unranked",
+      "bytes": 9627,
+      "aliases": [
+        "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\N1能力考试计算方法.xlsx",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\N1能力考试计算方法.xlsx",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\N1能力考试计算方法.xlsx"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\N1答题卡.pdf",
+      "sha256": "99d0ff9ea60c01b3c211c680c0c527a1604e0c91a52ece360e2873186b8dcef9",
+      "Tier": "unranked",
+      "bytes": 683222,
+      "aliases": [
+        "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\N1答题卡.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\N1答题卡.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\N1答题卡.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N1\\N1_multiple\\PaddleOCR\\pdf_2",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\2026\\2026.07\\2026年7月N1真题.pdf",
+      "sha256": "1f453d653e177bdc8a08278d231b6ef3cbc670c3c65628ac2c290f8ac50d54b1",
+      "Tier": 1,
+      "bytes": 5944615,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2026\\PaddleOCR\\pdf_2",
+      "VisionOCR": "preprocess\\N1\\N1_07_2026\\VisionOCR\\pdf_2"
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\2026\\2026.07\\答案解析和听力原文\\2026年7月N1真题答案+解析+听力原文.pdf",
+      "sha256": "023418e1842e4cf9707a8e1eae79be61c445f960126f6be48391b0a68c50561c",
+      "Tier": 3,
+      "bytes": 7593107,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2026\\PaddleOCR\\pdf_3",
+      "VisionOCR": "preprocess\\N1\\N1_07_2026\\VisionOCR\\pdf_3"
+    }
+  ]
+}

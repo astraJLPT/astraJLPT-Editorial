@@ -1,0 +1,27 @@
+# Generated native renditions are already installed under astraJLPT/assets/.
+/gitignored_docs/
+/pdf-render/output/
+/pdf-render/outputnorubi/
+/pdf-render/runtime/
+/pdf-render/work/
+/pdf-render/staging/
+/pdf-render/diagnostics/
+/pdf-render/evidence/
+/astraJLPT/work/
+/astraJLPT/data/
+/astraJLPT/build-manifest.json
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+.DS_Store
+Thumbs.db
+*.log
+*.aux
+*.fls
+*.ltjruby
+*.out
+*.synctex.gz
+

@@ -1,0 +1,89 @@
+{
+  "contract": "historical-artwork-1.0",
+  "id": "N1_1994-enrolment-3",
+  "kind": "university_enrolment_option",
+  "unit": "N1_1994",
+  "item_id": "reading-q018",
+  "source": {
+    "source_path": "src/CodexDownloads/UserApprovedReferenceScans/日本語能力1991～1999年試験問題集1級.pdf",
+    "source_sha256": "8560bf8ef92b4e2d58559b3e14882b76d3307586f5d55b0e7fa33cc2f5fa931f",
+    "physical_page": 169
+  },
+  "raw_crop": {
+    "path": "preprocess/assets/handoff27/written/N1_1994/enrolment-option-3-source.png",
+    "sha256": "9664cb8bc37329892c996280e1d5fa39170eb29b9c384eaedcaf77c8f3d52c5c"
+  },
+  "selection_note": "Native TeX axes,series,compactfilledmarkers,andsearchableJapanese/yearlabels;originalone-bitcropretainedunchanged.",
+  "limits": "Unlabelledvertexpositionsareapproximatepixeltraces,notexactpercentagedata. Nativefilleddiamond/circle/squareformsregularizetheverysmallscanmarks; exactoriginalpoint/fontoutlinesareunverified. No numeric values added to chart.",
+  "data": {
+    "option": 3,
+    "coordinate_status": "approximate_digitization_not_exact_historical_data",
+    "years": [
+      1965,
+      1970,
+      1975,
+      1980,
+      1985,
+      1990
+    ],
+    "x_pixels": [
+      59,
+      103,
+      147,
+      191,
+      236,
+      281
+    ],
+    "baseline_pixel": 270,
+    "tick_pixels_per_ten": 44.2,
+    "printed_y_ticks": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ],
+    "y_axis_top_pixel": 8,
+    "series": [
+      {
+        "label": "男子",
+        "line": "short_dashed",
+        "marker": "diamond",
+        "y_pixels": [
+          174,
+          148,
+          82,
+          90,
+          93,
+          101
+        ]
+      },
+      {
+        "label": "全体",
+        "line": "solid",
+        "marker": "circle",
+        "y_pixels": [
+          199,
+          174,
+          102,
+          106,
+          106,
+          109
+        ]
+      },
+      {
+        "label": "女子",
+        "line": "dash_dot",
+        "marker": "square",
+        "y_pixels": [
+          224,
+          197,
+          133,
+          128,
+          124,
+          116
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+# Hash-bound release inputs must survive checkout without newline conversion.
+* -text
+*.pdf binary
+*.png binary
+*.webp binary
+*.jpg binary
+*.woff binary
+*.ttf binary
+*.otf binary
+*.ttc binary
+*.gz binary
+*.zip binary
+

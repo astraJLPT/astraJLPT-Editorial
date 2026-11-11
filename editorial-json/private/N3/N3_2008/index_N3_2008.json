@@ -1,0 +1,143 @@
+{
+  "unit": "N3_2008",
+  "sources": [
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N3\\2008\\2008年日语三级听力原文.pdf",
+      "sha256": "2598a13bb86ea91736092aa7717a945de57bca152b8a507a03f124670ea3d588",
+      "Tier": "unranked",
+      "bytes": 145335,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N3真题\\1991年-2009年\\2008年\\2008年日语三级听力原文.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N3历年真题\\1991~2009\\2008\\2008年日语三级听力原文.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N3\\N3_2008\\PaddleOCR\\pdf_1",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N3\\2008\\2008年真题加答案\\2008n3真题.pdf",
+      "sha256": "9d79b2f6227494b2ccca061040e5f8188dbee2d113f44ff996212378e8f6388d",
+      "Tier": 2,
+      "bytes": 190599,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N3真题\\1991年-2009年\\2008年\\2008年真题加答案\\2008n3真题.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N3历年真题\\1991~2009\\2008\\2008年真题加答案\\2008n3真题.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N3\\N3_2008\\PaddleOCR\\pdf_2",
+      "VisionOCR": "preprocess\\N3\\N3_2008\\VisionOCR\\pdf_2"
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N3\\2008\\2008年真题加答案\\真题答案3.pdf",
+      "sha256": "b1738c874d1f6dd786c5b4deba2228d0595be76a515d3cd8013643b65593dbf5",
+      "Tier": "unranked",
+      "bytes": 183221,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N3真题\\1991年-2009年\\2008年\\2008年真题加答案\\真题答案3.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N3历年真题\\1991~2009\\2008\\2008年真题加答案\\真题答案3.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N3\\N3_2008\\PaddleOCR\\pdf_3",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src/CodexDownloads/UserApprovedReferenceScans/pdf-jlpt3-4kyuu2008_compress.pdf",
+      "sha256": "90f934091cf24e333a6a05e58e8c047fc1562793aa07265245562882e0bc6d0f",
+      "Tier": "unranked",
+      "bytes": 14098762,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "display_title": "Levels 3-4, 2008",
+      "source_role": "historical_question_volume",
+      "acquisition_batch": "reference_scan_hunt_1984-2009_2026-10-23_RC04",
+      "provenance_records": [
+        "preprocess/audit_runs/2026-10-23_reference_scan_rc04_approvals/approvals.json"
+      ],
+      "source_urls": [
+        "https://www.scribd.com/document/830864033/JLPT3-4KYUU2008"
+      ],
+      "previous_paths": [],
+      "filename_at_acquisition": "pdf-jlpt3-4kyuu2008_compress.pdf",
+      "filename_note": "User-supplied display filename preserved; attachment transport numbering omitted. Exact supplied PDF bytes retained.",
+      "source_url_note": "Previously proposed Scribd lead, supplied by the user as a chat attachment; upstream byte identity is not independently established.",
+      "pages": 134,
+      "reference_registry": "preprocess/user_approved_reference_scans.md",
+      "reference_id": "RC04_2008_L3_L4",
+      "historical_coverage": [
+        {
+          "level": 3,
+          "year": 2008
+        },
+        {
+          "level": 4,
+          "year": 2008
+        }
+      ],
+      "h19_preparation": {
+        "unit": "N3_2008",
+        "sitting": {
+          "year": 2008,
+          "month": 12
+        },
+        "sitting_attribution": {
+          "basis": "Inspected source section covers establish the year and old level. Official JLPT 2011 guide physical 2 states that through 2008 the test was held once annually in December. Month is attributed from that schedule, not from the storage ID or scan container.",
+          "source_url": "https://www.jlpt.jp/reference/pdf/guide2011.pdf",
+          "locator": "Physical 2 (printed 01-02), 日本語能力試験とは? footnote",
+          "access": "Official PDF text retrieved by web tool on 23 October 2026; local download was socket-restricted, so no local-original hash is claimed.",
+          "source_cover_pages": [
+            6,
+            32
+          ],
+          "source_sha256": "90f934091cf24e333a6a05e58e8c047fc1562793aa07265245562882e0bc6d0f"
+        },
+        "sections": {
+          "vocab": [
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "reading": [
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            40,
+            41,
+            42,
+            43
+          ]
+        },
+        "section_covers": [
+          6,
+          32
+        ],
+        "listening_excluded": [
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "mixed_page_regions": {},
+        "exclusions": "All pages outside the two written section lists; section covers recorded separately. Listening, pattern pages, forms and administrative/back matter excluded. Keys may be consulted only as fallible answer evidence. Handwriting, stamps, folios, watermarks, skew, gutter shadows and facing fragments are not layout authority.",
+        "run_id": "2026-10-23_handoff19"
+      }
+    }
+  ]
+}

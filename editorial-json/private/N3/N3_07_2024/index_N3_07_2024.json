@@ -1,0 +1,328 @@
+{
+  "unit": "N3_07_2024",
+  "sources": [
+    {
+      "path": "src\\munjaJLPT\\N3\\2024-07_N3\\2024-07_N3.json",
+      "sha256": "759589b9f71cfcd02bd03730009d8599dd274f56dea4d8c51199383ae9c8fec4",
+      "Tier": "unranked",
+      "bytes": 191338,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N3 các năm Yuuki Bùi\\N3 7-2024\\Script Nghe đề N3 T7-2024.pdf",
+      "sha256": "9bb0caddf1842b769225d161255e2685984e2805a7e283e77e21ff53f5ef34e8",
+      "Tier": "unranked",
+      "bytes": 451904,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N3\\N3_07_2024\\PaddleOCR\\pdf_1",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N3 các năm Yuuki Bùi\\N3 7-2024\\Đáp án N3 T7-2024 Ver 2.0.pdf",
+      "sha256": "ef3d4eb04dae059c1a30d95628854121029f151e0d35ae248bd1cdb52a2eae71",
+      "Tier": "unranked",
+      "bytes": 754512,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N3\\N3_07_2024\\PaddleOCR\\pdf_2",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N3 các năm Yuuki Bùi\\N3 7-2024\\Đề N3 T7-2024 [Mark] Ver 2.0.pdf",
+      "sha256": "0180363a99c7ef962839191787ba6a77863bd86b44b982418b4d8d83810c3560",
+      "Tier": 1,
+      "bytes": 8862960,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N3\\N3_07_2024\\PaddleOCR\\pdf_3",
+      "VisionOCR": "preprocess\\N3\\N3_07_2024\\VisionOCR\\pdf_3"
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N3\\listening\\N3_07_2024_listening.html",
+      "sha256": "746c9d2d71adce875d3b798833c7a225c11d72086bfc3dfb39b55f68afe9fcff",
+      "Tier": "unranked",
+      "bytes": 93559,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N3\\reading\\N3_07_2024_reading.html",
+      "sha256": "e65a2b29f6752af2a7c199b309975112b94ac64923dcd0adbaad16a9e1849e07",
+      "Tier": "unranked",
+      "bytes": 121914,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N3\\vocab\\N3_07_2024_vocab.html",
+      "sha256": "9727d786fcddd1af1e064a559a143048feb42f6bbb28691d7ab881507b7cb6c4",
+      "Tier": "unranked",
+      "bytes": 95369,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N3真题（2010-2026.07）\\2024\\2024.07\\2024年7月N3真题.pdf",
+      "sha256": "cae148d3d5030b1ee5cfca361af46d403f211a7c43a79b96e018db7704eed308",
+      "Tier": 2,
+      "bytes": 2213367,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N3\\N3_07_2024\\PaddleOCR\\pdf_4",
+      "VisionOCR": "preprocess\\N3\\N3_07_2024\\VisionOCR\\pdf_4"
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N3真题（2010-2026.07）\\2024\\2024.07\\答案解析和听力原文\\2024年07月N3听力原文.pdf",
+      "sha256": "721fb1248a47d57d57e303938e88dd76bca6be4c0145d68792e4984c3f560488",
+      "Tier": "unranked",
+      "bytes": 895069,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N3\\N3_07_2024\\PaddleOCR\\pdf_5",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N3真题（2010-2026.07）\\2024\\2024.07\\答案解析和听力原文\\2024年07月N3答案解析.pdf",
+      "sha256": "e04db0d41e787ec7cf70624a8f2fa8457bae228fa3a3f94027e0acf7637ba239",
+      "Tier": "unranked",
+      "bytes": 1517309,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N3\\N3_07_2024\\PaddleOCR\\pdf_6",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N3真题（2010-2026.07）\\2024\\2024.07\\答案解析和听力原文\\2024年7月N3听力译文.pdf",
+      "sha256": "b9e284510c8a8dc76f383030862f38e698f0d8d4fcbbb521f3009d9b272416ea",
+      "Tier": "unranked",
+      "bytes": 1197750,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N3\\N3_07_2024\\PaddleOCR\\pdf_7",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N3真题（2010-2026.07）\\2024\\2024.07\\答案解析和听力原文\\2024年7月N3阅读译文.pdf",
+      "sha256": "89554b934f98772d50d67035ae151f3da82e0d7ba5846d15739868a1504a8013",
+      "Tier": "unranked",
+      "bytes": 1307076,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N3\\N3_07_2024\\PaddleOCR\\pdf_8",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N3真题（2010-2026.07）\\N3分数计算说明.xls",
+      "sha256": "41ca46105be02fb10a68f4089462f70bd9c587299feaf8782250c093ba5a13c3",
+      "Tier": "unranked",
+      "bytes": 26624,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N3真题\\N3分数计算说明.xls",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N3历年真题\\N3分数计算说明.xls"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N3真题（2010-2026.07）\\N3答题卡.pdf",
+      "sha256": "bfbc89f3a6c67b5f2f96269af6c8bed60b47ef86f3aa26d37e08bc61f769dc4a",
+      "Tier": "unranked",
+      "bytes": 706587,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N3真题\\N3答题卡.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N3历年真题\\N3答题卡.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N3\\N3_multiple\\PaddleOCR\\pdf_1",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N3真题\\2024年7月\\2024年07月N3听力原文.pdf",
+      "sha256": "f4866ab539a9830040ac74f999d35a7ae25372a81dc9b76c01a9cc909e30e765",
+      "Tier": "unranked",
+      "bytes": 884809,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N3\\N3_07_2024\\PaddleOCR\\pdf_10",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N3真题\\2024年7月\\2024年07月N3文字语法阅读解析.pdf",
+      "sha256": "397e1b028c445a91a92cf57618e35a5e53dbd42d514071224c1d706a5e26c1eb",
+      "Tier": "unranked",
+      "bytes": 1962907,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N3\\N3_07_2024\\PaddleOCR\\pdf_11",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N3真题\\2024年7月\\2024年07月日语N3答题卡.pdf",
+      "sha256": "3494ec0433ae887dca87a39ec43f3db304a4d9e10d82eeeb255b54cd7aa27f4e",
+      "Tier": "unranked",
+      "bytes": 768154,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N3历年真题\\2024.7\\2024年07月日语N3答题卡.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N3\\N3_07_2024\\PaddleOCR\\pdf_12",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N3真题\\2024年7月\\【1】2024年07月N3真题.pdf",
+      "sha256": "5880f756ec81317e36b667279f41cdc8eab7646f6f5be2c88a5ada71b0dd62be",
+      "Tier": 3,
+      "bytes": 43193676,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N3\\N3_07_2024\\PaddleOCR\\pdf_13",
+      "VisionOCR": "preprocess\\N3\\N3_07_2024\\VisionOCR\\pdf_13"
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N3真题\\2024年7月\\【2】2024年07月N3真题.pdf",
+      "sha256": "371d4af36b6b598c6dfd4e9fdf763ff8ad67bd6133930b6590f15e93a98a4697",
+      "Tier": 2,
+      "bytes": 2339359,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N3\\N3_07_2024\\PaddleOCR\\pdf_14",
+      "VisionOCR": "preprocess\\N3\\N3_07_2024\\VisionOCR\\pdf_14"
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N3历年真题\\2024.7\\2024年07月日语N3听力原文.pdf",
+      "sha256": "2f0b68a9641dfb2ba1b78c963f2180f714ee883806eea45d12ba9be6da6007cd",
+      "Tier": "unranked",
+      "bytes": 9780270,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N3\\N3_07_2024\\PaddleOCR\\pdf_15",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N3历年真题\\2024.7\\2024年07月日语N3真题试卷.pdf",
+      "sha256": "75c9f8fba356bc38b2ce741f3370c3c7a9f2b668f0b2f275dc201ae06e9371e7",
+      "Tier": 2,
+      "bytes": 43157643,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N3\\N3_07_2024\\PaddleOCR\\pdf_16",
+      "VisionOCR": "preprocess\\N3\\N3_07_2024\\VisionOCR\\pdf_16"
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N3历年真题\\2024.7\\2024年07月日语N3答案解析.pdf",
+      "sha256": "a1be1f47e895035ab18c03654f340617196147e135ffd6b825e7fb7625e91114",
+      "Tier": "unranked",
+      "bytes": 729822,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N3\\N3_07_2024\\PaddleOCR\\pdf_17",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N3历年真题\\2024.7\\N3-真题答案.pdf",
+      "sha256": "25b1fe9ec635bf18bc9e01bbf543dff59d95462de13a9bb91a9459a27d245295",
+      "Tier": "unranked",
+      "bytes": 12595889,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N3\\N3_07_2024\\PaddleOCR\\pdf_18",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N3\\2024-07_N3\\images\\2024-07_N3_l-p1-q01-img01.jpg",
+      "sha256": "c965111c3000ffd7874c3e4455d3e591bc5a03f8e331303e7ff198553fb940c7",
+      "Tier": "unranked",
+      "bytes": 81297,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N3\\2024-07_N3\\images\\2024-07_N3_l-p4-q01-img01.jpg",
+      "sha256": "2964160c63fa2b928c6f7892a331e15df10bc4bf56991c7eac5bb7ae055609ae",
+      "Tier": "unranked",
+      "bytes": 77393,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N3\\2024-07_N3\\images\\2024-07_N3_l-p4-q02-img01.jpg",
+      "sha256": "1ec71311a83f39a46e25b826f5693dd8fc728dbd81df4570eed718e735965f4e",
+      "Tier": "unranked",
+      "bytes": 71748,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N3\\2024-07_N3\\images\\2024-07_N3_l-p4-q03-img01.jpg",
+      "sha256": "7180bfcff173a7e1974693fc8a756009b5a704aa962b6feefa92ad1d56397116",
+      "Tier": "unranked",
+      "bytes": 53223,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N3\\2024-07_N3\\images\\2024-07_N3_l-p4-q04-img01.jpg",
+      "sha256": "2bfc9c70ea7a967f5c519c8696f904917eead8662aeab075e61043adef033178",
+      "Tier": "unranked",
+      "bytes": 65153,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N3\\2024-07_N3\\images\\2024-07_N3_s12-q01-img01.jpg",
+      "sha256": "572a7cfb1b5c94afa0f38e5ba80bdd1247c72fedb53986f76251d47def5ac716",
+      "Tier": "unranked",
+      "bytes": 145371,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N3\\2024-07_N3\\images\\2024-07_N3_s12-q01-img02.jpg",
+      "sha256": "174cd0caf3126b26d64c487cece1588d5c9d958244a673a92831c1a1ae8baa38",
+      "Tier": "unranked",
+      "bytes": 40613,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N3\\listening\\listening_images\\202407N301.png",
+      "sha256": "10c724ab7f97fac8c240d5ff3a6aba6cbaea23b2ae4610e0da3af157e7d0b318",
+      "Tier": "unranked",
+      "bytes": 56933,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N3\\listening\\listening_images\\202407N302.png",
+      "sha256": "9d13fffaaf536c5c380624df4b1a1a776c59055be0ede2b019ac796d45878313",
+      "Tier": "unranked",
+      "bytes": 55079,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N3\\listening\\listening_images\\202407N303.png",
+      "sha256": "06500e6806ae9592b7bccfa6dbc3adb4dcb79866fc78aed75c2310a87ae728bb",
+      "Tier": "unranked",
+      "bytes": 53950,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N3\\listening\\listening_images\\202407N304.png",
+      "sha256": "d471a9a2342bf4662e733cbd2cc94df5755b2d2e4db32be3a285a7a425094a71",
+      "Tier": "unranked",
+      "bytes": 37635,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N3\\listening\\listening_images\\202407N305.png",
+      "sha256": "639d6fcd6e055f315f8492140635168e13cbcf18a7d8cf8a69a5b7b80e53bf60",
+      "Tier": "unranked",
+      "bytes": 54112,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    }
+  ]
+}

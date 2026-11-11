@@ -1,0 +1,4981 @@
+{
+  "schema_version": "4.1.0",
+  "unit": "N3_2000",
+  "sections": [
+    {
+      "id": "vocab-s01",
+      "part": "vocab",
+      "heading": "問題Ⅰ　＿＿＿のことばはどうよみますか。1 2 3 4からいちばんいいものをひとつえらびなさい。",
+      "items": [
+        {
+          "id": "vocab-b001",
+          "type": "passage",
+          "content": {
+            "html": "問1・①<u>妹</u>と　いっしょに②<u>海</u>まで　③<u>走って</u>　行きました。"
+          }
+        },
+        {
+          "id": "vocab-q001",
+          "stem": "妹",
+          "options": [
+            "あに",
+            "あね",
+            "いもと",
+            "いもうと"
+          ],
+          "key": 4
+        },
+        {
+          "id": "vocab-q002",
+          "stem": "海",
+          "options": [
+            "いけ",
+            "うみ",
+            "はし",
+            "まち"
+          ],
+          "key": 2
+        },
+        {
+          "id": "vocab-q003",
+          "stem": "走って",
+          "options": [
+            "かえって",
+            "とおって",
+            "はしって",
+            "わたって"
+          ],
+          "key": 3
+        },
+        {
+          "id": "vocab-b002",
+          "type": "passage",
+          "content": {
+            "html": "問2・①<u>大使館</u>の　前に　車が　②<u>二台</u>　③<u>止まって</u>います。"
+          }
+        },
+        {
+          "id": "vocab-q004",
+          "stem": "大使館",
+          "options": [
+            "たいしかん",
+            "たいしがん",
+            "だいしかん",
+            "だいしがん"
+          ],
+          "key": 1
+        },
+        {
+          "id": "vocab-q005",
+          "stem": "二台",
+          "options": [
+            "にたい",
+            "にだい",
+            "にけん",
+            "にげん"
+          ],
+          "key": 2
+        },
+        {
+          "id": "vocab-q006",
+          "stem": "止まって",
+          "options": [
+            "きまって",
+            "こまって",
+            "しまって",
+            "とまって"
+          ],
+          "key": 4
+        },
+        {
+          "id": "vocab-b003",
+          "type": "passage",
+          "content": {
+            "html": "問3・そふは　さいきん　①<u>少し</u>②　<u>目</u>が　③<u>悪く</u>　なりました。"
+          }
+        },
+        {
+          "id": "vocab-q007",
+          "stem": "少し",
+          "options": [
+            "すくし",
+            "つくし",
+            "すこし",
+            "つこし"
+          ],
+          "key": 3
+        },
+        {
+          "id": "vocab-q008",
+          "stem": "目",
+          "options": [
+            "め",
+            "くち",
+            "はな",
+            "みみ"
+          ],
+          "key": 1
+        },
+        {
+          "id": "vocab-q009",
+          "stem": "悪く",
+          "options": [
+            "ちかく",
+            "ひどく",
+            "よわく",
+            "わるく"
+          ],
+          "key": 4
+        },
+        {
+          "id": "vocab-b004",
+          "type": "passage",
+          "content": {
+            "html": "問4・①<u>去年</u>の　②<u>お正月</u>に　母に　③<u>洋服</u>と④<u>手紙</u>を　⑤<u>送りました。</u>"
+          }
+        },
+        {
+          "id": "vocab-q010",
+          "stem": "去年",
+          "options": [
+            "きょねん",
+            "きょうねん",
+            "さくねん",
+            "さこねん"
+          ],
+          "key": 1
+        },
+        {
+          "id": "vocab-q011",
+          "stem": "お正月",
+          "options": [
+            "おしょがつ",
+            "おしょうがつ",
+            "おしょげつ",
+            "おしょうげつ"
+          ],
+          "key": 2
+        },
+        {
+          "id": "vocab-q012",
+          "stem": "洋服",
+          "options": [
+            "よふく",
+            "ようふく",
+            "よもの",
+            "ようもの"
+          ],
+          "key": 2
+        },
+        {
+          "id": "vocab-q013",
+          "stem": "手紙",
+          "options": [
+            "てがみ",
+            "てかみ",
+            "しゅがみ",
+            "しゅかみ"
+          ],
+          "key": 1
+        },
+        {
+          "id": "vocab-q014",
+          "stem": "送りました",
+          "options": [
+            "とりました",
+            "やりました",
+            "おくりました",
+            "おこりました"
+          ],
+          "key": 3
+        },
+        {
+          "id": "vocab-b005",
+          "type": "passage",
+          "content": {
+            "html": "問5・①<u>家族</u>は　②<u>今度</u>の　しけんの　てんを　③<u>知って</u>　④<u>安心</u>しました。"
+          }
+        },
+        {
+          "id": "vocab-q015",
+          "stem": "家族",
+          "options": [
+            "かそく",
+            "かすく",
+            "かぞく",
+            "かずく"
+          ],
+          "key": 3
+        },
+        {
+          "id": "vocab-q016",
+          "stem": "今度",
+          "options": [
+            "こんと",
+            "こんとう",
+            "こんど",
+            "こんどう"
+          ],
+          "key": 3
+        },
+        {
+          "id": "vocab-q017",
+          "stem": "知って",
+          "options": [
+            "いって",
+            "しって",
+            "わかって",
+            "もらって"
+          ],
+          "key": 2
+        },
+        {
+          "id": "vocab-q018",
+          "stem": "安心",
+          "options": [
+            "しいぱい",
+            "しんぱい",
+            "あんしい",
+            "あんしん"
+          ],
+          "key": 4
+        },
+        {
+          "id": "vocab-b006",
+          "type": "passage",
+          "content": {
+            "html": "問6・この　しまには　電気も　①<u>水道</u>も　なくて、せいかつは　とても②　<u>不便</u>です。"
+          }
+        },
+        {
+          "id": "vocab-q019",
+          "stem": "水道",
+          "options": [
+            "すいどう",
+            "すいとう",
+            "すいど",
+            "すいと"
+          ],
+          "key": 1
+        },
+        {
+          "id": "vocab-q020",
+          "stem": "不便",
+          "options": [
+            "くびん",
+            "くべん",
+            "ふびん",
+            "ふべん"
+          ],
+          "key": 4
+        }
+      ]
+    },
+    {
+      "id": "vocab-s02",
+      "part": "vocab",
+      "heading": "問題Ⅱ　＿＿＿のことばは　漢字を　つかって　どうかきますか。1、2、3、4からいちばん　いい　ものを　一つ　えらびなさい。",
+      "items": [
+        {
+          "id": "vocab-b007",
+          "type": "passage",
+          "content": {
+            "html": "問1・①<u>かぜ</u>が　なくなって、そらが　②<u>あかるく</u>　なりました。"
+          }
+        },
+        {
+          "id": "vocab-b008",
+          "type": "passage",
+          "content": {
+            "html": "問2・<u>日本</u>語の　①<u>じゅうしょ</u>の　②<u>かきかた</u>を　おしえてください。"
+          }
+        },
+        {
+          "id": "vocab-q024",
+          "stem": "かきかた",
+          "options": [
+            "書き力",
+            "書き刃",
+            "書き万",
+            "書き方"
+          ],
+          "key": 4
+        },
+        {
+          "id": "vocab-b009",
+          "type": "passage",
+          "content": {
+            "html": "問3・①<u>いぬ</u>が　②<u>あし</u>で　ドアを　③<u>あけました。</u>"
+          }
+        },
+        {
+          "id": "vocab-q026",
+          "stem": "あし",
+          "options": [
+            "只",
+            "肢",
+            "足",
+            "吊"
+          ],
+          "key": 3
+        },
+        {
+          "id": "vocab-q027",
+          "stem": "あけました",
+          "options": [
+            "閉けました",
+            "関けました",
+            "閑けました",
+            "開けました"
+          ],
+          "key": 4
+        },
+        {
+          "id": "vocab-b010",
+          "type": "passage",
+          "content": {
+            "html": "問4・①<u>おとうと</u>は　やさいを　②<u>りょうり</u>して　③<u>ゆうはん</u>を　④<u>つくりました。</u>"
+          }
+        },
+        {
+          "id": "vocab-q028",
+          "stem": "おとうと",
+          "options": [
+            "兄",
+            "兌",
+            "弟",
+            "第"
+          ],
+          "key": 3
+        },
+        {
+          "id": "vocab-q029",
+          "stem": "りょうり",
+          "options": [
+            "料理",
+            "科理",
+            "料埋",
+            "科埋"
+          ],
+          "key": 1
+        },
+        {
+          "id": "vocab-q030",
+          "stem": "ゆうはん",
+          "options": [
+            "夕飲",
+            "夕飯",
+            "夕餌",
+            "夕飼"
+          ],
+          "key": 2
+        },
+        {
+          "id": "vocab-b011",
+          "type": "passage",
+          "content": {
+            "html": "問5・山田さんは　①<u>せんしゅう</u>　デパートで　②<u>とけい</u>を　③<u>かった</u>と　④<u>いいました。</u>"
+          }
+        },
+        {
+          "id": "vocab-q032",
+          "stem": "せんしゅう",
+          "options": [
+            "先週",
+            "先連",
+            "先通",
+            "先遠"
+          ],
+          "key": 1
+        },
+        {
+          "id": "vocab-q033",
+          "stem": "とけい",
+          "options": [
+            "時訂",
+            "時討",
+            "時計",
+            "時記"
+          ],
+          "key": 3
+        },
+        {
+          "id": "vocab-q034",
+          "stem": "かった",
+          "options": [
+            "売った",
+            "買った",
+            "置った",
+            "貸った"
+          ],
+          "key": 2
+        },
+        {
+          "id": "vocab-q035",
+          "stem": "いいました",
+          "options": [
+            "舌いました",
+            "告いました",
+            "言いました",
+            "話いました"
+          ],
+          "key": 3
+        }
+      ]
+    },
+    {
+      "id": "vocab-s03",
+      "part": "vocab",
+      "heading": "問題Ⅲ　＿＿＿の　ところに　何を　入れますか。1、2、3、4から　いちばんいいものを　一つ　えらびなさい。",
+      "items": [
+        {
+          "id": "vocab-q036",
+          "stem": "こんしゅうの　つぎは　＿＿＿です。",
+          "options": [
+            "さらいしゅう",
+            "さいらいしゅう",
+            "らいしゅう",
+            "せんしゅう"
+          ],
+          "key": 3
+        },
+        {
+          "id": "vocab-q037",
+          "stem": "きのうは　じこで　でんしゃが　＿＿＿　たいへんでした。",
+          "options": [
+            "おくれて",
+            "おわって",
+            "いそいで",
+            "まにあって"
+          ],
+          "key": 1
+        },
+        {
+          "id": "vocab-q038",
+          "stem": "びょうきで　ねている　ともだちに「＿＿＿。」といって　かえりました。",
+          "options": [
+            "こちらこそ",
+            "おだいじに",
+            "おかげさまで",
+            "どういたしまして"
+          ],
+          "key": 2
+        },
+        {
+          "id": "vocab-q039",
+          "stem": "友だちが　来るので、テーブルに　花を＿＿＿。",
+          "options": [
+            "かたづけました",
+            "おくりました",
+            "かけました",
+            "かざりました"
+          ],
+          "key": 4
+        },
+        {
+          "id": "vocab-q040",
+          "stem": "この川は　とても　＿＿＿　から　きけんです。",
+          "options": [
+            "あさい",
+            "ふかい",
+            "ひくい",
+            "たかい"
+          ],
+          "key": 2
+        },
+        {
+          "id": "vocab-q041",
+          "stem": "大きい　こえで　はなして　いたら、「＿＿＿。」と　ちゅういされてしまいました。",
+          "options": [
+            "うるさい",
+            "あぶない",
+            "がんばって",
+            "しっかり"
+          ],
+          "key": 1
+        },
+        {
+          "id": "vocab-q042",
+          "stem": "5時に　あう＿＿＿したのに　友だちは　来ませんでした。",
+          "options": [
+            "よしゅう",
+            "よやく",
+            "よほう",
+            "やくそく"
+          ],
+          "key": 4
+        },
+        {
+          "id": "vocab-q043",
+          "stem": "わからない　ことばは　じしょで　＿＿＿　ください。",
+          "options": [
+            "よんで",
+            "きめて",
+            "しらべて",
+            "くらべて"
+          ],
+          "key": 3
+        },
+        {
+          "id": "vocab-q044",
+          "stem": "わたしは　毎朝　さんぽするのが　＿＿＿です。",
+          "options": [
+            "しゅうかん",
+            "れんしゅう",
+            "せいかつ",
+            "きょうみ"
+          ],
+          "key": 1
+        },
+        {
+          "id": "vocab-q045",
+          "stem": "おなかが　すきましたね。＿＿＿　しょくじに　行きませんか。",
+          "options": [
+            "だんだん",
+            "そろそろ",
+            "なかなか",
+            "どうどう"
+          ],
+          "key": 2
+        }
+      ]
+    },
+    {
+      "id": "vocab-s04",
+      "part": "vocab",
+      "heading": "問題Ⅳ　つぎの＿＿＿の文と　だいたい同じ　いみの　文は　どれですか。1、2、3、4からいちばん　いい　ものを　一つ　えらびなさい。",
+      "items": [
+        {
+          "id": "vocab-q046",
+          "stem": {
+            "html": "<u>この　へやには　いしゃと　かんごふ　いがいは　入らないで　ください。</u>"
+          },
+          "options": [
+            "この　へやには　だれが　入っても　いいです。",
+            "この　へやには　だれも　入っては　いけません。",
+            "この　へやには　いしゃと　かんごふは　入っては　いけません。",
+            "この　へやには　いしゃと　かんごふは　入っても　いいです。"
+          ],
+          "key": 4
+        },
+        {
+          "id": "vocab-q047",
+          "stem": {
+            "html": "<u>先生は　クラスに　来なかった　わけを　聞きました。</u>"
+          },
+          "options": [
+            "先生は　いつ　クラスに　来なかったのか　たずねました。",
+            "先生は　だれが　クラスに　来なかったのか　たずねました。",
+            "先生は　どのぐらい　クラスに　来なかったのか　たずねました。",
+            "先生は　どうして　クラスに　来なかったのか　たずねました。"
+          ],
+          "key": 4
+        },
+        {
+          "id": "vocab-q048",
+          "stem": {
+            "html": "<u>日本語は　ほとんど　わすれて　しまいました。</u>"
+          },
+          "options": [
+            {
+              "html": "<u>日本</u>語は　なにも　おぼえて　いません。"
+            },
+            {
+              "html": "<u>日本</u>語は　すこししか　おぼえて　いません。"
+            },
+            {
+              "html": "<u>日本</u>語は　ぜんぶ　わすれて　しまいました。"
+            },
+            {
+              "html": "<u>日本</u>語は　すっかり　わすれて　しまいました。"
+            }
+          ],
+          "key": 2
+        },
+        {
+          "id": "vocab-q049",
+          "stem": {
+            "html": "<u>ずっと　そとに　いたので、からだが　ひえて　しまいました。</u>"
+          },
+          "options": [
+            "そとは　あつかったです。",
+            "そとは　くらかったです。",
+            "そとは　さむかったです。",
+            "そとは　あかるかったです。"
+          ],
+          "key": 3
+        },
+        {
+          "id": "vocab-q050",
+          "stem": {
+            "html": "<u>友だちをむかえにくうこうへ行きました。</u>"
+          },
+          "options": [
+            "くうこうで　友だちに　あいました。",
+            "くうこうで　友だちを　おくりました。",
+            "くうこうで　友だちを　見ました。",
+            "くうこうで　友だちと　わかれました。"
+          ],
+          "key": 1
+        }
+      ]
+    },
+    {
+      "id": "vocab-s05",
+      "part": "vocab",
+      "heading": "問題Ⅴ　つぎの　①から　⑤の　言葉の　つかいかたで　いちばん　いい　ものを　一つ　えらびなさい。",
+      "items": [
+        {
+          "id": "vocab-q051",
+          "stem": "おおい",
+          "options": [
+            {
+              "html": "<u>日本</u>には　<u>おおい</u>　外国人が　すんで　います。"
+            },
+            {
+              "html": "ここは　車が　<u>おおくて</u>　あぶないです。"
+            },
+            {
+              "html": "きょうは　<u>おおく</u>　つかれました。"
+            },
+            {
+              "html": "わたしには　<u>おおい</u>の　こどもが　いて　たいへんです。"
+            }
+          ],
+          "key": 2
+        },
+        {
+          "id": "vocab-q052",
+          "stem": "げんき",
+          "options": [
+            {
+              "html": "わたしは　あしが　<u>げんき</u>です。"
+            },
+            {
+              "html": "この　車は　とても　<u>げんき</u>に　はしります。"
+            },
+            {
+              "html": "この　くすりを　のめば　<u>げんき</u>に　なります。"
+            },
+            {
+              "html": "わたしの　かいしゃは　とても　<u>げんき</u>です。"
+            }
+          ],
+          "key": 3
+        },
+        {
+          "id": "vocab-q053",
+          "stem": "さむい",
+          "options": [
+            {
+              "html": "<u>さむい</u>　タオルで　かおを　ふきました。"
+            },
+            {
+              "html": "なつは　<u>さむい</u>　ビールが　おいしいですね。"
+            },
+            {
+              "html": "あの　人は　<u>さむい</u>です。やさしく　ありません。"
+            },
+            {
+              "html": "きょうは　とくに　<u>さむい</u>ですね。"
+            }
+          ],
+          "key": 4
+        },
+        {
+          "id": "vocab-q054",
+          "stem": "せんたく",
+          "options": [
+            {
+              "html": "しょくじの　あとに、はを　<u>せんたく</u>します。"
+            },
+            {
+              "html": "日よう日に　シャツと　ズボンを　<u>せんたく</u>します。"
+            },
+            {
+              "html": "毎日　へやを　<u>せんたく</u>します。"
+            },
+            {
+              "html": "こんばんは　かみを　<u>せんたく</u>します。"
+            }
+          ],
+          "key": 2
+        },
+        {
+          "id": "vocab-q055",
+          "stem": "ゆっくり",
+          "options": [
+            {
+              "html": "もっと　<u>ゆっくり</u>と　はなして　ください。"
+            },
+            {
+              "html": "もっと　<u>ゆっくり</u>に　はなして　ください。"
+            },
+            {
+              "html": "もっと　<u>ゆっくり</u>を　はなして　ください。"
+            },
+            {
+              "html": "もっと　<u>ゆっくり</u>で　はなして　ください。"
+            }
+          ],
+          "key": 1
+        }
+      ]
+    },
+    {
+      "id": "reading-s01",
+      "part": "reading",
+      "heading": "問題Ⅰ　＿＿＿の　ところに　何を　いれますか。1、2、3、4から　いちばんいい　ものを　一つ　えらびなさい。",
+      "items": [
+        {
+          "id": "reading-q001",
+          "stem": "3時間＿＿＿歩いたので、のどが かわきました。",
+          "options": [
+            "も",
+            "と",
+            "に",
+            "を"
+          ],
+          "key": 1
+        },
+        {
+          "id": "reading-q002",
+          "stem": "おばあさんが 元気だ＿＿＿いいんだけどね。",
+          "options": [
+            "で",
+            "か",
+            "が",
+            "と"
+          ],
+          "key": 4
+        },
+        {
+          "id": "reading-q003",
+          "stem": "この ピアノは へんな 音＿＿＿します。",
+          "options": [
+            "が",
+            "に",
+            "を",
+            "で"
+          ],
+          "key": 1
+        },
+        {
+          "id": "reading-q004",
+          "stem": "かお色が 悪いけど どう した＿＿＿。",
+          "options": [
+            "の",
+            "な",
+            "かい",
+            "だい"
+          ],
+          "key": 1
+        },
+        {
+          "id": "reading-q005",
+          "stem": "そんな きたない 服、 着る＿＿＿。",
+          "options": [
+            "だよ",
+            "なよ",
+            "だか",
+            "ないか"
+          ],
+          "key": 2
+        },
+        {
+          "id": "reading-q006",
+          "stem": "新しい カメラを 買わないで、わたしのを 使えば よかった＿＿＿。",
+          "options": [
+            "まで",
+            "でも",
+            "のに",
+            "だけ"
+          ],
+          "key": 3
+        },
+        {
+          "id": "reading-q007",
+          "stem": "とても かんたんな 料理だから3分 ＿＿＿できますよ。",
+          "options": [
+            "に",
+            "で",
+            "ほど",
+            "ぐらい"
+          ],
+          "key": 2
+        },
+        {
+          "id": "reading-q008",
+          "stem": "もう おそい＿＿＿、つかれたから、 まっすぐ うちに 帰ろう。",
+          "options": [
+            "と",
+            "し",
+            "が",
+            "で"
+          ],
+          "key": 2
+        },
+        {
+          "id": "reading-q009",
+          "stem": "わたしは できませんが むすこ＿＿＿やらせてみましょう。",
+          "options": [
+            "を",
+            "が",
+            "に",
+            "で"
+          ],
+          "key": 3
+        },
+        {
+          "id": "reading-q010",
+          "stem": "バイオリン＿＿＿ギター＿＿＿どちらが やさしいですか。",
+          "options": [
+            "や/や",
+            "と/と",
+            "が/が",
+            "も/も"
+          ],
+          "key": 2
+        },
+        {
+          "id": "reading-q011",
+          "stem": "その 道＿＿＿、右へ 行くと、駅が あります。",
+          "options": [
+            "で",
+            "へ",
+            "に",
+            "を"
+          ],
+          "key": 4
+        },
+        {
+          "id": "reading-q012",
+          "stem": "朝 早く さんぽするの＿＿＿すきなんです。",
+          "options": [
+            "に",
+            "で",
+            "が",
+            "を"
+          ],
+          "key": 3
+        },
+        {
+          "id": "reading-q013",
+          "stem": "きっぷを どこで 買う＿＿＿教えて ください。",
+          "options": [
+            "と",
+            "も",
+            "を",
+            "か"
+          ],
+          "key": 4
+        },
+        {
+          "id": "reading-q014",
+          "stem": "ちょっと 見る＿＿＿かんたんそうだけれども、ほんとうは むずかしい。",
+          "options": [
+            "と",
+            "ば",
+            "が",
+            "は"
+          ],
+          "key": 1
+        },
+        {
+          "id": "reading-q015",
+          "stem": "「もしもし。みちこさん、いらっしゃいますか。」「みちこですか。 みちこ＿＿＿もう 出かけましたけれど」。",
+          "options": [
+            "が",
+            "を",
+            "でも",
+            "なら"
+          ],
+          "key": 4
+        }
+      ]
+    },
+    {
+      "id": "reading-s02",
+      "part": "reading",
+      "heading": "問題Ⅱ　＿＿＿の　ところに　何を　いれますか。1、2、3、4から　いちばんいい　ものを　一つ　えらびなさい。",
+      "items": [
+        {
+          "id": "reading-q016",
+          "stem": "こちらの ワイシャツの ほうが 少し＿＿＿ございます。",
+          "options": [
+            "お高う",
+            "お高い",
+            "高いに",
+            "高いで"
+          ],
+          "key": 1
+        },
+        {
+          "id": "reading-q017",
+          "stem": "わたしは 山田先生を６時まで ここで＿＿＿。",
+          "options": [
+            "お待ちいたします",
+            "お待ちいただきます",
+            "お待たせになります",
+            "お待たせいただきます"
+          ],
+          "key": 1
+        },
+        {
+          "id": "reading-q018",
+          "stem": "弟は けさ ご飯を＿＿＿学校へ 行きました。",
+          "options": [
+            "食べずで",
+            "食べずに",
+            "食べなくて",
+            "食べなしで"
+          ],
+          "key": 2
+        },
+        {
+          "id": "reading-q019",
+          "stem": "まだ そうじが 終わらないから 教室へ＿＿＿だめだよ。",
+          "options": [
+            "入って",
+            "入った",
+            "入るは",
+            "入っちゃ"
+          ],
+          "key": 4
+        },
+        {
+          "id": "reading-q020",
+          "stem": "その かばんの ＿＿＿に おどろいた。",
+          "options": [
+            "かるい",
+            "かるく",
+            "かるさ",
+            "かるくて"
+          ],
+          "key": 3
+        },
+        {
+          "id": "reading-q021",
+          "stem": "いやでも テストは うけ＿＿＿。",
+          "options": [
+            "ないでは だめです",
+            "なくては いけません",
+            "ないでは なりません",
+            "ないては すみません"
+          ],
+          "key": 2
+        },
+        {
+          "id": "reading-q022",
+          "stem": "すいえいは ぼくが 教えて＿＿＿よ。",
+          "options": [
+            "やる",
+            "いたす",
+            "くれる",
+            "なさる"
+          ],
+          "key": 1
+        },
+        {
+          "id": "reading-q023",
+          "stem": "げんかんの ベルが なったけれど いまごろ だれ ＿＿＿。",
+          "options": [
+            "らしい",
+            "ようだ",
+            "みたい",
+            "だろう"
+          ],
+          "key": 4
+        },
+        {
+          "id": "reading-q024",
+          "stem": "まちがい電話に＿＿＿、 その あと なかなかねむれなかった。",
+          "options": [
+            "起きて",
+            "起こして",
+            "起きされて",
+            "起こされて"
+          ],
+          "key": 4
+        },
+        {
+          "id": "reading-q025",
+          "stem": "妹は うちに つくと 急に なき＿＿＿。",
+          "options": [
+            "でた",
+            "だした",
+            "すぎた",
+            "いれた"
+          ],
+          "key": 2
+        },
+        {
+          "id": "reading-q026",
+          "stem": "今から 映画が 始まりますから、どうぞ さいごまで ＿＿＿ください。",
+          "options": [
+            "お楽しみ",
+            "ご楽しみ",
+            "楽しみなさり",
+            "楽しみになり"
+          ],
+          "key": 1
+        },
+        {
+          "id": "reading-q027",
+          "stem": "秋に なると だんだん 木の はの 色が かわって ＿＿＿。",
+          "options": [
+            "みる",
+            "おく",
+            "いく",
+            "ある"
+          ],
+          "key": 3
+        },
+        {
+          "id": "reading-q028",
+          "stem": "運動の あとで、 学生たちが 水を＿＿＿いる。",
+          "options": [
+            "ほしくて",
+            "ほしがって",
+            "ほしいって",
+            "ほしくって"
+          ],
+          "key": 2
+        },
+        {
+          "id": "reading-q029",
+          "stem": "つかれたので きょうは もう ここで 終わり＿＿＿。",
+          "options": [
+            "になろう",
+            "にしよう",
+            "のことだ",
+            "のものだ"
+          ],
+          "key": 2
+        },
+        {
+          "id": "reading-q030",
+          "stem": "にわに 来た とりを まどから＿＿＿が、 よく見えなかった。",
+          "options": [
+            "見にした",
+            "見たとした",
+            "見ようにした",
+            "見ようとした"
+          ],
+          "key": 4
+        }
+      ]
+    },
+    {
+      "id": "reading-s03",
+      "part": "reading",
+      "heading": "問題Ⅲ　＿＿＿の　ところに　何を　入れますか。1、2、3、4から　いちばんいい　ものを　一つ　えらびなさい。",
+      "items": [
+        {
+          "id": "reading-q031",
+          "stem": "雨で 道が＿＿＿から 気をつけて ください。",
+          "options": [
+            "すべりらしい",
+            "すべりようだ",
+            "すべりやすい",
+            "すべりたがる"
+          ],
+          "key": 3
+        },
+        {
+          "id": "reading-q032",
+          "stem": "勉強が いそがしかったら あしたは 手つだいに＿＿＿と 言われました。",
+          "options": [
+            "来ないでは ない",
+            "来なくては かまわない",
+            "来ないほども ない",
+            "来なくても かまわない"
+          ],
+          "key": 4
+        },
+        {
+          "id": "reading-q033",
+          "stem": "これから どう するのか ゆっくり＿＿＿。",
+          "options": [
+            "考えみたい",
+            "考えようだ",
+            "考えなさい",
+            "考えところだ"
+          ],
+          "key": 3
+        },
+        {
+          "id": "reading-q034",
+          "stem": "みんなから 旅行の お金を＿＿＿ところです。",
+          "options": [
+            "あつめおわった",
+            "あつまりおわった",
+            "あつめおわらせた",
+            "あつまりおわらせた"
+          ],
+          "key": 1
+        },
+        {
+          "id": "reading-q035",
+          "stem": "今度の 土曜日 ひま＿＿＿ コンサートに 行きませんか。",
+          "options": [
+            "から",
+            "には",
+            "とき",
+            "なら"
+          ],
+          "key": 4
+        },
+        {
+          "id": "reading-q036",
+          "stem": "へやの 電気が きえて いる＿＿＿は、 たぶん もう ねたのでしょう。",
+          "options": [
+            "にするの",
+            "になるの",
+            "ということ",
+            "というもの"
+          ],
+          "key": 3
+        },
+        {
+          "id": "reading-q037",
+          "stem": "英語の 先生に なる＿＿＿、 大学に 入りました。",
+          "options": [
+            "からに",
+            "ように",
+            "ことに",
+            "ために"
+          ],
+          "key": 4
+        },
+        {
+          "id": "reading-q038",
+          "stem": "社長は 今 電話に 出て＿＿＿ので、 しばらくお待ちください。",
+          "options": [
+            "おります",
+            "いたします",
+            "なさいます",
+            "さしあげます"
+          ],
+          "key": 1
+        }
+      ]
+    },
+    {
+      "id": "reading-s04",
+      "part": "reading",
+      "heading": "問題Ⅳ　つぎの　会話の＿＿＿には、どんな　ことばを　入れたら　いいですか。1、2、3、4からいちばん　いい　ものを　一つ　えらびなさい。",
+      "items": [
+        {
+          "id": "reading-q039",
+          "stem": "Ａ 「この まんが、 おもしろそうですね。」Ｂ 「ああ、 うちの 子どもも＿＿＿。」",
+          "options": [
+            "読みたいです",
+            "読もうと します",
+            "読もうと思います",
+            "読みたがって います"
+          ],
+          "key": 4
+        },
+        {
+          "id": "reading-q040",
+          "stem": "Ａ 「毎日 朝ご飯を 食べますか。」Ｂ 「ええ。どんなに ＿＿＿ 食べます。」",
+          "options": [
+            "いそがしくて",
+            "いそがしいと",
+            "いそがしくても",
+            "いそがしいのに"
+          ],
+          "key": 3
+        },
+        {
+          "id": "reading-q041",
+          "stem": "Ａ 「山川さんの たんじょうびに このさいふを あげる つもりです。」Ｂ 「そうですか。 きっと よろこんで 使って ＿＿＿ でしょう。」",
+          "options": [
+            "やる",
+            "くれる",
+            "もらう",
+            "あげる"
+          ],
+          "key": 2
+        },
+        {
+          "id": "reading-q042",
+          "stem": "Ａ 「先生は 今 どちらですか。」Ｂ 「先生は 図書館に ＿＿＿。」",
+          "options": [
+            "ございます",
+            "なさいます",
+            "おっしゃいます",
+            "いらっしゃいます"
+          ],
+          "key": 4
+        },
+        {
+          "id": "reading-q043",
+          "stem": "Ａ 「きのうから 少し ねつが あって あたまが いたいです。」Ｂ 「それは＿＿＿。」",
+          "options": [
+            "おげんきで",
+            "いけませんね",
+            "かしこまりました",
+            "しつれいします"
+          ],
+          "key": 2
+        }
+      ]
+    },
+    {
+      "id": "reading-s05",
+      "part": "reading",
+      "heading": "問題Ⅴ　つぎの会話の（ァ）から（ウ）には　何を　入れますか。下の1、2、3、4からいちばん　いい　ものを　一つ　えらびなさい。",
+      "items": [
+        {
+          "id": "reading-b001",
+          "type": "passage",
+          "content": {
+            "html": "<p>山川「中田さん、新しい　家を　買ったそうですね。」</p><p>中田「ええ、（ァ）。前は　バスと　電車を　使って1時間半　かかりましたが、今は　電車で40分です。」</p><p>山川「そうですか。買い物にもべんりですか。」</p><p>中田「家の　まわりには　あまり　みせが　ないんですよ。駅まで10分ぐらいですが、そこまで　行けば　いろいろな　店が　あるんです。」</p><p>山川「そうですか。でも　あの　へんには　大きいこうえんが　ありますよね。あの　こうえんには　スポーツを　する　ところも　ありますか。」</p><p>中田「ええ。こうえんの　中には　テニスコートや　プールもあるんです。」</p><p>山川「いいですね。（イ）わたしは　こうえんの近くが　いいと　思いますよ。」</p><p>中田「今度　ぜひ　うちへ（ウ）。」</p>"
+          }
+        },
+        {
+          "id": "reading-q044",
+          "stem": "（ァ）",
+          "options": [
+            "前の 家より 会社に 近く なりました",
+            "前の 家ほど 会社に 近く なりました",
+            "前の 家より 会社から とおく なりました",
+            "前の 家ほど 会社から とおく なりました"
+          ],
+          "key": 1
+        },
+        {
+          "id": "reading-q045",
+          "stem": "（イ）",
+          "options": [
+            "買い物に べんりでも",
+            "買い物に ふべんでも",
+            "テニスコートが あっても",
+            "テニスコートが 近くても"
+          ],
+          "key": 2
+        },
+        {
+          "id": "reading-q046",
+          "stem": "（ウ）",
+          "options": [
+            "あそんで きましょう",
+            "あそんで いきましょう",
+            "あそびに 来てください",
+            "あそびに 行って ください"
+          ],
+          "key": 3
+        }
+      ]
+    },
+    {
+      "id": "reading-s06",
+      "part": "reading",
+      "heading": "問題Ⅵ　つぎの　文を　読んで、質問に　答えなさい。答えは1、2、3、4からいちばん　いい　ものを　一つ　えらびなさい。",
+      "items": [
+        {
+          "id": "reading-b002",
+          "type": "passage",
+          "content": {
+            "html": "<p>きのう　わたしは　タローを　病院へ　つれて　いきました。タローは　去年　わたしが友だちから　もらった　かわいい　子犬です。数日前から　タローは　元気がなく、食べ物も　ほとんど　食べなく　なりました。それで　しんぱいだったので　近くの　動物病院へつれて　いったのです。病院で　タローは　ちゅうしゃを　されて　いたそうに　ないて　いました。毎日　くすりも　のませなければ　ならないそうです。医者は　そうすれば1週間ぐらいで　よく　なるだろうと　言いました。タローは　ちゅうしゃもくすりも　いやがって　いましたが、わたしは　医者のことばを　聞いて　少し　安心しました。</p>"
+          }
+        },
+        {
+          "id": "reading-q047",
+          "stem": "タローの ことを 正しく せつめいして いるのは どれですか。",
+          "options": [
+            "友だちが タローを くれました。",
+            "友だちが タローを もらいました",
+            "友だちに タローを あげました",
+            "友だちに タローを くれました"
+          ],
+          "key": 1
+        },
+        {
+          "id": "reading-q048",
+          "stem": "なぜ 動物病院へ 行きましたか。",
+          "options": [
+            "タローが いたそうに ないて いたから。",
+            "わたしは 元気が ない タローが しんぱいだったから。",
+            "わたしは 食べ物がほとんど 食べられなく なったから。",
+            "タローが ちゅうしゃや くすりを いやがっていたから。"
+          ],
+          "key": 2
+        },
+        {
+          "id": "reading-q049",
+          "stem": "医者は 何と 言いましたか。",
+          "options": [
+            "ちゅうしゃも くすりも いやがるだろうと 言いました。",
+            "毎日 くすりを のまさなければ ならないと 言いました。",
+            "毎日 病院へ つれて いかなければ ならないと 言いました。",
+            "ちゅうしゃを したので すぐに よく なるだろうと 言いました。"
+          ],
+          "key": 2
+        },
+        {
+          "id": "reading-q050",
+          "stem": "この人（「わたし」）の ことを 正しく せつめいして いるのは どれですか。",
+          "options": [
+            "数日前から 食べ物が たべられなかった。",
+            "さいしょから しんぱい ないだろうと 思って いた。",
+            "はじめ しんぱいだったが あとで 少し 安心した。",
+            "いたくて ないて いたが、1 週間ぐらいで よくなった。"
+          ],
+          "key": 3
+        }
+      ]
+    }
+  ],
+  "exam": {
+    "generation": "historical-1991-2009",
+    "historical_level": "3級",
+    "coverage": "partial_available_written"
+  },
+  "defaults": {
+    "path": "pdf-render/schema/historical-1991-2009/level3/defaults.json",
+    "profile_id": "historical-1991-2009-level3",
+    "revision": 38
+  },
+  "layout": {
+    "sections": {
+      "vocab-s01": {
+        "task": "reading_test",
+        "booklet": "vocabulary"
+      },
+      "vocab-s02": {
+        "task": "orthography_test",
+        "booklet": "vocabulary"
+      },
+      "vocab-s03": {
+        "task": "vocabulary",
+        "booklet": "vocabulary"
+      },
+      "vocab-s04": {
+        "task": "paraphrase",
+        "booklet": "vocabulary"
+      },
+      "vocab-s05": {
+        "task": "usage",
+        "booklet": "vocabulary"
+      },
+      "reading-s01": {
+        "task": "grammar",
+        "booklet": "reading_grammar"
+      },
+      "reading-s02": {
+        "task": "grammar",
+        "booklet": "reading_grammar"
+      },
+      "reading-s03": {
+        "task": "grammar",
+        "booklet": "reading_grammar"
+      },
+      "reading-s04": {
+        "task": "grammar",
+        "booklet": "reading_grammar",
+        "historical_answer_line": {
+          "kind": "phrase",
+          "section_sha256": "7995c04f47136f441c3f1a0cdd14b82dbe9f91cdcceab04565f3bb3000e0d6fb",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-读解文法.pdf",
+            "source_sha256": "c870b073caba6326e73ff56ea119ffa66c448b075b05ef84974b8a87711106db",
+            "physical_pages": [
+              6,
+              7
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "Five audited grammarIV reply slots. Apply the six-em phrase role inferred from reviewed same-level approved controls; this secondary retype does not establish exact original typography. Preserve all text, choices, keys and omitted-item gaps."
+          }
+        }
+      },
+      "reading-s05": {
+        "task": "cloze",
+        "booklet": "reading_grammar"
+      },
+      "reading-s06": {
+        "task": "reading",
+        "booklet": "reading_grammar"
+      }
+    },
+    "items": {
+      "vocab-q001": {
+        "printed_label": {
+          "value": "1",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        },
+        "historical_target_row": {
+          "context_id": "vocab-b001",
+          "stem_sha256": "1cad1d1bed500bbbb72a21f6107db720032c9756500a0d60980c44bade97f68f",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              1
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b001: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        },
+        "historical_options": {
+          "kind": "grid",
+          "columns": 4,
+          "source_numbered": false,
+          "options_sha256": "070232f05f4a8e59685ba67b4746757027102be2a0d4078dfa065fb08a421726",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              1
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b001: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        }
+      },
+      "vocab-q002": {
+        "printed_label": {
+          "value": "2",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        },
+        "historical_target_row": {
+          "context_id": "vocab-b001",
+          "stem_sha256": "c36bee63a443ce412e82dec13660568db8964573ce20f6302836f05a2de23857",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              1
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b001: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        },
+        "historical_options": {
+          "kind": "grid",
+          "columns": 4,
+          "source_numbered": false,
+          "options_sha256": "bda7d08a1b8b08e8d0978f6454c68dc4a7675bf227515c364d8405ce9510f283",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              1
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b001: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        }
+      },
+      "vocab-q003": {
+        "printed_label": {
+          "value": "3",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        },
+        "historical_target_row": {
+          "context_id": "vocab-b001",
+          "stem_sha256": "a5d3e5cc73386266318f727782d8fc570a87aa96430c81d5fa14089898b61801",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              1
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b001: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        },
+        "historical_options": {
+          "kind": "grid",
+          "columns": 4,
+          "source_numbered": false,
+          "options_sha256": "b9f21a63a5b8e545f39e1bd8e16d6522f624de02e526ed21fbf60f2ebc3806fe",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              1
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b001: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        }
+      },
+      "vocab-q004": {
+        "printed_label": {
+          "value": "1",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        },
+        "historical_target_row": {
+          "context_id": "vocab-b002",
+          "stem_sha256": "f6ffd6793c69c7bcccd3440aa3c2b3285f517d76184200186211e7da724c81ee",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              1
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b002: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        },
+        "historical_options": {
+          "kind": "grid",
+          "columns": 4,
+          "source_numbered": false,
+          "options_sha256": "1441c4fe05b7fb46557f0fb3e02f50d30baea69d94937d2e3275846a704ae9b0",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              1
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b002: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        }
+      },
+      "vocab-q005": {
+        "printed_label": {
+          "value": "2",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        },
+        "historical_target_row": {
+          "context_id": "vocab-b002",
+          "stem_sha256": "263999d52cf18c6b74848c7a04be8e846266df9cb0a68712d1d2639bcc115c67",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              1
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b002: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        },
+        "historical_options": {
+          "kind": "grid",
+          "columns": 4,
+          "source_numbered": false,
+          "options_sha256": "c8fb4cd3ce53ea192e507bb9e916dbfc02d80f61f811d85fb529b7ec52a03c3c",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              1
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b002: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        }
+      },
+      "vocab-q006": {
+        "printed_label": {
+          "value": "3",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        },
+        "historical_target_row": {
+          "context_id": "vocab-b002",
+          "stem_sha256": "ba6026da93bd6513d94379b6e7fc50a3faeee67b35490d8a55e60981f125a73a",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              1
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b002: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        },
+        "historical_options": {
+          "kind": "grid",
+          "columns": 4,
+          "source_numbered": false,
+          "options_sha256": "b2fb4eff3d99b42f469fa0210d4eadeff8c43fe60e10fb8388a11d62c13a7ef0",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              1
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b002: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        }
+      },
+      "vocab-q007": {
+        "printed_label": {
+          "value": "1",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        },
+        "historical_target_row": {
+          "context_id": "vocab-b003",
+          "stem_sha256": "75ea308a242c0d66c3066601e34b90cf69064eb97181981bfc16260a6b3740a2",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              1
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b003: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        },
+        "historical_options": {
+          "kind": "grid",
+          "columns": 4,
+          "source_numbered": false,
+          "options_sha256": "4a856dc0b039f0b89d2e90615009e8c6f0a3be6fa12b6149ab4c65438ce1faf2",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              1
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b003: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        }
+      },
+      "vocab-q008": {
+        "printed_label": {
+          "value": "2",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        },
+        "historical_target_row": {
+          "context_id": "vocab-b003",
+          "stem_sha256": "b34ffad8dd78625f3a1919e258447091d63ba79be15254f9c8a2d2b963acc073",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              1
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b003: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        },
+        "historical_options": {
+          "kind": "grid",
+          "columns": 4,
+          "source_numbered": false,
+          "options_sha256": "3a6bc8f723917cb76d1f02c72d00d02bf155375fdfd2c4367c785d263dfd538c",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              1
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b003: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        }
+      },
+      "vocab-q009": {
+        "printed_label": {
+          "value": "3",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        },
+        "historical_target_row": {
+          "context_id": "vocab-b003",
+          "stem_sha256": "a3e688b7e6fdb937f49601f13ef3315bdecbe962b8cf8e17a6a3afa7f61983d9",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              1
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b003: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        },
+        "historical_options": {
+          "kind": "grid",
+          "columns": 4,
+          "source_numbered": false,
+          "options_sha256": "3824c028dde54b26ff4385da225d3e5eec23645ab6d88cab8cdc310bdce8117e",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              1
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b003: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        }
+      },
+      "vocab-q010": {
+        "printed_label": {
+          "value": "1",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        },
+        "historical_target_row": {
+          "context_id": "vocab-b004",
+          "stem_sha256": "028df7d6ef86fb851c25cedccadfee524e660b196652063e864219fd624d03ae",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              2
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b004: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        },
+        "historical_options": {
+          "kind": "grid",
+          "columns": 4,
+          "source_numbered": false,
+          "options_sha256": "8b252786a7d748f5913a48e8613f7645785e9faf3b227c3f343a6c94e62f61aa",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              2
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b004: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        }
+      },
+      "vocab-q011": {
+        "printed_label": {
+          "value": "2",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        },
+        "historical_target_row": {
+          "context_id": "vocab-b004",
+          "stem_sha256": "c6f8deeacd8668b5772bf735316171977fd1f32e9c2d45aa959d55b1255b3d37",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              2
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b004: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        },
+        "historical_options": {
+          "kind": "grid",
+          "columns": 2,
+          "source_numbered": false,
+          "options_sha256": "e38d3383ef353674ce3fbb9518b10faff670f758ad9e81ed2cec8dd64fd334d3",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              2
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b004: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        }
+      },
+      "vocab-q012": {
+        "printed_label": {
+          "value": "3",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        },
+        "historical_target_row": {
+          "context_id": "vocab-b004",
+          "stem_sha256": "234d86f10d8d5d44ae1843490ca3ac94721c1d5d1c2163a91a32a0a6d1b139f9",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              2
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b004: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        },
+        "historical_options": {
+          "kind": "grid",
+          "columns": 4,
+          "source_numbered": false,
+          "options_sha256": "9127f07131e18f59e96642e54c549e264c6855723e3b7c06902e6601b58c16c1",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              2
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b004: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        }
+      },
+      "vocab-q013": {
+        "printed_label": {
+          "value": "4",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        },
+        "historical_target_row": {
+          "context_id": "vocab-b004",
+          "stem_sha256": "6c93e55006088b1852d383d70ab48be1c7723c4e4d517c10270b44066e31c160",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              2
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b004: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        },
+        "historical_options": {
+          "kind": "grid",
+          "columns": 4,
+          "source_numbered": false,
+          "options_sha256": "fa0c858bb182d055034efaddd5171bdcd628f1de666f0e3e0d53e0b8ca6889fb",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              2
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b004: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        }
+      },
+      "vocab-q014": {
+        "printed_label": {
+          "value": "5",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        },
+        "historical_target_row": {
+          "context_id": "vocab-b004",
+          "stem_sha256": "26e5d1e4bb3fbd257a726908062c887b93ef244f599e9abd1dc3bc0378a5a852",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              2
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b004: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        },
+        "historical_options": {
+          "kind": "grid",
+          "columns": 2,
+          "source_numbered": false,
+          "options_sha256": "a7353c2a7f4028910ab93fe56aefa716c4c233f3abe5b2da33e73b1130991b98",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              2
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b004: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        }
+      },
+      "vocab-q015": {
+        "printed_label": {
+          "value": "1",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        },
+        "historical_target_row": {
+          "context_id": "vocab-b005",
+          "stem_sha256": "8286b9c4886afbef3664b7ae0184a5c924778b3cc3787e24176fcd4dea49ae89",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              2
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b005: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        },
+        "historical_options": {
+          "kind": "grid",
+          "columns": 4,
+          "source_numbered": false,
+          "options_sha256": "478564a7064b36ef7911245a7187a4b4131a7a44e933756263720ac46e35da17",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              2
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b005: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        }
+      },
+      "vocab-q016": {
+        "printed_label": {
+          "value": "2",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        },
+        "historical_target_row": {
+          "context_id": "vocab-b005",
+          "stem_sha256": "fede83d495ada8ebf10efc88e2bc3296ead233f5f0302eb2c0754e3652d2617d",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              2
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b005: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        },
+        "historical_options": {
+          "kind": "grid",
+          "columns": 4,
+          "source_numbered": false,
+          "options_sha256": "b62d6ce1fc42a2f7bcd0c7e173e2b6be634b45042d5f4678b43f5d9f49314826",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              2
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b005: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        }
+      },
+      "vocab-q017": {
+        "printed_label": {
+          "value": "3",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        },
+        "historical_target_row": {
+          "context_id": "vocab-b005",
+          "stem_sha256": "69ea436de21ac6edfa08feb7a6e79e8a72f736e6ab19b60a7e42725231c9243a",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              2
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b005: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        },
+        "historical_options": {
+          "kind": "grid",
+          "columns": 4,
+          "source_numbered": false,
+          "options_sha256": "70023ab1a48d1229da4fd8b68afb76a362d77b28ca4800fc0e1bc188ea28be19",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              2
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b005: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        }
+      },
+      "vocab-q018": {
+        "printed_label": {
+          "value": "4",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        },
+        "historical_target_row": {
+          "context_id": "vocab-b005",
+          "stem_sha256": "3fa21ef085b334d378f78af2c2037774205f0d55bf71fce497e20cebf1e522b2",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              2
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b005: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        },
+        "historical_options": {
+          "kind": "grid",
+          "columns": 4,
+          "source_numbered": false,
+          "options_sha256": "be1c56ca8411f3b3543f4b3ef883f1d002587000f0d940fb0c7961ef74a18ca3",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              2
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b005: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        }
+      },
+      "vocab-q019": {
+        "printed_label": {
+          "value": "1",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        },
+        "historical_target_row": {
+          "context_id": "vocab-b006",
+          "stem_sha256": "3be1b590204eaafa7e04b64c9410dadc520b3722945444f7325c98b9f0b23719",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              3
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b006: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        },
+        "historical_options": {
+          "kind": "grid",
+          "columns": 4,
+          "source_numbered": false,
+          "options_sha256": "ea33b64a8527408cd5a93fa89cdc8abca62389c78bbbdec4b0f06e2d67eced16",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              3
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b006: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        }
+      },
+      "vocab-q020": {
+        "printed_label": {
+          "value": "2",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        },
+        "historical_target_row": {
+          "context_id": "vocab-b006",
+          "stem_sha256": "f7412d42af7021aa46c73758079d2b446b31dc3df895c8f2cdbc9c17b709965e",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              3
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b006: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        },
+        "historical_options": {
+          "kind": "grid",
+          "columns": 4,
+          "source_numbered": false,
+          "options_sha256": "48d7214fc3ea0e57e7f2619973e938cdd90b2d73404096bb55eb68489762561e",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              3
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b006: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        }
+      },
+      "vocab-q024": {
+        "printed_label": {
+          "value": "2",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        },
+        "historical_target_row": {
+          "context_id": "vocab-b008",
+          "stem_sha256": "15fb22d95694fb89963bb80adb4e51153c12404f6a1e37f6964cd711d4387a42",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              3
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b008: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        },
+        "historical_options": {
+          "kind": "grid",
+          "columns": 4,
+          "source_numbered": false,
+          "options_sha256": "4e2dfabd98e6baaa0bb8858b7b034b16c0df78b356316c65c9c47beffbc46a36",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              3
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b008: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        }
+      },
+      "vocab-q026": {
+        "printed_label": {
+          "value": "2",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        },
+        "historical_target_row": {
+          "context_id": "vocab-b009",
+          "stem_sha256": "c211b0ed974a2b21747c6ea19f9879d8e3def65075e7227782475b9d3772ecc8",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              4
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b009: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        },
+        "historical_options": {
+          "kind": "grid",
+          "columns": 4,
+          "source_numbered": false,
+          "options_sha256": "8b9fad82b507486f60e655d4e8af587835077a1deedd661fe693b9a398378c0e",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              4
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b009: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        }
+      },
+      "vocab-q027": {
+        "printed_label": {
+          "value": "3",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        },
+        "historical_target_row": {
+          "context_id": "vocab-b009",
+          "stem_sha256": "f6e331760b9dcdd5c74e04a87de2c73d829856fc8d32d6c91509c09fe5263529",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              4
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b009: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        },
+        "historical_options": {
+          "kind": "grid",
+          "columns": 4,
+          "source_numbered": false,
+          "options_sha256": "4a4cfed084212c2eb6576ec6a30a94d1ae63a3fc37356badc8c96167e51cb07c",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              4
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b009: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        }
+      },
+      "vocab-q028": {
+        "printed_label": {
+          "value": "1",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        },
+        "historical_target_row": {
+          "context_id": "vocab-b010",
+          "stem_sha256": "b5fda308064db82e3d5594aac5383495160d170d73773ea6f7433dc1413809ed",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              4
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b010: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        },
+        "historical_options": {
+          "kind": "grid",
+          "columns": 4,
+          "source_numbered": false,
+          "options_sha256": "e798fa458c86f01c1214ec58dfcab14978abe649b1c1d81cda39234af8244bd1",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              4
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b010: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        }
+      },
+      "vocab-q029": {
+        "printed_label": {
+          "value": "2",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        },
+        "historical_target_row": {
+          "context_id": "vocab-b010",
+          "stem_sha256": "9e6308e64b8006aca8bc6cddb2397ce292b18e625ee4e76f6b3c70cee5afc61d",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              4
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b010: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        },
+        "historical_options": {
+          "kind": "grid",
+          "columns": 4,
+          "source_numbered": false,
+          "options_sha256": "5654fe094613f4ce9f653034c9f3155bd04855aee6ef53c56ecf778a8b308168",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              4
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b010: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        }
+      },
+      "vocab-q030": {
+        "printed_label": {
+          "value": "3",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        },
+        "historical_target_row": {
+          "context_id": "vocab-b010",
+          "stem_sha256": "3df85b46907ba89ed4ec96b0360879c7204cc02adce58e9fb77ea87095efd93e",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              4
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b010: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        },
+        "historical_options": {
+          "kind": "grid",
+          "columns": 4,
+          "source_numbered": false,
+          "options_sha256": "7c0439d459131f8b3bd59d9e8d00df519423beb19958329e65012a925178a3e2",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              4
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b010: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        }
+      },
+      "vocab-q032": {
+        "printed_label": {
+          "value": "1",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        },
+        "historical_target_row": {
+          "context_id": "vocab-b011",
+          "stem_sha256": "538da6da8a787e752df04157d047739493a2872bb855186947a270005c5127bf",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              4
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b011: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        },
+        "historical_options": {
+          "kind": "grid",
+          "columns": 4,
+          "source_numbered": false,
+          "options_sha256": "8ad49ee8d07e2da29183b5d1b6df5ecf3ed09f6904158becbd21da1c01c82a44",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              4
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b011: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        }
+      },
+      "vocab-q033": {
+        "printed_label": {
+          "value": "2",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        },
+        "historical_target_row": {
+          "context_id": "vocab-b011",
+          "stem_sha256": "ac81b10e24467cb95f428f54eeba06e259a7ff3dd1fa2c87a0a3b373b5ede635",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              4
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b011: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        },
+        "historical_options": {
+          "kind": "grid",
+          "columns": 4,
+          "source_numbered": false,
+          "options_sha256": "814e06935ecc1b5c8896bbb013d1d9d4f22f2efb2e951e7c30fa103c2828fbdb",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              4
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b011: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        }
+      },
+      "vocab-q034": {
+        "printed_label": {
+          "value": "3",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        },
+        "historical_target_row": {
+          "context_id": "vocab-b011",
+          "stem_sha256": "8d2e8797544e0de2a4c1f1782c001796b5bdfb0af278defc28fc66d538f6bd58",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              4
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b011: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        },
+        "historical_options": {
+          "kind": "grid",
+          "columns": 4,
+          "source_numbered": false,
+          "options_sha256": "3f6dc0f21c7960852f65c9e1078d8993213559f8d2e2905841770d0852bbf867",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              4
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b011: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        }
+      },
+      "vocab-q035": {
+        "printed_label": {
+          "value": "4",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        },
+        "historical_target_row": {
+          "context_id": "vocab-b011",
+          "stem_sha256": "58da525c7aeef846ef73352a67a04881bd6d6db944998369e2486006cb823ad7",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              4
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b011: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        },
+        "historical_options": {
+          "kind": "grid",
+          "columns": 4,
+          "source_numbered": false,
+          "options_sha256": "e31e92a41141d3132a7afb4bc69d5a4ec4546a33cc8ec7986d76d2723527dfd1",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              4
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b011: audited vocabulary context/targets in the admitted written witness. Arrangement inferred from same-level UARS target rows; retype typography is not the original-layout authority. H27 roles/CONTROL_REVIEW-01.json records controls and limits."
+          }
+        }
+      },
+      "vocab-q036": {
+        "printed_label": {
+          "value": "1",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        }
+      },
+      "vocab-q037": {
+        "printed_label": {
+          "value": "2",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        }
+      },
+      "vocab-q038": {
+        "printed_label": {
+          "value": "3",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        }
+      },
+      "vocab-q039": {
+        "printed_label": {
+          "value": "4",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        }
+      },
+      "vocab-q040": {
+        "printed_label": {
+          "value": "5",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        }
+      },
+      "vocab-q041": {
+        "printed_label": {
+          "value": "6",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        }
+      },
+      "vocab-q042": {
+        "printed_label": {
+          "value": "7",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        }
+      },
+      "vocab-q043": {
+        "printed_label": {
+          "value": "8",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        }
+      },
+      "vocab-q044": {
+        "printed_label": {
+          "value": "9",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        }
+      },
+      "vocab-q045": {
+        "printed_label": {
+          "value": "10",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        }
+      },
+      "vocab-q046": {
+        "printed_label": {
+          "value": "1",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        }
+      },
+      "vocab-q047": {
+        "printed_label": {
+          "value": "2",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        }
+      },
+      "vocab-q048": {
+        "printed_label": {
+          "value": "3",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        }
+      },
+      "vocab-q049": {
+        "printed_label": {
+          "value": "4",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        }
+      },
+      "vocab-q050": {
+        "printed_label": {
+          "value": "5",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        }
+      },
+      "vocab-q051": {
+        "printed_label": {
+          "value": "1",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        }
+      },
+      "vocab-q052": {
+        "printed_label": {
+          "value": "2",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        }
+      },
+      "vocab-q053": {
+        "printed_label": {
+          "value": "3",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        }
+      },
+      "vocab-q054": {
+        "printed_label": {
+          "value": "4",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        }
+      },
+      "vocab-q055": {
+        "printed_label": {
+          "value": "5",
+          "basis": "Source local parenthesized ordinal; stable ID retains original global position, including omitted positions."
+        }
+      },
+      "reading-q001": {
+        "printed_label": {
+          "value": "1",
+          "basis": "Observed local parenthesized ordinal in each task."
+        }
+      },
+      "reading-q002": {
+        "printed_label": {
+          "value": "2",
+          "basis": "Observed local parenthesized ordinal in each task."
+        }
+      },
+      "reading-q003": {
+        "printed_label": {
+          "value": "3",
+          "basis": "Observed local parenthesized ordinal in each task."
+        }
+      },
+      "reading-q004": {
+        "printed_label": {
+          "value": "4",
+          "basis": "Observed local parenthesized ordinal in each task."
+        }
+      },
+      "reading-q005": {
+        "printed_label": {
+          "value": "5",
+          "basis": "Observed local parenthesized ordinal in each task."
+        }
+      },
+      "reading-q006": {
+        "printed_label": {
+          "value": "6",
+          "basis": "Observed local parenthesized ordinal in each task."
+        }
+      },
+      "reading-q007": {
+        "printed_label": {
+          "value": "7",
+          "basis": "Observed local parenthesized ordinal in each task."
+        }
+      },
+      "reading-q008": {
+        "printed_label": {
+          "value": "8",
+          "basis": "Observed local parenthesized ordinal in each task."
+        }
+      },
+      "reading-q009": {
+        "printed_label": {
+          "value": "9",
+          "basis": "Observed local parenthesized ordinal in each task."
+        }
+      },
+      "reading-q010": {
+        "printed_label": {
+          "value": "10",
+          "basis": "Observed local parenthesized ordinal in each task."
+        }
+      },
+      "reading-q011": {
+        "printed_label": {
+          "value": "11",
+          "basis": "Observed local parenthesized ordinal in each task."
+        }
+      },
+      "reading-q012": {
+        "printed_label": {
+          "value": "12",
+          "basis": "Observed local parenthesized ordinal in each task."
+        }
+      },
+      "reading-q013": {
+        "printed_label": {
+          "value": "13",
+          "basis": "Observed local parenthesized ordinal in each task."
+        }
+      },
+      "reading-q014": {
+        "printed_label": {
+          "value": "14",
+          "basis": "Observed local parenthesized ordinal in each task."
+        }
+      },
+      "reading-q015": {
+        "printed_label": {
+          "value": "15",
+          "basis": "Observed local parenthesized ordinal in each task."
+        }
+      },
+      "reading-q016": {
+        "printed_label": {
+          "value": "1",
+          "basis": "Observed local parenthesized ordinal in each task."
+        }
+      },
+      "reading-q017": {
+        "printed_label": {
+          "value": "2",
+          "basis": "Observed local parenthesized ordinal in each task."
+        }
+      },
+      "reading-q018": {
+        "printed_label": {
+          "value": "3",
+          "basis": "Observed local parenthesized ordinal in each task."
+        }
+      },
+      "reading-q019": {
+        "printed_label": {
+          "value": "4",
+          "basis": "Observed local parenthesized ordinal in each task."
+        }
+      },
+      "reading-q020": {
+        "printed_label": {
+          "value": "5",
+          "basis": "Observed local parenthesized ordinal in each task."
+        }
+      },
+      "reading-q021": {
+        "printed_label": {
+          "value": "6",
+          "basis": "Observed local parenthesized ordinal in each task."
+        }
+      },
+      "reading-q022": {
+        "printed_label": {
+          "value": "7",
+          "basis": "Observed local parenthesized ordinal in each task."
+        }
+      },
+      "reading-q023": {
+        "printed_label": {
+          "value": "8",
+          "basis": "Observed local parenthesized ordinal in each task."
+        }
+      },
+      "reading-q024": {
+        "printed_label": {
+          "value": "9",
+          "basis": "Observed local parenthesized ordinal in each task."
+        }
+      },
+      "reading-q025": {
+        "printed_label": {
+          "value": "10",
+          "basis": "Observed local parenthesized ordinal in each task."
+        }
+      },
+      "reading-q026": {
+        "printed_label": {
+          "value": "11",
+          "basis": "Observed local parenthesized ordinal in each task."
+        }
+      },
+      "reading-q027": {
+        "printed_label": {
+          "value": "12",
+          "basis": "Observed local parenthesized ordinal in each task."
+        }
+      },
+      "reading-q028": {
+        "printed_label": {
+          "value": "13",
+          "basis": "Observed local parenthesized ordinal in each task."
+        }
+      },
+      "reading-q029": {
+        "printed_label": {
+          "value": "14",
+          "basis": "Observed local parenthesized ordinal in each task."
+        }
+      },
+      "reading-q030": {
+        "printed_label": {
+          "value": "15",
+          "basis": "Observed local parenthesized ordinal in each task."
+        }
+      },
+      "reading-q031": {
+        "printed_label": {
+          "value": "1",
+          "basis": "Observed local parenthesized ordinal in each task."
+        }
+      },
+      "reading-q032": {
+        "printed_label": {
+          "value": "2",
+          "basis": "Observed local parenthesized ordinal in each task."
+        }
+      },
+      "reading-q033": {
+        "printed_label": {
+          "value": "3",
+          "basis": "Observed local parenthesized ordinal in each task."
+        }
+      },
+      "reading-q034": {
+        "printed_label": {
+          "value": "4",
+          "basis": "Observed local parenthesized ordinal in each task."
+        }
+      },
+      "reading-q035": {
+        "printed_label": {
+          "value": "5",
+          "basis": "Observed local parenthesized ordinal in each task."
+        }
+      },
+      "reading-q036": {
+        "printed_label": {
+          "value": "6",
+          "basis": "Observed local parenthesized ordinal in each task."
+        }
+      },
+      "reading-q037": {
+        "printed_label": {
+          "value": "7",
+          "basis": "Observed local parenthesized ordinal in each task."
+        }
+      },
+      "reading-q038": {
+        "printed_label": {
+          "value": "8",
+          "basis": "Observed local parenthesized ordinal in each task."
+        }
+      },
+      "reading-q039": {
+        "printed_label": {
+          "value": "1",
+          "basis": "Observed local parenthesized ordinal in each task."
+        },
+        "dialogue": {
+          "projection_sha256": "e699e48a3487832635ff2a8508e82877abdda28b32639d3088e980b56444b1ce",
+          "turns": [
+            {
+              "line": 0,
+              "speaker": "Ａ"
+            },
+            {
+              "line": 1,
+              "speaker": "Ｂ"
+            }
+          ],
+          "split_before": [
+            "Ｂ 「"
+          ],
+          "state": "inferred",
+          "speaker_align": "left",
+          "basis": "R51 whole source reading6/7 shows two exact A/B turns for each question39-43. Split at the one literal B-speaker prefix; retain all canonical text/whitespace. Speech alignment and phrase width are inferred from same-level approved controls; original appearance is unavailable."
+        }
+      },
+      "reading-q040": {
+        "printed_label": {
+          "value": "2",
+          "basis": "Observed local parenthesized ordinal in each task."
+        },
+        "dialogue": {
+          "projection_sha256": "5b9d950bbeb2ddaafaad2924811d8e36c52b2547356ad2333f6028af64301805",
+          "turns": [
+            {
+              "line": 0,
+              "speaker": "Ａ"
+            },
+            {
+              "line": 1,
+              "speaker": "Ｂ"
+            }
+          ],
+          "split_before": [
+            "Ｂ 「"
+          ],
+          "state": "inferred",
+          "speaker_align": "left",
+          "basis": "R51 whole source reading6/7 shows two exact A/B turns for each question39-43. Split at the one literal B-speaker prefix; retain all canonical text/whitespace. Speech alignment and phrase width are inferred from same-level approved controls; original appearance is unavailable."
+        }
+      },
+      "reading-q041": {
+        "printed_label": {
+          "value": "3",
+          "basis": "Observed local parenthesized ordinal in each task."
+        },
+        "dialogue": {
+          "projection_sha256": "a0e4a784a75571e8da9fc7c81b0496a8cc72fe1a0d5f631912c09a1cbbb2c549",
+          "turns": [
+            {
+              "line": 0,
+              "speaker": "Ａ"
+            },
+            {
+              "line": 1,
+              "speaker": "Ｂ"
+            }
+          ],
+          "split_before": [
+            "Ｂ 「"
+          ],
+          "state": "inferred",
+          "speaker_align": "left",
+          "basis": "R51 whole source reading6/7 shows two exact A/B turns for each question39-43. Split at the one literal B-speaker prefix; retain all canonical text/whitespace. Speech alignment and phrase width are inferred from same-level approved controls; original appearance is unavailable."
+        }
+      },
+      "reading-q042": {
+        "printed_label": {
+          "value": "4",
+          "basis": "Observed local parenthesized ordinal in each task."
+        },
+        "dialogue": {
+          "projection_sha256": "735cf814601eb1c6d6c262f76ecf011b67352f7834e9feabe8fd49e79d2a2dff",
+          "turns": [
+            {
+              "line": 0,
+              "speaker": "Ａ"
+            },
+            {
+              "line": 1,
+              "speaker": "Ｂ"
+            }
+          ],
+          "split_before": [
+            "Ｂ 「"
+          ],
+          "state": "inferred",
+          "speaker_align": "left",
+          "basis": "R51 whole source reading6/7 shows two exact A/B turns for each question39-43. Split at the one literal B-speaker prefix; retain all canonical text/whitespace. Speech alignment and phrase width are inferred from same-level approved controls; original appearance is unavailable."
+        }
+      },
+      "reading-q043": {
+        "printed_label": {
+          "value": "5",
+          "basis": "Observed local parenthesized ordinal in each task."
+        },
+        "dialogue": {
+          "projection_sha256": "09799007637dc1fe80fb933a38ebbc4b4b6aeb1322b19c1dbaa99e7b8a7521d2",
+          "turns": [
+            {
+              "line": 0,
+              "speaker": "Ａ"
+            },
+            {
+              "line": 1,
+              "speaker": "Ｂ"
+            }
+          ],
+          "split_before": [
+            "Ｂ 「"
+          ],
+          "state": "inferred",
+          "speaker_align": "left",
+          "basis": "R51 whole source reading6/7 shows two exact A/B turns for each question39-43. Split at the one literal B-speaker prefix; retain all canonical text/whitespace. Speech alignment and phrase width are inferred from same-level approved controls; original appearance is unavailable."
+        }
+      },
+      "reading-q044": {
+        "printed_label": {
+          "value": "1",
+          "basis": "Observed local parenthesized ordinal in each task."
+        }
+      },
+      "reading-q045": {
+        "printed_label": {
+          "value": "2",
+          "basis": "Observed local parenthesized ordinal in each task."
+        }
+      },
+      "reading-q046": {
+        "printed_label": {
+          "value": "3",
+          "basis": "Observed local parenthesized ordinal in each task."
+        }
+      },
+      "reading-q047": {
+        "printed_label": {
+          "value": "1",
+          "basis": "Observed local parenthesized ordinal in each task."
+        },
+        "historical_question_prose": {
+          "stem_sha256": "2f2e9cd8a475425f2ade3be1cb287b4892fd2aea5cfce1c3759f303faa9ef5d7",
+          "font_role": "instruction",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-读解文法.pdf",
+            "source_sha256": "c870b073caba6326e73ff56ea119ffa66c448b075b05ef84974b8a87711106db",
+            "physical_pages": [
+              9
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "reading-q047: audited reading question in this admitted written witness. Heavy Gothic instruction role inferred from same-level approved 2007 controls (N3 p40, N4 p69); choices and passage prose retain ordinary roles. See H27 roles/readability-02/PLAN.json. No exact-original font identification is asserted."
+          }
+        },
+        "historical_options": {
+          "kind": "grid",
+          "columns": 2,
+          "source_numbered": false,
+          "options_sha256": "7ce65ecda5d8c7fd1cff1c723ba4c10b71ac32cfd029484fcd612003f08d3b23",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-读解文法.pdf",
+            "source_sha256": "c870b073caba6326e73ff56ea119ffa66c448b075b05ef84974b8a87711106db",
+            "physical_pages": [
+              9
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "reading-q047: exact audited reading alternatives. Explicit 2-column grid inferred from same-level UARS mixed option arrangements; choices remain in canonical order and ordinary font. Native fit review is required. See H27 roles/reading-choices-05/PLAN.json."
+          }
+        }
+      },
+      "reading-q048": {
+        "printed_label": {
+          "value": "2",
+          "basis": "Observed local parenthesized ordinal in each task."
+        },
+        "historical_question_prose": {
+          "stem_sha256": "ee8cb24693bd650fa6121940caca28f8c0d5b54d37c9d6b99a03bcac3ab902f0",
+          "font_role": "instruction",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-读解文法.pdf",
+            "source_sha256": "c870b073caba6326e73ff56ea119ffa66c448b075b05ef84974b8a87711106db",
+            "physical_pages": [
+              9
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "reading-q048: audited reading question in this admitted written witness. Heavy Gothic instruction role inferred from same-level approved 2007 controls (N3 p40, N4 p69); choices and passage prose retain ordinary roles. See H27 roles/readability-02/PLAN.json. No exact-original font identification is asserted."
+          }
+        }
+      },
+      "reading-q049": {
+        "printed_label": {
+          "value": "3",
+          "basis": "Observed local parenthesized ordinal in each task."
+        },
+        "historical_question_prose": {
+          "stem_sha256": "0c58294614c5a35cd401f5186f2018f35f62a3ee4b57a9b8bf4623e987c53881",
+          "font_role": "instruction",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-读解文法.pdf",
+            "source_sha256": "c870b073caba6326e73ff56ea119ffa66c448b075b05ef84974b8a87711106db",
+            "physical_pages": [
+              9
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "reading-q049: audited reading question in this admitted written witness. Heavy Gothic instruction role inferred from same-level approved 2007 controls (N3 p40, N4 p69); choices and passage prose retain ordinary roles. See H27 roles/readability-02/PLAN.json. No exact-original font identification is asserted."
+          }
+        }
+      },
+      "reading-q050": {
+        "printed_label": {
+          "value": "4",
+          "basis": "Observed local parenthesized ordinal in each task."
+        },
+        "historical_question_prose": {
+          "stem_sha256": "b612c3f4263f9495f8c80aa2ba76a71a32008a57115e0a3256fe52395305f699",
+          "font_role": "instruction",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-读解文法.pdf",
+            "source_sha256": "c870b073caba6326e73ff56ea119ffa66c448b075b05ef84974b8a87711106db",
+            "physical_pages": [
+              9
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "reading-q050: audited reading question in this admitted written witness. Heavy Gothic instruction role inferred from same-level approved 2007 controls (N3 p40, N4 p69); choices and passage prose retain ordinary roles. See H27 roles/readability-02/PLAN.json. No exact-original font identification is asserted."
+          }
+        }
+      },
+      "vocab-b001": {
+        "writing_mode": {
+          "value": "unknown",
+          "basis": "Secondary retype cannot establish original booklet direction.",
+          "fallback_basis": "level_defaults"
+        },
+        "historical_context_keep": {
+          "content_sha256": "0938be23f513b57a67338a14ddf1b79fc4301e84844a7d97cac8f32d8334a6d8",
+          "questions": [
+            "vocab-q001",
+            "vocab-q002",
+            "vocab-q003"
+          ],
+          "questions_sha256": "3b6dfdf994ac90a2d0767790ca9159d3b079b8a8fdf9330bceefc30da6a059f2",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              1
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b001: complete context and associated available questions"
+          }
+        }
+      },
+      "vocab-b002": {
+        "writing_mode": {
+          "value": "unknown",
+          "basis": "Secondary retype cannot establish original booklet direction.",
+          "fallback_basis": "level_defaults"
+        },
+        "historical_context_keep": {
+          "content_sha256": "0ba0e82eb96e50f77b9f642862b78efa6a8ffa98b3f40de31c2611803e77820c",
+          "questions": [
+            "vocab-q004",
+            "vocab-q005",
+            "vocab-q006"
+          ],
+          "questions_sha256": "88c3661491404cbba23f5cf6a7e7f6d00a715700cbd3994194579ca33939da5d",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              1
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b002: complete context and associated available questions"
+          }
+        }
+      },
+      "vocab-b003": {
+        "writing_mode": {
+          "value": "unknown",
+          "basis": "Secondary retype cannot establish original booklet direction.",
+          "fallback_basis": "level_defaults"
+        },
+        "historical_context_keep": {
+          "content_sha256": "58cfe5d1d6be63273d04ec27ab3d9be743aaec69dc0a75f692ab909091342c33",
+          "questions": [
+            "vocab-q007",
+            "vocab-q008",
+            "vocab-q009"
+          ],
+          "questions_sha256": "03678301bd58a7d882474ffb5e672b8141d44c375be08678dd661bf8cbf5e1b1",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              1
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b003: complete context and associated available questions"
+          }
+        }
+      },
+      "vocab-b004": {
+        "writing_mode": {
+          "value": "unknown",
+          "basis": "Secondary retype cannot establish original booklet direction.",
+          "fallback_basis": "level_defaults"
+        },
+        "historical_context_keep": {
+          "content_sha256": "fb07963b182d1fe0b550a0a570ffaff5765c8270d635adf6462d04749bb76b6e",
+          "questions": [
+            "vocab-q010",
+            "vocab-q011",
+            "vocab-q012",
+            "vocab-q013",
+            "vocab-q014"
+          ],
+          "questions_sha256": "0c8cc0bada2232b695a4f841a0fa9790ea57e8db5ad2f0773555ae98ab028fac",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              2
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b004: complete context and associated available questions"
+          }
+        }
+      },
+      "vocab-b005": {
+        "writing_mode": {
+          "value": "unknown",
+          "basis": "Secondary retype cannot establish original booklet direction.",
+          "fallback_basis": "level_defaults"
+        },
+        "historical_context_keep": {
+          "content_sha256": "1d286ea4053843072db50f21f829e29840227fa34328d833c987112659c65fbb",
+          "questions": [
+            "vocab-q015",
+            "vocab-q016",
+            "vocab-q017",
+            "vocab-q018"
+          ],
+          "questions_sha256": "1d635e9d64120e09c9f9afccb8a6227300af0eed4952c476b9bdebee113c0378",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              2
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b005: complete context and associated available questions"
+          }
+        }
+      },
+      "vocab-b006": {
+        "writing_mode": {
+          "value": "unknown",
+          "basis": "Secondary retype cannot establish original booklet direction.",
+          "fallback_basis": "level_defaults"
+        },
+        "historical_context_keep": {
+          "content_sha256": "feba32a351e52601f86bcb16269e65e2573b8687ddbf7da7800edfa50d33695d",
+          "questions": [
+            "vocab-q019",
+            "vocab-q020"
+          ],
+          "questions_sha256": "ebac673df0e1754f47cd6039f691abf9365e7b8ba347e181cfefa4b64a18ec6f",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              3
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b006: complete context and associated available questions"
+          }
+        }
+      },
+      "vocab-b007": {
+        "writing_mode": {
+          "value": "unknown",
+          "basis": "Secondary retype cannot establish original booklet direction.",
+          "fallback_basis": "level_defaults"
+        }
+      },
+      "vocab-b008": {
+        "writing_mode": {
+          "value": "unknown",
+          "basis": "Secondary retype cannot establish original booklet direction.",
+          "fallback_basis": "level_defaults"
+        },
+        "historical_context_keep": {
+          "content_sha256": "1c435090b243b535a3dd244323e0656d53c1b271ae645d709fc9b9da8caec8af",
+          "questions": [
+            "vocab-q024"
+          ],
+          "questions_sha256": "b922eb5a03ed5d202bfb2d53e88a4bedfdc7fba6ea7b1119c2625d67ef0d6c0c",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              3
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b008: complete context and associated available questions"
+          }
+        }
+      },
+      "vocab-b009": {
+        "writing_mode": {
+          "value": "unknown",
+          "basis": "Secondary retype cannot establish original booklet direction.",
+          "fallback_basis": "level_defaults"
+        },
+        "historical_context_keep": {
+          "content_sha256": "f1c2c24061c520d852841c20ac9615b4e30e9b72b6f5cb0d460ead1f7ae5e72c",
+          "questions": [
+            "vocab-q026",
+            "vocab-q027"
+          ],
+          "questions_sha256": "4d117cd03953d28d619519f4060bf453b32130349b6ad0d058cdd8489a0725b5",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              4
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b009: complete context and associated available questions"
+          }
+        }
+      },
+      "vocab-b010": {
+        "writing_mode": {
+          "value": "unknown",
+          "basis": "Secondary retype cannot establish original booklet direction.",
+          "fallback_basis": "level_defaults"
+        },
+        "historical_context_keep": {
+          "content_sha256": "e0bdb49e84ea7b381e930eee81e13959e547022cd88a4c34910e975c2aa297f4",
+          "questions": [
+            "vocab-q028",
+            "vocab-q029",
+            "vocab-q030"
+          ],
+          "questions_sha256": "1b95285c66dfc8b5606d01d4913c89b8685f8b2f7c539c7bbe7e60db634313f8",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              4
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b010: complete context and associated available questions"
+          }
+        }
+      },
+      "vocab-b011": {
+        "writing_mode": {
+          "value": "unknown",
+          "basis": "Secondary retype cannot establish original booklet direction.",
+          "fallback_basis": "level_defaults"
+        },
+        "historical_context_keep": {
+          "content_sha256": "926dc817f3dc4ab3cefd7617efd3701ef44f76ee05b1e6e773c2c94db1abbeae",
+          "questions": [
+            "vocab-q032",
+            "vocab-q033",
+            "vocab-q034",
+            "vocab-q035"
+          ],
+          "questions_sha256": "e2955c4c7f9894f07a187a28bda4603e67c2b2715bf9d4a7a857a82548e9dd61",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845",
+            "physical_pages": [
+              4
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "vocab-b011: complete context and associated available questions"
+          }
+        }
+      },
+      "reading-b001": {
+        "writing_mode": {
+          "value": "unknown",
+          "basis": "Secondary retype cannot establish original booklet direction.",
+          "fallback_basis": "level_defaults"
+        },
+        "historical_context_keep": {
+          "content_sha256": "0b1bbbb4ec87e604b1a7efd8a56613d939275fec58450e11bbdbb8cccee93b1f",
+          "questions": [
+            "reading-q044",
+            "reading-q045",
+            "reading-q046"
+          ],
+          "questions_sha256": "f84b7dfce77befa4b45a8632064a75fda07a8b23f7e42670b6700b7578e4cae0",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-读解文法.pdf",
+            "source_sha256": "c870b073caba6326e73ff56ea119ffa66c448b075b05ef84974b8a87711106db",
+            "physical_pages": [
+              8
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "reading-b001: complete context and associated available questions"
+          }
+        },
+        "historical_reading_dialogue": {
+          "content_sha256": "0b1bbbb4ec87e604b1a7efd8a56613d939275fec58450e11bbdbb8cccee93b1f",
+          "turns": [
+            {
+              "line": 0,
+              "speaker": "山川"
+            },
+            {
+              "line": 1,
+              "speaker": "中田"
+            },
+            {
+              "line": 2,
+              "speaker": "山川"
+            },
+            {
+              "line": 3,
+              "speaker": "中田"
+            },
+            {
+              "line": 4,
+              "speaker": "山川"
+            },
+            {
+              "line": 5,
+              "speaker": "中田"
+            },
+            {
+              "line": 6,
+              "speaker": "山川"
+            },
+            {
+              "line": 7,
+              "speaker": "中田"
+            }
+          ],
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-读解文法.pdf",
+            "source_sha256": "c870b073caba6326e73ff56ea119ffa66c448b075b05ef84974b8a87711106db",
+            "physical_pages": [
+              8
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "reading-b001: complete audited written dialogue and explicit speaker turns. Speech-aligned continuation inferred from same-level approved 2007 dialogue controls; see H27 roles/dialogues-04/CONTROL_REVIEW.json. Original exact-year appearance remains unavailable."
+          }
+        }
+      },
+      "reading-b002": {
+        "writing_mode": {
+          "value": "unknown",
+          "basis": "Secondary retype cannot establish original booklet direction.",
+          "fallback_basis": "level_defaults"
+        },
+        "historical_context_keep": {
+          "content_sha256": "d3610656c09598c55b84c7fa0bed99ca977134ac7d55ec39041d9ae3a2206c14",
+          "questions": [
+            "reading-q047",
+            "reading-q048",
+            "reading-q049",
+            "reading-q050"
+          ],
+          "questions_sha256": "d504a1a7f3f64f38c8dfcf27bf6b63f2e1e9dd8e243356bf2a28389ab88cb511",
+          "evidence": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-读解文法.pdf",
+            "source_sha256": "c870b073caba6326e73ff56ea119ffa66c448b075b05ef84974b8a87711106db",
+            "physical_pages": [
+              9
+            ],
+            "state": "inferred",
+            "historical_claim": false,
+            "region": "reading-b002: complete context and associated available questions"
+          }
+        }
+      }
+    },
+    "historical_booklets": [
+      {
+        "booklet_id": "vocabulary",
+        "section_ids": [
+          "vocab-s01",
+          "vocab-s02",
+          "vocab-s03",
+          "vocab-s04",
+          "vocab-s05"
+        ],
+        "insert_before_section_id": "vocab-s01",
+        "cover": {
+          "unit": "N3_2000",
+          "historical_level": "3級",
+          "booklet_id": "vocabulary",
+          "status": "unavailable",
+          "style_id": "unwitnessed",
+          "admission_source": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845"
+          },
+          "reason": "Secondary title/point/time blocks do not establish authentic original covers. Partial practice output omits five incomplete questions."
+        }
+      },
+      {
+        "booklet_id": "reading_grammar",
+        "section_ids": [
+          "reading-s01",
+          "reading-s02",
+          "reading-s03",
+          "reading-s04",
+          "reading-s05",
+          "reading-s06"
+        ],
+        "insert_before_section_id": "reading-s01",
+        "cover": {
+          "unit": "N3_2000",
+          "historical_level": "3級",
+          "booklet_id": "reading_grammar",
+          "status": "unavailable",
+          "style_id": "unwitnessed",
+          "admission_source": {
+            "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+            "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845"
+          },
+          "reason": "Secondary title/point/time blocks do not establish authentic original covers. Partial practice output omits five incomplete questions."
+        }
+      }
+    ],
+    "historical_numbering": {
+      "status": "same_level_inference",
+      "old_level": "3級",
+      "profile_path": "pdf-render/config/historical-numbering-profiles.json",
+      "profile_sha256": "60a4f30cb9b5bdad980db78caeefd78c9f163c31d6ffcf625ec4010a3be53718",
+      "reset_policy": "booklet_continuous",
+      "principal_authority": "Audited admitted content structure. Same-level UARS controls own inferred role shapes; this is not an exact-original claim.",
+      "questions": {
+        "vocab-q001": {
+          "source_label": "1",
+          "display_number": "1",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "1cad1d1bed500bbbb72a21f6107db720032c9756500a0d60980c44bade97f68f",
+          "options_sha256": "070232f05f4a8e59685ba67b4746757027102be2a0d4078dfa065fb08a421726",
+          "section": "vocab-s01",
+          "context": "vocab-b001"
+        },
+        "vocab-q002": {
+          "source_label": "2",
+          "display_number": "2",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "c36bee63a443ce412e82dec13660568db8964573ce20f6302836f05a2de23857",
+          "options_sha256": "bda7d08a1b8b08e8d0978f6454c68dc4a7675bf227515c364d8405ce9510f283",
+          "section": "vocab-s01",
+          "context": "vocab-b001"
+        },
+        "vocab-q003": {
+          "source_label": "3",
+          "display_number": "3",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "a5d3e5cc73386266318f727782d8fc570a87aa96430c81d5fa14089898b61801",
+          "options_sha256": "b9f21a63a5b8e545f39e1bd8e16d6522f624de02e526ed21fbf60f2ebc3806fe",
+          "section": "vocab-s01",
+          "context": "vocab-b001"
+        },
+        "vocab-q004": {
+          "source_label": "1",
+          "display_number": "4",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "f6ffd6793c69c7bcccd3440aa3c2b3285f517d76184200186211e7da724c81ee",
+          "options_sha256": "1441c4fe05b7fb46557f0fb3e02f50d30baea69d94937d2e3275846a704ae9b0",
+          "section": "vocab-s01",
+          "context": "vocab-b002"
+        },
+        "vocab-q005": {
+          "source_label": "2",
+          "display_number": "5",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "263999d52cf18c6b74848c7a04be8e846266df9cb0a68712d1d2639bcc115c67",
+          "options_sha256": "c8fb4cd3ce53ea192e507bb9e916dbfc02d80f61f811d85fb529b7ec52a03c3c",
+          "section": "vocab-s01",
+          "context": "vocab-b002"
+        },
+        "vocab-q006": {
+          "source_label": "3",
+          "display_number": "6",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "ba6026da93bd6513d94379b6e7fc50a3faeee67b35490d8a55e60981f125a73a",
+          "options_sha256": "b2fb4eff3d99b42f469fa0210d4eadeff8c43fe60e10fb8388a11d62c13a7ef0",
+          "section": "vocab-s01",
+          "context": "vocab-b002"
+        },
+        "vocab-q007": {
+          "source_label": "1",
+          "display_number": "7",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "75ea308a242c0d66c3066601e34b90cf69064eb97181981bfc16260a6b3740a2",
+          "options_sha256": "4a856dc0b039f0b89d2e90615009e8c6f0a3be6fa12b6149ab4c65438ce1faf2",
+          "section": "vocab-s01",
+          "context": "vocab-b003"
+        },
+        "vocab-q008": {
+          "source_label": "2",
+          "display_number": "8",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "b34ffad8dd78625f3a1919e258447091d63ba79be15254f9c8a2d2b963acc073",
+          "options_sha256": "3a6bc8f723917cb76d1f02c72d00d02bf155375fdfd2c4367c785d263dfd538c",
+          "section": "vocab-s01",
+          "context": "vocab-b003"
+        },
+        "vocab-q009": {
+          "source_label": "3",
+          "display_number": "9",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "a3e688b7e6fdb937f49601f13ef3315bdecbe962b8cf8e17a6a3afa7f61983d9",
+          "options_sha256": "3824c028dde54b26ff4385da225d3e5eec23645ab6d88cab8cdc310bdce8117e",
+          "section": "vocab-s01",
+          "context": "vocab-b003"
+        },
+        "vocab-q010": {
+          "source_label": "1",
+          "display_number": "10",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "028df7d6ef86fb851c25cedccadfee524e660b196652063e864219fd624d03ae",
+          "options_sha256": "8b252786a7d748f5913a48e8613f7645785e9faf3b227c3f343a6c94e62f61aa",
+          "section": "vocab-s01",
+          "context": "vocab-b004"
+        },
+        "vocab-q011": {
+          "source_label": "2",
+          "display_number": "11",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "c6f8deeacd8668b5772bf735316171977fd1f32e9c2d45aa959d55b1255b3d37",
+          "options_sha256": "e38d3383ef353674ce3fbb9518b10faff670f758ad9e81ed2cec8dd64fd334d3",
+          "section": "vocab-s01",
+          "context": "vocab-b004"
+        },
+        "vocab-q012": {
+          "source_label": "3",
+          "display_number": "12",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "234d86f10d8d5d44ae1843490ca3ac94721c1d5d1c2163a91a32a0a6d1b139f9",
+          "options_sha256": "9127f07131e18f59e96642e54c549e264c6855723e3b7c06902e6601b58c16c1",
+          "section": "vocab-s01",
+          "context": "vocab-b004"
+        },
+        "vocab-q013": {
+          "source_label": "4",
+          "display_number": "13",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "6c93e55006088b1852d383d70ab48be1c7723c4e4d517c10270b44066e31c160",
+          "options_sha256": "fa0c858bb182d055034efaddd5171bdcd628f1de666f0e3e0d53e0b8ca6889fb",
+          "section": "vocab-s01",
+          "context": "vocab-b004"
+        },
+        "vocab-q014": {
+          "source_label": "5",
+          "display_number": "14",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "26e5d1e4bb3fbd257a726908062c887b93ef244f599e9abd1dc3bc0378a5a852",
+          "options_sha256": "a7353c2a7f4028910ab93fe56aefa716c4c233f3abe5b2da33e73b1130991b98",
+          "section": "vocab-s01",
+          "context": "vocab-b004"
+        },
+        "vocab-q015": {
+          "source_label": "1",
+          "display_number": "15",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "8286b9c4886afbef3664b7ae0184a5c924778b3cc3787e24176fcd4dea49ae89",
+          "options_sha256": "478564a7064b36ef7911245a7187a4b4131a7a44e933756263720ac46e35da17",
+          "section": "vocab-s01",
+          "context": "vocab-b005"
+        },
+        "vocab-q016": {
+          "source_label": "2",
+          "display_number": "16",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "fede83d495ada8ebf10efc88e2bc3296ead233f5f0302eb2c0754e3652d2617d",
+          "options_sha256": "b62d6ce1fc42a2f7bcd0c7e173e2b6be634b45042d5f4678b43f5d9f49314826",
+          "section": "vocab-s01",
+          "context": "vocab-b005"
+        },
+        "vocab-q017": {
+          "source_label": "3",
+          "display_number": "17",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "69ea436de21ac6edfa08feb7a6e79e8a72f736e6ab19b60a7e42725231c9243a",
+          "options_sha256": "70023ab1a48d1229da4fd8b68afb76a362d77b28ca4800fc0e1bc188ea28be19",
+          "section": "vocab-s01",
+          "context": "vocab-b005"
+        },
+        "vocab-q018": {
+          "source_label": "4",
+          "display_number": "18",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "3fa21ef085b334d378f78af2c2037774205f0d55bf71fce497e20cebf1e522b2",
+          "options_sha256": "be1c56ca8411f3b3543f4b3ef883f1d002587000f0d940fb0c7961ef74a18ca3",
+          "section": "vocab-s01",
+          "context": "vocab-b005"
+        },
+        "vocab-q019": {
+          "source_label": "1",
+          "display_number": "19",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "3be1b590204eaafa7e04b64c9410dadc520b3722945444f7325c98b9f0b23719",
+          "options_sha256": "ea33b64a8527408cd5a93fa89cdc8abca62389c78bbbdec4b0f06e2d67eced16",
+          "section": "vocab-s01",
+          "context": "vocab-b006"
+        },
+        "vocab-q020": {
+          "source_label": "2",
+          "display_number": "20",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "f7412d42af7021aa46c73758079d2b446b31dc3df895c8f2cdbc9c17b709965e",
+          "options_sha256": "48d7214fc3ea0e57e7f2619973e938cdd90b2d73404096bb55eb68489762561e",
+          "section": "vocab-s01",
+          "context": "vocab-b006"
+        },
+        "vocab-q024": {
+          "source_label": "2",
+          "display_number": "24",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "15fb22d95694fb89963bb80adb4e51153c12404f6a1e37f6964cd711d4387a42",
+          "options_sha256": "4e2dfabd98e6baaa0bb8858b7b034b16c0df78b356316c65c9c47beffbc46a36",
+          "section": "vocab-s02",
+          "context": "vocab-b008"
+        },
+        "vocab-q026": {
+          "source_label": "2",
+          "display_number": "26",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "c211b0ed974a2b21747c6ea19f9879d8e3def65075e7227782475b9d3772ecc8",
+          "options_sha256": "8b9fad82b507486f60e655d4e8af587835077a1deedd661fe693b9a398378c0e",
+          "section": "vocab-s02",
+          "context": "vocab-b009"
+        },
+        "vocab-q027": {
+          "source_label": "3",
+          "display_number": "27",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "f6e331760b9dcdd5c74e04a87de2c73d829856fc8d32d6c91509c09fe5263529",
+          "options_sha256": "4a4cfed084212c2eb6576ec6a30a94d1ae63a3fc37356badc8c96167e51cb07c",
+          "section": "vocab-s02",
+          "context": "vocab-b009"
+        },
+        "vocab-q028": {
+          "source_label": "1",
+          "display_number": "28",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "b5fda308064db82e3d5594aac5383495160d170d73773ea6f7433dc1413809ed",
+          "options_sha256": "e798fa458c86f01c1214ec58dfcab14978abe649b1c1d81cda39234af8244bd1",
+          "section": "vocab-s02",
+          "context": "vocab-b010"
+        },
+        "vocab-q029": {
+          "source_label": "2",
+          "display_number": "29",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "9e6308e64b8006aca8bc6cddb2397ce292b18e625ee4e76f6b3c70cee5afc61d",
+          "options_sha256": "5654fe094613f4ce9f653034c9f3155bd04855aee6ef53c56ecf778a8b308168",
+          "section": "vocab-s02",
+          "context": "vocab-b010"
+        },
+        "vocab-q030": {
+          "source_label": "3",
+          "display_number": "30",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "3df85b46907ba89ed4ec96b0360879c7204cc02adce58e9fb77ea87095efd93e",
+          "options_sha256": "7c0439d459131f8b3bd59d9e8d00df519423beb19958329e65012a925178a3e2",
+          "section": "vocab-s02",
+          "context": "vocab-b010"
+        },
+        "vocab-q032": {
+          "source_label": "1",
+          "display_number": "32",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "538da6da8a787e752df04157d047739493a2872bb855186947a270005c5127bf",
+          "options_sha256": "8ad49ee8d07e2da29183b5d1b6df5ecf3ed09f6904158becbd21da1c01c82a44",
+          "section": "vocab-s02",
+          "context": "vocab-b011"
+        },
+        "vocab-q033": {
+          "source_label": "2",
+          "display_number": "33",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "ac81b10e24467cb95f428f54eeba06e259a7ff3dd1fa2c87a0a3b373b5ede635",
+          "options_sha256": "814e06935ecc1b5c8896bbb013d1d9d4f22f2efb2e951e7c30fa103c2828fbdb",
+          "section": "vocab-s02",
+          "context": "vocab-b011"
+        },
+        "vocab-q034": {
+          "source_label": "3",
+          "display_number": "34",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "8d2e8797544e0de2a4c1f1782c001796b5bdfb0af278defc28fc66d538f6bd58",
+          "options_sha256": "3f6dc0f21c7960852f65c9e1078d8993213559f8d2e2905841770d0852bbf867",
+          "section": "vocab-s02",
+          "context": "vocab-b011"
+        },
+        "vocab-q035": {
+          "source_label": "4",
+          "display_number": "35",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "58da525c7aeef846ef73352a67a04881bd6d6db944998369e2486006cb823ad7",
+          "options_sha256": "e31e92a41141d3132a7afb4bc69d5a4ec4546a33cc8ec7986d76d2723527dfd1",
+          "section": "vocab-s02",
+          "context": "vocab-b011"
+        },
+        "vocab-q036": {
+          "source_label": "1",
+          "display_number": "36",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "75530047d7d112325afb01b977761de05004fcbe93da6edc0a753f0661ffcd06",
+          "options_sha256": "b606e9f05c83e8196b32f520ce6b53e89b68b3ab0ab5bbc7413c2d3d99cf0d8f",
+          "section": "vocab-s03",
+          "context": null
+        },
+        "vocab-q037": {
+          "source_label": "2",
+          "display_number": "37",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "f8423d2176b8b0bc578d381db9aca8a54ef073604c06bfafa3948dd6339a8de6",
+          "options_sha256": "c126b828968800ecb42b36702e77a6eb4cb869f3f4f4a390a4c1b2f92f1218d1",
+          "section": "vocab-s03",
+          "context": null
+        },
+        "vocab-q038": {
+          "source_label": "3",
+          "display_number": "38",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "f0d39dee14c962cd17800e08d02b4995da1b5df6dbb1c4cb84d30ab6db081946",
+          "options_sha256": "8cbc2909972cd0dfc813822fbeff37c119c24a8547de2a908d0d85fabcc012bb",
+          "section": "vocab-s03",
+          "context": null
+        },
+        "vocab-q039": {
+          "source_label": "4",
+          "display_number": "39",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "acafac5566f87961f53a1f1e2bb56998a7f0244e65f6a454257db954335d3b9d",
+          "options_sha256": "3b3c0f84c28e07f34fbe61d7e77230ea0cfd48ff1947984f16535cd2133c9652",
+          "section": "vocab-s03",
+          "context": null
+        },
+        "vocab-q040": {
+          "source_label": "5",
+          "display_number": "40",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "cbf497033e180b6d06da7362a2d78a28cccf4440062b98ac24181f4219f54210",
+          "options_sha256": "0afba73365d38940c89f04b5069314ba70296cc5f5e0b13af691f712df353087",
+          "section": "vocab-s03",
+          "context": null
+        },
+        "vocab-q041": {
+          "source_label": "6",
+          "display_number": "41",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "84453bf8ce5d214b69b374228bcfa871719137257fb564a3b718b68ece5954cc",
+          "options_sha256": "2be27448e86c6020a298df6b248a4920db154ffa577a382d7c695fe248e13d9b",
+          "section": "vocab-s03",
+          "context": null
+        },
+        "vocab-q042": {
+          "source_label": "7",
+          "display_number": "42",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "27fb25a417e3397e4b96938ce751709cf964972fd0b4b496629493dc1e45e9ce",
+          "options_sha256": "82c393be55fd707d462b2f191a5b64af4a2afd86cd146e3867139a6219a8357a",
+          "section": "vocab-s03",
+          "context": null
+        },
+        "vocab-q043": {
+          "source_label": "8",
+          "display_number": "43",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "a327521092865647764b51061ff57e696ada4549b3028a9a3d48fc4a4aa66c00",
+          "options_sha256": "9414043cb5261fb9f64295915f4a3e55eb828966ef15909e458c26a64d23b555",
+          "section": "vocab-s03",
+          "context": null
+        },
+        "vocab-q044": {
+          "source_label": "9",
+          "display_number": "44",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "eab5b1a982a5c8c79104495b372cdfc6c00fc0c2deb670e5092191f86a5af8b9",
+          "options_sha256": "ea813b03fb45141ca0ee019da55084c293c88e7f077cb9220620d9ae277f7f4b",
+          "section": "vocab-s03",
+          "context": null
+        },
+        "vocab-q045": {
+          "source_label": "10",
+          "display_number": "45",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "e6c45e86c873cfe3648c9ea978fe8d62f700671beac5e7e52dcb008e8aaeea4b",
+          "options_sha256": "efd91f0f43e332fa1efad01f1425b1471a313d1afe56c3360cb9c202512ce58e",
+          "section": "vocab-s03",
+          "context": null
+        },
+        "vocab-q046": {
+          "source_label": "1",
+          "display_number": "46",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "5fae7c5064b407815a92b98afa1674d530077df97a5ceee60b9a12e7af51cb18",
+          "options_sha256": "50ba6de90762f3bf618f602e7f7426400767e6d761e50ad264c6dc17a362650f",
+          "section": "vocab-s04",
+          "context": null
+        },
+        "vocab-q047": {
+          "source_label": "2",
+          "display_number": "47",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "796190a5a077a0ddb39b73231d1ece75cc1ab28f4c2aca0d24a0102bb5f2cf6f",
+          "options_sha256": "341af86531653b5d379d2197cde5c5e74af2c8a15552a02e449bd3bfd1ae1a48",
+          "section": "vocab-s04",
+          "context": null
+        },
+        "vocab-q048": {
+          "source_label": "3",
+          "display_number": "48",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "6d2bc3e331accc9adf0dccdae9f968b00d47f0218ab4ae7a7152aa15d4b25b1c",
+          "options_sha256": "7435a496d3975dfcd9eb1fb06ba33818961a0aebd8828453d2d61e2ae629b35e",
+          "section": "vocab-s04",
+          "context": null
+        },
+        "vocab-q049": {
+          "source_label": "4",
+          "display_number": "49",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "279812687433c1f41d6252649c2a7ae44d21da28d9fa688a118fc2fb7e86d665",
+          "options_sha256": "147cecef4aa8913364356684325f1bea2f3f6e973151cf8891a2a2f84abb210e",
+          "section": "vocab-s04",
+          "context": null
+        },
+        "vocab-q050": {
+          "source_label": "5",
+          "display_number": "50",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "9230780d88c9bbfd8f3ff7f972603e6a4ec25e240b8844d4e2445cf3341ba0f1",
+          "options_sha256": "b04d4b8ecd7f395799e3ab95409746fe2d2debab812893000da96ecb35764e7d",
+          "section": "vocab-s04",
+          "context": null
+        },
+        "vocab-q051": {
+          "source_label": "1",
+          "display_number": "51",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "41751b80b88e087087cc5d9c6eefe803c901af539a4ce2be4405c594a1ad6802",
+          "options_sha256": "9115714d7b665684d91f6e83d3fc7d7663631b0791e60be7bcb60ab425da61b6",
+          "section": "vocab-s05",
+          "context": null
+        },
+        "vocab-q052": {
+          "source_label": "2",
+          "display_number": "52",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "f8a139953543a81b67b752c850087c993dbd0fa4949d6a681aa31510a769abc9",
+          "options_sha256": "9726028357f856e3e3fd1bfd2a31f4acc495a04bce42965beb30efaa191b0864",
+          "section": "vocab-s05",
+          "context": null
+        },
+        "vocab-q053": {
+          "source_label": "3",
+          "display_number": "53",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "55a921e9fd66fbbc76f3b164806980fd3ee3df7e388e93a12dc2f52171f753bd",
+          "options_sha256": "26c7111207111e860f4f02b0f75e9637b64fd996c488036eba1fe80f9d439c11",
+          "section": "vocab-s05",
+          "context": null
+        },
+        "vocab-q054": {
+          "source_label": "4",
+          "display_number": "54",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "fb46c6808fa1de69f62de97683c0d71b822a31991b2f2c0c1fe3f703af1b2870",
+          "options_sha256": "28da38c9a85f78cdb607306e80d70809247fa3461bd2e0e316e461e300c6ebe7",
+          "section": "vocab-s05",
+          "context": null
+        },
+        "vocab-q055": {
+          "source_label": "5",
+          "display_number": "55",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "ad3f138907065aa29743bf7715ad7319c84533788392de8601f4167bfd9c979b",
+          "options_sha256": "6c7e1e0c4f9cd6e9aaf3adaa15ec574a08e127d44252bd5fcf38e27a3a021b9d",
+          "section": "vocab-s05",
+          "context": null
+        },
+        "reading-q001": {
+          "source_label": "1",
+          "display_number": "1",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "9b61acdc3b1f313436ea8a8e410992775917ce1791af6ca4cf2d86a381675212",
+          "options_sha256": "94c147c612422fdac85f745299a0936a1fce8280ee211e746e1a1ae82a22f3dd",
+          "section": "reading-s01",
+          "context": null
+        },
+        "reading-q002": {
+          "source_label": "2",
+          "display_number": "2",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "24e0b7c2a4a188b3dacc53b3931a033676b7aa16f78acdecb669a3f432296b39",
+          "options_sha256": "76ecbeee27c94587024718af617732b5faa341f3b5f5a7558a8b64845c3f6cc5",
+          "section": "reading-s01",
+          "context": null
+        },
+        "reading-q003": {
+          "source_label": "3",
+          "display_number": "3",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "7afd6da837178812ace5b2f01fb02701c9f3bc1215fc8ad21911b2e83ad240be",
+          "options_sha256": "08d25573b6421e0267b20461529434d0bc2435a200fd3a97513e336179bfb0da",
+          "section": "reading-s01",
+          "context": null
+        },
+        "reading-q004": {
+          "source_label": "4",
+          "display_number": "4",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "8707b871ec9ae7e6387c38eb2a438545b775f08f02ebd5d9004f02330cd1435a",
+          "options_sha256": "30a57a9ad4da519f97e53c16d0be5133ff6deacda0eecd6aa1ffa75e8b2624d7",
+          "section": "reading-s01",
+          "context": null
+        },
+        "reading-q005": {
+          "source_label": "5",
+          "display_number": "5",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "be32ae57e387740fba2e6ef54d18269faa59f5af709e2e82bb199888239991d9",
+          "options_sha256": "0822bab0e999f9074a80672cd820b69b330a86d4cd969371c63eacae95d2a46e",
+          "section": "reading-s01",
+          "context": null
+        },
+        "reading-q006": {
+          "source_label": "6",
+          "display_number": "6",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "37fd493625bee957790f2579258ec9f633eea0a62e88039f912d729ff4f26958",
+          "options_sha256": "81f88990f697436d0a52f6f121fb2ab7d90fa7d43b512314253310de077ef26f",
+          "section": "reading-s01",
+          "context": null
+        },
+        "reading-q007": {
+          "source_label": "7",
+          "display_number": "7",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "13316bd6e80e677ca2708c8542b2efa33aa054090351e3625e703803134deb6d",
+          "options_sha256": "e8d49df64f70555fc72f0ae4582272d230711faa8249a6c3e2d3664eed71f4f4",
+          "section": "reading-s01",
+          "context": null
+        },
+        "reading-q008": {
+          "source_label": "8",
+          "display_number": "8",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "f638added380b5c66935f75a75cc4e99252c1f458928488e1134301fd8a9424b",
+          "options_sha256": "ddd1cfeb0f2bbbd53f26d306f6fa51f01d5ea0768600f87d41203aa26a8707f4",
+          "section": "reading-s01",
+          "context": null
+        },
+        "reading-q009": {
+          "source_label": "9",
+          "display_number": "9",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "8b94546fbdee8d4742b64b168e15058cf66a5ec8bef7f00f54434b66651faa48",
+          "options_sha256": "7845c19c3f9d8e9a13c0774354f2b787663d50d915852e8440d1eeb7576cd88a",
+          "section": "reading-s01",
+          "context": null
+        },
+        "reading-q010": {
+          "source_label": "10",
+          "display_number": "10",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "a9979f25ffaaf0b312a187d7fa08c53c5ec153d045bffb2555283595fb74328f",
+          "options_sha256": "cc5ece2c91eba52b02146c4cca0547670b29234ad5c0f249bd68c26f81391b96",
+          "section": "reading-s01",
+          "context": null
+        },
+        "reading-q011": {
+          "source_label": "11",
+          "display_number": "11",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "a3aa4474d7f1653c23b7f93711dbeccbe46a89bd8a844e127ffc7255eb5d2a84",
+          "options_sha256": "dd198d7636067f57bf2394292660143d8bf81a4ef8547afc8e92cde40249566b",
+          "section": "reading-s01",
+          "context": null
+        },
+        "reading-q012": {
+          "source_label": "12",
+          "display_number": "12",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "2a1961fe711b2e383dd42c553c89fe78beae44a6e2aff6e43e614fd8153a3924",
+          "options_sha256": "ab8d349fb7615d4e8d7f327dd77963db4ae88eaa597554d52dee332d84d3f893",
+          "section": "reading-s01",
+          "context": null
+        },
+        "reading-q013": {
+          "source_label": "13",
+          "display_number": "13",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "eba5b887a1a21fbf08a3189ec240e7cf7a92c6422aa1ccebfc8bcff15f3ddfac",
+          "options_sha256": "36d6bd3728fe5462a1621ad70e00f98a31b524ea21fec1b0bfdc2029f40a907f",
+          "section": "reading-s01",
+          "context": null
+        },
+        "reading-q014": {
+          "source_label": "14",
+          "display_number": "14",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "41244873d1b42ecaacf2c3bfe53366b5c7181b64b90e3c20c5789f436b8b280d",
+          "options_sha256": "29acf6f706e7b481759078137417f00ba3ef60711daa2a6e129d698647fc49ad",
+          "section": "reading-s01",
+          "context": null
+        },
+        "reading-q015": {
+          "source_label": "15",
+          "display_number": "15",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "041d0f9d1a5b51e826fc5271ef3f68485000f39c68a1e2bed90338893ea183d2",
+          "options_sha256": "3d385f366a3148f6e94b5e103847828c027ea6f40c9a7d72ca5a6649a8ee1433",
+          "section": "reading-s01",
+          "context": null
+        },
+        "reading-q016": {
+          "source_label": "1",
+          "display_number": "16",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "6fd49e76e852b840069f1697f4435e8b0a1373ec82abcf5a76edfa79ad6a2aaf",
+          "options_sha256": "8738e253d4531eda9aea4998ce2a7bfae4def92ff531a9a33f11840cf20ac26b",
+          "section": "reading-s02",
+          "context": null
+        },
+        "reading-q017": {
+          "source_label": "2",
+          "display_number": "17",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "56456ac0f6c26f10e997c238242131aabfd73997966694b4216527d8cfffaadd",
+          "options_sha256": "0dfff322404748f164e90566982ce8ef6c88a14031a3509fdc6f2e8b4bb97914",
+          "section": "reading-s02",
+          "context": null
+        },
+        "reading-q018": {
+          "source_label": "3",
+          "display_number": "18",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "e16cf82d2a74790fd8837502c7500309cd377a695985d46330b87e163ae59430",
+          "options_sha256": "3d88676318d9cbae460c5cf14ac561f76a480eccd6ae4be14e4ca9dc7f967a8b",
+          "section": "reading-s02",
+          "context": null
+        },
+        "reading-q019": {
+          "source_label": "4",
+          "display_number": "19",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "f439ea3bda8b8f8803b816098db6c5f3a3784888b34fe81ff9d52c59691a6755",
+          "options_sha256": "cb747ec930b1c6f794ad478f7be5ba868b58e346b8e827ba3dfaa62440188579",
+          "section": "reading-s02",
+          "context": null
+        },
+        "reading-q020": {
+          "source_label": "5",
+          "display_number": "20",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "f62b3eb77a5f47a97006cbcdbf9377b98048562ab4a8aec647dd5fb895ffb251",
+          "options_sha256": "2325b2d5b330238e27dd95af21c02acedb6d50b28f3f3c7a360671d3fae0dbd6",
+          "section": "reading-s02",
+          "context": null
+        },
+        "reading-q021": {
+          "source_label": "6",
+          "display_number": "21",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "b4efe0786dbb00e858608f1c91767e1f9347ca5190a09c1c0c807f01d5079379",
+          "options_sha256": "6f7bec799a4bb5f7062feaba42ed6bcc322acbb8cc82ec778faabb971429a718",
+          "section": "reading-s02",
+          "context": null
+        },
+        "reading-q022": {
+          "source_label": "7",
+          "display_number": "22",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "64d67eebcf3bc770adc9b730508d36b0e9f06cfae650ee9097ca1184ff141b57",
+          "options_sha256": "0c93746f02604e5940054faf65e7fe8a4f515690edaf193c6f91194c04d9e9b0",
+          "section": "reading-s02",
+          "context": null
+        },
+        "reading-q023": {
+          "source_label": "8",
+          "display_number": "23",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "d1235ca981f3a73aeb122104426290c474f06c24bb239409aa7ecebf681e32a5",
+          "options_sha256": "3d09bbcceb2d0fc382fe68aa55ac750c793281ef2d871c991790f0d2fdea0226",
+          "section": "reading-s02",
+          "context": null
+        },
+        "reading-q024": {
+          "source_label": "9",
+          "display_number": "24",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "b1ebf0a103b84f09b522fd40beaf4a72ffbc0640de1f93cbcb55c614fe830f02",
+          "options_sha256": "a26ca8a50de10a8ad0802157e3f1621f82d2f8bcaef612e01acbfe297cc770c4",
+          "section": "reading-s02",
+          "context": null
+        },
+        "reading-q025": {
+          "source_label": "10",
+          "display_number": "25",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "3e3417b79811333e54bd83c4fbb1086f081cba8556a40f21bda8e94a91698256",
+          "options_sha256": "c2c4630bd56be7f00f9e0ee489add57219e0eeab8388327798414cc21176e67e",
+          "section": "reading-s02",
+          "context": null
+        },
+        "reading-q026": {
+          "source_label": "11",
+          "display_number": "26",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "7e5069e41ca68cf44b8e88b1949fe744c91ad83d6c37fc73bc77f7bc81317be3",
+          "options_sha256": "7c6fc7a35db00ca794eb25ae81e2511813d77222612d343bd1e79d39f896cdff",
+          "section": "reading-s02",
+          "context": null
+        },
+        "reading-q027": {
+          "source_label": "12",
+          "display_number": "27",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "3b559a1e5523100fedf13d474ad6dc3e9d058f61bc71805383d058dc5476167d",
+          "options_sha256": "f6492f4ef4fbff853b7f6c294a8b7bacef00eb5927cdcaa60980dd48e517ba2f",
+          "section": "reading-s02",
+          "context": null
+        },
+        "reading-q028": {
+          "source_label": "13",
+          "display_number": "28",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "e2f7f611eaf2be1ecaa0a3727153e2966ef07a56a03daf39cb6a5f67ad5ce403",
+          "options_sha256": "d836f09f5d5263a8f1f0f3a1bf0a5ce55e00de2c99d96f399db370fa2d7b8f58",
+          "section": "reading-s02",
+          "context": null
+        },
+        "reading-q029": {
+          "source_label": "14",
+          "display_number": "29",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "38e70ea35e65fc5bd4c20177ec32c9d2dd8943aff5f3fbc467b1f1bc1d11cd39",
+          "options_sha256": "bd094e63bc1237cb3eba5b60f230126c4ff154cae7b840cfcd7dcdeea97f27ce",
+          "section": "reading-s02",
+          "context": null
+        },
+        "reading-q030": {
+          "source_label": "15",
+          "display_number": "30",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "ebd05f09ff7e7ecab8f79abe9f62a5c6a16ca13c1d4fee19ef3740b4c3b93d9d",
+          "options_sha256": "9cf44d540f0e1d5fee34a09498fdcf9132ede28eb25a9472ddfdf270cbe570dd",
+          "section": "reading-s02",
+          "context": null
+        },
+        "reading-q031": {
+          "source_label": "1",
+          "display_number": "31",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "9fc7d4b8d0bc992c77bb05cb520d3abe7d9b722939799a0c089ba23313997df3",
+          "options_sha256": "38d668add0f28ee77d38fdc164dd8af5aa8d8eed040799221618005c454b10aa",
+          "section": "reading-s03",
+          "context": null
+        },
+        "reading-q032": {
+          "source_label": "2",
+          "display_number": "32",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "3c97772edd6861665feb87771a45044512a20cf2c4a3e700516cafef5f42cb48",
+          "options_sha256": "caaa388f17d60eebfe39ac8a8a2fb11fe31624af0c3e24c07008106c2ba2d283",
+          "section": "reading-s03",
+          "context": null
+        },
+        "reading-q033": {
+          "source_label": "3",
+          "display_number": "33",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "9246bc2bb11e10278d84117ad664524d24e47ba35485fb6b25bb9987fb7511b5",
+          "options_sha256": "94963b019feaab5cb8a0b28e8b03acaed585aa7ba515633c0988434c2d7b9f52",
+          "section": "reading-s03",
+          "context": null
+        },
+        "reading-q034": {
+          "source_label": "4",
+          "display_number": "34",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "0b2fd1f0a101521bd9e7490d9a7ecfc912d6d52003c359b324af251058e164f4",
+          "options_sha256": "bb1f0eaca48f932719ce4682eb2eefc6c743d1a886d9350ea313f7ef09cbc191",
+          "section": "reading-s03",
+          "context": null
+        },
+        "reading-q035": {
+          "source_label": "5",
+          "display_number": "35",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "e8c8d242901305017de2da19569482c31a3b665ffb926053090c441efc102036",
+          "options_sha256": "ec23ac8e7d805c650f6e9ded802c82641c7b48cbc0a660c44e23150cd057de66",
+          "section": "reading-s03",
+          "context": null
+        },
+        "reading-q036": {
+          "source_label": "6",
+          "display_number": "36",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "595306de633f07d7a3e31930de0b9fac9ccfc81d282637bb82f726ae084f1e4a",
+          "options_sha256": "1cf39022e3a5d2c7a2140cd9cb02672bc3e4200fab8984807118ae892dd955d8",
+          "section": "reading-s03",
+          "context": null
+        },
+        "reading-q037": {
+          "source_label": "7",
+          "display_number": "37",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "6269fcd200c6e9f90aa570f2c282c020333a8b82c3d030e73669fb1afa207ac8",
+          "options_sha256": "06498f9417cfa3d8a3b15e39421bdff48897941be933dffd7713c2800c79945e",
+          "section": "reading-s03",
+          "context": null
+        },
+        "reading-q038": {
+          "source_label": "8",
+          "display_number": "38",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "0b73753306dbad059e4db21fa979659ff47f083d2a18db34402cbf6af5146782",
+          "options_sha256": "003a5f3990206695963b37cc7e17ce857d4dc95255c46a130c3c300faed08093",
+          "section": "reading-s03",
+          "context": null
+        },
+        "reading-q039": {
+          "source_label": "1",
+          "display_number": "39",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "59b17fd21a48c19ee99b06054ed54219285957f5c1f7e8b055334a6392840577",
+          "options_sha256": "cf0aeca9ca10e630c5e8b36457797e400808bd3d0c8ddd63b0231c0cf199d0c1",
+          "section": "reading-s04",
+          "context": null
+        },
+        "reading-q040": {
+          "source_label": "2",
+          "display_number": "40",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "5324c9e15cd06e2461c9a58eef3e09b190805680beec55f98c62b855ccd57339",
+          "options_sha256": "5c4cc657e946f63bf3eaf34b4dd156a7fbbb856b88745b48176df38ac511f7e5",
+          "section": "reading-s04",
+          "context": null
+        },
+        "reading-q041": {
+          "source_label": "3",
+          "display_number": "41",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "8b5e07ba18c0e3c4a151bd36ccab6e5db26e269640efd60a8552fb521e1ca051",
+          "options_sha256": "3798d87f5f28f13293cd9a476d21b5f9d5b26463717d9fcbb5f66b3baf963a31",
+          "section": "reading-s04",
+          "context": null
+        },
+        "reading-q042": {
+          "source_label": "4",
+          "display_number": "42",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "8fc3a4098fb7ceb09427cc4bac80dcdec02e991e7929c81f853851db3c4e744d",
+          "options_sha256": "64d4af4c4670cdf051f878728bdc303283361b602820febaea6d7f3e2fbf599d",
+          "section": "reading-s04",
+          "context": null
+        },
+        "reading-q043": {
+          "source_label": "5",
+          "display_number": "43",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "e90f01b20986714041bc4aa5917f573548e0dd10667e7ee9861422f5e8e01686",
+          "options_sha256": "32d20596b25ac151acaadff42503eec80c04403393ae9c0442963604b1774487",
+          "section": "reading-s04",
+          "context": null
+        },
+        "reading-q044": {
+          "source_label": "1",
+          "display_number": "44",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "a4a729744841347ecc65dbc6a48cee8667561a416030c42266a1a6556441adfe",
+          "options_sha256": "f362eaf9cc2b0b35494b09729598e6a542bacc558e3ad80f3ac53f1d721092e8",
+          "section": "reading-s05",
+          "context": null
+        },
+        "reading-q045": {
+          "source_label": "2",
+          "display_number": "45",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "0b49b207ff676ea4312fc2a3404f0062bc8ceb44a2cf957cc9bbf292d71dfcf3",
+          "options_sha256": "581978597a0a88265343380ef7b42f475cfa3c521b8786dc238910047b7f6e69",
+          "section": "reading-s05",
+          "context": null
+        },
+        "reading-q046": {
+          "source_label": "3",
+          "display_number": "46",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "13b1c370efaccd2e3b2376fe0e8f60b8a7220e8a1eae19d74d3f2770d213bee0",
+          "options_sha256": "3b64cfebe35fe3a14242282a685179a002df98b997c3104b7b27c846a1aafa79",
+          "section": "reading-s05",
+          "context": null
+        },
+        "reading-q047": {
+          "source_label": "1",
+          "display_number": "47",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "2f2e9cd8a475425f2ade3be1cb287b4892fd2aea5cfce1c3759f303faa9ef5d7",
+          "options_sha256": "7ce65ecda5d8c7fd1cff1c723ba4c10b71ac32cfd029484fcd612003f08d3b23",
+          "section": "reading-s06",
+          "context": null
+        },
+        "reading-q048": {
+          "source_label": "2",
+          "display_number": "48",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "ee8cb24693bd650fa6121940caca28f8c0d5b54d37c9d6b99a03bcac3ab902f0",
+          "options_sha256": "f7c0f2e513e0124c3e125fd1448064c88978e2f7cced07c2ba6b59f4bcb903a7",
+          "section": "reading-s06",
+          "context": null
+        },
+        "reading-q049": {
+          "source_label": "3",
+          "display_number": "49",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "0c58294614c5a35cd401f5186f2018f35f62a3ee4b57a9b8bf4623e987c53881",
+          "options_sha256": "1b87e6aa562d5d4d6d6ce43827244bd854cf2d0beb61bdb6c2b30a3adfb851cb",
+          "section": "reading-s06",
+          "context": null
+        },
+        "reading-q050": {
+          "source_label": "4",
+          "display_number": "50",
+          "kind": "boxed",
+          "source_prefix": null,
+          "stem_sha256": "b612c3f4263f9495f8c80aa2ba76a71a32008a57115e0a3256fe52395305f699",
+          "options_sha256": "4c649a01cd91e51f1c216535857116f7c1ef87e0431a506037031949826c32bb",
+          "section": "reading-s06",
+          "context": null
+        }
+      },
+      "contexts": {
+        "vocab-b001": {
+          "mode": "bound_underlines",
+          "number_style": "boxed",
+          "content_sha256": "0938be23f513b57a67338a14ddf1b79fc4301e84844a7d97cac8f32d8334a6d8",
+          "references": [
+            {
+              "question_id": "vocab-q001",
+              "source_label": "1",
+              "display_number": "1",
+              "underline_index": 0,
+              "underline_text": "妹",
+              "target_text": "妹",
+              "source_prefix": "①",
+              "stem_suffix": "",
+              "underline_suffix": ""
+            },
+            {
+              "question_id": "vocab-q002",
+              "source_label": "2",
+              "display_number": "2",
+              "underline_index": 1,
+              "underline_text": "海",
+              "target_text": "海",
+              "source_prefix": "②",
+              "stem_suffix": "",
+              "underline_suffix": ""
+            },
+            {
+              "question_id": "vocab-q003",
+              "source_label": "3",
+              "display_number": "3",
+              "underline_index": 2,
+              "underline_text": "走って",
+              "target_text": "走って",
+              "source_prefix": "③",
+              "stem_suffix": "",
+              "underline_suffix": ""
+            }
+          ],
+          "unscored_underlines": []
+        },
+        "vocab-b002": {
+          "mode": "bound_underlines",
+          "number_style": "boxed",
+          "content_sha256": "0ba0e82eb96e50f77b9f642862b78efa6a8ffa98b3f40de31c2611803e77820c",
+          "references": [
+            {
+              "question_id": "vocab-q004",
+              "source_label": "1",
+              "display_number": "4",
+              "underline_index": 0,
+              "underline_text": "大使館",
+              "target_text": "大使館",
+              "source_prefix": "①",
+              "stem_suffix": "",
+              "underline_suffix": ""
+            },
+            {
+              "question_id": "vocab-q005",
+              "source_label": "2",
+              "display_number": "5",
+              "underline_index": 1,
+              "underline_text": "二台",
+              "target_text": "二台",
+              "source_prefix": "②",
+              "stem_suffix": "",
+              "underline_suffix": ""
+            },
+            {
+              "question_id": "vocab-q006",
+              "source_label": "3",
+              "display_number": "6",
+              "underline_index": 2,
+              "underline_text": "止まって",
+              "target_text": "止まって",
+              "source_prefix": "③",
+              "stem_suffix": "",
+              "underline_suffix": ""
+            }
+          ],
+          "unscored_underlines": []
+        },
+        "vocab-b003": {
+          "mode": "bound_underlines",
+          "number_style": "boxed",
+          "content_sha256": "58cfe5d1d6be63273d04ec27ab3d9be743aaec69dc0a75f692ab909091342c33",
+          "references": [
+            {
+              "question_id": "vocab-q007",
+              "source_label": "1",
+              "display_number": "7",
+              "underline_index": 0,
+              "underline_text": "少し",
+              "target_text": "少し",
+              "source_prefix": "①",
+              "stem_suffix": "",
+              "underline_suffix": ""
+            },
+            {
+              "question_id": "vocab-q008",
+              "source_label": "2",
+              "display_number": "8",
+              "underline_index": 1,
+              "underline_text": "目",
+              "target_text": "目",
+              "source_prefix": "②",
+              "stem_suffix": "",
+              "underline_suffix": "",
+              "source_prefix_gap": "　"
+            },
+            {
+              "question_id": "vocab-q009",
+              "source_label": "3",
+              "display_number": "9",
+              "underline_index": 2,
+              "underline_text": "悪く",
+              "target_text": "悪く",
+              "source_prefix": "③",
+              "stem_suffix": "",
+              "underline_suffix": ""
+            }
+          ],
+          "unscored_underlines": []
+        },
+        "vocab-b004": {
+          "mode": "bound_underlines",
+          "number_style": "boxed",
+          "content_sha256": "fb07963b182d1fe0b550a0a570ffaff5765c8270d635adf6462d04749bb76b6e",
+          "references": [
+            {
+              "question_id": "vocab-q010",
+              "source_label": "1",
+              "display_number": "10",
+              "underline_index": 0,
+              "underline_text": "去年",
+              "target_text": "去年",
+              "source_prefix": "①",
+              "stem_suffix": "",
+              "underline_suffix": ""
+            },
+            {
+              "question_id": "vocab-q011",
+              "source_label": "2",
+              "display_number": "11",
+              "underline_index": 1,
+              "underline_text": "お正月",
+              "target_text": "お正月",
+              "source_prefix": "②",
+              "stem_suffix": "",
+              "underline_suffix": ""
+            },
+            {
+              "question_id": "vocab-q012",
+              "source_label": "3",
+              "display_number": "12",
+              "underline_index": 2,
+              "underline_text": "洋服",
+              "target_text": "洋服",
+              "source_prefix": "③",
+              "stem_suffix": "",
+              "underline_suffix": ""
+            },
+            {
+              "question_id": "vocab-q013",
+              "source_label": "4",
+              "display_number": "13",
+              "underline_index": 3,
+              "underline_text": "手紙",
+              "target_text": "手紙",
+              "source_prefix": "④",
+              "stem_suffix": "",
+              "underline_suffix": ""
+            },
+            {
+              "question_id": "vocab-q014",
+              "source_label": "5",
+              "display_number": "14",
+              "underline_index": 4,
+              "underline_text": "送りました。",
+              "target_text": "送りました",
+              "source_prefix": "⑤",
+              "stem_suffix": "",
+              "underline_suffix": "。"
+            }
+          ],
+          "unscored_underlines": []
+        },
+        "vocab-b005": {
+          "mode": "bound_underlines",
+          "number_style": "boxed",
+          "content_sha256": "1d286ea4053843072db50f21f829e29840227fa34328d833c987112659c65fbb",
+          "references": [
+            {
+              "question_id": "vocab-q015",
+              "source_label": "1",
+              "display_number": "15",
+              "underline_index": 0,
+              "underline_text": "家族",
+              "target_text": "家族",
+              "source_prefix": "①",
+              "stem_suffix": "",
+              "underline_suffix": ""
+            },
+            {
+              "question_id": "vocab-q016",
+              "source_label": "2",
+              "display_number": "16",
+              "underline_index": 1,
+              "underline_text": "今度",
+              "target_text": "今度",
+              "source_prefix": "②",
+              "stem_suffix": "",
+              "underline_suffix": ""
+            },
+            {
+              "question_id": "vocab-q017",
+              "source_label": "3",
+              "display_number": "17",
+              "underline_index": 2,
+              "underline_text": "知って",
+              "target_text": "知って",
+              "source_prefix": "③",
+              "stem_suffix": "",
+              "underline_suffix": ""
+            },
+            {
+              "question_id": "vocab-q018",
+              "source_label": "4",
+              "display_number": "18",
+              "underline_index": 3,
+              "underline_text": "安心",
+              "target_text": "安心",
+              "source_prefix": "④",
+              "stem_suffix": "",
+              "underline_suffix": ""
+            }
+          ],
+          "unscored_underlines": []
+        },
+        "vocab-b006": {
+          "mode": "bound_underlines",
+          "number_style": "boxed",
+          "content_sha256": "feba32a351e52601f86bcb16269e65e2573b8687ddbf7da7800edfa50d33695d",
+          "references": [
+            {
+              "question_id": "vocab-q019",
+              "source_label": "1",
+              "display_number": "19",
+              "underline_index": 0,
+              "underline_text": "水道",
+              "target_text": "水道",
+              "source_prefix": "①",
+              "stem_suffix": "",
+              "underline_suffix": ""
+            },
+            {
+              "question_id": "vocab-q020",
+              "source_label": "2",
+              "display_number": "20",
+              "underline_index": 1,
+              "underline_text": "不便",
+              "target_text": "不便",
+              "source_prefix": "②",
+              "stem_suffix": "",
+              "underline_suffix": "",
+              "source_prefix_gap": "　"
+            }
+          ],
+          "unscored_underlines": []
+        },
+        "vocab-b007": {
+          "mode": "bound_underlines",
+          "number_style": "boxed",
+          "content_sha256": "a5eda4d6865a152c1bfd61e44a5d509150c4ebf7dc1cc76c8365abaa4b791c20",
+          "references": [],
+          "unscored_underlines": [
+            {
+              "index": 0,
+              "text": "かぜ"
+            },
+            {
+              "index": 1,
+              "text": "あかるく"
+            }
+          ]
+        },
+        "vocab-b008": {
+          "mode": "bound_underlines",
+          "number_style": "boxed",
+          "content_sha256": "1c435090b243b535a3dd244323e0656d53c1b271ae645d709fc9b9da8caec8af",
+          "references": [
+            {
+              "question_id": "vocab-q024",
+              "source_label": "2",
+              "display_number": "24",
+              "underline_index": 2,
+              "underline_text": "かきかた",
+              "target_text": "かきかた",
+              "source_prefix": "②",
+              "stem_suffix": "",
+              "underline_suffix": ""
+            }
+          ],
+          "unscored_underlines": [
+            {
+              "index": 0,
+              "text": "日本"
+            },
+            {
+              "index": 1,
+              "text": "じゅうしょ"
+            }
+          ]
+        },
+        "vocab-b009": {
+          "mode": "bound_underlines",
+          "number_style": "boxed",
+          "content_sha256": "f1c2c24061c520d852841c20ac9615b4e30e9b72b6f5cb0d460ead1f7ae5e72c",
+          "references": [
+            {
+              "question_id": "vocab-q026",
+              "source_label": "2",
+              "display_number": "26",
+              "underline_index": 1,
+              "underline_text": "あし",
+              "target_text": "あし",
+              "source_prefix": "②",
+              "stem_suffix": "",
+              "underline_suffix": ""
+            },
+            {
+              "question_id": "vocab-q027",
+              "source_label": "3",
+              "display_number": "27",
+              "underline_index": 2,
+              "underline_text": "あけました。",
+              "target_text": "あけました",
+              "source_prefix": "③",
+              "stem_suffix": "",
+              "underline_suffix": "。"
+            }
+          ],
+          "unscored_underlines": [
+            {
+              "index": 0,
+              "text": "いぬ"
+            }
+          ]
+        },
+        "vocab-b010": {
+          "mode": "bound_underlines",
+          "number_style": "boxed",
+          "content_sha256": "e0bdb49e84ea7b381e930eee81e13959e547022cd88a4c34910e975c2aa297f4",
+          "references": [
+            {
+              "question_id": "vocab-q028",
+              "source_label": "1",
+              "display_number": "28",
+              "underline_index": 0,
+              "underline_text": "おとうと",
+              "target_text": "おとうと",
+              "source_prefix": "①",
+              "stem_suffix": "",
+              "underline_suffix": ""
+            },
+            {
+              "question_id": "vocab-q029",
+              "source_label": "2",
+              "display_number": "29",
+              "underline_index": 1,
+              "underline_text": "りょうり",
+              "target_text": "りょうり",
+              "source_prefix": "②",
+              "stem_suffix": "",
+              "underline_suffix": ""
+            },
+            {
+              "question_id": "vocab-q030",
+              "source_label": "3",
+              "display_number": "30",
+              "underline_index": 2,
+              "underline_text": "ゆうはん",
+              "target_text": "ゆうはん",
+              "source_prefix": "③",
+              "stem_suffix": "",
+              "underline_suffix": ""
+            }
+          ],
+          "unscored_underlines": [
+            {
+              "index": 3,
+              "text": "つくりました。"
+            }
+          ]
+        },
+        "vocab-b011": {
+          "mode": "bound_underlines",
+          "number_style": "boxed",
+          "content_sha256": "926dc817f3dc4ab3cefd7617efd3701ef44f76ee05b1e6e773c2c94db1abbeae",
+          "references": [
+            {
+              "question_id": "vocab-q032",
+              "source_label": "1",
+              "display_number": "32",
+              "underline_index": 0,
+              "underline_text": "せんしゅう",
+              "target_text": "せんしゅう",
+              "source_prefix": "①",
+              "stem_suffix": "",
+              "underline_suffix": ""
+            },
+            {
+              "question_id": "vocab-q033",
+              "source_label": "2",
+              "display_number": "33",
+              "underline_index": 1,
+              "underline_text": "とけい",
+              "target_text": "とけい",
+              "source_prefix": "②",
+              "stem_suffix": "",
+              "underline_suffix": ""
+            },
+            {
+              "question_id": "vocab-q034",
+              "source_label": "3",
+              "display_number": "34",
+              "underline_index": 2,
+              "underline_text": "かった",
+              "target_text": "かった",
+              "source_prefix": "③",
+              "stem_suffix": "",
+              "underline_suffix": ""
+            },
+            {
+              "question_id": "vocab-q035",
+              "source_label": "4",
+              "display_number": "35",
+              "underline_index": 3,
+              "underline_text": "いいました。",
+              "target_text": "いいました",
+              "source_prefix": "④",
+              "stem_suffix": "",
+              "underline_suffix": "。"
+            }
+          ],
+          "unscored_underlines": []
+        }
+      },
+      "ranges": {
+        "vocab-s05": {
+          "source_labels": [
+            "1",
+            "5"
+          ],
+          "display_labels": [
+            "51",
+            "55"
+          ],
+          "heading_labels": [
+            "①",
+            "⑤"
+          ],
+          "number_style": "boxed",
+          "heading_sha256": "560a54416a810f74093a6ce3b46eb854e79a9aceace82569f6500d17485cf163"
+        }
+      },
+      "unmapped_boxed_references": []
+    }
+  },
+  "provenance": {
+    "ruby_overlay": {
+      "path": "ruby_N3_2000.json",
+      "release_id": "rubi-typography-20261109-v1"
+    },
+    "source_witness": {
+      "source_path": "src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf",
+      "source_sha256": "0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845"
+    }
+  },
+  "style_variants": [
+    "h27-l3-2000-inferred-roles"
+  ]
+}

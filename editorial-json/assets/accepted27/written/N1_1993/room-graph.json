@@ -1,0 +1,75 @@
+{
+  "contract": "historical-artwork-1.0",
+  "id": "N1_1993-room-graph-source",
+  "kind": "private_room_graph",
+  "unit": "N1_1993",
+  "item_id": "reading-b007",
+  "source": {
+    "source_path": "src/CodexDownloads/UserApprovedReferenceScans/505593162-JLPT-Japanese-Language-Proficiency-Test-1-2-kyuu-1993.pdf",
+    "source_sha256": "fdd0d022acc4a1fffd3f9e5785b4a32d3d5a58d28c3d9c2bdeb9f65b10f5fe43",
+    "physical_page": 33
+  },
+  "raw_crop": {
+    "path": "preprocess/assets/handoff27/written/N1_1993/room-graph-source.png",
+    "sha256": "b8a71ec350a4cf3995390b51c5991a6d781641c39bf8ede76b72dee047a85470"
+  },
+  "selection_note": "Native vector lines and live text; exact source decoded-pixel crop retained in canonical content.",
+  "limits": "Printed data and relationships exact; curve corners, font outlines, spacing and scan perspective are regularized. Original source JPEG already lossy.",
+  "data": {
+    "coordinate_status": "printed_numeric_values",
+    "axis": {
+      "minimum": 0,
+      "maximum": 100,
+      "step": 10,
+      "unit": "％"
+    },
+    "households": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      "6以上"
+    ],
+    "series": [
+      {
+        "tag": "a",
+        "line": "dashdot",
+        "values": [
+          0,
+          52.8,
+          89.1,
+          97.8,
+          92.3,
+          95.6
+        ]
+      },
+      {
+        "tag": "b",
+        "line": "dashed",
+        "values": [
+          5.0,
+          3.4,
+          9.0,
+          21.8,
+          27.8,
+          42.6
+        ]
+      },
+      {
+        "tag": "c",
+        "line": "solid",
+        "values": [
+          0,
+          1.3,
+          4.3,
+          13.1,
+          16.4,
+          23.5
+        ]
+      }
+    ],
+    "labels": "all printed values; shared origin0 once",
+    "geometry": "source_traced_regularized_axes_and_label_positions"
+  }
+}

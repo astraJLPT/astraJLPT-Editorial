@@ -1,0 +1,93 @@
+{
+  "unit": "N4_12_2024",
+  "sources": [
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N2 các năm Yuuki Bùi\\N2 12-2024\\Lưu ý.txt",
+      "sha256": "47df6a6565333e195b9fbe4072d1428d65228ab627602b48ce5caff9ccfb4dc4",
+      "Tier": "unranked",
+      "bytes": 271,
+      "aliases": [
+        "src\\Yuuki Bui\\Đề thi N3 các năm Yuuki Bùi\\N3 12-2024\\Lưu ý.txt",
+        "src\\Yuuki Bui\\Đề thi N4-N5 các năm Yuuki Bùi\\2024年12月\\N4 T12-2024\\Lưu ý.txt"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N4-N5 các năm Yuuki Bùi\\2024年12月\\N4 T12-2024\\Script Nghe đề N4 T12-2024 YuukiBùi.pdf",
+      "sha256": "c99e348b0f469fb6e13dbaf521cedfdace969185ef6400f66a169629e3e3a0da",
+      "Tier": "unranked",
+      "bytes": 855820,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N4\\N4_12_2024\\PaddleOCR\\pdf_1",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N4-N5 các năm Yuuki Bùi\\2024年12月\\N4 T12-2024\\Đáp án N4 T12-2024 YuukiBùi.pdf",
+      "sha256": "86c39cee3cd3f1957adadd5ad40b33c292d46c44718b78057bbd87dbfcd2ab24",
+      "Tier": "unranked",
+      "bytes": 714457,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N4\\N4_12_2024\\PaddleOCR\\pdf_2",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N4-N5 các năm Yuuki Bùi\\2024年12月\\N4 T12-2024\\Đề thi N4 T12-2024 Bản hoàn chỉnh [Mark].pdf",
+      "sha256": "df418b805add27888f7a4cb78f9d11765efcb2f66af006e135961919ba38d56f",
+      "Tier": 1,
+      "bytes": 21197574,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N4\\N4_12_2024\\PaddleOCR\\pdf_3",
+      "VisionOCR": "preprocess\\N4\\N4_12_2024\\VisionOCR\\pdf_3"
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N4\\listening\\N4_12_2024_listening_DEAD.html",
+      "sha256": "b670e350c9079929e065db2c94917a88db833ef00800b53acace9e41709b1793",
+      "Tier": "unranked",
+      "bytes": 39280,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N4\\reading\\N4_12_2024_reading.html",
+      "sha256": "2a3300b51e9954b78878897dd2f18a82c2658cdf7cb1fdc9df20698e1bfcf8a4",
+      "Tier": "unranked",
+      "bytes": 98624,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N4\\vocab\\N4_12_2024_vocab.html",
+      "sha256": "21c1b82a57eb3b8a556b8bec09c2a60a34a326f4c51df2357566596be927dd99",
+      "Tier": "unranked",
+      "bytes": 87706,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N4真题（2010-2025.12）\\N4-答题卡.pdf",
+      "sha256": "b0c14d3f8645d885a6ddc2ef4cc160271c0850ea5f1d18f7386a6662f95c2053",
+      "Tier": "unranked",
+      "bytes": 383135,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\N4-答题卡.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N4历年真题\\N4-答题卡.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N4\\N4_multiple\\PaddleOCR\\pdf_14",
+      "VisionOCR": ""
+    }
+  ],
+  "current_editorial": {
+    "path": "preprocess/N4/N4_12_2024/editorial_N4_12_2024.json",
+    "sha256": "6c33e48c2511e9cd476b99ce60b24087c2c1a1c1449b2d358779079bd73d6733",
+    "bytes": 48908
+  },
+  "current_audit_snapshot": {
+    "path": "preprocess/N4/N4_12_2024/audit_work/handoff12_current.json",
+    "sha256": "384f7dce832e46e4e0e788d4ba606b0a531f7ee23f992f71654960104a5cb405",
+    "bytes": 8629
+  }
+}

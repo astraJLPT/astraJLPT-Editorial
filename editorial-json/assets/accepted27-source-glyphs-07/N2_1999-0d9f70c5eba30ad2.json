@@ -1,0 +1,82 @@
+{
+  "contract": "historical-source-pixels-1.1",
+  "id": "H27-N2_1999-0d9f70c5eba30ad2",
+  "unit": "N2_1999",
+  "canonical_image_sha256": "0d9f70c5eba30ad21a9cb1eda9e7d6d95152c9385a72907ae6e05664a7d6bcc1",
+  "canonical_pixels": [
+    46,
+    46
+  ],
+  "image": {
+    "path": "preprocess/assets/handoff27-source-glyphs-07/N2_1999-0d9f70c5eba30ad2.png",
+    "sha256": "a06550cb718753d0759d4705480fbe10980aca808a253fd395b37f02be4abb10"
+  },
+  "source": {
+    "source_path": "src/CodexDownloads/UserApprovedReferenceScans/日本語能力1991～1999年試験問題集2級.pdf",
+    "source_sha256": "0a6634758dce0a258ffaf92c6c8ea1a738a4b8ceb52cd75cb44a4d8d340dfa64",
+    "physical_page": 360
+  },
+  "evidence": {
+    "source_path": "src/CodexDownloads/UserApprovedReferenceScans/日本語能力1991～1999年試験問題集2級.pdf",
+    "source_sha256": "0a6634758dce0a258ffaf92c6c8ea1a738a4b8ceb52cd75cb44a4d8d340dfa64",
+    "physical_pages": [
+      360
+    ],
+    "state": "approved",
+    "historical_claim": false,
+    "region": "H27 exact original decoded glyph crop with the original fractional source window retained by native PDF clipping. Four-choice stroke distinctions were directly reviewed on the complete source page; canonical glyph bytes and suffix text are unchanged.",
+    "reference_id": "RC03_L2",
+    "approval_registry_sha256": "c0fc4d24494a9569dd539d237018014213045d6224ae9035fa282ab610be0384",
+    "subject": "question_page_layout",
+    "exclusions_acknowledged": true
+  },
+  "occurrences": [
+    {
+      "owner": "vocab-q025",
+      "pointer": "/sections/1/items/6/options/0",
+      "ordinal": 1,
+      "field_sha256": "de2c59c693336d54779a15bf8f2d6dd31a54e456dbbbaa419961b6d2812e391e"
+    }
+  ],
+  "source_pixels": {
+    "xref": 1439,
+    "source_dimensions": [
+      1120,
+      1568
+    ],
+    "source_pixel_box": [
+      396,
+      593,
+      417,
+      614
+    ],
+    "display_window_source_pixels": [
+      396.18440197703796,
+      593.1831461405189,
+      416.9648835252399,
+      613.7456168081378
+    ],
+    "dimensions": [
+      21,
+      21
+    ],
+    "mode": "1",
+    "filter": "/CCITTFaxDecode",
+    "image_transform": [
+      595.0198974609375,
+      0.0,
+      -0.0,
+      841.8599243164062,
+      -1.9999999949504854e-06,
+      -0.00030517578125
+    ],
+    "source_stream_sha256": "0a426e9c432f6bc8d4b941aa2de9f824da60c96213e5ed341a5ab659106cff97",
+    "decoded_source_rgb_sha256": "88ed9d0d12b6bba1e5581174730e8723348376ce52d1cc8660b05c2b627b6dfb",
+    "decoded_crop_rgb_sha256": "0e6f343f1cf4cf2122a62bac89cc624fd5899adfc08c1330c42d784ad80f867f",
+    "polarity": "complement PDF stencil mask to black-on-white",
+    "resampling": false,
+    "lossy_steps": []
+  },
+  "selection_note": "Embed the integer outward crop of the original decoded source image without resampling. Clip to the exact fractional window corresponding to the former300dpi crop, preserving both ink placement and prior displayed width and height.",
+  "limits": "Original scan compression and softness remain. The containing PNG retains every pixel, including less than one source pixel of overscan per edge; native Form BBox clipping retains the original visible window. No thresholding, denoising or stroke reconstruction. PDF coordinate rounding is checked independently."
+}

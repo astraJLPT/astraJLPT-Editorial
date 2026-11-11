@@ -1,0 +1,62 @@
+{
+  "contract": "historical-artwork-1.0",
+  "id": "H27-N2_2003-reading-b009-01",
+  "kind": "phone_reading_bars",
+  "unit": "N2_2003",
+  "item_id": "reading-b009",
+  "source": {
+    "source_path": "src/日语JLPT真题1992～2025.12（及时转存，避免丢失）/渠道一/日语N2真题/1991年-2009年/1995-2009.pdf",
+    "source_sha256": "115e8c098ee3caed702d29a24d2ce0c883c3ad9152e21eee4200fc4e80f2a3fb",
+    "physical_page": 265
+  },
+  "raw_crop": {
+    "path": "preprocess/assets/handoff27-earlier-statistical-05/N2_2003-reading-b009-01-raw.png",
+    "sha256": "32800a83d8b2699514020f5d295b0bb8d47aa538097514da7bf89f79a1c6cff1"
+  },
+  "selection_note": "Native vector/live-text reconstruction after direct individual source and canonical image review. Source numbering remains supplied by the existing option renderer.",
+  "limits": "Original canonical bytes remain unchanged and recoverable. Printed numeric labels are literal; measured unlabelled geometry is approximate. N1/N2 retyped appearance is not original typography evidence; N4 UARS establishes the graphic content but not exact native font identity.",
+  "data": {
+    "coordinate_status": "approximate_pixel_trace_no_numeric_segment_labels",
+    "groups": [
+      "全体",
+      "「本を１冊も読まない」",
+      "読書量１～３冊",
+      "４～６冊",
+      "７～９冊",
+      "10冊以上"
+    ],
+    "categories": [
+      "持たない者",
+      "持つ者"
+    ],
+    "legend_fills": [
+      "white",
+      "black"
+    ],
+    "bar_order": [
+      "持つ者",
+      "持たない者"
+    ],
+    "axis": {
+      "minimum": 0,
+      "maximum": 100,
+      "tick": 10,
+      "unit": "%"
+    },
+    "trace_witness": {
+      "image_sha256": "d183478f705d40ff774c187856b1155dd17152e4aa37e1273a66e39f9a10a508",
+      "axis": [
+        505,
+        1566
+      ],
+      "boundaries": [
+        1301,
+        1355,
+        1226,
+        1189,
+        957,
+        1042
+      ]
+    }
+  }
+}

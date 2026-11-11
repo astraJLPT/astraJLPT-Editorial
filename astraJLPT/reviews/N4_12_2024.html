@@ -1,0 +1,455 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark light"><title>Developer review · N4_12_2024 · astraJLPT</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../assets/fonts-b3161f97fe399912.css?v=c16ef3ef7e1a"><link rel="stylesheet" href="../assets/themes.css?v=7ad0820747dc"><link rel="stylesheet" href="../assets/answer-marking.css?v=bec6b4920050"><link rel="stylesheet" href="../assets/site.css?v=7ae9ae7c768b"><link rel="stylesheet" href="../assets/pdf-typography.css?v=ba55af25606f"><link rel="stylesheet" href="../assets/paper-shared.css?v=8f3ca38dca80"></head><body class="catalog-page"><a class="skip-link" href="#content">Skip to content</a><header class="topbar" id="page-top" tabindex="-1"><a class="wordmark" id="brand" href="../index.html">astra<span>JLPT</span></a><details id="settings" class="settings"><summary aria-label="Open settings" title="Settings"><span aria-hidden="true">⚙</span><span class="sr-only">Settings</span></summary><div class="settings-panel"><div class="settings-title"><h2>settings</h2><button type="button" id="close-settings" class="js-only" aria-label="Close settings">×</button></div><div class="settings-tabs" role="group" aria-label="Settings categories"><label><input type="radio" name="settings-view" value="appearance" checked><span>theme</span></label><label><input type="radio" name="settings-view" value="browser"><span>browser</span></label></div><section data-settings="appearance"><div class="theme-workspace"><div class="theme-picker"><div class="setting-heading"><h3>theme</h3></div><div class="theme-grid originals"><label class="theme-card ps-gh"><input type="radio" name="theme" id="theme-jlpt_paper" value="jlpt_paper"><span>jlpt_paper</span></label><label class="theme-card ps-ck"><input type="radio" name="theme" id="theme-astraJLPT_dark" value="astraJLPT_dark" checked><span>astraJLPT_dark</span></label><label class="theme-card ps-ga"><input type="radio" name="theme" id="theme-astraJLPT_sepia" value="astraJLPT_sepia"><span>astraJLPT_sepia</span></label></div><div class="js-only"><p class="settings-label">three random picks</p><div class="theme-grid" id="quick-picks"></div></div><details><summary>all 187 Monkeytype palettes</summary><label class="theme-search js-only">find a palette<input id="theme-search" type="search" placeholder="search themes" autocomplete="off"></label><div class="theme-grid theme-catalog"><label class="theme-card ps-e9"><input type="radio" name="theme" id="theme-8008" value="8008"><span>8008</span></label><label class="theme-card ps-cw"><input type="radio" name="theme" id="theme-80s_after_dark" value="80s_after_dark"><span>80s after dark</span></label><label class="theme-card ps-fq"><input type="radio" name="theme" id="theme-9009" value="9009"><span>9009</span></label><label class="theme-card ps-cc"><input type="radio" name="theme" id="theme-aether" value="aether"><span>aether</span></label><label class="theme-card ps-cz"><input type="radio" name="theme" id="theme-alduin" value="alduin"><span>alduin</span></label><label class="theme-card ps-el"><input type="radio" name="theme" id="theme-alpine" value="alpine"><span>alpine</span></label><label class="theme-card ps-bg"><input type="radio" name="theme" id="theme-anti_hero" value="anti_hero"><span>anti hero</span></label><label class="theme-card ps-c3"><input type="radio" name="theme" id="theme-arch" value="arch"><span>arch</span></label><label class="theme-card ps-bt"><input type="radio" name="theme" id="theme-aurora" value="aurora"><span>aurora</span></label><label class="theme-card ps-g8"><input type="radio" name="theme" id="theme-beach" value="beach"><span>beach</span></label><label class="theme-card ps-dz"><input type="radio" name="theme" id="theme-bento" value="bento"><span>bento</span></label><label class="theme-card ps-f1"><input type="radio" name="theme" id="theme-bingsu" value="bingsu"><span>bingsu</span></label><label class="theme-card ps-dl"><input type="radio" name="theme" id="theme-bliss" value="bliss"><span>bliss</span></label><label class="theme-card ps-bn"><input type="radio" name="theme" id="theme-blue_dolphin" value="blue_dolphin"><span>blue dolphin</span></label><label class="theme-card ps-dd"><input type="radio" name="theme" id="theme-blueberry_dark" value="blueberry_dark"><span>blueberry dark</span></label><label class="theme-card ps-fd"><input type="radio" name="theme" id="theme-blueberry_light" value="blueberry_light"><span>blueberry light</span></label><label class="theme-card ps-ep"><input type="radio" name="theme" id="theme-botanical" value="botanical"><span>botanical</span></label><label class="theme-card ps-cl"><input type="radio" name="theme" id="theme-bouquet" value="bouquet"><span>bouquet</span></label><label class="theme-card ps-fk"><input type="radio" name="theme" id="theme-breeze" value="breeze"><span>breeze</span></label><label class="theme-card ps-dk"><input type="radio" name="theme" id="theme-bushido" value="bushido"><span>bushido</span></label><label class="theme-card ps-f5"><input type="radio" name="theme" id="theme-cafe" value="cafe"><span>cafe</span></label><label class="theme-card ps-g1"><input type="radio" name="theme" id="theme-camping" value="camping"><span>camping</span></label><label class="theme-card ps-e4"><input type="radio" name="theme" id="theme-carbon" value="carbon"><span>carbon</span></label><label class="theme-card ps-d3"><input type="radio" name="theme" id="theme-catppuccin" value="catppuccin"><span>catppuccin</span></label><label class="theme-card ps-ch"><input type="radio" name="theme" id="theme-chaos_theory" value="chaos_theory"><span>chaos theory</span></label><label class="theme-card ps-g3"><input type="radio" name="theme" id="theme-cheesecake" value="cheesecake"><span>cheesecake</span></label><label class="theme-card ps-e7"><input type="radio" name="theme" id="theme-cherry_blossom" value="cherry_blossom"><span>cherry blossom</span></label><label class="theme-card ps-eh"><input type="radio" name="theme" id="theme-comfy" value="comfy"><span>comfy</span></label><label class="theme-card ps-ef"><input type="radio" name="theme" id="theme-copper" value="copper"><span>copper</span></label><label class="theme-card ps-g6"><input type="radio" name="theme" id="theme-creamsicle" value="creamsicle"><span>creamsicle</span></label><label class="theme-card ps-em"><input type="radio" name="theme" id="theme-cy_red" value="cy_red"><span>cy red</span></label><label class="theme-card ps-co"><input type="radio" name="theme" id="theme-cyberspace" value="cyberspace"><span>cyberspace</span></label><label class="theme-card ps-cd"><input type="radio" name="theme" id="theme-dark" value="dark"><span>dark</span></label><label class="theme-card ps-bz"><input type="radio" name="theme" id="theme-dark_magic_girl" value="dark_magic_girl"><span>dark magic girl</span></label><label class="theme-card ps-d6"><input type="radio" name="theme" id="theme-dark_note" value="dark_note"><span>dark note</span></label><label class="theme-card ps-g5"><input type="radio" name="theme" id="theme-darling" value="darling"><span>darling</span></label><label class="theme-card ps-bw"><input type="radio" name="theme" id="theme-deku" value="deku"><span>deku</span></label><label class="theme-card ps-g9"><input type="radio" name="theme" id="theme-desert_oasis" value="desert_oasis"><span>desert oasis</span></label><label class="theme-card ps-cx"><input type="radio" name="theme" id="theme-dev" value="dev"><span>dev</span></label><label class="theme-card ps-ek"><input type="radio" name="theme" id="theme-diner" value="diner"><span>diner</span></label><label class="theme-card ps-gi"><input type="radio" name="theme" id="theme-dino" value="dino"><span>dino</span></label><label class="theme-card ps-e6"><input type="radio" name="theme" id="theme-discord" value="discord"><span>discord</span></label><label class="theme-card ps-fc"><input type="radio" name="theme" id="theme-dmg" value="dmg"><span>dmg</span></label><label class="theme-card ps-fj"><input type="radio" name="theme" id="theme-dollar" value="dollar"><span>dollar</span></label><label class="theme-card ps-ce"><input type="radio" name="theme" id="theme-dots" value="dots"><span>dots</span></label><label class="theme-card ps-dq"><input type="radio" name="theme" id="theme-dracula" value="dracula"><span>dracula</span></label><label class="theme-card ps-cq"><input type="radio" name="theme" id="theme-drowning" value="drowning"><span>drowning</span></label><label class="theme-card ps-eo"><input type="radio" name="theme" id="theme-dualshot" value="dualshot"><span>dualshot</span></label><label class="theme-card ps-dr"><input type="radio" name="theme" id="theme-earthsong" value="earthsong"><span>earthsong</span></label><label class="theme-card ps-ci"><input type="radio" name="theme" id="theme-everblush" value="everblush"><span>everblush</span></label><label class="theme-card ps-bq"><input type="radio" name="theme" id="theme-evil_eye" value="evil_eye"><span>evil eye</span></label><label class="theme-card ps-bp"><input type="radio" name="theme" id="theme-ez_mode" value="ez_mode"><span>ez mode</span></label><label class="theme-card ps-c8"><input type="radio" name="theme" id="theme-fire" value="fire"><span>fire</span></label><label class="theme-card ps-eb"><input type="radio" name="theme" id="theme-fledgling" value="fledgling"><span>fledgling</span></label><label class="theme-card ps-f3"><input type="radio" name="theme" id="theme-fleuriste" value="fleuriste"><span>fleuriste</span></label><label class="theme-card ps-bl"><input type="radio" name="theme" id="theme-floret" value="floret"><span>floret</span></label><label class="theme-card ps-fh"><input type="radio" name="theme" id="theme-froyo" value="froyo"><span>froyo</span></label><label class="theme-card ps-et"><input type="radio" name="theme" id="theme-frozen_llama" value="frozen_llama"><span>frozen llama</span></label><label class="theme-card ps-f9"><input type="radio" name="theme" id="theme-fruit_chew" value="fruit_chew"><span>fruit chew</span></label><label class="theme-card ps-en"><input type="radio" name="theme" id="theme-fundamentals" value="fundamentals"><span>fundamentals</span></label><label class="theme-card ps-e0"><input type="radio" name="theme" id="theme-future_funk" value="future_funk"><span>future funk</span></label><label class="theme-card ps-dc"><input type="radio" name="theme" id="theme-github" value="github"><span>github</span></label><label class="theme-card ps-fn"><input type="radio" name="theme" id="theme-godspeed" value="godspeed"><span>godspeed</span></label><label class="theme-card ps-e3"><input type="radio" name="theme" id="theme-graen" value="graen"><span>graen</span></label><label class="theme-card ps-ea"><input type="radio" name="theme" id="theme-grand_prix" value="grand_prix"><span>grand prix</span></label><label class="theme-card ps-dv"><input type="radio" name="theme" id="theme-grape" value="grape"><span>grape</span></label><label class="theme-card ps-dp"><input type="radio" name="theme" id="theme-gruvbox_dark" value="gruvbox_dark"><span>gruvbox dark</span></label><label class="theme-card ps-g2"><input type="radio" name="theme" id="theme-gruvbox_light" value="gruvbox_light"><span>gruvbox light</span></label><label class="theme-card ps-bu"><input type="radio" name="theme" id="theme-hammerhead" value="hammerhead"><span>hammerhead</span></label><label class="theme-card ps-fa"><input type="radio" name="theme" id="theme-hanok" value="hanok"><span>hanok</span></label><label class="theme-card ps-ed"><input type="radio" name="theme" id="theme-hedge" value="hedge"><span>hedge</span></label><label class="theme-card ps-fu"><input type="radio" name="theme" id="theme-honey" value="honey"><span>honey</span></label><label class="theme-card ps-d0"><input type="radio" name="theme" id="theme-horizon" value="horizon"><span>horizon</span></label><label class="theme-card ps-bf"><input type="radio" name="theme" id="theme-husqy" value="husqy"><span>husqy</span></label><label class="theme-card ps-cj"><input type="radio" name="theme" id="theme-iceberg_dark" value="iceberg_dark"><span>iceberg dark</span></label><label class="theme-card ps-fl"><input type="radio" name="theme" id="theme-iceberg_light" value="iceberg_light"><span>iceberg light</span></label><label class="theme-card ps-c7"><input type="radio" name="theme" id="theme-incognito" value="incognito"><span>incognito</span></label><label class="theme-card ps-d8"><input type="radio" name="theme" id="theme-ishtar" value="ishtar"><span>ishtar</span></label><label class="theme-card ps-eu"><input type="radio" name="theme" id="theme-iv_clover" value="iv_clover"><span>iv clover</span></label><label class="theme-card ps-c2"><input type="radio" name="theme" id="theme-iv_spade" value="iv_spade"><span>iv spade</span></label><label class="theme-card ps-cu"><input type="radio" name="theme" id="theme-joker" value="joker"><span>joker</span></label><label class="theme-card ps-de"><input type="radio" name="theme" id="theme-laser" value="laser"><span>laser</span></label><label class="theme-card ps-ex"><input type="radio" name="theme" id="theme-lavender" value="lavender"><span>lavender</span></label><label class="theme-card ps-ew"><input type="radio" name="theme" id="theme-leather" value="leather"><span>leather</span></label><label class="theme-card ps-fo"><input type="radio" name="theme" id="theme-lil_dragon" value="lil_dragon"><span>lil dragon</span></label><label class="theme-card ps-gd"><input type="radio" name="theme" id="theme-lilac_mist" value="lilac_mist"><span>lilac mist</span></label><label class="theme-card ps-er"><input type="radio" name="theme" id="theme-lime" value="lime"><span>lime</span></label><label class="theme-card ps-df"><input type="radio" name="theme" id="theme-luna" value="luna"><span>luna</span></label><label class="theme-card ps-ez"><input type="radio" name="theme" id="theme-macroblank" value="macroblank"><span>macroblank</span></label><label class="theme-card ps-gk"><input type="radio" name="theme" id="theme-magic_girl" value="magic_girl"><span>magic girl</span></label><label class="theme-card ps-du"><input type="radio" name="theme" id="theme-mashu" value="mashu"><span>mashu</span></label><label class="theme-card ps-ei"><input type="radio" name="theme" id="theme-matcha_moccha" value="matcha_moccha"><span>matcha moccha</span></label><label class="theme-card ps-dn"><input type="radio" name="theme" id="theme-material" value="material"><span>material</span></label><label class="theme-card ps-be"><input type="radio" name="theme" id="theme-matrix" value="matrix"><span>matrix</span></label><label class="theme-card ps-br"><input type="radio" name="theme" id="theme-menthol" value="menthol"><span>menthol</span></label><label class="theme-card ps-dg"><input type="radio" name="theme" id="theme-metaverse" value="metaverse"><span>metaverse</span></label><label class="theme-card ps-ca"><input type="radio" name="theme" id="theme-metropolis" value="metropolis"><span>metropolis</span></label><label class="theme-card ps-g0"><input type="radio" name="theme" id="theme-mexican" value="mexican"><span>mexican</span></label><label class="theme-card ps-fv"><input type="radio" name="theme" id="theme-miami" value="miami"><span>miami</span></label><label class="theme-card ps-cn"><input type="radio" name="theme" id="theme-miami_nights" value="miami_nights"><span>miami nights</span></label><label class="theme-card ps-c0"><input type="radio" name="theme" id="theme-midnight" value="midnight"><span>midnight</span></label><label class="theme-card ps-gf"><input type="radio" name="theme" id="theme-milkshake" value="milkshake"><span>milkshake</span></label><label class="theme-card ps-bv"><input type="radio" name="theme" id="theme-mint" value="mint"><span>mint</span></label><label class="theme-card ps-ey"><input type="radio" name="theme" id="theme-mizu" value="mizu"><span>mizu</span></label><label class="theme-card ps-dy"><input type="radio" name="theme" id="theme-modern_dolch" value="modern_dolch"><span>modern dolch</span></label><label class="theme-card ps-fe"><input type="radio" name="theme" id="theme-modern_dolch_light" value="modern_dolch_light"><span>modern dolch light</span></label><label class="theme-card ps-gm"><input type="radio" name="theme" id="theme-modern_ink" value="modern_ink"><span>modern ink</span></label><label class="theme-card ps-do"><input type="radio" name="theme" id="theme-monokai" value="monokai"><span>monokai</span></label><label class="theme-card ps-cs"><input type="radio" name="theme" id="theme-moonlight" value="moonlight"><span>moonlight</span></label><label class="theme-card ps-c9"><input type="radio" name="theme" id="theme-mountain" value="mountain"><span>mountain</span></label><label class="theme-card ps-f8"><input type="radio" name="theme" id="theme-mr_sleeves" value="mr_sleeves"><span>mr sleeves</span></label><label class="theme-card ps-gj"><input type="radio" name="theme" id="theme-ms_cupcakes" value="ms_cupcakes"><span>ms cupcakes</span></label><label class="theme-card ps-ej"><input type="radio" name="theme" id="theme-muted" value="muted"><span>muted</span></label><label class="theme-card ps-cg"><input type="radio" name="theme" id="theme-nautilus" value="nautilus"><span>nautilus</span></label><label class="theme-card ps-db"><input type="radio" name="theme" id="theme-nebula" value="nebula"><span>nebula</span></label><label class="theme-card ps-da"><input type="radio" name="theme" id="theme-night_runner" value="night_runner"><span>night runner</span></label><label class="theme-card ps-dj"><input type="radio" name="theme" id="theme-nord" value="nord"><span>nord</span></label><label class="theme-card ps-fp"><input type="radio" name="theme" id="theme-nord_light" value="nord_light"><span>nord light</span></label><label class="theme-card ps-di"><input type="radio" name="theme" id="theme-norse" value="norse"><span>norse</span></label><label class="theme-card ps-e5"><input type="radio" name="theme" id="theme-oblivion" value="oblivion"><span>oblivion</span></label><label class="theme-card ps-fm"><input type="radio" name="theme" id="theme-olive" value="olive"><span>olive</span></label><label class="theme-card ps-cy"><input type="radio" name="theme" id="theme-olivia" value="olivia"><span>olivia</span></label><label class="theme-card ps-e2"><input type="radio" name="theme" id="theme-onedark" value="onedark"><span>onedark</span></label><label class="theme-card ps-f4"><input type="radio" name="theme" id="theme-our_theme" value="our_theme"><span>our theme</span></label><label class="theme-card ps-ee"><input type="radio" name="theme" id="theme-pale_nimbus" value="pale_nimbus"><span>pale nimbus</span></label><label class="theme-card ps-fr"><input type="radio" name="theme" id="theme-paper" value="paper"><span>paper</span></label><label class="theme-card ps-eq"><input type="radio" name="theme" id="theme-passion_fruit" value="passion_fruit"><span>passion fruit</span></label><label class="theme-card ps-ff"><input type="radio" name="theme" id="theme-pastel" value="pastel"><span>pastel</span></label><label class="theme-card ps-ds"><input type="radio" name="theme" id="theme-peach_blossom" value="peach_blossom"><span>peach blossom</span></label><label class="theme-card ps-fg"><input type="radio" name="theme" id="theme-peaches" value="peaches"><span>peaches</span></label><label class="theme-card ps-bk"><input type="radio" name="theme" id="theme-phantom" value="phantom"><span>phantom</span></label><label class="theme-card ps-fz"><input type="radio" name="theme" id="theme-pink_lemonade" value="pink_lemonade"><span>pink lemonade</span></label><label class="theme-card ps-cm"><input type="radio" name="theme" id="theme-pulse" value="pulse"><span>pulse</span></label><label class="theme-card ps-d4"><input type="radio" name="theme" id="theme-purpleish" value="purpleish"><span>purpleish</span></label><label class="theme-card ps-fy"><input type="radio" name="theme" id="theme-rainbow_trail" value="rainbow_trail"><span>rainbow trail</span></label><label class="theme-card ps-ct"><input type="radio" name="theme" id="theme-red_dragon" value="red_dragon"><span>red dragon</span></label><label class="theme-card ps-es"><input type="radio" name="theme" id="theme-red_samurai" value="red_samurai"><span>red samurai</span></label><label class="theme-card ps-e1"><input type="radio" name="theme" id="theme-repose_dark" value="repose_dark"><span>repose dark</span></label><label class="theme-card ps-fs"><input type="radio" name="theme" id="theme-repose_light" value="repose_light"><span>repose light</span></label><label class="theme-card ps-fb"><input type="radio" name="theme" id="theme-retro" value="retro"><span>retro</span></label><label class="theme-card ps-bx"><input type="radio" name="theme" id="theme-retrocast" value="retrocast"><span>retrocast</span></label><label class="theme-card ps-cd"><input type="radio" name="theme" id="theme-rgb" value="rgb"><span>rgb</span></label><label class="theme-card ps-d5"><input type="radio" name="theme" id="theme-rose_pine" value="rose_pine"><span>rose pine</span></label><label class="theme-card ps-gc"><input type="radio" name="theme" id="theme-rose_pine_dawn" value="rose_pine_dawn"><span>rose pine dawn</span></label><label class="theme-card ps-dt"><input type="radio" name="theme" id="theme-rose_pine_moon" value="rose_pine_moon"><span>rose pine moon</span></label><label class="theme-card ps-cv"><input type="radio" name="theme" id="theme-rudy" value="rudy"><span>rudy</span></label><label class="theme-card ps-by"><input type="radio" name="theme" id="theme-ryujinscales" value="ryujinscales"><span>ryujinscales</span></label><label class="theme-card ps-fi"><input type="radio" name="theme" id="theme-serika" value="serika"><span>serika</span></label><label class="theme-card ps-e8"><input type="radio" name="theme" id="theme-serika_dark" value="serika_dark"><span>serika dark</span></label><label class="theme-card ps-dh"><input type="radio" name="theme" id="theme-sewing_tin" value="sewing_tin"><span>sewing tin</span></label><label class="theme-card ps-gg"><input type="radio" name="theme" id="theme-sewing_tin_light" value="sewing_tin_light"><span>sewing tin light</span></label><label class="theme-card ps-bi"><input type="radio" name="theme" id="theme-shadow" value="shadow"><span>shadow</span></label><label class="theme-card ps-f6"><input type="radio" name="theme" id="theme-shoko" value="shoko"><span>shoko</span></label><label class="theme-card ps-ge"><input type="radio" name="theme" id="theme-slambook" value="slambook"><span>slambook</span></label><label class="theme-card ps-f2"><input type="radio" name="theme" id="theme-snes" value="snes"><span>snes</span></label><label class="theme-card ps-gb"><input type="radio" name="theme" id="theme-soaring_skies" value="soaring_skies"><span>soaring skies</span></label><label class="theme-card ps-bm"><input type="radio" name="theme" id="theme-solarized_dark" value="solarized_dark"><span>solarized dark</span></label><label class="theme-card ps-g4"><input type="radio" name="theme" id="theme-solarized_light" value="solarized_light"><span>solarized light</span></label><label class="theme-card ps-bj"><input type="radio" name="theme" id="theme-solarized_osaka" value="solarized_osaka"><span>solarized osaka</span></label><label class="theme-card ps-dw"><input type="radio" name="theme" id="theme-sonokai" value="sonokai"><span>sonokai</span></label><label class="theme-card ps-c5"><input type="radio" name="theme" id="theme-spiderman" value="spiderman"><span>spiderman</span></label><label class="theme-card ps-bs"><input type="radio" name="theme" id="theme-stealth" value="stealth"><span>stealth</span></label><label class="theme-card ps-fw"><input type="radio" name="theme" id="theme-strawberry" value="strawberry"><span>strawberry</span></label><label class="theme-card ps-cf"><input type="radio" name="theme" id="theme-striker" value="striker"><span>striker</span></label><label class="theme-card ps-ec"><input type="radio" name="theme" id="theme-suisei" value="suisei"><span>suisei</span></label><label class="theme-card ps-d9"><input type="radio" name="theme" id="theme-sunset" value="sunset"><span>sunset</span></label><label class="theme-card ps-dm"><input type="radio" name="theme" id="theme-superuser" value="superuser"><span>superuser</span></label><label class="theme-card ps-bo"><input type="radio" name="theme" id="theme-sweden" value="sweden"><span>sweden</span></label><label class="theme-card ps-g7"><input type="radio" name="theme" id="theme-tangerine" value="tangerine"><span>tangerine</span></label><label class="theme-card ps-f0"><input type="radio" name="theme" id="theme-taro" value="taro"><span>taro</span></label><label class="theme-card ps-cr"><input type="radio" name="theme" id="theme-terminal" value="terminal"><span>terminal</span></label><label class="theme-card ps-c4"><input type="radio" name="theme" id="theme-terra" value="terra"><span>terra</span></label><label class="theme-card ps-ft"><input type="radio" name="theme" id="theme-terrazzo" value="terrazzo"><span>terrazzo</span></label><label class="theme-card ps-c1"><input type="radio" name="theme" id="theme-terror_below" value="terror_below"><span>terror below</span></label><label class="theme-card ps-f7"><input type="radio" name="theme" id="theme-tiramisu" value="tiramisu"><span>tiramisu</span></label><label class="theme-card ps-eg"><input type="radio" name="theme" id="theme-trackday" value="trackday"><span>trackday</span></label><label class="theme-card ps-bh"><input type="radio" name="theme" id="theme-trance" value="trance"><span>trance</span></label><label class="theme-card ps-c6"><input type="radio" name="theme" id="theme-tron_orange" value="tron_orange"><span>tron orange</span></label><label class="theme-card ps-ev"><input type="radio" name="theme" id="theme-vaporwave" value="vaporwave"><span>vaporwave</span></label><label class="theme-card ps-cb"><input type="radio" name="theme" id="theme-vesper" value="vesper"><span>vesper</span></label><label class="theme-card ps-gl"><input type="radio" name="theme" id="theme-vesper_light" value="vesper_light"><span>vesper light</span></label><label class="theme-card ps-dx"><input type="radio" name="theme" id="theme-viridescent" value="viridescent"><span>viridescent</span></label><label class="theme-card ps-cp"><input type="radio" name="theme" id="theme-voc" value="voc"><span>voc</span></label><label class="theme-card ps-d2"><input type="radio" name="theme" id="theme-vscode" value="vscode"><span>vscode</span></label><label class="theme-card ps-d7"><input type="radio" name="theme" id="theme-watermelon" value="watermelon"><span>watermelon</span></label><label class="theme-card ps-d1"><input type="radio" name="theme" id="theme-wavez" value="wavez"><span>wavez</span></label><label class="theme-card ps-fx"><input type="radio" name="theme" id="theme-witch_girl" value="witch_girl"><span>witch girl</span></label></div></details><div class="js-only ps-14h" id="monkeytype-text-source">
+<h3>reading text color</h3>
+<p class="control-help">Auto chooses the more readable palette color. Choose sub or text to set it yourself; answer colors adapt.</p>
+<div aria-label="Monkeytype reading text color" class="segmented" role="group">
+<label><input checked="" name="text-source" type="radio" value="auto"/><span>auto</span></label>
+<label><input name="text-source" type="radio" value="sub"/><span>sub</span></label>
+<label><input name="text-source" type="radio" value="text"/><span>text</span></label>
+</div>
+<p aria-live="polite" class="control-help ps-14i" id="monkeytype-text-status" role="status"></p>
+</div></div><aside class="theme-editor js-only" aria-label="Customize theme colors"><div class="color-editor-heading"><h3>colors</h3><button type="button" id="reset-theme-colors" aria-label="Reset this theme">reset</button></div><span class="sr-only" id="color-format-help">Choose a swatch or enter hex. Transparent borders accept #RRGGBBAA. Reset restores the theme color.</span><span class="sr-only" id="color-edit-status" role="status" aria-live="polite"></span><div class="main-colors"><div class="color-row" data-color-row="bg">
+<label for="color-bg">background</label>
+<div class="color-inputs"><input type="color" id="swatch-bg" aria-label="background swatch" data-color-swatch="bg">
+<input type="text" id="color-bg" data-color-hex="bg" aria-label="background hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="bg" aria-label="Reset background" title="Reset background">↺</button></div></div><div class="color-row" data-color-row="text">
+<label for="color-text">reading text</label>
+<div class="color-inputs"><input type="color" id="swatch-text" aria-label="reading text swatch" data-color-swatch="text">
+<input type="text" id="color-text" data-color-hex="text" aria-label="reading text hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="text" aria-label="Reset reading text" title="Reset reading text">↺</button></div></div><div class="color-row" data-color-row="muted">
+<label for="color-muted">secondary text</label>
+<div class="color-inputs"><input type="color" id="swatch-muted" aria-label="secondary text swatch" data-color-swatch="muted">
+<input type="text" id="color-muted" data-color-hex="muted" aria-label="secondary text hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="muted" aria-label="Reset secondary text" title="Reset secondary text">↺</button></div></div><div class="color-row" data-color-row="accent">
+<label for="color-accent">interface accent</label>
+<div class="color-inputs"><input type="color" id="swatch-accent" aria-label="interface accent swatch" data-color-swatch="accent">
+<input type="text" id="color-accent" data-color-hex="accent" aria-label="interface accent hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="accent" aria-label="Reset interface accent" title="Reset interface accent">↺</button></div></div><div class="color-row" data-color-row="correct">
+<label for="color-correct">correct</label>
+<div class="color-inputs"><input type="color" id="swatch-correct" aria-label="correct swatch" data-color-swatch="correct">
+<input type="text" id="color-correct" data-color-hex="correct" aria-label="correct hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="correct" aria-label="Reset correct" title="Reset correct">↺</button></div></div><div class="color-row" data-color-row="wrong">
+<label for="color-wrong">wrong</label>
+<div class="color-inputs"><input type="color" id="swatch-wrong" aria-label="wrong swatch" data-color-swatch="wrong">
+<input type="text" id="color-wrong" data-color-hex="wrong" aria-label="wrong hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="wrong" aria-label="Reset wrong" title="Reset wrong">↺</button></div></div></div><details class="advanced-colors"><summary>more colors</summary><div class="advanced-color-grid"><div class="color-row" data-color-row="raised">
+<label for="color-raised">buttons &amp; controls</label>
+<div class="color-inputs"><input type="color" id="swatch-raised" aria-label="buttons &amp; controls swatch" data-color-swatch="raised">
+<input type="text" id="color-raised" data-color-hex="raised" aria-label="buttons &amp; controls hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="raised" aria-label="Reset buttons &amp; controls" title="Reset buttons &amp; controls">↺</button></div></div><div class="color-row" data-color-row="correct-ink">
+<label for="color-correct-ink">correct text &amp; numbers</label>
+<div class="color-inputs"><input type="color" id="swatch-correct-ink" aria-label="correct text &amp; numbers swatch" data-color-swatch="correct-ink">
+<input type="text" id="color-correct-ink" data-color-hex="correct-ink" aria-label="correct text &amp; numbers hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="correct-ink" aria-label="Reset correct text &amp; numbers" title="Reset correct text &amp; numbers">↺</button></div></div><div class="color-row" data-color-row="edge">
+<label for="color-edge">paper outline</label>
+<div class="color-inputs"><input type="color" id="swatch-edge" aria-label="paper outline swatch" data-color-swatch="edge">
+<input type="text" id="color-edge" data-color-hex="edge" aria-label="paper outline hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge" aria-label="Reset paper outline" title="Reset paper outline">↺</button></div></div><div class="color-row" data-color-row="edge-soft">
+<label for="color-edge-soft">soft dividers</label>
+<div class="color-inputs"><input type="color" id="swatch-edge-soft" aria-label="soft dividers swatch" data-color-swatch="edge-soft">
+<input type="text" id="color-edge-soft" data-color-hex="edge-soft" aria-label="soft dividers hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge-soft" aria-label="Reset soft dividers" title="Reset soft dividers">↺</button></div><label class="color-opacity">opacity<input type="range" min="0" max="100" step="0.1" data-color-alpha="edge-soft" aria-label="soft dividers opacity"><output></output></label></div><div class="color-row" data-color-row="edge-strong">
+<label for="color-edge-strong">strong borders</label>
+<div class="color-inputs"><input type="color" id="swatch-edge-strong" aria-label="strong borders swatch" data-color-swatch="edge-strong">
+<input type="text" id="color-edge-strong" data-color-hex="edge-strong" aria-label="strong borders hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge-strong" aria-label="Reset strong borders" title="Reset strong borders">↺</button></div><label class="color-opacity">opacity<input type="range" min="0" max="100" step="0.1" data-color-alpha="edge-strong" aria-label="strong borders opacity"><output></output></label></div><div class="color-row" data-color-row="logo-secondary">
+<label for="color-logo-secondary">wordmark · JLPT</label>
+<div class="color-inputs"><input type="color" id="swatch-logo-secondary" aria-label="wordmark · JLPT swatch" data-color-swatch="logo-secondary">
+<input type="text" id="color-logo-secondary" data-color-hex="logo-secondary" aria-label="wordmark · JLPT hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="logo-secondary" aria-label="Reset wordmark · JLPT" title="Reset wordmark · JLPT">↺</button></div></div></div><div class="fill-opacity-controls"><h4>fill opacity</h4><p>Applies to correct and wrong answers.</p><div class="fill-opacity-row"><label for="opacity-cell-fill">cell fill<output id="opacity-cell-fill-output">11%</output></label><div><input id="opacity-cell-fill" type="range" min="0" max="100" step="1" value="11" data-fill-opacity="cell-fill" aria-label="cell fill opacity"><button type="button" data-fill-reset="cell-fill" aria-label="Reset cell fill opacity" title="Reset cell fill opacity">↺</button></div></div><div class="fill-opacity-row"><label for="opacity-fill">fill style<output id="opacity-fill-output">30%</output></label><div><input id="opacity-fill" type="range" min="0" max="100" step="1" value="30" data-fill-opacity="fill" aria-label="fill style opacity"><button type="button" data-fill-reset="fill" aria-label="Reset fill style opacity" title="Reset fill style opacity">↺</button></div></div></div></details></aside></div></section><section data-settings="browser"><div class="setting-row js-only"><div><h3>remember this browser</h3><p id="save-status">Saving is on by default. No account required.</p></div><label class="switch"><input id="remember" type="checkbox" checked>save preferences, answers and position</label></div><div class="button-row browser-actions js-only"><button id="reset-preferences" type="button">reset preferences</button><button id="forget" type="button">forget saved data</button></div><div class="developer-only developer-settings"><h3>developer mode</h3><p>Principal differences and editorial cases are visible. This local switch is not authentication.</p><button id="disable-dev" type="button">hide developer tools</button></div><div class="settings-about"><button type="button" id="developer-unlock" class="js-only" title="astraJLPT build information">astraJLPT · 2020–2026 collection</button><span id="developer-hint" role="status"></span></div></section></div></details></header><main id="content" class="review-page"><div class="review-content"><a href="../levels/N4.html">← N4 papers</a><h1>N4 · December 2024</h1><p>Uncertainty index: <strong>506</strong> · 0 differences · 0 unresolved · 0 provisional fixes</p><p>Evidence base 500 + source concerns 6 = 506. Concerns are uncapped; browsing order uses evidence tier before concern points.</p><p>This is an editorial evidence assessment, not a probability, an error rate or a practice score.</p><details><summary>Assessment evidence and original source scores</summary><pre>{
+  &quot;unit&quot;: &quot;N4_12_2024&quot;,
+  &quot;sample&quot;: false,
+  &quot;year&quot;: 2024,
+  &quot;month&quot;: 12,
+  &quot;evidence_base&quot;: 500,
+  &quot;evidence_tier&quot;: 2,
+  &quot;concern_points&quot;: 6,
+  &quot;index&quot;: 506,
+  &quot;concern_counts&quot;: {
+    &quot;metadata_flags&quot;: 1,
+    &quot;missing_units&quot;: 0,
+    &quot;major_defects&quot;: 0,
+    &quot;minor_defects&quot;: 0,
+    &quot;uncertain_fields&quot;: 4
+  },
+  &quot;principal_history&quot;: {
+    &quot;unit&quot;: &quot;N4_12_2024&quot;,
+    &quot;level&quot;: &quot;N4&quot;,
+    &quot;year&quot;: 2024,
+    &quot;month&quot;: 12,
+    &quot;principal_path&quot;: &quot;src/Yuuki Bui/Đề thi N4-N5 các năm Yuuki Bùi/2024年12月/N4 T12-2024/Đề thi N4 T12-2024 Bản hoàn chỉnh [Mark].pdf&quot;,
+    &quot;principal_sha256&quot;: &quot;df418b805add27888f7a4cb78f9d11765efcb2f66af006e135961919ba38d56f&quot;,
+    &quot;initial_tier&quot;: 1,
+    &quot;written_physical_pages&quot;: &quot;1-27&quot;,
+    &quot;review_status&quot;: &quot;complete_written_review&quot;,
+    &quot;provenance_status&quot;: &quot;unverified&quot;,
+    &quot;provenance_points&quot;: 100,
+    &quot;metadata_flags&quot;: 1,
+    &quot;missing_units&quot;: 0,
+    &quot;major_defects&quot;: 0,
+    &quot;minor_defects&quot;: 0,
+    &quot;uncertain_fields&quot;: 4,
+    &quot;uncertainty_index&quot;: 106,
+    &quot;score_evidence&quot;: [
+      {
+        &quot;id&quot;: &quot;N4_12_2024-S-001&quot;,
+        &quot;kind&quot;: &quot;metadata_flags&quot;,
+        &quot;locator&quot;: &quot;Principal physical cover1 and vocabulary physical3–10, printed1–8&quot;,
+        &quot;evidence&quot;: &quot;Vocabulary cover declares nine pages but eight numbered vocabulary content pages are available. All 28 scored items and five examples are present; no missing question is inferred. Count one unexplained pagination group. Grammar printed1–15 is accounted for, including separator physical23.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N4_12_2024-S-002&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;vocab-q017&quot;,
+        &quot;field&quot;: &quot;/options&quot;,
+        &quot;locator&quot;: &quot;Principal physical page(s) 5&quot;,
+        &quot;evidence&quot;: &quot;The complete paper and archive put きめましょう at option1; the visibly permuted compact copy puts it at option4. Task logic identifies the verb but cannot prove historical order. Count the options array once. See N4_12_2024-vocab-q017-option-order.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N4_12_2024-S-003&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;reading-b005&quot;,
+        &quot;field&quot;: &quot;/content/html&quot;,
+        &quot;locator&quot;: &quot;Principal physical page(s) 24&quot;,
+        &quot;evidence&quot;: &quot;The principal author カタリーナ competes with visibly printed カリーナ in both compact introduction and byline. Both names are possible. Count the passage content field once. See N4_12_2024-reading-b005-author-name.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N4_12_2024-S-004&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;reading-q028&quot;,
+        &quot;field&quot;: &quot;/stem&quot;,
+        &quot;locator&quot;: &quot;Principal physical page(s) 26&quot;,
+        &quot;evidence&quot;: &quot;Principal/archive クラブ competes with compact クラス. Both nouns fit the same group and constraints, so answer logic cannot authenticate this word. See N4_12_2024-reading-q028-student-group.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N4_12_2024-S-005&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;reading-b006&quot;,
+        &quot;field&quot;: &quot;/content/html&quot;,
+        &quot;locator&quot;: &quot;Principal physical page(s) 27&quot;,
+        &quot;evidence&quot;: &quot;Principal/archive factory B number 0518-29-1234 competes with compact 5018-29-1234. A compact digit transposition is probable but the arbitrary historical contact detail is unproven. See N4_12_2024-reading-b006-factory-b-telephone.&quot;
+      }
+    ],
+    &quot;assessed_on&quot;: &quot;2026-09-25&quot;,
+    &quot;method_version&quot;: 1
+  },
+  &quot;evidence&quot;: [
+    {
+      &quot;kind&quot;: &quot;user_approved_reference_scan&quot;,
+      &quot;binding&quot;: {
+        &quot;path&quot;: &quot;preprocess/user_approved_reference_scans.md&quot;,
+        &quot;sha256&quot;: &quot;c0fc4d24494a9569dd539d237018014213045d6224ae9035fa282ab610be0384&quot;
+      },
+      &quot;reference&quot;: {
+        &quot;path&quot;: &quot;src/Yuuki Bui/Đề thi N4-N5 các năm Yuuki Bùi/2024年12月/N4 T12-2024/Đề thi N4 T12-2024 Bản hoàn chỉnh [Mark].pdf&quot;,
+        &quot;sha256&quot;: &quot;df418b805add27888f7a4cb78f9d11765efcb2f66af006e135961919ba38d56f&quot;,
+        &quot;written_physical_pages&quot;: [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27
+        ]
+      },
+      &quot;scope&quot;: &quot;Exact selected source and approved question pages only; approval does not authenticate issuer custody or remove source concerns.&quot;
+    }
+  ]
+}</pre></details><a href="../assets/principals/N4_12_2024.pdf" target="_blank" rel="noopener">Open principal source ↗</a><ul></ul><div class="review-controls"><label>Show <select id="review-filter"><option value="all">All records</option><option value="difference">Principal differences</option><option value="unresolved">Unresolved cases</option><option value="provisional_fix">Provisional fixes</option></select></label><label>Find <input id="review-search" type="search" placeholder="Item, wording, evidence…"></label></div><p id="review-count" class="control-help" role="status"></p><section class="review-group" id="review-vocab-q017" data-kinds="resolved"><div class="review-group-heading"><h2>vocab-q017</h2><a href="../papers/N4_12_2024.html#vocab-q017">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">17 こんばん どこで しょくじをするか （　　）。<ol><li>きめましょう</li><li>はいりましょう</li><li>はらいましょう</li><li>さそいましょう</li></ol><p>Editorial key: 1</p></div></details><div class="review-record" id="unresolved_cases-N4_12_2024-vocab-q017-option-order"><div class="review-label">Resolved · /options · high</div><div class="comparison"><div><h4>Alternative</h4><pre>[
+  &quot;はらいましょう&quot;,
+  &quot;さそいましょう&quot;<mark class="diff-old">,
+  &quot;はいりましょう&quot;,
+  &quot;きめましょう&quot;</mark>
+]</pre></div><div><h4>Editorial</h4><pre>[<mark class="diff-new">
+  &quot;きめましょう&quot;,
+  &quot;はいりましょう&quot;,</mark>
+  &quot;はらいましょう&quot;,
+  &quot;さそいましょう&quot;
+]</pre></div></div><p>Q17 decides where to have dinner. The page numbers きめましょう, はいりましょう, はらいましょう, さそいましょう 1–4 in that order; a permutation would change the numbered response. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings.</p><a href="../assets/principals/N4_12_2024.pdf" target="_blank" rel="noopener">Source ↗</a> <span class="control-help">Vocabulary Q17 asks where to eat tonight; the same four verbs are printed in different orders.</span><ul class="evidence-list"><li><a href="../assets/principals/N4_12_2024.pdf#page=5" target="_blank" rel="noopener">Yuuki Bùi — Đề thi N4 T12-2024 Bản hoàn chỉnh [Mark]</a> · Physical pages 5<p>Option order: 1きめましょう / 2はいりましょう / 3はらいましょう / 4さそいましょう.</p></li><li><a href="../assets/principals/N4_12_2024.pdf#page=1" target="_blank" rel="noopener">Đáp án N4 T12-2024 YuukiBùi — three-page reference answers</a> · Physical pages 1<p>Q17 answer1, きめましょう.</p></li><li><a href="../assets/principals/N4_12_2024.pdf" target="_blank" rel="noopener">Đề Thi Tiếng Nhật — archived December 2024 N4 vocab HTML</a> · Question17 options<p>Same order as the full paper.</p></li><li><a href="https://www.scribd.com/document/979242210/n4-2024%E5%B9%B412%E6%9C%88-%E6%96%87%E5%AD%97%E8%AA%9E%E5%BD%99-%E6%96%87%E6%B3%95-%E8%AA%AD%E8%A7%A3" target="_blank" rel="noopener">n4 2024年12月 文字語彙・文法・読解 — 13-page Thaoss compact practice copy, Scribd uploader 2457010047quynh</a> · Preview page 2; Vocabulary Q17<p>Option order 1はらいましょう / 2さそいましょう / 3はいりましょう / 4きめましょう; learner circles4.</p></li><li><a href="../assets/principals/N4_12_2024.pdf#page=5" target="_blank" rel="noopener">Đề thi N4 T12-2024 Bản hoàn chỉnh [Mark].pdf</a> · vocab-q017 /options; physical 5<p>Q17 decides where to have dinner. The page numbers きめましょう, はいりましょう, はらいましょう, さそいましょう 1–4 in that order; a permutation would change the numbered response.</p></li></ul><details><summary>Full published record · unresolved_cases-N4_12_2024-vocab-q017-option-order</summary><pre>{
+  &quot;case_id&quot;: &quot;N4_12_2024-vocab-q017-option-order&quot;,
+  &quot;unit&quot;: &quot;N4_12_2024&quot;,
+  &quot;item_id&quot;: &quot;vocab-q017&quot;,
+  &quot;field&quot;: &quot;/options&quot;,
+  &quot;status&quot;: &quot;resolved&quot;,
+  &quot;confidence&quot;: &quot;high&quot;,
+  &quot;decision_basis&quot;: &quot;source_comparison&quot;,
+  &quot;current_value&quot;: [
+    &quot;きめましょう&quot;,
+    &quot;はいりましょう&quot;,
+    &quot;はらいましょう&quot;,
+    &quot;さそいましょう&quot;
+  ],
+  &quot;context&quot;: &quot;Vocabulary Q17 asks where to eat tonight; the same four verbs are printed in different orders.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: [
+        &quot;はらいましょう&quot;,
+        &quot;さそいましょう&quot;,
+        &quot;はいりましょう&quot;,
+        &quot;きめましょう&quot;
+      ],
+      &quot;assessment&quot;: &quot;This permutation is visibly printed in the compact practice copy. The semantically correct verb moves from position1 to position4.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;Yuuki Bùi — Đề thi N4 T12-2024 Bản hoàn chỉnh [Mark]&quot;,
+      &quot;sha256&quot;: &quot;df418b805add27888f7a4cb78f9d11765efcb2f66af006e135961919ba38d56f&quot;,
+      &quot;physical_pages&quot;: [
+        5
+      ],
+      &quot;locator&quot;: &quot;Physical pages 5&quot;,
+      &quot;reading&quot;: &quot;Option order: 1きめましょう / 2はいりましょう / 3はらいましょう / 4さそいましょう.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;Đáp án N4 T12-2024 YuukiBùi — three-page reference answers&quot;,
+      &quot;sha256&quot;: &quot;86c39cee3cd3f1957adadd5ad40b33c292d46c44718b78057bbd87dbfcd2ab24&quot;,
+      &quot;physical_pages&quot;: [
+        1
+      ],
+      &quot;locator&quot;: &quot;Physical pages 1&quot;,
+      &quot;reading&quot;: &quot;Q17 answer1, きめましょう.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;Đề Thi Tiếng Nhật — archived December 2024 N4 vocab HTML&quot;,
+      &quot;sha256&quot;: &quot;21c1b82a57eb3b8a556b8bec09c2a60a34a326f4c51df2357566596be927dd99&quot;,
+      &quot;locator&quot;: &quot;Question17 options&quot;,
+      &quot;reading&quot;: &quot;Same order as the full paper.&quot;,
+      &quot;lineage&quot;: &quot;Archived transcription and imported editorial text share lineage; independent original acquisition is not established.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;n4 2024年12月 文字語彙・文法・読解 — 13-page Thaoss compact practice copy, Scribd uploader 2457010047quynh&quot;,
+      &quot;url&quot;: &quot;https://www.scribd.com/document/979242210/n4-2024%E5%B9%B412%E6%9C%88-%E6%96%87%E5%AD%97%E8%AA%9E%E5%BD%99-%E6%96%87%E6%B3%95-%E8%AA%AD%E8%A7%A3&quot;,
+      &quot;physical_pages&quot;: [
+        2
+      ],
+      &quot;locator&quot;: &quot;Preview page 2; Vocabulary Q17&quot;,
+      &quot;reading&quot;: &quot;Option order 1はらいましょう / 2さそいましょう / 3はいりましょう / 4きめましょう; learner circles4.&quot;,
+      &quot;lineage&quot;: &quot;Distinct layout with handwritten learner marks and demonstrable transcription errors; independent original acquisition is unproven.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;Đề thi N4 T12-2024 Bản hoàn chỉnh [Mark].pdf&quot;,
+      &quot;sha256&quot;: &quot;df418b805add27888f7a4cb78f9d11765efcb2f66af006e135961919ba38d56f&quot;,
+      &quot;locator&quot;: &quot;vocab-q017 /options; physical 5&quot;,
+      &quot;physical_pages&quot;: [
+        5
+      ],
+      &quot;reading&quot;: &quot;Q17 decides where to have dinner. The page numbers きめましょう, はいりましょう, はらいましょう, さそいましょう 1–4 in that order; a permutation would change the numbered response.&quot;,
+      &quot;lineage&quot;: &quot;Exact UARS-approved sitting scan; copied editions/alternative reconstructions are not independent print lineages.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Q17 decides where to have dinner. The page numbers きめましょう, はいりましょう, はらいましょう, さそいましょう 1–4 in that order; a permutation would change the numbered response. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Compared all four verbs and surrounding Q16–18 to rule out a numbering shift.&quot;,
+    &quot;Viewed the compact page image, confirming a real printed permutation rather than extraction order.&quot;,
+    &quot;Checked the original archive and reference-answer text, then solved the sentence independently.&quot;,
+    &quot;5 November 2026 — Q17 decides where to have dinner. The page numbers きめましょう, はいりましょう, はらいましょう, さそいましょう 1–4 in that order; a permutation would change the numbered response. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;&quot;
+}</pre></details></div></section><section class="review-group" id="review-reading-b005" data-kinds="resolved"><div class="review-group-heading"><h2>reading-b005</h2><a href="../papers/N4_12_2024.html#reading-b005">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">これはカタリーナさんが書いた作文です。<br/><br/><center><b>京都旅行</b></center><br/><div>カタリーナ・ゴメス</div><br/> 先週、一人で京都に旅行に行ってきました。私は日本に来る前に、テレビで<ruby>庭中<rt>にわじゅう</rt></ruby>の木の<ruby>葉<rt>は</rt></ruby>が赤くなっているお寺を見て、秋に京都に行ってみたいと思っていたのです。<br/><br/>旅行に行く前に、<ruby>友達<rt>ともだち</rt></ruby>の小林さんを<ruby>誘<rt>さそ</rt></ruby>ってみましたが、秋の京都は人気があって人が多いから①<u>行かない</u>と言われました。ちょっと<ruby>残念<rt>ざんねん</rt></ruby>でしたが、私の気持ちは<ruby>変<rt>か</rt></ruby>わりませんでした。 <br/><br/>昼ごろ京都駅に着いて、すぐにテレビで見たお寺に行きました。しかし、人が多すぎて、お寺の<ruby>庭<rt>にわ</rt></ruby>はゆっくり見られませんでした。とても<ruby>残念<rt>ざんねん</rt></ruby>でした。ほかのお寺や<ruby>神社<rt>じんじゃ</rt></ruby>にも行ってみましたが同じでした。小林さんの話は<ruby>本当<rt>ほんとう</rt></ruby>でした。<br/><br/>でも、夜、旅館で②<u>いいこと</u>を知りました。私は旅館の人に、ずっと行きたかったお寺に行ったのに、こんでいてよく見られなかったと話しました。すると、「そのお寺には朝6時から入れますよ。」と教えてくれました。朝はあまり人がいないのだそうです。<br/><br/><ruby>次<rt>つぎ</rt></ruby>の朝、私は6時にお寺に行きました。今度は人が少なくて、すばらしい<ruby>庭<rt>にわ</rt></ruby>を楽しめました。ずっと見たいと思っていた<ruby>景色<rt>けしき</rt></ruby>がゆっくり見られて、うれしかったです。<br/><br/>秋の京都は人が多かったですが、③<u>いい旅行になりました</u>。</div></details><div class="review-record" id="unresolved_cases-N4_12_2024-reading-b005-author-name"><div class="review-label">Resolved · /content/html · high</div><div class="comparison"><div><h4>Alternative</h4><pre>カリーナさん<mark class="diff-old"> </mark>/<mark class="diff-old"> </mark>カリーナ・ゴメス</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">これは</mark>カ<mark class="diff-new">タ</mark>リーナさん<mark class="diff-new">が書いた作文です。&lt;br&gt;&lt;br&gt;&lt;center&gt;&lt;b&gt;京都旅行&lt;</mark>/<mark class="diff-new">b&gt;&lt;/center&gt;&lt;br&gt;&lt;div&gt;</mark>カ<mark class="diff-new">タ</mark>リーナ・ゴメス<mark class="diff-new">&lt;/div&gt;&lt;br&gt; 先週、一人で京都に旅行に行ってきました。私は日本に来る前に、テレビで&lt;ruby&gt;庭中&lt;rt&gt;にわじゅう&lt;/rt&gt;&lt;/r</mark>…</pre></div></div><p>The Kyoto travel composition prints カタリーナさん in the introductory line and カタリーナ・ゴメス as byline. Both contain タ; a retype with カリーナ cannot override either occurrence. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings.</p><a href="../assets/principals/N4_12_2024.pdf" target="_blank" rel="noopener">Source ↗</a> <span class="control-help">Kyoto-trip composition: the introductory sentence and author byline disagree across reproductions.</span><ul class="evidence-list"><li><a href="../assets/principals/N4_12_2024.pdf#page=24" target="_blank" rel="noopener">Yuuki Bùi — Đề thi N4 T12-2024 Bản hoàn chỉnh [Mark]</a> · Physical pages 24<p>Introduction カタリーナさん; byline カタリーナ・ゴメス.</p></li><li><a href="../assets/principals/N4_12_2024.pdf" target="_blank" rel="noopener">Đề Thi Tiếng Nhật — archived December 2024 N4 reading HTML</a> · Kyoto-trip composition introduction and byline<p>カタリーナ in both occurrences; the archived byline omits the separating middle dot.</p></li><li><a href="https://www.scribd.com/document/979242210/n4-2024%E5%B9%B412%E6%9C%88-%E6%96%87%E5%AD%97%E8%AA%9E%E5%BD%99-%E6%96%87%E6%B3%95-%E8%AA%AD%E8%A7%A3" target="_blank" rel="noopener">n4 2024年12月 文字語彙・文法・読解 — 13-page Thaoss compact practice copy, Scribd uploader 2457010047quynh</a> · Preview page 11; Kyoto-trip composition introduction and byline<p>カリーナ in both places; byline includes the middle dot.</p></li><li><a href="../assets/principals/N4_12_2024.pdf#page=24" target="_blank" rel="noopener">Đề thi N4 T12-2024 Bản hoàn chỉnh [Mark].pdf</a> · reading-b005 /content/html; physical 24<p>The Kyoto travel composition prints カタリーナさん in the introductory line and カタリーナ・ゴメス as byline. Both contain タ; a retype with カリーナ cannot override either occurrence.</p></li></ul><details><summary>Full published record · unresolved_cases-N4_12_2024-reading-b005-author-name</summary><pre>{
+  &quot;case_id&quot;: &quot;N4_12_2024-reading-b005-author-name&quot;,
+  &quot;unit&quot;: &quot;N4_12_2024&quot;,
+  &quot;item_id&quot;: &quot;reading-b005&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;status&quot;: &quot;resolved&quot;,
+  &quot;confidence&quot;: &quot;high&quot;,
+  &quot;decision_basis&quot;: &quot;source_comparison&quot;,
+  &quot;current_value&quot;: &quot;これはカタリーナさんが書いた作文です。&lt;br&gt;&lt;br&gt;&lt;center&gt;&lt;b&gt;京都旅行&lt;/b&gt;&lt;/center&gt;&lt;br&gt;&lt;div&gt;カタリーナ・ゴメス&lt;/div&gt;&lt;br&gt; 先週、一人で京都に旅行に行ってきました。私は日本に来る前に、テレビで&lt;ruby&gt;庭中&lt;rt&gt;にわじゅう&lt;/rt&gt;&lt;/ruby&gt;の木の&lt;ruby&gt;葉&lt;rt&gt;は&lt;/rt&gt;&lt;/ruby&gt;が赤くなっているお寺を見て、秋に京都に行ってみたいと思っていたのです。&lt;br&gt;&lt;br&gt;旅行に行く前に、&lt;ruby&gt;友達&lt;rt&gt;ともだち&lt;/rt&gt;&lt;/ruby&gt;の小林さんを&lt;ruby&gt;誘&lt;rt&gt;さそ&lt;/rt&gt;&lt;/ruby&gt;ってみましたが、秋の京都は人気があって人が多いから①&lt;u&gt;行かない&lt;/u&gt;と言われました。ちょっと&lt;ruby&gt;残念&lt;rt&gt;ざんねん&lt;/rt&gt;&lt;/ruby&gt;でしたが、私の気持ちは&lt;ruby&gt;変&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;わりませんでした。 &lt;br&gt;&lt;br&gt;昼ごろ京都駅に着いて、すぐにテレビで見たお寺に行きました。しかし、人が多すぎて、お寺の&lt;ruby&gt;庭&lt;rt&gt;にわ&lt;/rt&gt;&lt;/ruby&gt;はゆっくり見られませんでした。とても&lt;ruby&gt;残念&lt;rt&gt;ざんねん&lt;/rt&gt;&lt;/ruby&gt;でした。ほかのお寺や&lt;ruby&gt;神社&lt;rt&gt;じんじゃ&lt;/rt&gt;&lt;/ruby&gt;にも行ってみましたが同じでした。小林さんの話は&lt;ruby&gt;本当&lt;rt&gt;ほんとう&lt;/rt&gt;&lt;/ruby&gt;でした。&lt;br&gt;&lt;br&gt;でも、夜、旅館で②&lt;u&gt;いいこと&lt;/u&gt;を知りました。私は旅館の人に、ずっと行きたかったお寺に行ったのに、こんでいてよく見られなかったと話しました。すると、「そのお寺には朝6時から入れますよ。」と教えてくれました。朝はあまり人がいないのだそうです。&lt;br&gt;&lt;br&gt;&lt;ruby&gt;次&lt;rt&gt;つぎ&lt;/rt&gt;&lt;/ruby&gt;の朝、私は6時にお寺に行きました。今度は人が少なくて、すばらしい&lt;ruby&gt;庭&lt;rt&gt;にわ&lt;/rt&gt;&lt;/ruby&gt;を楽しめました。ずっと見たいと思っていた&lt;ruby&gt;景色&lt;rt&gt;けしき&lt;/rt&gt;&lt;/ruby&gt;がゆっくり見られて、うれしかったです。&lt;br&gt;&lt;br&gt;秋の京都は人が多かったですが、③&lt;u&gt;いい旅行になりました&lt;/u&gt;。&quot;,
+  &quot;context&quot;: &quot;Kyoto-trip composition: the introductory sentence and author byline disagree across reproductions.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;カリーナさん / カリーナ・ゴメス&quot;,
+      &quot;assessment&quot;: &quot;Both shorter-name occurrences are visibly printed in the compact copy. This is a plausible personal name, so language alone cannot rule it out.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;Yuuki Bùi — Đề thi N4 T12-2024 Bản hoàn chỉnh [Mark]&quot;,
+      &quot;sha256&quot;: &quot;df418b805add27888f7a4cb78f9d11765efcb2f66af006e135961919ba38d56f&quot;,
+      &quot;physical_pages&quot;: [
+        24
+      ],
+      &quot;locator&quot;: &quot;Physical pages 24&quot;,
+      &quot;reading&quot;: &quot;Introduction カタリーナさん; byline カタリーナ・ゴメス.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;Đề Thi Tiếng Nhật — archived December 2024 N4 reading HTML&quot;,
+      &quot;sha256&quot;: &quot;2a3300b51e9954b78878897dd2f18a82c2658cdf7cb1fdc9df20698e1bfcf8a4&quot;,
+      &quot;locator&quot;: &quot;Kyoto-trip composition introduction and byline&quot;,
+      &quot;reading&quot;: &quot;カタリーナ in both occurrences; the archived byline omits the separating middle dot.&quot;,
+      &quot;lineage&quot;: &quot;Archived transcription and imported editorial text share lineage; independent original acquisition is not established.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;n4 2024年12月 文字語彙・文法・読解 — 13-page Thaoss compact practice copy, Scribd uploader 2457010047quynh&quot;,
+      &quot;url&quot;: &quot;https://www.scribd.com/document/979242210/n4-2024%E5%B9%B412%E6%9C%88-%E6%96%87%E5%AD%97%E8%AA%9E%E5%BD%99-%E6%96%87%E6%B3%95-%E8%AA%AD%E8%A7%A3&quot;,
+      &quot;physical_pages&quot;: [
+        11
+      ],
+      &quot;locator&quot;: &quot;Preview page 11; Kyoto-trip composition introduction and byline&quot;,
+      &quot;reading&quot;: &quot;カリーナ in both places; byline includes the middle dot.&quot;,
+      &quot;lineage&quot;: &quot;Distinct layout with handwritten learner marks and demonstrable transcription errors; independent original acquisition is unproven.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;Đề thi N4 T12-2024 Bản hoàn chỉnh [Mark].pdf&quot;,
+      &quot;sha256&quot;: &quot;df418b805add27888f7a4cb78f9d11765efcb2f66af006e135961919ba38d56f&quot;,
+      &quot;locator&quot;: &quot;reading-b005 /content/html; physical 24&quot;,
+      &quot;physical_pages&quot;: [
+        24
+      ],
+      &quot;reading&quot;: &quot;The Kyoto travel composition prints カタリーナさん in the introductory line and カタリーナ・ゴメス as byline. Both contain タ; a retype with カリーナ cannot override either occurrence.&quot;,
+      &quot;lineage&quot;: &quot;Exact UARS-approved sitting scan; copied editions/alternative reconstructions are not independent print lineages.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;The Kyoto travel composition prints カタリーナさん in the introductory line and カタリーナ・ゴメス as byline. Both contain タ; a retype with カリーナ cannot override either occurrence. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Read the full composition and all three questions in the principal and compact extracted text.&quot;,
+    &quot;Viewed the compact page11 image and the principal page24 image; checked both occurrences and the separator.&quot;,
+    &quot;Compared the immutable archive and searched the unit’s remaining local source inventory; no further name witness was found.&quot;,
+    &quot;5 November 2026 — The Kyoto travel composition prints カタリーナさん in the introductory line and カタリーナ・ゴメス as byline. Both contain タ; a retype with カリーナ cannot override either occurrence. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;&quot;
+}</pre></details></div></section><section class="review-group" id="review-reading-b006" data-kinds="resolved"><div class="review-group-heading"><h2>reading-b006</h2><a href="../papers/N4_12_2024.html#reading-b006">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">工場見学に行きませんか!<ruby>大人<rt>おとな</rt></ruby>も子どもも<ruby>一緒<rt>いっしょ</rt></ruby>に楽しめます。ご<ruby>家族<rt>かぞく</rt></ruby>やお<ruby>友達<rt>ともだち</rt></ruby>とどうぞ。<table> <tr><td><center>
+A タナカ自動車川北工場</center><br/><br/>【見学時間】　10時~11時<br/>【<ruby>必要<rt>ひつよう</rt></ruby>時間】　1時間<br/>【見学できる曜日】　火、木、金、日<br/>【<ruby>予約<rt>よやく</rt></ruby>】 <ruby>必要<rt>ひつよう</rt></ruby>（5日前までに電話してください。） <br/>【見学できる人の数】　2人~25人 （12<ruby>歳<rt>さい</rt></ruby>以下の人は、<ruby>大人<rt>おとな</rt></ruby>と<ruby>一緒<rt>いっしょ</rt></ruby>に来てください。）<br/><div>早田市川北1-5<br/>0511-07-8369</div> </td> <td> <center>B キムラしょうゆ工場</center><br/><br/>【見学時間】　①10時~　②13時~　③16時~<br/>【<ruby>必要<rt>ひつよう</rt></ruby>時間】　30分<br/>【見学できる曜日】　月~土<br/>【<ruby>予約<rt>よやく</rt></ruby>】 <ruby>必要<rt>ひつよう</rt></ruby>ありません <br/>【見学できる人の数】　何人でも<br/><div>西野市東 9-8<br/>0518-29-1234</div> </td> </tr> <tr><td><center>C 毎朝新聞月山工場</center><br/><br/>【見学時間】　13時半~ <br/>（見学時間の15分前までに来てください。）<br/>【<ruby>必要<rt>ひつよう</rt></ruby>時間】　1時間<br/>【見学できる曜日】　月~金、日<br/>【<ruby>予約<rt>よやく</rt></ruby>】 <ruby>必要<rt>ひつよう</rt></ruby>（1週間前までに電話してください。） <br/>【見学できる人の数】　小学生: 150人まで<br/>中学生以上: 80人まで<br/><div>月山町南 5789<br/>0516-54-2109</div> </td> <td> <center>D 前川ミルク工場</center><br/><br/>【見学できる時間】　9時~16時<br/>【<ruby>必要<rt>ひつよう</rt></ruby>時間】　<ruby>約<rt>やく</rt></ruby>1時間半<br/>【見学できる曜日】　月、水、木、日<br/>【<ruby>予約<rt>よやく</rt></ruby>】 <ruby>必要<rt>ひつよう</rt></ruby> （前の日までに電話してください。） <br/>【見学できる人の数】　60人まで<br/><div>安口町前川41-6-3<br/>0512-22-7410</div> </td> </tr> </table></div></details><div class="review-record" id="unresolved_cases-N4_12_2024-reading-b006-factory-b-telephone"><div class="review-label">Resolved · /content/html · high</div><div class="comparison"><div><h4>Alternative</h4><pre>5018-29-1234</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">工場見学に行きませんか!&lt;ruby&gt;大人&lt;rt&gt;おとな&lt;/rt&gt;&lt;/ruby&gt;も子どもも&lt;ruby&gt;一緒&lt;rt&gt;いっしょ&lt;/rt&gt;&lt;/ruby&gt;に楽しめます。ご&lt;ruby&gt;家族&lt;rt&gt;かぞく&lt;/rt&gt;&lt;/ruby&gt;やお&lt;ruby&gt;友達&lt;rt&gt;ともだち&lt;/rt&gt;&lt;/ruby&gt;とどうぞ。&lt;table&gt; &lt;tr&gt;&lt;td&gt;&lt;center&gt;
+A タナカ自動車川北工場&lt;/center&gt;&lt;br&gt;&lt;br&gt;【見学時間】　10時~11時&lt;br&gt;【&lt;ruby&gt;必要&lt;rt&gt;ひつよう&lt;/rt&gt;&lt;/ruby&gt;時間】　1時間&lt;br&gt;【見学できる曜日】　火、木、金、日&lt;br&gt;【&lt;ruby&gt;予約&lt;rt&gt;よやく&lt;/rt&gt;&lt;/ruby&gt;】 &lt;ruby&gt;必要&lt;rt&gt;ひつよう&lt;/rt&gt;&lt;/ruby&gt;（</mark>5<mark class="diff-new">日前までに電話してください。） &lt;br&gt;【見学できる人の数】　2人~25人 （12&lt;ruby&gt;歳&lt;rt&gt;さい&lt;/rt&gt;&lt;/ruby&gt;以下の人は、&lt;ruby&gt;大人&lt;rt&gt;おとな&lt;/rt&gt;&lt;/ruby&gt;と&lt;ruby&gt;一緒&lt;rt&gt;いっしょ&lt;/rt&gt;&lt;/ruby&gt;に来てください。）&lt;b</mark>…</pre></div></div><p>Box B キムラしょうゆ工場 lists 0518-29-1234, distinct from the telephone numbers in boxes A, C and D. Preserve its first four digits, hours, bookings and the surrounding two-by-two table. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings.</p><a href="../assets/principals/N4_12_2024.pdf" target="_blank" rel="noopener">Source ↗</a> <span class="control-help">Factory-tour notice: the telephone number printed under factory B キムラしょうゆ工場 differs in its first two digits.</span><ul class="evidence-list"><li><a href="../assets/principals/N4_12_2024.pdf#page=27" target="_blank" rel="noopener">Yuuki Bùi — Đề thi N4 T12-2024 Bản hoàn chỉnh [Mark]</a> · Physical pages 27<p>Factory B telephone 0518-29-1234.</p></li><li><a href="../assets/principals/N4_12_2024.pdf" target="_blank" rel="noopener">Đề Thi Tiếng Nhật — archived December 2024 N4 reading HTML</a> · Factory notice; B cell telephone<p>0518-29-1234</p></li><li><a href="https://www.scribd.com/document/979242210/n4-2024%E5%B9%B412%E6%9C%88-%E6%96%87%E5%AD%97%E8%AA%9E%E5%BD%99-%E6%96%87%E6%B3%95-%E8%AA%AD%E8%A7%A3" target="_blank" rel="noopener">n4 2024年12月 文字語彙・文法・読解 — 13-page Thaoss compact practice copy, Scribd uploader 2457010047quynh</a> · Preview page 13; Factory B telephone<p>5018-29-1234; the other three factory numbers begin with 051 in this reproduction.</p></li><li><a href="../assets/principals/N4_12_2024.pdf#page=27" target="_blank" rel="noopener">Đề thi N4 T12-2024 Bản hoàn chỉnh [Mark].pdf</a> · reading-b006 /content/html; physical 27<p>Box B キムラしょうゆ工場 lists 0518-29-1234, distinct from the telephone numbers in boxes A, C and D. Preserve its first four digits, hours, bookings and the surrounding two-by-two table.</p></li></ul><details><summary>Full published record · unresolved_cases-N4_12_2024-reading-b006-factory-b-telephone</summary><pre>{
+  &quot;case_id&quot;: &quot;N4_12_2024-reading-b006-factory-b-telephone&quot;,
+  &quot;unit&quot;: &quot;N4_12_2024&quot;,
+  &quot;item_id&quot;: &quot;reading-b006&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;status&quot;: &quot;resolved&quot;,
+  &quot;confidence&quot;: &quot;high&quot;,
+  &quot;decision_basis&quot;: &quot;source_comparison&quot;,
+  &quot;current_value&quot;: &quot;工場見学に行きませんか!&lt;ruby&gt;大人&lt;rt&gt;おとな&lt;/rt&gt;&lt;/ruby&gt;も子どもも&lt;ruby&gt;一緒&lt;rt&gt;いっしょ&lt;/rt&gt;&lt;/ruby&gt;に楽しめます。ご&lt;ruby&gt;家族&lt;rt&gt;かぞく&lt;/rt&gt;&lt;/ruby&gt;やお&lt;ruby&gt;友達&lt;rt&gt;ともだち&lt;/rt&gt;&lt;/ruby&gt;とどうぞ。&lt;table&gt; &lt;tr&gt;&lt;td&gt;&lt;center&gt;\nA タナカ自動車川北工場&lt;/center&gt;&lt;br&gt;&lt;br&gt;【見学時間】　10時~11時&lt;br&gt;【&lt;ruby&gt;必要&lt;rt&gt;ひつよう&lt;/rt&gt;&lt;/ruby&gt;時間】　1時間&lt;br&gt;【見学できる曜日】　火、木、金、日&lt;br&gt;【&lt;ruby&gt;予約&lt;rt&gt;よやく&lt;/rt&gt;&lt;/ruby&gt;】 &lt;ruby&gt;必要&lt;rt&gt;ひつよう&lt;/rt&gt;&lt;/ruby&gt;（5日前までに電話してください。） &lt;br&gt;【見学できる人の数】　2人~25人 （12&lt;ruby&gt;歳&lt;rt&gt;さい&lt;/rt&gt;&lt;/ruby&gt;以下の人は、&lt;ruby&gt;大人&lt;rt&gt;おとな&lt;/rt&gt;&lt;/ruby&gt;と&lt;ruby&gt;一緒&lt;rt&gt;いっしょ&lt;/rt&gt;&lt;/ruby&gt;に来てください。）&lt;br&gt;&lt;div&gt;早田市川北1-5&lt;br&gt;0511-07-8369&lt;/div&gt; &lt;/td&gt; &lt;td&gt; &lt;center&gt;B キムラしょうゆ工場&lt;/center&gt;&lt;br&gt;&lt;br&gt;【見学時間】　①10時~　②13時~　③16時~&lt;br&gt;【&lt;ruby&gt;必要&lt;rt&gt;ひつよう&lt;/rt&gt;&lt;/ruby&gt;時間】　30分&lt;br&gt;【見学できる曜日】　月~土&lt;br&gt;【&lt;ruby&gt;予約&lt;rt&gt;よやく&lt;/rt&gt;&lt;/ruby&gt;】 &lt;ruby&gt;必要&lt;rt&gt;ひつよう&lt;/rt&gt;&lt;/ruby&gt;ありません &lt;br&gt;【見学できる人の数】　何人でも&lt;br&gt;&lt;div&gt;西野市東 9-8&lt;br&gt;0518-29-1234&lt;/div&gt; &lt;/td&gt; &lt;/tr&gt; &lt;tr&gt;&lt;td&gt;&lt;center&gt;C 毎朝新聞月山工場&lt;/center&gt;&lt;br&gt;&lt;br&gt;【見学時間】　13時半~ &lt;br&gt;（見学時間の15分前までに来てください。）&lt;br&gt;【&lt;ruby&gt;必要&lt;rt&gt;ひつよう&lt;/rt&gt;&lt;/ruby&gt;時間】　1時間&lt;br&gt;【見学できる曜日】　月~金、日&lt;br&gt;【&lt;ruby&gt;予約&lt;rt&gt;よやく&lt;/rt&gt;&lt;/ruby&gt;】 &lt;ruby&gt;必要&lt;rt&gt;ひつよう&lt;/rt&gt;&lt;/ruby&gt;（1週間前までに電話してください。） &lt;br&gt;【見学できる人の数】　小学生: 150人まで&lt;br&gt;中学生以上: 80人まで&lt;br&gt;&lt;div&gt;月山町南 5789&lt;br&gt;0516-54-2109&lt;/div&gt; &lt;/td&gt; &lt;td&gt; &lt;center&gt;D 前川ミルク工場&lt;/center&gt;&lt;br&gt;&lt;br&gt;【見学できる時間】　9時~16時&lt;br&gt;【&lt;ruby&gt;必要&lt;rt&gt;ひつよう&lt;/rt&gt;&lt;/ruby&gt;時間】　&lt;ruby&gt;約&lt;rt&gt;やく&lt;/rt&gt;&lt;/ruby&gt;1時間半&lt;br&gt;【見学できる曜日】　月、水、木、日&lt;br&gt;【&lt;ruby&gt;予約&lt;rt&gt;よやく&lt;/rt&gt;&lt;/ruby&gt;】 &lt;ruby&gt;必要&lt;rt&gt;ひつよう&lt;/rt&gt;&lt;/ruby&gt; （前の日までに電話してください。） &lt;br&gt;【見学できる人の数】　60人まで&lt;br&gt;&lt;div&gt;安口町前川41-6-3&lt;br&gt;0512-22-7410&lt;/div&gt; &lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;&quot;,
+  &quot;context&quot;: &quot;Factory-tour notice: the telephone number printed under factory B キムラしょうゆ工場 differs in its first two digits.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;5018-29-1234&quot;,
+      &quot;assessment&quot;: &quot;Visibly printed in the compact table. It can result from transposition, but the exam’s arbitrary printed number cannot be checked by grammar or the answer key.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;Yuuki Bùi — Đề thi N4 T12-2024 Bản hoàn chỉnh [Mark]&quot;,
+      &quot;sha256&quot;: &quot;df418b805add27888f7a4cb78f9d11765efcb2f66af006e135961919ba38d56f&quot;,
+      &quot;physical_pages&quot;: [
+        27
+      ],
+      &quot;locator&quot;: &quot;Physical pages 27&quot;,
+      &quot;reading&quot;: &quot;Factory B telephone 0518-29-1234.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;Đề Thi Tiếng Nhật — archived December 2024 N4 reading HTML&quot;,
+      &quot;sha256&quot;: &quot;2a3300b51e9954b78878897dd2f18a82c2658cdf7cb1fdc9df20698e1bfcf8a4&quot;,
+      &quot;locator&quot;: &quot;Factory notice; B cell telephone&quot;,
+      &quot;reading&quot;: &quot;0518-29-1234&quot;,
+      &quot;lineage&quot;: &quot;Archived transcription and imported editorial text share lineage; independent original acquisition is not established.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;n4 2024年12月 文字語彙・文法・読解 — 13-page Thaoss compact practice copy, Scribd uploader 2457010047quynh&quot;,
+      &quot;url&quot;: &quot;https://www.scribd.com/document/979242210/n4-2024%E5%B9%B412%E6%9C%88-%E6%96%87%E5%AD%97%E8%AA%9E%E5%BD%99-%E6%96%87%E6%B3%95-%E8%AA%AD%E8%A7%A3&quot;,
+      &quot;physical_pages&quot;: [
+        13
+      ],
+      &quot;locator&quot;: &quot;Preview page 13; Factory B telephone&quot;,
+      &quot;reading&quot;: &quot;5018-29-1234; the other three factory numbers begin with 051 in this reproduction.&quot;,
+      &quot;lineage&quot;: &quot;Distinct layout with handwritten learner marks and demonstrable transcription errors; independent original acquisition is unproven.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;Đề thi N4 T12-2024 Bản hoàn chỉnh [Mark].pdf&quot;,
+      &quot;sha256&quot;: &quot;df418b805add27888f7a4cb78f9d11765efcb2f66af006e135961919ba38d56f&quot;,
+      &quot;locator&quot;: &quot;reading-b006 /content/html; physical 27&quot;,
+      &quot;physical_pages&quot;: [
+        27
+      ],
+      &quot;reading&quot;: &quot;Box B キムラしょうゆ工場 lists 0518-29-1234, distinct from the telephone numbers in boxes A, C and D. Preserve its first four digits, hours, bookings and the surrounding two-by-two table.&quot;,
+      &quot;lineage&quot;: &quot;Exact UARS-approved sitting scan; copied editions/alternative reconstructions are not independent print lineages.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Box B キムラしょうゆ工場 lists 0518-29-1234, distinct from the telephone numbers in boxes A, C and D. Preserve its first four digits, hours, bookings and the surrounding two-by-two table. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Visually read every table cell and all four telephone numbers in both layouts.&quot;,
+    &quot;Compared the immutable archive and verified both factory-tour answers from the actual conditions.&quot;,
+    &quot;Confirmed that the competing digits are printed in the compact image, not solely an extracted-text error; no fictional number was contacted.&quot;,
+    &quot;5 November 2026 — Box B キムラしょうゆ工場 lists 0518-29-1234, distinct from the telephone numbers in boxes A, C and D. Preserve its first four digits, hours, bookings and the surrounding two-by-two table. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;&quot;
+}</pre></details></div></section><section class="review-group" id="review-reading-q028" data-kinds="resolved"><div class="review-group-heading"><h2>reading-q028</h2><a href="../papers/N4_12_2024.html#reading-q028">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">28ミンさんは、<ruby>留学生<rt>りゅうがくせい</rt></ruby>クラブの人30人と<ruby>一緒<rt>いっしょ</rt></ruby>に行ける工場見学を<ruby>探<rt>さが</rt></ruby>しています。曜日は水、木、土ならいつでもいいですが、1時間以内で見学できるところがいいです。ミンさんたちが<ruby>選<rt>えら</rt></ruby>べる工場見学はどれですか。<ol><li>AとBとC</li><li>BとC</li><li>BとCとD</li><li>Dだけ</li></ol><p>Editorial key: 2</p></div></details><div class="review-record" id="unresolved_cases-N4_12_2024-reading-q028-student-group"><div class="review-label">Resolved · /stem · high</div><div class="comparison"><div><h4>Alternative</h4><pre>留学生クラ<mark class="diff-old">ス</mark></pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">28ミンさんは、&lt;ruby&gt;</mark>留学生<mark class="diff-new">&lt;rt&gt;りゅうがくせい&lt;/rt&gt;&lt;/ruby&gt;</mark>クラ<mark class="diff-new">ブの人30人と&lt;ruby&gt;一緒&lt;rt&gt;いっしょ&lt;/rt&gt;&lt;/ruby&gt;に行ける工場見学を&lt;ruby&gt;探&lt;rt&gt;さが&lt;/rt&gt;&lt;/ruby&gt;しています。曜日は水、木、土ならいつでもいいですが、1時間以内で見学できるところがいい</mark>…</pre></div></div><p>ミンさん seeks a factory tour with 留学生クラブの人30人, duration no longer than one hour. クラブ is printed, not クラス. Preserve the thirty participants and the constraints used to select factories. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings.</p><a href="../assets/principals/N4_12_2024.pdf" target="_blank" rel="noopener">Source ↗</a> <span class="control-help">Factory-tour Q28: ミン plans to visit with 30 other international students.</span><ul class="evidence-list"><li><a href="../assets/principals/N4_12_2024.pdf#page=26" target="_blank" rel="noopener">Yuuki Bùi — Đề thi N4 T12-2024 Bản hoàn chỉnh [Mark]</a> · Physical pages 26<p>留学生クラブの人30人と一緒に</p></li><li><a href="../assets/principals/N4_12_2024.pdf" target="_blank" rel="noopener">Đề Thi Tiếng Nhật — archived December 2024 N4 reading HTML</a> · Question28 stem<p>留学生クラブ</p></li><li><a href="https://www.scribd.com/document/979242210/n4-2024%E5%B9%B412%E6%9C%88-%E6%96%87%E5%AD%97%E8%AA%9E%E5%BD%99-%E6%96%87%E6%B3%95-%E8%AA%AD%E8%A7%A3" target="_blank" rel="noopener">n4 2024年12月 文字語彙・文法・読解 — 13-page Thaoss compact practice copy, Scribd uploader 2457010047quynh</a> · Preview page 12; Factory-tour Q28 stem<p>留学生クラス; the compact choices also contain a duplicated option label2.</p></li><li><a href="../assets/principals/N4_12_2024.pdf#page=26" target="_blank" rel="noopener">Đề thi N4 T12-2024 Bản hoàn chỉnh [Mark].pdf</a> · reading-q028 /stem; physical 26<p>ミンさん seeks a factory tour with 留学生クラブの人30人, duration no longer than one hour. クラブ is printed, not クラス. Preserve the thirty participants and the constraints used to select factories.</p></li></ul><details><summary>Full published record · unresolved_cases-N4_12_2024-reading-q028-student-group</summary><pre>{
+  &quot;case_id&quot;: &quot;N4_12_2024-reading-q028-student-group&quot;,
+  &quot;unit&quot;: &quot;N4_12_2024&quot;,
+  &quot;item_id&quot;: &quot;reading-q028&quot;,
+  &quot;field&quot;: &quot;/stem&quot;,
+  &quot;status&quot;: &quot;resolved&quot;,
+  &quot;confidence&quot;: &quot;high&quot;,
+  &quot;decision_basis&quot;: &quot;source_comparison&quot;,
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;28ミンさんは、&lt;ruby&gt;留学生&lt;rt&gt;りゅうがくせい&lt;/rt&gt;&lt;/ruby&gt;クラブの人30人と&lt;ruby&gt;一緒&lt;rt&gt;いっしょ&lt;/rt&gt;&lt;/ruby&gt;に行ける工場見学を&lt;ruby&gt;探&lt;rt&gt;さが&lt;/rt&gt;&lt;/ruby&gt;しています。曜日は水、木、土ならいつでもいいですが、1時間以内で見学できるところがいいです。ミンさんたちが&lt;ruby&gt;選&lt;rt&gt;えら&lt;/rt&gt;&lt;/ruby&gt;べる工場見学はどれですか。&quot;
+  },
+  &quot;context&quot;: &quot;Factory-tour Q28: ミン plans to visit with 30 other international students.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;留学生クラス&quot;,
+      &quot;assessment&quot;: &quot;The compact page visibly identifies the group as a class. Either class or club can supply the same group and constraints.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;Yuuki Bùi — Đề thi N4 T12-2024 Bản hoàn chỉnh [Mark]&quot;,
+      &quot;sha256&quot;: &quot;df418b805add27888f7a4cb78f9d11765efcb2f66af006e135961919ba38d56f&quot;,
+      &quot;physical_pages&quot;: [
+        26
+      ],
+      &quot;locator&quot;: &quot;Physical pages 26&quot;,
+      &quot;reading&quot;: &quot;留学生クラブの人30人と一緒に&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;Đề Thi Tiếng Nhật — archived December 2024 N4 reading HTML&quot;,
+      &quot;sha256&quot;: &quot;2a3300b51e9954b78878897dd2f18a82c2658cdf7cb1fdc9df20698e1bfcf8a4&quot;,
+      &quot;locator&quot;: &quot;Question28 stem&quot;,
+      &quot;reading&quot;: &quot;留学生クラブ&quot;,
+      &quot;lineage&quot;: &quot;Archived transcription and imported editorial text share lineage; independent original acquisition is not established.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;n4 2024年12月 文字語彙・文法・読解 — 13-page Thaoss compact practice copy, Scribd uploader 2457010047quynh&quot;,
+      &quot;url&quot;: &quot;https://www.scribd.com/document/979242210/n4-2024%E5%B9%B412%E6%9C%88-%E6%96%87%E5%AD%97%E8%AA%9E%E5%BD%99-%E6%96%87%E6%B3%95-%E8%AA%AD%E8%A7%A3&quot;,
+      &quot;physical_pages&quot;: [
+        12
+      ],
+      &quot;locator&quot;: &quot;Preview page 12; Factory-tour Q28 stem&quot;,
+      &quot;reading&quot;: &quot;留学生クラス; the compact choices also contain a duplicated option label2.&quot;,
+      &quot;lineage&quot;: &quot;Distinct layout with handwritten learner marks and demonstrable transcription errors; independent original acquisition is unproven.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;Đề thi N4 T12-2024 Bản hoàn chỉnh [Mark].pdf&quot;,
+      &quot;sha256&quot;: &quot;df418b805add27888f7a4cb78f9d11765efcb2f66af006e135961919ba38d56f&quot;,
+      &quot;locator&quot;: &quot;reading-q028 /stem; physical 26&quot;,
+      &quot;physical_pages&quot;: [
+        26
+      ],
+      &quot;reading&quot;: &quot;ミンさん seeks a factory tour with 留学生クラブの人30人, duration no longer than one hour. クラブ is printed, not クラス. Preserve the thirty participants and the constraints used to select factories.&quot;,
+      &quot;lineage&quot;: &quot;Exact UARS-approved sitting scan; copied editions/alternative reconstructions are not independent print lineages.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;ミンさん seeks a factory tour with 留学生クラブの人30人, duration no longer than one hour. クラブ is printed, not クラス. Preserve the thirty participants and the constraints used to select factories. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Visually compared both Q28 stems and all four choices.&quot;,
+    &quot;Checked the archive and the complete factory table.&quot;,
+    &quot;Tested both class and club readings against capacity, day and duration conditions; neither changes the answer.&quot;,
+    &quot;5 November 2026 — ミンさん seeks a factory tour with 留学生クラブの人30人, duration no longer than one hour. クラブ is printed, not クラス. Preserve the thirty participants and the constraints used to select factories. The exact registered written page is the direct authority for this sitting’s printing. Different retypes of the item do not constitute independent original printings.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;&quot;
+}</pre></details></div></section></div></main><footer class="site-footer"><span class="developer-only">Developer mode</span></footer><div id="toast" role="status" class="toast" hidden></div><script id="page-data" type="application/json">{"review":true}</script><script id="theme-data" src="../assets/theme-data.js?v=f06ad9e2434b" defer></script><script src="../assets/app.js?v=0d75deb05ae3" defer></script></body></html>

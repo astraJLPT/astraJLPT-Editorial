@@ -1,0 +1,34 @@
+# N4_2007 — H19 written-content audit
+
+The first full content audit is complete: 87 gradable written questions (40 vocabulary, 40 grammar, seven reading), sixteen contexts and five worked examples in ten sections. The reconstruction is authored directly in historical v3. No prior editorial existed. Final fonts/defaults, native complete/body PDFs and every-page output inspection remain pending.
+
+## Evidence and coverage
+
+Principal: `src/CodexDownloads/UserApprovedReferenceScans/pdf-20074_compress.pdf`, SHA-256 `6902181b1ced1babb1aa2eb9ae4f9bc58bb96aa1780141628ff13ed7c03d03f6`, approved bounded reference RC04_2007_L3_L4. All seventeen written question pages 44–50, 62–67 and 69–72 were directly read as full normalized 150 dpi derivatives. Page 46 spelling contrasts and pages 69–70 train diagrams were also inspected at 300 dpi. Normalization transforms are recorded in the private transformation manifest. Originals remain byte-identical; local warp, skew, gutters and added folios are scan features, not design.
+
+Covers 43/61 identify 2007 old Level 4, vocabulary 100 points/25 minutes and reading/grammar 200 points/50 minutes. December attribution comes from the recorded official-guide evidence for annual December tests through 2008, not the storage ID. Written answer evidence is page 81's top vocabulary table and page 82's reading/grammar table. All 87 answers and five example marks were compared with the questions, choices and passage logic. No listening content, listening key, forms or pattern page 68 is reconstructed. No per-item weights or modern timing are inferred.
+
+Every heading, instruction, example, target association, question, option and printed ruby was checked. Twelve vocabulary groups retain underlined target spans and boxed reference numbers. Reading retains an eleven-turn lost-umbrella dialogue, four train-route answer diagrams, and three numbered short passages about singing practice, Machiko's employment history and a mountain trip. Only printed ruby is present; none is inferred. Passages are unframed in the source. Example marked-answer rows remain tables.
+
+The train question spans pages 69/70. Suzuki boards at Tsubaki at 9:15, travels toward Sakura and leaves at Ayame; only panel 3 satisfies both the station order and direction. All four complete panels retain their original station labels, arrows, time, borders and printed numbers. Native rendering must stack them in order without adding duplicate option numerals; that requirement remains explicitly pending final calibration. The remaining dialogue answers follow the recovered umbrella, its black color and written name. Practice starts at 9:20 and Takagi arrives thirty minutes late (9:50); Machiko teaches guitar in Japan; the mountain ascent takes two hours followed by a one-hour rest. These facts support keys 4/3/1 for the short passages.
+
+## Focused comparison and principal choice
+
+The indexed jlpt.biz browser-print retype, SHA-256 `82e26e49c807e1b815cf9f12458a591b0b051d4b98246f2ecab72b034dc634a0`, was directly compared on pages 1–2 and the vocabulary region of page 3. All four vocabulary worked examples are omitted at those section starts. On page 2 it replaces the third q16 glyph with 于, maps q17's altered 衣/花 constructions to 衣/芘/笩/花, and substitutes 茶 for q18's added-top-bar 本 form. It maps q21's fourth, short-sloped-top 天-like glyph to 夭. Twenty exact source crops preserve all choices in q16/q17/q18/q20/q21 without an unsupported Unicode substitution. Kana suffixes remain native. All final crop pixels were inspected; surrounding kana fragments were excluded. Other reliably identified choices, including 刀メラ/カメヲ/刀メヲ/カメラ, remain native as printed.
+
+The other two indexed written-PDF variants were probed only for page count and first/last native text. Their common browser-print furniture is not evidence of independent custody. The separately named `2007年N4答案.pdf`, SHA-256 `a86ec69c51daa025c9bd3e6fceebff923ee9b80204dde7c4f5d72761cd924c82`, begins with listening transcripts; inspection stopped after that mismatch was identified. It supplies no accepted written-answer evidence. No full secondary-paper audit, independent-key confirmation or upstream acquisition is claimed.
+
+The annual scan is selected for its observed completeness and faithful distinctions, not its format, newness or presumed authenticity. Custody remains unverified. Method-1 principal uncertainty is 100: provenance 100, with no documented metadata or content penalties. The principal inspection copy retains the original filename and full original bytes. No material current departure or unresolved content choice remains. Empty public case/departure files express that content result, not authentication. The local legacy TSV is header-only and was read in full; source index and candidate bytes remain unchanged.
+
+## Validation and remaining work
+
+The append-only creation ledger records each section field and full item with null before-values, followed by configuration, admission and principal assessment. The transaction verifies exact replay, historical v3 schema, semantic/case/fixlog checks, scoped historical principal validation and native TeX content emission. Its receipt binds the actual results. Five unrelated modern principal-catalogue mapping failures predate H19 and remain unchanged.
+
+Font investigation, cross-paper shared/level defaults, final complete/body PDFs, every-page output review, size/repeatability checks and final modern regression remain H19 work. No final PDF is accepted by this content audit.
+
+
+## H19 final rendering and closure — 2026-10-23 UTC
+
+The rendering work described as pending above is complete. Font investigation, independent historical defaults, native composition and final candidate 06 validation pass. [Complete PDF](../../../pdf-render/output-h19/N4_2007.restored.pdf): 22 pages, 264,896 bytes; [body-only PDF](../../../pdf-render/diagnostics/handoff19/N4_2007.restored.body-only.pdf): 21 pages. Both outputs repeat byte for byte. Every final page has direct readable inspection or an explicitly recorded transfer from an earlier passing page with identical RGB pixels and native text. Every body page matches its complete-edition counterpart. See the [final page review](../../../pdf-render/qa/handoff19/candidate-06/N4_2007/visual_review.json) and [scoped record validation](../../audit_runs/2026-10-23_handoff19/scoped-records-06/RESULT.json).
+
+The final historical content/configuration hash is `a6d1b1a94fc4a232bf14d566fc02ea4f41ea25c1df3b019d05769825446a8af4`. All 117 modern owners retain accepted H18 behavior. This is primary validation, with user review still pending. Earlier content findings and append-only evidence remain preserved; the [H19 report](../../../pdf-render/HANDOFF19_REPORT.md) records the full scope and retained 2009 limitations.

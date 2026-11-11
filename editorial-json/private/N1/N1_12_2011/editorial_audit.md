@@ -1,0 +1,96 @@
+# N1 December 2011 written-content audit
+
+Terminal disposition: **audited_with_uncertainty**. Complete available written review: 70 scored questions (45 vocabulary/grammar and 25 reading), 280 ordered choices, 13 operative sections, 13 required contexts and one recovered worked example. All 70 are available to attempt and grade. No scored question, required passage, table, instruction or worked-example span remains missing. This is a reviewed reconstruction of the December 2011 paper; no authenticated original is claimed.
+
+The audit appends 62 corrections (55 high confidence, 7 medium) to the existing 176-row private ledger. Twelve public cases remain: seven provisional fixes and five unresolved retained readings. All keys are unchanged. Fifty-eight public principal-difference rows cover 44 fields, including inherited variants rather than only newly edited content. Listening is excluded.
+
+## Exact source identity and review coverage
+
+The principal is `src/Yuuki Bui/Đề thi N1 các năm Yuuki Bùi/N1 12-2011/Đề N1 12-2011.pdf`, SHA-256 `0f3b169e31f0129f37a28684abf7c231ab0428c5cd58a6239cd40610cf48bd7f`, initial tier 1. It has the most useful coherent written layout here, including the complete STAR answering scaffold and a clear embedded A/B page image, while its defects are repaired using characterized alternatives. The compact paper has a complete guide but errors/omissions in other fields; the expanded paper has useful selective ruby but omits the example and truncates question 40. No one layout is treated as infallible.
+
+The principal’s available written content was fully visually compared, physical 2–12 plus the written top of 13. Cover 1 was checked for identity. Printed question labels, all choices, sentence boundaries, targets, note anchors, selective ruby, emphasis dots and layout dependencies were checked against the current typed fields. `principal_comparison_coverage.json` indexes all 97 section/item targets. OCR/native extraction supplied navigation, not invented quotations from unreadable pixels. Layout-bearing contested regions were reopened at larger scale.
+
+No exact user-approved N1 December 2011 sitting pages apply. The file is **unverified**, not authenticated and not automatically a known reconstruction because of typography, distributor name or format. Sources may share ancestry. Source 12 and source 17 are verified duplicates at the decoded written-page-image level; source 8 and source 21 are only similar layouts, and their equality is not established. An early comparison based on empty image lists was discarded; `decoded_inline_identity.json` is the relevant proof.
+
+| Source index (private) | Exact SHA-256 | Disposition and actual inspected scope |
+|---|---|---|
+| 0 | `93b93d213b13d7f08f75f1f9161e66a9d81b8e3bda976af70ecc0e70dcab7de7` | Excluded: listening analysis. |
+| 1 | `897aa17cb62d1870757519230461bc75360af8a13e2eb9ac18c6993876f743f6` | Excluded: listening script Word file. |
+| 2 | `e42ac5420aba22dcb88f28793cc074ed03f643dfbaccb7f8f18106c8af148674` | Fully reviewed rendered written pages 1–12 and answer page 15. Hidden Word COM opened read-only with macros disabled and exported a working PDF, then closed without saving. Original bytes remain unchanged. Some passage pieces/order are garbled in this legacy layout; it is a secondary witness, not an independent vote. |
+| 3 | `cd7608d281f836fe639969755af113ff7b35e90332e9192cf46306d3260db781` | All 11 pages inventoried by contact sheet. Focused original pixels: page 4 STAR questions 36–40 and page 6 bands covering questions 59–64; written material ends around the top of page 7. Remaining listening material excluded. Its question-39 translation does not settle the Japanese particle. |
+| 4 | `509844a08048d2cb05c14dd4645d8a885a027af4caa2cc5f4f4b0fcf640e092b` | Excluded: scoring spreadsheet, not question-content evidence. |
+| 5 | `99d0ff9ea60c01b3c211c680c0c527a1604e0c91a52ece360e2873186b8dcef9` | Excluded: blank answer sheet, not question-content evidence. |
+| 6 | `c434693a626a9cb57552ccb058626277c16cf644cc3b0fdbad9a212efab23471` | Fully read all 70 written question records, 280 choices, all keys and 12 nested contexts (A/B combined, unlike the 13 editorial contexts). Structured agreement may reflect shared transcription. |
+| 7 | `2365b1b721227110672594d7b4c1415b4dcf77597e73e61605b2c266c443185c` | Fully inspected written answer table on physical 1; later listening/script pages excluded. |
+| 8 | `0f3b169e31f0129f37a28684abf7c231ab0428c5cd58a6239cd40610cf48bd7f` | Selected principal. Cover 1 inspected; all written physical 2–12 and written notice completion at the top of 13 fully read. Lower 13 and 14 are listening, and 15 is an advertisement; excluded. All contested spans rechecked in enlarged original pixels. |
+| 9 | `49a03a762561335451a5439c9903626dd1e5b4bec7f724306542c34768fd7d33` | Excluded: DEAD listening archive. |
+| 10 | `bc3d56840ff9f41e19d342576913808ae8729e31acce2c2ac58034943a71c97c` | Indexed archive reading source inventoried and hashed; not claimed as a full visual witness. Its import lineage is preserved in metadata. Complete paper layouts and the structured witness supplied the actual comparison. |
+| 11 | `026bceab504769d4480b6b5a04435ae35fbc9e38cd349ee99e7fd1855ac73598` | Indexed archive vocabulary source inventoried and hashed; not claimed as a full visual witness. Import provenance remains unchanged. |
+| 12 | `4c82d6cc9c65bd130396175a281e5157ed4f63f1c901077df22ddc3f9d7bb411` | Fully visually read written physical 2–13 and key 16. This compact layout preserves complete guide text and some emphasis marks but contains its own errors, including incomplete 根本的 and the typo 少ない、. |
+| 13 | `17b804c443965be89db0f4eb500b6f5de71e5c6352ffd5a3a351d94ae4d77a81` | Excluded: listening-only PDF. |
+| 14 | `889a6c3747d2c9f5d0c57ed667ceb6cf63875f16101276ea1b01d78c31ec42d3` | Excluded: listening-only PDF. |
+| 15 | `90dcd996a796a7043bd8806e8fc57ce16d766539843fa105049064a4cff177c9` | All nine pages inventoried; original pages 3–4 and the written portion of 5 read closely, covering questions 19–42. Question 39 explicitly assembles 増税を. Question 36 answer heading is wrong even though its sequence establishes star choice 2. |
+| 16 | `7b469e9c010dc56175adde5e271b8aa2ab172e45dc5e3af041b8edb7855ced1b` | All 12 pages inventoried. Complete page 12 guide translation read; confirms the two-category judging structure but cannot establish exact Japanese wording. |
+| 17 | `87541ad25724ef64d7d8e12141ece4044faf84446d29050af725852f2f99c3f7` | Contact inventory and actual decoded image comparison. All 12 written page-image sequences are identical to source 12; exact decoded-image proof recorded. It supplies no independent vote. |
+| 18 | `d7ca389b1e0389600a5b0d26d505fd4d183de27bdf3cbbec2980696f5e4d02b9` | All 17 pages inventoried by contact sheet. First nine resemble source 15’s layout; no byte/pixel identity or independent lineage is asserted. Later listening excluded; not used as uninspected literal evidence. |
+| 19 | `bde2ae78f4fae72ac9d22b1d6818ae26b16e83307facfe0d84532b0f9eaeced3` | Fully visually read written physical 2–22 and key 27. Expanded layout preserves selective ruby and complete contest notice, but omits the STAR example, misprints an answer-range instruction, and truncates question 40. Its root term is 根本的な知. |
+| 20 | `90771ab5886cf0556c81938a19fdb72805aa7e4c1117178ef594217a927d736e` | Written pages identified as 1–18; later listening excluded. Actual original pages 5, 6 and 9 read for grammar explanations and annotations. Question 39 has 増税は and omits に from 手始めに; question 40 is truncated. No blanket authority is assigned to this analysis. |
+| 21 | `f5b399ee0ac348438b22f2905752d003e281740cfb9f6df5882603ca49e3479e` | All 26 pages inventoried. Body page 1 and full key page 14 inspected; all written analysis pages 15–17 read. The body’s similar layout to source 8 does not establish identity. Question 39’s printed sequence is defective; separate key agrees on choice 3. |
+| 22 | `dc3af916ce846914fa496450b95648043902a1e438f65919fecf92c49dc197c5` | Entire standalone guide image inspected; incomplete selected-booklet family, not an independent recovery of section 3. |
+| 23 | `fadf180a4601b19256d7a7647d871a1a9e6cb794a127c09e17990e1db26381f1` | Entire standalone table image inspected. It repeats the same participant table twice; duplication is an image artifact, not a second table required in the paper. |
+| 24 | `ffc1e9faac4373e0563d5ff7bbdb169720914768df814bf172fb01b02cf62d44` | Entire single participant-table image inspected and compared with all table-bearing paper layouts; all four columns and four rows preserved as native HTML. |
+
+All 25 source files and 10 alias paths were hashed at entry and again at staged verification. Source indexes, original source files and aliases remain immutable. The principal inspection copy matches the original hash and retains its original filename.
+
+## Content decisions
+
+The recovered `vocab-b002` sits before question 36 in `vocab-s06`. It includes the example sentence and four choices, both answering instructions, the worked ordering and answer-sheet demonstration. The selected booklet incorrectly assigns 2 to を and 3 to 見ている in the worked row; its own original choices and marked answer 2, together with the compact/Word worked rows, establish the corrected ordering **1–3–2–4**. This adds a block, never a scored question. All five scored STAR stems retain four separated slots and one underlined star. Their sequences are 36=3–4–2–1, 37=4–2–1–3, 38=3–1–4–2, 39=2–4–3–1 and 40=2–4–1–3.
+
+The contest notice lost the development demonstration and the whole idea-category judging subsection. Complete compact physical 13 and expanded physical 22 recover both categories’ criteria and two stages. The application URL remains the witnessed `com` form, not the principal’s `corn`; the final predicate remains 試作品が作成されます, not 試作品されます. These are historical printed strings, and the domain was not contacted. The four-row participant table is represented once as a native table with all headers and cells. Question 70 recovers the omitted prototype clause.
+
+Certain repairs include exact vocabulary underline endpoints; circled references and underlines in the art-class passage/questions; author 若桑; library-note readings and the newspaper date; plural 私たちは and demonstrative その in the writing passage; full A/B text, selective readings and note anchors; and several reading-option transcription errors. The prior guessed 持っている人 and option-2 価値とは were replaced by the actually printed 持った人 and 価値は. The spatial instruction 右のページは is restored. The public difference register retains other witnessed kana/kanji, punctuation and clause variants candidly.
+
+The A-passage book title is 現代アートを買おう！ by 宮津大輔, directly visible in the embedded page. The [publisher’s book record](https://www.shueisha.co.jp/books/items/contents.html?isbn=978-4-08-720544-2) confirms that title, author and 2010-05-14 publication. That bibliographic fact does not authenticate the exam or establish other excerpt wording.
+
+Public provisional fixes cover question 26’s を通じて distractor, question 30’s selective 老舗 reading, question 39’s 増税を, the letter’s （前略）, the philosophy passage’s root term/selective ruby, bird-passage emphasis/note ruby and repeated emphasis in question 67. Strong competing readings remain in exact before/current records. The principal and compact philosophy endings differ: 根本的知 versus incomplete 根本的; the expanded version has 根本的な知. The chosen complete term is provisional. Ruby is restored only where actually witnessed, not by a general N1 rule.
+
+Unresolved retained fields are 繊細 versus 繊細さ, the two は-bearing question-34 distractors, 頭 versus 脳 in the recognition passage, and the library article’s location/focus/contrast variants. Both grammar distractors remain wrong, so linguistic plausibility cannot identify their original particles. No uninspected material source is being deferred by these records: the differing paper layouts, relevant explanation pages, structured data and focused searches were investigated. An authenticated original could settle the residual history.
+
+All 70 key mappings agree across the inspected Yuuki key page 1, compact key page 16, expanded key page 27, legacy Word rendered key page 15, combined key page 14 and structured dataset. These are not counted as six independent acquisitions. The nine-page explanation’s question-36 heading and combined explanation’s question-39 sequence are recognized errors in separate witnesses; neither is charged to the question-booklet principal. Five existing optional STAR explanations were fully reviewed; only question 39’s assembled phrase required synchronization, and its particle uncertainty remains in the option case.
+
+## Candidates and append-only history
+
+All **481 written candidate rows** were read in full with their old/proposed values and previous reasons. All **176 historical rows** were read with old/new text and basis; none is rewritten. `candidate_review.json` gives each candidate’s current disposition, affected stable IDs and links where available; `historical_review.json` maps every old row to the current conclusion. Detector flags, prior acceptance and source-majority counts are not authority.
+
+The review specifically overturns blanket rejection of printed punctuation, deletion/misplacement of reading aids, the root-term under-correction, singular わたしは and removal of その. It retains valid OCR repairs and rejects structured prompts that erase STAR slots, cloze identifiers, full choices or valid grammar. Curator comments are leads only: the duplicated-digit question-39 order is wrong, while 2–4–3–1 is confirmed from the actual fragments and sentence. Benign spacing/width, ordinary valid words and intentional distractors are not normalized globally.
+
+Private `focused_research.json` records research limits and corrected scratch misreadings. In particular, the principal DOES contain 人気を集めている, the full cloze instruction 文章全体の趣旨を踏まえて, 漠然と before reference ② and the verb 呼ぶ. Those are not phantom departures. The letter definition prints 猛省（もうせい） without lemma-suffix する. Current public comparisons are made against final typed values, not those superseded notes.
+
+## Principal assessment
+
+Method 1: **129 = 100 + 10×1 + 5×1 + 2×2 + 10**. Components are metadata flags 0, partly missing content blocks 1, major defective fields 1, minor defective fields 2 and uncertain fields 10. `principal_assessment.json` supplies a distinct event for every nonzero count. The partially missing guide absorbs that same field’s URL/predicate defects. The library and bird content fields each use only their highest applicable category. Separate key errors, repairs to baseline JSON, harmless reflow and copies add no principal points. The score is an ordinal account of documented concerns, not a probability of authenticity.
+
+## Validation and artifacts
+
+The frozen baseline SHA-256 is `e108c61d320539c076be0e0c0f1f1539a0cfd206c64a8d588297fd63d59116a9`; final staged editorial SHA-256 is `71ff9aefd7e479c1073fffe0d91809a222444899ecde36694d00941cb0543da1`. The historical ledger prefix is exactly 178,603 bytes with SHA-256 `951bb92cce9e89ba0400804b4b9381d5286d8a11fd0d35e1f3b89ebb1e5b172f`. The immutable source-index SHA-256 is `cd785d5af2c6701eb8a5a95b8d2c6f967da6100244e999552e707232b4dc61fb`.
+
+Exact replay of all 62 new rows recreates the final editorial from the frozen baseline, including the explicitly placed new example. All existing IDs, import metadata, historical line/weight fields, option order and keys remain preserved. Counts are 45/25 scored questions, 280 options, 13 sections, 13 contexts and one example. No partial-content allowance is needed.
+
+All 30 pages of the local HTML/browser PDF preview were visually inspected. Ruby, target endpoints, four emphasis dots, the example and table cells are legible; no content is clipped or lost. Passages and notes may continue across review pages, and that reflow does not claim original pagination. Visual QA found one accidental definition-label move; it was corrected, final page 22 re-inspected and all other page pixels verified unchanged. This preview is a private verification artifact, not a website build or publication.
+
+Staged editorial, principal-index and public-difference checks pass. The canonical commit ran and passed all three required validators before advancing the cursor; machine-readable results are saved as `validation_editorial.json`, `validation_principal_index.json`, `validation_principal_differences.json` and `completion_verification.json` under `audit_work`. Validator warnings concern the recovered example and deliberately logged option edits; each is accounted for above. The run advances only after all canonical checks pass, preserving all prior terminal units, the 50-unit queue and 20 DEAD skips.
+
+## Official-workbook cleanup — 9 October 2026
+
+The bounded2009 comparison establishes only reuse of the complete TV/Yamada worked example. Exact source-pixel evidence, all compared words/options/ruby/layout, current departures and scope exclusions are in [reference_sources_N1_12_2011.json](reference_sources_N1_12_2011.json). Retain the existing complete-paper principal and its prior assessment; this sample is not a replacement historical sitting. No editorial, choice, key, weight, explanation, case, principal register or ledger edit is made. Prior selected-principal differences remain unchanged and are reproduced in the run-wide review. No scored2009 identity is established and no new product is created. All issuer-page and retained-variant proposals remain pending user review.
+
+### Source-cleanup closure — 9 October 2026
+
+The scoped cleanup is complete. Exact baseline-to-current ledger replay, canonical/case/principal/reference validation, source/index preservation, final product build, review links and browser checks pass. [Run completion](../../audit_runs/2026-10-09_official_workbook_cleanup/audit_completion.md) and [page/Decisions proposals](../../audit_runs/2026-10-09_official_workbook_cleanup/registry_proposal.md) document the boundaries. Existing case verdicts remain in force. Page-specific user approval is pending; it is not a prerequisite to completion of this authorized audit.
+
+
+## 2026-10-13 — bounded digit-width normalization
+
+Run 2026-10-13_digit_width_cleanup: 6 maintained fields / 8 displayed Arabic digits normalized from U+FF10–FF19 to ASCII. High confidence concerns width equivalence, not literal source authenticity. Granular exact records N1_12_2011-DW20261013-001 through N1_12_2011-DW20261013-006 were appended to the root ledger; its entire original prefix is preserved. No quantity, key, score, ID, ordering, markup or ruby reading changed. Source readings, alternatives and case statuses remain intact; current snapshots and live editorial-hash bindings were refreshed. No new uncertainty/departure or case resolution arises from width alone.
+
+Ordinary editorial/case/fixlog/baseline/count validation and applicable principal/reference checks passed; exact ledger replay passed. Existing import-count warnings, when emitted, describe unchanged historical imports, not this normalization. Baseline and per-unit validator logs: ../../audit_runs/2026-10-13_digit_width_cleanup/.

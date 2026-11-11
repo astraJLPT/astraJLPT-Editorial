@@ -1,0 +1,40 @@
+{
+  "unit": "N4_1990",
+  "sources": [
+    {
+      "path": "src/CodexDownloads/UserApprovedReferenceScans/903181477-4級-問題用紙-1990年度能力試験-4.pdf",
+      "sha256": "d1d016993f12e3fce9cebf177bf67534440c2e17668c2865f2d817c41d611395",
+      "Tier": "unranked",
+      "bytes": 2192549,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "display_title": "Level 4, 1990",
+      "source_role": "historical_question_volume",
+      "acquisition_batch": "reference_scan_hunt_1984-2009_2026-10-23",
+      "provenance_records": [
+        "preprocess/audit_runs/2026-10-23_reference_scan_rc03_approvals/approvals.json",
+        "src/CodexDownloads/Hunts/1984-2009/2026-10-23_user_drive_1990/download_receipt.json"
+      ],
+      "source_urls": [
+        "https://drive.google.com/file/d/1aCif9ys9JIwjRhWCSX3a-E6rn9aZkFnH/view",
+        "https://www.scribd.com/document/903181477/4級-問題用紙-1990年度能力試験-4"
+      ],
+      "previous_paths": [
+        "src/CodexDownloads/UserApprovedReferenceScans/Originals/903181477-4級-問題用紙-1990年度能力試験-4.pdf"
+      ],
+      "filename_at_acquisition": "903181477-4級-問題用紙-1990年度能力試験-4.pdf",
+      "filename_note": "Filename at acquisition or archive extraction, preserved through this move.",
+      "pages": 37,
+      "reference_registry": "preprocess/user_approved_reference_scans.md",
+      "reference_id": "1990_L4",
+      "historical_coverage": [
+        {
+          "level": 4,
+          "year": 1990
+        }
+      ]
+    }
+  ]
+}

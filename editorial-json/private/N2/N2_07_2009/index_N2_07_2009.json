@@ -1,0 +1,28 @@
+{
+  "unit": "N2_07_2009",
+  "sources": [
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N2\\2009.07\\2009年7月.pdf",
+      "sha256": "02148e1a92124654dfc00fcfb0f34cc1fef94e0b9ed948afaa4e86a2286be78a",
+      "Tier": 2,
+      "bytes": 1481825,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N2真题\\1991年-2009年\\2009年07月\\2009年7月.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N2历年真题\\1991~2009年\\2009.07\\2009年7月.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N2\\N2_07_2009\\PaddleOCR\\pdf_1",
+      "VisionOCR": "preprocess\\N2\\N2_07_2009\\VisionOCR\\pdf_1"
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N2真题\\1991年-2009年\\1995-2009.pdf",
+      "sha256": "115e8c098ee3caed702d29a24d2ce0c883c3ad9152e21eee4200fc4e80f2a3fb",
+      "Tier": 3,
+      "bytes": 19540133,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N2历年真题\\1991~2009年\\1995-2009.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N2\\N2_multiple\\PaddleOCR\\pdf_2",
+      "VisionOCR": "preprocess\\N2\\N2_multiple\\VisionOCR\\pdf_2"
+    }
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "unit": "N1_07_2011",
+  "sources": [
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\2011年\\2011年7月\\2011年7月日语一级听力原文及答案.docx",
+      "sha256": "dd5a6ed47c7b56c975448c86839763c2afce9a3ff05db0d550945368e7e0fa4b",
+      "Tier": "unranked",
+      "bytes": 83909,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\2011年\\2011年7月\\2011年7月日语一级听力原文及答案.docx"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\2011年\\2011年7月\\2011年7月日语能力考试1级真题及答案.doc",
+      "sha256": "c4b6a9029f0cfaa66355438504579f2a03ffc7af7c2d7bdf224d9fb67e19133d",
+      "Tier": "unranked",
+      "bytes": 411952,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\2011年\\2011年7月\\2011年7月解析.pdf",
+      "sha256": "152cb700abe4fcda41b016e4f72cd7926c5a0d989291477321428d5b1d9c0c7d",
+      "Tier": 3,
+      "bytes": 4827910,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\2011年\\2011年7月\\2011年7月解析.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2011\\PaddleOCR\\pdf_1",
+      "VisionOCR": "preprocess\\N1\\N1_07_2011\\VisionOCR\\pdf_1"
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\2016.12\\N1能力考试计算方法.xlsx",
+      "sha256": "509844a08048d2cb05c14dd4645d8a885a027af4caa2cc5f4f4b0fcf640e092b",
+      "Tier": "unranked",
+      "bytes": 9627,
+      "aliases": [
+        "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\N1能力考试计算方法.xlsx",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\N1能力考试计算方法.xlsx",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\N1能力考试计算方法.xlsx"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\N1答题卡.pdf",
+      "sha256": "99d0ff9ea60c01b3c211c680c0c527a1604e0c91a52ece360e2873186b8dcef9",
+      "Tier": "unranked",
+      "bytes": 683222,
+      "aliases": [
+        "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\N1答题卡.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\N1答题卡.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\N1答题卡.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N1\\N1_multiple\\PaddleOCR\\pdf_2",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N1\\2011-07_N1\\2011-07_N1.json",
+      "sha256": "6e88c2e2d01c414ad73260ec7bf8408a81a918318ba8d2ad4f9e2ae1aeb57cc0",
+      "Tier": "unranked",
+      "bytes": 243836,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N1 các năm Yuuki Bùi\\N1 7-2011\\Đáp án+Script N1 7-2011.pdf",
+      "sha256": "206b6110aa92b319c11c7efda8dabb458c838e1b2aabc7eac7366d84ef58d6b3",
+      "Tier": "unranked",
+      "bytes": 2445713,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2011\\PaddleOCR\\pdf_3",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N1 các năm Yuuki Bùi\\N1 7-2011\\Đề N1 7-2011.pdf",
+      "sha256": "31a1fba54612c9c33a157eec8c9fda8397f2ad777aedf7b4af9ea171d9306113",
+      "Tier": 2,
+      "bytes": 9197978,
+      "aliases": [
+        "src/CodexDownloads/Hunts/2010-2026/2026-10-23_RC02/hanoi_N1_2011_07.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2011\\PaddleOCR\\pdf_4",
+      "VisionOCR": "preprocess\\N1\\N1_07_2011\\VisionOCR\\pdf_4",
+      "source_urls": [
+        "https://hanoilink.vn/de-thi-jlpt-n1/",
+        "https://drive.google.com/uc?export=download&id=11eaYFdZ3xR4vvUWu0Pj8YgHwOWzyExWl"
+      ],
+      "provenance_records": [
+        "output/pdf/reference_scan_hunt_2010_2026_rc02/acquisitions.jsonl",
+        "output/pdf/reference_scan_hunt_2010_2026_rc02/download_assessment.json"
+      ]
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N1\\listening\\N1_07_2011_listening.html",
+      "sha256": "c28bdd8409063497eb98c82857331740910b8519c11e63e3f41b2501ddc9a67d",
+      "Tier": "unranked",
+      "bytes": 115082,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N1\\reading\\N1_07_2011_reading.html",
+      "sha256": "7db1c61df4065b5d2f7189609a7cfafc3c5d31b3f261de182e2838076eeed177",
+      "Tier": "unranked",
+      "bytes": 111461,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N1\\vocab\\N1_07_2011_vocab.html",
+      "sha256": "3c1c2f0b763384d80d8d7706829973a0f1f01f62b25de2c7ce18a964ea41c9af",
+      "Tier": "unranked",
+      "bytes": 116936,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\2011\\2011.07\\2011年07月N1真题.pdf",
+      "sha256": "8a6e4452a385840faa5fa76a3cc744d12ff280bfb973ee7a9617c1feb2cd7555",
+      "Tier": 1,
+      "bytes": 6376118,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2011\\PaddleOCR\\pdf_5",
+      "VisionOCR": "preprocess\\N1\\N1_07_2011\\VisionOCR\\pdf_5"
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\2011\\2011.07\\答案解析和听力原文\\2011年07月N1听力原文.pdf",
+      "sha256": "4b1786dcb19ca461c8c457d44a8a9ef5e4d8b0c27db136380071abed2ad17500",
+      "Tier": "unranked",
+      "bytes": 10250380,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2011\\PaddleOCR\\pdf_6",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\2011\\2011.07\\答案解析和听力原文\\2011年07月N1听力译文.pdf",
+      "sha256": "3714d065ca362cb2b26c0c8791717d34a1c0757ad69a5f16e228586fa88017e9",
+      "Tier": "unranked",
+      "bytes": 2133614,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2010年-2020年\\2011年7月\\2011年07月N1听力译文.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2011\\PaddleOCR\\pdf_7",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\2011\\2011.07\\答案解析和听力原文\\2011年07月N1答案解析.pdf",
+      "sha256": "1d4f1ec0fa581e36614c222715ea23b8dafce66738820cc620513005a17b06fd",
+      "Tier": "unranked",
+      "bytes": 10963806,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2011\\PaddleOCR\\pdf_8",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\2011\\2011.07\\答案解析和听力原文\\2011年07月N1阅读译文.pdf",
+      "sha256": "51b3bd08cd87a658e5b5ef0bf5825660c4756a894bba5c7ada7fa5915bd2512d",
+      "Tier": "unranked",
+      "bytes": 2332755,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2010年-2020年\\2011年7月\\2011年07月N1阅读译文.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2011\\PaddleOCR\\pdf_9",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2010年-2020年\\2011年7月\\【1】2011年07月N1 真题.pdf",
+      "sha256": "d51cbfb63c77c3870765cf3f833a1baae751ec51f026d4b14605015d95ff483b",
+      "Tier": "unranked",
+      "bytes": 6157196,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2011\\PaddleOCR\\pdf_10",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2010年-2020年\\2011年7月\\【1】2011年07月N1答案解析+听力原文.pdf",
+      "sha256": "b98377cc1fff3adbb1b39664d77623c73c22eb8a7fd54d3b9f4a3794d8f53a19",
+      "Tier": "unranked",
+      "bytes": 2930487,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2011\\PaddleOCR\\pdf_11",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2010年-2020年\\2011年7月\\【3】2011年07月N1 真题.pdf",
+      "sha256": "6e9ad0b35993f619c8d4f229ab29c102009b5e9261ab352ffebc9bc80964f561",
+      "Tier": 2,
+      "bytes": 1605604,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2011\\PaddleOCR\\pdf_12",
+      "VisionOCR": "preprocess\\N1\\N1_07_2011\\VisionOCR\\pdf_12"
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2010年-2020年\\2011年7月\\【3】2011年07月N1答案解析+听力原文+译文.pdf",
+      "sha256": "f739aa770244d73ef4252cef1c7e23420f876010299e11be418472a14be8ef6d",
+      "Tier": "unranked",
+      "bytes": 1306083,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2011\\PaddleOCR\\pdf_13",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\2011年\\2011年7月\\n1-2011.7真题+答案+听力原文.pdf",
+      "sha256": "c8a7bad283f6eca8c307bd9c829b0c586897e5437b09c593c400a84869265b74",
+      "Tier": 3,
+      "bytes": 10485483,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2011\\PaddleOCR\\pdf_14",
+      "VisionOCR": "preprocess\\N1\\N1_07_2011\\VisionOCR\\pdf_14"
+    },
+    {
+      "path": "src\\munjaJLPT\\N1\\2011-07_N1\\images\\2011-07_N1_s13-q01-img01.jpg",
+      "sha256": "d4f9ca761990a4e60aadfa4eb2265912746d491e0185fad064a13c53ffe9aec5",
+      "Tier": "unranked",
+      "bytes": 905065,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N1\\reading\\reading_images\\201107N103.png",
+      "sha256": "def636560ee641a59598935280449e50c305234e435c7335462b4a41357b4744",
+      "Tier": "unranked",
+      "bytes": 296824,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    }
+  ]
+}

@@ -1,0 +1,282 @@
+{
+  "unit": "N4_07_2024",
+  "sources": [
+    {
+      "path": "src\\munjaJLPT\\N4\\2024-07_N4_vietnam\\2024-07_N4.json",
+      "sha256": "97aa5e2c0ac3c695d744f1362aa363b594994e2c2b45ba2d82f43c5928990cf4",
+      "Tier": "unranked",
+      "bytes": 51208,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N4-N5 các năm Yuuki Bùi\\2024年7月\\N4 T7-2024\\Script Nghe đề N4 T7-2024.pdf",
+      "sha256": "ef545f1631c4f546a459f5e86efa1fb2c6e29713a9b0930e636794adcd8acca3",
+      "Tier": "unranked",
+      "bytes": 901321,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N4\\N4_07_2024\\PaddleOCR\\pdf_1",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N4-N5 các năm Yuuki Bùi\\2024年7月\\N4 T7-2024\\Đáp án N4 T7-2024 ver 2.0.pdf",
+      "sha256": "ee60f46dadfea29583cdc642e7c24806889ad319964d08523c818f3fe4a9b626",
+      "Tier": "unranked",
+      "bytes": 696223,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N4\\N4_07_2024\\PaddleOCR\\pdf_2",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N4-N5 các năm Yuuki Bùi\\2024年7月\\N4 T7-2024\\Đề N4 T7-2024 Ver 3.0 [Mark].pdf",
+      "sha256": "ff4b8f8f8efcf024b27e41bfa274b131f041e1f25018bc9dba3e4f0874d4dc59",
+      "Tier": 1,
+      "bytes": 8188221,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N4\\N4_07_2024\\PaddleOCR\\pdf_3",
+      "VisionOCR": "preprocess\\N4\\N4_07_2024\\VisionOCR\\pdf_3"
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N4\\listening\\N4_07_2024_listening.html",
+      "sha256": "91bc969cee7c1493f015fe5f6fa654b4113c71f2e71504e4456b5b18ae5279ab",
+      "Tier": "unranked",
+      "bytes": 87088,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N4\\reading\\N4_07_2024_reading.html",
+      "sha256": "ccd58763aecc526115be77968f0471a1662a47245d5d6c23ccecf1f66e90c403",
+      "Tier": "unranked",
+      "bytes": 93402,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N4\\vocab\\N4_07_2024_vocab.html",
+      "sha256": "b3706c3008c082f3145ae0990cad9e912c70af1a74cca51749cfbcc306621779",
+      "Tier": "unranked",
+      "bytes": 83770,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N4真题（2010-2025.12）\\2024年7月N4\\2024年7月(暂无解析，后续更新)\\2024年7月能力考N4真题+答案.pdf",
+      "sha256": "4a2bc6a6cdaea044a153851f0c5515f86dc635d3bf6c4832796392dfadd26cb3",
+      "Tier": 2,
+      "bytes": 3022167,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\2024年7月（缺解析）\\2024年7月能力考N4真题+答案.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N4历年真题\\2024年7月N4\\2024年7月(暂无解析，后续更新)\\2024年7月能力考N4真题+答案.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N4\\N4_07_2024\\PaddleOCR\\pdf_4",
+      "VisionOCR": "preprocess\\N4\\N4_07_2024\\VisionOCR\\pdf_4"
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N4真题（2010-2025.12）\\N4-答题卡.pdf",
+      "sha256": "b0c14d3f8645d885a6ddc2ef4cc160271c0850ea5f1d18f7386a6662f95c2053",
+      "Tier": "unranked",
+      "bytes": 383135,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\N4-答题卡.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N4历年真题\\N4-答题卡.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N4\\N4_multiple\\PaddleOCR\\pdf_14",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N4\\2024-07_N4_vietnam\\images\\2024-07_N4_l-p1-q02-img01.jpg",
+      "sha256": "d62d0b94b452caeaa9f1a04e7f1ac83e5b606c3e8e4abbaaf8d422948921ce07",
+      "Tier": "unranked",
+      "bytes": 38041,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N4\\2024-07_N4_vietnam\\images\\2024-07_N4_l-p1-q05-img01.jpg",
+      "sha256": "b61965e6f677199fc6ade8f255c3afdf28b1c8e525ea21940da264bb72e739df",
+      "Tier": "unranked",
+      "bytes": 62508,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N4\\2024-07_N4_vietnam\\images\\2024-07_N4_l-p1-q06-img01.jpg",
+      "sha256": "931287b2fce1d7fedd1570abf0e11e9baebf7b8d9effa0f34e60d9ec1cd2b7da",
+      "Tier": "unranked",
+      "bytes": 54186,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N4\\2024-07_N4_vietnam\\images\\2024-07_N4_l-p1-q07-img01.jpg",
+      "sha256": "f9daad8dbd6223394e1e71183181561c74e893cda09339b10d094786eb627f37",
+      "Tier": "unranked",
+      "bytes": 71425,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N4\\2024-07_N4_vietnam\\images\\2024-07_N4_l-p1-q08-img01.jpg",
+      "sha256": "b62159b53f780566654ece4061440896c08c9eb798861df65153aee96b09de50",
+      "Tier": "unranked",
+      "bytes": 62491,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N4\\2024-07_N4_vietnam\\images\\2024-07_N4_l-p3-q01-img01.jpg",
+      "sha256": "9b6589b4fb4ee588a517b51476c2c2b09a5d7569bbb6775d570f7dbfe1183d1c",
+      "Tier": "unranked",
+      "bytes": 64288,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N4\\2024-07_N4_vietnam\\images\\2024-07_N4_l-p3-q02-img01.jpg",
+      "sha256": "977d1c065b2a88e904021e8e67f6b578d8ffa087c234a8018304f35fe8b692e1",
+      "Tier": "unranked",
+      "bytes": 66593,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N4\\2024-07_N4_vietnam\\images\\2024-07_N4_l-p3-q03-img01.jpg",
+      "sha256": "03cd74b207c9cb06511fea9f280956cd428122cb2c30b7f4f64b5e6db6e8c792",
+      "Tier": "unranked",
+      "bytes": 67093,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N4\\2024-07_N4_vietnam\\images\\2024-07_N4_l-p3-q04-img01.jpg",
+      "sha256": "333d3fb78b595e889689ed40523c79c535d2d8d16d3060f73fbc274ae3abe5c2",
+      "Tier": "unranked",
+      "bytes": 65064,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N4\\2024-07_N4_vietnam\\images\\2024-07_N4_l-p3-q05-img01.jpg",
+      "sha256": "49411eff73267086cc4bd51681d5de57d2bf61d1f99a0f16ab79edfd790c2364",
+      "Tier": "unranked",
+      "bytes": 74534,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N4\\listening\\listening_images\\202407N41-2.jpg",
+      "sha256": "69f8f871c66dfc7e1d70ca57c09c828964cc5527c3e84cf631d3ae38c3412d37",
+      "Tier": "unranked",
+      "bytes": 38059,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N4\\listening\\listening_images\\202407N41-5.jpg",
+      "sha256": "ab60f49c34e6055fa955cc6c856e958d5e95bdf2ed20ca748820db5d03e8eed1",
+      "Tier": "unranked",
+      "bytes": 62526,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N4\\listening\\listening_images\\202407N41-6.jpg",
+      "sha256": "05a13a9874d7d293d5c1caadbb88d2e74c2882997ae1482ff7903974b40c217c",
+      "Tier": "unranked",
+      "bytes": 54204,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N4\\listening\\listening_images\\202407N41-7.jpg",
+      "sha256": "f5d1b30270539c43c7e14dab32287ef5e885aec3359586f8a13ed0c364451b92",
+      "Tier": "unranked",
+      "bytes": 71443,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N4\\listening\\listening_images\\202407N41-8.jpg",
+      "sha256": "2e175789f842b679822fb5e07fd422cbabd638bdcac511eff0190d847225ed48",
+      "Tier": "unranked",
+      "bytes": 62509,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N4\\listening\\listening_images\\202407N43-1.jpg",
+      "sha256": "60be49d14b83baa40456020bdab57b7cfe02007eda866b8c6c1a5bb9207dd339",
+      "Tier": "unranked",
+      "bytes": 64306,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N4\\listening\\listening_images\\202407N43-2.jpg",
+      "sha256": "68f396f86c182e3555e60441a0b4a3b2fbd47dbfe726ae1929fbf00f6187df77",
+      "Tier": "unranked",
+      "bytes": 66611,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N4\\listening\\listening_images\\202407N43-3.jpg",
+      "sha256": "3c2fdc4ae6a2b3e1aca9abb4948233c4a6d002cd8cd63b26ab40c2469e6218ae",
+      "Tier": "unranked",
+      "bytes": 67111,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N4\\listening\\listening_images\\202407N43-4.jpg",
+      "sha256": "c1e5ecafdd83f00c102b6e25737bf2f542ba7c36072ca5aa9e3c36214da94ecf",
+      "Tier": "unranked",
+      "bytes": 65082,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N4\\listening\\listening_images\\202407N43-5.jpg",
+      "sha256": "e5f44763817e5d0708e806ba84045f8c3b6215f5989149a6be251392aa43c08c",
+      "Tier": "unranked",
+      "bytes": 74552,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    }
+  ],
+  "current_editorial": {
+    "path": "preprocess/N4/N4_07_2024/editorial_N4_07_2024.json",
+    "sha256": "0328a690fb983c2de1cd9ba231b839c287eddd4e266cfcb77db6434bc1b50c9a",
+    "bytes": 39184
+  },
+  "current_audit_snapshot": {
+    "path": "preprocess/N4/N4_07_2024/audit_work/handoff11_current.json",
+    "sha256": "6607f0aab2f96b419582d0a327bd90604d410a146b8490314d63fe9de320401e",
+    "bytes": 3571
+  }
+}

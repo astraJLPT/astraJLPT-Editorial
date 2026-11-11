@@ -1,0 +1,53 @@
+{
+  "unit": "N4_07_2012",
+  "sources": [
+    {
+      "path": "src\\日语JLPT历年真题\\N4真题（2010-2025.12）\\2012年N4\\N4听力原文.pdf",
+      "sha256": "beaf5749b0c65ae820b58fce2da64696fdce0aaa745e31595ab1d89fad4c60fa",
+      "Tier": "unranked",
+      "bytes": 868924,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\2012年\\资源二\\N4听力原文.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N4历年真题\\2012年N4\\N4听力原文.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N4\\N4_multiple\\PaddleOCR\\pdf_10",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N4真题（2010-2025.12）\\2012年N4\\N4答案.pdf",
+      "sha256": "c24f4ca603a0166daaa622e32d170f82abbab81d7840a742d31ef55438656028",
+      "Tier": "unranked",
+      "bytes": 134170,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\2012年\\资源二\\N4答案.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N4历年真题\\2012年N4\\N4答案.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N4\\N4_multiple\\PaddleOCR\\pdf_11",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N4真题（2010-2025.12）\\2012年N4\\N4答题卡.pdf",
+      "sha256": "82e1883891109e3fd71c48082cabaf175b55985ee17d30ebe9841c84693783c1",
+      "Tier": "unranked",
+      "bytes": 1243350,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\2012年\\资源二\\N4答题卡.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N4历年真题\\2012年N4\\N4答题卡.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N4\\N4_multiple\\PaddleOCR\\pdf_12",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N4真题（2010-2025.12）\\N4-答题卡.pdf",
+      "sha256": "b0c14d3f8645d885a6ddc2ef4cc160271c0850ea5f1d18f7386a6662f95c2053",
+      "Tier": "unranked",
+      "bytes": 383135,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\N4-答题卡.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N4历年真题\\N4-答题卡.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N4\\N4_multiple\\PaddleOCR\\pdf_14",
+      "VisionOCR": ""
+    }
+  ]
+}

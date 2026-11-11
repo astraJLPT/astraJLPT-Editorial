@@ -1,0 +1,370 @@
+{
+  "unit": "N1_12_2016",
+  "sources": [
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\2016.12\\2016年12月N1听力原文.pdf",
+      "sha256": "904c79e628b6ff7d58e5d58106600345e90a223a41788c9e14231b4219dddfb0",
+      "Tier": "unranked",
+      "bytes": 532817,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2016\\PaddleOCR\\pdf_1",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\2016.12\\N1能力考试计算方法.xlsx",
+      "sha256": "509844a08048d2cb05c14dd4645d8a885a027af4caa2cc5f4f4b0fcf640e092b",
+      "Tier": "unranked",
+      "bytes": 9627,
+      "aliases": [
+        "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\N1能力考试计算方法.xlsx",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\N1能力考试计算方法.xlsx",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\N1能力考试计算方法.xlsx"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\2016.12\\真题+音频\\2016.12.N1.pdf",
+      "sha256": "fd2113c65c3f5e51796261527c180f85055865e3b8408a4c3f875d2daa804392",
+      "Tier": 2,
+      "bytes": 891523,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\2016.12\\真题+音频\\2016.12.N1.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2016\\PaddleOCR\\pdf_2",
+      "VisionOCR": "preprocess\\N1\\N1_12_2016\\VisionOCR\\pdf_2"
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\N1答题卡.pdf",
+      "sha256": "99d0ff9ea60c01b3c211c680c0c527a1604e0c91a52ece360e2873186b8dcef9",
+      "Tier": "unranked",
+      "bytes": 683222,
+      "aliases": [
+        "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\N1答题卡.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\N1答题卡.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\N1答题卡.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N1\\N1_multiple\\PaddleOCR\\pdf_2",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N1\\2016-12_N1\\2016-12_N1.json",
+      "sha256": "b390dda08a46d986935b7cb9c5305a41e40e79fed89f075ec407cf6ea94daf9e",
+      "Tier": "unranked",
+      "bytes": 257959,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N1 các năm Yuuki Bùi\\N1 12-2016\\Đáp án+Script N1 12-2016.pdf",
+      "sha256": "5891bae5a457340e682124790c019497a7e799744d7b21ad0cb91f6bc5c68ccb",
+      "Tier": "unranked",
+      "bytes": 3196826,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2016\\PaddleOCR\\pdf_4",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N1 các năm Yuuki Bùi\\N1 12-2016\\Đề N1 12-2016.pdf",
+      "sha256": "e0103e757f9a578ea6be89f753e61c1768c605cae6a075433b591ffed4bcaef5",
+      "Tier": 1,
+      "bytes": 9593451,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2016\\PaddleOCR\\pdf_5",
+      "VisionOCR": "preprocess\\N1\\N1_12_2016\\VisionOCR\\pdf_5"
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N1\\listening\\N1_12_2016_listening.html",
+      "sha256": "411b5d4ed868ea713fd8918dca55a48f8b905e0c9fe8b0fd56d81ff58f2057aa",
+      "Tier": "unranked",
+      "bytes": 119902,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N1\\reading\\N1_12_2016_reading.html",
+      "sha256": "e867c3a76cf2f152d272ead9e429ed1776db37ed28448c2e56f3c00b9a69b8f8",
+      "Tier": "unranked",
+      "bytes": 113378,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N1\\vocab\\N1_12_2016_vocab.html",
+      "sha256": "dccb54af8dde90b6ac4389393759bb0779f6cd0fe089737c307f93d6f53ae13b",
+      "Tier": "unranked",
+      "bytes": 117964,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\2016\\2016.12\\2016年12月N1真题.pdf",
+      "sha256": "87f3eb980493a0a79ed421c0111c53befd41f68300405ee5290f884e5f28b15a",
+      "Tier": 2,
+      "bytes": 6032256,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2016\\PaddleOCR\\pdf_6",
+      "VisionOCR": "preprocess\\N1\\N1_12_2016\\VisionOCR\\pdf_6"
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\2016\\2016.12\\答案解析和听力原文\\2016年12月N1听力原文.pdf",
+      "sha256": "b984d22cba45a4fff8c0e722574e634607c940ac877637737870862f6349faf5",
+      "Tier": "unranked",
+      "bytes": 12032606,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2016\\PaddleOCR\\pdf_7",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\2016\\2016.12\\答案解析和听力原文\\2016年12月N1听力译文.pdf",
+      "sha256": "0b5a4e59d1ea28f625e2df20a99fbf75247011647218aa2a7d6d34883cc27957",
+      "Tier": "unranked",
+      "bytes": 2606673,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2010年-2020年\\2016年12月\\2016年12月N1听力译文.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2016\\PaddleOCR\\pdf_8",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\2016\\2016.12\\答案解析和听力原文\\2016年12月N1答案解析.pdf",
+      "sha256": "b551ac0508900ae10128b7a9cc5dadcb71a4e3871f9b7fb181daaef82698d42a",
+      "Tier": "unranked",
+      "bytes": 13761022,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2016\\PaddleOCR\\pdf_9",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\2016\\2016.12\\答案解析和听力原文\\2016年12月N1阅读译文.pdf",
+      "sha256": "9e736b618fcaca0896adb7158f07d2738b51c133f4e62802cdfafc4712af5d51",
+      "Tier": "unranked",
+      "bytes": 2540656,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2010年-2020年\\2016年12月\\2016年12月N1阅读译文.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2016\\PaddleOCR\\pdf_10",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2010年-2020年\\2016年12月\\【1】2016年12月N1 真题.pdf",
+      "sha256": "09b114c0bf9b3ee5bcff3dca2793334dcc9454b6432ffd3017a7db796ed279e4",
+      "Tier": 3,
+      "bytes": 6382325,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2016\\PaddleOCR\\pdf_11",
+      "VisionOCR": "preprocess\\N1\\N1_12_2016\\VisionOCR\\pdf_11"
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2010年-2020年\\2016年12月\\【1】2016年12月N1答案解析+听力原文.pdf",
+      "sha256": "cae96cb50dbbb05b913367051af77fce7a6e4806b794eb9e936352f9b6b1eb84",
+      "Tier": "unranked",
+      "bytes": 3371853,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2016\\PaddleOCR\\pdf_12",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2010年-2020年\\2016年12月\\【2】2016年12月N1 真题.pdf",
+      "sha256": "008a7350a148c8c899453199f7babc74572e677871d958e833a6fa52f43cf8c0",
+      "Tier": 2,
+      "bytes": 1430559,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2016\\PaddleOCR\\pdf_13",
+      "VisionOCR": "preprocess\\N1\\N1_12_2016\\VisionOCR\\pdf_13"
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2010年-2020年\\2016年12月\\【2】2016年12月N1答案解析+听力原文.pdf",
+      "sha256": "9af1e1c1bdf91371508cae00aa0cc71ec1e8602fc7c7f5ac49f05e255caad4f1",
+      "Tier": "unranked",
+      "bytes": 1168749,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2016\\PaddleOCR\\pdf_14",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2010年-2020年\\2016年12月\\【3】2016年12月N1 真题.pdf",
+      "sha256": "c82e79ddda0d668cdb384ae62e31b7c7072914cbdf738c30f402d9eb35689b70",
+      "Tier": 2,
+      "bytes": 1042595,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2016\\PaddleOCR\\pdf_15",
+      "VisionOCR": "preprocess\\N1\\N1_12_2016\\VisionOCR\\pdf_15"
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2010年-2020年\\2016年12月\\【3】2016年12月N1答案解析+听力原文+译文.pdf",
+      "sha256": "60c09a595dee47100bbf31db905b49aa0c6ea877629f2de4b5761dcbea742cd8",
+      "Tier": "unranked",
+      "bytes": 1094553,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2016\\PaddleOCR\\pdf_16",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\2016.12\\2016年12月N1试卷_解析_听力原文_高清扫描.PDF",
+      "sha256": "4b89a82a3bfec29ec14987ed0189f342c3094a5759c3343a7bafec52fb9e1d80",
+      "Tier": 3,
+      "bytes": 3933263,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2016\\PaddleOCR\\pdf_17",
+      "VisionOCR": "preprocess\\N1\\N1_12_2016\\VisionOCR\\pdf_17"
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\2016.12\\答案\\2016年12月N1听解答案.jpg",
+      "sha256": "4bc6a1d47264a7536a0bcd783afdc7c8d87d48c4ddc810ddcdd194b64c4ff64c",
+      "Tier": "unranked",
+      "bytes": 102954,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\2016.12\\答案\\2016年12月N1文字词汇答案.jpg",
+      "sha256": "1c80ee0b1e573b0691420bf70fe333d8912b66689874b420008f1a3de61055d1",
+      "Tier": "unranked",
+      "bytes": 49275,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\2016.12\\答案\\2016年12月N1文法答案.jpg",
+      "sha256": "db0b37185987a92788d35b278684b4538bab976a867b59868a5d05f3af0985b2",
+      "Tier": "unranked",
+      "bytes": 44956,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\2016.12\\答案\\2016年12月N1读解答案.jpg",
+      "sha256": "a2938ffccf051ea96f71444f078ef3c6043d2cb7a6533f47d160f5125b6cb82f",
+      "Tier": "unranked",
+      "bytes": 58429,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\2016.12\\解析\\2016年12月N1文字词汇解析01.jpg",
+      "sha256": "6a27ed37426d654a561bb691404c383399fae4066fea5b61fd9c5083f4e5df82",
+      "Tier": "unranked",
+      "bytes": 81681,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\2016.12\\解析\\2016年12月N1文字词汇解析02.jpg",
+      "sha256": "c1dd3a8caa635e50823c472e35b36335c5dc962d639d313684b1ade4bdd14e87",
+      "Tier": "unranked",
+      "bytes": 118229,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\2016.12\\解析\\2016年12月N1文字词汇解析03.jpg",
+      "sha256": "64be47edfef0355c8e7361fcacad9e1c5d8d616c3dc32d2b2c562b8a2e8d0cf8",
+      "Tier": "unranked",
+      "bytes": 103472,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\2016.12\\解析\\2016年12月N1文字词汇解析04.jpg",
+      "sha256": "e5031d566a0596c7bb361f9837fb1d73dc8ae0fb3c2d0023f0361cd3145c467f",
+      "Tier": "unranked",
+      "bytes": 108624,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\2016.12\\解析\\2016年12月N1文法解析05.jpg",
+      "sha256": "a843ede776e1976bddfb53fc94d44c56d2322802338b114ff86bf208f4a00b66",
+      "Tier": "unranked",
+      "bytes": 207012,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\2016.12\\解析\\2016年12月N1文法解析06.jpg",
+      "sha256": "6343d6724c34399197d383157e2162a3e1f695bf6012f9fb0d21299aefdfbd1c",
+      "Tier": "unranked",
+      "bytes": 221945,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\2016.12\\解析\\2016年12月N1文法解析07.jpg",
+      "sha256": "f2a9721318f4a4a5144c0bd954558f19b51b2bb0aa5edfda7f1087e3df72b6b2",
+      "Tier": "unranked",
+      "bytes": 137424,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\2016.12\\解析\\2016年12月N1读解解析10.jpg",
+      "sha256": "74601a6ec915334a5c89aa420b7553e7fa96b878b1b621ca026a97a11e9a285d",
+      "Tier": "unranked",
+      "bytes": 227244,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\2016.12\\解析\\2016年12月N1读解解析11-12.jpg",
+      "sha256": "f45b798b7b282aa5244eb50c263508cbfbc41722df779bfbfbdbf3141cd2b410",
+      "Tier": "unranked",
+      "bytes": 256088,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\2016.12\\解析\\2016年12月N1读解解析13.jpg",
+      "sha256": "b662fdbd705b7bb76568a7164b6a801c5f2762d833d6fce53a520569a663ec71",
+      "Tier": "unranked",
+      "bytes": 145291,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\2016.12\\解析\\2016年12月N1读解解析8.jpg",
+      "sha256": "80d4f66c85d20dbb6d89c39958ece960490b3b8ed2f1b0ce22a2faf32e700810",
+      "Tier": "unranked",
+      "bytes": 201986,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\2016.12\\解析\\2016年12月N1读解解析9.jpg",
+      "sha256": "f5e4a694ebd83dc6062147d8949e232174ab6ab88444df2c0ba831ed17ded508",
+      "Tier": "unranked",
+      "bytes": 255852,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N1\\2016-12_N1\\images\\2016-12_N1_s13-q01-img01.jpg",
+      "sha256": "048ab5547127e68842339b354d4a7c06e8ba07891ac0463100da5b668c57e919",
+      "Tier": "unranked",
+      "bytes": 140594,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    }
+  ]
+}

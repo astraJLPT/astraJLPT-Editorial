@@ -1,0 +1,258 @@
+{
+  "shared_schema_version": "1.0",
+  "shared_id": "jlpt-modern-written",
+  "revision": 22,
+  "renderer_conventions": {
+    "paper": "a4",
+    "paragraph_skip_pt": 0,
+    "paragraph_indent_em": 1,
+    "note_before_pt": 16,
+    "note_after_pt": 10,
+    "ruby_ratio": 0.48,
+    "option_reserve_em": 2.7,
+    "unknown_direction_fallback": "horizontal-tb",
+    "vertical_extent_em": 25,
+    "footer": {
+      "number_pt": 15.67,
+      "dash_pt": 12.8,
+      "gap_em": 0.9
+    },
+    "booklet_start": "sequential",
+    "reading_group_start": "independent_passage",
+    "cloze_choice_start": "after_context_group",
+    "question_keep": "prefer_whole_with_option_fallback",
+    "dialogue_quote_gap_em": 0.4,
+    "dialogue_continuation_pullback_em": 0.5,
+    "option_row_gap_pt": 3,
+    "star_raise_em": 0.15,
+    "mixed_script_gap_em": 0.12,
+    "font_roles": {
+      "body_latin": {
+        "source": "body"
+      },
+      "choice_numeral": {
+        "source": "body"
+      },
+      "answer_bubble_numeral": {
+        "source": "body"
+      },
+      "passage_label": {
+        "source": "body",
+        "features": [
+          "fwid"
+        ],
+        "horizontal_scale": 0.8
+      },
+      "running_latin": {
+        "path": "fonts_official/n123/1738155121_A-OTF-RyuminPr5-Regular.otf",
+        "sha256": "86e2572e8b6916102c0a0e1738f9c0eb73538141f8e5c1ef8da9c2a754fb91b1"
+      },
+      "annotation": {
+        "source": "body"
+      },
+      "letter": {
+        "source": "body"
+      },
+      "boxed_numeral": {
+        "path": "fonts_official/handoff5-pinned/TCCEB.TTF",
+        "sha256": "9e8a6af516706030b8536b2ea6535664cd9bea916fb15304556d8139a6945ff9"
+      },
+      "instruction_latin": {
+        "path": "fonts_official/handoff5-pinned/ARIALNB.TTF",
+        "sha256": "6c4a4b643461def5411e0217b74a625dcf2fb681252ef5da1db0af4eae80aa7e"
+      },
+      "notice_heading": {
+        "source": "heading",
+        "font_index": 0
+      },
+      "task_label": {
+        "path": "fonts_official/handoff5-pinned/ARIALNB.TTF",
+        "sha256": "6c4a4b643461def5411e0217b74a625dcf2fb681252ef5da1db0af4eae80aa7e"
+      },
+      "paired_label": {
+        "path": "pdf-render/tex/fonts/NotoSansJP-Regular.ttf"
+      },
+      "instruction_japanese": {
+        "path": "fonts_official/handoff5-pinned/YuGothB.ttc",
+        "sha256": "15157483588f2778a180f2b401256df12b582513fa0655f8172937c85521b80b",
+        "font_index": 0
+      },
+      "task_label_japanese": {
+        "path": "fonts_official/handoff5-pinned/YuGothB.ttc",
+        "sha256": "15157483588f2778a180f2b401256df12b582513fa0655f8172937c85521b80b",
+        "font_index": 0
+      },
+      "running_japanese": {
+        "path": "fonts_official/n123/1738155121_A-OTF-RyuminPr5-Regular.otf",
+        "sha256": "86e2572e8b6916102c0a0e1738f9c0eb73538141f8e5c1ef8da9c2a754fb91b1"
+      },
+      "memo": {
+        "path": "fonts_official/handoff6-pinned/DFTegakiMakotoStd-W3.otf",
+        "sha256": "bc454d70b8f90662227cb202bd9202965de24c2d1bb05b153aa00ee643c5de4f",
+        "features": [
+          "palt"
+        ],
+        "scale": 1.25,
+        "selection_status": "explicit_memo_role_evidence_led_substitute_and_user_restoration_policy"
+      },
+      "ascii_parenthesis": {
+        "path": "fonts_official/1739195082_HiraMinPro-W3.otf",
+        "sha256": "5905a6fb914d6f27a6e9e8995e69a61f86033812ddbeaf9bbec3dabd271d9a95",
+        "features": [],
+        "horizontal_scale": 1,
+        "bold_same_face": true,
+        "selection_status": "H13-C02 compared conditional substitute for Ryumin ASCII only; no canonical character conversion"
+      },
+      "retained_chinese": {
+        "path": "pdf-render/fonts/120a51d2b14e-simsun.ttc",
+        "sha256": "120a51d2b14eb588700a21e15fc301f0ea55d7c1a4e1f3ae61db83b7c8d42cd6",
+        "font_index": 0,
+        "bold_same_face": true,
+        "selection_status": "H13 retained canonical Chinese administrative glyphs only; no historical typography claim"
+      },
+      "breadcrumb_latin": {
+        "path": "fonts_official/handoff5-pinned/ARIALNB.TTF",
+        "sha256": "6c4a4b643461def5411e0217b74a625dcf2fb681252ef5da1db0af4eae80aa7e",
+        "bold_same_face": true
+      },
+      "contact_latin": {
+        "path": "fonts_official/handoff5-pinned/ARIALN.TTF",
+        "sha256": "cad552553cf2a75afca01955751aaa115e2a64fd6c6eea42e1fbd236630b7e0a",
+        "bold_same_face": true
+      }
+    },
+    "cover_common": {
+      "mark": {
+        "text": "astraJLPT Editorial",
+        "size_bp": 24,
+        "opacity": 0.32,
+        "safe_margin_mm": 4
+      },
+      "count_policy": "actual_nonblank_body_pages_excluding_covers",
+      "assembly": {
+        "front": "sequential",
+        "blank_back": false,
+        "body_start": "sequential",
+        "close_even": false,
+        "blank_pages": "forbidden"
+      },
+      "timing_cutoff": {
+        "N4_N5": "2020-12",
+        "primary_evidence": "https://jlpt.jp/topics/202008171597200631.html",
+        "record": "pdf-render/cover-restore/sources/decisions.json"
+      }
+    },
+    "cloze_clearance_em": 0.28,
+    "blank_inner_width_em": 2.8,
+    "blank_side_space_em": 0.45,
+    "passage_intro_after_pt": 23,
+    "document_intro_after_pt": 6,
+    "underline_drop_ex": 0.45,
+    "underline_thickness_ex": 0.1,
+    "reference_drop_ex": 1.5,
+    "keep_question_tail": true,
+    "task_overrides": {
+      "paired_reading": {
+        "note_before_pt": 5
+      }
+    },
+    "option_continuation_pullback_em": 1.0,
+    "blank_digit_side_space_em": 0.45,
+    "answer_blank_roles": {
+      "heading": {
+        "inner_width_em": 2.6,
+        "side_space_em": 0.35,
+        "digit_side_space_em": 0.35,
+        "punctuation_side_space_em": 0
+      },
+      "body": {
+        "punctuation_side_space_em": 0
+      },
+      "example": {
+        "punctuation_side_space_em": 0
+      }
+    },
+    "notice_title_ribbon_overhang_em": 1.4,
+    "document_bullets": {
+      "item": {
+        "scale": 0.55,
+        "raise_em": 0.12,
+        "gap_em": 0.3
+      },
+      "heading": {
+        "scale": 0.75,
+        "raise_em": 0.06,
+        "gap_em": 0.2
+      }
+    },
+    "punctuation_after_em": 0,
+    "paired_passages": {
+      "first_label_before_pt": 10,
+      "next_label_before_pt": 16,
+      "label_frame_gap_pt": 3,
+      "label_align": "left",
+      "frame_padding_pt": 12,
+      "frame_side_padding_pt": 8,
+      "first_paragraph_indent_em": 1,
+      "rule_pt": 0.5
+    },
+    "examples": {
+      "answer_label_width_em": 2.8,
+      "answer_label_ruby_base_height_em": 0.8
+    },
+    "paragraph_roles": {
+      "scene": {
+        "indent_em": 0.5
+      },
+      "omission": {
+        "indent_em": 1
+      }
+    },
+    "document_roles": {
+      "student_composition": {
+        "frame_rule_pt": 0.6
+      },
+      "magazine_column": {
+        "frame_rule_pt": 1.05
+      },
+      "memo": {
+        "font_role": "memo",
+        "ruby_intergap_em": 0,
+        "ruby_base_height_em": 0.8,
+        "frame_style": "folded_corner"
+      }
+    },
+    "running_header_policy": {
+      "enabled": true,
+      "identity": "publication_or_sitting",
+      "folio": "generated_booklet",
+      "placement": "alternating_outer"
+    },
+    "email_family": {
+      "paragraph_skip_pt": 0,
+      "rule_set": {
+        "top": {
+          "width_pt": 2,
+          "gray": 0.55,
+          "pattern": "solid"
+        },
+        "bottom": {
+          "width_pt": 2,
+          "gray": 0.55,
+          "pattern": "solid"
+        },
+        "before_pt": 11,
+        "top_gap_pt": 14,
+        "bottom_gap_pt": 14
+      },
+      "first_line_indent_em": 0
+    },
+    "table_header_align": "center",
+    "table_mark_align": "center",
+    "heading_continuation_pullback_em": 1.0,
+    "question_table_before_pt": 12
+  },
+  "variants": {},
+  "basis": "Maintained common conventions. Handoff-5 font candidate decisions: pdf-render/evidence/handoff5/FONT_DECISIONS.md. Complete-page confirmation remains required.",
+  "evidence_note": " H10 trial adoption: normalized bracket interiors and role/neighbour exterior; explicit reading-entry topology; N5 spaced-passage punctuation; native bullet roles and attached-ribbon default. These are editorial rendering choices calibrated against identified witnesses, not era-wide authenticity claims. See pdf-render/evidence/handoff10/SPACING_DECISIONS_01.json and final acceptance evidence."
+}

@@ -1,0 +1,25 @@
+{
+  "contract": "historical-artwork-1.0",
+  "id": "H22-F02-top",
+  "kind": "spinning_top",
+  "unit": "N1_1999",
+  "item_id": "reading-b005",
+  "source": {
+    "source_path": "src/CodexDownloads/UserApprovedReferenceScans/日本語能力1991～1999年試験問題集1級.pdf",
+    "source_sha256": "8560bf8ef92b4e2d58559b3e14882b76d3307586f5d55b0e7fa33cc2f5fa931f",
+    "physical_page": 421,
+    "crop_original_pixels": [
+      339,
+      553,
+      456,
+      678
+    ],
+    "page_rotation": 0
+  },
+  "raw_crop": {
+    "path": "preprocess/assets/handoff22/written/source-crops-02/H22-F02-top/raw-crop.png",
+    "sha256": "7b56d799bd2052137e265bc6200747722e6b5c8c82b4bf90faf1b34e97305d70"
+  },
+  "selection_note": "H22 candidate; compare with the raw source crop and full source page before selection.",
+  "limits": "No audio evidence. Native artwork is an editorial reconstruction of the visible printed figure; it does not authenticate the scan."
+}

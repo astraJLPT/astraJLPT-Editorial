@@ -1,0 +1,52 @@
+{
+  "unit": "N5_07_2023",
+  "sources": [
+    {
+      "path": "src\\日语JLPT历年真题\\N5真题（2010-2025.12）\\2023年07月N5\\2023年7月N5答案及解析（含听力原文）.pdf",
+      "sha256": "f2535c8c6b40a6a8537c96049a805f2cc83e86d8dc65a2cf1548f04040f6ad93",
+      "Tier": "unranked",
+      "bytes": 361492,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N5历年真题\\2023年07月N5\\2023年7月N5答案及解析（含听力原文）.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N5\\N5_07_2023\\PaddleOCR\\pdf_1",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N5真题（2010-2025.12）\\2023年07月N5\\2023年7月N5试题不含听力.pdf",
+      "sha256": "05d287c536cebc5e1234317f2b3279b23d097188156610d4e20bcfb54e422cac",
+      "Tier": 2,
+      "bytes": 1278630,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N5历年真题\\2023年07月N5\\2023年7月N5试题不含听力.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N5\\N5_07_2023\\PaddleOCR\\pdf_2",
+      "VisionOCR": "preprocess\\N5\\N5_07_2023\\VisionOCR\\pdf_2"
+    },
+    {
+      "path": "src/CodexDownloads/Hunts/2010-2026/2026-10-23_RC02/ayumi_n5_2023_07.pdf",
+      "sha256": "58741e9e6fd48871105a30e29fe2c93c02f370e7d776508b19835475915f160a",
+      "Tier": "unranked",
+      "bytes": 479047,
+      "pages": 8,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "display_title": "ayumi_n5_2023_07.pdf",
+      "source_urls": [
+        "https://www.ayumi.lk/past-papers/n5-2023%E5%B9%B47%E6%9C%88/",
+        "https://drive.google.com/uc?export=download&id=1-jdtIPHb9tn9HdgqNHYCnx3KKtoZNRRw"
+      ],
+      "provenance_records": [
+        "output/pdf/reference_scan_hunt_2010_2026_rc02/acquisitions.jsonl",
+        "output/pdf/reference_scan_hunt_2010_2026_rc02/download_assessment.json"
+      ],
+      "source_role": "third_party_reconstruction",
+      "filename_at_acquisition": "Paper N5 7-2023.pdf",
+      "local_filename_is_acquisition_alias": true,
+      "coverage_note": "Eight-page Shanghai Senbatsu/千羽鹤 school reconstruction. Compact question lists and added red answers. Retained as a provisionally associated question witness, not a scan-formatting reference. Discovery only; no reference-scan approval or principal assignment.",
+      "sitting_association": "provisional_question_content_association; not issuer authentication"
+    }
+  ]
+}

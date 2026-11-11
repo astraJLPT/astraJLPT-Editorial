@@ -1,0 +1,200 @@
+{
+  "unit": "N4_07_2014",
+  "sources": [
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N4\\N4-2010-2014年-高清打印版\\2014年7月.pdf",
+      "sha256": "9368a7d21e045c0c5f989b753e281db940f06e1d9930e968e77260b58dd2e150",
+      "Tier": 3,
+      "bytes": 1453094,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N4\\N4_07_2014\\PaddleOCR\\pdf_1",
+      "VisionOCR": "preprocess\\N4\\N4_07_2014\\VisionOCR\\pdf_1"
+    },
+    {
+      "path": "src\\munjaJLPT\\N4\\2014-07_N4\\2014-07_N4.json",
+      "sha256": "bb2d8fb38254062d89b6f736c8c0c13320086b5b0263a41189c804740351410f",
+      "Tier": "unranked",
+      "bytes": 135512,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N4-N5 các năm Yuuki Bùi\\2014年7月\\N4-2014年7月.pdf",
+      "sha256": "741b3972e89f790ec41611c917394edc49447788e3c6b417fc56bb54af33438c",
+      "Tier": 3,
+      "bytes": 60443224,
+      "aliases": [
+        "src/CodexDownloads/Hunts/2010-2026/2026-10-23_RC02/kosei_N4_2014_07.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N4\\N4_07_2014\\PaddleOCR\\pdf_2",
+      "VisionOCR": "preprocess\\N4\\N4_07_2014\\VisionOCR\\pdf_2",
+      "source_urls": [
+        "https://kosei.vn/tong-hop-de-thi-jlpt-n4-cac-nam-day-du-moi-nhat",
+        "https://drive.google.com/uc?export=download&id=1-eKjCW4tFYeJy139ue13T1RlwQNeEgxy"
+      ],
+      "provenance_records": [
+        "output/pdf/reference_scan_hunt_2010_2026_rc02/acquisitions.jsonl",
+        "output/pdf/reference_scan_hunt_2010_2026_rc02/download_assessment.json"
+      ]
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N4\\listening\\N4_07_2014_listening_DEAD.html",
+      "sha256": "85622481f4bb5f78f74721170b33ea448263790efdf196c3befe4d0840fdefa5",
+      "Tier": "unranked",
+      "bytes": 33899,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N4\\reading\\N4_07_2014_reading.html",
+      "sha256": "7fab154a9889cb8836cccd5627188b4c5e4d72baa76a30e12e271f031b9787c1",
+      "Tier": "unranked",
+      "bytes": 101484,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N4\\vocab\\N4_07_2014_vocab.html",
+      "sha256": "2adb7ee9ef637de14ffec7499b59220e07d1b0bfca10320546f9e4b44a2c1278",
+      "Tier": "unranked",
+      "bytes": 94118,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N4真题（2010-2025.12）\\2014年07月N4\\2014年7月真题+答案+解析+原文.pdf",
+      "sha256": "6be829ed4bafea24e8402dfa3199b26c3719451607a30b734ffa73f33b290414",
+      "Tier": 3,
+      "bytes": 1926859,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N4历年真题\\2014年07月N4\\2014年7月真题+答案+解析+原文.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N4\\N4_07_2014\\PaddleOCR\\pdf_3",
+      "VisionOCR": "preprocess\\N4\\N4_07_2014\\VisionOCR\\pdf_3"
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N4真题（2010-2025.12）\\N4-答题卡.pdf",
+      "sha256": "b0c14d3f8645d885a6ddc2ef4cc160271c0850ea5f1d18f7386a6662f95c2053",
+      "Tier": "unranked",
+      "bytes": 383135,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\N4-答题卡.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N4历年真题\\N4-答题卡.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N4\\N4_multiple\\PaddleOCR\\pdf_14",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\2014年7月\\2014年07月日语N4真题试卷.pdf",
+      "sha256": "50a973588ed5e94c949ea011fbf4f42c1ad1963b21ebd46c4d27c862d019110c",
+      "Tier": 1,
+      "bytes": 11363004,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N4\\N4_07_2014\\PaddleOCR\\pdf_5",
+      "VisionOCR": "preprocess\\N4\\N4_07_2014\\VisionOCR\\pdf_5"
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\2014年7月\\2014年07月日语N4答案解析+听力原文.pdf",
+      "sha256": "f3c9d7fd7e0e41815688238ed053dd834a8a80639db1c03c73fd42e88d4fcfd4",
+      "Tier": "unranked",
+      "bytes": 9785216,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N4\\N4_07_2014\\PaddleOCR\\pdf_6",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\2014年7月\\资源二\\2014年7月真题+解析+听力原文-高清打印版.pdf",
+      "sha256": "84af8eecb98b38fa211ad2ab6f380ec03dbac521e4199daa98a20ae2871ae06c",
+      "Tier": 3,
+      "bytes": 1485331,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N4\\N4_07_2014\\PaddleOCR\\pdf_7",
+      "VisionOCR": "preprocess\\N4\\N4_07_2014\\VisionOCR\\pdf_7"
+    },
+    {
+      "path": "src\\munjaJLPT\\N4\\2014-07_N4\\images\\2014-07_N4_l-p1-q02-img01.jpg",
+      "sha256": "0ac143a4fd8ad30980c575e74ce10e59db54ef812cc563492b16fca03a20d801",
+      "Tier": "unranked",
+      "bytes": 82739,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N4\\2014-07_N4\\images\\2014-07_N4_l-p1-q06-img01.jpg",
+      "sha256": "035d60eaa59351b75a3ed458721a14c5e8ee11f4e7fcafefd5e7e4c28b2b055e",
+      "Tier": "unranked",
+      "bytes": 263276,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N4\\2014-07_N4\\images\\2014-07_N4_l-p1-q08-img01.jpg",
+      "sha256": "c6019421c2231c27a9ee4bda25e1a045a6208aaf58392ec1e69e00ab85a08a6e",
+      "Tier": "unranked",
+      "bytes": 173128,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N4\\2014-07_N4\\images\\2014-07_N4_l-p3-q01-img01.jpg",
+      "sha256": "897daffdc252bc7e0c61331896b84b264cba7d9676cc3733b2d90dbe7e8dbab4",
+      "Tier": "unranked",
+      "bytes": 327047,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N4\\2014-07_N4\\images\\2014-07_N4_l-p3-q02-img01.jpg",
+      "sha256": "2a6a56c408e05b7acab61566e6f15e14cbc7f67c4cd6418ac0d433381ec28bd6",
+      "Tier": "unranked",
+      "bytes": 207658,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N4\\2014-07_N4\\images\\2014-07_N4_l-p3-q03-img01.jpg",
+      "sha256": "0b126fb8901a35c1e029fb8d7f86a54513a0a1ea7bee79a27723571bede002e1",
+      "Tier": "unranked",
+      "bytes": 215832,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N4\\2014-07_N4\\images\\2014-07_N4_l-p3-q04-img01.jpg",
+      "sha256": "e2e2997b575b52941c50a86d43ca22db7d07c6b617b481b64da7f8e00af3ed74",
+      "Tier": "unranked",
+      "bytes": 92499,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N4\\2014-07_N4\\images\\2014-07_N4_l-p3-q05-img01.jpg",
+      "sha256": "b3713c60ee30e61192b8234cf3c9656b9eba354617da712d83f36ddd216c5d96",
+      "Tier": "unranked",
+      "bytes": 79446,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N4\\2014-07_N4\\images\\2014-07_N4_s11-q01-img01.jpg",
+      "sha256": "185de159e6fd19bc57470f1dde1047ac817e6cbc88e3232b94d1bedf00a31cf8",
+      "Tier": "unranked",
+      "bytes": 134249,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "contract": "historical-artwork-1.0",
+  "id": "H26-N2-1998-population-labels",
+  "kind": "metropolitan_population",
+  "unit": "N2_1998",
+  "item_id": "reading-b007",
+  "source": {
+    "source_path": "src/CodexDownloads/UserApprovedReferenceScans/日本語能力1991～1999年試験問題集2級.pdf",
+    "source_sha256": "0a6634758dce0a258ffaf92c6c8ea1a738a4b8ceb52cd75cb44a4d8d340dfa64",
+    "physical_page": 342,
+    "crop_original_pixels": [
+      168,
+      202,
+      949,
+      732
+    ],
+    "page_rotation": 0
+  },
+  "raw_crop": {
+    "path": "preprocess/assets/handoff23/written/N2_1998/assets-01/population-composite-raw.png",
+    "sha256": "b8d96228ec05415ab3db4036898ceaffcefbe3b13091124b4ab95790af919488"
+  },
+  "image": {
+    "path": "preprocess/assets/handoff23/written/N2_1998/assets-01/population-map-background.png",
+    "sha256": "548db8163e0ea660e6b8383f253e9933f2be8070567e9f46bdd78e49116af22f"
+  },
+  "selection_note": "Retain H23 native pies and legend unchanged; replace only three lower raster labels and their existing Osaka/Nagoya ruby with source-bound native text. Every leader, symbol and map contour remains.",
+  "limits": "No map or pie redraw. The three explicit label masks exclude adjacent leaders, including the Nagoya vertical leader.",
+  "data": {
+    "normalization": "none_use_printed_percentages",
+    "start": "noon_clockwise",
+    "title": "3大都市圏の人口が全国の人口に占める割合",
+    "categories": [
+      "東京を中心とした50キロの地域",
+      "大阪を中心とした50キロの地域",
+      "名古屋を中心とした50キロの地域",
+      "その他"
+    ],
+    "patterns": [
+      "black",
+      "north east lines",
+      "dots",
+      "white"
+    ],
+    "charts": [
+      {
+        "year": 1960,
+        "percentages": [
+          16.7,
+          10.9,
+          5.7,
+          66.7
+        ]
+      },
+      {
+        "year": 1996,
+        "percentages": [
+          23.7,
+          12.9,
+          6.9,
+          56.5
+        ]
+      }
+    ]
+  },
+  "native_map_labels": {
+    "canvas": [
+      781,
+      530
+    ],
+    "labels": [
+      {
+        "text": "大阪50キロ圏",
+        "ruby": [
+          "大阪",
+          "おおさか"
+        ],
+        "mask": [
+          260,
+          466,
+          371,
+          499
+        ],
+        "anchor": [
+          263,
+          493
+        ],
+        "font_pt": 18
+      },
+      {
+        "text": "名古屋50キロ圏",
+        "ruby": [
+          "名古屋",
+          "なごや"
+        ],
+        "mask": [
+          408,
+          477,
+          536,
+          499
+        ],
+        "ruby_mask": [
+          408,
+          466,
+          468,
+          477
+        ],
+        "anchor": [
+          410,
+          493
+        ],
+        "font_pt": 18
+      },
+      {
+        "text": "東京50キロ圏",
+        "mask": [
+          612,
+          474,
+          721,
+          499
+        ],
+        "anchor": [
+          614,
+          493
+        ],
+        "font_pt": 18
+      }
+    ],
+    "preserved": "All map contours, symbols, leader lines and the existing native pie/legend data"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "schema_version": "3.1.0",
+  "cycle": "pilot-3",
+  "findings": [
+    {
+      "unit": "N1_07_2025",
+      "item_id": "reading-b004",
+      "physical_pages": [
+        16
+      ],
+      "source_path": "src/日语JLPT历年真题/N1真题（2010-2026.07）/2025/2025.07/2025年07月N1真题.pdf",
+      "source_sha256": "0528708e83d1c809f1af5f035e943d12dce54e6fdac319d70576485320479dcf",
+      "form": "vertical passage",
+      "observed_fact": "Body vertical, label/question horizontal; frame padding and column pitch exceed baseline.",
+      "existing_representation": "layout.items.writing_mode + native VerticalBlock",
+      "disposition": "convention_updated",
+      "action_or_limit": "N1 defaults revision 2: 2em column pitch, .95em frame padding; no direction inferred for other blocks."
+    },
+    {
+      "unit": "N1_12_2025",
+      "item_id": "reading-b004",
+      "physical_pages": [
+        16
+      ],
+      "source_path": "src/JLPT_N1_N5_202512/25年12月N1/A 2025年12月N1完整原卷.pdf",
+      "source_sha256": "930f74eba01c27aea3403d85541b8310c018660cf9014c1dd88d7e33229eae82",
+      "form": "mixed vertical body and horizontal notes",
+      "observed_fact": "Two notes below vertical frame.",
+      "existing_representation": "Existing v3 writing_mode applies to body; bound suffix notes have separate horizontal role.",
+      "disposition": "existing_fields_candidate_outside_pilot",
+      "action_or_limit": "Compiled exact source fragment confirms vertical body plus separate horizontal notes using existing fields; candidate is evidence only, not a tenth staged editorial.",
+      "candidate_existing_fields": {
+        "writing_mode": "vertical-rl",
+        "notes": {
+          "start": 201,
+          "end": 227,
+          "projection_sha256": "7fae81bb82b3d784e0b7bf1caac00fc8e94702e35e1e25e9eb6b09769f843141"
+        }
+      },
+      "candidate_evidence": "pdf-render/evidence/discovery_probes.json"
+    },
+    {
+      "unit": "N1_07_2025",
+      "item_id": "reading-b010",
+      "physical_pages": [
+        28
+      ],
+      "source_path": "src/日语JLPT历年真题/N1真题（2010-2026.07）/2025/2025.07/2025年07月N1真题.pdf",
+      "source_sha256": "0528708e83d1c809f1af5f035e943d12dce54e6fdac319d70576485320479dcf",
+      "form": "paired frames and external note",
+      "observed_fact": "A/B labels outside boxes; note outside B.",
+      "existing_representation": "Literal A/B content labels + bound notes span + paired_reading task",
+      "disposition": "represented_regression_retained",
+      "action_or_limit": "Existing dedicated fixture and full-page QA; typography and line wraps remain approximate."
+    },
+    {
+      "unit": "N1_07_2025",
+      "item_id": "reading-b011",
+      "physical_pages": [
+        30,
+        31,
+        32
+      ],
+      "source_path": "src/日语JLPT历年真题/N1真题（2010-2026.07）/2025/2025.07/2025年07月N1真题.pdf",
+      "source_sha256": "0528708e83d1c809f1af5f035e943d12dce54e6fdac319d70576485320479dcf",
+      "form": "long passage, note cluster, questions",
+      "observed_fact": "Long text and compact notes continue across pages; first question after notes.",
+      "existing_representation": "Ordered block/question refs + bound notes suffix",
+      "disposition": "represented_layout_limit",
+      "action_or_limit": "No missing attachment found. Generic page starts, whole-question minipages, paragraph treatment and font metrics still change pagination."
+    },
+    {
+      "unit": "N1_12_2025",
+      "item_id": "reading-b013",
+      "physical_pages": [
+        32
+      ],
+      "source_path": "src/JLPT_N1_N5_202512/25年12月N1/A 2025年12月N1完整原卷.pdf",
+      "source_sha256": "930f74eba01c27aea3403d85541b8310c018660cf9014c1dd88d7e33229eae82",
+      "form": "parallel price lists and multiple tables",
+      "observed_fact": "Pairs of item/price cells side by side, then shipping and timing tables.",
+      "existing_representation": "Four-column table with repeated th scope=row + later separate tables",
+      "disposition": "represented_style_deferred",
+      "action_or_limit": "Relationships already present. Separate visual pricing groups require scoped table styling if this reference is staged; no new content model proposed."
+    },
+    {
+      "unit": "N1_07_2025",
+      "item_id": "vocab-b001",
+      "physical_pages": [
+        9
+      ],
+      "source_path": "src/日语JLPT历年真题/N1真题（2010-2026.07）/2025/2025.07/2025年07月N1真题.pdf",
+      "source_sha256": "0528708e83d1c809f1af5f035e943d12dce54e6fdac319d70576485320479dcf",
+      "form": "STAR worked example",
+      "observed_fact": "Source labels, four slot/phrase correspondences, answer sheet grid; N5 continuation dialogue belongs inside solution.",
+      "existing_representation": "Existing example_variant and exact HTML table/paragraphs",
+      "disposition": "component_and_defaults_updated",
+      "action_or_limit": "Versioned per-level width/alignment/answer-grid leading; content-derived edge columns; underlined step-2 STAR. N5 slot/phrase spacing still larger than source."
+    },
+    {
+      "unit": "N1_07_2025",
+      "item_id": "vocab-b002",
+      "physical_pages": [
+        11
+      ],
+      "source_path": "src/日语JLPT历年真题/N1真题（2010-2026.07）/2025/2025.07/2025年07月N1真题.pdf",
+      "source_sha256": "0528708e83d1c809f1af5f035e943d12dce54e6fdac319d70576485320479dcf",
+      "form": "cloze notes below frame",
+      "observed_fact": "Two notes sit outside the cloze frame; final page review found the consumer had kept them inside.",
+      "existing_representation": "Existing exact-projection notes suffix, already staged and hash-bound.",
+      "disposition": "consumer_fixed_existing_fields",
+      "action_or_limit": "Apply the separate-notes path to cloze as well as paired reading. Final PDF page 10 and independent Poppler rendering reviewed; frame width and body wrapping remain approximate."
+    }
+  ]
+}

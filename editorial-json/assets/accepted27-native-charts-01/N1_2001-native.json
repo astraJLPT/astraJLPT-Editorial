@@ -1,0 +1,340 @@
+{
+  "contract": "historical-artwork-1.0",
+  "id": "H27-N1_2001-transport_radars",
+  "kind": "transport_radars",
+  "unit": "N1_2001",
+  "item_id": "reading-b008",
+  "source": {
+    "source_path": "src/JLPT N1-N5, Past papers/N1/1995-2009.12日本语能力测试真题详解N1.pdf",
+    "source_sha256": "e3555741c8f14b855a32e7d09b42eb790492e3818a85a875f99d84703c752e00",
+    "physical_page": 376
+  },
+  "raw_crop": {
+    "path": "preprocess/assets/handoff27-native-charts-01/N1_2001-raw.png",
+    "sha256": "51c08c315d0b3a37125999f542e5a9146b9edfa505ed0d033dfbaa8a3b2659a1"
+  },
+  "selection_note": "Directly inspected full source page and retained unscaled canonical crop. Native TeX lines, markers and searchable labels replace only this bound graphic. Original source pixels remain recoverable.",
+  "limits": [
+    "Exact UARS is unavailable; appearance is an evidence-backed reconstruction from the identified secondary witness.",
+    "Radar points are approximate pixel traces; no unprinted numerical point labels are added.",
+    "Radar microscopic bitmap citation duplicates the adjacent canonical citation; the canonical live citation is retained once."
+  ],
+  "data": {
+    "coordinate_status": "approximate_digitization_not_exact_historical_data",
+    "axes_clockwise_from_north": [
+      "通勤",
+      "買物",
+      "病院",
+      "レジャー",
+      "自動車",
+      "鉄道"
+    ],
+    "axis_maxima_minutes": [
+      60,
+      30,
+      30,
+      120,
+      60,
+      60
+    ],
+    "series": [
+      {
+        "gender": "男性",
+        "marker": "filled_circle"
+      },
+      {
+        "gender": "女性",
+        "marker": "hollow_circle"
+      }
+    ],
+    "panels": [
+      {
+        "label": "東京区部",
+        "inspection_crop_pixels": [
+          0,
+          160,
+          850,
+          820
+        ],
+        "center_pixels": [
+          459,
+          343
+        ],
+        "axis_endpoints_pixels": [
+          [
+            460,
+            128
+          ],
+          [
+            650,
+            237
+          ],
+          [
+            650,
+            449
+          ],
+          [
+            457,
+            557
+          ],
+          [
+            270,
+            449
+          ],
+          [
+            271,
+            237
+          ]
+        ],
+        "marker_pixels": {
+          "男性": [
+            [
+              461,
+              160
+            ],
+            [
+              565,
+              285
+            ],
+            [
+              636,
+              441
+            ],
+            [
+              457,
+              491
+            ],
+            [
+              356,
+              399
+            ],
+            [
+              347,
+              278
+            ]
+          ],
+          "女性": [
+            [
+              461,
+              205
+            ],
+            [
+              548,
+              293
+            ],
+            [
+              617,
+              434
+            ],
+            [
+              457,
+              519
+            ],
+            [
+              421,
+              365
+            ],
+            [
+              401,
+              308
+            ]
+          ]
+        }
+      },
+      {
+        "label": "A地域",
+        "inspection_crop_pixels": [
+          1130,
+          160,
+          1660,
+          790
+        ],
+        "center_pixels": [
+          272,
+          300
+        ],
+        "axis_endpoints_pixels": [
+          [
+            272,
+            110
+          ],
+          [
+            430,
+            205
+          ],
+          [
+            430,
+            392
+          ],
+          [
+            270,
+            490
+          ],
+          [
+            112,
+            392
+          ],
+          [
+            112,
+            205
+          ]
+        ],
+        "marker_pixels": {
+          "男性": [
+            [
+              273,
+              169
+            ],
+            [
+              354,
+              248
+            ],
+            [
+              394,
+              371
+            ],
+            [
+              271,
+              446
+            ],
+            [
+              211,
+              334
+            ],
+            [
+              211,
+              263
+            ]
+          ],
+          "女性": [
+            [
+              271,
+              194
+            ],
+            [
+              331,
+              264
+            ],
+            [
+              379,
+              365
+            ],
+            [
+              271,
+              434
+            ],
+            [
+              251,
+              314
+            ],
+            [
+              224,
+              272
+            ]
+          ]
+        }
+      },
+      {
+        "label": "B地域",
+        "inspection_crop_pixels": [
+          1930,
+          140,
+          2576,
+          770
+        ],
+        "center_pixels": [
+          297,
+          320
+        ],
+        "axis_endpoints_pixels": [
+          [
+            298,
+            130
+          ],
+          [
+            454,
+            225
+          ],
+          [
+            453,
+            417
+          ],
+          [
+            297,
+            518
+          ],
+          [
+            135,
+            417
+          ],
+          [
+            135,
+            225
+          ]
+        ],
+        "marker_pixels": {
+          "男性": [
+            [
+              297,
+              251
+            ],
+            [
+              385,
+              265
+            ],
+            [
+              426,
+              400
+            ],
+            [
+              296,
+              436
+            ],
+            [
+              165,
+              397
+            ],
+            [
+              264,
+              302
+            ]
+          ],
+          "女性": [
+            [
+              297,
+              200
+            ],
+            [
+              378,
+              272
+            ],
+            [
+              417,
+              394
+            ],
+            [
+              294,
+              535
+            ],
+            [
+              230,
+              360
+            ],
+            [
+              274,
+              309
+            ]
+          ]
+        }
+      }
+    ],
+    "trace_witness": {
+      "source_path": "src/JLPT N1-N5, Past papers/N1/1995-2009.12日本语能力测试真题详解N1.pdf",
+      "source_sha256": "e3555741c8f14b855a32e7d09b42eb790492e3818a85a875f99d84703c752e00",
+      "physical_page": 376,
+      "image_sha256": "51c08c315d0b3a37125999f542e5a9146b9edfa505ed0d033dfbaa8a3b2659a1",
+      "role": "Cleaner secondary copy of same printed chart; used as disclosed comparative trace for N2 source333."
+    },
+    "label_policy": "axis_labels_only_no_invented_point_values"
+  }
+}

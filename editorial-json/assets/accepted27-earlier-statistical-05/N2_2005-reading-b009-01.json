@@ -1,0 +1,91 @@
+{
+  "contract": "historical-artwork-1.0",
+  "id": "H27-N2_2005-reading-b009-01",
+  "kind": "conversation_opinion_lines",
+  "unit": "N2_2005",
+  "item_id": "reading-b009",
+  "source": {
+    "source_path": "src/日语JLPT真题1992～2025.12（及时转存，避免丢失）/渠道一/日语N2真题/1991年-2009年/1995-2009.pdf",
+    "source_sha256": "115e8c098ee3caed702d29a24d2ce0c883c3ad9152e21eee4200fc4e80f2a3fb",
+    "physical_page": 200
+  },
+  "raw_crop": {
+    "path": "preprocess/assets/handoff27-earlier-statistical-05/N2_2005-reading-b009-01-raw.png",
+    "sha256": "322c8edfafb360ac775b90fe187398e1aecf1efeced94e8eec88a2417eb179dc"
+  },
+  "selection_note": "Native vector/live-text reconstruction after direct individual source and canonical image review. Source numbering remains supplied by the existing option renderer.",
+  "limits": "Original canonical bytes remain unchanged and recoverable. Printed numeric labels are literal; measured unlabelled geometry is approximate. N1/N2 retyped appearance is not original typography evidence; N4 UARS establishes the graphic content but not exact native font identity.",
+  "data": {
+    "coordinate_status": "literal_printed_one_decimal_values_no_normalization",
+    "series": [
+      {
+        "label": "A",
+        "marker": "filled_diamond",
+        "line": "solid",
+        "values": [
+          "35.5",
+          "39.1",
+          "38.9",
+          "36.4",
+          "26.6",
+          "26.3"
+        ]
+      },
+      {
+        "label": "B",
+        "marker": "filled_square",
+        "line": "dashdot",
+        "values": [
+          "22.3",
+          "30.5",
+          "29.1",
+          "41.1",
+          "41.2",
+          "31.8"
+        ]
+      },
+      {
+        "label": "C",
+        "marker": "filled_triangle",
+        "line": "dashed",
+        "values": [
+          "19.8",
+          "18.6",
+          "14.0",
+          "8.9",
+          "17.1",
+          "19.5"
+        ]
+      },
+      {
+        "label": "D",
+        "marker": "filled_circle",
+        "line": "dotted",
+        "values": [
+          "17.4",
+          "10.0",
+          "14.9",
+          "11.2",
+          "11.1",
+          "12.8"
+        ]
+      }
+    ],
+    "age_groups": [
+      "16–19歳",
+      "20–29歳",
+      "30–39歳",
+      "40–49歳",
+      "50–59歳",
+      "60歳以上"
+    ],
+    "axis": {
+      "minimum": 0,
+      "maximum": 45,
+      "tick": 5,
+      "unit": "%"
+    },
+    "outer_frame": false,
+    "legend_markers": false
+  }
+}

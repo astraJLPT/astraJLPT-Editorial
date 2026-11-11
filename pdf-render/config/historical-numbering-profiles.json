@@ -1,0 +1,268 @@
+{
+  "profile_id": "h21-old-level-numbering",
+  "revision": 3,
+  "levels": {
+    "1級": {
+      "controls": [
+        {
+          "unit": "N1_1996",
+          "evidence": {
+            "source_path": "src/CodexDownloads/UserApprovedReferenceScans/Shiken mondai to seikai 1-2 kyuu 1996.pdf",
+            "source_sha256": "aca213ce192a5fcf80f598c624953a533d49aef1971c318316996c7112b20873",
+            "physical_pages": [
+              5,
+              28,
+              30,
+              39
+            ],
+            "state": "approved",
+            "historical_claim": false,
+            "region": "H21 directly reviewed numbering controls: group/local labels, scored items, references and section resets",
+            "reference_id": "1996_L1_L2",
+            "approval_registry_sha256": "c0fc4d24494a9569dd539d237018014213045d6224ae9035fa282ab610be0384",
+            "subject": "question_page_layout",
+            "exclusions_acknowledged": true
+          },
+          "chronology": {
+            "year": 1996,
+            "month": 12
+          }
+        },
+        {
+          "unit": "N1_1999",
+          "evidence": {
+            "source_path": "src/CodexDownloads/UserApprovedReferenceScans/日本語能力1991～1999年試験問題集1級.pdf",
+            "source_sha256": "8560bf8ef92b4e2d58559b3e14882b76d3307586f5d55b0e7fa33cc2f5fa931f",
+            "physical_pages": [
+              384,
+              425,
+              426,
+              430
+            ],
+            "state": "approved",
+            "historical_claim": false,
+            "region": "H21 directly reviewed numbering controls: group/local labels, scored items, references and section resets",
+            "reference_id": "RC03_L1",
+            "approval_registry_sha256": "c0fc4d24494a9569dd539d237018014213045d6224ae9035fa282ab610be0384",
+            "subject": "question_page_layout",
+            "exclusions_acknowledged": true
+          },
+          "chronology": {
+            "year": 1999,
+            "month": 12
+          }
+        }
+      ],
+      "status": "UARS_observed_role_profile",
+      "exact_unit_precedence": true,
+      "scored_items": "parenthesized; restart within each underlined target group, and within each ordinary vocabulary/grammar section",
+      "group_labels": "existing 問 label; independent Japanese/digit roles; retain source group resets",
+      "reading_questions": "existing local 問 or bracketed 問/問い, per exact-unit structure",
+      "inline_targets": "compact parentheses matching the local scored item within each underlined target group",
+      "ranges": "same displayed item numbers as the range endpoints; sentence blanks separate",
+      "fallback_policy": "nearest approved same-level 1999 role controls with 1996 corroboration; admitted principal owns content structure",
+      "confidence": "high for observed controls; missing-sitting applications remain inferred",
+      "h27_correction": "Direct RC03 1999 control review shows group-local resets; supersedes the H21 section-wide target numbering inference."
+    },
+    "2級": {
+      "controls": [
+        {
+          "unit": "N2_1996",
+          "evidence": {
+            "source_path": "src/CodexDownloads/UserApprovedReferenceScans/Shiken mondai to seikai 1-2 kyuu 1996.pdf",
+            "source_sha256": "aca213ce192a5fcf80f598c624953a533d49aef1971c318316996c7112b20873",
+            "physical_pages": [
+              46,
+              63,
+              66,
+              68,
+              74
+            ],
+            "state": "approved",
+            "historical_claim": false,
+            "region": "H21 directly reviewed numbering controls: group/local labels, scored items, references and section resets",
+            "reference_id": "1996_L1_L2",
+            "approval_registry_sha256": "c0fc4d24494a9569dd539d237018014213045d6224ae9035fa282ab610be0384",
+            "subject": "question_page_layout",
+            "exclusions_acknowledged": true
+          },
+          "chronology": {
+            "year": 1996,
+            "month": 12
+          }
+        },
+        {
+          "unit": "N2_1999",
+          "evidence": {
+            "source_path": "src/CodexDownloads/UserApprovedReferenceScans/日本語能力1991～1999年試験問題集2級.pdf",
+            "source_sha256": "0a6634758dce0a258ffaf92c6c8ea1a738a4b8ceb52cd75cb44a4d8d340dfa64",
+            "physical_pages": [
+              358,
+              393,
+              396,
+              397
+            ],
+            "state": "approved",
+            "historical_claim": false,
+            "region": "H21 directly reviewed numbering controls: group/local labels, scored items, references and section resets",
+            "reference_id": "RC03_L2",
+            "approval_registry_sha256": "c0fc4d24494a9569dd539d237018014213045d6224ae9035fa282ab610be0384",
+            "subject": "question_page_layout",
+            "exclusions_acknowledged": true
+          },
+          "chronology": {
+            "year": 1999,
+            "month": 12
+          }
+        }
+      ],
+      "status": "UARS_observed_role_profile",
+      "exact_unit_precedence": true,
+      "scored_items": "parenthesized; restart within each underlined target group, and within each ordinary vocabulary/grammar section",
+      "group_labels": "existing 問 label; independent Japanese/digit roles; retain source group resets",
+      "reading_questions": "existing local 問 or bracketed 問/問い, per exact-unit structure",
+      "inline_targets": "compact parentheses matching the local scored item within each underlined target group",
+      "ranges": "same displayed item numbers as the range endpoints; sentence blanks separate",
+      "fallback_policy": "nearest approved same-level 1999 role controls with 1996 corroboration; admitted principal owns content structure",
+      "confidence": "high for observed controls; missing-sitting applications remain inferred",
+      "h27_correction": "Direct RC03 1999 control review shows group-local resets; supersedes the H21 section-wide target numbering inference."
+    },
+    "3級": {
+      "controls": [
+        {
+          "unit": "N3_2007",
+          "evidence": {
+            "source_path": "src/CodexDownloads/UserApprovedReferenceScans/pdf-20074_compress.pdf",
+            "source_sha256": "6902181b1ced1babb1aa2eb9ae4f9bc58bb96aa1780141628ff13ed7c03d03f6",
+            "physical_pages": [
+              6,
+              40
+            ],
+            "state": "approved",
+            "historical_claim": false,
+            "region": "H21 directly reviewed numbering controls: group/local labels, scored items, references and section resets",
+            "reference_id": "RC04_2007_L3_L4",
+            "approval_registry_sha256": "c0fc4d24494a9569dd539d237018014213045d6224ae9035fa282ab610be0384",
+            "subject": "question_page_layout",
+            "exclusions_acknowledged": true
+          },
+          "chronology": {
+            "year": 2007,
+            "month": 12
+          }
+        },
+        {
+          "unit": "N3_2008",
+          "evidence": {
+            "source_path": "src/CodexDownloads/UserApprovedReferenceScans/pdf-jlpt3-4kyuu2008_compress.pdf",
+            "source_sha256": "90f934091cf24e333a6a05e58e8c047fc1562793aa07265245562882e0bc6d0f",
+            "physical_pages": [
+              7,
+              42,
+              43
+            ],
+            "state": "approved",
+            "historical_claim": false,
+            "region": "H21 directly reviewed numbering controls: group/local labels, scored items, references and section resets",
+            "reference_id": "RC04_2008_L3_L4",
+            "approval_registry_sha256": "c0fc4d24494a9569dd539d237018014213045d6224ae9035fa282ab610be0384",
+            "subject": "question_page_layout",
+            "exclusions_acknowledged": true
+          },
+          "chronology": {
+            "year": 2008,
+            "month": 12
+          }
+        },
+        {
+          "unit": "N3_2009",
+          "evidence": {
+            "source_path": "src/CodexDownloads/UserApprovedReferenceScans/pdf-3-2120092_compress.pdf",
+            "source_sha256": "f926974366388be7fd6b301c6299b59c1b7f07d940549dc6c221cb5a45d6f4c7",
+            "physical_pages": [
+              3,
+              36,
+              37
+            ],
+            "state": "approved",
+            "historical_claim": false,
+            "region": "H21 directly reviewed numbering controls: group/local labels, scored items, references and section resets",
+            "reference_id": "RC04_2009_L3",
+            "approval_registry_sha256": "c0fc4d24494a9569dd539d237018014213045d6224ae9035fa282ab610be0384",
+            "subject": "question_page_layout",
+            "exclusions_acknowledged": true
+          },
+          "chronology": {
+            "year": 2009,
+            "month": 12
+          }
+        }
+      ],
+      "status": "UARS_observed_role_profile",
+      "exact_unit_precedence": true,
+      "scored_items": "boxed, source answer numbers retained across sections within booklet",
+      "group_labels": "existing 問 label; independent Japanese/digit roles; retain source group resets",
+      "reading_questions": "source main answer-ID boxes retained",
+      "inline_targets": "separate smaller source boxes; source numbers unchanged",
+      "ranges": "same displayed item numbers as the range endpoints; sentence blanks separate",
+      "fallback_policy": "Use same-level boxed main/inline roles. Preserve audited canonical booklet positions and omission gaps where a retyped witness resets local labels; inference remains explicit.",
+      "confidence": "high for observed controls; missing-sitting applications remain inferred"
+    },
+    "4級": {
+      "controls": [
+        {
+          "unit": "N4_2007",
+          "evidence": {
+            "source_path": "src/CodexDownloads/UserApprovedReferenceScans/pdf-20074_compress.pdf",
+            "source_sha256": "6902181b1ced1babb1aa2eb9ae4f9bc58bb96aa1780141628ff13ed7c03d03f6",
+            "physical_pages": [
+              44
+            ],
+            "state": "approved",
+            "historical_claim": false,
+            "region": "H21 directly reviewed numbering controls: group/local labels, scored items, references and section resets",
+            "reference_id": "RC04_2007_L3_L4",
+            "approval_registry_sha256": "c0fc4d24494a9569dd539d237018014213045d6224ae9035fa282ab610be0384",
+            "subject": "question_page_layout",
+            "exclusions_acknowledged": true
+          },
+          "chronology": {
+            "year": 2007,
+            "month": 12
+          }
+        },
+        {
+          "unit": "N4_2008",
+          "evidence": {
+            "source_path": "src/CodexDownloads/UserApprovedReferenceScans/pdf-jlpt3-4kyuu2008_compress.pdf",
+            "source_sha256": "90f934091cf24e333a6a05e58e8c047fc1562793aa07265245562882e0bc6d0f",
+            "physical_pages": [
+              45
+            ],
+            "state": "approved",
+            "historical_claim": false,
+            "region": "H21 directly reviewed numbering controls: group/local labels, scored items, references and section resets",
+            "reference_id": "RC04_2008_L3_L4",
+            "approval_registry_sha256": "c0fc4d24494a9569dd539d237018014213045d6224ae9035fa282ab610be0384",
+            "subject": "question_page_layout",
+            "exclusions_acknowledged": true
+          },
+          "chronology": {
+            "year": 2008,
+            "month": 12
+          }
+        }
+      ],
+      "status": "UARS_observed_role_profile",
+      "exact_unit_precedence": true,
+      "scored_items": "boxed, source answer numbers retained across sections within booklet",
+      "group_labels": "existing 問 label; independent Japanese/digit roles; retain source group resets",
+      "reading_questions": "source main answer-ID boxes retained",
+      "inline_targets": "separate smaller source boxes; source numbers unchanged",
+      "ranges": "same displayed item numbers as the range endpoints; sentence blanks separate",
+      "fallback_policy": "Use same-level boxed main/inline roles. Preserve audited canonical booklet positions and omission gaps where a retyped witness resets local labels; inference remains explicit.",
+      "confidence": "high for observed controls; missing-sitting applications remain inferred"
+    }
+  },
+  "scope": "written role presentation only; no content/authority/scoring promotion"
+}

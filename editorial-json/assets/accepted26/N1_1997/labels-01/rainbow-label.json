@@ -1,0 +1,46 @@
+{
+  "contract": "historical-artwork-1.0",
+  "id": "H26-N1_1997-rainbow-label",
+  "kind": "source_label_overlay",
+  "unit": "N1_1997",
+  "item_id": "reading-b007",
+  "source": {
+    "source_path": "src/CodexDownloads/UserApprovedReferenceScans/日本語能力1991～1999年試験問題集1級.pdf",
+    "source_sha256": "8560bf8ef92b4e2d58559b3e14882b76d3307586f5d55b0e7fa33cc2f5fa931f",
+    "physical_page": 315,
+    "canonical_image_sha256": "57fd55ce6ca7a7d1842cd4f25773ed05e0a684e2553ed51697d690705976eec1"
+  },
+  "raw_crop": {
+    "path": "preprocess/assets/handoff26/N1_1997/labels-01/rainbow-label-original.png",
+    "sha256": "57fd55ce6ca7a7d1842cd4f25773ed05e0a684e2553ed51697d690705976eec1"
+  },
+  "image": {
+    "path": "preprocess/assets/handoff26/N1_1997/labels-01/rainbow-label-original.png",
+    "sha256": "57fd55ce6ca7a7d1842cd4f25773ed05e0a684e2553ed51697d690705976eec1"
+  },
+  "selection_note": "Native replacement confined to explicitly inspected label rectangles. The complete canonical original remains unchanged and recoverable.",
+  "limits": "Editorial native type substitute, not original font identification or a cosmetic redraw.",
+  "data": {
+    "canvas": [
+      476,
+      163
+    ],
+    "labels": [
+      {
+        "text": "虹のたもと",
+        "mask": [
+          3,
+          105,
+          105,
+          129
+        ],
+        "anchor": [
+          6,
+          126
+        ],
+        "font_pt": 20
+      }
+    ],
+    "preserved": "Original rainbow, arrow including its tail, and baseline; no ruby added to the diagram label"
+  }
+}

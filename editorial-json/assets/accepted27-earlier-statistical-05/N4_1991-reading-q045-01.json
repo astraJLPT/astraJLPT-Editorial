@@ -1,0 +1,55 @@
+{
+  "contract": "historical-artwork-1.0",
+  "id": "H27-N4_1991-reading-q045-01",
+  "kind": "smoking_distribution_option",
+  "unit": "N4_1991",
+  "item_id": "reading-q045",
+  "source": {
+    "source_path": "src/CodexDownloads/UserApprovedReferenceScans/日本語能力1991～1999年試験問題集4級.pdf",
+    "source_sha256": "6da6084a74b617608dfaef9bc70072dd8ea7bac410ef77de7ae90f5603c569db",
+    "physical_page": 48
+  },
+  "raw_crop": {
+    "path": "preprocess/assets/handoff27-earlier-statistical-05/N4_1991-reading-q045-01-raw.png",
+    "sha256": "f21cb0be857dac727cd4d238506ec6479c2656d63354bf4c29629ec3d6db3863"
+  },
+  "selection_note": "Native vector/live-text reconstruction after direct individual source and canonical image review. Source numbering remains supplied by the existing option renderer.",
+  "limits": "Original canonical bytes remain unchanged and recoverable. Printed numeric labels are literal; measured unlabelled geometry is approximate. N1/N2 retyped appearance is not original typography evidence; N4 UARS establishes the graphic content but not exact native font identity.",
+  "data": {
+    "option": 1,
+    "coordinate_status": "approximate_pixel_traced_rays_no_numeric_sector_labels",
+    "trace_witness": {
+      "image_sha256": "f21cb0be857dac727cd4d238506ec6479c2656d63354bf4c29629ec3d6db3863",
+      "center": [
+        89,
+        94
+      ],
+      "rays": [
+        [
+          89,
+          25
+        ],
+        [
+          139,
+          143
+        ],
+        [
+          20,
+          94
+        ],
+        [
+          40,
+          46
+        ]
+      ],
+      "clockwise_labels": [
+        "ぜんぜんすわない人",
+        "たくさんすう人",
+        "ときどきすう人",
+        "すこしすう人"
+      ]
+    },
+    "reference_marks": "eight_observed_circumference_marks",
+    "fill": "white"
+  }
+}

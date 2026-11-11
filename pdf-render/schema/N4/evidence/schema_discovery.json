@@ -1,0 +1,93 @@
+{
+  "schema_version": "3.1.0",
+  "cycle": "pilot-3",
+  "findings": [
+    {
+      "unit": "N4_07_2025",
+      "item_id": "reading-b002",
+      "physical_pages": [
+        12
+      ],
+      "source_path": "src/日语JLPT历年真题/N4真题（2010-2025.12）/【N4真题】2025年7月/【试题】2025年7月JLPT日语N4真题.pdf",
+      "source_sha256": "cb8f2b97f5774ed15fe12a40e8ac8294ba6ab6e2827cf170379b2a65f4c6b898",
+      "form": "STAR worked example",
+      "observed_fact": "Source labels, four slot/phrase correspondences, answer sheet grid; N5 continuation dialogue belongs inside solution.",
+      "existing_representation": "Existing example_variant and exact HTML table/paragraphs",
+      "disposition": "component_and_defaults_updated",
+      "action_or_limit": "Versioned per-level width/alignment/answer-grid leading; content-derived edge columns; underlined step-2 STAR. N5 slot/phrase spacing still larger than source."
+    },
+    {
+      "unit": "N4_07_2025",
+      "item_id": "reading-b004",
+      "physical_pages": [
+        16
+      ],
+      "source_path": "src/日语JLPT历年真题/N4真题（2010-2025.12）/【N4真题】2025年7月/【试题】2025年7月JLPT日语N4真题.pdf",
+      "source_sha256": "cb8f2b97f5774ed15fe12a40e8ac8294ba6ab6e2827cf170379b2a65f4c6b898",
+      "form": "email horizontal frame",
+      "observed_fact": "No side rules; label/introduction outside body.",
+      "existing_representation": "render_overrides.content_frames + existing paragraph boundaries",
+      "disposition": "fact_recovered_existing_override",
+      "action_or_limit": "Overrides carry exact source provenance. Consumer now honors explicit frame with no verbal introduction. Paragraph/header/signature gaps remain approximate."
+    },
+    {
+      "unit": "N4_12_2024",
+      "item_id": "reading-b006",
+      "physical_pages": [
+        27
+      ],
+      "source_path": "src/Yuuki Bui/Đề thi N4-N5 các năm Yuuki Bùi/2024年12月/N4 T12-2024/Đề thi N4 T12-2024 Bản hoàn chỉnh [Mark].pdf",
+      "source_sha256": "df418b805add27888f7a4cb78f9d11765efcb2f66af006e135961919ba38d56f",
+      "form": "two-by-two labelled panels",
+      "observed_fact": "A/B above C/D, each with textual factory visit constraints.",
+      "existing_representation": "Exact 2x2 HTML table; labels and per-cell contact details",
+      "disposition": "represented_style_deferred",
+      "action_or_limit": "Question-relevant relationships survive. Rounded separated cell borders and decorative drawing remain presentation/optional asset work outside the pilot."
+    },
+    {
+      "unit": "N4_07_2025",
+      "item_id": "reading-b006",
+      "physical_pages": [
+        18
+      ],
+      "source_path": "src/日语JLPT历年真题/N4真题（2010-2025.12）/【N4真题】2025年7月/【试题】2025年7月JLPT日语N4真题.pdf",
+      "source_sha256": "cb8f2b97f5774ed15fe12a40e8ac8294ba6ab6e2827cf170379b2a65f4c6b898",
+      "form": "meaningful arrow and underlines",
+      "observed_fact": "Old hours point down to replacement hours.",
+      "existing_representation": "Literal downward arrow plus underlined old/new hours in HTML",
+      "disposition": "represented_regression_retained",
+      "action_or_limit": "Arrow is required content, not an omitted decorative asset; preserved in output and content checks."
+    },
+    {
+      "unit": "N4_12_2025",
+      "item_id": null,
+      "physical_pages": [
+        1,
+        13,
+        14,
+        21
+      ],
+      "source_path": "src/JLPT_N1_N5_202512/25年12月N4/25年12月N4真题.pdf",
+      "source_sha256": "38525b613a28dbec20003f7d2a2cbda6a4a5fc7ca96d0a9788b6955cc294ea1c",
+      "form": "compiled booklet order",
+      "observed_fact": "Grammar/reading physically precedes vocabulary in source compilation.",
+      "existing_representation": "v3 exam identity, section task and booklet roles",
+      "disposition": "existing_fields_candidate_outside_pilot",
+      "action_or_limit": "Source physical order is evidence indexing, not an instruction to reorder canonical content. Capture logical booklet identity if staged."
+    },
+    {
+      "unit": "N4_07_2025",
+      "item_id": "reading-b008",
+      "physical_pages": [
+        22
+      ],
+      "source_path": "src/日语JLPT历年真题/N4真题（2010-2025.12）/【N4真题】2025年7月/【试题】2025年7月JLPT日语N4真题.pdf",
+      "source_sha256": "cb8f2b97f5774ed15fe12a40e8ac8294ba6ab6e2827cf170379b2a65f4c6b898",
+      "form": "optional artwork",
+      "observed_fact": "Decorative glass drawing accompanies live notice and table.",
+      "existing_representation": "Existing optional asset request",
+      "disposition": "unknown_asset_payload_retained",
+      "action_or_limit": "Not required for the question relationship; retained as explicit source-backed omission. No entire-page raster replacement."
+    }
+  ]
+}

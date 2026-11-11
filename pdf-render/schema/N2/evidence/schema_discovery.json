@@ -1,0 +1,93 @@
+{
+  "schema_version": "3.1.0",
+  "cycle": "pilot-3",
+  "findings": [
+    {
+      "unit": "N2_07_2025",
+      "item_id": "vocab-b001",
+      "physical_pages": [
+        9
+      ],
+      "source_path": "src/日语JLPT真题1992～2025.12（及时转存，避免丢失）/渠道一/日语N2真题/2025年7月/【试题】2025年7月JLPT真题N2.pdf",
+      "source_sha256": "cdc95d992bce7bb212deb9e732a33095d2112b7f5bfc1337d4c117d0268f52b0",
+      "form": "STAR worked example",
+      "observed_fact": "Source labels, four slot/phrase correspondences, answer sheet grid; N5 continuation dialogue belongs inside solution.",
+      "existing_representation": "Existing example_variant and exact HTML table/paragraphs",
+      "disposition": "component_and_defaults_updated",
+      "action_or_limit": "Versioned per-level width/alignment/answer-grid leading; content-derived edge columns; underlined step-2 STAR. N5 slot/phrase spacing still larger than source."
+    },
+    {
+      "unit": "N2_12_2025",
+      "item_id": "vocab-b001",
+      "physical_pages": [
+        10
+      ],
+      "source_path": "src/JLPT_N1_N5_202512/25年12月N2/A 2025年12月N2完整原卷.pdf",
+      "source_sha256": "09cf885ec94b56be60e7cda7c18d897e7d2de4c55b47652830a9bf817ad363f0",
+      "form": "STAR worked example",
+      "observed_fact": "Source labels, four slot/phrase correspondences, answer sheet grid; N5 continuation dialogue belongs inside solution.",
+      "existing_representation": "Existing example_variant and exact HTML table/paragraphs",
+      "disposition": "component_and_defaults_updated",
+      "action_or_limit": "Versioned per-level width/alignment/answer-grid leading; content-derived edge columns; underlined step-2 STAR. N5 slot/phrase spacing still larger than source."
+    },
+    {
+      "unit": "N2_07_2025",
+      "item_id": "reading-b002",
+      "physical_pages": [
+        14
+      ],
+      "source_path": "src/日语JLPT真题1992～2025.12（及时转存，避免丢失）/渠道一/日语N2真题/2025年7月/【试题】2025年7月JLPT真题N2.pdf",
+      "source_sha256": "cdc95d992bce7bb212deb9e732a33095d2112b7f5bfc1337d4c117d0268f52b0",
+      "form": "email horizontal frame",
+      "observed_fact": "No side rules; label/introduction outside body.",
+      "existing_representation": "render_overrides.content_frames + existing paragraph boundaries",
+      "disposition": "fact_recovered_existing_override",
+      "action_or_limit": "Overrides carry exact source provenance. Consumer now honors explicit frame with no verbal introduction. Paragraph/header/signature gaps remain approximate."
+    },
+    {
+      "unit": "N2_12_2025",
+      "item_id": "reading-b004",
+      "physical_pages": [
+        17
+      ],
+      "source_path": "src/JLPT_N1_N5_202512/25年12月N2/A 2025年12月N2完整原卷.pdf",
+      "source_sha256": "09cf885ec94b56be60e7cda7c18d897e7d2de4c55b47652830a9bf817ad363f0",
+      "form": "email horizontal frame",
+      "observed_fact": "No side rules; label/introduction outside body.",
+      "existing_representation": "render_overrides.content_frames + existing paragraph boundaries",
+      "disposition": "fact_recovered_existing_override",
+      "action_or_limit": "Overrides carry exact source provenance. Consumer now honors explicit frame with no verbal introduction. Paragraph/header/signature gaps remain approximate."
+    },
+    {
+      "unit": "N2_12_2025",
+      "item_id": "reading-b013",
+      "physical_pages": [
+        32
+      ],
+      "source_path": "src/JLPT_N1_N5_202512/25年12月N2/A 2025年12月N2完整原卷.pdf",
+      "source_sha256": "09cf885ec94b56be60e7cda7c18d897e7d2de4c55b47652830a9bf817ad363f0",
+      "form": "hierarchical fare table",
+      "observed_fact": "Route row spans, adult/child columns and contact inset.",
+      "existing_representation": "Exact HTML th/td, spans, nested border markup",
+      "disposition": "represented_regression_retained",
+      "action_or_limit": "Generic grid remains; course-band override is limited to observed N5 item."
+    },
+    {
+      "unit": "N2_07_2018",
+      "item_id": null,
+      "physical_pages": [
+        2,
+        9,
+        11,
+        29
+      ],
+      "source_path": "src/日语JLPT真题1992～2025.12（及时转存，避免丢失）/渠道二/N2历年真题/2010-2017.12高清无水印/N2 2010.7-2017.12（真题试题）/2018年7月日语N2真题-第一版（官方试卷版）.pdf",
+      "source_sha256": "58f26b8a8b300047480495f64daa76b90359b7f4d1631c8f0e9c8f78c9ed6013",
+      "form": "missing original pages and excluded insert",
+      "observed_fact": "Physical 10 is not approved original; four original printed pages unavailable.",
+      "existing_representation": "Coverage provenance and explicit source-scope exclusions",
+      "disposition": "unknown_retained",
+      "action_or_limit": "No geometry/default evidence taken from excluded insert; no invented missing layout or STAR example."
+    }
+  ]
+}

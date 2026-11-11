@@ -1,0 +1,44 @@
+{
+  "contract": "historical-artwork-1.0",
+  "id": "H22-F03-waist-skirt",
+  "kind": "annotated_waist_skirt",
+  "unit": "N1_1996",
+  "item_id": "reading-b007",
+  "source": {
+    "source_path": "src/CodexDownloads/UserApprovedReferenceScans/Shiken mondai to seikai 1-2 kyuu 1996.pdf",
+    "source_sha256": "aca213ce192a5fcf80f598c624953a533d49aef1971c318316996c7112b20873",
+    "physical_page": 39,
+    "crop_original_pixels": [
+      777,
+      700,
+      939,
+      865
+    ],
+    "page_rotation": 0
+  },
+  "raw_crop": {
+    "path": "preprocess/assets/handoff22/written/source-crops-02/H22-F03-waist-skirt/raw-crop.png",
+    "sha256": "dd0405de319e70785209da6941f8743afe43bd22e0a0f6b637a112eb13b140b9"
+  },
+  "selection_note": "Exact person pixels retained at native aspect ratio, including the full right hand. A one-column remnant of the source pointer below the sleeve is replaced by the complete native left-pointing arrow. 腰蓑/こしみの typeset with a documented Gothic substitute.",
+  "limits": "No audio evidence. Native artwork is an editorial reconstruction of the visible printed figure; it does not authenticate the scan.",
+  "image": {
+    "path": "preprocess/assets/handoff22/written/artwork-02/waist-skirt-person.png",
+    "sha256": "4e245f8375ed11c7fbe75b5a2e26da8c3a754219f655fe8108ee681424740a6a"
+  },
+  "data": {
+    "person_crop_pixels": [
+      0,
+      0,
+      62,
+      165
+    ],
+    "source_pointer_tip_removed": [
+      61,
+      108,
+      62,
+      121
+    ],
+    "person_pixel_resampling": false
+  }
+}

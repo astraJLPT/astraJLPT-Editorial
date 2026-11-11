@@ -1,0 +1,227 @@
+{
+  "unit": "N1_1999",
+  "sources": [
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\1995-2009.12日本语能力测试真题详解N1.pdf",
+      "sha256": "e3555741c8f14b855a32e7d09b42eb790492e3818a85a875f99d84703c752e00",
+      "Tier": 3,
+      "bytes": 23893435,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\1992年~2009年\\1995-2009.12日本语能力测试真题详解N1.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N1\\N1_multiple\\PaddleOCR\\pdf_1",
+      "VisionOCR": "preprocess\\N1\\N1_multiple\\VisionOCR\\pdf_1"
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\1999年\\1999年听力.doc",
+      "sha256": "c8e184854fc571a6323e10eff140a9581246c863c0b3cbbc5021da5626f6b5e6",
+      "Tier": "unranked",
+      "bytes": 510464,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\1992年~2009年\\1999年\\1999年听力.doc"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\1999年\\1999年日语一级听力原文及答案.txt",
+      "sha256": "1cc177aba20358506f619466d517d3b216bdce726e0200bb6cc4194c07081e10",
+      "Tier": "unranked",
+      "bytes": 26333,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\1992年-2009年\\1999年\\1999年日语一级听力原文及答案.txt",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\1992年~2009年\\1999年\\1999年日语一级听力原文及答案.txt"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\1999年\\1999年日语能力考试1级真题及答案.doc",
+      "sha256": "5d9c43c1042143dd0bc6063f7a45b359e0fe7ae337a6ef4833980482da49a27f",
+      "Tier": "unranked",
+      "bytes": 661069,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\1992年-2009年\\1999年\\1999年日语能力考试1级真题及答案.doc",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\1992年~2009年\\1999年\\1999年日语能力考试1级真题及答案.doc"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\1992年-2009年\\1999年\\1999年日语能力测试1级听力阅读翻译.pdf",
+      "sha256": "b98d0df81e297cae258a58f61701535fbfdd696798376e2fe5b3929604f82e8f",
+      "Tier": "unranked",
+      "bytes": 229772,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\1992年~2009年\\1999-2008年日语能力测试1级听力阅读翻译\\1999年日语能力测试1级听力阅读翻译.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N1\\N1_1999\\PaddleOCR\\pdf_2",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\1992年~2009年\\1999-2008年日语能力测试1级听力阅读翻译\\日语听力应试提高经验谈.pdf",
+      "sha256": "fe21c11b780e2795764b28b610720db9ca8322138155d0cb86a3f5ed6c8aa0c9",
+      "Tier": "unranked",
+      "bytes": 197846,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_multiple\\PaddleOCR\\pdf_3",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src/CodexDownloads/UserApprovedReferenceScans/日本語能力1991～1999年試験問題集1級.pdf",
+      "sha256": "8560bf8ef92b4e2d58559b3e14882b76d3307586f5d55b0e7fa33cc2f5fa931f",
+      "Tier": "unranked",
+      "bytes": 6524220,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "display_title": "Level 1, 1991-1999",
+      "source_role": "historical_question_volume",
+      "acquisition_batch": "reference_scan_hunt_1984-2009_2026-10-23",
+      "provenance_records": [
+        "preprocess/audit_runs/2026-10-23_reference_scan_rc03_approvals/approvals.json",
+        "preprocess/reference_scan_hunt_rc03_work/all_level_sources.json"
+      ],
+      "source_urls": [
+        "https://www.mediafire.com/file/m67688mvh6nj6s2/JLPT1991-1999_Level1-4_.rar",
+        "https://yuki-nezumi.blogspot.com/2011/01/4kyu-1991-1999.html"
+      ],
+      "previous_paths": [
+        "src/CodexDownloads/UserApprovedReferenceScans/Originals/日本語能力1991～1999年試験問題集1級.pdf",
+        "src/CodexDownloads/reference_scan_rc03/1991-1999_all_levels_extracted/日本語能力1991～1999年試験問題集1級.pdf"
+      ],
+      "filename_at_acquisition": "日本語能力1991～1999年試験問題集1級.pdf",
+      "filename_note": "Filename at acquisition or archive extraction, preserved through this move.",
+      "pages": 447,
+      "reference_registry": "preprocess/user_approved_reference_scans.md",
+      "reference_id": "RC03_L1",
+      "historical_coverage": [
+        {
+          "level": 1,
+          "year": 1991
+        },
+        {
+          "level": 1,
+          "year": 1992
+        },
+        {
+          "level": 1,
+          "year": 1993
+        },
+        {
+          "level": 1,
+          "year": 1994
+        },
+        {
+          "level": 1,
+          "year": 1995
+        },
+        {
+          "level": 1,
+          "year": 1996
+        },
+        {
+          "level": 1,
+          "year": 1997
+        },
+        {
+          "level": 1,
+          "year": 1998
+        },
+        {
+          "level": 1,
+          "year": 1999
+        }
+      ],
+      "acquisition_containers": [
+        {
+          "path": "src/CodexDownloads/Hunts/1984-2009/2026-10-23_RC03/1991-1999_all_levels_original.rar",
+          "sha256": "5369c863ded3b7ce410b658549d55be74d14afab694ba2678ae81abccf2319ca",
+          "member_filename": "日本語能力1991～1999年試験問題集1級.pdf",
+          "note": "Retained downloaded archive; member hash verified separately. Archive membership does not establish independent custody."
+        }
+      ],
+      "h19_preparation": {
+        "unit": "N1_1999",
+        "sitting": {
+          "year": 1999,
+          "month": 12
+        },
+        "sitting_attribution": {
+          "basis": "Inspected source section covers establish the year and old level. Official JLPT 2011 guide physical 2 states that through 2008 the test was held once annually in December. Month is attributed from that schedule, not from the storage ID or scan container.",
+          "source_url": "https://www.jlpt.jp/reference/pdf/guide2011.pdf",
+          "locator": "Physical 2 (printed 01-02), 日本語能力試験とは? footnote",
+          "access": "Official PDF text retrieved by web tool on 23 October 2026; local download was socket-restricted, so no local-original hash is claimed.",
+          "source_cover_pages": [
+            383,
+            411
+          ],
+          "source_sha256": "8560bf8ef92b4e2d58559b3e14882b76d3307586f5d55b0e7fa33cc2f5fa931f"
+        },
+        "sections": {
+          "vocab": [
+            384,
+            385,
+            386,
+            387,
+            388,
+            389,
+            390,
+            391,
+            392,
+            393
+          ],
+          "reading": [
+            412,
+            413,
+            414,
+            415,
+            416,
+            417,
+            418,
+            419,
+            420,
+            421,
+            422,
+            423,
+            424,
+            425,
+            426,
+            427,
+            428,
+            429,
+            430,
+            431
+          ]
+        },
+        "section_covers": [
+          383,
+          411
+        ],
+        "listening_excluded": [
+          394,
+          395,
+          396,
+          397,
+          398,
+          399,
+          400,
+          401,
+          402,
+          403,
+          404,
+          405,
+          406,
+          407,
+          408,
+          409,
+          410
+        ],
+        "mixed_page_regions": {},
+        "exclusions": "All pages outside the two written section lists; section covers recorded separately. Listening, pattern pages, forms and administrative/back matter excluded. Keys may be consulted only as fallible answer evidence. Handwriting, stamps, folios, watermarks, skew, gutter shadows and facing fragments are not layout authority.",
+        "run_id": "2026-10-23_handoff19"
+      }
+    }
+  ]
+}

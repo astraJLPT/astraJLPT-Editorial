@@ -1,0 +1,42 @@
+{
+  "contract": "historical-artwork-1.0",
+  "id": "H27-N4_1991-reading-q044-02",
+  "kind": "score_distribution_option",
+  "unit": "N4_1991",
+  "item_id": "reading-q044",
+  "source": {
+    "source_path": "src/CodexDownloads/UserApprovedReferenceScans/日本語能力1991～1999年試験問題集4級.pdf",
+    "source_sha256": "6da6084a74b617608dfaef9bc70072dd8ea7bac410ef77de7ae90f5603c569db",
+    "physical_page": 48
+  },
+  "raw_crop": {
+    "path": "preprocess/assets/handoff27-earlier-statistical-05/N4_1991-reading-q044-02-raw.png",
+    "sha256": "257184c3dda14d1d6eb1ff266bf640c34a9bc7462c9811f604eb74ace659b19f"
+  },
+  "selection_note": "Native vector/live-text reconstruction after direct individual source and canonical image review. Source numbering remains supplied by the existing option renderer.",
+  "limits": "Original canonical bytes remain unchanged and recoverable. Printed numeric labels are literal; measured unlabelled geometry is approximate. N1/N2 retyped appearance is not original typography evidence; N4 UARS establishes the graphic content but not exact native font identity.",
+  "data": {
+    "option": 2,
+    "coordinate_status": "bar_heights_aligned_with_printed_axis_ticks",
+    "values": [
+      10,
+      20,
+      15,
+      10
+    ],
+    "categories": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "axis": {
+      "minimum": 0,
+      "maximum": 20,
+      "tick": 5,
+      "unit": "人"
+    },
+    "bar_fill": "black",
+    "point_labels": "none_in_source"
+  }
+}

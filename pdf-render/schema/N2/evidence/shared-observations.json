@@ -1,0 +1,56 @@
+{
+  "scope": "pilot refinement; not original font certification",
+  "footer": {
+    "basis": "local official vector samples plus visually inspected 2025 scans",
+    "path": "tmp/pdfs/reference_fonts/sample2018_N2V.pdf",
+    "sha256": "c16247e1e6dc3c8b06dc0caf0ea94b7201628c3032c18bb2cc2ac0b1e69f79d6",
+    "physical_pages": [
+      3,
+      4
+    ],
+    "observed_fonts": {
+      "numerals": "Helvetica-Bold",
+      "dashes": "Ryumin-regular"
+    },
+    "renderer_choice": "TeX Gyre Heros Bold and available Ryumin; weight/size corrected"
+  },
+  "notes": {
+    "basis": "N1 approved physical 26 and 31; compact consecutive labels, no extra paragraph gaps",
+    "choice": "same-level slightly smaller body and tighter baseline; numeric dimensions are conventions, not historical facts",
+    "grouping": "Keep the bounded pilot note clusters together; avoids leaving the last (注) alone on the following page. Rich text remains unchanged."
+  },
+  "star": {
+    "basis": "approved July STAR examples at physical N1=9,N2=9,N3=8,N4=12,N5=9",
+    "observations": [
+      "widely spaced four choices",
+      "solution box with four aligned slots and the reordered choices underneath",
+      "answer label beside a compact five-cell grid",
+      "space before solution and after box"
+    ]
+  },
+  "body": {
+    "choice": "Retain existing identified body families; add one-character prose paragraph indentation; no per-paper source coordinates or mandatory page-break list."
+  },
+  "vector_size_crosscheck": {
+    "source": "tmp/pdfs/reference_fonts/sample2018_N2V.pdf",
+    "physical_page": 3,
+    "body_pdf_pt": 11.3,
+    "body_baseline_pdf_pt": 24.06,
+    "renderer_choice": "LuaTeX-ja Japanese scale is 0.9622; TeX body sizes compensate. This corroborates scan-scale correction, not a declaration that all 2025 measurements are exact."
+  },
+  "option_spacing": {
+    "source_pages": {
+      "N3_07_2025": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "N2_07_2025": [
+        6
+      ]
+    },
+    "observations": "Usage choices have tighter successive baselines than prose. N3 vocabulary has eleven questions on one page; preserve content-driven fitting with a denser question gap for the ruby-rich level.",
+    "status": "shared layout calibration, not an assertion of mandatory per-paper page breaks"
+  }
+}

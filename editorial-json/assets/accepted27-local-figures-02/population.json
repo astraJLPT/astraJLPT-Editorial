@@ -1,0 +1,131 @@
+{
+  "contract": "historical-artwork-1.0",
+  "id": "H27-N1-1998-population-live-map-labels",
+  "kind": "metropolitan_population",
+  "unit": "N1_1998",
+  "item_id": "reading-b007",
+  "source": {
+    "source_path": "src/CodexDownloads/UserApprovedReferenceScans/日本語能力1991～1999年試験問題集1級.pdf",
+    "source_sha256": "8560bf8ef92b4e2d58559b3e14882b76d3307586f5d55b0e7fa33cc2f5fa931f",
+    "physical_page": 368,
+    "crop_original_pixels": [
+      181,
+      172,
+      962,
+      702
+    ],
+    "page_rotation": 0
+  },
+  "raw_crop": {
+    "path": "preprocess/assets/handoff23/written/N1_1998/assets-01/population-composite-raw.png",
+    "sha256": "c4b5bde48cc497069f6375e454e145a40d6c9862a0015043784f9ea2bac4524e"
+  },
+  "image": {
+    "path": "preprocess/assets/handoff23/written/N1_1998/assets-02/population-map-background.png",
+    "sha256": "eae0871737ce818b87a9f0457315cb69d5cb732be8b820fa5f7a836bd577c3a1"
+  },
+  "selection_note": "H27 direct source368 and background-pixel inspection: replace three lower map labels and the existing Osaka/Nagoya ruby with live PDF text. Keep the H23 native pies, title and legend. Exact mask rectangles exclude the adjacent leader segments, including the Nagoya vertical line at x474.",
+  "limits": "Source linework and bitmap file are unchanged. White vector masks suppress only inspected raster lettering; live text is placed over those masks. Substitute font and approximate source-relative text positions do not establish original font identity.",
+  "data": {
+    "normalization": "none_use_printed_percentages",
+    "start": "noon_clockwise",
+    "title": "3大都市圏の人口が全国の人口に占める割合",
+    "categories": [
+      "東京を中心とした50キロの地域",
+      "大阪を中心とした50キロの地域",
+      "名古屋を中心とした50キロの地域",
+      "その他"
+    ],
+    "patterns": [
+      "black",
+      "north east lines",
+      "dots",
+      "white"
+    ],
+    "charts": [
+      {
+        "year": 1960,
+        "percentages": [
+          16.7,
+          10.9,
+          5.7,
+          66.7
+        ]
+      },
+      {
+        "year": 1996,
+        "percentages": [
+          23.7,
+          12.9,
+          6.9,
+          56.5
+        ]
+      }
+    ]
+  },
+  "native_map_labels": {
+    "canvas": [
+      781,
+      530
+    ],
+    "labels": [
+      {
+        "text": "大阪50キロ圏",
+        "ruby": [
+          "大阪",
+          "おおさか"
+        ],
+        "mask": [
+          262,
+          467,
+          373,
+          500
+        ],
+        "anchor": [
+          266,
+          494
+        ],
+        "font_pt": 18
+      },
+      {
+        "text": "名古屋50キロ圏",
+        "ruby": [
+          "名古屋",
+          "なごや"
+        ],
+        "mask": [
+          413,
+          480,
+          538,
+          501
+        ],
+        "ruby_mask": [
+          413,
+          468,
+          468,
+          480
+        ],
+        "anchor": [
+          414,
+          494
+        ],
+        "font_pt": 18
+      },
+      {
+        "text": "東京50キロ圏",
+        "mask": [
+          615,
+          478,
+          728,
+          501
+        ],
+        "anchor": [
+          617,
+          494
+        ],
+        "font_pt": 18
+      }
+    ],
+    "preserved": "All source map contours, three area symbols, leader lines and unchanged native pies/title/legend"
+  }
+}

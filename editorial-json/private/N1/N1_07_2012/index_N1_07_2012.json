@@ -1,0 +1,339 @@
+{
+  "unit": "N1_07_2012",
+  "sources": [
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\2012年\\2012年7月\\2012年7月N1真题解析1~45.pdf",
+      "sha256": "34ea5444820eed33c534b14b37dd91ff24418ef5dc6afd648732c87ec5031c5d",
+      "Tier": "unranked",
+      "bytes": 533763,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\2012年\\2012年7月\\2012年7月N1真题解析1~45.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2012\\PaddleOCR\\pdf_1",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\2012年\\2012年7月\\2012年7月N1真题阅读解析46~70.pdf",
+      "sha256": "b056cbdc664367c5361c1345ba007a331f3cf4e32e30ae381b8b61d433ba6fd4",
+      "Tier": 3,
+      "bytes": 470590,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\2012年\\2012年7月\\2012年7月N1真题阅读解析46~70.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2012\\PaddleOCR\\pdf_2",
+      "VisionOCR": "preprocess\\N1\\N1_07_2012\\VisionOCR\\pdf_2"
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\2012年\\2012年7月\\2012年7月日语一级听力原文及答案.doc",
+      "sha256": "3939e439d0d386da50724494eaf252bed79dcce8f545a0dfd5f7d8c3d5dab1de",
+      "Tier": "unranked",
+      "bytes": 152576,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\2012年\\2012年7月\\2012年7月日语一级听力原文及答案.doc"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\2012年\\2012年7月\\2012年7月日语能力考试1级真题及答案.doc",
+      "sha256": "7f8a08951454ebc6b54ea4f2e2424fa32ec96ca8abe71b119aadb9435054158d",
+      "Tier": "unranked",
+      "bytes": 186368,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\2016.12\\N1能力考试计算方法.xlsx",
+      "sha256": "509844a08048d2cb05c14dd4645d8a885a027af4caa2cc5f4f4b0fcf640e092b",
+      "Tier": "unranked",
+      "bytes": 9627,
+      "aliases": [
+        "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\N1能力考试计算方法.xlsx",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\N1能力考试计算方法.xlsx",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\N1能力考试计算方法.xlsx"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\N1答题卡.pdf",
+      "sha256": "99d0ff9ea60c01b3c211c680c0c527a1604e0c91a52ece360e2873186b8dcef9",
+      "Tier": "unranked",
+      "bytes": 683222,
+      "aliases": [
+        "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\N1答题卡.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\N1答题卡.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\N1答题卡.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N1\\N1_multiple\\PaddleOCR\\pdf_2",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N1\\2012-07_N1\\2012-07_N1.json",
+      "sha256": "ec5221b578910dd41343f25d01eb39e44d7da8f57c7fdb8d939f18ef97d95752",
+      "Tier": "unranked",
+      "bytes": 247755,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N1 các năm Yuuki Bùi\\N1 7-2012\\Đáp án+Script N1 7-2012.pdf",
+      "sha256": "1a4d6433625fb90acf9da6c827c64aefd396467403f887dcf321a7abe9d2d175",
+      "Tier": "unranked",
+      "bytes": 3212087,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2012\\PaddleOCR\\pdf_4",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N1 các năm Yuuki Bùi\\N1 7-2012\\Đề N1 7-2012.pdf",
+      "sha256": "73f024f8b0fff45ae3e0e7b6546788ed4e79a47fe667729cbf76e9e947e0a8dd",
+      "Tier": 1,
+      "bytes": 8695928,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2012\\PaddleOCR\\pdf_5",
+      "VisionOCR": "preprocess\\N1\\N1_07_2012\\VisionOCR\\pdf_5"
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N1\\listening\\N1_07_2012_listening_DEAD.html",
+      "sha256": "b884a9b4dafcd20981c3d850da626ef35d03338e01d7c402e58d8821e5c05f74",
+      "Tier": "unranked",
+      "bytes": 35447,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N1\\reading\\N1_07_2012_reading.html",
+      "sha256": "ceb15d56ec92476077c56391762ca28fbf2be95d707c0cd70f3b778726c11e8c",
+      "Tier": "unranked",
+      "bytes": 110021,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N1\\vocab\\N1_07_2012_vocab.html",
+      "sha256": "93bbd0f0259880a3d7d0390efba1104e55489ebc7533b053e7c044cb69a5be52",
+      "Tier": "unranked",
+      "bytes": 116198,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\2012\\2012.07\\2012年07月N1真题.pdf",
+      "sha256": "6f32822ccf15bda0aca760ad1008d2546d4ce1c2c7dcc86b92a8ad78903e2db9",
+      "Tier": 2,
+      "bytes": 6243076,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2012\\PaddleOCR\\pdf_6",
+      "VisionOCR": "preprocess\\N1\\N1_07_2012\\VisionOCR\\pdf_6"
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\2012\\2012.07\\答案解析和听力原文\\2012年07月N1听力原文.pdf",
+      "sha256": "6339f27c90212ba28cdce9c79711a54dd624dd1aeef80e1e29f75d0b32b256fc",
+      "Tier": "unranked",
+      "bytes": 9760884,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2012\\PaddleOCR\\pdf_7",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\2012\\2012.07\\答案解析和听力原文\\2012年07月N1听力译文.pdf",
+      "sha256": "58643bc50231892724134cccc5acaac0909f1398a1fbd61a78cfabdf3dff0e78",
+      "Tier": "unranked",
+      "bytes": 2090045,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2010年-2020年\\2012年7月\\2012年07月N1听力译文.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2012\\PaddleOCR\\pdf_8",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\2012\\2012.07\\答案解析和听力原文\\2012年07月N1答案解析.pdf",
+      "sha256": "313535f3ab69eef9aac9d510b5c70b64dfd8c0f1dd8b6754c0bde20d4d0ba48d",
+      "Tier": "unranked",
+      "bytes": 14523587,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2012\\PaddleOCR\\pdf_9",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\2012\\2012.07\\答案解析和听力原文\\2012年07月N1阅读译文.pdf",
+      "sha256": "992f887076668bdfda530755a7e25cc8ca3f97d273461e95937e0cd0e89da65f",
+      "Tier": "unranked",
+      "bytes": 2406707,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2010年-2020年\\2012年7月\\2012年07月N1阅读译文.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2012\\PaddleOCR\\pdf_10",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2010年-2020年\\2012年7月\\【1】2012年07月N1 真题.pdf",
+      "sha256": "8bb6384835dac15eccd3119884fef1b2eb7b93c8eed6410bb2d96be22e74b3f9",
+      "Tier": 3,
+      "bytes": 6147616,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2012\\PaddleOCR\\pdf_11",
+      "VisionOCR": "preprocess\\N1\\N1_07_2012\\VisionOCR\\pdf_11"
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2010年-2020年\\2012年7月\\【1】2012年07月N1答案解析+听力原文.pdf",
+      "sha256": "6bef3312b2aea3bc265959d432c4996aff66ca05a39e371bfbeda4e3cfe1ed14",
+      "Tier": "unranked",
+      "bytes": 3162191,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2012\\PaddleOCR\\pdf_12",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2010年-2020年\\2012年7月\\【2】2012年07月N1 真题.pdf",
+      "sha256": "c8c0bb527af6461a0c602a3e317f732aaebebf7df124bd067262d455e707d40d",
+      "Tier": 2,
+      "bytes": 4628297,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2012\\PaddleOCR\\pdf_13",
+      "VisionOCR": "preprocess\\N1\\N1_07_2012\\VisionOCR\\pdf_13"
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2010年-2020年\\2012年7月\\【2】2012年07月N1答案解析+听力原文.pdf",
+      "sha256": "feb4bf609892fb418fe72a52dbcf54417eec500787e3bb7881f7f631572008e3",
+      "Tier": "unranked",
+      "bytes": 3391778,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2012\\PaddleOCR\\pdf_14",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2010年-2020年\\2012年7月\\【3】2012年07月N1 真题.pdf",
+      "sha256": "5a6eb3bf9f3e84d63e1953fd1adbb29cef62700dd2adaae6b6491c46a962d5fa",
+      "Tier": 2,
+      "bytes": 1231225,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2012\\PaddleOCR\\pdf_15",
+      "VisionOCR": "preprocess\\N1\\N1_07_2012\\VisionOCR\\pdf_15"
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2010年-2020年\\2012年7月\\【3】2012年07月N1答案解析+听力原文+译文.pdf",
+      "sha256": "23c6182379e1e33c508ba971819ed884a71f57587a83795002886c8a3f36d034",
+      "Tier": "unranked",
+      "bytes": 968360,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2012\\PaddleOCR\\pdf_16",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\2012年\\2012年7月\\12年7月N1真题及答案.pdf",
+      "sha256": "2d2be4bad4e5e7878635e2fb0c54a5887498e099c255454f88dd661336ef40e8",
+      "Tier": 2,
+      "bytes": 823723,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2012\\PaddleOCR\\pdf_17",
+      "VisionOCR": "preprocess\\N1\\N1_07_2012\\VisionOCR\\pdf_17"
+    },
+    {
+      "path": "src\\munjaJLPT\\N1\\2012-07_N1\\images\\2012-07_N1_l-p1-q01-img01.jpg",
+      "sha256": "72914ecd70df354f466c77099e3aa595129472053c2fe109c2e124b3bba531c0",
+      "Tier": "unranked",
+      "bytes": 22566,
+      "aliases": [
+        "src\\munjaJLPT\\N2\\2012-07_N2\\images\\2012-07_N2_l-p1-q03-img01.jpg"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N1\\2012-07_N1\\images\\2012-07_N1_l-p1-q06-img01.jpg",
+      "sha256": "882ad807594b6dde438dbce294a97f466664be1805e03418f3948f6d57b0960c",
+      "Tier": "unranked",
+      "bytes": 20712,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N1\\2012-07_N1\\images\\2012-07_N1_s13-q01-img01.jpg",
+      "sha256": "1eda1577cfe34611f910e645211a32107bc71bb5720bb6c1be4db9c0b1eb7d54",
+      "Tier": "unranked",
+      "bytes": 1147702,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N1\\reading\\reading_images\\201207N101.png",
+      "sha256": "b51ce2f4579a36f68d57e9c827da990d6bb8c63c76d177601c3b8052b88bca8e",
+      "Tier": "unranked",
+      "bytes": 200664,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src/CodexDownloads/N1_07_2012/web_evidence/6a5906d9d6.pdf",
+      "sha256": "e746a2acd82e2f3f1c79b1e23da99dc00c02e9e6f4a4296ff03a0b1de080b956",
+      "bytes": 782359,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "secondary_exam_reproduction",
+      "related_units": [
+        "N1_07_2012"
+      ],
+      "display_title": "6a5906d9d6.pdf",
+      "source_urls": [
+        "https://wyxy.jxufe.edu.cn/uploadfile/120/Attachment/6a5906d9d6.pdf"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N1_07_2012/web_evidence/downloads.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N1/N1_07_2012/audit_work/web_evidence/6a5906d9d6.pdf",
+      "audit_review_scope_at_acquisition": "Reading PDF: all 21 pages; Zaodao PDF: physical 1-13 only, worked example on p10; Xinguang HTML: selected excerpts only. University hosting does not authenticate JLPT origin.",
+      "prior_audit_record": "preprocess/N1/N1_07_2012/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: retyped comparison witnesses",
+      "coverage_note": "University hosting does not establish exam-page custody. Fresh samples show reset line breaks, compressed question setting and custom Zaodao headings. The complete STAR example in the Zaodao file is useful for comparison, but not proof of original typography. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "pages": 38
+    },
+    {
+      "path": "src/CodexDownloads/N1_07_2012/web_evidence/dd383fe010.pdf",
+      "sha256": "facb3c03fbe74df869dc93b92f98e679ae9c24a7f4ed2729bf1f82964cca2d1d",
+      "bytes": 516011,
+      "Tier": "unranked",
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "source_role": "secondary_exam_reproduction",
+      "related_units": [
+        "N1_07_2012"
+      ],
+      "display_title": "dd383fe010.pdf",
+      "source_urls": [
+        "https://wyxy.jxufe.edu.cn/uploadfile/120/Attachment/dd383fe010.pdf"
+      ],
+      "provenance_records": [
+        "src/CodexDownloads/index.json",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/codexdownloads_assessment.json",
+        "src/CodexDownloads/provenance/N1_07_2012/web_evidence/downloads.json"
+      ],
+      "copied_from_at_acquisition": "preprocess/N1/N1_07_2012/audit_work/web_evidence/dd383fe010.pdf",
+      "audit_review_scope_at_acquisition": "Reading PDF: all 21 pages; Zaodao PDF: physical 1-13 only, worked example on p10; Xinguang HTML: selected excerpts only. University hosting does not authenticate JLPT origin.",
+      "prior_audit_record": "preprocess/N1/N1_07_2012/editorial_audit.md",
+      "reference_hunt_disposition": "Do not nominate: retyped comparison witnesses",
+      "coverage_note": "University hosting does not establish exam-page custody. Fresh samples show reset line breaks, compressed question setting and custom Zaodao headings. The complete STAR example in the Zaodao file is useful for comparison, but not proof of original typography. Existing dated assessment retained; indexing does not reopen the audit or grant reference approval.",
+      "filename_at_acquisition": null,
+      "local_filename_is_acquisition_alias": true,
+      "pages": 21
+    }
+  ]
+}

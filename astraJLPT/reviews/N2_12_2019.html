@@ -1,0 +1,1310 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark light"><title>Developer review · N2_12_2019 · astraJLPT</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../assets/fonts.css?v=f9f44384a837"><link rel="stylesheet" href="../assets/themes.css?v=7ad0820747dc"><link rel="stylesheet" href="../assets/answer-marking.css?v=bec6b4920050"><link rel="stylesheet" href="../assets/site.css?v=7ae9ae7c768b"><link rel="stylesheet" href="../assets/pdf-typography.css?v=ba55af25606f"><link rel="stylesheet" href="../assets/paper-shared.css?v=8f3ca38dca80"></head><body class="catalog-page"><a class="skip-link" href="#content">Skip to content</a><header class="topbar" id="page-top" tabindex="-1"><a class="wordmark" id="brand" href="../index.html">astra<span>JLPT</span></a><details id="settings" class="settings"><summary aria-label="Open settings" title="Settings"><span aria-hidden="true">⚙</span><span class="sr-only">Settings</span></summary><div class="settings-panel"><div class="settings-title"><h2>settings</h2><button type="button" id="close-settings" class="js-only" aria-label="Close settings">×</button></div><div class="settings-tabs" role="group" aria-label="Settings categories"><label><input type="radio" name="settings-view" value="appearance" checked><span>theme</span></label><label><input type="radio" name="settings-view" value="browser"><span>browser</span></label></div><section data-settings="appearance"><div class="theme-workspace"><div class="theme-picker"><div class="setting-heading"><h3>theme</h3></div><div class="theme-grid originals"><label class="theme-card ps-gh"><input type="radio" name="theme" id="theme-jlpt_paper" value="jlpt_paper"><span>jlpt_paper</span></label><label class="theme-card ps-ck"><input type="radio" name="theme" id="theme-astraJLPT_dark" value="astraJLPT_dark" checked><span>astraJLPT_dark</span></label><label class="theme-card ps-ga"><input type="radio" name="theme" id="theme-astraJLPT_sepia" value="astraJLPT_sepia"><span>astraJLPT_sepia</span></label></div><div class="js-only"><p class="settings-label">three random picks</p><div class="theme-grid" id="quick-picks"></div></div><details><summary>all 187 Monkeytype palettes</summary><label class="theme-search js-only">find a palette<input id="theme-search" type="search" placeholder="search themes" autocomplete="off"></label><div class="theme-grid theme-catalog"><label class="theme-card ps-e9"><input type="radio" name="theme" id="theme-8008" value="8008"><span>8008</span></label><label class="theme-card ps-cw"><input type="radio" name="theme" id="theme-80s_after_dark" value="80s_after_dark"><span>80s after dark</span></label><label class="theme-card ps-fq"><input type="radio" name="theme" id="theme-9009" value="9009"><span>9009</span></label><label class="theme-card ps-cc"><input type="radio" name="theme" id="theme-aether" value="aether"><span>aether</span></label><label class="theme-card ps-cz"><input type="radio" name="theme" id="theme-alduin" value="alduin"><span>alduin</span></label><label class="theme-card ps-el"><input type="radio" name="theme" id="theme-alpine" value="alpine"><span>alpine</span></label><label class="theme-card ps-bg"><input type="radio" name="theme" id="theme-anti_hero" value="anti_hero"><span>anti hero</span></label><label class="theme-card ps-c3"><input type="radio" name="theme" id="theme-arch" value="arch"><span>arch</span></label><label class="theme-card ps-bt"><input type="radio" name="theme" id="theme-aurora" value="aurora"><span>aurora</span></label><label class="theme-card ps-g8"><input type="radio" name="theme" id="theme-beach" value="beach"><span>beach</span></label><label class="theme-card ps-dz"><input type="radio" name="theme" id="theme-bento" value="bento"><span>bento</span></label><label class="theme-card ps-f1"><input type="radio" name="theme" id="theme-bingsu" value="bingsu"><span>bingsu</span></label><label class="theme-card ps-dl"><input type="radio" name="theme" id="theme-bliss" value="bliss"><span>bliss</span></label><label class="theme-card ps-bn"><input type="radio" name="theme" id="theme-blue_dolphin" value="blue_dolphin"><span>blue dolphin</span></label><label class="theme-card ps-dd"><input type="radio" name="theme" id="theme-blueberry_dark" value="blueberry_dark"><span>blueberry dark</span></label><label class="theme-card ps-fd"><input type="radio" name="theme" id="theme-blueberry_light" value="blueberry_light"><span>blueberry light</span></label><label class="theme-card ps-ep"><input type="radio" name="theme" id="theme-botanical" value="botanical"><span>botanical</span></label><label class="theme-card ps-cl"><input type="radio" name="theme" id="theme-bouquet" value="bouquet"><span>bouquet</span></label><label class="theme-card ps-fk"><input type="radio" name="theme" id="theme-breeze" value="breeze"><span>breeze</span></label><label class="theme-card ps-dk"><input type="radio" name="theme" id="theme-bushido" value="bushido"><span>bushido</span></label><label class="theme-card ps-f5"><input type="radio" name="theme" id="theme-cafe" value="cafe"><span>cafe</span></label><label class="theme-card ps-g1"><input type="radio" name="theme" id="theme-camping" value="camping"><span>camping</span></label><label class="theme-card ps-e4"><input type="radio" name="theme" id="theme-carbon" value="carbon"><span>carbon</span></label><label class="theme-card ps-d3"><input type="radio" name="theme" id="theme-catppuccin" value="catppuccin"><span>catppuccin</span></label><label class="theme-card ps-ch"><input type="radio" name="theme" id="theme-chaos_theory" value="chaos_theory"><span>chaos theory</span></label><label class="theme-card ps-g3"><input type="radio" name="theme" id="theme-cheesecake" value="cheesecake"><span>cheesecake</span></label><label class="theme-card ps-e7"><input type="radio" name="theme" id="theme-cherry_blossom" value="cherry_blossom"><span>cherry blossom</span></label><label class="theme-card ps-eh"><input type="radio" name="theme" id="theme-comfy" value="comfy"><span>comfy</span></label><label class="theme-card ps-ef"><input type="radio" name="theme" id="theme-copper" value="copper"><span>copper</span></label><label class="theme-card ps-g6"><input type="radio" name="theme" id="theme-creamsicle" value="creamsicle"><span>creamsicle</span></label><label class="theme-card ps-em"><input type="radio" name="theme" id="theme-cy_red" value="cy_red"><span>cy red</span></label><label class="theme-card ps-co"><input type="radio" name="theme" id="theme-cyberspace" value="cyberspace"><span>cyberspace</span></label><label class="theme-card ps-cd"><input type="radio" name="theme" id="theme-dark" value="dark"><span>dark</span></label><label class="theme-card ps-bz"><input type="radio" name="theme" id="theme-dark_magic_girl" value="dark_magic_girl"><span>dark magic girl</span></label><label class="theme-card ps-d6"><input type="radio" name="theme" id="theme-dark_note" value="dark_note"><span>dark note</span></label><label class="theme-card ps-g5"><input type="radio" name="theme" id="theme-darling" value="darling"><span>darling</span></label><label class="theme-card ps-bw"><input type="radio" name="theme" id="theme-deku" value="deku"><span>deku</span></label><label class="theme-card ps-g9"><input type="radio" name="theme" id="theme-desert_oasis" value="desert_oasis"><span>desert oasis</span></label><label class="theme-card ps-cx"><input type="radio" name="theme" id="theme-dev" value="dev"><span>dev</span></label><label class="theme-card ps-ek"><input type="radio" name="theme" id="theme-diner" value="diner"><span>diner</span></label><label class="theme-card ps-gi"><input type="radio" name="theme" id="theme-dino" value="dino"><span>dino</span></label><label class="theme-card ps-e6"><input type="radio" name="theme" id="theme-discord" value="discord"><span>discord</span></label><label class="theme-card ps-fc"><input type="radio" name="theme" id="theme-dmg" value="dmg"><span>dmg</span></label><label class="theme-card ps-fj"><input type="radio" name="theme" id="theme-dollar" value="dollar"><span>dollar</span></label><label class="theme-card ps-ce"><input type="radio" name="theme" id="theme-dots" value="dots"><span>dots</span></label><label class="theme-card ps-dq"><input type="radio" name="theme" id="theme-dracula" value="dracula"><span>dracula</span></label><label class="theme-card ps-cq"><input type="radio" name="theme" id="theme-drowning" value="drowning"><span>drowning</span></label><label class="theme-card ps-eo"><input type="radio" name="theme" id="theme-dualshot" value="dualshot"><span>dualshot</span></label><label class="theme-card ps-dr"><input type="radio" name="theme" id="theme-earthsong" value="earthsong"><span>earthsong</span></label><label class="theme-card ps-ci"><input type="radio" name="theme" id="theme-everblush" value="everblush"><span>everblush</span></label><label class="theme-card ps-bq"><input type="radio" name="theme" id="theme-evil_eye" value="evil_eye"><span>evil eye</span></label><label class="theme-card ps-bp"><input type="radio" name="theme" id="theme-ez_mode" value="ez_mode"><span>ez mode</span></label><label class="theme-card ps-c8"><input type="radio" name="theme" id="theme-fire" value="fire"><span>fire</span></label><label class="theme-card ps-eb"><input type="radio" name="theme" id="theme-fledgling" value="fledgling"><span>fledgling</span></label><label class="theme-card ps-f3"><input type="radio" name="theme" id="theme-fleuriste" value="fleuriste"><span>fleuriste</span></label><label class="theme-card ps-bl"><input type="radio" name="theme" id="theme-floret" value="floret"><span>floret</span></label><label class="theme-card ps-fh"><input type="radio" name="theme" id="theme-froyo" value="froyo"><span>froyo</span></label><label class="theme-card ps-et"><input type="radio" name="theme" id="theme-frozen_llama" value="frozen_llama"><span>frozen llama</span></label><label class="theme-card ps-f9"><input type="radio" name="theme" id="theme-fruit_chew" value="fruit_chew"><span>fruit chew</span></label><label class="theme-card ps-en"><input type="radio" name="theme" id="theme-fundamentals" value="fundamentals"><span>fundamentals</span></label><label class="theme-card ps-e0"><input type="radio" name="theme" id="theme-future_funk" value="future_funk"><span>future funk</span></label><label class="theme-card ps-dc"><input type="radio" name="theme" id="theme-github" value="github"><span>github</span></label><label class="theme-card ps-fn"><input type="radio" name="theme" id="theme-godspeed" value="godspeed"><span>godspeed</span></label><label class="theme-card ps-e3"><input type="radio" name="theme" id="theme-graen" value="graen"><span>graen</span></label><label class="theme-card ps-ea"><input type="radio" name="theme" id="theme-grand_prix" value="grand_prix"><span>grand prix</span></label><label class="theme-card ps-dv"><input type="radio" name="theme" id="theme-grape" value="grape"><span>grape</span></label><label class="theme-card ps-dp"><input type="radio" name="theme" id="theme-gruvbox_dark" value="gruvbox_dark"><span>gruvbox dark</span></label><label class="theme-card ps-g2"><input type="radio" name="theme" id="theme-gruvbox_light" value="gruvbox_light"><span>gruvbox light</span></label><label class="theme-card ps-bu"><input type="radio" name="theme" id="theme-hammerhead" value="hammerhead"><span>hammerhead</span></label><label class="theme-card ps-fa"><input type="radio" name="theme" id="theme-hanok" value="hanok"><span>hanok</span></label><label class="theme-card ps-ed"><input type="radio" name="theme" id="theme-hedge" value="hedge"><span>hedge</span></label><label class="theme-card ps-fu"><input type="radio" name="theme" id="theme-honey" value="honey"><span>honey</span></label><label class="theme-card ps-d0"><input type="radio" name="theme" id="theme-horizon" value="horizon"><span>horizon</span></label><label class="theme-card ps-bf"><input type="radio" name="theme" id="theme-husqy" value="husqy"><span>husqy</span></label><label class="theme-card ps-cj"><input type="radio" name="theme" id="theme-iceberg_dark" value="iceberg_dark"><span>iceberg dark</span></label><label class="theme-card ps-fl"><input type="radio" name="theme" id="theme-iceberg_light" value="iceberg_light"><span>iceberg light</span></label><label class="theme-card ps-c7"><input type="radio" name="theme" id="theme-incognito" value="incognito"><span>incognito</span></label><label class="theme-card ps-d8"><input type="radio" name="theme" id="theme-ishtar" value="ishtar"><span>ishtar</span></label><label class="theme-card ps-eu"><input type="radio" name="theme" id="theme-iv_clover" value="iv_clover"><span>iv clover</span></label><label class="theme-card ps-c2"><input type="radio" name="theme" id="theme-iv_spade" value="iv_spade"><span>iv spade</span></label><label class="theme-card ps-cu"><input type="radio" name="theme" id="theme-joker" value="joker"><span>joker</span></label><label class="theme-card ps-de"><input type="radio" name="theme" id="theme-laser" value="laser"><span>laser</span></label><label class="theme-card ps-ex"><input type="radio" name="theme" id="theme-lavender" value="lavender"><span>lavender</span></label><label class="theme-card ps-ew"><input type="radio" name="theme" id="theme-leather" value="leather"><span>leather</span></label><label class="theme-card ps-fo"><input type="radio" name="theme" id="theme-lil_dragon" value="lil_dragon"><span>lil dragon</span></label><label class="theme-card ps-gd"><input type="radio" name="theme" id="theme-lilac_mist" value="lilac_mist"><span>lilac mist</span></label><label class="theme-card ps-er"><input type="radio" name="theme" id="theme-lime" value="lime"><span>lime</span></label><label class="theme-card ps-df"><input type="radio" name="theme" id="theme-luna" value="luna"><span>luna</span></label><label class="theme-card ps-ez"><input type="radio" name="theme" id="theme-macroblank" value="macroblank"><span>macroblank</span></label><label class="theme-card ps-gk"><input type="radio" name="theme" id="theme-magic_girl" value="magic_girl"><span>magic girl</span></label><label class="theme-card ps-du"><input type="radio" name="theme" id="theme-mashu" value="mashu"><span>mashu</span></label><label class="theme-card ps-ei"><input type="radio" name="theme" id="theme-matcha_moccha" value="matcha_moccha"><span>matcha moccha</span></label><label class="theme-card ps-dn"><input type="radio" name="theme" id="theme-material" value="material"><span>material</span></label><label class="theme-card ps-be"><input type="radio" name="theme" id="theme-matrix" value="matrix"><span>matrix</span></label><label class="theme-card ps-br"><input type="radio" name="theme" id="theme-menthol" value="menthol"><span>menthol</span></label><label class="theme-card ps-dg"><input type="radio" name="theme" id="theme-metaverse" value="metaverse"><span>metaverse</span></label><label class="theme-card ps-ca"><input type="radio" name="theme" id="theme-metropolis" value="metropolis"><span>metropolis</span></label><label class="theme-card ps-g0"><input type="radio" name="theme" id="theme-mexican" value="mexican"><span>mexican</span></label><label class="theme-card ps-fv"><input type="radio" name="theme" id="theme-miami" value="miami"><span>miami</span></label><label class="theme-card ps-cn"><input type="radio" name="theme" id="theme-miami_nights" value="miami_nights"><span>miami nights</span></label><label class="theme-card ps-c0"><input type="radio" name="theme" id="theme-midnight" value="midnight"><span>midnight</span></label><label class="theme-card ps-gf"><input type="radio" name="theme" id="theme-milkshake" value="milkshake"><span>milkshake</span></label><label class="theme-card ps-bv"><input type="radio" name="theme" id="theme-mint" value="mint"><span>mint</span></label><label class="theme-card ps-ey"><input type="radio" name="theme" id="theme-mizu" value="mizu"><span>mizu</span></label><label class="theme-card ps-dy"><input type="radio" name="theme" id="theme-modern_dolch" value="modern_dolch"><span>modern dolch</span></label><label class="theme-card ps-fe"><input type="radio" name="theme" id="theme-modern_dolch_light" value="modern_dolch_light"><span>modern dolch light</span></label><label class="theme-card ps-gm"><input type="radio" name="theme" id="theme-modern_ink" value="modern_ink"><span>modern ink</span></label><label class="theme-card ps-do"><input type="radio" name="theme" id="theme-monokai" value="monokai"><span>monokai</span></label><label class="theme-card ps-cs"><input type="radio" name="theme" id="theme-moonlight" value="moonlight"><span>moonlight</span></label><label class="theme-card ps-c9"><input type="radio" name="theme" id="theme-mountain" value="mountain"><span>mountain</span></label><label class="theme-card ps-f8"><input type="radio" name="theme" id="theme-mr_sleeves" value="mr_sleeves"><span>mr sleeves</span></label><label class="theme-card ps-gj"><input type="radio" name="theme" id="theme-ms_cupcakes" value="ms_cupcakes"><span>ms cupcakes</span></label><label class="theme-card ps-ej"><input type="radio" name="theme" id="theme-muted" value="muted"><span>muted</span></label><label class="theme-card ps-cg"><input type="radio" name="theme" id="theme-nautilus" value="nautilus"><span>nautilus</span></label><label class="theme-card ps-db"><input type="radio" name="theme" id="theme-nebula" value="nebula"><span>nebula</span></label><label class="theme-card ps-da"><input type="radio" name="theme" id="theme-night_runner" value="night_runner"><span>night runner</span></label><label class="theme-card ps-dj"><input type="radio" name="theme" id="theme-nord" value="nord"><span>nord</span></label><label class="theme-card ps-fp"><input type="radio" name="theme" id="theme-nord_light" value="nord_light"><span>nord light</span></label><label class="theme-card ps-di"><input type="radio" name="theme" id="theme-norse" value="norse"><span>norse</span></label><label class="theme-card ps-e5"><input type="radio" name="theme" id="theme-oblivion" value="oblivion"><span>oblivion</span></label><label class="theme-card ps-fm"><input type="radio" name="theme" id="theme-olive" value="olive"><span>olive</span></label><label class="theme-card ps-cy"><input type="radio" name="theme" id="theme-olivia" value="olivia"><span>olivia</span></label><label class="theme-card ps-e2"><input type="radio" name="theme" id="theme-onedark" value="onedark"><span>onedark</span></label><label class="theme-card ps-f4"><input type="radio" name="theme" id="theme-our_theme" value="our_theme"><span>our theme</span></label><label class="theme-card ps-ee"><input type="radio" name="theme" id="theme-pale_nimbus" value="pale_nimbus"><span>pale nimbus</span></label><label class="theme-card ps-fr"><input type="radio" name="theme" id="theme-paper" value="paper"><span>paper</span></label><label class="theme-card ps-eq"><input type="radio" name="theme" id="theme-passion_fruit" value="passion_fruit"><span>passion fruit</span></label><label class="theme-card ps-ff"><input type="radio" name="theme" id="theme-pastel" value="pastel"><span>pastel</span></label><label class="theme-card ps-ds"><input type="radio" name="theme" id="theme-peach_blossom" value="peach_blossom"><span>peach blossom</span></label><label class="theme-card ps-fg"><input type="radio" name="theme" id="theme-peaches" value="peaches"><span>peaches</span></label><label class="theme-card ps-bk"><input type="radio" name="theme" id="theme-phantom" value="phantom"><span>phantom</span></label><label class="theme-card ps-fz"><input type="radio" name="theme" id="theme-pink_lemonade" value="pink_lemonade"><span>pink lemonade</span></label><label class="theme-card ps-cm"><input type="radio" name="theme" id="theme-pulse" value="pulse"><span>pulse</span></label><label class="theme-card ps-d4"><input type="radio" name="theme" id="theme-purpleish" value="purpleish"><span>purpleish</span></label><label class="theme-card ps-fy"><input type="radio" name="theme" id="theme-rainbow_trail" value="rainbow_trail"><span>rainbow trail</span></label><label class="theme-card ps-ct"><input type="radio" name="theme" id="theme-red_dragon" value="red_dragon"><span>red dragon</span></label><label class="theme-card ps-es"><input type="radio" name="theme" id="theme-red_samurai" value="red_samurai"><span>red samurai</span></label><label class="theme-card ps-e1"><input type="radio" name="theme" id="theme-repose_dark" value="repose_dark"><span>repose dark</span></label><label class="theme-card ps-fs"><input type="radio" name="theme" id="theme-repose_light" value="repose_light"><span>repose light</span></label><label class="theme-card ps-fb"><input type="radio" name="theme" id="theme-retro" value="retro"><span>retro</span></label><label class="theme-card ps-bx"><input type="radio" name="theme" id="theme-retrocast" value="retrocast"><span>retrocast</span></label><label class="theme-card ps-cd"><input type="radio" name="theme" id="theme-rgb" value="rgb"><span>rgb</span></label><label class="theme-card ps-d5"><input type="radio" name="theme" id="theme-rose_pine" value="rose_pine"><span>rose pine</span></label><label class="theme-card ps-gc"><input type="radio" name="theme" id="theme-rose_pine_dawn" value="rose_pine_dawn"><span>rose pine dawn</span></label><label class="theme-card ps-dt"><input type="radio" name="theme" id="theme-rose_pine_moon" value="rose_pine_moon"><span>rose pine moon</span></label><label class="theme-card ps-cv"><input type="radio" name="theme" id="theme-rudy" value="rudy"><span>rudy</span></label><label class="theme-card ps-by"><input type="radio" name="theme" id="theme-ryujinscales" value="ryujinscales"><span>ryujinscales</span></label><label class="theme-card ps-fi"><input type="radio" name="theme" id="theme-serika" value="serika"><span>serika</span></label><label class="theme-card ps-e8"><input type="radio" name="theme" id="theme-serika_dark" value="serika_dark"><span>serika dark</span></label><label class="theme-card ps-dh"><input type="radio" name="theme" id="theme-sewing_tin" value="sewing_tin"><span>sewing tin</span></label><label class="theme-card ps-gg"><input type="radio" name="theme" id="theme-sewing_tin_light" value="sewing_tin_light"><span>sewing tin light</span></label><label class="theme-card ps-bi"><input type="radio" name="theme" id="theme-shadow" value="shadow"><span>shadow</span></label><label class="theme-card ps-f6"><input type="radio" name="theme" id="theme-shoko" value="shoko"><span>shoko</span></label><label class="theme-card ps-ge"><input type="radio" name="theme" id="theme-slambook" value="slambook"><span>slambook</span></label><label class="theme-card ps-f2"><input type="radio" name="theme" id="theme-snes" value="snes"><span>snes</span></label><label class="theme-card ps-gb"><input type="radio" name="theme" id="theme-soaring_skies" value="soaring_skies"><span>soaring skies</span></label><label class="theme-card ps-bm"><input type="radio" name="theme" id="theme-solarized_dark" value="solarized_dark"><span>solarized dark</span></label><label class="theme-card ps-g4"><input type="radio" name="theme" id="theme-solarized_light" value="solarized_light"><span>solarized light</span></label><label class="theme-card ps-bj"><input type="radio" name="theme" id="theme-solarized_osaka" value="solarized_osaka"><span>solarized osaka</span></label><label class="theme-card ps-dw"><input type="radio" name="theme" id="theme-sonokai" value="sonokai"><span>sonokai</span></label><label class="theme-card ps-c5"><input type="radio" name="theme" id="theme-spiderman" value="spiderman"><span>spiderman</span></label><label class="theme-card ps-bs"><input type="radio" name="theme" id="theme-stealth" value="stealth"><span>stealth</span></label><label class="theme-card ps-fw"><input type="radio" name="theme" id="theme-strawberry" value="strawberry"><span>strawberry</span></label><label class="theme-card ps-cf"><input type="radio" name="theme" id="theme-striker" value="striker"><span>striker</span></label><label class="theme-card ps-ec"><input type="radio" name="theme" id="theme-suisei" value="suisei"><span>suisei</span></label><label class="theme-card ps-d9"><input type="radio" name="theme" id="theme-sunset" value="sunset"><span>sunset</span></label><label class="theme-card ps-dm"><input type="radio" name="theme" id="theme-superuser" value="superuser"><span>superuser</span></label><label class="theme-card ps-bo"><input type="radio" name="theme" id="theme-sweden" value="sweden"><span>sweden</span></label><label class="theme-card ps-g7"><input type="radio" name="theme" id="theme-tangerine" value="tangerine"><span>tangerine</span></label><label class="theme-card ps-f0"><input type="radio" name="theme" id="theme-taro" value="taro"><span>taro</span></label><label class="theme-card ps-cr"><input type="radio" name="theme" id="theme-terminal" value="terminal"><span>terminal</span></label><label class="theme-card ps-c4"><input type="radio" name="theme" id="theme-terra" value="terra"><span>terra</span></label><label class="theme-card ps-ft"><input type="radio" name="theme" id="theme-terrazzo" value="terrazzo"><span>terrazzo</span></label><label class="theme-card ps-c1"><input type="radio" name="theme" id="theme-terror_below" value="terror_below"><span>terror below</span></label><label class="theme-card ps-f7"><input type="radio" name="theme" id="theme-tiramisu" value="tiramisu"><span>tiramisu</span></label><label class="theme-card ps-eg"><input type="radio" name="theme" id="theme-trackday" value="trackday"><span>trackday</span></label><label class="theme-card ps-bh"><input type="radio" name="theme" id="theme-trance" value="trance"><span>trance</span></label><label class="theme-card ps-c6"><input type="radio" name="theme" id="theme-tron_orange" value="tron_orange"><span>tron orange</span></label><label class="theme-card ps-ev"><input type="radio" name="theme" id="theme-vaporwave" value="vaporwave"><span>vaporwave</span></label><label class="theme-card ps-cb"><input type="radio" name="theme" id="theme-vesper" value="vesper"><span>vesper</span></label><label class="theme-card ps-gl"><input type="radio" name="theme" id="theme-vesper_light" value="vesper_light"><span>vesper light</span></label><label class="theme-card ps-dx"><input type="radio" name="theme" id="theme-viridescent" value="viridescent"><span>viridescent</span></label><label class="theme-card ps-cp"><input type="radio" name="theme" id="theme-voc" value="voc"><span>voc</span></label><label class="theme-card ps-d2"><input type="radio" name="theme" id="theme-vscode" value="vscode"><span>vscode</span></label><label class="theme-card ps-d7"><input type="radio" name="theme" id="theme-watermelon" value="watermelon"><span>watermelon</span></label><label class="theme-card ps-d1"><input type="radio" name="theme" id="theme-wavez" value="wavez"><span>wavez</span></label><label class="theme-card ps-fx"><input type="radio" name="theme" id="theme-witch_girl" value="witch_girl"><span>witch girl</span></label></div></details><div class="js-only ps-14h" id="monkeytype-text-source">
+<h3>reading text color</h3>
+<p class="control-help">Auto chooses the more readable palette color. Choose sub or text to set it yourself; answer colors adapt.</p>
+<div aria-label="Monkeytype reading text color" class="segmented" role="group">
+<label><input checked="" name="text-source" type="radio" value="auto"/><span>auto</span></label>
+<label><input name="text-source" type="radio" value="sub"/><span>sub</span></label>
+<label><input name="text-source" type="radio" value="text"/><span>text</span></label>
+</div>
+<p aria-live="polite" class="control-help ps-14i" id="monkeytype-text-status" role="status"></p>
+</div></div><aside class="theme-editor js-only" aria-label="Customize theme colors"><div class="color-editor-heading"><h3>colors</h3><button type="button" id="reset-theme-colors" aria-label="Reset this theme">reset</button></div><span class="sr-only" id="color-format-help">Choose a swatch or enter hex. Transparent borders accept #RRGGBBAA. Reset restores the theme color.</span><span class="sr-only" id="color-edit-status" role="status" aria-live="polite"></span><div class="main-colors"><div class="color-row" data-color-row="bg">
+<label for="color-bg">background</label>
+<div class="color-inputs"><input type="color" id="swatch-bg" aria-label="background swatch" data-color-swatch="bg">
+<input type="text" id="color-bg" data-color-hex="bg" aria-label="background hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="bg" aria-label="Reset background" title="Reset background">↺</button></div></div><div class="color-row" data-color-row="text">
+<label for="color-text">reading text</label>
+<div class="color-inputs"><input type="color" id="swatch-text" aria-label="reading text swatch" data-color-swatch="text">
+<input type="text" id="color-text" data-color-hex="text" aria-label="reading text hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="text" aria-label="Reset reading text" title="Reset reading text">↺</button></div></div><div class="color-row" data-color-row="muted">
+<label for="color-muted">secondary text</label>
+<div class="color-inputs"><input type="color" id="swatch-muted" aria-label="secondary text swatch" data-color-swatch="muted">
+<input type="text" id="color-muted" data-color-hex="muted" aria-label="secondary text hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="muted" aria-label="Reset secondary text" title="Reset secondary text">↺</button></div></div><div class="color-row" data-color-row="accent">
+<label for="color-accent">interface accent</label>
+<div class="color-inputs"><input type="color" id="swatch-accent" aria-label="interface accent swatch" data-color-swatch="accent">
+<input type="text" id="color-accent" data-color-hex="accent" aria-label="interface accent hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="accent" aria-label="Reset interface accent" title="Reset interface accent">↺</button></div></div><div class="color-row" data-color-row="correct">
+<label for="color-correct">correct</label>
+<div class="color-inputs"><input type="color" id="swatch-correct" aria-label="correct swatch" data-color-swatch="correct">
+<input type="text" id="color-correct" data-color-hex="correct" aria-label="correct hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="correct" aria-label="Reset correct" title="Reset correct">↺</button></div></div><div class="color-row" data-color-row="wrong">
+<label for="color-wrong">wrong</label>
+<div class="color-inputs"><input type="color" id="swatch-wrong" aria-label="wrong swatch" data-color-swatch="wrong">
+<input type="text" id="color-wrong" data-color-hex="wrong" aria-label="wrong hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="wrong" aria-label="Reset wrong" title="Reset wrong">↺</button></div></div></div><details class="advanced-colors"><summary>more colors</summary><div class="advanced-color-grid"><div class="color-row" data-color-row="raised">
+<label for="color-raised">buttons &amp; controls</label>
+<div class="color-inputs"><input type="color" id="swatch-raised" aria-label="buttons &amp; controls swatch" data-color-swatch="raised">
+<input type="text" id="color-raised" data-color-hex="raised" aria-label="buttons &amp; controls hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="raised" aria-label="Reset buttons &amp; controls" title="Reset buttons &amp; controls">↺</button></div></div><div class="color-row" data-color-row="correct-ink">
+<label for="color-correct-ink">correct text &amp; numbers</label>
+<div class="color-inputs"><input type="color" id="swatch-correct-ink" aria-label="correct text &amp; numbers swatch" data-color-swatch="correct-ink">
+<input type="text" id="color-correct-ink" data-color-hex="correct-ink" aria-label="correct text &amp; numbers hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="correct-ink" aria-label="Reset correct text &amp; numbers" title="Reset correct text &amp; numbers">↺</button></div></div><div class="color-row" data-color-row="edge">
+<label for="color-edge">paper outline</label>
+<div class="color-inputs"><input type="color" id="swatch-edge" aria-label="paper outline swatch" data-color-swatch="edge">
+<input type="text" id="color-edge" data-color-hex="edge" aria-label="paper outline hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge" aria-label="Reset paper outline" title="Reset paper outline">↺</button></div></div><div class="color-row" data-color-row="edge-soft">
+<label for="color-edge-soft">soft dividers</label>
+<div class="color-inputs"><input type="color" id="swatch-edge-soft" aria-label="soft dividers swatch" data-color-swatch="edge-soft">
+<input type="text" id="color-edge-soft" data-color-hex="edge-soft" aria-label="soft dividers hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge-soft" aria-label="Reset soft dividers" title="Reset soft dividers">↺</button></div><label class="color-opacity">opacity<input type="range" min="0" max="100" step="0.1" data-color-alpha="edge-soft" aria-label="soft dividers opacity"><output></output></label></div><div class="color-row" data-color-row="edge-strong">
+<label for="color-edge-strong">strong borders</label>
+<div class="color-inputs"><input type="color" id="swatch-edge-strong" aria-label="strong borders swatch" data-color-swatch="edge-strong">
+<input type="text" id="color-edge-strong" data-color-hex="edge-strong" aria-label="strong borders hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge-strong" aria-label="Reset strong borders" title="Reset strong borders">↺</button></div><label class="color-opacity">opacity<input type="range" min="0" max="100" step="0.1" data-color-alpha="edge-strong" aria-label="strong borders opacity"><output></output></label></div><div class="color-row" data-color-row="logo-secondary">
+<label for="color-logo-secondary">wordmark · JLPT</label>
+<div class="color-inputs"><input type="color" id="swatch-logo-secondary" aria-label="wordmark · JLPT swatch" data-color-swatch="logo-secondary">
+<input type="text" id="color-logo-secondary" data-color-hex="logo-secondary" aria-label="wordmark · JLPT hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="logo-secondary" aria-label="Reset wordmark · JLPT" title="Reset wordmark · JLPT">↺</button></div></div></div><div class="fill-opacity-controls"><h4>fill opacity</h4><p>Applies to correct and wrong answers.</p><div class="fill-opacity-row"><label for="opacity-cell-fill">cell fill<output id="opacity-cell-fill-output">11%</output></label><div><input id="opacity-cell-fill" type="range" min="0" max="100" step="1" value="11" data-fill-opacity="cell-fill" aria-label="cell fill opacity"><button type="button" data-fill-reset="cell-fill" aria-label="Reset cell fill opacity" title="Reset cell fill opacity">↺</button></div></div><div class="fill-opacity-row"><label for="opacity-fill">fill style<output id="opacity-fill-output">30%</output></label><div><input id="opacity-fill" type="range" min="0" max="100" step="1" value="30" data-fill-opacity="fill" aria-label="fill style opacity"><button type="button" data-fill-reset="fill" aria-label="Reset fill style opacity" title="Reset fill style opacity">↺</button></div></div></div></details></aside></div></section><section data-settings="browser"><div class="setting-row js-only"><div><h3>remember this browser</h3><p id="save-status">Saving is on by default. No account required.</p></div><label class="switch"><input id="remember" type="checkbox" checked>save preferences, answers and position</label></div><div class="button-row browser-actions js-only"><button id="reset-preferences" type="button">reset preferences</button><button id="forget" type="button">forget saved data</button></div><div class="developer-only developer-settings"><h3>developer mode</h3><p>Principal differences and editorial cases are visible. This local switch is not authentication.</p><button id="disable-dev" type="button">hide developer tools</button></div><div class="settings-about"><button type="button" id="developer-unlock" class="js-only" title="astraJLPT build information">astraJLPT · 2020–2026 collection</button><span id="developer-hint" role="status"></span></div></section></div></details></header><main id="content" class="review-page"><div class="review-content"><a href="../levels/N2.html">← N2 papers</a><h1>N2 · December 2019</h1><p>Uncertainty index: <strong>1018</strong> · 11 differences · 7 unresolved · 3 provisional fixes</p><p>Evidence base 1000 + source concerns 18 = 1018. Concerns are uncapped; browsing order uses evidence tier before concern points.</p><p>This is an editorial evidence assessment, not a probability, an error rate or a practice score.</p><details><summary>Assessment evidence and original source scores</summary><pre>{
+  &quot;unit&quot;: &quot;N2_12_2019&quot;,
+  &quot;sample&quot;: false,
+  &quot;year&quot;: 2019,
+  &quot;month&quot;: 12,
+  &quot;evidence_base&quot;: 1000,
+  &quot;evidence_tier&quot;: 3,
+  &quot;concern_points&quot;: 18,
+  &quot;index&quot;: 1018,
+  &quot;concern_counts&quot;: {
+    &quot;metadata_flags&quot;: 0,
+    &quot;missing_units&quot;: 0,
+    &quot;major_defects&quot;: 1,
+    &quot;minor_defects&quot;: 2,
+    &quot;uncertain_fields&quot;: 9
+  },
+  &quot;principal_history&quot;: {
+    &quot;unit&quot;: &quot;N2_12_2019&quot;,
+    &quot;level&quot;: &quot;N2&quot;,
+    &quot;year&quot;: 2019,
+    &quot;month&quot;: 12,
+    &quot;principal_path&quot;: &quot;src/日语JLPT真题1992～2025.12（及时转存，避免丢失）/渠道一/日语N2真题/2010年-2020年/2019年12月/【2】2019年12月N2 真题.pdf&quot;,
+    &quot;principal_sha256&quot;: &quot;ebea5777c24f842c590e706b53be4a50d4a3fdc214aa735a7ee76569a97852e7&quot;,
+    &quot;initial_tier&quot;: 1,
+    &quot;written_physical_pages&quot;: &quot;1-14,17&quot;,
+    &quot;review_status&quot;: &quot;complete_written_review&quot;,
+    &quot;provenance_status&quot;: &quot;unverified&quot;,
+    &quot;provenance_points&quot;: 100,
+    &quot;metadata_flags&quot;: 0,
+    &quot;missing_units&quot;: 0,
+    &quot;major_defects&quot;: 1,
+    &quot;minor_defects&quot;: 2,
+    &quot;uncertain_fields&quot;: 9,
+    &quot;uncertainty_index&quot;: 118,
+    &quot;score_evidence&quot;: [
+      {
+        &quot;id&quot;: &quot;N2_12_2019-S-001&quot;,
+        &quot;kind&quot;: &quot;major_defects&quot;,
+        &quot;item_id&quot;: &quot;vocab-s06&quot;,
+        &quot;field&quot;: &quot;/heading&quot;,
+        &quot;locator&quot;: &quot;Physical 3, Problem 6 instruction&quot;,
+        &quot;evidence&quot;: &quot;最も近いもの asks for the nearest choice in a word-usage task. The inspected alternatives and the task itself require 最もよいもの. Count as a task-condition error, once for this instruction.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N2_12_2019-S-002&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;vocab-q041&quot;,
+        &quot;field&quot;: &quot;/stem&quot;,
+        &quot;locator&quot;: &quot;Physical 5, Q41 supervisor response&quot;,
+        &quot;evidence&quot;: &quot;看病でお疲れて contains an erroneous polite prefix before the verb form. Native 疲れて and the dialogue support removing お; the option identity and answer do not change.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N2_12_2019-S-003&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-s03&quot;,
+        &quot;field&quot;: &quot;/heading&quot;,
+        &quot;locator&quot;: &quot;Physical 11, Problem 12 instruction&quot;,
+        &quot;evidence&quot;: &quot;次のAとBは文章を読んで uses は instead of the genitive の. The intended reading task remains clear; the inspected alternate instruction supports の.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N2_12_2019-S-004&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;vocab-q009&quot;,
+        &quot;field&quot;: &quot;/options/1&quot;,
+        &quot;locator&quot;: &quot;Physical 2, Q9 choice 2&quot;,
+        &quot;evidence&quot;: &quot;Principal 見延して conflicts with native 見延ばして. Both are intentional wrong-spelling possibilities, so no confirmed defect is assigned.&quot;,
+        &quot;case_id&quot;: &quot;N2_12_2019-vocab-q009-option2&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N2_12_2019-S-005&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;vocab-q009&quot;,
+        &quot;field&quot;: &quot;/options/3&quot;,
+        &quot;locator&quot;: &quot;Physical 2, Q9 choice 4&quot;,
+        &quot;evidence&quot;: &quot;Principal 見去して conflicts with 見失して in the structured paper and an explanation that also differs in option position.&quot;,
+        &quot;case_id&quot;: &quot;N2_12_2019-vocab-q009-option4&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N2_12_2019-S-006&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;vocab-q022&quot;,
+        &quot;field&quot;: &quot;/stem&quot;,
+        &quot;locator&quot;: &quot;Physical 3, Q22 underline&quot;,
+        &quot;evidence&quot;: &quot;The principal marks 動揺した; other copies mark only 動揺 or omit the mark. Original endpoint remains unverified.&quot;,
+        &quot;case_id&quot;: &quot;N2_12_2019-vocab-q022-underline&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N2_12_2019-S-007&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;vocab-q030&quot;,
+        &quot;field&quot;: &quot;/options/3&quot;,
+        &quot;locator&quot;: &quot;Physical 4, Q30 choice 4 underline&quot;,
+        &quot;evidence&quot;: &quot;The principal marks めくらないと; school/native witnesses end before と.&quot;,
+        &quot;case_id&quot;: &quot;N2_12_2019-vocab-q030-option4-underline&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N2_12_2019-S-008&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;vocab-q035&quot;,
+        &quot;field&quot;: &quot;/stem&quot;,
+        &quot;locator&quot;: &quot;Physical 4, Q35 dialogue&quot;,
+        &quot;evidence&quot;: &quot;Principal comma after ブレーキ conflicts with the sentence stop in two layouts; the native dialogue also varies in punctuation and final particle. Count once for the stem.&quot;,
+        &quot;case_id&quot;: &quot;N2_12_2019-vocab-q035-punctuation&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N2_12_2019-S-009&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;vocab-q046&quot;,
+        &quot;field&quot;: &quot;&quot;,
+        &quot;locator&quot;: &quot;Physical 5, Q46 stem and choice 2&quot;,
+        &quot;evidence&quot;: &quot;ので is in principal choice 2 but in the native fixed continuation. Coupled slot/option boundary counts once.&quot;,
+        &quot;case_id&quot;: &quot;N2_12_2019-vocab-q046-boundary&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N2_12_2019-S-010&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;vocab-q051&quot;,
+        &quot;field&quot;: &quot;/key&quot;,
+        &quot;locator&quot;: &quot;Physical 17, written key 51&quot;,
+        &quot;evidence&quot;: &quot;Principal key 1 is preferred by context and explanations, but the school key prints 2 for the same options.&quot;,
+        &quot;case_id&quot;: &quot;N2_12_2019-vocab-q051-key&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N2_12_2019-S-011&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;vocab-b001&quot;,
+        &quot;field&quot;: &quot;/content&quot;,
+        &quot;locator&quot;: &quot;Physical 6, cloze passage&quot;,
+        &quot;evidence&quot;: &quot;Principal lacks selective ruby printed in the school/24-page family and has 完成前に where several alternatives omit に. Count the disputed passage-content field once.&quot;,
+        &quot;case_id&quot;: &quot;N2_12_2019-vocab-b001-ruby&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N2_12_2019-S-012&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;reading-b004&quot;,
+        &quot;field&quot;: &quot;/content&quot;,
+        &quot;locator&quot;: &quot;Physical 8, camera notice&quot;,
+        &quot;evidence&quot;: &quot;Principal お客さん and comma after ため conflict with alternate お客様 and no comma. Count once for the content field.&quot;,
+        &quot;case_id&quot;: &quot;N2_12_2019-reading-b004-customer-wording&quot;
+      }
+    ],
+    &quot;assessed_on&quot;: &quot;2026-09-28&quot;,
+    &quot;method_version&quot;: 1
+  },
+  &quot;evidence&quot;: []
+}</pre></details><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span><ul></ul><div class="review-controls"><label>Show <select id="review-filter"><option value="all">All records</option><option value="difference">Principal differences</option><option value="unresolved">Unresolved cases</option><option value="provisional_fix">Provisional fixes</option></select></label><label>Find <input id="review-search" type="search" placeholder="Item, wording, evidence…"></label></div><p id="review-count" class="control-help" role="status"></p><section class="review-group" id="review-coverage" data-kinds="difference"><div class="review-group-heading"><h2>Paper coverage</h2><a href="../papers/N2_12_2019.html#content">Open in paper →</a></div><div class="review-record" id="principal_differences-N2_12_2019-PD-011"><div class="review-label">Principal difference ·  · high</div><div class="comparison"><div><h4>Principal</h4><pre><mark class="diff-old">1.</mark> <mark class="diff-old">試験が始まるまで、この問題用紙を開けないでください。
+2. この問題用紙を持って帰ることはできません。
+3. 受験番号と名前を別紙に、受験票と同じように書いてください。
+4. 問題には回答番号の1、2、3、…が付いています。解答は、解答用紙にある同じ番号の所にマークしてください</mark>…</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">Not</mark> rec<mark class="diff-new">ord</mark>e<mark class="diff-new">d</mark></pre></div></div><p>The imported practice-paper structure omits cover administration instructions, the distributor revision disclaimer and registration fields. This is a disclosed inherited omission; it does not make the principal defective or establish issuer provenance.</p><span class="principal-repository-source">Principal source (page=1): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Cover 注意 items 1–5 and registration/name fields</span><details><summary>Full published record · principal_differences-N2_12_2019-PD-011</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N2_12_2019-PD-011&quot;,
+  &quot;unit&quot;: &quot;N2_12_2019&quot;,
+  &quot;item_id&quot;: null,
+  &quot;field&quot;: &quot;&quot;,
+  &quot;current_value&quot;: null,
+  &quot;categories&quot;: [
+    &quot;missing_printed_content&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2019年12月N2 真题 — 渠道一【2】17-page edition&quot;,
+    &quot;sha256&quot;: &quot;ebea5777c24f842c590e706b53be4a50d4a3fdc214aa735a7ee76569a97852e7&quot;,
+    &quot;physical_pages&quot;: [
+      1
+    ],
+    &quot;locator&quot;: &quot;Cover 注意 items 1–5 and registration/name fields&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;1. 試験が始まるまで、この問題用紙を開けないでください。\n2. この問題用紙を持って帰ることはできません。\n3. 受験番号と名前を別紙に、受験票と同じように書いてください。\n4. 問題には回答番号の1、2、3、…が付いています。解答は、解答用紙にある同じ番号の所にマークしてください。\n5. これは最終バージョン（perfect）ではありません。欠点がある場合はご容赦ください。\n受験番号 Examinee Registration Number; 名前 Name&quot;
+  },
+  &quot;editorial_reading&quot;: null,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;editorial_omission&quot;,
+  &quot;rationale&quot;: &quot;The imported practice-paper structure omits cover administration instructions, the distributor revision disclaimer and registration fields. This is a disclosed inherited omission; it does not make the principal defective or establish issuer provenance.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-vocab-q009" data-kinds="unresolved"><div class="review-group-heading"><h2>vocab-q009</h2><a href="../papers/N2_12_2019.html#vocab-q009">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">9. 楽しみにしていたドラマを<u>みのがして</u>しまった。<ol><li>見逃して</li><li>見延して</li><li>見欠して</li><li>見去して</li></ol><p>Editorial key: 1</p></div></details><div class="review-record" id="unresolved_cases-N2_12_2019-vocab-q009-option2"><div class="review-label">Unresolved · /options/1 · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>見延<mark class="diff-old">ば</mark>して</pre></div><div><h4>Editorial</h4><pre>見延して</pre></div></div><p>Retain the directly printed 見延して. The distractor is intentionally wrong; inserting ば would not recover a correct answer and could change its historical identity.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>The original distractor spelling cannot be authenticated; an issuer-tied reproduction could distinguish the forms.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Q9 asks for the kanji spelling of みのがして in a sentence about missing a television drama.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=2): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q9 option 2<p>見延して</p></li><li><span class="principal-repository-source">Principal source (page=2): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q9 option 2<p>見延して</p></li><li><span class="principal-repository-source">Principal source (page=2): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q9 explanation and four choices<p>見延して is explicitly listed among the incorrect spellings.</p></li><li><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Written Q9 options[1]<p>見延ばして</p></li></ul><details><summary>Full published record · unresolved_cases-N2_12_2019-vocab-q009-option2</summary><pre>{
+  &quot;case_id&quot;: &quot;N2_12_2019-vocab-q009-option2&quot;,
+  &quot;unit&quot;: &quot;N2_12_2019&quot;,
+  &quot;item_id&quot;: &quot;vocab-q009&quot;,
+  &quot;field&quot;: &quot;/options/1&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;見延して&quot;,
+  &quot;context&quot;: &quot;Q9 asks for the kanji spelling of みのがして in a sentence about missing a television drama.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;見延ばして&quot;,
+      &quot;assessment&quot;: &quot;The structured paper has the extra ば. Both versions are incorrect for みのがして; answer logic cannot identify the original wrong choice.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;2019年12月N2 真题 — 渠道一【2】17-page edition&quot;,
+      &quot;sha256&quot;: &quot;ebea5777c24f842c590e706b53be4a50d4a3fdc214aa735a7ee76569a97852e7&quot;,
+      &quot;physical_pages&quot;: [
+        2
+      ],
+      &quot;locator&quot;: &quot;Q9 option 2&quot;,
+      &quot;reading&quot;: &quot;見延して&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2019年12月日语能力考试N2真题及详解 — 成都帝京日语学校 edition&quot;,
+      &quot;sha256&quot;: &quot;594fa98f60eedef66c0c6119ca26b4d6bd446dfe33018673dc05ae53bd6b2645&quot;,
+      &quot;physical_pages&quot;: [
+        2
+      ],
+      &quot;locator&quot;: &quot;Q9 option 2&quot;,
+      &quot;reading&quot;: &quot;見延して&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2019年12月N2答案解析+听力原文+译文 — 渠道一【3】edition&quot;,
+      &quot;sha256&quot;: &quot;15c5e0787954882991c6196d934cc3efdcdc40d052bbca4dc4b0fd101f95d324&quot;,
+      &quot;physical_pages&quot;: [
+        2
+      ],
+      &quot;locator&quot;: &quot;Q9 explanation and four choices&quot;,
+      &quot;reading&quot;: &quot;見延して is explicitly listed among the incorrect spellings.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;munjaJLPT — December 2019 N2 structured paper&quot;,
+      &quot;sha256&quot;: &quot;76d51c3c54465881b79cfff2b6cb88a88dc4b3a11700600d59bc90cf3609a7c1&quot;,
+      &quot;locator&quot;: &quot;Written Q9 options[1]&quot;,
+      &quot;reading&quot;: &quot;見延ばして&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Retain the directly printed 見延して. The distractor is intentionally wrong; inserting ば would not recover a correct answer and could change its historical identity.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Compare all four Q9 choices in the principal, school paper and the written explanation&quot;,
+    &quot;compare the structured option order&quot;,
+    &quot;test both forms against the reading みのがして.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;The original distractor spelling cannot be authenticated; an issuer-tied reproduction could distinguish the forms.&quot;
+}</pre></details></div><div class="review-record" id="unresolved_cases-N2_12_2019-vocab-q009-option4"><div class="review-label">Unresolved · /options/3 · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>見<mark class="diff-old">失</mark>して</pre></div><div><h4>Editorial</h4><pre>見<mark class="diff-new">去</mark>して</pre></div></div><p>Retain 見去して in position 4, as in the inspected question papers. Both competing strings are wrong spellings, so a grammatical preference would be an unsafe basis for changing a distractor.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>The competing transcription may preserve a different historical distractor; no authenticated option set was located.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Q9 option 4 is another wrong spelling of みのがして.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=2): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q9 option 4<p>見去して</p></li><li><span class="principal-repository-source">Principal source (page=2): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q9 option 4<p>見去して</p></li><li><span class="principal-repository-source">Principal source (page=2): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q9 explanation<p>見去して is one of the three explicitly incorrect spellings.</p></li><li><span class="principal-repository-source">Principal source (page=1): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q9 explanation, distractor 2<p>Discusses 見失して under option 2; its placement differs from the structured paper.</p></li><li><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Written Q9 options[3]<p>見失して</p></li></ul><details><summary>Full published record · unresolved_cases-N2_12_2019-vocab-q009-option4</summary><pre>{
+  &quot;case_id&quot;: &quot;N2_12_2019-vocab-q009-option4&quot;,
+  &quot;unit&quot;: &quot;N2_12_2019&quot;,
+  &quot;item_id&quot;: &quot;vocab-q009&quot;,
+  &quot;field&quot;: &quot;/options/3&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;見去して&quot;,
+  &quot;context&quot;: &quot;Q9 option 4 is another wrong spelling of みのがして.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;見失して&quot;,
+      &quot;assessment&quot;: &quot;Appears in the structured paper and in a separate explanation, although the latter assigns it to option 2.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;2019年12月N2 真题 — 渠道一【2】17-page edition&quot;,
+      &quot;sha256&quot;: &quot;ebea5777c24f842c590e706b53be4a50d4a3fdc214aa735a7ee76569a97852e7&quot;,
+      &quot;physical_pages&quot;: [
+        2
+      ],
+      &quot;locator&quot;: &quot;Q9 option 4&quot;,
+      &quot;reading&quot;: &quot;見去して&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2019年12月日语能力考试N2真题及详解 — 成都帝京日语学校 edition&quot;,
+      &quot;sha256&quot;: &quot;594fa98f60eedef66c0c6119ca26b4d6bd446dfe33018673dc05ae53bd6b2645&quot;,
+      &quot;physical_pages&quot;: [
+        2
+      ],
+      &quot;locator&quot;: &quot;Q9 option 4&quot;,
+      &quot;reading&quot;: &quot;見去して&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2019年12月N2答案解析+听力原文+译文 — 渠道一【3】edition&quot;,
+      &quot;sha256&quot;: &quot;15c5e0787954882991c6196d934cc3efdcdc40d052bbca4dc4b0fd101f95d324&quot;,
+      &quot;physical_pages&quot;: [
+        2
+      ],
+      &quot;locator&quot;: &quot;Q9 explanation&quot;,
+      &quot;reading&quot;: &quot;見去して is one of the three explicitly incorrect spellings.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2019年12月N2答案解析+听力原文 — 渠道一【1】edition&quot;,
+      &quot;sha256&quot;: &quot;6ea0e1286c1befbb18d6e46142276249bbdca3efd6fdf16a30416bf18b2f1090&quot;,
+      &quot;physical_pages&quot;: [
+        1
+      ],
+      &quot;locator&quot;: &quot;Q9 explanation, distractor 2&quot;,
+      &quot;reading&quot;: &quot;Discusses 見失して under option 2; its placement differs from the structured paper.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;munjaJLPT — December 2019 N2 structured paper&quot;,
+      &quot;sha256&quot;: &quot;76d51c3c54465881b79cfff2b6cb88a88dc4b3a11700600d59bc90cf3609a7c1&quot;,
+      &quot;locator&quot;: &quot;Written Q9 options[3]&quot;,
+      &quot;reading&quot;: &quot;見失して&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Retain 見去して in position 4, as in the inspected question papers. Both competing strings are wrong spellings, so a grammatical preference would be an unsafe basis for changing a distractor.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Visually compare the Q9 option sets and the detailed incorrect-option discussion.&quot;,
+    &quot;Check the separate explanation position rather than transferring its option number.&quot;,
+    &quot;Check that answer 1 remains 見逃して under both possibilities.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;The competing transcription may preserve a different historical distractor; no authenticated option set was located.&quot;
+}</pre></details></div></section><section class="review-group" id="review-vocab-q022" data-kinds="provisional_fix"><div class="review-group-heading"><h2>vocab-q022</h2><a href="../papers/N2_12_2019.html#vocab-q022">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">22.その話を聞いて<u>動揺した</u>。<ol><li>うれしくなった</li><li>不安になった</li><li>不満に思った</li><li>面白いと思った</li></ol><p>Editorial key: 2</p></div></details><div class="review-record" id="unresolved_cases-N2_12_2019-vocab-q022-underline"><div class="review-label">Provisional fix · /stem/html · medium</div><div class="comparison"><div><h4>Before</h4><pre>22.その話を聞いて&lt;u&gt;動揺&lt;/u&gt;<mark class="diff-old">した</mark>。</pre></div><div><h4>Editorial</h4><pre>22.その話を聞いて&lt;u&gt;動揺<mark class="diff-new">した</mark>&lt;/u&gt;。</pre></div></div><p>Restore the full predicate target, which is directly printed in two layouts and represented in the structured paper. All alternatives paraphrase the whole reaction, and key 2 remains 不安になった.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>The copies may share a source; the original underline endpoint is not authenticated.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Q22 asks for the closest meaning of 動揺した in その話を聞いて動揺した。</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=3): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q22 stem, enlarged crop<p>その話を聞いて&lt;u&gt;動揺した&lt;/u&gt;。</p></li><li><span class="principal-repository-source">Principal source (page=4): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q22 stem<p>The underline extends through した.</p></li><li><span class="principal-repository-source">Principal source (page=3): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q22 stem<p>Only 動揺 is underlined.</p></li><li><span class="principal-repository-source">Principal source (page=4): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q22 stem<p>No underline is visible.</p></li><li><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Written Q22 title<p>&lt;u&gt;動揺した&lt;/u&gt;</p></li></ul><details><summary>Full published record · unresolved_cases-N2_12_2019-vocab-q022-underline</summary><pre>{
+  &quot;case_id&quot;: &quot;N2_12_2019-vocab-q022-underline&quot;,
+  &quot;unit&quot;: &quot;N2_12_2019&quot;,
+  &quot;item_id&quot;: &quot;vocab-q022&quot;,
+  &quot;field&quot;: &quot;/stem/html&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;22.その話を聞いて&lt;u&gt;動揺した&lt;/u&gt;。&quot;,
+  &quot;context&quot;: &quot;Q22 asks for the closest meaning of 動揺した in その話を聞いて動揺した。&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;22.その話を聞いて&lt;u&gt;動揺&lt;/u&gt;した。&quot;,
+      &quot;assessment&quot;: &quot;The 22-page paper marks only the noun portion; this was also the imported target.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;22.その話を聞いて動揺した。&quot;,
+      &quot;assessment&quot;: &quot;The inspected school question page has no underline.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;2019年12月N2 真题 — 渠道一【2】17-page edition&quot;,
+      &quot;sha256&quot;: &quot;ebea5777c24f842c590e706b53be4a50d4a3fdc214aa735a7ee76569a97852e7&quot;,
+      &quot;physical_pages&quot;: [
+        3
+      ],
+      &quot;locator&quot;: &quot;Q22 stem, enlarged crop&quot;,
+      &quot;reading&quot;: &quot;その話を聞いて&lt;u&gt;動揺した&lt;/u&gt;。&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2019年12月N2试卷_解析_听力原文_高清扫描 — 32-page edition&quot;,
+      &quot;sha256&quot;: &quot;6fe9b0c615f9ec20946807f109c099d2ec8bc7a36ed6e50e3fb16f182665b933&quot;,
+      &quot;physical_pages&quot;: [
+        4
+      ],
+      &quot;locator&quot;: &quot;Q22 stem&quot;,
+      &quot;reading&quot;: &quot;The underline extends through した.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2019年12月N2真题 — 22-page collected-paper edition&quot;,
+      &quot;sha256&quot;: &quot;083b40db51de096f6f37040e3de9a7b3aa2984a63f2fa570fbf7ea8b14e401f5&quot;,
+      &quot;physical_pages&quot;: [
+        3
+      ],
+      &quot;locator&quot;: &quot;Q22 stem&quot;,
+      &quot;reading&quot;: &quot;Only 動揺 is underlined.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2019年12月日语能力考试N2真题及详解 — 成都帝京日语学校 edition&quot;,
+      &quot;sha256&quot;: &quot;594fa98f60eedef66c0c6119ca26b4d6bd446dfe33018673dc05ae53bd6b2645&quot;,
+      &quot;physical_pages&quot;: [
+        4
+      ],
+      &quot;locator&quot;: &quot;Q22 stem&quot;,
+      &quot;reading&quot;: &quot;No underline is visible.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;munjaJLPT — December 2019 N2 structured paper&quot;,
+      &quot;sha256&quot;: &quot;76d51c3c54465881b79cfff2b6cb88a88dc4b3a11700600d59bc90cf3609a7c1&quot;,
+      &quot;locator&quot;: &quot;Written Q22 title&quot;,
+      &quot;reading&quot;: &quot;&lt;u&gt;動揺した&lt;/u&gt;&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Restore the full predicate target, which is directly printed in two layouts and represented in the structured paper. All alternatives paraphrase the whole reaction, and key 2 remains 不安になった.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Inspect the principal at enlarged resolution and compare the underline endpoint in the other original pages.&quot;,
+    &quot;Check the native markup and the four paraphrases.&quot;,
+    &quot;Revisit the whole synonym question after the key comparison.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;The copies may share a source; the original underline endpoint is not authenticated.&quot;,
+  &quot;before&quot;: &quot;22.その話を聞いて&lt;u&gt;動揺&lt;/u&gt;した。&quot;
+}</pre></details></div></section><section class="review-group" id="review-vocab-s06" data-kinds="difference"><div class="review-group-heading"><h2>vocab-s06</h2><a href="../papers/N2_12_2019.html#vocab-s06">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">問題6 次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。</div></details><div class="review-record" id="principal_differences-N2_12_2019-PD-001"><div class="review-label">Principal difference · /heading · high</div><div class="comparison"><div><h4>Principal</h4><pre>次の言葉の使い方として最も<mark class="diff-old">近</mark>いものを</pre></div><div><h4>Editorial</h4><pre>次の言葉の使い方として最も<mark class="diff-new">よ</mark>いものを</pre></div></div><p>Retain the earlier repair. This task chooses the best usage, not the nearest meaning. The 22-page and 32-page layouts and native text support よい.</p><span class="principal-repository-source">Principal source (page=3): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Problem 6 instruction</span><details><summary>Full published record · principal_differences-N2_12_2019-PD-001</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N2_12_2019-PD-001&quot;,
+  &quot;unit&quot;: &quot;N2_12_2019&quot;,
+  &quot;item_id&quot;: &quot;vocab-s06&quot;,
+  &quot;field&quot;: &quot;/heading&quot;,
+  &quot;current_value&quot;: &quot;問題6 次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2019年12月N2 真题 — 渠道一【2】17-page edition&quot;,
+    &quot;sha256&quot;: &quot;ebea5777c24f842c590e706b53be4a50d4a3fdc214aa735a7ee76569a97852e7&quot;,
+    &quot;physical_pages&quot;: [
+      3
+    ],
+    &quot;locator&quot;: &quot;Problem 6 instruction&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;次の言葉の使い方として最も近いものを&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;次の言葉の使い方として最もよいものを&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Retain the earlier repair. This task chooses the best usage, not the nearest meaning. The 22-page and 32-page layouts and native text support よい.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-vocab-q027" data-kinds="resolved"><div class="review-group-heading"><h2>vocab-q027</h2><a href="../papers/N2_12_2019.html#vocab-q027">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">27. 素材<ol><li>プラスチックは石油を<u>素材</u>に作られている。</li><li>このお店は<u>素材</u>の味を生かした料理で有名です。</li><li>いろいろな情報を集めて、判断の<u>素材</u>にする。</li><li>故障の<u>素材</u>になったものを探さなくてはいけない。</li></ol><p>Editorial key: 2</p></div></details><div class="review-record" id="unresolved_cases-N2_12_2019-vocab-q027-key"><div class="review-label">Resolved · /key · high</div><div class="comparison"><div><h4>Alternative</h4><pre><mark class="diff-old">1</mark></pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">2</mark></pre></div></div><p>Retain key 2. The item-specific usage contrast, printed explanation and checked keys agree; the historical challenge to the key does not supply a credible competing answer.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Q27 asks for a correct use of 素材; choice 2 describes cooking that makes the most of ingredient flavor.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=3): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q27 choices and key<p>Key 2; 素材の味を生かした料理.</p></li><li><span class="principal-repository-source">Principal source (page=5): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q27 and written key<p>Key 2.</p></li><li><span class="principal-repository-source">Principal source (page=17): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q27 explanation<p>2 is correct; discusses 原料 for 1, 材料 for 3 and 原因 for 4.</p></li><li><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Written Q27 answer<p>Stored zero-based answer 1 corresponds to choice 2.</p></li></ul><details><summary>Full published record · unresolved_cases-N2_12_2019-vocab-q027-key</summary><pre>{
+  &quot;case_id&quot;: &quot;N2_12_2019-vocab-q027-key&quot;,
+  &quot;unit&quot;: &quot;N2_12_2019&quot;,
+  &quot;item_id&quot;: &quot;vocab-q027&quot;,
+  &quot;field&quot;: &quot;/key&quot;,
+  &quot;status&quot;: &quot;resolved&quot;,
+  &quot;confidence&quot;: &quot;high&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: 2,
+  &quot;context&quot;: &quot;Q27 asks for a correct use of 素材; choice 2 describes cooking that makes the most of ingredient flavor.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: 1,
+      &quot;assessment&quot;: &quot;The oil-to-plastic sentence calls for 原料 in this usage contrast, whereas 素材の味 is the ordinary collocation in choice 2.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;2019年12月N2 真题 — 渠道一【2】17-page edition&quot;,
+      &quot;sha256&quot;: &quot;ebea5777c24f842c590e706b53be4a50d4a3fdc214aa735a7ee76569a97852e7&quot;,
+      &quot;physical_pages&quot;: [
+        3,
+        17
+      ],
+      &quot;locator&quot;: &quot;Q27 choices and key&quot;,
+      &quot;reading&quot;: &quot;Key 2; 素材の味を生かした料理.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2019年12月日语能力考试N2真题及详解 — 成都帝京日语学校 edition&quot;,
+      &quot;sha256&quot;: &quot;594fa98f60eedef66c0c6119ca26b4d6bd446dfe33018673dc05ae53bd6b2645&quot;,
+      &quot;physical_pages&quot;: [
+        5,
+        33
+      ],
+      &quot;locator&quot;: &quot;Q27 and written key&quot;,
+      &quot;reading&quot;: &quot;Key 2.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2019年12月N2试卷_解析_听力原文_高清扫描 — 32-page edition&quot;,
+      &quot;sha256&quot;: &quot;6fe9b0c615f9ec20946807f109c099d2ec8bc7a36ed6e50e3fb16f182665b933&quot;,
+      &quot;physical_pages&quot;: [
+        17
+      ],
+      &quot;locator&quot;: &quot;Q27 explanation&quot;,
+      &quot;reading&quot;: &quot;2 is correct; discusses 原料 for 1, 材料 for 3 and 原因 for 4.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;munjaJLPT — December 2019 N2 structured paper&quot;,
+      &quot;sha256&quot;: &quot;76d51c3c54465881b79cfff2b6cb88a88dc4b3a11700600d59bc90cf3609a7c1&quot;,
+      &quot;locator&quot;: &quot;Written Q27 answer&quot;,
+      &quot;reading&quot;: &quot;Stored zero-based answer 1 corresponds to choice 2.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Retain key 2. The item-specific usage contrast, printed explanation and checked keys agree; the historical challenge to the key does not supply a credible competing answer.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Read all four uses and compare their collocations.&quot;,
+    &quot;Check printed answer tables and the item-specific explanation.&quot;,
+    &quot;Confirm the native answer indexing before comparison.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;&quot;
+}</pre></details></div></section><section class="review-group" id="review-vocab-q030" data-kinds="difference unresolved"><div class="review-group-heading"><h2>vocab-q030</h2><a href="../papers/N2_12_2019.html#vocab-q030">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">30. めくる<ol><li>この小説は面白くて、次のページを<u>めくる</u>のが楽しみだった。</li><li>汗をかいたので、タオルを水でぬらし、きつく<u>めくって</u>体をふいた。</li><li>封筒に書類を入れ、開かないように丁寧にのりで<u>めくって</u>おいた。</li><li>そのドアは押すのではなくて手前に<u>めくらない</u>と開きませんよ。</li></ol><p>Editorial key: 1</p></div></details><div class="review-record" id="unresolved_cases-N2_12_2019-vocab-q030-option4-underline"><div class="review-label">Unresolved · /options/3/html · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>そのドアは押すのではなくて手前に&lt;u&gt;めくらない<mark class="diff-old">と</mark>&lt;/u&gt;開きませんよ。</pre></div><div><h4>Editorial</h4><pre>そのドアは押すのではなくて手前に&lt;u&gt;めくらない&lt;/u&gt;<mark class="diff-new">と</mark>開きませんよ。</pre></div></div><p>Retain the narrower, morphologically coherent verb target supported by the school and structured witnesses. The wider mark is legible in the principal; neither endpoint changes the deliberately incorrect verb use or key 1.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>The exact printed underline span remains disputed.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Q30 asks for a correct use of めくる. Option 4 incorrectly uses it for pulling a door.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=4): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q30 option 4, enlarged crop<p>手前に&lt;u&gt;めくらないと&lt;/u&gt;開きませんよ。</p></li><li><span class="principal-repository-source">Principal source (page=5): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q30 option 4<p>The underline ends at めくらない, before と.</p></li><li><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Written Q30 options[3]<p>めくらない is underlined; と is outside the mark.</p></li></ul><details><summary>Full published record · unresolved_cases-N2_12_2019-vocab-q030-option4-underline</summary><pre>{
+  &quot;case_id&quot;: &quot;N2_12_2019-vocab-q030-option4-underline&quot;,
+  &quot;unit&quot;: &quot;N2_12_2019&quot;,
+  &quot;item_id&quot;: &quot;vocab-q030&quot;,
+  &quot;field&quot;: &quot;/options/3/html&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;そのドアは押すのではなくて手前に&lt;u&gt;めくらない&lt;/u&gt;と開きませんよ。&quot;,
+  &quot;context&quot;: &quot;Q30 asks for a correct use of めくる. Option 4 incorrectly uses it for pulling a door.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;そのドアは押すのではなくて手前に&lt;u&gt;めくらないと&lt;/u&gt;開きませんよ。&quot;,
+      &quot;assessment&quot;: &quot;The principal underlines the conditional と as well as the inflected verb.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;2019年12月N2 真题 — 渠道一【2】17-page edition&quot;,
+      &quot;sha256&quot;: &quot;ebea5777c24f842c590e706b53be4a50d4a3fdc214aa735a7ee76569a97852e7&quot;,
+      &quot;physical_pages&quot;: [
+        4
+      ],
+      &quot;locator&quot;: &quot;Q30 option 4, enlarged crop&quot;,
+      &quot;reading&quot;: &quot;手前に&lt;u&gt;めくらないと&lt;/u&gt;開きませんよ。&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2019年12月日语能力考试N2真题及详解 — 成都帝京日语学校 edition&quot;,
+      &quot;sha256&quot;: &quot;594fa98f60eedef66c0c6119ca26b4d6bd446dfe33018673dc05ae53bd6b2645&quot;,
+      &quot;physical_pages&quot;: [
+        5
+      ],
+      &quot;locator&quot;: &quot;Q30 option 4&quot;,
+      &quot;reading&quot;: &quot;The underline ends at めくらない, before と.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;munjaJLPT — December 2019 N2 structured paper&quot;,
+      &quot;sha256&quot;: &quot;76d51c3c54465881b79cfff2b6cb88a88dc4b3a11700600d59bc90cf3609a7c1&quot;,
+      &quot;locator&quot;: &quot;Written Q30 options[3]&quot;,
+      &quot;reading&quot;: &quot;めくらない is underlined; と is outside the mark.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Retain the narrower, morphologically coherent verb target supported by the school and structured witnesses. The wider mark is legible in the principal; neither endpoint changes the deliberately incorrect verb use or key 1.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Inspect the principal endpoint in a high-resolution crop.&quot;,
+    &quot;Compare the complete usage choices with the school page and native markup.&quot;,
+    &quot;Separate the verb inflection from conditional と and verify the same correct choice.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;The exact printed underline span remains disputed.&quot;
+}</pre></details></div><div class="review-record" id="principal_differences-N2_12_2019-PD-002"><div class="review-label">Principal difference · /options/3/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>手前に&lt;u&gt;めくらない<mark class="diff-old">と</mark>&lt;/u&gt;開きませんよ。</pre></div><div><h4>Editorial</h4><pre>手前に&lt;u&gt;めくらない&lt;/u&gt;<mark class="diff-new">と</mark>開きませんよ。</pre></div></div><p>Retain the narrower mark supported by the school and native witnesses; the principal includes the conditional particle.</p><span class="principal-repository-source">Principal source (page=4): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Q30 choice 4, enlarged endpoint</span><details><summary>Full published record · principal_differences-N2_12_2019-PD-002</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N2_12_2019-PD-002&quot;,
+  &quot;unit&quot;: &quot;N2_12_2019&quot;,
+  &quot;item_id&quot;: &quot;vocab-q030&quot;,
+  &quot;field&quot;: &quot;/options/3/html&quot;,
+  &quot;current_value&quot;: &quot;そのドアは押すのではなくて手前に&lt;u&gt;めくらない&lt;/u&gt;と開きませんよ。&quot;,
+  &quot;categories&quot;: [
+    &quot;underline&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2019年12月N2 真题 — 渠道一【2】17-page edition&quot;,
+    &quot;sha256&quot;: &quot;ebea5777c24f842c590e706b53be4a50d4a3fdc214aa735a7ee76569a97852e7&quot;,
+    &quot;physical_pages&quot;: [
+      4
+    ],
+    &quot;locator&quot;: &quot;Q30 choice 4, enlarged endpoint&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;手前に&lt;u&gt;めくらないと&lt;/u&gt;開きませんよ。&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;手前に&lt;u&gt;めくらない&lt;/u&gt;と開きませんよ。&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;retained_variant&quot;,
+  &quot;rationale&quot;: &quot;Retain the narrower mark supported by the school and native witnesses; the principal includes the conditional particle.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;N2_12_2019-vocab-q030-option4-underline&quot;
+  ]
+}</pre></details></div></section><section class="review-group" id="review-vocab-q035" data-kinds="difference provisional_fix"><div class="review-group-heading"><h2>vocab-q035</h2><a href="../papers/N2_12_2019.html#vocab-q035">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">35. （自転車屋で）<br/>客:「すみません、自転車のブレーキ、壊れちゃったんですけど、すぐ直りますか。」<br/>店員:「そうですね、これだったら 30 分（ ）直りますよ。」<ol><li>もあるのに</li><li>もあれば</li><li>はないのに</li><li>はなければ</li></ol><p>Editorial key: 2</p></div></details><div class="review-record" id="unresolved_cases-N2_12_2019-vocab-q035-punctuation"><div class="review-label">Provisional fix · /stem · medium</div><div class="comparison"><div><h4>Before</h4><pre>35. <mark class="diff-old">(</mark>自転車屋で<mark class="diff-old">)</mark>
+客:「すみません、自転車のブレーキ<mark class="diff-old">。</mark>壊れちゃったんですけど、すぐ直りますか。」
+店員:「そうですね、これだったら 30 分<mark class="diff-old">(</mark> <mark class="diff-old">)</mark>直りますよ。」</pre></div><div><h4>Editorial</h4><pre>35. <mark class="diff-new">（</mark>自転車屋で<mark class="diff-new">）</mark>
+客:「すみません、自転車のブレーキ<mark class="diff-new">、</mark>壊れちゃったんですけど、すぐ直りますか。」
+店員:「そうですね、これだったら 30 分<mark class="diff-new">（</mark> <mark class="diff-new">）</mark>直りますよ。」</pre></div></div><p>Prefer a comma joining the broken-brake topic to its predicate, supported by the principal and another printed layout. Preserve the printed final よ and the rest of the dialogue rather than importing the native parapunctuation. Key 2, もあれば, fits the sufficient-time construction.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>A deliberate spoken fragment after ブレーキ is possible; the historical punctuation and minor dialogue variant remain unauthenticated.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Q35 is a bicycle-shop exchange asking whether a broken brake can be repaired promptly.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=4): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q35 dialogue<p>ブレーキ、壊れちゃったんですけど; そうですね、これだったら; 直りますよ。</p></li><li><span class="principal-repository-source">Principal source (page=5): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q35 dialogue<p>Comma after ブレーキ; final 直りますよ。</p></li><li><span class="principal-repository-source">Principal source (page=5): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q35 dialogue<p>Sentence stop after ブレーキ.</p></li><li><span class="principal-repository-source">Principal source (page=6): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q35 dialogue<p>Sentence stop after ブレーキ.</p></li><li><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Written Q35 title<p>ブレーキ、; そうですね。これだったら、; 直りますね。</p></li></ul><details><summary>Full published record · unresolved_cases-N2_12_2019-vocab-q035-punctuation</summary><pre>{
+  &quot;case_id&quot;: &quot;N2_12_2019-vocab-q035-punctuation&quot;,
+  &quot;unit&quot;: &quot;N2_12_2019&quot;,
+  &quot;item_id&quot;: &quot;vocab-q035&quot;,
+  &quot;field&quot;: &quot;/stem&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;35. （自転車屋で）\n客:「すみません、自転車のブレーキ、壊れちゃったんですけど、すぐ直りますか。」\n店員:「そうですね、これだったら 30 分（ ）直りますよ。」&quot;,
+  &quot;context&quot;: &quot;Q35 is a bicycle-shop exchange asking whether a broken brake can be repaired promptly.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;35. (自転車屋で)\n客:「すみません、自転車のブレーキ。壊れちゃったんですけど、すぐ直りますか。」\n店員:「そうですね、これだったら 30 分( )直りますよ。」&quot;,
+      &quot;assessment&quot;: &quot;Two printed copies place a sentence stop after ブレーキ, making the topic a conversational fragment.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;35. (自転車屋で)\n客「すみません、自転車のブレーキ、壊れちゃったんですけど、すぐ直りますか。」\n店員「そうですね。これだったら、30分( )直りますね。」&quot;,
+      &quot;assessment&quot;: &quot;The structured paper agrees on ブレーキ、 but differs at そうですね, after これだったら, and in the final particle ね instead of よ.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;2019年12月N2 真题 — 渠道一【2】17-page edition&quot;,
+      &quot;sha256&quot;: &quot;ebea5777c24f842c590e706b53be4a50d4a3fdc214aa735a7ee76569a97852e7&quot;,
+      &quot;physical_pages&quot;: [
+        4
+      ],
+      &quot;locator&quot;: &quot;Q35 dialogue&quot;,
+      &quot;reading&quot;: &quot;ブレーキ、壊れちゃったんですけど; そうですね、これだったら; 直りますよ。&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2019年12月N2试卷_解析_听力原文_高清扫描 — 32-page edition&quot;,
+      &quot;sha256&quot;: &quot;6fe9b0c615f9ec20946807f109c099d2ec8bc7a36ed6e50e3fb16f182665b933&quot;,
+      &quot;physical_pages&quot;: [
+        5
+      ],
+      &quot;locator&quot;: &quot;Q35 dialogue&quot;,
+      &quot;reading&quot;: &quot;Comma after ブレーキ; final 直りますよ。&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2019年12月N2真题 — 22-page collected-paper edition&quot;,
+      &quot;sha256&quot;: &quot;083b40db51de096f6f37040e3de9a7b3aa2984a63f2fa570fbf7ea8b14e401f5&quot;,
+      &quot;physical_pages&quot;: [
+        5
+      ],
+      &quot;locator&quot;: &quot;Q35 dialogue&quot;,
+      &quot;reading&quot;: &quot;Sentence stop after ブレーキ.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2019年12月日语能力考试N2真题及详解 — 成都帝京日语学校 edition&quot;,
+      &quot;sha256&quot;: &quot;594fa98f60eedef66c0c6119ca26b4d6bd446dfe33018673dc05ae53bd6b2645&quot;,
+      &quot;physical_pages&quot;: [
+        6
+      ],
+      &quot;locator&quot;: &quot;Q35 dialogue&quot;,
+      &quot;reading&quot;: &quot;Sentence stop after ブレーキ.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;munjaJLPT — December 2019 N2 structured paper&quot;,
+      &quot;sha256&quot;: &quot;76d51c3c54465881b79cfff2b6cb88a88dc4b3a11700600d59bc90cf3609a7c1&quot;,
+      &quot;locator&quot;: &quot;Written Q35 title&quot;,
+      &quot;reading&quot;: &quot;ブレーキ、; そうですね。これだったら、; 直りますね。&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Prefer a comma joining the broken-brake topic to its predicate, supported by the principal and another printed layout. Preserve the printed final よ and the rest of the dialogue rather than importing the native parapunctuation. Key 2, もあれば, fits the sufficient-time construction.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Compare both speakers and all four choices in each original page.&quot;,
+    &quot;Check native punctuation and final particle against the printed pages.&quot;,
+    &quot;Test the two competing break positions as spoken Japanese and revisit the whole exchange.&quot;,
+    &quot;5 November 2026: Public snapshot rebound to the earlier, verified current field. Only the historical presentation edit is replayed; this snapshot repair does not change the original witness or its confidence.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;A deliberate spoken fragment after ブレーキ is possible; the historical punctuation and minor dialogue variant remain unauthenticated.&quot;,
+  &quot;before&quot;: &quot;35. (自転車屋で)\n客:「すみません、自転車のブレーキ。壊れちゃったんですけど、すぐ直りますか。」\n店員:「そうですね、これだったら 30 分( )直りますよ。」&quot;
+}</pre></details></div><div class="review-record" id="principal_differences-N2_12_2019-PD-003"><div class="review-label">Principal difference · /stem · high</div><div class="comparison"><div><h4>Principal</h4><pre>客「すみません、; 店員「そうですね、</pre></div><div><h4>Editorial</h4><pre>客<mark class="diff-new">:</mark>「すみません、; 店員<mark class="diff-new">:</mark>「そうですね、</pre></div></div><p>The inherited colons identify the same speakers. They are an editorial presentation difference and do not establish different wording.</p><span class="principal-repository-source">Principal source (page=4): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Q35 speaker labels</span><details><summary>Full published record · principal_differences-N2_12_2019-PD-003</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N2_12_2019-PD-003&quot;,
+  &quot;unit&quot;: &quot;N2_12_2019&quot;,
+  &quot;item_id&quot;: &quot;vocab-q035&quot;,
+  &quot;field&quot;: &quot;/stem&quot;,
+  &quot;current_value&quot;: &quot;35. （自転車屋で）\n客:「すみません、自転車のブレーキ、壊れちゃったんですけど、すぐ直りますか。」\n店員:「そうですね、これだったら 30 分（ ）直りますよ。」&quot;,
+  &quot;categories&quot;: [
+    &quot;punctuation&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2019年12月N2 真题 — 渠道一【2】17-page edition&quot;,
+    &quot;sha256&quot;: &quot;ebea5777c24f842c590e706b53be4a50d4a3fdc214aa735a7ee76569a97852e7&quot;,
+    &quot;physical_pages&quot;: [
+      4
+    ],
+    &quot;locator&quot;: &quot;Q35 speaker labels&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;客「すみません、; 店員「そうですね、&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;客:「すみません、; 店員:「そうですね、&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;retained_variant&quot;,
+  &quot;rationale&quot;: &quot;The inherited colons identify the same speakers. They are an editorial presentation difference and do not establish different wording.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;N2_12_2019-vocab-q035-punctuation&quot;
+  ]
+}</pre></details></div></section><section class="review-group" id="review-vocab-q041" data-kinds="difference"><div class="review-group-heading"><h2>vocab-q041</h2><a href="../papers/N2_12_2019.html#vocab-q041">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">41. （電話で）
+上田:「課長、すみません、今日はお休みをいただけないでしょうか。娘と夫が風邪で熱を出してしまったんです。」
+課長:「それは大変だね。わかりました。<ruby data-rubi-id="rr4-e4dbdb0a41fbeb7a50b7" data-rubi-origin="project_rubi_restore">看病<rt>かんびょう</rt></ruby>で疲れて、上田さんが （ ）。」<ol><li>倒れなくなるよ</li><li>倒れてしまいたくないのに</li><li>倒れないことになるの</li><li>倒れてしまわないようにね</li></ol><p>Editorial key: 4</p></div></details><div class="review-record" id="principal_differences-N2_12_2019-PD-004"><div class="review-label">Principal difference · /stem · high</div><div class="comparison"><div><h4>Principal</h4><pre>上田「; 課長「; 看病で<mark class="diff-old">お</mark>疲れて、</pre></div><div><h4>Editorial</h4><pre>上田<mark class="diff-new">:</mark>「; 課長<mark class="diff-new">:</mark>「; 看病で疲れて、</pre></div></div><p>Retain the earlier removal of お before 疲れて, supported by native wording and the ungrammatical お疲れて construction. Retain inherited speaker-label colons, which the principal does not print.</p><span class="principal-repository-source">Principal source (page=5): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Q41 supervisor response and speaker labels</span><details><summary>Full published record · principal_differences-N2_12_2019-PD-004</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N2_12_2019-PD-004&quot;,
+  &quot;unit&quot;: &quot;N2_12_2019&quot;,
+  &quot;item_id&quot;: &quot;vocab-q041&quot;,
+  &quot;field&quot;: &quot;/stem&quot;,
+  &quot;current_value&quot;: &quot;41. （電話で）\n上田:「課長、すみません、今日はお休みをいただけないでしょうか。娘と夫が風邪で熱を出してしまったんです。」\n課長:「それは大変だね。わかりました。看病で疲れて、上田さんが （ ）。」&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;,
+    &quot;punctuation&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2019年12月N2 真题 — 渠道一【2】17-page edition&quot;,
+    &quot;sha256&quot;: &quot;ebea5777c24f842c590e706b53be4a50d4a3fdc214aa735a7ee76569a97852e7&quot;,
+    &quot;physical_pages&quot;: [
+      5
+    ],
+    &quot;locator&quot;: &quot;Q41 supervisor response and speaker labels&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;上田「; 課長「; 看病でお疲れて、&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;上田:「; 課長:「; 看病で疲れて、&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Retain the earlier removal of お before 疲れて, supported by native wording and the ungrammatical お疲れて construction. Retain inherited speaker-label colons, which the principal does not print.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-vocab-q042" data-kinds="difference"><div class="review-group-heading"><h2>vocab-q042</h2><a href="../papers/N2_12_2019.html#vocab-q042">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">42.<br/>山田:「林さんの手作りクッキー、本当においしかったです。どうもありがとうございました。」 林:「どういたしまして。山田さんにおいしいって（ ）です。」<ol><li>言ってもらえてよかった</li><li>言ってもらってもよかった</li><li>言ってあげられてよかった</li><li>言ってあげてもよかった</li></ol><p>Editorial key: 1</p></div></details><div class="review-record" id="principal_differences-N2_12_2019-PD-005"><div class="review-label">Principal difference · /stem · high</div><div class="comparison"><div><h4>Principal</h4><pre>山田「; 林「</pre></div><div><h4>Editorial</h4><pre>山田<mark class="diff-new">:</mark>「; 林<mark class="diff-new">:</mark>「</pre></div></div><p>Inherited speaker-label colons remain; the speakers and dialogue boundaries are unchanged.</p><span class="principal-repository-source">Principal source (page=5): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Q42 speaker labels</span><details><summary>Full published record · principal_differences-N2_12_2019-PD-005</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N2_12_2019-PD-005&quot;,
+  &quot;unit&quot;: &quot;N2_12_2019&quot;,
+  &quot;item_id&quot;: &quot;vocab-q042&quot;,
+  &quot;field&quot;: &quot;/stem&quot;,
+  &quot;current_value&quot;: &quot;42.\n山田:「林さんの手作りクッキー、本当においしかったです。どうもありがとうございました。」 林:「どういたしまして。山田さんにおいしいって（ ）です。」&quot;,
+  &quot;categories&quot;: [
+    &quot;punctuation&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2019年12月N2 真题 — 渠道一【2】17-page edition&quot;,
+    &quot;sha256&quot;: &quot;ebea5777c24f842c590e706b53be4a50d4a3fdc214aa735a7ee76569a97852e7&quot;,
+    &quot;physical_pages&quot;: [
+      5
+    ],
+    &quot;locator&quot;: &quot;Q42 speaker labels&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;山田「; 林「&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;山田:「; 林:「&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;retained_variant&quot;,
+  &quot;rationale&quot;: &quot;Inherited speaker-label colons remain; the speakers and dialogue boundaries are unchanged.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-vocab-q046" data-kinds="unresolved"><div class="review-group-heading"><h2>vocab-q046</h2><a href="../papers/N2_12_2019.html#vocab-q046">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">46. 家の近くの本屋では<span class="answer-slot"><span class="slot-glyph">_</span></span><span class="answer-slot"><span class="slot-glyph">_</span></span> <span class="star-slot"><span class="slot-glyph star-glyph">★</span></span> <span class="answer-slot"><span class="slot-glyph">_</span></span>少し遠いけど行ってみようと思う。<ol><li>買えなかった漫画の最新号が</li><li>まだ買えるらしいので</li><li>もう売り切れていて</li><li>隣町の ABC 書店に行けば</li></ol><p>Editorial key: 4</p></div></details><div class="review-record" id="unresolved_cases-N2_12_2019-vocab-q046-boundary"><div class="review-label">Unresolved ·  · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>{
+  &quot;id&quot;: &quot;vocab-q046&quot;,
+  &quot;line&quot;: 3267,
+  &quot;stem&quot;: &quot;46. 家の近くの本屋では_ _ ★ _<mark class="diff-old">ので</mark>少し遠いけど行ってみようと思う。&quot;,
+  &quot;options&quot;: [
+    &quot;買えなかった漫画の最新号が&quot;,
+    &quot;まだ買えるらしい&quot;,
+    &quot;もう売り切れていて&quot;,
+    &quot;隣町の ABC 書店に行けば&quot;
+  ],
+  &quot;key&quot;: 4,
+  &quot;explanation…</pre></div><div><h4>Editorial</h4><pre>{
+  &quot;id&quot;: &quot;vocab-q046&quot;,
+  &quot;line&quot;: 3267,
+  &quot;stem&quot;: &quot;46. 家の近くの本屋では_ _ ★ _少し遠いけど行ってみようと思う。&quot;,
+  &quot;options&quot;: [
+    &quot;買えなかった漫画の最新号が&quot;,
+    &quot;まだ買えるらしい<mark class="diff-new">ので</mark>&quot;,
+    &quot;もう売り切れていて&quot;,
+    &quot;隣町の ABC 書店に行けば&quot;
+  ],
+  &quot;key&quot;: 4,
+  &quot;explanati…</pre></div></div><p>Retain the consistently printed boundary. Moving ので across that boundary yields the same complete sentence and star answer, so the grammatical solution alone cannot resolve its historical placement.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>The original division between fixed text and choice 2 is not authenticated.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Q46 orders four fragments about finding the latest manga issue at a neighboring-town bookstore. The correct order is 3–1–4–2, with option 4 in the star slot.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=5): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q46 stem and choices<p>Choice 2 is まだ買えるらしいので; fixed continuation begins 少し遠いけど.</p></li><li><span class="principal-repository-source">Principal source (page=8): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q46 stem and choices<p>ので belongs to choice 2.</p></li><li><span class="principal-repository-source">Principal source (page=6): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q46 question and explanation<p>Printed boundary puts ので in choice 2; reconstruction order 3–1–4–2.</p></li><li><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Written Q46 title and options[0:2]<p>Fixed stem begins ので少し遠いけど after the slots; choice 2 is まだ買えるらしい. Choice 1 also contains the extraneous の in 買えなかったの漫画.</p></li></ul><details><summary>Full published record · unresolved_cases-N2_12_2019-vocab-q046-boundary</summary><pre>{
+  &quot;case_id&quot;: &quot;N2_12_2019-vocab-q046-boundary&quot;,
+  &quot;unit&quot;: &quot;N2_12_2019&quot;,
+  &quot;item_id&quot;: &quot;vocab-q046&quot;,
+  &quot;field&quot;: &quot;&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: {
+    &quot;id&quot;: &quot;vocab-q046&quot;,
+    &quot;line&quot;: 3267,
+    &quot;stem&quot;: &quot;46. 家の近くの本屋では_ _ ★ _少し遠いけど行ってみようと思う。&quot;,
+    &quot;options&quot;: [
+      &quot;買えなかった漫画の最新号が&quot;,
+      &quot;まだ買えるらしいので&quot;,
+      &quot;もう売り切れていて&quot;,
+      &quot;隣町の ABC 書店に行けば&quot;
+    ],
+    &quot;key&quot;: 4,
+    &quot;explanation&quot;: {
+      &quot;html&quot;: &quot;Tham khảo: もう売り切れていて買えなかった漫画の最新号が&lt;u&gt;隣町の ABC 書店に行けば&lt;/u&gt;まだ買えるらしいので&quot;
+    }
+  },
+  &quot;context&quot;: &quot;Q46 orders four fragments about finding the latest manga issue at a neighboring-town bookstore. The correct order is 3–1–4–2, with option 4 in the star slot.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: {
+        &quot;id&quot;: &quot;vocab-q046&quot;,
+        &quot;line&quot;: 3267,
+        &quot;stem&quot;: &quot;46. 家の近くの本屋では_ _ ★ _ので少し遠いけど行ってみようと思う。&quot;,
+        &quot;options&quot;: [
+          &quot;買えなかった漫画の最新号が&quot;,
+          &quot;まだ買えるらしい&quot;,
+          &quot;もう売り切れていて&quot;,
+          &quot;隣町の ABC 書店に行けば&quot;
+        ],
+        &quot;key&quot;: 4,
+        &quot;explanation&quot;: {
+          &quot;html&quot;: &quot;Tham khảo: もう売り切れていて買えなかった漫画の最新号が&lt;u&gt;隣町の ABC 書店に行けば&lt;/u&gt;まだ買えるらしいので&quot;
+        }
+      },
+      &quot;assessment&quot;: &quot;Move ので from the end of choice 2 to the fixed text after the four slots. This represents the structured witness boundary without importing its extra の in 買えなかったの漫画.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;2019年12月N2 真题 — 渠道一【2】17-page edition&quot;,
+      &quot;sha256&quot;: &quot;ebea5777c24f842c590e706b53be4a50d4a3fdc214aa735a7ee76569a97852e7&quot;,
+      &quot;physical_pages&quot;: [
+        5
+      ],
+      &quot;locator&quot;: &quot;Q46 stem and choices&quot;,
+      &quot;reading&quot;: &quot;Choice 2 is まだ買えるらしいので; fixed continuation begins 少し遠いけど.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2019年12月日语能力考试N2真题及详解 — 成都帝京日语学校 edition&quot;,
+      &quot;sha256&quot;: &quot;594fa98f60eedef66c0c6119ca26b4d6bd446dfe33018673dc05ae53bd6b2645&quot;,
+      &quot;physical_pages&quot;: [
+        8
+      ],
+      &quot;locator&quot;: &quot;Q46 stem and choices&quot;,
+      &quot;reading&quot;: &quot;ので belongs to choice 2.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2019年12月N2试卷_解析_听力原文_高清扫描 — 32-page edition&quot;,
+      &quot;sha256&quot;: &quot;6fe9b0c615f9ec20946807f109c099d2ec8bc7a36ed6e50e3fb16f182665b933&quot;,
+      &quot;physical_pages&quot;: [
+        6,
+        19
+      ],
+      &quot;locator&quot;: &quot;Q46 question and explanation&quot;,
+      &quot;reading&quot;: &quot;Printed boundary puts ので in choice 2; reconstruction order 3–1–4–2.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;munjaJLPT — December 2019 N2 structured paper&quot;,
+      &quot;sha256&quot;: &quot;76d51c3c54465881b79cfff2b6cb88a88dc4b3a11700600d59bc90cf3609a7c1&quot;,
+      &quot;locator&quot;: &quot;Written Q46 title and options[0:2]&quot;,
+      &quot;reading&quot;: &quot;Fixed stem begins ので少し遠いけど after the slots; choice 2 is まだ買えるらしい. Choice 1 also contains the extraneous の in 買えなかったの漫画.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Retain the consistently printed boundary. Moving ので across that boundary yields the same complete sentence and star answer, so the grammatical solution alone cannot resolve its historical placement.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Compare the actual star slots and all four fragments in three printed layouts.&quot;,
+    &quot;Read the explanation reconstruction and calculate order 3–1–4–2.&quot;,
+    &quot;Compare both coupled native fields and distinguish its separate malformed choice-1 transcription.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;The original division between fixed text and choice 2 is not authenticated.&quot;
+}</pre></details></div></section><section class="review-group" id="review-vocab-b001" data-kinds="difference provisional_fix unresolved"><div class="review-group-heading"><h2>vocab-b001</h2><a href="../papers/N2_12_2019.html#vocab-b001">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><p>以下は、伊能忠敬という人物について書かれた文章である。</p><p>初めて正確な日本地図を作成した人物として知られる<ruby>伊能忠敬<rt>いのうただたか</rt></ruby>は、1745年、<ruby>上総国<rt>かずさのくに</rt></ruby>（今の<ruby>千葉県<rt>ちばけん</rt></ruby>）に生まれた。優れた経営者だった<ruby>忠敬<rt>ただたか</rt></ruby>だが、50歳を前に仕事をやめ、興味があった星や暦について<ruby>高橋至時<rt>たかはしよしとき</rt></ruby>のもとで【48】。19歳も年下の<ruby>至時<rt>よしとき</rt></ruby>を<ruby>忠敬<rt>ただたか</rt></ruby>は<ruby>敬<rt>うやま</rt></ruby>い、熱心に勉強した。</p><p>当時の学者たちの関心は、地球の直径を知ることにあった。江戸（今の東京）から<ruby>蝦夷地<rt>えぞち</rt></ruby>（今の北海道）までの距離は当時はまだわからなかったが、それが【49】正確に直径が計算できると知った<ruby>忠敬<rt>ただたか</rt></ruby>は、<ruby>蝦夷地<rt>えぞち</rt></ruby>へ行くことを願う。しかし、<ruby>蝦夷地<rt>えぞち</rt></ruby>に行くには国の許可が必要だった。<ruby>至時<rt>よしとき</rt></ruby>は、<ruby>蝦夷地<rt>えぞち</rt></ruby>の地図作成を理由に国の許可をとり、<ruby>忠敬<rt>ただたか</rt></ruby>を担当にする。【50】、<ruby>忠敬<rt>ただたか</rt></ruby>55歳のとき、地図作りの旅が始まった。</p><p>昼間は測って歩き、夜は星を観察して昼間測った数値を修正する日々が続いた。完成した<ruby>蝦夷地<rt>えぞち</rt></ruby>の地図は国から高く評価され、忠敬は東日本の地図作成も【51】。地図作成の旅は順調に終わったが、完成前、忠敬を支え続けた至時が病気で亡くなってしまう。一番の理解者である至時を失い、忠敬はひどく落ち込んだ。だが、悲しみに耐え、さらに命じられた西日本の地図作成にも取り組む。旅を終え、完成に向けて作業の最終段階に入っていた1818年、忠敬は73歳で人生の幕を閉じた。作業は弟子らが続け、1821年、日本全国の地図が完成した。</p><p>忠敬は自分に大きな仕事ができたのはすべて至時先生のおかげだと書き残している。歴史に残る【52】は、二人の信頼関係によって、誕生したのである。</p></div></details><div class="review-record" id="unresolved_cases-N2_12_2019-vocab-b001-ruby"><div class="review-label">Provisional fix · /content · medium</div><div class="comparison"><div><h4>Before</h4><pre>以下は、伊能忠敬という人物について書かれた文章である。<mark class="diff-old">
+</mark>初めて正確な日本地図を作成した人物として知られる伊能忠敬は、1745年、上総国<mark class="diff-old">(</mark>今の千葉県<mark class="diff-old">)</mark>に生まれた。優れた経営者だった忠敬だが、50<mark class="diff-old"> </mark>歳を前に仕事をやめ、興味があった星や暦について高橋至時のもとで<mark class="diff-old"> </mark>【48<mark class="diff-old"> </mark>】。19<mark class="diff-old"> </mark>歳も…</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">&lt;p&gt;</mark>以下は、伊能忠敬という人物について書かれた文章である。<mark class="diff-new">&lt;/p&gt;&lt;p&gt;</mark>初めて正確な日本地図を作成した人物として知られる<mark class="diff-new">&lt;ruby&gt;</mark>伊能忠敬<mark class="diff-new">&lt;rt&gt;いのうただたか&lt;/rt&gt;&lt;/ruby&gt;</mark>は、1745年、<mark class="diff-new">&lt;ruby&gt;</mark>上総国<mark class="diff-new">&lt;rt&gt;かずさのくに&lt;/rt&gt;&lt;/ruby&gt;（</mark>今の<mark class="diff-new">&lt;ruby&gt;</mark>千…</pre></div></div><p>Restore only the 17 source-marked occurrences, with no reading added to the introduction or later bare names. Use かずさのくに for 上総国 as the best-supported reading correction, while acknowledging that no inspected exam copy prints that exact repaired ruby. Keep the fuller introduction and sentence stop supported by the other copies.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>Both the original presence of ruby and the reconstructed くに annotation remain unverified; an authenticated page with legible readings could settle them.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Cloze passage on 伊能忠敬 and 高橋至時, including names and historical place names.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=9): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Cloze passage, selective reading annotations<p>17 annotations; 上総国 carries かずさのこく. The introduction and stop after blank 51 are absent.</p></li><li><span class="principal-repository-source">Principal source (page=8): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Cloze passage<p>The same selective annotations and unusual 上総国 reading.</p></li><li><span class="principal-repository-source">Principal source (page=6): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Cloze passage<p>The introduction and stop after 51 are present; no furigana.</p></li><li><span class="principal-repository-source">Principal source (page=7): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Cloze passage<p>No furigana; introduction and sentence stop present.</p></li><li><a href="https://www.pref.chiba.lg.jp/kouhou/profile/sugata.html" target="_blank" rel="noopener">千葉県「千葉県のすがたとあゆみ」</a> · あゆみ, first paragraph; checked 2026-09-28<p>上総国（かずさのくに）. This establishes the lexical place-name reading, not exam typography.</p></li></ul><details><summary>Full published record · unresolved_cases-N2_12_2019-vocab-b001-ruby</summary><pre>{
+  &quot;case_id&quot;: &quot;N2_12_2019-vocab-b001-ruby&quot;,
+  &quot;unit&quot;: &quot;N2_12_2019&quot;,
+  &quot;item_id&quot;: &quot;vocab-b001&quot;,
+  &quot;field&quot;: &quot;/content&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;&lt;p&gt;以下は、伊能忠敬という人物について書かれた文章である。&lt;/p&gt;&lt;p&gt;初めて正確な日本地図を作成した人物として知られる&lt;ruby&gt;伊能忠敬&lt;rt&gt;いのうただたか&lt;/rt&gt;&lt;/ruby&gt;は、1745年、&lt;ruby&gt;上総国&lt;rt&gt;かずさのくに&lt;/rt&gt;&lt;/ruby&gt;（今の&lt;ruby&gt;千葉県&lt;rt&gt;ちばけん&lt;/rt&gt;&lt;/ruby&gt;）に生まれた。優れた経営者だった&lt;ruby&gt;忠敬&lt;rt&gt;ただたか&lt;/rt&gt;&lt;/ruby&gt;だが、50歳を前に仕事をやめ、興味があった星や暦について&lt;ruby&gt;高橋至時&lt;rt&gt;たかはしよしとき&lt;/rt&gt;&lt;/ruby&gt;のもとで【48】。19歳も年下の&lt;ruby&gt;至時&lt;rt&gt;よしとき&lt;/rt&gt;&lt;/ruby&gt;を&lt;ruby&gt;忠敬&lt;rt&gt;ただたか&lt;/rt&gt;&lt;/ruby&gt;は&lt;ruby&gt;敬&lt;rt&gt;うやま&lt;/rt&gt;&lt;/ruby&gt;い、熱心に勉強した。&lt;/p&gt;&lt;p&gt;当時の学者たちの関心は、地球の直径を知ることにあった。江戸（今の東京）から&lt;ruby&gt;蝦夷地&lt;rt&gt;えぞち&lt;/rt&gt;&lt;/ruby&gt;（今の北海道）までの距離は当時はまだわからなかったが、それが【49】正確に直径が計算できると知った&lt;ruby&gt;忠敬&lt;rt&gt;ただたか&lt;/rt&gt;&lt;/ruby&gt;は、&lt;ruby&gt;蝦夷地&lt;rt&gt;えぞち&lt;/rt&gt;&lt;/ruby&gt;へ行くことを願う。しかし、&lt;ruby&gt;蝦夷地&lt;rt&gt;えぞち&lt;/rt&gt;&lt;/ruby&gt;に行くには国の許可が必要だった。&lt;ruby&gt;至時&lt;rt&gt;よしとき&lt;/rt&gt;&lt;/ruby&gt;は、&lt;ruby&gt;蝦夷地&lt;rt&gt;えぞち&lt;/rt&gt;&lt;/ruby&gt;の地図作成を理由に国の許可をとり、&lt;ruby&gt;忠敬&lt;rt&gt;ただたか&lt;/rt&gt;&lt;/ruby&gt;を担当にする。【50】、&lt;ruby&gt;忠敬&lt;rt&gt;ただたか&lt;/rt&gt;&lt;/ruby&gt;55歳のとき、地図作りの旅が始まった。&lt;/p&gt;&lt;p&gt;昼間は測って歩き、夜は星を観察して昼間測った数値を修正する日々が続いた。完成した&lt;ruby&gt;蝦夷地&lt;rt&gt;えぞち&lt;/rt&gt;&lt;/ruby&gt;の地図は国から高く評価され、忠敬は東日本の地図作成も【51】。地図作成の旅は順調に終わったが、完成前、忠敬を支え続けた至時が病気で亡くなってしまう。一番の理解者である至時を失い、忠敬はひどく落ち込んだ。だが、悲しみに耐え、さらに命じられた西日本の地図作成にも取り組む。旅を終え、完成に向けて作業の最終段階に入っていた1818年、忠敬は73歳で人生の幕を閉じた。作業は弟子らが続け、1821年、日本全国の地図が完成した。&lt;/p&gt;&lt;p&gt;忠敬は自分に大きな仕事ができたのはすべて至時先生のおかげだと書き残している。歴史に残る【52】は、二人の信頼関係によって、誕生したのである。&lt;/p&gt;&quot;
+  },
+  &quot;context&quot;: &quot;Cloze passage on 伊能忠敬 and 高橋至時, including names and historical place names.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;以下は、伊能忠敬という人物について書かれた文章である。\n初めて正確な日本地図を作成した人物として知られる伊能忠敬は、1745年、上総国(今の千葉県)に生まれた。優れた経営者だった忠敬だが、50 歳を前に仕事をやめ、興味があった星や暦について高橋至時のもとで 【48 】。19 歳も年下の至時を忠敬は敬い、熱心に勉強した。当時の学者たちの関心は、地球の直径を知ることにあった。江戸(今の東京)から蝦夷地(今の\n北海道)までの距離は当時はまだわからなかったが、それが【49 】正確に直径が計算できると知った忠敬は、蝦夷地へ行くことを願う。しかし、蝦夷地に行くには国の許可が必要だった。 至時は、蝦夷地の地図作成を理由に国の許可をとり、忠敬を担当にする。 【 50 】、忠敬55歳のとき、地図作りの旅が始まった。\n昼間は測って歩き、夜は星を観察して昼間測った数値を修正する日々が続いた。完成した 蝦夷地の地図は国から高く評価され、忠敬は東日本の地図作成も【51】。地図作成の旅は順調に終わったが、完成前、忠敬を支え続けた至時が病気で亡くなってしまう。一番の理解者である至時を失い、忠敬はひどく落ち込んだ。だが、悲しみに耐え、さらに命じられた西日本の地図作\n成にも取り組む。旅を終え、完成に向けて作業の最終段階に入っていた 1818年、忠敬は 73 歳で人生の幕を閉じた。作業は弟子らが続け、1821 年、日本全国の地図が完成した。\n忠敬は自分に大きな仕事ができたのはすべて至時先生のおかげだと書き残している。歴史に残る【 52 】は、二人の信頼関係によって、誕生したのである。&quot;,
+      &quot;assessment&quot;: &quot;Principal and several other versions contain no ruby; retaining plain text avoids asserting unverified annotations.&quot;
+    },
+    {
+      &quot;value&quot;: {
+        &quot;html&quot;: &quot;&lt;p&gt;以下は、伊能忠敬という人物について書かれた文章である。&lt;/p&gt;&lt;p&gt;初めて正確な日本地図を作成した人物として知られる&lt;ruby&gt;伊能忠敬&lt;rt&gt;いのうただたか&lt;/rt&gt;&lt;/ruby&gt;は、1745年、&lt;ruby&gt;上総国&lt;rt&gt;かずさのこく&lt;/rt&gt;&lt;/ruby&gt;(今の&lt;ruby&gt;千葉県&lt;rt&gt;ちばけん&lt;/rt&gt;&lt;/ruby&gt;)に生まれた。優れた経営者だった&lt;ruby&gt;忠敬&lt;rt&gt;ただたか&lt;/rt&gt;&lt;/ruby&gt;だが、50歳を前に仕事をやめ、興味があった星や暦について&lt;ruby&gt;高橋至時&lt;rt&gt;たかはしよしとき&lt;/rt&gt;&lt;/ruby&gt;のもとで【48】。19歳も年下の&lt;ruby&gt;至時&lt;rt&gt;よしとき&lt;/rt&gt;&lt;/ruby&gt;を&lt;ruby&gt;忠敬&lt;rt&gt;ただたか&lt;/rt&gt;&lt;/ruby&gt;は&lt;ruby&gt;敬&lt;rt&gt;うやま&lt;/rt&gt;&lt;/ruby&gt;い、熱心に勉強した。&lt;/p&gt;&lt;p&gt;当時の学者たちの関心は、地球の直径を知ることにあった。江戸(今の東京)から&lt;ruby&gt;蝦夷地&lt;rt&gt;えぞち&lt;/rt&gt;&lt;/ruby&gt;(今の北海道)までの距離は当時はまだわからなかったが、それが【49】正確に直径が計算できると知った&lt;ruby&gt;忠敬&lt;rt&gt;ただたか&lt;/rt&gt;&lt;/ruby&gt;は、&lt;ruby&gt;蝦夷地&lt;rt&gt;えぞち&lt;/rt&gt;&lt;/ruby&gt;へ行くことを願う。しかし、&lt;ruby&gt;蝦夷地&lt;rt&gt;えぞち&lt;/rt&gt;&lt;/ruby&gt;に行くには国の許可が必要だった。&lt;ruby&gt;至時&lt;rt&gt;よしとき&lt;/rt&gt;&lt;/ruby&gt;は、&lt;ruby&gt;蝦夷地&lt;rt&gt;えぞち&lt;/rt&gt;&lt;/ruby&gt;の地図作成を理由に国の許可をとり、&lt;ruby&gt;忠敬&lt;rt&gt;ただたか&lt;/rt&gt;&lt;/ruby&gt;を担当にする。【50】、&lt;ruby&gt;忠敬&lt;rt&gt;ただたか&lt;/rt&gt;&lt;/ruby&gt;55歳のとき、地図作りの旅が始まった。&lt;/p&gt;&lt;p&gt;昼間は測って歩き、夜は星を観察して昼間測った数値を修正する日々が続いた。完成した&lt;ruby&gt;蝦夷地&lt;rt&gt;えぞち&lt;/rt&gt;&lt;/ruby&gt;の地図は国から高く評価され、忠敬は東日本の地図作成も【51】。地図作成の旅は順調に終わったが、完成前、忠敬を支え続けた至時が病気で亡くなってしまう。一番の理解者である至時を失い、忠敬はひどく落ち込んだ。だが、悲しみに耐え、さらに命じられた西日本の地図作成にも取り組む。旅を終え、完成に向けて作業の最終段階に入っていた1818年、忠敬は73歳で人生の幕を閉じた。作業は弟子らが続け、1821年、日本全国の地図が完成した。&lt;/p&gt;&lt;p&gt;忠敬は自分に大きな仕事ができたのはすべて至時先生のおかげだと書き残している。歴史に残る【52】は、二人の信頼関係によって、誕生したのである。&lt;/p&gt;&quot;
+      },
+      &quot;assessment&quot;: &quot;Two related copies print 上総国 with かずさのこく. Literal preservation would retain a questionable place-name reading.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;2019年12月日语能力考试N2真题及详解 — 成都帝京日语学校 edition&quot;,
+      &quot;sha256&quot;: &quot;594fa98f60eedef66c0c6119ca26b4d6bd446dfe33018673dc05ae53bd6b2645&quot;,
+      &quot;physical_pages&quot;: [
+        9
+      ],
+      &quot;locator&quot;: &quot;Cloze passage, selective reading annotations&quot;,
+      &quot;reading&quot;: &quot;17 annotations; 上総国 carries かずさのこく. The introduction and stop after blank 51 are absent.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2019年12月N2 真题 — 渠道一【3】24-page edition&quot;,
+      &quot;sha256&quot;: &quot;0ad196c78140640045ec8be9073689114e7954f778fed1e810544a787b9e2535&quot;,
+      &quot;physical_pages&quot;: [
+        8
+      ],
+      &quot;locator&quot;: &quot;Cloze passage&quot;,
+      &quot;reading&quot;: &quot;The same selective annotations and unusual 上総国 reading.&quot;,
+      &quot;lineage&quot;: &quot;Matching annotation placement and uncommon reading suggest shared transcription; direction and acquisition are unknown.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2019年12月N2 真题 — 渠道一【2】17-page edition&quot;,
+      &quot;sha256&quot;: &quot;ebea5777c24f842c590e706b53be4a50d4a3fdc214aa735a7ee76569a97852e7&quot;,
+      &quot;physical_pages&quot;: [
+        6
+      ],
+      &quot;locator&quot;: &quot;Cloze passage&quot;,
+      &quot;reading&quot;: &quot;The introduction and stop after 51 are present; no furigana.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;N2-2019-12 真题 — Past papers 15-page edition&quot;,
+      &quot;sha256&quot;: &quot;4fe285d78bb54a900e43ea00f2f7e7731e656ee1d57ed60d056074e5cadda13f&quot;,
+      &quot;physical_pages&quot;: [
+        7
+      ],
+      &quot;locator&quot;: &quot;Cloze passage&quot;,
+      &quot;reading&quot;: &quot;No furigana; introduction and sentence stop present.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;千葉県「千葉県のすがたとあゆみ」&quot;,
+      &quot;url&quot;: &quot;https://www.pref.chiba.lg.jp/kouhou/profile/sugata.html&quot;,
+      &quot;locator&quot;: &quot;あゆみ, first paragraph; checked 2026-09-28&quot;,
+      &quot;reading&quot;: &quot;上総国（かずさのくに）. This establishes the lexical place-name reading, not exam typography.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Restore only the 17 source-marked occurrences, with no reading added to the introduction or later bare names. Use かずさのくに for 上総国 as the best-supported reading correction, while acknowledging that no inspected exam copy prints that exact repaired ruby. Keep the fuller introduction and sentence stop supported by the other copies.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Visually compare every annotated occurrence on both ruby-bearing pages against the principal and a second complete cloze witness.&quot;,
+    &quot;Check the exact bases, including 敬 rather than 敬い, and leave unannotated repetitions bare.&quot;,
+    &quot;Consult the official prefectural history for 上総国 and distinguish lexical evidence from historical exam evidence.&quot;,
+    &quot;Reconstruct the full passage and revisit all five cloze answers.&quot;,
+    &quot;5 November 2026: Public snapshot rebound to the earlier, verified current field. Only the historical presentation edit is replayed; this snapshot repair does not change the original witness or its confidence.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;Both the original presence of ruby and the reconstructed くに annotation remain unverified; an authenticated page with legible readings could settle them.&quot;,
+  &quot;before&quot;: &quot;以下は、伊能忠敬という人物について書かれた文章である。\n初めて正確な日本地図を作成した人物として知られる伊能忠敬は、1745年、上総国(今の千葉県)に生まれた。優れた経営者だった忠敬だが、50 歳を前に仕事をやめ、興味があった星や暦について高橋至時のもとで 【48 】。19 歳も年下の至時を忠敬は敬い、熱心に勉強した。当時の学者たちの関心は、地球の直径を知ることにあった。江戸(今の東京)から蝦夷地(今の\n北海道)までの距離は当時はまだわからなかったが、それが【49 】正確に直径が計算できると知った忠敬は、蝦夷地へ行くことを願う。しかし、蝦夷地に行くには国の許可が必要だった。 至時は、蝦夷地の地図作成を理由に国の許可をとり、忠敬を担当にする。 【 50 】、忠敬55歳のとき、地図作りの旅が始まった。\n昼間は測って歩き、夜は星を観察して昼間測った数値を修正する日々が続いた。完成した 蝦夷地の地図は国から高く評価され、忠敬は東日本の地図作成も【51】。地図作成の旅は順調に終わったが、完成前、忠敬を支え続けた至時が病気で亡くなってしまう。一番の理解者である至時を失い、忠敬はひどく落ち込んだ。だが、悲しみに耐え、さらに命じられた西日本の地図作\n成にも取り組む。旅を終え、完成に向けて作業の最終段階に入っていた 1818年、忠敬は 73 歳で人生の幕を閉じた。作業は弟子らが続け、1821 年、日本全国の地図が完成した。\n忠敬は自分に大きな仕事ができたのはすべて至時先生のおかげだと書き残している。歴史に残る【 52 】は、二人の信頼関係によって、誕生したのである。&quot;
+}</pre></details></div><div class="review-record" id="unresolved_cases-N2_12_2019-vocab-b001-completion-wording"><div class="review-label">Unresolved · /content/html · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>…日本地図を作成した人物として知られる&lt;ruby&gt;伊能忠敬&lt;rt&gt;いのうただたか&lt;/rt&gt;&lt;/ruby&gt;は、1745年、&lt;ruby&gt;上総国&lt;rt&gt;かずさのくに&lt;/rt&gt;&lt;/ruby&gt;<mark class="diff-old">(</mark>今の&lt;ruby&gt;千葉県&lt;rt&gt;ちばけん&lt;/rt&gt;&lt;/ruby&gt;<mark class="diff-old">)</mark>に生まれた。優れた経営者だった&lt;ruby&gt;忠敬&lt;rt&gt;ただたか&lt;/rt&gt;&lt;/ruby&gt;だが、50歳を前に仕事をやめ、興味があった星や暦について&lt;ruby&gt;高橋至時&lt;rt&gt;たかはしよしとき&lt;/rt&gt;&lt;/ruby&gt;のもと…</pre></div><div><h4>Editorial</h4><pre>…日本地図を作成した人物として知られる&lt;ruby&gt;伊能忠敬&lt;rt&gt;いのうただたか&lt;/rt&gt;&lt;/ruby&gt;は、1745年、&lt;ruby&gt;上総国&lt;rt&gt;かずさのくに&lt;/rt&gt;&lt;/ruby&gt;<mark class="diff-new">（</mark>今の&lt;ruby&gt;千葉県&lt;rt&gt;ちばけん&lt;/rt&gt;&lt;/ruby&gt;<mark class="diff-new">）</mark>に生まれた。優れた経営者だった&lt;ruby&gt;忠敬&lt;rt&gt;ただたか&lt;/rt&gt;&lt;/ruby&gt;だが、50歳を前に仕事をやめ、興味があった星や暦について&lt;ruby&gt;高橋至時&lt;rt&gt;たかはしよしとき&lt;/rt&gt;&lt;/ruby&gt;のもと…</pre></div></div><p>Retain the inherited 完成前、 supported by several inspected versions. A temporal noun phrase can function adverbially here without に; adding に is also ordinary Japanese. Neither form changes the timeline or the answers.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>Both readings are coherent; the historical particle remains disputed.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">In the cloze narrative, 高橋至時 dies before the map is completed.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=6): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Cloze paragraph beginning 昼間は<p>完成前に、忠敬を支え続けた至時が病気で亡くなってしまう。</p></li><li><span class="principal-repository-source">Principal source (page=9): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Same cloze paragraph<p>完成前、忠敬を支え続けた至時が病気で亡くなってしまう。</p></li><li><span class="principal-repository-source">Principal source (page=7): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Same cloze paragraph<p>完成前、 without に.</p></li><li><span class="principal-repository-source">Principal source (page=7): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Same cloze paragraph<p>完成前、 without に.</p></li><li><span class="principal-repository-source">Principal source (page=5): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Same cloze paragraph<p>完成前、 without に.</p></li><li><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Written cloze parent passage<p>完成前、 without に.</p></li></ul><details><summary>Full published record · unresolved_cases-N2_12_2019-vocab-b001-completion-wording</summary><pre>{
+  &quot;case_id&quot;: &quot;N2_12_2019-vocab-b001-completion-wording&quot;,
+  &quot;unit&quot;: &quot;N2_12_2019&quot;,
+  &quot;item_id&quot;: &quot;vocab-b001&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;&lt;p&gt;以下は、伊能忠敬という人物について書かれた文章である。&lt;/p&gt;&lt;p&gt;初めて正確な日本地図を作成した人物として知られる&lt;ruby&gt;伊能忠敬&lt;rt&gt;いのうただたか&lt;/rt&gt;&lt;/ruby&gt;は、1745年、&lt;ruby&gt;上総国&lt;rt&gt;かずさのくに&lt;/rt&gt;&lt;/ruby&gt;（今の&lt;ruby&gt;千葉県&lt;rt&gt;ちばけん&lt;/rt&gt;&lt;/ruby&gt;）に生まれた。優れた経営者だった&lt;ruby&gt;忠敬&lt;rt&gt;ただたか&lt;/rt&gt;&lt;/ruby&gt;だが、50歳を前に仕事をやめ、興味があった星や暦について&lt;ruby&gt;高橋至時&lt;rt&gt;たかはしよしとき&lt;/rt&gt;&lt;/ruby&gt;のもとで【48】。19歳も年下の&lt;ruby&gt;至時&lt;rt&gt;よしとき&lt;/rt&gt;&lt;/ruby&gt;を&lt;ruby&gt;忠敬&lt;rt&gt;ただたか&lt;/rt&gt;&lt;/ruby&gt;は&lt;ruby&gt;敬&lt;rt&gt;うやま&lt;/rt&gt;&lt;/ruby&gt;い、熱心に勉強した。&lt;/p&gt;&lt;p&gt;当時の学者たちの関心は、地球の直径を知ることにあった。江戸（今の東京）から&lt;ruby&gt;蝦夷地&lt;rt&gt;えぞち&lt;/rt&gt;&lt;/ruby&gt;（今の北海道）までの距離は当時はまだわからなかったが、それが【49】正確に直径が計算できると知った&lt;ruby&gt;忠敬&lt;rt&gt;ただたか&lt;/rt&gt;&lt;/ruby&gt;は、&lt;ruby&gt;蝦夷地&lt;rt&gt;えぞち&lt;/rt&gt;&lt;/ruby&gt;へ行くことを願う。しかし、&lt;ruby&gt;蝦夷地&lt;rt&gt;えぞち&lt;/rt&gt;&lt;/ruby&gt;に行くには国の許可が必要だった。&lt;ruby&gt;至時&lt;rt&gt;よしとき&lt;/rt&gt;&lt;/ruby&gt;は、&lt;ruby&gt;蝦夷地&lt;rt&gt;えぞち&lt;/rt&gt;&lt;/ruby&gt;の地図作成を理由に国の許可をとり、&lt;ruby&gt;忠敬&lt;rt&gt;ただたか&lt;/rt&gt;&lt;/ruby&gt;を担当にする。【50】、&lt;ruby&gt;忠敬&lt;rt&gt;ただたか&lt;/rt&gt;&lt;/ruby&gt;55歳のとき、地図作りの旅が始まった。&lt;/p&gt;&lt;p&gt;昼間は測って歩き、夜は星を観察して昼間測った数値を修正する日々が続いた。完成した&lt;ruby&gt;蝦夷地&lt;rt&gt;えぞち&lt;/rt&gt;&lt;/ruby&gt;の地図は国から高く評価され、忠敬は東日本の地図作成も【51】。地図作成の旅は順調に終わったが、完成前、忠敬を支え続けた至時が病気で亡くなってしまう。一番の理解者である至時を失い、忠敬はひどく落ち込んだ。だが、悲しみに耐え、さらに命じられた西日本の地図作成にも取り組む。旅を終え、完成に向けて作業の最終段階に入っていた1818年、忠敬は73歳で人生の幕を閉じた。作業は弟子らが続け、1821年、日本全国の地図が完成した。&lt;/p&gt;&lt;p&gt;忠敬は自分に大きな仕事ができたのはすべて至時先生のおかげだと書き残している。歴史に残る【52】は、二人の信頼関係によって、誕生したのである。&lt;/p&gt;&quot;,
+  &quot;context&quot;: &quot;In the cloze narrative, 高橋至時 dies before the map is completed.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;&lt;p&gt;以下は、伊能忠敬という人物について書かれた文章である。&lt;/p&gt;&lt;p&gt;初めて正確な日本地図を作成した人物として知られる&lt;ruby&gt;伊能忠敬&lt;rt&gt;いのうただたか&lt;/rt&gt;&lt;/ruby&gt;は、1745年、&lt;ruby&gt;上総国&lt;rt&gt;かずさのくに&lt;/rt&gt;&lt;/ruby&gt;(今の&lt;ruby&gt;千葉県&lt;rt&gt;ちばけん&lt;/rt&gt;&lt;/ruby&gt;)に生まれた。優れた経営者だった&lt;ruby&gt;忠敬&lt;rt&gt;ただたか&lt;/rt&gt;&lt;/ruby&gt;だが、50歳を前に仕事をやめ、興味があった星や暦について&lt;ruby&gt;高橋至時&lt;rt&gt;たかはしよしとき&lt;/rt&gt;&lt;/ruby&gt;のもとで【48】。19歳も年下の&lt;ruby&gt;至時&lt;rt&gt;よしとき&lt;/rt&gt;&lt;/ruby&gt;を&lt;ruby&gt;忠敬&lt;rt&gt;ただたか&lt;/rt&gt;&lt;/ruby&gt;は&lt;ruby&gt;敬&lt;rt&gt;うやま&lt;/rt&gt;&lt;/ruby&gt;い、熱心に勉強した。&lt;/p&gt;&lt;p&gt;当時の学者たちの関心は、地球の直径を知ることにあった。江戸(今の東京)から&lt;ruby&gt;蝦夷地&lt;rt&gt;えぞち&lt;/rt&gt;&lt;/ruby&gt;(今の北海道)までの距離は当時はまだわからなかったが、それが【49】正確に直径が計算できると知った&lt;ruby&gt;忠敬&lt;rt&gt;ただたか&lt;/rt&gt;&lt;/ruby&gt;は、&lt;ruby&gt;蝦夷地&lt;rt&gt;えぞち&lt;/rt&gt;&lt;/ruby&gt;へ行くことを願う。しかし、&lt;ruby&gt;蝦夷地&lt;rt&gt;えぞち&lt;/rt&gt;&lt;/ruby&gt;に行くには国の許可が必要だった。&lt;ruby&gt;至時&lt;rt&gt;よしとき&lt;/rt&gt;&lt;/ruby&gt;は、&lt;ruby&gt;蝦夷地&lt;rt&gt;えぞち&lt;/rt&gt;&lt;/ruby&gt;の地図作成を理由に国の許可をとり、&lt;ruby&gt;忠敬&lt;rt&gt;ただたか&lt;/rt&gt;&lt;/ruby&gt;を担当にする。【50】、&lt;ruby&gt;忠敬&lt;rt&gt;ただたか&lt;/rt&gt;&lt;/ruby&gt;55歳のとき、地図作りの旅が始まった。&lt;/p&gt;&lt;p&gt;昼間は測って歩き、夜は星を観察して昼間測った数値を修正する日々が続いた。完成した&lt;ruby&gt;蝦夷地&lt;rt&gt;えぞち&lt;/rt&gt;&lt;/ruby&gt;の地図は国から高く評価され、忠敬は東日本の地図作成も【51】。地図作成の旅は順調に終わったが、完成前に、忠敬を支え続けた至時が病気で亡くなってしまう。一番の理解者である至時を失い、忠敬はひどく落ち込んだ。だが、悲しみに耐え、さらに命じられた西日本の地図作成にも取り組む。旅を終え、完成に向けて作業の最終段階に入っていた1818年、忠敬は73歳で人生の幕を閉じた。作業は弟子らが続け、1821年、日本全国の地図が完成した。&lt;/p&gt;&lt;p&gt;忠敬は自分に大きな仕事ができたのはすべて至時先生のおかげだと書き残している。歴史に残る【52】は、二人の信頼関係によって、誕生したのである。&lt;/p&gt;&quot;,
+      &quot;assessment&quot;: &quot;The principal supplies に after 完成前.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;2019年12月N2 真题 — 渠道一【2】17-page edition&quot;,
+      &quot;sha256&quot;: &quot;ebea5777c24f842c590e706b53be4a50d4a3fdc214aa735a7ee76569a97852e7&quot;,
+      &quot;physical_pages&quot;: [
+        6
+      ],
+      &quot;locator&quot;: &quot;Cloze paragraph beginning 昼間は&quot;,
+      &quot;reading&quot;: &quot;完成前に、忠敬を支え続けた至時が病気で亡くなってしまう。&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2019年12月日语能力考试N2真题及详解 — 成都帝京日语学校 edition&quot;,
+      &quot;sha256&quot;: &quot;594fa98f60eedef66c0c6119ca26b4d6bd446dfe33018673dc05ae53bd6b2645&quot;,
+      &quot;physical_pages&quot;: [
+        9
+      ],
+      &quot;locator&quot;: &quot;Same cloze paragraph&quot;,
+      &quot;reading&quot;: &quot;完成前、忠敬を支え続けた至時が病気で亡くなってしまう。&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2019年12月N2真题 — 22-page collected-paper edition&quot;,
+      &quot;sha256&quot;: &quot;083b40db51de096f6f37040e3de9a7b3aa2984a63f2fa570fbf7ea8b14e401f5&quot;,
+      &quot;physical_pages&quot;: [
+        7
+      ],
+      &quot;locator&quot;: &quot;Same cloze paragraph&quot;,
+      &quot;reading&quot;: &quot;完成前、 without に.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;N2-2019-12 真题 — Past papers 15-page edition&quot;,
+      &quot;sha256&quot;: &quot;4fe285d78bb54a900e43ea00f2f7e7731e656ee1d57ed60d056074e5cadda13f&quot;,
+      &quot;physical_pages&quot;: [
+        7
+      ],
+      &quot;locator&quot;: &quot;Same cloze paragraph&quot;,
+      &quot;reading&quot;: &quot;完成前、 without に.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2019年12月N2 真题 — 渠道一【1】15-page edition&quot;,
+      &quot;sha256&quot;: &quot;2ea3e652ee003148b34e1774735e95347c610b684d32791dfd3e78ba08cffd93&quot;,
+      &quot;physical_pages&quot;: [
+        5
+      ],
+      &quot;locator&quot;: &quot;Same cloze paragraph&quot;,
+      &quot;reading&quot;: &quot;完成前、 without に.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;munjaJLPT — December 2019 N2 structured paper&quot;,
+      &quot;sha256&quot;: &quot;76d51c3c54465881b79cfff2b6cb88a88dc4b3a11700600d59bc90cf3609a7c1&quot;,
+      &quot;locator&quot;: &quot;Written cloze parent passage&quot;,
+      &quot;reading&quot;: &quot;完成前、 without に.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Retain the inherited 完成前、 supported by several inspected versions. A temporal noun phrase can function adverbially here without に; adding に is also ordinary Japanese. Neither form changes the timeline or the answers.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Read the complete paragraph in the principal and four alternate original pages.&quot;,
+    &quot;Compare native wording and test both temporal constructions in context.&quot;,
+    &quot;5 November 2026: Public snapshot rebound to the earlier, verified current field. Only the historical presentation edit is replayed; this snapshot repair does not change the original witness or its confidence.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;Both readings are coherent; the historical particle remains disputed.&quot;
+}</pre></details></div><div class="review-record" id="principal_differences-N2_12_2019-PD-006"><div class="review-label">Principal difference · /content/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>No alternative recorded</pre></div><div><h4>Editorial</h4><pre>17 selective ruby annotations, including &lt;ruby&gt;上総国&lt;rt&gt;かずさのくに&lt;/rt&gt;&lt;/ruby&gt; and &lt;ruby&gt;敬&lt;rt&gt;うやま&lt;/rt&gt;&lt;/ruby&gt;</pre></div></div><p>The principal has no ruby. Restore selective annotations from two related printed witnesses and repair their 上総国 reading using lexical evidence; original typography is not authenticated.</p><span class="principal-repository-source">Principal source (page=6): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Entire cloze passage, names/place names and 敬</span><details><summary>Full published record · principal_differences-N2_12_2019-PD-006</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N2_12_2019-PD-006&quot;,
+  &quot;unit&quot;: &quot;N2_12_2019&quot;,
+  &quot;item_id&quot;: &quot;vocab-b001&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;current_value&quot;: &quot;&lt;p&gt;以下は、伊能忠敬という人物について書かれた文章である。&lt;/p&gt;&lt;p&gt;初めて正確な日本地図を作成した人物として知られる&lt;ruby&gt;伊能忠敬&lt;rt&gt;いのうただたか&lt;/rt&gt;&lt;/ruby&gt;は、1745年、&lt;ruby&gt;上総国&lt;rt&gt;かずさのくに&lt;/rt&gt;&lt;/ruby&gt;（今の&lt;ruby&gt;千葉県&lt;rt&gt;ちばけん&lt;/rt&gt;&lt;/ruby&gt;）に生まれた。優れた経営者だった&lt;ruby&gt;忠敬&lt;rt&gt;ただたか&lt;/rt&gt;&lt;/ruby&gt;だが、50歳を前に仕事をやめ、興味があった星や暦について&lt;ruby&gt;高橋至時&lt;rt&gt;たかはしよしとき&lt;/rt&gt;&lt;/ruby&gt;のもとで【48】。19歳も年下の&lt;ruby&gt;至時&lt;rt&gt;よしとき&lt;/rt&gt;&lt;/ruby&gt;を&lt;ruby&gt;忠敬&lt;rt&gt;ただたか&lt;/rt&gt;&lt;/ruby&gt;は&lt;ruby&gt;敬&lt;rt&gt;うやま&lt;/rt&gt;&lt;/ruby&gt;い、熱心に勉強した。&lt;/p&gt;&lt;p&gt;当時の学者たちの関心は、地球の直径を知ることにあった。江戸（今の東京）から&lt;ruby&gt;蝦夷地&lt;rt&gt;えぞち&lt;/rt&gt;&lt;/ruby&gt;（今の北海道）までの距離は当時はまだわからなかったが、それが【49】正確に直径が計算できると知った&lt;ruby&gt;忠敬&lt;rt&gt;ただたか&lt;/rt&gt;&lt;/ruby&gt;は、&lt;ruby&gt;蝦夷地&lt;rt&gt;えぞち&lt;/rt&gt;&lt;/ruby&gt;へ行くことを願う。しかし、&lt;ruby&gt;蝦夷地&lt;rt&gt;えぞち&lt;/rt&gt;&lt;/ruby&gt;に行くには国の許可が必要だった。&lt;ruby&gt;至時&lt;rt&gt;よしとき&lt;/rt&gt;&lt;/ruby&gt;は、&lt;ruby&gt;蝦夷地&lt;rt&gt;えぞち&lt;/rt&gt;&lt;/ruby&gt;の地図作成を理由に国の許可をとり、&lt;ruby&gt;忠敬&lt;rt&gt;ただたか&lt;/rt&gt;&lt;/ruby&gt;を担当にする。【50】、&lt;ruby&gt;忠敬&lt;rt&gt;ただたか&lt;/rt&gt;&lt;/ruby&gt;55歳のとき、地図作りの旅が始まった。&lt;/p&gt;&lt;p&gt;昼間は測って歩き、夜は星を観察して昼間測った数値を修正する日々が続いた。完成した&lt;ruby&gt;蝦夷地&lt;rt&gt;えぞち&lt;/rt&gt;&lt;/ruby&gt;の地図は国から高く評価され、忠敬は東日本の地図作成も【51】。地図作成の旅は順調に終わったが、完成前、忠敬を支え続けた至時が病気で亡くなってしまう。一番の理解者である至時を失い、忠敬はひどく落ち込んだ。だが、悲しみに耐え、さらに命じられた西日本の地図作成にも取り組む。旅を終え、完成に向けて作業の最終段階に入っていた1818年、忠敬は73歳で人生の幕を閉じた。作業は弟子らが続け、1821年、日本全国の地図が完成した。&lt;/p&gt;&lt;p&gt;忠敬は自分に大きな仕事ができたのはすべて至時先生のおかげだと書き残している。歴史に残る【52】は、二人の信頼関係によって、誕生したのである。&lt;/p&gt;&quot;,
+  &quot;categories&quot;: [
+    &quot;ruby&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2019年12月N2 真题 — 渠道一【2】17-page edition&quot;,
+    &quot;sha256&quot;: &quot;ebea5777c24f842c590e706b53be4a50d4a3fdc214aa735a7ee76569a97852e7&quot;,
+    &quot;physical_pages&quot;: [
+      6
+    ],
+    &quot;locator&quot;: &quot;Entire cloze passage, names/place names and 敬&quot;,
+    &quot;reading_status&quot;: &quot;absent&quot;,
+    &quot;reading&quot;: null
+  },
+  &quot;editorial_reading&quot;: &quot;17 selective ruby annotations, including &lt;ruby&gt;上総国&lt;rt&gt;かずさのくに&lt;/rt&gt;&lt;/ruby&gt; and &lt;ruby&gt;敬&lt;rt&gt;うやま&lt;/rt&gt;&lt;/ruby&gt;&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;conjectural_repair&quot;,
+  &quot;rationale&quot;: &quot;The principal has no ruby. Restore selective annotations from two related printed witnesses and repair their 上総国 reading using lexical evidence; original typography is not authenticated.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;N2_12_2019-vocab-b001-ruby&quot;
+  ]
+}</pre></details></div><div class="review-record" id="principal_differences-N2_12_2019-PD-007"><div class="review-label">Principal difference · /content/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>完成前<mark class="diff-old">に</mark>、忠敬を支え続けた至時が病気で亡くなってしまう。</pre></div><div><h4>Editorial</h4><pre>完成前、忠敬を支え続けた至時が病気で亡くなってしまう。</pre></div></div><p>Retain the inherited particle-free temporal phrase supported by alternate printed and structured witnesses. Both constructions are grammatical.</p><span class="principal-repository-source">Principal source (page=6): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Cloze third body paragraph</span><details><summary>Full published record · principal_differences-N2_12_2019-PD-007</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N2_12_2019-PD-007&quot;,
+  &quot;unit&quot;: &quot;N2_12_2019&quot;,
+  &quot;item_id&quot;: &quot;vocab-b001&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;current_value&quot;: &quot;&lt;p&gt;以下は、伊能忠敬という人物について書かれた文章である。&lt;/p&gt;&lt;p&gt;初めて正確な日本地図を作成した人物として知られる&lt;ruby&gt;伊能忠敬&lt;rt&gt;いのうただたか&lt;/rt&gt;&lt;/ruby&gt;は、1745年、&lt;ruby&gt;上総国&lt;rt&gt;かずさのくに&lt;/rt&gt;&lt;/ruby&gt;（今の&lt;ruby&gt;千葉県&lt;rt&gt;ちばけん&lt;/rt&gt;&lt;/ruby&gt;）に生まれた。優れた経営者だった&lt;ruby&gt;忠敬&lt;rt&gt;ただたか&lt;/rt&gt;&lt;/ruby&gt;だが、50歳を前に仕事をやめ、興味があった星や暦について&lt;ruby&gt;高橋至時&lt;rt&gt;たかはしよしとき&lt;/rt&gt;&lt;/ruby&gt;のもとで【48】。19歳も年下の&lt;ruby&gt;至時&lt;rt&gt;よしとき&lt;/rt&gt;&lt;/ruby&gt;を&lt;ruby&gt;忠敬&lt;rt&gt;ただたか&lt;/rt&gt;&lt;/ruby&gt;は&lt;ruby&gt;敬&lt;rt&gt;うやま&lt;/rt&gt;&lt;/ruby&gt;い、熱心に勉強した。&lt;/p&gt;&lt;p&gt;当時の学者たちの関心は、地球の直径を知ることにあった。江戸（今の東京）から&lt;ruby&gt;蝦夷地&lt;rt&gt;えぞち&lt;/rt&gt;&lt;/ruby&gt;（今の北海道）までの距離は当時はまだわからなかったが、それが【49】正確に直径が計算できると知った&lt;ruby&gt;忠敬&lt;rt&gt;ただたか&lt;/rt&gt;&lt;/ruby&gt;は、&lt;ruby&gt;蝦夷地&lt;rt&gt;えぞち&lt;/rt&gt;&lt;/ruby&gt;へ行くことを願う。しかし、&lt;ruby&gt;蝦夷地&lt;rt&gt;えぞち&lt;/rt&gt;&lt;/ruby&gt;に行くには国の許可が必要だった。&lt;ruby&gt;至時&lt;rt&gt;よしとき&lt;/rt&gt;&lt;/ruby&gt;は、&lt;ruby&gt;蝦夷地&lt;rt&gt;えぞち&lt;/rt&gt;&lt;/ruby&gt;の地図作成を理由に国の許可をとり、&lt;ruby&gt;忠敬&lt;rt&gt;ただたか&lt;/rt&gt;&lt;/ruby&gt;を担当にする。【50】、&lt;ruby&gt;忠敬&lt;rt&gt;ただたか&lt;/rt&gt;&lt;/ruby&gt;55歳のとき、地図作りの旅が始まった。&lt;/p&gt;&lt;p&gt;昼間は測って歩き、夜は星を観察して昼間測った数値を修正する日々が続いた。完成した&lt;ruby&gt;蝦夷地&lt;rt&gt;えぞち&lt;/rt&gt;&lt;/ruby&gt;の地図は国から高く評価され、忠敬は東日本の地図作成も【51】。地図作成の旅は順調に終わったが、完成前、忠敬を支え続けた至時が病気で亡くなってしまう。一番の理解者である至時を失い、忠敬はひどく落ち込んだ。だが、悲しみに耐え、さらに命じられた西日本の地図作成にも取り組む。旅を終え、完成に向けて作業の最終段階に入っていた1818年、忠敬は73歳で人生の幕を閉じた。作業は弟子らが続け、1821年、日本全国の地図が完成した。&lt;/p&gt;&lt;p&gt;忠敬は自分に大きな仕事ができたのはすべて至時先生のおかげだと書き残している。歴史に残る【52】は、二人の信頼関係によって、誕生したのである。&lt;/p&gt;&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2019年12月N2 真题 — 渠道一【2】17-page edition&quot;,
+    &quot;sha256&quot;: &quot;ebea5777c24f842c590e706b53be4a50d4a3fdc214aa735a7ee76569a97852e7&quot;,
+    &quot;physical_pages&quot;: [
+      6
+    ],
+    &quot;locator&quot;: &quot;Cloze third body paragraph&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;完成前に、忠敬を支え続けた至時が病気で亡くなってしまう。&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;完成前、忠敬を支え続けた至時が病気で亡くなってしまう。&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;retained_variant&quot;,
+  &quot;rationale&quot;: &quot;Retain the inherited particle-free temporal phrase supported by alternate printed and structured witnesses. Both constructions are grammatical.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;N2_12_2019-vocab-b001-completion-wording&quot;
+  ]
+}</pre></details></div></section><section class="review-group" id="review-vocab-q051" data-kinds="unresolved"><div class="review-group-heading"><h2>vocab-q051</h2><a href="../papers/N2_12_2019.html#vocab-q051">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">51.<ol><li>命じられることとなる</li><li>命じられたことになる</li><li>命じられることもある</li><li>命じられたことである</li></ol><p>Editorial key: 1</p></div></details><div class="review-record" id="unresolved_cases-N2_12_2019-vocab-q051-key"><div class="review-label">Unresolved · /key · medium</div><div class="comparison"><div><h4>Alternative</h4><pre><mark class="diff-old">2</mark></pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">1</mark></pre></div></div><p>Retain 1. The narrative advances from a successful first map to being commissioned to map eastern Japan, for which 命じられることとなる is the best fit. The rival たことになる typically presents an inference or retrospective interpretation; it is not categorically ungrammatical. The conflicting printed key prevents an authenticated historical resolution.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>An issuer-tied answer key or question reproduction could settle whether the school key is a transcription error.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Cloze 51 follows official praise for the Ezo map: 忠敬は東日本の地図作成も【51】。</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=6): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Cloze sentence, options and written key 51<p>命じられることとなる is choice 1; key 51=1.</p></li><li><span class="principal-repository-source">Principal source (page=9): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Cloze passage/options and written answer table<p>Same four options, but key 51=2.</p></li><li><span class="principal-repository-source">Principal source (page=8): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Cloze passage and written key<p>Shares the school-style passage and unusual ruby, but key 51=1.</p></li><li><span class="principal-repository-source">Principal source (page=20): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Written explanation of 51<p>Selects 1, describing the subsequent commission.</p></li><li><span class="principal-repository-source">Principal source (page=6): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Explanation of 51<p>Selects 1.</p></li><li><span class="principal-repository-source">Principal source (page=5): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Explanation of 51<p>Selects 1; overlaps the other explanation.</p></li><li><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Written Q51 answer and options<p>One-based key 1 after converting the stored zero-based answer.</p></li></ul><details><summary>Full published record · unresolved_cases-N2_12_2019-vocab-q051-key</summary><pre>{
+  &quot;case_id&quot;: &quot;N2_12_2019-vocab-q051-key&quot;,
+  &quot;unit&quot;: &quot;N2_12_2019&quot;,
+  &quot;item_id&quot;: &quot;vocab-q051&quot;,
+  &quot;field&quot;: &quot;/key&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: 1,
+  &quot;context&quot;: &quot;Cloze 51 follows official praise for the Ezo map: 忠敬は東日本の地図作成も【51】。&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: 2,
+      &quot;assessment&quot;: &quot;The school answer table selects 命じられたことになる, a retrospective/inferential statement that does not express the new commission as directly.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;2019年12月N2 真题 — 渠道一【2】17-page edition&quot;,
+      &quot;sha256&quot;: &quot;ebea5777c24f842c590e706b53be4a50d4a3fdc214aa735a7ee76569a97852e7&quot;,
+      &quot;physical_pages&quot;: [
+        6,
+        17
+      ],
+      &quot;locator&quot;: &quot;Cloze sentence, options and written key 51&quot;,
+      &quot;reading&quot;: &quot;命じられることとなる is choice 1; key 51=1.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2019年12月日语能力考试N2真题及详解 — 成都帝京日语学校 edition&quot;,
+      &quot;sha256&quot;: &quot;594fa98f60eedef66c0c6119ca26b4d6bd446dfe33018673dc05ae53bd6b2645&quot;,
+      &quot;physical_pages&quot;: [
+        9,
+        10,
+        33
+      ],
+      &quot;locator&quot;: &quot;Cloze passage/options and written answer table&quot;,
+      &quot;reading&quot;: &quot;Same four options, but key 51=2.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2019年12月N2 真题 — 渠道一【3】24-page edition&quot;,
+      &quot;sha256&quot;: &quot;0ad196c78140640045ec8be9073689114e7954f778fed1e810544a787b9e2535&quot;,
+      &quot;physical_pages&quot;: [
+        8,
+        24
+      ],
+      &quot;locator&quot;: &quot;Cloze passage and written key&quot;,
+      &quot;reading&quot;: &quot;Shares the school-style passage and unusual ruby, but key 51=1.&quot;,
+      &quot;lineage&quot;: &quot;The shared passage layout is not independent corroboration.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2019年12月N2试卷_解析_听力原文_高清扫描 — 32-page edition&quot;,
+      &quot;sha256&quot;: &quot;6fe9b0c615f9ec20946807f109c099d2ec8bc7a36ed6e50e3fb16f182665b933&quot;,
+      &quot;physical_pages&quot;: [
+        20
+      ],
+      &quot;locator&quot;: &quot;Written explanation of 51&quot;,
+      &quot;reading&quot;: &quot;Selects 1, describing the subsequent commission.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2019年12月N2答案解析+听力原文 — 渠道一【1】edition&quot;,
+      &quot;sha256&quot;: &quot;6ea0e1286c1befbb18d6e46142276249bbdca3efd6fdf16a30416bf18b2f1090&quot;,
+      &quot;physical_pages&quot;: [
+        6
+      ],
+      &quot;locator&quot;: &quot;Explanation of 51&quot;,
+      &quot;reading&quot;: &quot;Selects 1.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2019年12月N2答案解析+听力原文 — 渠道一【2】edition&quot;,
+      &quot;sha256&quot;: &quot;d15344edda8897bc28193f4faaff85372c7efc92133c6804eca20e66d8b312ad&quot;,
+      &quot;physical_pages&quot;: [
+        5
+      ],
+      &quot;locator&quot;: &quot;Explanation of 51&quot;,
+      &quot;reading&quot;: &quot;Selects 1; overlaps the other explanation.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;munjaJLPT — December 2019 N2 structured paper&quot;,
+      &quot;sha256&quot;: &quot;76d51c3c54465881b79cfff2b6cb88a88dc4b3a11700600d59bc90cf3609a7c1&quot;,
+      &quot;locator&quot;: &quot;Written Q51 answer and options&quot;,
+      &quot;reading&quot;: &quot;One-based key 1 after converting the stored zero-based answer.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Retain 1. The narrative advances from a successful first map to being commissioned to map eastern Japan, for which 命じられることとなる is the best fit. The rival たことになる typically presents an inference or retrospective interpretation; it is not categorically ungrammatical. The conflicting printed key prevents an authenticated historical resolution.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Read the entire cloze timeline and all four Q51 options.&quot;,
+    &quot;Check the school key directly and compare both other written keys and the related 24-page copy.&quot;,
+    &quot;Read three printed explanations and distinguish their supported discourse conclusion from the overbroad claim that ことになる can only follow a dictionary-form verb.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;An issuer-tied answer key or question reproduction could settle whether the school key is a transcription error.&quot;
+}</pre></details></div></section><section class="review-group" id="review-reading-b004" data-kinds="difference unresolved"><div class="review-group-heading"><h2>reading-b004</h2><a href="../papers/N2_12_2019.html#reading-b004">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><p>（4）</p><p>以下は、あるカメラメーカーがホームページに掲載したお知らせである。</p><p>ビーエスカメラ&gt;製品情報</p><p>2019年10月8日</p><p>デジタルカメラ「BS-ZG1」に関するお知らせ</p><p>弊社のデジタルカメラ「BS-ZG1」は、電源ボタンの不具合が見付かったため9月30日より販売を一時中止しておりました。その後の調査の結果、この不具合は製造番号ZH29200~ZH29800の製品にのみ起きることが分かりました。</p><p>対象の製品をお持ちのお客様は、現在不具合が起きていなくても無料で修理させていただきますので、お手数ですがお近くの販売店までお持ちくださいますようお願い申し上げます。</p><p>なお、製造番号の確認方法は、下記のホームページをご覧ください。</p><p><u>http://bs-camera.jp/info/20191008</u></p><p>ビーエスカメラお客様サポート窓口</p><p>TEL:02-3389-4254（受付時間10:00~19:00）</p></div></details><div class="review-record" id="unresolved_cases-N2_12_2019-reading-b004-customer-wording"><div class="review-label">Unresolved · /content/html · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>&lt;p&gt;<mark class="diff-old">(</mark>4<mark class="diff-old">)</mark>&lt;/p&gt;&lt;p&gt;以下は、あるカメラメーカーがホームページに掲載したお知らせである。&lt;/p&gt;&lt;p&gt;ビーエスカメラ&amp;gt;製品情報&lt;/p&gt;&lt;p&gt;2019年10月8日&lt;/p&gt;&lt;p&gt;デジタルカメラ「BS-ZG1」に関するお知らせ&lt;/p&gt;&lt;p&gt;弊社のデジタルカメラ「BS-ZG1」は、電源…</pre></div><div><h4>Editorial</h4><pre>&lt;p&gt;<mark class="diff-new">（</mark>4<mark class="diff-new">）</mark>&lt;/p&gt;&lt;p&gt;以下は、あるカメラメーカーがホームページに掲載したお知らせである。&lt;/p&gt;&lt;p&gt;ビーエスカメラ&amp;gt;製品情報&lt;/p&gt;&lt;p&gt;2019年10月8日&lt;/p&gt;&lt;p&gt;デジタルカメラ「BS-ZG1」に関するお知らせ&lt;/p&gt;&lt;p&gt;弊社のデジタルカメラ「BS-ZG1」は、電源…</pre></div></div><p>Retain the inherited お客様 and punctuation, supported by the alternate layouts and natural in a formal customer notice. お客さん is also legitimate Japanese and is visibly printed in the principal, so register preference does not prove the historical form. All recall conditions and key 3 remain unchanged.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>The exact customer form and comma remain historically unauthenticated.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Reading Q56 uses a camera recall notice offering free repairs for a specified serial-number range.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=8): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Camera notice first two body paragraphs<p>見付かったため、9月30日; 対象の製品をお持ちのお客さんは.</p></li><li><span class="principal-repository-source">Principal source (page=7): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Camera notice<p>お客さん; comma after ため.</p></li><li><span class="principal-repository-source">Principal source (page=14): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Camera notice<p>お客様; no comma after ため; introduction absent.</p></li><li><span class="principal-repository-source">Principal source (page=9): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Camera notice<p>お客様; no comma after ため.</p></li><li><span class="principal-repository-source">Principal source (page=11): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Camera notice<p>お客様; no comma after ため.</p></li><li><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Camera notice parent passage<p>お客様; no comma after ため.</p></li></ul><details><summary>Full published record · unresolved_cases-N2_12_2019-reading-b004-customer-wording</summary><pre>{
+  &quot;case_id&quot;: &quot;N2_12_2019-reading-b004-customer-wording&quot;,
+  &quot;unit&quot;: &quot;N2_12_2019&quot;,
+  &quot;item_id&quot;: &quot;reading-b004&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;&lt;p&gt;（4）&lt;/p&gt;&lt;p&gt;以下は、あるカメラメーカーがホームページに掲載したお知らせである。&lt;/p&gt;&lt;p&gt;ビーエスカメラ&amp;gt;製品情報&lt;/p&gt;&lt;p&gt;2019年10月8日&lt;/p&gt;&lt;p&gt;デジタルカメラ「BS-ZG1」に関するお知らせ&lt;/p&gt;&lt;p&gt;弊社のデジタルカメラ「BS-ZG1」は、電源ボタンの不具合が見付かったため9月30日より販売を一時中止しておりました。その後の調査の結果、この不具合は製造番号ZH29200~ZH29800の製品にのみ起きることが分かりました。&lt;/p&gt;&lt;p&gt;対象の製品をお持ちのお客様は、現在不具合が起きていなくても無料で修理させていただきますので、お手数ですがお近くの販売店までお持ちくださいますようお願い申し上げます。&lt;/p&gt;&lt;p&gt;なお、製造番号の確認方法は、下記のホームページをご覧ください。&lt;/p&gt;&lt;p&gt;&lt;u&gt;http://bs-camera.jp/info/20191008&lt;/u&gt;&lt;/p&gt;&lt;p&gt;ビーエスカメラお客様サポート窓口&lt;/p&gt;&lt;p&gt;TEL:02-3389-4254（受付時間10:00~19:00）&lt;/p&gt;&quot;,
+  &quot;context&quot;: &quot;Reading Q56 uses a camera recall notice offering free repairs for a specified serial-number range.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;&lt;p&gt;(4)&lt;/p&gt;&lt;p&gt;以下は、あるカメラメーカーがホームページに掲載したお知らせである。&lt;/p&gt;&lt;p&gt;ビーエスカメラ&amp;gt;製品情報&lt;/p&gt;&lt;p&gt;2019年10月8日&lt;/p&gt;&lt;p&gt;デジタルカメラ「BS-ZG1」に関するお知らせ&lt;/p&gt;&lt;p&gt;弊社のデジタルカメラ「BS-ZG1」は、電源ボタンの不具合が見付かったため、9月30日より販売を一時中止しておりました。その後の調査の結果、この不具合は製造番号ZH29200~ZH29800の製品にのみ起きることが分かりました。&lt;/p&gt;&lt;p&gt;対象の製品をお持ちのお客さんは、現在不具合が起きていなくても無料で修理させていただきますので、お手数ですがお近くの販売店までお持ちくださいますようお願い申し上げます。&lt;/p&gt;&lt;p&gt;なお、製造番号の確認方法は、下記のホームページをご覧ください。&lt;/p&gt;&lt;p&gt;&lt;u&gt;http://bs-camera.jp/info/20191008&lt;/u&gt;&lt;/p&gt;&lt;p&gt;ビーエスカメラお客様サポート窓口&lt;/p&gt;&lt;p&gt;TEL:02-3389-4254(受付時間10:00~19:00)&lt;/p&gt;&quot;,
+      &quot;assessment&quot;: &quot;The principal and the 32-page edition use お客さん and a comma after ため.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;2019年12月N2 真题 — 渠道一【2】17-page edition&quot;,
+      &quot;sha256&quot;: &quot;ebea5777c24f842c590e706b53be4a50d4a3fdc214aa735a7ee76569a97852e7&quot;,
+      &quot;physical_pages&quot;: [
+        8
+      ],
+      &quot;locator&quot;: &quot;Camera notice first two body paragraphs&quot;,
+      &quot;reading&quot;: &quot;見付かったため、9月30日; 対象の製品をお持ちのお客さんは.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2019年12月N2试卷_解析_听力原文_高清扫描 — 32-page edition&quot;,
+      &quot;sha256&quot;: &quot;6fe9b0c615f9ec20946807f109c099d2ec8bc7a36ed6e50e3fb16f182665b933&quot;,
+      &quot;physical_pages&quot;: [
+        7
+      ],
+      &quot;locator&quot;: &quot;Camera notice&quot;,
+      &quot;reading&quot;: &quot;お客さん; comma after ため.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2019年12月日语能力考试N2真题及详解 — 成都帝京日语学校 edition&quot;,
+      &quot;sha256&quot;: &quot;594fa98f60eedef66c0c6119ca26b4d6bd446dfe33018673dc05ae53bd6b2645&quot;,
+      &quot;physical_pages&quot;: [
+        14
+      ],
+      &quot;locator&quot;: &quot;Camera notice&quot;,
+      &quot;reading&quot;: &quot;お客様; no comma after ため; introduction absent.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2019年12月N2真题 — 22-page collected-paper edition&quot;,
+      &quot;sha256&quot;: &quot;083b40db51de096f6f37040e3de9a7b3aa2984a63f2fa570fbf7ea8b14e401f5&quot;,
+      &quot;physical_pages&quot;: [
+        9
+      ],
+      &quot;locator&quot;: &quot;Camera notice&quot;,
+      &quot;reading&quot;: &quot;お客様; no comma after ため.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2019年12月N2 真题 — 渠道一【3】24-page edition&quot;,
+      &quot;sha256&quot;: &quot;0ad196c78140640045ec8be9073689114e7954f778fed1e810544a787b9e2535&quot;,
+      &quot;physical_pages&quot;: [
+        11
+      ],
+      &quot;locator&quot;: &quot;Camera notice&quot;,
+      &quot;reading&quot;: &quot;お客様; no comma after ため.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;munjaJLPT — December 2019 N2 structured paper&quot;,
+      &quot;sha256&quot;: &quot;76d51c3c54465881b79cfff2b6cb88a88dc4b3a11700600d59bc90cf3609a7c1&quot;,
+      &quot;locator&quot;: &quot;Camera notice parent passage&quot;,
+      &quot;reading&quot;: &quot;お客様; no comma after ため.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Retain the inherited お客様 and punctuation, supported by the alternate layouts and natural in a formal customer notice. お客さん is also legitimate Japanese and is visibly printed in the principal, so register preference does not prove the historical form. All recall conditions and key 3 remain unchanged.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Compare the original notice paragraphs, introduction, URL underline and contact line across five layouts.&quot;,
+    &quot;Check the native block and all four dependent answer choices.&quot;,
+    &quot;Confirm that both customer terms refer to the same owners and that the comma has no effect on the recall conditions.&quot;,
+    &quot;5 November 2026: Public snapshot rebound to the earlier, verified current field. Only the historical presentation edit is replayed; this snapshot repair does not change the original witness or its confidence.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;The exact customer form and comma remain historically unauthenticated.&quot;
+}</pre></details></div><div class="review-record" id="principal_differences-N2_12_2019-PD-008"><div class="review-label">Principal difference · /content/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>見付かったため<mark class="diff-old">、</mark>9月30日; 対象の製品をお持ちのお客<mark class="diff-old">さん</mark>は</pre></div><div><h4>Editorial</h4><pre>見付かったため9月30日; 対象の製品をお持ちのお客<mark class="diff-new">様</mark>は</pre></div></div><p>Retain the inherited formal customer form and punctuation, supported by the alternate layouts; the principal variant remains possible.</p><span class="principal-repository-source">Principal source (page=8): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Camera notice, first two body paragraphs</span><details><summary>Full published record · principal_differences-N2_12_2019-PD-008</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N2_12_2019-PD-008&quot;,
+  &quot;unit&quot;: &quot;N2_12_2019&quot;,
+  &quot;item_id&quot;: &quot;reading-b004&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;current_value&quot;: &quot;&lt;p&gt;（4）&lt;/p&gt;&lt;p&gt;以下は、あるカメラメーカーがホームページに掲載したお知らせである。&lt;/p&gt;&lt;p&gt;ビーエスカメラ&amp;gt;製品情報&lt;/p&gt;&lt;p&gt;2019年10月8日&lt;/p&gt;&lt;p&gt;デジタルカメラ「BS-ZG1」に関するお知らせ&lt;/p&gt;&lt;p&gt;弊社のデジタルカメラ「BS-ZG1」は、電源ボタンの不具合が見付かったため9月30日より販売を一時中止しておりました。その後の調査の結果、この不具合は製造番号ZH29200~ZH29800の製品にのみ起きることが分かりました。&lt;/p&gt;&lt;p&gt;対象の製品をお持ちのお客様は、現在不具合が起きていなくても無料で修理させていただきますので、お手数ですがお近くの販売店までお持ちくださいますようお願い申し上げます。&lt;/p&gt;&lt;p&gt;なお、製造番号の確認方法は、下記のホームページをご覧ください。&lt;/p&gt;&lt;p&gt;&lt;u&gt;http://bs-camera.jp/info/20191008&lt;/u&gt;&lt;/p&gt;&lt;p&gt;ビーエスカメラお客様サポート窓口&lt;/p&gt;&lt;p&gt;TEL:02-3389-4254（受付時間10:00~19:00）&lt;/p&gt;&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;,
+    &quot;punctuation&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2019年12月N2 真题 — 渠道一【2】17-page edition&quot;,
+    &quot;sha256&quot;: &quot;ebea5777c24f842c590e706b53be4a50d4a3fdc214aa735a7ee76569a97852e7&quot;,
+    &quot;physical_pages&quot;: [
+      8
+    ],
+    &quot;locator&quot;: &quot;Camera notice, first two body paragraphs&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;見付かったため、9月30日; 対象の製品をお持ちのお客さんは&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;見付かったため9月30日; 対象の製品をお持ちのお客様は&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;retained_variant&quot;,
+  &quot;rationale&quot;: &quot;Retain the inherited formal customer form and punctuation, supported by the alternate layouts; the principal variant remains possible.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;N2_12_2019-reading-b004-customer-wording&quot;
+  ]
+}</pre></details></div></section><section class="review-group" id="review-reading-b008" data-kinds="difference"><div class="review-group-heading"><h2>reading-b008</h2><a href="../papers/N2_12_2019.html#reading-b008">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><p>（3）</p><p>未熟な（注1）人たちを育てることは、強い組織を創りあげる鉄則（注2）である。短期的な成果ばかりに目が行く上司は、能力の高い特定の人間だけを重用し（注3）、能力が低い人間には目が行かない。出来る人間は仕事が速く確かだし、任せていれば安心で自分がラクなのである。</p><p>一方、能力の低い部下は、細かく指示を出さなければならず、仕事は遅いし失敗することも多い。何かあったときに責任を問われるのは、上司である自分だ。できればそうした「落ちこぼれ」は、早く別の部署に異動させて（注4）、代わって優秀な社員を獲得したいだろう。</p><p>しかし、<u>それ</u>では強い組織は出来上がらない。なぜなら、よくできる社員はすでによくがんばっているので、いま以上の伸びしろ（注5）はそれほど大きくないからだ。</p><p>上司が重点的に気をかけなければいけないのは、少し遅れ気味の部下、外れ者の部下、苦労している部下である。そういう部下は、手間はかかるかもしれないが、少し手を差し伸べれば、2~3割は容易に伸びる。そうすることで組織を構成するメンバー全体の力を伸ばし、組織の底上げ（注6）ができる。結果として、与えられた業務目標を、組織として達成することができるのである。これぞ上司の本懐（注7）である。</p><p>組織の中で大きく伸びていく人材の多くは、新入社員時代にどんな部署の<ruby data-rubi-id="rr1-921e49b032b91f2bd0f6" data-rubi-origin="project_rubi_restore">誰<rt>だれ</rt></ruby>が上司であったかということが大きく<ruby data-rubi-id="rr1-487f648f12a70e0e34df" data-rubi-origin="project_rubi_restore">影響<rt>えいきょう</rt></ruby>するといわれる。まだ仕事というものがよくわかっていないとき「会社というのは……」「仕事とはこうするのだ」と的確に教えてもらえたかどうかが、その人の仕事人生を大きく左右するということだ。</p><div><p>（注1）未熟な:能力や経験が不十分な</p><p>（注2）鉄則:ここでは、絶対に必要なこと</p><p>（注3）~を重用する:~に重要な役割を与える</p><p>（注4）別の部署に異動させる:別の部に移す</p><p>（注5）伸びしろ:伸びる可能性</p><p>（注6）底上げ:全体のレベルを高めること</p><p>（注7）本懐:一番の願い</p></div></div></details><div class="review-record" id="principal_differences-N2_12_2019-PD-009"><div class="review-label">Principal difference · /content/html · high</div><div class="comparison"><div><h4>Principal</h4><pre><mark class="diff-old">“</mark>落ちこぼれ<mark class="diff-old">”</mark></pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">「</mark>落ちこぼれ<mark class="diff-new">」</mark></pre></div></div><p>Retain the inherited Japanese corner quotation marks. The quoted word and its rhetorical function are identical; this is a presentation difference.</p><span class="principal-repository-source">Principal source (page=10): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Organizational development passage, second paragraph</span><details><summary>Full published record · principal_differences-N2_12_2019-PD-009</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N2_12_2019-PD-009&quot;,
+  &quot;unit&quot;: &quot;N2_12_2019&quot;,
+  &quot;item_id&quot;: &quot;reading-b008&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;current_value&quot;: &quot;&lt;p&gt;（3）&lt;/p&gt;&lt;p&gt;未熟な（注1）人たちを育てることは、強い組織を創りあげる鉄則（注2）である。短期的な成果ばかりに目が行く上司は、能力の高い特定の人間だけを重用し（注3）、能力が低い人間には目が行かない。出来る人間は仕事が速く確かだし、任せていれば安心で自分がラクなのである。&lt;/p&gt;&lt;p&gt;一方、能力の低い部下は、細かく指示を出さなければならず、仕事は遅いし失敗することも多い。何かあったときに責任を問われるのは、上司である自分だ。できればそうした「落ちこぼれ」は、早く別の部署に異動させて（注4）、代わって優秀な社員を獲得したいだろう。&lt;/p&gt;&lt;p&gt;しかし、&lt;u&gt;それ&lt;/u&gt;では強い組織は出来上がらない。なぜなら、よくできる社員はすでによくがんばっているので、いま以上の伸びしろ（注5）はそれほど大きくないからだ。&lt;/p&gt;&lt;p&gt;上司が重点的に気をかけなければいけないのは、少し遅れ気味の部下、外れ者の部下、苦労している部下である。そういう部下は、手間はかかるかもしれないが、少し手を差し伸べれば、2~3割は容易に伸びる。そうすることで組織を構成するメンバー全体の力を伸ばし、組織の底上げ（注6）ができる。結果として、与えられた業務目標を、組織として達成することができるのである。これぞ上司の本懐（注7）である。&lt;/p&gt;&lt;p&gt;組織の中で大きく伸びていく人材の多くは、新入社員時代にどんな部署の誰が上司であったかということが大きく影響するといわれる。まだ仕事というものがよくわかっていないとき「会社というのは……」「仕事とはこうするのだ」と的確に教えてもらえたかどうかが、その人の仕事人生を大きく左右するということだ。&lt;/p&gt;&lt;div class=\&quot;notes\&quot;&gt;&lt;p&gt;（注1）未熟な:能力や経験が不十分な&lt;/p&gt;&lt;p&gt;（注2）鉄則:ここでは、絶対に必要なこと&lt;/p&gt;&lt;p&gt;（注3）~を重用する:~に重要な役割を与える&lt;/p&gt;&lt;p&gt;（注4）別の部署に異動させる:別の部に移す&lt;/p&gt;&lt;p&gt;（注5）伸びしろ:伸びる可能性&lt;/p&gt;&lt;p&gt;（注6）底上げ:全体のレベルを高めること&lt;/p&gt;&lt;p&gt;（注7）本懐:一番の願い&lt;/p&gt;&lt;/div&gt;&quot;,
+  &quot;categories&quot;: [
+    &quot;punctuation&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2019年12月N2 真题 — 渠道一【2】17-page edition&quot;,
+    &quot;sha256&quot;: &quot;ebea5777c24f842c590e706b53be4a50d4a3fdc214aa735a7ee76569a97852e7&quot;,
+    &quot;physical_pages&quot;: [
+      10
+    ],
+    &quot;locator&quot;: &quot;Organizational development passage, second paragraph&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;“落ちこぼれ”&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;「落ちこぼれ」&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;retained_variant&quot;,
+  &quot;rationale&quot;: &quot;Retain the inherited Japanese corner quotation marks. The quoted word and its rhetorical function are identical; this is a presentation difference.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-s03" data-kinds="difference"><div class="review-group-heading"><h2>reading-s03</h2><a href="../papers/N2_12_2019.html#reading-s03">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">問題 12 次のAとBの文章を読んで、後の問いに対する答えとして最もよいものを、<br/>1・2・3・4から一つ選びなさい。</div></details><div class="review-record" id="principal_differences-N2_12_2019-PD-010"><div class="review-label">Principal difference · /heading · high</div><div class="comparison"><div><h4>Principal</h4><pre>次のAとB<mark class="diff-old">は</mark>文章を読んで</pre></div><div><h4>Editorial</h4><pre>次のAとB<mark class="diff-new">の</mark>文章を読んで</pre></div></div><p>Retain the inherited grammatical repair: の connects AとB with 文章. The alternate paper and structured instruction support の.</p><span class="principal-repository-source">Principal source (page=11): <code>additional-assets/principals/N2_12_2019.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Problem 12 A/B instruction</span><details><summary>Full published record · principal_differences-N2_12_2019-PD-010</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N2_12_2019-PD-010&quot;,
+  &quot;unit&quot;: &quot;N2_12_2019&quot;,
+  &quot;item_id&quot;: &quot;reading-s03&quot;,
+  &quot;field&quot;: &quot;/heading&quot;,
+  &quot;current_value&quot;: &quot;問題 12 次のAとBの文章を読んで、後の問いに対する答えとして最もよいものを、\n1・2・3・4から一つ選びなさい。&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2019年12月N2 真题 — 渠道一【2】17-page edition&quot;,
+    &quot;sha256&quot;: &quot;ebea5777c24f842c590e706b53be4a50d4a3fdc214aa735a7ee76569a97852e7&quot;,
+    &quot;physical_pages&quot;: [
+      11
+    ],
+    &quot;locator&quot;: &quot;Problem 12 A/B instruction&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;次のAとBは文章を読んで&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;次のAとBの文章を読んで&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Retain the inherited grammatical repair: の connects AとB with 文章. The alternate paper and structured instruction support の.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section></div></main><footer class="site-footer"><span class="developer-only">Developer mode</span></footer><div id="toast" role="status" class="toast" hidden></div><script id="page-data" type="application/json">{"review":true}</script><script id="theme-data" src="../assets/theme-data.js?v=f06ad9e2434b" defer></script><script src="../assets/app.js?v=0d75deb05ae3" defer></script></body></html>

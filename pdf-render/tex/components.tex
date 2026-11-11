@@ -1,0 +1,479 @@
+\directlua{token.set_macro("AstraRoot",assert(os.getenv("ASTRAJLPT_ROOT")),"global")}
+% Native LuaTeX-ja components. Body dimensions are injected by build.py.
+\usepackage{luatexja-fontspec,luatexja-ruby,lua-ul}
+\directlua{dofile(assert(os.getenv("ASTRAJLPT_ROOT")) .. "/pdf-render/tex/font-cache.lua")}
+\usepackage{geometry,fancyhdr,graphicx,needspace,tabularray,xcolor,mdframed,hyperref}
+% Paint frame backgrounds before top edges. Default mdframed paints them after,
+% which erases subpixel borders in Poppler at certain page coordinates.
+\makeatletter
+\patchcmd{\mdf@putbox@single}{\mdf@frame@topline@single\mdf@frame@background@single}{\mdf@frame@background@single\mdf@frame@topline@single}{}{\PackageError{JLPT}{Cannot patch single frame paint order}{The installed mdframed implementation changed.}}
+\patchcmd{\mdf@putbox@first}{\ifbool{mdf@topline}{\mdf@frame@topline@first}{}\mdf@frame@background@first}{\mdf@frame@background@first\ifbool{mdf@topline}{\mdf@frame@topline@first}{}}{}{\PackageError{JLPT}{Cannot patch first frame paint order}{The installed mdframed implementation changed.}}
+\patchcmd{\mdf@putbox@second}{\ifbool{mdf@everyline}{\mdf@frame@topline@second}{}\mdf@frame@background@second}{\mdf@frame@background@second\ifbool{mdf@everyline}{\mdf@frame@topline@second}{}}{}{\PackageError{JLPT}{Cannot patch last frame paint order}{The installed mdframed implementation changed.}}
+\makeatother
+\ExplSyntaxOn
+% The original Unicode arrow remains searchable in invisible text mode.
+% Its visual form is a measured filled shaft and triangular head.
+\NewDocumentCommand{\NativeDownArrow}{mmmm}{
+ \raisebox{-2bp}{\hbox_to_wd:nn{#1bp}{
+  \pdfextension literal{q~0~g~
+   \fp_eval:n{(#1-#3)/2}~#2~m~
+   \fp_eval:n{(#1+#3)/2}~#2~l~
+   \fp_eval:n{(#1+#3)/2}~#4~l~
+   #1~#4~l~\fp_eval:n{#1/2}~0~l~0~#4~l~
+   \fp_eval:n{(#1-#3)/2}~#4~l~h~f~Q}
+  \hss\pdfextension literal{3~Tr}↓\pdfextension literal{0~Tr}\hss
+  \rule{0pt}{#2bp}}}}
+\ExplSyntaxOff
+\hypersetup{hidelinks,pdfdisplaydoctitle=true}
+% Preserve the actual U+0028/U+0029 text. Only the banned Ryumin glyph route
+% changes; Kyoka, Gothic, handwriting and explicit document faces remain local.
+\ExplSyntaxOn
+\newif\ifPreserveDocumentDigits
+\cs_new_protected:Npn \ContentDigits #1#2
+ {
+  \ifPreserveDocumentDigits #2\else
+   \exp_args:Nee \str_if_in:nnTF {\fontname\font} {Kyoka}
+    {{#1 \tl_map_inline:nn {#2}{\ltjalchar`##1\relax}}}
+    {\exp_args:Nee \str_if_in:nnTF {\fontname\font} {Ryumin}
+     {{#1 \tl_map_inline:nn {#2}{\ltjalchar`##1\relax}}}
+     {#2}}
+  \fi
+ }
+\cs_new_protected:Npn \AsciiParen #1
+ {
+  \exp_args:Nee \str_if_in:nnTF {\fontname\font} {Ryumin}
+   {\cs_if_exist:NTF \AsciiParenthesisFace
+     {{\AsciiParenthesisFace #1}}
+     {\PackageError{JLPT}{Missing~ASCII~parenthesis~font~role}{Declare~the~shared~ascii_parenthesis~role.}}}
+   {#1}
+ }
+\ExplSyntaxOff
+% Standalone regression fragments may omit the optional role declarations.
+\AtBeginDocument{\providecommand\ChoiceNumerals{\rmfamily}\providecommand\BoxNumerals{\sffamily\bfseries}\providecommand\BubbleNumerals{\rmfamily}\providecommand\OptionRowGap{0pt}\providecommand\StarRaise{0pt}\providecommand\TaskLabelLatin{}\providecommand\TaskLabelJapanese{}}
+\AtBeginDocument{\providecommand\InstructionJapanese{\gtfamily}\providecommand\RunningJapanese{}\providecommand\InstructionLatin{\sffamily}}
+\newcommand\ExampleInstructionFont{\sffamily\gtfamily\mdseries\InstructionLatin\InstructionJapanese}
+\newcommand\StarWorkedFont{\ExampleInstructionFont}
+\newcommand\StarSupportingFont{\rmfamily\mcfamily\mdseries}
+\AtBeginDocument{\providecommand\AnswerLabelWidth{2.8em}\providecommand\AnswerLabelRubyBaseHeight{.80}}
+\AtBeginDocument{\providecommand\ClozeClearance{.28em}\providecommand\BlankInnerWidth{2.6em}\providecommand\BlankSideSpace{.4em}\providecommand\ClozeFrameRule{.6pt}}
+\AtBeginDocument{\providecommand\ClozeFrameTop{20pt}\providecommand\ClozeFrameBottom{8pt}}
+\AtBeginDocument{\providecommand\PairedLabelLatin{\sffamily}\providecommand\PassageNumerals{\rmfamily}\providecommand\AnnotationLatin{\rmfamily}}
+\AtBeginDocument{\providecommand\PassageIntroAfter{23pt}\providecommand\DocumentIntroAfter{6pt}}
+\AtBeginDocument{\providecommand\UnderlineDrop{.45ex}\providecommand\UnderlineThickness{.1ex}\providecommand\ReferenceDrop{2ex}}
+\NewCommandCopy\OriginalUnderLine\underLine
+\RenewDocumentCommand\underLine{o +m}{\IfNoValueTF{#1}{\OriginalUnderLine[top=-\UnderlineDrop,height=\UnderlineThickness]{#2}}{\OriginalUnderLine[#1]{#2}}}
+\ltjsetparameter{autospacing=true,autoxspacing=true}
+\ltjsetruby{size=.48,intergap=.08,pre=0,post=0,mode=1}
+\newfontfamily\SymbolFont[Path={\AstraRoot/pdf-render/fonts/}]{d2f8326a3544-seguisym.ttf}
+\setlength\parindent{0pt}
+\setlength\parskip{3pt}
+\setlength\emergencystretch{2em}
+\pretolerance=300\tolerance=1500
+\clubpenalty=10000\widowpenalty=10000\displaywidowpenalty=10000
+\raggedbottom
+\pagestyle{fancy}\fancyhf{}
+\renewcommand\headrulewidth{0pt}
+
+\setlength\headheight{14.5pt}
+\newcommand\Para{\par}
+\newcommand\RoleParagraph[2]{\par{\parindent=0pt\noindent\hspace*{#1em}#2\par}\nobreak\ignorespaces}
+\newcommand\SceneParagraph[2]{\hspace*{#1em}#2\par\nobreak\ignorespaces}
+\newcommand\EmailMetadataRow[4]{\par\noindent\makebox[#1em][s]{#2}\hspace{.2em}#3\hspace{.35em}#4\par}
+\newcommand\NoticeLine{\par\noindent}
+\newcommand\EmailLine{\par\noindent}
+\newcommand\EmailHeaderRule{\par\vspace{10pt}\hrule height .45pt\vspace{8pt}}
+\newcommand\DocumentSolidRule[2]{\par{\color[gray]{#2}\hrule height #1pt}\par}
+\newcommand\DocumentDottedRule[2]{\par\nointerlineskip{\color[gray]{#2}\hbox to\linewidth{\leaders\hbox{\rule{#1pt}{#1pt}\hskip2pt}\hfill}}\nointerlineskip}
+% A title bar joins the notice edge; it is separate from text underlining.
+\newsavebox\AttachedTitleBox
+\newlength\NoticeLineIndent
+\newlength\NoticePrefixTail
+% Source-observed outlined notched arrowhead: independent of Unicode font shape.
+\makeatletter
+\newcommand\NoticeNotchedArrow{\begingroup\dimen0=.7em\relax\edef\NoticeArrowScale{\strip@pt\dimen0}\hbox to .95em{%
+ \pdfextension literal{q .996264 0 0 .996264 0 0 cm \NoticeArrowScale\space 0 0 \NoticeArrowScale\space 0 0 cm 0 G 0 g .055 w 0 0 m 1 .5 l .30 .5 l h f 0 0 m 1 .5 l 0 1 l .30 .5 l h S .30 .5 m 1 .5 l S Q}%
+ \rule{0pt}{.7em}\hfil}\endgroup}
+\makeatother
+\newcommand\AttachedTitleLeft[6][0]{\sbox\AttachedTitleBox{#2}\noindent\usebox\AttachedTitleBox\par\nobreak\nointerlineskip\kern#6pt\hbox{\hspace*{-#3pt}{\color[gray]{#5}\rule{\dimexpr\wd\AttachedTitleBox+#3pt+#1pt\relax}{#4pt}}}\par}
+\newcommand\AttachedTitleRight[6][0]{\sbox\AttachedTitleBox{#2}\noindent\hfill\usebox\AttachedTitleBox\par\nobreak\nointerlineskip\kern#6pt\hbox to\linewidth{\hfill\makebox[\wd\AttachedTitleBox][l]{\hspace*{-#1pt}{\color[gray]{#5}\rule{\dimexpr\wd\AttachedTitleBox+#3pt+#1pt\relax}{#4pt}}}}\par}
+\newcommand\EmailParagraph{\par\addvspace{\EmailParagraphSkip}\noindent}
+\newcommand\PassageLabel[1]{\par\noindent {\PassageNumerals #1}\par\nobreak}
+\newcommand\PairedLabelAlignment{l}
+\newcommand\PairedLabelFrameGap{3pt}
+\newcommand\PairedPassageLabel[1]{\par\noindent\makebox[\linewidth][\PairedLabelAlignment]{{\PairedLabelLatin #1}}\par\nobreak\vspace{\PairedLabelFrameGap}}
+\newcommand\PassageIntroduction[1]{\par{\parindent=1em\indent #1\par}\nobreak\addvspace{\PassageIntroAfter}}
+\newcommand\DocumentIntroduction[1]{\par{\parindent=1em\indent #1\par}\nobreak\addvspace{\DocumentIntroAfter}}
+\newcommand\KeepWithPreviousParagraph[1]{\par\nobreak\indent #1\par}
+\newcommand\NoteDefinitionLabel[1]{{\AnnotationLatin （#1）}\hspace{.45em}}
+\newcommand\NoteDefinitionColon{\hspace{.12em}：\hspace{.12em}}
+\newcommand\BlankParens{\leavevmode\hbox{\hspace{\BlankSideSpace}（\hspace{\BlankInnerWidth}）\hspace{\BlankSideSpace}}}
+\newcommand\ContextBlank[3]{\leavevmode\hbox{\hspace{#2em}（\hspace{#1em}）\hspace{#3em}}}
+\newcommand\InstructionPassageNumber[1]{{\rmfamily\mcfamily （{\PassageNumerals #1}）}}
+\newcommand\Slot{\leavevmode\allowbreak\hbox{\hspace{.4em}\rule[-.25ex]{\SlotWidth}{.45pt}\hspace{.4em}}}
+\newcommand\StarSlot{\leavevmode\allowbreak\hbox{\hspace{.4em}\rlap{\raisebox{\StarRaise}{\makebox[\SlotWidth][c]{★}}}\rule[-.25ex]{\SlotWidth}{.45pt}\hspace{.4em}}}
+\newcommand\Cloze[1]{\leavevmode\hbox{\hspace{\ClozeClearance}{\setlength\fboxsep{1.7pt}\fbox{\small\BoxNumerals\makebox[2.2em]{#1}}}\hspace{\ClozeClearance}}}
+% Keep the real term baseline and reserve annotation depth. Short terms stay
+% atomic. A phrase wider than one quarter of its current line may wrap normally;
+% its label remains beneath the first character with measured reserved depth.
+% Original ruby and underlines stay in the term, including across a line break.
+\newsavebox\AnnotationTermProbe
+\newsavebox\AnnotationLabelProbe
+\newdimen\AnnotationDepth
+\newdimen\AnnotationDrop
+\newcommand\AnnotatedTerm[2]{\leavevmode\begingroup
+ \sbox\AnnotationTermProbe{#1}%
+ \ifdim\wd\AnnotationTermProbe>.25\linewidth
+  \sbox\AnnotationLabelProbe{\fontsize{6.5}{7}\selectfont #2}%
+  \AnnotationDrop=\dimexpr\dp\AnnotationTermProbe+1pt+\ht\AnnotationLabelProbe\relax
+  \AnnotationDepth=\dimexpr\AnnotationDrop+\dp\AnnotationLabelProbe\relax
+  \allowbreak\rlap{\raisebox{-\AnnotationDrop}[0pt][\AnnotationDepth]{\usebox\AnnotationLabelProbe}}\nobreak#1%
+  \typeout{ANNOTATED phrase naturally breakable: \the\wd\AnnotationTermProbe}%
+ \else
+  \allowbreak\hbox{\vtop{\offinterlineskip\hbox{#1}\kern1pt\hbox{\fontsize{6.5}{7}\selectfont #2}}}%
+ \fi\endgroup}
+% A structured STAR solution keeps each numbered fragment whole. Measure the
+% real native font/choice widths before allocating its four equal inner columns.
+% Existing frame width is a minimum, and text may never exceed the line width.
+\newdimen\StarEffectiveWidth
+\newdimen\StarMinimumWidth
+\newdimen\StarChoiceWidth
+\newsavebox\StarWidthProbe
+\newcommand\StarMeasureChoice[1]{\sbox\StarWidthProbe{#1}\ifdim\wd\StarWidthProbe>\StarChoiceWidth\StarChoiceWidth=\wd\StarWidthProbe\fi}
+\newcommand\MeasureStarSolution[6]{%
+ \StarEffectiveWidth=\StarBoxWidth\linewidth\relax
+ \begingroup\fontsize{\BodySize}{\StarRowBaseline}\selectfont
+ \sbox\StarWidthProbe{#1}\StarMinimumWidth=\wd\StarWidthProbe
+ \sbox\StarWidthProbe{#2}\advance\StarMinimumWidth by \wd\StarWidthProbe
+ % Slot strokes are 90% of their final cell width, so they have no fixed
+ % minimum outside the table. Only the star glyph and real choices constrain it.
+ \StarChoiceWidth=0pt\StarMeasureChoice{★}%
+ \StarMeasureChoice{#3}\StarMeasureChoice{#4}\StarMeasureChoice{#5}\StarMeasureChoice{#6}%
+ \multiply\StarChoiceWidth by 4\advance\StarMinimumWidth by \StarChoiceWidth
+ % Terminate the dimension scan before testing it: TeX otherwise expands the
+ % following conditional before the advance takes effect.
+ \advance\StarMinimumWidth by 72.7pt\relax%
+ \ifdim\StarMinimumWidth>\linewidth
+  \PackageError{JLPT}{Structured STAR solution exceeds available line width}{Provide an explicitly reviewed alternative layout; do not shrink the type.}%
+ \fi
+ \ifdim\StarMinimumWidth>\StarEffectiveWidth
+  \global\StarEffectiveWidth=\StarMinimumWidth
+ \fi\endgroup
+ \typeout{STAR measured frame width: \the\StarEffectiveWidth; available: \the\linewidth}%
+}
+% Only the numeral inside an authored vertical note changes writing direction.
+\newcommand\VerticalNoteDigit[1]{\hbox{\yoko\AnnotationLatin #1}}
+% A source-bound diagonal table header: the existing two labels remain text.
+\newsavebox\NoticeDiagonalBox
+\ExplSyntaxOn
+\NewDocumentCommand{\NoticeDiagonalStroke}{mmmm}{
+ \pdfextension literal{q~.35~w~\dim_to_decimal_in_bp:n{-#4}~\dim_to_decimal_in_bp:n{#2+#4}~m~\dim_to_decimal_in_bp:n{#1+#4}~\dim_to_decimal_in_bp:n{-#3-#4}~l~S~Q}}
+\ExplSyntaxOff
+\newcommand\NoticeDiagonalHeader[4]{\setbox\NoticeDiagonalBox=\vbox{\hsize=#1\relax\hbox to #1{\hfil #2}\nointerlineskip\kern-4pt\hbox to #1{#3\hfil}}\hbox{\rlap{\NoticeDiagonalStroke{#1}{\ht\NoticeDiagonalBox}{\dp\NoticeDiagonalBox}{#4}}\box\NoticeDiagonalBox}}
+\newdimen\QuestionBoxInnerHeight
+\newcommand\QNumber[1]{{\setlength\fboxsep{0pt}\setlength\fboxrule{\QuestionBoxRule}\QuestionBoxInnerHeight=\dimexpr\QuestionBoxHeight-2\fboxrule\relax\fbox{\raisebox{0pt}[.8\QuestionBoxInnerHeight][.2\QuestionBoxInnerHeight]{\BoxNumerals\fontsize{\QuestionLabelSize}{13}\selectfont\makebox[\dimexpr\QuestionBoxWidth-2\fboxrule\relax]{#1}}}}}
+\newmdenv[linewidth=.45pt,skipabove=5pt,skipbelow=7pt,innertopmargin=7pt,innerbottommargin=7pt,innerleftmargin=8pt,innerrightmargin=8pt,splitbottomskip=7pt,splittopskip=7pt]{NoticeFrame}
+\newmdenv[linewidth=.5pt,skipabove=3pt,skipbelow=2pt,innertopmargin=12pt,innerbottommargin=12pt,innerleftmargin=8pt,innerrightmargin=8pt,splitbottomskip=12pt,splittopskip=12pt]{PairedFrame}
+% Measure a facing-page notice without outer paragraph glue, then use its normal frame flow.
+\newsavebox\MeasuredNoticeBox
+\newcommand\WholeNotice[2]{\par\setbox\MeasuredNoticeBox=\vbox{\hsize=\linewidth\begin{NoticeFrame}[nobreak=true,skipabove=0pt,skipbelow=0pt,#1]#2\end{NoticeFrame}}%
+ \typeout{Notice visible height: \the\dimexpr\ht\MeasuredNoticeBox+\dp\MeasuredNoticeBox\relax; limit: \the\textheight}%
+ \ifdim\dimexpr\ht\MeasuredNoticeBox+\dp\MeasuredNoticeBox\relax>\textheight
+  \PackageError{JLPT}{Styled notice exceeds the available page height}{Adjust the source-supported notice geometry; no content is discarded.}%
+ \else\begin{NoticeFrame}[nobreak=true,#1]#2\end{NoticeFrame}\fi\par}
+% Whole-document frame with a native continuation when shared type needs it.
+\newcommand\FlowingNotice[2]{\par\setbox\MeasuredNoticeBox=\vbox{\hsize=\linewidth\begin{NoticeFrame}[nobreak=true,skipabove=0pt,skipbelow=0pt,#1]#2\end{NoticeFrame}}%
+ \typeout{Flowing notice height: \the\dimexpr\ht\MeasuredNoticeBox+\dp\MeasuredNoticeBox\relax}%
+ \ifdim\dimexpr\ht\MeasuredNoticeBox+\dp\MeasuredNoticeBox\relax>\textheight
+  \begin{NoticeFrame}[nobreak=false,#1]#2\end{NoticeFrame}%
+ \else\begin{NoticeFrame}[nobreak=true,#1]#2\end{NoticeFrame}\fi\par}
+\newmdenv[linewidth=\ClozeFrameRule,skipabove=9pt,skipbelow=7pt,innertopmargin=\ClozeFrameTop,innerbottommargin=\ClozeFrameBottom,innerleftmargin=8pt,innerrightmargin=8pt,leftmargin=-1em,rightmargin=-1em,splitbottomskip=10pt,splittopskip=10pt]{ClozeFrameBox}
+% Small compositions stay whole; full-page prose frames may continue naturally.
+\newsavebox\MeasureFrame
+\NewDocumentEnvironment{ClozeFrame}{+b}{%
+ \par\setbox\MeasureFrame=\vbox{\hsize=\linewidth\begin{ClozeFrameBox}[nobreak=true]#1\end{ClozeFrameBox}}%
+ \ifdim\dimexpr\ht\MeasureFrame+\dp\MeasureFrame\relax<.75\textheight%
+  \box\MeasureFrame%
+ \else\begin{ClozeFrameBox}#1\end{ClozeFrameBox}\fi\par}{}
+\newmdenv[linewidth=.45pt,leftline=false,rightline=false,skipabove=15pt,skipbelow=9pt,innertopmargin=10pt,innerbottommargin=12pt,innerleftmargin=0pt,innerrightmargin=0pt,splitbottomskip=7pt,splittopskip=7pt,settings={\parindent=0pt\parskip=0pt\let\Para\EmailParagraph}]{RuleFrame}
+\newsavebox\MeasureComposition
+\newcommand\KeepClozePanel[2]{\par\addvspace{\CompositionBefore}\setbox\MeasureComposition=\vbox{\hsize=\linewidth#1#2}%
+ \ifdim\dimexpr\ht\MeasureComposition+\dp\MeasureComposition\relax<.75\textheight\box\MeasureComposition%
+ \else\Needspace{6\baselineskip}#1\nobreak#2\fi\par}
+\newcommand\KeepComposition[2]{\par\addvspace{\CompositionBefore}\setbox\MeasureComposition=\vbox{\hsize=\linewidth\PassageLabel{#1}#2}%
+ \ifdim\dimexpr\ht\MeasureComposition+\dp\MeasureComposition\relax<.75\textheight\box\MeasureComposition%
+ \else\PassageLabel{#1}#2\fi\par}
+\newcommand\HeadingChoiceNumber[1]{\makebox[.5em][c]{#1}}
+\newlength\HeadingIndent
+\newcommand\HeadingInstructionBreak{\hfill\break}
+\newcommand\HeadingLabelText[1]{{\TaskLabelLatin\TaskLabelJapanese\fontsize{\HeadingLabelSize}{\HeadingBaseline}\selectfont\ifdim\HeadingHorizontalScale pt=1pt #1\else\scalebox{\HeadingWidthMultiplier}[1]{#1}\fi}}
+\newcommand\HeadingSlot{\allowbreak\hbox{\hspace{\HeadingSlotSide}\rule[-.25ex]{\SlotWidth}{.45pt}\hspace{\HeadingSlotSide}}}
+\newcommand\HeadingContinuationPullback{.5em}
+\newcommand\HeadingLabel[1]{\settowidth\HeadingIndent{\HeadingLabelText{#1}\hspace{\HeadingLabelGap}}\advance\HeadingIndent by -\HeadingContinuationPullback\hangindent=\HeadingIndent\hangafter=1 \HeadingLabelText{#1}\hspace{\HeadingLabelGap}}
+\newcommand\HeadingParagraph[1]{{\let\Slot\HeadingSlot\sffamily\gtfamily\mdseries\InstructionLatin\InstructionJapanese\fontsize{\HeadingSize}{\HeadingBaseline}\selectfont\raggedright\hangindent=3.8em\hangafter=1 #1\par}}
+\newcommand\SectionHeading[2]{\hypertarget{#1}{}\label{#1}\ifdim\HeadingHorizontalScale pt=1pt\HeadingParagraph{#2}\else\noindent\scalebox{\HeadingHorizontalScale}[1]{\begin{minipage}[t]{\HeadingWidthMultiplier\linewidth}\HeadingParagraph{#2}\end{minipage}}\par\fi\vspace{\HeadingAfter}}
+\newsavebox\MeasureOption
+\newlength\MaxOption
+\newlength\GridLineWidth
+\newlength\OptWidth
+\newlength\OptTextIndent
+\newcommand\OptionStrut{\strut}
+\newcommand\OptionBottomStrut{}
+\newcommand\OptionParagraphSetup{}
+\AtBeginDocument{\providecommand\OptionContinuationPullback{1em}}
+% Measure the actual numeral/gutter, then pull continuation text back independently.
+% Paragraph setup belongs inside parbox: parbox restoration otherwise resets pitch.
+\newcommand\Opt[2]{\parbox[t]{\OptWidth}{\leftskip=0pt\rightskip=0pt plus 1fil\parfillskip=0pt plus 1fil\relax\OptionParagraphSetup\settowidth\OptTextIndent{{\ChoiceNumerals #1}\hspace{\OptionLabelGap}}\advance\OptTextIndent by -\OptionContinuationPullback\hangindent=\OptTextIndent\hangafter=1\noindent\OptionStrut {\ChoiceNumerals #1}\hspace{\OptionLabelGap}#2\unskip\nobreak\OptionBottomStrut\par}}
+% End each width assignment before expanding the following conditional.
+\newcommand\Options[4]{%
+ \par\GridLineWidth=\OptionGridWidth\linewidth\MaxOption=0pt%
+ \sbox\MeasureOption{#1}\ifdim\wd\MeasureOption>\MaxOption\MaxOption=\wd\MeasureOption\relax\fi%
+ \sbox\MeasureOption{#2}\ifdim\wd\MeasureOption>\MaxOption\MaxOption=\wd\MeasureOption\relax\fi%
+ \sbox\MeasureOption{#3}\ifdim\wd\MeasureOption>\MaxOption\MaxOption=\wd\MeasureOption\relax\fi%
+ \sbox\MeasureOption{#4}\ifdim\wd\MeasureOption>\MaxOption\MaxOption=\wd\MeasureOption\relax\fi%
+ \ifdim\MaxOption<\dimexpr.25\GridLineWidth-\OptionReserve\relax%
+  \OptWidth=.247\GridLineWidth\noindent\hbox to\GridLineWidth{\Opt{1}{#1}\hfill\Opt{2}{#2}\hfill\Opt{3}{#3}\hfill\Opt{4}{#4}}\par%
+ \else\ifdim\MaxOption<\dimexpr.5\GridLineWidth-\OptionReserve\relax%
+  \OptWidth=.49\GridLineWidth\noindent\hbox to\GridLineWidth{\Opt{1}{#1}\hfill\Opt{2}{#2}}\par\noindent\hbox to\GridLineWidth{\Opt{3}{#3}\hfill\Opt{4}{#4}}\par%
+ \else%
+  \OptWidth=\GridLineWidth\Opt{1}{#1}\par\Opt{2}{#2}\par\Opt{3}{#3}\par\Opt{4}{#4}\par%
+ \fi\fi}
+% Reserve the same first/last line box for every option, including ruby and
+% multiline choices. Explicit stacking keeps outer paragraph glue from making
+% the next option closer after a wrapped line than after a single-line option.
+\newcommand\OptionsVertical[4]{\par\begingroup\renewcommand\OptionStrut{\rule[-.3em]{0pt}{\OptionBaseline pt}}\renewcommand\OptionBottomStrut{\OptionStrut}\renewcommand\OptionParagraphSetup{\baselineskip=\OptionBaseline pt\relax}\setlength\parskip{0pt}\baselineskip=\OptionBaseline pt\OptWidth=\linewidth\noindent\Opt{1}{#1}\par\nointerlineskip\vspace{\OptionRowGap}\noindent\Opt{2}{#2}\par\nointerlineskip\vspace{\OptionRowGap}\noindent\Opt{3}{#3}\par\nointerlineskip\vspace{\OptionRowGap}\noindent\Opt{4}{#4}\par\endgroup}
+\newcommand\QuestionLineStrut{\rule[-.2em]{0pt}{1.6em}}
+% First lines reserve the label; continuations return one full body character.
+\newcommand\QuestionStem[2]{\begingroup\leftskip=\QuestionContinuationIndent\parindent=\dimexpr\QuestionIndent-\QuestionContinuationIndent\relax\advance\linewidth by -\QuestionContinuationIndent\leavevmode\llap{\makebox[\QuestionIndent][l]{\QNumber{#1}}}\QuestionLineStrut #2\par\endgroup}
+\newlength\DialogueSpeakerWidth
+\newlength\DialogueMeasure
+\newcommand\DialogueSpeakerAlignment{c}
+\newcommand\DialogueTurnGap{0pt}
+\newcommand\MeasureDialogueSpeaker[1]{\settowidth\DialogueMeasure{#1}\ifdim\DialogueMeasure>\DialogueSpeakerWidth\DialogueSpeakerWidth=\DialogueMeasure\fi}
+\newcommand\DialogueSetup[1]{\DialogueSpeakerWidth=0pt #1}
+\newcommand\DialogueTurn[2]{\hangindent=\dimexpr\QuestionIndent-\QuestionContinuationIndent+\DialogueSpeakerWidth+\DialogueQuoteGap-\DialogueContinuationPullback\relax\hangafter=1\makebox[\DialogueSpeakerWidth][\DialogueSpeakerAlignment]{#1}\nobreak\hspace{\DialogueQuoteGap}#2\par\vspace{\DialogueTurnGap}}
+% A centered rule matches scan geometry without asserting an unidentified glyph.
+\newcommand\RunningSeparator{\kern.28em\raisebox{.28em}{\rule{.65em}{.32pt}}\kern.28em}
+
+\newcommand\QuestionWhole[4]{\par\noindent\begin{minipage}{\linewidth}\setlength\parindent{0pt}\hypertarget{#1}{}\label{#1}\QuestionStem{#2}{#3}\noindent\hspace*{\OptionIndent}\begin{minipage}[t]{\dimexpr\linewidth-\OptionIndent\relax}#4\end{minipage}\end{minipage}\par}
+\newsavebox\MeasureQuestion
+\newsavebox\MeasureQuestionTail
+\newdimen\QuestionTailHeight
+\makeatletter
+\newcommand\QuestionTailKeep[1]{%
+ \par\setbox\MeasureQuestionTail=\vbox{\hsize=\linewidth
+  \let\hypertarget\@gobbletwo\let\label\@gobble
+  \long\def\Question##1##2##3##4{\par\addvspace{\QuestionGap}\QuestionWhole{##1}{##2}{##3}{##4}}%
+  #1\par}%
+ \QuestionTailHeight=\dimexpr\ht\MeasureQuestionTail+\dp\MeasureQuestionTail+16pt\relax
+ \ifdim\QuestionTailHeight<\textheight\Needspace{\QuestionTailHeight}\fi
+ #1}
+\newcommand\QuestionGroupKeep[2]{%
+ \par\setbox\MeasureQuestionTail=\vbox{\hsize=\linewidth
+  \let\hypertarget\@gobbletwo\let\label\@gobble
+  \long\def\Question##1##2##3##4{\par\addvspace{\QuestionGap}\QuestionWhole{##1}{##2}{##3}{##4}}%
+  #2\par}%
+ \QuestionTailHeight=\dimexpr\ht\MeasureQuestionTail+\dp\MeasureQuestionTail+8pt\relax
+ \typeout{Question group geometry: #1; height=\the\QuestionTailHeight; page=\the\textheight; remaining=\the\dimexpr\pagegoal-\pagetotal\relax}%
+ \ifdim\QuestionTailHeight<\textheight\Needspace{\QuestionTailHeight}\fi
+ #2}
+\makeatother
+\newdimen\QuestionRemaining
+\newcommand\QuestionFlow[4]{\par\Needspace{4\baselineskip}\setlength\parindent{0pt}\hypertarget{#1}{}\label{#1}\QuestionStem{#2}{#3}\nobreak\begingroup\leftskip=\OptionIndent\advance\linewidth by -\OptionIndent #4\par\endgroup}
+\newcommand\PlaceQuestionWhole[4]{\Needspace{\dimexpr\ht\MeasureQuestion+\dp\MeasureQuestion+8pt\relax}\QuestionWhole{#1}{#2}{#3}{#4}}
+\makeatletter
+\newcommand\Question[4]{\par\addvspace{\QuestionGap}%
+ \setbox\MeasureQuestion=\vbox{\hsize=\linewidth\let\hypertarget\@gobbletwo\let\label\@gobble\QuestionWhole{#1}{#2}{#3}{#4}}%
+ \QuestionRemaining=\dimexpr\pagegoal-\pagetotal\relax%
+ \ifdim\QuestionRemaining>\textheight\QuestionRemaining=\textheight\fi%
+ \typeout{Question geometry: #1; height=\the\dimexpr\ht\MeasureQuestion+\dp\MeasureQuestion\relax; gap=\QuestionGap; remaining=\the\QuestionRemaining; page=\the\textheight}%
+ \ifdim\dimexpr\ht\MeasureQuestion+\dp\MeasureQuestion\relax>\textheight%
+  \typeout{Question option fallback: #1 (taller than page)}\QuestionFlow{#1}{#2}{#3}{#4}%
+ \else\ifdim\dimexpr\ht\MeasureQuestion+\dp\MeasureQuestion\relax>\QuestionRemaining%
+  \ifdim\QuestionRemaining>.45\textheight%
+   \typeout{Question option fallback: #1 (large remaining area)}\QuestionFlow{#1}{#2}{#3}{#4}%
+  \else\PlaceQuestionWhole{#1}{#2}{#3}{#4}\fi%
+ \else\PlaceQuestionWhole{#1}{#2}{#3}{#4}\fi\fi}
+\makeatother
+\newcommand\VerticalBlock[2]{\PassageLabel{#1}\Para\begin{center}\fontsize{\VerticalBodySize}{\VerticalBodySize}\selectfont\hspace*{\VerticalFrameOffset}\setlength\fboxsep{\VerticalPadding}\fbox{\hbox{\tate\vbox{\hsize=\VerticalExtent\zw\leftskip=0pt\rightskip=0pt\parfillskip=0pt plus 1fil\parindent=1\zw\baselineskip=\VerticalPitch\zw #2\par}}}\hspace*{\dimexpr-\VerticalFrameOffset\relax}\end{center}\vspace{\VerticalAfter}\Para}
+\newcommand\VerticalIntroducedBlock[3]{\PassageLabel{#1}\Para #2\begin{center}\fontsize{\VerticalBodySize}{\VerticalBodySize}\selectfont\hspace*{\VerticalFrameOffset}\setlength\fboxsep{\VerticalPadding}\fbox{\hbox{\tate\vbox{\hsize=\VerticalExtent\zw\leftskip=0pt\rightskip=0pt\parfillskip=0pt plus 1fil\parindent=1\zw\baselineskip=\VerticalPitch\zw #3\par}}}\hspace*{\dimexpr-\VerticalFrameOffset\relax}\end{center}\vspace{\VerticalAfter}\Para}
+
+% Optional observed task-edge tabs; generated booklet parity, never source page breaks.
+\newif\ifTaskTabsEnabled
+\newif\ifSuppressTaskTab
+\TaskTabsEnabledfalse\SuppressTaskTabfalse
+\newcommand\ConfigureTaskTabs[4]{\global\TaskTabsEnabledtrue\gdef\TabWidth{#1pt}\gdef\TabHeight{#2pt}\gdef\TabInset{#3pt}\gdef\TabGray{#4}}
+\newcommand\SetTaskTab[2]{\gdef\TabTop{#1pt}\gdef\TabLabel{#2}}
+\newcommand\TabTop{0pt}\newcommand\TabLabel{}
+\newdimen\TabX
+\newcommand\TaskTabCharacter[2]{\rule[-2.5pt]{0pt}{13pt}#1\kern.2pt\raisebox{0pt}{\fontsize{4.5}{4.5}\selectfont\vbox{\offinterlineskip #2}}}
+\newcommand\DrawTaskTab{{\setlength\fboxsep{0pt}\colorbox[gray]{\TabGray}{\parbox[c][\TabHeight][c]{\TabWidth}{\centering\color{white}\sffamily\gtfamily\fontsize{10.5}{13}\selectfont\shortstack[c]{\TabLabel}}}}}
+\AddToHook{shipout/foreground}{\ifTaskTabsEnabled\ifSuppressTaskTab\else
+ \ifodd\numexpr\value{page}-\value{bookletstart}+1\relax
+  \TabX=\dimexpr\paperwidth-\TabInset-\TabWidth\relax
+ \else\TabX=\TabInset\fi
+ \put(0,0){\kern\TabX\raisebox{-\dimexpr\TabTop+\TabHeight\relax}[0pt][0pt]{\raisebox{\depth}{\DrawTaskTab}}}
+ \fi\fi}
+
+% Handoff 5 deliberately preserves directional wording without facing padding.
+\newcommand\StartInformationTask{\clearpage}
+
+\newcounter{bookletstart}\setcounter{bookletstart}{1}
+\newcommand\BookletPage{\number\numexpr\value{page}-\value{bookletstart}+1\relax}
+\newcommand\BeginBooklet[1]{\setcounter{bookletstart}{\value{page}}}
+\newcommand\WideSlot{\rule[-.25ex]{.9\linewidth}{.4pt}}
+\newcommand\WideStarSlot{\hbox{\rlap{\raisebox{\StarRaise}{\makebox[.9\linewidth][c]{★}}}\WideSlot}}
+% Preserve the example label's existing advance/gutter while routing its ink.
+\newsavebox\ExampleNumberSlot
+\newcommand\ExampleChoiceNumber[1]{\sbox\ExampleNumberSlot{#1}\makebox[\wd\ExampleNumberSlot][c]{{\ChoiceNumerals #1}}}
+% Anchor multirow choices at their first baseline; retain the calibrated
+% centered single-row box. Centering a two-row box crowds its first line
+% against the worked stem even when the two option rows have correct pitch.
+\newdimen\ExampleChoiceAvailable
+\newcommand\ExampleChoices[4]{\par\begingroup\ExampleChoiceAvailable=\dimexpr\linewidth-\ExampleChoiceIndent\relax%
+ \MaxOption=0pt%
+ \sbox\MeasureOption{#1}\ifdim\wd\MeasureOption>\MaxOption\MaxOption=\wd\MeasureOption\relax\fi%
+ \sbox\MeasureOption{#2}\ifdim\wd\MeasureOption>\MaxOption\MaxOption=\wd\MeasureOption\relax\fi%
+ \sbox\MeasureOption{#3}\ifdim\wd\MeasureOption>\MaxOption\MaxOption=\wd\MeasureOption\relax\fi%
+ \sbox\MeasureOption{#4}\ifdim\wd\MeasureOption>\MaxOption\MaxOption=\wd\MeasureOption\relax\fi%
+ \ifdim\MaxOption<\dimexpr.25\ExampleChoiceAvailable-.8em\relax\def\ExampleChoicePosition{c}\else\def\ExampleChoicePosition{t}\fi%
+ \noindent\hspace*{\ExampleChoiceIndent}\begin{minipage}[\ExampleChoicePosition]{\ExampleChoiceAvailable}%
+ \ifdim\MaxOption<\dimexpr.25\linewidth-.8em\relax%
+  \noindent\makebox[.25\linewidth][l]{#1}\makebox[.25\linewidth][l]{#2}\makebox[.25\linewidth][l]{#3}\makebox[.25\linewidth][l]{#4}%
+ \else\ifdim\MaxOption<\dimexpr.5\linewidth-.8em\relax%
+  \noindent\makebox[.5\linewidth][l]{#1}\makebox[.5\linewidth][l]{#2}\par\noindent\makebox[.5\linewidth][l]{#3}\makebox[.5\linewidth][l]{#4}%
+ \else #1\par #2\par #3\par #4\fi\fi\end{minipage}\par\endgroup}
+\newcommand\StarTableAlignment{\def\CenterAlignment{center}\ifx\StarBoxAlign\CenterAlignment\centering\else\raggedright\fi}
+\newcommand\AnswerExampleLabel[1]{\makebox[\AnswerLabelWidth][c]{\ltjsetruby{intergap=0,ybaseheight=\AnswerLabelRubyBaseHeight}#1}}
+\newcommand\NativeInlineLabel[1]{{\setlength\fboxsep{.2em}\setlength\fboxrule{.4pt}\fbox{\strut #1}}}
+\newcommand\AnswerLine[2]{\par\nointerlineskip\vspace{\AnswerBefore}\noindent\hbox to\linewidth{\hfil\kern\AnswerOffset #1\hspace{1.4em}{\fontsize{\BodySize}{\AnswerBaseline}\selectfont\setlength\tabcolsep{\AnswerColsep}\renewcommand\arraystretch{1.15}\begin{tabular}{|l|llll|}\hline #2\\\hline\end{tabular}}\kern-\AnswerOffset\hfil}\par}
+\newcommand\InlineAnswerLine[3]{\par\nointerlineskip\vspace{\AnswerBefore}\noindent\hbox to\linewidth{\hfil\kern\AnswerOffset #1\hspace{.6em}{\fontsize{\BodySize}{\AnswerBaseline}\selectfont\setlength\tabcolsep{\AnswerColsep}\renewcommand\arraystretch{1.15}\begin{tabular}{|llll|}\hline #2\\\hline\end{tabular}}\hspace{.3em}#3\kern-\AnswerOffset\hfil}\par}
+\newif\ifNoteKeepWithPrevious
+\newenvironment{ReadingNotes}{\par\ifNoteKeepWithPrevious\nobreak\else\penalty0\fi\vspace{\NoteBefore}\ifNoteKeepWithPrevious\nobreak\fi\noindent\begin{minipage}{\linewidth}\fontsize{\NoteSize}{\NoteBaseline}\selectfont\setlength\parskip{0pt}\setlength\parindent{0pt}\leftskip=.3em}{\par\end{minipage}\par\vspace{\NoteAfter}}
+
+% A semantic section keeps its observed boundary independent of generic frame inference.
+\newcommand\ObservedSection[1]{#1}
+\newcommand\DocumentLine[5]{\par\addvspace{#3pt}{\parindent=0pt\ifx#1c\centering\else\ifx#1r\raggedleft\else\raggedright\fi\fi\noindent\hspace*{#2em}#5\par}\vspace{#4pt}}
+\newcommand\DocumentMetadataRow[4]{\par\begingroup\parindent=0pt\advance\leftskip by #1em\advance\leftskip by 1.15em\noindent\llap{\makebox[#1em][l]{#2}\makebox[1.15em][c]{#3}}#4\par\endgroup}
+\newcommand\DocumentFieldRow[3]{\par\begingroup\parindent=0pt\advance\leftskip by #1em\relax\noindent\llap{#2}#3\par\endgroup}
+\newcommand\DocumentInstruction[2]{\par\begingroup\parindent=0pt\advance\leftskip by 1.2em\noindent\llap{\makebox[1.2em][l]{#1}}#2\par\endgroup}
+\newsavebox\SamePageNoticeBox
+\newcommand\SamePageNotices[1]{\par\setbox\SamePageNoticeBox=\vbox{\hsize=\linewidth #1\par}\ifdim\dimexpr\ht\SamePageNoticeBox+\dp\SamePageNoticeBox\relax>\textheight\PackageError{jlpt}{Authored same-page notice group exceeds the printable height}{Adjust only this bound notice geometry.}\fi\noindent\usebox\SamePageNoticeBox\par}
+% The widest accepted label owns the closing-bracket anchor. Every value
+% paragraph keeps the same left skip, including explicit source continuations.
+\newlength\LabelValueWidth
+\newlength\LabelValueMeasure
+\newlength\LabelValueGap
+\newcommand\MeasureLabelValue[1]{\settowidth\LabelValueMeasure{#1}\ifdim\LabelValueMeasure>\LabelValueWidth\LabelValueWidth=\LabelValueMeasure\fi}
+\newcommand\LabelValueRow[2]{\par\begingroup\advance\leftskip by \LabelValueWidth\advance\leftskip by \LabelValueGap\parindent=0pt\noindent\llap{\makebox[\LabelValueWidth][r]{#1}\hspace{\LabelValueGap}}#2\par\endgroup}
+\newcommand\FoldCornerScaleX{1}
+\newcommand\FoldCornerScaleY{1}
+\newcommand\FoldTopPadding[1]{#1pt}
+\newcommand\FoldBottomPadding[1]{#1pt}
+\newcommand\FoldRuleWidth{.45}
+% Reserve the full scaled decoration height plus 4bp, even with tight editorial padding.
+\newdimen\FoldClearance
+\newdimen\FoldRequestedPadding
+\newsavebox\FoldedMemoBox
+\newcommand\FoldedMemo[2]{\par\FoldClearance=22bp\relax\FoldClearance=\FoldCornerScaleY\FoldClearance\relax\advance\FoldClearance by 4bp\FoldRequestedPadding=\FoldBottomPadding{#1}\relax\ifdim\FoldRequestedPadding>\FoldClearance\FoldClearance=\FoldRequestedPadding\fi\setbox\FoldedMemoBox=\vbox{\hsize=\linewidth\begin{NoticeFrame}[nobreak=true,skipabove=0pt,skipbelow=0pt,linewidth=\FoldRuleWidth pt,innerleftmargin=#1pt,innerrightmargin=#1pt,innertopmargin=\FoldTopPadding{#1},innerbottommargin=\FoldClearance]#2\end{NoticeFrame}}%
+ \noindent\vbox{\box\FoldedMemoBox\nointerlineskip\hbox to\linewidth{\hfil\pdfextension literal{q 1 0 0 1 0 7.2 cm \FoldCornerScaleX\space 0 0 \FoldCornerScaleY\space 0 0 cm 1 1 1 rg -33 -1 m 1 -1 l 1 22 l h f 0 G \FoldRuleWidth\space w -33 0 m 0 21 l S -33 0 m -24 22 l -11 19 l 0 21 l S Q}}}\par\vspace{7pt}}
+\newcommand\WaveRule{\par\vspace{4pt}\noindent\hbox to\linewidth{\leaders\hbox{\rule[-.9bp]{0bp}{1.8bp}\pdfextension literal{q 0 G .5 w 0 0 m 2 1.2 4 1.2 6 0 c 8 -1.2 10 -1.2 12 0 c S Q}\kern12bp}\hfill}\par\vspace{4pt}}
+
+\newcommand\NoticePinInset{14pt}
+\newsavebox\PinnedNoticeBox
+\newdimen\NoticePinTop
+\newcommand\NoticePin{\hbox{\pdfextension literal{q .4 w 0 G 3.5 0 m 3.5 1.933 1.933 3.5 0 3.5 c -1.933 3.5 -3.5 1.933 -3.5 0 c -3.5 -1.933 -1.933 -3.5 0 -3.5 c 1.933 -3.5 3.5 -1.933 3.5 0 c S 2.3 0 m 2.3 1.27 1.27 2.3 0 2.3 c -1.27 2.3 -2.3 1.27 -2.3 0 c -2.3 -1.27 -1.27 -2.3 0 -2.3 c 1.27 -2.3 2.3 -1.27 2.3 0 c S Q}}}
+\newcommand\PinnedNotice[2]{\par\setbox\PinnedNoticeBox=\vbox{\hsize=\linewidth\begin{NoticeFrame}[nobreak=true,skipabove=0pt,skipbelow=0pt,innerleftmargin=#1pt,innerrightmargin=#1pt,innertopmargin=#1pt,innerbottommargin=#1pt]#2\end{NoticeFrame}}%
+ \NoticePinTop=\dimexpr\ht\PinnedNoticeBox+\dp\PinnedNoticeBox-\NoticePinInset\relax\noindent\vbox{\box\PinnedNoticeBox\nointerlineskip\hbox to\linewidth{\hspace{\NoticePinInset}\raisebox{\NoticePinTop}[0pt][0pt]{\NoticePin}\hfil\raisebox{\NoticePinTop}[0pt][0pt]{\NoticePin}\hspace{\NoticePinInset}}\nointerlineskip\hbox to\linewidth{\hspace{\NoticePinInset}\raisebox{\dimexpr\NoticePinInset+7.225pt\relax}[0pt][0pt]{\NoticePin}\hfil\raisebox{\dimexpr\NoticePinInset+7.225pt\relax}[0pt][0pt]{\NoticePin}\hspace{\NoticePinInset}}}\par\vspace{7pt}}
+
+
+% Source-backed rounded notice panels: native text with equal-height paired rows.
+\newsavebox\NoticePanelLeft
+\newsavebox\NoticePanelRight
+\newdimen\NoticePanelWidth
+\newdimen\NoticePanelHeight
+\newdimen\NoticePanelRadius
+\newdimen\NoticePanelK
+\makeatletter
+\newcommand\NoticePanelDash{[2 1.3] 0 d}
+\newcommand\NoticePanelStroke{%
+ \pdfextension literal{q .996264 0 0 .996264 0 0 cm 0 G .4 w \NoticePanelDash\space
+  \strip@pt\NoticePanelRadius\space 0 m
+  \strip@pt\dimexpr\NoticePanelWidth-\NoticePanelRadius\relax\space 0 l
+  \strip@pt\dimexpr\NoticePanelWidth-\NoticePanelRadius+\NoticePanelK\relax\space 0
+  \strip@pt\NoticePanelWidth\space \strip@pt\dimexpr\NoticePanelRadius-\NoticePanelK\relax\space
+  \strip@pt\NoticePanelWidth\space \strip@pt\NoticePanelRadius\space c
+  \strip@pt\NoticePanelWidth\space \strip@pt\dimexpr\NoticePanelHeight-\NoticePanelRadius\relax\space l
+  \strip@pt\NoticePanelWidth\space \strip@pt\dimexpr\NoticePanelHeight-\NoticePanelRadius+\NoticePanelK\relax\space
+  \strip@pt\dimexpr\NoticePanelWidth-\NoticePanelRadius+\NoticePanelK\relax\space \strip@pt\NoticePanelHeight\space
+  \strip@pt\dimexpr\NoticePanelWidth-\NoticePanelRadius\relax\space \strip@pt\NoticePanelHeight\space c
+  \strip@pt\NoticePanelRadius\space \strip@pt\NoticePanelHeight\space l
+  \strip@pt\dimexpr\NoticePanelRadius-\NoticePanelK\relax\space \strip@pt\NoticePanelHeight\space
+  0 \strip@pt\dimexpr\NoticePanelHeight-\NoticePanelRadius+\NoticePanelK\relax\space
+  0 \strip@pt\dimexpr\NoticePanelHeight-\NoticePanelRadius\relax\space c
+  0 \strip@pt\NoticePanelRadius\space l
+  0 \strip@pt\dimexpr\NoticePanelRadius-\NoticePanelK\relax\space
+  \strip@pt\dimexpr\NoticePanelRadius-\NoticePanelK\relax\space 0
+  \strip@pt\NoticePanelRadius\space 0 c S Q}}
+\makeatother
+\newcommand\NoticePanelRow[5]{\par\begingroup
+ \NoticePanelWidth=\dimexpr(\linewidth-#1pt)/2\relax
+ \NoticePanelRadius=#2pt\NoticePanelK=.55228475\NoticePanelRadius
+ \setbox\NoticePanelLeft=\vbox{\hsize=\dimexpr\NoticePanelWidth-(#3pt+#3pt)\relax\linewidth=\hsize\setlength\parindent{0pt}#4\par}%
+ \setbox\NoticePanelRight=\vbox{\hsize=\dimexpr\NoticePanelWidth-(#3pt+#3pt)\relax\linewidth=\hsize\setlength\parindent{0pt}#5\par}%
+ \NoticePanelHeight=\dimexpr\ht\NoticePanelLeft+\dp\NoticePanelLeft\relax
+ \ifdim\dimexpr\ht\NoticePanelRight+\dp\NoticePanelRight\relax>\NoticePanelHeight\NoticePanelHeight=\dimexpr\ht\NoticePanelRight+\dp\NoticePanelRight\relax\fi
+ \advance\NoticePanelHeight by \dimexpr#3pt+#3pt\relax
+ \noindent\hbox to\linewidth{%
+  \hbox to\NoticePanelWidth{\rlap{\NoticePanelStroke}\hspace{#3pt}\vbox to\NoticePanelHeight{\vskip#3pt\unvbox\NoticePanelLeft\vskip#3pt}\hfil}%
+  \hfil
+  \hbox to\NoticePanelWidth{\rlap{\NoticePanelStroke}\hspace{#3pt}\vbox to\NoticePanelHeight{\vskip#3pt\unvbox\NoticePanelRight\vskip#3pt}\hfil}}\par\endgroup}
+
+
+% Circled references stay beneath the start of an existing underlined phrase.
+\newsavebox\ReferenceLabelBox
+\newdimen\ReferenceLabelDrop
+\newdimen\ReferenceMinimumDrop
+% A requested drop cannot put the label through the underline. Measure the
+% actual label face, keeping its first-character x anchor and native underline.
+\newcommand\ReferenceLabelSize{7.5}
+\newcommand\ReferenceLabelBaseline{8}
+\newcommand\UnderlinedReference[3][0]{\leavevmode\begingroup\sbox\ReferenceLabelBox{\fontsize{\ReferenceLabelSize}{\ReferenceLabelBaseline}\selectfont #2}\ReferenceLabelDrop=\ReferenceDrop\relax\ReferenceMinimumDrop=\dimexpr\ht\ReferenceLabelBox+\UnderlineDrop+\UnderlineThickness+.6pt\relax\ifdim\ReferenceLabelDrop<\ReferenceMinimumDrop\ReferenceLabelDrop=\ReferenceMinimumDrop\fi\ifdim#1pt>0pt\rule[-\dimexpr\ReferenceLabelDrop+#1pt\relax]{0pt}{\dimexpr\ReferenceLabelDrop+#1pt\relax}\fi\rlap{\raisebox{-\ReferenceLabelDrop}[0pt][0pt]{\usebox\ReferenceLabelBox}}\underLine{#3}\endgroup}
+
+% Source-bound stacked inset groups; original table associations remain native.
+\newcommand\NoticeInsetPanel[3]{\par\begingroup
+ \renewcommand\NoticePanelDash{[] 0 d}
+ \NoticePanelWidth=\linewidth\NoticePanelRadius=#1pt\NoticePanelK=.55228475\NoticePanelRadius
+ \setbox\NoticePanelLeft=\vbox{\hsize=\dimexpr\NoticePanelWidth-(#2pt+#2pt)\relax\linewidth=\hsize\setlength\parindent{0pt}#3\par}%
+ \NoticePanelHeight=\dimexpr\ht\NoticePanelLeft+\dp\NoticePanelLeft+#2pt+#2pt\relax
+ \noindent\hbox to\NoticePanelWidth{\rlap{\NoticePanelStroke}\hspace{#2pt}\vbox to\NoticePanelHeight{\vskip#2pt\unvbox\NoticePanelLeft\vskip#2pt}\hfil}\par\endgroup}
+
+% Source-observed two-corner title frame: upper left and lower right are rounded.
+\makeatletter
+\newcommand\NoticeOppositePanelStroke{%
+ \pdfextension literal{q .996264 0 0 .996264 0 0 cm 0 G .4 w [] 0 d
+  0 0 m
+  \strip@pt\dimexpr\NoticePanelWidth-\NoticePanelRadius\relax\space 0 l
+  \strip@pt\dimexpr\NoticePanelWidth-\NoticePanelRadius+\NoticePanelK\relax\space 0
+  \strip@pt\NoticePanelWidth\space \strip@pt\dimexpr\NoticePanelRadius-\NoticePanelK\relax\space
+  \strip@pt\NoticePanelWidth\space \strip@pt\NoticePanelRadius\space c
+  \strip@pt\NoticePanelWidth\space \strip@pt\NoticePanelHeight\space l
+  \strip@pt\NoticePanelRadius\space \strip@pt\NoticePanelHeight\space l
+  \strip@pt\dimexpr\NoticePanelRadius-\NoticePanelK\relax\space \strip@pt\NoticePanelHeight\space
+  0 \strip@pt\dimexpr\NoticePanelHeight-\NoticePanelRadius+\NoticePanelK\relax\space
+  0 \strip@pt\dimexpr\NoticePanelHeight-\NoticePanelRadius\relax\space c
+  0 0 l S Q}}
+\makeatother
+
+% Native oval answer marks; retain a numeral only when it exists in the input.
+\newsavebox\AnswerBubbleText
+\makeatletter
+\newcommand\AnswerBubblePaint[1]{\pdfextension literal{q .996264 0 0 .996264 0 0 cm \strip@pt\dimexpr\AnswerBubbleWidth\relax\space 0 0 \strip@pt\dimexpr\AnswerBubbleHeight\relax\space 0 0 cm 0 G 0 g .035 w .5 0 m .776142 0 1 .223858 1 .5 c 1 .776142 .776142 1 .5 1 c .223858 1 0 .776142 0 .5 c 0 .223858 .223858 0 .5 0 c #1 Q}}
+\makeatother
+\newcommand\AnswerBubbleGlyphSize{.7em}
+\newcommand\AnswerBubbleGlyph[1]{\sbox\AnswerBubbleText{\BubbleNumerals\fontsize{\AnswerBubbleGlyphSize}{\AnswerBaseline}\selectfont #1}\raisebox{\dimexpr(\AnswerBubbleHeight-\ht\AnswerBubbleText+\dp\AnswerBubbleText)/2-.12em\relax}{\makebox[\AnswerBubbleWidth][c]{\usebox\AnswerBubbleText}}}
+\newcommand\AnswerBubble[1]{\hbox{\rlap{\raisebox{-.12em}{\AnswerBubblePaint{S}}}\AnswerBubbleGlyph{#1}\rule[-.12em]{0pt}{\AnswerBubbleHeight}}}
+\newcommand\AnswerBubbleFilled{\hbox{\rlap{\raisebox{-.12em}{\AnswerBubblePaint{f}}}\hspace{\AnswerBubbleWidth}\rule[-.12em]{0pt}{\AnswerBubbleHeight}}}
+
+% The legacy ordinal argument preserves the selected position in emitted TeX.
+% Approved answer sheets show a solid mark, with no reversed-out numeral.
+\newcommand\AnswerBubbleFilledNumber[1]{\AnswerBubbleFilled{}}

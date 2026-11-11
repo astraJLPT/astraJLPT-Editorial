@@ -1,0 +1,187 @@
+{
+  "status": "pass_with_documented_uncertainties",
+  "source_git_baseline": "d99be9d",
+  "portable_paths": true,
+  "publication": "not_uploaded",
+  "full_fonts": "unpacked",
+  "space_savings": "Unused editorial metadata removed; explanations, private audits and ruby research retained",
+  "editorial_schema_version": "4.1.0",
+  "schema_migration_baseline": "321b9a3dcb39ba995131b77605c40411dd71d69e",
+  "principal_and_interface_maintenance_baseline": "2ad81c5cdec0a52ae52ed7dbd3f42bcc01592146",
+  "principal_filenames": "Document identities; source bytes unchanged",
+  "website_copy": "Existing developer notice preserved; two expanded-set cards labelled Exam 2011/2012 · Workbook",
+  "unit_identity_migration_baseline": "55fbf34",
+  "unit_aliases": "editorial-json/unit_aliases.json",
+  "current_unit_ids": "Publication-based workbook IDs and explicit 2011/2012 expanded-set IDs; frozen evidence retains aliases",
+  "documentation": "Human introductions and glossary, adapted audit contracts, ruby research/source guides, reference registry; publishing notes ignored",
+  "star_solution_migration": {
+    "baseline_git": "171ada8",
+    "questions": 583,
+    "verified": 580,
+    "held": 3,
+    "content_changes": "None; schema version and per-question STAR metadata only",
+    "printed_projection": "Excludes STAR metadata; authored question fields and layout bindings unchanged",
+    "held_questions": [
+      "N1_07_2012:vocab-q039",
+      "N2_07_2022:vocab-q047",
+      "N3_07_2022:reading-q014"
+    ]
+  },
+  "star_solution_adjudication": {
+    "date": "2026-11-11",
+    "checkpoint_git": "bbb334a",
+    "counts": {
+      "questions": 583,
+      "verified": 580,
+      "accepted": 3,
+      "held": 0
+    },
+    "accepted_questions": [
+      "N1_07_2012:vocab-q039",
+      "N2_07_2022:vocab-q047",
+      "N3_07_2022:reading-q014"
+    ],
+    "authored_changes": [
+      {
+        "unit": "N2_07_2022",
+        "item_id": "vocab-q047",
+        "fields": [
+          "key",
+          "explanation"
+        ],
+        "key_before": 4,
+        "key_after": 1
+      }
+    ],
+    "note": "Order decisions accepted by the user; N3 position retained under delegated authority. Public cases preserve residual uncertainty.",
+    "reader_migration": [
+      {
+        "variant": "regular",
+        "path": "astraJLPT/papers/N2_07_2022.html",
+        "before": {
+          "binding": "3580cda313171100b405182c89a064483c1a645fd89b8765ef6d2b83868ad0ec",
+          "id": "vocab-q047",
+          "key": 4
+        },
+        "after": {
+          "binding": "7c45727facfec85835882777f4d6e07bf078cfc3ab01d868ba2a36ea8bf2b83c",
+          "id": "vocab-q047",
+          "key": 1
+        },
+        "other_question_bindings_unchanged": true
+      },
+      {
+        "variant": "norubi",
+        "path": "astraJLPT/papers-norubi/N2_07_2022.html",
+        "before": {
+          "binding": "3580cda313171100b405182c89a064483c1a645fd89b8765ef6d2b83868ad0ec",
+          "id": "vocab-q047",
+          "key": 4
+        },
+        "after": {
+          "binding": "7c45727facfec85835882777f4d6e07bf078cfc3ab01d868ba2a36ea8bf2b83c",
+          "id": "vocab-q047",
+          "key": 1
+        },
+        "other_question_bindings_unchanged": true
+      }
+    ],
+    "result": "pass",
+    "verified_full_orders": 580,
+    "accepted_full_orders": 3,
+    "held_decisions": 0,
+    "published_full_order_reveals": 1166,
+    "published_held_help": 0,
+    "proof_reports": {
+      "migration": {
+        "path": "gitignored_docs/star-layout-20261111/finalize/migration-final.json",
+        "sha256": "5e6139861bf3199a581c29a5d3c53bb3e812a2062422e554def79f144b509193"
+      },
+      "schema": {
+        "path": "gitignored_docs/star-layout-20261111/finalize/schema-validation.json",
+        "sha256": "720f3c91c9259446c5b63e52e458ef5226e7a52b3f65dcae6906afabc1cb547f"
+      },
+      "publication": {
+        "path": "gitignored_docs/star-layout-20261111/finalize/published-output-audit.json",
+        "sha256": "b0cb48511a7147c0ae8f890dff86148b72a27e31e08262c8ed22031206d78900"
+      },
+      "native": {
+        "path": "gitignored_docs/star-layout-20261111/finalize/native-preservation-report.json",
+        "sha256": "80271a9e76e1165dab9e9169aad6c1b6373d78ef3f15d2976dfd17b8927d5911"
+      },
+      "browser": {
+        "path": "gitignored_docs/star-layout-20261111/finalize/browser-final-report.json",
+        "sha256": "ca7e2c6eeac22a8fc327218b1c67d23afaa83f6910572a25955006a31aeba939"
+      }
+    },
+    "audit_history": {
+      "path": "gitignored_docs/star-layout-20261111/finalize/fixlog-merge-report.json",
+      "sha256": "ead78874f33d230f6bf063b3b30cd0813eb07e1e9faf37a465eba448e1c1d4e6",
+      "maintained_gzip_files": 201,
+      "historical_rows_preserved": 45592,
+      "appended_rows": 793
+    },
+    "scope": "All 583 STAR questions have full orders: 580 independently verified and 3 explicitly accepted with public uncertainty records. No unresolved implementation decision remains."
+  },
+  "editorial_case_maintenance": {
+    "date": "2026-11-11",
+    "baseline_git": "3525c04646d643b105c5b89458e5a6d17839ce8b",
+    "result": "pass",
+    "resolved_cases": [
+      {
+        "unit": "N1_07_2012",
+        "item_id": "vocab-q039",
+        "case_id": "N1_07_2012-vocab-q039-star-order",
+        "status": "resolved",
+        "confidence": "high",
+        "order": [
+          1,
+          4,
+          3,
+          2
+        ],
+        "star_position": 3,
+        "key": 3,
+        "basis": "Grammar and dialogue context, supported by published usage."
+      }
+    ],
+    "question_fields_and_principal_differences_unchanged": true,
+    "saved_answer_bindings_unchanged": true,
+    "review_unresolved_count": {
+      "before": 2,
+      "after": 1
+    },
+    "fixlog_entries_appended": 2,
+    "historical_fixlog_prefix_preserved": true,
+    "installed_pdfs_unchanged": 402,
+    "incremental_rebuild_fix": {
+      "cause": "The old shared-stylesheet matcher missed reordered attributes and self-closing link tags.",
+      "duplicate_links_removed": 419,
+      "other_html_content_unchanged": 404,
+      "shared_css_bytes_unchanged": true,
+      "regression_tests": 2
+    },
+    "schema_validation": {
+      "result": "pass",
+      "editorial_schema_version": "4.1.0",
+      "units": 201,
+      "star_units": 122,
+      "star": {
+        "questions": 583,
+        "verified": 580,
+        "accepted": 3,
+        "held": 0
+      }
+    },
+    "tests": {
+      "star": 40,
+      "incremental_shared_styles": 2,
+      "result": "pass"
+    },
+    "browser_visual_check": "Unavailable: Computer Use stopped Firefox because browser URL-policy enforcement is unsupported. Generated HTML was checked directly.",
+    "proof_report": {
+      "path": "gitignored_docs/q39-resolution-20261111/audit-report.json",
+      "sha256": "f7c78d4ef81327b7a98d4a38a4b93a4553b7d54fc2ee24cc01a6a01f7f76b932"
+    }
+  }
+}

@@ -1,0 +1,870 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark light"><title>Developer review · N1_07_2017 · astraJLPT</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../assets/fonts-a06115dea7095078.css?v=541b58204da7"><link rel="stylesheet" href="../assets/themes.css?v=7ad0820747dc"><link rel="stylesheet" href="../assets/answer-marking.css?v=bec6b4920050"><link rel="stylesheet" href="../assets/site.css?v=7ae9ae7c768b"><link rel="stylesheet" href="../assets/pdf-typography.css?v=ba55af25606f"><link rel="stylesheet" href="../assets/paper-shared.css?v=8f3ca38dca80"></head><body class="catalog-page"><a class="skip-link" href="#content">Skip to content</a><header class="topbar" id="page-top" tabindex="-1"><a class="wordmark" id="brand" href="../index.html">astra<span>JLPT</span></a><details id="settings" class="settings"><summary aria-label="Open settings" title="Settings"><span aria-hidden="true">⚙</span><span class="sr-only">Settings</span></summary><div class="settings-panel"><div class="settings-title"><h2>settings</h2><button type="button" id="close-settings" class="js-only" aria-label="Close settings">×</button></div><div class="settings-tabs" role="group" aria-label="Settings categories"><label><input type="radio" name="settings-view" value="appearance" checked><span>theme</span></label><label><input type="radio" name="settings-view" value="browser"><span>browser</span></label></div><section data-settings="appearance"><div class="theme-workspace"><div class="theme-picker"><div class="setting-heading"><h3>theme</h3></div><div class="theme-grid originals"><label class="theme-card ps-gh"><input type="radio" name="theme" id="theme-jlpt_paper" value="jlpt_paper"><span>jlpt_paper</span></label><label class="theme-card ps-ck"><input type="radio" name="theme" id="theme-astraJLPT_dark" value="astraJLPT_dark" checked><span>astraJLPT_dark</span></label><label class="theme-card ps-ga"><input type="radio" name="theme" id="theme-astraJLPT_sepia" value="astraJLPT_sepia"><span>astraJLPT_sepia</span></label></div><div class="js-only"><p class="settings-label">three random picks</p><div class="theme-grid" id="quick-picks"></div></div><details><summary>all 187 Monkeytype palettes</summary><label class="theme-search js-only">find a palette<input id="theme-search" type="search" placeholder="search themes" autocomplete="off"></label><div class="theme-grid theme-catalog"><label class="theme-card ps-e9"><input type="radio" name="theme" id="theme-8008" value="8008"><span>8008</span></label><label class="theme-card ps-cw"><input type="radio" name="theme" id="theme-80s_after_dark" value="80s_after_dark"><span>80s after dark</span></label><label class="theme-card ps-fq"><input type="radio" name="theme" id="theme-9009" value="9009"><span>9009</span></label><label class="theme-card ps-cc"><input type="radio" name="theme" id="theme-aether" value="aether"><span>aether</span></label><label class="theme-card ps-cz"><input type="radio" name="theme" id="theme-alduin" value="alduin"><span>alduin</span></label><label class="theme-card ps-el"><input type="radio" name="theme" id="theme-alpine" value="alpine"><span>alpine</span></label><label class="theme-card ps-bg"><input type="radio" name="theme" id="theme-anti_hero" value="anti_hero"><span>anti hero</span></label><label class="theme-card ps-c3"><input type="radio" name="theme" id="theme-arch" value="arch"><span>arch</span></label><label class="theme-card ps-bt"><input type="radio" name="theme" id="theme-aurora" value="aurora"><span>aurora</span></label><label class="theme-card ps-g8"><input type="radio" name="theme" id="theme-beach" value="beach"><span>beach</span></label><label class="theme-card ps-dz"><input type="radio" name="theme" id="theme-bento" value="bento"><span>bento</span></label><label class="theme-card ps-f1"><input type="radio" name="theme" id="theme-bingsu" value="bingsu"><span>bingsu</span></label><label class="theme-card ps-dl"><input type="radio" name="theme" id="theme-bliss" value="bliss"><span>bliss</span></label><label class="theme-card ps-bn"><input type="radio" name="theme" id="theme-blue_dolphin" value="blue_dolphin"><span>blue dolphin</span></label><label class="theme-card ps-dd"><input type="radio" name="theme" id="theme-blueberry_dark" value="blueberry_dark"><span>blueberry dark</span></label><label class="theme-card ps-fd"><input type="radio" name="theme" id="theme-blueberry_light" value="blueberry_light"><span>blueberry light</span></label><label class="theme-card ps-ep"><input type="radio" name="theme" id="theme-botanical" value="botanical"><span>botanical</span></label><label class="theme-card ps-cl"><input type="radio" name="theme" id="theme-bouquet" value="bouquet"><span>bouquet</span></label><label class="theme-card ps-fk"><input type="radio" name="theme" id="theme-breeze" value="breeze"><span>breeze</span></label><label class="theme-card ps-dk"><input type="radio" name="theme" id="theme-bushido" value="bushido"><span>bushido</span></label><label class="theme-card ps-f5"><input type="radio" name="theme" id="theme-cafe" value="cafe"><span>cafe</span></label><label class="theme-card ps-g1"><input type="radio" name="theme" id="theme-camping" value="camping"><span>camping</span></label><label class="theme-card ps-e4"><input type="radio" name="theme" id="theme-carbon" value="carbon"><span>carbon</span></label><label class="theme-card ps-d3"><input type="radio" name="theme" id="theme-catppuccin" value="catppuccin"><span>catppuccin</span></label><label class="theme-card ps-ch"><input type="radio" name="theme" id="theme-chaos_theory" value="chaos_theory"><span>chaos theory</span></label><label class="theme-card ps-g3"><input type="radio" name="theme" id="theme-cheesecake" value="cheesecake"><span>cheesecake</span></label><label class="theme-card ps-e7"><input type="radio" name="theme" id="theme-cherry_blossom" value="cherry_blossom"><span>cherry blossom</span></label><label class="theme-card ps-eh"><input type="radio" name="theme" id="theme-comfy" value="comfy"><span>comfy</span></label><label class="theme-card ps-ef"><input type="radio" name="theme" id="theme-copper" value="copper"><span>copper</span></label><label class="theme-card ps-g6"><input type="radio" name="theme" id="theme-creamsicle" value="creamsicle"><span>creamsicle</span></label><label class="theme-card ps-em"><input type="radio" name="theme" id="theme-cy_red" value="cy_red"><span>cy red</span></label><label class="theme-card ps-co"><input type="radio" name="theme" id="theme-cyberspace" value="cyberspace"><span>cyberspace</span></label><label class="theme-card ps-cd"><input type="radio" name="theme" id="theme-dark" value="dark"><span>dark</span></label><label class="theme-card ps-bz"><input type="radio" name="theme" id="theme-dark_magic_girl" value="dark_magic_girl"><span>dark magic girl</span></label><label class="theme-card ps-d6"><input type="radio" name="theme" id="theme-dark_note" value="dark_note"><span>dark note</span></label><label class="theme-card ps-g5"><input type="radio" name="theme" id="theme-darling" value="darling"><span>darling</span></label><label class="theme-card ps-bw"><input type="radio" name="theme" id="theme-deku" value="deku"><span>deku</span></label><label class="theme-card ps-g9"><input type="radio" name="theme" id="theme-desert_oasis" value="desert_oasis"><span>desert oasis</span></label><label class="theme-card ps-cx"><input type="radio" name="theme" id="theme-dev" value="dev"><span>dev</span></label><label class="theme-card ps-ek"><input type="radio" name="theme" id="theme-diner" value="diner"><span>diner</span></label><label class="theme-card ps-gi"><input type="radio" name="theme" id="theme-dino" value="dino"><span>dino</span></label><label class="theme-card ps-e6"><input type="radio" name="theme" id="theme-discord" value="discord"><span>discord</span></label><label class="theme-card ps-fc"><input type="radio" name="theme" id="theme-dmg" value="dmg"><span>dmg</span></label><label class="theme-card ps-fj"><input type="radio" name="theme" id="theme-dollar" value="dollar"><span>dollar</span></label><label class="theme-card ps-ce"><input type="radio" name="theme" id="theme-dots" value="dots"><span>dots</span></label><label class="theme-card ps-dq"><input type="radio" name="theme" id="theme-dracula" value="dracula"><span>dracula</span></label><label class="theme-card ps-cq"><input type="radio" name="theme" id="theme-drowning" value="drowning"><span>drowning</span></label><label class="theme-card ps-eo"><input type="radio" name="theme" id="theme-dualshot" value="dualshot"><span>dualshot</span></label><label class="theme-card ps-dr"><input type="radio" name="theme" id="theme-earthsong" value="earthsong"><span>earthsong</span></label><label class="theme-card ps-ci"><input type="radio" name="theme" id="theme-everblush" value="everblush"><span>everblush</span></label><label class="theme-card ps-bq"><input type="radio" name="theme" id="theme-evil_eye" value="evil_eye"><span>evil eye</span></label><label class="theme-card ps-bp"><input type="radio" name="theme" id="theme-ez_mode" value="ez_mode"><span>ez mode</span></label><label class="theme-card ps-c8"><input type="radio" name="theme" id="theme-fire" value="fire"><span>fire</span></label><label class="theme-card ps-eb"><input type="radio" name="theme" id="theme-fledgling" value="fledgling"><span>fledgling</span></label><label class="theme-card ps-f3"><input type="radio" name="theme" id="theme-fleuriste" value="fleuriste"><span>fleuriste</span></label><label class="theme-card ps-bl"><input type="radio" name="theme" id="theme-floret" value="floret"><span>floret</span></label><label class="theme-card ps-fh"><input type="radio" name="theme" id="theme-froyo" value="froyo"><span>froyo</span></label><label class="theme-card ps-et"><input type="radio" name="theme" id="theme-frozen_llama" value="frozen_llama"><span>frozen llama</span></label><label class="theme-card ps-f9"><input type="radio" name="theme" id="theme-fruit_chew" value="fruit_chew"><span>fruit chew</span></label><label class="theme-card ps-en"><input type="radio" name="theme" id="theme-fundamentals" value="fundamentals"><span>fundamentals</span></label><label class="theme-card ps-e0"><input type="radio" name="theme" id="theme-future_funk" value="future_funk"><span>future funk</span></label><label class="theme-card ps-dc"><input type="radio" name="theme" id="theme-github" value="github"><span>github</span></label><label class="theme-card ps-fn"><input type="radio" name="theme" id="theme-godspeed" value="godspeed"><span>godspeed</span></label><label class="theme-card ps-e3"><input type="radio" name="theme" id="theme-graen" value="graen"><span>graen</span></label><label class="theme-card ps-ea"><input type="radio" name="theme" id="theme-grand_prix" value="grand_prix"><span>grand prix</span></label><label class="theme-card ps-dv"><input type="radio" name="theme" id="theme-grape" value="grape"><span>grape</span></label><label class="theme-card ps-dp"><input type="radio" name="theme" id="theme-gruvbox_dark" value="gruvbox_dark"><span>gruvbox dark</span></label><label class="theme-card ps-g2"><input type="radio" name="theme" id="theme-gruvbox_light" value="gruvbox_light"><span>gruvbox light</span></label><label class="theme-card ps-bu"><input type="radio" name="theme" id="theme-hammerhead" value="hammerhead"><span>hammerhead</span></label><label class="theme-card ps-fa"><input type="radio" name="theme" id="theme-hanok" value="hanok"><span>hanok</span></label><label class="theme-card ps-ed"><input type="radio" name="theme" id="theme-hedge" value="hedge"><span>hedge</span></label><label class="theme-card ps-fu"><input type="radio" name="theme" id="theme-honey" value="honey"><span>honey</span></label><label class="theme-card ps-d0"><input type="radio" name="theme" id="theme-horizon" value="horizon"><span>horizon</span></label><label class="theme-card ps-bf"><input type="radio" name="theme" id="theme-husqy" value="husqy"><span>husqy</span></label><label class="theme-card ps-cj"><input type="radio" name="theme" id="theme-iceberg_dark" value="iceberg_dark"><span>iceberg dark</span></label><label class="theme-card ps-fl"><input type="radio" name="theme" id="theme-iceberg_light" value="iceberg_light"><span>iceberg light</span></label><label class="theme-card ps-c7"><input type="radio" name="theme" id="theme-incognito" value="incognito"><span>incognito</span></label><label class="theme-card ps-d8"><input type="radio" name="theme" id="theme-ishtar" value="ishtar"><span>ishtar</span></label><label class="theme-card ps-eu"><input type="radio" name="theme" id="theme-iv_clover" value="iv_clover"><span>iv clover</span></label><label class="theme-card ps-c2"><input type="radio" name="theme" id="theme-iv_spade" value="iv_spade"><span>iv spade</span></label><label class="theme-card ps-cu"><input type="radio" name="theme" id="theme-joker" value="joker"><span>joker</span></label><label class="theme-card ps-de"><input type="radio" name="theme" id="theme-laser" value="laser"><span>laser</span></label><label class="theme-card ps-ex"><input type="radio" name="theme" id="theme-lavender" value="lavender"><span>lavender</span></label><label class="theme-card ps-ew"><input type="radio" name="theme" id="theme-leather" value="leather"><span>leather</span></label><label class="theme-card ps-fo"><input type="radio" name="theme" id="theme-lil_dragon" value="lil_dragon"><span>lil dragon</span></label><label class="theme-card ps-gd"><input type="radio" name="theme" id="theme-lilac_mist" value="lilac_mist"><span>lilac mist</span></label><label class="theme-card ps-er"><input type="radio" name="theme" id="theme-lime" value="lime"><span>lime</span></label><label class="theme-card ps-df"><input type="radio" name="theme" id="theme-luna" value="luna"><span>luna</span></label><label class="theme-card ps-ez"><input type="radio" name="theme" id="theme-macroblank" value="macroblank"><span>macroblank</span></label><label class="theme-card ps-gk"><input type="radio" name="theme" id="theme-magic_girl" value="magic_girl"><span>magic girl</span></label><label class="theme-card ps-du"><input type="radio" name="theme" id="theme-mashu" value="mashu"><span>mashu</span></label><label class="theme-card ps-ei"><input type="radio" name="theme" id="theme-matcha_moccha" value="matcha_moccha"><span>matcha moccha</span></label><label class="theme-card ps-dn"><input type="radio" name="theme" id="theme-material" value="material"><span>material</span></label><label class="theme-card ps-be"><input type="radio" name="theme" id="theme-matrix" value="matrix"><span>matrix</span></label><label class="theme-card ps-br"><input type="radio" name="theme" id="theme-menthol" value="menthol"><span>menthol</span></label><label class="theme-card ps-dg"><input type="radio" name="theme" id="theme-metaverse" value="metaverse"><span>metaverse</span></label><label class="theme-card ps-ca"><input type="radio" name="theme" id="theme-metropolis" value="metropolis"><span>metropolis</span></label><label class="theme-card ps-g0"><input type="radio" name="theme" id="theme-mexican" value="mexican"><span>mexican</span></label><label class="theme-card ps-fv"><input type="radio" name="theme" id="theme-miami" value="miami"><span>miami</span></label><label class="theme-card ps-cn"><input type="radio" name="theme" id="theme-miami_nights" value="miami_nights"><span>miami nights</span></label><label class="theme-card ps-c0"><input type="radio" name="theme" id="theme-midnight" value="midnight"><span>midnight</span></label><label class="theme-card ps-gf"><input type="radio" name="theme" id="theme-milkshake" value="milkshake"><span>milkshake</span></label><label class="theme-card ps-bv"><input type="radio" name="theme" id="theme-mint" value="mint"><span>mint</span></label><label class="theme-card ps-ey"><input type="radio" name="theme" id="theme-mizu" value="mizu"><span>mizu</span></label><label class="theme-card ps-dy"><input type="radio" name="theme" id="theme-modern_dolch" value="modern_dolch"><span>modern dolch</span></label><label class="theme-card ps-fe"><input type="radio" name="theme" id="theme-modern_dolch_light" value="modern_dolch_light"><span>modern dolch light</span></label><label class="theme-card ps-gm"><input type="radio" name="theme" id="theme-modern_ink" value="modern_ink"><span>modern ink</span></label><label class="theme-card ps-do"><input type="radio" name="theme" id="theme-monokai" value="monokai"><span>monokai</span></label><label class="theme-card ps-cs"><input type="radio" name="theme" id="theme-moonlight" value="moonlight"><span>moonlight</span></label><label class="theme-card ps-c9"><input type="radio" name="theme" id="theme-mountain" value="mountain"><span>mountain</span></label><label class="theme-card ps-f8"><input type="radio" name="theme" id="theme-mr_sleeves" value="mr_sleeves"><span>mr sleeves</span></label><label class="theme-card ps-gj"><input type="radio" name="theme" id="theme-ms_cupcakes" value="ms_cupcakes"><span>ms cupcakes</span></label><label class="theme-card ps-ej"><input type="radio" name="theme" id="theme-muted" value="muted"><span>muted</span></label><label class="theme-card ps-cg"><input type="radio" name="theme" id="theme-nautilus" value="nautilus"><span>nautilus</span></label><label class="theme-card ps-db"><input type="radio" name="theme" id="theme-nebula" value="nebula"><span>nebula</span></label><label class="theme-card ps-da"><input type="radio" name="theme" id="theme-night_runner" value="night_runner"><span>night runner</span></label><label class="theme-card ps-dj"><input type="radio" name="theme" id="theme-nord" value="nord"><span>nord</span></label><label class="theme-card ps-fp"><input type="radio" name="theme" id="theme-nord_light" value="nord_light"><span>nord light</span></label><label class="theme-card ps-di"><input type="radio" name="theme" id="theme-norse" value="norse"><span>norse</span></label><label class="theme-card ps-e5"><input type="radio" name="theme" id="theme-oblivion" value="oblivion"><span>oblivion</span></label><label class="theme-card ps-fm"><input type="radio" name="theme" id="theme-olive" value="olive"><span>olive</span></label><label class="theme-card ps-cy"><input type="radio" name="theme" id="theme-olivia" value="olivia"><span>olivia</span></label><label class="theme-card ps-e2"><input type="radio" name="theme" id="theme-onedark" value="onedark"><span>onedark</span></label><label class="theme-card ps-f4"><input type="radio" name="theme" id="theme-our_theme" value="our_theme"><span>our theme</span></label><label class="theme-card ps-ee"><input type="radio" name="theme" id="theme-pale_nimbus" value="pale_nimbus"><span>pale nimbus</span></label><label class="theme-card ps-fr"><input type="radio" name="theme" id="theme-paper" value="paper"><span>paper</span></label><label class="theme-card ps-eq"><input type="radio" name="theme" id="theme-passion_fruit" value="passion_fruit"><span>passion fruit</span></label><label class="theme-card ps-ff"><input type="radio" name="theme" id="theme-pastel" value="pastel"><span>pastel</span></label><label class="theme-card ps-ds"><input type="radio" name="theme" id="theme-peach_blossom" value="peach_blossom"><span>peach blossom</span></label><label class="theme-card ps-fg"><input type="radio" name="theme" id="theme-peaches" value="peaches"><span>peaches</span></label><label class="theme-card ps-bk"><input type="radio" name="theme" id="theme-phantom" value="phantom"><span>phantom</span></label><label class="theme-card ps-fz"><input type="radio" name="theme" id="theme-pink_lemonade" value="pink_lemonade"><span>pink lemonade</span></label><label class="theme-card ps-cm"><input type="radio" name="theme" id="theme-pulse" value="pulse"><span>pulse</span></label><label class="theme-card ps-d4"><input type="radio" name="theme" id="theme-purpleish" value="purpleish"><span>purpleish</span></label><label class="theme-card ps-fy"><input type="radio" name="theme" id="theme-rainbow_trail" value="rainbow_trail"><span>rainbow trail</span></label><label class="theme-card ps-ct"><input type="radio" name="theme" id="theme-red_dragon" value="red_dragon"><span>red dragon</span></label><label class="theme-card ps-es"><input type="radio" name="theme" id="theme-red_samurai" value="red_samurai"><span>red samurai</span></label><label class="theme-card ps-e1"><input type="radio" name="theme" id="theme-repose_dark" value="repose_dark"><span>repose dark</span></label><label class="theme-card ps-fs"><input type="radio" name="theme" id="theme-repose_light" value="repose_light"><span>repose light</span></label><label class="theme-card ps-fb"><input type="radio" name="theme" id="theme-retro" value="retro"><span>retro</span></label><label class="theme-card ps-bx"><input type="radio" name="theme" id="theme-retrocast" value="retrocast"><span>retrocast</span></label><label class="theme-card ps-cd"><input type="radio" name="theme" id="theme-rgb" value="rgb"><span>rgb</span></label><label class="theme-card ps-d5"><input type="radio" name="theme" id="theme-rose_pine" value="rose_pine"><span>rose pine</span></label><label class="theme-card ps-gc"><input type="radio" name="theme" id="theme-rose_pine_dawn" value="rose_pine_dawn"><span>rose pine dawn</span></label><label class="theme-card ps-dt"><input type="radio" name="theme" id="theme-rose_pine_moon" value="rose_pine_moon"><span>rose pine moon</span></label><label class="theme-card ps-cv"><input type="radio" name="theme" id="theme-rudy" value="rudy"><span>rudy</span></label><label class="theme-card ps-by"><input type="radio" name="theme" id="theme-ryujinscales" value="ryujinscales"><span>ryujinscales</span></label><label class="theme-card ps-fi"><input type="radio" name="theme" id="theme-serika" value="serika"><span>serika</span></label><label class="theme-card ps-e8"><input type="radio" name="theme" id="theme-serika_dark" value="serika_dark"><span>serika dark</span></label><label class="theme-card ps-dh"><input type="radio" name="theme" id="theme-sewing_tin" value="sewing_tin"><span>sewing tin</span></label><label class="theme-card ps-gg"><input type="radio" name="theme" id="theme-sewing_tin_light" value="sewing_tin_light"><span>sewing tin light</span></label><label class="theme-card ps-bi"><input type="radio" name="theme" id="theme-shadow" value="shadow"><span>shadow</span></label><label class="theme-card ps-f6"><input type="radio" name="theme" id="theme-shoko" value="shoko"><span>shoko</span></label><label class="theme-card ps-ge"><input type="radio" name="theme" id="theme-slambook" value="slambook"><span>slambook</span></label><label class="theme-card ps-f2"><input type="radio" name="theme" id="theme-snes" value="snes"><span>snes</span></label><label class="theme-card ps-gb"><input type="radio" name="theme" id="theme-soaring_skies" value="soaring_skies"><span>soaring skies</span></label><label class="theme-card ps-bm"><input type="radio" name="theme" id="theme-solarized_dark" value="solarized_dark"><span>solarized dark</span></label><label class="theme-card ps-g4"><input type="radio" name="theme" id="theme-solarized_light" value="solarized_light"><span>solarized light</span></label><label class="theme-card ps-bj"><input type="radio" name="theme" id="theme-solarized_osaka" value="solarized_osaka"><span>solarized osaka</span></label><label class="theme-card ps-dw"><input type="radio" name="theme" id="theme-sonokai" value="sonokai"><span>sonokai</span></label><label class="theme-card ps-c5"><input type="radio" name="theme" id="theme-spiderman" value="spiderman"><span>spiderman</span></label><label class="theme-card ps-bs"><input type="radio" name="theme" id="theme-stealth" value="stealth"><span>stealth</span></label><label class="theme-card ps-fw"><input type="radio" name="theme" id="theme-strawberry" value="strawberry"><span>strawberry</span></label><label class="theme-card ps-cf"><input type="radio" name="theme" id="theme-striker" value="striker"><span>striker</span></label><label class="theme-card ps-ec"><input type="radio" name="theme" id="theme-suisei" value="suisei"><span>suisei</span></label><label class="theme-card ps-d9"><input type="radio" name="theme" id="theme-sunset" value="sunset"><span>sunset</span></label><label class="theme-card ps-dm"><input type="radio" name="theme" id="theme-superuser" value="superuser"><span>superuser</span></label><label class="theme-card ps-bo"><input type="radio" name="theme" id="theme-sweden" value="sweden"><span>sweden</span></label><label class="theme-card ps-g7"><input type="radio" name="theme" id="theme-tangerine" value="tangerine"><span>tangerine</span></label><label class="theme-card ps-f0"><input type="radio" name="theme" id="theme-taro" value="taro"><span>taro</span></label><label class="theme-card ps-cr"><input type="radio" name="theme" id="theme-terminal" value="terminal"><span>terminal</span></label><label class="theme-card ps-c4"><input type="radio" name="theme" id="theme-terra" value="terra"><span>terra</span></label><label class="theme-card ps-ft"><input type="radio" name="theme" id="theme-terrazzo" value="terrazzo"><span>terrazzo</span></label><label class="theme-card ps-c1"><input type="radio" name="theme" id="theme-terror_below" value="terror_below"><span>terror below</span></label><label class="theme-card ps-f7"><input type="radio" name="theme" id="theme-tiramisu" value="tiramisu"><span>tiramisu</span></label><label class="theme-card ps-eg"><input type="radio" name="theme" id="theme-trackday" value="trackday"><span>trackday</span></label><label class="theme-card ps-bh"><input type="radio" name="theme" id="theme-trance" value="trance"><span>trance</span></label><label class="theme-card ps-c6"><input type="radio" name="theme" id="theme-tron_orange" value="tron_orange"><span>tron orange</span></label><label class="theme-card ps-ev"><input type="radio" name="theme" id="theme-vaporwave" value="vaporwave"><span>vaporwave</span></label><label class="theme-card ps-cb"><input type="radio" name="theme" id="theme-vesper" value="vesper"><span>vesper</span></label><label class="theme-card ps-gl"><input type="radio" name="theme" id="theme-vesper_light" value="vesper_light"><span>vesper light</span></label><label class="theme-card ps-dx"><input type="radio" name="theme" id="theme-viridescent" value="viridescent"><span>viridescent</span></label><label class="theme-card ps-cp"><input type="radio" name="theme" id="theme-voc" value="voc"><span>voc</span></label><label class="theme-card ps-d2"><input type="radio" name="theme" id="theme-vscode" value="vscode"><span>vscode</span></label><label class="theme-card ps-d7"><input type="radio" name="theme" id="theme-watermelon" value="watermelon"><span>watermelon</span></label><label class="theme-card ps-d1"><input type="radio" name="theme" id="theme-wavez" value="wavez"><span>wavez</span></label><label class="theme-card ps-fx"><input type="radio" name="theme" id="theme-witch_girl" value="witch_girl"><span>witch girl</span></label></div></details><div class="js-only ps-14h" id="monkeytype-text-source">
+<h3>reading text color</h3>
+<p class="control-help">Auto chooses the more readable palette color. Choose sub or text to set it yourself; answer colors adapt.</p>
+<div aria-label="Monkeytype reading text color" class="segmented" role="group">
+<label><input checked="" name="text-source" type="radio" value="auto"/><span>auto</span></label>
+<label><input name="text-source" type="radio" value="sub"/><span>sub</span></label>
+<label><input name="text-source" type="radio" value="text"/><span>text</span></label>
+</div>
+<p aria-live="polite" class="control-help ps-14i" id="monkeytype-text-status" role="status"></p>
+</div></div><aside class="theme-editor js-only" aria-label="Customize theme colors"><div class="color-editor-heading"><h3>colors</h3><button type="button" id="reset-theme-colors" aria-label="Reset this theme">reset</button></div><span class="sr-only" id="color-format-help">Choose a swatch or enter hex. Transparent borders accept #RRGGBBAA. Reset restores the theme color.</span><span class="sr-only" id="color-edit-status" role="status" aria-live="polite"></span><div class="main-colors"><div class="color-row" data-color-row="bg">
+<label for="color-bg">background</label>
+<div class="color-inputs"><input type="color" id="swatch-bg" aria-label="background swatch" data-color-swatch="bg">
+<input type="text" id="color-bg" data-color-hex="bg" aria-label="background hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="bg" aria-label="Reset background" title="Reset background">↺</button></div></div><div class="color-row" data-color-row="text">
+<label for="color-text">reading text</label>
+<div class="color-inputs"><input type="color" id="swatch-text" aria-label="reading text swatch" data-color-swatch="text">
+<input type="text" id="color-text" data-color-hex="text" aria-label="reading text hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="text" aria-label="Reset reading text" title="Reset reading text">↺</button></div></div><div class="color-row" data-color-row="muted">
+<label for="color-muted">secondary text</label>
+<div class="color-inputs"><input type="color" id="swatch-muted" aria-label="secondary text swatch" data-color-swatch="muted">
+<input type="text" id="color-muted" data-color-hex="muted" aria-label="secondary text hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="muted" aria-label="Reset secondary text" title="Reset secondary text">↺</button></div></div><div class="color-row" data-color-row="accent">
+<label for="color-accent">interface accent</label>
+<div class="color-inputs"><input type="color" id="swatch-accent" aria-label="interface accent swatch" data-color-swatch="accent">
+<input type="text" id="color-accent" data-color-hex="accent" aria-label="interface accent hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="accent" aria-label="Reset interface accent" title="Reset interface accent">↺</button></div></div><div class="color-row" data-color-row="correct">
+<label for="color-correct">correct</label>
+<div class="color-inputs"><input type="color" id="swatch-correct" aria-label="correct swatch" data-color-swatch="correct">
+<input type="text" id="color-correct" data-color-hex="correct" aria-label="correct hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="correct" aria-label="Reset correct" title="Reset correct">↺</button></div></div><div class="color-row" data-color-row="wrong">
+<label for="color-wrong">wrong</label>
+<div class="color-inputs"><input type="color" id="swatch-wrong" aria-label="wrong swatch" data-color-swatch="wrong">
+<input type="text" id="color-wrong" data-color-hex="wrong" aria-label="wrong hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="wrong" aria-label="Reset wrong" title="Reset wrong">↺</button></div></div></div><details class="advanced-colors"><summary>more colors</summary><div class="advanced-color-grid"><div class="color-row" data-color-row="raised">
+<label for="color-raised">buttons &amp; controls</label>
+<div class="color-inputs"><input type="color" id="swatch-raised" aria-label="buttons &amp; controls swatch" data-color-swatch="raised">
+<input type="text" id="color-raised" data-color-hex="raised" aria-label="buttons &amp; controls hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="raised" aria-label="Reset buttons &amp; controls" title="Reset buttons &amp; controls">↺</button></div></div><div class="color-row" data-color-row="correct-ink">
+<label for="color-correct-ink">correct text &amp; numbers</label>
+<div class="color-inputs"><input type="color" id="swatch-correct-ink" aria-label="correct text &amp; numbers swatch" data-color-swatch="correct-ink">
+<input type="text" id="color-correct-ink" data-color-hex="correct-ink" aria-label="correct text &amp; numbers hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="correct-ink" aria-label="Reset correct text &amp; numbers" title="Reset correct text &amp; numbers">↺</button></div></div><div class="color-row" data-color-row="edge">
+<label for="color-edge">paper outline</label>
+<div class="color-inputs"><input type="color" id="swatch-edge" aria-label="paper outline swatch" data-color-swatch="edge">
+<input type="text" id="color-edge" data-color-hex="edge" aria-label="paper outline hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge" aria-label="Reset paper outline" title="Reset paper outline">↺</button></div></div><div class="color-row" data-color-row="edge-soft">
+<label for="color-edge-soft">soft dividers</label>
+<div class="color-inputs"><input type="color" id="swatch-edge-soft" aria-label="soft dividers swatch" data-color-swatch="edge-soft">
+<input type="text" id="color-edge-soft" data-color-hex="edge-soft" aria-label="soft dividers hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge-soft" aria-label="Reset soft dividers" title="Reset soft dividers">↺</button></div><label class="color-opacity">opacity<input type="range" min="0" max="100" step="0.1" data-color-alpha="edge-soft" aria-label="soft dividers opacity"><output></output></label></div><div class="color-row" data-color-row="edge-strong">
+<label for="color-edge-strong">strong borders</label>
+<div class="color-inputs"><input type="color" id="swatch-edge-strong" aria-label="strong borders swatch" data-color-swatch="edge-strong">
+<input type="text" id="color-edge-strong" data-color-hex="edge-strong" aria-label="strong borders hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge-strong" aria-label="Reset strong borders" title="Reset strong borders">↺</button></div><label class="color-opacity">opacity<input type="range" min="0" max="100" step="0.1" data-color-alpha="edge-strong" aria-label="strong borders opacity"><output></output></label></div><div class="color-row" data-color-row="logo-secondary">
+<label for="color-logo-secondary">wordmark · JLPT</label>
+<div class="color-inputs"><input type="color" id="swatch-logo-secondary" aria-label="wordmark · JLPT swatch" data-color-swatch="logo-secondary">
+<input type="text" id="color-logo-secondary" data-color-hex="logo-secondary" aria-label="wordmark · JLPT hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="logo-secondary" aria-label="Reset wordmark · JLPT" title="Reset wordmark · JLPT">↺</button></div></div></div><div class="fill-opacity-controls"><h4>fill opacity</h4><p>Applies to correct and wrong answers.</p><div class="fill-opacity-row"><label for="opacity-cell-fill">cell fill<output id="opacity-cell-fill-output">11%</output></label><div><input id="opacity-cell-fill" type="range" min="0" max="100" step="1" value="11" data-fill-opacity="cell-fill" aria-label="cell fill opacity"><button type="button" data-fill-reset="cell-fill" aria-label="Reset cell fill opacity" title="Reset cell fill opacity">↺</button></div></div><div class="fill-opacity-row"><label for="opacity-fill">fill style<output id="opacity-fill-output">30%</output></label><div><input id="opacity-fill" type="range" min="0" max="100" step="1" value="30" data-fill-opacity="fill" aria-label="fill style opacity"><button type="button" data-fill-reset="fill" aria-label="Reset fill style opacity" title="Reset fill style opacity">↺</button></div></div></div></details></aside></div></section><section data-settings="browser"><div class="setting-row js-only"><div><h3>remember this browser</h3><p id="save-status">Saving is on by default. No account required.</p></div><label class="switch"><input id="remember" type="checkbox" checked>save preferences, answers and position</label></div><div class="button-row browser-actions js-only"><button id="reset-preferences" type="button">reset preferences</button><button id="forget" type="button">forget saved data</button></div><div class="developer-only developer-settings"><h3>developer mode</h3><p>Principal differences and editorial cases are visible. This local switch is not authentication.</p><button id="disable-dev" type="button">hide developer tools</button></div><div class="settings-about"><button type="button" id="developer-unlock" class="js-only" title="astraJLPT build information">astraJLPT · 2020–2026 collection</button><span id="developer-hint" role="status"></span></div></section></div></details></header><main id="content" class="review-page"><div class="review-content"><a href="../levels/N1.html">← N1 papers</a><h1>N1 · July 2017</h1><p>Uncertainty index: <strong>2026</strong> · 14 differences · 1 unresolved · 3 provisional fixes</p><p>Evidence base 2000 + source concerns 26 = 2026. Concerns are uncapped; browsing order uses evidence tier before concern points.</p><p>This is an editorial evidence assessment, not a probability, an error rate or a practice score.</p><details><summary>Assessment evidence and original source scores</summary><pre>{
+  &quot;unit&quot;: &quot;N1_07_2017&quot;,
+  &quot;sample&quot;: false,
+  &quot;year&quot;: 2017,
+  &quot;month&quot;: 7,
+  &quot;evidence_base&quot;: 2000,
+  &quot;evidence_tier&quot;: 4,
+  &quot;concern_points&quot;: 26,
+  &quot;index&quot;: 2026,
+  &quot;concern_counts&quot;: {
+    &quot;metadata_flags&quot;: 0,
+    &quot;missing_units&quot;: 0,
+    &quot;major_defects&quot;: 3,
+    &quot;minor_defects&quot;: 5,
+    &quot;uncertain_fields&quot;: 1
+  },
+  &quot;principal_history&quot;: {
+    &quot;unit&quot;: &quot;N1_07_2017&quot;,
+    &quot;level&quot;: &quot;N1&quot;,
+    &quot;year&quot;: 2017,
+    &quot;month&quot;: 7,
+    &quot;principal_path&quot;: &quot;src/Yuuki Bui/Đề thi N1 các năm Yuuki Bùi/N1 7-2017/Đề N1 7-2017.pdf&quot;,
+    &quot;principal_sha256&quot;: &quot;13c977afe3425007373cabe41001c61e512e0991ed79865118a98c4656324d84&quot;,
+    &quot;initial_tier&quot;: 1,
+    &quot;written_physical_pages&quot;: &quot;2-13&quot;,
+    &quot;review_status&quot;: &quot;complete_written_review&quot;,
+    &quot;provenance_status&quot;: &quot;known_reconstruction&quot;,
+    &quot;provenance_points&quot;: 200,
+    &quot;metadata_flags&quot;: 0,
+    &quot;missing_units&quot;: 0,
+    &quot;major_defects&quot;: 3,
+    &quot;minor_defects&quot;: 5,
+    &quot;uncertain_fields&quot;: 1,
+    &quot;uncertainty_index&quot;: 226,
+    &quot;score_evidence&quot;: [
+      {
+        &quot;id&quot;: &quot;N1_07_2017-S-001&quot;,
+        &quot;kind&quot;: &quot;major_defects&quot;,
+        &quot;item_id&quot;: &quot;vocab-q001&quot;,
+        &quot;field&quot;: &quot;/options/3&quot;,
+        &quot;locator&quot;: &quot;Physical 2, Q1 option 4&quot;,
+        &quot;evidence&quot;: &quot;Truncated いや changes option identity; other inspected question layouts directly print いやす.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N1_07_2017-S-002&quot;,
+        &quot;kind&quot;: &quot;major_defects&quot;,
+        &quot;item_id&quot;: &quot;vocab-b002&quot;,
+        &quot;field&quot;: &quot;/content/html&quot;,
+        &quot;locator&quot;: &quot;Physical 4, STAR worked row&quot;,
+        &quot;evidence&quot;: &quot;Labels 2 and 3 conflict with the choices and marked answer. Count this defective mapping once; historical-example uncertainty is not charged again.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N1_07_2017-S-003&quot;,
+        &quot;kind&quot;: &quot;major_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-s06&quot;,
+        &quot;field&quot;: &quot;/heading&quot;,
+        &quot;locator&quot;: &quot;Physical 12, Problem 13&quot;,
+        &quot;evidence&quot;: &quot;Student-reporter instruction attached to gym posters. Uncertainty about replacement wording adds no separate point.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N1_07_2017-S-004&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;vocab-q033&quot;,
+        &quot;field&quot;: &quot;/stem&quot;,
+        &quot;locator&quot;: &quot;Physical 4, Q33&quot;,
+        &quot;evidence&quot;: &quot;Malformed 歓迎会に失敗だった; explanatory edition directly prints は. Grammar-task answer unchanged.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N1_07_2017-S-005&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-b004&quot;,
+        &quot;field&quot;: &quot;/content/html&quot;,
+        &quot;locator&quot;: &quot;Physical 7, tools passage&quot;,
+        &quot;evidence&quot;: &quot;Missing witnessed body target underline; question retains its reference underline.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N1_07_2017-S-006&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-b005&quot;,
+        &quot;field&quot;: &quot;/content/html&quot;,
+        &quot;locator&quot;: &quot;Physical 7, narration passage&quot;,
+        &quot;evidence&quot;: &quot;Malformed よりのか and wrong author 榎木; count this field once.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N1_07_2017-S-007&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-b010&quot;,
+        &quot;field&quot;: &quot;/content/html&quot;,
+        &quot;locator&quot;: &quot;Physical 11–12, science passage&quot;,
+        &quot;evidence&quot;: &quot;Spelling 普通性/網引き and missing body underline/note-7 marker; supported intended lexical readings and aids leave task answers unchanged. Count once.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N1_07_2017-S-008&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-b011&quot;,
+        &quot;field&quot;: &quot;/content/html&quot;,
+        &quot;locator&quot;: &quot;Physical 12–13, gym posters&quot;,
+        &quot;evidence&quot;: &quot;Extra て in two honorific requests; count once. Sunday-hours uncertainty is dominated by this category.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N1_07_2017-S-009&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;vocab-q035&quot;,
+        &quot;field&quot;: &quot;/stem&quot;,
+        &quot;locator&quot;: &quot;Physical 4, Q35&quot;,
+        &quot;evidence&quot;: &quot;Principal 2週間 conflicts with coherent 1週間 in the full retype; historical duration unverified.&quot;
+      }
+    ],
+    &quot;method_version&quot;: 1,
+    &quot;reviewed_at&quot;: &quot;2026-10-06&quot;,
+    &quot;assessment_note&quot;: &quot;Full written physical 2–13 and cover 1 inspected. Positive reconstruction evidence: unrelated borrowed final instruction, inconsistent example mapping, compressed retyping and visible word-processor marks embedded in the poster. No issuer chain. The alternate full retype’s conflicting December cover is not charged to this principal.&quot;
+  },
+  &quot;evidence&quot;: []
+}</pre></details><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N1_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span><ul></ul><div class="review-controls"><label>Show <select id="review-filter"><option value="all">All records</option><option value="difference">Principal differences</option><option value="unresolved">Unresolved cases</option><option value="provisional_fix">Provisional fixes</option></select></label><label>Find <input id="review-search" type="search" placeholder="Item, wording, evidence…"></label></div><p id="review-count" class="control-help" role="status"></p><section class="review-group" id="review-vocab-q001" data-kinds="difference"><div class="review-group-heading"><h2>vocab-q001</h2><a href="../papers/N1_07_2017.html#vocab-q001">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">1. この広大な大地を<u>潤す</u>にはまだまだ不十分だった。<ol><li>たがやす</li><li>ぬらす</li><li>うるおす</li><li>いやす</li></ol><p>Editorial key: 3</p></div></details><div class="review-record" id="principal_differences-N1_07_2017-PD-001"><div class="review-label">Principal difference · /options/3 · high</div><div class="comparison"><div><h4>Principal</h4><pre>いや</pre></div><div><h4>Editorial</h4><pre>いや<mark class="diff-new">す</mark></pre></div></div><p>Retain the complete option directly printed in the other inspected question layouts. The principal truncates the inflected candidate; this repairs option identity without changing the key うるおす.</p><span class="principal-repository-source">Principal source (page=2): <code>additional-assets/principals/N1_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">vocab-q001 /options/3, affected span</span><details><summary>Full published record · principal_differences-N1_07_2017-PD-001</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N1_07_2017-PD-001&quot;,
+  &quot;unit&quot;: &quot;N1_07_2017&quot;,
+  &quot;item_id&quot;: &quot;vocab-q001&quot;,
+  &quot;field&quot;: &quot;/options/3&quot;,
+  &quot;current_value&quot;: &quot;いやす&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;Đề N1 7-2017.pdf — secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;13c977afe3425007373cabe41001c61e512e0991ed79865118a98c4656324d84&quot;,
+    &quot;physical_pages&quot;: [
+      2
+    ],
+    &quot;locator&quot;: &quot;vocab-q001 /options/3, affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;いや&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;いやす&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Retain the complete option directly printed in the other inspected question layouts. The principal truncates the inflected candidate; this repairs option identity without changing the key うるおす.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-vocab-q033" data-kinds="difference"><div class="review-group-heading"><h2>vocab-q033</h2><a href="../papers/N1_07_2017.html#vocab-q033">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">33. 昨日の新入生<ruby data-rubi-id="rr4-8522799141d1c599f70c" data-rubi-origin="project_rubi_restore">歓迎会<rt>かんげいかい</rt></ruby>は失敗だった。私たち<ruby data-rubi-id="rr4-97734a5b9aed72c646b9" data-rubi-origin="project_rubi_restore">上級生<rt>じょうきゅうせい</rt></ruby>がたくさん質問をして、新入生が話しやすい（ ）、逆に緊張させてしまったようだ。<ol><li>ようにしたあげく</li><li>ようにしたつもりが</li><li>ようになったものを</li><li>ようになったばかりか</li></ol><p>Editorial key: 2</p></div></details><div class="review-record" id="principal_differences-N1_07_2017-PD-002"><div class="review-label">Principal difference · /stem · high</div><div class="comparison"><div><h4>Principal</h4><pre>昨日の新入生歓迎会<mark class="diff-old">に</mark>失敗だった。</pre></div><div><h4>Editorial</h4><pre>昨日の新入生歓迎会<mark class="diff-new">は</mark>失敗だった。</pre></div></div><p>The 38-page explanatory edition, physical 8, directly prints は in Japanese. The topic construction fits the complete clause.</p><span class="principal-repository-source">Principal source (page=4): <code>additional-assets/principals/N1_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">vocab-q033 /stem, affected span</span><details><summary>Full published record · principal_differences-N1_07_2017-PD-002</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N1_07_2017-PD-002&quot;,
+  &quot;unit&quot;: &quot;N1_07_2017&quot;,
+  &quot;item_id&quot;: &quot;vocab-q033&quot;,
+  &quot;field&quot;: &quot;/stem&quot;,
+  &quot;current_value&quot;: &quot;33. 昨日の新入生歓迎会は失敗だった。私たち上級生がたくさん質問をして、新入生が話しやすい（ ）、逆に緊張させてしまったようだ。&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;Đề N1 7-2017.pdf — secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;13c977afe3425007373cabe41001c61e512e0991ed79865118a98c4656324d84&quot;,
+    &quot;physical_pages&quot;: [
+      4
+    ],
+    &quot;locator&quot;: &quot;vocab-q033 /stem, affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;昨日の新入生歓迎会に失敗だった。&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;昨日の新入生歓迎会は失敗だった。&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;The 38-page explanatory edition, physical 8, directly prints は in Japanese. The topic construction fits the complete clause.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-vocab-q035" data-kinds="provisional_fix"><div class="review-group-heading"><h2>vocab-q035</h2><a href="../papers/N1_07_2017.html#vocab-q035">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">35. 先々週、妹が図書館で分厚い本を10冊も借りてきた。「2週間しか借りられないんだから、そんなに絶対（ ）」と思ったが、全部読んで返したらしい。<ol><li>読みかけなのか</li><li>読みっぱなしだろう</li><li>読みきれっこない</li><li>読んでもいないくせに</li></ol><p>Editorial key: 3</p></div></details><div class="review-record" id="unresolved_cases-N1_07_2017-vocab-q035-loan-period"><div class="review-label">Provisional fix · /stem · medium</div><div class="comparison"><div><h4>Before</h4><pre>35. 先々週、妹が図書館で分厚い本を10冊も借りてきた。「<mark class="diff-old">1</mark>週間しか借りられないんだから、そんなに絶対<mark class="diff-old">(</mark> <mark class="diff-old">)</mark>」と思ったが、全部読んで返したらしい。</pre></div><div><h4>Editorial</h4><pre>35. 先々週、妹が図書館で分厚い本を10冊も借りてきた。「<mark class="diff-new">2</mark>週間しか借りられないんだから、そんなに絶対<mark class="diff-new">（</mark> <mark class="diff-new">）</mark>」と思ったが、全部読んで返したらしい。</pre></div></div><p>Select two weeks because it is directly witnessed in question and explanatory layouts and fits the retrospective setting. Shared ancestry is possible, and neither chronology nor copy count proves the original number. The answer remains 読みきれっこない.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>The historical duration remains unverified; a reliably sourced original page could settle 1 versus 2.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N1_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Q35: the sister borrowed ten thick books the week before last and has reportedly returned all of them.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=4): <code>additional-assets/principals/N1_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q35 quoted loan limit<p>2週間しか借りられないんだから</p></li><li><span class="principal-repository-source">Principal source (page=5): <code>additional-assets/principals/N1_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q35 quoted loan limit<p>1週間しか借りられないんだから</p></li><li><span class="principal-repository-source">Principal source (page=4): <code>additional-assets/principals/N1_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q35 quoted loan limit<p>2週間しか借りられないんだから</p></li><li><span class="principal-repository-source">Principal source (page=9): <code>additional-assets/principals/N1_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q35 Japanese quotation and Chinese explanation<p>2週間; Chinese explanation also says two weeks.</p></li><li><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N1_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Written grammar Q35<p>2週間</p></li></ul><details><summary>Full published record · unresolved_cases-N1_07_2017-vocab-q035-loan-period</summary><pre>{
+  &quot;case_id&quot;: &quot;N1_07_2017-vocab-q035-loan-period&quot;,
+  &quot;unit&quot;: &quot;N1_07_2017&quot;,
+  &quot;item_id&quot;: &quot;vocab-q035&quot;,
+  &quot;field&quot;: &quot;/stem&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;35. 先々週、妹が図書館で分厚い本を10冊も借りてきた。「2週間しか借りられないんだから、そんなに絶対（ ）」と思ったが、全部読んで返したらしい。&quot;,
+  &quot;context&quot;: &quot;Q35: the sister borrowed ten thick books the week before last and has reportedly returned all of them.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;1週間&quot;,
+      &quot;assessment&quot;: &quot;Clearly printed in the 22-page retype. One week is grammatically and chronologically possible; the choices do not distinguish it.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;Đề N1 7-2017.pdf&quot;,
+      &quot;sha256&quot;: &quot;13c977afe3425007373cabe41001c61e512e0991ed79865118a98c4656324d84&quot;,
+      &quot;physical_pages&quot;: [
+        4
+      ],
+      &quot;locator&quot;: &quot;Q35 quoted loan limit&quot;,
+      &quot;reading&quot;: &quot;2週間しか借りられないんだから&quot;,
+      &quot;lineage&quot;: &quot;Secondary edition; agreement does not establish independent acquisition or original-page provenance.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2017年07月N1真题.pdf&quot;,
+      &quot;sha256&quot;: &quot;66e2ee4b11ccbd910af722599818d1b033c0b07e77e1e8b7476cecf26981762e&quot;,
+      &quot;physical_pages&quot;: [
+        5
+      ],
+      &quot;locator&quot;: &quot;Q35 quoted loan limit&quot;,
+      &quot;reading&quot;: &quot;1週間しか借りられないんだから&quot;,
+      &quot;lineage&quot;: &quot;Secondary edition; agreement does not establish independent acquisition or original-page provenance.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;【2】2017年07月N1 真题.pdf&quot;,
+      &quot;sha256&quot;: &quot;6b6a389eba79da34d10d51ddc9d9554dac511815677d311702f82568a4de0d87&quot;,
+      &quot;physical_pages&quot;: [
+        4
+      ],
+      &quot;locator&quot;: &quot;Q35 quoted loan limit&quot;,
+      &quot;reading&quot;: &quot;2週間しか借りられないんだから&quot;,
+      &quot;lineage&quot;: &quot;Secondary edition; agreement does not establish independent acquisition or original-page provenance.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;【3】2017年07月N1答案解析+听力原文+译文.pdf&quot;,
+      &quot;sha256&quot;: &quot;5be1f5166aeb0f4fd46f7656044dbc581b0042b00536fb14417ad4e3e5514256&quot;,
+      &quot;physical_pages&quot;: [
+        9
+      ],
+      &quot;locator&quot;: &quot;Q35 Japanese quotation and Chinese explanation&quot;,
+      &quot;reading&quot;: &quot;2週間; Chinese explanation also says two weeks.&quot;,
+      &quot;lineage&quot;: &quot;Secondary edition; agreement does not establish independent acquisition or original-page provenance.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;munjaJLPT N1 July 2017 native transcription&quot;,
+      &quot;sha256&quot;: &quot;8552de034c53b70d160ffc87ba6065f742f543cb7c2942256472ec0b767f8533&quot;,
+      &quot;locator&quot;: &quot;Written grammar Q35&quot;,
+      &quot;reading&quot;: &quot;2週間&quot;,
+      &quot;lineage&quot;: &quot;Secondary transcription with demonstrated errors; not an independent vote.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Select two weeks because it is directly witnessed in question and explanatory layouts and fits the retrospective setting. Shared ancestry is possible, and neither chronology nor copy count proves the original number. The answer remains 読みきれっこない.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Read the full stem and choices in both complete written witnesses.&quot;,
+    &quot;Read alternate Q35 and Japanese/Chinese analysis; checked native Q35.&quot;,
+    &quot;Tested both durations against 先々週 and the completed return; neither is impossible.&quot;,
+    &quot;5 November 2026: Public snapshot rebound to the earlier, verified current field. Only the historical presentation edit is replayed; this snapshot repair does not change the original witness or its confidence.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;The historical duration remains unverified; a reliably sourced original page could settle 1 versus 2.&quot;,
+  &quot;before&quot;: &quot;35. 先々週、妹が図書館で分厚い本を10冊も借りてきた。「1週間しか借りられないんだから、そんなに絶対( )」と思ったが、全部読んで返したらしい。&quot;
+}</pre></details></div></section><section class="review-group" id="review-vocab-b002" data-kinds="difference provisional_fix"><div class="review-group-heading"><h2>vocab-b002</h2><a href="../papers/N1_07_2017.html#vocab-b002">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><p>（問題例）</p><p>あそこで <span class="answer-slot"><span class="slot-glyph">_</span></span><span class="answer-slot"><span class="slot-glyph">_</span></span> <span class="star-slot"><span class="slot-glyph star-glyph">★</span></span> <span class="answer-slot"><span class="slot-glyph">_</span></span> は山田さんです。</p><p>（解答の仕方）</p><p>1. 正しい文はこうです。</p><table><tr><td>あそこで</td><td><span class="answer-slot"><span class="slot-glyph">_</span></span></td><td><span class="answer-slot"><span class="slot-glyph">_</span></span></td><td><span class="star-slot"><span class="slot-glyph star-glyph">★</span></span></td><td><span class="answer-slot"><span class="slot-glyph">_</span></span></td><td>は山田さんです。</td></tr><tr><td></td><td>1 テレビ</td><td>3 を</td><td>2 見ている</td><td>4 人</td><td></td></tr></table><p>2. <span class="answer-slot"><span class="slot-glyph">_</span></span><span class="star-slot"><span class="slot-glyph star-glyph">★</span></span><span class="answer-slot"><span class="slot-glyph">_</span></span>に入る番号を解答用紙にマークします。</p><p>（解答用紙）</p><table><tr><th>（例）</th><td>①　●　③　④</td></tr></table></div></details><div class="review-record" id="unresolved_cases-N1_07_2017-vocab-b002-worked-example"><div class="review-label">Provisional fix ·  · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>1テレビ 2<mark class="diff-old">を</mark> <mark class="diff-old">3</mark>見ている <mark class="diff-old">4</mark>人</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">{
+  &quot;id&quot;: &quot;vocab-b002&quot;,
+  &quot;type&quot;: &quot;example&quot;,
+  &quot;content&quot;: {
+    &quot;html&quot;: &quot;&lt;p&gt;（問題例）&lt;/p&gt;&lt;p&gt;あそこで _ _ ★ _ は山田さんです。&lt;/p&gt;&lt;p&gt;（解答の仕方）&lt;/p&gt;&lt;p&gt;</mark>1<mark class="diff-new">. 正しい文はこうです。&lt;/p&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;あそこで&lt;/td&gt;&lt;td&gt;_&lt;/td&gt;&lt;td&gt;_&lt;/td&gt;&lt;td&gt;★&lt;/td&gt;&lt;td&gt;_&lt;/td&gt;&lt;td&gt;は山田さんです。&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;1 </mark>テレビ<mark class="diff-new">&lt;/td&gt;&lt;td&gt;3</mark> <mark class="diff-new">を&lt;/t</mark>…</pre></div></div><p>Use the complete example in the selected same-sitting source. テレビを見ている人 determines order 1-3-2-4 and third-slot answer 2 under its printed choices. Repairing the worked labels is the smallest coherent change; this may still be a conventional secondary insertion.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>The original presence and exact configuration are unverified. A reliably sourced original example page would settle them.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N1_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Unscored STAR example before Q36: sentence, four choices, two solution steps and marked answer sheet.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=4): <code>additional-assets/principals/N1_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Complete STAR example, choices, worked row and answer mark<p>あそこで _ _ ★ _ は山田さんです。 Options 1テレビ 2見ている 3を 4人; worked labels 1テレビ 2を 3見ている 4人; mark ①●③④.</p></li><li><span class="principal-repository-source">Principal source (page=5): <code>additional-assets/principals/N1_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Problem 6 heading to Q36<p>No worked example.</p></li><li><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N1_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Written STAR section before Q36<p>No example item.</p></li></ul><details><summary>Full published record · unresolved_cases-N1_07_2017-vocab-b002-worked-example</summary><pre>{
+  &quot;case_id&quot;: &quot;N1_07_2017-vocab-b002-worked-example&quot;,
+  &quot;unit&quot;: &quot;N1_07_2017&quot;,
+  &quot;item_id&quot;: &quot;vocab-b002&quot;,
+  &quot;field&quot;: &quot;&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: {
+    &quot;id&quot;: &quot;vocab-b002&quot;,
+    &quot;type&quot;: &quot;example&quot;,
+    &quot;content&quot;: {
+      &quot;html&quot;: &quot;&lt;p&gt;（問題例）&lt;/p&gt;&lt;p&gt;あそこで _ _ ★ _ は山田さんです。&lt;/p&gt;&lt;p&gt;（解答の仕方）&lt;/p&gt;&lt;p&gt;1. 正しい文はこうです。&lt;/p&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;あそこで&lt;/td&gt;&lt;td&gt;_&lt;/td&gt;&lt;td&gt;_&lt;/td&gt;&lt;td&gt;★&lt;/td&gt;&lt;td&gt;_&lt;/td&gt;&lt;td&gt;は山田さんです。&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;1 テレビ&lt;/td&gt;&lt;td&gt;3 を&lt;/td&gt;&lt;td&gt;2 見ている&lt;/td&gt;&lt;td&gt;4 人&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;2. _★_に入る番号を解答用紙にマークします。&lt;/p&gt;&lt;p&gt;（解答用紙）&lt;/p&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;（例）&lt;/th&gt;&lt;td&gt;①　●　③　④&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&quot;
+    },
+    &quot;options&quot;: [
+      &quot;テレビ&quot;,
+      &quot;見ている&quot;,
+      &quot;を&quot;,
+      &quot;人&quot;
+    ],
+    &quot;key&quot;: 2
+  },
+  &quot;context&quot;: &quot;Unscored STAR example before Q36: sentence, four choices, two solution steps and marked answer sheet.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;1テレビ 2を 3見ている 4人&quot;,
+      &quot;assessment&quot;: &quot;Literal worked labels in the principal contradict its choices and marked second answer.&quot;
+    },
+    {
+      &quot;value&quot;: null,
+      &quot;assessment&quot;: &quot;The complete alternate witness and native transcription omit it; its historical presence remains unverified.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;Options 1テレビ 2を 3見ている 4人; third-star answer 3&quot;,
+      &quot;assessment&quot;: &quot;Coherent hypothetical alternative, but it changes both choices and answer mark. No inspected source supplies the whole configuration.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;Đề N1 7-2017.pdf&quot;,
+      &quot;sha256&quot;: &quot;13c977afe3425007373cabe41001c61e512e0991ed79865118a98c4656324d84&quot;,
+      &quot;physical_pages&quot;: [
+        4
+      ],
+      &quot;locator&quot;: &quot;Complete STAR example, choices, worked row and answer mark&quot;,
+      &quot;reading&quot;: &quot;あそこで _ _ ★ _ は山田さんです。 Options 1テレビ 2見ている 3を 4人; worked labels 1テレビ 2を 3見ている 4人; mark ①●③④.&quot;,
+      &quot;lineage&quot;: &quot;Secondary edition; agreement does not establish independent acquisition or original-page provenance.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2017年07月N1真题.pdf&quot;,
+      &quot;sha256&quot;: &quot;66e2ee4b11ccbd910af722599818d1b033c0b07e77e1e8b7476cecf26981762e&quot;,
+      &quot;physical_pages&quot;: [
+        5
+      ],
+      &quot;locator&quot;: &quot;Problem 6 heading to Q36&quot;,
+      &quot;reading&quot;: &quot;No worked example.&quot;,
+      &quot;lineage&quot;: &quot;Secondary edition; agreement does not establish independent acquisition or original-page provenance.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;munjaJLPT N1 July 2017 native transcription&quot;,
+      &quot;sha256&quot;: &quot;8552de034c53b70d160ffc87ba6065f742f543cb7c2942256472ec0b767f8533&quot;,
+      &quot;locator&quot;: &quot;Written STAR section before Q36&quot;,
+      &quot;reading&quot;: &quot;No example item.&quot;,
+      &quot;lineage&quot;: &quot;Secondary transcription with demonstrated errors; not an independent vote.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Use the complete example in the selected same-sitting source. テレビを見ている人 determines order 1-3-2-4 and third-slot answer 2 under its printed choices. Repairing the worked labels is the smallest coherent change; this may still be a conventional secondary insertion.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Enlarged and read all choices, worked labels, star position and answer mark.&quot;,
+    &quot;Compared the complete alternate STAR transition and native section.&quot;,
+    &quot;Assembled all four fragments and assessed competing mapping repairs.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;The original presence and exact configuration are unverified. A reliably sourced original example page would settle them.&quot;,
+  &quot;before&quot;: null
+}</pre></details></div><div class="review-record" id="principal_differences-N1_07_2017-PD-003"><div class="review-label">Principal difference · /content/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>1 テレビ　<mark class="diff-old">2</mark> を　<mark class="diff-old">3</mark> 見ている　4 人</pre></div><div><h4>Editorial</h4><pre>1 テレビ　<mark class="diff-new">3</mark> を　<mark class="diff-new">2</mark> 見ている　4 人</pre></div></div><p>Correct the worked labels to agree with the principal choices and marked answer 2. The example remains provisional.</p><span class="principal-repository-source">Principal source (page=4): <code>additional-assets/principals/N1_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">vocab-b002 /content/html, affected span</span><details><summary>Full published record · principal_differences-N1_07_2017-PD-003</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N1_07_2017-PD-003&quot;,
+  &quot;unit&quot;: &quot;N1_07_2017&quot;,
+  &quot;item_id&quot;: &quot;vocab-b002&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;current_value&quot;: &quot;&lt;p&gt;（問題例）&lt;/p&gt;&lt;p&gt;あそこで _ _ ★ _ は山田さんです。&lt;/p&gt;&lt;p&gt;（解答の仕方）&lt;/p&gt;&lt;p&gt;1. 正しい文はこうです。&lt;/p&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;あそこで&lt;/td&gt;&lt;td&gt;_&lt;/td&gt;&lt;td&gt;_&lt;/td&gt;&lt;td&gt;★&lt;/td&gt;&lt;td&gt;_&lt;/td&gt;&lt;td&gt;は山田さんです。&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;1 テレビ&lt;/td&gt;&lt;td&gt;3 を&lt;/td&gt;&lt;td&gt;2 見ている&lt;/td&gt;&lt;td&gt;4 人&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;2. _★_に入る番号を解答用紙にマークします。&lt;/p&gt;&lt;p&gt;（解答用紙）&lt;/p&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;（例）&lt;/th&gt;&lt;td&gt;①　●　③　④&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&quot;,
+  &quot;categories&quot;: [
+    &quot;numbers&quot;,
+    &quot;option_order&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;Đề N1 7-2017.pdf — secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;13c977afe3425007373cabe41001c61e512e0991ed79865118a98c4656324d84&quot;,
+    &quot;physical_pages&quot;: [
+      4
+    ],
+    &quot;locator&quot;: &quot;vocab-b002 /content/html, affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;1 テレビ　2 を　3 見ている　4 人&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;1 テレビ　3 を　2 見ている　4 人&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Correct the worked labels to agree with the principal choices and marked answer 2. The example remains provisional.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;N1_07_2017-vocab-b002-worked-example&quot;
+  ]
+}</pre></details></div></section><section class="review-group" id="review-reading-b004" data-kinds="difference"><div class="review-group-heading"><h2>reading-b004</h2><a href="../papers/N1_07_2017.html#reading-b004">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">（4）<br/>
+人間には、道具をつくり、その道具に適応しようとする性質がある。そしてその道具に適応し過ぎてしまうことで、本来の人間の能力を削がれて（注1）しまうことがある。その適応力が<ruby data-rubi-id="rr4-073b1af424fc6447b3a0" data-rubi-origin="project_rubi_restore">仇<rt>あだ</rt></ruby>（注2）となり、人間がつくった道具により人間が左右される。まるで、人間がつくった道具に人間がつくられてしまうかのように。歩きながらでもスマートフォン（注3）を使いたいという欲求にかられ、挙げ句に視野を大きくそこへ奪われ、自ら、そして他者をも危険な状況に追い込んでしまう。これも<u>その現象</u>のひとつだ。<br/>
+<div>（小川和也『デジタルは人間を奪うのか』による） </div><br/>（注1）削ぐ:削る 
+<br/>（注2）仇:ここでは、害 <br/>（注3） スマートフォン: パソコンの機能もある携帯電話</div></details><div class="review-record" id="principal_differences-N1_07_2017-PD-004"><div class="review-label">Principal difference · /content/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>これもその現象のひとつだ。</pre></div><div><h4>Editorial</h4><pre>これも<mark class="diff-new">&lt;u&gt;</mark>その現象<mark class="diff-new">&lt;/u&gt;</mark>のひとつだ。</pre></div></div><p>Retain the target underline directly visible in the alternate 18-page question edition, physical 7, matching the underlined question reference. The principal omits the body underline.</p><span class="principal-repository-source">Principal source (page=7): <code>additional-assets/principals/N1_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-b004 /content/html, affected span</span><details><summary>Full published record · principal_differences-N1_07_2017-PD-004</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N1_07_2017-PD-004&quot;,
+  &quot;unit&quot;: &quot;N1_07_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-b004&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;current_value&quot;: &quot;（4）&lt;br&gt;\n人間には、道具をつくり、その道具に適応しようとする性質がある。そしてその道具に適応し過ぎてしまうことで、本来の人間の能力を削がれて（注1）しまうことがある。その適応力が仇（注2）となり、人間がつくった道具により人間が左右される。まるで、人間がつくった道具に人間がつくられてしまうかのように。歩きながらでもスマートフォン（注3）を使いたいという欲求にかられ、挙げ句に視野を大きくそこへ奪われ、自ら、そして他者をも危険な状況に追い込んでしまう。これも&lt;u&gt;その現象&lt;/u&gt;のひとつだ。&lt;br&gt;\n&lt;div&gt;（小川和也『デジタルは人間を奪うのか』による） &lt;/div&gt;&lt;br&gt;（注1）削ぐ:削る \n&lt;br&gt;（注2）仇:ここでは、害 &lt;br&gt;（注3） スマートフォン: パソコンの機能もある携帯電話&quot;,
+  &quot;categories&quot;: [
+    &quot;underline&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;Đề N1 7-2017.pdf — secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;13c977afe3425007373cabe41001c61e512e0991ed79865118a98c4656324d84&quot;,
+    &quot;physical_pages&quot;: [
+      7
+    ],
+    &quot;locator&quot;: &quot;reading-b004 /content/html, affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;これもその現象のひとつだ。&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;これも&lt;u&gt;その現象&lt;/u&gt;のひとつだ。&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Retain the target underline directly visible in the alternate 18-page question edition, physical 7, matching the underlined question reference. The principal omits the body underline.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-b005" data-kinds="difference"><div class="review-group-heading"><h2>reading-b005</h2><a href="../papers/N1_07_2017.html#reading-b005">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">（1） <br/>よく知っている人を相手に<ruby data-rubi-id="rr4-7177e4d0e064380cb591" data-rubi-origin="project_rubi_restore">自己<rt>じこ</rt></ruby>を語るのは簡単だが、お互いによく知らない相手に自己を語るというのは非常に難しい。 <br/><br/>
+よく知っている相手との間に共通の<ruby data-rubi-id="rr4-81e9e3903a52414996a0" data-rubi-origin="project_rubi_restore">文脈<rt>ぶんみゃく</rt></ruby>ができあがっているので、その文脈にふさわしい自分を提示していけばよいから、ほぼ自動化した形で自己を語ることができる。たとえば、相手がこちらのことを<ruby data-rubi-id="rr4-5eed84c2d15d4015674f" data-rubi-origin="project_rubi_restore">勇<rt>いさ</rt></ruby>ましい豪傑（注1）とみなしているなら、自分の中の武勇伝（注2）的なエピソードを中心に語ることになるだろうし、相手がこちらのことを温厚な紳士とみなしているなら、自分の中のおだやかな部分を中心に語ることになるだろう。相手との文脈によって語り分けるからといって、けっしてだましているわけではない。どちらも<u>嘘ではない</u>のだ。
+<br/><br/>困るのは、よく知らない人が相手である場合だ。共通の文脈ができあがっていないため、どのような自分を語り出していけばよいのかがわからない。逆に言えば、共通の文脈による制約がないぶん、どんな自分でも自由に演出し、語り出していくことができる。だからこそ、迷い、悩んでしまうのだ。
+<br/><br/>こうした事情からわかるのは、僕たちは自分のことをいろんなふうに語ることができるということだ。 <br/>
+（中略） <br/><br/>自分の姿がおぼろげ（注3）にしか見えないうちから、まずは語ることを始めなければならない。 <br/>
+語ることによって、自分の姿が語りの方向につくられていく。<br/>
+<div>（榎本博明『（ほんとうの自分）のつくり方――自己物語の心理学』による） </div><br/>（注1） 豪傑:勇気のある、強い人 <br/>（注2）武勇伝的な:ここでは、勇ましい <br/>（注3）おぼろげに:ぼんやりと</div></details><div class="review-record" id="principal_differences-N1_07_2017-PD-005"><div class="review-label">Principal difference · /content/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>語り出していけばよ<mark class="diff-old">り</mark>のかがわからない。</pre></div><div><h4>Editorial</h4><pre>語り出していけばよ<mark class="diff-new">い</mark>のかがわからない。</pre></div></div><p>Retain the minimal grammatical repair よいのか, an embedded question about presenting oneself. The printed よりのか is malformed here. The earlier claim of literal source agreement was incorrect.</p><span class="principal-repository-source">Principal source (page=7): <code>additional-assets/principals/N1_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-b005 /content/html, affected span</span><details><summary>Full published record · principal_differences-N1_07_2017-PD-005</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N1_07_2017-PD-005&quot;,
+  &quot;unit&quot;: &quot;N1_07_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-b005&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;current_value&quot;: &quot;（1） &lt;br&gt;よく知っている人を相手に自己を語るのは簡単だが、お互いによく知らない相手に自己を語るというのは非常に難しい。 &lt;br&gt;&lt;br&gt;\nよく知っている相手との間に共通の文脈ができあがっているので、その文脈にふさわしい自分を提示していけばよいから、ほぼ自動化した形で自己を語ることができる。たとえば、相手がこちらのことを勇ましい豪傑（注1）とみなしているなら、自分の中の武勇伝（注2）的なエピソードを中心に語ることになるだろうし、相手がこちらのことを温厚な紳士とみなしているなら、自分の中のおだやかな部分を中心に語ることになるだろう。相手との文脈によって語り分けるからといって、けっしてだましているわけではない。どちらも&lt;u&gt;嘘ではない&lt;/u&gt;のだ。\n&lt;br&gt;&lt;br&gt;困るのは、よく知らない人が相手である場合だ。共通の文脈ができあがっていないため、どのような自分を語り出していけばよいのかがわからない。逆に言えば、共通の文脈による制約がないぶん、どんな自分でも自由に演出し、語り出していくことができる。だからこそ、迷い、悩んでしまうのだ。\n&lt;br&gt;&lt;br&gt;こうした事情からわかるのは、僕たちは自分のことをいろんなふうに語ることができるということだ。 &lt;br&gt;\n（中略） &lt;br&gt;&lt;br&gt;自分の姿がおぼろげ（注3）にしか見えないうちから、まずは語ることを始めなければならない。 &lt;br&gt;\n語ることによって、自分の姿が語りの方向につくられていく。&lt;br&gt;\n&lt;div&gt;（榎本博明『（ほんとうの自分）のつくり方――自己物語の心理学』による） &lt;/div&gt;&lt;br&gt;（注1） 豪傑:勇気のある、強い人 &lt;br&gt;（注2）武勇伝的な:ここでは、勇ましい &lt;br&gt;（注3）おぼろげに:ぼんやりと&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;Đề N1 7-2017.pdf — secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;13c977afe3425007373cabe41001c61e512e0991ed79865118a98c4656324d84&quot;,
+    &quot;physical_pages&quot;: [
+      7
+    ],
+    &quot;locator&quot;: &quot;reading-b005 /content/html, affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;語り出していけばよりのかがわからない。&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;語り出していけばよいのかがわからない。&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Retain the minimal grammatical repair よいのか, an embedded question about presenting oneself. The printed よりのか is malformed here. The earlier claim of literal source agreement was incorrect.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div><div class="review-record" id="principal_differences-N1_07_2017-PD-006"><div class="review-label">Principal difference · /content/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>榎<mark class="diff-old">木</mark>博明</pre></div><div><h4>Editorial</h4><pre>榎<mark class="diff-new">本</mark>博明</pre></div></div><p>Retain the author identity from the publisher catalogue for the exact cited book: https://www.kodansha.co.jp/book/products/0000147046. Principal 木 is legible; publisher attribution supports 本.</p><span class="principal-repository-source">Principal source (page=7): <code>additional-assets/principals/N1_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-b005 /content/html, affected span</span><details><summary>Full published record · principal_differences-N1_07_2017-PD-006</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N1_07_2017-PD-006&quot;,
+  &quot;unit&quot;: &quot;N1_07_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-b005&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;current_value&quot;: &quot;（1） &lt;br&gt;よく知っている人を相手に自己を語るのは簡単だが、お互いによく知らない相手に自己を語るというのは非常に難しい。 &lt;br&gt;&lt;br&gt;\nよく知っている相手との間に共通の文脈ができあがっているので、その文脈にふさわしい自分を提示していけばよいから、ほぼ自動化した形で自己を語ることができる。たとえば、相手がこちらのことを勇ましい豪傑（注1）とみなしているなら、自分の中の武勇伝（注2）的なエピソードを中心に語ることになるだろうし、相手がこちらのことを温厚な紳士とみなしているなら、自分の中のおだやかな部分を中心に語ることになるだろう。相手との文脈によって語り分けるからといって、けっしてだましているわけではない。どちらも&lt;u&gt;嘘ではない&lt;/u&gt;のだ。\n&lt;br&gt;&lt;br&gt;困るのは、よく知らない人が相手である場合だ。共通の文脈ができあがっていないため、どのような自分を語り出していけばよいのかがわからない。逆に言えば、共通の文脈による制約がないぶん、どんな自分でも自由に演出し、語り出していくことができる。だからこそ、迷い、悩んでしまうのだ。\n&lt;br&gt;&lt;br&gt;こうした事情からわかるのは、僕たちは自分のことをいろんなふうに語ることができるということだ。 &lt;br&gt;\n（中略） &lt;br&gt;&lt;br&gt;自分の姿がおぼろげ（注3）にしか見えないうちから、まずは語ることを始めなければならない。 &lt;br&gt;\n語ることによって、自分の姿が語りの方向につくられていく。&lt;br&gt;\n&lt;div&gt;（榎本博明『（ほんとうの自分）のつくり方――自己物語の心理学』による） &lt;/div&gt;&lt;br&gt;（注1） 豪傑:勇気のある、強い人 &lt;br&gt;（注2）武勇伝的な:ここでは、勇ましい &lt;br&gt;（注3）おぼろげに:ぼんやりと&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;Đề N1 7-2017.pdf — secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;13c977afe3425007373cabe41001c61e512e0991ed79865118a98c4656324d84&quot;,
+    &quot;physical_pages&quot;: [
+      7
+    ],
+    &quot;locator&quot;: &quot;reading-b005 /content/html, affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;榎木博明&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;榎本博明&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Retain the author identity from the publisher catalogue for the exact cited book: https://www.kodansha.co.jp/book/products/0000147046. Principal 木 is legible; publisher attribution supports 本.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-q010" data-kinds="difference"><div class="review-group-heading"><h2>reading-q010</h2><a href="../papers/N1_07_2017.html#reading-q010">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">55. ウェブ時代に小説を読むことについて、筆者はどのように考えているか。<ol><li>小説には膨大な情報が詰め込まれているので、濃密な時間を体験することができる。</li><li>小説は複雑な世の中を説明しているので、情報が<ruby>溢<rt>あふ</rt></ruby>れる世界を深く理解できるようになる。</li><li>小説が読者に寄り添ってくれることで、現代の情報とのかかわり方とは異なる刺激が得られる。</li><li>小説が読者の手を引いてくれることで、情報社会で不安を感じず生きていけるようになる。</li></ol><p>Editorial key: 3</p></div></details><div class="review-record" id="principal_differences-N1_07_2017-PD-007"><div class="review-label">Principal difference · /options/1 · high</div><div class="comparison"><div><h4>Principal</h4><pre>溢<mark class="diff-old">(</mark>あふ<mark class="diff-old">)</mark>れる</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">&lt;ruby&gt;</mark>溢<mark class="diff-new">&lt;rt&gt;</mark>あふ<mark class="diff-new">&lt;/rt&gt;&lt;/ruby&gt;</mark>れる</pre></div></div><p>Represent the explicitly printed reading as ruby on the same base. This equivalent aid representation adds no source-defect point.</p><span class="principal-repository-source">Principal source (page=8): <code>additional-assets/principals/N1_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-q010 /options/1, affected span</span><details><summary>Full published record · principal_differences-N1_07_2017-PD-007</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N1_07_2017-PD-007&quot;,
+  &quot;unit&quot;: &quot;N1_07_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-q010&quot;,
+  &quot;field&quot;: &quot;/options/1&quot;,
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;小説は複雑な世の中を説明しているので、情報が&lt;ruby&gt;溢&lt;rt&gt;あふ&lt;/rt&gt;&lt;/ruby&gt;れる世界を深く理解できるようになる。&quot;
+  },
+  &quot;categories&quot;: [
+    &quot;ruby&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;Đề N1 7-2017.pdf — secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;13c977afe3425007373cabe41001c61e512e0991ed79865118a98c4656324d84&quot;,
+    &quot;physical_pages&quot;: [
+      8
+    ],
+    &quot;locator&quot;: &quot;reading-q010 /options/1, affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;溢(あふ)れる&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;&lt;ruby&gt;溢&lt;rt&gt;あふ&lt;/rt&gt;&lt;/ruby&gt;れる&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Represent the explicitly printed reading as ruby on the same base. This equivalent aid representation adds no source-defect point.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-b010" data-kinds="difference"><div class="review-group-heading"><h2>reading-b010</h2><a href="../papers/N1_07_2017.html#reading-b010">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">私は、科学が再び文化のみに寄与する<ruby data-rubi-id="rr4-807bfd32efb68fdb7566" data-rubi-origin="project_rubi_restore">営<rt>いとな</rt></ruby>みを取り戻すべきと考えている。壁に飾られたピカソの絵のように、なければないで済ませられるが、そこにあれば楽しい、なければ何か心の空白を感じてしまう、そんな「無用の用」としての科学である。世の中に役立とうというような野心を捨て、自然と戯れ（注1）ながら自然の偉大さを学んでいく科学で良いのではないだろうか。好奇心、探求心、美を求める心、想像する力、普遍性への憧れ、そのような人間の感性を最大限練磨（注2）して、人間の可能性を拡大する営みのことである。<br/><br/>
+むろん、経済一辺倒の現代社会では、そんな原初的な科学は許されない。一般に文化の創造には金がかかる。ましてや科学は高価な実験器具やコンピューターを必要とするから一定の投資をしなければならず、そうすれば必ずその分の見返りが要求される。「文化より明日のコメを」という声も絶えることがない。社会もムダと思われるものに金を投ずるのを忌避（注3）するからだ。それが「役に立つ」科学とならねばならない要因で、科学者もセールスマンのように次々に目新しい商品を用意して社会の要求に迎合していかねばならなくなる。それを逆手にとって、あたかも世の中を牛耳（注4）っているかのように尊大に振舞う科学者すら登場するようになった。これほど社会に貢献しているのだから、もっと金をよこせ（注5）というわけである。金を通しての科学者と社会の<ruby data-rubi-id="rr4-4f9c83cc2fd94623b54e" data-rubi-origin="project_rubi_restore">綱引<rt>つなひ</rt></ruby>き（注6）<ruby data-rubi-id="rr4-8acd0eda97f54159024f" data-rubi-origin="project_rubi_restore">状態<rt>じょうたい</rt></ruby>と言えるだろうか。<br/><br/>
+<u>それでいいのかと改めて考え直してみる必要がある</u>。確かに科学には金がかかり、それには社会の支持が欠かせない。「無用の用」にすらならないムダも多いだろう。<br/><br/>
+しかし、ときに科学は世界の見方を変える大きな力を秘めている。事実、科学はその力によって自然観や世界観を一変させ、社会のありように大きな変化をもたらしてきた。社会への見返りとは、そのような概念や思想を提供する役目にあるのではないか。それは万に一つくらいの確率であるかもしれないが、科学の営み抜きにしては起こり得ない貢献である。むろん、天才の登場を必要とする場合が多いが、その陰には無数の無名の科学者がいたことを忘れてはならない。それらの積み上げがあってこそ天才も活躍できるのである。<br/><br/>
+今必要なのは、「文化としての科学」を広く市民に伝えることであり、科学の楽しみを市民とともに共有することである。実際、本当のところ市民は「役に立つ科学」ではなく、「役に立たないけれど知的なスリルを味わえる科学」を求めている。市民も知的冒険をしたいのだ。（中略）科学の行為は科学者という人間の営みだから、そこには数多くのエピソードがあり、成功も失敗もある。それらも一緒に紡ぎ合わせる（注7）ことによって「文化としての科学」が豊かになっていくのではないだろうか。それが結果的に市民に勇気や喜びを与えると信じている。<br/>
+<div>（池内了『科学の限界』による）</div> <br/>（注1）戯れる:ここでは、触れ合う<br/>
+（注2）練磨する:鍛えて磨く <br/>（注3） 忌避する: 嫌って避ける<br/>（注4） 牛耳る : 思い通りに動かす <br/>（注5） よこせ:くれ<br/>
+（注6）綱引き状態:ここでは、引っ張り合い状態 <br/>（注7）紡ぎ合わせる : ここでは、組み合わせる</div></details><div class="review-record" id="principal_differences-N1_07_2017-PD-008"><div class="review-label">Principal difference · /content/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>普<mark class="diff-old">通</mark>性への憧れ</pre></div><div><h4>Editorial</h4><pre>普<mark class="diff-new">遍</mark>性への憧れ</pre></div></div><p>Retain 普遍性. The same attributed passage in 菊華高等学校’s 2022 entrance-exam PDF, physical 3, https://kikuka.ed.jp/cms/wp-content/themes/kikuka/pdf/2022_kokugo.pdf, was visually checked. This is a separately edited author quotation, not an original JLPT page. It prints 普遍性; the local explanatory edition’s Chinese translation on physical 18 agrees. This inference uses the exact paragraph and scientific sense of universality; local question retypes print 普通性.</p><span class="principal-repository-source">Principal source (page=11): <code>additional-assets/principals/N1_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-b010 /content/html, affected span</span><details><summary>Full published record · principal_differences-N1_07_2017-PD-008</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N1_07_2017-PD-008&quot;,
+  &quot;unit&quot;: &quot;N1_07_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-b010&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;current_value&quot;: &quot;私は、科学が再び文化のみに寄与する営みを取り戻すべきと考えている。壁に飾られたピカソの絵のように、なければないで済ませられるが、そこにあれば楽しい、なければ何か心の空白を感じてしまう、そんな「無用の用」としての科学である。世の中に役立とうというような野心を捨て、自然と戯れ（注1）ながら自然の偉大さを学んでいく科学で良いのではないだろうか。好奇心、探求心、美を求める心、想像する力、普遍性への憧れ、そのような人間の感性を最大限練磨（注2）して、人間の可能性を拡大する営みのことである。&lt;br&gt;&lt;br&gt;\nむろん、経済一辺倒の現代社会では、そんな原初的な科学は許されない。一般に文化の創造には金がかかる。ましてや科学は高価な実験器具やコンピューターを必要とするから一定の投資をしなければならず、そうすれば必ずその分の見返りが要求される。「文化より明日のコメを」という声も絶えることがない。社会もムダと思われるものに金を投ずるのを忌避（注3）するからだ。それが「役に立つ」科学とならねばならない要因で、科学者もセールスマンのように次々に目新しい商品を用意して社会の要求に迎合していかねばならなくなる。それを逆手にとって、あたかも世の中を牛耳（注4）っているかのように尊大に振舞う科学者すら登場するようになった。これほど社会に貢献しているのだから、もっと金をよこせ（注5）というわけである。金を通しての科学者と社会の綱引き（注6）状態と言えるだろうか。&lt;br&gt;&lt;br&gt;\n&lt;u&gt;それでいいのかと改めて考え直してみる必要がある&lt;/u&gt;。確かに科学には金がかかり、それには社会の支持が欠かせない。「無用の用」にすらならないムダも多いだろう。&lt;br&gt;&lt;br&gt;\nしかし、ときに科学は世界の見方を変える大きな力を秘めている。事実、科学はその力によって自然観や世界観を一変させ、社会のありように大きな変化をもたらしてきた。社会への見返りとは、そのような概念や思想を提供する役目にあるのではないか。それは万に一つくらいの確率であるかもしれないが、科学の営み抜きにしては起こり得ない貢献である。むろん、天才の登場を必要とする場合が多いが、その陰には無数の無名の科学者がいたことを忘れてはならない。それらの積み上げがあってこそ天才も活躍できるのである。&lt;br&gt;&lt;br&gt;\n今必要なのは、「文化としての科学」を広く市民に伝えることであり、科学の楽しみを市民とともに共有することである。実際、本当のところ市民は「役に立つ科学」ではなく、「役に立たないけれど知的なスリルを味わえる科学」を求めている。市民も知的冒険をしたいのだ。（中略）科学の行為は科学者という人間の営みだから、そこには数多くのエピソードがあり、成功も失敗もある。それらも一緒に紡ぎ合わせる（注7）ことによって「文化としての科学」が豊かになっていくのではないだろうか。それが結果的に市民に勇気や喜びを与えると信じている。&lt;br&gt;\n&lt;div&gt;（池内了『科学の限界』による）&lt;/div&gt; &lt;br&gt;（注1）戯れる:ここでは、触れ合う&lt;br&gt;\n（注2）練磨する:鍛えて磨く &lt;br&gt;（注3） 忌避する: 嫌って避ける&lt;br&gt;（注4） 牛耳る : 思い通りに動かす &lt;br&gt;（注5） よこせ:くれ&lt;br&gt;\n（注6）綱引き状態:ここでは、引っ張り合い状態 &lt;br&gt;（注7）紡ぎ合わせる : ここでは、組み合わせる&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;Đề N1 7-2017.pdf — secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;13c977afe3425007373cabe41001c61e512e0991ed79865118a98c4656324d84&quot;,
+    &quot;physical_pages&quot;: [
+      11
+    ],
+    &quot;locator&quot;: &quot;reading-b010 /content/html, affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;普通性への憧れ&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;普遍性への憧れ&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Retain 普遍性. The same attributed passage in 菊華高等学校’s 2022 entrance-exam PDF, physical 3, https://kikuka.ed.jp/cms/wp-content/themes/kikuka/pdf/2022_kokugo.pdf, was visually checked. This is a separately edited author quotation, not an original JLPT page. It prints 普遍性; the local explanatory edition’s Chinese translation on physical 18 agrees. This inference uses the exact paragraph and scientific sense of universality; local question retypes print 普通性.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div><div class="review-record" id="principal_differences-N1_07_2017-PD-009"><div class="review-label">Principal difference · /content/html · high</div><div class="comparison"><div><h4>Principal</h4><pre><mark class="diff-old">網</mark>引き(注6)状態 … (注6)<mark class="diff-old">網</mark>引き状態</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">綱</mark>引き(注6)状態 … (注6)<mark class="diff-new">綱</mark>引き状態</pre></div></div><p>Retain tug-of-war 綱引き in both occurrences. The same attributed passage in 菊華高等学校’s 2022 entrance-exam PDF, physical 3, https://kikuka.ed.jp/cms/wp-content/themes/kikuka/pdf/2022_kokugo.pdf, was visually checked. This is a separately edited author quotation, not an original JLPT page. It prints 綱引き; the local 38-page explanatory edition, physical 18, also supplies 綱引き in Japanese note 6.</p><span class="principal-repository-source">Principal source (page=11): <code>additional-assets/principals/N1_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-b010 /content/html, affected span</span><details><summary>Full published record · principal_differences-N1_07_2017-PD-009</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N1_07_2017-PD-009&quot;,
+  &quot;unit&quot;: &quot;N1_07_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-b010&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;current_value&quot;: &quot;私は、科学が再び文化のみに寄与する営みを取り戻すべきと考えている。壁に飾られたピカソの絵のように、なければないで済ませられるが、そこにあれば楽しい、なければ何か心の空白を感じてしまう、そんな「無用の用」としての科学である。世の中に役立とうというような野心を捨て、自然と戯れ（注1）ながら自然の偉大さを学んでいく科学で良いのではないだろうか。好奇心、探求心、美を求める心、想像する力、普遍性への憧れ、そのような人間の感性を最大限練磨（注2）して、人間の可能性を拡大する営みのことである。&lt;br&gt;&lt;br&gt;\nむろん、経済一辺倒の現代社会では、そんな原初的な科学は許されない。一般に文化の創造には金がかかる。ましてや科学は高価な実験器具やコンピューターを必要とするから一定の投資をしなければならず、そうすれば必ずその分の見返りが要求される。「文化より明日のコメを」という声も絶えることがない。社会もムダと思われるものに金を投ずるのを忌避（注3）するからだ。それが「役に立つ」科学とならねばならない要因で、科学者もセールスマンのように次々に目新しい商品を用意して社会の要求に迎合していかねばならなくなる。それを逆手にとって、あたかも世の中を牛耳（注4）っているかのように尊大に振舞う科学者すら登場するようになった。これほど社会に貢献しているのだから、もっと金をよこせ（注5）というわけである。金を通しての科学者と社会の綱引き（注6）状態と言えるだろうか。&lt;br&gt;&lt;br&gt;\n&lt;u&gt;それでいいのかと改めて考え直してみる必要がある&lt;/u&gt;。確かに科学には金がかかり、それには社会の支持が欠かせない。「無用の用」にすらならないムダも多いだろう。&lt;br&gt;&lt;br&gt;\nしかし、ときに科学は世界の見方を変える大きな力を秘めている。事実、科学はその力によって自然観や世界観を一変させ、社会のありように大きな変化をもたらしてきた。社会への見返りとは、そのような概念や思想を提供する役目にあるのではないか。それは万に一つくらいの確率であるかもしれないが、科学の営み抜きにしては起こり得ない貢献である。むろん、天才の登場を必要とする場合が多いが、その陰には無数の無名の科学者がいたことを忘れてはならない。それらの積み上げがあってこそ天才も活躍できるのである。&lt;br&gt;&lt;br&gt;\n今必要なのは、「文化としての科学」を広く市民に伝えることであり、科学の楽しみを市民とともに共有することである。実際、本当のところ市民は「役に立つ科学」ではなく、「役に立たないけれど知的なスリルを味わえる科学」を求めている。市民も知的冒険をしたいのだ。（中略）科学の行為は科学者という人間の営みだから、そこには数多くのエピソードがあり、成功も失敗もある。それらも一緒に紡ぎ合わせる（注7）ことによって「文化としての科学」が豊かになっていくのではないだろうか。それが結果的に市民に勇気や喜びを与えると信じている。&lt;br&gt;\n&lt;div&gt;（池内了『科学の限界』による）&lt;/div&gt; &lt;br&gt;（注1）戯れる:ここでは、触れ合う&lt;br&gt;\n（注2）練磨する:鍛えて磨く &lt;br&gt;（注3） 忌避する: 嫌って避ける&lt;br&gt;（注4） 牛耳る : 思い通りに動かす &lt;br&gt;（注5） よこせ:くれ&lt;br&gt;\n（注6）綱引き状態:ここでは、引っ張り合い状態 &lt;br&gt;（注7）紡ぎ合わせる : ここでは、組み合わせる&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;Đề N1 7-2017.pdf — secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;13c977afe3425007373cabe41001c61e512e0991ed79865118a98c4656324d84&quot;,
+    &quot;physical_pages&quot;: [
+      11,
+      12
+    ],
+    &quot;locator&quot;: &quot;reading-b010 /content/html, affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;網引き(注6)状態 … (注6)網引き状態&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;綱引き(注6)状態 … (注6)綱引き状態&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Retain tug-of-war 綱引き in both occurrences. The same attributed passage in 菊華高等学校’s 2022 entrance-exam PDF, physical 3, https://kikuka.ed.jp/cms/wp-content/themes/kikuka/pdf/2022_kokugo.pdf, was visually checked. This is a separately edited author quotation, not an original JLPT page. It prints 綱引き; the local 38-page explanatory edition, physical 18, also supplies 綱引き in Japanese note 6.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div><div class="review-record" id="principal_differences-N1_07_2017-PD-010"><div class="review-label">Principal difference · /content/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>それでいいのかと改めて考え直してみる必要がある。</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">&lt;u&gt;</mark>それでいいのかと改めて考え直してみる必要がある<mark class="diff-new">&lt;/u&gt;</mark>。</pre></div></div><p>Retain the body underline directly visible in the 22-page retype, physical 15, and other layouts. The endpoint is before the stop. The principal body has no underline, although its question repeats the target.</p><span class="principal-repository-source">Principal source (page=11): <code>additional-assets/principals/N1_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-b010 /content/html, affected span</span><details><summary>Full published record · principal_differences-N1_07_2017-PD-010</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N1_07_2017-PD-010&quot;,
+  &quot;unit&quot;: &quot;N1_07_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-b010&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;current_value&quot;: &quot;私は、科学が再び文化のみに寄与する営みを取り戻すべきと考えている。壁に飾られたピカソの絵のように、なければないで済ませられるが、そこにあれば楽しい、なければ何か心の空白を感じてしまう、そんな「無用の用」としての科学である。世の中に役立とうというような野心を捨て、自然と戯れ（注1）ながら自然の偉大さを学んでいく科学で良いのではないだろうか。好奇心、探求心、美を求める心、想像する力、普遍性への憧れ、そのような人間の感性を最大限練磨（注2）して、人間の可能性を拡大する営みのことである。&lt;br&gt;&lt;br&gt;\nむろん、経済一辺倒の現代社会では、そんな原初的な科学は許されない。一般に文化の創造には金がかかる。ましてや科学は高価な実験器具やコンピューターを必要とするから一定の投資をしなければならず、そうすれば必ずその分の見返りが要求される。「文化より明日のコメを」という声も絶えることがない。社会もムダと思われるものに金を投ずるのを忌避（注3）するからだ。それが「役に立つ」科学とならねばならない要因で、科学者もセールスマンのように次々に目新しい商品を用意して社会の要求に迎合していかねばならなくなる。それを逆手にとって、あたかも世の中を牛耳（注4）っているかのように尊大に振舞う科学者すら登場するようになった。これほど社会に貢献しているのだから、もっと金をよこせ（注5）というわけである。金を通しての科学者と社会の綱引き（注6）状態と言えるだろうか。&lt;br&gt;&lt;br&gt;\n&lt;u&gt;それでいいのかと改めて考え直してみる必要がある&lt;/u&gt;。確かに科学には金がかかり、それには社会の支持が欠かせない。「無用の用」にすらならないムダも多いだろう。&lt;br&gt;&lt;br&gt;\nしかし、ときに科学は世界の見方を変える大きな力を秘めている。事実、科学はその力によって自然観や世界観を一変させ、社会のありように大きな変化をもたらしてきた。社会への見返りとは、そのような概念や思想を提供する役目にあるのではないか。それは万に一つくらいの確率であるかもしれないが、科学の営み抜きにしては起こり得ない貢献である。むろん、天才の登場を必要とする場合が多いが、その陰には無数の無名の科学者がいたことを忘れてはならない。それらの積み上げがあってこそ天才も活躍できるのである。&lt;br&gt;&lt;br&gt;\n今必要なのは、「文化としての科学」を広く市民に伝えることであり、科学の楽しみを市民とともに共有することである。実際、本当のところ市民は「役に立つ科学」ではなく、「役に立たないけれど知的なスリルを味わえる科学」を求めている。市民も知的冒険をしたいのだ。（中略）科学の行為は科学者という人間の営みだから、そこには数多くのエピソードがあり、成功も失敗もある。それらも一緒に紡ぎ合わせる（注7）ことによって「文化としての科学」が豊かになっていくのではないだろうか。それが結果的に市民に勇気や喜びを与えると信じている。&lt;br&gt;\n&lt;div&gt;（池内了『科学の限界』による）&lt;/div&gt; &lt;br&gt;（注1）戯れる:ここでは、触れ合う&lt;br&gt;\n（注2）練磨する:鍛えて磨く &lt;br&gt;（注3） 忌避する: 嫌って避ける&lt;br&gt;（注4） 牛耳る : 思い通りに動かす &lt;br&gt;（注5） よこせ:くれ&lt;br&gt;\n（注6）綱引き状態:ここでは、引っ張り合い状態 &lt;br&gt;（注7）紡ぎ合わせる : ここでは、組み合わせる&quot;,
+  &quot;categories&quot;: [
+    &quot;underline&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;Đề N1 7-2017.pdf — secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;13c977afe3425007373cabe41001c61e512e0991ed79865118a98c4656324d84&quot;,
+    &quot;physical_pages&quot;: [
+      11
+    ],
+    &quot;locator&quot;: &quot;reading-b010 /content/html, affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;それでいいのかと改めて考え直してみる必要がある。&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;&lt;u&gt;それでいいのかと改めて考え直してみる必要がある&lt;/u&gt;。&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Retain the body underline directly visible in the 22-page retype, physical 15, and other layouts. The endpoint is before the stop. The principal body has no underline, although its question repeats the target.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div><div class="review-record" id="principal_differences-N1_07_2017-PD-011"><div class="review-label">Principal difference · /content/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>それらも一緒に紡ぎ合わせることによって</pre></div><div><h4>Editorial</h4><pre>それらも一緒に紡ぎ合わせる<mark class="diff-new">(注7)</mark>ことによって</pre></div></div><p>Restore the body note link supplied after the word in the bound compilation, physical 12. The 17-page alternate, physical 12, puts the marker before the word. Principal has the gloss but no body marker.</p><span class="principal-repository-source">Principal source (page=12): <code>additional-assets/principals/N1_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-b010 /content/html, affected span</span><details><summary>Full published record · principal_differences-N1_07_2017-PD-011</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N1_07_2017-PD-011&quot;,
+  &quot;unit&quot;: &quot;N1_07_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-b010&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;current_value&quot;: &quot;私は、科学が再び文化のみに寄与する営みを取り戻すべきと考えている。壁に飾られたピカソの絵のように、なければないで済ませられるが、そこにあれば楽しい、なければ何か心の空白を感じてしまう、そんな「無用の用」としての科学である。世の中に役立とうというような野心を捨て、自然と戯れ（注1）ながら自然の偉大さを学んでいく科学で良いのではないだろうか。好奇心、探求心、美を求める心、想像する力、普遍性への憧れ、そのような人間の感性を最大限練磨（注2）して、人間の可能性を拡大する営みのことである。&lt;br&gt;&lt;br&gt;\nむろん、経済一辺倒の現代社会では、そんな原初的な科学は許されない。一般に文化の創造には金がかかる。ましてや科学は高価な実験器具やコンピューターを必要とするから一定の投資をしなければならず、そうすれば必ずその分の見返りが要求される。「文化より明日のコメを」という声も絶えることがない。社会もムダと思われるものに金を投ずるのを忌避（注3）するからだ。それが「役に立つ」科学とならねばならない要因で、科学者もセールスマンのように次々に目新しい商品を用意して社会の要求に迎合していかねばならなくなる。それを逆手にとって、あたかも世の中を牛耳（注4）っているかのように尊大に振舞う科学者すら登場するようになった。これほど社会に貢献しているのだから、もっと金をよこせ（注5）というわけである。金を通しての科学者と社会の綱引き（注6）状態と言えるだろうか。&lt;br&gt;&lt;br&gt;\n&lt;u&gt;それでいいのかと改めて考え直してみる必要がある&lt;/u&gt;。確かに科学には金がかかり、それには社会の支持が欠かせない。「無用の用」にすらならないムダも多いだろう。&lt;br&gt;&lt;br&gt;\nしかし、ときに科学は世界の見方を変える大きな力を秘めている。事実、科学はその力によって自然観や世界観を一変させ、社会のありように大きな変化をもたらしてきた。社会への見返りとは、そのような概念や思想を提供する役目にあるのではないか。それは万に一つくらいの確率であるかもしれないが、科学の営み抜きにしては起こり得ない貢献である。むろん、天才の登場を必要とする場合が多いが、その陰には無数の無名の科学者がいたことを忘れてはならない。それらの積み上げがあってこそ天才も活躍できるのである。&lt;br&gt;&lt;br&gt;\n今必要なのは、「文化としての科学」を広く市民に伝えることであり、科学の楽しみを市民とともに共有することである。実際、本当のところ市民は「役に立つ科学」ではなく、「役に立たないけれど知的なスリルを味わえる科学」を求めている。市民も知的冒険をしたいのだ。（中略）科学の行為は科学者という人間の営みだから、そこには数多くのエピソードがあり、成功も失敗もある。それらも一緒に紡ぎ合わせる（注7）ことによって「文化としての科学」が豊かになっていくのではないだろうか。それが結果的に市民に勇気や喜びを与えると信じている。&lt;br&gt;\n&lt;div&gt;（池内了『科学の限界』による）&lt;/div&gt; &lt;br&gt;（注1）戯れる:ここでは、触れ合う&lt;br&gt;\n（注2）練磨する:鍛えて磨く &lt;br&gt;（注3） 忌避する: 嫌って避ける&lt;br&gt;（注4） 牛耳る : 思い通りに動かす &lt;br&gt;（注5） よこせ:くれ&lt;br&gt;\n（注6）綱引き状態:ここでは、引っ張り合い状態 &lt;br&gt;（注7）紡ぎ合わせる : ここでは、組み合わせる&quot;,
+  &quot;categories&quot;: [
+    &quot;missing_printed_content&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;Đề N1 7-2017.pdf — secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;13c977afe3425007373cabe41001c61e512e0991ed79865118a98c4656324d84&quot;,
+    &quot;physical_pages&quot;: [
+      12
+    ],
+    &quot;locator&quot;: &quot;reading-b010 /content/html, affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;それらも一緒に紡ぎ合わせることによって&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;それらも一緒に紡ぎ合わせる(注7)ことによって&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Restore the body note link supplied after the word in the bound compilation, physical 12. The 17-page alternate, physical 12, puts the marker before the word. Principal has the gloss but no body marker.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-s06" data-kinds="difference provisional_fix"><div class="review-group-heading"><h2>reading-s06</h2><a href="../papers/N1_07_2017.html#reading-s06">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">問題13 次は、あるスポーツジムにはってある二つのポスターである。下の問いに対する答えとして最もよいものを、1・2・3・4から一つ選びなさい。</div></details><div class="review-record" id="unresolved_cases-N1_07_2017-reading-s06-poster-instruction"><div class="review-label">Provisional fix · /heading · medium</div><div class="comparison"><div><h4>Before</h4><pre>問題13 次<mark class="diff-old">のページのグラフ</mark>は、あるスポーツジムにはってある二つのポスターである。下の問いに対する答えとして最もよいものを、1・2・3・4から一つ選びなさい。</pre></div><div><h4>Editorial</h4><pre>問題13 次は、あるスポーツジムにはってある二つのポスターである。下の問いに対する答えとして最もよいものを、1・2・3・4から一つ選びなさい。</pre></div></div><p>Prefer the complete instruction printed with the posters in the 17-page alternate. This selects a witnessed variant, rather than rewriting spatial language for web display. Original spatial phrasing and lost A/B labels remain possible.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>An original page could settle the heading, page relationship and A/B labels.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N1_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Instruction governing two gym posters and printed Q69–70.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=12): <code>additional-assets/principals/N1_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Problem 13 heading<p>下のページは、ある市役所のホームページにある「学生レポーター」の募集案内である。</p></li><li><span class="principal-repository-source">Principal source (page=13): <code>additional-assets/principals/N1_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Problem 13 full heading<p>次は、あるスポーツジムにはってある二つのポスターである。下の問いに対する答えとして最もよいものを、1・2・3・4から一つ選びなさい。</p></li><li><span class="principal-repository-source">Principal source (page=14): <code>additional-assets/principals/N1_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Heading and two posters<p>右のページのAとBは…; posters have no A/B labels.</p></li><li><span class="principal-repository-source">Principal source (page=22): <code>additional-assets/principals/N1_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Heading and two posters<p>右のページのAとBは…; posters have no A/B labels.</p></li></ul><details><summary>Full published record · unresolved_cases-N1_07_2017-reading-s06-poster-instruction</summary><pre>{
+  &quot;case_id&quot;: &quot;N1_07_2017-reading-s06-poster-instruction&quot;,
+  &quot;unit&quot;: &quot;N1_07_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-s06&quot;,
+  &quot;field&quot;: &quot;/heading&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;問題13 次は、あるスポーツジムにはってある二つのポスターである。下の問いに対する答えとして最もよいものを、1・2・3・4から一つ選びなさい。&quot;,
+  &quot;context&quot;: &quot;Instruction governing two gym posters and printed Q69–70.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;右のページのAとBは、あるスポーツジムにはってある二つのポスターである。&quot;,
+      &quot;assessment&quot;: &quot;Directly witnessed alternate. It may preserve original spatial wording, but those posters lack A/B labels.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;問題13 次のページのグラフは、あるスポーツジムにはってある二つのポスターである。下の問いに対する答えとして最もよいものを、1・2・3・4から一つ選びなさい。&quot;,
+      &quot;assessment&quot;: &quot;Inherited heading calls the posters a graph, inconsistent with the material.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;下のページは、ある市役所のホームページにある「学生レポーター」の募集案内である。&quot;,
+      &quot;assessment&quot;: &quot;Principal refers to an unrelated recruitment task.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;Đề N1 7-2017.pdf&quot;,
+      &quot;sha256&quot;: &quot;13c977afe3425007373cabe41001c61e512e0991ed79865118a98c4656324d84&quot;,
+      &quot;physical_pages&quot;: [
+        12
+      ],
+      &quot;locator&quot;: &quot;Problem 13 heading&quot;,
+      &quot;reading&quot;: &quot;下のページは、ある市役所のホームページにある「学生レポーター」の募集案内である。&quot;,
+      &quot;lineage&quot;: &quot;Secondary edition; agreement does not establish independent acquisition or original-page provenance.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;【1】2017年07月N1 真题.pdf&quot;,
+      &quot;sha256&quot;: &quot;cb9db932badfedcf8dc21c4c9869a9b1b8f7b6d5585a958d13c7595f26db52e5&quot;,
+      &quot;physical_pages&quot;: [
+        13
+      ],
+      &quot;locator&quot;: &quot;Problem 13 full heading&quot;,
+      &quot;reading&quot;: &quot;次は、あるスポーツジムにはってある二つのポスターである。下の問いに対する答えとして最もよいものを、1・2・3・4から一つ選びなさい。&quot;,
+      &quot;lineage&quot;: &quot;Secondary edition; agreement does not establish independent acquisition or original-page provenance.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;【2】2017年07月N1 真题.pdf&quot;,
+      &quot;sha256&quot;: &quot;6b6a389eba79da34d10d51ddc9d9554dac511815677d311702f82568a4de0d87&quot;,
+      &quot;physical_pages&quot;: [
+        14,
+        15
+      ],
+      &quot;locator&quot;: &quot;Heading and two posters&quot;,
+      &quot;reading&quot;: &quot;右のページのAとBは…; posters have no A/B labels.&quot;,
+      &quot;lineage&quot;: &quot;Secondary edition; agreement does not establish independent acquisition or original-page provenance.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;【3】2017年07月N1 真题.pdf&quot;,
+      &quot;sha256&quot;: &quot;7b79e3ca6211c0c1ca4d4a83e1b97e788ebb65d875a7ddb02a08fdbdd03e1293&quot;,
+      &quot;physical_pages&quot;: [
+        22,
+        23
+      ],
+      &quot;locator&quot;: &quot;Heading and two posters&quot;,
+      &quot;reading&quot;: &quot;右のページのAとBは…; posters have no A/B labels.&quot;,
+      &quot;lineage&quot;: &quot;Secondary edition; agreement does not establish independent acquisition or original-page provenance.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Prefer the complete instruction printed with the posters in the 17-page alternate. This selects a witnessed variant, rather than rewriting spatial language for web display. Original spatial phrasing and lost A/B labels remain possible.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Read both full witnesses and three focused alternate heading/poster pairs.&quot;,
+    &quot;Checked native heading and poster image for A/B labels.&quot;,
+    &quot;Compared each instruction with both posters and questions.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;An original page could settle the heading, page relationship and A/B labels.&quot;,
+  &quot;before&quot;: &quot;問題13 次のページのグラフは、あるスポーツジムにはってある二つのポスターである。下の問いに対する答えとして最もよいものを、1・2・3・4から一つ選びなさい。&quot;
+}</pre></details></div><div class="review-record" id="principal_differences-N1_07_2017-PD-012"><div class="review-label">Principal difference · /heading · high</div><div class="comparison"><div><h4>Principal</h4><pre>問題13 <mark class="diff-old">下のページ</mark>は、ある<mark class="diff-old">市役所のホ</mark>ーム<mark class="diff-old">ページ</mark>にある<mark class="diff-old">「学生レ</mark>ポ<mark class="diff-old">ー</mark>ター<mark class="diff-old">」の募集案内</mark>である。下の問いに対する答えとして最もよいものを、1・2・3・4から一つ選びなさい。</pre></div><div><h4>Editorial</h4><pre>問題13 <mark class="diff-new">次</mark>は、ある<mark class="diff-new">スポ</mark>ー<mark class="diff-new">ツジ</mark>ムに<mark class="diff-new">はって</mark>ある<mark class="diff-new">二つの</mark>ポ<mark class="diff-new">ス</mark>ターである。下の問いに対する答えとして最もよいものを、1・2・3・4から一つ選びなさい。</pre></div></div><p>Principal instruction belongs to a different task. Prefer the witnessed complete sports-poster instruction in the 17-page alternate, physical 13; competing spatial/A/B wording remains documented.</p><span class="principal-repository-source">Principal source (page=12): <code>additional-assets/principals/N1_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-s06 /heading, affected span</span><details><summary>Full published record · principal_differences-N1_07_2017-PD-012</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N1_07_2017-PD-012&quot;,
+  &quot;unit&quot;: &quot;N1_07_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-s06&quot;,
+  &quot;field&quot;: &quot;/heading&quot;,
+  &quot;current_value&quot;: &quot;問題13 次は、あるスポーツジムにはってある二つのポスターである。下の問いに対する答えとして最もよいものを、1・2・3・4から一つ選びなさい。&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;Đề N1 7-2017.pdf — secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;13c977afe3425007373cabe41001c61e512e0991ed79865118a98c4656324d84&quot;,
+    &quot;physical_pages&quot;: [
+      12
+    ],
+    &quot;locator&quot;: &quot;reading-s06 /heading, affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;問題13 下のページは、ある市役所のホームページにある「学生レポーター」の募集案内である。下の問いに対する答えとして最もよいものを、1・2・3・4から一つ選びなさい。&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;問題13 次は、あるスポーツジムにはってある二つのポスターである。下の問いに対する答えとして最もよいものを、1・2・3・4から一つ選びなさい。&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Principal instruction belongs to a different task. Prefer the witnessed complete sports-poster instruction in the 17-page alternate, physical 13; competing spatial/A/B wording remains documented.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;N1_07_2017-reading-s06-poster-instruction&quot;
+  ]
+}</pre></details></div></section><section class="review-group" id="review-reading-b011" data-kinds="difference unresolved"><div class="review-group-heading"><h2>reading-b011</h2><a href="../papers/N1_07_2017.html#reading-b011">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><center>ご入会案内<br/> 広々としたトレーニングジムとプールで、楽しく汗を流しませんか。</center><br/> 
+営業時間<br/> 月～金 8:00～23:00 土 8:00～21:00 日 9:00～20:00<br/>祝日の場合は20:00で営業終了します。<br/><br/>
+料金表　曜日や時間など、ご自身に合ったプランをお選びください！ <br/>
+<table><tr><th>プラン</th><th>月会費</th><th>ご利用時間</th><th>ご入会条件</th></tr>
+<tr><td>フルタイム</td><td>10,000</td><td>全営業日時間内</td><td rowspan="4">16歳以上の方</td></tr>
+<tr><td>平日A</td><td>9,000</td><td>月～金の営業時間内</td></tr>
+<tr><td>平日B</td><td>8,000</td><td>月～金の17:00まで</td></tr>
+<tr><td>平日C</td><td>8,000</td><td>月～金の18:00以降</td></tr>
+<tr><td>シニア</td><td>7,800</td><td>月～日の20:00まで</td><td>60歳以上の方</td></tr>
+</table><br/>すべてのプランで、トレーニングジムとプールがご利用いただけます。<br/><br/>
+<b>入会手続き</b><br/> ①～③をお持ちの上、受付にお越しください。 
+<br/>①本人確認書類（免許証、保険証などの公的身分証明書） <br/>
+②金融機関の通帳とお届け印、またはキャッシュカード <br/>
+③入会金（5,000円）および2か月分（1か月目、2か月目）の月会費* <br/>
+*各種キャンペーン適用により、入会金、月会費が割引になる場合があります。<br/><br/>
+<div>りんどうスポーツジム 電話 058-556-7788 http://rindou-s.com</div><br/><br/>
+<center>夏のご入会キャンペーン<br/>
+7月31日までにご入会の方限定の3つの特典！この機会をお見逃しなく！</center><br/>
+<div>特典①　入会金が無料！ <br/>
+特典②　月会費が1か月分無料！（3か月目の月会費を免除） <br/>
+特典③　タオルレンタルが2か月間無料！</div><br/>
+*入会手続き等、詳細については「ご入会案内」のポスターをご参照の上、<br/>ご不明な点はスタッフまでお気軽にお問い合わせください。<br/>
+<div>りんどうスポーツジム 電話 058-556-7788 http://rindou-s.com</div></div></details><div class="review-record" id="unresolved_cases-N1_07_2017-reading-b011-sunday-hours"><div class="review-label">Unresolved · /content/html · medium</div><div class="comparison"><div><h4>Alternative</h4><pre><mark class="diff-old">日</mark> <mark class="diff-old">9</mark>:00～21:00</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">&lt;center&gt;ご入会案内&lt;br&gt;</mark> <mark class="diff-new">広々としたトレーニングジムとプールで、楽しく汗を流しませんか。&lt;/center&gt;&lt;br&gt; 
+営業時間&lt;br&gt; 月～金 8:00～23:00 土 8</mark>:00～21:00<mark class="diff-new"> 日 9:00～20:00&lt;br&gt;祝日の場合は20:00で営業終了します。&lt;br&gt;&lt;br&gt;
+料金表　曜日や時間など</mark>…</pre></div></div><p>Retain existing 20:00, supported by the principal and other PDF layouts. They may share ancestry; language cannot settle an arbitrary time. Holiday closing and senior-plan limits do not prove regular Sunday hours.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>A source with established original-page provenance is needed to settle Sunday closing time.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N1_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Sunday closing time differs. Q69 uses Tuesday/Wednesday; Q70 concerns joining fees.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=12): <code>additional-assets/principals/N1_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Sunday hours<p>日 9:00～20:00</p></li><li><span class="principal-repository-source">Principal source (page=13): <code>additional-assets/principals/N1_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Sunday hours<p>日 9:00～20:00</p></li><li><span class="principal-repository-source">Principal source (page=15): <code>additional-assets/principals/N1_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Sunday hours<p>日 9:00～20:00</p></li><li><span class="principal-repository-source">Principal source (page=23): <code>additional-assets/principals/N1_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Sunday hours<p>日 9:00～20:00</p></li><li><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N1_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Complete poster, Sunday hours<p>日 9:00～21:00</p></li></ul><details><summary>Full published record · unresolved_cases-N1_07_2017-reading-b011-sunday-hours</summary><pre>{
+  &quot;case_id&quot;: &quot;N1_07_2017-reading-b011-sunday-hours&quot;,
+  &quot;unit&quot;: &quot;N1_07_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-b011&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;&lt;center&gt;ご入会案内&lt;br&gt; 広々としたトレーニングジムとプールで、楽しく汗を流しませんか。&lt;/center&gt;&lt;br&gt; \n営業時間&lt;br&gt; 月～金 8:00～23:00 土 8:00～21:00 日 9:00～20:00&lt;br&gt;祝日の場合は20:00で営業終了します。&lt;br&gt;&lt;br&gt;\n料金表　曜日や時間など、ご自身に合ったプランをお選びください！ &lt;br&gt;\n&lt;table&gt;&lt;tr&gt;&lt;th&gt;プラン&lt;/th&gt;&lt;th&gt;月会費&lt;/th&gt;&lt;th&gt;ご利用時間&lt;/th&gt;&lt;th&gt;ご入会条件&lt;/th&gt;&lt;/tr&gt;\n&lt;tr&gt;&lt;td&gt;フルタイム&lt;/td&gt;&lt;td&gt;10,000&lt;/td&gt;&lt;td&gt;全営業日時間内&lt;/td&gt;&lt;td rowspan=\&quot;4\&quot;&gt;16歳以上の方&lt;/td&gt;&lt;/tr&gt;\n&lt;tr&gt;&lt;td&gt;平日A&lt;/td&gt;&lt;td&gt;9,000&lt;/td&gt;&lt;td&gt;月～金の営業時間内&lt;/td&gt;&lt;/tr&gt;\n&lt;tr&gt;&lt;td&gt;平日B&lt;/td&gt;&lt;td&gt;8,000&lt;/td&gt;&lt;td&gt;月～金の17:00まで&lt;/td&gt;&lt;/tr&gt;\n&lt;tr&gt;&lt;td&gt;平日C&lt;/td&gt;&lt;td&gt;8,000&lt;/td&gt;&lt;td&gt;月～金の18:00以降&lt;/td&gt;&lt;/tr&gt;\n&lt;tr&gt;&lt;td&gt;シニア&lt;/td&gt;&lt;td&gt;7,800&lt;/td&gt;&lt;td&gt;月～日の20:00まで&lt;/td&gt;&lt;td&gt;60歳以上の方&lt;/td&gt;&lt;/tr&gt;\n&lt;/table&gt;&lt;br&gt;すべてのプランで、トレーニングジムとプールがご利用いただけます。&lt;br&gt;&lt;br&gt;\n&lt;b&gt;入会手続き&lt;/b&gt;&lt;br&gt; ①～③をお持ちの上、受付にお越しください。 \n&lt;br&gt;①本人確認書類（免許証、保険証などの公的身分証明書） &lt;br&gt;\n②金融機関の通帳とお届け印、またはキャッシュカード &lt;br&gt;\n③入会金（5,000円）および2か月分（1か月目、2か月目）の月会費* &lt;br&gt;\n*各種キャンペーン適用により、入会金、月会費が割引になる場合があります。&lt;br&gt;&lt;br&gt;\n&lt;div&gt;りんどうスポーツジム 電話 058-556-7788 http://rindou-s.com&lt;/div&gt;&lt;br&gt;&lt;br&gt;\n&lt;center&gt;夏のご入会キャンペーン&lt;br&gt;\n7月31日までにご入会の方限定の3つの特典！この機会をお見逃しなく！&lt;/center&gt;&lt;br&gt; \n&lt;div&gt;特典①　入会金が無料！ &lt;br&gt;\n特典②　月会費が1か月分無料！（3か月目の月会費を免除） &lt;br&gt;\n特典③　タオルレンタルが2か月間無料！&lt;/div&gt;&lt;br&gt;\n*入会手続き等、詳細については「ご入会案内」のポスターをご参照の上、&lt;br&gt;ご不明な点はスタッフまでお気軽にお問い合わせください。&lt;br&gt;\n&lt;div&gt;りんどうスポーツジム 電話 058-556-7788 http://rindou-s.com&lt;/div&gt;&quot;,
+  &quot;context&quot;: &quot;Sunday closing time differs. Q69 uses Tuesday/Wednesday; Q70 concerns joining fees.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;日 9:00～21:00&quot;,
+      &quot;assessment&quot;: &quot;Clearly printed in the native poster image; still a possible historical alternative.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;Đề N1 7-2017.pdf&quot;,
+      &quot;sha256&quot;: &quot;13c977afe3425007373cabe41001c61e512e0991ed79865118a98c4656324d84&quot;,
+      &quot;physical_pages&quot;: [
+        12
+      ],
+      &quot;locator&quot;: &quot;Sunday hours&quot;,
+      &quot;reading&quot;: &quot;日 9:00～20:00&quot;,
+      &quot;lineage&quot;: &quot;Secondary edition; agreement does not establish independent acquisition or original-page provenance.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;【1】2017年07月N1 真题.pdf&quot;,
+      &quot;sha256&quot;: &quot;cb9db932badfedcf8dc21c4c9869a9b1b8f7b6d5585a958d13c7595f26db52e5&quot;,
+      &quot;physical_pages&quot;: [
+        13
+      ],
+      &quot;locator&quot;: &quot;Sunday hours&quot;,
+      &quot;reading&quot;: &quot;日 9:00～20:00&quot;,
+      &quot;lineage&quot;: &quot;Secondary edition; agreement does not establish independent acquisition or original-page provenance.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;【2】2017年07月N1 真题.pdf&quot;,
+      &quot;sha256&quot;: &quot;6b6a389eba79da34d10d51ddc9d9554dac511815677d311702f82568a4de0d87&quot;,
+      &quot;physical_pages&quot;: [
+        15
+      ],
+      &quot;locator&quot;: &quot;Sunday hours&quot;,
+      &quot;reading&quot;: &quot;日 9:00～20:00&quot;,
+      &quot;lineage&quot;: &quot;Secondary edition; agreement does not establish independent acquisition or original-page provenance.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;【3】2017年07月N1 真题.pdf&quot;,
+      &quot;sha256&quot;: &quot;7b79e3ca6211c0c1ca4d4a83e1b97e788ebb65d875a7ddb02a08fdbdd03e1293&quot;,
+      &quot;physical_pages&quot;: [
+        23
+      ],
+      &quot;locator&quot;: &quot;Sunday hours&quot;,
+      &quot;reading&quot;: &quot;日 9:00～20:00&quot;,
+      &quot;lineage&quot;: &quot;Secondary edition; agreement does not establish independent acquisition or original-page provenance.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;munjaJLPT N1 July 2017 gym-poster image&quot;,
+      &quot;sha256&quot;: &quot;9ae0ce362f5349a25fa3415a52f2ac48e2c81c4cd3dbbe2c940ed4f812bb1c6b&quot;,
+      &quot;locator&quot;: &quot;Complete poster, Sunday hours&quot;,
+      &quot;reading&quot;: &quot;日 9:00～21:00&quot;,
+      &quot;lineage&quot;: &quot;Secondary reconstruction; no original-page provenance.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Retain existing 20:00, supported by the principal and other PDF layouts. They may share ancestry; language cannot settle an arbitrary time. Holiday closing and senior-plan limits do not prove regular Sunday hours.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Checked every hour and plan row in the principal and focused alternate tables.&quot;,
+    &quot;Read the complete native image and confirmed 21:00.&quot;,
+    &quot;Evaluated both questions under both schedules; keys are unaffected.&quot;,
+    &quot;5 November 2026: Public snapshot rebound to the earlier, verified current field. Only the historical presentation edit is replayed; this snapshot repair does not change the original witness or its confidence.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;A source with established original-page provenance is needed to settle Sunday closing time.&quot;
+}</pre></details></div><div class="review-record" id="principal_differences-N1_07_2017-PD-013"><div class="review-label">Principal difference · /content/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>受付にお越し<mark class="diff-old">て</mark>ください。</pre></div><div><h4>Editorial</h4><pre>受付にお越しください。</pre></div></div><p>Retain お越しください directly printed in the 17-page alternate, physical 13. Principal incorrectly combines the honorific stem with てください.</p><span class="principal-repository-source">Principal source (page=13): <code>additional-assets/principals/N1_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-b011 /content/html, affected span</span><details><summary>Full published record · principal_differences-N1_07_2017-PD-013</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N1_07_2017-PD-013&quot;,
+  &quot;unit&quot;: &quot;N1_07_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-b011&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;current_value&quot;: &quot;&lt;center&gt;ご入会案内&lt;br&gt; 広々としたトレーニングジムとプールで、楽しく汗を流しませんか。&lt;/center&gt;&lt;br&gt; \n営業時間&lt;br&gt; 月～金 8:00～23:00 土 8:00～21:00 日 9:00～20:00&lt;br&gt;祝日の場合は20:00で営業終了します。&lt;br&gt;&lt;br&gt;\n料金表　曜日や時間など、ご自身に合ったプランをお選びください！ &lt;br&gt;\n&lt;table&gt;&lt;tr&gt;&lt;th&gt;プラン&lt;/th&gt;&lt;th&gt;月会費&lt;/th&gt;&lt;th&gt;ご利用時間&lt;/th&gt;&lt;th&gt;ご入会条件&lt;/th&gt;&lt;/tr&gt;\n&lt;tr&gt;&lt;td&gt;フルタイム&lt;/td&gt;&lt;td&gt;10,000&lt;/td&gt;&lt;td&gt;全営業日時間内&lt;/td&gt;&lt;td rowspan=\&quot;4\&quot;&gt;16歳以上の方&lt;/td&gt;&lt;/tr&gt;\n&lt;tr&gt;&lt;td&gt;平日A&lt;/td&gt;&lt;td&gt;9,000&lt;/td&gt;&lt;td&gt;月～金の営業時間内&lt;/td&gt;&lt;/tr&gt;\n&lt;tr&gt;&lt;td&gt;平日B&lt;/td&gt;&lt;td&gt;8,000&lt;/td&gt;&lt;td&gt;月～金の17:00まで&lt;/td&gt;&lt;/tr&gt;\n&lt;tr&gt;&lt;td&gt;平日C&lt;/td&gt;&lt;td&gt;8,000&lt;/td&gt;&lt;td&gt;月～金の18:00以降&lt;/td&gt;&lt;/tr&gt;\n&lt;tr&gt;&lt;td&gt;シニア&lt;/td&gt;&lt;td&gt;7,800&lt;/td&gt;&lt;td&gt;月～日の20:00まで&lt;/td&gt;&lt;td&gt;60歳以上の方&lt;/td&gt;&lt;/tr&gt;\n&lt;/table&gt;&lt;br&gt;すべてのプランで、トレーニングジムとプールがご利用いただけます。&lt;br&gt;&lt;br&gt;\n&lt;b&gt;入会手続き&lt;/b&gt;&lt;br&gt; ①～③をお持ちの上、受付にお越しください。 \n&lt;br&gt;①本人確認書類（免許証、保険証などの公的身分証明書） &lt;br&gt;\n②金融機関の通帳とお届け印、またはキャッシュカード &lt;br&gt;\n③入会金（5,000円）および2か月分（1か月目、2か月目）の月会費* &lt;br&gt;\n*各種キャンペーン適用により、入会金、月会費が割引になる場合があります。&lt;br&gt;&lt;br&gt;\n&lt;div&gt;りんどうスポーツジム 電話 058-556-7788 http://rindou-s.com&lt;/div&gt;&lt;br&gt;&lt;br&gt;\n&lt;center&gt;夏のご入会キャンペーン&lt;br&gt;\n7月31日までにご入会の方限定の3つの特典！この機会をお見逃しなく！&lt;/center&gt;&lt;br&gt; \n&lt;div&gt;特典①　入会金が無料！ &lt;br&gt;\n特典②　月会費が1か月分無料！（3か月目の月会費を免除） &lt;br&gt;\n特典③　タオルレンタルが2か月間無料！&lt;/div&gt;&lt;br&gt;\n*入会手続き等、詳細については「ご入会案内」のポスターをご参照の上、&lt;br&gt;ご不明な点はスタッフまでお気軽にお問い合わせください。&lt;br&gt;\n&lt;div&gt;りんどうスポーツジム 電話 058-556-7788 http://rindou-s.com&lt;/div&gt;&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;Đề N1 7-2017.pdf — secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;13c977afe3425007373cabe41001c61e512e0991ed79865118a98c4656324d84&quot;,
+    &quot;physical_pages&quot;: [
+      13
+    ],
+    &quot;locator&quot;: &quot;reading-b011 /content/html, affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;受付にお越してください。&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;受付にお越しください。&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Retain お越しください directly printed in the 17-page alternate, physical 13. Principal incorrectly combines the honorific stem with てください.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div><div class="review-record" id="principal_differences-N1_07_2017-PD-014"><div class="review-label">Principal difference · /content/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>お気軽にお問い合わせ<mark class="diff-old">て</mark>ください。</pre></div><div><h4>Editorial</h4><pre>お気軽にお問い合わせください。</pre></div></div><p>Retain the standard honorific request printed in the 17-page alternate, physical 13. Principal has an extra て after the nominal honorific form.</p><span class="principal-repository-source">Principal source (page=13): <code>additional-assets/principals/N1_07_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-b011 /content/html, affected span</span><details><summary>Full published record · principal_differences-N1_07_2017-PD-014</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N1_07_2017-PD-014&quot;,
+  &quot;unit&quot;: &quot;N1_07_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-b011&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;current_value&quot;: &quot;&lt;center&gt;ご入会案内&lt;br&gt; 広々としたトレーニングジムとプールで、楽しく汗を流しませんか。&lt;/center&gt;&lt;br&gt; \n営業時間&lt;br&gt; 月～金 8:00～23:00 土 8:00～21:00 日 9:00～20:00&lt;br&gt;祝日の場合は20:00で営業終了します。&lt;br&gt;&lt;br&gt;\n料金表　曜日や時間など、ご自身に合ったプランをお選びください！ &lt;br&gt;\n&lt;table&gt;&lt;tr&gt;&lt;th&gt;プラン&lt;/th&gt;&lt;th&gt;月会費&lt;/th&gt;&lt;th&gt;ご利用時間&lt;/th&gt;&lt;th&gt;ご入会条件&lt;/th&gt;&lt;/tr&gt;\n&lt;tr&gt;&lt;td&gt;フルタイム&lt;/td&gt;&lt;td&gt;10,000&lt;/td&gt;&lt;td&gt;全営業日時間内&lt;/td&gt;&lt;td rowspan=\&quot;4\&quot;&gt;16歳以上の方&lt;/td&gt;&lt;/tr&gt;\n&lt;tr&gt;&lt;td&gt;平日A&lt;/td&gt;&lt;td&gt;9,000&lt;/td&gt;&lt;td&gt;月～金の営業時間内&lt;/td&gt;&lt;/tr&gt;\n&lt;tr&gt;&lt;td&gt;平日B&lt;/td&gt;&lt;td&gt;8,000&lt;/td&gt;&lt;td&gt;月～金の17:00まで&lt;/td&gt;&lt;/tr&gt;\n&lt;tr&gt;&lt;td&gt;平日C&lt;/td&gt;&lt;td&gt;8,000&lt;/td&gt;&lt;td&gt;月～金の18:00以降&lt;/td&gt;&lt;/tr&gt;\n&lt;tr&gt;&lt;td&gt;シニア&lt;/td&gt;&lt;td&gt;7,800&lt;/td&gt;&lt;td&gt;月～日の20:00まで&lt;/td&gt;&lt;td&gt;60歳以上の方&lt;/td&gt;&lt;/tr&gt;\n&lt;/table&gt;&lt;br&gt;すべてのプランで、トレーニングジムとプールがご利用いただけます。&lt;br&gt;&lt;br&gt;\n&lt;b&gt;入会手続き&lt;/b&gt;&lt;br&gt; ①～③をお持ちの上、受付にお越しください。 \n&lt;br&gt;①本人確認書類（免許証、保険証などの公的身分証明書） &lt;br&gt;\n②金融機関の通帳とお届け印、またはキャッシュカード &lt;br&gt;\n③入会金（5,000円）および2か月分（1か月目、2か月目）の月会費* &lt;br&gt;\n*各種キャンペーン適用により、入会金、月会費が割引になる場合があります。&lt;br&gt;&lt;br&gt;\n&lt;div&gt;りんどうスポーツジム 電話 058-556-7788 http://rindou-s.com&lt;/div&gt;&lt;br&gt;&lt;br&gt;\n&lt;center&gt;夏のご入会キャンペーン&lt;br&gt;\n7月31日までにご入会の方限定の3つの特典！この機会をお見逃しなく！&lt;/center&gt;&lt;br&gt; \n&lt;div&gt;特典①　入会金が無料！ &lt;br&gt;\n特典②　月会費が1か月分無料！（3か月目の月会費を免除） &lt;br&gt;\n特典③　タオルレンタルが2か月間無料！&lt;/div&gt;&lt;br&gt;\n*入会手続き等、詳細については「ご入会案内」のポスターをご参照の上、&lt;br&gt;ご不明な点はスタッフまでお気軽にお問い合わせください。&lt;br&gt;\n&lt;div&gt;りんどうスポーツジム 電話 058-556-7788 http://rindou-s.com&lt;/div&gt;&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;Đề N1 7-2017.pdf — secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;13c977afe3425007373cabe41001c61e512e0991ed79865118a98c4656324d84&quot;,
+    &quot;physical_pages&quot;: [
+      13
+    ],
+    &quot;locator&quot;: &quot;reading-b011 /content/html, affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;お気軽にお問い合わせてください。&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;お気軽にお問い合わせください。&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Retain the standard honorific request printed in the 17-page alternate, physical 13. Principal has an extra て after the nominal honorific form.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section></div></main><footer class="site-footer"><span class="developer-only">Developer mode</span></footer><div id="toast" role="status" class="toast" hidden></div><script id="page-data" type="application/json">{"review":true}</script><script id="theme-data" src="../assets/theme-data.js?v=f06ad9e2434b" defer></script><script src="../assets/app.js?v=0d75deb05ae3" defer></script></body></html>

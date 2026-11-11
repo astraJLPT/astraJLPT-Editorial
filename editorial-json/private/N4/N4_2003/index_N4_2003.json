@@ -1,0 +1,83 @@
+{
+  "unit": "N4_2003",
+  "sources": [
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N4\\N4-1991-2009年\\（1991年-2009年）N4真题听力\\2003\\2003年日本语能力考试4级真题+答案+听力原文.pdf",
+      "sha256": "a0b5a2a7cd80362f0b28d5e9c75e31285abb0447ce47651409e4de7f610e5a53",
+      "Tier": 2,
+      "bytes": 1027161,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N4\\N4_2003\\PaddleOCR\\pdf_1",
+      "VisionOCR": "preprocess\\N4\\N4_2003\\VisionOCR\\pdf_1"
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N4真题（2010-2025.12）\\1991-2009年N4真题（改版前的题目，参考即可）\\2003\\2003年N4真题+答案+听力原文.pdf",
+      "sha256": "1fa688293094f504c3d935bc2f2c674451e47b19a275b03a141b7f07f398defd",
+      "Tier": 3,
+      "bytes": 2638492,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N4历年真题\\1991-2009年N4真题（改版前的题目，参考即可）\\2003\\2003年N4真题+答案+听力原文.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N4\\N4_2003\\PaddleOCR\\pdf_2",
+      "VisionOCR": "preprocess\\N4\\N4_2003\\VisionOCR\\pdf_2"
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\2000年-2009年\\2000年~2009年日语4级真题及答案--打印版.doc",
+      "sha256": "ca13a364bac8a3718e65343e803ab4d46bb010ae7c4f452f9907966ce1f19bdc",
+      "Tier": "unranked",
+      "bytes": 816895,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\2000年-2009年\\2003年\\2003年日本语能力考试4级真题+答案+听力原文.pdf",
+      "sha256": "b03f9606b55100042d5a3f713f9dcb47c245473222d052d3593b0985417c9e38",
+      "Tier": 2,
+      "bytes": 1064699,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N4\\N4_2003\\PaddleOCR\\pdf_3",
+      "VisionOCR": "preprocess\\N4\\N4_2003\\VisionOCR\\pdf_3"
+    },
+    {
+      "path": "src/CodexDownloads/UserApprovedReferenceScans/2003_L3_L4_published_collection.pdf",
+      "sha256": "2d6ad4834484c596d11bf48b4d529797d82d2800282d8e7a85d07f63d9913899",
+      "Tier": "unranked",
+      "bytes": 17867659,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "display_title": "Levels 3-4, 2003",
+      "source_role": "historical_question_volume",
+      "acquisition_batch": "reference_scan_hunt_1984-2009_2026-10-23",
+      "provenance_records": [
+        "preprocess/audit_runs/2026-10-23_reference_scan_rc02_approvals/approvals.json",
+        "preprocess/reference_scan_online_work/batch7_results.json"
+      ],
+      "source_urls": [
+        "https://drive.google.com/uc?export=download&id=1qs_Yk9xZtWXjQaBLL87WLS-mfz94TzT0",
+        "https://drive.usercontent.google.com/download?id=1qs_Yk9xZtWXjQaBLL87WLS-mfz94TzT0&export=download"
+      ],
+      "previous_paths": [
+        "src/CodexDownloads/UserApprovedReferenceScans/Originals/2003_L3_L4_published_collection.pdf",
+        "src/CodexDownloads/reference_scan_online_L1_L2/2003_L3_L4_published_collection.pdf"
+      ],
+      "filename_at_acquisition": "2003_L3_L4_published_collection.pdf",
+      "filename_note": "Local acquisition alias; original remote filename was not recorded. Do not infer it.",
+      "pages": 123,
+      "reference_registry": "preprocess/user_approved_reference_scans.md",
+      "reference_id": "2003_L3_L4",
+      "historical_coverage": [
+        {
+          "level": 3,
+          "year": 2003
+        },
+        {
+          "level": 4,
+          "year": 2003
+        }
+      ]
+    }
+  ]
+}

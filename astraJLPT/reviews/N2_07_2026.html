@@ -1,0 +1,715 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark light"><title>Developer review · N2_07_2026 · astraJLPT</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../assets/fonts.css?v=f9f44384a837"><link rel="stylesheet" href="../assets/themes.css?v=7ad0820747dc"><link rel="stylesheet" href="../assets/answer-marking.css?v=bec6b4920050"><link rel="stylesheet" href="../assets/site.css?v=7ae9ae7c768b"><link rel="stylesheet" href="../assets/pdf-typography.css?v=ba55af25606f"><link rel="stylesheet" href="../assets/paper-shared.css?v=8f3ca38dca80"></head><body class="catalog-page"><a class="skip-link" href="#content">Skip to content</a><header class="topbar" id="page-top" tabindex="-1"><a class="wordmark" id="brand" href="../index.html">astra<span>JLPT</span></a><details id="settings" class="settings"><summary aria-label="Open settings" title="Settings"><span aria-hidden="true">⚙</span><span class="sr-only">Settings</span></summary><div class="settings-panel"><div class="settings-title"><h2>settings</h2><button type="button" id="close-settings" class="js-only" aria-label="Close settings">×</button></div><div class="settings-tabs" role="group" aria-label="Settings categories"><label><input type="radio" name="settings-view" value="appearance" checked><span>theme</span></label><label><input type="radio" name="settings-view" value="browser"><span>browser</span></label></div><section data-settings="appearance"><div class="theme-workspace"><div class="theme-picker"><div class="setting-heading"><h3>theme</h3></div><div class="theme-grid originals"><label class="theme-card ps-gh"><input type="radio" name="theme" id="theme-jlpt_paper" value="jlpt_paper"><span>jlpt_paper</span></label><label class="theme-card ps-ck"><input type="radio" name="theme" id="theme-astraJLPT_dark" value="astraJLPT_dark" checked><span>astraJLPT_dark</span></label><label class="theme-card ps-ga"><input type="radio" name="theme" id="theme-astraJLPT_sepia" value="astraJLPT_sepia"><span>astraJLPT_sepia</span></label></div><div class="js-only"><p class="settings-label">three random picks</p><div class="theme-grid" id="quick-picks"></div></div><details><summary>all 187 Monkeytype palettes</summary><label class="theme-search js-only">find a palette<input id="theme-search" type="search" placeholder="search themes" autocomplete="off"></label><div class="theme-grid theme-catalog"><label class="theme-card ps-e9"><input type="radio" name="theme" id="theme-8008" value="8008"><span>8008</span></label><label class="theme-card ps-cw"><input type="radio" name="theme" id="theme-80s_after_dark" value="80s_after_dark"><span>80s after dark</span></label><label class="theme-card ps-fq"><input type="radio" name="theme" id="theme-9009" value="9009"><span>9009</span></label><label class="theme-card ps-cc"><input type="radio" name="theme" id="theme-aether" value="aether"><span>aether</span></label><label class="theme-card ps-cz"><input type="radio" name="theme" id="theme-alduin" value="alduin"><span>alduin</span></label><label class="theme-card ps-el"><input type="radio" name="theme" id="theme-alpine" value="alpine"><span>alpine</span></label><label class="theme-card ps-bg"><input type="radio" name="theme" id="theme-anti_hero" value="anti_hero"><span>anti hero</span></label><label class="theme-card ps-c3"><input type="radio" name="theme" id="theme-arch" value="arch"><span>arch</span></label><label class="theme-card ps-bt"><input type="radio" name="theme" id="theme-aurora" value="aurora"><span>aurora</span></label><label class="theme-card ps-g8"><input type="radio" name="theme" id="theme-beach" value="beach"><span>beach</span></label><label class="theme-card ps-dz"><input type="radio" name="theme" id="theme-bento" value="bento"><span>bento</span></label><label class="theme-card ps-f1"><input type="radio" name="theme" id="theme-bingsu" value="bingsu"><span>bingsu</span></label><label class="theme-card ps-dl"><input type="radio" name="theme" id="theme-bliss" value="bliss"><span>bliss</span></label><label class="theme-card ps-bn"><input type="radio" name="theme" id="theme-blue_dolphin" value="blue_dolphin"><span>blue dolphin</span></label><label class="theme-card ps-dd"><input type="radio" name="theme" id="theme-blueberry_dark" value="blueberry_dark"><span>blueberry dark</span></label><label class="theme-card ps-fd"><input type="radio" name="theme" id="theme-blueberry_light" value="blueberry_light"><span>blueberry light</span></label><label class="theme-card ps-ep"><input type="radio" name="theme" id="theme-botanical" value="botanical"><span>botanical</span></label><label class="theme-card ps-cl"><input type="radio" name="theme" id="theme-bouquet" value="bouquet"><span>bouquet</span></label><label class="theme-card ps-fk"><input type="radio" name="theme" id="theme-breeze" value="breeze"><span>breeze</span></label><label class="theme-card ps-dk"><input type="radio" name="theme" id="theme-bushido" value="bushido"><span>bushido</span></label><label class="theme-card ps-f5"><input type="radio" name="theme" id="theme-cafe" value="cafe"><span>cafe</span></label><label class="theme-card ps-g1"><input type="radio" name="theme" id="theme-camping" value="camping"><span>camping</span></label><label class="theme-card ps-e4"><input type="radio" name="theme" id="theme-carbon" value="carbon"><span>carbon</span></label><label class="theme-card ps-d3"><input type="radio" name="theme" id="theme-catppuccin" value="catppuccin"><span>catppuccin</span></label><label class="theme-card ps-ch"><input type="radio" name="theme" id="theme-chaos_theory" value="chaos_theory"><span>chaos theory</span></label><label class="theme-card ps-g3"><input type="radio" name="theme" id="theme-cheesecake" value="cheesecake"><span>cheesecake</span></label><label class="theme-card ps-e7"><input type="radio" name="theme" id="theme-cherry_blossom" value="cherry_blossom"><span>cherry blossom</span></label><label class="theme-card ps-eh"><input type="radio" name="theme" id="theme-comfy" value="comfy"><span>comfy</span></label><label class="theme-card ps-ef"><input type="radio" name="theme" id="theme-copper" value="copper"><span>copper</span></label><label class="theme-card ps-g6"><input type="radio" name="theme" id="theme-creamsicle" value="creamsicle"><span>creamsicle</span></label><label class="theme-card ps-em"><input type="radio" name="theme" id="theme-cy_red" value="cy_red"><span>cy red</span></label><label class="theme-card ps-co"><input type="radio" name="theme" id="theme-cyberspace" value="cyberspace"><span>cyberspace</span></label><label class="theme-card ps-cd"><input type="radio" name="theme" id="theme-dark" value="dark"><span>dark</span></label><label class="theme-card ps-bz"><input type="radio" name="theme" id="theme-dark_magic_girl" value="dark_magic_girl"><span>dark magic girl</span></label><label class="theme-card ps-d6"><input type="radio" name="theme" id="theme-dark_note" value="dark_note"><span>dark note</span></label><label class="theme-card ps-g5"><input type="radio" name="theme" id="theme-darling" value="darling"><span>darling</span></label><label class="theme-card ps-bw"><input type="radio" name="theme" id="theme-deku" value="deku"><span>deku</span></label><label class="theme-card ps-g9"><input type="radio" name="theme" id="theme-desert_oasis" value="desert_oasis"><span>desert oasis</span></label><label class="theme-card ps-cx"><input type="radio" name="theme" id="theme-dev" value="dev"><span>dev</span></label><label class="theme-card ps-ek"><input type="radio" name="theme" id="theme-diner" value="diner"><span>diner</span></label><label class="theme-card ps-gi"><input type="radio" name="theme" id="theme-dino" value="dino"><span>dino</span></label><label class="theme-card ps-e6"><input type="radio" name="theme" id="theme-discord" value="discord"><span>discord</span></label><label class="theme-card ps-fc"><input type="radio" name="theme" id="theme-dmg" value="dmg"><span>dmg</span></label><label class="theme-card ps-fj"><input type="radio" name="theme" id="theme-dollar" value="dollar"><span>dollar</span></label><label class="theme-card ps-ce"><input type="radio" name="theme" id="theme-dots" value="dots"><span>dots</span></label><label class="theme-card ps-dq"><input type="radio" name="theme" id="theme-dracula" value="dracula"><span>dracula</span></label><label class="theme-card ps-cq"><input type="radio" name="theme" id="theme-drowning" value="drowning"><span>drowning</span></label><label class="theme-card ps-eo"><input type="radio" name="theme" id="theme-dualshot" value="dualshot"><span>dualshot</span></label><label class="theme-card ps-dr"><input type="radio" name="theme" id="theme-earthsong" value="earthsong"><span>earthsong</span></label><label class="theme-card ps-ci"><input type="radio" name="theme" id="theme-everblush" value="everblush"><span>everblush</span></label><label class="theme-card ps-bq"><input type="radio" name="theme" id="theme-evil_eye" value="evil_eye"><span>evil eye</span></label><label class="theme-card ps-bp"><input type="radio" name="theme" id="theme-ez_mode" value="ez_mode"><span>ez mode</span></label><label class="theme-card ps-c8"><input type="radio" name="theme" id="theme-fire" value="fire"><span>fire</span></label><label class="theme-card ps-eb"><input type="radio" name="theme" id="theme-fledgling" value="fledgling"><span>fledgling</span></label><label class="theme-card ps-f3"><input type="radio" name="theme" id="theme-fleuriste" value="fleuriste"><span>fleuriste</span></label><label class="theme-card ps-bl"><input type="radio" name="theme" id="theme-floret" value="floret"><span>floret</span></label><label class="theme-card ps-fh"><input type="radio" name="theme" id="theme-froyo" value="froyo"><span>froyo</span></label><label class="theme-card ps-et"><input type="radio" name="theme" id="theme-frozen_llama" value="frozen_llama"><span>frozen llama</span></label><label class="theme-card ps-f9"><input type="radio" name="theme" id="theme-fruit_chew" value="fruit_chew"><span>fruit chew</span></label><label class="theme-card ps-en"><input type="radio" name="theme" id="theme-fundamentals" value="fundamentals"><span>fundamentals</span></label><label class="theme-card ps-e0"><input type="radio" name="theme" id="theme-future_funk" value="future_funk"><span>future funk</span></label><label class="theme-card ps-dc"><input type="radio" name="theme" id="theme-github" value="github"><span>github</span></label><label class="theme-card ps-fn"><input type="radio" name="theme" id="theme-godspeed" value="godspeed"><span>godspeed</span></label><label class="theme-card ps-e3"><input type="radio" name="theme" id="theme-graen" value="graen"><span>graen</span></label><label class="theme-card ps-ea"><input type="radio" name="theme" id="theme-grand_prix" value="grand_prix"><span>grand prix</span></label><label class="theme-card ps-dv"><input type="radio" name="theme" id="theme-grape" value="grape"><span>grape</span></label><label class="theme-card ps-dp"><input type="radio" name="theme" id="theme-gruvbox_dark" value="gruvbox_dark"><span>gruvbox dark</span></label><label class="theme-card ps-g2"><input type="radio" name="theme" id="theme-gruvbox_light" value="gruvbox_light"><span>gruvbox light</span></label><label class="theme-card ps-bu"><input type="radio" name="theme" id="theme-hammerhead" value="hammerhead"><span>hammerhead</span></label><label class="theme-card ps-fa"><input type="radio" name="theme" id="theme-hanok" value="hanok"><span>hanok</span></label><label class="theme-card ps-ed"><input type="radio" name="theme" id="theme-hedge" value="hedge"><span>hedge</span></label><label class="theme-card ps-fu"><input type="radio" name="theme" id="theme-honey" value="honey"><span>honey</span></label><label class="theme-card ps-d0"><input type="radio" name="theme" id="theme-horizon" value="horizon"><span>horizon</span></label><label class="theme-card ps-bf"><input type="radio" name="theme" id="theme-husqy" value="husqy"><span>husqy</span></label><label class="theme-card ps-cj"><input type="radio" name="theme" id="theme-iceberg_dark" value="iceberg_dark"><span>iceberg dark</span></label><label class="theme-card ps-fl"><input type="radio" name="theme" id="theme-iceberg_light" value="iceberg_light"><span>iceberg light</span></label><label class="theme-card ps-c7"><input type="radio" name="theme" id="theme-incognito" value="incognito"><span>incognito</span></label><label class="theme-card ps-d8"><input type="radio" name="theme" id="theme-ishtar" value="ishtar"><span>ishtar</span></label><label class="theme-card ps-eu"><input type="radio" name="theme" id="theme-iv_clover" value="iv_clover"><span>iv clover</span></label><label class="theme-card ps-c2"><input type="radio" name="theme" id="theme-iv_spade" value="iv_spade"><span>iv spade</span></label><label class="theme-card ps-cu"><input type="radio" name="theme" id="theme-joker" value="joker"><span>joker</span></label><label class="theme-card ps-de"><input type="radio" name="theme" id="theme-laser" value="laser"><span>laser</span></label><label class="theme-card ps-ex"><input type="radio" name="theme" id="theme-lavender" value="lavender"><span>lavender</span></label><label class="theme-card ps-ew"><input type="radio" name="theme" id="theme-leather" value="leather"><span>leather</span></label><label class="theme-card ps-fo"><input type="radio" name="theme" id="theme-lil_dragon" value="lil_dragon"><span>lil dragon</span></label><label class="theme-card ps-gd"><input type="radio" name="theme" id="theme-lilac_mist" value="lilac_mist"><span>lilac mist</span></label><label class="theme-card ps-er"><input type="radio" name="theme" id="theme-lime" value="lime"><span>lime</span></label><label class="theme-card ps-df"><input type="radio" name="theme" id="theme-luna" value="luna"><span>luna</span></label><label class="theme-card ps-ez"><input type="radio" name="theme" id="theme-macroblank" value="macroblank"><span>macroblank</span></label><label class="theme-card ps-gk"><input type="radio" name="theme" id="theme-magic_girl" value="magic_girl"><span>magic girl</span></label><label class="theme-card ps-du"><input type="radio" name="theme" id="theme-mashu" value="mashu"><span>mashu</span></label><label class="theme-card ps-ei"><input type="radio" name="theme" id="theme-matcha_moccha" value="matcha_moccha"><span>matcha moccha</span></label><label class="theme-card ps-dn"><input type="radio" name="theme" id="theme-material" value="material"><span>material</span></label><label class="theme-card ps-be"><input type="radio" name="theme" id="theme-matrix" value="matrix"><span>matrix</span></label><label class="theme-card ps-br"><input type="radio" name="theme" id="theme-menthol" value="menthol"><span>menthol</span></label><label class="theme-card ps-dg"><input type="radio" name="theme" id="theme-metaverse" value="metaverse"><span>metaverse</span></label><label class="theme-card ps-ca"><input type="radio" name="theme" id="theme-metropolis" value="metropolis"><span>metropolis</span></label><label class="theme-card ps-g0"><input type="radio" name="theme" id="theme-mexican" value="mexican"><span>mexican</span></label><label class="theme-card ps-fv"><input type="radio" name="theme" id="theme-miami" value="miami"><span>miami</span></label><label class="theme-card ps-cn"><input type="radio" name="theme" id="theme-miami_nights" value="miami_nights"><span>miami nights</span></label><label class="theme-card ps-c0"><input type="radio" name="theme" id="theme-midnight" value="midnight"><span>midnight</span></label><label class="theme-card ps-gf"><input type="radio" name="theme" id="theme-milkshake" value="milkshake"><span>milkshake</span></label><label class="theme-card ps-bv"><input type="radio" name="theme" id="theme-mint" value="mint"><span>mint</span></label><label class="theme-card ps-ey"><input type="radio" name="theme" id="theme-mizu" value="mizu"><span>mizu</span></label><label class="theme-card ps-dy"><input type="radio" name="theme" id="theme-modern_dolch" value="modern_dolch"><span>modern dolch</span></label><label class="theme-card ps-fe"><input type="radio" name="theme" id="theme-modern_dolch_light" value="modern_dolch_light"><span>modern dolch light</span></label><label class="theme-card ps-gm"><input type="radio" name="theme" id="theme-modern_ink" value="modern_ink"><span>modern ink</span></label><label class="theme-card ps-do"><input type="radio" name="theme" id="theme-monokai" value="monokai"><span>monokai</span></label><label class="theme-card ps-cs"><input type="radio" name="theme" id="theme-moonlight" value="moonlight"><span>moonlight</span></label><label class="theme-card ps-c9"><input type="radio" name="theme" id="theme-mountain" value="mountain"><span>mountain</span></label><label class="theme-card ps-f8"><input type="radio" name="theme" id="theme-mr_sleeves" value="mr_sleeves"><span>mr sleeves</span></label><label class="theme-card ps-gj"><input type="radio" name="theme" id="theme-ms_cupcakes" value="ms_cupcakes"><span>ms cupcakes</span></label><label class="theme-card ps-ej"><input type="radio" name="theme" id="theme-muted" value="muted"><span>muted</span></label><label class="theme-card ps-cg"><input type="radio" name="theme" id="theme-nautilus" value="nautilus"><span>nautilus</span></label><label class="theme-card ps-db"><input type="radio" name="theme" id="theme-nebula" value="nebula"><span>nebula</span></label><label class="theme-card ps-da"><input type="radio" name="theme" id="theme-night_runner" value="night_runner"><span>night runner</span></label><label class="theme-card ps-dj"><input type="radio" name="theme" id="theme-nord" value="nord"><span>nord</span></label><label class="theme-card ps-fp"><input type="radio" name="theme" id="theme-nord_light" value="nord_light"><span>nord light</span></label><label class="theme-card ps-di"><input type="radio" name="theme" id="theme-norse" value="norse"><span>norse</span></label><label class="theme-card ps-e5"><input type="radio" name="theme" id="theme-oblivion" value="oblivion"><span>oblivion</span></label><label class="theme-card ps-fm"><input type="radio" name="theme" id="theme-olive" value="olive"><span>olive</span></label><label class="theme-card ps-cy"><input type="radio" name="theme" id="theme-olivia" value="olivia"><span>olivia</span></label><label class="theme-card ps-e2"><input type="radio" name="theme" id="theme-onedark" value="onedark"><span>onedark</span></label><label class="theme-card ps-f4"><input type="radio" name="theme" id="theme-our_theme" value="our_theme"><span>our theme</span></label><label class="theme-card ps-ee"><input type="radio" name="theme" id="theme-pale_nimbus" value="pale_nimbus"><span>pale nimbus</span></label><label class="theme-card ps-fr"><input type="radio" name="theme" id="theme-paper" value="paper"><span>paper</span></label><label class="theme-card ps-eq"><input type="radio" name="theme" id="theme-passion_fruit" value="passion_fruit"><span>passion fruit</span></label><label class="theme-card ps-ff"><input type="radio" name="theme" id="theme-pastel" value="pastel"><span>pastel</span></label><label class="theme-card ps-ds"><input type="radio" name="theme" id="theme-peach_blossom" value="peach_blossom"><span>peach blossom</span></label><label class="theme-card ps-fg"><input type="radio" name="theme" id="theme-peaches" value="peaches"><span>peaches</span></label><label class="theme-card ps-bk"><input type="radio" name="theme" id="theme-phantom" value="phantom"><span>phantom</span></label><label class="theme-card ps-fz"><input type="radio" name="theme" id="theme-pink_lemonade" value="pink_lemonade"><span>pink lemonade</span></label><label class="theme-card ps-cm"><input type="radio" name="theme" id="theme-pulse" value="pulse"><span>pulse</span></label><label class="theme-card ps-d4"><input type="radio" name="theme" id="theme-purpleish" value="purpleish"><span>purpleish</span></label><label class="theme-card ps-fy"><input type="radio" name="theme" id="theme-rainbow_trail" value="rainbow_trail"><span>rainbow trail</span></label><label class="theme-card ps-ct"><input type="radio" name="theme" id="theme-red_dragon" value="red_dragon"><span>red dragon</span></label><label class="theme-card ps-es"><input type="radio" name="theme" id="theme-red_samurai" value="red_samurai"><span>red samurai</span></label><label class="theme-card ps-e1"><input type="radio" name="theme" id="theme-repose_dark" value="repose_dark"><span>repose dark</span></label><label class="theme-card ps-fs"><input type="radio" name="theme" id="theme-repose_light" value="repose_light"><span>repose light</span></label><label class="theme-card ps-fb"><input type="radio" name="theme" id="theme-retro" value="retro"><span>retro</span></label><label class="theme-card ps-bx"><input type="radio" name="theme" id="theme-retrocast" value="retrocast"><span>retrocast</span></label><label class="theme-card ps-cd"><input type="radio" name="theme" id="theme-rgb" value="rgb"><span>rgb</span></label><label class="theme-card ps-d5"><input type="radio" name="theme" id="theme-rose_pine" value="rose_pine"><span>rose pine</span></label><label class="theme-card ps-gc"><input type="radio" name="theme" id="theme-rose_pine_dawn" value="rose_pine_dawn"><span>rose pine dawn</span></label><label class="theme-card ps-dt"><input type="radio" name="theme" id="theme-rose_pine_moon" value="rose_pine_moon"><span>rose pine moon</span></label><label class="theme-card ps-cv"><input type="radio" name="theme" id="theme-rudy" value="rudy"><span>rudy</span></label><label class="theme-card ps-by"><input type="radio" name="theme" id="theme-ryujinscales" value="ryujinscales"><span>ryujinscales</span></label><label class="theme-card ps-fi"><input type="radio" name="theme" id="theme-serika" value="serika"><span>serika</span></label><label class="theme-card ps-e8"><input type="radio" name="theme" id="theme-serika_dark" value="serika_dark"><span>serika dark</span></label><label class="theme-card ps-dh"><input type="radio" name="theme" id="theme-sewing_tin" value="sewing_tin"><span>sewing tin</span></label><label class="theme-card ps-gg"><input type="radio" name="theme" id="theme-sewing_tin_light" value="sewing_tin_light"><span>sewing tin light</span></label><label class="theme-card ps-bi"><input type="radio" name="theme" id="theme-shadow" value="shadow"><span>shadow</span></label><label class="theme-card ps-f6"><input type="radio" name="theme" id="theme-shoko" value="shoko"><span>shoko</span></label><label class="theme-card ps-ge"><input type="radio" name="theme" id="theme-slambook" value="slambook"><span>slambook</span></label><label class="theme-card ps-f2"><input type="radio" name="theme" id="theme-snes" value="snes"><span>snes</span></label><label class="theme-card ps-gb"><input type="radio" name="theme" id="theme-soaring_skies" value="soaring_skies"><span>soaring skies</span></label><label class="theme-card ps-bm"><input type="radio" name="theme" id="theme-solarized_dark" value="solarized_dark"><span>solarized dark</span></label><label class="theme-card ps-g4"><input type="radio" name="theme" id="theme-solarized_light" value="solarized_light"><span>solarized light</span></label><label class="theme-card ps-bj"><input type="radio" name="theme" id="theme-solarized_osaka" value="solarized_osaka"><span>solarized osaka</span></label><label class="theme-card ps-dw"><input type="radio" name="theme" id="theme-sonokai" value="sonokai"><span>sonokai</span></label><label class="theme-card ps-c5"><input type="radio" name="theme" id="theme-spiderman" value="spiderman"><span>spiderman</span></label><label class="theme-card ps-bs"><input type="radio" name="theme" id="theme-stealth" value="stealth"><span>stealth</span></label><label class="theme-card ps-fw"><input type="radio" name="theme" id="theme-strawberry" value="strawberry"><span>strawberry</span></label><label class="theme-card ps-cf"><input type="radio" name="theme" id="theme-striker" value="striker"><span>striker</span></label><label class="theme-card ps-ec"><input type="radio" name="theme" id="theme-suisei" value="suisei"><span>suisei</span></label><label class="theme-card ps-d9"><input type="radio" name="theme" id="theme-sunset" value="sunset"><span>sunset</span></label><label class="theme-card ps-dm"><input type="radio" name="theme" id="theme-superuser" value="superuser"><span>superuser</span></label><label class="theme-card ps-bo"><input type="radio" name="theme" id="theme-sweden" value="sweden"><span>sweden</span></label><label class="theme-card ps-g7"><input type="radio" name="theme" id="theme-tangerine" value="tangerine"><span>tangerine</span></label><label class="theme-card ps-f0"><input type="radio" name="theme" id="theme-taro" value="taro"><span>taro</span></label><label class="theme-card ps-cr"><input type="radio" name="theme" id="theme-terminal" value="terminal"><span>terminal</span></label><label class="theme-card ps-c4"><input type="radio" name="theme" id="theme-terra" value="terra"><span>terra</span></label><label class="theme-card ps-ft"><input type="radio" name="theme" id="theme-terrazzo" value="terrazzo"><span>terrazzo</span></label><label class="theme-card ps-c1"><input type="radio" name="theme" id="theme-terror_below" value="terror_below"><span>terror below</span></label><label class="theme-card ps-f7"><input type="radio" name="theme" id="theme-tiramisu" value="tiramisu"><span>tiramisu</span></label><label class="theme-card ps-eg"><input type="radio" name="theme" id="theme-trackday" value="trackday"><span>trackday</span></label><label class="theme-card ps-bh"><input type="radio" name="theme" id="theme-trance" value="trance"><span>trance</span></label><label class="theme-card ps-c6"><input type="radio" name="theme" id="theme-tron_orange" value="tron_orange"><span>tron orange</span></label><label class="theme-card ps-ev"><input type="radio" name="theme" id="theme-vaporwave" value="vaporwave"><span>vaporwave</span></label><label class="theme-card ps-cb"><input type="radio" name="theme" id="theme-vesper" value="vesper"><span>vesper</span></label><label class="theme-card ps-gl"><input type="radio" name="theme" id="theme-vesper_light" value="vesper_light"><span>vesper light</span></label><label class="theme-card ps-dx"><input type="radio" name="theme" id="theme-viridescent" value="viridescent"><span>viridescent</span></label><label class="theme-card ps-cp"><input type="radio" name="theme" id="theme-voc" value="voc"><span>voc</span></label><label class="theme-card ps-d2"><input type="radio" name="theme" id="theme-vscode" value="vscode"><span>vscode</span></label><label class="theme-card ps-d7"><input type="radio" name="theme" id="theme-watermelon" value="watermelon"><span>watermelon</span></label><label class="theme-card ps-d1"><input type="radio" name="theme" id="theme-wavez" value="wavez"><span>wavez</span></label><label class="theme-card ps-fx"><input type="radio" name="theme" id="theme-witch_girl" value="witch_girl"><span>witch girl</span></label></div></details><div class="js-only ps-14h" id="monkeytype-text-source">
+<h3>reading text color</h3>
+<p class="control-help">Auto chooses the more readable palette color. Choose sub or text to set it yourself; answer colors adapt.</p>
+<div aria-label="Monkeytype reading text color" class="segmented" role="group">
+<label><input checked="" name="text-source" type="radio" value="auto"/><span>auto</span></label>
+<label><input name="text-source" type="radio" value="sub"/><span>sub</span></label>
+<label><input name="text-source" type="radio" value="text"/><span>text</span></label>
+</div>
+<p aria-live="polite" class="control-help ps-14i" id="monkeytype-text-status" role="status"></p>
+</div></div><aside class="theme-editor js-only" aria-label="Customize theme colors"><div class="color-editor-heading"><h3>colors</h3><button type="button" id="reset-theme-colors" aria-label="Reset this theme">reset</button></div><span class="sr-only" id="color-format-help">Choose a swatch or enter hex. Transparent borders accept #RRGGBBAA. Reset restores the theme color.</span><span class="sr-only" id="color-edit-status" role="status" aria-live="polite"></span><div class="main-colors"><div class="color-row" data-color-row="bg">
+<label for="color-bg">background</label>
+<div class="color-inputs"><input type="color" id="swatch-bg" aria-label="background swatch" data-color-swatch="bg">
+<input type="text" id="color-bg" data-color-hex="bg" aria-label="background hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="bg" aria-label="Reset background" title="Reset background">↺</button></div></div><div class="color-row" data-color-row="text">
+<label for="color-text">reading text</label>
+<div class="color-inputs"><input type="color" id="swatch-text" aria-label="reading text swatch" data-color-swatch="text">
+<input type="text" id="color-text" data-color-hex="text" aria-label="reading text hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="text" aria-label="Reset reading text" title="Reset reading text">↺</button></div></div><div class="color-row" data-color-row="muted">
+<label for="color-muted">secondary text</label>
+<div class="color-inputs"><input type="color" id="swatch-muted" aria-label="secondary text swatch" data-color-swatch="muted">
+<input type="text" id="color-muted" data-color-hex="muted" aria-label="secondary text hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="muted" aria-label="Reset secondary text" title="Reset secondary text">↺</button></div></div><div class="color-row" data-color-row="accent">
+<label for="color-accent">interface accent</label>
+<div class="color-inputs"><input type="color" id="swatch-accent" aria-label="interface accent swatch" data-color-swatch="accent">
+<input type="text" id="color-accent" data-color-hex="accent" aria-label="interface accent hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="accent" aria-label="Reset interface accent" title="Reset interface accent">↺</button></div></div><div class="color-row" data-color-row="correct">
+<label for="color-correct">correct</label>
+<div class="color-inputs"><input type="color" id="swatch-correct" aria-label="correct swatch" data-color-swatch="correct">
+<input type="text" id="color-correct" data-color-hex="correct" aria-label="correct hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="correct" aria-label="Reset correct" title="Reset correct">↺</button></div></div><div class="color-row" data-color-row="wrong">
+<label for="color-wrong">wrong</label>
+<div class="color-inputs"><input type="color" id="swatch-wrong" aria-label="wrong swatch" data-color-swatch="wrong">
+<input type="text" id="color-wrong" data-color-hex="wrong" aria-label="wrong hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="wrong" aria-label="Reset wrong" title="Reset wrong">↺</button></div></div></div><details class="advanced-colors"><summary>more colors</summary><div class="advanced-color-grid"><div class="color-row" data-color-row="raised">
+<label for="color-raised">buttons &amp; controls</label>
+<div class="color-inputs"><input type="color" id="swatch-raised" aria-label="buttons &amp; controls swatch" data-color-swatch="raised">
+<input type="text" id="color-raised" data-color-hex="raised" aria-label="buttons &amp; controls hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="raised" aria-label="Reset buttons &amp; controls" title="Reset buttons &amp; controls">↺</button></div></div><div class="color-row" data-color-row="correct-ink">
+<label for="color-correct-ink">correct text &amp; numbers</label>
+<div class="color-inputs"><input type="color" id="swatch-correct-ink" aria-label="correct text &amp; numbers swatch" data-color-swatch="correct-ink">
+<input type="text" id="color-correct-ink" data-color-hex="correct-ink" aria-label="correct text &amp; numbers hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="correct-ink" aria-label="Reset correct text &amp; numbers" title="Reset correct text &amp; numbers">↺</button></div></div><div class="color-row" data-color-row="edge">
+<label for="color-edge">paper outline</label>
+<div class="color-inputs"><input type="color" id="swatch-edge" aria-label="paper outline swatch" data-color-swatch="edge">
+<input type="text" id="color-edge" data-color-hex="edge" aria-label="paper outline hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge" aria-label="Reset paper outline" title="Reset paper outline">↺</button></div></div><div class="color-row" data-color-row="edge-soft">
+<label for="color-edge-soft">soft dividers</label>
+<div class="color-inputs"><input type="color" id="swatch-edge-soft" aria-label="soft dividers swatch" data-color-swatch="edge-soft">
+<input type="text" id="color-edge-soft" data-color-hex="edge-soft" aria-label="soft dividers hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge-soft" aria-label="Reset soft dividers" title="Reset soft dividers">↺</button></div><label class="color-opacity">opacity<input type="range" min="0" max="100" step="0.1" data-color-alpha="edge-soft" aria-label="soft dividers opacity"><output></output></label></div><div class="color-row" data-color-row="edge-strong">
+<label for="color-edge-strong">strong borders</label>
+<div class="color-inputs"><input type="color" id="swatch-edge-strong" aria-label="strong borders swatch" data-color-swatch="edge-strong">
+<input type="text" id="color-edge-strong" data-color-hex="edge-strong" aria-label="strong borders hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge-strong" aria-label="Reset strong borders" title="Reset strong borders">↺</button></div><label class="color-opacity">opacity<input type="range" min="0" max="100" step="0.1" data-color-alpha="edge-strong" aria-label="strong borders opacity"><output></output></label></div><div class="color-row" data-color-row="logo-secondary">
+<label for="color-logo-secondary">wordmark · JLPT</label>
+<div class="color-inputs"><input type="color" id="swatch-logo-secondary" aria-label="wordmark · JLPT swatch" data-color-swatch="logo-secondary">
+<input type="text" id="color-logo-secondary" data-color-hex="logo-secondary" aria-label="wordmark · JLPT hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="logo-secondary" aria-label="Reset wordmark · JLPT" title="Reset wordmark · JLPT">↺</button></div></div></div><div class="fill-opacity-controls"><h4>fill opacity</h4><p>Applies to correct and wrong answers.</p><div class="fill-opacity-row"><label for="opacity-cell-fill">cell fill<output id="opacity-cell-fill-output">11%</output></label><div><input id="opacity-cell-fill" type="range" min="0" max="100" step="1" value="11" data-fill-opacity="cell-fill" aria-label="cell fill opacity"><button type="button" data-fill-reset="cell-fill" aria-label="Reset cell fill opacity" title="Reset cell fill opacity">↺</button></div></div><div class="fill-opacity-row"><label for="opacity-fill">fill style<output id="opacity-fill-output">30%</output></label><div><input id="opacity-fill" type="range" min="0" max="100" step="1" value="30" data-fill-opacity="fill" aria-label="fill style opacity"><button type="button" data-fill-reset="fill" aria-label="Reset fill style opacity" title="Reset fill style opacity">↺</button></div></div></div></details></aside></div></section><section data-settings="browser"><div class="setting-row js-only"><div><h3>remember this browser</h3><p id="save-status">Saving is on by default. No account required.</p></div><label class="switch"><input id="remember" type="checkbox" checked>save preferences, answers and position</label></div><div class="button-row browser-actions js-only"><button id="reset-preferences" type="button">reset preferences</button><button id="forget" type="button">forget saved data</button></div><div class="developer-only developer-settings"><h3>developer mode</h3><p>Principal differences and editorial cases are visible. This local switch is not authentication.</p><button id="disable-dev" type="button">hide developer tools</button></div><div class="settings-about"><button type="button" id="developer-unlock" class="js-only" title="astraJLPT build information">astraJLPT · 2020–2026 collection</button><span id="developer-hint" role="status"></span></div></section></div></details></header><main id="content" class="review-page"><div class="review-content"><a href="../levels/N2.html">← N2 papers</a><h1>N2 · July 2026</h1><p>Uncertainty index: <strong>1019</strong> · 12 differences · 0 unresolved · 4 provisional fixes</p><p>Evidence base 1000 + source concerns 19 = 1019. Concerns are uncapped; browsing order uses evidence tier before concern points.</p><p>This is an editorial evidence assessment, not a probability, an error rate or a practice score.</p><details><summary>Assessment evidence and original source scores</summary><pre>{
+  &quot;unit&quot;: &quot;N2_07_2026&quot;,
+  &quot;sample&quot;: false,
+  &quot;year&quot;: 2026,
+  &quot;month&quot;: 7,
+  &quot;evidence_base&quot;: 1000,
+  &quot;evidence_tier&quot;: 3,
+  &quot;concern_points&quot;: 19,
+  &quot;index&quot;: 1019,
+  &quot;concern_counts&quot;: {
+    &quot;metadata_flags&quot;: 0,
+    &quot;missing_units&quot;: 0,
+    &quot;major_defects&quot;: 0,
+    &quot;minor_defects&quot;: 9,
+    &quot;uncertain_fields&quot;: 1
+  },
+  &quot;principal_history&quot;: {
+    &quot;unit&quot;: &quot;N2_07_2026&quot;,
+    &quot;level&quot;: &quot;N2&quot;,
+    &quot;year&quot;: 2026,
+    &quot;month&quot;: 7,
+    &quot;principal_path&quot;: &quot;src/日语JLPT历年真题/N2真题（2010-2026.07）/2026/2026.07/2026年7月N2 真题.pdf&quot;,
+    &quot;principal_sha256&quot;: &quot;62dbeac1cf0a3af6789fcc6d436bf6ebe2561390008f5d4f2c309be28c2a491c&quot;,
+    &quot;initial_tier&quot;: 1,
+    &quot;written_physical_pages&quot;: &quot;1-16&quot;,
+    &quot;review_status&quot;: &quot;complete_written_review&quot;,
+    &quot;provenance_status&quot;: &quot;unverified&quot;,
+    &quot;provenance_points&quot;: 100,
+    &quot;metadata_flags&quot;: 0,
+    &quot;missing_units&quot;: 0,
+    &quot;major_defects&quot;: 0,
+    &quot;minor_defects&quot;: 9,
+    &quot;uncertain_fields&quot;: 1,
+    &quot;uncertainty_index&quot;: 119,
+    &quot;score_evidence&quot;: [
+      {
+        &quot;id&quot;: &quot;N2_07_2026-S-001&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;vocab-s02&quot;,
+        &quot;field&quot;: &quot;/heading&quot;,
+        &quot;locator&quot;: &quot;Physical pages 1; vocab-s02 /heading&quot;,
+        &quot;evidence&quot;: &quot;Missing underline cue in the instruction; tested words remain underlined.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N2_07_2026-S-002&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;vocab-s05&quot;,
+        &quot;field&quot;: &quot;/heading&quot;,
+        &quot;locator&quot;: &quot;Physical pages 2; vocab-s05 /heading&quot;,
+        &quot;evidence&quot;: &quot;Missing underline cue and connecting の; semantic task remains recoverable.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N2_07_2026-S-003&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-q053&quot;,
+        &quot;field&quot;: &quot;/options/1&quot;,
+        &quot;locator&quot;: &quot;Physical pages 8; reading-q053 /options/1&quot;,
+        &quot;evidence&quot;: &quot;に rather than possessive の in 友人の家; the house and transport action remain identifiable.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N2_07_2026-S-004&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-q053&quot;,
+        &quot;field&quot;: &quot;/options/2&quot;,
+        &quot;locator&quot;: &quot;Physical pages 8; reading-q053 /options/2&quot;,
+        &quot;evidence&quot;: &quot;Same possessive typo; repairing it leaves the channel-setup distractor incorrect.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N2_07_2026-S-005&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-b004&quot;,
+        &quot;field&quot;: &quot;/content/html&quot;,
+        &quot;locator&quot;: &quot;Physical pages 8; reading-b004 /content/html&quot;,
+        &quot;evidence&quot;: &quot;Spelling 必要などころ instead of 必要なところ.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N2_07_2026-S-006&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-b006&quot;,
+        &quot;field&quot;: &quot;/content/html&quot;,
+        &quot;locator&quot;: &quot;Physical pages 9; reading-b006 /content/html&quot;,
+        &quot;evidence&quot;: &quot;ほとんどに is malformed in the opening adverbial clause; the precise replacement is provisional, not a second event.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N2_07_2026-S-007&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-b007&quot;,
+        &quot;field&quot;: &quot;/content/html&quot;,
+        &quot;locator&quot;: &quot;Physical pages 10; reading-b007 /content/html&quot;,
+        &quot;evidence&quot;: &quot;Note 3 has は乳, whereas the body and definition establish ほ乳.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N2_07_2026-S-008&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-b009&quot;,
+        &quot;field&quot;: &quot;/content/html&quot;,
+        &quot;locator&quot;: &quot;Physical pages 12; reading-b009 /content/html&quot;,
+        &quot;evidence&quot;: &quot;Missing/extra particles and gloss spelling defects; the exact time-availability phrase is provisional. One field event, not one event per span.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N2_07_2026-S-009&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-b012&quot;,
+        &quot;field&quot;: &quot;/content/html&quot;,
+        &quot;locator&quot;: &quot;Physical pages 13–14; reading-b012 /content/html&quot;,
+        &quot;evidence&quot;: &quot;いかが cannot express the universal temporal death claim; the distant-goal adverb remains provisional. One field event.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N2_07_2026-S-010&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;reading-q052&quot;,
+        &quot;field&quot;: &quot;/options/3&quot;,
+        &quot;locator&quot;: &quot;Physical pages 7; reading-q052 /options/3&quot;,
+        &quot;evidence&quot;: &quot;The off-topic この文章 may be a damaged noun phrase or a deliberate distractor; a preferred 難しい言葉 repair does not establish a confirmed source error.&quot;
+      }
+    ],
+    &quot;assessed_on&quot;: &quot;2026-09-26&quot;,
+    &quot;method_version&quot;: 1
+  },
+  &quot;evidence&quot;: []
+}</pre></details><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_07_2026.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span><ul></ul><div class="review-controls"><label>Show <select id="review-filter"><option value="all">All records</option><option value="difference">Principal differences</option><option value="unresolved">Unresolved cases</option><option value="provisional_fix">Provisional fixes</option></select></label><label>Find <input id="review-search" type="search" placeholder="Item, wording, evidence…"></label></div><p id="review-count" class="control-help" role="status"></p><section class="review-group" id="review-vocab-s02" data-kinds="difference"><div class="review-group-heading"><h2>vocab-s02</h2><a href="../papers/N2_07_2026.html#vocab-s02">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">問題2　＿＿＿の言葉を漢字で書くとき、最もよいものを1・2・3・4から一つ選びなさい。</div></details><div class="review-record" id="principal_differences-N2_07_2026-PD-001"><div class="review-label">Principal difference · /heading · high</div><div class="comparison"><div><h4>Principal</h4><pre>問題2　の言葉</pre></div><div><h4>Editorial</h4><pre>問題2　<mark class="diff-new">＿＿＿</mark>の言葉</pre></div></div><p>Restore the omitted underline cue. All five tested kana spans are visibly underlined, and the adjacent reading section uses the same cue.</p><span class="principal-repository-source">Principal source (page=1): <code>additional-assets/principals/N2_07_2026.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">問題2 instruction, cue immediately before の言葉</span><details><summary>Full published record · principal_differences-N2_07_2026-PD-001</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N2_07_2026-PD-001&quot;,
+  &quot;unit&quot;: &quot;N2_07_2026&quot;,
+  &quot;item_id&quot;: &quot;vocab-s02&quot;,
+  &quot;field&quot;: &quot;/heading&quot;,
+  &quot;current_value&quot;: &quot;問題2　＿＿＿の言葉を漢字で書くとき、最もよいものを1・2・3・4から一つ選びなさい。&quot;,
+  &quot;categories&quot;: [
+    &quot;missing_printed_content&quot;,
+    &quot;underline&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2026年7月N2 真题 — question-paper reproduction&quot;,
+    &quot;sha256&quot;: &quot;62dbeac1cf0a3af6789fcc6d436bf6ebe2561390008f5d4f2c309be28c2a491c&quot;,
+    &quot;physical_pages&quot;: [
+      1
+    ],
+    &quot;locator&quot;: &quot;問題2 instruction, cue immediately before の言葉&quot;,
+    &quot;reading&quot;: &quot;問題2　の言葉&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;問題2　＿＿＿の言葉&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Restore the omitted underline cue. All five tested kana spans are visibly underlined, and the adjacent reading section uses the same cue.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-vocab-s05" data-kinds="difference"><div class="review-group-heading"><h2>vocab-s05</h2><a href="../papers/N2_07_2026.html#vocab-s05">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">問題5　＿＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。</div></details><div class="review-record" id="principal_differences-N2_07_2026-PD-002"><div class="review-label">Principal difference · /heading · high</div><div class="comparison"><div><h4>Principal</h4><pre>問題5　言葉に</pre></div><div><h4>Editorial</h4><pre>問題5　<mark class="diff-new">＿＿＿の</mark>言葉に</pre></div></div><p>Restore the omitted underline cue and の linking it to 言葉. All five vocabulary targets are visibly underlined; the semantic task and target spans are unchanged.</p><span class="principal-repository-source">Principal source (page=2): <code>additional-assets/principals/N2_07_2026.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">問題5 instruction, cue immediately before 言葉</span><details><summary>Full published record · principal_differences-N2_07_2026-PD-002</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N2_07_2026-PD-002&quot;,
+  &quot;unit&quot;: &quot;N2_07_2026&quot;,
+  &quot;item_id&quot;: &quot;vocab-s05&quot;,
+  &quot;field&quot;: &quot;/heading&quot;,
+  &quot;current_value&quot;: &quot;問題5　＿＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。&quot;,
+  &quot;categories&quot;: [
+    &quot;missing_printed_content&quot;,
+    &quot;underline&quot;,
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2026年7月N2 真题 — question-paper reproduction&quot;,
+    &quot;sha256&quot;: &quot;62dbeac1cf0a3af6789fcc6d436bf6ebe2561390008f5d4f2c309be28c2a491c&quot;,
+    &quot;physical_pages&quot;: [
+      2
+    ],
+    &quot;locator&quot;: &quot;問題5 instruction, cue immediately before 言葉&quot;,
+    &quot;reading&quot;: &quot;問題5　言葉に&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;問題5　＿＿＿の言葉に&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Restore the omitted underline cue and の linking it to 言葉. All five vocabulary targets are visibly underlined; the semantic task and target spans are unchanged.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-q052" data-kinds="difference provisional_fix"><div class="review-group-heading"><h2>reading-q052</h2><a href="../papers/N2_07_2026.html#reading-q052">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">優れた文章を書くときの言葉について、筆者はどのように考えているか。<ol><li>気持ちや考えを伝えるときに使える言葉をたくさん知っていたほうがいい。</li><li>伝えたい内容に応じて、異なる種類の言葉を使い分けたほうがいい。</li><li>難しい言葉を無理に使うのではなく、日常でもよく使われる言葉を使えばいい。</li><li>難しい言葉は完全に避けるのではなく、必要に応じて使えばいい。</li></ol><p>Editorial key: 3</p></div></details><div class="review-record" id="unresolved_cases-N2_07_2026-reading-q052-options-3"><div class="review-label">Provisional fix · /options/3 · medium</div><div class="comparison"><div><h4>Alternative</h4><pre><mark class="diff-old">この文章</mark>は完全に避けるのではなく、必要に応じて使えばいい。</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">難しい言葉</mark>は完全に避けるのではなく、必要に応じて使えばいい。</pre></div></div><p>Prefer 難しい言葉 as the topic: the passage and question concern word choice, and this creates a coherent competing claim about selective use of difficult words. It remains incorrect because the passage recommends familiar wording and does not advocate avoidance followed by conditional use. The legible この文章 could still be an intentionally off-topic distractor, so this is provisional.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>No authenticated option set establishes whether the noun was damaged or deliberately off-topic, or whether 言葉 rather than 表現 was used.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_07_2026.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Q52 option 4, claim about avoiding or using difficult words</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=7): <code>additional-assets/principals/N2_07_2026.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q52 option 4, claim about avoiding or using difficult words<p>この文章は完全に</p></li><li><span class="principal-repository-source">Principal source (page=10): <code>additional-assets/principals/N2_07_2026.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q52 explanation, final incorrect-option comment (misnumbered 3)<p>Rejects the claim because the author did not discuss complete avoidance; does not reproduce the disputed Japanese noun.</p></li></ul><details><summary>Full published record · unresolved_cases-N2_07_2026-reading-q052-options-3</summary><pre>{
+  &quot;case_id&quot;: &quot;N2_07_2026-reading-q052-options-3&quot;,
+  &quot;unit&quot;: &quot;N2_07_2026&quot;,
+  &quot;item_id&quot;: &quot;reading-q052&quot;,
+  &quot;field&quot;: &quot;/options/3&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;難しい言葉は完全に避けるのではなく、必要に応じて使えばいい。&quot;,
+  &quot;before&quot;: null,
+  &quot;context&quot;: &quot;Q52 option 4, claim about avoiding or using difficult words&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;この文章は完全に避けるのではなく、必要に応じて使えばいい。&quot;,
+      &quot;assessment&quot;: &quot;Directly printed. Grammatically possible as an intentionally off-topic distractor, but its demonstrative has no clear referent in the argument about vocabulary.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;難しい表現は完全に避けるのではなく、必要に応じて使えばいい。&quot;,
+      &quot;assessment&quot;: &quot;A coherent competing noun phrase with the same broad interpretation; not attested by a second Japanese witness.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;難しい言葉を完全に避けるのではなく、必要に応じて使えばいい。&quot;,
+      &quot;assessment&quot;: &quot;Object-marked alternative; the source topic particle は is retained in the preferred minimal repair.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;2026年7月N2 真题 — question-paper reproduction&quot;,
+      &quot;sha256&quot;: &quot;62dbeac1cf0a3af6789fcc6d436bf6ebe2561390008f5d4f2c309be28c2a491c&quot;,
+      &quot;physical_pages&quot;: [
+        7
+      ],
+      &quot;locator&quot;: &quot;Q52 option 4, claim about avoiding or using difficult words&quot;,
+      &quot;reading&quot;: &quot;この文章は完全に&quot;,
+      &quot;lineage&quot;: &quot;Principal reproduction; authentication and acquisition not established.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2026年7月N2真题答案+解析+听力原文 — reference answers and explanations&quot;,
+      &quot;sha256&quot;: &quot;783c6ed2beeb0d9fe8eec1744517921d54a9da58fdf04cdf34f44d257eb7f956&quot;,
+      &quot;physical_pages&quot;: [
+        10
+      ],
+      &quot;locator&quot;: &quot;Q52 explanation, final incorrect-option comment (misnumbered 3)&quot;,
+      &quot;reading&quot;: &quot;Rejects the claim because the author did not discuss complete avoidance; does not reproduce the disputed Japanese noun.&quot;,
+      &quot;lineage&quot;: &quot;Reference answers and translations; independence from the question reproduction is unestablished.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Prefer 難しい言葉 as the topic: the passage and question concern word choice, and this creates a coherent competing claim about selective use of difficult words. It remains incorrect because the passage recommends familiar wording and does not advocate avoidance followed by conditional use. The legible この文章 could still be an intentionally off-topic distractor, so this is provisional.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Inspected principal p7, all four options and the complete short passage, then the companion p10 explanation and p1 key.&quot;,
+    &quot;Tested the printed demonstrative, 難しい言葉 and 難しい表現 against the actual task and verified that choice 3 remains preferred.&quot;,
+    &quot;Searched the literal option and 名文を書くためには; a secondary quotation of the passage’s first paragraph supplied no option text.&quot;,
+    &quot;Checked the sitting-specific local inventory; no additional Japanese question witness was found.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;No authenticated option set establishes whether the noun was damaged or deliberately off-topic, or whether 言葉 rather than 表現 was used.&quot;
+}</pre></details></div><div class="review-record" id="principal_differences-N2_07_2026-PD-009"><div class="review-label">Principal difference · /options/3 · high</div><div class="comparison"><div><h4>Principal</h4><pre><mark class="diff-old">この文章</mark>は完全に</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">難しい言葉</mark>は完全に</pre></div></div><p>Prefer 難しい言葉 as the topic: the passage and question concern word choice, and this creates a coherent competing claim about selective use of difficult words. It remains incorrect because the passage recommends familiar wording and does not advocate avoidance followed by conditional use. The legible この文章 could still be an intentionally off-topic distractor, so this is provisional.</p><span class="principal-repository-source">Principal source (page=7): <code>additional-assets/principals/N2_07_2026.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Q52 option 4, claim about avoiding or using difficult words</span><details><summary>Full published record · principal_differences-N2_07_2026-PD-009</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N2_07_2026-PD-009&quot;,
+  &quot;unit&quot;: &quot;N2_07_2026&quot;,
+  &quot;item_id&quot;: &quot;reading-q052&quot;,
+  &quot;field&quot;: &quot;/options/3&quot;,
+  &quot;current_value&quot;: &quot;難しい言葉は完全に避けるのではなく、必要に応じて使えばいい。&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2026年7月N2 真题 — question-paper reproduction&quot;,
+    &quot;sha256&quot;: &quot;62dbeac1cf0a3af6789fcc6d436bf6ebe2561390008f5d4f2c309be28c2a491c&quot;,
+    &quot;physical_pages&quot;: [
+      7
+    ],
+    &quot;locator&quot;: &quot;Q52 option 4, claim about avoiding or using difficult words&quot;,
+    &quot;reading&quot;: &quot;この文章は完全に&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;難しい言葉は完全に&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;conjectural_repair&quot;,
+  &quot;rationale&quot;: &quot;Prefer 難しい言葉 as the topic: the passage and question concern word choice, and this creates a coherent competing claim about selective use of difficult words. It remains incorrect because the passage recommends familiar wording and does not advocate avoidance followed by conditional use. The legible この文章 could still be an intentionally off-topic distractor, so this is provisional.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;N2_07_2026-reading-q052-options-3&quot;
+  ]
+}</pre></details></div></section><section class="review-group" id="review-reading-q053" data-kinds="difference"><div class="review-group-heading"><h2>reading-q053</h2><a href="../papers/N2_07_2026.html#reading-q053">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">このメールで伝えたいことは何か。<ol><li>今使っているテレビを友人の家に運んでもらいたいので、見積もりを作り直してほしい。</li><li>友人の家にあるテレビを運んでもらいたいので、見積もりを作り直してほしい。</li><li>友人の家にあるテレビを運び、チャンネルの設定もしてほしいので、見積もりを作り直してほしい。</li><li>テレビのチャンネルの設定は頼まないことにしたので、見積もりを作り直してほしい。</li></ol><p>Editorial key: 2</p></div></details><div class="review-record" id="principal_differences-N2_07_2026-PD-003"><div class="review-label">Principal difference · /options/1 · high</div><div class="comparison"><div><h4>Principal</h4><pre>友人<mark class="diff-old">に</mark>家</pre></div><div><h4>Editorial</h4><pre>友人<mark class="diff-new">の</mark>家</pre></div></div><p>The house belongs to the friend: の connects 友人 and 家. The email explicitly says 友人宅, and the companion identifies the friend’s television as the item to transport.</p><span class="principal-repository-source">Principal source (page=8): <code>additional-assets/principals/N2_07_2026.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Q53 option 2, requested television transport</span><details><summary>Full published record · principal_differences-N2_07_2026-PD-003</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N2_07_2026-PD-003&quot;,
+  &quot;unit&quot;: &quot;N2_07_2026&quot;,
+  &quot;item_id&quot;: &quot;reading-q053&quot;,
+  &quot;field&quot;: &quot;/options/1&quot;,
+  &quot;current_value&quot;: &quot;友人の家にあるテレビを運んでもらいたいので、見積もりを作り直してほしい。&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2026年7月N2 真题 — question-paper reproduction&quot;,
+    &quot;sha256&quot;: &quot;62dbeac1cf0a3af6789fcc6d436bf6ebe2561390008f5d4f2c309be28c2a491c&quot;,
+    &quot;physical_pages&quot;: [
+      8
+    ],
+    &quot;locator&quot;: &quot;Q53 option 2, requested television transport&quot;,
+    &quot;reading&quot;: &quot;友人に家&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;友人の家&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;The house belongs to the friend: の connects 友人 and 家. The email explicitly says 友人宅, and the companion identifies the friend’s television as the item to transport.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div><div class="review-record" id="principal_differences-N2_07_2026-PD-004"><div class="review-label">Principal difference · /options/2 · high</div><div class="comparison"><div><h4>Principal</h4><pre>友人<mark class="diff-old">に</mark>家</pre></div><div><h4>Editorial</h4><pre>友人<mark class="diff-new">の</mark>家</pre></div></div><p>Repair the same malformed possessive as option 2. This remains a distractor because it requests channel setup, which the email expressly says is unnecessary.</p><span class="principal-repository-source">Principal source (page=8): <code>additional-assets/principals/N2_07_2026.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Q53 option 3, television transport and channel setup</span><details><summary>Full published record · principal_differences-N2_07_2026-PD-004</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N2_07_2026-PD-004&quot;,
+  &quot;unit&quot;: &quot;N2_07_2026&quot;,
+  &quot;item_id&quot;: &quot;reading-q053&quot;,
+  &quot;field&quot;: &quot;/options/2&quot;,
+  &quot;current_value&quot;: &quot;友人の家にあるテレビを運び、チャンネルの設定もしてほしいので、見積もりを作り直してほしい。&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2026年7月N2 真题 — question-paper reproduction&quot;,
+    &quot;sha256&quot;: &quot;62dbeac1cf0a3af6789fcc6d436bf6ebe2561390008f5d4f2c309be28c2a491c&quot;,
+    &quot;physical_pages&quot;: [
+      8
+    ],
+    &quot;locator&quot;: &quot;Q53 option 3, television transport and channel setup&quot;,
+    &quot;reading&quot;: &quot;友人に家&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;友人の家&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Repair the same malformed possessive as option 2. This remains a distractor because it requests channel setup, which the email expressly says is unnecessary.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-b004" data-kinds="difference"><div class="review-group-heading"><h2>reading-b004</h2><a href="../papers/N2_07_2026.html#reading-b004">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><p>（4）</p><p>北川農業大学 応用生命科学部<br/><ruby data-rubi-id="rr4-85d707be345aaebaef70" data-rubi-origin="project_rubi_restore">教授<rt>きょうじゅ</rt></ruby> 青山友菜先生</p><p>先日は、来月出版予定の『果物の不思議』に<ruby data-rubi-id="rr4-f817ec97074c3665a918" data-rubi-origin="project_rubi_restore">掲載<rt>けいさい</rt></ruby>する図表20点についてご意見をいただき、ありがとうございました。<br/>ご指示のあった追加のグラフ1点が出来上がりましたので、<ruby data-rubi-id="rr4-9df1ab8e8d406bf458ad" data-rubi-origin="project_rubi_restore">添付<rt>てんぷ</rt></ruby>いたします。ご確認をお願いします。<br/>また、誤りのあった図表5点は現在<ruby data-rubi-id="rr4-d41cecdeb1eb40883ab5" data-rubi-origin="project_rubi_restore">修正<rt>しゅうせい</rt></ruby>中です。今週中にお送りする予定ですので、ご確認いただき、再度修正の必要なところがありましたらご連絡ください。<br/>以上、よろしくお願い申し上げます。</p><p>AGR出版 編集部<br/>川波敬一</p></div></details><div class="review-record" id="principal_differences-N2_07_2026-PD-005"><div class="review-label">Principal difference · /content/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>必要な<mark class="diff-old">ど</mark>ころ</pre></div><div><h4>Editorial</h4><pre>必要な<mark class="diff-new">と</mark>ころ</pre></div></div><p>The locative noun is ところ. The voiced ど has no grammatical role after 必要な; the sentence asks the professor to identify portions needing revision.</p><span class="principal-repository-source">Principal source (page=8): <code>additional-assets/principals/N2_07_2026.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Email to 青山先生, request to report places needing further revision</span><details><summary>Full published record · principal_differences-N2_07_2026-PD-005</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N2_07_2026-PD-005&quot;,
+  &quot;unit&quot;: &quot;N2_07_2026&quot;,
+  &quot;item_id&quot;: &quot;reading-b004&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;current_value&quot;: &quot;&lt;p&gt;（4）&lt;/p&gt;&lt;p&gt;北川農業大学 応用生命科学部&lt;br&gt;教授 青山友菜先生&lt;/p&gt;&lt;p&gt;先日は、来月出版予定の『果物の不思議』に掲載する図表20点についてご意見をいただき、ありがとうございました。&lt;br&gt;ご指示のあった追加のグラフ1点が出来上がりましたので、添付いたします。ご確認をお願いします。&lt;br&gt;また、誤りのあった図表5点は現在修正中です。今週中にお送りする予定ですので、ご確認いただき、再度修正の必要なところがありましたらご連絡ください。&lt;br&gt;以上、よろしくお願い申し上げます。&lt;/p&gt;&lt;p&gt;AGR出版 編集部&lt;br&gt;川波敬一&lt;/p&gt;&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2026年7月N2 真题 — question-paper reproduction&quot;,
+    &quot;sha256&quot;: &quot;62dbeac1cf0a3af6789fcc6d436bf6ebe2561390008f5d4f2c309be28c2a491c&quot;,
+    &quot;physical_pages&quot;: [
+      8
+    ],
+    &quot;locator&quot;: &quot;Email to 青山先生, request to report places needing further revision&quot;,
+    &quot;reading&quot;: &quot;必要などころ&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;必要なところ&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;The locative noun is ところ. The voiced ど has no grammatical role after 必要な; the sentence asks the professor to identify portions needing revision.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-b006" data-kinds="difference provisional_fix"><div class="review-group-heading"><h2>reading-b006</h2><a href="../papers/N2_07_2026.html#reading-b006">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><p>（1）</p><p>誰かへの贈り物を選ぶとき、それをほんとうに相手がほしいと思ってくれるかどうかは、はっきりしません。ぼくらは、よくわからないなりに相手のことを想像し、思いをめぐらせて、贈り物を選びます。</p><p>以前、小さなお子さんのいる家庭を訪ねたとき、絵本を三冊ほどプレゼントとしてもっていったことがあります。ところが、その人は、どの本もすでにお持ちでした。贈り物には<u>そんなこと</u>がよく起こるのです。でもそれはかならずしも「失敗」とはいえません。</p><p>贈り物の意義は、モノではなく、贈り物を渡そうとした思いのほうにあるからです。もちろん、相手がほしいと指定する物を贈ることもあります。それは、どちらかといえば代わりに支払いをする、といった意味になって、商品の交換に似てきます。</p><p>どのくらいの金額のものが適切なのか、どんなものだったら喜んでくれるのか、不確定なままであることが、贈り物に特別の意味を付与している面があるのです。</p><p>（中略）</p><p>たとえ欲しかったものとは違っていても、相手が自分のことをじっくり考えて選んでくれたものには、相手を想起させ、その人との関係をつくりだし、感情を喚起する可能性があります。</p><p>相手のなかに目に見えない何かを生み出すこと。それができるかどうかわからないまま、でもそれを目指して贈ること。そこに、モノの効用以上の何かが生じる余地が生まれます。</p><p>（注1）付与する：与える</p><p>（注2）想起する：思い出す</p><p>（注3）喚起する：ここでは、呼び起こす</p><p>（注4）余地：ここでは、可能性</p></div></details><div class="review-record" id="unresolved_cases-N2_07_2026-reading-b006-content-html"><div class="review-label">Provisional fix · /content/html · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>それをほんとに相手がほしいと思ってくれるかどうかは</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">&lt;p&gt;（1）&lt;/p&gt;&lt;p&gt;誰かへの贈り物を選ぶとき、</mark>それをほんと<mark class="diff-new">う</mark>に相手がほしいと思ってくれるかどうかは<mark class="diff-new">、はっきりしません。ぼくらは、よくわからないなりに相手のことを想像し、思いをめぐらせて、贈り物を選びます。&lt;/p&gt;&lt;p&gt;以前、小さなお子さんのいる家庭を訪ねたとき、絵本を三冊ほどプレゼントとしてもっていったことがあります。ところ</mark>…</pre></div></div><p>ほとんどに is not a viable adverb in this clause. Prefer ほんとうに, expressing the giver’s uncertainty about the recipient’s actual desire, consistent with the later distinction between thoughtful choice and buying a specifically requested item. Exact wording and kana spelling remain uncertain.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>Neither the translation nor an independent Japanese witness determines the exact adverb and orthography; an original literary or exam passage could settle it.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_07_2026.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Gift passage, opening uncertainty about whether the recipient really wants the gift</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=9): <code>additional-assets/principals/N2_07_2026.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Gift passage, opening uncertainty about whether the recipient really wants the gift<p>それをほとんどに相手が</p></li><li><span class="principal-repository-source">Principal source (page=12): <code>additional-assets/principals/N2_07_2026.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Gift passage translation and Q57–58 explanations<p>The translation describes uncertainty about whether the recipient will be satisfied; it does not distinguish the Japanese adverb or its spelling.</p></li></ul><details><summary>Full published record · unresolved_cases-N2_07_2026-reading-b006-content-html</summary><pre>{
+  &quot;case_id&quot;: &quot;N2_07_2026-reading-b006-content-html&quot;,
+  &quot;unit&quot;: &quot;N2_07_2026&quot;,
+  &quot;item_id&quot;: &quot;reading-b006&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;&lt;p&gt;（1）&lt;/p&gt;&lt;p&gt;誰かへの贈り物を選ぶとき、それをほんとうに相手がほしいと思ってくれるかどうかは、はっきりしません。ぼくらは、よくわからないなりに相手のことを想像し、思いをめぐらせて、贈り物を選びます。&lt;/p&gt;&lt;p&gt;以前、小さなお子さんのいる家庭を訪ねたとき、絵本を三冊ほどプレゼントとしてもっていったことがあります。ところが、その人は、どの本もすでにお持ちでした。贈り物には&lt;u&gt;そんなこと&lt;/u&gt;がよく起こるのです。でもそれはかならずしも「失敗」とはいえません。&lt;/p&gt;&lt;p&gt;贈り物の意義は、モノではなく、贈り物を渡そうとした思いのほうにあるからです。もちろん、相手がほしいと指定する物を贈ることもあります。それは、どちらかといえば代わりに支払いをする、といった意味になって、商品の交換に似てきます。&lt;/p&gt;&lt;p&gt;どのくらいの金額のものが適切なのか、どんなものだったら喜んでくれるのか、不確定なままであることが、贈り物に特別の意味を付与している面があるのです。&lt;/p&gt;&lt;p&gt;（中略）&lt;/p&gt;&lt;p&gt;たとえ欲しかったものとは違っていても、相手が自分のことをじっくり考えて選んでくれたものには、相手を想起させ、その人との関係をつくりだし、感情を喚起する可能性があります。&lt;/p&gt;&lt;p&gt;相手のなかに目に見えない何かを生み出すこと。それができるかどうかわからないまま、でもそれを目指して贈ること。そこに、モノの効用以上の何かが生じる余地が生まれます。&lt;/p&gt;&lt;p&gt;（注1）付与する：与える&lt;/p&gt;&lt;p&gt;（注2）想起する：思い出す&lt;/p&gt;&lt;p&gt;（注3）喚起する：ここでは、呼び起こす&lt;/p&gt;&lt;p&gt;（注4）余地：ここでは、可能性&lt;/p&gt;&quot;,
+  &quot;before&quot;: null,
+  &quot;context&quot;: &quot;Gift passage, opening uncertainty about whether the recipient really wants the gift&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;それをほんとに相手がほしいと思ってくれるかどうかは&quot;,
+      &quot;assessment&quot;: &quot;A colloquial but natural competing repair; the surrounding ぼくら and conversational style allow it.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;それを本当に相手がほしいと思ってくれるかどうかは&quot;,
+      &quot;assessment&quot;: &quot;Same sense with kanji; historical spelling is unestablished.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;それをほとんどに相手がほしいと思ってくれるかどうかは&quot;,
+      &quot;assessment&quot;: &quot;Legible source reading, but ほとんどに cannot modify this desire clause in the intended way.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;2026年7月N2 真题 — question-paper reproduction&quot;,
+      &quot;sha256&quot;: &quot;62dbeac1cf0a3af6789fcc6d436bf6ebe2561390008f5d4f2c309be28c2a491c&quot;,
+      &quot;physical_pages&quot;: [
+        9
+      ],
+      &quot;locator&quot;: &quot;Gift passage, opening uncertainty about whether the recipient really wants the gift&quot;,
+      &quot;reading&quot;: &quot;それをほとんどに相手が&quot;,
+      &quot;lineage&quot;: &quot;Principal reproduction; authentication and acquisition not established.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2026年7月N2真题答案+解析+听力原文 — reference answers and explanations&quot;,
+      &quot;sha256&quot;: &quot;783c6ed2beeb0d9fe8eec1744517921d54a9da58fdf04cdf34f44d257eb7f956&quot;,
+      &quot;physical_pages&quot;: [
+        12,
+        13
+      ],
+      &quot;locator&quot;: &quot;Gift passage translation and Q57–58 explanations&quot;,
+      &quot;reading&quot;: &quot;The translation describes uncertainty about whether the recipient will be satisfied; it does not distinguish the Japanese adverb or its spelling.&quot;,
+      &quot;lineage&quot;: &quot;Reference answers and translations; independence from the question reproduction is unestablished.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;ほとんどに is not a viable adverb in this clause. Prefer ほんとうに, expressing the giver’s uncertainty about the recipient’s actual desire, consistent with the later distinction between thoughtful choice and buying a specifically requested item. Exact wording and kana spelling remain uncertain.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Rechecked the enlarged original opening on p9 and read the entire passage and both questions across pp9–10.&quot;,
+    &quot;Compared the complete companion translation on pp12–13 and tested the repair against the request-versus-gift contrast.&quot;,
+    &quot;Searched the literal phrase, それをほんとうに, 贈り物に特別の意味, 贈り物を渡そうとした思い, 絵本を三冊, 相手を想起させ and モノの効用; no exact useful source was located.&quot;,
+    &quot;Revisited ほんとうに, ほんとに and 本当に after the full item review; kept a qualified preference without claiming exact historical wording.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;Neither the translation nor an independent Japanese witness determines the exact adverb and orthography; an original literary or exam passage could settle it.&quot;
+}</pre></details></div><div class="review-record" id="principal_differences-N2_07_2026-PD-010"><div class="review-label">Principal difference · /content/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>それをほと<mark class="diff-old">んど</mark>に相手が</pre></div><div><h4>Editorial</h4><pre>それをほ<mark class="diff-new">ん</mark>と<mark class="diff-new">う</mark>に相手が</pre></div></div><p>ほとんどに is not a viable adverb in this clause. Prefer ほんとうに, expressing the giver’s uncertainty about the recipient’s actual desire, consistent with the later distinction between thoughtful choice and buying a specifically requested item. Exact wording and kana spelling remain uncertain.</p><span class="principal-repository-source">Principal source (page=9): <code>additional-assets/principals/N2_07_2026.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Gift passage, opening uncertainty about whether the recipient really wants the gift</span><details><summary>Full published record · principal_differences-N2_07_2026-PD-010</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N2_07_2026-PD-010&quot;,
+  &quot;unit&quot;: &quot;N2_07_2026&quot;,
+  &quot;item_id&quot;: &quot;reading-b006&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;current_value&quot;: &quot;&lt;p&gt;（1）&lt;/p&gt;&lt;p&gt;誰かへの贈り物を選ぶとき、それをほんとうに相手がほしいと思ってくれるかどうかは、はっきりしません。ぼくらは、よくわからないなりに相手のことを想像し、思いをめぐらせて、贈り物を選びます。&lt;/p&gt;&lt;p&gt;以前、小さなお子さんのいる家庭を訪ねたとき、絵本を三冊ほどプレゼントとしてもっていったことがあります。ところが、その人は、どの本もすでにお持ちでした。贈り物には&lt;u&gt;そんなこと&lt;/u&gt;がよく起こるのです。でもそれはかならずしも「失敗」とはいえません。&lt;/p&gt;&lt;p&gt;贈り物の意義は、モノではなく、贈り物を渡そうとした思いのほうにあるからです。もちろん、相手がほしいと指定する物を贈ることもあります。それは、どちらかといえば代わりに支払いをする、といった意味になって、商品の交換に似てきます。&lt;/p&gt;&lt;p&gt;どのくらいの金額のものが適切なのか、どんなものだったら喜んでくれるのか、不確定なままであることが、贈り物に特別の意味を付与している面があるのです。&lt;/p&gt;&lt;p&gt;（中略）&lt;/p&gt;&lt;p&gt;たとえ欲しかったものとは違っていても、相手が自分のことをじっくり考えて選んでくれたものには、相手を想起させ、その人との関係をつくりだし、感情を喚起する可能性があります。&lt;/p&gt;&lt;p&gt;相手のなかに目に見えない何かを生み出すこと。それができるかどうかわからないまま、でもそれを目指して贈ること。そこに、モノの効用以上の何かが生じる余地が生まれます。&lt;/p&gt;&lt;p&gt;（注1）付与する：与える&lt;/p&gt;&lt;p&gt;（注2）想起する：思い出す&lt;/p&gt;&lt;p&gt;（注3）喚起する：ここでは、呼び起こす&lt;/p&gt;&lt;p&gt;（注4）余地：ここでは、可能性&lt;/p&gt;&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2026年7月N2 真题 — question-paper reproduction&quot;,
+    &quot;sha256&quot;: &quot;62dbeac1cf0a3af6789fcc6d436bf6ebe2561390008f5d4f2c309be28c2a491c&quot;,
+    &quot;physical_pages&quot;: [
+      9
+    ],
+    &quot;locator&quot;: &quot;Gift passage, opening uncertainty about whether the recipient really wants the gift&quot;,
+    &quot;reading&quot;: &quot;それをほとんどに相手が&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;それをほんとうに相手が&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;conjectural_repair&quot;,
+  &quot;rationale&quot;: &quot;ほとんどに is not a viable adverb in this clause. Prefer ほんとうに, expressing the giver’s uncertainty about the recipient’s actual desire, consistent with the later distinction between thoughtful choice and buying a specifically requested item. Exact wording and kana spelling remain uncertain.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;N2_07_2026-reading-b006-content-html&quot;
+  ]
+}</pre></details></div></section><section class="review-group" id="review-reading-b007" data-kinds="difference"><div class="review-group-heading"><h2>reading-b007</h2><a href="../papers/N2_07_2026.html#reading-b007">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><p>（2）</p><p>地球全体に<ruby data-rubi-id="rr4-0a52715589d8eef738ef" data-rubi-origin="project_rubi_restore">棲<rt>す</rt></ruby>んでいるクモを全部集めて体重計に乗せてやれば、<ruby data-rubi-id="rr4-21f3adae0c366b366d85" data-rubi-origin="project_rubi_restore">目盛<rt>めも</rt></ruby>りはおおよそ2500万トンほどのところをさすことでしょう。地球に<ruby data-rubi-id="rr4-53a2381d51c9b409e24e" data-rubi-origin="project_rubi_restore">棲<rt>す</rt></ruby>む、人と家畜を除いたすべての野生ほ乳動物の全体重が4700万トンほどですから、クモはその約半分に相当するほどたくさんいるのです。またこれは、すべての鳥の体重2700万トンとほぼ同じです。</p><p>クモが一番たくさん<ruby data-rubi-id="rr4-e2857fcde2c66a8ddbe1" data-rubi-origin="project_rubi_restore">棲<rt>す</rt></ruby>んでいるのは森林で、草原や<ruby data-rubi-id="rr4-e6ae7c73bf21eda5c541" data-rubi-origin="project_rubi_restore">灌木<rt>かんぼく</rt></ruby><ruby data-rubi-id="rr4-e7c7c9aba82bf7067688" data-rubi-origin="project_rubi_restore">林<rt>りん</rt></ruby>にはその半分ほどの<ruby data-rubi-id="rr4-e468e3b6a7ea87708aae" data-rubi-origin="project_rubi_restore">密度<rt>みつど</rt></ruby>で、<ruby data-rubi-id="rr4-3229875cf382d824f436" data-rubi-origin="project_rubi_restore">農地<rt>のうち</rt></ruby>や<ruby data-rubi-id="rr4-96ff4208e4805c38d3fd" data-rubi-origin="project_rubi_restore">沙漠<rt>さばく</rt></ruby>地帯にも1<ruby data-rubi-id="rr4-a5aeb2f21f46067ae792" data-rubi-origin="project_rubi_restore">桁<rt>けた</rt></ruby>少ないとはいえ全体の3パーセントほどが暮らしています。</p><p>これだけのクモがエサを必要とします。その<ruby data-rubi-id="rr4-246bdf64656f8f3ee70c" data-rubi-origin="project_rubi_restore">量<rt>りょう</rt></ruby>を1年間積み上げていくと、その総量は<ruby data-rubi-id="rr4-725fee841f44bed029c2" data-rubi-origin="project_rubi_restore">莫大<rt>ばくだい</rt></ruby>で、クモは世界中で4億トンから8億トンのエサを食べていると見積もられています。</p><p>（中略）</p><p>実際は、クモが食べているのはほとんどが<ruby data-rubi-id="rr4-7d5054fe845ba10d3061" data-rubi-origin="project_rubi_restore">昆虫<rt>こんちゅう</rt></ruby>です。<ruby data-rubi-id="rr4-57adfb097175ff217a37" data-rubi-origin="project_rubi_restore">昆虫<rt>こんちゅう</rt></ruby>の量は全体で13億トンと見積もられているので、その3割から6割がクモによって食べられていることになります。</p><p>ということはつまり、もしもクモがいなくなれば、捕食者から自由になった昆虫が大幅に数を増やすことでしょう。その多くは植物を食べます。ですから、森林や草原では緑が失われ、農地では<ruby data-rubi-id="rr4-e71f6b65380aae289d59" data-rubi-origin="project_rubi_restore">収穫<rt>しゅうかく</rt></ruby>できる作物の量が減るかもしれません。</p><p>実際、農地では、クモがたくさんいると、農作物をエサとする昆虫が数を増やすスピードを<ruby data-rubi-id="rr4-77e0ebd19fc859094414" data-rubi-origin="project_rubi_restore">抑<rt>おさ</rt></ruby>えることができます。このおかげで<ruby data-rubi-id="rr4-92b1b8306641d87d8369" data-rubi-origin="project_rubi_restore">収穫量<rt>しゅうかくりょう</rt></ruby>を高く<ruby data-rubi-id="rr4-48ab46c136cc38b00cf9" data-rubi-origin="project_rubi_restore">保<rt>たも</rt></ruby>つことができるのです。</p><p>（注1）<ruby data-rubi-id="rr4-a6fc548e2c471acf3102" data-rubi-origin="project_rubi_restore">目盛<rt>めも</rt></ruby>り：ここでは、重さの数値</p><p>（注2）家畜：人間が生活に利用するために<ruby data-rubi-id="rr1-9651ce30beb2801303e1" data-rubi-origin="project_rubi_restore">飼<rt>か</rt></ruby>う動物</p><p>（注3）野生ほ乳動物：自然の中で生きている乳で子供を育てる動物</p><p>（注4）<ruby data-rubi-id="rr4-ac2a34255cbf1b0be0d4" data-rubi-origin="project_rubi_restore">灌木<rt>かんぼく</rt></ruby>林：ここでは、低い木の林</p><p>（注5）これだけの：こんなに多くの</p><p>（注6）昆虫：ここでは、クモ以外の虫</p><p>（注7）捕食者：ここでは、食べようと<ruby data-rubi-id="rr4-e2b25c26d3cfc31b828c" data-rubi-origin="project_rubi_restore">襲<rt>おそ</rt></ruby>ってくる<ruby data-rubi-id="rr4-6a3cf46e7abe4f365805" data-rubi-origin="project_rubi_restore">敵<rt>てき</rt></ruby></p></div></details><div class="review-record" id="principal_differences-N2_07_2026-PD-006"><div class="review-label">Principal difference · /content/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>（注3）野生<mark class="diff-old">は</mark>乳動物</pre></div><div><h4>Editorial</h4><pre>（注3）野生<mark class="diff-new">ほ</mark>乳動物</pre></div></div><p>Restore ほ to match 野生ほ乳動物 in the first paragraph and the gloss describing milk-feeding animals. Preserve the printed mixed kana spelling ほ乳 and the valid body spelling 沙漠.</p><span class="principal-repository-source">Principal source (page=10): <code>additional-assets/principals/N2_07_2026.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Spider passage, glossary note 3</span><details><summary>Full published record · principal_differences-N2_07_2026-PD-006</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N2_07_2026-PD-006&quot;,
+  &quot;unit&quot;: &quot;N2_07_2026&quot;,
+  &quot;item_id&quot;: &quot;reading-b007&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;current_value&quot;: &quot;&lt;p&gt;（2）&lt;/p&gt;&lt;p&gt;地球全体に棲んでいるクモを全部集めて体重計に乗せてやれば、目盛りはおおよそ2500万トンほどのところをさすことでしょう。地球に棲む、人と家畜を除いたすべての野生ほ乳動物の全体重が4700万トンほどですから、クモはその約半分に相当するほどたくさんいるのです。またこれは、すべての鳥の体重2700万トンとほぼ同じです。&lt;/p&gt;&lt;p&gt;クモが一番たくさん棲んでいるのは森林で、草原や灌木林にはその半分ほどの密度で、農地や沙漠地帯にも1桁少ないとはいえ全体の3パーセントほどが暮らしています。&lt;/p&gt;&lt;p&gt;これだけのクモがエサを必要とします。その量を1年間積み上げていくと、その総量は莫大で、クモは世界中で4億トンから8億トンのエサを食べていると見積もられています。&lt;/p&gt;&lt;p&gt;（中略）&lt;/p&gt;&lt;p&gt;実際は、クモが食べているのはほとんどが昆虫です。昆虫の量は全体で13億トンと見積もられているので、その3割から6割がクモによって食べられていることになります。&lt;/p&gt;&lt;p&gt;ということはつまり、もしもクモがいなくなれば、捕食者から自由になった昆虫が大幅に数を増やすことでしょう。その多くは植物を食べます。ですから、森林や草原では緑が失われ、農地では収穫できる作物の量が減るかもしれません。&lt;/p&gt;&lt;p&gt;実際、農地では、クモがたくさんいると、農作物をエサとする昆虫が数を増やすスピードを抑えることができます。このおかげで収穫量を高く保つことができるのです。&lt;/p&gt;&lt;p&gt;（注1）目盛り：ここでは、重さの数値&lt;/p&gt;&lt;p&gt;（注2）家畜：人間が生活に利用するために飼う動物&lt;/p&gt;&lt;p&gt;（注3）野生ほ乳動物：自然の中で生きている乳で子供を育てる動物&lt;/p&gt;&lt;p&gt;（注4）灌木林：ここでは、低い木の林&lt;/p&gt;&lt;p&gt;（注5）これだけの：こんなに多くの&lt;/p&gt;&lt;p&gt;（注6）昆虫：ここでは、クモ以外の虫&lt;/p&gt;&lt;p&gt;（注7）捕食者：ここでは、食べようと襲ってくる敵&lt;/p&gt;&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2026年7月N2 真题 — question-paper reproduction&quot;,
+    &quot;sha256&quot;: &quot;62dbeac1cf0a3af6789fcc6d436bf6ebe2561390008f5d4f2c309be28c2a491c&quot;,
+    &quot;physical_pages&quot;: [
+      10
+    ],
+    &quot;locator&quot;: &quot;Spider passage, glossary note 3&quot;,
+    &quot;reading&quot;: &quot;（注3）野生は乳動物&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;（注3）野生ほ乳動物&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Restore ほ to match 野生ほ乳動物 in the first paragraph and the gloss describing milk-feeding animals. Preserve the printed mixed kana spelling ほ乳 and the valid body spelling 沙漠.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-b009" data-kinds="difference provisional_fix"><div class="review-group-heading"><h2>reading-b009</h2><a href="../papers/N2_07_2026.html#reading-b009">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><p>（4）</p><p>以下は、孤独に対処する手段について書かれた文章である。</p><p>小説を読むと物語の世界に没頭することができるし、政治や経済、哲学などの思想書を読めば著者の意見に賛成したり反対したりして、いろいろと自分の頭で考えることができる。脳に刺激が入り、それによっていろいろな思考がめぐっているということは、脳は孤独を感じている暇がないってことだ。</p><p>「だったらテレビでもいいじゃないか」って思うかもしれないけれど、実はテレビは読書ほど孤独を癒してはくれない。なぜかというと、テレビは一方的な情報の押し付けであって、コミュニケーションにはならないのだ。</p><p>映像の力というのはすごくて、みている人間の頭にいろいろな情報が入ってくる。たとえばバラエティ番組などでも、出演している人たちの表情や喋り方、そこでどんなムードで話をしているのかなどといったたくさんの情報が同時に頭に飛び込んでくる。しかも、印象的な発言はテロップなどで大きく表示される。</p><p>しかし、その情報について考えをめぐらせようとしても、映像がどんどん流れていって次の展開になるので、立ち止まって思考をめぐらせている暇がない。（中略）</p><p>一人暮らしの高齢者が朝から晩までテレビをつけっぱなしにしているということは珍しくないが、あまり孤独は癒されない。常に人の話し声が聞こえてくるので、寂しさを紛らわすことができる部分もあるかもしれないけれど、テレビを消した瞬間に、急に孤独に襲われてしまうということになりがちだ。</p><p>それならば、脳内コミュニケーションができる読書のほうがおすすめだ。</p><p>（注1）没頭する：夢中になる</p><p>（注2）～を癒す：ここでは、～の気持ちを軽くする</p><p>（注3）バラエティ番組：ここでは、娯楽のための番組</p><p>（注4）テロップ：ここでは、テレビ画面に映し出される文</p><p>（注5）紛らわす：ここでは、忘れる</p></div></details><div class="review-record" id="unresolved_cases-N2_07_2026-reading-b009-content-html"><div class="review-label">Provisional fix · /content/html · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>脳は孤独を感じている暇<mark class="diff-old">も</mark>ないってことだ。</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">&lt;p&gt;（4）&lt;/p&gt;&lt;p&gt;以下は、孤独に対処する手段について書かれた文章である。&lt;/p&gt;&lt;p&gt;小説を読むと物語の世界に没頭することができるし、政治や経済、哲学などの思想書を読めば著者の意見に賛成したり反対したりして、いろいろと自分の頭で考えることができる。脳に刺激が入り、それによっていろいろな思考がめぐっているということは、</mark>脳は孤独を感じている暇<mark class="diff-new">が</mark>ないってことだ。<mark class="diff-new">&lt;/p&gt;&lt;p&gt;「だったらテレビでもいいじゃないか」って思うかもしれないけれど、実はテレビは読書ほど孤独を癒してはくれない。なぜかというと、テレビは一方的な情報の押し付けであって、コミュニケーションにはならないのだ。&lt;/p&gt;&lt;p&gt;映像の力とい</mark>…</pre></div></div><p>Prefer 暇がない: the brain is occupied with thoughts and has no time to feel lonely. This parallels the later intact phrase 思考をめぐらせている暇がない, where television instead prevents thought. The source 限りない is syntactically damaged, but several noun/particle repairs express the intended argument.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>The intended lack of time/capacity is clear, but the exact noun and particle are not established by an independent Japanese source.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_07_2026.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Reading and television passage, first paragraph explaining why reading relieves loneliness</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=12): <code>additional-assets/principals/N2_07_2026.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Reading and television passage, first paragraph explaining why reading relieves loneliness<p>孤独を感じている限りない</p></li><li><span class="principal-repository-source">Principal source (page=14): <code>additional-assets/principals/N2_07_2026.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Reading and television translation, opening argument and Q64 explanation<p>The stimulated, thinking brain hardly feels lonely. The translation supports the sense but supplies no exact Japanese time/capacity phrase.</p></li></ul><details><summary>Full published record · unresolved_cases-N2_07_2026-reading-b009-content-html</summary><pre>{
+  &quot;case_id&quot;: &quot;N2_07_2026-reading-b009-content-html&quot;,
+  &quot;unit&quot;: &quot;N2_07_2026&quot;,
+  &quot;item_id&quot;: &quot;reading-b009&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;&lt;p&gt;（4）&lt;/p&gt;&lt;p&gt;以下は、孤独に対処する手段について書かれた文章である。&lt;/p&gt;&lt;p&gt;小説を読むと物語の世界に没頭することができるし、政治や経済、哲学などの思想書を読めば著者の意見に賛成したり反対したりして、いろいろと自分の頭で考えることができる。脳に刺激が入り、それによっていろいろな思考がめぐっているということは、脳は孤独を感じている暇がないってことだ。&lt;/p&gt;&lt;p&gt;「だったらテレビでもいいじゃないか」って思うかもしれないけれど、実はテレビは読書ほど孤独を癒してはくれない。なぜかというと、テレビは一方的な情報の押し付けであって、コミュニケーションにはならないのだ。&lt;/p&gt;&lt;p&gt;映像の力というのはすごくて、みている人間の頭にいろいろな情報が入ってくる。たとえばバラエティ番組などでも、出演している人たちの表情や喋り方、そこでどんなムードで話をしているのかなどといったたくさんの情報が同時に頭に飛び込んでくる。しかも、印象的な発言はテロップなどで大きく表示される。&lt;/p&gt;&lt;p&gt;しかし、その情報について考えをめぐらせようとしても、映像がどんどん流れていって次の展開になるので、立ち止まって思考をめぐらせている暇がない。（中略）&lt;/p&gt;&lt;p&gt;一人暮らしの高齢者が朝から晩までテレビをつけっぱなしにしているということは珍しくないが、あまり孤独は癒されない。常に人の話し声が聞こえてくるので、寂しさを紛らわすことができる部分もあるかもしれないけれど、テレビを消した瞬間に、急に孤独に襲われてしまうということになりがちだ。&lt;/p&gt;&lt;p&gt;それならば、脳内コミュニケーションができる読書のほうがおすすめだ。&lt;/p&gt;&lt;p&gt;（注1）没頭する：夢中になる&lt;/p&gt;&lt;p&gt;（注2）～を癒す：ここでは、～の気持ちを軽くする&lt;/p&gt;&lt;p&gt;（注3）バラエティ番組：ここでは、娯楽のための番組&lt;/p&gt;&lt;p&gt;（注4）テロップ：ここでは、テレビ画面に映し出される文&lt;/p&gt;&lt;p&gt;（注5）紛らわす：ここでは、忘れる&lt;/p&gt;&quot;,
+  &quot;before&quot;: null,
+  &quot;context&quot;: &quot;Reading and television passage, first paragraph explaining why reading relieves loneliness&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;脳は孤独を感じている暇もないってことだ。&quot;,
+      &quot;assessment&quot;: &quot;The additive particle も is a strong grammatical competitor to が.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;脳は孤独を感じている余裕がないってことだ。&quot;,
+      &quot;assessment&quot;: &quot;A capacity-based phrase fits the argument but differs in lexical choice.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;脳は孤独を感じている暇はないってことだ。&quot;,
+      &quot;assessment&quot;: &quot;Topic-marked alternative with substantially the same meaning.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;脳は孤独を感じている限りないってことだ。&quot;,
+      &quot;assessment&quot;: &quot;Direct source wording; it fails to connect the clause to a grammatical predicate.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;2026年7月N2 真题 — question-paper reproduction&quot;,
+      &quot;sha256&quot;: &quot;62dbeac1cf0a3af6789fcc6d436bf6ebe2561390008f5d4f2c309be28c2a491c&quot;,
+      &quot;physical_pages&quot;: [
+        12
+      ],
+      &quot;locator&quot;: &quot;Reading and television passage, first paragraph explaining why reading relieves loneliness&quot;,
+      &quot;reading&quot;: &quot;孤独を感じている限りない&quot;,
+      &quot;lineage&quot;: &quot;Principal reproduction; authentication and acquisition not established.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2026年7月N2真题答案+解析+听力原文 — reference answers and explanations&quot;,
+      &quot;sha256&quot;: &quot;783c6ed2beeb0d9fe8eec1744517921d54a9da58fdf04cdf34f44d257eb7f956&quot;,
+      &quot;physical_pages&quot;: [
+        14,
+        15
+      ],
+      &quot;locator&quot;: &quot;Reading and television translation, opening argument and Q64 explanation&quot;,
+      &quot;reading&quot;: &quot;The stimulated, thinking brain hardly feels lonely. The translation supports the sense but supplies no exact Japanese time/capacity phrase.&quot;,
+      &quot;lineage&quot;: &quot;Reference answers and translations; independence from the question reproduction is unestablished.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Prefer 暇がない: the brain is occupied with thoughts and has no time to feel lonely. This parallels the later intact phrase 思考をめぐらせている暇がない, where television instead prevents thought. The source 限りない is syntactically damaged, but several noun/particle repairs express the intended argument.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Inspected the original p12 at enlarged resolution and re-read the full reading-versus-television contrast and all Q63–64 choices.&quot;,
+    &quot;Compared companion pp14–15 and the p1 answer grid.&quot;,
+    &quot;Compared the earlier malformed clause with the later intact 暇がない phrase; tested 暇がない, 暇もない, 暇はない and 余裕がない in the discourse.&quot;,
+    &quot;Searched 脳は孤独, 脳内コミュニケーション, 孤独を感じている暇 and テレビを消した瞬間, including a tentative author lead; no exact source was located.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;The intended lack of time/capacity is clear, but the exact noun and particle are not established by an independent Japanese source.&quot;
+}</pre></details></div><div class="review-record" id="principal_differences-N2_07_2026-PD-007"><div class="review-label">Principal difference · /content/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>小説を読む物語; 著者<mark class="diff-old">へ</mark>の意見; テレビを消した<mark class="diff-old">ら</mark>瞬間に; （注5）<mark class="diff-old">繕</mark>らわす</pre></div><div><h4>Editorial</h4><pre>小説を読む<mark class="diff-new">と</mark>物語; 著者の意見; テレビを消した瞬間に; （注5）<mark class="diff-new">紛</mark>らわす</pre></div></div><p>Restore the missing conditional と connecting reading to immersion; use the author’s opinions as the objects of agreement/disagreement; remove conditional ら before the noun 瞬間; match the gloss 紛らわす to the intact body occurrence 寂しさを紛らわす. These local syntax/spelling repairs preserve the passage’s argument and answer distinctions.</p><span class="principal-repository-source">Principal source (page=12): <code>additional-assets/principals/N2_07_2026.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Reading and television passage, first paragraph, final example and glossary note 5</span><details><summary>Full published record · principal_differences-N2_07_2026-PD-007</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N2_07_2026-PD-007&quot;,
+  &quot;unit&quot;: &quot;N2_07_2026&quot;,
+  &quot;item_id&quot;: &quot;reading-b009&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;current_value&quot;: &quot;&lt;p&gt;（4）&lt;/p&gt;&lt;p&gt;以下は、孤独に対処する手段について書かれた文章である。&lt;/p&gt;&lt;p&gt;小説を読むと物語の世界に没頭することができるし、政治や経済、哲学などの思想書を読めば著者の意見に賛成したり反対したりして、いろいろと自分の頭で考えることができる。脳に刺激が入り、それによっていろいろな思考がめぐっているということは、脳は孤独を感じている暇がないってことだ。&lt;/p&gt;&lt;p&gt;「だったらテレビでもいいじゃないか」って思うかもしれないけれど、実はテレビは読書ほど孤独を癒してはくれない。なぜかというと、テレビは一方的な情報の押し付けであって、コミュニケーションにはならないのだ。&lt;/p&gt;&lt;p&gt;映像の力というのはすごくて、みている人間の頭にいろいろな情報が入ってくる。たとえばバラエティ番組などでも、出演している人たちの表情や喋り方、そこでどんなムードで話をしているのかなどといったたくさんの情報が同時に頭に飛び込んでくる。しかも、印象的な発言はテロップなどで大きく表示される。&lt;/p&gt;&lt;p&gt;しかし、その情報について考えをめぐらせようとしても、映像がどんどん流れていって次の展開になるので、立ち止まって思考をめぐらせている暇がない。（中略）&lt;/p&gt;&lt;p&gt;一人暮らしの高齢者が朝から晩までテレビをつけっぱなしにしているということは珍しくないが、あまり孤独は癒されない。常に人の話し声が聞こえてくるので、寂しさを紛らわすことができる部分もあるかもしれないけれど、テレビを消した瞬間に、急に孤独に襲われてしまうということになりがちだ。&lt;/p&gt;&lt;p&gt;それならば、脳内コミュニケーションができる読書のほうがおすすめだ。&lt;/p&gt;&lt;p&gt;（注1）没頭する：夢中になる&lt;/p&gt;&lt;p&gt;（注2）～を癒す：ここでは、～の気持ちを軽くする&lt;/p&gt;&lt;p&gt;（注3）バラエティ番組：ここでは、娯楽のための番組&lt;/p&gt;&lt;p&gt;（注4）テロップ：ここでは、テレビ画面に映し出される文&lt;/p&gt;&lt;p&gt;（注5）紛らわす：ここでは、忘れる&lt;/p&gt;&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2026年7月N2 真题 — question-paper reproduction&quot;,
+    &quot;sha256&quot;: &quot;62dbeac1cf0a3af6789fcc6d436bf6ebe2561390008f5d4f2c309be28c2a491c&quot;,
+    &quot;physical_pages&quot;: [
+      12
+    ],
+    &quot;locator&quot;: &quot;Reading and television passage, first paragraph, final example and glossary note 5&quot;,
+    &quot;reading&quot;: &quot;小説を読む物語; 著者への意見; テレビを消したら瞬間に; （注5）繕らわす&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;小説を読むと物語; 著者の意見; テレビを消した瞬間に; （注5）紛らわす&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Restore the missing conditional と connecting reading to immersion; use the author’s opinions as the objects of agreement/disagreement; remove conditional ら before the noun 瞬間; match the gloss 紛らわす to the intact body occurrence 寂しさを紛らわす. These local syntax/spelling repairs preserve the passage’s argument and answer distinctions.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div><div class="review-record" id="principal_differences-N2_07_2026-PD-011"><div class="review-label">Principal difference · /content/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>孤独を感じている<mark class="diff-old">限り</mark>ない</pre></div><div><h4>Editorial</h4><pre>孤独を感じている<mark class="diff-new">暇が</mark>ない</pre></div></div><p>Prefer 暇がない: the brain is occupied with thoughts and has no time to feel lonely. This parallels the later intact phrase 思考をめぐらせている暇がない, where television instead prevents thought. The source 限りない is syntactically damaged, but several noun/particle repairs express the intended argument.</p><span class="principal-repository-source">Principal source (page=12): <code>additional-assets/principals/N2_07_2026.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Reading and television passage, first paragraph explaining why reading relieves loneliness</span><details><summary>Full published record · principal_differences-N2_07_2026-PD-011</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N2_07_2026-PD-011&quot;,
+  &quot;unit&quot;: &quot;N2_07_2026&quot;,
+  &quot;item_id&quot;: &quot;reading-b009&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;current_value&quot;: &quot;&lt;p&gt;（4）&lt;/p&gt;&lt;p&gt;以下は、孤独に対処する手段について書かれた文章である。&lt;/p&gt;&lt;p&gt;小説を読むと物語の世界に没頭することができるし、政治や経済、哲学などの思想書を読めば著者の意見に賛成したり反対したりして、いろいろと自分の頭で考えることができる。脳に刺激が入り、それによっていろいろな思考がめぐっているということは、脳は孤独を感じている暇がないってことだ。&lt;/p&gt;&lt;p&gt;「だったらテレビでもいいじゃないか」って思うかもしれないけれど、実はテレビは読書ほど孤独を癒してはくれない。なぜかというと、テレビは一方的な情報の押し付けであって、コミュニケーションにはならないのだ。&lt;/p&gt;&lt;p&gt;映像の力というのはすごくて、みている人間の頭にいろいろな情報が入ってくる。たとえばバラエティ番組などでも、出演している人たちの表情や喋り方、そこでどんなムードで話をしているのかなどといったたくさんの情報が同時に頭に飛び込んでくる。しかも、印象的な発言はテロップなどで大きく表示される。&lt;/p&gt;&lt;p&gt;しかし、その情報について考えをめぐらせようとしても、映像がどんどん流れていって次の展開になるので、立ち止まって思考をめぐらせている暇がない。（中略）&lt;/p&gt;&lt;p&gt;一人暮らしの高齢者が朝から晩までテレビをつけっぱなしにしているということは珍しくないが、あまり孤独は癒されない。常に人の話し声が聞こえてくるので、寂しさを紛らわすことができる部分もあるかもしれないけれど、テレビを消した瞬間に、急に孤独に襲われてしまうということになりがちだ。&lt;/p&gt;&lt;p&gt;それならば、脳内コミュニケーションができる読書のほうがおすすめだ。&lt;/p&gt;&lt;p&gt;（注1）没頭する：夢中になる&lt;/p&gt;&lt;p&gt;（注2）～を癒す：ここでは、～の気持ちを軽くする&lt;/p&gt;&lt;p&gt;（注3）バラエティ番組：ここでは、娯楽のための番組&lt;/p&gt;&lt;p&gt;（注4）テロップ：ここでは、テレビ画面に映し出される文&lt;/p&gt;&lt;p&gt;（注5）紛らわす：ここでは、忘れる&lt;/p&gt;&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2026年7月N2 真题 — question-paper reproduction&quot;,
+    &quot;sha256&quot;: &quot;62dbeac1cf0a3af6789fcc6d436bf6ebe2561390008f5d4f2c309be28c2a491c&quot;,
+    &quot;physical_pages&quot;: [
+      12
+    ],
+    &quot;locator&quot;: &quot;Reading and television passage, first paragraph explaining why reading relieves loneliness&quot;,
+    &quot;reading&quot;: &quot;孤独を感じている限りない&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;孤独を感じている暇がない&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;conjectural_repair&quot;,
+  &quot;rationale&quot;: &quot;Prefer 暇がない: the brain is occupied with thoughts and has no time to feel lonely. This parallels the later intact phrase 思考をめぐらせている暇がない, where television instead prevents thought. The source 限りない is syntactically damaged, but several noun/particle repairs express the intended argument.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;N2_07_2026-reading-b009-content-html&quot;
+  ]
+}</pre></details></div></section><section class="review-group" id="review-reading-b012" data-kinds="difference provisional_fix"><div class="review-group-heading"><h2>reading-b012</h2><a href="../papers/N2_07_2026.html#reading-b012">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><p>目標を持つことは大事ですが、しかし達成されたからといって人生が終わるわけではない。生きていく過程の一つということで、目標は一つの道しるべにすぎないのです。</p><p>人間はいつか死ぬということは、誰もが知っていることです。まさか自分は300年生きるだろうと思っている人は一人もいないでしょうし、大体の平均寿命である80歳前後とか、そのあたりを人生の最終ゴール地点において生きているのではないでしょうか。</p><p>その間、なんの道しるべもなく歩くには長い道のりなわけで、方向を見失わないためにも目標という存在が必要なのです。</p><p>（中略）</p><p><u>そして目標は自分の前に置くのではなく、横に置くこと</u>が肝心です。</p><p>目標というと、はるか先に置いて追いかけていく感覚でとらえる人も多いのですが、目標を遠くに置きすぎると、ただの「期待」で終わってしまう。期待がいつしか、「妄想」になってしまう。それではせっかくの道しるべが、逆に道に迷う原因になってしまいます。</p><p>だから目標はあまり遠くに持たず、いつも両脇に置いているくらいの感覚がいいでしょう。ふと自分の横を見ると目標がある、それくらいの感覚がいいのです。</p><p>両脇に目標があれば、いつも目標と一緒にいることになりますから、常に目標の中で生きていることになります。必要以上に重荷になることもないし、とらわれすぎることもない。</p><p>私の場合は先どころか、目標を後ろに置きたくなることもあります。</p><p>後ろというのは自分が歩いてきた過去であり、振り返ってみるということです。そしてこのどんどん便利になっていく時代の中で、あえてアナログに生きるということでもあります。</p><p>ときどき自分の来た道を振り返って確かめるということは大事なことですし、あまりに世間のみなさんが「先へ、先へ」となっているのを見ると、あえて「私は後ろに行ってみようかな」という気になってしまうのです。</p><p>今、時代はちょっと恐ろしいほどに、みんなが「便利」という方向に向かっている。だからこそ、なるべく前に行きたくないというのが気分としてあるのでしょう。</p><p>アナログなものが私を「危ない、危ない」と、呼び止めるのです。それが「後ろへ来いよ、来いよ」と言ってるような気がするのです。</p><p>（注1）道しるべ：ここでは、方向を示す標識</p><p>（注2）道のり：距離</p><p>（注3）～を見失う：～が分からなくなる</p><p>（注4）肝心：大事</p><p>（注5）はるか：ここでは、ずっと</p><p>（注6）妄想：現実的ではない想像</p><p>（注7）とらわれる：ここでは、縛られる</p></div></details><div class="review-record" id="unresolved_cases-N2_07_2026-reading-b012-content-html"><div class="review-label">Provisional fix · /content/html · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>期待がいつ<mark class="diff-old">のまに</mark>か、「妄想」になってしまう。</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">&lt;p&gt;目標を持つことは大事ですが、しかし達成されたからといって人生が終わるわけではない。生きていく過程の一つということで、目標は一つの道しるべにすぎないのです。&lt;/p&gt;&lt;p&gt;人間はいつか死ぬということは、誰もが知っていることです。まさか自分は300年生きるだろうと思っている人は一人もいないでしょうし、大体の平均寿命である80歳前後とか、そのあたりを人生の最終ゴール地点において生きているのではないでしょうか。&lt;/p&gt;&lt;p&gt;その間、なんの道しるべもなく歩くには長い道のりなわけで、方向を見失わないためにも目標という存在が必要なのです。&lt;/p&gt;&lt;p&gt;（中略）&lt;/p&gt;&lt;p&gt;&lt;u&gt;そして目標は自分の前に置くのではなく、横に置くこと&lt;/u&gt;が肝心です。&lt;/p&gt;&lt;p&gt;目標というと、はるか先に置いて追いかけていく感覚でとらえる人も多いのですが、目標を遠くに置きすぎると、ただの「期待」で終わってしまう。</mark>期待がいつ<mark class="diff-new">し</mark>か、「妄想」になってしまう。<mark class="diff-new">それではせっかくの道しるべが、逆に道に迷う原因になってしまいます。&lt;/p&gt;&lt;p&gt;だから目標はあまり遠くに持たず、いつも両脇に置いているくらいの感覚がいいでしょう。ふと自分の横を見ると目標がある、それくらいの感覚がいいのです。&lt;/p&gt;&lt;p&gt;両</mark>…</pre></div></div><p>Prefer いつしか to express the drift from expectation into delusion. The printed いっしょに has no clear joint participant; the next sentence describes losing direction as the result. Several temporal adverbs fit, so the preferred repair remains provisional.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>The exact temporal expression is unproved; a matching literary passage or a reliable independent exam reproduction is needed.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N2_07_2026.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Goals passage, expectations turning into delusions when a goal is too far away</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=13): <code>additional-assets/principals/N2_07_2026.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Goals passage, expectations turning into delusions when a goal is too far away<p>期待がいっしょに、</p></li><li><span class="principal-repository-source">Principal source (page=16): <code>additional-assets/principals/N2_07_2026.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Goals passage, paragraph on placing goals too far away<p>The translation says distant goals become expectations and even delusions; it does not fix a Japanese temporal adverb.</p></li></ul><details><summary>Full published record · unresolved_cases-N2_07_2026-reading-b012-content-html</summary><pre>{
+  &quot;case_id&quot;: &quot;N2_07_2026-reading-b012-content-html&quot;,
+  &quot;unit&quot;: &quot;N2_07_2026&quot;,
+  &quot;item_id&quot;: &quot;reading-b012&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;&lt;p&gt;目標を持つことは大事ですが、しかし達成されたからといって人生が終わるわけではない。生きていく過程の一つということで、目標は一つの道しるべにすぎないのです。&lt;/p&gt;&lt;p&gt;人間はいつか死ぬということは、誰もが知っていることです。まさか自分は300年生きるだろうと思っている人は一人もいないでしょうし、大体の平均寿命である80歳前後とか、そのあたりを人生の最終ゴール地点において生きているのではないでしょうか。&lt;/p&gt;&lt;p&gt;その間、なんの道しるべもなく歩くには長い道のりなわけで、方向を見失わないためにも目標という存在が必要なのです。&lt;/p&gt;&lt;p&gt;（中略）&lt;/p&gt;&lt;p&gt;&lt;u&gt;そして目標は自分の前に置くのではなく、横に置くこと&lt;/u&gt;が肝心です。&lt;/p&gt;&lt;p&gt;目標というと、はるか先に置いて追いかけていく感覚でとらえる人も多いのですが、目標を遠くに置きすぎると、ただの「期待」で終わってしまう。期待がいつしか、「妄想」になってしまう。それではせっかくの道しるべが、逆に道に迷う原因になってしまいます。&lt;/p&gt;&lt;p&gt;だから目標はあまり遠くに持たず、いつも両脇に置いているくらいの感覚がいいでしょう。ふと自分の横を見ると目標がある、それくらいの感覚がいいのです。&lt;/p&gt;&lt;p&gt;両脇に目標があれば、いつも目標と一緒にいることになりますから、常に目標の中で生きていることになります。必要以上に重荷になることもないし、とらわれすぎることもない。&lt;/p&gt;&lt;p&gt;私の場合は先どころか、目標を後ろに置きたくなることもあります。&lt;/p&gt;&lt;p&gt;後ろというのは自分が歩いてきた過去であり、振り返ってみるということです。そしてこのどんどん便利になっていく時代の中で、あえてアナログに生きるということでもあります。&lt;/p&gt;&lt;p&gt;ときどき自分の来た道を振り返って確かめるということは大事なことですし、あまりに世間のみなさんが「先へ、先へ」となっているのを見ると、あえて「私は後ろに行ってみようかな」という気になってしまうのです。&lt;/p&gt;&lt;p&gt;今、時代はちょっと恐ろしいほどに、みんなが「便利」という方向に向かっている。だからこそ、なるべく前に行きたくないというのが気分としてあるのでしょう。&lt;/p&gt;&lt;p&gt;アナログなものが私を「危ない、危ない」と、呼び止めるのです。それが「後ろへ来いよ、来いよ」と言ってるような気がするのです。&lt;/p&gt;&lt;p&gt;（注1）道しるべ：ここでは、方向を示す標識&lt;/p&gt;&lt;p&gt;（注2）道のり：距離&lt;/p&gt;&lt;p&gt;（注3）～を見失う：～が分からなくなる&lt;/p&gt;&lt;p&gt;（注4）肝心：大事&lt;/p&gt;&lt;p&gt;（注5）はるか：ここでは、ずっと&lt;/p&gt;&lt;p&gt;（注6）妄想：現実的ではない想像&lt;/p&gt;&lt;p&gt;（注7）とらわれる：ここでは、縛られる&lt;/p&gt;&quot;,
+  &quot;before&quot;: null,
+  &quot;context&quot;: &quot;Goals passage, expectations turning into delusions when a goal is too far away&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;期待がいつのまにか、「妄想」になってしまう。&quot;,
+      &quot;assessment&quot;: &quot;A strong temporal competitor expressing an unnoticed transition.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;期待がやがて、「妄想」になってしまう。&quot;,
+      &quot;assessment&quot;: &quot;A shorter temporal alternative also fits the argument.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;期待がいっしょに、「妄想」になってしまう。&quot;,
+      &quot;assessment&quot;: &quot;Direct source wording. An elliptical joint change could be imagined, but no accompanying subject is clearly identified.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;2026年7月N2 真题 — question-paper reproduction&quot;,
+      &quot;sha256&quot;: &quot;62dbeac1cf0a3af6789fcc6d436bf6ebe2561390008f5d4f2c309be28c2a491c&quot;,
+      &quot;physical_pages&quot;: [
+        13
+      ],
+      &quot;locator&quot;: &quot;Goals passage, expectations turning into delusions when a goal is too far away&quot;,
+      &quot;reading&quot;: &quot;期待がいっしょに、&quot;,
+      &quot;lineage&quot;: &quot;Principal reproduction; authentication and acquisition not established.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2026年7月N2真题答案+解析+听力原文 — reference answers and explanations&quot;,
+      &quot;sha256&quot;: &quot;783c6ed2beeb0d9fe8eec1744517921d54a9da58fdf04cdf34f44d257eb7f956&quot;,
+      &quot;physical_pages&quot;: [
+        16
+      ],
+      &quot;locator&quot;: &quot;Goals passage, paragraph on placing goals too far away&quot;,
+      &quot;reading&quot;: &quot;The translation says distant goals become expectations and even delusions; it does not fix a Japanese temporal adverb.&quot;,
+      &quot;lineage&quot;: &quot;Reference answers and translations; independence from the question reproduction is unestablished.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Prefer いつしか to express the drift from expectation into delusion. The printed いっしょに has no clear joint participant; the next sentence describes losing direction as the result. Several temporal adverbs fit, so the preferred repair remains provisional.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Inspected principal pp13–14, the underlined horizontal-goals claim and all Q67–69 choices; rechecked the disputed phrase in an enlarged crop.&quot;,
+    &quot;Compared companion pp16–17 and the expectation-to-delusion translation.&quot;,
+    &quot;Searched 目標を遠くに置きすぎると, 目標は自分の前に置くのではなく, 期待が and 後ろへ来い; a related quotation collection did not contain the exact sentence.&quot;,
+    &quot;Tested いつしか, いつのまにか, やがて and the printed joint-change reading against the full argument before selecting a medium-confidence repair.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;The exact temporal expression is unproved; a matching literary passage or a reliable independent exam reproduction is needed.&quot;
+}</pre></details></div><div class="review-record" id="principal_differences-N2_07_2026-PD-008"><div class="review-label">Principal difference · /content/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>人間はいか<mark class="diff-old">が</mark>死ぬ</pre></div><div><h4>Editorial</h4><pre>人間はい<mark class="diff-new">つ</mark>か死ぬ</pre></div></div><p>いつか supplies the temporal statement that everyone eventually dies, followed by the contrast between living 300 years and an average lifespan near 80. いかが cannot form the printed declarative clause.</p><span class="principal-repository-source">Principal source (page=13): <code>additional-assets/principals/N2_07_2026.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Goals passage, opening discussion of lifespan</span><details><summary>Full published record · principal_differences-N2_07_2026-PD-008</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N2_07_2026-PD-008&quot;,
+  &quot;unit&quot;: &quot;N2_07_2026&quot;,
+  &quot;item_id&quot;: &quot;reading-b012&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;current_value&quot;: &quot;&lt;p&gt;目標を持つことは大事ですが、しかし達成されたからといって人生が終わるわけではない。生きていく過程の一つということで、目標は一つの道しるべにすぎないのです。&lt;/p&gt;&lt;p&gt;人間はいつか死ぬということは、誰もが知っていることです。まさか自分は300年生きるだろうと思っている人は一人もいないでしょうし、大体の平均寿命である80歳前後とか、そのあたりを人生の最終ゴール地点において生きているのではないでしょうか。&lt;/p&gt;&lt;p&gt;その間、なんの道しるべもなく歩くには長い道のりなわけで、方向を見失わないためにも目標という存在が必要なのです。&lt;/p&gt;&lt;p&gt;（中略）&lt;/p&gt;&lt;p&gt;&lt;u&gt;そして目標は自分の前に置くのではなく、横に置くこと&lt;/u&gt;が肝心です。&lt;/p&gt;&lt;p&gt;目標というと、はるか先に置いて追いかけていく感覚でとらえる人も多いのですが、目標を遠くに置きすぎると、ただの「期待」で終わってしまう。期待がいつしか、「妄想」になってしまう。それではせっかくの道しるべが、逆に道に迷う原因になってしまいます。&lt;/p&gt;&lt;p&gt;だから目標はあまり遠くに持たず、いつも両脇に置いているくらいの感覚がいいでしょう。ふと自分の横を見ると目標がある、それくらいの感覚がいいのです。&lt;/p&gt;&lt;p&gt;両脇に目標があれば、いつも目標と一緒にいることになりますから、常に目標の中で生きていることになります。必要以上に重荷になることもないし、とらわれすぎることもない。&lt;/p&gt;&lt;p&gt;私の場合は先どころか、目標を後ろに置きたくなることもあります。&lt;/p&gt;&lt;p&gt;後ろというのは自分が歩いてきた過去であり、振り返ってみるということです。そしてこのどんどん便利になっていく時代の中で、あえてアナログに生きるということでもあります。&lt;/p&gt;&lt;p&gt;ときどき自分の来た道を振り返って確かめるということは大事なことですし、あまりに世間のみなさんが「先へ、先へ」となっているのを見ると、あえて「私は後ろに行ってみようかな」という気になってしまうのです。&lt;/p&gt;&lt;p&gt;今、時代はちょっと恐ろしいほどに、みんなが「便利」という方向に向かっている。だからこそ、なるべく前に行きたくないというのが気分としてあるのでしょう。&lt;/p&gt;&lt;p&gt;アナログなものが私を「危ない、危ない」と、呼び止めるのです。それが「後ろへ来いよ、来いよ」と言ってるような気がするのです。&lt;/p&gt;&lt;p&gt;（注1）道しるべ：ここでは、方向を示す標識&lt;/p&gt;&lt;p&gt;（注2）道のり：距離&lt;/p&gt;&lt;p&gt;（注3）～を見失う：～が分からなくなる&lt;/p&gt;&lt;p&gt;（注4）肝心：大事&lt;/p&gt;&lt;p&gt;（注5）はるか：ここでは、ずっと&lt;/p&gt;&lt;p&gt;（注6）妄想：現実的ではない想像&lt;/p&gt;&lt;p&gt;（注7）とらわれる：ここでは、縛られる&lt;/p&gt;&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2026年7月N2 真题 — question-paper reproduction&quot;,
+    &quot;sha256&quot;: &quot;62dbeac1cf0a3af6789fcc6d436bf6ebe2561390008f5d4f2c309be28c2a491c&quot;,
+    &quot;physical_pages&quot;: [
+      13
+    ],
+    &quot;locator&quot;: &quot;Goals passage, opening discussion of lifespan&quot;,
+    &quot;reading&quot;: &quot;人間はいかが死ぬ&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;人間はいつか死ぬ&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;いつか supplies the temporal statement that everyone eventually dies, followed by the contrast between living 300 years and an average lifespan near 80. いかが cannot form the printed declarative clause.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div><div class="review-record" id="principal_differences-N2_07_2026-PD-012"><div class="review-label">Principal difference · /content/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>期待がい<mark class="diff-old">っ</mark>し<mark class="diff-old">ょに</mark>、</pre></div><div><h4>Editorial</h4><pre>期待がい<mark class="diff-new">つ</mark>し<mark class="diff-new">か</mark>、</pre></div></div><p>Prefer いつしか to express the drift from expectation into delusion. The printed いっしょに has no clear joint participant; the next sentence describes losing direction as the result. Several temporal adverbs fit, so the preferred repair remains provisional.</p><span class="principal-repository-source">Principal source (page=13): <code>additional-assets/principals/N2_07_2026.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Goals passage, expectations turning into delusions when a goal is too far away</span><details><summary>Full published record · principal_differences-N2_07_2026-PD-012</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N2_07_2026-PD-012&quot;,
+  &quot;unit&quot;: &quot;N2_07_2026&quot;,
+  &quot;item_id&quot;: &quot;reading-b012&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;current_value&quot;: &quot;&lt;p&gt;目標を持つことは大事ですが、しかし達成されたからといって人生が終わるわけではない。生きていく過程の一つということで、目標は一つの道しるべにすぎないのです。&lt;/p&gt;&lt;p&gt;人間はいつか死ぬということは、誰もが知っていることです。まさか自分は300年生きるだろうと思っている人は一人もいないでしょうし、大体の平均寿命である80歳前後とか、そのあたりを人生の最終ゴール地点において生きているのではないでしょうか。&lt;/p&gt;&lt;p&gt;その間、なんの道しるべもなく歩くには長い道のりなわけで、方向を見失わないためにも目標という存在が必要なのです。&lt;/p&gt;&lt;p&gt;（中略）&lt;/p&gt;&lt;p&gt;&lt;u&gt;そして目標は自分の前に置くのではなく、横に置くこと&lt;/u&gt;が肝心です。&lt;/p&gt;&lt;p&gt;目標というと、はるか先に置いて追いかけていく感覚でとらえる人も多いのですが、目標を遠くに置きすぎると、ただの「期待」で終わってしまう。期待がいつしか、「妄想」になってしまう。それではせっかくの道しるべが、逆に道に迷う原因になってしまいます。&lt;/p&gt;&lt;p&gt;だから目標はあまり遠くに持たず、いつも両脇に置いているくらいの感覚がいいでしょう。ふと自分の横を見ると目標がある、それくらいの感覚がいいのです。&lt;/p&gt;&lt;p&gt;両脇に目標があれば、いつも目標と一緒にいることになりますから、常に目標の中で生きていることになります。必要以上に重荷になることもないし、とらわれすぎることもない。&lt;/p&gt;&lt;p&gt;私の場合は先どころか、目標を後ろに置きたくなることもあります。&lt;/p&gt;&lt;p&gt;後ろというのは自分が歩いてきた過去であり、振り返ってみるということです。そしてこのどんどん便利になっていく時代の中で、あえてアナログに生きるということでもあります。&lt;/p&gt;&lt;p&gt;ときどき自分の来た道を振り返って確かめるということは大事なことですし、あまりに世間のみなさんが「先へ、先へ」となっているのを見ると、あえて「私は後ろに行ってみようかな」という気になってしまうのです。&lt;/p&gt;&lt;p&gt;今、時代はちょっと恐ろしいほどに、みんなが「便利」という方向に向かっている。だからこそ、なるべく前に行きたくないというのが気分としてあるのでしょう。&lt;/p&gt;&lt;p&gt;アナログなものが私を「危ない、危ない」と、呼び止めるのです。それが「後ろへ来いよ、来いよ」と言ってるような気がするのです。&lt;/p&gt;&lt;p&gt;（注1）道しるべ：ここでは、方向を示す標識&lt;/p&gt;&lt;p&gt;（注2）道のり：距離&lt;/p&gt;&lt;p&gt;（注3）～を見失う：～が分からなくなる&lt;/p&gt;&lt;p&gt;（注4）肝心：大事&lt;/p&gt;&lt;p&gt;（注5）はるか：ここでは、ずっと&lt;/p&gt;&lt;p&gt;（注6）妄想：現実的ではない想像&lt;/p&gt;&lt;p&gt;（注7）とらわれる：ここでは、縛られる&lt;/p&gt;&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2026年7月N2 真题 — question-paper reproduction&quot;,
+    &quot;sha256&quot;: &quot;62dbeac1cf0a3af6789fcc6d436bf6ebe2561390008f5d4f2c309be28c2a491c&quot;,
+    &quot;physical_pages&quot;: [
+      13
+    ],
+    &quot;locator&quot;: &quot;Goals passage, expectations turning into delusions when a goal is too far away&quot;,
+    &quot;reading&quot;: &quot;期待がいっしょに、&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;期待がいつしか、&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;conjectural_repair&quot;,
+  &quot;rationale&quot;: &quot;Prefer いつしか to express the drift from expectation into delusion. The printed いっしょに has no clear joint participant; the next sentence describes losing direction as the result. Several temporal adverbs fit, so the preferred repair remains provisional.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;N2_07_2026-reading-b012-content-html&quot;
+  ]
+}</pre></details></div></section></div></main><footer class="site-footer"><span class="developer-only">Developer mode</span></footer><div id="toast" role="status" class="toast" hidden></div><script id="page-data" type="application/json">{"review":true}</script><script id="theme-data" src="../assets/theme-data.js?v=f06ad9e2434b" defer></script><script src="../assets/app.js?v=0d75deb05ae3" defer></script></body></html>

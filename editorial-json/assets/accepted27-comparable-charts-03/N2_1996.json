@@ -1,0 +1,266 @@
+{
+  "contract": "historical-artwork-1.0",
+  "id": "H27-N2_1996-companion-native-chart",
+  "kind": "purchase_graph",
+  "unit": "N2_1996",
+  "item_id": "reading-b006",
+  "source": {
+    "source_path": "src/CodexDownloads/UserApprovedReferenceScans/Shiken mondai to seikai 1-2 kyuu 1996.pdf",
+    "source_sha256": "aca213ce192a5fcf80f598c624953a533d49aef1971c318316996c7112b20873",
+    "physical_page": 72
+  },
+  "raw_crop": {
+    "path": "preprocess/assets/handoff27-comparable-charts-03/N2_1996-raw.png",
+    "sha256": "521ee27e83e79716ddca9e2ea4470b6ab21d9b8514bc1f7964869b6305e2038a"
+  },
+  "selection_note": "Direct approved source72 and canonical graph inspection confirm the same four purchase-price series and annual curve relationships as the approved Level1source37chart. Reuse its approximate annual traces, with80–260axis,100baseline,1980–1993years and1985video-series start. Values remain unlabelled approximations, never exact tabular data.",
+  "limits": "No audio evidence. Native artwork is an editorial reconstruction of the visible printed figure; it does not authenticate the scan. H27 companion-owner reconstruction: canonical original image bytes remain recoverable; final native review is required for this owner.",
+  "data": {
+    "coordinate_status": "approximate_digitization_not_exact_historical_data",
+    "x_axis": {
+      "first_year": 1980,
+      "last_year": 1993,
+      "tick_step": 1
+    },
+    "y_axis": {
+      "min": 80,
+      "max": 260,
+      "tick_step": 20
+    },
+    "baseline": 100,
+    "series": [
+      {
+        "label": "テレビ",
+        "style": "solid",
+        "first_year": 1980,
+        "points": [
+          [
+            1980,
+            100
+          ],
+          [
+            1981,
+            104
+          ],
+          [
+            1982,
+            105
+          ],
+          [
+            1983,
+            103
+          ],
+          [
+            1984,
+            119
+          ],
+          [
+            1985,
+            129
+          ],
+          [
+            1986,
+            134
+          ],
+          [
+            1987,
+            154
+          ],
+          [
+            1988,
+            189
+          ],
+          [
+            1989,
+            220
+          ],
+          [
+            1990,
+            231
+          ],
+          [
+            1991,
+            253
+          ],
+          [
+            1992,
+            235
+          ],
+          [
+            1993,
+            219
+          ]
+        ]
+      },
+      {
+        "label": "自動車",
+        "style": "dashed",
+        "first_year": 1980,
+        "points": [
+          [
+            1980,
+            100
+          ],
+          [
+            1981,
+            118
+          ],
+          [
+            1982,
+            115
+          ],
+          [
+            1983,
+            111
+          ],
+          [
+            1984,
+            114
+          ],
+          [
+            1985,
+            119
+          ],
+          [
+            1986,
+            128
+          ],
+          [
+            1987,
+            132
+          ],
+          [
+            1988,
+            144
+          ],
+          [
+            1989,
+            153
+          ],
+          [
+            1990,
+            157
+          ],
+          [
+            1991,
+            156
+          ],
+          [
+            1992,
+            157
+          ],
+          [
+            1993,
+            178
+          ]
+        ]
+      },
+      {
+        "label": "テープレコーダー",
+        "style": "dotted",
+        "first_year": 1980,
+        "points": [
+          [
+            1980,
+            100
+          ],
+          [
+            1981,
+            100
+          ],
+          [
+            1982,
+            90
+          ],
+          [
+            1983,
+            83
+          ],
+          [
+            1984,
+            82
+          ],
+          [
+            1985,
+            84
+          ],
+          [
+            1986,
+            83
+          ],
+          [
+            1987,
+            85
+          ],
+          [
+            1988,
+            110
+          ],
+          [
+            1989,
+            148
+          ],
+          [
+            1990,
+            149
+          ],
+          [
+            1991,
+            143
+          ],
+          [
+            1992,
+            144
+          ],
+          [
+            1993,
+            139
+          ]
+        ]
+      },
+      {
+        "label": "ビデオテープレコーダー",
+        "style": "dashdot",
+        "first_year": 1985,
+        "points": [
+          [
+            1985,
+            100
+          ],
+          [
+            1986,
+            107
+          ],
+          [
+            1987,
+            104
+          ],
+          [
+            1988,
+            117
+          ],
+          [
+            1989,
+            120
+          ],
+          [
+            1990,
+            122
+          ],
+          [
+            1991,
+            137
+          ],
+          [
+            1992,
+            150
+          ],
+          [
+            1993,
+            143
+          ]
+        ]
+      }
+    ]
+  }
+}

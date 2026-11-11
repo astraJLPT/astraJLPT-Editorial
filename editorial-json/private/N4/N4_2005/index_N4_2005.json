@@ -1,0 +1,91 @@
+{
+  "unit": "N4_2005",
+  "sources": [
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N4\\N4-1991-2009年\\（1991年-2009年）N4真题听力\\2005\\2005年日语能力考试四级真题+答案+听力原文.pdf",
+      "sha256": "00577b844da32be58aea6df7b99af58287330dd2cdaac732c47543426696366d",
+      "Tier": 2,
+      "bytes": 314350,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N4\\N4_2005\\PaddleOCR\\pdf_1",
+      "VisionOCR": "preprocess\\N4\\N4_2005\\VisionOCR\\pdf_1"
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N4真题（2010-2025.12）\\1991-2009年N4真题（改版前的题目，参考即可）\\2005\\2005年N4真题+答案+听力原文.pdf",
+      "sha256": "b846a1867aa50eafdad946494e5caac62e3fc8765f73192cfc3f3169052f83bf",
+      "Tier": 3,
+      "bytes": 900931,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N4历年真题\\1991-2009年N4真题（改版前的题目，参考即可）\\2005\\2005年N4真题+答案+听力原文.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N4\\N4_2005\\PaddleOCR\\pdf_2",
+      "VisionOCR": "preprocess\\N4\\N4_2005\\VisionOCR\\pdf_2"
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\2000年-2009年\\2000年~2009年日语4级真题及答案--打印版.doc",
+      "sha256": "ca13a364bac8a3718e65343e803ab4d46bb010ae7c4f452f9907966ce1f19bdc",
+      "Tier": "unranked",
+      "bytes": 816895,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\2000年-2009年\\2005年\\2005年日语能力考试四级真题+答案+听力原文.pdf",
+      "sha256": "e13b01d9175fa1345456c8ee9a6a0a48191ddaaab3580105914dc237429c36cf",
+      "Tier": 2,
+      "bytes": 415618,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N4\\N4_2005\\PaddleOCR\\pdf_3",
+      "VisionOCR": "preprocess\\N4\\N4_2005\\VisionOCR\\pdf_3"
+    },
+    {
+      "path": "src/CodexDownloads/UserApprovedReferenceScans/JLPT Shiken Mondai to Seikai 3-4 kyuu 2005.pdf",
+      "sha256": "070da4fbe5bbaccbd606d160b0920e23251c4162332b7cbe4f9bdb3b1535449d",
+      "Tier": "unranked",
+      "bytes": 17687629,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "display_title": "2005, Levels 3-4",
+      "source_role": "historical_question_volume",
+      "acquisition_batch": "reference_scan_hunt_1984-2009_2026-10-23",
+      "provenance_records": [
+        "preprocess/audit_runs/2026-10-23_reference_scan_rc03_approvals/approvals.json",
+        "preprocess/reference_scan_hunt_rc03_work/new_sources.json"
+      ],
+      "source_urls": [
+        "https://drive.google.com/file/d/1ixNELsVI_K0sI3VhpRupjI-qQvh-CQcs/view",
+        "https://tailieuhoctiengnhat.com/jlpt-shiken-mondai-to-seikai-3-4-kyuu-2005.html"
+      ],
+      "previous_paths": [
+        "src/CodexDownloads/UserApprovedReferenceScans/Originals/JLPT Shiken Mondai to Seikai 3-4 kyuu 2005.pdf",
+        "src/CodexDownloads/reference_scan_rc03/2005_L3_L4_extracted/JLPT Shiken Mondai to Seikai 3-4 kyuu 2005.pdf"
+      ],
+      "filename_at_acquisition": "JLPT Shiken Mondai to Seikai 3-4 kyuu 2005.pdf",
+      "filename_note": "Filename at acquisition or archive extraction, preserved through this move.",
+      "pages": 120,
+      "reference_registry": "preprocess/user_approved_reference_scans.md",
+      "reference_id": "RC03_2005",
+      "historical_coverage": [
+        {
+          "level": 3,
+          "year": 2005
+        },
+        {
+          "level": 4,
+          "year": 2005
+        }
+      ],
+      "acquisition_containers": [
+        {
+          "path": "src/CodexDownloads/Hunts/1984-2009/2026-10-23_RC03/2005_L3_L4_original.rar",
+          "sha256": "8dfa4bdaff0341827bf825e5623049f5ad7e370de02319f7397a1e9b6dd09f46",
+          "member_filename": "JLPT Shiken Mondai to Seikai 3-4 kyuu 2005.pdf",
+          "note": "Retained downloaded archive; member hash verified separately. Archive membership does not establish independent custody."
+        }
+      ]
+    }
+  ]
+}

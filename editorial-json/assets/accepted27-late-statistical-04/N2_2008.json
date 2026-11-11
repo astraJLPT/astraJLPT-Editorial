@@ -1,0 +1,139 @@
+{
+  "contract": "historical-artwork-1.0",
+  "id": "H27-N2_2008-company_choice_lines",
+  "kind": "company_choice_lines",
+  "unit": "N2_2008",
+  "item_id": "reading-b009",
+  "source": {
+    "source_path": "src/日语JLPT真题1992～2025.12（及时转存，避免丢失）/渠道一/日语N2真题/1991年-2009年/1995-2009.pdf",
+    "source_sha256": "115e8c098ee3caed702d29a24d2ce0c883c3ad9152e21eee4200fc4e80f2a3fb",
+    "physical_page": 97
+  },
+  "raw_crop": {
+    "path": "preprocess/assets/handoff27-late-statistical-04/N2_2008-raw.png",
+    "sha256": "4be84cb3f9f96fd71c9e1dcfb7e7ff53e61a62406144ead7d8ca539519b6552e"
+  },
+  "selection_note": "Direct full-page and canonical-image comparison recorded in H27 late-statistical-families-04/SOURCE_REVIEW-01; preserve canonical image and all question associations.",
+  "limits": "Unavailable original appearance is reconstructed from Old defaults. The supported N1label14repair remains explicit. Dense coincident endpoints and common labels are source features, not omitted series. No claim of original font identity.",
+  "data": {
+    "coordinate_status": "printed_integer_values_with_documented_14_repair",
+    "years": [
+      1971,
+      2007
+    ],
+    "axis": {
+      "minimum": 0,
+      "maximum": 35,
+      "tick": 5,
+      "unit": "%"
+    },
+    "series": [
+      {
+        "label": "会社の将来を考えて",
+        "marker": "filled_circle",
+        "values": [
+          27,
+          9
+        ]
+      },
+      {
+        "label": "仕事がおもしろいから",
+        "marker": "filled_triangle",
+        "values": [
+          16,
+          21
+        ]
+      },
+      {
+        "label": "実力主義の会社だから",
+        "marker": "asterisk",
+        "values": [
+          6,
+          3
+        ]
+      },
+      {
+        "label": "給料が高いから",
+        "marker": "plus",
+        "values": [
+          4,
+          3
+        ]
+      },
+      {
+        "label": "一流会社だから",
+        "marker": "star",
+        "values": [
+          3,
+          5
+        ]
+      },
+      {
+        "label": "寮グランドなど福利厚生が充実しているから",
+        "marker": "hollow_diamond",
+        "values": [
+          1,
+          2
+        ]
+      },
+      {
+        "label": "労働時間が短く、休日が多いから",
+        "marker": "cross",
+        "values": [
+          0,
+          1
+        ]
+      },
+      {
+        "label": "自分の能力、個性が生かせるから",
+        "marker": "filled_diamond",
+        "values": [
+          19,
+          29
+        ]
+      },
+      {
+        "label": "技術が覚えられるから",
+        "marker": "filled_square",
+        "values": [
+          7,
+          14
+        ]
+      },
+      {
+        "label": "どこも行くところがなくやむなく",
+        "marker": "hollow_circle",
+        "values": [
+          5,
+          3
+        ]
+      },
+      {
+        "label": "地理的条件が良いから",
+        "marker": "hollow_down_triangle",
+        "values": [
+          4,
+          4
+        ]
+      },
+      {
+        "label": "経営者に魅力を感じたから",
+        "marker": "hollow_square",
+        "values": [
+          1,
+          5
+        ]
+      },
+      {
+        "label": "先輩が多いから",
+        "marker": "hollow_triangle",
+        "values": [
+          1,
+          1
+        ]
+      }
+    ],
+    "shared_value_label_policy": "one_label_per_observed_common_endpoint_value_all_series_retained",
+    "note_profile": "N2_2008"
+  }
+}

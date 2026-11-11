@@ -1,0 +1,77 @@
+{
+  "contract": "historical-artwork-1.0",
+  "id": "H23-N1-1997-fruit-4",
+  "kind": "household_purchase_option",
+  "unit": "N1_1997",
+  "item_id": "reading-q017",
+  "source": {
+    "source_path": "src/CodexDownloads/UserApprovedReferenceScans/日本語能力1991～1999年試験問題集1級.pdf",
+    "source_sha256": "8560bf8ef92b4e2d58559b3e14882b76d3307586f5d55b0e7fa33cc2f5fa931f",
+    "physical_page": 314,
+    "crop_original_pixels": [
+      220,
+      1027,
+      919,
+      1286
+    ],
+    "page_rotation": 0
+  },
+  "raw_crop": {
+    "path": "preprocess/assets/handoff23/written/N1_1997/assets-03/fruit-4-raw.png",
+    "sha256": "201b5b5bd5a9e80292cd87cf815cd72f0f22c527c265528f41389723c74af6c5"
+  },
+  "data": {
+    "option": 4,
+    "coordinate_status": "approximate_digitization_not_exact_historical_data",
+    "axis_maximum": 4,
+    "age_labels": [
+      "～24",
+      "25–29",
+      "30–34",
+      "35–39",
+      "40–44",
+      "45–49",
+      "50–54",
+      "55–59",
+      "60–64",
+      "65歳以上"
+    ],
+    "series": [
+      {
+        "label": "菓子類",
+        "pattern": "north east lines",
+        "values": [
+          0.5,
+          0.7,
+          0.82,
+          1.01,
+          1.21,
+          1.42,
+          1.73,
+          1.99,
+          2.23,
+          2.35
+        ]
+      },
+      {
+        "label": "果物類",
+        "pattern": "black",
+        "values": [
+          2.02,
+          2.18,
+          2.36,
+          2.49,
+          2.49,
+          2.43,
+          2.43,
+          2.56,
+          2.88,
+          2.92
+        ]
+      }
+    ],
+    "shared_legend": false
+  },
+  "selection_note": "Directly read exact source page. Preserve all choice identities, relation edges, axis labels and patterns. Secondary536 is content recovery with inferred presentation, not approved appearance evidence.",
+  "limits": "Unlabelled bar heights are approximate scan traces, not recovered numeric data. No original print dimensions or authentic custody asserted. Family connections preserve the inspected secondary only. Crop coordinates for536 refer to pixels after lossless180-degree page rotation; the small page skew is not resampled. Mirror raw evidence includes adjacent folio ink, which is not part of the diagram and is excluded from native output."
+}

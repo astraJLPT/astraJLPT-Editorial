@@ -1,0 +1,39 @@
+{
+  "format": "rubi-research-summary-provenance-v1",
+  "adapted_on": "2026-11-10",
+  "sources": [
+    {
+      "workspace_path": "rubi-restore/REPORT.md",
+      "sha256": "631bc637d9b5fd2fb29f63ffbcae4ae568df445dcbae69cbc3cb0c53845b0a4a"
+    },
+    {
+      "workspace_path": "rubi-restore/HANDOFF_RUBY_PASS3.md",
+      "sha256": "0a89588163226f8ef7af709b471413d9159827795c48edbe6a11d9fabcaf1486"
+    },
+    {
+      "workspace_path": "rubi-restore/runs/ruby3-20261105/final-report.md",
+      "sha256": "83c28f1d44dcc9e0d091754e426fa78491c03de88e8187d0ecd95836e847014f"
+    },
+    {
+      "workspace_path": "rubi-restore/runs/context-20261105/final-report.md",
+      "sha256": "a6d7e56f6a297f46796e971c1007f7ff51680bb9b04136786114e27205960024"
+    },
+    {
+      "workspace_path": "rubi-restore/runs/ruby4-20261106/EXPERIMENTS.md",
+      "sha256": "d1ae6725ba0107d2c0b5cba549a92ac106d7eee7a0145d04d2a0a56e658cfd5b"
+    },
+    {
+      "workspace_path": "rubi-restore/runs/ruby4-20261106/final-report.md",
+      "sha256": "b8e025d2b5f4b2bb18b868847d26ce82cfb95282fe7c0e9180d278b50e2e74b9"
+    },
+    {
+      "workspace_path": "rubi-restore/sources.json",
+      "sha256": "c20552ba9e369567a8af4ea57c682b2b8d61d7faf910fbce23b42b4c0f08dfa7"
+    },
+    {
+      "workspace_path": "rubi-restore/added_sources.json",
+      "sha256": "9190c39736a87d8e96b601341c6b9e98e1f9dbf9bec9201e5eb7a7aa61952028"
+    }
+  ],
+  "note": "Historical report inputs for README/RESEARCH/SOURCES; these reports and complete experiment trees are not all bundled. Selected final replay inputs remain separately hash-bound by manifest.json."
+}

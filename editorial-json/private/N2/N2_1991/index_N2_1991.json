@@ -1,0 +1,101 @@
+{
+  "unit": "N2_1991",
+  "sources": [
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N2\\1991年\\1991年日语能力考试2级真题及答案.doc",
+      "sha256": "2d479ffc4e3816e0b62eac6ed4cdcbb3c47a1eebd756f66339baa374b5e785d8",
+      "Tier": "unranked",
+      "bytes": 369664,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N2历年真题\\1991~2009年\\1991年\\1991年日语能力考试2级真题及答案.doc"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N2真题\\1991年-2009年\\1991年\\1991年日语能力考试2级真题及答案.pdf",
+      "sha256": "6a42345c8309377057d1c765b6b207e0b494ebb31392f02253bb3c8917e8bf35",
+      "Tier": 2,
+      "bytes": 2160084,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "preprocess\\N2\\N2_1991\\VisionOCR\\pdf_1"
+    },
+    {
+      "path": "src/CodexDownloads/UserApprovedReferenceScans/日本語能力1991～1999年試験問題集2級.pdf",
+      "sha256": "0a6634758dce0a258ffaf92c6c8ea1a738a4b8ceb52cd75cb44a4d8d340dfa64",
+      "Tier": "unranked",
+      "bytes": 5975516,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "display_title": "Level 2, 1991-1999",
+      "source_role": "historical_question_volume",
+      "acquisition_batch": "reference_scan_hunt_1984-2009_2026-10-23",
+      "provenance_records": [
+        "preprocess/audit_runs/2026-10-23_reference_scan_rc03_approvals/approvals.json",
+        "preprocess/reference_scan_hunt_rc03_work/all_level_sources.json"
+      ],
+      "source_urls": [
+        "https://www.mediafire.com/file/m67688mvh6nj6s2/JLPT1991-1999_Level1-4_.rar",
+        "https://yuki-nezumi.blogspot.com/2011/01/4kyu-1991-1999.html"
+      ],
+      "previous_paths": [
+        "src/CodexDownloads/UserApprovedReferenceScans/Originals/日本語能力1991～1999年試験問題集2級.pdf",
+        "src/CodexDownloads/reference_scan_rc03/1991-1999_all_levels_extracted/日本語能力1991～1999年試験問題集2級.pdf"
+      ],
+      "filename_at_acquisition": "日本語能力1991～1999年試験問題集2級.pdf",
+      "filename_note": "Filename at acquisition or archive extraction, preserved through this move.",
+      "pages": 417,
+      "reference_registry": "preprocess/user_approved_reference_scans.md",
+      "reference_id": "RC03_L2",
+      "historical_coverage": [
+        {
+          "level": 2,
+          "year": 1991
+        },
+        {
+          "level": 2,
+          "year": 1992
+        },
+        {
+          "level": 2,
+          "year": 1993
+        },
+        {
+          "level": 2,
+          "year": 1994
+        },
+        {
+          "level": 2,
+          "year": 1995
+        },
+        {
+          "level": 2,
+          "year": 1996
+        },
+        {
+          "level": 2,
+          "year": 1997
+        },
+        {
+          "level": 2,
+          "year": 1998
+        },
+        {
+          "level": 2,
+          "year": 1999
+        }
+      ],
+      "acquisition_containers": [
+        {
+          "path": "src/CodexDownloads/Hunts/1984-2009/2026-10-23_RC03/1991-1999_all_levels_original.rar",
+          "sha256": "5369c863ded3b7ce410b658549d55be74d14afab694ba2678ae81abccf2319ca",
+          "member_filename": "日本語能力1991～1999年試験問題集2級.pdf",
+          "note": "Retained downloaded archive; member hash verified separately. Archive membership does not establish independent custody."
+        }
+      ]
+    }
+  ]
+}

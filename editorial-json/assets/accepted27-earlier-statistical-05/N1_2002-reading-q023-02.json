@@ -1,0 +1,70 @@
+{
+  "contract": "historical-artwork-1.0",
+  "id": "H27-N1_2002-reading-q023-02",
+  "kind": "employment_intent_option",
+  "unit": "N1_2002",
+  "item_id": "reading-q023",
+  "source": {
+    "source_path": "src/JLPT N1-N5, Past papers/N1/1995-2009.12日本语能力测试真题详解N1.pdf",
+    "source_sha256": "e3555741c8f14b855a32e7d09b42eb790492e3818a85a875f99d84703c752e00",
+    "physical_page": 339
+  },
+  "raw_crop": {
+    "path": "preprocess/assets/handoff27-earlier-statistical-05/N1_2002-reading-q023-02-raw.png",
+    "sha256": "8e7eaa28ed5b2589b96dbdea0f8495a3c1c8a8df19a30f6aeaf6228811f04016"
+  },
+  "selection_note": "Native vector/live-text reconstruction after direct individual source and canonical image review. Source numbering remains supplied by the existing option renderer.",
+  "limits": "Original canonical bytes remain unchanged and recoverable. Printed numeric labels are literal; measured unlabelled geometry is approximate. N1/N2 retyped appearance is not original typography evidence; N4 UARS establishes the graphic content but not exact native font identity.",
+  "data": {
+    "option": 2,
+    "coordinate_status": "approximate_pixel_trace_no_invented_segment_value_labels",
+    "rows": [
+      "男性就職前",
+      "男性就職後半年",
+      "女性就職前",
+      "女性就職後半年"
+    ],
+    "categories": [
+      "定年派",
+      "転職派",
+      "その他"
+    ],
+    "patterns": [
+      "north west lines",
+      "black",
+      "dots"
+    ],
+    "axis": {
+      "minimum": 0,
+      "maximum": 100,
+      "tick": 10,
+      "unit": "%"
+    },
+    "trace_witness": {
+      "image_sha256": "8e7eaa28ed5b2589b96dbdea0f8495a3c1c8a8df19a30f6aeaf6228811f04016",
+      "axis": [
+        309,
+        1244
+      ],
+      "breaks": [
+        [
+          562,
+          993
+        ],
+        [
+          786,
+          1041
+        ],
+        [
+          489,
+          645
+        ],
+        [
+          377,
+          739
+        ]
+      ]
+    },
+    "ruby_profile": "N1_2002"
+  }
+}

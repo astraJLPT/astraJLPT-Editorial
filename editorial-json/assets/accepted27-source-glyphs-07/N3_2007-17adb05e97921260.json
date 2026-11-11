@@ -1,0 +1,82 @@
+{
+  "contract": "historical-source-pixels-1.1",
+  "id": "H27-N3_2007-17adb05e97921260",
+  "unit": "N3_2007",
+  "canonical_image_sha256": "17adb05e979212604ebdf49c7b64e1eec47d511afd66ef8c6bcfa65f473c7507",
+  "canonical_pixels": [
+    49,
+    44
+  ],
+  "image": {
+    "path": "preprocess/assets/handoff27-source-glyphs-07/N3_2007-17adb05e97921260.png",
+    "sha256": "389f0822ca39f7128772bf9e6e43053e78d66011f09827a049946be40ce72915"
+  },
+  "source": {
+    "source_path": "src/CodexDownloads/UserApprovedReferenceScans/pdf-20074_compress.pdf",
+    "source_sha256": "6902181b1ced1babb1aa2eb9ae4f9bc58bb96aa1780141628ff13ed7c03d03f6",
+    "physical_page": 8
+  },
+  "evidence": {
+    "source_path": "src/CodexDownloads/UserApprovedReferenceScans/pdf-20074_compress.pdf",
+    "source_sha256": "6902181b1ced1babb1aa2eb9ae4f9bc58bb96aa1780141628ff13ed7c03d03f6",
+    "physical_pages": [
+      8
+    ],
+    "state": "approved",
+    "historical_claim": false,
+    "region": "H27 exact original decoded glyph crop with the original fractional source window retained by native PDF clipping. Four-choice stroke distinctions were directly reviewed on the complete source page; canonical glyph bytes and suffix text are unchanged.",
+    "reference_id": "RC04_2007_L3_L4",
+    "approval_registry_sha256": "c0fc4d24494a9569dd539d237018014213045d6224ae9035fa282ab610be0384",
+    "subject": "question_page_layout",
+    "exclusions_acknowledged": true
+  },
+  "occurrences": [
+    {
+      "owner": "vocab-q023",
+      "pointer": "/sections/1/items/4/options/1",
+      "ordinal": 1,
+      "field_sha256": "0d5d50fd299d6bcb5d26a8d972ebf685816a51795fc497afca09d335df82cb8c"
+    }
+  ],
+  "source_pixels": {
+    "xref": 23,
+    "source_dimensions": [
+      2866,
+      4047
+    ],
+    "source_pixel_box": [
+      1481,
+      1615,
+      1547,
+      1675
+    ],
+    "display_window_source_pixels": [
+      1481.3333193124897,
+      1615.833460918473,
+      1546.6666520274418,
+      1674.5001258155678
+    ],
+    "dimensions": [
+      66,
+      60
+    ],
+    "mode": "1",
+    "filter": "/JBIG2Decode",
+    "image_transform": [
+      515.8800048828125,
+      0.0,
+      -0.0,
+      728.4600219726562,
+      0.0,
+      0.02996826171875
+    ],
+    "source_stream_sha256": "a376d8fd4f57cb6deab185a38c7af0780c2be97214571d13d2695ff1ec063696",
+    "decoded_source_rgb_sha256": "27f95908308f97de4944c4c2784f7b48b13000198cd04236ce500d56c4f62f1a",
+    "decoded_crop_rgb_sha256": "a5a7e5696cb5de4ea80d268229be6b71ca4a84c068dc36c6415771fe4cae3cd6",
+    "polarity": "complement PDF stencil mask to black-on-white",
+    "resampling": false,
+    "lossy_steps": []
+  },
+  "selection_note": "Embed the integer outward crop of the original decoded source image without resampling. Clip to the exact fractional window corresponding to the former300dpi crop, preserving both ink placement and prior displayed width and height.",
+  "limits": "Original scan compression and softness remain. The containing PNG retains every pixel, including less than one source pixel of overscan per edge; native Form BBox clipping retains the original visible window. No thresholding, denoising or stroke reconstruction. PDF coordinate rounding is checked independently."
+}

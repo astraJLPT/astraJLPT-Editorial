@@ -1,0 +1,42 @@
+# N4_2000 written audit — H25
+
+Status: **incomplete source content; available investigation complete**. The maintained Old schema 3.9.0 partial practice paper contains **86 playable questions** (39 vocabulary,47 reading/grammar),344 scored options,14 complete contexts,10 sections and5 worked examples with20 example options. Vocabulary original position21 is omitted because duplicated choice pairs erase the original wrong-glyph distinctions. No ordinary ruby,body figures,lexical notes,citations or tables were observed. Listening/audio and exam-PDF integration remain outside this audit.
+
+## Source coverage
+
+The actual principal is the indexed24-page WPS2010 retype, SHA-256 `87f83ab8bafabc0bc2f23447476ee052ccab6badc73de0fbd4af76a7d2e5cc82`. Its unchanged inspection copy retains the original filename. All written regions were visually read:pages1–3;page4upper final vocabulary question before the listening title;pages16–22reading;page23upper vocabulary key/scoring above聴解;page24reading key/scoring. The2000 4級title fragment at the bottom of15was inspected separately without the preceding listening body. The numeric principal range1–4,16–24 is constrained by these region limits.
+
+Sources1and2 are related transformations of the same24-page body. Every corresponding written region was visually compared. Source1adds bold overlays;source2changes native serialization order on1,2,18,19 but the visible text and order agree. These files are not independent votes. Their repeated errors do not establish original text.
+
+The materially distinct indexed2000–2009DOC was privately converted to43pages. Its complete2000section occupies1–4;5is blank and2001starts6. All2000questions,choices,five examples and keys were read. Later years were excluded. DOC pagination refers to this private derivative, not intrinsic source pages. The DOC loses underlines/target marks, uses the wrongどうよみますかcommand for vocabularyII, and shares several corruptions. It nevertheless preserves five missing worked examples and discriminating repairs. No explanations are indexed. The written candidate file contains zero data rows.
+
+All87original keys were checked in actual option order and reasoned against full context; PDF and DOCkeys agree. Vocabulary raw weights1/1/2/2 total55;the86question practice reconstruction contains54vocabulary raw points. Reading weights2/2/2/3/4/4 total112. Visible100/200scaling formulas remain evidence, not substituted raw section weights. Secondary100点25分/200点50分title blocks do not authenticate original cover text or timing. Both original covers remain unavailable. The source identities support2000and4級;the previously inspected official guide supports the annual December sitting convention through2008.
+
+## Decisions and unresolved content
+
+VocabularyIIgroup3local1,globalV21,visibly reads時間/時間/時闇/時闇 with key2 in every indexed witness. High-resolution pixels and native mappings agree. After full local comparison, the focused [JapaneseQuizzes N5Kanji08 question6](https://japanesequizzes.com/portfolio/n5-kanji-practice-test-08/) repeats those pairs. A public2000-4PDFpath returned404; a related Scribd retype search also repeats the damage. No external text was adopted and no original glyph shapes recovered. V21remains a private fragment;context9retains its complete sentence and questions22/23retain local labels2/3. No guessed count of missing strokes or manufactured alternative is asserted.
+
+Five complete DOCworked examples are restored: vocabularyI school-reading(key4),II mountain-writing(key3),III park-width(key2),IV greengrocer-paraphrase(key1),and readingI pencil-topic(key3). Content,four alternatives and explicit answers are retained. The first two preserve separate target lines. Underlines absent from the DOC are not invented.
+
+Nine high-confidence source fields change. V35問います becomesといいます. R8おと問 becomesおととい. R10でんわばんご gains finalう. R16ありますが becomesありませんが,restoring the negative explicitly present in the DOC. Reading context1いもうと間っしょに becomesいもうとといっしょに. Context4and R47choices3/4 changeおと問 toおととい. ReadingVIheading1?2?3?4 becomes the ordinary spaced1 2 3 4 list witnessed in the other principal commands. No key changes.
+
+R38choice3おばえませんでした remains literal. Its strongest rivalおぼえませんでした is plausible but unwitnessed; a non-key tested form is not rewritten merely for grammatical preference. Correct key2しりませんでした is sound. Deliberately malformed alternatives and harmless doubled。outside the A-speaker quotes in R37–40 are retained and explicitly recorded. Legibleえらびなさいcommands remain source content despite differing generic default wording. There are3public unresolved cases:V21,the R38distractor,and original covers. There are15current principal departures:9repairs,5example supplements and1omitted question.
+
+Method1 score **182** applies to the actual principal:100unverified provenance +60for6missing units(1incomplete question and5examples) +5for1major defect(R16negative) +16for8minor fields +1uncertain field(R38). Five missing principal examples are fully supplied in the final editorial; only one scored question remains omitted. Metadata flags are0. The score does not authenticate the principal or quantify final-paper error probability.
+
+## Structure and verification
+
+Old shared/level4revision6 supplies ordinary presentation with no render overrides. All14contexts have exact content/question digest bindings. Worked examples are supported self-contained example blocks, separately checked from passage contexts. Tested underlines,circled vocabularyIlabels,paraphrase marks,cloze slots,letter date/signature and speaker turns remain meaningful content. Retype fonts,margins and pagination are not copied.
+
+All available canonical content/schema,case,principal-index/departure,identity/admission/profile/style/source-binding,source-hash and frozen-dependency checks pass. Exact replay covers144ledger rows:30section fields,105items and9repairs. Two root metadata edits record example-ID normalization. Initial draft example IDs usedunsupported-e prefixes; the frozen validator correctly rejected them. They were normalized to existing-b block IDs with exact draft files,hashes and mapping retained in audit_work/invalid_id_draft and example_id_normalization.json. Only new construction references were normalized;the empty frozen historical ledger prefix is unchanged. No example text,key or options changed. The principal numeric-range syntax was also corrected,with exact region limits retained and a separate metadata receipt.
+
+The task-owned orchestration helper now distinguishes supported example blocks from passage contexts and adds explicit four-choice/key/source checks. Frozen canonical validators and their semantics remain unchanged. The complete assembled human-readable content and this audit note were read after validation.
+
+Two frozen-runtime checks remain unavailable: composition imports missing frozen rubi-restore/tools/ruby_core.py, and publication identity rejects the immutable registry's absolute live-source paths outside the isolated root. No dependency,registry or validator was substituted or changed. Detailed receipts are in preprocess/audit_runs/2026-10-26_handoff25_non_uars/validation/N4_2000/. All available required investigation is complete. PDF integration remains pending_after_h23.
+
+## Indexed identities
+
+- Index0: `src/JLPT N1-N5, Past papers/N4/N4-1991-2009年/（1991年-2009年）N4真题听力/2000/2000年日本语能力考试4级真题+答案+听力原文.pdf`. SHA-256 `87f83ab8bafabc0bc2f23447476ee052ccab6badc73de0fbd4af76a7d2e5cc82`. principal: All13written question/key regions; listening excluded.
+- Index1: `src/日语JLPT历年真题/N4真题（2010-2025.12）/1991-2009年N4真题（改版前的题目，参考即可）/2000/2000年N4真题+答案+听力原文.pdf`. SHA-256 `e6ac286c1140bf89cb404c47d0d161b35172416bd3636b1e099fe1d0ff754ac5`. related_pdf_transform: All13same written regions; bold overlay does not repair duplicate glyphs or wording.
+- Index2: `src/日语JLPT真题1992～2025.12（及时转存，避免丢失）/渠道一/日语N4真题/2000年-2009年/2000年/2000年日本语能力考试4级真题+答案.pdf`. SHA-256 `5750e826f332c8b4fec553735286ec5bb3c54f98c62331052196baceefec5dd4`. related_pdf_transform: All13same written regions; native order differs on1,2,18,19but visual content/order agrees.
+- Index3: `src/日语JLPT真题1992～2025.12（及时转存，避免丢失）/渠道一/日语N4真题/2000年-2009年/2000年~2009年日语4级真题及答案--打印版.doc`. SHA-256 `ca13a364bac8a3718e65343e803ab4d46bb010ae7c4f452f9907966ce1f19bdc`. materially_distinct_retype: Privateconversion1–4all2000questions,examples,keys;5blank. Later years excluded; no listening questions supplied.

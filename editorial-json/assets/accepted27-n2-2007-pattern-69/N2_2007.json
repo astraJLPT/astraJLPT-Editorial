@@ -1,0 +1,125 @@
+{
+  "contract": "historical-artwork-1.0",
+  "id": "H27-N2_2007-national_condition_lines",
+  "kind": "national_condition_lines",
+  "unit": "N2_2007",
+  "item_id": "reading-b009",
+  "source": {
+    "source_path": "src/日语JLPT真题1992～2025.12（及时转存，避免丢失）/渠道一/日语N2真题/1991年-2009年/1995-2009.pdf",
+    "source_sha256": "115e8c098ee3caed702d29a24d2ce0c883c3ad9152e21eee4200fc4e80f2a3fb",
+    "physical_page": 132
+  },
+  "raw_crop": {
+    "path": "preprocess/assets/handoff27-late-statistical-04/N2_2007-raw.png",
+    "sha256": "35025f48a29b37e1e745d7ae2cf4051196843ead70209c578f5188143deb47f4"
+  },
+  "selection_note": "R69own principal132 and canonical/H26graph directly inspected: N2lowest filled-square series uses a thin solid line. Retain S04higher-resolution N1approximate marker coordinates; N1fine-dotted line is not the N2pattern authority.",
+  "limits": "Coordinates remain approximate traces from the clearer N1companion crop, independently consistent with the N2own witness. N2own principal and raw crop supply the thin solid オ line. No exact historical percentages or original font identity are asserted.",
+  "data": {
+    "coordinate_status": "approximate_pixel_digitization_not_exact_historical_data",
+    "years": [
+      1973,
+      1978,
+      1988,
+      1993,
+      1998,
+      2003
+    ],
+    "year_ticks": [
+      1973,
+      1978,
+      1983,
+      1988,
+      1993,
+      1998,
+      2003
+    ],
+    "axis": {
+      "minimum": 0,
+      "maximum": 100,
+      "tick": 10,
+      "unit": "%"
+    },
+    "trace_witness": {
+      "image_sha256": "8291311a393cf9519d948015bd4232494326c58d276acff0b2ba0de7c363d250",
+      "zero_y": 689,
+      "hundred_y": 106,
+      "marker_x_pixels": [
+        140,
+        244,
+        451,
+        555,
+        658,
+        762
+      ]
+    },
+    "series": [
+      {
+        "label": "ア",
+        "marker": "hollow_circle",
+        "line": "solid",
+        "marker_y_pixels": [
+          211,
+          193,
+          175,
+          169,
+          216,
+          211
+        ]
+      },
+      {
+        "label": "イ",
+        "marker": "hollow_square",
+        "line": "dashdot",
+        "marker_y_pixels": [
+          326,
+          275,
+          345,
+          291,
+          333,
+          297
+        ]
+      },
+      {
+        "label": "ウ",
+        "marker": "filled_triangle",
+        "line": "dashed",
+        "marker_y_pixels": [
+          389,
+          319,
+          261,
+          255,
+          378,
+          397
+        ]
+      },
+      {
+        "label": "エ",
+        "marker": "filled_circle",
+        "line": "dotted",
+        "marker_y_pixels": [
+          297,
+          303,
+          209,
+          228,
+          501,
+          501
+        ]
+      },
+      {
+        "label": "オ",
+        "marker": "filled_square",
+        "line": "thin_solid",
+        "marker_y_pixels": [
+          462,
+          426,
+          467,
+          450,
+          537,
+          542
+        ]
+      }
+    ],
+    "point_label_policy": "no_invented_numeric_point_labels"
+  }
+}

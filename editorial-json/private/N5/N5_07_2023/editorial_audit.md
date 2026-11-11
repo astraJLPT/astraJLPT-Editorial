@@ -1,0 +1,62 @@
+# N5 July 2023 editorial audit
+
+Status: audited_with_uncertainty.
+
+## Start (2026-09-26)
+
+Live endpoint state confirmed after N4 closure. No editorial JSON exists; recorded absent baseline and preserved empty root ledger/cases. The index contains one written-question PDF and one answer/explanation PDF, each with one exact-hash alias. No archive import provenance will be fabricated.
+
+## Evidence review checkpoint
+
+All thirteen physical pages of the written-question PDF (pdf_2, SHA256 05d287c536cebc5e1234317f2b3279b23d097188156610d4e20bcfb54e422cac) were visually inspected. Vocabulary occupies pages1–4; page5 is the grammar/reading cover; pages6–13 contain grammar, two compositions, two short readings, the vegetable story, and the complete tennis notice. Coverage establishes21 vocabulary and22 grammar/reading questions,172 ordered choices, ten instruction headings, and six planned content blocks including the worked example. No question numbers or terminal notice material are missing. Printed selective ruby, target/reference underlines, four-slot star stems, dates, phone number, and table relationships were reviewed at enlarged scale. VisionOCR was read for all thirteen pages, PaddleOCR for vocabulary pages1–4; OCR is a dependent transcription aid, never an independent witness.
+
+The answer/explanation PDF (pdf_1, SHA256 f2535c8c6b40a6a8537c96049a805f2cc83e86d8dc65a2cf1548f04040f6ad93) was read and visually inspected on physical pages1–2 and the written portion at the top of page3. All43 written keys were checked against actual items and Japanese answer logic. Reading12 has a mistaken numeric order [1,4,2,1] despite correct word order and star key2; the table-shopping question18 is mislabeled20 on page2. Actual question20 is separately and correctly keyed2 on page3. These source-label defects will not change question identity or options. Listening portions were excluded.
+
+All four indexed source paths/aliases were hash-verified. Both aliases are byte-identical copies, not independent witnesses. The unit-local candidate file is header-only; the root ledger and public case file are empty, and no legacy audit notes supply additional content. Focused source-filename searches found no further July2023 N5 question witness, no matching archived HTML, and no N5 counterpart in the inspected Yuuki source family. No working HTML or global historical candidate file was used.
+
+The dated filenames and matching companion key support provisional July2023 identity. The grammar cover claims24 pages while the actual compressed/reflowed grammar material occupies eight question pages plus the cover; the cover count is a metadata anomaly, not evidence sufficient to invent omitted questions. There is no issuer provenance or positive recollection-source attribution. The selected principal remains unverified.
+
+Remaining work: build the absent JSON, log its creation, publish the few inferred repairs, reconcile all substantive departures from the principal, validate, catalogue the actual principal, and close the inclusive queue. Focused final decisions concern vocabulary7's missing interrogative ending, the absent second-composition heading, and misplaced/incomplete lesson ordinals in the notice. Ordinary printed errors in headings, the worked example and star items are separately recoverable with high confidence.
+
+## Reviewed result
+
+Full proposal reconstructed from source, without an HTML baseline:21 vocabulary questions,22 grammar/reading questions,172 options, ten sections and six blocks. The two cloze compositions share one block but retain separate containers, four question markers and their sequence. All four scored star stems retain four separated slots with the third starred. The worked example retains its original four choices, solved order3–2–4–1, both procedural steps and the marked fourth answer-sheet position. The final notice has a real five-column table with four class rows. No passage or option was invented to reach a standard count.
+
+Final source alignment checked every vocabulary page and the full grammar, cloze, short-reading, memo, story and notice images against the proposal. Corrected private draft page locators: vocabulary7 is on physical page1; problem4 and vocabulary19–21 are on physical page4. PaddleOCR pages5–13 were subsequently read as well, completing both OCR text reviews. OCR confusions were rejected where the original is clear: 電語 versus 電話 in the vocabulary distractors, 木山(きやま), 手(て), selective missing ruby, floating question labels19 and20, and many small dakuten/reading artifacts. Original pixels and language context, not agreement between dependent OCR outputs, determine the reconstruction.
+
+### Decisions and public cases
+
+- Vocabulary problem1: remove the stray の before ひらがな. Problem3: correct いれなすか and いつばん to the ordinary instruction forms. These are high-confidence instruction repairs.
+- Vocabulary7: reconstruct final いますか provisionally. The literal source has います, while bare 何か月 normally needs an interrogative environment or a following duration particle. Compared finalか, 何か月も and 何か月か; the companion quotes only the tested expression. The full item is created at medium confidence with before:null and a public alternative preserving the source plus the strongest emphatic-duration alternative.
+- Grammar9 choice2: enlarged400-dpi inspection of the original confirms no visible dakuten in おかないてくださいね. Restore おかないでくださいね with high confidence: the teacher prohibits parking here, the negative request requiresで, and the companion explicitly quotes 置かないでくださいね. Choice2 and its key remain fixed. This repairs the intended answer rather than improving a deliberate distractor.
+- Worked example: correct こうなりです to こうなります. Star12: remove an unmatched final quotation mark. Star13: reconstruct the misplaced watering-verb kana as やったり in the pairedたり sequence and remove another unmatched quote. The public literal comparison uses the clearly visible やた prefix without asserting the unclear full/small size of the following tsu in this low-resolution reproduction. This visual detail does not affect the strongly supported reconstructed verb.
+- Cloze: restore （2）チンさんのさくぶん provisionally from the two named writers, the first numbered author heading and two separate composition boxes. Reviewed the entire boundary, both OCRs and the companion explanation; an intentionally unlabelled second composition remains possible. The full block has a medium creation record and public case.
+- Notice: provisionally move each① from before the class letter to the first date and restore② before each second date, preserving③ before the third. The introduction explicitly says three lessons per class, but no independent image establishes the exact original layout. The full notice block has a medium creation record and public literal-layout alternative. Separately correct the headline's largeよ to smallょ and the printed reading on the日 in24日 fromにち toか; retain the printed base scope and all unannotated numerals, following the table's partial日(か) annotation on other irregular dates. No unprinted whole-date reading is added.
+
+The three public cases are provisional fixes, with exact whole-item snapshots and before:null because the JSON was absent. High-confidence subrepairs inside a medium-created block remain explicitly described. Eleven public principal departures cover every current substantive correction; medium repairs cross-link to the corresponding whole-item cases. The principal is the actual pdf_2 file under src, not the proposed JSON. No independent question lineage was available; aliases and OCR do not manufacture corroboration.
+
+### Retained details and answer reasoning
+
+Vocabulary choices retain deliberate malformed readings and kanji distractors, all source spellings and choice order. Reading-test keys follow買う/出口/来年/父/五千円/四時/何か月; orthography keys follow電話/多い/金曜日/左/新聞. Lexical keys follow supermarket prices, smoking prohibition, wearing a hat, cold water, taking medicine and the animal counter. Synonyms are晴れ,勉強する and少し. Full-sentence underlines at19–21 include their terminal stops.
+
+Grammar keys follow乗る+に,春か秋,手段で,比較のほう,や…など,どうでしたか,まだ,形容詞+とき and the negative request. Star orders are10=[4,1,3,2],11=[1,4,3,2],12=[3,4,2,1],13=[2,4,1,3]; the separate key's mistaken [1,4,2,1] at12 is rejected in favor of both its own word-order explanation and the actual options. Cloze14 adds further library holdings withそれから,15 expresses desire to borrow again,16 names the restaurant withは,17 returns home with帰ります.
+
+Reading18 is tomorrow's table purchase, not next week's visit or dinner; the companion's label20 is a numbering error and does not move the key. Reading19 asks what the caller intends: after returning to the company around11:30, he will call again, so4. Preserve the source's missing terminal stop and unannotated行 in option2; these are not silently normalized. Reading20 goes to the Japanese friend's parents' home, so2. Reading21 eats because the mother is watching, so3; the friend did not grow the vegetables or sayおいしい. Both reference underlines end after食べました, beforeね/か. Reading22 requires Sunday, morning and East Park simultaneously; only classA matches, so1. All dates, class labels, hours, venues, the fee, newsletter number and telephone digits are preserved. No year is assigned to the notice's fictional calendar.
+
+Selective source ruby is retained even when inconsistent: no reading over行 in grammar6, reading18 options3–4, or reading19 option2; only文章 is annotated in problem4's heading; example入 and用紙 are not given extra readings; unusual printedテニス(てにす) in reading22 remains. Vocabulary has no added ruby. Administrative cover text, page numbers, ornamental rules and equivalent slot/reflow linework are not exam-content blocks; the cover's unexplained24-page claim is separately assessed as metadata.
+
+### Creation and verification record
+
+The absent-baseline manifest remains intact. Creation is logged as20 section fields,43 full questions and six full blocks:69 records total,66 high and three medium. Source provenance has null HTML import hashes/counts and actual input labels/hashes/page locators; no line numbers, weights or official scoring claims were inferred. Private proposal verification replays every creation, checks43 keys,172 choices, four star orders, worked-example tables, cloze markers, memo chronology, notice row semantics, reference underlines and288 ruby groups. Both public-case snapshots and principal links validate. All four indexed paths are rehashed. The installed result and separate catalogue reporting follow only after this checkpoint.
+
+## Installed validation
+
+The reconstructed JSON passes the structural, public-case and creation-ledger checks with no warnings:21 vocabulary and22 grammar/reading questions,172 options, six blocks, ten task headings and288 ruby groups. All69 creation records replay exactly from absent items/section fields;66 are high confidence and three are medium and publicly linked. All43 answer mappings were source/logic checked, including four star permutations; no key is null. Both example tables, all cloze markers, notice rows and unique matching classA, memo chronology, reference-underlines and selective ruby exclusions were checked. All four indexed paths/aliases retain their hashes. No import hash, line or score was invented. Final JSON SHA256: 0a7c4eea03dc45190b1880780afbc062af3af4d73ed151e34bb2c5e3b2049d68.
+
+## Separate principal reporting
+
+After recording the completed unit result, the selected actual question PDF was added to the25-entry catalogue. Method1 score118 = unverified100 +2×1 metadata group +2×7 minor item/fields +2 uncertain item/fields; no missing units or major errors. The notice field is counted once at minor despite also having provisional marker placement. The required principal-index and11-departure validators pass. Two bounded exact-alias observations were appended to ancestry; no acquisition claim was inferred.
+
+## Inclusive queue closure
+
+All25 queued units have terminal audit results and matching current JSON hashes. The overall queue is completed_with_gaps; the endpoint state remains N5_07_2023. Earlier incomplete units remain explicitly incomplete with their recovered content and public missing-span cases. The aggregate integrity/status record is preprocess/audit_completion.json. No unit is left in_progress, and a future launch must honor the completed overall status.

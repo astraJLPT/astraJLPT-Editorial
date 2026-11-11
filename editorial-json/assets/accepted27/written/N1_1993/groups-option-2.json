@@ -1,0 +1,29 @@
+{
+  "contract": "historical-artwork-1.0",
+  "id": "N1_1993-groups-option-2-source",
+  "kind": "animal_group_option",
+  "unit": "N1_1993",
+  "item_id": "reading-q020",
+  "source": {
+    "source_path": "src/CodexDownloads/UserApprovedReferenceScans/505593162-JLPT-Japanese-Language-Proficiency-Test-1-2-kyuu-1993.pdf",
+    "source_sha256": "fdd0d022acc4a1fffd3f9e5785b4a32d3d5a58d28c3d9c2bdeb9f65b10f5fe43",
+    "physical_page": 34
+  },
+  "raw_crop": {
+    "path": "preprocess/assets/handoff27/written/N1_1993/groups-option-2-source.png",
+    "sha256": "90fff8e2320ccee5dc25f704bcd9eb147473d239cbe9ce2ed9ca3bae15626ecf"
+  },
+  "selection_note": "Native vector lines and live text; exact source decoded-pixel crop retained in canonical content.",
+  "limits": "Printed data and relationships exact; curve corners, font outlines, spacing and scan perspective are regularized. Original source JPEG already lossy.",
+  "data": {
+    "option": 2,
+    "header": "集団",
+    "members": [
+      "集まり",
+      "群れ"
+    ],
+    "member_writing": "vertical",
+    "border": "rounded",
+    "geometry": "source_traced_regularized_curves"
+  }
+}

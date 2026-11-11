@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Versioned written-edition Uncertainty index",
+  "type": "object",
+  "required": ["format", "method_version", "label", "formula", "sort", "issuer_threshold", "weights", "evidence_bases", "inputs", "scope", "entries"],
+  "properties": {
+    "format": {"const": "uncertainty_index_v1"},
+    "method_version": {"const": 2},
+    "label": {"const": "Uncertainty index"},
+    "issuer_threshold": {"const": 0.9},
+    "entries": {
+      "type": "array", "minItems": 201, "maxItems": 201,
+      "items": {
+        "type": "object",
+        "required": ["unit", "sample", "year", "month", "evidence_base", "evidence_tier", "concern_points", "index", "concern_counts", "principal_history", "evidence"],
+        "properties": {
+          "unit": {"type": "string", "pattern": "^N[1-5]_"},
+          "sample": {"type": "boolean"},
+          "year": {"type": "integer", "minimum": 1990},
+          "month": {"type": ["integer", "null"], "minimum": 1, "maximum": 12},
+          "evidence_base": {"enum": [0, 100, 500, 1000, 2000, null]},
+          "evidence_tier": {"enum": [0, 1, 2, 3, 4, null]},
+          "concern_points": {"type": ["integer", "null"], "minimum": 0},
+          "index": {"type": ["integer", "null"], "minimum": 0},
+          "evidence": {"type": "array"}
+        }
+      }
+    }
+  }
+}

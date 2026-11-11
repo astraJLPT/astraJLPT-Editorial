@@ -1,0 +1,29 @@
+{
+  "contract": "historical-artwork-1.0",
+  "id": "H27-N1-1999-cylinder-retained-raw",
+  "kind": "raster",
+  "unit": "N1_1999",
+  "item_id": "reading-b005",
+  "source": {
+    "source_path": "src/CodexDownloads/UserApprovedReferenceScans/日本語能力1991～1999年試験問題集1級.pdf",
+    "source_sha256": "8560bf8ef92b4e2d58559b3e14882b76d3307586f5d55b0e7fa33cc2f5fa931f",
+    "physical_page": 421,
+    "crop_original_pixels": [
+      759,
+      539,
+      866,
+      708
+    ],
+    "page_rotation": 0
+  },
+  "raw_crop": {
+    "path": "preprocess/assets/handoff22/written/source-crops-02/H22-F02-cylinder/raw-crop.png",
+    "sha256": "516da0139439ee4b0957a20a8ebbd048945b8a365393d069fc260a17187a7fe6"
+  },
+  "selection_note": "Explicit user-selected exception: restore only the retained raw cylinder occurrence; keep the separate native spinning top. The selected250x380PNG is byte-identical to canonical image2 and its H19 source-page crop.",
+  "limits": "The retained bitmap is a300dpi page-render crop of a low-resolution1120x1568source-page stencil; it contains no newly recovered detail. H27 performs no resampling, redrawing, denoising or lossy recompression. The smaller107x169original-pixel source crop is retained separately for provenance.",
+  "image": {
+    "path": "preprocess/assets/handoff27-local-figures-02/cylinder-retained-raw.png",
+    "sha256": "def970490237996f6efd66c5076d0182606f9e9170a09650ee51c6472d6c603d"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "schema_version": "3.1.0",
+  "cycle": "pilot-3",
+  "findings": [
+    {
+      "unit": "N3_07_2025",
+      "item_id": "reading-b010",
+      "physical_pages": [
+        8
+      ],
+      "source_path": "src/日语JLPT真题1992～2025.12（及时转存，避免丢失）/渠道一/日语N3真题/2025年7月/【试题】2025年7月JLPT日语N3真题.pdf",
+      "source_sha256": "c3b2c9b3b62d7e4580351369234108d550c11cece5be103f0325bef0d4f0ed11",
+      "form": "STAR worked example",
+      "observed_fact": "Source labels, four slot/phrase correspondences, answer sheet grid; N5 continuation dialogue belongs inside solution.",
+      "existing_representation": "Existing example_variant and exact HTML table/paragraphs",
+      "disposition": "component_and_defaults_updated",
+      "action_or_limit": "Versioned per-level width/alignment/answer-grid leading; content-derived edge columns; underlined step-2 STAR. N5 slot/phrase spacing still larger than source."
+    },
+    {
+      "unit": "N3_07_2025",
+      "item_id": "reading-b002",
+      "physical_pages": [
+        12
+      ],
+      "source_path": "src/日语JLPT真题1992～2025.12（及时转存，避免丢失）/渠道一/日语N3真题/2025年7月/【试题】2025年7月JLPT日语N3真题.pdf",
+      "source_sha256": "c3b2c9b3b62d7e4580351369234108d550c11cece5be103f0325bef0d4f0ed11",
+      "form": "email counterexample",
+      "observed_fact": "Existing horizontal-rule email.",
+      "existing_representation": "Existing content_frames override",
+      "disposition": "represented_regression_retained",
+      "action_or_limit": "Rebuilt and visually checked alongside new frame cases."
+    },
+    {
+      "unit": "N3_12_2025",
+      "item_id": "reading-b003",
+      "physical_pages": [
+        15
+      ],
+      "source_path": "src/JLPT_N1_N5_202512/25年12月N3/25年12月N3真题.pdf",
+      "source_sha256": "5d558eb1ec603acb931318d2170515ece93a385504ce960d4a095de5ea84b9db",
+      "form": "email with internal ruled inset",
+      "observed_fact": "Outer top/bottom edges and two finer internal rules.",
+      "existing_representation": "CSS border-top/bottom, explicit hr and section/p grouping",
+      "disposition": "parser_fixed",
+      "action_or_limit": "Outer RuleFrame preserved separately from inner hr. Exact fixture exercised; no extra whole-paper output."
+    },
+    {
+      "unit": "N3_12_2023",
+      "item_id": "reading-b010",
+      "physical_pages": [
+        31
+      ],
+      "source_path": "src/Yuuki Bui/Đề thi N3 các năm Yuuki Bùi/N3 12-2023/Đề N3 T12-2023 Full YuukiBui.pdf",
+      "source_sha256": "8accd57e2eccd709f9de0b2b27d9cb14d742b0a40961f005e31e5c8788aac9ba",
+      "form": "nested course panels",
+      "observed_fact": "Two rounded course frames, each its own heading, text and price table.",
+      "existing_representation": "Two div groups with headings and nested tables",
+      "disposition": "represented_style_deferred",
+      "action_or_limit": "No grouping loss. Rounded border/inner-group padding is a pending scoped presentation convention outside the nine; not a new semantic schema requirement."
+    },
+    {
+      "unit": "N3_12_2024",
+      "item_id": "reading-b009",
+      "physical_pages": [
+        30
+      ],
+      "source_path": "src/Yuuki Bui/Đề thi N3 các năm Yuuki Bùi/N3 12-2024/Đề thi N3 T12-2024 Bản hoàn chỉnh [Mark].pdf",
+      "source_sha256": "d619a852f186124531ecfe1bd83f726076791c8e5a09e678218d22c8d6bdd5ed",
+      "form": "multiple tables with shared location",
+      "observed_fact": "Separate activities and briefing tables; location spans rows.",
+      "existing_representation": "Existing tables and rowspans; full table inventory in manifest",
+      "disposition": "represented_style_deferred",
+      "action_or_limit": "No new content field justified; exact widths/typography uncalibrated outside nine outputs."
+    }
+  ]
+}

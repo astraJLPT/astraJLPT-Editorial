@@ -1,0 +1,705 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark light"><title>Developer review · N5_07_2023 · astraJLPT</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../assets/fonts-32223727e2e61799.css?v=a5299d878dbd"><link rel="stylesheet" href="../assets/themes.css?v=7ad0820747dc"><link rel="stylesheet" href="../assets/answer-marking.css?v=bec6b4920050"><link rel="stylesheet" href="../assets/site.css?v=7ae9ae7c768b"><link rel="stylesheet" href="../assets/pdf-typography.css?v=ba55af25606f"><link rel="stylesheet" href="../assets/paper-shared.css?v=8f3ca38dca80"></head><body class="catalog-page"><a class="skip-link" href="#content">Skip to content</a><header class="topbar" id="page-top" tabindex="-1"><a class="wordmark" id="brand" href="../index.html">astra<span>JLPT</span></a><details id="settings" class="settings"><summary aria-label="Open settings" title="Settings"><span aria-hidden="true">⚙</span><span class="sr-only">Settings</span></summary><div class="settings-panel"><div class="settings-title"><h2>settings</h2><button type="button" id="close-settings" class="js-only" aria-label="Close settings">×</button></div><div class="settings-tabs" role="group" aria-label="Settings categories"><label><input type="radio" name="settings-view" value="appearance" checked><span>theme</span></label><label><input type="radio" name="settings-view" value="browser"><span>browser</span></label></div><section data-settings="appearance"><div class="theme-workspace"><div class="theme-picker"><div class="setting-heading"><h3>theme</h3></div><div class="theme-grid originals"><label class="theme-card ps-gh"><input type="radio" name="theme" id="theme-jlpt_paper" value="jlpt_paper"><span>jlpt_paper</span></label><label class="theme-card ps-ck"><input type="radio" name="theme" id="theme-astraJLPT_dark" value="astraJLPT_dark" checked><span>astraJLPT_dark</span></label><label class="theme-card ps-ga"><input type="radio" name="theme" id="theme-astraJLPT_sepia" value="astraJLPT_sepia"><span>astraJLPT_sepia</span></label></div><div class="js-only"><p class="settings-label">three random picks</p><div class="theme-grid" id="quick-picks"></div></div><details><summary>all 187 Monkeytype palettes</summary><label class="theme-search js-only">find a palette<input id="theme-search" type="search" placeholder="search themes" autocomplete="off"></label><div class="theme-grid theme-catalog"><label class="theme-card ps-e9"><input type="radio" name="theme" id="theme-8008" value="8008"><span>8008</span></label><label class="theme-card ps-cw"><input type="radio" name="theme" id="theme-80s_after_dark" value="80s_after_dark"><span>80s after dark</span></label><label class="theme-card ps-fq"><input type="radio" name="theme" id="theme-9009" value="9009"><span>9009</span></label><label class="theme-card ps-cc"><input type="radio" name="theme" id="theme-aether" value="aether"><span>aether</span></label><label class="theme-card ps-cz"><input type="radio" name="theme" id="theme-alduin" value="alduin"><span>alduin</span></label><label class="theme-card ps-el"><input type="radio" name="theme" id="theme-alpine" value="alpine"><span>alpine</span></label><label class="theme-card ps-bg"><input type="radio" name="theme" id="theme-anti_hero" value="anti_hero"><span>anti hero</span></label><label class="theme-card ps-c3"><input type="radio" name="theme" id="theme-arch" value="arch"><span>arch</span></label><label class="theme-card ps-bt"><input type="radio" name="theme" id="theme-aurora" value="aurora"><span>aurora</span></label><label class="theme-card ps-g8"><input type="radio" name="theme" id="theme-beach" value="beach"><span>beach</span></label><label class="theme-card ps-dz"><input type="radio" name="theme" id="theme-bento" value="bento"><span>bento</span></label><label class="theme-card ps-f1"><input type="radio" name="theme" id="theme-bingsu" value="bingsu"><span>bingsu</span></label><label class="theme-card ps-dl"><input type="radio" name="theme" id="theme-bliss" value="bliss"><span>bliss</span></label><label class="theme-card ps-bn"><input type="radio" name="theme" id="theme-blue_dolphin" value="blue_dolphin"><span>blue dolphin</span></label><label class="theme-card ps-dd"><input type="radio" name="theme" id="theme-blueberry_dark" value="blueberry_dark"><span>blueberry dark</span></label><label class="theme-card ps-fd"><input type="radio" name="theme" id="theme-blueberry_light" value="blueberry_light"><span>blueberry light</span></label><label class="theme-card ps-ep"><input type="radio" name="theme" id="theme-botanical" value="botanical"><span>botanical</span></label><label class="theme-card ps-cl"><input type="radio" name="theme" id="theme-bouquet" value="bouquet"><span>bouquet</span></label><label class="theme-card ps-fk"><input type="radio" name="theme" id="theme-breeze" value="breeze"><span>breeze</span></label><label class="theme-card ps-dk"><input type="radio" name="theme" id="theme-bushido" value="bushido"><span>bushido</span></label><label class="theme-card ps-f5"><input type="radio" name="theme" id="theme-cafe" value="cafe"><span>cafe</span></label><label class="theme-card ps-g1"><input type="radio" name="theme" id="theme-camping" value="camping"><span>camping</span></label><label class="theme-card ps-e4"><input type="radio" name="theme" id="theme-carbon" value="carbon"><span>carbon</span></label><label class="theme-card ps-d3"><input type="radio" name="theme" id="theme-catppuccin" value="catppuccin"><span>catppuccin</span></label><label class="theme-card ps-ch"><input type="radio" name="theme" id="theme-chaos_theory" value="chaos_theory"><span>chaos theory</span></label><label class="theme-card ps-g3"><input type="radio" name="theme" id="theme-cheesecake" value="cheesecake"><span>cheesecake</span></label><label class="theme-card ps-e7"><input type="radio" name="theme" id="theme-cherry_blossom" value="cherry_blossom"><span>cherry blossom</span></label><label class="theme-card ps-eh"><input type="radio" name="theme" id="theme-comfy" value="comfy"><span>comfy</span></label><label class="theme-card ps-ef"><input type="radio" name="theme" id="theme-copper" value="copper"><span>copper</span></label><label class="theme-card ps-g6"><input type="radio" name="theme" id="theme-creamsicle" value="creamsicle"><span>creamsicle</span></label><label class="theme-card ps-em"><input type="radio" name="theme" id="theme-cy_red" value="cy_red"><span>cy red</span></label><label class="theme-card ps-co"><input type="radio" name="theme" id="theme-cyberspace" value="cyberspace"><span>cyberspace</span></label><label class="theme-card ps-cd"><input type="radio" name="theme" id="theme-dark" value="dark"><span>dark</span></label><label class="theme-card ps-bz"><input type="radio" name="theme" id="theme-dark_magic_girl" value="dark_magic_girl"><span>dark magic girl</span></label><label class="theme-card ps-d6"><input type="radio" name="theme" id="theme-dark_note" value="dark_note"><span>dark note</span></label><label class="theme-card ps-g5"><input type="radio" name="theme" id="theme-darling" value="darling"><span>darling</span></label><label class="theme-card ps-bw"><input type="radio" name="theme" id="theme-deku" value="deku"><span>deku</span></label><label class="theme-card ps-g9"><input type="radio" name="theme" id="theme-desert_oasis" value="desert_oasis"><span>desert oasis</span></label><label class="theme-card ps-cx"><input type="radio" name="theme" id="theme-dev" value="dev"><span>dev</span></label><label class="theme-card ps-ek"><input type="radio" name="theme" id="theme-diner" value="diner"><span>diner</span></label><label class="theme-card ps-gi"><input type="radio" name="theme" id="theme-dino" value="dino"><span>dino</span></label><label class="theme-card ps-e6"><input type="radio" name="theme" id="theme-discord" value="discord"><span>discord</span></label><label class="theme-card ps-fc"><input type="radio" name="theme" id="theme-dmg" value="dmg"><span>dmg</span></label><label class="theme-card ps-fj"><input type="radio" name="theme" id="theme-dollar" value="dollar"><span>dollar</span></label><label class="theme-card ps-ce"><input type="radio" name="theme" id="theme-dots" value="dots"><span>dots</span></label><label class="theme-card ps-dq"><input type="radio" name="theme" id="theme-dracula" value="dracula"><span>dracula</span></label><label class="theme-card ps-cq"><input type="radio" name="theme" id="theme-drowning" value="drowning"><span>drowning</span></label><label class="theme-card ps-eo"><input type="radio" name="theme" id="theme-dualshot" value="dualshot"><span>dualshot</span></label><label class="theme-card ps-dr"><input type="radio" name="theme" id="theme-earthsong" value="earthsong"><span>earthsong</span></label><label class="theme-card ps-ci"><input type="radio" name="theme" id="theme-everblush" value="everblush"><span>everblush</span></label><label class="theme-card ps-bq"><input type="radio" name="theme" id="theme-evil_eye" value="evil_eye"><span>evil eye</span></label><label class="theme-card ps-bp"><input type="radio" name="theme" id="theme-ez_mode" value="ez_mode"><span>ez mode</span></label><label class="theme-card ps-c8"><input type="radio" name="theme" id="theme-fire" value="fire"><span>fire</span></label><label class="theme-card ps-eb"><input type="radio" name="theme" id="theme-fledgling" value="fledgling"><span>fledgling</span></label><label class="theme-card ps-f3"><input type="radio" name="theme" id="theme-fleuriste" value="fleuriste"><span>fleuriste</span></label><label class="theme-card ps-bl"><input type="radio" name="theme" id="theme-floret" value="floret"><span>floret</span></label><label class="theme-card ps-fh"><input type="radio" name="theme" id="theme-froyo" value="froyo"><span>froyo</span></label><label class="theme-card ps-et"><input type="radio" name="theme" id="theme-frozen_llama" value="frozen_llama"><span>frozen llama</span></label><label class="theme-card ps-f9"><input type="radio" name="theme" id="theme-fruit_chew" value="fruit_chew"><span>fruit chew</span></label><label class="theme-card ps-en"><input type="radio" name="theme" id="theme-fundamentals" value="fundamentals"><span>fundamentals</span></label><label class="theme-card ps-e0"><input type="radio" name="theme" id="theme-future_funk" value="future_funk"><span>future funk</span></label><label class="theme-card ps-dc"><input type="radio" name="theme" id="theme-github" value="github"><span>github</span></label><label class="theme-card ps-fn"><input type="radio" name="theme" id="theme-godspeed" value="godspeed"><span>godspeed</span></label><label class="theme-card ps-e3"><input type="radio" name="theme" id="theme-graen" value="graen"><span>graen</span></label><label class="theme-card ps-ea"><input type="radio" name="theme" id="theme-grand_prix" value="grand_prix"><span>grand prix</span></label><label class="theme-card ps-dv"><input type="radio" name="theme" id="theme-grape" value="grape"><span>grape</span></label><label class="theme-card ps-dp"><input type="radio" name="theme" id="theme-gruvbox_dark" value="gruvbox_dark"><span>gruvbox dark</span></label><label class="theme-card ps-g2"><input type="radio" name="theme" id="theme-gruvbox_light" value="gruvbox_light"><span>gruvbox light</span></label><label class="theme-card ps-bu"><input type="radio" name="theme" id="theme-hammerhead" value="hammerhead"><span>hammerhead</span></label><label class="theme-card ps-fa"><input type="radio" name="theme" id="theme-hanok" value="hanok"><span>hanok</span></label><label class="theme-card ps-ed"><input type="radio" name="theme" id="theme-hedge" value="hedge"><span>hedge</span></label><label class="theme-card ps-fu"><input type="radio" name="theme" id="theme-honey" value="honey"><span>honey</span></label><label class="theme-card ps-d0"><input type="radio" name="theme" id="theme-horizon" value="horizon"><span>horizon</span></label><label class="theme-card ps-bf"><input type="radio" name="theme" id="theme-husqy" value="husqy"><span>husqy</span></label><label class="theme-card ps-cj"><input type="radio" name="theme" id="theme-iceberg_dark" value="iceberg_dark"><span>iceberg dark</span></label><label class="theme-card ps-fl"><input type="radio" name="theme" id="theme-iceberg_light" value="iceberg_light"><span>iceberg light</span></label><label class="theme-card ps-c7"><input type="radio" name="theme" id="theme-incognito" value="incognito"><span>incognito</span></label><label class="theme-card ps-d8"><input type="radio" name="theme" id="theme-ishtar" value="ishtar"><span>ishtar</span></label><label class="theme-card ps-eu"><input type="radio" name="theme" id="theme-iv_clover" value="iv_clover"><span>iv clover</span></label><label class="theme-card ps-c2"><input type="radio" name="theme" id="theme-iv_spade" value="iv_spade"><span>iv spade</span></label><label class="theme-card ps-cu"><input type="radio" name="theme" id="theme-joker" value="joker"><span>joker</span></label><label class="theme-card ps-de"><input type="radio" name="theme" id="theme-laser" value="laser"><span>laser</span></label><label class="theme-card ps-ex"><input type="radio" name="theme" id="theme-lavender" value="lavender"><span>lavender</span></label><label class="theme-card ps-ew"><input type="radio" name="theme" id="theme-leather" value="leather"><span>leather</span></label><label class="theme-card ps-fo"><input type="radio" name="theme" id="theme-lil_dragon" value="lil_dragon"><span>lil dragon</span></label><label class="theme-card ps-gd"><input type="radio" name="theme" id="theme-lilac_mist" value="lilac_mist"><span>lilac mist</span></label><label class="theme-card ps-er"><input type="radio" name="theme" id="theme-lime" value="lime"><span>lime</span></label><label class="theme-card ps-df"><input type="radio" name="theme" id="theme-luna" value="luna"><span>luna</span></label><label class="theme-card ps-ez"><input type="radio" name="theme" id="theme-macroblank" value="macroblank"><span>macroblank</span></label><label class="theme-card ps-gk"><input type="radio" name="theme" id="theme-magic_girl" value="magic_girl"><span>magic girl</span></label><label class="theme-card ps-du"><input type="radio" name="theme" id="theme-mashu" value="mashu"><span>mashu</span></label><label class="theme-card ps-ei"><input type="radio" name="theme" id="theme-matcha_moccha" value="matcha_moccha"><span>matcha moccha</span></label><label class="theme-card ps-dn"><input type="radio" name="theme" id="theme-material" value="material"><span>material</span></label><label class="theme-card ps-be"><input type="radio" name="theme" id="theme-matrix" value="matrix"><span>matrix</span></label><label class="theme-card ps-br"><input type="radio" name="theme" id="theme-menthol" value="menthol"><span>menthol</span></label><label class="theme-card ps-dg"><input type="radio" name="theme" id="theme-metaverse" value="metaverse"><span>metaverse</span></label><label class="theme-card ps-ca"><input type="radio" name="theme" id="theme-metropolis" value="metropolis"><span>metropolis</span></label><label class="theme-card ps-g0"><input type="radio" name="theme" id="theme-mexican" value="mexican"><span>mexican</span></label><label class="theme-card ps-fv"><input type="radio" name="theme" id="theme-miami" value="miami"><span>miami</span></label><label class="theme-card ps-cn"><input type="radio" name="theme" id="theme-miami_nights" value="miami_nights"><span>miami nights</span></label><label class="theme-card ps-c0"><input type="radio" name="theme" id="theme-midnight" value="midnight"><span>midnight</span></label><label class="theme-card ps-gf"><input type="radio" name="theme" id="theme-milkshake" value="milkshake"><span>milkshake</span></label><label class="theme-card ps-bv"><input type="radio" name="theme" id="theme-mint" value="mint"><span>mint</span></label><label class="theme-card ps-ey"><input type="radio" name="theme" id="theme-mizu" value="mizu"><span>mizu</span></label><label class="theme-card ps-dy"><input type="radio" name="theme" id="theme-modern_dolch" value="modern_dolch"><span>modern dolch</span></label><label class="theme-card ps-fe"><input type="radio" name="theme" id="theme-modern_dolch_light" value="modern_dolch_light"><span>modern dolch light</span></label><label class="theme-card ps-gm"><input type="radio" name="theme" id="theme-modern_ink" value="modern_ink"><span>modern ink</span></label><label class="theme-card ps-do"><input type="radio" name="theme" id="theme-monokai" value="monokai"><span>monokai</span></label><label class="theme-card ps-cs"><input type="radio" name="theme" id="theme-moonlight" value="moonlight"><span>moonlight</span></label><label class="theme-card ps-c9"><input type="radio" name="theme" id="theme-mountain" value="mountain"><span>mountain</span></label><label class="theme-card ps-f8"><input type="radio" name="theme" id="theme-mr_sleeves" value="mr_sleeves"><span>mr sleeves</span></label><label class="theme-card ps-gj"><input type="radio" name="theme" id="theme-ms_cupcakes" value="ms_cupcakes"><span>ms cupcakes</span></label><label class="theme-card ps-ej"><input type="radio" name="theme" id="theme-muted" value="muted"><span>muted</span></label><label class="theme-card ps-cg"><input type="radio" name="theme" id="theme-nautilus" value="nautilus"><span>nautilus</span></label><label class="theme-card ps-db"><input type="radio" name="theme" id="theme-nebula" value="nebula"><span>nebula</span></label><label class="theme-card ps-da"><input type="radio" name="theme" id="theme-night_runner" value="night_runner"><span>night runner</span></label><label class="theme-card ps-dj"><input type="radio" name="theme" id="theme-nord" value="nord"><span>nord</span></label><label class="theme-card ps-fp"><input type="radio" name="theme" id="theme-nord_light" value="nord_light"><span>nord light</span></label><label class="theme-card ps-di"><input type="radio" name="theme" id="theme-norse" value="norse"><span>norse</span></label><label class="theme-card ps-e5"><input type="radio" name="theme" id="theme-oblivion" value="oblivion"><span>oblivion</span></label><label class="theme-card ps-fm"><input type="radio" name="theme" id="theme-olive" value="olive"><span>olive</span></label><label class="theme-card ps-cy"><input type="radio" name="theme" id="theme-olivia" value="olivia"><span>olivia</span></label><label class="theme-card ps-e2"><input type="radio" name="theme" id="theme-onedark" value="onedark"><span>onedark</span></label><label class="theme-card ps-f4"><input type="radio" name="theme" id="theme-our_theme" value="our_theme"><span>our theme</span></label><label class="theme-card ps-ee"><input type="radio" name="theme" id="theme-pale_nimbus" value="pale_nimbus"><span>pale nimbus</span></label><label class="theme-card ps-fr"><input type="radio" name="theme" id="theme-paper" value="paper"><span>paper</span></label><label class="theme-card ps-eq"><input type="radio" name="theme" id="theme-passion_fruit" value="passion_fruit"><span>passion fruit</span></label><label class="theme-card ps-ff"><input type="radio" name="theme" id="theme-pastel" value="pastel"><span>pastel</span></label><label class="theme-card ps-ds"><input type="radio" name="theme" id="theme-peach_blossom" value="peach_blossom"><span>peach blossom</span></label><label class="theme-card ps-fg"><input type="radio" name="theme" id="theme-peaches" value="peaches"><span>peaches</span></label><label class="theme-card ps-bk"><input type="radio" name="theme" id="theme-phantom" value="phantom"><span>phantom</span></label><label class="theme-card ps-fz"><input type="radio" name="theme" id="theme-pink_lemonade" value="pink_lemonade"><span>pink lemonade</span></label><label class="theme-card ps-cm"><input type="radio" name="theme" id="theme-pulse" value="pulse"><span>pulse</span></label><label class="theme-card ps-d4"><input type="radio" name="theme" id="theme-purpleish" value="purpleish"><span>purpleish</span></label><label class="theme-card ps-fy"><input type="radio" name="theme" id="theme-rainbow_trail" value="rainbow_trail"><span>rainbow trail</span></label><label class="theme-card ps-ct"><input type="radio" name="theme" id="theme-red_dragon" value="red_dragon"><span>red dragon</span></label><label class="theme-card ps-es"><input type="radio" name="theme" id="theme-red_samurai" value="red_samurai"><span>red samurai</span></label><label class="theme-card ps-e1"><input type="radio" name="theme" id="theme-repose_dark" value="repose_dark"><span>repose dark</span></label><label class="theme-card ps-fs"><input type="radio" name="theme" id="theme-repose_light" value="repose_light"><span>repose light</span></label><label class="theme-card ps-fb"><input type="radio" name="theme" id="theme-retro" value="retro"><span>retro</span></label><label class="theme-card ps-bx"><input type="radio" name="theme" id="theme-retrocast" value="retrocast"><span>retrocast</span></label><label class="theme-card ps-cd"><input type="radio" name="theme" id="theme-rgb" value="rgb"><span>rgb</span></label><label class="theme-card ps-d5"><input type="radio" name="theme" id="theme-rose_pine" value="rose_pine"><span>rose pine</span></label><label class="theme-card ps-gc"><input type="radio" name="theme" id="theme-rose_pine_dawn" value="rose_pine_dawn"><span>rose pine dawn</span></label><label class="theme-card ps-dt"><input type="radio" name="theme" id="theme-rose_pine_moon" value="rose_pine_moon"><span>rose pine moon</span></label><label class="theme-card ps-cv"><input type="radio" name="theme" id="theme-rudy" value="rudy"><span>rudy</span></label><label class="theme-card ps-by"><input type="radio" name="theme" id="theme-ryujinscales" value="ryujinscales"><span>ryujinscales</span></label><label class="theme-card ps-fi"><input type="radio" name="theme" id="theme-serika" value="serika"><span>serika</span></label><label class="theme-card ps-e8"><input type="radio" name="theme" id="theme-serika_dark" value="serika_dark"><span>serika dark</span></label><label class="theme-card ps-dh"><input type="radio" name="theme" id="theme-sewing_tin" value="sewing_tin"><span>sewing tin</span></label><label class="theme-card ps-gg"><input type="radio" name="theme" id="theme-sewing_tin_light" value="sewing_tin_light"><span>sewing tin light</span></label><label class="theme-card ps-bi"><input type="radio" name="theme" id="theme-shadow" value="shadow"><span>shadow</span></label><label class="theme-card ps-f6"><input type="radio" name="theme" id="theme-shoko" value="shoko"><span>shoko</span></label><label class="theme-card ps-ge"><input type="radio" name="theme" id="theme-slambook" value="slambook"><span>slambook</span></label><label class="theme-card ps-f2"><input type="radio" name="theme" id="theme-snes" value="snes"><span>snes</span></label><label class="theme-card ps-gb"><input type="radio" name="theme" id="theme-soaring_skies" value="soaring_skies"><span>soaring skies</span></label><label class="theme-card ps-bm"><input type="radio" name="theme" id="theme-solarized_dark" value="solarized_dark"><span>solarized dark</span></label><label class="theme-card ps-g4"><input type="radio" name="theme" id="theme-solarized_light" value="solarized_light"><span>solarized light</span></label><label class="theme-card ps-bj"><input type="radio" name="theme" id="theme-solarized_osaka" value="solarized_osaka"><span>solarized osaka</span></label><label class="theme-card ps-dw"><input type="radio" name="theme" id="theme-sonokai" value="sonokai"><span>sonokai</span></label><label class="theme-card ps-c5"><input type="radio" name="theme" id="theme-spiderman" value="spiderman"><span>spiderman</span></label><label class="theme-card ps-bs"><input type="radio" name="theme" id="theme-stealth" value="stealth"><span>stealth</span></label><label class="theme-card ps-fw"><input type="radio" name="theme" id="theme-strawberry" value="strawberry"><span>strawberry</span></label><label class="theme-card ps-cf"><input type="radio" name="theme" id="theme-striker" value="striker"><span>striker</span></label><label class="theme-card ps-ec"><input type="radio" name="theme" id="theme-suisei" value="suisei"><span>suisei</span></label><label class="theme-card ps-d9"><input type="radio" name="theme" id="theme-sunset" value="sunset"><span>sunset</span></label><label class="theme-card ps-dm"><input type="radio" name="theme" id="theme-superuser" value="superuser"><span>superuser</span></label><label class="theme-card ps-bo"><input type="radio" name="theme" id="theme-sweden" value="sweden"><span>sweden</span></label><label class="theme-card ps-g7"><input type="radio" name="theme" id="theme-tangerine" value="tangerine"><span>tangerine</span></label><label class="theme-card ps-f0"><input type="radio" name="theme" id="theme-taro" value="taro"><span>taro</span></label><label class="theme-card ps-cr"><input type="radio" name="theme" id="theme-terminal" value="terminal"><span>terminal</span></label><label class="theme-card ps-c4"><input type="radio" name="theme" id="theme-terra" value="terra"><span>terra</span></label><label class="theme-card ps-ft"><input type="radio" name="theme" id="theme-terrazzo" value="terrazzo"><span>terrazzo</span></label><label class="theme-card ps-c1"><input type="radio" name="theme" id="theme-terror_below" value="terror_below"><span>terror below</span></label><label class="theme-card ps-f7"><input type="radio" name="theme" id="theme-tiramisu" value="tiramisu"><span>tiramisu</span></label><label class="theme-card ps-eg"><input type="radio" name="theme" id="theme-trackday" value="trackday"><span>trackday</span></label><label class="theme-card ps-bh"><input type="radio" name="theme" id="theme-trance" value="trance"><span>trance</span></label><label class="theme-card ps-c6"><input type="radio" name="theme" id="theme-tron_orange" value="tron_orange"><span>tron orange</span></label><label class="theme-card ps-ev"><input type="radio" name="theme" id="theme-vaporwave" value="vaporwave"><span>vaporwave</span></label><label class="theme-card ps-cb"><input type="radio" name="theme" id="theme-vesper" value="vesper"><span>vesper</span></label><label class="theme-card ps-gl"><input type="radio" name="theme" id="theme-vesper_light" value="vesper_light"><span>vesper light</span></label><label class="theme-card ps-dx"><input type="radio" name="theme" id="theme-viridescent" value="viridescent"><span>viridescent</span></label><label class="theme-card ps-cp"><input type="radio" name="theme" id="theme-voc" value="voc"><span>voc</span></label><label class="theme-card ps-d2"><input type="radio" name="theme" id="theme-vscode" value="vscode"><span>vscode</span></label><label class="theme-card ps-d7"><input type="radio" name="theme" id="theme-watermelon" value="watermelon"><span>watermelon</span></label><label class="theme-card ps-d1"><input type="radio" name="theme" id="theme-wavez" value="wavez"><span>wavez</span></label><label class="theme-card ps-fx"><input type="radio" name="theme" id="theme-witch_girl" value="witch_girl"><span>witch girl</span></label></div></details><div class="js-only ps-14h" id="monkeytype-text-source">
+<h3>reading text color</h3>
+<p class="control-help">Auto chooses the more readable palette color. Choose sub or text to set it yourself; answer colors adapt.</p>
+<div aria-label="Monkeytype reading text color" class="segmented" role="group">
+<label><input checked="" name="text-source" type="radio" value="auto"/><span>auto</span></label>
+<label><input name="text-source" type="radio" value="sub"/><span>sub</span></label>
+<label><input name="text-source" type="radio" value="text"/><span>text</span></label>
+</div>
+<p aria-live="polite" class="control-help ps-14i" id="monkeytype-text-status" role="status"></p>
+</div></div><aside class="theme-editor js-only" aria-label="Customize theme colors"><div class="color-editor-heading"><h3>colors</h3><button type="button" id="reset-theme-colors" aria-label="Reset this theme">reset</button></div><span class="sr-only" id="color-format-help">Choose a swatch or enter hex. Transparent borders accept #RRGGBBAA. Reset restores the theme color.</span><span class="sr-only" id="color-edit-status" role="status" aria-live="polite"></span><div class="main-colors"><div class="color-row" data-color-row="bg">
+<label for="color-bg">background</label>
+<div class="color-inputs"><input type="color" id="swatch-bg" aria-label="background swatch" data-color-swatch="bg">
+<input type="text" id="color-bg" data-color-hex="bg" aria-label="background hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="bg" aria-label="Reset background" title="Reset background">↺</button></div></div><div class="color-row" data-color-row="text">
+<label for="color-text">reading text</label>
+<div class="color-inputs"><input type="color" id="swatch-text" aria-label="reading text swatch" data-color-swatch="text">
+<input type="text" id="color-text" data-color-hex="text" aria-label="reading text hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="text" aria-label="Reset reading text" title="Reset reading text">↺</button></div></div><div class="color-row" data-color-row="muted">
+<label for="color-muted">secondary text</label>
+<div class="color-inputs"><input type="color" id="swatch-muted" aria-label="secondary text swatch" data-color-swatch="muted">
+<input type="text" id="color-muted" data-color-hex="muted" aria-label="secondary text hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="muted" aria-label="Reset secondary text" title="Reset secondary text">↺</button></div></div><div class="color-row" data-color-row="accent">
+<label for="color-accent">interface accent</label>
+<div class="color-inputs"><input type="color" id="swatch-accent" aria-label="interface accent swatch" data-color-swatch="accent">
+<input type="text" id="color-accent" data-color-hex="accent" aria-label="interface accent hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="accent" aria-label="Reset interface accent" title="Reset interface accent">↺</button></div></div><div class="color-row" data-color-row="correct">
+<label for="color-correct">correct</label>
+<div class="color-inputs"><input type="color" id="swatch-correct" aria-label="correct swatch" data-color-swatch="correct">
+<input type="text" id="color-correct" data-color-hex="correct" aria-label="correct hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="correct" aria-label="Reset correct" title="Reset correct">↺</button></div></div><div class="color-row" data-color-row="wrong">
+<label for="color-wrong">wrong</label>
+<div class="color-inputs"><input type="color" id="swatch-wrong" aria-label="wrong swatch" data-color-swatch="wrong">
+<input type="text" id="color-wrong" data-color-hex="wrong" aria-label="wrong hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="wrong" aria-label="Reset wrong" title="Reset wrong">↺</button></div></div></div><details class="advanced-colors"><summary>more colors</summary><div class="advanced-color-grid"><div class="color-row" data-color-row="raised">
+<label for="color-raised">buttons &amp; controls</label>
+<div class="color-inputs"><input type="color" id="swatch-raised" aria-label="buttons &amp; controls swatch" data-color-swatch="raised">
+<input type="text" id="color-raised" data-color-hex="raised" aria-label="buttons &amp; controls hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="raised" aria-label="Reset buttons &amp; controls" title="Reset buttons &amp; controls">↺</button></div></div><div class="color-row" data-color-row="correct-ink">
+<label for="color-correct-ink">correct text &amp; numbers</label>
+<div class="color-inputs"><input type="color" id="swatch-correct-ink" aria-label="correct text &amp; numbers swatch" data-color-swatch="correct-ink">
+<input type="text" id="color-correct-ink" data-color-hex="correct-ink" aria-label="correct text &amp; numbers hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="correct-ink" aria-label="Reset correct text &amp; numbers" title="Reset correct text &amp; numbers">↺</button></div></div><div class="color-row" data-color-row="edge">
+<label for="color-edge">paper outline</label>
+<div class="color-inputs"><input type="color" id="swatch-edge" aria-label="paper outline swatch" data-color-swatch="edge">
+<input type="text" id="color-edge" data-color-hex="edge" aria-label="paper outline hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge" aria-label="Reset paper outline" title="Reset paper outline">↺</button></div></div><div class="color-row" data-color-row="edge-soft">
+<label for="color-edge-soft">soft dividers</label>
+<div class="color-inputs"><input type="color" id="swatch-edge-soft" aria-label="soft dividers swatch" data-color-swatch="edge-soft">
+<input type="text" id="color-edge-soft" data-color-hex="edge-soft" aria-label="soft dividers hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge-soft" aria-label="Reset soft dividers" title="Reset soft dividers">↺</button></div><label class="color-opacity">opacity<input type="range" min="0" max="100" step="0.1" data-color-alpha="edge-soft" aria-label="soft dividers opacity"><output></output></label></div><div class="color-row" data-color-row="edge-strong">
+<label for="color-edge-strong">strong borders</label>
+<div class="color-inputs"><input type="color" id="swatch-edge-strong" aria-label="strong borders swatch" data-color-swatch="edge-strong">
+<input type="text" id="color-edge-strong" data-color-hex="edge-strong" aria-label="strong borders hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge-strong" aria-label="Reset strong borders" title="Reset strong borders">↺</button></div><label class="color-opacity">opacity<input type="range" min="0" max="100" step="0.1" data-color-alpha="edge-strong" aria-label="strong borders opacity"><output></output></label></div><div class="color-row" data-color-row="logo-secondary">
+<label for="color-logo-secondary">wordmark · JLPT</label>
+<div class="color-inputs"><input type="color" id="swatch-logo-secondary" aria-label="wordmark · JLPT swatch" data-color-swatch="logo-secondary">
+<input type="text" id="color-logo-secondary" data-color-hex="logo-secondary" aria-label="wordmark · JLPT hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="logo-secondary" aria-label="Reset wordmark · JLPT" title="Reset wordmark · JLPT">↺</button></div></div></div><div class="fill-opacity-controls"><h4>fill opacity</h4><p>Applies to correct and wrong answers.</p><div class="fill-opacity-row"><label for="opacity-cell-fill">cell fill<output id="opacity-cell-fill-output">11%</output></label><div><input id="opacity-cell-fill" type="range" min="0" max="100" step="1" value="11" data-fill-opacity="cell-fill" aria-label="cell fill opacity"><button type="button" data-fill-reset="cell-fill" aria-label="Reset cell fill opacity" title="Reset cell fill opacity">↺</button></div></div><div class="fill-opacity-row"><label for="opacity-fill">fill style<output id="opacity-fill-output">30%</output></label><div><input id="opacity-fill" type="range" min="0" max="100" step="1" value="30" data-fill-opacity="fill" aria-label="fill style opacity"><button type="button" data-fill-reset="fill" aria-label="Reset fill style opacity" title="Reset fill style opacity">↺</button></div></div></div></details></aside></div></section><section data-settings="browser"><div class="setting-row js-only"><div><h3>remember this browser</h3><p id="save-status">Saving is on by default. No account required.</p></div><label class="switch"><input id="remember" type="checkbox" checked>save preferences, answers and position</label></div><div class="button-row browser-actions js-only"><button id="reset-preferences" type="button">reset preferences</button><button id="forget" type="button">forget saved data</button></div><div class="developer-only developer-settings"><h3>developer mode</h3><p>Principal differences and editorial cases are visible. This local switch is not authentication.</p><button id="disable-dev" type="button">hide developer tools</button></div><div class="settings-about"><button type="button" id="developer-unlock" class="js-only" title="astraJLPT build information">astraJLPT · 2020–2026 collection</button><span id="developer-hint" role="status"></span></div></section></div></details></header><main id="content" class="review-page"><div class="review-content"><a href="../levels/N5.html">← N5 papers</a><h1>N5 · July 2023</h1><p>Uncertainty index: <strong>1018</strong> · 11 differences · 0 unresolved · 3 provisional fixes</p><p>Evidence base 1000 + source concerns 18 = 1018. Concerns are uncapped; browsing order uses evidence tier before concern points.</p><p>This is an editorial evidence assessment, not a probability, an error rate or a practice score.</p><details><summary>Assessment evidence and original source scores</summary><pre>{
+  &quot;unit&quot;: &quot;N5_07_2023&quot;,
+  &quot;sample&quot;: false,
+  &quot;year&quot;: 2023,
+  &quot;month&quot;: 7,
+  &quot;evidence_base&quot;: 1000,
+  &quot;evidence_tier&quot;: 3,
+  &quot;concern_points&quot;: 18,
+  &quot;index&quot;: 1018,
+  &quot;concern_counts&quot;: {
+    &quot;metadata_flags&quot;: 1,
+    &quot;missing_units&quot;: 0,
+    &quot;major_defects&quot;: 0,
+    &quot;minor_defects&quot;: 7,
+    &quot;uncertain_fields&quot;: 2
+  },
+  &quot;principal_history&quot;: {
+    &quot;unit&quot;: &quot;N5_07_2023&quot;,
+    &quot;level&quot;: &quot;N5&quot;,
+    &quot;year&quot;: 2023,
+    &quot;month&quot;: 7,
+    &quot;principal_path&quot;: &quot;src/日语JLPT历年真题/N5真题（2010-2025.12）/2023年07月N5/2023年7月N5试题不含听力.pdf&quot;,
+    &quot;principal_sha256&quot;: &quot;05d287c536cebc5e1234317f2b3279b23d097188156610d4e20bcfb54e422cac&quot;,
+    &quot;initial_tier&quot;: 2,
+    &quot;written_physical_pages&quot;: &quot;1-13&quot;,
+    &quot;review_status&quot;: &quot;complete_written_review&quot;,
+    &quot;provenance_status&quot;: &quot;unverified&quot;,
+    &quot;provenance_points&quot;: 100,
+    &quot;metadata_flags&quot;: 1,
+    &quot;missing_units&quot;: 0,
+    &quot;major_defects&quot;: 0,
+    &quot;minor_defects&quot;: 7,
+    &quot;uncertain_fields&quot;: 2,
+    &quot;uncertainty_index&quot;: 118,
+    &quot;score_evidence&quot;: [
+      {
+        &quot;id&quot;: &quot;N5_07_2023-score-001&quot;,
+        &quot;kind&quot;: &quot;metadata_flags&quot;,
+        &quot;item_id&quot;: null,
+        &quot;field&quot;: &quot;&quot;,
+        &quot;locator&quot;: &quot;Physical page5; grammar cover&quot;,
+        &quot;evidence&quot;: &quot;The grammar/reading cover says24 pages, but the complete contiguous22-question set occupies pages6–13 of this13-page composite; reflow or reused cover is plausible but not established.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N5_07_2023-score-002&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;vocab-s01&quot;,
+        &quot;field&quot;: &quot;/heading&quot;,
+        &quot;locator&quot;: &quot;Physical page1; vocab-s01/heading&quot;,
+        &quot;evidence&quot;: &quot;Redundant の after topic は in the kana-reading instruction.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N5_07_2023-score-003&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;vocab-s03&quot;,
+        &quot;field&quot;: &quot;/heading&quot;,
+        &quot;locator&quot;: &quot;Physical page3; vocab-s03/heading&quot;,
+        &quot;evidence&quot;: &quot;Malformed いれなすか and いつばん in the ordinary fill-in instruction; counted once for this heading.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N5_07_2023-score-004&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-q009&quot;,
+        &quot;field&quot;: &quot;/options/1&quot;,
+        &quot;locator&quot;: &quot;Physical page7; reading-q009/options/1&quot;,
+        &quot;evidence&quot;: &quot;Missing dakuten in the intended negative request おかないでくださいね, confirmed by grammar and the companion explanation.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N5_07_2023-score-005&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-b001&quot;,
+        &quot;field&quot;: &quot;/content&quot;,
+        &quot;locator&quot;: &quot;Physical page8; reading-b001/content&quot;,
+        &quot;evidence&quot;: &quot;Malformed polite predicate こうなりです in the worked-example instruction.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N5_07_2023-score-006&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-q012&quot;,
+        &quot;field&quot;: &quot;/stem&quot;,
+        &quot;locator&quot;: &quot;Physical page8; reading-q012/stem&quot;,
+        &quot;evidence&quot;: &quot;Unmatched final closing quote on a non-dialogue statement.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N5_07_2023-score-007&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-q013&quot;,
+        &quot;field&quot;: &quot;/stem&quot;,
+        &quot;locator&quot;: &quot;Physical page8; reading-q013/stem&quot;,
+        &quot;evidence&quot;: &quot;Corrupted やったり and unmatched closing quote; counted once for the stem.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N5_07_2023-score-008&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-b006&quot;,
+        &quot;field&quot;: &quot;/content&quot;,
+        &quot;locator&quot;: &quot;Physical page13; reading-b006/content&quot;,
+        &quot;evidence&quot;: &quot;Large よ in the headline きようしつ and incorrect 日(にち) reading at24日. The same content field also has provisionally repaired lesson markers; counted once at the higher minor-defect category, not additionally as uncertain.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N5_07_2023-score-009&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;vocab-q007&quot;,
+        &quot;field&quot;: &quot;/stem&quot;,
+        &quot;locator&quot;: &quot;Physical page1; vocab-q007/stem&quot;,
+        &quot;evidence&quot;: &quot;Bare 何か月 with a declarative ending: finalか is preferred, but a missing duration particle is possible.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N5_07_2023-score-010&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;reading-b002&quot;,
+        &quot;field&quot;: &quot;/content&quot;,
+        &quot;locator&quot;: &quot;Physical page9; reading-b002/content&quot;,
+        &quot;evidence&quot;: &quot;The second of two named compositions lacks the parallel author heading; its presence and exact wording remain inferred.&quot;
+      }
+    ],
+    &quot;assessed_on&quot;: &quot;2026-09-26&quot;,
+    &quot;method_version&quot;: 1,
+    &quot;assessment_note&quot;: &quot;All thirteen physical pages visually inspected, including grammar cover and final notice;21 vocabulary plus22 grammar/reading questions,172 choices, six blocks and ten task headings. Selective printed ruby and reference underlines preserved. The companion written answers were inspected on pages1–2 and the written top of page3; all43 keys were reconciled by content. Its erroneous star-order numeral and mislabeled shopping question do not penalize this question principal. Two source files each have one byte-identical alias; no independent question witness or issuer chain of custody was found. Raster/reflow appearance alone does not establish known reconstruction, so unverified100 applies. No unsupported questions are inferred from the cover-page-count anomaly. Harmless reflow, glyph-width, equivalent slot linework, administrative cover furniture and supplied keys do not add points. Multiple concerns within the same item/field use only the highest category; the notice marker conjecture does not double-count its confirmed minor defects. The score concerns this source file, not the probability that the final reconstruction exactly matches historical exam wording.&quot;
+  },
+  &quot;evidence&quot;: []
+}</pre></details><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N5_07_2023.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span><ul></ul><div class="review-controls"><label>Show <select id="review-filter"><option value="all">All records</option><option value="difference">Principal differences</option><option value="unresolved">Unresolved cases</option><option value="provisional_fix">Provisional fixes</option></select></label><label>Find <input id="review-search" type="search" placeholder="Item, wording, evidence…"></label></div><p id="review-count" class="control-help" role="status"></p><section class="review-group" id="review-vocab-s01" data-kinds="difference"><div class="review-group-heading"><h2>vocab-s01</h2><a href="../papers/N5_07_2023.html#vocab-s01">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">もんだい1 ＿＿＿のことばはひらがなでどうかきますか。1・2・3・4からいちばんいいものをひとつえらんでください。</div></details><div class="review-record" id="principal_differences-N5_07_2023-PD-001"><div class="review-label">Principal difference · /heading · high</div><div class="comparison"><div><h4>Principal</h4><pre>のことばは<mark class="diff-old"> の</mark>ひらがなで</pre></div><div><h4>Editorial</h4><pre>のことばはひらがなで</pre></div></div><p>Remove the stray second の. The task asks how the underlined expression is written in hiragana; はのひらがな cannot express that instruction.</p><span class="principal-repository-source">Principal source (page=1): <code>additional-assets/principals/N5_07_2023.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Problem1 instruction</span><details><summary>Full published record · principal_differences-N5_07_2023-PD-001</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N5_07_2023-PD-001&quot;,
+  &quot;unit&quot;: &quot;N5_07_2023&quot;,
+  &quot;item_id&quot;: &quot;vocab-s01&quot;,
+  &quot;field&quot;: &quot;/heading&quot;,
+  &quot;current_value&quot;: &quot;もんだい1 ＿＿＿のことばはひらがなでどうかきますか。1・2・3・4からいちばんいいものをひとつえらんでください。&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2023年7月N5试题不含听力.pdf&quot;,
+    &quot;sha256&quot;: &quot;05d287c536cebc5e1234317f2b3279b23d097188156610d4e20bcfb54e422cac&quot;,
+    &quot;physical_pages&quot;: [
+      1
+    ],
+    &quot;locator&quot;: &quot;Problem1 instruction&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;のことばは のひらがなで&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;のことばはひらがなで&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Remove the stray second の. The task asks how the underlined expression is written in hiragana; はのひらがな cannot express that instruction.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-vocab-q007" data-kinds="difference provisional_fix"><div class="review-group-heading"><h2>vocab-q007</h2><a href="../papers/N5_07_2023.html#vocab-q007">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">7 たなかさんはここで<u>何か月</u>はたらいていますか。<ol><li>なんかげつ</li><li>なにかげつ</li><li>なんかがつ</li><li>なにかがつ</li></ol><p>Editorial key: 1</p></div></details><div class="review-record" id="unresolved_cases-N5_07_2023-vocab-q007-interrogative-ending"><div class="review-label">Provisional fix ·  · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>{
+  &quot;id&quot;: &quot;vocab-q007&quot;,
+  &quot;stem&quot;: {
+    &quot;html&quot;: &quot;7 たなかさんはここで&lt;u&gt;何か月&lt;/u&gt;はたらいています。&quot;
+  },
+  &quot;options&quot;: [
+    &quot;なんかげつ&quot;,
+    &quot;なにかげつ&quot;,
+    &quot;なんかがつ&quot;,
+    &quot;なにかがつ&quot;
+  ],
+  &quot;key&quot;: 1
+}</pre></div><div><h4>Editorial</h4><pre>{
+  &quot;id&quot;: &quot;vocab-q007&quot;,
+  &quot;stem&quot;: {
+    &quot;html&quot;: &quot;7 たなかさんはここで&lt;u&gt;何か月&lt;/u&gt;はたらいています<mark class="diff-new">か</mark>。&quot;
+  },
+  &quot;options&quot;: [
+    &quot;なんかげつ&quot;,
+    &quot;なにかげつ&quot;,
+    &quot;なんかがつ&quot;,
+    &quot;なにかがつ&quot;
+  ],
+  &quot;key&quot;: 1
+}</pre></div></div><p>Prefer final か as the smallest repair making bare 何か月 an ordinary duration question. The reading target, choices and key remain intact. A lost particle following the duration is a credible competitor, so this reconstruction is medium confidence.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>An independent exam-page witness is needed to establish whether the historical stem ended in a question or included a duration particle.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N5_07_2023.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Vocabulary7 tests the reading of underlined 何か月 in a sentence about how long Tanaka has worked here.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=1): <code>additional-assets/principals/N5_07_2023.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Vocabulary7 complete stem<p>たなかさんは ここで &lt;u&gt;何か月&lt;/u&gt; はたらいて います。</p></li><li><span class="principal-repository-source">Principal source (page=1): <code>additional-assets/principals/N5_07_2023.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Vocabulary7 explanation<p>Key1 なんかげつ; only the tested expression is quoted, not the ending.</p></li></ul><details><summary>Full published record · unresolved_cases-N5_07_2023-vocab-q007-interrogative-ending</summary><pre>{
+  &quot;case_id&quot;: &quot;N5_07_2023-vocab-q007-interrogative-ending&quot;,
+  &quot;unit&quot;: &quot;N5_07_2023&quot;,
+  &quot;item_id&quot;: &quot;vocab-q007&quot;,
+  &quot;field&quot;: &quot;&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: {
+    &quot;id&quot;: &quot;vocab-q007&quot;,
+    &quot;stem&quot;: {
+      &quot;html&quot;: &quot;7 たなかさんはここで&lt;u&gt;何か月&lt;/u&gt;はたらいていますか。&quot;
+    },
+    &quot;options&quot;: [
+      &quot;なんかげつ&quot;,
+      &quot;なにかげつ&quot;,
+      &quot;なんかがつ&quot;,
+      &quot;なにかがつ&quot;
+    ],
+    &quot;key&quot;: 1
+  },
+  &quot;before&quot;: null,
+  &quot;context&quot;: &quot;Vocabulary7 tests the reading of underlined 何か月 in a sentence about how long Tanaka has worked here.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: {
+        &quot;id&quot;: &quot;vocab-q007&quot;,
+        &quot;stem&quot;: {
+          &quot;html&quot;: &quot;7 たなかさんはここで&lt;u&gt;何か月&lt;/u&gt;はたらいています。&quot;
+        },
+        &quot;options&quot;: [
+          &quot;なんかげつ&quot;,
+          &quot;なにかげつ&quot;,
+          &quot;なんかがつ&quot;,
+          &quot;なにかがつ&quot;
+        ],
+        &quot;key&quot;: 1
+      },
+      &quot;assessment&quot;: &quot;The directly printed statement ending is retained literally, but bare interrogative 何か月 is awkward in this affirmative statement.&quot;
+    },
+    {
+      &quot;value&quot;: {
+        &quot;id&quot;: &quot;vocab-q007&quot;,
+        &quot;stem&quot;: {
+          &quot;html&quot;: &quot;7 たなかさんはここで&lt;u&gt;何か月&lt;/u&gt;もはたらいています。&quot;
+        },
+        &quot;options&quot;: [
+          &quot;なんかげつ&quot;,
+          &quot;なにかげつ&quot;,
+          &quot;なんかがつ&quot;,
+          &quot;なにかがつ&quot;
+        ],
+        &quot;key&quot;: 1
+      },
+      &quot;assessment&quot;: &quot;A missing も after the duration could instead yield an emphatic statement; this is grammatical but the source does not attest that particle.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;2023年7月N5试题不含听力.pdf&quot;,
+      &quot;sha256&quot;: &quot;05d287c536cebc5e1234317f2b3279b23d097188156610d4e20bcfb54e422cac&quot;,
+      &quot;physical_pages&quot;: [
+        1
+      ],
+      &quot;locator&quot;: &quot;Vocabulary7 complete stem&quot;,
+      &quot;reading&quot;: &quot;たなかさんは ここで &lt;u&gt;何か月&lt;/u&gt; はたらいて います。&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2023年7月N5答案及解析（含听力原文）.pdf&quot;,
+      &quot;sha256&quot;: &quot;f2535c8c6b40a6a8537c96049a805f2cc83e86d8dc65a2cf1548f04040f6ad93&quot;,
+      &quot;physical_pages&quot;: [
+        1
+      ],
+      &quot;locator&quot;: &quot;Vocabulary7 explanation&quot;,
+      &quot;reading&quot;: &quot;Key1 なんかげつ; only the tested expression is quoted, not the ending.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Prefer final か as the smallest repair making bare 何か月 an ordinary duration question. The reading target, choices and key remain intact. A lost particle following the duration is a credible competitor, so this reconstruction is medium confidence.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Inspected the full original vocabulary page and enlarged question7 crop; there is no printed final か.&quot;,
+    &quot;Compared the full answer explanation; it establishes the reading but supplies no complete stem.&quot;,
+    &quot;Tested final か against 何か月も and indefinite 何か月か constructions after reviewing the whole reading-test group.&quot;,
+    &quot;Checked all indexed copies and focused matching-source filenames; the aliases are byte-identical and no independent wording witness was found.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;An independent exam-page witness is needed to establish whether the historical stem ended in a question or included a duration particle.&quot;
+}</pre></details></div><div class="review-record" id="principal_differences-N5_07_2023-PD-003"><div class="review-label">Principal difference · /stem · high</div><div class="comparison"><div><h4>Principal</h4><pre>はたらいて<mark class="diff-old"> </mark>います。</pre></div><div><h4>Editorial</h4><pre>はたらいています<mark class="diff-new">か</mark>。</pre></div></div><p>Prefer a question ending for bare interrogative 何か月. An omitted duration particle is a competing reconstruction; the linked case gives the investigated alternatives.</p><span class="principal-repository-source">Principal source (page=1): <code>additional-assets/principals/N5_07_2023.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Vocabulary7 sentence ending</span><details><summary>Full published record · principal_differences-N5_07_2023-PD-003</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N5_07_2023-PD-003&quot;,
+  &quot;unit&quot;: &quot;N5_07_2023&quot;,
+  &quot;item_id&quot;: &quot;vocab-q007&quot;,
+  &quot;field&quot;: &quot;/stem&quot;,
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;7 たなかさんはここで&lt;u&gt;何か月&lt;/u&gt;はたらいていますか。&quot;
+  },
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2023年7月N5试题不含听力.pdf&quot;,
+    &quot;sha256&quot;: &quot;05d287c536cebc5e1234317f2b3279b23d097188156610d4e20bcfb54e422cac&quot;,
+    &quot;physical_pages&quot;: [
+      1
+    ],
+    &quot;locator&quot;: &quot;Vocabulary7 sentence ending&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;はたらいて います。&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;はたらいていますか。&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;conjectural_repair&quot;,
+  &quot;rationale&quot;: &quot;Prefer a question ending for bare interrogative 何か月. An omitted duration particle is a competing reconstruction; the linked case gives the investigated alternatives.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;N5_07_2023-vocab-q007-interrogative-ending&quot;
+  ]
+}</pre></details></div></section><section class="review-group" id="review-vocab-s03" data-kinds="difference"><div class="review-group-heading"><h2>vocab-s03</h2><a href="../papers/N5_07_2023.html#vocab-s03">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">もんだい3 （　）になにをいれますか。1・2・3・4からいちばんいいものをひとつえらんでください。</div></details><div class="review-record" id="principal_differences-N5_07_2023-PD-002"><div class="review-label">Principal difference · /heading · high</div><div class="comparison"><div><h4>Principal</h4><pre>いれ<mark class="diff-old">な</mark>すか / い<mark class="diff-old">つ</mark>ばん</pre></div><div><h4>Editorial</h4><pre>いれ<mark class="diff-new">ま</mark>すか / い<mark class="diff-new">ち</mark>ばん</pre></div></div><p>Restore ordinary question inflection and the superlative adverb in the fill-in instruction, without changing the task.</p><span class="principal-repository-source">Principal source (page=3): <code>additional-assets/principals/N5_07_2023.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Problem3 instruction</span><details><summary>Full published record · principal_differences-N5_07_2023-PD-002</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N5_07_2023-PD-002&quot;,
+  &quot;unit&quot;: &quot;N5_07_2023&quot;,
+  &quot;item_id&quot;: &quot;vocab-s03&quot;,
+  &quot;field&quot;: &quot;/heading&quot;,
+  &quot;current_value&quot;: &quot;もんだい3 （　）になにをいれますか。1・2・3・4からいちばんいいものをひとつえらんでください。&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2023年7月N5试题不含听力.pdf&quot;,
+    &quot;sha256&quot;: &quot;05d287c536cebc5e1234317f2b3279b23d097188156610d4e20bcfb54e422cac&quot;,
+    &quot;physical_pages&quot;: [
+      3
+    ],
+    &quot;locator&quot;: &quot;Problem3 instruction&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;いれなすか / いつばん&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;いれますか / いちばん&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Restore ordinary question inflection and the superlative adverb in the fill-in instruction, without changing the task.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-q009" data-kinds="difference"><div class="review-group-heading"><h2>reading-q009</h2><a href="../papers/N5_07_2023.html#reading-q009">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">9 （<ruby>学校<rt>がっこう</rt></ruby>で）<br/><ruby>先生<rt>せんせい</rt></ruby>「あ、じてんしゃをおくところはあそこです。ここにじてんしゃを（　）。」<br/><ruby>学生<rt>がくせい</rt></ruby>「はい、わかりました。」<ol><li>おきませんか</li><li>おかないでくださいね</li><li>おきますか</li><li>おいてくださいね</li></ol><p>Editorial key: 2</p></div></details><div class="review-record" id="principal_differences-N5_07_2023-PD-004"><div class="review-label">Principal difference · /options/1 · high</div><div class="comparison"><div><h4>Principal</h4><pre>おかない<mark class="diff-old">て </mark>くださいね</pre></div><div><h4>Editorial</h4><pre>おかない<mark class="diff-new">で</mark>くださいね</pre></div></div><p>Restore the negative-request construction. Enlarged inspection shows no dakuten on て; the companion explanation gives 置かないでくださいね, and the teacher is directing the student to a different bicycle-parking place. Choice order and key2 are preserved.</p><span class="principal-repository-source">Principal source (page=7): <code>additional-assets/principals/N5_07_2023.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Grammar9 choice2</span><details><summary>Full published record · principal_differences-N5_07_2023-PD-004</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N5_07_2023-PD-004&quot;,
+  &quot;unit&quot;: &quot;N5_07_2023&quot;,
+  &quot;item_id&quot;: &quot;reading-q009&quot;,
+  &quot;field&quot;: &quot;/options/1&quot;,
+  &quot;current_value&quot;: &quot;おかないでくださいね&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2023年7月N5试题不含听力.pdf&quot;,
+    &quot;sha256&quot;: &quot;05d287c536cebc5e1234317f2b3279b23d097188156610d4e20bcfb54e422cac&quot;,
+    &quot;physical_pages&quot;: [
+      7
+    ],
+    &quot;locator&quot;: &quot;Grammar9 choice2&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;おかないて くださいね&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;おかないでくださいね&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Restore the negative-request construction. Enlarged inspection shows no dakuten on て; the companion explanation gives 置かないでくださいね, and the teacher is directing the student to a different bicycle-parking place. Choice order and key2 are preserved.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-b001" data-kinds="difference"><div class="review-group-heading"><h2>reading-b001</h2><a href="../papers/N5_07_2023.html#reading-b001">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><p>（問題<ruby>例<rt>れい</rt></ruby>）</p><p>つくえの <span class="answer-slot"><span class="slot-glyph">_</span></span><span class="answer-slot"><span class="slot-glyph">_</span></span> <span class="star-slot"><span class="slot-glyph star-glyph">★</span></span> <span class="answer-slot"><span class="slot-glyph">_</span></span> あります。</p><p>1 が　2 に　3 上　4 ペン</p><p>（<ruby>解答<rt>かいとう</rt></ruby>のしかた）</p><p>1. 正しい答えはこうなります。</p><table><tbody><tr><td>つくえの</td><td>3 上</td><td>2 に</td><td><span class="star-slot"><span class="slot-glyph star-glyph">★</span></span> 4 ペン</td><td>1 が</td><td>あります。</td></tr></tbody></table><p>2. <u><span class="star-slot"><span class="slot-glyph star-glyph">★</span></span></u>に入る<ruby>番号<rt>ばんごう</rt></ruby>を<ruby>解答<rt>かいとう</rt></ruby>用紙にマークします</p><table><tbody><tr><th>（<ruby>例<rt>れい</rt></ruby>）</th><td>①</td><td>②</td><td>③</td><td>●</td></tr></tbody></table><p>（<ruby>解答<rt>かいとう</rt></ruby>用紙）</p></div></details><div class="review-record" id="principal_differences-N5_07_2023-PD-005"><div class="review-label">Principal difference · /content · high</div><div class="comparison"><div><h4>Principal</h4><pre>正しい答えはこうなり<mark class="diff-old">で</mark>す。</pre></div><div><h4>Editorial</h4><pre>正しい答えはこうなり<mark class="diff-new">ま</mark>す。</pre></div></div><p>Repair the malformed polite verbal ending while retaining the entire example, four slots, solution order and marked fourth answer.</p><span class="principal-repository-source">Principal source (page=8): <code>additional-assets/principals/N5_07_2023.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Worked-example explanation</span><details><summary>Full published record · principal_differences-N5_07_2023-PD-005</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N5_07_2023-PD-005&quot;,
+  &quot;unit&quot;: &quot;N5_07_2023&quot;,
+  &quot;item_id&quot;: &quot;reading-b001&quot;,
+  &quot;field&quot;: &quot;/content&quot;,
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;&lt;p&gt;（問題&lt;ruby&gt;例&lt;rt&gt;れい&lt;/rt&gt;&lt;/ruby&gt;）&lt;/p&gt;&lt;p&gt;つくえの _ _ ★ _ あります。&lt;/p&gt;&lt;p&gt;1 が　2 に　3 上　4 ペン&lt;/p&gt;&lt;p&gt;（&lt;ruby&gt;解答&lt;rt&gt;かいとう&lt;/rt&gt;&lt;/ruby&gt;のしかた）&lt;/p&gt;&lt;p&gt;1. 正しい答えはこうなります。&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;つくえの&lt;/td&gt;&lt;td&gt;3 上&lt;/td&gt;&lt;td&gt;2 に&lt;/td&gt;&lt;td&gt;★ 4 ペン&lt;/td&gt;&lt;td&gt;1 が&lt;/td&gt;&lt;td&gt;あります。&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;2. &lt;u&gt;★&lt;/u&gt;に入る&lt;ruby&gt;番号&lt;rt&gt;ばんごう&lt;/rt&gt;&lt;/ruby&gt;を&lt;ruby&gt;解答&lt;rt&gt;かいとう&lt;/rt&gt;&lt;/ruby&gt;用紙にマークします&lt;/p&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th&gt;（&lt;ruby&gt;例&lt;rt&gt;れい&lt;/rt&gt;&lt;/ruby&gt;）&lt;/th&gt;&lt;td&gt;①&lt;/td&gt;&lt;td&gt;②&lt;/td&gt;&lt;td&gt;③&lt;/td&gt;&lt;td&gt;●&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;（&lt;ruby&gt;解答&lt;rt&gt;かいとう&lt;/rt&gt;&lt;/ruby&gt;用紙）&lt;/p&gt;&quot;
+  },
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2023年7月N5试题不含听力.pdf&quot;,
+    &quot;sha256&quot;: &quot;05d287c536cebc5e1234317f2b3279b23d097188156610d4e20bcfb54e422cac&quot;,
+    &quot;physical_pages&quot;: [
+      8
+    ],
+    &quot;locator&quot;: &quot;Worked-example explanation&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;正しい答えはこうなりです。&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;正しい答えはこうなります。&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Repair the malformed polite verbal ending while retaining the entire example, four slots, solution order and marked fourth answer.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-q012" data-kinds="difference"><div class="review-group-heading"><h2>reading-q012</h2><a href="../papers/N5_07_2023.html#reading-q012">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">12 <ruby>私<rt>わたし</rt></ruby>は<ruby>子<rt>こ</rt></ruby>どもの <span class="answer-slot"><span class="slot-glyph">_</span></span><span class="answer-slot"><span class="slot-glyph">_</span></span> <span class="star-slot"><span class="slot-glyph star-glyph">★</span></span> <span class="answer-slot"><span class="slot-glyph">_</span></span> ほしかったです。<ol><li>が</li><li>じてんしゃ</li><li>ころ</li><li><ruby>青<rt>あお</rt></ruby>い</li></ol><p>Editorial key: 2</p></div></details><div class="review-record" id="principal_differences-N5_07_2023-PD-006"><div class="review-label">Principal difference · /stem · high</div><div class="comparison"><div><h4>Principal</h4><pre>ほしかったです。<mark class="diff-old">」</mark></pre></div><div><h4>Editorial</h4><pre>ほしかったです。</pre></div></div><p>Remove the unmatched closing quotation mark from the first-person statement. No dialogue or opening quote precedes it.</p><span class="principal-repository-source">Principal source (page=8): <code>additional-assets/principals/N5_07_2023.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Star12 closing punctuation</span><details><summary>Full published record · principal_differences-N5_07_2023-PD-006</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N5_07_2023-PD-006&quot;,
+  &quot;unit&quot;: &quot;N5_07_2023&quot;,
+  &quot;item_id&quot;: &quot;reading-q012&quot;,
+  &quot;field&quot;: &quot;/stem&quot;,
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;12 &lt;ruby&gt;私&lt;rt&gt;わたし&lt;/rt&gt;&lt;/ruby&gt;は&lt;ruby&gt;子&lt;rt&gt;こ&lt;/rt&gt;&lt;/ruby&gt;どもの _ _ ★ _ ほしかったです。&quot;
+  },
+  &quot;categories&quot;: [
+    &quot;punctuation&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2023年7月N5试题不含听力.pdf&quot;,
+    &quot;sha256&quot;: &quot;05d287c536cebc5e1234317f2b3279b23d097188156610d4e20bcfb54e422cac&quot;,
+    &quot;physical_pages&quot;: [
+      8
+    ],
+    &quot;locator&quot;: &quot;Star12 closing punctuation&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;ほしかったです。」&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;ほしかったです。&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Remove the unmatched closing quotation mark from the first-person statement. No dialogue or opening quote precedes it.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-q013" data-kinds="difference"><div class="review-group-heading"><h2>reading-q013</h2><a href="../papers/N5_07_2023.html#reading-q013">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">13 きょうはにわの<ruby>花<rt>はな</rt></ruby>に<ruby>水<rt>みず</rt></ruby>をやったり、へやの <span class="answer-slot"><span class="slot-glyph">_</span></span><span class="answer-slot"><span class="slot-glyph">_</span></span> <span class="star-slot"><span class="slot-glyph star-glyph">★</span></span> <span class="answer-slot"><span class="slot-glyph">_</span></span> 、<ruby>買<rt>か</rt></ruby>い<ruby>物<rt>もの</rt></ruby>に<ruby>行<rt>い</rt></ruby>きました。<ol><li>した</li><li>そうじを</li><li>あとで</li><li>したり</li></ol><p>Editorial key: 1</p></div></details><div class="review-record" id="principal_differences-N5_07_2023-PD-007"><div class="review-label">Principal difference · /stem · high</div><div class="comparison"><div><h4>Principal</h4><pre>水をや<mark class="diff-old">た</mark> / 行きました。<mark class="diff-old">」</mark></pre></div><div><h4>Editorial</h4><pre>水をや<mark class="diff-new">っ</mark> / 行きました。</pre></div></div><p>The literal comparison quotes the unambiguous prefix: the complete source verb has misplaced kana between や and り. Reconstruct the whole verb as やったり, the ordinary past たり form of やる coordinated with そうじをしたり, and remove the unmatched closing quotation mark. The star remains the third of four slots and is filled by choice1 した.</p><span class="principal-repository-source">Principal source (page=8): <code>additional-assets/principals/N5_07_2023.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Star13 watering-clause prefix and closing punctuation</span><details><summary>Full published record · principal_differences-N5_07_2023-PD-007</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N5_07_2023-PD-007&quot;,
+  &quot;unit&quot;: &quot;N5_07_2023&quot;,
+  &quot;item_id&quot;: &quot;reading-q013&quot;,
+  &quot;field&quot;: &quot;/stem&quot;,
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;13 きょうはにわの&lt;ruby&gt;花&lt;rt&gt;はな&lt;/rt&gt;&lt;/ruby&gt;に&lt;ruby&gt;水&lt;rt&gt;みず&lt;/rt&gt;&lt;/ruby&gt;をやったり、へやの _ _ ★ _ 、&lt;ruby&gt;買&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;い&lt;ruby&gt;物&lt;rt&gt;もの&lt;/rt&gt;&lt;/ruby&gt;に&lt;ruby&gt;行&lt;rt&gt;い&lt;/rt&gt;&lt;/ruby&gt;きました。&quot;
+  },
+  &quot;categories&quot;: [
+    &quot;wording&quot;,
+    &quot;punctuation&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2023年7月N5试题不含听力.pdf&quot;,
+    &quot;sha256&quot;: &quot;05d287c536cebc5e1234317f2b3279b23d097188156610d4e20bcfb54e422cac&quot;,
+    &quot;physical_pages&quot;: [
+      8
+    ],
+    &quot;locator&quot;: &quot;Star13 watering-clause prefix and closing punctuation&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;水をやた / 行きました。」&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;水をやっ / 行きました。&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;The literal comparison quotes the unambiguous prefix: the complete source verb has misplaced kana between や and り. Reconstruct the whole verb as やったり, the ordinary past たり form of やる coordinated with そうじをしたり, and remove the unmatched closing quotation mark. The star remains the third of four slots and is filled by choice1 した.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-b002" data-kinds="difference provisional_fix"><div class="review-group-heading"><h2>reading-b002</h2><a href="../papers/N5_07_2023.html#reading-b002">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><p>ジョーンズさんとチンさんはさくぶんを<ruby>書<rt>か</rt></ruby>いて、クラスのみんなの<ruby>前<rt>まえ</rt></ruby>で<ruby>読<rt>よ</rt></ruby>みました。</p><p>（1）ジョーンズさんのさくぶん</p><div><p><ruby>先週<rt>せんしゅう</rt></ruby>、はじめて<ruby>西<rt>にし</rt></ruby>としょかんに<ruby>行<rt>い</rt></ruby>きました。<ruby>西<rt>にし</rt></ruby>としょかんにはいろいろな<ruby>本<rt>ほん</rt></ruby>やざっしがありました。<ruby>外国<rt>がいこく</rt></ruby>の<ruby>本<rt>ほん</rt></ruby>もありました。【14】、CDやDVDもありました。<ruby>私<rt>わたし</rt></ruby>は<ruby>旅行<rt>りょこう</rt></ruby>のざっしとえいがのDVDをかりました。また<ruby>西<rt>にし</rt></ruby>としょかんでざっしやDVDを【15】。</p></div><p>（2）チンさんのさくぶん</p><div><p><ruby>私<rt>わたし</rt></ruby>は<ruby>北町<rt>きたまち</rt></ruby>に<ruby>住<rt>す</rt></ruby>んでいます。<ruby>北町<rt>きたまち</rt></ruby>には<ruby>私<rt>わたし</rt></ruby>の<ruby>好<rt>す</rt></ruby>きな<ruby>食堂<rt>しょくどう</rt></ruby>があります。<ruby>食堂<rt>しょくどう</rt></ruby>の<ruby>名前<rt>なまえ</rt></ruby>【16】「<ruby>春<rt>はる</rt></ruby>」です。<ruby>私<rt>わたし</rt></ruby>はよく「<ruby>春<rt>はる</rt></ruby>」にごはんを<ruby>食<rt>た</rt></ruby>べに<ruby>行<rt>い</rt></ruby>きます。「<ruby>春<rt>はる</rt></ruby>」のりょうりは<ruby>安<rt>やす</rt></ruby>くて、とてもおいしいです。「<ruby>春<rt>はる</rt></ruby>」のとなりにはおいしいアイスクリームの<ruby>店<rt>みせ</rt></ruby>があります。いつも「<ruby>春<rt>はる</rt></ruby>」でごはんを<ruby>食<rt>た</rt></ruby>べてから、アイスを<ruby>買<rt>か</rt></ruby>って、<ruby>家<rt>いえ</rt></ruby>に【17】。</p></div></div></details><div class="review-record" id="unresolved_cases-N5_07_2023-reading-b002-second-composition-heading"><div class="review-label">Provisional fix ·  · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>…りょこう&lt;/rt&gt;&lt;/ruby&gt;のざっしとえいがのDVDをかりました。また&lt;ruby&gt;西&lt;rt&gt;にし&lt;/rt&gt;&lt;/ruby&gt;としょかんでざっしやDVDを【15】。&lt;/p&gt;&lt;/div&gt;&lt;div&gt;&lt;p&gt;&lt;ruby&gt;私&lt;rt&gt;わたし&lt;/rt&gt;&lt;/ruby&gt;は&lt;ruby&gt;北町&lt;rt&gt;きたまち&lt;/rt&gt;&lt;/ruby&gt;に&lt;ruby&gt;住&lt;rt&gt;す&lt;/rt&gt;&lt;/ruby&gt;んでいます。&lt;ruby&gt;北町&lt;rt&gt;きたまち&lt;/rt&gt;&lt;/ruby&gt;には&lt;ruby&gt;私&lt;rt&gt;わたし&lt;…</pre></div><div><h4>Editorial</h4><pre>…りょこう&lt;/rt&gt;&lt;/ruby&gt;のざっしとえいがのDVDをかりました。また&lt;ruby&gt;西&lt;rt&gt;にし&lt;/rt&gt;&lt;/ruby&gt;としょかんでざっしやDVDを【15】。&lt;/p&gt;&lt;/div<mark class="diff-new">&gt;&lt;p&gt;（2）チンさんのさくぶん&lt;/p</mark>&gt;&lt;div&gt;&lt;p&gt;&lt;ruby&gt;私&lt;rt&gt;わたし&lt;/rt&gt;&lt;/ruby&gt;は&lt;ruby&gt;北町&lt;rt&gt;きたまち&lt;/rt&gt;&lt;/ruby&gt;に&lt;ruby&gt;住&lt;rt&gt;す&lt;/rt&gt;&lt;/ruby&gt;んでいます。&lt;ruby&gt;北町&lt;rt&gt;きたまち&lt;/rt&gt;&lt;/ruby&gt;には&lt;ruby&gt;私&lt;rt&gt;わたし&lt;…</pre></div></div><p>Restore （2）チンさんのさくぶん as the probable parallel heading. Two named writers, the first numbered heading, and two separate compositions support this attribution and structure; exact historical heading presence remains unproved.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>The heading is inferred from parallel structure; a more complete independent copy could establish whether it was printed or intentionally omitted.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N5_07_2023.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">The cloze instruction names Jones and Chin, followed by two separately boxed compositions; only the first has a printed author heading.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=9): <code>additional-assets/principals/N5_07_2023.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Two composition boxes and intervening space<p>Introductory text names ジョーンズさん and チンさん. First heading:（1）ジョーンズさんのさくぶん. No corresponding heading precedes the second box, which starts 私は北町に住んでいます。</p></li><li><span class="principal-repository-source">Principal source (page=2): <code>additional-assets/principals/N5_07_2023.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Cloze14–17 explanations<p>Explanations follow the library and dining compositions in sequence but do not quote a second author heading.</p></li></ul><details><summary>Full published record · unresolved_cases-N5_07_2023-reading-b002-second-composition-heading</summary><pre>{
+  &quot;case_id&quot;: &quot;N5_07_2023-reading-b002-second-composition-heading&quot;,
+  &quot;unit&quot;: &quot;N5_07_2023&quot;,
+  &quot;item_id&quot;: &quot;reading-b002&quot;,
+  &quot;field&quot;: &quot;&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: {
+    &quot;id&quot;: &quot;reading-b002&quot;,
+    &quot;type&quot;: &quot;passage&quot;,
+    &quot;content&quot;: {
+      &quot;html&quot;: &quot;&lt;p&gt;ジョーンズさんとチンさんはさくぶんを&lt;ruby&gt;書&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;いて、クラスのみんなの&lt;ruby&gt;前&lt;rt&gt;まえ&lt;/rt&gt;&lt;/ruby&gt;で&lt;ruby&gt;読&lt;rt&gt;よ&lt;/rt&gt;&lt;/ruby&gt;みました。&lt;/p&gt;&lt;p&gt;（1）ジョーンズさんのさくぶん&lt;/p&gt;&lt;div&gt;&lt;p&gt;&lt;ruby&gt;先週&lt;rt&gt;せんしゅう&lt;/rt&gt;&lt;/ruby&gt;、はじめて&lt;ruby&gt;西&lt;rt&gt;にし&lt;/rt&gt;&lt;/ruby&gt;としょかんに&lt;ruby&gt;行&lt;rt&gt;い&lt;/rt&gt;&lt;/ruby&gt;きました。&lt;ruby&gt;西&lt;rt&gt;にし&lt;/rt&gt;&lt;/ruby&gt;としょかんにはいろいろな&lt;ruby&gt;本&lt;rt&gt;ほん&lt;/rt&gt;&lt;/ruby&gt;やざっしがありました。&lt;ruby&gt;外国&lt;rt&gt;がいこく&lt;/rt&gt;&lt;/ruby&gt;の&lt;ruby&gt;本&lt;rt&gt;ほん&lt;/rt&gt;&lt;/ruby&gt;もありました。【14】、CDやDVDもありました。&lt;ruby&gt;私&lt;rt&gt;わたし&lt;/rt&gt;&lt;/ruby&gt;は&lt;ruby&gt;旅行&lt;rt&gt;りょこう&lt;/rt&gt;&lt;/ruby&gt;のざっしとえいがのDVDをかりました。また&lt;ruby&gt;西&lt;rt&gt;にし&lt;/rt&gt;&lt;/ruby&gt;としょかんでざっしやDVDを【15】。&lt;/p&gt;&lt;/div&gt;&lt;p&gt;（2）チンさんのさくぶん&lt;/p&gt;&lt;div&gt;&lt;p&gt;&lt;ruby&gt;私&lt;rt&gt;わたし&lt;/rt&gt;&lt;/ruby&gt;は&lt;ruby&gt;北町&lt;rt&gt;きたまち&lt;/rt&gt;&lt;/ruby&gt;に&lt;ruby&gt;住&lt;rt&gt;す&lt;/rt&gt;&lt;/ruby&gt;んでいます。&lt;ruby&gt;北町&lt;rt&gt;きたまち&lt;/rt&gt;&lt;/ruby&gt;には&lt;ruby&gt;私&lt;rt&gt;わたし&lt;/rt&gt;&lt;/ruby&gt;の&lt;ruby&gt;好&lt;rt&gt;す&lt;/rt&gt;&lt;/ruby&gt;きな&lt;ruby&gt;食堂&lt;rt&gt;しょくどう&lt;/rt&gt;&lt;/ruby&gt;があります。&lt;ruby&gt;食堂&lt;rt&gt;しょくどう&lt;/rt&gt;&lt;/ruby&gt;の&lt;ruby&gt;名前&lt;rt&gt;なまえ&lt;/rt&gt;&lt;/ruby&gt;【16】「&lt;ruby&gt;春&lt;rt&gt;はる&lt;/rt&gt;&lt;/ruby&gt;」です。&lt;ruby&gt;私&lt;rt&gt;わたし&lt;/rt&gt;&lt;/ruby&gt;はよく「&lt;ruby&gt;春&lt;rt&gt;はる&lt;/rt&gt;&lt;/ruby&gt;」にごはんを&lt;ruby&gt;食&lt;rt&gt;た&lt;/rt&gt;&lt;/ruby&gt;べに&lt;ruby&gt;行&lt;rt&gt;い&lt;/rt&gt;&lt;/ruby&gt;きます。「&lt;ruby&gt;春&lt;rt&gt;はる&lt;/rt&gt;&lt;/ruby&gt;」のりょうりは&lt;ruby&gt;安&lt;rt&gt;やす&lt;/rt&gt;&lt;/ruby&gt;くて、とてもおいしいです。「&lt;ruby&gt;春&lt;rt&gt;はる&lt;/rt&gt;&lt;/ruby&gt;」のとなりにはおいしいアイスクリームの&lt;ruby&gt;店&lt;rt&gt;みせ&lt;/rt&gt;&lt;/ruby&gt;があります。いつも「&lt;ruby&gt;春&lt;rt&gt;はる&lt;/rt&gt;&lt;/ruby&gt;」でごはんを&lt;ruby&gt;食&lt;rt&gt;た&lt;/rt&gt;&lt;/ruby&gt;べてから、アイスを&lt;ruby&gt;買&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;って、&lt;ruby&gt;家&lt;rt&gt;いえ&lt;/rt&gt;&lt;/ruby&gt;に【17】。&lt;/p&gt;&lt;/div&gt;&quot;
+    }
+  },
+  &quot;before&quot;: null,
+  &quot;context&quot;: &quot;The cloze instruction names Jones and Chin, followed by two separately boxed compositions; only the first has a printed author heading.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: {
+        &quot;id&quot;: &quot;reading-b002&quot;,
+        &quot;type&quot;: &quot;passage&quot;,
+        &quot;content&quot;: {
+          &quot;html&quot;: &quot;&lt;p&gt;ジョーンズさんとチンさんはさくぶんを&lt;ruby&gt;書&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;いて、クラスのみんなの&lt;ruby&gt;前&lt;rt&gt;まえ&lt;/rt&gt;&lt;/ruby&gt;で&lt;ruby&gt;読&lt;rt&gt;よ&lt;/rt&gt;&lt;/ruby&gt;みました。&lt;/p&gt;&lt;p&gt;（1）ジョーンズさんのさくぶん&lt;/p&gt;&lt;div&gt;&lt;p&gt;&lt;ruby&gt;先週&lt;rt&gt;せんしゅう&lt;/rt&gt;&lt;/ruby&gt;、はじめて&lt;ruby&gt;西&lt;rt&gt;にし&lt;/rt&gt;&lt;/ruby&gt;としょかんに&lt;ruby&gt;行&lt;rt&gt;い&lt;/rt&gt;&lt;/ruby&gt;きました。&lt;ruby&gt;西&lt;rt&gt;にし&lt;/rt&gt;&lt;/ruby&gt;としょかんにはいろいろな&lt;ruby&gt;本&lt;rt&gt;ほん&lt;/rt&gt;&lt;/ruby&gt;やざっしがありました。&lt;ruby&gt;外国&lt;rt&gt;がいこく&lt;/rt&gt;&lt;/ruby&gt;の&lt;ruby&gt;本&lt;rt&gt;ほん&lt;/rt&gt;&lt;/ruby&gt;もありました。【14】、CDやDVDもありました。&lt;ruby&gt;私&lt;rt&gt;わたし&lt;/rt&gt;&lt;/ruby&gt;は&lt;ruby&gt;旅行&lt;rt&gt;りょこう&lt;/rt&gt;&lt;/ruby&gt;のざっしとえいがのDVDをかりました。また&lt;ruby&gt;西&lt;rt&gt;にし&lt;/rt&gt;&lt;/ruby&gt;としょかんでざっしやDVDを【15】。&lt;/p&gt;&lt;/div&gt;&lt;div&gt;&lt;p&gt;&lt;ruby&gt;私&lt;rt&gt;わたし&lt;/rt&gt;&lt;/ruby&gt;は&lt;ruby&gt;北町&lt;rt&gt;きたまち&lt;/rt&gt;&lt;/ruby&gt;に&lt;ruby&gt;住&lt;rt&gt;す&lt;/rt&gt;&lt;/ruby&gt;んでいます。&lt;ruby&gt;北町&lt;rt&gt;きたまち&lt;/rt&gt;&lt;/ruby&gt;には&lt;ruby&gt;私&lt;rt&gt;わたし&lt;/rt&gt;&lt;/ruby&gt;の&lt;ruby&gt;好&lt;rt&gt;す&lt;/rt&gt;&lt;/ruby&gt;きな&lt;ruby&gt;食堂&lt;rt&gt;しょくどう&lt;/rt&gt;&lt;/ruby&gt;があります。&lt;ruby&gt;食堂&lt;rt&gt;しょくどう&lt;/rt&gt;&lt;/ruby&gt;の&lt;ruby&gt;名前&lt;rt&gt;なまえ&lt;/rt&gt;&lt;/ruby&gt;【16】「&lt;ruby&gt;春&lt;rt&gt;はる&lt;/rt&gt;&lt;/ruby&gt;」です。&lt;ruby&gt;私&lt;rt&gt;わたし&lt;/rt&gt;&lt;/ruby&gt;はよく「&lt;ruby&gt;春&lt;rt&gt;はる&lt;/rt&gt;&lt;/ruby&gt;」にごはんを&lt;ruby&gt;食&lt;rt&gt;た&lt;/rt&gt;&lt;/ruby&gt;べに&lt;ruby&gt;行&lt;rt&gt;い&lt;/rt&gt;&lt;/ruby&gt;きます。「&lt;ruby&gt;春&lt;rt&gt;はる&lt;/rt&gt;&lt;/ruby&gt;」のりょうりは&lt;ruby&gt;安&lt;rt&gt;やす&lt;/rt&gt;&lt;/ruby&gt;くて、とてもおいしいです。「&lt;ruby&gt;春&lt;rt&gt;はる&lt;/rt&gt;&lt;/ruby&gt;」のとなりにはおいしいアイスクリームの&lt;ruby&gt;店&lt;rt&gt;みせ&lt;/rt&gt;&lt;/ruby&gt;があります。いつも「&lt;ruby&gt;春&lt;rt&gt;はる&lt;/rt&gt;&lt;/ruby&gt;」でごはんを&lt;ruby&gt;食&lt;rt&gt;た&lt;/rt&gt;&lt;/ruby&gt;べてから、アイスを&lt;ruby&gt;買&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;って、&lt;ruby&gt;家&lt;rt&gt;いえ&lt;/rt&gt;&lt;/ruby&gt;に【17】。&lt;/p&gt;&lt;/div&gt;&quot;
+        }
+      },
+      &quot;assessment&quot;: &quot;Retain the source with an unlabeled second box; the paired attribution can be inferred from the introductory sentence, and intentional omission is possible.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;2023年7月N5试题不含听力.pdf&quot;,
+      &quot;sha256&quot;: &quot;05d287c536cebc5e1234317f2b3279b23d097188156610d4e20bcfb54e422cac&quot;,
+      &quot;physical_pages&quot;: [
+        9
+      ],
+      &quot;locator&quot;: &quot;Two composition boxes and intervening space&quot;,
+      &quot;reading&quot;: &quot;Introductory text names ジョーンズさん and チンさん. First heading:（1）ジョーンズさんのさくぶん. No corresponding heading precedes the second box, which starts 私は北町に住んでいます。&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2023年7月N5答案及解析（含听力原文）.pdf&quot;,
+      &quot;sha256&quot;: &quot;f2535c8c6b40a6a8537c96049a805f2cc83e86d8dc65a2cf1548f04040f6ad93&quot;,
+      &quot;physical_pages&quot;: [
+        2
+      ],
+      &quot;locator&quot;: &quot;Cloze14–17 explanations&quot;,
+      &quot;reading&quot;: &quot;Explanations follow the library and dining compositions in sequence but do not quote a second author heading.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Restore （2）チンさんのさくぶん as the probable parallel heading. Two named writers, the first numbered heading, and two separate compositions support this attribution and structure; exact historical heading presence remains unproved.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Viewed the entire original page and enlarged both composition boxes, including the space between them.&quot;,
+    &quot;Checked the introduction, first heading and topic transition to identify the second writer without changing any essay text or blanks.&quot;,
+    &quot;Compared both OCR transcriptions and the written answer explanations; no independent heading witness was available.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;The heading is inferred from parallel structure; a more complete independent copy could establish whether it was printed or intentionally omitted.&quot;
+}</pre></details></div><div class="review-record" id="principal_differences-N5_07_2023-PD-008"><div class="review-label">Principal difference · /content · high</div><div class="comparison"><div><h4>Principal</h4><pre>No alternative recorded</pre></div><div><h4>Editorial</h4><pre>（2）チンさんのさくぶん</pre></div></div><p>Supply the probable parallel heading for the second named writer. The source introduction names both writers and labels only the first box; the linked case explains why an intentionally unlabeled second box remains possible.</p><span class="principal-repository-source">Principal source (page=9): <code>additional-assets/principals/N5_07_2023.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Between the first and second composition boxes</span><details><summary>Full published record · principal_differences-N5_07_2023-PD-008</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N5_07_2023-PD-008&quot;,
+  &quot;unit&quot;: &quot;N5_07_2023&quot;,
+  &quot;item_id&quot;: &quot;reading-b002&quot;,
+  &quot;field&quot;: &quot;/content&quot;,
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;&lt;p&gt;ジョーンズさんとチンさんはさくぶんを&lt;ruby&gt;書&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;いて、クラスのみんなの&lt;ruby&gt;前&lt;rt&gt;まえ&lt;/rt&gt;&lt;/ruby&gt;で&lt;ruby&gt;読&lt;rt&gt;よ&lt;/rt&gt;&lt;/ruby&gt;みました。&lt;/p&gt;&lt;p&gt;（1）ジョーンズさんのさくぶん&lt;/p&gt;&lt;div&gt;&lt;p&gt;&lt;ruby&gt;先週&lt;rt&gt;せんしゅう&lt;/rt&gt;&lt;/ruby&gt;、はじめて&lt;ruby&gt;西&lt;rt&gt;にし&lt;/rt&gt;&lt;/ruby&gt;としょかんに&lt;ruby&gt;行&lt;rt&gt;い&lt;/rt&gt;&lt;/ruby&gt;きました。&lt;ruby&gt;西&lt;rt&gt;にし&lt;/rt&gt;&lt;/ruby&gt;としょかんにはいろいろな&lt;ruby&gt;本&lt;rt&gt;ほん&lt;/rt&gt;&lt;/ruby&gt;やざっしがありました。&lt;ruby&gt;外国&lt;rt&gt;がいこく&lt;/rt&gt;&lt;/ruby&gt;の&lt;ruby&gt;本&lt;rt&gt;ほん&lt;/rt&gt;&lt;/ruby&gt;もありました。【14】、CDやDVDもありました。&lt;ruby&gt;私&lt;rt&gt;わたし&lt;/rt&gt;&lt;/ruby&gt;は&lt;ruby&gt;旅行&lt;rt&gt;りょこう&lt;/rt&gt;&lt;/ruby&gt;のざっしとえいがのDVDをかりました。また&lt;ruby&gt;西&lt;rt&gt;にし&lt;/rt&gt;&lt;/ruby&gt;としょかんでざっしやDVDを【15】。&lt;/p&gt;&lt;/div&gt;&lt;p&gt;（2）チンさんのさくぶん&lt;/p&gt;&lt;div&gt;&lt;p&gt;&lt;ruby&gt;私&lt;rt&gt;わたし&lt;/rt&gt;&lt;/ruby&gt;は&lt;ruby&gt;北町&lt;rt&gt;きたまち&lt;/rt&gt;&lt;/ruby&gt;に&lt;ruby&gt;住&lt;rt&gt;す&lt;/rt&gt;&lt;/ruby&gt;んでいます。&lt;ruby&gt;北町&lt;rt&gt;きたまち&lt;/rt&gt;&lt;/ruby&gt;には&lt;ruby&gt;私&lt;rt&gt;わたし&lt;/rt&gt;&lt;/ruby&gt;の&lt;ruby&gt;好&lt;rt&gt;す&lt;/rt&gt;&lt;/ruby&gt;きな&lt;ruby&gt;食堂&lt;rt&gt;しょくどう&lt;/rt&gt;&lt;/ruby&gt;があります。&lt;ruby&gt;食堂&lt;rt&gt;しょくどう&lt;/rt&gt;&lt;/ruby&gt;の&lt;ruby&gt;名前&lt;rt&gt;なまえ&lt;/rt&gt;&lt;/ruby&gt;【16】「&lt;ruby&gt;春&lt;rt&gt;はる&lt;/rt&gt;&lt;/ruby&gt;」です。&lt;ruby&gt;私&lt;rt&gt;わたし&lt;/rt&gt;&lt;/ruby&gt;はよく「&lt;ruby&gt;春&lt;rt&gt;はる&lt;/rt&gt;&lt;/ruby&gt;」にごはんを&lt;ruby&gt;食&lt;rt&gt;た&lt;/rt&gt;&lt;/ruby&gt;べに&lt;ruby&gt;行&lt;rt&gt;い&lt;/rt&gt;&lt;/ruby&gt;きます。「&lt;ruby&gt;春&lt;rt&gt;はる&lt;/rt&gt;&lt;/ruby&gt;」のりょうりは&lt;ruby&gt;安&lt;rt&gt;やす&lt;/rt&gt;&lt;/ruby&gt;くて、とてもおいしいです。「&lt;ruby&gt;春&lt;rt&gt;はる&lt;/rt&gt;&lt;/ruby&gt;」のとなりにはおいしいアイスクリームの&lt;ruby&gt;店&lt;rt&gt;みせ&lt;/rt&gt;&lt;/ruby&gt;があります。いつも「&lt;ruby&gt;春&lt;rt&gt;はる&lt;/rt&gt;&lt;/ruby&gt;」でごはんを&lt;ruby&gt;食&lt;rt&gt;た&lt;/rt&gt;&lt;/ruby&gt;べてから、アイスを&lt;ruby&gt;買&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;って、&lt;ruby&gt;家&lt;rt&gt;いえ&lt;/rt&gt;&lt;/ruby&gt;に【17】。&lt;/p&gt;&lt;/div&gt;&quot;
+  },
+  &quot;categories&quot;: [
+    &quot;wording&quot;,
+    &quot;boundaries&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2023年7月N5试题不含听力.pdf&quot;,
+    &quot;sha256&quot;: &quot;05d287c536cebc5e1234317f2b3279b23d097188156610d4e20bcfb54e422cac&quot;,
+    &quot;physical_pages&quot;: [
+      9
+    ],
+    &quot;locator&quot;: &quot;Between the first and second composition boxes&quot;,
+    &quot;reading_status&quot;: &quot;absent&quot;,
+    &quot;reading&quot;: null
+  },
+  &quot;editorial_reading&quot;: &quot;（2）チンさんのさくぶん&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;conjectural_repair&quot;,
+  &quot;rationale&quot;: &quot;Supply the probable parallel heading for the second named writer. The source introduction names both writers and labels only the first box; the linked case explains why an intentionally unlabeled second box remains possible.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;N5_07_2023-reading-b002-second-composition-heading&quot;
+  ]
+}</pre></details></div></section><section class="review-group" id="review-reading-b006" data-kinds="difference provisional_fix"><div class="review-group-heading"><h2>reading-b006</h2><a href="../papers/N5_07_2023.html#reading-b006">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><p><ruby>五川町<rt>ごかわまち</rt></ruby>ニュースNo.2259</p><p>はじめてテニスを<ruby>習<rt>なら</rt></ruby>う<ruby>人<rt>ひと</rt></ruby>のテニスきょうしつ</p><p><ruby>五川町<rt>ごかわまち</rt></ruby>のこうえんで、テニスを<ruby>習<rt>なら</rt></ruby>いませんか。A〜Dから、きょうしつをえらんでください。<ruby>一<rt>ひと</rt></ruby>つのきょうしつには3<ruby>回<rt>かい</rt></ruby>じゅぎょうがあります。3<ruby>回<rt>かい</rt></ruby>で1,500<ruby>円<rt>えん</rt></ruby>です。</p><table><thead><tr><th>きょうしつ</th><th><ruby>曜日<rt>ようび</rt></ruby></th><th><ruby>日<rt>ひ</rt></ruby></th><th><ruby>時間<rt>じかん</rt></ruby></th><th>ところ</th></tr></thead><tbody><tr><td>A</td><td><ruby>日<rt>にち</rt></ruby></td><td>①4<ruby>月<rt>がつ</rt></ruby>3<ruby>日<rt>か</rt></ruby>、②10<ruby>日<rt>か</rt></ruby>、③17<ruby>日<rt>にち</rt></ruby></td><td>9<ruby>時<rt>じ</rt></ruby>〜11<ruby>時<rt>じ</rt></ruby></td><td><ruby>東<rt>ひがし</rt></ruby>こうえん</td></tr><tr><td>B</td><td><ruby>日<rt>にち</rt></ruby></td><td>①4<ruby>月<rt>がつ</rt></ruby>10<ruby>日<rt>か</rt></ruby>、②17<ruby>日<rt>にち</rt></ruby>、③24<ruby>日<rt>か</rt></ruby></td><td>9<ruby>時<rt>じ</rt></ruby>〜11<ruby>時<rt>じ</rt></ruby></td><td><ruby>西<rt>にし</rt></ruby>こうえん</td></tr><tr><td>C</td><td><ruby>土<rt>ど</rt></ruby></td><td>①5<ruby>月<rt>がつ</rt></ruby>7<ruby>日<rt>か</rt></ruby>、②14<ruby>日<rt>か</rt></ruby>、③21<ruby>日<rt>にち</rt></ruby></td><td>9<ruby>時<rt>じ</rt></ruby>〜11<ruby>時<rt>じ</rt></ruby></td><td><ruby>東<rt>ひがし</rt></ruby>こうえん</td></tr><tr><td>D</td><td><ruby>日<rt>にち</rt></ruby></td><td>①5<ruby>月<rt>がつ</rt></ruby>15<ruby>日<rt>にち</rt></ruby>、②22<ruby>日<rt>にち</rt></ruby>、③29<ruby>日<rt>にち</rt></ruby></td><td>14<ruby>時<rt>じ</rt></ruby>〜16<ruby>時<rt>じ</rt></ruby></td><td><ruby>東<rt>ひがし</rt></ruby>こうえん</td></tr></tbody></table><p><ruby>習<rt>なら</rt></ruby>いたい<ruby>人<rt>ひと</rt></ruby>は、<ruby>電話<rt>でんわ</rt></ruby>をしてください。</p><p><ruby>五川町<rt>ごかわまち</rt></ruby>　<ruby>電話<rt>でんわ</rt></ruby>　016-998-5674</p></div></details><div class="review-record" id="unresolved_cases-N5_07_2023-reading-b006-lesson-ordinals"><div class="review-label">Provisional fix ·  · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>…t&gt;&lt;/ruby&gt;&lt;/th&gt;&lt;th&gt;&lt;ruby&gt;時間&lt;rt&gt;じかん&lt;/rt&gt;&lt;/ruby&gt;&lt;/th&gt;&lt;th&gt;ところ&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;<mark class="diff-old">① </mark>A&lt;/td&gt;&lt;td&gt;&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;4&lt;ruby&gt;月&lt;rt&gt;がつ&lt;/rt&gt;&lt;/ruby&gt;3&lt;ruby&gt;日&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;、10&lt;ruby&gt;日&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;、③17&lt;ruby&gt;日&lt;rt&gt;にち&lt;…</pre></div><div><h4>Editorial</h4><pre>…t&gt;&lt;/ruby&gt;&lt;/th&gt;&lt;th&gt;&lt;ruby&gt;時間&lt;rt&gt;じかん&lt;/rt&gt;&lt;/ruby&gt;&lt;/th&gt;&lt;th&gt;ところ&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;A&lt;/td&gt;&lt;td&gt;&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;<mark class="diff-new">①</mark>4&lt;ruby&gt;月&lt;rt&gt;がつ&lt;/rt&gt;&lt;/ruby&gt;3&lt;ruby&gt;日&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;、<mark class="diff-new">②</mark>10&lt;ruby&gt;日&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;、③17&lt;ruby&gt;日&lt;rt&gt;に…</pre></div></div><p>Prefer ①,②,③ attached to the first, second and third dates within each row. The explicit three-session structure and consistent ③ position strongly suggest displaced first markers and lost second markers, but the exact printed arrangement cannot be authenticated. All factual table values and keyA are preserved.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>An independent notice image is needed to prove the historical placement and presence of the first and second lesson numbers.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N5_07_2023.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">The final tennis notice lists four classes A–D, each with three lesson dates. The reproduction puts ① before every class letter, omits ②, and prints ③ before each third date.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=13): <code>additional-assets/principals/N5_07_2023.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Notice four class rows and three-session introduction<p>Each row begins ① A/B/C/D; its third date begins ③ and the middle date has no ②. The introduction states 一つのきょうしつには3回じゅぎょうがあります。</p></li><li><span class="principal-repository-source">Principal source (page=3): <code>additional-assets/principals/N5_07_2023.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Question22 explanation<p>Key1/A is identified by Sunday morning at East Park; it does not explain the ordinal placement.</p></li></ul><details><summary>Full published record · unresolved_cases-N5_07_2023-reading-b006-lesson-ordinals</summary><pre>{
+  &quot;case_id&quot;: &quot;N5_07_2023-reading-b006-lesson-ordinals&quot;,
+  &quot;unit&quot;: &quot;N5_07_2023&quot;,
+  &quot;item_id&quot;: &quot;reading-b006&quot;,
+  &quot;field&quot;: &quot;&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: {
+    &quot;id&quot;: &quot;reading-b006&quot;,
+    &quot;type&quot;: &quot;notice&quot;,
+    &quot;content&quot;: {
+      &quot;html&quot;: &quot;&lt;p&gt;&lt;ruby&gt;五川町&lt;rt&gt;ごかわまち&lt;/rt&gt;&lt;/ruby&gt;ニュースNo.2259&lt;/p&gt;&lt;p&gt;はじめてテニスを&lt;ruby&gt;習&lt;rt&gt;なら&lt;/rt&gt;&lt;/ruby&gt;う&lt;ruby&gt;人&lt;rt&gt;ひと&lt;/rt&gt;&lt;/ruby&gt;のテニスきょうしつ&lt;/p&gt;&lt;p&gt;&lt;ruby&gt;五川町&lt;rt&gt;ごかわまち&lt;/rt&gt;&lt;/ruby&gt;のこうえんで、テニスを&lt;ruby&gt;習&lt;rt&gt;なら&lt;/rt&gt;&lt;/ruby&gt;いませんか。A〜Dから、きょうしつをえらんでください。&lt;ruby&gt;一&lt;rt&gt;ひと&lt;/rt&gt;&lt;/ruby&gt;つのきょうしつには3&lt;ruby&gt;回&lt;rt&gt;かい&lt;/rt&gt;&lt;/ruby&gt;じゅぎょうがあります。3&lt;ruby&gt;回&lt;rt&gt;かい&lt;/rt&gt;&lt;/ruby&gt;で1,500&lt;ruby&gt;円&lt;rt&gt;えん&lt;/rt&gt;&lt;/ruby&gt;です。&lt;/p&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;きょうしつ&lt;/th&gt;&lt;th&gt;&lt;ruby&gt;曜日&lt;rt&gt;ようび&lt;/rt&gt;&lt;/ruby&gt;&lt;/th&gt;&lt;th&gt;&lt;ruby&gt;日&lt;rt&gt;ひ&lt;/rt&gt;&lt;/ruby&gt;&lt;/th&gt;&lt;th&gt;&lt;ruby&gt;時間&lt;rt&gt;じかん&lt;/rt&gt;&lt;/ruby&gt;&lt;/th&gt;&lt;th&gt;ところ&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;A&lt;/td&gt;&lt;td&gt;&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;①4&lt;ruby&gt;月&lt;rt&gt;がつ&lt;/rt&gt;&lt;/ruby&gt;3&lt;ruby&gt;日&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;、②10&lt;ruby&gt;日&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;、③17&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;9&lt;ruby&gt;時&lt;rt&gt;じ&lt;/rt&gt;&lt;/ruby&gt;〜11&lt;ruby&gt;時&lt;rt&gt;じ&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;&lt;ruby&gt;東&lt;rt&gt;ひがし&lt;/rt&gt;&lt;/ruby&gt;こうえん&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;B&lt;/td&gt;&lt;td&gt;&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;①4&lt;ruby&gt;月&lt;rt&gt;がつ&lt;/rt&gt;&lt;/ruby&gt;10&lt;ruby&gt;日&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;、②17&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;、③24&lt;ruby&gt;日&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;9&lt;ruby&gt;時&lt;rt&gt;じ&lt;/rt&gt;&lt;/ruby&gt;〜11&lt;ruby&gt;時&lt;rt&gt;じ&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;&lt;ruby&gt;西&lt;rt&gt;にし&lt;/rt&gt;&lt;/ruby&gt;こうえん&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C&lt;/td&gt;&lt;td&gt;&lt;ruby&gt;土&lt;rt&gt;ど&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;①5&lt;ruby&gt;月&lt;rt&gt;がつ&lt;/rt&gt;&lt;/ruby&gt;7&lt;ruby&gt;日&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;、②14&lt;ruby&gt;日&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;、③21&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;9&lt;ruby&gt;時&lt;rt&gt;じ&lt;/rt&gt;&lt;/ruby&gt;〜11&lt;ruby&gt;時&lt;rt&gt;じ&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;&lt;ruby&gt;東&lt;rt&gt;ひがし&lt;/rt&gt;&lt;/ruby&gt;こうえん&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;D&lt;/td&gt;&lt;td&gt;&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;①5&lt;ruby&gt;月&lt;rt&gt;がつ&lt;/rt&gt;&lt;/ruby&gt;15&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;、②22&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;、③29&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;14&lt;ruby&gt;時&lt;rt&gt;じ&lt;/rt&gt;&lt;/ruby&gt;〜16&lt;ruby&gt;時&lt;rt&gt;じ&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;&lt;ruby&gt;東&lt;rt&gt;ひがし&lt;/rt&gt;&lt;/ruby&gt;こうえん&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;ruby&gt;習&lt;rt&gt;なら&lt;/rt&gt;&lt;/ruby&gt;いたい&lt;ruby&gt;人&lt;rt&gt;ひと&lt;/rt&gt;&lt;/ruby&gt;は、&lt;ruby&gt;電話&lt;rt&gt;でんわ&lt;/rt&gt;&lt;/ruby&gt;をしてください。&lt;/p&gt;&lt;p&gt;&lt;ruby&gt;五川町&lt;rt&gt;ごかわまち&lt;/rt&gt;&lt;/ruby&gt;　&lt;ruby&gt;電話&lt;rt&gt;でんわ&lt;/rt&gt;&lt;/ruby&gt;　016-998-5674&lt;/p&gt;&quot;
+    }
+  },
+  &quot;before&quot;: null,
+  &quot;context&quot;: &quot;The final tennis notice lists four classes A–D, each with three lesson dates. The reproduction puts ① before every class letter, omits ②, and prints ③ before each third date.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: {
+        &quot;id&quot;: &quot;reading-b006&quot;,
+        &quot;type&quot;: &quot;notice&quot;,
+        &quot;content&quot;: {
+          &quot;html&quot;: &quot;&lt;p&gt;&lt;ruby&gt;五川町&lt;rt&gt;ごかわまち&lt;/rt&gt;&lt;/ruby&gt;ニュースNo.2259&lt;/p&gt;&lt;p&gt;はじめてテニスを&lt;ruby&gt;習&lt;rt&gt;なら&lt;/rt&gt;&lt;/ruby&gt;う&lt;ruby&gt;人&lt;rt&gt;ひと&lt;/rt&gt;&lt;/ruby&gt;のテニスきょうしつ&lt;/p&gt;&lt;p&gt;&lt;ruby&gt;五川町&lt;rt&gt;ごかわまち&lt;/rt&gt;&lt;/ruby&gt;のこうえんで、テニスを&lt;ruby&gt;習&lt;rt&gt;なら&lt;/rt&gt;&lt;/ruby&gt;いませんか。A〜Dから、きょうしつをえらんでください。&lt;ruby&gt;一&lt;rt&gt;ひと&lt;/rt&gt;&lt;/ruby&gt;つのきょうしつには3&lt;ruby&gt;回&lt;rt&gt;かい&lt;/rt&gt;&lt;/ruby&gt;じゅぎょうがあります。3&lt;ruby&gt;回&lt;rt&gt;かい&lt;/rt&gt;&lt;/ruby&gt;で1,500&lt;ruby&gt;円&lt;rt&gt;えん&lt;/rt&gt;&lt;/ruby&gt;です。&lt;/p&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;きょうしつ&lt;/th&gt;&lt;th&gt;&lt;ruby&gt;曜日&lt;rt&gt;ようび&lt;/rt&gt;&lt;/ruby&gt;&lt;/th&gt;&lt;th&gt;&lt;ruby&gt;日&lt;rt&gt;ひ&lt;/rt&gt;&lt;/ruby&gt;&lt;/th&gt;&lt;th&gt;&lt;ruby&gt;時間&lt;rt&gt;じかん&lt;/rt&gt;&lt;/ruby&gt;&lt;/th&gt;&lt;th&gt;ところ&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;① A&lt;/td&gt;&lt;td&gt;&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;4&lt;ruby&gt;月&lt;rt&gt;がつ&lt;/rt&gt;&lt;/ruby&gt;3&lt;ruby&gt;日&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;、10&lt;ruby&gt;日&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;、③17&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;9&lt;ruby&gt;時&lt;rt&gt;じ&lt;/rt&gt;&lt;/ruby&gt;〜11&lt;ruby&gt;時&lt;rt&gt;じ&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;&lt;ruby&gt;東&lt;rt&gt;ひがし&lt;/rt&gt;&lt;/ruby&gt;こうえん&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;① B&lt;/td&gt;&lt;td&gt;&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;4&lt;ruby&gt;月&lt;rt&gt;がつ&lt;/rt&gt;&lt;/ruby&gt;10&lt;ruby&gt;日&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;、17&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;、③24&lt;ruby&gt;日&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;9&lt;ruby&gt;時&lt;rt&gt;じ&lt;/rt&gt;&lt;/ruby&gt;〜11&lt;ruby&gt;時&lt;rt&gt;じ&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;&lt;ruby&gt;西&lt;rt&gt;にし&lt;/rt&gt;&lt;/ruby&gt;こうえん&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;① C&lt;/td&gt;&lt;td&gt;&lt;ruby&gt;土&lt;rt&gt;ど&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;5&lt;ruby&gt;月&lt;rt&gt;がつ&lt;/rt&gt;&lt;/ruby&gt;7&lt;ruby&gt;日&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;、14&lt;ruby&gt;日&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;、③21&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;9&lt;ruby&gt;時&lt;rt&gt;じ&lt;/rt&gt;&lt;/ruby&gt;〜11&lt;ruby&gt;時&lt;rt&gt;じ&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;&lt;ruby&gt;東&lt;rt&gt;ひがし&lt;/rt&gt;&lt;/ruby&gt;こうえん&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;① D&lt;/td&gt;&lt;td&gt;&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;5&lt;ruby&gt;月&lt;rt&gt;がつ&lt;/rt&gt;&lt;/ruby&gt;15&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;、22&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;、③29&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;14&lt;ruby&gt;時&lt;rt&gt;じ&lt;/rt&gt;&lt;/ruby&gt;〜16&lt;ruby&gt;時&lt;rt&gt;じ&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;&lt;ruby&gt;東&lt;rt&gt;ひがし&lt;/rt&gt;&lt;/ruby&gt;こうえん&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;ruby&gt;習&lt;rt&gt;なら&lt;/rt&gt;&lt;/ruby&gt;いたい&lt;ruby&gt;人&lt;rt&gt;ひと&lt;/rt&gt;&lt;/ruby&gt;は、&lt;ruby&gt;電話&lt;rt&gt;でんわ&lt;/rt&gt;&lt;/ruby&gt;をしてください。&lt;/p&gt;&lt;p&gt;&lt;ruby&gt;五川町&lt;rt&gt;ごかわまち&lt;/rt&gt;&lt;/ruby&gt;　&lt;ruby&gt;電話&lt;rt&gt;でんわ&lt;/rt&gt;&lt;/ruby&gt;　016-998-5674&lt;/p&gt;&quot;
+        }
+      },
+      &quot;assessment&quot;: &quot;Retain the exact anomalous row-prefix and date-number arrangement. The dates, class letters, weekdays, times and venues remain recoverable without repairing these markers.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;2023年7月N5试题不含听力.pdf&quot;,
+      &quot;sha256&quot;: &quot;05d287c536cebc5e1234317f2b3279b23d097188156610d4e20bcfb54e422cac&quot;,
+      &quot;physical_pages&quot;: [
+        13
+      ],
+      &quot;locator&quot;: &quot;Notice four class rows and three-session introduction&quot;,
+      &quot;reading&quot;: &quot;Each row begins ① A/B/C/D; its third date begins ③ and the middle date has no ②. The introduction states 一つのきょうしつには3回じゅぎょうがあります。&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2023年7月N5答案及解析（含听力原文）.pdf&quot;,
+      &quot;sha256&quot;: &quot;f2535c8c6b40a6a8537c96049a805f2cc83e86d8dc65a2cf1548f04040f6ad93&quot;,
+      &quot;physical_pages&quot;: [
+        3
+      ],
+      &quot;locator&quot;: &quot;Question22 explanation&quot;,
+      &quot;reading&quot;: &quot;Key1/A is identified by Sunday morning at East Park; it does not explain the ordinal placement.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Prefer ①,②,③ attached to the first, second and third dates within each row. The explicit three-session structure and consistent ③ position strongly suggest displaced first markers and lost second markers, but the exact printed arrangement cannot be authenticated. All factual table values and keyA are preserved.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Inspected the full original notice and enlarged all four rows, including circled numerals and table headers.&quot;,
+    &quot;Mapped every date, weekday, time and park back to its class and verified that only A satisfies all three conditions.&quot;,
+    &quot;Compared the two OCR outputs with the source image; their order is not independent evidence of a different table.&quot;,
+    &quot;Tested literal row bullets versus three-session ordinals in light of the introduction and repeated third-date marker.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;An independent notice image is needed to prove the historical placement and presence of the first and second lesson numbers.&quot;
+}</pre></details></div><div class="review-record" id="principal_differences-N5_07_2023-PD-009"><div class="review-label">Principal difference · /content · high</div><div class="comparison"><div><h4>Principal</h4><pre>テニス<mark class="diff-old"> </mark>き<mark class="diff-old">よ</mark>うしつ</pre></div><div><h4>Editorial</h4><pre>テニスき<mark class="diff-new">ょ</mark>うしつ</pre></div></div><p>Use small ょ in the ordinary word 教室, consistently with the same word in the notice body and table header.</p><span class="principal-repository-source">Principal source (page=13): <code>additional-assets/principals/N5_07_2023.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Notice headline</span><details><summary>Full published record · principal_differences-N5_07_2023-PD-009</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N5_07_2023-PD-009&quot;,
+  &quot;unit&quot;: &quot;N5_07_2023&quot;,
+  &quot;item_id&quot;: &quot;reading-b006&quot;,
+  &quot;field&quot;: &quot;/content&quot;,
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;&lt;p&gt;&lt;ruby&gt;五川町&lt;rt&gt;ごかわまち&lt;/rt&gt;&lt;/ruby&gt;ニュースNo.2259&lt;/p&gt;&lt;p&gt;はじめてテニスを&lt;ruby&gt;習&lt;rt&gt;なら&lt;/rt&gt;&lt;/ruby&gt;う&lt;ruby&gt;人&lt;rt&gt;ひと&lt;/rt&gt;&lt;/ruby&gt;のテニスきょうしつ&lt;/p&gt;&lt;p&gt;&lt;ruby&gt;五川町&lt;rt&gt;ごかわまち&lt;/rt&gt;&lt;/ruby&gt;のこうえんで、テニスを&lt;ruby&gt;習&lt;rt&gt;なら&lt;/rt&gt;&lt;/ruby&gt;いませんか。A〜Dから、きょうしつをえらんでください。&lt;ruby&gt;一&lt;rt&gt;ひと&lt;/rt&gt;&lt;/ruby&gt;つのきょうしつには3&lt;ruby&gt;回&lt;rt&gt;かい&lt;/rt&gt;&lt;/ruby&gt;じゅぎょうがあります。3&lt;ruby&gt;回&lt;rt&gt;かい&lt;/rt&gt;&lt;/ruby&gt;で1,500&lt;ruby&gt;円&lt;rt&gt;えん&lt;/rt&gt;&lt;/ruby&gt;です。&lt;/p&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;きょうしつ&lt;/th&gt;&lt;th&gt;&lt;ruby&gt;曜日&lt;rt&gt;ようび&lt;/rt&gt;&lt;/ruby&gt;&lt;/th&gt;&lt;th&gt;&lt;ruby&gt;日&lt;rt&gt;ひ&lt;/rt&gt;&lt;/ruby&gt;&lt;/th&gt;&lt;th&gt;&lt;ruby&gt;時間&lt;rt&gt;じかん&lt;/rt&gt;&lt;/ruby&gt;&lt;/th&gt;&lt;th&gt;ところ&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;A&lt;/td&gt;&lt;td&gt;&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;①4&lt;ruby&gt;月&lt;rt&gt;がつ&lt;/rt&gt;&lt;/ruby&gt;3&lt;ruby&gt;日&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;、②10&lt;ruby&gt;日&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;、③17&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;9&lt;ruby&gt;時&lt;rt&gt;じ&lt;/rt&gt;&lt;/ruby&gt;〜11&lt;ruby&gt;時&lt;rt&gt;じ&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;&lt;ruby&gt;東&lt;rt&gt;ひがし&lt;/rt&gt;&lt;/ruby&gt;こうえん&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;B&lt;/td&gt;&lt;td&gt;&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;①4&lt;ruby&gt;月&lt;rt&gt;がつ&lt;/rt&gt;&lt;/ruby&gt;10&lt;ruby&gt;日&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;、②17&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;、③24&lt;ruby&gt;日&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;9&lt;ruby&gt;時&lt;rt&gt;じ&lt;/rt&gt;&lt;/ruby&gt;〜11&lt;ruby&gt;時&lt;rt&gt;じ&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;&lt;ruby&gt;西&lt;rt&gt;にし&lt;/rt&gt;&lt;/ruby&gt;こうえん&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C&lt;/td&gt;&lt;td&gt;&lt;ruby&gt;土&lt;rt&gt;ど&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;①5&lt;ruby&gt;月&lt;rt&gt;がつ&lt;/rt&gt;&lt;/ruby&gt;7&lt;ruby&gt;日&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;、②14&lt;ruby&gt;日&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;、③21&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;9&lt;ruby&gt;時&lt;rt&gt;じ&lt;/rt&gt;&lt;/ruby&gt;〜11&lt;ruby&gt;時&lt;rt&gt;じ&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;&lt;ruby&gt;東&lt;rt&gt;ひがし&lt;/rt&gt;&lt;/ruby&gt;こうえん&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;D&lt;/td&gt;&lt;td&gt;&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;①5&lt;ruby&gt;月&lt;rt&gt;がつ&lt;/rt&gt;&lt;/ruby&gt;15&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;、②22&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;、③29&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;14&lt;ruby&gt;時&lt;rt&gt;じ&lt;/rt&gt;&lt;/ruby&gt;〜16&lt;ruby&gt;時&lt;rt&gt;じ&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;&lt;ruby&gt;東&lt;rt&gt;ひがし&lt;/rt&gt;&lt;/ruby&gt;こうえん&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;ruby&gt;習&lt;rt&gt;なら&lt;/rt&gt;&lt;/ruby&gt;いたい&lt;ruby&gt;人&lt;rt&gt;ひと&lt;/rt&gt;&lt;/ruby&gt;は、&lt;ruby&gt;電話&lt;rt&gt;でんわ&lt;/rt&gt;&lt;/ruby&gt;をしてください。&lt;/p&gt;&lt;p&gt;&lt;ruby&gt;五川町&lt;rt&gt;ごかわまち&lt;/rt&gt;&lt;/ruby&gt;　&lt;ruby&gt;電話&lt;rt&gt;でんわ&lt;/rt&gt;&lt;/ruby&gt;　016-998-5674&lt;/p&gt;&quot;
+  },
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2023年7月N5试题不含听力.pdf&quot;,
+    &quot;sha256&quot;: &quot;05d287c536cebc5e1234317f2b3279b23d097188156610d4e20bcfb54e422cac&quot;,
+    &quot;physical_pages&quot;: [
+      13
+    ],
+    &quot;locator&quot;: &quot;Notice headline&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;テニス きようしつ&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;テニスきょうしつ&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Use small ょ in the ordinary word 教室, consistently with the same word in the notice body and table header.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;N5_07_2023-reading-b006-lesson-ordinals&quot;
+  ]
+}</pre></details></div><div class="review-record" id="principal_differences-N5_07_2023-PD-010"><div class="review-label">Principal difference · /content · high</div><div class="comparison"><div><h4>Principal</h4><pre>24&lt;ruby&gt;日&lt;rt&gt;<mark class="diff-old">にち</mark>&lt;/rt&gt;&lt;/ruby&gt;</pre></div><div><h4>Editorial</h4><pre>24&lt;ruby&gt;日&lt;rt&gt;<mark class="diff-new">か</mark>&lt;/rt&gt;&lt;/ruby&gt;</pre></div></div><p>Correct the printed reading aid for the twenty-fourth calendar day. Preserve the original base span 日 and leave the numeral unannotated, as with the partial 日(か) reading on other irregular dates in this table; do not add a new full-date reading.</p><span class="principal-repository-source">Principal source (page=13): <code>additional-assets/principals/N5_07_2023.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">ClassB third lesson date</span><details><summary>Full published record · principal_differences-N5_07_2023-PD-010</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N5_07_2023-PD-010&quot;,
+  &quot;unit&quot;: &quot;N5_07_2023&quot;,
+  &quot;item_id&quot;: &quot;reading-b006&quot;,
+  &quot;field&quot;: &quot;/content&quot;,
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;&lt;p&gt;&lt;ruby&gt;五川町&lt;rt&gt;ごかわまち&lt;/rt&gt;&lt;/ruby&gt;ニュースNo.2259&lt;/p&gt;&lt;p&gt;はじめてテニスを&lt;ruby&gt;習&lt;rt&gt;なら&lt;/rt&gt;&lt;/ruby&gt;う&lt;ruby&gt;人&lt;rt&gt;ひと&lt;/rt&gt;&lt;/ruby&gt;のテニスきょうしつ&lt;/p&gt;&lt;p&gt;&lt;ruby&gt;五川町&lt;rt&gt;ごかわまち&lt;/rt&gt;&lt;/ruby&gt;のこうえんで、テニスを&lt;ruby&gt;習&lt;rt&gt;なら&lt;/rt&gt;&lt;/ruby&gt;いませんか。A〜Dから、きょうしつをえらんでください。&lt;ruby&gt;一&lt;rt&gt;ひと&lt;/rt&gt;&lt;/ruby&gt;つのきょうしつには3&lt;ruby&gt;回&lt;rt&gt;かい&lt;/rt&gt;&lt;/ruby&gt;じゅぎょうがあります。3&lt;ruby&gt;回&lt;rt&gt;かい&lt;/rt&gt;&lt;/ruby&gt;で1,500&lt;ruby&gt;円&lt;rt&gt;えん&lt;/rt&gt;&lt;/ruby&gt;です。&lt;/p&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;きょうしつ&lt;/th&gt;&lt;th&gt;&lt;ruby&gt;曜日&lt;rt&gt;ようび&lt;/rt&gt;&lt;/ruby&gt;&lt;/th&gt;&lt;th&gt;&lt;ruby&gt;日&lt;rt&gt;ひ&lt;/rt&gt;&lt;/ruby&gt;&lt;/th&gt;&lt;th&gt;&lt;ruby&gt;時間&lt;rt&gt;じかん&lt;/rt&gt;&lt;/ruby&gt;&lt;/th&gt;&lt;th&gt;ところ&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;A&lt;/td&gt;&lt;td&gt;&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;①4&lt;ruby&gt;月&lt;rt&gt;がつ&lt;/rt&gt;&lt;/ruby&gt;3&lt;ruby&gt;日&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;、②10&lt;ruby&gt;日&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;、③17&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;9&lt;ruby&gt;時&lt;rt&gt;じ&lt;/rt&gt;&lt;/ruby&gt;〜11&lt;ruby&gt;時&lt;rt&gt;じ&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;&lt;ruby&gt;東&lt;rt&gt;ひがし&lt;/rt&gt;&lt;/ruby&gt;こうえん&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;B&lt;/td&gt;&lt;td&gt;&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;①4&lt;ruby&gt;月&lt;rt&gt;がつ&lt;/rt&gt;&lt;/ruby&gt;10&lt;ruby&gt;日&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;、②17&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;、③24&lt;ruby&gt;日&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;9&lt;ruby&gt;時&lt;rt&gt;じ&lt;/rt&gt;&lt;/ruby&gt;〜11&lt;ruby&gt;時&lt;rt&gt;じ&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;&lt;ruby&gt;西&lt;rt&gt;にし&lt;/rt&gt;&lt;/ruby&gt;こうえん&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C&lt;/td&gt;&lt;td&gt;&lt;ruby&gt;土&lt;rt&gt;ど&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;①5&lt;ruby&gt;月&lt;rt&gt;がつ&lt;/rt&gt;&lt;/ruby&gt;7&lt;ruby&gt;日&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;、②14&lt;ruby&gt;日&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;、③21&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;9&lt;ruby&gt;時&lt;rt&gt;じ&lt;/rt&gt;&lt;/ruby&gt;〜11&lt;ruby&gt;時&lt;rt&gt;じ&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;&lt;ruby&gt;東&lt;rt&gt;ひがし&lt;/rt&gt;&lt;/ruby&gt;こうえん&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;D&lt;/td&gt;&lt;td&gt;&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;①5&lt;ruby&gt;月&lt;rt&gt;がつ&lt;/rt&gt;&lt;/ruby&gt;15&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;、②22&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;、③29&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;14&lt;ruby&gt;時&lt;rt&gt;じ&lt;/rt&gt;&lt;/ruby&gt;〜16&lt;ruby&gt;時&lt;rt&gt;じ&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;&lt;ruby&gt;東&lt;rt&gt;ひがし&lt;/rt&gt;&lt;/ruby&gt;こうえん&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;ruby&gt;習&lt;rt&gt;なら&lt;/rt&gt;&lt;/ruby&gt;いたい&lt;ruby&gt;人&lt;rt&gt;ひと&lt;/rt&gt;&lt;/ruby&gt;は、&lt;ruby&gt;電話&lt;rt&gt;でんわ&lt;/rt&gt;&lt;/ruby&gt;をしてください。&lt;/p&gt;&lt;p&gt;&lt;ruby&gt;五川町&lt;rt&gt;ごかわまち&lt;/rt&gt;&lt;/ruby&gt;　&lt;ruby&gt;電話&lt;rt&gt;でんわ&lt;/rt&gt;&lt;/ruby&gt;　016-998-5674&lt;/p&gt;&quot;
+  },
+  &quot;categories&quot;: [
+    &quot;ruby&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2023年7月N5试题不含听力.pdf&quot;,
+    &quot;sha256&quot;: &quot;05d287c536cebc5e1234317f2b3279b23d097188156610d4e20bcfb54e422cac&quot;,
+    &quot;physical_pages&quot;: [
+      13
+    ],
+    &quot;locator&quot;: &quot;ClassB third lesson date&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;24&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;24&lt;ruby&gt;日&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Correct the printed reading aid for the twenty-fourth calendar day. Preserve the original base span 日 and leave the numeral unannotated, as with the partial 日(か) reading on other irregular dates in this table; do not add a new full-date reading.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;N5_07_2023-reading-b006-lesson-ordinals&quot;
+  ]
+}</pre></details></div><div class="review-record" id="principal_differences-N5_07_2023-PD-011"><div class="review-label">Principal difference · /content · high</div><div class="comparison"><div><h4>Principal</h4><pre><mark class="diff-old">① </mark>A /<mark class="diff-old"> ①</mark> B / <mark class="diff-old">① </mark>C / <mark class="diff-old">① </mark>D;<mark class="diff-old"> third</mark> dates carry ③<mark class="diff-old"> and second dates have no ②</mark></pre></div><div><h4>Editorial</h4><pre>A / B / C / D; dates <mark class="diff-new">within each row </mark>carry <mark class="diff-new">①,②,</mark>③</pre></div></div><p>Place the lesson ordinals with their dates in each class, preserving every class label, date, weekday, time and venue. The three-session introduction and repeated third-date markers support this arrangement; exact original placement remains provisional.</p><span class="principal-repository-source">Principal source (page=13): <code>additional-assets/principals/N5_07_2023.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">First and second lesson-number markers across four rows</span><details><summary>Full published record · principal_differences-N5_07_2023-PD-011</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N5_07_2023-PD-011&quot;,
+  &quot;unit&quot;: &quot;N5_07_2023&quot;,
+  &quot;item_id&quot;: &quot;reading-b006&quot;,
+  &quot;field&quot;: &quot;/content&quot;,
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;&lt;p&gt;&lt;ruby&gt;五川町&lt;rt&gt;ごかわまち&lt;/rt&gt;&lt;/ruby&gt;ニュースNo.2259&lt;/p&gt;&lt;p&gt;はじめてテニスを&lt;ruby&gt;習&lt;rt&gt;なら&lt;/rt&gt;&lt;/ruby&gt;う&lt;ruby&gt;人&lt;rt&gt;ひと&lt;/rt&gt;&lt;/ruby&gt;のテニスきょうしつ&lt;/p&gt;&lt;p&gt;&lt;ruby&gt;五川町&lt;rt&gt;ごかわまち&lt;/rt&gt;&lt;/ruby&gt;のこうえんで、テニスを&lt;ruby&gt;習&lt;rt&gt;なら&lt;/rt&gt;&lt;/ruby&gt;いませんか。A〜Dから、きょうしつをえらんでください。&lt;ruby&gt;一&lt;rt&gt;ひと&lt;/rt&gt;&lt;/ruby&gt;つのきょうしつには3&lt;ruby&gt;回&lt;rt&gt;かい&lt;/rt&gt;&lt;/ruby&gt;じゅぎょうがあります。3&lt;ruby&gt;回&lt;rt&gt;かい&lt;/rt&gt;&lt;/ruby&gt;で1,500&lt;ruby&gt;円&lt;rt&gt;えん&lt;/rt&gt;&lt;/ruby&gt;です。&lt;/p&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;きょうしつ&lt;/th&gt;&lt;th&gt;&lt;ruby&gt;曜日&lt;rt&gt;ようび&lt;/rt&gt;&lt;/ruby&gt;&lt;/th&gt;&lt;th&gt;&lt;ruby&gt;日&lt;rt&gt;ひ&lt;/rt&gt;&lt;/ruby&gt;&lt;/th&gt;&lt;th&gt;&lt;ruby&gt;時間&lt;rt&gt;じかん&lt;/rt&gt;&lt;/ruby&gt;&lt;/th&gt;&lt;th&gt;ところ&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;A&lt;/td&gt;&lt;td&gt;&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;①4&lt;ruby&gt;月&lt;rt&gt;がつ&lt;/rt&gt;&lt;/ruby&gt;3&lt;ruby&gt;日&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;、②10&lt;ruby&gt;日&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;、③17&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;9&lt;ruby&gt;時&lt;rt&gt;じ&lt;/rt&gt;&lt;/ruby&gt;〜11&lt;ruby&gt;時&lt;rt&gt;じ&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;&lt;ruby&gt;東&lt;rt&gt;ひがし&lt;/rt&gt;&lt;/ruby&gt;こうえん&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;B&lt;/td&gt;&lt;td&gt;&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;①4&lt;ruby&gt;月&lt;rt&gt;がつ&lt;/rt&gt;&lt;/ruby&gt;10&lt;ruby&gt;日&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;、②17&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;、③24&lt;ruby&gt;日&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;9&lt;ruby&gt;時&lt;rt&gt;じ&lt;/rt&gt;&lt;/ruby&gt;〜11&lt;ruby&gt;時&lt;rt&gt;じ&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;&lt;ruby&gt;西&lt;rt&gt;にし&lt;/rt&gt;&lt;/ruby&gt;こうえん&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;C&lt;/td&gt;&lt;td&gt;&lt;ruby&gt;土&lt;rt&gt;ど&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;①5&lt;ruby&gt;月&lt;rt&gt;がつ&lt;/rt&gt;&lt;/ruby&gt;7&lt;ruby&gt;日&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;、②14&lt;ruby&gt;日&lt;rt&gt;か&lt;/rt&gt;&lt;/ruby&gt;、③21&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;9&lt;ruby&gt;時&lt;rt&gt;じ&lt;/rt&gt;&lt;/ruby&gt;〜11&lt;ruby&gt;時&lt;rt&gt;じ&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;&lt;ruby&gt;東&lt;rt&gt;ひがし&lt;/rt&gt;&lt;/ruby&gt;こうえん&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;D&lt;/td&gt;&lt;td&gt;&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;①5&lt;ruby&gt;月&lt;rt&gt;がつ&lt;/rt&gt;&lt;/ruby&gt;15&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;、②22&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;、③29&lt;ruby&gt;日&lt;rt&gt;にち&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;14&lt;ruby&gt;時&lt;rt&gt;じ&lt;/rt&gt;&lt;/ruby&gt;〜16&lt;ruby&gt;時&lt;rt&gt;じ&lt;/rt&gt;&lt;/ruby&gt;&lt;/td&gt;&lt;td&gt;&lt;ruby&gt;東&lt;rt&gt;ひがし&lt;/rt&gt;&lt;/ruby&gt;こうえん&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;ruby&gt;習&lt;rt&gt;なら&lt;/rt&gt;&lt;/ruby&gt;いたい&lt;ruby&gt;人&lt;rt&gt;ひと&lt;/rt&gt;&lt;/ruby&gt;は、&lt;ruby&gt;電話&lt;rt&gt;でんわ&lt;/rt&gt;&lt;/ruby&gt;をしてください。&lt;/p&gt;&lt;p&gt;&lt;ruby&gt;五川町&lt;rt&gt;ごかわまち&lt;/rt&gt;&lt;/ruby&gt;　&lt;ruby&gt;電話&lt;rt&gt;でんわ&lt;/rt&gt;&lt;/ruby&gt;　016-998-5674&lt;/p&gt;&quot;
+  },
+  &quot;categories&quot;: [
+    &quot;numbers&quot;,
+    &quot;boundaries&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2023年7月N5试题不含听力.pdf&quot;,
+    &quot;sha256&quot;: &quot;05d287c536cebc5e1234317f2b3279b23d097188156610d4e20bcfb54e422cac&quot;,
+    &quot;physical_pages&quot;: [
+      13
+    ],
+    &quot;locator&quot;: &quot;First and second lesson-number markers across four rows&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;① A / ① B / ① C / ① D; third dates carry ③ and second dates have no ②&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;A / B / C / D; dates within each row carry ①,②,③&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;conjectural_repair&quot;,
+  &quot;rationale&quot;: &quot;Place the lesson ordinals with their dates in each class, preserving every class label, date, weekday, time and venue. The three-session introduction and repeated third-date markers support this arrangement; exact original placement remains provisional.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;N5_07_2023-reading-b006-lesson-ordinals&quot;
+  ]
+}</pre></details></div></section></div></main><footer class="site-footer"><span class="developer-only">Developer mode</span></footer><div id="toast" role="status" class="toast" hidden></div><script id="page-data" type="application/json">{"review":true}</script><script id="theme-data" src="../assets/theme-data.js?v=f06ad9e2434b" defer></script><script src="../assets/app.js?v=0d75deb05ae3" defer></script></body></html>

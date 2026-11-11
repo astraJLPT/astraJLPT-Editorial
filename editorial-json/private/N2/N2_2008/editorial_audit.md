@@ -1,0 +1,37 @@
+# N2_2008 written-content audit — H24
+
+The available written examination has been reconstructed and reviewed: 65 vocabulary questions, 23 reading questions, 35 grammar questions, 492 choices, 17 vocabulary contexts and nine reading contexts. No scored question or key is missing. No unresolved content case remains. Three confident departures from the selected principal are recorded. Original written booklet covers are unavailable; no worked example was found in either complete available written sequence.
+
+The missing-editorial preflight established five consecutive complete questions and their shared contexts from the indexed year-specific PDF before admission and reconstruction. The admitted identity is 2008 historical Level 2. December attribution uses the year/level headings and the [official JLPT account of the annual schedule through 2008](https://www.jlpt.jp/reference/pdf/guide2011.pdf), not a filename alone. Reconstruction is directly into Old schema 3.9.0.
+
+## Source review
+
+The principal is `src/日语JLPT真题1992～2025.12（及时转存，避免丢失）/渠道一/日语N2真题/1991年-2009年/1995-2009.pdf`, SHA-256 `115e8c098ee3caed702d29a24d2ce0c883c3ad9152e21eee4200fc4e80f2a3fb`, indexed Tier 3. Frontmatter physical 1–3 identifies the 2011 collection, ISBN 978-7-80218-992-8, with a licensed-original-question claim. This does not authenticate the exact distributed PDF. An unchanged inspection copy is retained under `principal/` and hash-verified.
+
+All principal written question regions were visually read: physical 84–86; vocabulary on 87 above listening; reading on 90 below the listening conclusion; and 91–99. Physical 100 supplies the written keys. Every written explanation was read on 101–103, the vocabulary portion of 104, the reading portion at the bottom of 105, 106–113, and the grammar ending at the top of 114. Printed paper folios are physical page minus 10. Listening material on mixed pages was excluded. Source rasters are inspection derivatives, not composed exam PDFs.
+
+The year-specific PDF `src\JLPT N1-N5, Past papers\N2\2008年\2008年日语能力考试2级真题及答案.pdf`, SHA-256 `39dc1e471fee149cb9fa7bb28ba85f4b0aee5e1f306c8257f87c937e4b9fbf88`, was compared across all vocabulary and reading/grammar sections: physical 1–10 plus the q52 ending and written key tables on 11. It omits questions 53–58, which are complete in the principal. Its Chinese reading translations were visually read from the reading heading near the bottom of 18 through 20. Translations supply secondary meaning comparison, not Japanese wording or annotation authority. The PDF's listening pages and regions were excluded.
+
+Both indexed answer images, hashes `265ab7ec25f02584f869688a8e7cdedadc9b632fdeba127bab9bab00ecaa353d` and `9b7199f2a47fd193e4d329c4717c0ca2a76cc84c8a58fb32151b5f2df187ee2a`, were visually read over all written tables. They reproduce the same ACB浅田 key, one watermarked, with gaps and no vocabulary III keys. They are related variants, not independent votes. Generic listening advice, the listening supplement PDF and listening DOC were excluded. No zdiamond_scans source was used.
+
+## Content decisions
+
+The principal's vocabulary 17 labels read 1,2,4,4; the third alternative is restored to ordinal 3 without changing text or key. Reading 6's fourth combination incorrectly refers to ⑨; the actual three blanks are ⑥⑦⑧, so its final reference is repaired to ⑧. The first grammar heading prints VI instead of IV; the sequence, written key and explanation establish IV. All three literal departures have exact current-field snapshots and evidence in the public principal register.
+
+The year PDF adds an unrelated school/TV question before actual reading 19 and an unrelated 多くの観光客が訪れる grammar question before actual 24. Neither belongs to the aligned numbered sequence and neither is imported. Its incorrect reading III range (1)–(4), vocabulary III task instruction, and isolated Japanese transcription errors are resolved to the visually legible principal. Intentional orthographic distractors, including 禿員会, 疫くて, 疲くて, 詞った, 仿った and the 省略 alternatives, remain unchanged. Enlarged source crops settled difficult glyphs, selective ruby and the closing quotation mark in reading 14; the latter needs no repair.
+
+All 123 keys agree between principal physical 100 and year PDF physical 11 and were checked against Japanese task logic and the complete printed explanations. Both key images incorrectly give reading 6=1 and 7=4. The passage identifies producers as increasing demand and consumers as the opposing party; choices 4 and 3 respectively are uniquely supported by the passage, principal key and explanations. These resolved secondary discrepancies are recorded without fabricating uncertainty.
+
+The full reading 23 chart is retained as an unchanged source crop. All 13 legend entries, the two-year axis, marker identities, note references and printed values were visually inspected. Company future falls 27→9; ability/personality rises 19→29; interesting work 16→21; technical training 7→14. The increases of 10, 5 and 7 support key 1. No exact values are invented for overlapping low series. This N2 source prints 14 clearly and needs no chart content repair.
+
+The legacy candidate TSV has zero data rows. Full source reconstruction and anomaly review were nevertheless performed. Existing indexed OCR was used for navigation and consistency leads only, with no fresh OCR. Literal transcription and annotations were checked against pixels. All source-visible selective ruby, underlines, references, local question labels, passage divisions, citations, notes and four-choice order are retained.
+
+## Presentation and validation
+
+Old shared and level 2 revision-6 defaults supply ordinary fonts, sizes, margins, leading and spacing. Source-bound roles preserve the nine reading-context associations, eight local passage numbers and exact glossary/citation paragraphs. The 17 vocabulary groups retain their target links. The statistical chart uses the illustration role at readable body width; no claim about original printed dimensions or arbitrary collection page breaks is made. Both cover records explicitly state unavailable/unwitnessed.
+
+The principal uncertainty score is **109**: unverified provenance 100, two metadata groups ×2, one major reference-mapping defect ×5, and no missing units, minor defects or uncertain principal fields. The source's corrected defects remain counted. A cover unavailable in all witnesses and a hypothetical template example are not invented missing-content penalties.
+
+`audit_work/evidence-inventory.json`, `layout-decisions.jsonl`, `figure-inventory.json` and the validation receipt document coverage and decisions. Canonical editorial/cases/fixlog, principal and departure checks, direct Old JSON schema, historical identity/cover/source/style checks, exact append-preserved replay, local semantic binding checks and inventory/hash verification are run before closure.
+
+Full model-dependent renderer validation is unavailable because the frozen runtime requires `rubi-restore/tools/ruby_core.py`, absent from the authorized frozen baseline. No replacement module, live H23 code or altered validator is substituted. `H24-RUNTIME-001` requires the complete maintained renderer checks before later practice release. Native exam PDF composition, integration and visual acceptance remain `pending_after_h23`. The final H24 package records the completed disposition of all twelve owners.

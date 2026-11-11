@@ -1,0 +1,1547 @@
+{
+  "profile_schema_version": "1.0",
+  "profile_id": "modern-N1-pilot",
+  "revision": 28,
+  "applicability": {
+    "exam_generation": "modern-2010",
+    "historical_level": "N1"
+  },
+  "exam_defaults": {
+    "templates": {
+      "sentence_composition.example": {
+        "template_id": "modern-N1-star-2025-07",
+        "origin": "profile_default",
+        "source_unit": "N1_07_2025",
+        "source_item_id": "vocab-b001",
+        "source_path": "src/日语JLPT历年真题/N1真题（2010-2026.07）/2025/2025.07/2025年07月N1真题.pdf",
+        "source_sha256": "0528708e83d1c809f1af5f035e943d12dce54e6fdac319d70576485320479dcf",
+        "physical_pages": [
+          9
+        ],
+        "content": {
+          "html": "（問題例）<br>あそこで _ _ ★ _ は<ruby>山田<rt>やまだ</rt></ruby>さんです。<br>1 テレビ　2 見ている　3 を　4 人<br><br>（解答のしかた）<br>1. 正しい文はこうです。<br><table><tbody><tr><td>あそこで</td><td>_</td><td>_</td><td>★</td><td>_</td><td>は<ruby>山田<rt>やまだ</rt></ruby>さんです。</td></tr><tr><td></td><td>1 テレビ</td><td>3 を</td><td>2 見ている</td><td>4 人</td><td></td></tr></tbody></table><br>2. ★に入る番号を解答用紙にマークします。<br>（解答用紙）<table><tbody><tr><td>（例）</td><td>①　●　③　④</td></tr></tbody></table>"
+        },
+        "options": null,
+        "key": null,
+        "applicability": {
+          "exam_generation": "modern-2010",
+          "historical_level": "N1",
+          "task": "sentence_composition",
+          "observed_years": [
+            2023,
+            2024,
+            2025
+          ]
+        }
+      }
+    }
+  },
+  "renderer_conventions": {
+    "version": "handoff10-N1-1.1",
+    "margins_mm": {
+      "left": 29,
+      "right": 29,
+      "top": 27,
+      "bottom": 34
+    },
+    "body_pt": 11.3,
+    "baseline_pt": 23.2,
+    "question_gap_pt": 12.45,
+    "notice_body_pt": 10.8,
+    "notice_baseline_pt": 15.5,
+    "note_pt": 11.3,
+    "note_baseline_pt": 23.2,
+    "fonts": {
+      "body": "fonts_official/n123/1738155121_A-OTF-RyuminPr5-Regular.otf",
+      "bold": "fonts_official/1738155110_A-OTF-RyuminPr5-Medium.otf",
+      "heading": "pdf-render/tex/fonts/NotoSansJP-Medium.ttf",
+      "footer_numerals": "TeX Gyre Heros",
+      "footer_dashes": "fonts_official/n123/1738155121_A-OTF-RyuminPr5-Regular.otf"
+    },
+    "examples": {
+      "star_solution_before_pt": 30,
+      "star_solution_after_pt": 24,
+      "star_box_padding_pt": 16.5,
+      "ordinary_padding_pt": 9,
+      "star_before_pt": 24,
+      "star_box_width_fraction": 1,
+      "star_box_align": "left",
+      "star_row_baseline_pt": 17.62,
+      "star_row_sep_pt": 0.8,
+      "answer_baseline_pt": 18.8,
+      "answer_colsep_pt": 6,
+      "body_pt": 11.3,
+      "baseline_pt": 23.2,
+      "word_space_em": 0,
+      "stem_indent_em": 1.8,
+      "choice_indent_em": 3,
+      "after_pt": 24,
+      "answer_before_pt": 6,
+      "star_frame_before_pt": 9.669,
+      "bubble_width_em": 0.72542,
+      "bubble_height_em": 0.9623
+    },
+    "evidence": [
+      "evidence/shared-observations.json",
+      "evidence/calibration-findings.jsonl",
+      "../../pdf-render/evidence/pilot4/acceptance.json",
+      "../../pdf-render/evidence/expanded/N1/default_decisions.json",
+      "../../pdf-render/evidence/handoff3/question_box_measurements.json"
+    ],
+    "usage_question_gap_pt": 12,
+    "option_baseline_pt": 23.2,
+    "question_label_pt": 10,
+    "task_overrides": {
+      "cloze": {
+        "note_before_pt": 16
+      },
+      "reading": {
+        "heading_after_pt": 22,
+        "heading_after_labeled_pt": 16
+      },
+      "paired_reading": {
+        "heading_after_pt": 18
+      }
+    },
+    "vertical_column_pitch_em": 2,
+    "vertical_frame_padding_em": 0.95,
+    "word_space_em": 0,
+    "heading_pt": 11.3,
+    "heading_baseline_pt": 23.2,
+    "heading_word_space_em": 0,
+    "heading_label_gap_em": 1.3,
+    "email_paragraph_skip_pt": 23.2,
+    "vertical_body_pt": 11.75,
+    "vertical_frame_offset_em": -2.4,
+    "slot_width_em": 2.9,
+    "passage_body_pt": 11.75,
+    "passage_baseline_pt": 23.2,
+    "cloze_before_pt": 17,
+    "vertical_after_pt": 0,
+    "footer_skip_pt": 30,
+    "question_label_padding_pt": 2.1,
+    "question_indent_em": 2.5,
+    "option_indent_em": 1.8,
+    "option_label_gap_em": 1.25,
+    "option_grid_width_fraction": 0.94,
+    "heading_label_pt": 12.7,
+    "heading_slot_side_em": 0,
+    "question_box": {
+      "width_pt": 17.1753,
+      "height_pt": 11.9335,
+      "rule_pt": 0.4
+    },
+    "question_continuation_indent_em": 1.5,
+    "composition_before_pt": 16,
+    "table_body_pt": 11.3,
+    "table_baseline_pt": 15.82,
+    "running_pt": 9.2,
+    "heading_choice_gap_em": 0.5,
+    "cover_styles": {
+      "N1V-exam_combined": {
+        "revision": "1.1",
+        "native": {
+          "id": "N1V",
+          "source": {
+            "path": "src/OfficialWorkbooks/2018/N1/N1V.pdf",
+            "sha256": "c315b971250bf68667a8c38d534272c8e3c0bdb4caa517477fcc572b75c01e0d",
+            "physical_page": 1,
+            "publication_id": "JLPT_WORKBOOK_2018_N1"
+          },
+          "page_pt": [
+            595.0,
+            842.0
+          ],
+          "spans": [
+            {
+              "text": "注",
+              "x_pt": 257.8800048828125,
+              "y_pt": 393.0841064453125,
+              "width_pt": 19.79998779296875,
+              "size_bp": 19.799999237060547,
+              "font": "Gothic",
+              "source_font": "FutoGoB101-Bold",
+              "role": "text"
+            },
+            {
+              "text": "意",
+              "x_pt": 317.2799987792969,
+              "y_pt": 393.0841064453125,
+              "width_pt": 19.79998779296875,
+              "size_bp": 19.799999237060547,
+              "font": "Gothic",
+              "source_font": "FutoGoB101-Bold",
+              "role": "text"
+            },
+            {
+              "text": "Notes",
+              "x_pt": 284.0400085449219,
+              "y_pt": 401.3819885253906,
+              "width_pt": 26.886383056640625,
+              "size_bp": 9.899999618530273,
+              "font": "Gothic",
+              "source_font": "FutoGoB101-Bold",
+              "role": "text"
+            },
+            {
+              "text": "１．試験が始まるまで、この問題用紙を開けないでください。",
+              "x_pt": 99.73999786376953,
+              "y_pt": 424.9873046875,
+              "width_pt": 400.85189056396484,
+              "size_bp": 14.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "Do",
+              "x_pt": 131.6699981689453,
+              "y_pt": 438.3648986816406,
+              "width_pt": 11.553359985351562,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "not",
+              "x_pt": 146.3035125732422,
+              "y_pt": 438.3648986816406,
+              "width_pt": 13.275604248046875,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "open",
+              "x_pt": 162.6546630859375,
+              "y_pt": 438.3648986816406,
+              "width_pt": 19.77264404296875,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "this",
+              "x_pt": 185.4568634033203,
+              "y_pt": 438.3648986816406,
+              "width_pt": 15.109146118164062,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "question",
+              "x_pt": 203.59097290039062,
+              "y_pt": 438.3648986816406,
+              "width_pt": 34.807281494140625,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "booklet",
+              "x_pt": 241.4278106689453,
+              "y_pt": 438.3648986816406,
+              "width_pt": 30.118972778320312,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "until",
+              "x_pt": 274.62237548828125,
+              "y_pt": 438.3648986816406,
+              "width_pt": 18.613494873046875,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "the",
+              "x_pt": 296.2534484863281,
+              "y_pt": 438.3648986816406,
+              "width_pt": 13.2259521484375,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "test",
+              "x_pt": 312.5595397949219,
+              "y_pt": 438.3648986816406,
+              "width_pt": 15.49371337890625,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "begins.",
+              "x_pt": 331.1297607421875,
+              "y_pt": 438.3648986816406,
+              "width_pt": 28.483245849609375,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "２．この問題用紙を持って帰ることはできません。",
+              "x_pt": 99.73999786376953,
+              "y_pt": 463.2972106933594,
+              "width_pt": 329.90157318115234,
+              "size_bp": 14.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "Do",
+              "x_pt": 131.6699981689453,
+              "y_pt": 476.6748962402344,
+              "width_pt": 11.595687866210938,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "not",
+              "x_pt": 146.34584045410156,
+              "y_pt": 476.6748962402344,
+              "width_pt": 13.274688720703125,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "take",
+              "x_pt": 162.6960906982422,
+              "y_pt": 476.6748962402344,
+              "width_pt": 17.882980346679688,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "this",
+              "x_pt": 183.6592254638672,
+              "y_pt": 476.6748962402344,
+              "width_pt": 15.094436645507812,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "question",
+              "x_pt": 201.7786407470703,
+              "y_pt": 476.6748962402344,
+              "width_pt": 34.83122253417969,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "booklet",
+              "x_pt": 239.63941955566406,
+              "y_pt": 476.6748962402344,
+              "width_pt": 30.090438842773438,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "with",
+              "x_pt": 272.80633544921875,
+              "y_pt": 476.6748962402344,
+              "width_pt": 18.539825439453125,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "you",
+              "x_pt": 294.375732421875,
+              "y_pt": 476.6748962402344,
+              "width_pt": 15.14410400390625,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "after",
+              "x_pt": 312.5494079589844,
+              "y_pt": 476.6748962402344,
+              "width_pt": 19.638336181640625,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "the",
+              "x_pt": 335.21270751953125,
+              "y_pt": 476.6748962402344,
+              "width_pt": 13.270050048828125,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "test.",
+              "x_pt": 351.56292724609375,
+              "y_pt": 476.6748962402344,
+              "width_pt": 17.201202392578125,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "３．受験番号と名前を下の欄に、受験票と同じように書いて",
+              "x_pt": 99.73999786376953,
+              "y_pt": 501.6072082519531,
+              "width_pt": 391.9356002807617,
+              "size_bp": 14.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "ください。",
+              "x_pt": 117.48007202148438,
+              "y_pt": 524.2874755859375,
+              "width_pt": 70.96025085449219,
+              "size_bp": 14.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "Write",
+              "x_pt": 131.6699981689453,
+              "y_pt": 537.664794921875,
+              "width_pt": 23.620086669921875,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "your",
+              "x_pt": 159.9903564453125,
+              "y_pt": 537.664794921875,
+              "width_pt": 19.19671630859375,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "examinee",
+              "x_pt": 183.8321533203125,
+              "y_pt": 537.664794921875,
+              "width_pt": 39.31622314453125,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "registration",
+              "x_pt": 227.84864807128906,
+              "y_pt": 537.664794921875,
+              "width_pt": 48.03224182128906,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "number",
+              "x_pt": 280.5296630859375,
+              "y_pt": 537.664794921875,
+              "width_pt": 32.466766357421875,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "and",
+              "x_pt": 317.7619934082031,
+              "y_pt": 537.664794921875,
+              "width_pt": 15.151458740234375,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "name",
+              "x_pt": 337.7425537109375,
+              "y_pt": 537.664794921875,
+              "width_pt": 22.4857177734375,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "clearly",
+              "x_pt": 365.10797119140625,
+              "y_pt": 537.664794921875,
+              "width_pt": 27.67724609375,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "in",
+              "x_pt": 397.61431884765625,
+              "y_pt": 537.664794921875,
+              "width_pt": 7.620330810546875,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "each",
+              "x_pt": 410.0637512207031,
+              "y_pt": 537.664794921875,
+              "width_pt": 18.948333740234375,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "box",
+              "x_pt": 433.8411865234375,
+              "y_pt": 537.664794921875,
+              "width_pt": 15.14227294921875,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "below",
+              "x_pt": 453.81256103515625,
+              "y_pt": 537.664794921875,
+              "width_pt": 24.3275146484375,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "as",
+              "x_pt": 482.99957275390625,
+              "y_pt": 537.664794921875,
+              "width_pt": 8.705047607421875,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "written",
+              "x_pt": 131.66998291015625,
+              "y_pt": 549.0350341796875,
+              "width_pt": 30.620361328125,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "on",
+              "x_pt": 165.3199005126953,
+              "y_pt": 549.0350341796875,
+              "width_pt": 9.901046752929688,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "your",
+              "x_pt": 178.25050354003906,
+              "y_pt": 549.0350341796875,
+              "width_pt": 19.19671630859375,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "test",
+              "x_pt": 200.47218322753906,
+              "y_pt": 549.0350341796875,
+              "width_pt": 15.484512329101562,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "voucher.",
+              "x_pt": 219.03224182128906,
+              "y_pt": 549.0350341796875,
+              "width_pt": 35.17066955566406,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "４．この問題用紙は、全部で{pages}ページあります。",
+              "x_pt": 99.73999786376953,
+              "y_pt": 573.9671630859375,
+              "width_pt": 315.6802291870117,
+              "size_bp": 14.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "page_count"
+            },
+            {
+              "text": "This",
+              "x_pt": 131.6699981689453,
+              "y_pt": 587.3447875976562,
+              "width_pt": 18.62078857421875,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "question",
+              "x_pt": 153.31576538085938,
+              "y_pt": 587.3447875976562,
+              "width_pt": 34.82293701171875,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "booklet",
+              "x_pt": 191.1682586669922,
+              "y_pt": 587.3447875976562,
+              "width_pt": 30.111602783203125,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "has{pages}pages.",
+              "x_pt": 224.3554229736328,
+              "y_pt": 587.3447875976562,
+              "width_pt": 54.72798156738281,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "page_count"
+            },
+            {
+              "text": "５．問題には解答番号の",
+              "x_pt": 99.73999786376953,
+              "y_pt": 612.2772216796875,
+              "width_pt": 162.74483489990234,
+              "size_bp": 14.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "1",
+              "x_pt": 268.4700012207031,
+              "y_pt": 610.384765625,
+              "width_pt": 7.3599853515625,
+              "size_bp": 8.228730201721191,
+              "font": "SansBold",
+              "source_font": "EdiF-wDntqW6HHov8Lf-001",
+              "role": "text"
+            },
+            {
+              "text": "、",
+              "x_pt": 281.489990234375,
+              "y_pt": 612.2772216796875,
+              "width_pt": 14.20001220703125,
+              "size_bp": 14.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "2",
+              "x_pt": 301.32000732421875,
+              "y_pt": 610.384765625,
+              "width_pt": 7.3599853515625,
+              "size_bp": 8.228730201721191,
+              "font": "SansBold",
+              "source_font": "EdiF-wDntqW6HHov8Lf-001",
+              "role": "text"
+            },
+            {
+              "text": "、",
+              "x_pt": 314.3399963378906,
+              "y_pt": 612.2772216796875,
+              "width_pt": 14.20001220703125,
+              "size_bp": 14.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "3",
+              "x_pt": 334.1700134277344,
+              "y_pt": 610.384765625,
+              "width_pt": 7.3599853515625,
+              "size_bp": 8.228730201721191,
+              "font": "SansBold",
+              "source_font": "EdiF-wDntqW6HHov8Lf-001",
+              "role": "text"
+            },
+            {
+              "text": "…",
+              "x_pt": 353.1600036621094,
+              "y_pt": 612.2772216796875,
+              "width_pt": 14.20001220703125,
+              "size_bp": 14.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "が付いています。",
+              "x_pt": 375.1501159667969,
+              "y_pt": 612.2772216796875,
+              "width_pt": 116.26397705078125,
+              "size_bp": 14.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "解答は、解答用紙にある同じ番号のところにマークして",
+              "x_pt": 117.47976684570312,
+              "y_pt": 634.9574584960938,
+              "width_pt": 374.1869812011719,
+              "size_bp": 14.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "ください。",
+              "x_pt": 117.47976684570312,
+              "y_pt": 657.6376953125,
+              "width_pt": 70.96025085449219,
+              "size_bp": 14.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "One",
+              "x_pt": 131.6699981689453,
+              "y_pt": 671.0147705078125,
+              "width_pt": 16.806564331054688,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "of",
+              "x_pt": 151.55670166015625,
+              "y_pt": 671.0147705078125,
+              "width_pt": 7.5182342529296875,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "the",
+              "x_pt": 162.14682006835938,
+              "y_pt": 671.0147705078125,
+              "width_pt": 13.27191162109375,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "row",
+              "x_pt": 178.49887084960938,
+              "y_pt": 671.0147705078125,
+              "width_pt": 16.174514770507812,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "numbers",
+              "x_pt": 197.7351531982422,
+              "y_pt": 671.0147705078125,
+              "width_pt": 36.493621826171875,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "1",
+              "x_pt": 240.4499969482422,
+              "y_pt": 670.5767822265625,
+              "width_pt": 5.67999267578125,
+              "size_bp": 6.350432872772217,
+              "font": "SansBold",
+              "source_font": "EdiF-wDntqW6HHov8Lf-001",
+              "role": "text"
+            },
+            {
+              "text": ",",
+              "x_pt": 251.25,
+              "y_pt": 671.0147705078125,
+              "width_pt": 1.701995849609375,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "2",
+              "x_pt": 259.7099914550781,
+              "y_pt": 670.5767822265625,
+              "width_pt": 5.67999267578125,
+              "size_bp": 6.350432872772217,
+              "font": "SansBold",
+              "source_font": "EdiF-wDntqW6HHov8Lf-001",
+              "role": "text"
+            },
+            {
+              "text": ",",
+              "x_pt": 270.510009765625,
+              "y_pt": 671.0147705078125,
+              "width_pt": 1.701995849609375,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "3",
+              "x_pt": 278.9700012207031,
+              "y_pt": 670.5767822265625,
+              "width_pt": 5.67999267578125,
+              "size_bp": 6.350432872772217,
+              "font": "SansBold",
+              "source_font": "EdiF-wDntqW6HHov8Lf-001",
+              "role": "text"
+            },
+            {
+              "text": "… is",
+              "x_pt": 290.9100036621094,
+              "y_pt": 671.0147705078125,
+              "width_pt": 17.914276123046875,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "given",
+              "x_pt": 311.8492431640625,
+              "y_pt": 671.0147705078125,
+              "width_pt": 22.765380859375,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "for",
+              "x_pt": 337.6441955566406,
+              "y_pt": 671.0147705078125,
+              "width_pt": 11.578216552734375,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "each",
+              "x_pt": 352.24737548828125,
+              "y_pt": 671.0147705078125,
+              "width_pt": 18.930816650390625,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "question.",
+              "x_pt": 374.207763671875,
+              "y_pt": 671.0147705078125,
+              "width_pt": 36.507415771484375,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "Mark",
+              "x_pt": 413.78338623046875,
+              "y_pt": 671.0147705078125,
+              "width_pt": 22.6209716796875,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "your",
+              "x_pt": 439.4339294433594,
+              "y_pt": 671.0147705078125,
+              "width_pt": 19.216949462890625,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "answer",
+              "x_pt": 461.67584228515625,
+              "y_pt": 671.0147705078125,
+              "width_pt": 30.108856201171875,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "in",
+              "x_pt": 131.6699676513672,
+              "y_pt": 682.3850708007812,
+              "width_pt": 7.6203460693359375,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "the",
+              "x_pt": 142.31988525390625,
+              "y_pt": 682.3850708007812,
+              "width_pt": 13.271011352539062,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "same",
+              "x_pt": 158.67105102539062,
+              "y_pt": 682.3850708007812,
+              "width_pt": 21.286972045898438,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "row",
+              "x_pt": 183.03817749023438,
+              "y_pt": 682.3850708007812,
+              "width_pt": 16.164413452148438,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "of",
+              "x_pt": 202.26434326171875,
+              "y_pt": 682.3850708007812,
+              "width_pt": 7.514556884765625,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "the",
+              "x_pt": 212.8507843017578,
+              "y_pt": 682.3850708007812,
+              "width_pt": 13.271011352539062,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "answer",
+              "x_pt": 229.2019500732422,
+              "y_pt": 682.3850708007812,
+              "width_pt": 30.136459350585938,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "sheet.",
+              "x_pt": 262.36334228515625,
+              "y_pt": 682.3850708007812,
+              "width_pt": 23.65594482421875,
+              "size_bp": 9.199999809265137,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "受験番号",
+              "x_pt": 87.72000122070312,
+              "y_pt": 726.2291870117188,
+              "width_pt": 42.34912109375,
+              "size_bp": 10.600000381469727,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "Examinee",
+              "x_pt": 140.6489715576172,
+              "y_pt": 726.2291870117188,
+              "width_pt": 47.17848205566406,
+              "size_bp": 10.600000381469727,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "Registration",
+              "x_pt": 193.11790466308594,
+              "y_pt": 726.2291870117188,
+              "width_pt": 57.89082336425781,
+              "size_bp": 10.600000381469727,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "Number",
+              "x_pt": 256.2345275878906,
+              "y_pt": 726.2291870117188,
+              "width_pt": 39.357818603515625,
+              "size_bp": 10.600000381469727,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "名前",
+              "x_pt": 87.72000122070312,
+              "y_pt": 771.5590209960938,
+              "width_pt": 26.470321655273438,
+              "size_bp": 10.600000381469727,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "Name",
+              "x_pt": 124.77018737792969,
+              "y_pt": 771.5590209960938,
+              "width_pt": 27.830307006835938,
+              "size_bp": 10.600000381469727,
+              "font": "Mincho",
+              "source_font": "Ryumin-regular",
+              "role": "text"
+            },
+            {
+              "text": "問題用紙",
+              "x_pt": 459.0599060058594,
+              "y_pt": 69.10089111328125,
+              "width_pt": 107.63229370117188,
+              "size_bp": 26.899999618530273,
+              "font": "Gothic",
+              "source_font": "FutoGoB101-Bold",
+              "role": "text"
+            },
+            {
+              "text": "Language",
+              "x_pt": 42.36000061035156,
+              "y_pt": 71.72412109375,
+              "width_pt": 65.10978698730469,
+              "size_bp": 13.800000190734863,
+              "font": "Heading",
+              "source_font": "MidashiGo-MB31",
+              "role": "text"
+            },
+            {
+              "text": "Knowledge",
+              "x_pt": 112.03759002685547,
+              "y_pt": 71.72412109375,
+              "width_pt": 73.53191375732422,
+              "size_bp": 13.800000190734863,
+              "font": "Heading",
+              "source_font": "MidashiGo-MB31",
+              "role": "text"
+            },
+            {
+              "text": "（Vocabulary/Grammar）",
+              "x_pt": 185.52000427246094,
+              "y_pt": 72.19207763671875,
+              "width_pt": 121.92439270019531,
+              "size_bp": 9.899999618530273,
+              "font": "Heading",
+              "source_font": "MidashiGo-MB31",
+              "role": "text"
+            },
+            {
+              "text": "・",
+              "x_pt": 299.07000732421875,
+              "y_pt": 71.72412109375,
+              "width_pt": 13.79998779296875,
+              "size_bp": 13.800000190734863,
+              "font": "Gothic",
+              "source_font": "FutoGoB101-Bold",
+              "role": "text"
+            },
+            {
+              "text": "Reading",
+              "x_pt": 309.4200134277344,
+              "y_pt": 71.72412109375,
+              "width_pt": 54.333282470703125,
+              "size_bp": 13.800000190734863,
+              "font": "Heading",
+              "source_font": "MidashiGo-MB31",
+              "role": "text"
+            },
+            {
+              "text": "N1",
+              "x_pt": 245.39999389648438,
+              "y_pt": 214.94287109375,
+              "width_pt": 104.06802368164062,
+              "size_bp": 60.52599334716797,
+              "font": "Heavy",
+              "source_font": "ShinGo-Bold",
+              "role": "text"
+            },
+            {
+              "text": "言語知識",
+              "x_pt": 68.12999725341797,
+              "y_pt": 280.05487060546875,
+              "width_pt": 138.83123016357422,
+              "size_bp": 34.70000076293945,
+              "font": "Heavy",
+              "source_font": "ShinGo-Bold",
+              "role": "text"
+            },
+            {
+              "text": "（文字・語彙・文法）",
+              "x_pt": 206.97000122070312,
+              "y_pt": 281.494873046875,
+              "width_pt": 227.06137084960938,
+              "size_bp": 22.700000762939453,
+              "font": "Heavy",
+              "source_font": "ShinGo-Bold",
+              "role": "text"
+            },
+            {
+              "text": "・読解",
+              "x_pt": 422.70001220703125,
+              "y_pt": 280.05487060546875,
+              "width_pt": 104.120849609375,
+              "size_bp": 34.70000076293945,
+              "font": "Heavy",
+              "source_font": "ShinGo-Bold",
+              "role": "text"
+            },
+            {
+              "text": "（",
+              "x_pt": 220.02999877929688,
+              "y_pt": 344.6112060546875,
+              "width_pt": 34.0,
+              "size_bp": 34.0,
+              "font": "Gothic",
+              "source_font": "FutoGoB101-Bold",
+              "role": "text"
+            },
+            {
+              "text": "{minutes}",
+              "x_pt": 254.00999450683594,
+              "y_pt": 345.3671875,
+              "width_pt": 52.93757629394531,
+              "size_bp": 35.50876235961914,
+              "font": "SansBold",
+              "source_font": "Helvetica-Bold",
+              "role": "time"
+            },
+            {
+              "text": "分）",
+              "x_pt": 306.92999267578125,
+              "y_pt": 344.6112060546875,
+              "width_pt": 67.98980712890625,
+              "size_bp": 34.0,
+              "font": "Gothic",
+              "source_font": "FutoGoB101-Bold",
+              "role": "text"
+            }
+          ],
+          "rules": [
+            {
+              "kind": "rect",
+              "rect_pt": [
+                77.79000091552734,
+                360.0660095214844,
+                517.1309814453125,
+                694.5250244140625
+              ],
+              "width_bp": 0.33000001311302185
+            },
+            {
+              "kind": "line",
+              "points": [
+                [
+                  512.9080200195312,
+                  705.863037109375
+                ],
+                [
+                  512.9080200195312,
+                  738.550048828125
+                ]
+              ],
+              "width_bp": 0.33000001311302185
+            },
+            {
+              "kind": "line",
+              "points": [
+                [
+                  308.81402587890625,
+                  705.863037109375
+                ],
+                [
+                  308.81402587890625,
+                  738.550048828125
+                ]
+              ],
+              "width_bp": 0.33000001311302185
+            },
+            {
+              "kind": "line",
+              "points": [
+                [
+                  512.9080200195312,
+                  705.863037109375
+                ],
+                [
+                  512.9080200195312,
+                  738.550048828125
+                ]
+              ],
+              "width_bp": 0.7200000286102295
+            },
+            {
+              "kind": "line",
+              "points": [
+                [
+                  82.04202270507812,
+                  705.863037109375
+                ],
+                [
+                  82.04202270507812,
+                  738.550048828125
+                ]
+              ],
+              "width_bp": 0.7200000286102295
+            },
+            {
+              "kind": "line",
+              "points": [
+                [
+                  81.65799713134766,
+                  738.52099609375
+                ],
+                [
+                  513.2919921875,
+                  738.52099609375
+                ]
+              ],
+              "width_bp": 0.33000001311302185
+            },
+            {
+              "kind": "line",
+              "points": [
+                [
+                  81.65799713134766,
+                  738.52099609375
+                ],
+                [
+                  513.2919921875,
+                  738.52099609375
+                ]
+              ],
+              "width_bp": 0.7200000286102295
+            },
+            {
+              "kind": "line",
+              "points": [
+                [
+                  81.65799713134766,
+                  705.8930053710938
+                ],
+                [
+                  513.2919921875,
+                  705.8930053710938
+                ]
+              ],
+              "width_bp": 0.7200000286102295
+            },
+            {
+              "kind": "line",
+              "points": [
+                [
+                  512.9080200195312,
+                  751.18798828125
+                ],
+                [
+                  512.9080200195312,
+                  783.875
+                ]
+              ],
+              "width_bp": 0.33000001311302185
+            },
+            {
+              "kind": "line",
+              "points": [
+                [
+                  158.5770263671875,
+                  751.18798828125
+                ],
+                [
+                  158.5770263671875,
+                  783.875
+                ]
+              ],
+              "width_bp": 0.33000001311302185
+            },
+            {
+              "kind": "line",
+              "points": [
+                [
+                  512.9080200195312,
+                  751.18798828125
+                ],
+                [
+                  512.9080200195312,
+                  783.875
+                ]
+              ],
+              "width_bp": 0.7200000286102295
+            },
+            {
+              "kind": "line",
+              "points": [
+                [
+                  82.04202270507812,
+                  751.18798828125
+                ],
+                [
+                  82.04202270507812,
+                  783.875
+                ]
+              ],
+              "width_bp": 0.7200000286102295
+            },
+            {
+              "kind": "line",
+              "points": [
+                [
+                  81.65799713134766,
+                  783.8460083007812
+                ],
+                [
+                  513.2919921875,
+                  783.8460083007812
+                ]
+              ],
+              "width_bp": 0.33000001311302185
+            },
+            {
+              "kind": "line",
+              "points": [
+                [
+                  81.65799713134766,
+                  783.8460083007812
+                ],
+                [
+                  513.2919921875,
+                  783.8460083007812
+                ]
+              ],
+              "width_bp": 0.7200000286102295
+            },
+            {
+              "kind": "line",
+              "points": [
+                [
+                  81.65799713134766,
+                  751.218017578125
+                ],
+                [
+                  513.2919921875,
+                  751.218017578125
+                ]
+              ],
+              "width_bp": 0.7200000286102295
+            },
+            {
+              "kind": "rect",
+              "rect_pt": [
+                263.78399658203125,
+                601.3359985351562,
+                280.5260009765625,
+                612.4089965820312
+              ],
+              "width_bp": 0.33000001311302185
+            },
+            {
+              "kind": "rect",
+              "rect_pt": [
+                296.64801025390625,
+                601.3359985351562,
+                313.3900146484375,
+                612.4089965820312
+              ],
+              "width_bp": 0.33000001311302185
+            },
+            {
+              "kind": "rect",
+              "rect_pt": [
+                329.4830017089844,
+                601.3359985351562,
+                346.2250061035156,
+                612.4089965820312
+              ],
+              "width_bp": 0.33000001311302185
+            },
+            {
+              "kind": "rect",
+              "rect_pt": [
+                236.32400512695312,
+                663.490966796875,
+                250.26100158691406,
+                672.2606811523438
+              ],
+              "width_bp": 0.33000001311302185
+            },
+            {
+              "kind": "rect",
+              "rect_pt": [
+                255.6060028076172,
+                663.490966796875,
+                269.51300048828125,
+                672.2606811523438
+              ],
+              "width_bp": 0.33000001311302185
+            },
+            {
+              "kind": "rect",
+              "rect_pt": [
+                274.8580017089844,
+                663.490966796875,
+                288.7950134277344,
+                672.2606811523438
+              ],
+              "width_bp": 0.33000001311302185
+            }
+          ]
+        },
+        "geometry": {
+          "family": "exam_combined",
+          "members": [
+            "N1_12_2023_p1",
+            "N2_12_2023_p1",
+            "N1_12_2025_p1",
+            "N2_12_2025_p1"
+          ],
+          "n": 4,
+          "method": "arithmetic mean after page-scale normalization and deskew, one sample per publication/booklet",
+          "frame_mm": [
+            28.323749999999997,
+            128.26591230551628,
+            181.67624999999998,
+            244.9094766619519
+          ],
+          "field_line_y_mm": [
+            248.6552333804809,
+            260.06753889674684,
+            264.5134370579915,
+            275.89073550212163
+          ],
+          "level_cap_height_mm": 17.46852899575672
+        },
+        "input_origin": "native-covers-20261010-r1"
+      }
+    },
+    "cloze_box": {
+      "width_pt": 33.3,
+      "height_pt": 17.3,
+      "font_pt": 10.2,
+      "rule_pt": 0.45
+    },
+    "cloze_frame_rule_pt": 1.05,
+    "note_before_pt": 36,
+    "font_roles": {
+      "choice_numeral": {
+        "source": "body",
+        "features": [
+          "fwid"
+        ],
+        "horizontal_scale": 0.8
+      }
+    },
+    "mixed_script_gap_em": 0.12,
+    "blank_side_space_em": 0.45,
+    "blank_inner_width_em": 2.8,
+    "reference_drop_ex": 1.5,
+    "option_row_gap_pt": 0,
+    "blank_digit_side_space_em": 0.45,
+    "memo_typography": {
+      "body_pt": 11.3,
+      "baseline_pt": 21.5
+    }
+  },
+  "evidence_note": "N1 calibrated editorial profile retained through H8. The approved body-style set comprises 17 independent publications across all five levels (mostly 2023–2025, plus N2 July2018 excluding physical page10). This profile is not evidence of uniform historical practice throughout 2010–2026. H9 adds explicit structural intake for ten owners; retypes support local inferences, and verified workbook identity does not grant exam-style approval. Shared mechanics, level/task values and exact unit overrides remain distinct; the variant registry is empty. No numeric value changed in this descriptive correction. Consult pdf-render/evidence/handoff9/DEFAULTS_AUDIT.json for actual consumers, dormant branches, code fallbacks and role-specific limits. H10 trial adoption: normalized bracket interiors and role/neighbour exterior; explicit reading-entry topology; N5 spaced-passage punctuation; native bullet roles and attached-ribbon default. These are editorial rendering choices calibrated against identified witnesses, not era-wide authenticity claims. See pdf-render/evidence/handoff10/SPACING_DECISIONS_01.json and final acceptance evidence.",
+  "shared_defaults": {
+    "path": "../shared/defaults.json",
+    "shared_id": "jlpt-modern-written",
+    "revision": 22
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "contract": "historical-artwork-1.0",
+  "id": "H27-N2_2000-companion-native-chart",
+  "kind": "life_goals_lines",
+  "unit": "N2_2000",
+  "item_id": "reading-b009",
+  "source": {
+    "source_path": "src/日语JLPT真题1992～2025.12（及时转存，避免丢失）/渠道一/日语N2真题/1991年-2009年/1995-2009.pdf",
+    "source_sha256": "115e8c098ee3caed702d29a24d2ce0c883c3ad9152e21eee4200fc4e80f2a3fb",
+    "physical_page": 371
+  },
+  "raw_crop": {
+    "path": "preprocess/assets/handoff27-comparable-charts-03/N2_2000-raw.png",
+    "sha256": "1e7dfe04a887e7be653db1ad85e01f279d5d6027bb3e3253ab03f674748e2b69"
+  },
+  "selection_note": "Direct source371 and unscaled canonical crop confirm the same48printed integer values, age order, four series,0–90percent axis and caption as the separately inspected N1_2000witness. Reuse that exact data and reviewed label layout; no inferred new precision.",
+  "limits": [
+    "Exact UARS is unavailable; appearance is an evidence-backed reconstruction from the identified secondary witness.",
+    "Life-goals values are literal printed integers, without normalization.",
+    "Original font identity is not asserted.",
+    "H27 companion-owner reconstruction: canonical original image bytes remain recoverable; final native review is required for this owner.",
+    "The first1993 current-centred value is damaged in this secondary scan;81 is the retained source-supported reconstruction, not a claim of pristine original digits."
+  ],
+  "data": {
+    "coordinate_status": "printed_integer_values_no_normalization",
+    "ages": [
+      "16～",
+      "20～",
+      "25～",
+      "30～",
+      "35～",
+      "40～",
+      "45～",
+      "50～",
+      "55～",
+      "60～",
+      "65～",
+      "70歳以上"
+    ],
+    "series": [
+      {
+        "label": "現在中心",
+        "year": 1993,
+        "line": "solid",
+        "marker": "filled_circle",
+        "values": [
+          81,
+          73,
+          55,
+          60,
+          58,
+          57,
+          57,
+          55,
+          59,
+          62,
+          69,
+          73
+        ]
+      },
+      {
+        "label": "現在中心",
+        "year": 1973,
+        "line": "dashed",
+        "marker": "filled_circle",
+        "values": [
+          71,
+          62,
+          52,
+          48,
+          46,
+          38,
+          44,
+          52,
+          51,
+          54,
+          59,
+          61
+        ]
+      },
+      {
+        "label": "未来中心",
+        "year": 1973,
+        "line": "dashed",
+        "marker": "hollow_triangle",
+        "values": [
+          26,
+          37,
+          47,
+          51,
+          53,
+          60,
+          55,
+          44,
+          48,
+          44,
+          37,
+          31
+        ]
+      },
+      {
+        "label": "未来中心",
+        "year": 1993,
+        "line": "solid",
+        "marker": "hollow_triangle",
+        "values": [
+          18,
+          27,
+          43,
+          39,
+          40,
+          40,
+          41,
+          43,
+          40,
+          35,
+          28,
+          23
+        ]
+      }
+    ],
+    "axis": {
+      "minimum": 0,
+      "maximum": 90,
+      "tick": 10,
+      "unit": "%"
+    },
+    "caption": "1－2図　生活目標―「現在中心」・「未来中心」（年層別）"
+  }
+}

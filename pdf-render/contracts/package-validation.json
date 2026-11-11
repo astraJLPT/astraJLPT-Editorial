@@ -1,0 +1,677 @@
+{
+  "format": "editorial-package-validation-v4",
+  "status": "pass_with_documented_uncertainties",
+  "editorial_schema_version": "4.1.0",
+  "schema_v4_validation_at_commit": "2ad81c5cdec0a52ae52ed7dbd3f42bcc01592146",
+  "schema_v4_validation": {
+    "format": "editorial-package-validation-v2",
+    "status": "pass",
+    "editorial_schema_version": "4.0.0",
+    "schema_migration_baseline": "321b9a3dcb39ba995131b77605c40411dd71d69e",
+    "original_packaging_baseline": "d99be9d",
+    "owners": 201,
+    "questions": 16788,
+    "explanations": 1152,
+    "model_comparisons": {
+      "owners": 201,
+      "allowed_changes": "Declared removed metadata, schema version and resource locations only",
+      "result": "pass"
+    },
+    "native_emission": {
+      "bodies": 402,
+      "covers": "all authored covers in both renditions",
+      "tex_identical": true
+    },
+    "html_projection": {
+      "bodies": 402,
+      "body_content_styles_and_structure_identical": true,
+      "navigation_and_answer_tokens_identical": true,
+      "installed_text_and_ids_equal": true,
+      "byte_identical_bodies": 394,
+      "checkout_dependent_diagnostic_hashes": [
+        {
+          "unit": "N1_1996",
+          "variant": "regular",
+          "diagnostic_hash_attributes": 1
+        },
+        {
+          "unit": "N1_1996",
+          "variant": "norubi",
+          "diagnostic_hash_attributes": 1
+        },
+        {
+          "unit": "N1_1997",
+          "variant": "regular",
+          "diagnostic_hash_attributes": 2
+        },
+        {
+          "unit": "N1_1997",
+          "variant": "norubi",
+          "diagnostic_hash_attributes": 2
+        },
+        {
+          "unit": "N1_1998",
+          "variant": "regular",
+          "diagnostic_hash_attributes": 1
+        },
+        {
+          "unit": "N1_1998",
+          "variant": "norubi",
+          "diagnostic_hash_attributes": 1
+        },
+        {
+          "unit": "N2_1998",
+          "variant": "regular",
+          "diagnostic_hash_attributes": 1
+        },
+        {
+          "unit": "N2_1998",
+          "variant": "norubi",
+          "diagnostic_hash_attributes": 1
+        }
+      ],
+      "diagnostic_hash_proof": "Only data-native-source-sha256 differs on these SVGs: their existing digest includes absolute checkout paths. Native source is identical after normalizing the checkout root; every other HTML byte is identical."
+    },
+    "unchanged_file_groups": {
+      "website": 2350,
+      "ruby_research": 494,
+      "private_audits": 605,
+      "additional_principals": 100,
+      "final_ruby_sidecars": 201,
+      "local_preprocess_editorials": 201
+    },
+    "installed_pdfs": {
+      "files": 402,
+      "byte_identical_to_baseline": true
+    },
+    "regenerated_pdf_samples": [
+      {
+        "unit": "N1_07_2014",
+        "variant": "regular",
+        "pages": 32,
+        "byte_identical": true,
+        "pixel_dpi": 96,
+        "sha256": "c754c1a028d1ed9f23709c23bdd0facfec78907de99cc70ebf996c48f89c3712",
+        "text_and_dimensions_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "unit": "N1_07_2014",
+        "variant": "norubi",
+        "pages": 32,
+        "byte_identical": true,
+        "pixel_dpi": 96,
+        "sha256": "9358c0536ae6d69c6af4aa26c3a5fd288291cf2004e0c4e20e7e4d37e955c0b9",
+        "text_and_dimensions_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "unit": "N4_07_2012",
+        "variant": "regular",
+        "pages": 26,
+        "byte_identical": false,
+        "pixel_dpi": 96,
+        "sha256": "a99a83e29a674469c4371d6079969e3ed189aba5dd24681ce75237b873820b13",
+        "text_and_dimensions_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "unit": "N4_07_2012",
+        "variant": "norubi",
+        "pages": 26,
+        "byte_identical": false,
+        "pixel_dpi": 96,
+        "sha256": "dbd2caa14735730a39f7d5c0601ee50c4bcd5a1a4cb79ec9d12ee475c466250e",
+        "text_and_dimensions_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "unit": "N4_07_2018",
+        "variant": "regular",
+        "pages": 26,
+        "byte_identical": false,
+        "pixel_dpi": 96,
+        "sha256": "2ece131fd5d2b07bf8d3ddecd103995326b40e429dfe1c9692a8cb12e6c4d90a",
+        "text_and_dimensions_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "unit": "N4_07_2018",
+        "variant": "norubi",
+        "pages": 26,
+        "byte_identical": false,
+        "pixel_dpi": 96,
+        "sha256": "90803d43a4a842ed68146a376f9213602725b51fdf6ba5ebf9fe84b8cab0f26c",
+        "text_and_dimensions_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "unit": "N1_1991",
+        "variant": "regular",
+        "pages": 23,
+        "byte_identical": true,
+        "pixel_dpi": 96,
+        "sha256": "5014e2db463fb01abf195c4ea11fe445b3b5dcb04f0a90db1fc502906eebd99d",
+        "text_and_dimensions_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "unit": "N1_1991",
+        "variant": "norubi",
+        "pages": 23,
+        "byte_identical": true,
+        "pixel_dpi": 96,
+        "sha256": "3789d3105426a51e19ff6a5bb1d940b1b5ed97e2ab01ba21ef8bda130d4efc7b",
+        "text_and_dimensions_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "unit": "N2_2003",
+        "variant": "regular",
+        "pages": 26,
+        "byte_identical": true,
+        "pixel_dpi": 96,
+        "sha256": "3fbc8bd17a225f81d3562138072c5843f2bdd4491a7beec26cfd39d7b95ebf4e",
+        "text_and_dimensions_identical": true,
+        "pixels_identical": true
+      },
+      {
+        "unit": "N2_2003",
+        "variant": "norubi",
+        "pages": 26,
+        "byte_identical": true,
+        "pixel_dpi": 96,
+        "sha256": "f932c6d3e2b2d63a6e8e3415a0433c51eb312110ba94353ae9483409c063ef10",
+        "text_and_dimensions_identical": true,
+        "pixels_identical": true
+      }
+    ],
+    "ruby_replay": {
+      "owners": 201,
+      "candidate_scores_reproduced": 321988,
+      "new_selections_reproduced": 12815,
+      "starting_annotations": 719,
+      "final_pass4_groups": 13534,
+      "installed_final_annotations": 13536,
+      "unreviewed_selected": 0,
+      "result": "pass"
+    },
+    "negative_schema_checks": [
+      "old_version",
+      "legacy_sources",
+      "listening",
+      "old_default_path",
+      "section_line",
+      "question_weight",
+      "old_category",
+      "removed_survey"
+    ],
+    "runtime_integrity_checks": [
+      "unchanged content reuses every installed answer token",
+      "changed question content rejects old browser tokens",
+      "changed answer key rejects old browser tokens",
+      "changed installed browser token is rejected",
+      "shell whitespace preserves unchanged answer tokens",
+      "rehashed v4 STAR permutations accepted",
+      "stale STAR permutation is rejected",
+      "stale editorial hash is rejected",
+      "reference-only source set cannot be opened as a file",
+      "v3 editorials are not silently consumed",
+      "stale spacing-group hash is rejected",
+      "stale historical question-group hash is rejected",
+      "stale full-section hash is rejected"
+    ],
+    "repeat_reader_cli": {
+      "result": "pass",
+      "unit": "N1_07_2014",
+      "variants": 2,
+      "consecutive_write_runs": 2,
+      "answer_tokens_unchanged": true,
+      "only_external_copy_written": true
+    },
+    "aggregate_hashes_refreshed": 50,
+    "visual_inspection": {
+      "renderer": "Poppler",
+      "dpi": 100,
+      "pages": [
+        "N1_07_2014 regular p3",
+        "N4_07_2018 norubi p3",
+        "N2_2003 regular p1"
+      ],
+      "result": "pass"
+    },
+    "preexisting_ignored_outputs_archived": {
+      "files": 10,
+      "bytes": 6548118,
+      "original_report_hashes_verified": true,
+      "destination": "External local verification storage, outside the release"
+    },
+    "resource_map_repair": {
+      "preprocess/assets/handoff22/written/source-crops-02/H22-F01-sloth/raw-crop.png": {
+        "target": "editorial-json/assets/accepted/written/source-crops-02/H22-F01-sloth/raw-crop.png",
+        "sha256": "89e3f764def7481ee8546c4a185af073a22dd00b915dcc1fa1df321d5b3eaaeb"
+      }
+    },
+    "resource_map_repair_note": "One missing alias was repaired in both comparison checkouts using the exact already-packaged PNG; baseline Git commit remains unchanged.",
+    "runtime_input_bindings": 275,
+    "publication": "Not uploaded or deployed",
+    "limitations": [
+      "Ten PDFs were compiled; all 402 body and cover emissions were compared.",
+      "Regeneration used Python 3.14 and LuaHBTeX 1.24.0 / TeX Live 2026. Raster comparisons use exact 96 dpi RGB pixels across every sampled page.",
+      "Frozen research/audit references retain their historical schema versions and logical paths.",
+      "Installed website files are byte-identical; prior frontend browser/JavaScript validation remains applicable and was not rerun."
+    ],
+    "final_package_verification": {
+      "result": "pass",
+      "packaged_files": 5035,
+      "paired_pdf_files": 402,
+      "local_html_links": 18771,
+      "website_bytes": 977922028,
+      "failures": []
+    }
+  },
+  "principal_and_interface_maintenance": {
+    "status": "pass",
+    "baseline": "2ad81c5cdec0a52ae52ed7dbd3f42bcc01592146",
+    "payload_files": 5039,
+    "principal_units": 201,
+    "principal_pdf_bindings": 211,
+    "principal_pdf_files": 155,
+    "principal_files_renamed": 47,
+    "all_principal_pdf_bytes_identical": true,
+    "unchanged_principal_source_set_manifests": 5,
+    "source_file_bindings": 155,
+    "runtime_input_bindings": 275,
+    "installed_pdf_files": 402,
+    "all_installed_pdf_bytes_identical": true,
+    "html_files_checked": 634,
+    "html_changes_limited_to_requested_edits_and_cache_versions": true,
+    "page_anchors_and_answer_tokens_unchanged": true,
+    "level_pages": 9,
+    "level_generation_checked": true,
+    "unchanged_groups": {
+      "editorial-json/private/": 605,
+      "rubi-restore/": 494,
+      "editorial_json": 201,
+      "ruby_json": 201
+    },
+    "model_and_source_generation_samples": [
+      {
+        "unit": "N1_2008",
+        "principal": "assets/principals/N1_1995_2009.pdf",
+        "source_links": 2
+      },
+      {
+        "unit": "N1_1996",
+        "principal": "assets/principals/N_1-2_1996.pdf",
+        "source_links": 2
+      },
+      {
+        "unit": "N1_12_2016",
+        "principal": "assets/principals/N1_12_2016.json",
+        "source_links": 8
+      },
+      {
+        "unit": "N3_2006",
+        "principal": "assets/principals/N3_2006_Reading_Grammar.pdf",
+        "source_links": 2
+      }
+    ],
+    "javascript_syntax": "pass (source and deployed app.js)",
+    "source_and_deployed_javascript_only_notice_changed": true,
+    "hidden_notice_and_timeout_unchanged": true,
+    "css_change_only_preserves_notice_line_breaks": true,
+    "browser": {
+      "result": "pass",
+      "default_developer_mode_hidden": true,
+      "enabled_notice_exact_for": [
+        "boar click",
+        "Shift+click astraJLPT logo",
+        "Alt+Shift+D"
+      ],
+      "enabled_notice_renders_three_lines": true,
+      "hidden_notice_unchanged": true,
+      "level_pages_observed": [
+        "N1",
+        "Old 1級"
+      ],
+      "source_references_observed": [
+        "N1_2008 -> N1_1995_2009.pdf (page=94)",
+        "N1_1996 -> N_1-2_1996.pdf",
+        "N1 2018 workbook -> Vocab, Grammar and Reading PDFs"
+      ],
+      "browser_console_errors_or_warnings": 0,
+      "screenshots": "External verification storage; no screenshots added to release"
+    },
+    "runtime_inputs_rehashed": [
+      "pdf-render/contracts/resource-map.json"
+    ],
+    "accepted_release_contract_resealed": true,
+    "scope": "47 principal file renames and their references; nine level headings; enabled developer notice and line breaks; cache versions and verification records",
+    "limitations": [
+      "No PDFs were recompiled for this maintenance. All 155 principal PDFs and all 402 installed PDFs retain identical bytes.",
+      "Five existing source-set JSON manifests and original src/ provenance identities retain their stable names."
+    ]
+  },
+  "final_package_verification": {
+    "result": "pass",
+    "packaged_files": 5089,
+    "paired_pdf_files": 402,
+    "local_html_links": 18958,
+    "website_bytes": 977916720,
+    "failures": []
+  },
+  "documentation_and_unit_identity_migration": {
+    "result": "pass",
+    "baseline_git_commit": "55fbf34",
+    "preservation": {
+      "format": "unit-identity-validation-v1",
+      "result": "pass",
+      "baseline_git_commit": "55fbf34",
+      "renamed_units": 10,
+      "compatibility_redirects": 46,
+      "owners": 201,
+      "reader_bodies": 402,
+      "answer_token_lists": 402,
+      "native_bodies": 20,
+      "native_covers": 32,
+      "pdfs": 402,
+      "frozen_files": 890,
+      "native_comparison": "Exact emitted TeX for both renditions of all ten renamed units. Covers use identical fixed folio input. Installed PDF bytes are compared separately; this check does not claim a new full PDF compilation.",
+      "historical_evidence": "Frozen private audit/index/ledger and ruby run/release/data files retain exact bytes; packaged path moves are resolved explicitly."
+    },
+    "reader_compatibility": {
+      "result": "pass",
+      "renamed_reader_storage_keys": 20,
+      "unchanged_unit_and_nonpaper_fallbacks": 2,
+      "redirects_preserving_query_and_fragment": 46,
+      "method": "Executed the installed application storage-key expression and each actual redirect script in Node VM contexts; existing answer-token equality is verified separately."
+    },
+    "identity_records": {
+      "result": "pass",
+      "public_review_rows_preserved_except_unit": 497,
+      "uncertainty_scores_and_evidence_unchanged": true,
+      "accepted_source_records_unchanged": true,
+      "owner_annotation_and_reader_digests_unchanged": 201,
+      "principal_pdf_and_source_set_files_byte_identical": 160
+    },
+    "full_html_projection": {
+      "owners": 201,
+      "paired_bodies": 402,
+      "written": false,
+      "result": "pass"
+    },
+    "frozen_ruby_replay": {
+      "owners": 201,
+      "candidate_scores_reproduced": 321988,
+      "new_selections_reproduced": 12815,
+      "starting_annotations": 719,
+      "final_pass4_groups": 13534,
+      "installed_final_annotations": 13536,
+      "unreviewed_selected": 0,
+      "result": "pass"
+    },
+    "documentation": {
+      "result": "pass",
+      "documents": 13,
+      "local_links_checked": 128,
+      "external_links_listed": 31,
+      "failures": []
+    },
+    "catalog_labels": {
+      "result": "pass",
+      "cards": 201,
+      "changed_titles": [
+        {
+          "level": "N1",
+          "before": "July 2011 ↗",
+          "after": "Exam 2011/2012 · Workbook ↗"
+        },
+        {
+          "level": "N3",
+          "before": "July 2011 ↗",
+          "after": "Exam 2011/2012 · Workbook ↗"
+        }
+      ],
+      "all_existing_warnings_preserved": true
+    },
+    "reference_registry": {
+      "approved_full_source_identities": 62,
+      "modern": 17,
+      "historical": 15,
+      "official_workbook_components": 30,
+      "source_sha256_before": "c0fc4d24494a9569dd539d237018014213045d6224ae9035fa282ab610be0384",
+      "source_sha256_after": "c0fc4d24494a9569dd539d237018014213045d6224ae9035fa282ab610be0384",
+      "local_source_paths": 47,
+      "external_source_paths": 19,
+      "historical_links_labelled_not_packaged": 8,
+      "all_recorded_sha256_values_preserved": true,
+      "page_scopes": "Copied verbatim; only introduction, section order and link destinations adapted."
+    },
+    "legacy_cli_aliases_checked": [
+      "N4_07_2018 -> N4_workbook_2018",
+      "N1_07_2011 -> N1_set_2011_2012"
+    ],
+    "current_owner_bindings_checked": 201,
+    "runtime_inputs_rehashed": [
+      "pdf-render/config/norubi-raster-assets.json",
+      "pdf-render/config/typography_policy.json",
+      "pdf-render/config/workbook_typography.json",
+      "pdf-render/contracts/resource-map.json",
+      "pdf-render/schema/editorial.schema.json",
+      "pdf-render/tools/assemble.py",
+      "pdf-render/tools/build.py",
+      "pdf-render/tools/cover_native.py",
+      "pdf-render/tools/era_registry.py",
+      "pdf-render/tools/h28_identity.py",
+      "pdf-render/tools/model.py",
+      "pdf-render/tools/modern_running_matter.py",
+      "pdf-render/tools/public_paths.py",
+      "pdf-render/tools/release_contract.py",
+      "pdf-render/tools/workbook_typography.py",
+      "pdf-render/tools/unit_identity.py",
+      "editorial-json/unit_aliases.json"
+    ],
+    "website_changes": "Canonical reader/review/cover/set-PDF paths, compatibility redirects, preserved storage keys, application cache version; two card titles and accessible names changed to Exam 2011/2012 · Workbook.",
+    "screenshot": {
+      "path": "additional-assets/readme/site-overview.webp",
+      "pixels": [
+        5086,
+        2630
+      ],
+      "bytes": 1028390,
+      "lossless_master": "Ignored gitignored_docs/AstraJLPT levels and settings grid.png"
+    },
+    "limitations": [
+      "No PDFs were recompiled for this identity/docs migration. Installed PDFs retain their exact accepted bytes; native body and cover emission was compared for every renamed unit.",
+      "Browser compatibility checks execute the actual key/redirect expressions with preserved answer tokens; they do not claim a new full visual browser audit.",
+      "The adapted audit guide and research summary describe historical work; they do not reopen audits, refit models, authenticate new sources, or resolve cases."
+    ]
+  },
+  "star_solution_migration": {
+    "baseline_git": "171ada8",
+    "questions": 583,
+    "verified": 580,
+    "held": 3,
+    "content_changes": "None; schema version and per-question STAR metadata only",
+    "printed_projection": "Excludes STAR metadata; authored question fields and layout bindings unchanged",
+    "held_questions": [
+      "N1_07_2012:vocab-q039",
+      "N2_07_2022:vocab-q047",
+      "N3_07_2022:reading-q014"
+    ]
+  },
+  "star_solution_adjudication": {
+    "date": "2026-11-11",
+    "checkpoint_git": "bbb334a",
+    "counts": {
+      "questions": 583,
+      "verified": 580,
+      "accepted": 3,
+      "held": 0
+    },
+    "accepted_questions": [
+      "N1_07_2012:vocab-q039",
+      "N2_07_2022:vocab-q047",
+      "N3_07_2022:reading-q014"
+    ],
+    "authored_changes": [
+      {
+        "unit": "N2_07_2022",
+        "item_id": "vocab-q047",
+        "fields": [
+          "key",
+          "explanation"
+        ],
+        "key_before": 4,
+        "key_after": 1
+      }
+    ],
+    "note": "Order decisions accepted by the user; N3 position retained under delegated authority. Public cases preserve residual uncertainty.",
+    "reader_migration": [
+      {
+        "variant": "regular",
+        "path": "astraJLPT/papers/N2_07_2022.html",
+        "before": {
+          "binding": "3580cda313171100b405182c89a064483c1a645fd89b8765ef6d2b83868ad0ec",
+          "id": "vocab-q047",
+          "key": 4
+        },
+        "after": {
+          "binding": "7c45727facfec85835882777f4d6e07bf078cfc3ab01d868ba2a36ea8bf2b83c",
+          "id": "vocab-q047",
+          "key": 1
+        },
+        "other_question_bindings_unchanged": true
+      },
+      {
+        "variant": "norubi",
+        "path": "astraJLPT/papers-norubi/N2_07_2022.html",
+        "before": {
+          "binding": "3580cda313171100b405182c89a064483c1a645fd89b8765ef6d2b83868ad0ec",
+          "id": "vocab-q047",
+          "key": 4
+        },
+        "after": {
+          "binding": "7c45727facfec85835882777f4d6e07bf078cfc3ab01d868ba2a36ea8bf2b83c",
+          "id": "vocab-q047",
+          "key": 1
+        },
+        "other_question_bindings_unchanged": true
+      }
+    ],
+    "result": "pass",
+    "verified_full_orders": 580,
+    "accepted_full_orders": 3,
+    "held_decisions": 0,
+    "published_full_order_reveals": 1166,
+    "published_held_help": 0,
+    "proof_reports": {
+      "migration": {
+        "path": "gitignored_docs/star-layout-20261111/finalize/migration-final.json",
+        "sha256": "5e6139861bf3199a581c29a5d3c53bb3e812a2062422e554def79f144b509193"
+      },
+      "schema": {
+        "path": "gitignored_docs/star-layout-20261111/finalize/schema-validation.json",
+        "sha256": "720f3c91c9259446c5b63e52e458ef5226e7a52b3f65dcae6906afabc1cb547f"
+      },
+      "publication": {
+        "path": "gitignored_docs/star-layout-20261111/finalize/published-output-audit.json",
+        "sha256": "b0cb48511a7147c0ae8f890dff86148b72a27e31e08262c8ed22031206d78900"
+      },
+      "native": {
+        "path": "gitignored_docs/star-layout-20261111/finalize/native-preservation-report.json",
+        "sha256": "80271a9e76e1165dab9e9169aad6c1b6373d78ef3f15d2976dfd17b8927d5911"
+      },
+      "browser": {
+        "path": "gitignored_docs/star-layout-20261111/finalize/browser-final-report.json",
+        "sha256": "ca7e2c6eeac22a8fc327218b1c67d23afaa83f6910572a25955006a31aeba939"
+      }
+    },
+    "audit_history": {
+      "path": "gitignored_docs/star-layout-20261111/finalize/fixlog-merge-report.json",
+      "sha256": "ead78874f33d230f6bf063b3b30cd0813eb07e1e9faf37a465eba448e1c1d4e6",
+      "maintained_gzip_files": 201,
+      "historical_rows_preserved": 45592,
+      "appended_rows": 793
+    },
+    "scope": "All 583 STAR questions have full orders: 580 independently verified and 3 explicitly accepted with public uncertainty records. No unresolved implementation decision remains.",
+    "package_verification": {
+      "result": "pass",
+      "packaged_files": 5088,
+      "paired_pdf_files": 402,
+      "local_html_links": 19377,
+      "website_bytes": 977945053,
+      "failures": []
+    }
+  },
+  "editorial_case_maintenance": {
+    "date": "2026-11-11",
+    "baseline_git": "3525c04646d643b105c5b89458e5a6d17839ce8b",
+    "result": "pass",
+    "resolved_cases": [
+      {
+        "unit": "N1_07_2012",
+        "item_id": "vocab-q039",
+        "case_id": "N1_07_2012-vocab-q039-star-order",
+        "status": "resolved",
+        "confidence": "high",
+        "order": [
+          1,
+          4,
+          3,
+          2
+        ],
+        "star_position": 3,
+        "key": 3,
+        "basis": "Grammar and dialogue context, supported by published usage."
+      }
+    ],
+    "question_fields_and_principal_differences_unchanged": true,
+    "saved_answer_bindings_unchanged": true,
+    "review_unresolved_count": {
+      "before": 2,
+      "after": 1
+    },
+    "fixlog_entries_appended": 2,
+    "historical_fixlog_prefix_preserved": true,
+    "installed_pdfs_unchanged": 402,
+    "incremental_rebuild_fix": {
+      "cause": "The old shared-stylesheet matcher missed reordered attributes and self-closing link tags.",
+      "duplicate_links_removed": 419,
+      "other_html_content_unchanged": 404,
+      "shared_css_bytes_unchanged": true,
+      "regression_tests": 2
+    },
+    "schema_validation": {
+      "result": "pass",
+      "editorial_schema_version": "4.1.0",
+      "units": 201,
+      "star_units": 122,
+      "star": {
+        "questions": 583,
+        "verified": 580,
+        "accepted": 3,
+        "held": 0
+      }
+    },
+    "tests": {
+      "star": 40,
+      "incremental_shared_styles": 2,
+      "result": "pass"
+    },
+    "browser_visual_check": "Unavailable: Computer Use stopped Firefox because browser URL-policy enforcement is unsupported. Generated HTML was checked directly.",
+    "proof_report": {
+      "path": "gitignored_docs/q39-resolution-20261111/audit-report.json",
+      "sha256": "f7c78d4ef81327b7a98d4a38a4b93a4553b7d54fc2ee24cc01a6a01f7f76b932"
+    },
+    "package_verification": {
+      "result": "pass",
+      "packaged_files": 5089,
+      "paired_pdf_files": 402,
+      "local_html_links": 18958,
+      "website_bytes": 977916720,
+      "failures": []
+    }
+  }
+}

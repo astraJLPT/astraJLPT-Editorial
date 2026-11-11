@@ -1,0 +1,528 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark light"><title>Developer review · N3_12_2017 · astraJLPT</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../assets/fonts.css?v=f9f44384a837"><link rel="stylesheet" href="../assets/themes.css?v=7ad0820747dc"><link rel="stylesheet" href="../assets/answer-marking.css?v=bec6b4920050"><link rel="stylesheet" href="../assets/site.css?v=7ae9ae7c768b"><link rel="stylesheet" href="../assets/pdf-typography.css?v=ba55af25606f"><link rel="stylesheet" href="../assets/paper-shared.css?v=8f3ca38dca80"></head><body class="catalog-page"><a class="skip-link" href="#content">Skip to content</a><header class="topbar" id="page-top" tabindex="-1"><a class="wordmark" id="brand" href="../index.html">astra<span>JLPT</span></a><details id="settings" class="settings"><summary aria-label="Open settings" title="Settings"><span aria-hidden="true">⚙</span><span class="sr-only">Settings</span></summary><div class="settings-panel"><div class="settings-title"><h2>settings</h2><button type="button" id="close-settings" class="js-only" aria-label="Close settings">×</button></div><div class="settings-tabs" role="group" aria-label="Settings categories"><label><input type="radio" name="settings-view" value="appearance" checked><span>theme</span></label><label><input type="radio" name="settings-view" value="browser"><span>browser</span></label></div><section data-settings="appearance"><div class="theme-workspace"><div class="theme-picker"><div class="setting-heading"><h3>theme</h3></div><div class="theme-grid originals"><label class="theme-card ps-gh"><input type="radio" name="theme" id="theme-jlpt_paper" value="jlpt_paper"><span>jlpt_paper</span></label><label class="theme-card ps-ck"><input type="radio" name="theme" id="theme-astraJLPT_dark" value="astraJLPT_dark" checked><span>astraJLPT_dark</span></label><label class="theme-card ps-ga"><input type="radio" name="theme" id="theme-astraJLPT_sepia" value="astraJLPT_sepia"><span>astraJLPT_sepia</span></label></div><div class="js-only"><p class="settings-label">three random picks</p><div class="theme-grid" id="quick-picks"></div></div><details><summary>all 187 Monkeytype palettes</summary><label class="theme-search js-only">find a palette<input id="theme-search" type="search" placeholder="search themes" autocomplete="off"></label><div class="theme-grid theme-catalog"><label class="theme-card ps-e9"><input type="radio" name="theme" id="theme-8008" value="8008"><span>8008</span></label><label class="theme-card ps-cw"><input type="radio" name="theme" id="theme-80s_after_dark" value="80s_after_dark"><span>80s after dark</span></label><label class="theme-card ps-fq"><input type="radio" name="theme" id="theme-9009" value="9009"><span>9009</span></label><label class="theme-card ps-cc"><input type="radio" name="theme" id="theme-aether" value="aether"><span>aether</span></label><label class="theme-card ps-cz"><input type="radio" name="theme" id="theme-alduin" value="alduin"><span>alduin</span></label><label class="theme-card ps-el"><input type="radio" name="theme" id="theme-alpine" value="alpine"><span>alpine</span></label><label class="theme-card ps-bg"><input type="radio" name="theme" id="theme-anti_hero" value="anti_hero"><span>anti hero</span></label><label class="theme-card ps-c3"><input type="radio" name="theme" id="theme-arch" value="arch"><span>arch</span></label><label class="theme-card ps-bt"><input type="radio" name="theme" id="theme-aurora" value="aurora"><span>aurora</span></label><label class="theme-card ps-g8"><input type="radio" name="theme" id="theme-beach" value="beach"><span>beach</span></label><label class="theme-card ps-dz"><input type="radio" name="theme" id="theme-bento" value="bento"><span>bento</span></label><label class="theme-card ps-f1"><input type="radio" name="theme" id="theme-bingsu" value="bingsu"><span>bingsu</span></label><label class="theme-card ps-dl"><input type="radio" name="theme" id="theme-bliss" value="bliss"><span>bliss</span></label><label class="theme-card ps-bn"><input type="radio" name="theme" id="theme-blue_dolphin" value="blue_dolphin"><span>blue dolphin</span></label><label class="theme-card ps-dd"><input type="radio" name="theme" id="theme-blueberry_dark" value="blueberry_dark"><span>blueberry dark</span></label><label class="theme-card ps-fd"><input type="radio" name="theme" id="theme-blueberry_light" value="blueberry_light"><span>blueberry light</span></label><label class="theme-card ps-ep"><input type="radio" name="theme" id="theme-botanical" value="botanical"><span>botanical</span></label><label class="theme-card ps-cl"><input type="radio" name="theme" id="theme-bouquet" value="bouquet"><span>bouquet</span></label><label class="theme-card ps-fk"><input type="radio" name="theme" id="theme-breeze" value="breeze"><span>breeze</span></label><label class="theme-card ps-dk"><input type="radio" name="theme" id="theme-bushido" value="bushido"><span>bushido</span></label><label class="theme-card ps-f5"><input type="radio" name="theme" id="theme-cafe" value="cafe"><span>cafe</span></label><label class="theme-card ps-g1"><input type="radio" name="theme" id="theme-camping" value="camping"><span>camping</span></label><label class="theme-card ps-e4"><input type="radio" name="theme" id="theme-carbon" value="carbon"><span>carbon</span></label><label class="theme-card ps-d3"><input type="radio" name="theme" id="theme-catppuccin" value="catppuccin"><span>catppuccin</span></label><label class="theme-card ps-ch"><input type="radio" name="theme" id="theme-chaos_theory" value="chaos_theory"><span>chaos theory</span></label><label class="theme-card ps-g3"><input type="radio" name="theme" id="theme-cheesecake" value="cheesecake"><span>cheesecake</span></label><label class="theme-card ps-e7"><input type="radio" name="theme" id="theme-cherry_blossom" value="cherry_blossom"><span>cherry blossom</span></label><label class="theme-card ps-eh"><input type="radio" name="theme" id="theme-comfy" value="comfy"><span>comfy</span></label><label class="theme-card ps-ef"><input type="radio" name="theme" id="theme-copper" value="copper"><span>copper</span></label><label class="theme-card ps-g6"><input type="radio" name="theme" id="theme-creamsicle" value="creamsicle"><span>creamsicle</span></label><label class="theme-card ps-em"><input type="radio" name="theme" id="theme-cy_red" value="cy_red"><span>cy red</span></label><label class="theme-card ps-co"><input type="radio" name="theme" id="theme-cyberspace" value="cyberspace"><span>cyberspace</span></label><label class="theme-card ps-cd"><input type="radio" name="theme" id="theme-dark" value="dark"><span>dark</span></label><label class="theme-card ps-bz"><input type="radio" name="theme" id="theme-dark_magic_girl" value="dark_magic_girl"><span>dark magic girl</span></label><label class="theme-card ps-d6"><input type="radio" name="theme" id="theme-dark_note" value="dark_note"><span>dark note</span></label><label class="theme-card ps-g5"><input type="radio" name="theme" id="theme-darling" value="darling"><span>darling</span></label><label class="theme-card ps-bw"><input type="radio" name="theme" id="theme-deku" value="deku"><span>deku</span></label><label class="theme-card ps-g9"><input type="radio" name="theme" id="theme-desert_oasis" value="desert_oasis"><span>desert oasis</span></label><label class="theme-card ps-cx"><input type="radio" name="theme" id="theme-dev" value="dev"><span>dev</span></label><label class="theme-card ps-ek"><input type="radio" name="theme" id="theme-diner" value="diner"><span>diner</span></label><label class="theme-card ps-gi"><input type="radio" name="theme" id="theme-dino" value="dino"><span>dino</span></label><label class="theme-card ps-e6"><input type="radio" name="theme" id="theme-discord" value="discord"><span>discord</span></label><label class="theme-card ps-fc"><input type="radio" name="theme" id="theme-dmg" value="dmg"><span>dmg</span></label><label class="theme-card ps-fj"><input type="radio" name="theme" id="theme-dollar" value="dollar"><span>dollar</span></label><label class="theme-card ps-ce"><input type="radio" name="theme" id="theme-dots" value="dots"><span>dots</span></label><label class="theme-card ps-dq"><input type="radio" name="theme" id="theme-dracula" value="dracula"><span>dracula</span></label><label class="theme-card ps-cq"><input type="radio" name="theme" id="theme-drowning" value="drowning"><span>drowning</span></label><label class="theme-card ps-eo"><input type="radio" name="theme" id="theme-dualshot" value="dualshot"><span>dualshot</span></label><label class="theme-card ps-dr"><input type="radio" name="theme" id="theme-earthsong" value="earthsong"><span>earthsong</span></label><label class="theme-card ps-ci"><input type="radio" name="theme" id="theme-everblush" value="everblush"><span>everblush</span></label><label class="theme-card ps-bq"><input type="radio" name="theme" id="theme-evil_eye" value="evil_eye"><span>evil eye</span></label><label class="theme-card ps-bp"><input type="radio" name="theme" id="theme-ez_mode" value="ez_mode"><span>ez mode</span></label><label class="theme-card ps-c8"><input type="radio" name="theme" id="theme-fire" value="fire"><span>fire</span></label><label class="theme-card ps-eb"><input type="radio" name="theme" id="theme-fledgling" value="fledgling"><span>fledgling</span></label><label class="theme-card ps-f3"><input type="radio" name="theme" id="theme-fleuriste" value="fleuriste"><span>fleuriste</span></label><label class="theme-card ps-bl"><input type="radio" name="theme" id="theme-floret" value="floret"><span>floret</span></label><label class="theme-card ps-fh"><input type="radio" name="theme" id="theme-froyo" value="froyo"><span>froyo</span></label><label class="theme-card ps-et"><input type="radio" name="theme" id="theme-frozen_llama" value="frozen_llama"><span>frozen llama</span></label><label class="theme-card ps-f9"><input type="radio" name="theme" id="theme-fruit_chew" value="fruit_chew"><span>fruit chew</span></label><label class="theme-card ps-en"><input type="radio" name="theme" id="theme-fundamentals" value="fundamentals"><span>fundamentals</span></label><label class="theme-card ps-e0"><input type="radio" name="theme" id="theme-future_funk" value="future_funk"><span>future funk</span></label><label class="theme-card ps-dc"><input type="radio" name="theme" id="theme-github" value="github"><span>github</span></label><label class="theme-card ps-fn"><input type="radio" name="theme" id="theme-godspeed" value="godspeed"><span>godspeed</span></label><label class="theme-card ps-e3"><input type="radio" name="theme" id="theme-graen" value="graen"><span>graen</span></label><label class="theme-card ps-ea"><input type="radio" name="theme" id="theme-grand_prix" value="grand_prix"><span>grand prix</span></label><label class="theme-card ps-dv"><input type="radio" name="theme" id="theme-grape" value="grape"><span>grape</span></label><label class="theme-card ps-dp"><input type="radio" name="theme" id="theme-gruvbox_dark" value="gruvbox_dark"><span>gruvbox dark</span></label><label class="theme-card ps-g2"><input type="radio" name="theme" id="theme-gruvbox_light" value="gruvbox_light"><span>gruvbox light</span></label><label class="theme-card ps-bu"><input type="radio" name="theme" id="theme-hammerhead" value="hammerhead"><span>hammerhead</span></label><label class="theme-card ps-fa"><input type="radio" name="theme" id="theme-hanok" value="hanok"><span>hanok</span></label><label class="theme-card ps-ed"><input type="radio" name="theme" id="theme-hedge" value="hedge"><span>hedge</span></label><label class="theme-card ps-fu"><input type="radio" name="theme" id="theme-honey" value="honey"><span>honey</span></label><label class="theme-card ps-d0"><input type="radio" name="theme" id="theme-horizon" value="horizon"><span>horizon</span></label><label class="theme-card ps-bf"><input type="radio" name="theme" id="theme-husqy" value="husqy"><span>husqy</span></label><label class="theme-card ps-cj"><input type="radio" name="theme" id="theme-iceberg_dark" value="iceberg_dark"><span>iceberg dark</span></label><label class="theme-card ps-fl"><input type="radio" name="theme" id="theme-iceberg_light" value="iceberg_light"><span>iceberg light</span></label><label class="theme-card ps-c7"><input type="radio" name="theme" id="theme-incognito" value="incognito"><span>incognito</span></label><label class="theme-card ps-d8"><input type="radio" name="theme" id="theme-ishtar" value="ishtar"><span>ishtar</span></label><label class="theme-card ps-eu"><input type="radio" name="theme" id="theme-iv_clover" value="iv_clover"><span>iv clover</span></label><label class="theme-card ps-c2"><input type="radio" name="theme" id="theme-iv_spade" value="iv_spade"><span>iv spade</span></label><label class="theme-card ps-cu"><input type="radio" name="theme" id="theme-joker" value="joker"><span>joker</span></label><label class="theme-card ps-de"><input type="radio" name="theme" id="theme-laser" value="laser"><span>laser</span></label><label class="theme-card ps-ex"><input type="radio" name="theme" id="theme-lavender" value="lavender"><span>lavender</span></label><label class="theme-card ps-ew"><input type="radio" name="theme" id="theme-leather" value="leather"><span>leather</span></label><label class="theme-card ps-fo"><input type="radio" name="theme" id="theme-lil_dragon" value="lil_dragon"><span>lil dragon</span></label><label class="theme-card ps-gd"><input type="radio" name="theme" id="theme-lilac_mist" value="lilac_mist"><span>lilac mist</span></label><label class="theme-card ps-er"><input type="radio" name="theme" id="theme-lime" value="lime"><span>lime</span></label><label class="theme-card ps-df"><input type="radio" name="theme" id="theme-luna" value="luna"><span>luna</span></label><label class="theme-card ps-ez"><input type="radio" name="theme" id="theme-macroblank" value="macroblank"><span>macroblank</span></label><label class="theme-card ps-gk"><input type="radio" name="theme" id="theme-magic_girl" value="magic_girl"><span>magic girl</span></label><label class="theme-card ps-du"><input type="radio" name="theme" id="theme-mashu" value="mashu"><span>mashu</span></label><label class="theme-card ps-ei"><input type="radio" name="theme" id="theme-matcha_moccha" value="matcha_moccha"><span>matcha moccha</span></label><label class="theme-card ps-dn"><input type="radio" name="theme" id="theme-material" value="material"><span>material</span></label><label class="theme-card ps-be"><input type="radio" name="theme" id="theme-matrix" value="matrix"><span>matrix</span></label><label class="theme-card ps-br"><input type="radio" name="theme" id="theme-menthol" value="menthol"><span>menthol</span></label><label class="theme-card ps-dg"><input type="radio" name="theme" id="theme-metaverse" value="metaverse"><span>metaverse</span></label><label class="theme-card ps-ca"><input type="radio" name="theme" id="theme-metropolis" value="metropolis"><span>metropolis</span></label><label class="theme-card ps-g0"><input type="radio" name="theme" id="theme-mexican" value="mexican"><span>mexican</span></label><label class="theme-card ps-fv"><input type="radio" name="theme" id="theme-miami" value="miami"><span>miami</span></label><label class="theme-card ps-cn"><input type="radio" name="theme" id="theme-miami_nights" value="miami_nights"><span>miami nights</span></label><label class="theme-card ps-c0"><input type="radio" name="theme" id="theme-midnight" value="midnight"><span>midnight</span></label><label class="theme-card ps-gf"><input type="radio" name="theme" id="theme-milkshake" value="milkshake"><span>milkshake</span></label><label class="theme-card ps-bv"><input type="radio" name="theme" id="theme-mint" value="mint"><span>mint</span></label><label class="theme-card ps-ey"><input type="radio" name="theme" id="theme-mizu" value="mizu"><span>mizu</span></label><label class="theme-card ps-dy"><input type="radio" name="theme" id="theme-modern_dolch" value="modern_dolch"><span>modern dolch</span></label><label class="theme-card ps-fe"><input type="radio" name="theme" id="theme-modern_dolch_light" value="modern_dolch_light"><span>modern dolch light</span></label><label class="theme-card ps-gm"><input type="radio" name="theme" id="theme-modern_ink" value="modern_ink"><span>modern ink</span></label><label class="theme-card ps-do"><input type="radio" name="theme" id="theme-monokai" value="monokai"><span>monokai</span></label><label class="theme-card ps-cs"><input type="radio" name="theme" id="theme-moonlight" value="moonlight"><span>moonlight</span></label><label class="theme-card ps-c9"><input type="radio" name="theme" id="theme-mountain" value="mountain"><span>mountain</span></label><label class="theme-card ps-f8"><input type="radio" name="theme" id="theme-mr_sleeves" value="mr_sleeves"><span>mr sleeves</span></label><label class="theme-card ps-gj"><input type="radio" name="theme" id="theme-ms_cupcakes" value="ms_cupcakes"><span>ms cupcakes</span></label><label class="theme-card ps-ej"><input type="radio" name="theme" id="theme-muted" value="muted"><span>muted</span></label><label class="theme-card ps-cg"><input type="radio" name="theme" id="theme-nautilus" value="nautilus"><span>nautilus</span></label><label class="theme-card ps-db"><input type="radio" name="theme" id="theme-nebula" value="nebula"><span>nebula</span></label><label class="theme-card ps-da"><input type="radio" name="theme" id="theme-night_runner" value="night_runner"><span>night runner</span></label><label class="theme-card ps-dj"><input type="radio" name="theme" id="theme-nord" value="nord"><span>nord</span></label><label class="theme-card ps-fp"><input type="radio" name="theme" id="theme-nord_light" value="nord_light"><span>nord light</span></label><label class="theme-card ps-di"><input type="radio" name="theme" id="theme-norse" value="norse"><span>norse</span></label><label class="theme-card ps-e5"><input type="radio" name="theme" id="theme-oblivion" value="oblivion"><span>oblivion</span></label><label class="theme-card ps-fm"><input type="radio" name="theme" id="theme-olive" value="olive"><span>olive</span></label><label class="theme-card ps-cy"><input type="radio" name="theme" id="theme-olivia" value="olivia"><span>olivia</span></label><label class="theme-card ps-e2"><input type="radio" name="theme" id="theme-onedark" value="onedark"><span>onedark</span></label><label class="theme-card ps-f4"><input type="radio" name="theme" id="theme-our_theme" value="our_theme"><span>our theme</span></label><label class="theme-card ps-ee"><input type="radio" name="theme" id="theme-pale_nimbus" value="pale_nimbus"><span>pale nimbus</span></label><label class="theme-card ps-fr"><input type="radio" name="theme" id="theme-paper" value="paper"><span>paper</span></label><label class="theme-card ps-eq"><input type="radio" name="theme" id="theme-passion_fruit" value="passion_fruit"><span>passion fruit</span></label><label class="theme-card ps-ff"><input type="radio" name="theme" id="theme-pastel" value="pastel"><span>pastel</span></label><label class="theme-card ps-ds"><input type="radio" name="theme" id="theme-peach_blossom" value="peach_blossom"><span>peach blossom</span></label><label class="theme-card ps-fg"><input type="radio" name="theme" id="theme-peaches" value="peaches"><span>peaches</span></label><label class="theme-card ps-bk"><input type="radio" name="theme" id="theme-phantom" value="phantom"><span>phantom</span></label><label class="theme-card ps-fz"><input type="radio" name="theme" id="theme-pink_lemonade" value="pink_lemonade"><span>pink lemonade</span></label><label class="theme-card ps-cm"><input type="radio" name="theme" id="theme-pulse" value="pulse"><span>pulse</span></label><label class="theme-card ps-d4"><input type="radio" name="theme" id="theme-purpleish" value="purpleish"><span>purpleish</span></label><label class="theme-card ps-fy"><input type="radio" name="theme" id="theme-rainbow_trail" value="rainbow_trail"><span>rainbow trail</span></label><label class="theme-card ps-ct"><input type="radio" name="theme" id="theme-red_dragon" value="red_dragon"><span>red dragon</span></label><label class="theme-card ps-es"><input type="radio" name="theme" id="theme-red_samurai" value="red_samurai"><span>red samurai</span></label><label class="theme-card ps-e1"><input type="radio" name="theme" id="theme-repose_dark" value="repose_dark"><span>repose dark</span></label><label class="theme-card ps-fs"><input type="radio" name="theme" id="theme-repose_light" value="repose_light"><span>repose light</span></label><label class="theme-card ps-fb"><input type="radio" name="theme" id="theme-retro" value="retro"><span>retro</span></label><label class="theme-card ps-bx"><input type="radio" name="theme" id="theme-retrocast" value="retrocast"><span>retrocast</span></label><label class="theme-card ps-cd"><input type="radio" name="theme" id="theme-rgb" value="rgb"><span>rgb</span></label><label class="theme-card ps-d5"><input type="radio" name="theme" id="theme-rose_pine" value="rose_pine"><span>rose pine</span></label><label class="theme-card ps-gc"><input type="radio" name="theme" id="theme-rose_pine_dawn" value="rose_pine_dawn"><span>rose pine dawn</span></label><label class="theme-card ps-dt"><input type="radio" name="theme" id="theme-rose_pine_moon" value="rose_pine_moon"><span>rose pine moon</span></label><label class="theme-card ps-cv"><input type="radio" name="theme" id="theme-rudy" value="rudy"><span>rudy</span></label><label class="theme-card ps-by"><input type="radio" name="theme" id="theme-ryujinscales" value="ryujinscales"><span>ryujinscales</span></label><label class="theme-card ps-fi"><input type="radio" name="theme" id="theme-serika" value="serika"><span>serika</span></label><label class="theme-card ps-e8"><input type="radio" name="theme" id="theme-serika_dark" value="serika_dark"><span>serika dark</span></label><label class="theme-card ps-dh"><input type="radio" name="theme" id="theme-sewing_tin" value="sewing_tin"><span>sewing tin</span></label><label class="theme-card ps-gg"><input type="radio" name="theme" id="theme-sewing_tin_light" value="sewing_tin_light"><span>sewing tin light</span></label><label class="theme-card ps-bi"><input type="radio" name="theme" id="theme-shadow" value="shadow"><span>shadow</span></label><label class="theme-card ps-f6"><input type="radio" name="theme" id="theme-shoko" value="shoko"><span>shoko</span></label><label class="theme-card ps-ge"><input type="radio" name="theme" id="theme-slambook" value="slambook"><span>slambook</span></label><label class="theme-card ps-f2"><input type="radio" name="theme" id="theme-snes" value="snes"><span>snes</span></label><label class="theme-card ps-gb"><input type="radio" name="theme" id="theme-soaring_skies" value="soaring_skies"><span>soaring skies</span></label><label class="theme-card ps-bm"><input type="radio" name="theme" id="theme-solarized_dark" value="solarized_dark"><span>solarized dark</span></label><label class="theme-card ps-g4"><input type="radio" name="theme" id="theme-solarized_light" value="solarized_light"><span>solarized light</span></label><label class="theme-card ps-bj"><input type="radio" name="theme" id="theme-solarized_osaka" value="solarized_osaka"><span>solarized osaka</span></label><label class="theme-card ps-dw"><input type="radio" name="theme" id="theme-sonokai" value="sonokai"><span>sonokai</span></label><label class="theme-card ps-c5"><input type="radio" name="theme" id="theme-spiderman" value="spiderman"><span>spiderman</span></label><label class="theme-card ps-bs"><input type="radio" name="theme" id="theme-stealth" value="stealth"><span>stealth</span></label><label class="theme-card ps-fw"><input type="radio" name="theme" id="theme-strawberry" value="strawberry"><span>strawberry</span></label><label class="theme-card ps-cf"><input type="radio" name="theme" id="theme-striker" value="striker"><span>striker</span></label><label class="theme-card ps-ec"><input type="radio" name="theme" id="theme-suisei" value="suisei"><span>suisei</span></label><label class="theme-card ps-d9"><input type="radio" name="theme" id="theme-sunset" value="sunset"><span>sunset</span></label><label class="theme-card ps-dm"><input type="radio" name="theme" id="theme-superuser" value="superuser"><span>superuser</span></label><label class="theme-card ps-bo"><input type="radio" name="theme" id="theme-sweden" value="sweden"><span>sweden</span></label><label class="theme-card ps-g7"><input type="radio" name="theme" id="theme-tangerine" value="tangerine"><span>tangerine</span></label><label class="theme-card ps-f0"><input type="radio" name="theme" id="theme-taro" value="taro"><span>taro</span></label><label class="theme-card ps-cr"><input type="radio" name="theme" id="theme-terminal" value="terminal"><span>terminal</span></label><label class="theme-card ps-c4"><input type="radio" name="theme" id="theme-terra" value="terra"><span>terra</span></label><label class="theme-card ps-ft"><input type="radio" name="theme" id="theme-terrazzo" value="terrazzo"><span>terrazzo</span></label><label class="theme-card ps-c1"><input type="radio" name="theme" id="theme-terror_below" value="terror_below"><span>terror below</span></label><label class="theme-card ps-f7"><input type="radio" name="theme" id="theme-tiramisu" value="tiramisu"><span>tiramisu</span></label><label class="theme-card ps-eg"><input type="radio" name="theme" id="theme-trackday" value="trackday"><span>trackday</span></label><label class="theme-card ps-bh"><input type="radio" name="theme" id="theme-trance" value="trance"><span>trance</span></label><label class="theme-card ps-c6"><input type="radio" name="theme" id="theme-tron_orange" value="tron_orange"><span>tron orange</span></label><label class="theme-card ps-ev"><input type="radio" name="theme" id="theme-vaporwave" value="vaporwave"><span>vaporwave</span></label><label class="theme-card ps-cb"><input type="radio" name="theme" id="theme-vesper" value="vesper"><span>vesper</span></label><label class="theme-card ps-gl"><input type="radio" name="theme" id="theme-vesper_light" value="vesper_light"><span>vesper light</span></label><label class="theme-card ps-dx"><input type="radio" name="theme" id="theme-viridescent" value="viridescent"><span>viridescent</span></label><label class="theme-card ps-cp"><input type="radio" name="theme" id="theme-voc" value="voc"><span>voc</span></label><label class="theme-card ps-d2"><input type="radio" name="theme" id="theme-vscode" value="vscode"><span>vscode</span></label><label class="theme-card ps-d7"><input type="radio" name="theme" id="theme-watermelon" value="watermelon"><span>watermelon</span></label><label class="theme-card ps-d1"><input type="radio" name="theme" id="theme-wavez" value="wavez"><span>wavez</span></label><label class="theme-card ps-fx"><input type="radio" name="theme" id="theme-witch_girl" value="witch_girl"><span>witch girl</span></label></div></details><div class="js-only ps-14h" id="monkeytype-text-source">
+<h3>reading text color</h3>
+<p class="control-help">Auto chooses the more readable palette color. Choose sub or text to set it yourself; answer colors adapt.</p>
+<div aria-label="Monkeytype reading text color" class="segmented" role="group">
+<label><input checked="" name="text-source" type="radio" value="auto"/><span>auto</span></label>
+<label><input name="text-source" type="radio" value="sub"/><span>sub</span></label>
+<label><input name="text-source" type="radio" value="text"/><span>text</span></label>
+</div>
+<p aria-live="polite" class="control-help ps-14i" id="monkeytype-text-status" role="status"></p>
+</div></div><aside class="theme-editor js-only" aria-label="Customize theme colors"><div class="color-editor-heading"><h3>colors</h3><button type="button" id="reset-theme-colors" aria-label="Reset this theme">reset</button></div><span class="sr-only" id="color-format-help">Choose a swatch or enter hex. Transparent borders accept #RRGGBBAA. Reset restores the theme color.</span><span class="sr-only" id="color-edit-status" role="status" aria-live="polite"></span><div class="main-colors"><div class="color-row" data-color-row="bg">
+<label for="color-bg">background</label>
+<div class="color-inputs"><input type="color" id="swatch-bg" aria-label="background swatch" data-color-swatch="bg">
+<input type="text" id="color-bg" data-color-hex="bg" aria-label="background hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="bg" aria-label="Reset background" title="Reset background">↺</button></div></div><div class="color-row" data-color-row="text">
+<label for="color-text">reading text</label>
+<div class="color-inputs"><input type="color" id="swatch-text" aria-label="reading text swatch" data-color-swatch="text">
+<input type="text" id="color-text" data-color-hex="text" aria-label="reading text hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="text" aria-label="Reset reading text" title="Reset reading text">↺</button></div></div><div class="color-row" data-color-row="muted">
+<label for="color-muted">secondary text</label>
+<div class="color-inputs"><input type="color" id="swatch-muted" aria-label="secondary text swatch" data-color-swatch="muted">
+<input type="text" id="color-muted" data-color-hex="muted" aria-label="secondary text hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="muted" aria-label="Reset secondary text" title="Reset secondary text">↺</button></div></div><div class="color-row" data-color-row="accent">
+<label for="color-accent">interface accent</label>
+<div class="color-inputs"><input type="color" id="swatch-accent" aria-label="interface accent swatch" data-color-swatch="accent">
+<input type="text" id="color-accent" data-color-hex="accent" aria-label="interface accent hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="accent" aria-label="Reset interface accent" title="Reset interface accent">↺</button></div></div><div class="color-row" data-color-row="correct">
+<label for="color-correct">correct</label>
+<div class="color-inputs"><input type="color" id="swatch-correct" aria-label="correct swatch" data-color-swatch="correct">
+<input type="text" id="color-correct" data-color-hex="correct" aria-label="correct hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="correct" aria-label="Reset correct" title="Reset correct">↺</button></div></div><div class="color-row" data-color-row="wrong">
+<label for="color-wrong">wrong</label>
+<div class="color-inputs"><input type="color" id="swatch-wrong" aria-label="wrong swatch" data-color-swatch="wrong">
+<input type="text" id="color-wrong" data-color-hex="wrong" aria-label="wrong hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="wrong" aria-label="Reset wrong" title="Reset wrong">↺</button></div></div></div><details class="advanced-colors"><summary>more colors</summary><div class="advanced-color-grid"><div class="color-row" data-color-row="raised">
+<label for="color-raised">buttons &amp; controls</label>
+<div class="color-inputs"><input type="color" id="swatch-raised" aria-label="buttons &amp; controls swatch" data-color-swatch="raised">
+<input type="text" id="color-raised" data-color-hex="raised" aria-label="buttons &amp; controls hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="raised" aria-label="Reset buttons &amp; controls" title="Reset buttons &amp; controls">↺</button></div></div><div class="color-row" data-color-row="correct-ink">
+<label for="color-correct-ink">correct text &amp; numbers</label>
+<div class="color-inputs"><input type="color" id="swatch-correct-ink" aria-label="correct text &amp; numbers swatch" data-color-swatch="correct-ink">
+<input type="text" id="color-correct-ink" data-color-hex="correct-ink" aria-label="correct text &amp; numbers hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="correct-ink" aria-label="Reset correct text &amp; numbers" title="Reset correct text &amp; numbers">↺</button></div></div><div class="color-row" data-color-row="edge">
+<label for="color-edge">paper outline</label>
+<div class="color-inputs"><input type="color" id="swatch-edge" aria-label="paper outline swatch" data-color-swatch="edge">
+<input type="text" id="color-edge" data-color-hex="edge" aria-label="paper outline hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge" aria-label="Reset paper outline" title="Reset paper outline">↺</button></div></div><div class="color-row" data-color-row="edge-soft">
+<label for="color-edge-soft">soft dividers</label>
+<div class="color-inputs"><input type="color" id="swatch-edge-soft" aria-label="soft dividers swatch" data-color-swatch="edge-soft">
+<input type="text" id="color-edge-soft" data-color-hex="edge-soft" aria-label="soft dividers hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge-soft" aria-label="Reset soft dividers" title="Reset soft dividers">↺</button></div><label class="color-opacity">opacity<input type="range" min="0" max="100" step="0.1" data-color-alpha="edge-soft" aria-label="soft dividers opacity"><output></output></label></div><div class="color-row" data-color-row="edge-strong">
+<label for="color-edge-strong">strong borders</label>
+<div class="color-inputs"><input type="color" id="swatch-edge-strong" aria-label="strong borders swatch" data-color-swatch="edge-strong">
+<input type="text" id="color-edge-strong" data-color-hex="edge-strong" aria-label="strong borders hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge-strong" aria-label="Reset strong borders" title="Reset strong borders">↺</button></div><label class="color-opacity">opacity<input type="range" min="0" max="100" step="0.1" data-color-alpha="edge-strong" aria-label="strong borders opacity"><output></output></label></div><div class="color-row" data-color-row="logo-secondary">
+<label for="color-logo-secondary">wordmark · JLPT</label>
+<div class="color-inputs"><input type="color" id="swatch-logo-secondary" aria-label="wordmark · JLPT swatch" data-color-swatch="logo-secondary">
+<input type="text" id="color-logo-secondary" data-color-hex="logo-secondary" aria-label="wordmark · JLPT hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="logo-secondary" aria-label="Reset wordmark · JLPT" title="Reset wordmark · JLPT">↺</button></div></div></div><div class="fill-opacity-controls"><h4>fill opacity</h4><p>Applies to correct and wrong answers.</p><div class="fill-opacity-row"><label for="opacity-cell-fill">cell fill<output id="opacity-cell-fill-output">11%</output></label><div><input id="opacity-cell-fill" type="range" min="0" max="100" step="1" value="11" data-fill-opacity="cell-fill" aria-label="cell fill opacity"><button type="button" data-fill-reset="cell-fill" aria-label="Reset cell fill opacity" title="Reset cell fill opacity">↺</button></div></div><div class="fill-opacity-row"><label for="opacity-fill">fill style<output id="opacity-fill-output">30%</output></label><div><input id="opacity-fill" type="range" min="0" max="100" step="1" value="30" data-fill-opacity="fill" aria-label="fill style opacity"><button type="button" data-fill-reset="fill" aria-label="Reset fill style opacity" title="Reset fill style opacity">↺</button></div></div></div></details></aside></div></section><section data-settings="browser"><div class="setting-row js-only"><div><h3>remember this browser</h3><p id="save-status">Saving is on by default. No account required.</p></div><label class="switch"><input id="remember" type="checkbox" checked>save preferences, answers and position</label></div><div class="button-row browser-actions js-only"><button id="reset-preferences" type="button">reset preferences</button><button id="forget" type="button">forget saved data</button></div><div class="developer-only developer-settings"><h3>developer mode</h3><p>Principal differences and editorial cases are visible. This local switch is not authentication.</p><button id="disable-dev" type="button">hide developer tools</button></div><div class="settings-about"><button type="button" id="developer-unlock" class="js-only" title="astraJLPT build information">astraJLPT · 2020–2026 collection</button><span id="developer-hint" role="status"></span></div></section></div></details></header><main id="content" class="review-page"><div class="review-content"><a href="../levels/N3.html">← N3 papers</a><h1>N3 · December 2017</h1><p>Uncertainty index: <strong>2018</strong> · 8 differences · 2 unresolved · 0 provisional fixes</p><p>Evidence base 2000 + source concerns 18 = 2018. Concerns are uncapped; browsing order uses evidence tier before concern points.</p><p>This is an editorial evidence assessment, not a probability, an error rate or a practice score.</p><details><summary>Assessment evidence and original source scores</summary><pre>{
+  &quot;unit&quot;: &quot;N3_12_2017&quot;,
+  &quot;sample&quot;: false,
+  &quot;year&quot;: 2017,
+  &quot;month&quot;: 12,
+  &quot;evidence_base&quot;: 2000,
+  &quot;evidence_tier&quot;: 4,
+  &quot;concern_points&quot;: 18,
+  &quot;index&quot;: 2018,
+  &quot;concern_counts&quot;: {
+    &quot;metadata_flags&quot;: 0,
+    &quot;missing_units&quot;: 1,
+    &quot;major_defects&quot;: 0,
+    &quot;minor_defects&quot;: 4,
+    &quot;uncertain_fields&quot;: 0
+  },
+  &quot;principal_history&quot;: {
+    &quot;unit&quot;: &quot;N3_12_2017&quot;,
+    &quot;level&quot;: &quot;N3&quot;,
+    &quot;year&quot;: 2017,
+    &quot;month&quot;: 12,
+    &quot;principal_path&quot;: &quot;src/Yuuki Bui/Đề thi N3 các năm Yuuki Bùi/N3 12-2017/Đề N3 12-2017.pdf&quot;,
+    &quot;principal_sha256&quot;: &quot;b4ed4b3a54a3bac91b7fadfab84998be52f6441abaec0c67cd4a6af78054f983&quot;,
+    &quot;initial_tier&quot;: 1,
+    &quot;written_physical_pages&quot;: &quot;2-11&quot;,
+    &quot;review_status&quot;: &quot;complete_written_review&quot;,
+    &quot;provenance_status&quot;: &quot;known_reconstruction&quot;,
+    &quot;provenance_points&quot;: 200,
+    &quot;metadata_flags&quot;: 0,
+    &quot;missing_units&quot;: 1,
+    &quot;major_defects&quot;: 0,
+    &quot;minor_defects&quot;: 4,
+    &quot;uncertain_fields&quot;: 0,
+    &quot;uncertainty_index&quot;: 218,
+    &quot;score_evidence&quot;: [
+      {
+        &quot;id&quot;: &quot;N3_12_2017-S-001&quot;,
+        &quot;kind&quot;: &quot;missing_units&quot;,
+        &quot;item_id&quot;: &quot;reading-s02&quot;,
+        &quot;field&quot;: &quot;/items&quot;,
+        &quot;locator&quot;: &quot;Physical5, Problem2 beforeQ14&quot;,
+        &quot;evidence&quot;: &quot;The STAR worked example and answer-sheet demonstration are absent; the paper proceeds directly to scoredQ14. Count the absent block once.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N3_12_2017-S-002&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-q007&quot;,
+        &quot;field&quot;: &quot;/stem&quot;,
+        &quot;locator&quot;: &quot;Physical5&quot;,
+        &quot;evidence&quot;: &quot;Interleaved reading kana obscures the base/reading distinction; all occurrences in this field counted once.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N3_12_2017-S-003&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-b001&quot;,
+        &quot;field&quot;: &quot;/content&quot;,
+        &quot;locator&quot;: &quot;Physical6&quot;,
+        &quot;evidence&quot;: &quot;Interleaved reading kana obscures the base/reading distinction; all occurrences in this field counted once.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N3_12_2017-S-004&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-b007&quot;,
+        &quot;field&quot;: &quot;/content&quot;,
+        &quot;locator&quot;: &quot;Physical9&quot;,
+        &quot;evidence&quot;: &quot;Interleaved reading kana obscures the base/reading distinction; all occurrences in this field counted once.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N3_12_2017-S-005&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-q033&quot;,
+        &quot;field&quot;: &quot;/stem&quot;,
+        &quot;locator&quot;: &quot;Physical9&quot;,
+        &quot;evidence&quot;: &quot;Malformed 子供もに requires repair, although whether the historical wording had にも or に remains uncertain. Count once in this higher defect category.&quot;
+      }
+    ],
+    &quot;method_version&quot;: 1,
+    &quot;reviewed_at&quot;: &quot;2026-10-05&quot;,
+    &quot;assessment_note&quot;: &quot;Complete inspection of74written questions, all choices and9contexts on physical2-11; advertiser cover1 reviewed. Known compressed secondary reconstruction with Chinese section labels and interleaved readings; no issuer chain. Original STAR example unrecovered. Current output keeps three witnessed full-target underline variants without scoring the shorter principal boundaries as proven defects.&quot;
+  },
+  &quot;evidence&quot;: []
+}</pre></details><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N3_12_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span><ul></ul><div class="review-controls"><label>Show <select id="review-filter"><option value="all">All records</option><option value="difference">Principal differences</option><option value="unresolved">Unresolved cases</option><option value="provisional_fix">Provisional fixes</option></select></label><label>Find <input id="review-search" type="search" placeholder="Item, wording, evidence…"></label></div><p id="review-count" class="control-help" role="status"></p><section class="review-group" id="review-coverage" data-kinds="unresolved"><div class="review-group-heading"><h2>Paper coverage</h2><a href="../papers/N3_12_2017.html#content">Open in paper →</a></div><div class="review-record" id="unresolved_cases-N3_12_2017-gap-star-example"><div class="review-label">Unresolved ·  · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>No alternative recorded</pre></div><div><h4>Editorial</h4><pre>Not recorded</pre></div></div><p>All indexed written PDF layouts checked at the STAR transition omit the unscored example. The native written STAR section likewise contains only five scored questions. Preserve the playable paper and disclose the missing content rather than invent a generic example. The user classified practice coverage by scored questions and required contexts on 9 October 2026. This example gap remains an open source-preservation case; it does not make the practice paper partial. No example was inserted into schema-v2 editorial content.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>The exact original example text, choices, worked sequence and answer-sheet marking remain unknown; no scored question is omitted.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N3_12_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">All 74 scored written questions, their choices and required contexts are available and gradable. The original STAR worked example and answer-sheet demonstration remain unrecovered. No scored question is omitted.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=5): <code>additional-assets/principals/N3_12_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Problem2 transition before scored grammarQ14<p>Instruction proceeds directly toQ14; no worked example.</p></li><li><span class="principal-repository-source">Principal source (page=5): <code>additional-assets/principals/N3_12_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Problem2 transition<p>Instruction proceeds directly toQ14.</p></li><li><span class="principal-repository-source">Principal source (page=5): <code>additional-assets/principals/N3_12_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Problem2 transition<p>No worked example.</p></li><li><span class="principal-repository-source">Principal source (page=6): <code>additional-assets/principals/N3_12_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Problem2 transition<p>No worked example.</p></li><li><span class="principal-repository-source">Principal source (page=5): <code>additional-assets/principals/N3_12_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Problem2 transition<p>No worked example.</p></li><li><span class="principal-repository-source">Principal source (page=5): <code>additional-assets/principals/N3_12_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Problem2 transition<p>No worked example.</p></li><li><span class="principal-repository-source">Principal source (page=5): <code>additional-assets/principals/N3_12_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Problem2 transition<p>No worked example.</p></li></ul><details><summary>Full published record · unresolved_cases-N3_12_2017-gap-star-example</summary><pre>{
+  &quot;case_id&quot;: &quot;N3_12_2017-gap-star-example&quot;,
+  &quot;unit&quot;: &quot;N3_12_2017&quot;,
+  &quot;item_id&quot;: null,
+  &quot;field&quot;: &quot;&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;source_comparison&quot;,
+  &quot;current_value&quot;: null,
+  &quot;context&quot;: &quot;All 74 scored written questions, their choices and required contexts are available and gradable. The original STAR worked example and answer-sheet demonstration remain unrecovered. No scored question is omitted.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: null,
+      &quot;assessment&quot;: &quot;Leave the historical example unrecovered. A generic demonstration from another sitting would not establish this sitting’s wording, options or answer marking.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;Đề N3 12-2017.pdf&quot;,
+      &quot;sha256&quot;: &quot;b4ed4b3a54a3bac91b7fadfab84998be52f6441abaec0c67cd4a6af78054f983&quot;,
+      &quot;physical_pages&quot;: [
+        5
+      ],
+      &quot;locator&quot;: &quot;Problem2 transition before scored grammarQ14&quot;,
+      &quot;reading&quot;: &quot;Instruction proceeds directly toQ14; no worked example.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2017年12月N3.pdf&quot;,
+      &quot;sha256&quot;: &quot;e95edce3b8b9aaf815e10d476dada955ea0e770d15b066a83e7c2b8aee158ec4&quot;,
+      &quot;physical_pages&quot;: [
+        5
+      ],
+      &quot;locator&quot;: &quot;Problem2 transition&quot;,
+      &quot;reading&quot;: &quot;Instruction proceeds directly toQ14.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;【2】2017年12月N3 真题.pdf&quot;,
+      &quot;sha256&quot;: &quot;c0a5f75b639f63cad298849d7bb3f92a05afe0cababb5860f9da3556cb9c6e2b&quot;,
+      &quot;physical_pages&quot;: [
+        5
+      ],
+      &quot;locator&quot;: &quot;Problem2 transition&quot;,
+      &quot;reading&quot;: &quot;No worked example.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2017年12月N3试卷_解析_听力原文_高清扫描.PDF&quot;,
+      &quot;sha256&quot;: &quot;05b83f7be24ed08c8014b7ec4324b079ba8bddedfb61ceec248a3bc1dd98d7fb&quot;,
+      &quot;physical_pages&quot;: [
+        6
+      ],
+      &quot;locator&quot;: &quot;Problem2 transition&quot;,
+      &quot;reading&quot;: &quot;No worked example.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2017年12月真题.pdf&quot;,
+      &quot;sha256&quot;: &quot;0231dc016cee455be759627b28d6f68d38d529d011fc0f26cfa5a8e1b8b89e38&quot;,
+      &quot;physical_pages&quot;: [
+        5
+      ],
+      &quot;locator&quot;: &quot;Problem2 transition&quot;,
+      &quot;reading&quot;: &quot;No worked example.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;N3-2017-12-真题.pdf&quot;,
+      &quot;sha256&quot;: &quot;c7f3f847087e4e982d54bdf5f6ae0344107b942a220eccfe1e7cef7b26680c81&quot;,
+      &quot;physical_pages&quot;: [
+        5
+      ],
+      &quot;locator&quot;: &quot;Problem2 transition&quot;,
+      &quot;reading&quot;: &quot;No worked example.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;【1】2017年12月N3 真题.pdf&quot;,
+      &quot;sha256&quot;: &quot;495733558511f443a5a88d8b3086e73733fe71f5ae058ad213f8417357cbfbee&quot;,
+      &quot;physical_pages&quot;: [
+        5
+      ],
+      &quot;locator&quot;: &quot;Problem2 transition&quot;,
+      &quot;reading&quot;: &quot;No worked example.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;All indexed written PDF layouts checked at the STAR transition omit the unscored example. The native written STAR section likewise contains only five scored questions. Preserve the playable paper and disclose the missing content rather than invent a generic example. The user classified practice coverage by scored questions and required contexts on 9 October 2026. This example gap remains an open source-preservation case; it does not make the practice paper partial. No example was inserted into schema-v2 editorial content.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Completed full written review of the principal and a materially distinct retype.&quot;,
+    &quot;Checked the STAR transition in every indexed question-PDF version and the native written STAR section.&quot;,
+    &quot;Ran focused exact-sitting web searches for the STAR example; returned general samples and unrelated sittings, with no same-sitting example recovered.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;The exact original example text, choices, worked sequence and answer-sheet marking remain unknown; no scored question is omitted.&quot;
+}</pre></details></div></section><section class="review-group" id="review-vocab-q034" data-kinds="difference"><div class="review-group-heading"><h2>vocab-q034</h2><a href="../papers/N3_12_2017.html#vocab-q034">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">34. 断る<ol><li>みんなに反対されたが、わたしは自分の夢を<u>断らなかった</u>。</li><li>誰もそのうわさを<u>断らない</u>ので、本当のことなのかもしれない。</li><li>わたしは40歳のとき、勤めていた会社を<u>断って</u>、農業を始めた。</li><li>友人に映画に行こうと言われたが、用事があるので誘いを<u>断った</u>。</li></ol><p>Editorial key: 4</p></div></details><div class="review-record" id="principal_differences-N3_12_2017-PD-004"><div class="review-label">Principal difference · /options/0 · high</div><div class="comparison"><div><h4>Principal</h4><pre>&lt;u&gt;断らな&lt;/u&gt;<mark class="diff-old">かった</mark></pre></div><div><h4>Editorial</h4><pre>&lt;u&gt;断らな<mark class="diff-new">かった</mark>&lt;/u&gt;</pre></div></div><p>Retain the inherited full inflected target underline, directly witnessed in the bound compilation 2017年12月N3试卷_解析_听力原文_高清扫描.PDF (05b83f7be24ed08c8014b7ec4324b079ba8bddedfb61ceec248a3bc1dd98d7fb), physical5. The principal has a shorter boundary. This witnessed formatting variant is not scored as a proven principal defect.</p><span class="principal-repository-source">Principal source (page=4): <code>additional-assets/principals/N3_12_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">vocab-q034 /options/0; affected span</span><details><summary>Full published record · principal_differences-N3_12_2017-PD-004</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N3_12_2017-PD-004&quot;,
+  &quot;unit&quot;: &quot;N3_12_2017&quot;,
+  &quot;item_id&quot;: &quot;vocab-q034&quot;,
+  &quot;field&quot;: &quot;/options/0&quot;,
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;みんなに反対されたが、わたしは自分の夢を&lt;u&gt;断らなかった&lt;/u&gt;。&quot;
+  },
+  &quot;categories&quot;: [
+    &quot;underline&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;Đề N3 12-2017.pdf — 日语轻松考 / Yuuki Bùi secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;b4ed4b3a54a3bac91b7fadfab84998be52f6441abaec0c67cd4a6af78054f983&quot;,
+    &quot;physical_pages&quot;: [
+      4
+    ],
+    &quot;locator&quot;: &quot;vocab-q034 /options/0; affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;&lt;u&gt;断らな&lt;/u&gt;かった&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;&lt;u&gt;断らなかった&lt;/u&gt;&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;retained_variant&quot;,
+  &quot;rationale&quot;: &quot;Retain the inherited full inflected target underline, directly witnessed in the bound compilation 2017年12月N3试卷_解析_听力原文_高清扫描.PDF (05b83f7be24ed08c8014b7ec4324b079ba8bddedfb61ceec248a3bc1dd98d7fb), physical5. The principal has a shorter boundary. This witnessed formatting variant is not scored as a proven principal defect.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div><div class="review-record" id="principal_differences-N3_12_2017-PD-005"><div class="review-label">Principal difference · /options/1 · high</div><div class="comparison"><div><h4>Principal</h4><pre>&lt;u&gt;断ら&lt;/u&gt;<mark class="diff-old">ない</mark></pre></div><div><h4>Editorial</h4><pre>&lt;u&gt;断ら<mark class="diff-new">ない</mark>&lt;/u&gt;</pre></div></div><p>Retain the inherited full inflected target underline, directly witnessed in the bound compilation 2017年12月N3试卷_解析_听力原文_高清扫描.PDF (05b83f7be24ed08c8014b7ec4324b079ba8bddedfb61ceec248a3bc1dd98d7fb), physical5. The principal has a shorter boundary. This witnessed formatting variant is not scored as a proven principal defect.</p><span class="principal-repository-source">Principal source (page=4): <code>additional-assets/principals/N3_12_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">vocab-q034 /options/1; affected span</span><details><summary>Full published record · principal_differences-N3_12_2017-PD-005</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N3_12_2017-PD-005&quot;,
+  &quot;unit&quot;: &quot;N3_12_2017&quot;,
+  &quot;item_id&quot;: &quot;vocab-q034&quot;,
+  &quot;field&quot;: &quot;/options/1&quot;,
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;誰もそのうわさを&lt;u&gt;断らない&lt;/u&gt;ので、本当のことなのかもしれない。&quot;
+  },
+  &quot;categories&quot;: [
+    &quot;underline&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;Đề N3 12-2017.pdf — 日语轻松考 / Yuuki Bùi secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;b4ed4b3a54a3bac91b7fadfab84998be52f6441abaec0c67cd4a6af78054f983&quot;,
+    &quot;physical_pages&quot;: [
+      4
+    ],
+    &quot;locator&quot;: &quot;vocab-q034 /options/1; affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;&lt;u&gt;断ら&lt;/u&gt;ない&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;&lt;u&gt;断らない&lt;/u&gt;&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;retained_variant&quot;,
+  &quot;rationale&quot;: &quot;Retain the inherited full inflected target underline, directly witnessed in the bound compilation 2017年12月N3试卷_解析_听力原文_高清扫描.PDF (05b83f7be24ed08c8014b7ec4324b079ba8bddedfb61ceec248a3bc1dd98d7fb), physical5. The principal has a shorter boundary. This witnessed formatting variant is not scored as a proven principal defect.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-vocab-q035" data-kinds="difference"><div class="review-group-heading"><h2>vocab-q035</h2><a href="../papers/N3_12_2017.html#vocab-q035">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">35. 受取る<ol><li>父親は走ってきた子どもを両手で<u>受取った</u>。</li><li>わたしの家では毎年ホームステイの学生を<u>受取って</u>います。</li><li>送ってくださった資料は、本日確かに<u>受取りました</u>。</li><li>隣にいた人が倒れそうになったので、腕を<u>受取って</u>あげた。</li></ol><p>Editorial key: 3</p></div></details><div class="review-record" id="principal_differences-N3_12_2017-PD-006"><div class="review-label">Principal difference · /options/2 · high</div><div class="comparison"><div><h4>Principal</h4><pre>&lt;u&gt;受取り&lt;/u&gt;<mark class="diff-old">ました</mark></pre></div><div><h4>Editorial</h4><pre>&lt;u&gt;受取り<mark class="diff-new">ました</mark>&lt;/u&gt;</pre></div></div><p>Retain the inherited full inflected target underline, directly witnessed in the bound compilation 2017年12月N3试卷_解析_听力原文_高清扫描.PDF (05b83f7be24ed08c8014b7ec4324b079ba8bddedfb61ceec248a3bc1dd98d7fb), physical5. The principal has a shorter boundary. This witnessed formatting variant is not scored as a proven principal defect.</p><span class="principal-repository-source">Principal source (page=4): <code>additional-assets/principals/N3_12_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">vocab-q035 /options/2; affected span</span><details><summary>Full published record · principal_differences-N3_12_2017-PD-006</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N3_12_2017-PD-006&quot;,
+  &quot;unit&quot;: &quot;N3_12_2017&quot;,
+  &quot;item_id&quot;: &quot;vocab-q035&quot;,
+  &quot;field&quot;: &quot;/options/2&quot;,
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;送ってくださった資料は、本日確かに&lt;u&gt;受取りました&lt;/u&gt;。&quot;
+  },
+  &quot;categories&quot;: [
+    &quot;underline&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;Đề N3 12-2017.pdf — 日语轻松考 / Yuuki Bùi secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;b4ed4b3a54a3bac91b7fadfab84998be52f6441abaec0c67cd4a6af78054f983&quot;,
+    &quot;physical_pages&quot;: [
+      4
+    ],
+    &quot;locator&quot;: &quot;vocab-q035 /options/2; affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;&lt;u&gt;受取り&lt;/u&gt;ました&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;&lt;u&gt;受取りました&lt;/u&gt;&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;retained_variant&quot;,
+  &quot;rationale&quot;: &quot;Retain the inherited full inflected target underline, directly witnessed in the bound compilation 2017年12月N3试卷_解析_听力原文_高清扫描.PDF (05b83f7be24ed08c8014b7ec4324b079ba8bddedfb61ceec248a3bc1dd98d7fb), physical5. The principal has a shorter boundary. This witnessed formatting variant is not scored as a proven principal defect.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-q007" data-kinds="difference"><div class="review-group-heading"><h2>reading-q007</h2><a href="../papers/N3_12_2017.html#reading-q007">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">7. （電話で）<br/>店員:「お電話ありがとうございます。さくら<ruby data-rubi-id="rr4-bfc7123e52118b1b7fdf" data-rubi-origin="project_rubi_restore">美容院<rt>びよういん</rt></ruby>（ ）。」<br/><br/><ruby>客<rt>きゃく</rt></ruby>:「すみません、今日<ruby data-rubi-id="rr4-ff2cfb6bf0bdc6cfd22c" data-rubi-origin="project_rubi_restore">予約<rt>よやく</rt></ruby>したいんですが。」<br/><br/>店員:「はい、ありがとうございます。何時ごろがよろしいでしょうか。」<ol><li>でいらっしゃいます</li><li>でございます</li><li>と申し上げます</li><li>とおっしゃいます</li></ol><p>Editorial key: 2</p></div></details><div class="review-record" id="principal_differences-N3_12_2017-PD-001"><div class="review-label">Principal difference · /stem · high</div><div class="comparison"><div><h4>Principal</h4><pre>客きゃく</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">&lt;ruby&gt;</mark>客<mark class="diff-new">&lt;rt&gt;</mark>きゃく<mark class="diff-new">&lt;/rt&gt;&lt;/ruby&gt;</mark></pre></div></div><p>Separate explicitly printed reading kana from the base character; no unprinted reading is added.</p><span class="principal-repository-source">Principal source (page=5): <code>additional-assets/principals/N3_12_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-q007 /stem; affected span</span><details><summary>Full published record · principal_differences-N3_12_2017-PD-001</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N3_12_2017-PD-001&quot;,
+  &quot;unit&quot;: &quot;N3_12_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-q007&quot;,
+  &quot;field&quot;: &quot;/stem&quot;,
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;7. （電話で）&lt;br&gt;店員:「お電話ありがとうございます。さくら美容院（ ）。」&lt;br&gt;&lt;br&gt;&lt;ruby&gt;客&lt;rt&gt;きゃく&lt;/rt&gt;&lt;/ruby&gt;:「すみません、今日予約したいんですが。」&lt;br&gt;&lt;br&gt;店員:「はい、ありがとうございます。何時ごろがよろしいでしょうか。」&quot;
+  },
+  &quot;categories&quot;: [
+    &quot;ruby&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;Đề N3 12-2017.pdf — 日语轻松考 / Yuuki Bùi secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;b4ed4b3a54a3bac91b7fadfab84998be52f6441abaec0c67cd4a6af78054f983&quot;,
+    &quot;physical_pages&quot;: [
+      5
+    ],
+    &quot;locator&quot;: &quot;reading-q007 /stem; affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;客きゃく&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;&lt;ruby&gt;客&lt;rt&gt;きゃく&lt;/rt&gt;&lt;/ruby&gt;&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Separate explicitly printed reading kana from the base character; no unprinted reading is added.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-b001" data-kinds="difference"><div class="review-group-heading"><h2>reading-b001</h2><a href="../papers/N3_12_2017.html#reading-b001">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">以下は留学<ruby>生<rt>せい</rt></ruby>の作文である。<br/><br/>
+<center><b>カラオケ</b></center><br/>
+<div>マイヤー レア</div><br/>
+<ruby data-rubi-id="rr4-20ce264b4c7373a49323" data-rubi-origin="project_rubi_restore">私<rt>わたし</rt></ruby>は<ruby data-rubi-id="rr4-96a6b8afffcbb92f18c2" data-rubi-origin="project_rubi_restore">歌<rt>うた</rt></ruby>を歌うのが<ruby data-rubi-id="rr4-efea3df2cfda426ddd62" data-rubi-origin="project_rubi_restore">好<rt>す</rt></ruby>きで、<ruby data-rubi-id="rr4-8d9cce7ae737db5c8326" data-rubi-origin="project_rubi_restore">友達<rt>ともだち</rt></ruby>やゼミの<ruby data-rubi-id="rr4-eea0cdf92d6191bd997f" data-rubi-origin="project_rubi_restore">仲間<rt>なかま</rt></ruby>とときどきカラオケに行きます。いつも<ruby>大<rt>おお</rt></ruby><ruby>勢<rt>ぜい</rt></ruby>で行くから、自分一人がずっと歌うということはできません。【19】、カラオケはパーティーみたいで<ruby data-rubi-id="rr4-ce1447d8344bb728be33" data-rubi-origin="project_rubi_restore">楽<rt>たの</rt></ruby>しいと思っていました。<br/><br/>
+先月、桜駅の近くで「一人カラオケ<ruby data-rubi-id="rr4-234bcdddfaf71f0e0a9b" data-rubi-origin="project_rubi_restore">専門店<rt>せんもんてん</rt></ruby>」という店を見つけました。私はとても<ruby data-rubi-id="rr4-e569e5032890ad817cf8" data-rubi-origin="project_rubi_restore">驚<rt>おどろ</rt></ruby>きました。カラオケは人と<ruby data-rubi-id="rr4-10666d0db413d0ca49ba" data-rubi-origin="project_rubi_restore">一緒<rt>いっしょ</rt></ruby>に楽しむものだと 【20】。<ruby data-rubi-id="rr4-75c5445ea0b5d7a36358" data-rubi-origin="project_rubi_restore">次<rt>つぎ</rt></ruby>の日、学校で<ruby data-rubi-id="rr4-6da70463c08119772fda" data-rubi-origin="project_rubi_restore">友達<rt>ともだち</rt></ruby>にその店のことを話すと、友達は<ruby data-rubi-id="rr4-a432d7bfda80836d334d" data-rubi-origin="project_rubi_restore">普通<rt>ふつう</rt></ruby>のカラオケ店にも一人で行くと言ったので、もっと<ruby data-rubi-id="rr4-8d2e65aa8844b804627e" data-rubi-origin="project_rubi_restore">驚<rt>おどろ</rt></ruby>きました。カラオケに一人で行くというのは、考えたこともありませんでした。<br/><br/> 一人で行ってもいいとわかって、私も一人で【21】。<br/><br/>
+私はどきどきしながら、<ruby data-rubi-id="rr4-2af7ab1033236f90c513" data-rubi-origin="project_rubi_restore">受付<rt>うけつけ</rt></ruby>で名前を書きました。そして、【22】に入り、まだ<ruby data-rubi-id="rr4-3bc905145f3afc915319" data-rubi-origin="project_rubi_restore">上手<rt>じょうず</rt></ruby>に歌えない日本語の歌を<ruby data-rubi-id="rr4-2fd48f1b7658d039c47c" data-rubi-origin="project_rubi_restore">練習<rt>れんしゅう</rt></ruby>したり、好きな歌を<ruby data-rubi-id="rr4-1fe6cc8ef70d9c98b5ee" data-rubi-origin="project_rubi_restore">繰返<rt>くりかえ</rt></ruby>し歌ったりしました。いろいろな歌を<ruby>自<rt>じ</rt></ruby><ruby>由<rt>ゆう</rt></ruby>に歌うのは気持ちがよかったです。一人で2時間も歌ってしまいました。<br/><br/>
+カラオケは一人 【23】楽しかったです。これからもっとカラオケに行くことが<ruby data-rubi-id="rr4-78ecd24c7501505f0ee3" data-rubi-origin="project_rubi_restore">増<rt>ふ</rt></ruby>えそうです。</div></details><div class="review-record" id="principal_differences-N3_12_2017-PD-002"><div class="review-label">Principal difference · /content · high</div><div class="comparison"><div><h4>Principal</h4><pre>留学生せい … 大おお勢ぜい … 自じ由ゆう</pre></div><div><h4>Editorial</h4><pre>留学<mark class="diff-new">&lt;ruby&gt;</mark>生<mark class="diff-new">&lt;rt&gt;</mark>せい<mark class="diff-new">&lt;/rt&gt;&lt;/ruby&gt;</mark> … <mark class="diff-new">&lt;ruby&gt;</mark>大<mark class="diff-new">&lt;rt&gt;</mark>おお<mark class="diff-new">&lt;/rt&gt;&lt;/ruby&gt;&lt;ruby&gt;</mark>勢<mark class="diff-new">&lt;rt&gt;</mark>ぜい<mark class="diff-new">&lt;/rt&gt;&lt;/ruby&gt;</mark> … <mark class="diff-new">&lt;ruby&gt;</mark>自<mark class="diff-new">&lt;rt&gt;</mark>じ<mark class="diff-new">&lt;/rt&gt;&lt;/ruby&gt;&lt;ruby&gt;</mark>由<mark class="diff-new">&lt;rt&gt;</mark>ゆう<mark class="diff-new">&lt;/rt&gt;&lt;/ruby&gt;</mark></pre></div></div><p>These noncontiguous literal spans interleave base and reading. Restore the exact observed base groups as ruby; the primary source does not show true above-base ruby.</p><span class="principal-repository-source">Principal source (page=6): <code>additional-assets/principals/N3_12_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-b001 /content; affected span</span><details><summary>Full published record · principal_differences-N3_12_2017-PD-002</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N3_12_2017-PD-002&quot;,
+  &quot;unit&quot;: &quot;N3_12_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-b001&quot;,
+  &quot;field&quot;: &quot;/content&quot;,
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;以下は留学&lt;ruby&gt;生&lt;rt&gt;せい&lt;/rt&gt;&lt;/ruby&gt;の作文である。&lt;br&gt;&lt;br&gt;\n&lt;center&gt;&lt;b&gt;カラオケ&lt;/b&gt;&lt;/center&gt;&lt;br&gt;\n&lt;div&gt;マイヤー レア&lt;/div&gt;&lt;br&gt;\n私は歌を歌うのが好きで、友達やゼミの仲間とときどきカラオケに行きます。いつも&lt;ruby&gt;大&lt;rt&gt;おお&lt;/rt&gt;&lt;/ruby&gt;&lt;ruby&gt;勢&lt;rt&gt;ぜい&lt;/rt&gt;&lt;/ruby&gt;で行くから、自分一人がずっと歌うということはできません。【19】、カラオケはパーティーみたいで楽しいと思っていました。&lt;br&gt;&lt;br&gt;\n先月、桜駅の近くで「一人カラオケ専門店」という店を見つけました。私はとても驚きました。カラオケは人と一緒に楽しむものだと 【20】。次の日、学校で友達にその店のことを話すと、友達は普通のカラオケ店にも一人で行くと言ったので、もっと驚きました。カラオケに一人で行くというのは、考えたこともありませんでした。&lt;br&gt;&lt;br&gt; 一人で行ってもいいとわかって、私も一人で【21】。&lt;br&gt;&lt;br&gt;\n私はどきどきしながら、受付で名前を書きました。そして、【22】に入り、まだ上手に歌えない日本語の歌を練習したり、好きな歌を繰返し歌ったりしました。いろいろな歌を&lt;ruby&gt;自&lt;rt&gt;じ&lt;/rt&gt;&lt;/ruby&gt;&lt;ruby&gt;由&lt;rt&gt;ゆう&lt;/rt&gt;&lt;/ruby&gt;に歌うのは気持ちがよかったです。一人で2時間も歌ってしまいました。&lt;br&gt;&lt;br&gt;\nカラオケは一人 【23】楽しかったです。これからもっとカラオケに行くことが増えそうです。&quot;
+  },
+  &quot;categories&quot;: [
+    &quot;ruby&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;Đề N3 12-2017.pdf — 日语轻松考 / Yuuki Bùi secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;b4ed4b3a54a3bac91b7fadfab84998be52f6441abaec0c67cd4a6af78054f983&quot;,
+    &quot;physical_pages&quot;: [
+      6
+    ],
+    &quot;locator&quot;: &quot;reading-b001 /content; affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;留学生せい … 大おお勢ぜい … 自じ由ゆう&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;留学&lt;ruby&gt;生&lt;rt&gt;せい&lt;/rt&gt;&lt;/ruby&gt; … &lt;ruby&gt;大&lt;rt&gt;おお&lt;/rt&gt;&lt;/ruby&gt;&lt;ruby&gt;勢&lt;rt&gt;ぜい&lt;/rt&gt;&lt;/ruby&gt; … &lt;ruby&gt;自&lt;rt&gt;じ&lt;/rt&gt;&lt;/ruby&gt;&lt;ruby&gt;由&lt;rt&gt;ゆう&lt;/rt&gt;&lt;/ruby&gt;&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;These noncontiguous literal spans interleave base and reading. Restore the exact observed base groups as ruby; the primary source does not show true above-base ruby.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-b007" data-kinds="difference"><div class="review-group-heading"><h2>reading-b007</h2><a href="../papers/N3_12_2017.html#reading-b007">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">（2） <ruby data-rubi-id="rr4-e062dddbaf5c8fb54365" data-rubi-origin="project_rubi_restore">子供<rt>こども</rt></ruby>はほめて育てろとよく聞きます。でも私が<ruby data-rubi-id="rr4-50be8ee2dcd3ef946088" data-rubi-origin="project_rubi_restore">息子<rt>むすこ</rt></ruby>をほめると、息子はその時の自分に満足して、それ以上<ruby data-rubi-id="rr4-6a09f818a0318ccdd135" data-rubi-origin="project_rubi_restore">頑張<rt>がんば</rt></ruby>ろうとしなくなることもあります。親の期待の通りにはならないことが多く、ほめ<ruby data-rubi-id="rr4-30219e242db02830f86a" data-rubi-origin="project_rubi_restore">方<rt>かた</rt></ruby>の難しさを感じています。<br/><br/>
+最近、どうほめたら子供が新しいことにチャレンジする気持ちを持つようになるか、調べた<ruby data-rubi-id="rr4-1b58db05210eae265ce4" data-rubi-origin="project_rubi_restore">実験<rt>じっけん</rt></ruby>の話を聞きました。数百人の子供に難しい問題を10問解かせます。そして、<ruby data-rubi-id="rr4-e1b9e74bf6577a54f639" data-rubi-origin="project_rubi_restore">良<rt>よ</rt></ruby>い<ruby data-rubi-id="rr4-594eabca97a29a92bd16" data-rubi-origin="project_rubi_restore">結果<rt>けっか</rt></ruby>だった子供たちを二つのグループに分け、一方に「よくできたね。<ruby data-rubi-id="rr4-e803f567a5b54532b2c1" data-rubi-origin="project_rubi_restore">頭<rt>あたま</rt></ruby>がいいね。」と「頭の良さ」を、もう一方に「よく<ruby>頑<rt>がん</rt></ruby><ruby>張<rt>ば</rt></ruby>ったね。」と「<ruby data-rubi-id="rr4-db397a2486d7d1c0ef8c" data-rubi-origin="project_rubi_restore">努力<rt>どりょく</rt></ruby>」をほめる言葉をかけます。すると、次の行動に<u>①違いが現れました。</u><br/><br/>
+実験では続けて、同じ問題をもう一度解くか、新しい問題をやってみるかを選ばせます。そうしたら、頭の良さをほめられたグループでは、間違えると頭が悪いと思われてしまうと考えたからか、多くの子供が同じ問題を解きました。それに対して、努力をほめられたグループでは、90%が新しい問題にチャレンジしたのです。<br/><br/>
+<u>②ほめ方のヒントが隠された面白い実験だと思いました。</u></div></details><div class="review-record" id="principal_differences-N3_12_2017-PD-003"><div class="review-label">Principal difference · /content · high</div><div class="comparison"><div><h4>Principal</h4><pre>頑がん張ばった</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">&lt;ruby&gt;</mark>頑<mark class="diff-new">&lt;rt&gt;</mark>がん<mark class="diff-new">&lt;/rt&gt;&lt;/ruby&gt;&lt;ruby&gt;</mark>張<mark class="diff-new">&lt;rt&gt;</mark>ば<mark class="diff-new">&lt;/rt&gt;&lt;/ruby&gt;</mark>った</pre></div></div><p>Restore only the reading groups on this quoted praise occurrence. Other occurrences of 頑張る remain unannotated as printed.</p><span class="principal-repository-source">Principal source (page=9): <code>additional-assets/principals/N3_12_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-b007 /content; affected span</span><details><summary>Full published record · principal_differences-N3_12_2017-PD-003</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N3_12_2017-PD-003&quot;,
+  &quot;unit&quot;: &quot;N3_12_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-b007&quot;,
+  &quot;field&quot;: &quot;/content&quot;,
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;（2） 子供はほめて育てろとよく聞きます。でも私が息子をほめると、息子はその時の自分に満足して、それ以上頑張ろうとしなくなることもあります。親の期待の通りにはならないことが多く、ほめ方の難しさを感じています。&lt;br&gt;&lt;br&gt;\n最近、どうほめたら子供が新しいことにチャレンジする気持ちを持つようになるか、調べた実験の話を聞きました。数百人の子供に難しい問題を10問解かせます。そして、良い結果だった子供たちを二つのグループに分け、一方に「よくできたね。頭がいいね。」と「頭の良さ」を、もう一方に「よく&lt;ruby&gt;頑&lt;rt&gt;がん&lt;/rt&gt;&lt;/ruby&gt;&lt;ruby&gt;張&lt;rt&gt;ば&lt;/rt&gt;&lt;/ruby&gt;ったね。」と「努力」をほめる言葉をかけます。すると、次の行動に&lt;u&gt;①違いが現れました。&lt;/u&gt;&lt;br&gt;&lt;br&gt;\n実験では続けて、同じ問題をもう一度解くか、新しい問題をやってみるかを選ばせます。そうしたら、頭の良さをほめられたグループでは、間違えると頭が悪いと思われてしまうと考えたからか、多くの子供が同じ問題を解きました。それに対して、努力をほめられたグループでは、90%が新しい問題にチャレンジしたのです。&lt;br&gt;&lt;br&gt;\n&lt;u&gt;②ほめ方のヒントが隠された面白い実験だと思いました。&lt;/u&gt;&quot;
+  },
+  &quot;categories&quot;: [
+    &quot;ruby&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;Đề N3 12-2017.pdf — 日语轻松考 / Yuuki Bùi secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;b4ed4b3a54a3bac91b7fadfab84998be52f6441abaec0c67cd4a6af78054f983&quot;,
+    &quot;physical_pages&quot;: [
+      9
+    ],
+    &quot;locator&quot;: &quot;reading-b007 /content; affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;頑がん張ばった&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;&lt;ruby&gt;頑&lt;rt&gt;がん&lt;/rt&gt;&lt;/ruby&gt;&lt;ruby&gt;張&lt;rt&gt;ば&lt;/rt&gt;&lt;/ruby&gt;った&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Restore only the reading groups on this quoted praise occurrence. Other occurrences of 頑張る remain unannotated as printed.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-q033" data-kinds="difference unresolved"><div class="review-group-heading"><h2>reading-q033</h2><a href="../papers/N3_12_2017.html#reading-q033">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">33. <u>②ほめ方のヒントが隠された面白い実験だと思いました</u>とあるが、「私」は今後、自分の子供にも、例えば、どのようなほめ方をすると考えられるか。<ol><li>「ずっと集中して<ruby data-rubi-id="rr4-b45c925f7a9b2cabfee1" data-rubi-origin="project_rubi_restore">頑張<rt>がんば</rt></ruby>っていたね。本当に感心したよ。」</li><li>「とてもよくできたね。すごく頭がいいんだね。」</li><li>「ぜんぜん勉強しなくてもできたんだから、えらいなあ。」</li><li>「難しい問題なのに、<ruby data-rubi-id="rr4-1d1ff2747e626925a9a0" data-rubi-origin="project_rubi_restore">簡単<rt>かんたん</rt></ruby>にできちゃったね。<ruby data-rubi-id="rr4-962acbbfbac3740438f8" data-rubi-origin="project_rubi_restore">驚<rt>おどろ</rt></ruby>いたよ。」</li></ol><p>Editorial key: 1</p></div></details><div class="review-record" id="unresolved_cases-N3_12_2017-reading-q033-particle-order"><div class="review-label">Unresolved · /stem · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>33. &lt;u&gt;②ほめ方のヒントが隠された面白い実験だと思いました&lt;/u&gt;とあるが、「私」は今後、自分の子供にも、例えば、どのようなほめ方をすると考えられるか。</pre></div><div><h4>Editorial</h4><pre>33. &lt;u&gt;②ほめ方のヒントが隠された面白い実験だと思いました&lt;/u&gt;とあるが、「私」は今後、自分の子供にも、例えば、どのようなほめ方をすると考えられるか。</pre></div></div><p>Keep the existing grammatically coherent にも repair; literal もに is malformed. Source families support both moving and deleting も, so the exact historical particle sequence remains uncertain. No scored answer changes.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>An original sitting booklet would be needed to distinguish にも from に. The present row records inherited uncertainty, not a new provisional edit.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N3_12_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Reading Q33 asks how the parent would praise their own child after hearing about the experiment.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=9): <code>additional-assets/principals/N3_12_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Reading Q33, own-child phrase<p>自分の子供もに、例えば</p></li><li><span class="principal-repository-source">Principal source (page=8): <code>additional-assets/principals/N3_12_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Reading Q33 across line wrap<p>自分の子供もに、例えば</p></li><li><span class="principal-repository-source">Principal source (page=9): <code>additional-assets/principals/N3_12_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Reading Q33<p>自分の子供に、例えば</p></li><li><span class="principal-repository-source">Principal source (page=10): <code>additional-assets/principals/N3_12_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Reading Q33<p>自分の子供に、例えば</p></li></ul><details><summary>Full published record · unresolved_cases-N3_12_2017-reading-q033-particle-order</summary><pre>{
+  &quot;case_id&quot;: &quot;N3_12_2017-reading-q033-particle-order&quot;,
+  &quot;unit&quot;: &quot;N3_12_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-q033&quot;,
+  &quot;field&quot;: &quot;/stem&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;33. &lt;u&gt;②ほめ方のヒントが隠された面白い実験だと思いました&lt;/u&gt;とあるが、「私」は今後、自分の子供にも、例えば、どのようなほめ方をすると考えられるか。&quot;
+  },
+  &quot;context&quot;: &quot;Reading Q33 asks how the parent would praise their own child after hearing about the experiment.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: {
+        &quot;html&quot;: &quot;33. &lt;u&gt;②ほめ方のヒントが隠された面白い実験だと思いました&lt;/u&gt;とあるが、「私」は今後、自分の子供にも、例えば、どのようなほめ方をすると考えられるか。&quot;
+      },
+      &quot;assessment&quot;: &quot;Current 子供にも is the smallest transposition repair of the principal’s 子供もに and means applying the finding to the writer’s own child too.&quot;
+    },
+    {
+      &quot;value&quot;: {
+        &quot;html&quot;: &quot;33. &lt;u&gt;②ほめ方のヒントが隠された面白い実験だと思いました&lt;/u&gt;とあるが、「私」は今後、自分の子供に、例えば、どのようなほめ方をすると考えられるか。&quot;
+      },
+      &quot;assessment&quot;: &quot;子供に is directly printed in two alternate retypes and is equally grammatical; the original presence of も is not established.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;Đề N3 12-2017.pdf&quot;,
+      &quot;sha256&quot;: &quot;b4ed4b3a54a3bac91b7fadfab84998be52f6441abaec0c67cd4a6af78054f983&quot;,
+      &quot;physical_pages&quot;: [
+        9
+      ],
+      &quot;locator&quot;: &quot;Reading Q33, own-child phrase&quot;,
+      &quot;reading&quot;: &quot;自分の子供もに、例えば&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2017年12月N3.pdf&quot;,
+      &quot;sha256&quot;: &quot;e95edce3b8b9aaf815e10d476dada955ea0e770d15b066a83e7c2b8aee158ec4&quot;,
+      &quot;physical_pages&quot;: [
+        8
+      ],
+      &quot;locator&quot;: &quot;Reading Q33 across line wrap&quot;,
+      &quot;reading&quot;: &quot;自分の子供もに、例えば&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;【2】2017年12月N3 真题.pdf&quot;,
+      &quot;sha256&quot;: &quot;c0a5f75b639f63cad298849d7bb3f92a05afe0cababb5860f9da3556cb9c6e2b&quot;,
+      &quot;physical_pages&quot;: [
+        9
+      ],
+      &quot;locator&quot;: &quot;Reading Q33&quot;,
+      &quot;reading&quot;: &quot;自分の子供に、例えば&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2017年12月N3试卷_解析_听力原文_高清扫描.PDF&quot;,
+      &quot;sha256&quot;: &quot;05b83f7be24ed08c8014b7ec4324b079ba8bddedfb61ceec248a3bc1dd98d7fb&quot;,
+      &quot;physical_pages&quot;: [
+        10
+      ],
+      &quot;locator&quot;: &quot;Reading Q33&quot;,
+      &quot;reading&quot;: &quot;自分の子供に、例えば&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Keep the existing grammatically coherent にも repair; literal もに is malformed. Source families support both moving and deleting も, so the exact historical particle sequence remains uncertain. No scored answer changes.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Read the complete praise passage, Q33 and all four choices in both full written witnesses.&quot;,
+    &quot;Inspected enlarged source spans and compared the 【2】 retype, bound compilation and native question.&quot;,
+    &quot;Checked particle syntax and the additive meaning in the discourse; neither grammatical alternative uniquely follows from the text.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;An original sitting booklet would be needed to distinguish にも from に. The present row records inherited uncertainty, not a new provisional edit.&quot;
+}</pre></details></div><div class="review-record" id="principal_differences-N3_12_2017-PD-008"><div class="review-label">Principal difference · /stem · high</div><div class="comparison"><div><h4>Principal</h4><pre>自分の子供も<mark class="diff-old">に</mark>、例えば</pre></div><div><h4>Editorial</h4><pre>自分の子供<mark class="diff-new">に</mark>も、例えば</pre></div></div><p>The literal principal particle order is malformed. Keep the inherited minimal transposition, while acknowledging the competing 子供に directly printed in 【2】2017年12月N3 真题.pdf physical9 and the bound compilation physical10. Exact historical wording remains unresolved.</p><span class="principal-repository-source">Principal source (page=9): <code>additional-assets/principals/N3_12_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-q033 /stem; affected span</span><details><summary>Full published record · principal_differences-N3_12_2017-PD-008</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N3_12_2017-PD-008&quot;,
+  &quot;unit&quot;: &quot;N3_12_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-q033&quot;,
+  &quot;field&quot;: &quot;/stem&quot;,
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;33. &lt;u&gt;②ほめ方のヒントが隠された面白い実験だと思いました&lt;/u&gt;とあるが、「私」は今後、自分の子供にも、例えば、どのようなほめ方をすると考えられるか。&quot;
+  },
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;Đề N3 12-2017.pdf — 日语轻松考 / Yuuki Bùi secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;b4ed4b3a54a3bac91b7fadfab84998be52f6441abaec0c67cd4a6af78054f983&quot;,
+    &quot;physical_pages&quot;: [
+      9
+    ],
+    &quot;locator&quot;: &quot;reading-q033 /stem; affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;自分の子供もに、例えば&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;自分の子供にも、例えば&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;conjectural_repair&quot;,
+  &quot;rationale&quot;: &quot;The literal principal particle order is malformed. Keep the inherited minimal transposition, while acknowledging the competing 子供に directly printed in 【2】2017年12月N3 真题.pdf physical9 and the bound compilation physical10. Exact historical wording remains unresolved.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;N3_12_2017-reading-q033-particle-order&quot;
+  ]
+}</pre></details></div></section><section class="review-group" id="review-reading-b008" data-kinds="difference"><div class="review-group-heading"><h2>reading-b008</h2><a href="../papers/N3_12_2017.html#reading-b008">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">最近、日本では夏の平均気温が上がってきていて、非常に暑い日はエアコンがなければ何もできない。そんな日は、ほとんどの人がエアコンのスイッチを入れる。ひどい暑さは体にも悪い影響を与えるし、<u>①しかたないこと</u>だ。しかし、それぞれの家に何台もエアコンがある今、皆が同時にエアコンを使うと、電気の使用量が増えて電気が足りなくなる心配がある。そこで、できるだけ夏の電気の消費量を抑えようという工夫や活動が日本の各地で始まっている。<br/><br/>
+夏に気温が高くなることで有名なK市では、毎年6月から9月まで、<u>②「家のエアコンを止めて、涼しい所に行こう。」</u>と呼びかけている。例えば、木々の多い公園や神社、寺、エアコンのある図書館やレストランやデパートなど、涼しい場所に集まって時間を過ごすのだ。そうすれば、町の中で同時に使われるエアコンはずっと減る。市では、市内の涼しい場所や、この活動に協力してくれる店などが載っている<u>③地図</u>も作り、すべての家に配っている。この地図にある店へ行って、家のエアコンを止めて来たと言えば、飲み物の無料サービスが受けられたり、商品の割引サービスが受けられたりする。<br/><br/>
+電気消費量を抑える効果を期待して始まった活動だが、町の人々がお互いに交流する機会が増え、前よりもっとコミュニケーションが盛んになるという効果も出ているそうだ。</div></details><div class="review-record" id="principal_differences-N3_12_2017-PD-007"><div class="review-label">Principal difference · /content · high</div><div class="comparison"><div><h4>Principal</h4><pre><mark class="diff-old">「</mark>&lt;u&gt;②家のエアコンを止めて、涼しい所に行こう。&lt;/u&gt;<mark class="diff-old">」</mark></pre></div><div><h4>Editorial</h4><pre>&lt;u&gt;②<mark class="diff-new">「</mark>家のエアコンを止めて、涼しい所に行こう。<mark class="diff-new">」</mark>&lt;/u&gt;</pre></div></div><p>Keep the reference number before the whole quotation, as directly printed in the bound compilation physical11 and in the principal’s Q35 reference. Restore the internal stop, common to the inspected PDF versions. The current boundary/order is a retained source-supported variant, not a claim of literal equality.</p><span class="principal-repository-source">Principal source (page=9): <code>additional-assets/principals/N3_12_2017.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-b008 /content; affected span</span><details><summary>Full published record · principal_differences-N3_12_2017-PD-007</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N3_12_2017-PD-007&quot;,
+  &quot;unit&quot;: &quot;N3_12_2017&quot;,
+  &quot;item_id&quot;: &quot;reading-b008&quot;,
+  &quot;field&quot;: &quot;/content&quot;,
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;最近、日本では夏の平均気温が上がってきていて、非常に暑い日はエアコンがなければ何もできない。そんな日は、ほとんどの人がエアコンのスイッチを入れる。ひどい暑さは体にも悪い影響を与えるし、&lt;u&gt;①しかたないこと&lt;/u&gt;だ。しかし、それぞれの家に何台もエアコンがある今、皆が同時にエアコンを使うと、電気の使用量が増えて電気が足りなくなる心配がある。そこで、できるだけ夏の電気の消費量を抑えようという工夫や活動が日本の各地で始まっている。&lt;br&gt;&lt;br&gt;\n夏に気温が高くなることで有名なK市では、毎年6月から9月まで、&lt;u&gt;②「家のエアコンを止めて、涼しい所に行こう。」&lt;/u&gt;と呼びかけている。例えば、木々の多い公園や神社、寺、エアコンのある図書館やレストランやデパートなど、涼しい場所に集まって時間を過ごすのだ。そうすれば、町の中で同時に使われるエアコンはずっと減る。市では、市内の涼しい場所や、この活動に協力してくれる店などが載っている&lt;u&gt;③地図&lt;/u&gt;も作り、すべての家に配っている。この地図にある店へ行って、家のエアコンを止めて来たと言えば、飲み物の無料サービスが受けられたり、商品の割引サービスが受けられたりする。&lt;br&gt;&lt;br&gt;\n電気消費量を抑える効果を期待して始まった活動だが、町の人々がお互いに交流する機会が増え、前よりもっとコミュニケーションが盛んになるという効果も出ているそうだ。&quot;
+  },
+  &quot;categories&quot;: [
+    &quot;underline&quot;,
+    &quot;punctuation&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;Đề N3 12-2017.pdf — 日语轻松考 / Yuuki Bùi secondary reconstruction&quot;,
+    &quot;sha256&quot;: &quot;b4ed4b3a54a3bac91b7fadfab84998be52f6441abaec0c67cd4a6af78054f983&quot;,
+    &quot;physical_pages&quot;: [
+      9
+    ],
+    &quot;locator&quot;: &quot;reading-b008 /content; affected span&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;「&lt;u&gt;②家のエアコンを止めて、涼しい所に行こう。&lt;/u&gt;」&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;&lt;u&gt;②「家のエアコンを止めて、涼しい所に行こう。」&lt;/u&gt;&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;retained_variant&quot;,
+  &quot;rationale&quot;: &quot;Keep the reference number before the whole quotation, as directly printed in the bound compilation physical11 and in the principal’s Q35 reference. Restore the internal stop, common to the inspected PDF versions. The current boundary/order is a retained source-supported variant, not a claim of literal equality.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section></div></main><footer class="site-footer"><span class="developer-only">Developer mode</span></footer><div id="toast" role="status" class="toast" hidden></div><script id="page-data" type="application/json">{"review":true}</script><script id="theme-data" src="../assets/theme-data.js?v=f06ad9e2434b" defer></script><script src="../assets/app.js?v=0d75deb05ae3" defer></script></body></html>

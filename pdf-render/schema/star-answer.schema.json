@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.jlpt/schema-v4/star-answer-1",
+  "title": "Content-bound STAR answer record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["status", "order", "star_position", "question_sha256", "order_evidence", "position_evidence"],
+  "properties": {
+    "status": {"enum": ["verified", "accepted", "held"]},
+    "order": {
+      "oneOf": [
+        {"type": "null"},
+        {"type": "array", "minItems": 4, "maxItems": 4, "uniqueItems": true, "items": {"type": "integer", "minimum": 1, "maximum": 4}}
+      ]
+    },
+    "star_position": {"type": "integer", "minimum": 1, "maximum": 4},
+    "question_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "hold_reason": {"type": "string", "minLength": 1},
+    "decision": {
+      "type": "object", "additionalProperties": false,
+      "required": ["authority", "date", "question_sha256", "order", "star_position", "key", "rationale", "remaining_uncertainty", "case_ids", "decision_sha256"],
+      "properties": {
+        "authority": {"enum": ["user", "delegated_source_adjudication"]},
+        "date": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"},
+        "question_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "order": {"type": "array", "minItems": 4, "maxItems": 4, "uniqueItems": true, "items": {"type": "integer", "minimum": 1, "maximum": 4}},
+        "star_position": {"type": "integer", "minimum": 1, "maximum": 4},
+        "key": {"type": "integer", "minimum": 1, "maximum": 4},
+        "rationale": {"type": "string", "minLength": 1},
+        "remaining_uncertainty": {"type": "string", "minLength": 1},
+        "case_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "decision_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    },
+    "order_evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["method", "basis"],
+        "properties": {
+          "method": {"enum": ["independent_linguistic_review", "source_explanation", "existing_review", "user_report", "public_discussion"]},
+          "basis": {"type": "string", "minLength": 1},
+          "reviewer": {"type": "string", "minLength": 1},
+          "stage": {"enum": ["initial", "post_review"]},
+          "reviewed_order": {"type": "array", "minItems": 4, "maxItems": 4, "uniqueItems": true, "items": {"type": "integer", "minimum": 1, "maximum": 4}},
+          "reviewed_question_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "review_binding_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "record_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "reviewed_question": {
+            "type": "object", "additionalProperties": false,
+            "required": ["id", "stem", "options", "key"],
+            "properties": {
+              "id": {"type": "string", "minLength": 1},
+              "stem": {"$ref": "#/$defs/richText"},
+              "options": {"type": "array", "minItems": 4, "maxItems": 4, "items": {"$ref": "#/$defs/richText"}},
+              "key": {"type": "integer", "minimum": 1, "maximum": 4}
+            }
+          },
+          "source_path": {"type": "string", "minLength": 1},
+          "source_url": {"type": "string", "format": "uri"},
+          "source_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "physical_page": {"type": "integer", "minimum": 1}
+        },
+        "allOf": [{
+          "if": {"properties": {"method": {"const": "independent_linguistic_review"}}},
+          "then": {"required": ["reviewer", "reviewed_order", "reviewed_question_sha256", "review_binding_sha256"]}
+        }]
+      }
+    },
+    "position_evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["source_path", "source_sha256", "observed_position", "method", "basis"],
+        "anyOf": [{"required": ["physical_page"]}, {"required": ["locator"]}],
+        "properties": {
+          "source_path": {"type": "string", "minLength": 1},
+          "source_url": {"type": "string", "format": "uri"},
+          "source_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "physical_page": {"type": "integer", "minimum": 1},
+          "locator": {"type": "string", "minLength": 1},
+          "observed_position": {"type": "integer", "minimum": 1, "maximum": 4},
+          "position_scope": {"enum": ["question_blank", "worked_constituent"]},
+          "method": {"enum": ["visual_page_review", "visual_image_review", "pdf_geometry_review", "web_text_review"]},
+          "basis": {"type": "string", "minLength": 1}
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"status": {"enum": ["verified", "accepted"]}}},
+      "then": {
+        "properties": {
+          "order": {"type": "array"},
+          "order_evidence": {"minItems": 2},
+          "position_evidence": {"minItems": 1}
+        },
+        "not": {"required": ["hold_reason"]}
+      },
+      "else": {"properties": {"order": {"type": "null"}}, "required": ["hold_reason"]}
+    },
+    {
+      "if": {"properties": {"status": {"const": "accepted"}}},
+      "then": {"required": ["decision"]},
+      "else": {"not": {"required": ["decision"]}}
+    }
+  ],
+  "$defs": {
+    "richText": {"oneOf": [
+      {"type": "string"},
+      {"type": "object", "required": ["html"], "properties": {"html": {"type": "string"}}, "additionalProperties": false}
+    ]}
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "contract": "historical-artwork-1.0",
+  "id": "N2_1993-consciousness-option-3-source",
+  "kind": "consciousness_option",
+  "unit": "N2_1993",
+  "item_id": "reading-q014",
+  "source": {
+    "source_path": "src/CodexDownloads/UserApprovedReferenceScans/505593162-JLPT-Japanese-Language-Proficiency-Test-1-2-kyuu-1993.pdf",
+    "source_sha256": "fdd0d022acc4a1fffd3f9e5785b4a32d3d5a58d28c3d9c2bdeb9f65b10f5fe43",
+    "physical_page": 65
+  },
+  "raw_crop": {
+    "path": "preprocess/assets/handoff27/written/N2_1993/consciousness-option-3-source.png",
+    "sha256": "f9e3c15131229e784616aab542ab8d8c549e2de99e95eebf72328f026d4b3fc1"
+  },
+  "selection_note": "Native vector lines and live text; exact source decoded-pixel crop retained in canonical content.",
+  "limits": "Printed data and relationships exact; curve corners, font outlines, spacing and scan perspective are regularized. Original source JPEG already lossy.",
+  "data": {
+    "option": 3,
+    "upper_right": "無意識",
+    "lower_left": "意識",
+    "lower_right": "無意識",
+    "top_ratio": [
+      0,
+      2
+    ],
+    "bottom_ratio": [
+      49,
+      51
+    ],
+    "dashed_spans": [
+      49,
+      49
+    ],
+    "bars": "left ends at shared dividing line; right extends above it",
+    "geometry": "schematic source-traced relationships; lengths not a precise numeric scale",
+    "writing": "vertical Japanese labels; horizontal ratios"
+  }
+}

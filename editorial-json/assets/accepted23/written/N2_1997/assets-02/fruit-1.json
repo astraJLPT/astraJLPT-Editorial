@@ -1,0 +1,77 @@
+{
+  "contract": "historical-artwork-1.0",
+  "id": "H23-N2-1997-fruit-1",
+  "kind": "household_purchase_option",
+  "unit": "N2_1997",
+  "item_id": "reading-q018",
+  "source": {
+    "source_path": "src/CodexDownloads/UserApprovedReferenceScans/日本語能力1991～1999年試験問題集2級.pdf",
+    "source_sha256": "0a6634758dce0a258ffaf92c6c8ea1a738a4b8ceb52cd75cb44a4d8d340dfa64",
+    "physical_page": 292,
+    "crop_original_pixels": [
+      211,
+      67,
+      917,
+      409
+    ],
+    "page_rotation": 0
+  },
+  "raw_crop": {
+    "path": "preprocess/assets/handoff23/written/N2_1997/assets-01/fruit-1-raw.png",
+    "sha256": "5c1bc8bb49894c906082623d6bb3422cc6a685bdaea4150f830a210619410835"
+  },
+  "data": {
+    "option": 1,
+    "coordinate_status": "approximate_digitization_not_exact_historical_data",
+    "axis_maximum": 4,
+    "age_labels": [
+      "～24",
+      "25–29",
+      "30–34",
+      "35–39",
+      "40–44",
+      "45–49",
+      "50–54",
+      "55–59",
+      "60–64",
+      "65歳以上"
+    ],
+    "series": [
+      {
+        "label": "菓子類",
+        "pattern": "north east lines",
+        "values": [
+          2.01,
+          2.19,
+          2.38,
+          2.49,
+          2.49,
+          2.41,
+          2.43,
+          2.55,
+          2.83,
+          2.86
+        ]
+      },
+      {
+        "label": "果物類",
+        "pattern": "black",
+        "values": [
+          0.5,
+          0.71,
+          1.25,
+          1.48,
+          1.78,
+          2.09,
+          2.57,
+          2.95,
+          3.24,
+          3.5
+        ]
+      }
+    ],
+    "shared_legend": true
+  },
+  "selection_note": "All four primary292 chart choices directly read. Own source coordinates and sloping axis calibration preserve each pattern, label, age bin and relative bar height. Shared legend appears above choice1. Primary305 key2 is retained.",
+  "limits": "Unnumbered bar heights are approximate digitizations of this scan, not exact numeric data. Scanner skew is removed by local baseline/top interpolation; no historical sheet dimensions asserted. Damage below chart4 does not affect the graph. Indexed secondary26 continues directly with passage4 without a citation."
+}

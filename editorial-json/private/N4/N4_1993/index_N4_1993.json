@@ -1,0 +1,94 @@
+{
+  "unit": "N4_1993",
+  "sources": [
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N4\\N4-1991-2009年\\（1991年-2009年）N4真题听力\\日语能力考试1991～1999年试题集4级.pdf",
+      "sha256": "6da6084a74b617608dfaef9bc70072dd8ea7bac410ef77de7ae90f5603c569db",
+      "Tier": 3,
+      "bytes": 5076347,
+      "aliases": [
+        "src/CodexDownloads/UserApprovedReferenceScans/日本語能力1991～1999年試験問題集4級.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N4\\N4_multiple\\PaddleOCR\\pdf_1",
+      "VisionOCR": "preprocess\\N4\\N4_multiple\\VisionOCR\\pdf_1",
+      "display_title": "Level 4, 1991-1999",
+      "source_role": "historical_question_volume",
+      "acquisition_batch": "reference_scan_hunt_1984-2009_2026-10-23",
+      "provenance_records": [
+        "preprocess/audit_runs/2026-10-23_reference_scan_promotions/promotions.json",
+        "preprocess/reference_scan_hunt_rc03_work/all_level_sources.json"
+      ],
+      "source_urls": [
+        "https://www.mediafire.com/file/m67688mvh6nj6s2/JLPT1991-1999_Level1-4_.rar",
+        "https://yuki-nezumi.blogspot.com/2011/01/4kyu-1991-1999.html"
+      ],
+      "previous_paths": [
+        "src/CodexDownloads/UserApprovedReferenceScans/Originals/日本語能力1991～1999年試験問題集4級.pdf",
+        "src/CodexDownloads/reference_scan_rc03/1991-1999_all_levels_extracted/日本語能力1991～1999年試験問題集4級.pdf"
+      ],
+      "filename_at_acquisition": "日本語能力1991～1999年試験問題集4級.pdf",
+      "filename_note": "Filename at acquisition or archive extraction, preserved through this move.",
+      "pages": 361,
+      "reference_registry": "preprocess/user_approved_reference_scans.md",
+      "reference_id": "RC-COLLECTION-L4-1991-1999",
+      "historical_coverage": [
+        {
+          "level": 4,
+          "year": 1991
+        },
+        {
+          "level": 4,
+          "year": 1992
+        },
+        {
+          "level": 4,
+          "year": 1993
+        },
+        {
+          "level": 4,
+          "year": 1994
+        },
+        {
+          "level": 4,
+          "year": 1995
+        },
+        {
+          "level": 4,
+          "year": 1996
+        },
+        {
+          "level": 4,
+          "year": 1997
+        },
+        {
+          "level": 4,
+          "year": 1998
+        },
+        {
+          "level": 4,
+          "year": 1999
+        }
+      ],
+      "acquisition_containers": [
+        {
+          "path": "src/CodexDownloads/Hunts/1984-2009/2026-10-23_RC03/1991-1999_all_levels_original.rar",
+          "sha256": "5369c863ded3b7ce410b658549d55be74d14afab694ba2678ae81abccf2319ca",
+          "member_filename": "日本語能力1991～1999年試験問題集4級.pdf",
+          "note": "Retained downloaded archive; member hash verified separately. Archive membership does not establish independent custody."
+        }
+      ]
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N4真题（2010-2025.12）\\1991-2009年N4真题（改版前的题目，参考即可）\\日语能力考试1991～1999年试题集N4.pdf",
+      "sha256": "f860a732a96017e6a0031d3f64fdbf6dc372eb7d2c41e9d37c2de41d56f68fed",
+      "Tier": 1,
+      "bytes": 6035747,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\日语能力考试1991～1999年试题集N4.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N4历年真题\\1991-2009年N4真题（改版前的题目，参考即可）\\日语能力考试1991～1999年试题集N4.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N4\\N4_multiple\\PaddleOCR\\pdf_7",
+      "VisionOCR": "preprocess\\N4\\N4_multiple\\VisionOCR\\pdf_7"
+    }
+  ]
+}

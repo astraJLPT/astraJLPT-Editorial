@@ -1,0 +1,923 @@
+{
+  "version": 2,
+  "status": "inferred_editorial_design",
+  "authority": "H21 revision2 explicit user reconstruction request",
+  "levels": {
+    "1級": {
+      "style_id": "four_instruction_L1",
+      "booklets": {
+        "vocabulary": {
+          "printed": {
+            "family": "four_instruction",
+            "year_text": "1999",
+            "level_number": 1,
+            "title": "文字・語彙",
+            "score": 100,
+            "minutes": 45,
+            "source_body_pages": 10,
+            "notice_heading_observed": true,
+            "english_booklet_title": null,
+            "labels": {
+              "upper_right": {
+                "html": "問題用紙"
+              },
+              "level_unit": {
+                "html": "級"
+              },
+              "title": {
+                "html": "文字・語彙"
+              },
+              "score_unit": {
+                "html": "点"
+              },
+              "minute_unit": {
+                "html": "分"
+              },
+              "notice": {
+                "html": "注意"
+              },
+              "registration": {
+                "html": "受験番号"
+              },
+              "name": {
+                "html": "名前"
+              }
+            },
+            "instructions": [
+              {
+                "number": 1,
+                "japanese": {
+                  "html": "試験開始の合図があるまで、この問題用紙を開けないでください。"
+                },
+                "english": null
+              },
+              {
+                "number": 2,
+                "japanese": {
+                  "html": "この問題用紙を持ち帰ることはできません。"
+                },
+                "english": null
+              },
+              {
+                "number": 3,
+                "japanese": {
+                  "html": "受験番号と名前を下の欄に、受験票と同じようにはっきりと書いてください。"
+                },
+                "english": null
+              },
+              {
+                "number": 4,
+                "japanese": {
+                  "html": "この問題用紙は、全部で10ページあります。"
+                },
+                "english": null
+              }
+            ]
+          },
+          "instructions": [
+            {
+              "number": 1,
+              "japanese": {
+                "html": "試験開始の合図があるまで、この問題用紙を開けないでください。"
+              },
+              "english": null
+            },
+            {
+              "number": 2,
+              "japanese": {
+                "html": "この問題用紙を持ち帰ることはできません。"
+              },
+              "english": null
+            },
+            {
+              "number": 3,
+              "japanese": {
+                "html": "受験番号と名前を下の欄に、受験票と同じようにはっきりと書いてください。"
+              },
+              "english": null
+            }
+          ],
+          "source": {
+            "source_path": "src/CodexDownloads/UserApprovedReferenceScans/日本語能力1991～1999年試験問題集1級.pdf",
+            "source_sha256": "8560bf8ef92b4e2d58559b3e14882b76d3307586f5d55b0e7fa33cc2f5fa931f",
+            "physical_pages": [
+              383
+            ],
+            "reference_id": "RC03_L1",
+            "approval_registry_sha256": "c0fc4d24494a9569dd539d237018014213045d6224ae9035fa282ab610be0384",
+            "subject": "written_booklet_cover",
+            "historical_claim": false,
+            "region": "Written booklet cover only; collection folios, scanner marks, borders and damage excluded."
+          }
+        },
+        "reading_grammar": {
+          "printed": {
+            "family": "four_instruction",
+            "year_text": "1999",
+            "level_number": 1,
+            "title": "読解・文法",
+            "score": 200,
+            "minutes": 90,
+            "source_body_pages": 20,
+            "notice_heading_observed": true,
+            "english_booklet_title": null,
+            "labels": {
+              "upper_right": {
+                "html": "問題用紙"
+              },
+              "level_unit": {
+                "html": "級"
+              },
+              "title": {
+                "html": "読解・文法"
+              },
+              "score_unit": {
+                "html": "点"
+              },
+              "minute_unit": {
+                "html": "分"
+              },
+              "notice": {
+                "html": "注意"
+              },
+              "registration": {
+                "html": "受験番号"
+              },
+              "name": {
+                "html": "名前"
+              }
+            },
+            "instructions": [
+              {
+                "number": 1,
+                "japanese": {
+                  "html": "試験開始の合図があるまで、この問題用紙を開けないでください。"
+                },
+                "english": null
+              },
+              {
+                "number": 2,
+                "japanese": {
+                  "html": "この問題用紙を持ち帰ることはできません。"
+                },
+                "english": null
+              },
+              {
+                "number": 3,
+                "japanese": {
+                  "html": "受験番号と名前を下の欄に、受験票と同じようにはっきりと書いてください。"
+                },
+                "english": null
+              },
+              {
+                "number": 4,
+                "japanese": {
+                  "html": "この問題用紙は、全部で20ページあります。"
+                },
+                "english": null
+              }
+            ]
+          },
+          "instructions": [
+            {
+              "number": 1,
+              "japanese": {
+                "html": "試験開始の合図があるまで、この問題用紙を開けないでください。"
+              },
+              "english": null
+            },
+            {
+              "number": 2,
+              "japanese": {
+                "html": "この問題用紙を持ち帰ることはできません。"
+              },
+              "english": null
+            },
+            {
+              "number": 3,
+              "japanese": {
+                "html": "受験番号と名前を下の欄に、受験票と同じようにはっきりと書いてください。"
+              },
+              "english": null
+            }
+          ],
+          "source": {
+            "source_path": "src/CodexDownloads/UserApprovedReferenceScans/日本語能力1991～1999年試験問題集1級.pdf",
+            "source_sha256": "8560bf8ef92b4e2d58559b3e14882b76d3307586f5d55b0e7fa33cc2f5fa931f",
+            "physical_pages": [
+              411
+            ],
+            "reference_id": "RC03_L1",
+            "approval_registry_sha256": "c0fc4d24494a9569dd539d237018014213045d6224ae9035fa282ab610be0384",
+            "subject": "written_booklet_cover",
+            "historical_claim": false,
+            "region": "Written booklet cover only; collection folios, scanner marks, borders and damage excluded."
+          }
+        }
+      }
+    },
+    "2級": {
+      "style_id": "four_instruction_L2",
+      "booklets": {
+        "vocabulary": {
+          "printed": {
+            "family": "four_instruction",
+            "year_text": "1999",
+            "level_number": 2,
+            "title": "文字・語彙",
+            "score": 100,
+            "minutes": 35,
+            "source_body_pages": 7,
+            "notice_heading_observed": true,
+            "english_booklet_title": null,
+            "labels": {
+              "upper_right": {
+                "html": "問題用紙"
+              },
+              "level_unit": {
+                "html": "級"
+              },
+              "title": {
+                "html": "文字・語彙"
+              },
+              "score_unit": {
+                "html": "点"
+              },
+              "minute_unit": {
+                "html": "分"
+              },
+              "notice": {
+                "html": "注意"
+              },
+              "registration": {
+                "html": "受験番号"
+              },
+              "name": {
+                "html": "名前"
+              }
+            },
+            "instructions": [
+              {
+                "number": 1,
+                "japanese": {
+                  "html": "試験開始の合図があるまで、この問題用紙を開けないでください。"
+                },
+                "english": null
+              },
+              {
+                "number": 2,
+                "japanese": {
+                  "html": "この問題用紙を持ち帰ることはできません。"
+                },
+                "english": null
+              },
+              {
+                "number": 3,
+                "japanese": {
+                  "html": "受験番号と名前を下の<ruby>欄<rt>らん</rt></ruby>に、受験票と同じようにはっきりと書いてください。"
+                },
+                "english": null
+              },
+              {
+                "number": 4,
+                "japanese": {
+                  "html": "この問題用紙は、全部で7ページあります。"
+                },
+                "english": null
+              }
+            ]
+          },
+          "instructions": [
+            {
+              "number": 1,
+              "japanese": {
+                "html": "試験開始の合図があるまで、この問題用紙を開けないでください。"
+              },
+              "english": null
+            },
+            {
+              "number": 2,
+              "japanese": {
+                "html": "この問題用紙を持ち帰ることはできません。"
+              },
+              "english": null
+            },
+            {
+              "number": 3,
+              "japanese": {
+                "html": "受験番号と名前を下の<ruby>欄<rt>らん</rt></ruby>に、受験票と同じようにはっきりと書いてください。"
+              },
+              "english": null
+            }
+          ],
+          "source": {
+            "source_path": "src/CodexDownloads/UserApprovedReferenceScans/日本語能力1991～1999年試験問題集2級.pdf",
+            "source_sha256": "0a6634758dce0a258ffaf92c6c8ea1a738a4b8ceb52cd75cb44a4d8d340dfa64",
+            "physical_pages": [
+              357
+            ],
+            "reference_id": "RC03_L2",
+            "approval_registry_sha256": "c0fc4d24494a9569dd539d237018014213045d6224ae9035fa282ab610be0384",
+            "subject": "written_booklet_cover",
+            "historical_claim": false,
+            "region": "Written booklet cover only; collection folios, scanner marks, borders and damage excluded."
+          }
+        },
+        "reading_grammar": {
+          "printed": {
+            "family": "four_instruction",
+            "year_text": "1999",
+            "level_number": 2,
+            "title": "読解・文法",
+            "score": 200,
+            "minutes": 70,
+            "source_body_pages": 19,
+            "notice_heading_observed": true,
+            "english_booklet_title": null,
+            "labels": {
+              "upper_right": {
+                "html": "問題用紙"
+              },
+              "level_unit": {
+                "html": "級"
+              },
+              "title": {
+                "html": "読解・文法"
+              },
+              "score_unit": {
+                "html": "点"
+              },
+              "minute_unit": {
+                "html": "分"
+              },
+              "notice": {
+                "html": "注意"
+              },
+              "registration": {
+                "html": "受験番号"
+              },
+              "name": {
+                "html": "名前"
+              }
+            },
+            "instructions": [
+              {
+                "number": 1,
+                "japanese": {
+                  "html": "試験開始の合図があるまで、この問題用紙を開けないでください。"
+                },
+                "english": null
+              },
+              {
+                "number": 2,
+                "japanese": {
+                  "html": "この問題用紙を持ち帰ることはできません。"
+                },
+                "english": null
+              },
+              {
+                "number": 3,
+                "japanese": {
+                  "html": "受験番号と名前を下の<ruby>欄<rt>らん</rt></ruby>に、受験票と同じようにはっきりと書いてください。"
+                },
+                "english": null
+              },
+              {
+                "number": 4,
+                "japanese": {
+                  "html": "この問題用紙は、全部で19ページあります。"
+                },
+                "english": null
+              }
+            ]
+          },
+          "instructions": [
+            {
+              "number": 1,
+              "japanese": {
+                "html": "試験開始の合図があるまで、この問題用紙を開けないでください。"
+              },
+              "english": null
+            },
+            {
+              "number": 2,
+              "japanese": {
+                "html": "この問題用紙を持ち帰ることはできません。"
+              },
+              "english": null
+            },
+            {
+              "number": 3,
+              "japanese": {
+                "html": "受験番号と名前を下の<ruby>欄<rt>らん</rt></ruby>に、受験票と同じようにはっきりと書いてください。"
+              },
+              "english": null
+            }
+          ],
+          "source": {
+            "source_path": "src/CodexDownloads/UserApprovedReferenceScans/日本語能力1991～1999年試験問題集2級.pdf",
+            "source_sha256": "0a6634758dce0a258ffaf92c6c8ea1a738a4b8ceb52cd75cb44a4d8d340dfa64",
+            "physical_pages": [
+              380
+            ],
+            "reference_id": "RC03_L2",
+            "approval_registry_sha256": "c0fc4d24494a9569dd539d237018014213045d6224ae9035fa282ab610be0384",
+            "subject": "written_booklet_cover",
+            "historical_claim": false,
+            "region": "Written booklet cover only; collection folios, scanner marks, borders and damage excluded."
+          }
+        }
+      }
+    },
+    "4級": {
+      "style_id": "four_instruction_L4",
+      "booklets": {
+        "vocabulary": {
+          "printed": {
+            "family": "bilingual_2008",
+            "year_text": "2008",
+            "level_number": 4,
+            "title": "文字・語彙",
+            "score": 100,
+            "minutes": 25,
+            "source_body_pages": 7,
+            "notice_heading_observed": true,
+            "english_booklet_title": "Writing/Vocabulary",
+            "labels": {
+              "upper_right": {
+                "html": "<ruby>問<rt>もん</rt></ruby><ruby>題<rt>だい</rt></ruby><ruby>用<rt>よう</rt></ruby><ruby>紙<rt>し</rt></ruby>"
+              },
+              "level_unit": {
+                "html": "<ruby>級<rt>きゅう</rt></ruby>"
+              },
+              "title": {
+                "html": "<ruby>文<rt>も</rt></ruby><ruby>字<rt>じ</rt></ruby>・<ruby>語<rt>ご</rt></ruby><ruby>彙<rt>い</rt></ruby>"
+              },
+              "score_unit": {
+                "html": "<ruby>点<rt>てん</rt></ruby>"
+              },
+              "minute_unit": {
+                "html": "<ruby>分<rt>ふん</rt></ruby>"
+              },
+              "notice": {
+                "html": "注意"
+              },
+              "registration": {
+                "html": "<ruby>受験番号<rt>じゅけんばんごう</rt></ruby>"
+              },
+              "name": {
+                "html": "<ruby>名<rt>な</rt></ruby><ruby>前<rt>まえ</rt></ruby>"
+              }
+            },
+            "instructions": [
+              {
+                "number": 1,
+                "japanese": {
+                  "html": "<ruby>試験<rt>しけん</rt></ruby>が<ruby>始<rt>はじ</rt></ruby>まるまで、この<ruby>問題用紙<rt>もんだいようし</rt></ruby>を<ruby>開<rt>あ</rt></ruby>けないでください。"
+                },
+                "english": {
+                  "html": "Do not open this question booklet before the test begins."
+                }
+              },
+              {
+                "number": 2,
+                "japanese": {
+                  "html": "この<ruby>問題用紙<rt>もんだいようし</rt></ruby>を<ruby>持<rt>も</rt></ruby>って<ruby>帰<rt>かえ</rt></ruby>ることはできません。"
+                },
+                "english": {
+                  "html": "Do not take this question booklet with you after the test."
+                }
+              },
+              {
+                "number": 3,
+                "japanese": {
+                  "html": "<ruby>受験番号<rt>じゅけんばんごう</rt></ruby>と<ruby>名前<rt>なまえ</rt></ruby>を<ruby>下<rt>した</rt></ruby>の<ruby>欄<rt>らん</rt></ruby>に、<ruby>受験票<rt>じゅけんひょう</rt></ruby>と<ruby>同<rt>おな</rt></ruby>じようにはっきりと<ruby>書<rt>か</rt></ruby>いてください。"
+                },
+                "english": {
+                  "html": "Write your registration number and name clearly in each box below as written on your test voucher."
+                }
+              },
+              {
+                "number": 4,
+                "japanese": {
+                  "html": "この<ruby>問題用紙<rt>もんだいようし</rt></ruby>は、<ruby>全部<rt>ぜんぶ</rt></ruby>で7<ruby>頁<rt>ページ</rt></ruby>あります。"
+                },
+                "english": {
+                  "html": "This question booklet has 7 pages."
+                }
+              },
+              {
+                "number": 5,
+                "japanese": {
+                  "html": "<ruby>問題<rt>もんだい</rt></ruby>には<ruby>解答番号<rt>かいとうばんごう</rt></ruby>の<span data-cover-answer-number=\"true\">1</span>、<span data-cover-answer-number=\"true\">2</span>、<span data-cover-answer-number=\"true\">3</span>…が<ruby>付<rt>つ</rt></ruby>いています。<ruby>答<rt>こた</rt></ruby>えは、<ruby>解答用紙<rt>かいとうようし</rt></ruby>にある<ruby>同<rt>おな</rt></ruby>じ<ruby>番号<rt>ばんごう</rt></ruby>の<ruby>解答欄<rt>かいとうらん</rt></ruby>にマークしてください。"
+                },
+                "english": {
+                  "html": "One of the row numbers <span data-cover-answer-number=\"true\">1</span>, <span data-cover-answer-number=\"true\">2</span>, <span data-cover-answer-number=\"true\">3</span> ··· is given for each question. Mark your answer in the same row of the answer sheet."
+                }
+              }
+            ]
+          },
+          "instructions": [
+            {
+              "number": 1,
+              "japanese": {
+                "html": "<ruby>試験<rt>しけん</rt></ruby>が<ruby>始<rt>はじ</rt></ruby>まるまで、この<ruby>問題用紙<rt>もんだいようし</rt></ruby>を<ruby>開<rt>あ</rt></ruby>けないでください。"
+              },
+              "english": null
+            },
+            {
+              "number": 2,
+              "japanese": {
+                "html": "この<ruby>問題用紙<rt>もんだいようし</rt></ruby>を<ruby>持<rt>も</rt></ruby>って<ruby>帰<rt>かえ</rt></ruby>ることはできません。"
+              },
+              "english": null
+            },
+            {
+              "number": 3,
+              "japanese": {
+                "html": "<ruby>受験番号<rt>じゅけんばんごう</rt></ruby>と<ruby>名前<rt>なまえ</rt></ruby>を<ruby>下<rt>した</rt></ruby>の<ruby>欄<rt>らん</rt></ruby>に、<ruby>受験票<rt>じゅけんひょう</rt></ruby>と<ruby>同<rt>おな</rt></ruby>じようにはっきりと<ruby>書<rt>か</rt></ruby>いてください。"
+              },
+              "english": null
+            }
+          ],
+          "source": {
+            "source_path": "src/CodexDownloads/UserApprovedReferenceScans/pdf-jlpt3-4kyuu2008_compress.pdf",
+            "source_sha256": "90f934091cf24e333a6a05e58e8c047fc1562793aa07265245562882e0bc6d0f",
+            "physical_pages": [
+              44
+            ],
+            "reference_id": "RC04_2008_L3_L4",
+            "approval_registry_sha256": "c0fc4d24494a9569dd539d237018014213045d6224ae9035fa282ab610be0384",
+            "subject": "written_booklet_cover",
+            "historical_claim": false,
+            "region": "Written booklet cover only; collection folios, scanner marks, borders and damage excluded."
+          }
+        },
+        "reading_grammar": {
+          "printed": {
+            "family": "bilingual_2008",
+            "year_text": "2008",
+            "level_number": 4,
+            "title": "読解・文法",
+            "score": 200,
+            "minutes": 50,
+            "source_body_pages": 12,
+            "notice_heading_observed": true,
+            "english_booklet_title": "Reading/Grammar",
+            "labels": {
+              "upper_right": {
+                "html": "<ruby>問<rt>もん</rt></ruby><ruby>題<rt>だい</rt></ruby><ruby>用<rt>よう</rt></ruby><ruby>紙<rt>し</rt></ruby>"
+              },
+              "level_unit": {
+                "html": "<ruby>級<rt>きゅう</rt></ruby>"
+              },
+              "title": {
+                "html": "<ruby>読<rt>どっ</rt></ruby><ruby>解<rt>かい</rt></ruby>・<ruby>文<rt>ぶん</rt></ruby><ruby>法<rt>ぽう</rt></ruby>"
+              },
+              "score_unit": {
+                "html": "<ruby>点<rt>てん</rt></ruby>"
+              },
+              "minute_unit": {
+                "html": "<ruby>分<rt>ぷん</rt></ruby>"
+              },
+              "notice": {
+                "html": "注意"
+              },
+              "registration": {
+                "html": "<ruby>受験番号<rt>じゅけんばんごう</rt></ruby>"
+              },
+              "name": {
+                "html": "<ruby>名<rt>な</rt></ruby><ruby>前<rt>まえ</rt></ruby>"
+              }
+            },
+            "instructions": [
+              {
+                "number": 1,
+                "japanese": {
+                  "html": "<ruby>試験<rt>しけん</rt></ruby>が<ruby>始<rt>はじ</rt></ruby>まるまで、この<ruby>問題用紙<rt>もんだいようし</rt></ruby>を<ruby>開<rt>あ</rt></ruby>けないでください。"
+                },
+                "english": {
+                  "html": "Do not open this question booklet before the test begins."
+                }
+              },
+              {
+                "number": 2,
+                "japanese": {
+                  "html": "この<ruby>問題用紙<rt>もんだいようし</rt></ruby>を<ruby>持<rt>も</rt></ruby>って<ruby>帰<rt>かえ</rt></ruby>ることはできません。"
+                },
+                "english": {
+                  "html": "Do not take this question booklet with you after the test."
+                }
+              },
+              {
+                "number": 3,
+                "japanese": {
+                  "html": "<ruby>受験番号<rt>じゅけんばんごう</rt></ruby>と<ruby>名前<rt>なまえ</rt></ruby>を<ruby>下<rt>した</rt></ruby>の<ruby>欄<rt>らん</rt></ruby>に、<ruby>受験票<rt>じゅけんひょう</rt></ruby>と<ruby>同<rt>おな</rt></ruby>じようにはっきりと<ruby>書<rt>か</rt></ruby>いてください。"
+                },
+                "english": {
+                  "html": "Write your registration number and name clearly in each box below as written on your test voucher."
+                }
+              },
+              {
+                "number": 4,
+                "japanese": {
+                  "html": "この<ruby>問題用紙<rt>もんだいようし</rt></ruby>は、12ページあります。"
+                },
+                "english": {
+                  "html": "This question booklet has 12 pages."
+                }
+              },
+              {
+                "number": 5,
+                "japanese": {
+                  "html": "<ruby>問題<rt>もんだい</rt></ruby>には<ruby>解答番号<rt>かいとうばんごう</rt></ruby>の<span data-cover-answer-number=\"true\">1</span>、<span data-cover-answer-number=\"true\">2</span>、<span data-cover-answer-number=\"true\">3</span>…が<ruby>付<rt>つ</rt></ruby>いています。<ruby>答<rt>こた</rt></ruby>えは、<ruby>解答用紙<rt>かいとうようし</rt></ruby>にある<ruby>同<rt>おな</rt></ruby>じ<ruby>番号<rt>ばんごう</rt></ruby>の<ruby>解答欄<rt>かいとうらん</rt></ruby>にマークしてください。"
+                },
+                "english": {
+                  "html": "One of the row numbers <span data-cover-answer-number=\"true\">1</span>, <span data-cover-answer-number=\"true\">2</span>, <span data-cover-answer-number=\"true\">3</span> ··· is given for each question. Mark your answer in the same row of the answer sheet."
+                }
+              }
+            ]
+          },
+          "instructions": [
+            {
+              "number": 1,
+              "japanese": {
+                "html": "<ruby>試験<rt>しけん</rt></ruby>が<ruby>始<rt>はじ</rt></ruby>まるまで、この<ruby>問題用紙<rt>もんだいようし</rt></ruby>を<ruby>開<rt>あ</rt></ruby>けないでください。"
+              },
+              "english": null
+            },
+            {
+              "number": 2,
+              "japanese": {
+                "html": "この<ruby>問題用紙<rt>もんだいようし</rt></ruby>を<ruby>持<rt>も</rt></ruby>って<ruby>帰<rt>かえ</rt></ruby>ることはできません。"
+              },
+              "english": null
+            },
+            {
+              "number": 3,
+              "japanese": {
+                "html": "<ruby>受験番号<rt>じゅけんばんごう</rt></ruby>と<ruby>名前<rt>なまえ</rt></ruby>を<ruby>下<rt>した</rt></ruby>の<ruby>欄<rt>らん</rt></ruby>に、<ruby>受験票<rt>じゅけんひょう</rt></ruby>と<ruby>同<rt>おな</rt></ruby>じようにはっきりと<ruby>書<rt>か</rt></ruby>いてください。"
+              },
+              "english": null
+            }
+          ],
+          "source": {
+            "source_path": "src/CodexDownloads/UserApprovedReferenceScans/pdf-jlpt3-4kyuu2008_compress.pdf",
+            "source_sha256": "90f934091cf24e333a6a05e58e8c047fc1562793aa07265245562882e0bc6d0f",
+            "physical_pages": [
+              62
+            ],
+            "reference_id": "RC04_2008_L3_L4",
+            "approval_registry_sha256": "c0fc4d24494a9569dd539d237018014213045d6224ae9035fa282ab610be0384",
+            "subject": "written_booklet_cover",
+            "historical_claim": false,
+            "region": "Written booklet cover only; collection folios, scanner marks, borders and damage excluded."
+          }
+        }
+      }
+    },
+    "3級": {
+      "style_id": "bilingual_four_instruction_L3",
+      "family": "bilingual_four_instruction",
+      "booklets": {
+        "vocabulary": {
+          "printed": {
+            "family": "bilingual_four_instruction",
+            "year_text": "1999",
+            "level_number": 3,
+            "title": "文字・語彙",
+            "score": 100,
+            "minutes": 35,
+            "source_body_pages": 9,
+            "notice_heading_observed": true,
+            "english_booklet_title": null,
+            "labels": {
+              "level_unit": {
+                "html": "<ruby>級<rt>きゅう</rt></ruby>"
+              },
+              "score_unit": {
+                "html": "<ruby>点<rt>てん</rt></ruby>"
+              },
+              "minute_unit": {
+                "html": "<ruby>分<rt>ふん</rt></ruby>"
+              },
+              "notice": {
+                "html": "<ruby>注<rt>ちゅう</rt></ruby><ruby>意<rt>い</rt></ruby>"
+              },
+              "registration": {
+                "html": "<ruby>受験番号<rt>じゅけんばんごう</rt></ruby>"
+              },
+              "name": {
+                "html": "<ruby>名<rt>な</rt></ruby><ruby>前<rt>まえ</rt></ruby>"
+              },
+              "title": {
+                "html": "<ruby>文<rt>も</rt></ruby><ruby>字<rt>じ</rt></ruby>・<ruby>語<rt>ご</rt></ruby><ruby>彙<rt>い</rt></ruby>"
+              },
+              "upper_right": {
+                "html": "<ruby>問<rt>もん</rt></ruby><ruby>題<rt>だい</rt></ruby><ruby>用<rt>よう</rt></ruby><ruby>紙<rt>し</rt></ruby>"
+              }
+            },
+            "instructions": [
+              {
+                "number": 1,
+                "japanese": {
+                  "html": "<ruby>試験<rt>しけん</rt></ruby>がはじまるまで、この<ruby>問題用紙<rt>もんだいようし</rt></ruby>を<ruby>開<rt>あ</rt></ruby>けないでください。"
+                },
+                "english": {
+                  "html": "Do not open this question booklet before the test begins."
+                }
+              },
+              {
+                "number": 2,
+                "japanese": {
+                  "html": "この<ruby>問題用紙<rt>もんだいようし</rt></ruby>を<ruby>持<rt>も</rt></ruby>って<ruby>帰<rt>かえ</rt></ruby>ることはできません。"
+                },
+                "english": {
+                  "html": "You are not allowed to keep this question booklet after the test has finished."
+                }
+              },
+              {
+                "number": 3,
+                "japanese": {
+                  "html": "<ruby>受験番号<rt>じゅけんばんごう</rt></ruby>と<ruby>名前<rt>なまえ</rt></ruby>を<ruby>下<rt>した</rt></ruby>の<ruby>欄<rt>らん</rt></ruby>に、<ruby>受験票<rt>じゅけんひょう</rt></ruby>と<ruby>同<rt>おな</rt></ruby>じようにはっきりと<ruby>書<rt>か</rt></ruby>いてください。"
+                },
+                "english": {
+                  "html": "Write your registration number and name clearly in each box below. Make sure that the registration number and the name on the question booklet correspond to those on the Test Voucher."
+                }
+              },
+              {
+                "number": 4,
+                "japanese": {
+                  "html": "この<ruby>問題用紙<rt>もんだいようし</rt></ruby>は、<ruby>全部<rt>ぜんぶ</rt></ruby>で9ページあります。"
+                },
+                "english": {
+                  "html": "This question booklet contains 9 pages."
+                }
+              }
+            ]
+          },
+          "source": {
+            "source_path": "src/CodexDownloads/UserApprovedReferenceScans/日本語能力1991～1999年試験問題集3級.pdf",
+            "source_sha256": "4af8ec5c1039430637c36a7bd3ac9c1c031536e32a6f5bc89e405b7210d29ae1",
+            "physical_pages": [
+              331
+            ],
+            "historical_claim": false,
+            "region": "Complete independently transcribed old Level3 written cover with four bilingual instructions.",
+            "reference_id": "RC03_L3",
+            "approval_registry_sha256": "c0fc4d24494a9569dd539d237018014213045d6224ae9035fa282ab610be0384",
+            "subject": "written_booklet_cover"
+          },
+          "instructions": [
+            {
+              "number": 1,
+              "japanese": {
+                "html": "<ruby>試験<rt>しけん</rt></ruby>がはじまるまで、この<ruby>問題用紙<rt>もんだいようし</rt></ruby>を<ruby>開<rt>あ</rt></ruby>けないでください。"
+              },
+              "english": {
+                "html": "Do not open this question booklet before the test begins."
+              }
+            },
+            {
+              "number": 2,
+              "japanese": {
+                "html": "この<ruby>問題用紙<rt>もんだいようし</rt></ruby>を<ruby>持<rt>も</rt></ruby>って<ruby>帰<rt>かえ</rt></ruby>ることはできません。"
+              },
+              "english": {
+                "html": "You are not allowed to keep this question booklet after the test has finished."
+              }
+            },
+            {
+              "number": 3,
+              "japanese": {
+                "html": "<ruby>受験番号<rt>じゅけんばんごう</rt></ruby>と<ruby>名前<rt>なまえ</rt></ruby>を<ruby>下<rt>した</rt></ruby>の<ruby>欄<rt>らん</rt></ruby>に、<ruby>受験票<rt>じゅけんひょう</rt></ruby>と<ruby>同<rt>おな</rt></ruby>じようにはっきりと<ruby>書<rt>か</rt></ruby>いてください。"
+              },
+              "english": {
+                "html": "Write your registration number and name clearly in each box below. Make sure that the registration number and the name on the question booklet correspond to those on the Test Voucher."
+              }
+            }
+          ]
+        },
+        "reading_grammar": {
+          "printed": {
+            "family": "bilingual_four_instruction",
+            "year_text": "1999",
+            "level_number": 3,
+            "title": "読解・文法",
+            "score": 200,
+            "minutes": 70,
+            "source_body_pages": 9,
+            "notice_heading_observed": true,
+            "english_booklet_title": null,
+            "labels": {
+              "level_unit": {
+                "html": "<ruby>級<rt>きゅう</rt></ruby>"
+              },
+              "score_unit": {
+                "html": "<ruby>点<rt>てん</rt></ruby>"
+              },
+              "minute_unit": {
+                "html": "<ruby>分<rt>ふん</rt></ruby>"
+              },
+              "notice": {
+                "html": "<ruby>注<rt>ちゅう</rt></ruby><ruby>意<rt>い</rt></ruby>"
+              },
+              "registration": {
+                "html": "<ruby>受験番号<rt>じゅけんばんごう</rt></ruby>"
+              },
+              "name": {
+                "html": "<ruby>名<rt>な</rt></ruby><ruby>前<rt>まえ</rt></ruby>"
+              },
+              "title": {
+                "html": "<ruby>読<rt>どっ</rt></ruby><ruby>解<rt>かい</rt></ruby>・<ruby>文<rt>ぶん</rt></ruby><ruby>法<rt>ぽう</rt></ruby>"
+              },
+              "upper_right": {
+                "html": "<ruby>問<rt>もん</rt></ruby><ruby>題<rt>だい</rt></ruby><ruby>用<rt>よう</rt></ruby><ruby>紙<rt>し</rt></ruby>"
+              }
+            },
+            "instructions": [
+              {
+                "number": 1,
+                "japanese": {
+                  "html": "<ruby>試験<rt>しけん</rt></ruby>が<ruby>始<rt>はじ</rt></ruby>まるまで、この<ruby>問題用紙<rt>もんだいようし</rt></ruby>を<ruby>開<rt>あ</rt></ruby>けないでください。"
+                },
+                "english": {
+                  "html": "Do not open this question booklet before the test begins."
+                }
+              },
+              {
+                "number": 2,
+                "japanese": {
+                  "html": "この<ruby>問題用紙<rt>もんだいようし</rt></ruby>を<ruby>持<rt>も</rt></ruby>って<ruby>帰<rt>かえ</rt></ruby>ることはできません。"
+                },
+                "english": {
+                  "html": "You are not allowed to keep this question booklet after the test has finished."
+                }
+              },
+              {
+                "number": 3,
+                "japanese": {
+                  "html": "<ruby>受験番号<rt>じゅけんばんごう</rt></ruby>と<ruby>名前<rt>なまえ</rt></ruby>を<ruby>下<rt>した</rt></ruby>の<ruby>欄<rt>らん</rt></ruby>に、<ruby>受験票<rt>じゅけんひょう</rt></ruby>と<ruby>同<rt>おな</rt></ruby>じようにはっきりと<ruby>書<rt>か</rt></ruby>いてください。"
+                },
+                "english": {
+                  "html": "Write your registration number and name clearly in each box below. Make sure that the registration number and the name on the question booklet correspond to those on the Test Voucher."
+                }
+              },
+              {
+                "number": 4,
+                "japanese": {
+                  "html": "この<ruby>問題用紙<rt>もんだいようし</rt></ruby>は、<ruby>全部<rt>ぜんぶ</rt></ruby>で9ページあります。"
+                },
+                "english": {
+                  "html": "This question booklet contains 9 pages."
+                }
+              }
+            ]
+          },
+          "source": {
+            "source_path": "src/CodexDownloads/UserApprovedReferenceScans/日本語能力1991～1999年試験問題集3級.pdf",
+            "source_sha256": "4af8ec5c1039430637c36a7bd3ac9c1c031536e32a6f5bc89e405b7210d29ae1",
+            "physical_pages": [
+              355
+            ],
+            "historical_claim": false,
+            "region": "Complete independently transcribed old Level3 written cover with four bilingual instructions.",
+            "reference_id": "RC03_L3",
+            "approval_registry_sha256": "c0fc4d24494a9569dd539d237018014213045d6224ae9035fa282ab610be0384",
+            "subject": "written_booklet_cover"
+          },
+          "instructions": [
+            {
+              "number": 1,
+              "japanese": {
+                "html": "<ruby>試験<rt>しけん</rt></ruby>が<ruby>始<rt>はじ</rt></ruby>まるまで、この<ruby>問題用紙<rt>もんだいようし</rt></ruby>を<ruby>開<rt>あ</rt></ruby>けないでください。"
+              },
+              "english": {
+                "html": "Do not open this question booklet before the test begins."
+              }
+            },
+            {
+              "number": 2,
+              "japanese": {
+                "html": "この<ruby>問題用紙<rt>もんだいようし</rt></ruby>を<ruby>持<rt>も</rt></ruby>って<ruby>帰<rt>かえ</rt></ruby>ることはできません。"
+              },
+              "english": {
+                "html": "You are not allowed to keep this question booklet after the test has finished."
+              }
+            },
+            {
+              "number": 3,
+              "japanese": {
+                "html": "<ruby>受験番号<rt>じゅけんばんごう</rt></ruby>と<ruby>名前<rt>なまえ</rt></ruby>を<ruby>下<rt>した</rt></ruby>の<ruby>欄<rt>らん</rt></ruby>に、<ruby>受験票<rt>じゅけんひょう</rt></ruby>と<ruby>同<rt>おな</rt></ruby>じようにはっきりと<ruby>書<rt>か</rt></ruby>いてください。"
+              },
+              "english": {
+                "html": "Write your registration number and name clearly in each box below. Make sure that the registration number and the name on the question booklet correspond to those on the Test Voucher."
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "h26_extension": "Level3 inferred covers use existing H23-approved N3_1999 same-level bilingual controls. Original H24/H25 covers remain unavailable; no new source authentication."
+}

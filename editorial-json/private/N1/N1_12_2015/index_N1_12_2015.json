@@ -1,0 +1,246 @@
+{
+  "unit": "N1_12_2015",
+  "sources": [
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\2015.12\\2015年12月n1听力原文.pdf",
+      "sha256": "a613c68e7a7b2411528c63ee0d032af3338f75bb7959a22284076de1f6524c2c",
+      "Tier": "unranked",
+      "bytes": 2904960,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\2015.12\\2015年12月n1听力原文.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2015\\PaddleOCR\\pdf_1",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\2015.12\\2015年12月日语N1真题及答案.docx",
+      "sha256": "ea32ebbd74ad3617686749a02a172b1162b08ce54543e0b0c8d10a32f899c7ca",
+      "Tier": "unranked",
+      "bytes": 63346,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\2015.12\\2015年12月日语N1真题及答案.docx"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\2015.12\\2015年12月日语能力考一级N1真题解析：听力.pdf",
+      "sha256": "288fd81d9d1aa36518d189e253d309692b29bc008d82fd99a67def4f473c7b8a",
+      "Tier": "unranked",
+      "bytes": 282149,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2015\\PaddleOCR\\pdf_2",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\2015.12\\2015年12月日语能力考一级N1真题解析：读解.pdf",
+      "sha256": "69a8bd23581e129441d5f82aeb260e8427c425e1643b4cdb4dabee5a1e56b958",
+      "Tier": "unranked",
+      "bytes": 198236,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2015\\PaddleOCR\\pdf_3",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\2016.12\\N1能力考试计算方法.xlsx",
+      "sha256": "509844a08048d2cb05c14dd4645d8a885a027af4caa2cc5f4f4b0fcf640e092b",
+      "Tier": "unranked",
+      "bytes": 9627,
+      "aliases": [
+        "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\N1能力考试计算方法.xlsx",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\N1能力考试计算方法.xlsx",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\N1能力考试计算方法.xlsx"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\N1答题卡.pdf",
+      "sha256": "99d0ff9ea60c01b3c211c680c0c527a1604e0c91a52ece360e2873186b8dcef9",
+      "Tier": "unranked",
+      "bytes": 683222,
+      "aliases": [
+        "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\N1答题卡.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\N1答题卡.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\N1答题卡.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N1\\N1_multiple\\PaddleOCR\\pdf_2",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N1\\2015-12_N1\\2015-12_N1.json",
+      "sha256": "d3892d9e398a0ad2b870342ec1791a6e10781fa6aa12eddccb1b084c4a3682db",
+      "Tier": "unranked",
+      "bytes": 256975,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N1 các năm Yuuki Bùi\\N1 12-2015\\Đáp án+Script N1 12-2015.pdf",
+      "sha256": "7fdaf57e98cf6afc7af639d845801d2c6069c279353159f216425a8de704f2b1",
+      "Tier": "unranked",
+      "bytes": 2954394,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2015\\PaddleOCR\\pdf_5",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N1 các năm Yuuki Bùi\\N1 12-2015\\Đề N1 12-2015.pdf",
+      "sha256": "a08adf1d940e5f4147a35774edec017222cb98433604668d7ca0ec3e111d664c",
+      "Tier": 1,
+      "bytes": 9458880,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2015\\PaddleOCR\\pdf_6",
+      "VisionOCR": "preprocess\\N1\\N1_12_2015\\VisionOCR\\pdf_6"
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N1\\listening\\N1_12_2015_listening.html",
+      "sha256": "70bb51cdd7b1590d1310906e91b53990be94a64f642477036c7d09c547267915",
+      "Tier": "unranked",
+      "bytes": 120359,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N1\\reading\\N1_12_2015_reading.html",
+      "sha256": "1e4bda1e5749915895896c686aed744beeee9a77176d6456f7afebf57995e629",
+      "Tier": "unranked",
+      "bytes": 113643,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N1\\vocab\\N1_12_2015_vocab.html",
+      "sha256": "02b6c7f818ca57d92a1738bd493a95519479f4995b04e66016e03844d60ec817",
+      "Tier": "unranked",
+      "bytes": 119612,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\2015\\2015.12\\2015年12月N1真题.pdf",
+      "sha256": "8f799b240312d5ce62e198c4a2ad4b1a7288f3064ee81a20c710489a726cd815",
+      "Tier": 2,
+      "bytes": 3703093,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2015\\PaddleOCR\\pdf_7",
+      "VisionOCR": "preprocess\\N1\\N1_12_2015\\VisionOCR\\pdf_7"
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\2015\\2015.12\\答案解析和听力原文\\2015年12月N1听力原文.pdf",
+      "sha256": "034088d04ccd8c6a6f425e608f7d5a4d64cf7807a44d8a8fb12ac3e55059b742",
+      "Tier": "unranked",
+      "bytes": 12029698,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2015\\PaddleOCR\\pdf_8",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\2015\\2015.12\\答案解析和听力原文\\2015年12月N1听力译文.pdf",
+      "sha256": "dbeb30c4455305b202e40e6180076098fa14f418c16368ec4002da27f0906192",
+      "Tier": "unranked",
+      "bytes": 2531983,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2010年-2020年\\2015年12月\\2015年12月N1听力译文.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2015\\PaddleOCR\\pdf_9",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\2015\\2015.12\\答案解析和听力原文\\2015年12月N1答案解析.pdf",
+      "sha256": "727ccb9e1830b8cf07e84d5c2a7ee48c705adf70ff9e501b91482e407730ee6b",
+      "Tier": "unranked",
+      "bytes": 12845341,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2015\\PaddleOCR\\pdf_10",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\2015\\2015.12\\答案解析和听力原文\\2015年12月N1阅读译文.pdf",
+      "sha256": "d711a9aded8490bee99f36cb21c838e76f1cd8aa7db8bd06724521d7ebb29e79",
+      "Tier": "unranked",
+      "bytes": 2328309,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2010年-2020年\\2015年12月\\2015年12月N1阅读译文.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2015\\PaddleOCR\\pdf_11",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2010年-2020年\\2015年12月\\【1】2015年12月N1 真题.pdf",
+      "sha256": "73b34aea22458b3cd555d51908162ede80ed8e93a827dd8b41c73e40f4077452",
+      "Tier": 2,
+      "bytes": 6240234,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2015\\PaddleOCR\\pdf_12",
+      "VisionOCR": "preprocess\\N1\\N1_12_2015\\VisionOCR\\pdf_12"
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2010年-2020年\\2015年12月\\【1】2015年12月N1答案解析+听力原文.pdf",
+      "sha256": "b5c16976ca619bdd653397859630c07a90d41cb165b8a8e347034e77c09fabe7",
+      "Tier": "unranked",
+      "bytes": 3195716,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2015\\PaddleOCR\\pdf_13",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2010年-2020年\\2015年12月\\【2】2015年12月N1 真题.pdf",
+      "sha256": "92fca48583dc5c138ac413b117b89ec2863a3629a38da5abcc2a4498909a7792",
+      "Tier": 2,
+      "bytes": 1429308,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2015\\PaddleOCR\\pdf_14",
+      "VisionOCR": "preprocess\\N1\\N1_12_2015\\VisionOCR\\pdf_14"
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2010年-2020年\\2015年12月\\【2】2015年12月N1答案解析+听力原文.pdf",
+      "sha256": "b0907102059809338de310c6248e9f934a574f4120245f27d034a8e70eaf5278",
+      "Tier": "unranked",
+      "bytes": 964975,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2015\\PaddleOCR\\pdf_15",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2010年-2020年\\2015年12月\\【3】2015年12月N1 真题.pdf",
+      "sha256": "23e80ed97167207e521bca38be7e7fb5028a39a85f709684c982ef0f75c1b54a",
+      "Tier": 2,
+      "bytes": 1205911,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2015\\PaddleOCR\\pdf_16",
+      "VisionOCR": "preprocess\\N1\\N1_12_2015\\VisionOCR\\pdf_16"
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2010年-2020年\\2015年12月\\【3】2015年12月N1答案解析+听力原文+译文.pdf",
+      "sha256": "7bc5e29454606b3f3d998ac294c9ea3efebcf7ef5198e2f783ea7b1984da72e4",
+      "Tier": "unranked",
+      "bytes": 1062691,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2015\\PaddleOCR\\pdf_17",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\2015.12\\【超高质量】15年12月N1 答案解析在后面.pdf",
+      "sha256": "a50a222f8a2d84fed5404a4f8e7b7f6ac0b35dde349c6ff54da662314cb1f95d",
+      "Tier": 3,
+      "bytes": 92488631,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_12_2015\\PaddleOCR\\pdf_18",
+      "VisionOCR": "preprocess\\N1\\N1_12_2015\\VisionOCR\\pdf_18"
+    },
+    {
+      "path": "src\\munjaJLPT\\N1\\2015-12_N1\\images\\2015-12_N1_s13-q01-img01.jpg",
+      "sha256": "9bfa91a65a2b6e61ae00df724c6234c2547736db493abdd3b9f824f090536bde",
+      "Tier": "unranked",
+      "bytes": 824086,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    }
+  ]
+}

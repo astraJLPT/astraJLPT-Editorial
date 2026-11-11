@@ -1,0 +1,180 @@
+{
+  "unit": "N3_12_2025",
+  "sources": [
+    {
+      "path": "src\\JLPT_N1_N5_202512\\25年12月N3\\25年12月N3真题.pdf",
+      "sha256": "5d558eb1ec603acb931318d2170515ece93a385504ce960d4a095de5ea84b9db",
+      "Tier": 1,
+      "bytes": 3944548,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N3真题\\2025年12月\\25年12月N3真题.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N3历年真题\\25年12月N3\\25年12月N3真题.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N3\\N3_12_2025\\PaddleOCR\\pdf_1",
+      "VisionOCR": "preprocess\\N3\\N3_12_2025\\VisionOCR\\pdf_1"
+    },
+    {
+      "path": "src\\munjaJLPT\\N3\\2025-12_N3\\2025-12_N3.json",
+      "sha256": "14bc43a22d3b9be9f8b24782e265e43a6f26a8d457adc1d4bbd12c0dc3f95d94",
+      "Tier": "unranked",
+      "bytes": 158353,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N3真题（2010-2026.07）\\2025\\2025年12月\\2025年12月N3.pdf",
+      "sha256": "1cfd1504f1753d38590c6b79554d2639f24792c00f70adc6830a54bfcb0ca3c9",
+      "Tier": 2,
+      "bytes": 6657417,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N3\\N3_12_2025\\PaddleOCR\\pdf_2",
+      "VisionOCR": "preprocess\\N3\\N3_12_2025\\VisionOCR\\pdf_2"
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N3真题（2010-2026.07）\\2025\\2025年12月\\答案解析和听力原文\\2025年12月N3听力原文.pdf",
+      "sha256": "62070dcfa04e9e058dba45357eceb35bc8bc3f8393ff9565c1374bad1b698eaa",
+      "Tier": "unranked",
+      "bytes": 191466,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N3\\N3_12_2025\\PaddleOCR\\pdf_3",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N3真题（2010-2026.07）\\2025\\2025年12月\\答案解析和听力原文\\2025年12月N3答案.pdf",
+      "sha256": "4a5b0052d959a33b9b979361ec2701c1aaaa4ff1d491df179a27f46f1ad04c6f",
+      "Tier": "unranked",
+      "bytes": 146211,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N3\\N3_12_2025\\PaddleOCR\\pdf_4",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N3真题（2010-2026.07）\\2025\\2025年12月\\答案解析和听力原文\\2025年12月N3解析.pdf",
+      "sha256": "7b3818c91d9232f524508ede7b0438f10c594de1c24ba54dffd0eaaf03c55f6e",
+      "Tier": "unranked",
+      "bytes": 339499,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N3\\N3_12_2025\\PaddleOCR\\pdf_5",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N3真题（2010-2026.07）\\N3分数计算说明.xls",
+      "sha256": "41ca46105be02fb10a68f4089462f70bd9c587299feaf8782250c093ba5a13c3",
+      "Tier": "unranked",
+      "bytes": 26624,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N3真题\\N3分数计算说明.xls",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N3历年真题\\N3分数计算说明.xls"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N3真题（2010-2026.07）\\N3答题卡.pdf",
+      "sha256": "bfbc89f3a6c67b5f2f96269af6c8bed60b47ef86f3aa26d37e08bc61f769dc4a",
+      "Tier": "unranked",
+      "bytes": 706587,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N3真题\\N3答题卡.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N3历年真题\\N3答题卡.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N3\\N3_multiple\\PaddleOCR\\pdf_1",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT_N1_N5_202512\\25年12月N3\\答案1.png",
+      "sha256": "79dcb485f05731c1cab3349e56a159d0392b0fec4330f08d319db28f049cfce7",
+      "Tier": "unranked",
+      "bytes": 828137,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N3历年真题\\25年12月N3\\答案1.png"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT_N1_N5_202512\\25年12月N3\\答案2.png",
+      "sha256": "a08252f90ea9ae350c522a7fb71b122d183092a1ac229cb77f67604d7951fb25",
+      "Tier": "unranked",
+      "bytes": 627308,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N3历年真题\\25年12月N3\\答案2.png"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N3\\2025-12_N3\\images\\2025-12_N3_l-p1-q03-img01.jpg",
+      "sha256": "a3bb1080011e48d421259f3c1b5097e6c616cea40a1448009b24c59cf5d4777c",
+      "Tier": "unranked",
+      "bytes": 133265,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N3\\2025-12_N3\\images\\2025-12_N3_l-p4-q01-img01.jpg",
+      "sha256": "ee0fbb13b0269e553d97f923daaeb66cbab5e14ad50f368c5b98cb96272c3158",
+      "Tier": "unranked",
+      "bytes": 37896,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N3\\2025-12_N3\\images\\2025-12_N3_l-p4-q02-img01.jpg",
+      "sha256": "97e3da514ecec75b3fd64cf82c70743ba1c7432b84290201c13fb4ef9b0ea4d3",
+      "Tier": "unranked",
+      "bytes": 73722,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N3\\2025-12_N3\\images\\2025-12_N3_l-p4-q03-img01.jpg",
+      "sha256": "2529c2a19b1f282a9243ea0fbffc7c0050f258f797d2ed2486b907369880fb98",
+      "Tier": "unranked",
+      "bytes": 64681,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N3\\2025-12_N3\\images\\2025-12_N3_l-p4-q04-img01.jpg",
+      "sha256": "6fec80837f04cad8c5a5df5d30874f290c51c56ad02ec12296e3bcf9213b7ad3",
+      "Tier": "unranked",
+      "bytes": 69768,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N3\\2025-12_N3\\images\\2025-12_N3_s09-q02-img01.jpg",
+      "sha256": "3b1d8e8fa1fdc9f5408925c0f9f8a87fef737f2a5b4bfe4eae51dda48fce5966",
+      "Tier": "unranked",
+      "bytes": 96265,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N3\\2025-12_N3\\images\\2025-12_N3_s12-q01-img01.jpg",
+      "sha256": "60f39dc4accf5b5f350d6784c030531d27a66a4b8b044c6494997dc9f6571df2",
+      "Tier": "unranked",
+      "bytes": 126676,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N3真题\\2025年12月\\25年12月N3答案.jpg",
+      "sha256": "656f801e6eabd5795557b491b1d44fb860fbdc3d1fb017abec67dbfde9cc2c85",
+      "Tier": "unranked",
+      "bytes": 236533,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    }
+  ]
+}

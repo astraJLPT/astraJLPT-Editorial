@@ -1,0 +1,33 @@
+{
+  "unit": "N1_sample_2009",
+  "content_kind": "sample",
+  "publication_id": "JLPT_SAMPLE_2009_N1",
+  "source_catalogue": {
+    "path": "src/OfficialWorkbooks/index.json",
+    "sha256": "e8c032f24e7f3c0129e15065596a381a52ffcc84c20bc005664dd3e5cbd600bf",
+    "bytes": 221692
+  },
+  "sources": [
+    {
+      "path": "src/OfficialWorkbooks/2009/N1/N1-mondai.pdf",
+      "sha256": "07900df7db706fc1c276edbf7625ceb596be89d8c9844d10c69671a790ca4855",
+      "Tier": "unranked",
+      "bytes": 5435222,
+      "aliases": [],
+      "role": "written_questions",
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src/OfficialWorkbooks/2009/N1/N1-seikai.pdf",
+      "sha256": "ac7df008f486b9abb94f7c3d910d86243d01c15de3087948796a9f969c6b9765",
+      "Tier": "unranked",
+      "bytes": 44646,
+      "aliases": [],
+      "role": "written_key_evidence",
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    }
+  ],
+  "scope": "H28 exact 2009 sample publication. No old historical sitting or listening admission."
+}

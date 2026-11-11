@@ -1,0 +1,126 @@
+{
+  "contract": "historical-artwork-1.0",
+  "id": "H27-N2_2004-reading-b009-01",
+  "kind": "education_goal_bars",
+  "unit": "N2_2004",
+  "item_id": "reading-b009",
+  "source": {
+    "source_path": "src/日语JLPT真题1992～2025.12（及时转存，避免丢失）/渠道一/日语N2真题/1991年-2009年/1995-2009.pdf",
+    "source_sha256": "115e8c098ee3caed702d29a24d2ce0c883c3ad9152e21eee4200fc4e80f2a3fb",
+    "physical_page": 233
+  },
+  "raw_crop": {
+    "path": "preprocess/assets/handoff27-earlier-statistical-05/N2_2004-reading-b009-01-raw.png",
+    "sha256": "200e9c7b3df157f918331f7b060b62884d9ecb33314dfcf6b29395928e759514"
+  },
+  "selection_note": "Native vector/live-text reconstruction after direct individual source and canonical image review. Source numbering remains supplied by the existing option renderer.",
+  "limits": "Original canonical bytes remain unchanged and recoverable. Printed numeric labels are literal; measured unlabelled geometry is approximate. N1/N2 retyped appearance is not original typography evidence; N4 UARS establishes the graphic content but not exact native font identity.",
+  "data": {
+    "coordinate_status": "literal_printed_integers_with_approximate_pixel_traced_segment_geometry",
+    "years": [
+      1982,
+      1992,
+      2002
+    ],
+    "values": [
+      [
+        27,
+        16,
+        13,
+        39,
+        3,
+        2
+      ],
+      [
+        24,
+        15,
+        11,
+        45,
+        3,
+        2,
+        1
+      ],
+      [
+        18,
+        17,
+        8,
+        47,
+        6,
+        4,
+        1
+      ]
+    ],
+    "category_rows": [
+      [
+        "高校",
+        "専門学校、各種学校",
+        "短大、高専",
+        "大学・大学院",
+        "まだ決めていない",
+        "わからない、無回答"
+      ],
+      [
+        "高校",
+        "専門学校、各種学校",
+        "短大、高専",
+        "大学",
+        "大学院",
+        "まだ決めていない",
+        "わからない、無回答"
+      ],
+      [
+        "高校",
+        "専門学校、各種学校",
+        "短大、高専",
+        "大学",
+        "大学院",
+        "まだ決めていない",
+        "わからない、無回答"
+      ]
+    ],
+    "trace_witness": {
+      "image_sha256": "4a470bac7bd9260d917ebbc5304166c2a07c8662fe34e0deca710c0a22e36d93",
+      "boundaries": [
+        [
+          166,
+          383,
+          509,
+          614,
+          930,
+          953,
+          970
+        ],
+        [
+          166,
+          356,
+          476,
+          563,
+          923,
+          946,
+          962,
+          970
+        ],
+        [
+          166,
+          308,
+          444,
+          506,
+          882,
+          930,
+          962,
+          970
+        ]
+      ]
+    },
+    "normalization": "none_printed_row_totals_100_101_101_preserved",
+    "patterns": [
+      "black",
+      "horizontal lines",
+      "dots",
+      "north west lines",
+      "white",
+      "black"
+    ],
+    "printed_percent_symbols": "first_four_values_of_1982_only"
+  }
+}

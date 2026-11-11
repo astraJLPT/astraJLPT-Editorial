@@ -1,0 +1,75 @@
+{
+  "unit": "N5_12_2021",
+  "sources": [
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N4-N5 các năm Yuuki Bùi\\2021年12月\\N5 T12-2021\\Script Nghe N5 T12-2021 Mark.pdf",
+      "sha256": "c40e4ddf0ed47155067b604d354f3f129db0fffd86f5975fd25021ca33002aa2",
+      "Tier": "unranked",
+      "bytes": 956898,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N5\\N5_12_2021\\PaddleOCR\\pdf_1",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N4-N5 các năm Yuuki Bùi\\2021年12月\\N5 T12-2021\\Đáp án đề N5 T12-2021 Mark.pdf",
+      "sha256": "0930698c1f90fc32d0fbc68ff9382ec68c09d201fddf0d36aaa35b0bceea4617",
+      "Tier": "unranked",
+      "bytes": 929928,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N5\\N5_12_2021\\PaddleOCR\\pdf_2",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N4-N5 các năm Yuuki Bùi\\2021年12月\\N5 T12-2021\\Đề N5 T12-2021 Mark.pdf",
+      "sha256": "284c73e4cf4b55f6bd1f6b2d1fb7579beb5cf1002fe36d28ed1e242d48669a67",
+      "Tier": 1,
+      "bytes": 18132573,
+      "aliases": [
+        "src/CodexDownloads/Hunts/2010-2026/2026-10-23_RC01/vjec_N5_claimed_2021_12.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N5\\N5_12_2021\\PaddleOCR\\pdf_3",
+      "VisionOCR": "preprocess\\N5\\N5_12_2021\\VisionOCR\\pdf_3",
+      "source_urls": [
+        "https://drive.google.com/uc?export=download&id=1ySZzrI8cZYzmW1bCBXsxiICH70sUtLs-"
+      ],
+      "provenance_records": [
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/acquisitions.jsonl",
+        "output/pdf/reference_scan_hunt_2010_2026_rc01/download_assessment.json"
+      ],
+      "previous_paths": [
+        "src/CodexDownloads/reference_scan_hunt_2010_2026_rc01/vjec_N5_claimed_2021_12.pdf"
+      ]
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N5真题（2010-2025.12）\\2021年12月N5\\2021年12月N5真题.pdf",
+      "sha256": "dd33b9a065ce8730e5ecb8bfa6bf8faa40d1629e0a6bd70a20cf5db03eebe9ea",
+      "Tier": 2,
+      "bytes": 7132950,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N5历年真题\\2021年12月N5\\2021年12月N5真题.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N5\\N5_12_2021\\PaddleOCR\\pdf_4",
+      "VisionOCR": "preprocess\\N5\\N5_12_2021\\VisionOCR\\pdf_4"
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N5真题（2010-2025.12）\\2021年12月N5\\2021年12月N5答案.docx",
+      "sha256": "04dde3c6e63605b90581b5ba4c00b7f54c23e8dabc92b5e772604e38212f526c",
+      "Tier": "unranked",
+      "bytes": 408840,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N5历年真题\\2021年12月N5\\2021年12月N5答案.docx"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N5真题\\2021年12月\\N5-2021.12-真题+答案-高清打印版.pdf",
+      "sha256": "687687553c4d6c73b8fa1ace9388eae8d063c5b62c32c1bcd94be3cc8af07625",
+      "Tier": 3,
+      "bytes": 7446019,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N5\\N5_12_2021\\PaddleOCR\\pdf_5",
+      "VisionOCR": "preprocess\\N5\\N5_12_2021\\VisionOCR\\pdf_5"
+    }
+  ]
+}

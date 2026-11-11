@@ -1,0 +1,93 @@
+{
+  "unit": "N3_2003",
+  "sources": [
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N3\\2003\\2003年日语能力考试3级真题-听力.pdf",
+      "sha256": "c4c9e26063f0befdeb6ed00a167ad874d4d45441d39ac928f2dcb2e0107662a6",
+      "Tier": "unranked",
+      "bytes": 548325,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N3真题\\1991年-2009年\\2003年\\2003年日语能力考试3级真题-听力.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N3历年真题\\1991~2009\\2003\\2003年日语能力考试3级真题-听力.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N3\\N3_2003\\PaddleOCR\\pdf_1",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N3\\2003\\2003真题加答案\\2003年日语能力考试3级真题-文字词汇.pdf",
+      "sha256": "c42d6970db1aaee17b2af78c58d2215c682f25c93ea1946435921a0722fe9a60",
+      "Tier": 2,
+      "bytes": 152407,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N3真题\\1991年-2009年\\2003年\\2003真题加答案\\2003年日语能力考试3级真题-文字词汇.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N3历年真题\\1991~2009\\2003\\2003真题加答案\\2003年日语能力考试3级真题-文字词汇.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N3\\N3_2003\\PaddleOCR\\pdf_2",
+      "VisionOCR": "preprocess\\N3\\N3_2003\\VisionOCR\\pdf_2"
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N3\\2003\\2003真题加答案\\2003年日语能力考试3级真题-读解文法.pdf",
+      "sha256": "1440a3f3c81e555a752d99662cd439c7def573d1336aea8e358ba15d3bb90269",
+      "Tier": 2,
+      "bytes": 157951,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N3真题\\1991年-2009年\\2003年\\2003真题加答案\\2003年日语能力考试3级真题-读解文法.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N3历年真题\\1991~2009\\2003\\2003真题加答案\\2003年日语能力考试3级真题-读解文法.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N3\\N3_2003\\PaddleOCR\\pdf_3",
+      "VisionOCR": "preprocess\\N3\\N3_2003\\VisionOCR\\pdf_3"
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N3\\2003\\2003真题加答案\\2003能力考3级答案.pdf",
+      "sha256": "65892dd71fef1fe25b12818e831206e826cef4f09505ce960ffc009bc9c50479",
+      "Tier": "unranked",
+      "bytes": 69012,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N3真题\\1991年-2009年\\2003年\\2003真题加答案\\2003能力考3级答案.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N3历年真题\\1991~2009\\2003\\2003真题加答案\\2003能力考3级答案.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N3\\N3_2003\\PaddleOCR\\pdf_4",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src/CodexDownloads/UserApprovedReferenceScans/2003_L3_L4_published_collection.pdf",
+      "sha256": "2d6ad4834484c596d11bf48b4d529797d82d2800282d8e7a85d07f63d9913899",
+      "Tier": "unranked",
+      "bytes": 17867659,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "display_title": "Levels 3-4, 2003",
+      "source_role": "historical_question_volume",
+      "acquisition_batch": "reference_scan_hunt_1984-2009_2026-10-23",
+      "provenance_records": [
+        "preprocess/audit_runs/2026-10-23_reference_scan_rc02_approvals/approvals.json",
+        "preprocess/reference_scan_online_work/batch7_results.json"
+      ],
+      "source_urls": [
+        "https://drive.google.com/uc?export=download&id=1qs_Yk9xZtWXjQaBLL87WLS-mfz94TzT0",
+        "https://drive.usercontent.google.com/download?id=1qs_Yk9xZtWXjQaBLL87WLS-mfz94TzT0&export=download"
+      ],
+      "previous_paths": [
+        "src/CodexDownloads/UserApprovedReferenceScans/Originals/2003_L3_L4_published_collection.pdf",
+        "src/CodexDownloads/reference_scan_online_L1_L2/2003_L3_L4_published_collection.pdf"
+      ],
+      "filename_at_acquisition": "2003_L3_L4_published_collection.pdf",
+      "filename_note": "Local acquisition alias; original remote filename was not recorded. Do not infer it.",
+      "pages": 123,
+      "reference_registry": "preprocess/user_approved_reference_scans.md",
+      "reference_id": "2003_L3_L4",
+      "historical_coverage": [
+        {
+          "level": 3,
+          "year": 2003
+        },
+        {
+          "level": 4,
+          "year": 2003
+        }
+      ]
+    }
+  ]
+}

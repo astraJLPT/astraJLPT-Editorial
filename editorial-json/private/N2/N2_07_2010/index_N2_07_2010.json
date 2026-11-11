@@ -1,0 +1,329 @@
+{
+  "unit": "N2_07_2010",
+  "sources": [
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N2\\2010.07\\2010年7月 N2真题.doc",
+      "sha256": "bb93ba4c6c0c51f4b86a2bcd3fff606e7f8d09b5a1a2fdd737f5f739b92d70fa",
+      "Tier": "unranked",
+      "bytes": 642048,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N2历年真题\\2010.07\\2010年7月 N2真题.doc"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N2\\2010.07\\2010年7月 N2真题答案.doc",
+      "sha256": "4efe4a5e4010f0e1e0bbbda686a0bde0292fca6de47b0cb20cbe162838235c30",
+      "Tier": "unranked",
+      "bytes": 97280,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N2历年真题\\2010.07\\2010年7月 N2真题答案.doc"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N2\\2010.07\\词汇语法阅读\\文字解析.pdf",
+      "sha256": "8a5eb1b9024f8c3ed9da5d1bd52408bea3a90b0b8c0789824e62cdfea049ee76",
+      "Tier": "unranked",
+      "bytes": 412333,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N2历年真题\\2010.07\\词汇语法阅读 解析\\文字解析.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N2\\N2_07_2010\\PaddleOCR\\pdf_1",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N2\\2010.07\\词汇语法阅读\\语法部分解析.pdf",
+      "sha256": "326d4d2807ff1f66728f4bab565591c56f73dd1e8bca63fece7ca5349af790cb",
+      "Tier": "unranked",
+      "bytes": 421014,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N2历年真题\\2010.07\\词汇语法阅读 解析\\语法部分解析.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N2\\N2_07_2010\\PaddleOCR\\pdf_2",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N2\\2010.07\\词汇语法阅读\\读解解析.pdf",
+      "sha256": "82558c5456d1c2a531b47f0bb77aa9da80faed4b41eace3c27ddd4257469102c",
+      "Tier": "unranked",
+      "bytes": 242633,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N2历年真题\\2010.07\\词汇语法阅读 解析\\读解解析.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N2\\N2_07_2010\\PaddleOCR\\pdf_3",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N2\\2010-07_N2\\2010-07_N2.json",
+      "sha256": "9ebc9a650063f41305a4af1d5e828f67e22f060a7240f9caba197ff0d87fce90",
+      "Tier": "unranked",
+      "bytes": 201900,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N2 các năm Yuuki Bùi\\2010.7~2016.7 N2 bản nhẹ.pdf",
+      "sha256": "8133ba39124ac3e316fe0b5d54ca332ea1b1b3ba62af69cd917a28f4d9ae5994",
+      "Tier": 3,
+      "bytes": 11084196,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N2\\N2_07_2010\\PaddleOCR\\pdf_4",
+      "VisionOCR": "preprocess\\N2\\N2_07_2010\\VisionOCR\\pdf_4"
+    },
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N2 các năm Yuuki Bùi\\File tổng hợp T7-2010~T7-2017 N2.pdf",
+      "sha256": "5f69eb14b813b2862ba137d020c70deba158ff50e3f20b0b42ddb25a79dcd8e1",
+      "Tier": 3,
+      "bytes": 51948233,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N2\\N2_07_2010\\PaddleOCR\\pdf_5",
+      "VisionOCR": "preprocess\\N2\\N2_07_2010\\VisionOCR\\pdf_5"
+    },
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N2 các năm Yuuki Bùi\\N2 7-2010\\Đáp Án+Script N2 7-2010.pdf",
+      "sha256": "9b2cff64ca1a31549643a53c2576b1cf8723a9a9faa1477dbff40be7ecb7b2f8",
+      "Tier": "unranked",
+      "bytes": 3410637,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N2\\N2_07_2010\\PaddleOCR\\pdf_6",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N2 các năm Yuuki Bùi\\N2 7-2010\\Đề N2 7-2010.pdf",
+      "sha256": "bc131e0698a54b000b4fe63fc6ceb4c8933cdd489385e7e50f50d9003bd0cac5",
+      "Tier": 1,
+      "bytes": 8133655,
+      "aliases": [
+        "src/CodexDownloads/Hunts/2010-2026/2026-10-23_RC02/kosei_N2_2010_07.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N2\\N2_07_2010\\PaddleOCR\\pdf_7",
+      "VisionOCR": "preprocess\\N2\\N2_07_2010\\VisionOCR\\pdf_7",
+      "source_urls": [
+        "https://kosei.vn/tong-hop-de-thi-jlpt-n2-cac-nam-co-dap-an",
+        "https://drive.google.com/uc?export=download&id=1rFvH3mUDFdLyo3t1cersE7a1wY289FcL"
+      ],
+      "provenance_records": [
+        "output/pdf/reference_scan_hunt_2010_2026_rc02/acquisitions.jsonl",
+        "output/pdf/reference_scan_hunt_2010_2026_rc02/download_assessment.json"
+      ]
+    },
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N2 các năm Yuuki Bùi\\Tổng hợp Script Nghe N2 từ T7-2010 đến T7-2017 N2原文10年7月～17年7月.pdf",
+      "sha256": "a1d763ade65916b9db57095ebec5c47cb0bb795e784d3e003b88f61c98ce7051",
+      "Tier": "unranked",
+      "bytes": 3845774,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N2\\N2_07_2010\\PaddleOCR\\pdf_8",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N2\\listening\\N2_07_2010_listening.html",
+      "sha256": "e936b33468778b342864c350d08385b93049c8eba721e27db68869db4041ad7b",
+      "Tier": "unranked",
+      "bytes": 103859,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N2\\reading\\N2_07_2010_reading.html",
+      "sha256": "d59067fa8980344c563c77be20b27c820b32b56589701b4da90b4d5b9bcdf77e",
+      "Tier": "unranked",
+      "bytes": 104343,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N2\\vocab\\N2_07_2010_vocab.html",
+      "sha256": "9d6aacefe4d29af7ea0ead2b50214058909202511dac0d402c6eb75c3b36b475",
+      "Tier": "unranked",
+      "bytes": 131801,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N2真题（2010-2026.07）\\2010\\2010.07\\2010年07月N2真题.pdf",
+      "sha256": "8eea003904dfde2edbb998df79f971473f7396505a889a3590f1758db62e4d41",
+      "Tier": 2,
+      "bytes": 1112663,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N2\\N2_07_2010\\PaddleOCR\\pdf_9",
+      "VisionOCR": "preprocess\\N2\\N2_07_2010\\VisionOCR\\pdf_9"
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N2真题（2010-2026.07）\\2010\\2010.07\\答案解析和听力原文\\2010年07月N2听力原文.pdf",
+      "sha256": "1b31e77d289567386dc664e8c29418ad4e1494115b980cf2452ac668c3543dc2",
+      "Tier": "unranked",
+      "bytes": 7125741,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N2\\N2_07_2010\\PaddleOCR\\pdf_10",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N2真题（2010-2026.07）\\2010\\2010.07\\答案解析和听力原文\\2010年07月N2听力译文.pdf",
+      "sha256": "9fd37b757eb78ac4a594dba7db9b5169491cfede74bcced92dda4ec31bdec25e",
+      "Tier": "unranked",
+      "bytes": 2055069,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N2\\N2_07_2010\\PaddleOCR\\pdf_11",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N2真题（2010-2026.07）\\2010\\2010.07\\答案解析和听力原文\\2010年07月N2答案解析.pdf",
+      "sha256": "88e1997a23e6e36b5676d07e6a4b62999dafd7a7be3ae4cfcab66bd1799cbdd9",
+      "Tier": "unranked",
+      "bytes": 8028039,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N2\\N2_07_2010\\PaddleOCR\\pdf_12",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N2真题（2010-2026.07）\\2010\\2010.07\\答案解析和听力原文\\2010年07月N2阅读译文.pdf",
+      "sha256": "e66de06ef71856a13164168ce13f52c35cdddcdc8fe6a2150d9aa475ccd09aee",
+      "Tier": "unranked",
+      "bytes": 3548009,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N2真题\\2010年-2020年\\2010年7月\\2010年07月N2阅读译文.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N2\\N2_07_2010\\PaddleOCR\\pdf_13",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N2真题（2010-2026.07）\\N2答题卡.pdf",
+      "sha256": "6b583e2fa2e820bd954eb6e7b287b230f51c5ed959407ef9c4dd09e7ddadda1d",
+      "Tier": "unranked",
+      "bytes": 706973,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N2历年真题\\N2答题卡.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N2\\N2_multiple\\PaddleOCR\\pdf_1",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N2真题（2010-2026.07）\\N2能力考试计算方法.xlsx",
+      "sha256": "2b980a522e7e6145d3e1d0a6da683190ea73c1515f0d2d7e78a601d304f9924e",
+      "Tier": "unranked",
+      "bytes": 12541,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N2真题\\N2能力考试计算方法.xlsx",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N2历年真题\\N2能力考试计算方法.xlsx"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N2真题\\2010年-2020年\\2010年7月\\2010年07月N2听力译文.pdf",
+      "sha256": "b412eb665921c8b7c081ddc032db5c6c8cc4df36d919ec28b0d363121d2b1217",
+      "Tier": "unranked",
+      "bytes": 2037083,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N2\\N2_07_2010\\PaddleOCR\\pdf_15",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N2真题\\2010年-2020年\\2010年7月\\【1】2010年07月N2 真题.pdf",
+      "sha256": "f2b8092275de323f0e4365c97c1675f7fa87e190900ff87ad9e3cf03643f08b1",
+      "Tier": 2,
+      "bytes": 1117069,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N2\\N2_07_2010\\PaddleOCR\\pdf_16",
+      "VisionOCR": "preprocess\\N2\\N2_07_2010\\VisionOCR\\pdf_16"
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N2真题\\2010年-2020年\\2010年7月\\【1】2010年07月N2答案解析+听力原文+译文.pdf",
+      "sha256": "fe5dc0a95c057ebbf5a82156d767a84335402135f954c314fe145800d32f0fe1",
+      "Tier": "unranked",
+      "bytes": 915070,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N2\\N2_07_2010\\PaddleOCR\\pdf_17",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N2真题\\2010年-2020年\\2010年7月\\【2】2010年07月N2 真题.pdf",
+      "sha256": "1d7c6769a9573126df16f763dc899d4ea0365c6e7a7c1102a785af7b2177b8fc",
+      "Tier": 2,
+      "bytes": 2197343,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N2\\N2_07_2010\\PaddleOCR\\pdf_18",
+      "VisionOCR": "preprocess\\N2\\N2_07_2010\\VisionOCR\\pdf_18"
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N2真题\\2010年-2020年\\2010年7月\\【2】2010年07月N2答案解析+听力原文.pdf",
+      "sha256": "e99f48a29c8a348dc4d3d47ff46e78d180072aea04ff14543e4077eb10bfd14b",
+      "Tier": "unranked",
+      "bytes": 1531418,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N2\\N2_07_2010\\PaddleOCR\\pdf_19",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N2真题\\2010年-2020年\\2010年7月\\【3】2010年07月N2 真题.pdf",
+      "sha256": "1d2262f234fd26080ab21985f7666bbd0fd2e1c4ede76610490ef22fb21442be",
+      "Tier": 2,
+      "bytes": 5487398,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N2\\N2_07_2010\\PaddleOCR\\pdf_20",
+      "VisionOCR": "preprocess\\N2\\N2_07_2010\\VisionOCR\\pdf_20"
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N2真题\\2010年-2020年\\2010年7月\\【3】2010年07月N2答案解析+听力原文.pdf",
+      "sha256": "0546a454372a04507534800fc8fa9917a1742ba88d717ceb54e2f84788b39de1",
+      "Tier": "unranked",
+      "bytes": 2062318,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N2\\N2_07_2010\\PaddleOCR\\pdf_21",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N2历年真题\\2010-2017.12高清无水印\\N2 2010.7-2017.12（真题试题）\\n2 2010.7真题.pdf",
+      "sha256": "c95e93d64310ca603cea802673fe1dae70e50bf5a3f18483785d77c3bb1af71e",
+      "Tier": 3,
+      "bytes": 23864128,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N2\\N2_07_2010\\PaddleOCR\\pdf_22",
+      "VisionOCR": "preprocess\\N2\\N2_07_2010\\VisionOCR\\pdf_22"
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N2历年真题\\2010-2017.12高清无水印\\N2 2010.7-2017.12（解析+听力原文+答案）\\n2 2010.7解析+听力原文+答案.pdf",
+      "sha256": "dfb5a5e3595d51baaf8b607946fbc45f9d487cfdfb671ea9de0cdd9679539ab0",
+      "Tier": "unranked",
+      "bytes": 12120140,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N2\\N2_07_2010\\PaddleOCR\\pdf_23",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N2历年真题\\2010.07\\2010年07月听力原文+答案.doc",
+      "sha256": "75e0a31b9396ce5c3319dafcc732e71d86e5f72b93fd9f26ab8aa84c78d20bca",
+      "Tier": "unranked",
+      "bytes": 82944,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N2\\2010-07_N2\\images\\2010-07_N2_s14-q01-img01.jpg",
+      "sha256": "7efd79d4803f46c6ef713eb78a38c1c026862624ea6cd2f8e51ffea0258c21dc",
+      "Tier": "unranked",
+      "bytes": 179171,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N2历年真题\\2010-2017.12高清无水印\\N2 2010.7-2017.12（解析+听力原文+答案）\\17.12听力答案.jpg",
+      "sha256": "8c57a50b727a2e970828028400378ab87f1b3878cdfe2b2be0966f703f57ce6e",
+      "Tier": "unranked",
+      "bytes": 67580,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    }
+  ]
+}

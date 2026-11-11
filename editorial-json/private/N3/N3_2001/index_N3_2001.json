@@ -1,0 +1,112 @@
+{
+  "unit": "N3_2001",
+  "sources": [
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N3\\2001\\2001年日语能力考试3级真题-听力.pdf",
+      "sha256": "f3e2750d6a3a1e53437345dfad1d85f4145e8364b84e6cc6df74271b5bdf199e",
+      "Tier": "unranked",
+      "bytes": 573870,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N3真题\\1991年-2009年\\2001年\\2001年日语能力考试3级真题-听力.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N3历年真题\\1991~2009\\2001\\2001年日语能力考试3级真题-听力.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N3\\N3_2001\\PaddleOCR\\pdf_1",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N3\\2001\\2001年真题加答案\\2001年日语能力考试3级真题-文字词汇.pdf",
+      "sha256": "89d48d936c653290f18997fe020ad220d9e02d20cb3a3772a72484853d1738c5",
+      "Tier": 2,
+      "bytes": 156863,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N3真题\\1991年-2009年\\2001年\\2001年真题加答案\\2001年日语能力考试3级真题-文字词汇.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N3历年真题\\1991~2009\\2001\\2001年真题加答案\\2001年日语能力考试3级真题-文字词汇.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N3\\N3_2001\\PaddleOCR\\pdf_2",
+      "VisionOCR": "preprocess\\N3\\N3_2001\\VisionOCR\\pdf_2"
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N3\\2001\\2001年真题加答案\\2001年日语能力考试3级真题-读解文法.pdf",
+      "sha256": "c43a3baa0a5a4be7130fd34fdc4d7d648a77ac956e7927a6421a2def14f69b99",
+      "Tier": 2,
+      "bytes": 147197,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N3真题\\1991年-2009年\\2001年\\2001年真题加答案\\2001年日语能力考试3级真题-读解文法.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N3历年真题\\1991~2009\\2001\\2001年真题加答案\\2001年日语能力考试3级真题-读解文法.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N3\\N3_2001\\PaddleOCR\\pdf_3",
+      "VisionOCR": "preprocess\\N3\\N3_2001\\VisionOCR\\pdf_3"
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N3\\2001\\2001年真题加答案\\2001能力考3级答案.pdf",
+      "sha256": "eee8795f52eda2a3d3f8da3f6c03b2975880add857ec93021df7a1c5338ab187",
+      "Tier": "unranked",
+      "bytes": 74047,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N3真题\\1991年-2009年\\2001年\\2001年真题加答案\\2001能力考3级答案.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N3历年真题\\1991~2009\\2001\\2001年真题加答案\\2001能力考3级答案.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N3\\N3_2001\\PaddleOCR\\pdf_4",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N3\\2001\\2001年真题加答案\\读解文法.jpg",
+      "sha256": "7b0da9d028490c32e0cff3055ada013ff4ff57868b5c98bc0d116962e0a1c5ae",
+      "Tier": "unranked",
+      "bytes": 213806,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N3真题\\1991年-2009年\\2001年\\2001年真题加答案\\读解文法.jpg",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N3历年真题\\1991~2009\\2001\\2001年真题加答案\\读解文法.jpg"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src/CodexDownloads/UserApprovedReferenceScans/JLPT Shiken Mondai to Seikai 3-4 kyuu 2001.pdf",
+      "sha256": "da4f4bb4349572963e4a6c6413370ce8c62c287202b06fc6a701b57b91e12084",
+      "Tier": "unranked",
+      "bytes": 8253505,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "display_title": "2001, Levels 3-4",
+      "source_role": "historical_question_volume",
+      "acquisition_batch": "reference_scan_hunt_1984-2009_2026-10-23",
+      "provenance_records": [
+        "preprocess/audit_runs/2026-10-23_reference_scan_rc03_approvals/approvals.json",
+        "preprocess/reference_scan_hunt_rc03_work/new_sources.json"
+      ],
+      "source_urls": [
+        "https://www.mediafire.com/?35dx69ade63i7i2="
+      ],
+      "previous_paths": [
+        "src/CodexDownloads/UserApprovedReferenceScans/Originals/JLPT Shiken Mondai to Seikai 3-4 kyuu 2001.pdf",
+        "src/CodexDownloads/reference_scan_rc03/2001_L3_L4_extracted/JLPT Shiken Mondai to Seikai 3-4 kyuu 2001.pdf"
+      ],
+      "filename_at_acquisition": "JLPT Shiken Mondai to Seikai 3-4 kyuu 2001.pdf",
+      "filename_note": "Filename at acquisition or archive extraction, preserved through this move.",
+      "pages": 83,
+      "reference_registry": "preprocess/user_approved_reference_scans.md",
+      "reference_id": "RC03_2001",
+      "historical_coverage": [
+        {
+          "level": 3,
+          "year": 2001
+        },
+        {
+          "level": 4,
+          "year": 2001
+        }
+      ],
+      "acquisition_containers": [
+        {
+          "path": "src/CodexDownloads/Hunts/1984-2009/2026-10-23_RC03/2001_L3_L4_original.rar",
+          "sha256": "084ee740194407d3e4f6793ed256464a76307e7417faf68ff704f473d874b865",
+          "member_filename": "JLPT Shiken Mondai to Seikai 3-4 kyuu 2001.pdf",
+          "note": "Retained downloaded archive; member hash verified separately. Archive membership does not establish independent custody."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,811 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark light"><title>Developer review · N4_2002 · astraJLPT</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../assets/fonts-62132bcec1e5182e.css?v=9cbbe2c4a92f"><link rel="stylesheet" href="../assets/themes.css?v=7ad0820747dc"><link rel="stylesheet" href="../assets/answer-marking.css?v=bec6b4920050"><link rel="stylesheet" href="../assets/site.css?v=7ae9ae7c768b"><link rel="stylesheet" href="../assets/pdf-typography.css?v=ba55af25606f"><link rel="stylesheet" href="../assets/paper-shared.css?v=8f3ca38dca80"></head><body class="catalog-page"><a class="skip-link" href="#content">Skip to content</a><header class="topbar" id="page-top" tabindex="-1"><a class="wordmark" id="brand" href="../index.html">astra<span>JLPT</span></a><details id="settings" class="settings"><summary aria-label="Open settings" title="Settings"><span aria-hidden="true">⚙</span><span class="sr-only">Settings</span></summary><div class="settings-panel"><div class="settings-title"><h2>settings</h2><button type="button" id="close-settings" class="js-only" aria-label="Close settings">×</button></div><div class="settings-tabs" role="group" aria-label="Settings categories"><label><input type="radio" name="settings-view" value="appearance" checked><span>theme</span></label><label><input type="radio" name="settings-view" value="browser"><span>browser</span></label></div><section data-settings="appearance"><div class="theme-workspace"><div class="theme-picker"><div class="setting-heading"><h3>theme</h3></div><div class="theme-grid originals"><label class="theme-card ps-gh"><input type="radio" name="theme" id="theme-jlpt_paper" value="jlpt_paper"><span>jlpt_paper</span></label><label class="theme-card ps-ck"><input type="radio" name="theme" id="theme-astraJLPT_dark" value="astraJLPT_dark" checked><span>astraJLPT_dark</span></label><label class="theme-card ps-ga"><input type="radio" name="theme" id="theme-astraJLPT_sepia" value="astraJLPT_sepia"><span>astraJLPT_sepia</span></label></div><div class="js-only"><p class="settings-label">three random picks</p><div class="theme-grid" id="quick-picks"></div></div><details><summary>all 187 Monkeytype palettes</summary><label class="theme-search js-only">find a palette<input id="theme-search" type="search" placeholder="search themes" autocomplete="off"></label><div class="theme-grid theme-catalog"><label class="theme-card ps-e9"><input type="radio" name="theme" id="theme-8008" value="8008"><span>8008</span></label><label class="theme-card ps-cw"><input type="radio" name="theme" id="theme-80s_after_dark" value="80s_after_dark"><span>80s after dark</span></label><label class="theme-card ps-fq"><input type="radio" name="theme" id="theme-9009" value="9009"><span>9009</span></label><label class="theme-card ps-cc"><input type="radio" name="theme" id="theme-aether" value="aether"><span>aether</span></label><label class="theme-card ps-cz"><input type="radio" name="theme" id="theme-alduin" value="alduin"><span>alduin</span></label><label class="theme-card ps-el"><input type="radio" name="theme" id="theme-alpine" value="alpine"><span>alpine</span></label><label class="theme-card ps-bg"><input type="radio" name="theme" id="theme-anti_hero" value="anti_hero"><span>anti hero</span></label><label class="theme-card ps-c3"><input type="radio" name="theme" id="theme-arch" value="arch"><span>arch</span></label><label class="theme-card ps-bt"><input type="radio" name="theme" id="theme-aurora" value="aurora"><span>aurora</span></label><label class="theme-card ps-g8"><input type="radio" name="theme" id="theme-beach" value="beach"><span>beach</span></label><label class="theme-card ps-dz"><input type="radio" name="theme" id="theme-bento" value="bento"><span>bento</span></label><label class="theme-card ps-f1"><input type="radio" name="theme" id="theme-bingsu" value="bingsu"><span>bingsu</span></label><label class="theme-card ps-dl"><input type="radio" name="theme" id="theme-bliss" value="bliss"><span>bliss</span></label><label class="theme-card ps-bn"><input type="radio" name="theme" id="theme-blue_dolphin" value="blue_dolphin"><span>blue dolphin</span></label><label class="theme-card ps-dd"><input type="radio" name="theme" id="theme-blueberry_dark" value="blueberry_dark"><span>blueberry dark</span></label><label class="theme-card ps-fd"><input type="radio" name="theme" id="theme-blueberry_light" value="blueberry_light"><span>blueberry light</span></label><label class="theme-card ps-ep"><input type="radio" name="theme" id="theme-botanical" value="botanical"><span>botanical</span></label><label class="theme-card ps-cl"><input type="radio" name="theme" id="theme-bouquet" value="bouquet"><span>bouquet</span></label><label class="theme-card ps-fk"><input type="radio" name="theme" id="theme-breeze" value="breeze"><span>breeze</span></label><label class="theme-card ps-dk"><input type="radio" name="theme" id="theme-bushido" value="bushido"><span>bushido</span></label><label class="theme-card ps-f5"><input type="radio" name="theme" id="theme-cafe" value="cafe"><span>cafe</span></label><label class="theme-card ps-g1"><input type="radio" name="theme" id="theme-camping" value="camping"><span>camping</span></label><label class="theme-card ps-e4"><input type="radio" name="theme" id="theme-carbon" value="carbon"><span>carbon</span></label><label class="theme-card ps-d3"><input type="radio" name="theme" id="theme-catppuccin" value="catppuccin"><span>catppuccin</span></label><label class="theme-card ps-ch"><input type="radio" name="theme" id="theme-chaos_theory" value="chaos_theory"><span>chaos theory</span></label><label class="theme-card ps-g3"><input type="radio" name="theme" id="theme-cheesecake" value="cheesecake"><span>cheesecake</span></label><label class="theme-card ps-e7"><input type="radio" name="theme" id="theme-cherry_blossom" value="cherry_blossom"><span>cherry blossom</span></label><label class="theme-card ps-eh"><input type="radio" name="theme" id="theme-comfy" value="comfy"><span>comfy</span></label><label class="theme-card ps-ef"><input type="radio" name="theme" id="theme-copper" value="copper"><span>copper</span></label><label class="theme-card ps-g6"><input type="radio" name="theme" id="theme-creamsicle" value="creamsicle"><span>creamsicle</span></label><label class="theme-card ps-em"><input type="radio" name="theme" id="theme-cy_red" value="cy_red"><span>cy red</span></label><label class="theme-card ps-co"><input type="radio" name="theme" id="theme-cyberspace" value="cyberspace"><span>cyberspace</span></label><label class="theme-card ps-cd"><input type="radio" name="theme" id="theme-dark" value="dark"><span>dark</span></label><label class="theme-card ps-bz"><input type="radio" name="theme" id="theme-dark_magic_girl" value="dark_magic_girl"><span>dark magic girl</span></label><label class="theme-card ps-d6"><input type="radio" name="theme" id="theme-dark_note" value="dark_note"><span>dark note</span></label><label class="theme-card ps-g5"><input type="radio" name="theme" id="theme-darling" value="darling"><span>darling</span></label><label class="theme-card ps-bw"><input type="radio" name="theme" id="theme-deku" value="deku"><span>deku</span></label><label class="theme-card ps-g9"><input type="radio" name="theme" id="theme-desert_oasis" value="desert_oasis"><span>desert oasis</span></label><label class="theme-card ps-cx"><input type="radio" name="theme" id="theme-dev" value="dev"><span>dev</span></label><label class="theme-card ps-ek"><input type="radio" name="theme" id="theme-diner" value="diner"><span>diner</span></label><label class="theme-card ps-gi"><input type="radio" name="theme" id="theme-dino" value="dino"><span>dino</span></label><label class="theme-card ps-e6"><input type="radio" name="theme" id="theme-discord" value="discord"><span>discord</span></label><label class="theme-card ps-fc"><input type="radio" name="theme" id="theme-dmg" value="dmg"><span>dmg</span></label><label class="theme-card ps-fj"><input type="radio" name="theme" id="theme-dollar" value="dollar"><span>dollar</span></label><label class="theme-card ps-ce"><input type="radio" name="theme" id="theme-dots" value="dots"><span>dots</span></label><label class="theme-card ps-dq"><input type="radio" name="theme" id="theme-dracula" value="dracula"><span>dracula</span></label><label class="theme-card ps-cq"><input type="radio" name="theme" id="theme-drowning" value="drowning"><span>drowning</span></label><label class="theme-card ps-eo"><input type="radio" name="theme" id="theme-dualshot" value="dualshot"><span>dualshot</span></label><label class="theme-card ps-dr"><input type="radio" name="theme" id="theme-earthsong" value="earthsong"><span>earthsong</span></label><label class="theme-card ps-ci"><input type="radio" name="theme" id="theme-everblush" value="everblush"><span>everblush</span></label><label class="theme-card ps-bq"><input type="radio" name="theme" id="theme-evil_eye" value="evil_eye"><span>evil eye</span></label><label class="theme-card ps-bp"><input type="radio" name="theme" id="theme-ez_mode" value="ez_mode"><span>ez mode</span></label><label class="theme-card ps-c8"><input type="radio" name="theme" id="theme-fire" value="fire"><span>fire</span></label><label class="theme-card ps-eb"><input type="radio" name="theme" id="theme-fledgling" value="fledgling"><span>fledgling</span></label><label class="theme-card ps-f3"><input type="radio" name="theme" id="theme-fleuriste" value="fleuriste"><span>fleuriste</span></label><label class="theme-card ps-bl"><input type="radio" name="theme" id="theme-floret" value="floret"><span>floret</span></label><label class="theme-card ps-fh"><input type="radio" name="theme" id="theme-froyo" value="froyo"><span>froyo</span></label><label class="theme-card ps-et"><input type="radio" name="theme" id="theme-frozen_llama" value="frozen_llama"><span>frozen llama</span></label><label class="theme-card ps-f9"><input type="radio" name="theme" id="theme-fruit_chew" value="fruit_chew"><span>fruit chew</span></label><label class="theme-card ps-en"><input type="radio" name="theme" id="theme-fundamentals" value="fundamentals"><span>fundamentals</span></label><label class="theme-card ps-e0"><input type="radio" name="theme" id="theme-future_funk" value="future_funk"><span>future funk</span></label><label class="theme-card ps-dc"><input type="radio" name="theme" id="theme-github" value="github"><span>github</span></label><label class="theme-card ps-fn"><input type="radio" name="theme" id="theme-godspeed" value="godspeed"><span>godspeed</span></label><label class="theme-card ps-e3"><input type="radio" name="theme" id="theme-graen" value="graen"><span>graen</span></label><label class="theme-card ps-ea"><input type="radio" name="theme" id="theme-grand_prix" value="grand_prix"><span>grand prix</span></label><label class="theme-card ps-dv"><input type="radio" name="theme" id="theme-grape" value="grape"><span>grape</span></label><label class="theme-card ps-dp"><input type="radio" name="theme" id="theme-gruvbox_dark" value="gruvbox_dark"><span>gruvbox dark</span></label><label class="theme-card ps-g2"><input type="radio" name="theme" id="theme-gruvbox_light" value="gruvbox_light"><span>gruvbox light</span></label><label class="theme-card ps-bu"><input type="radio" name="theme" id="theme-hammerhead" value="hammerhead"><span>hammerhead</span></label><label class="theme-card ps-fa"><input type="radio" name="theme" id="theme-hanok" value="hanok"><span>hanok</span></label><label class="theme-card ps-ed"><input type="radio" name="theme" id="theme-hedge" value="hedge"><span>hedge</span></label><label class="theme-card ps-fu"><input type="radio" name="theme" id="theme-honey" value="honey"><span>honey</span></label><label class="theme-card ps-d0"><input type="radio" name="theme" id="theme-horizon" value="horizon"><span>horizon</span></label><label class="theme-card ps-bf"><input type="radio" name="theme" id="theme-husqy" value="husqy"><span>husqy</span></label><label class="theme-card ps-cj"><input type="radio" name="theme" id="theme-iceberg_dark" value="iceberg_dark"><span>iceberg dark</span></label><label class="theme-card ps-fl"><input type="radio" name="theme" id="theme-iceberg_light" value="iceberg_light"><span>iceberg light</span></label><label class="theme-card ps-c7"><input type="radio" name="theme" id="theme-incognito" value="incognito"><span>incognito</span></label><label class="theme-card ps-d8"><input type="radio" name="theme" id="theme-ishtar" value="ishtar"><span>ishtar</span></label><label class="theme-card ps-eu"><input type="radio" name="theme" id="theme-iv_clover" value="iv_clover"><span>iv clover</span></label><label class="theme-card ps-c2"><input type="radio" name="theme" id="theme-iv_spade" value="iv_spade"><span>iv spade</span></label><label class="theme-card ps-cu"><input type="radio" name="theme" id="theme-joker" value="joker"><span>joker</span></label><label class="theme-card ps-de"><input type="radio" name="theme" id="theme-laser" value="laser"><span>laser</span></label><label class="theme-card ps-ex"><input type="radio" name="theme" id="theme-lavender" value="lavender"><span>lavender</span></label><label class="theme-card ps-ew"><input type="radio" name="theme" id="theme-leather" value="leather"><span>leather</span></label><label class="theme-card ps-fo"><input type="radio" name="theme" id="theme-lil_dragon" value="lil_dragon"><span>lil dragon</span></label><label class="theme-card ps-gd"><input type="radio" name="theme" id="theme-lilac_mist" value="lilac_mist"><span>lilac mist</span></label><label class="theme-card ps-er"><input type="radio" name="theme" id="theme-lime" value="lime"><span>lime</span></label><label class="theme-card ps-df"><input type="radio" name="theme" id="theme-luna" value="luna"><span>luna</span></label><label class="theme-card ps-ez"><input type="radio" name="theme" id="theme-macroblank" value="macroblank"><span>macroblank</span></label><label class="theme-card ps-gk"><input type="radio" name="theme" id="theme-magic_girl" value="magic_girl"><span>magic girl</span></label><label class="theme-card ps-du"><input type="radio" name="theme" id="theme-mashu" value="mashu"><span>mashu</span></label><label class="theme-card ps-ei"><input type="radio" name="theme" id="theme-matcha_moccha" value="matcha_moccha"><span>matcha moccha</span></label><label class="theme-card ps-dn"><input type="radio" name="theme" id="theme-material" value="material"><span>material</span></label><label class="theme-card ps-be"><input type="radio" name="theme" id="theme-matrix" value="matrix"><span>matrix</span></label><label class="theme-card ps-br"><input type="radio" name="theme" id="theme-menthol" value="menthol"><span>menthol</span></label><label class="theme-card ps-dg"><input type="radio" name="theme" id="theme-metaverse" value="metaverse"><span>metaverse</span></label><label class="theme-card ps-ca"><input type="radio" name="theme" id="theme-metropolis" value="metropolis"><span>metropolis</span></label><label class="theme-card ps-g0"><input type="radio" name="theme" id="theme-mexican" value="mexican"><span>mexican</span></label><label class="theme-card ps-fv"><input type="radio" name="theme" id="theme-miami" value="miami"><span>miami</span></label><label class="theme-card ps-cn"><input type="radio" name="theme" id="theme-miami_nights" value="miami_nights"><span>miami nights</span></label><label class="theme-card ps-c0"><input type="radio" name="theme" id="theme-midnight" value="midnight"><span>midnight</span></label><label class="theme-card ps-gf"><input type="radio" name="theme" id="theme-milkshake" value="milkshake"><span>milkshake</span></label><label class="theme-card ps-bv"><input type="radio" name="theme" id="theme-mint" value="mint"><span>mint</span></label><label class="theme-card ps-ey"><input type="radio" name="theme" id="theme-mizu" value="mizu"><span>mizu</span></label><label class="theme-card ps-dy"><input type="radio" name="theme" id="theme-modern_dolch" value="modern_dolch"><span>modern dolch</span></label><label class="theme-card ps-fe"><input type="radio" name="theme" id="theme-modern_dolch_light" value="modern_dolch_light"><span>modern dolch light</span></label><label class="theme-card ps-gm"><input type="radio" name="theme" id="theme-modern_ink" value="modern_ink"><span>modern ink</span></label><label class="theme-card ps-do"><input type="radio" name="theme" id="theme-monokai" value="monokai"><span>monokai</span></label><label class="theme-card ps-cs"><input type="radio" name="theme" id="theme-moonlight" value="moonlight"><span>moonlight</span></label><label class="theme-card ps-c9"><input type="radio" name="theme" id="theme-mountain" value="mountain"><span>mountain</span></label><label class="theme-card ps-f8"><input type="radio" name="theme" id="theme-mr_sleeves" value="mr_sleeves"><span>mr sleeves</span></label><label class="theme-card ps-gj"><input type="radio" name="theme" id="theme-ms_cupcakes" value="ms_cupcakes"><span>ms cupcakes</span></label><label class="theme-card ps-ej"><input type="radio" name="theme" id="theme-muted" value="muted"><span>muted</span></label><label class="theme-card ps-cg"><input type="radio" name="theme" id="theme-nautilus" value="nautilus"><span>nautilus</span></label><label class="theme-card ps-db"><input type="radio" name="theme" id="theme-nebula" value="nebula"><span>nebula</span></label><label class="theme-card ps-da"><input type="radio" name="theme" id="theme-night_runner" value="night_runner"><span>night runner</span></label><label class="theme-card ps-dj"><input type="radio" name="theme" id="theme-nord" value="nord"><span>nord</span></label><label class="theme-card ps-fp"><input type="radio" name="theme" id="theme-nord_light" value="nord_light"><span>nord light</span></label><label class="theme-card ps-di"><input type="radio" name="theme" id="theme-norse" value="norse"><span>norse</span></label><label class="theme-card ps-e5"><input type="radio" name="theme" id="theme-oblivion" value="oblivion"><span>oblivion</span></label><label class="theme-card ps-fm"><input type="radio" name="theme" id="theme-olive" value="olive"><span>olive</span></label><label class="theme-card ps-cy"><input type="radio" name="theme" id="theme-olivia" value="olivia"><span>olivia</span></label><label class="theme-card ps-e2"><input type="radio" name="theme" id="theme-onedark" value="onedark"><span>onedark</span></label><label class="theme-card ps-f4"><input type="radio" name="theme" id="theme-our_theme" value="our_theme"><span>our theme</span></label><label class="theme-card ps-ee"><input type="radio" name="theme" id="theme-pale_nimbus" value="pale_nimbus"><span>pale nimbus</span></label><label class="theme-card ps-fr"><input type="radio" name="theme" id="theme-paper" value="paper"><span>paper</span></label><label class="theme-card ps-eq"><input type="radio" name="theme" id="theme-passion_fruit" value="passion_fruit"><span>passion fruit</span></label><label class="theme-card ps-ff"><input type="radio" name="theme" id="theme-pastel" value="pastel"><span>pastel</span></label><label class="theme-card ps-ds"><input type="radio" name="theme" id="theme-peach_blossom" value="peach_blossom"><span>peach blossom</span></label><label class="theme-card ps-fg"><input type="radio" name="theme" id="theme-peaches" value="peaches"><span>peaches</span></label><label class="theme-card ps-bk"><input type="radio" name="theme" id="theme-phantom" value="phantom"><span>phantom</span></label><label class="theme-card ps-fz"><input type="radio" name="theme" id="theme-pink_lemonade" value="pink_lemonade"><span>pink lemonade</span></label><label class="theme-card ps-cm"><input type="radio" name="theme" id="theme-pulse" value="pulse"><span>pulse</span></label><label class="theme-card ps-d4"><input type="radio" name="theme" id="theme-purpleish" value="purpleish"><span>purpleish</span></label><label class="theme-card ps-fy"><input type="radio" name="theme" id="theme-rainbow_trail" value="rainbow_trail"><span>rainbow trail</span></label><label class="theme-card ps-ct"><input type="radio" name="theme" id="theme-red_dragon" value="red_dragon"><span>red dragon</span></label><label class="theme-card ps-es"><input type="radio" name="theme" id="theme-red_samurai" value="red_samurai"><span>red samurai</span></label><label class="theme-card ps-e1"><input type="radio" name="theme" id="theme-repose_dark" value="repose_dark"><span>repose dark</span></label><label class="theme-card ps-fs"><input type="radio" name="theme" id="theme-repose_light" value="repose_light"><span>repose light</span></label><label class="theme-card ps-fb"><input type="radio" name="theme" id="theme-retro" value="retro"><span>retro</span></label><label class="theme-card ps-bx"><input type="radio" name="theme" id="theme-retrocast" value="retrocast"><span>retrocast</span></label><label class="theme-card ps-cd"><input type="radio" name="theme" id="theme-rgb" value="rgb"><span>rgb</span></label><label class="theme-card ps-d5"><input type="radio" name="theme" id="theme-rose_pine" value="rose_pine"><span>rose pine</span></label><label class="theme-card ps-gc"><input type="radio" name="theme" id="theme-rose_pine_dawn" value="rose_pine_dawn"><span>rose pine dawn</span></label><label class="theme-card ps-dt"><input type="radio" name="theme" id="theme-rose_pine_moon" value="rose_pine_moon"><span>rose pine moon</span></label><label class="theme-card ps-cv"><input type="radio" name="theme" id="theme-rudy" value="rudy"><span>rudy</span></label><label class="theme-card ps-by"><input type="radio" name="theme" id="theme-ryujinscales" value="ryujinscales"><span>ryujinscales</span></label><label class="theme-card ps-fi"><input type="radio" name="theme" id="theme-serika" value="serika"><span>serika</span></label><label class="theme-card ps-e8"><input type="radio" name="theme" id="theme-serika_dark" value="serika_dark"><span>serika dark</span></label><label class="theme-card ps-dh"><input type="radio" name="theme" id="theme-sewing_tin" value="sewing_tin"><span>sewing tin</span></label><label class="theme-card ps-gg"><input type="radio" name="theme" id="theme-sewing_tin_light" value="sewing_tin_light"><span>sewing tin light</span></label><label class="theme-card ps-bi"><input type="radio" name="theme" id="theme-shadow" value="shadow"><span>shadow</span></label><label class="theme-card ps-f6"><input type="radio" name="theme" id="theme-shoko" value="shoko"><span>shoko</span></label><label class="theme-card ps-ge"><input type="radio" name="theme" id="theme-slambook" value="slambook"><span>slambook</span></label><label class="theme-card ps-f2"><input type="radio" name="theme" id="theme-snes" value="snes"><span>snes</span></label><label class="theme-card ps-gb"><input type="radio" name="theme" id="theme-soaring_skies" value="soaring_skies"><span>soaring skies</span></label><label class="theme-card ps-bm"><input type="radio" name="theme" id="theme-solarized_dark" value="solarized_dark"><span>solarized dark</span></label><label class="theme-card ps-g4"><input type="radio" name="theme" id="theme-solarized_light" value="solarized_light"><span>solarized light</span></label><label class="theme-card ps-bj"><input type="radio" name="theme" id="theme-solarized_osaka" value="solarized_osaka"><span>solarized osaka</span></label><label class="theme-card ps-dw"><input type="radio" name="theme" id="theme-sonokai" value="sonokai"><span>sonokai</span></label><label class="theme-card ps-c5"><input type="radio" name="theme" id="theme-spiderman" value="spiderman"><span>spiderman</span></label><label class="theme-card ps-bs"><input type="radio" name="theme" id="theme-stealth" value="stealth"><span>stealth</span></label><label class="theme-card ps-fw"><input type="radio" name="theme" id="theme-strawberry" value="strawberry"><span>strawberry</span></label><label class="theme-card ps-cf"><input type="radio" name="theme" id="theme-striker" value="striker"><span>striker</span></label><label class="theme-card ps-ec"><input type="radio" name="theme" id="theme-suisei" value="suisei"><span>suisei</span></label><label class="theme-card ps-d9"><input type="radio" name="theme" id="theme-sunset" value="sunset"><span>sunset</span></label><label class="theme-card ps-dm"><input type="radio" name="theme" id="theme-superuser" value="superuser"><span>superuser</span></label><label class="theme-card ps-bo"><input type="radio" name="theme" id="theme-sweden" value="sweden"><span>sweden</span></label><label class="theme-card ps-g7"><input type="radio" name="theme" id="theme-tangerine" value="tangerine"><span>tangerine</span></label><label class="theme-card ps-f0"><input type="radio" name="theme" id="theme-taro" value="taro"><span>taro</span></label><label class="theme-card ps-cr"><input type="radio" name="theme" id="theme-terminal" value="terminal"><span>terminal</span></label><label class="theme-card ps-c4"><input type="radio" name="theme" id="theme-terra" value="terra"><span>terra</span></label><label class="theme-card ps-ft"><input type="radio" name="theme" id="theme-terrazzo" value="terrazzo"><span>terrazzo</span></label><label class="theme-card ps-c1"><input type="radio" name="theme" id="theme-terror_below" value="terror_below"><span>terror below</span></label><label class="theme-card ps-f7"><input type="radio" name="theme" id="theme-tiramisu" value="tiramisu"><span>tiramisu</span></label><label class="theme-card ps-eg"><input type="radio" name="theme" id="theme-trackday" value="trackday"><span>trackday</span></label><label class="theme-card ps-bh"><input type="radio" name="theme" id="theme-trance" value="trance"><span>trance</span></label><label class="theme-card ps-c6"><input type="radio" name="theme" id="theme-tron_orange" value="tron_orange"><span>tron orange</span></label><label class="theme-card ps-ev"><input type="radio" name="theme" id="theme-vaporwave" value="vaporwave"><span>vaporwave</span></label><label class="theme-card ps-cb"><input type="radio" name="theme" id="theme-vesper" value="vesper"><span>vesper</span></label><label class="theme-card ps-gl"><input type="radio" name="theme" id="theme-vesper_light" value="vesper_light"><span>vesper light</span></label><label class="theme-card ps-dx"><input type="radio" name="theme" id="theme-viridescent" value="viridescent"><span>viridescent</span></label><label class="theme-card ps-cp"><input type="radio" name="theme" id="theme-voc" value="voc"><span>voc</span></label><label class="theme-card ps-d2"><input type="radio" name="theme" id="theme-vscode" value="vscode"><span>vscode</span></label><label class="theme-card ps-d7"><input type="radio" name="theme" id="theme-watermelon" value="watermelon"><span>watermelon</span></label><label class="theme-card ps-d1"><input type="radio" name="theme" id="theme-wavez" value="wavez"><span>wavez</span></label><label class="theme-card ps-fx"><input type="radio" name="theme" id="theme-witch_girl" value="witch_girl"><span>witch girl</span></label></div></details><div class="js-only ps-14h" id="monkeytype-text-source">
+<h3>reading text color</h3>
+<p class="control-help">Auto chooses the more readable palette color. Choose sub or text to set it yourself; answer colors adapt.</p>
+<div aria-label="Monkeytype reading text color" class="segmented" role="group">
+<label><input checked="" name="text-source" type="radio" value="auto"/><span>auto</span></label>
+<label><input name="text-source" type="radio" value="sub"/><span>sub</span></label>
+<label><input name="text-source" type="radio" value="text"/><span>text</span></label>
+</div>
+<p aria-live="polite" class="control-help ps-14i" id="monkeytype-text-status" role="status"></p>
+</div></div><aside class="theme-editor js-only" aria-label="Customize theme colors"><div class="color-editor-heading"><h3>colors</h3><button type="button" id="reset-theme-colors" aria-label="Reset this theme">reset</button></div><span class="sr-only" id="color-format-help">Choose a swatch or enter hex. Transparent borders accept #RRGGBBAA. Reset restores the theme color.</span><span class="sr-only" id="color-edit-status" role="status" aria-live="polite"></span><div class="main-colors"><div class="color-row" data-color-row="bg">
+<label for="color-bg">background</label>
+<div class="color-inputs"><input type="color" id="swatch-bg" aria-label="background swatch" data-color-swatch="bg">
+<input type="text" id="color-bg" data-color-hex="bg" aria-label="background hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="bg" aria-label="Reset background" title="Reset background">↺</button></div></div><div class="color-row" data-color-row="text">
+<label for="color-text">reading text</label>
+<div class="color-inputs"><input type="color" id="swatch-text" aria-label="reading text swatch" data-color-swatch="text">
+<input type="text" id="color-text" data-color-hex="text" aria-label="reading text hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="text" aria-label="Reset reading text" title="Reset reading text">↺</button></div></div><div class="color-row" data-color-row="muted">
+<label for="color-muted">secondary text</label>
+<div class="color-inputs"><input type="color" id="swatch-muted" aria-label="secondary text swatch" data-color-swatch="muted">
+<input type="text" id="color-muted" data-color-hex="muted" aria-label="secondary text hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="muted" aria-label="Reset secondary text" title="Reset secondary text">↺</button></div></div><div class="color-row" data-color-row="accent">
+<label for="color-accent">interface accent</label>
+<div class="color-inputs"><input type="color" id="swatch-accent" aria-label="interface accent swatch" data-color-swatch="accent">
+<input type="text" id="color-accent" data-color-hex="accent" aria-label="interface accent hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="accent" aria-label="Reset interface accent" title="Reset interface accent">↺</button></div></div><div class="color-row" data-color-row="correct">
+<label for="color-correct">correct</label>
+<div class="color-inputs"><input type="color" id="swatch-correct" aria-label="correct swatch" data-color-swatch="correct">
+<input type="text" id="color-correct" data-color-hex="correct" aria-label="correct hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="correct" aria-label="Reset correct" title="Reset correct">↺</button></div></div><div class="color-row" data-color-row="wrong">
+<label for="color-wrong">wrong</label>
+<div class="color-inputs"><input type="color" id="swatch-wrong" aria-label="wrong swatch" data-color-swatch="wrong">
+<input type="text" id="color-wrong" data-color-hex="wrong" aria-label="wrong hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="wrong" aria-label="Reset wrong" title="Reset wrong">↺</button></div></div></div><details class="advanced-colors"><summary>more colors</summary><div class="advanced-color-grid"><div class="color-row" data-color-row="raised">
+<label for="color-raised">buttons &amp; controls</label>
+<div class="color-inputs"><input type="color" id="swatch-raised" aria-label="buttons &amp; controls swatch" data-color-swatch="raised">
+<input type="text" id="color-raised" data-color-hex="raised" aria-label="buttons &amp; controls hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="raised" aria-label="Reset buttons &amp; controls" title="Reset buttons &amp; controls">↺</button></div></div><div class="color-row" data-color-row="correct-ink">
+<label for="color-correct-ink">correct text &amp; numbers</label>
+<div class="color-inputs"><input type="color" id="swatch-correct-ink" aria-label="correct text &amp; numbers swatch" data-color-swatch="correct-ink">
+<input type="text" id="color-correct-ink" data-color-hex="correct-ink" aria-label="correct text &amp; numbers hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="correct-ink" aria-label="Reset correct text &amp; numbers" title="Reset correct text &amp; numbers">↺</button></div></div><div class="color-row" data-color-row="edge">
+<label for="color-edge">paper outline</label>
+<div class="color-inputs"><input type="color" id="swatch-edge" aria-label="paper outline swatch" data-color-swatch="edge">
+<input type="text" id="color-edge" data-color-hex="edge" aria-label="paper outline hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge" aria-label="Reset paper outline" title="Reset paper outline">↺</button></div></div><div class="color-row" data-color-row="edge-soft">
+<label for="color-edge-soft">soft dividers</label>
+<div class="color-inputs"><input type="color" id="swatch-edge-soft" aria-label="soft dividers swatch" data-color-swatch="edge-soft">
+<input type="text" id="color-edge-soft" data-color-hex="edge-soft" aria-label="soft dividers hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge-soft" aria-label="Reset soft dividers" title="Reset soft dividers">↺</button></div><label class="color-opacity">opacity<input type="range" min="0" max="100" step="0.1" data-color-alpha="edge-soft" aria-label="soft dividers opacity"><output></output></label></div><div class="color-row" data-color-row="edge-strong">
+<label for="color-edge-strong">strong borders</label>
+<div class="color-inputs"><input type="color" id="swatch-edge-strong" aria-label="strong borders swatch" data-color-swatch="edge-strong">
+<input type="text" id="color-edge-strong" data-color-hex="edge-strong" aria-label="strong borders hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge-strong" aria-label="Reset strong borders" title="Reset strong borders">↺</button></div><label class="color-opacity">opacity<input type="range" min="0" max="100" step="0.1" data-color-alpha="edge-strong" aria-label="strong borders opacity"><output></output></label></div><div class="color-row" data-color-row="logo-secondary">
+<label for="color-logo-secondary">wordmark · JLPT</label>
+<div class="color-inputs"><input type="color" id="swatch-logo-secondary" aria-label="wordmark · JLPT swatch" data-color-swatch="logo-secondary">
+<input type="text" id="color-logo-secondary" data-color-hex="logo-secondary" aria-label="wordmark · JLPT hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="logo-secondary" aria-label="Reset wordmark · JLPT" title="Reset wordmark · JLPT">↺</button></div></div></div><div class="fill-opacity-controls"><h4>fill opacity</h4><p>Applies to correct and wrong answers.</p><div class="fill-opacity-row"><label for="opacity-cell-fill">cell fill<output id="opacity-cell-fill-output">11%</output></label><div><input id="opacity-cell-fill" type="range" min="0" max="100" step="1" value="11" data-fill-opacity="cell-fill" aria-label="cell fill opacity"><button type="button" data-fill-reset="cell-fill" aria-label="Reset cell fill opacity" title="Reset cell fill opacity">↺</button></div></div><div class="fill-opacity-row"><label for="opacity-fill">fill style<output id="opacity-fill-output">30%</output></label><div><input id="opacity-fill" type="range" min="0" max="100" step="1" value="30" data-fill-opacity="fill" aria-label="fill style opacity"><button type="button" data-fill-reset="fill" aria-label="Reset fill style opacity" title="Reset fill style opacity">↺</button></div></div></div></details></aside></div></section><section data-settings="browser"><div class="setting-row js-only"><div><h3>remember this browser</h3><p id="save-status">Saving is on by default. No account required.</p></div><label class="switch"><input id="remember" type="checkbox" checked>save preferences, answers and position</label></div><div class="button-row browser-actions js-only"><button id="reset-preferences" type="button">reset preferences</button><button id="forget" type="button">forget saved data</button></div><div class="developer-only developer-settings"><h3>developer mode</h3><p>Principal differences and editorial cases are visible. This local switch is not authentication.</p><button id="disable-dev" type="button">hide developer tools</button></div><div class="settings-about"><button type="button" id="developer-unlock" class="js-only" title="astraJLPT build information">astraJLPT · 2020–2026 collection</button><span id="developer-hint" role="status"></span></div></section></div></details></header><main id="content" class="review-page"><div class="review-content"><a href="../levels/old-4.html">← 4級 papers</a><h1>4級 · December 2002</h1><p>Uncertainty index: <strong>1108</strong> · 7 differences · 7 unresolved · 1 provisional fixes</p><p>Evidence base 1000 + source concerns 108 = 1108. Concerns are uncapped; browsing order uses evidence tier before concern points.</p><p>This is an editorial evidence assessment, not a probability, an error rate or a practice score.</p><details><summary>Assessment evidence and original source scores</summary><pre>{
+  &quot;unit&quot;: &quot;N4_2002&quot;,
+  &quot;sample&quot;: false,
+  &quot;year&quot;: 2002,
+  &quot;month&quot;: 12,
+  &quot;evidence_base&quot;: 1000,
+  &quot;evidence_tier&quot;: 3,
+  &quot;concern_points&quot;: 108,
+  &quot;index&quot;: 1108,
+  &quot;concern_counts&quot;: {
+    &quot;metadata_flags&quot;: 0,
+    &quot;missing_units&quot;: 10,
+    &quot;major_defects&quot;: 1,
+    &quot;minor_defects&quot;: 1,
+    &quot;uncertain_fields&quot;: 1
+  },
+  &quot;principal_history&quot;: {
+    &quot;unit&quot;: &quot;N4_2002&quot;,
+    &quot;level&quot;: &quot;N4&quot;,
+    &quot;year&quot;: 2002,
+    &quot;month&quot;: 12,
+    &quot;historical_level&quot;: &quot;4級&quot;,
+    &quot;sitting_attribution&quot;: {
+      &quot;basis&quot;: &quot;2002 and4級 in written headings; official guide states annual December examinations through2008.&quot;,
+      &quot;source_url&quot;: &quot;https://www.jlpt.jp/reference/pdf/guide2011.pdf&quot;,
+      &quot;locator&quot;: &quot;Guide2011 physical2, printed01–02 footnote; previously inspected in this run.&quot;
+    },
+    &quot;content_kind&quot;: &quot;exam&quot;,
+    &quot;method_version&quot;: 1,
+    &quot;principal_path&quot;: &quot;src/JLPT N1-N5, Past papers/N4/N4-1991-2009年/（1991年-2009年）N4真题听力/2002/2002年日本语能力考试4级真题+答案+听力原文.pdf&quot;,
+    &quot;principal_sha256&quot;: &quot;8bc661d803c0a22e70a7057bdb52d97814ba9b0167162ba5b0ec84839f322701&quot;,
+    &quot;initial_tier&quot;: 2,
+    &quot;written_physical_pages&quot;: &quot;1-4,21-29&quot;,
+    &quot;review_status&quot;: &quot;complete_written_review&quot;,
+    &quot;review_date&quot;: &quot;2026-10-26&quot;,
+    &quot;scope_note&quot;: &quot;Full written regions in all three local PDFs compared;21only bottom written title,4only vocabulary,28only vocabulary key. Indexed DOC is an incompatible exam, classified from2002first/last derivative pages and opening text, not audited. No written explanations or body figures; listening excluded.&quot;,
+    &quot;provenance_status&quot;: &quot;unverified&quot;,
+    &quot;provenance_points&quot;: 100,
+    &quot;provenance_basis&quot;: &quot;Compiler-branded一碌蔗 retype withWPS/PDFlib2010 metadata andhujiang-watermarked key scans. Related variants remove watermarks or restyle fonts; no issuer custody or original chain. Retyping alone does not prove recollection reconstruction.&quot;,
+    &quot;metadata_flags&quot;: 0,
+    &quot;missing_units&quot;: 10,
+    &quot;major_defects&quot;: 1,
+    &quot;minor_defects&quot;: 1,
+    &quot;uncertain_fields&quot;: 1,
+    &quot;uncertainty_index&quot;: 199,
+    &quot;score_evidence&quot;: [
+      {
+        &quot;id&quot;: &quot;H25-N4_2002-SCORE-001&quot;,
+        &quot;kind&quot;: &quot;missing_units&quot;,
+        &quot;item_id&quot;: &quot;vocab-q019&quot;,
+        &quot;field&quot;: &quot;&quot;,
+        &quot;locator&quot;: &quot;Physical2&quot;,
+        &quot;evidence&quot;: &quot;Part of one question missing; count once for the question, not per character/option.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;H25-N4_2002-SCORE-002&quot;,
+        &quot;kind&quot;: &quot;missing_units&quot;,
+        &quot;item_id&quot;: &quot;vocab-q022&quot;,
+        &quot;field&quot;: &quot;&quot;,
+        &quot;locator&quot;: &quot;Physical2&quot;,
+        &quot;evidence&quot;: &quot;Part of one question missing; count once for the question, not per character/option.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;H25-N4_2002-SCORE-003&quot;,
+        &quot;kind&quot;: &quot;missing_units&quot;,
+        &quot;item_id&quot;: &quot;vocab-q023&quot;,
+        &quot;field&quot;: &quot;&quot;,
+        &quot;locator&quot;: &quot;Physical2&quot;,
+        &quot;evidence&quot;: &quot;Part of one question missing; count once for the question, not per character/option.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;H25-N4_2002-SCORE-004&quot;,
+        &quot;kind&quot;: &quot;missing_units&quot;,
+        &quot;item_id&quot;: &quot;vocab-q024&quot;,
+        &quot;field&quot;: &quot;&quot;,
+        &quot;locator&quot;: &quot;Physical2&quot;,
+        &quot;evidence&quot;: &quot;Part of one question missing; count once for the question, not per character/option.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;H25-N4_2002-SCORE-005&quot;,
+        &quot;kind&quot;: &quot;missing_units&quot;,
+        &quot;item_id&quot;: &quot;vocab-s01-missing-example&quot;,
+        &quot;field&quot;: &quot;&quot;,
+        &quot;locator&quot;: &quot;Physical28&quot;,
+        &quot;evidence&quot;: &quot;One independently identified unscored example absent; key column only.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;H25-N4_2002-SCORE-006&quot;,
+        &quot;kind&quot;: &quot;missing_units&quot;,
+        &quot;item_id&quot;: &quot;vocab-s02-missing-example&quot;,
+        &quot;field&quot;: &quot;&quot;,
+        &quot;locator&quot;: &quot;Physical28&quot;,
+        &quot;evidence&quot;: &quot;One independently identified unscored example absent; key column only.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;H25-N4_2002-SCORE-007&quot;,
+        &quot;kind&quot;: &quot;missing_units&quot;,
+        &quot;item_id&quot;: &quot;vocab-s03-missing-example&quot;,
+        &quot;field&quot;: &quot;&quot;,
+        &quot;locator&quot;: &quot;Physical28&quot;,
+        &quot;evidence&quot;: &quot;One independently identified unscored example absent; key column only.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;H25-N4_2002-SCORE-008&quot;,
+        &quot;kind&quot;: &quot;missing_units&quot;,
+        &quot;item_id&quot;: &quot;vocab-s04-missing-example&quot;,
+        &quot;field&quot;: &quot;&quot;,
+        &quot;locator&quot;: &quot;Physical28&quot;,
+        &quot;evidence&quot;: &quot;One independently identified unscored example absent; key column only.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;H25-N4_2002-SCORE-009&quot;,
+        &quot;kind&quot;: &quot;missing_units&quot;,
+        &quot;item_id&quot;: &quot;reading-s01-missing-example&quot;,
+        &quot;field&quot;: &quot;&quot;,
+        &quot;locator&quot;: &quot;Physical29&quot;,
+        &quot;evidence&quot;: &quot;One independently identified unscored example absent; key column only.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;H25-N4_2002-SCORE-010&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-q007&quot;,
+        &quot;field&quot;: &quot;/stem&quot;,
+        &quot;locator&quot;: &quot;Physical22&quot;,
+        &quot;evidence&quot;: &quot;Correct the unambiguous lexical typo友どち to友だち, also correctly printed elsewhere in this same paper. It is untested context; particleに and key1 remain unchanged.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;H25-N4_2002-SCORE-011&quot;,
+        &quot;kind&quot;: &quot;major_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-q008&quot;,
+        &quot;field&quot;: &quot;/stem&quot;,
+        &quot;locator&quot;: &quot;Physical22&quot;,
+        &quot;evidence&quot;: &quot;Restore the missing response slot betweenテレビ and見ませんでした. All four particle choices and the section task require a slot, key3は fits this negative object/topic, and the aligned forum preserves a wide gap at exactly this boundary. The local PDF has only ordinary word spacing.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;H25-N4_2002-SCORE-012&quot;,
+        &quot;kind&quot;: &quot;missing_units&quot;,
+        &quot;item_id&quot;: &quot;reading-q046&quot;,
+        &quot;field&quot;: &quot;/stem&quot;,
+        &quot;locator&quot;: &quot;Physical27&quot;,
+        &quot;evidence&quot;: &quot;Restore the firstAutterance and the followingBspeaker label exactly from the aligned forum passage. The surviving two utterances, all four options and key1 agree. The added opening makes the umbrella inference supported; its exact historical wording remains provisional because no original image was recovered. Principal score counts the missing question part even after secondary recovery.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;H25-N4_2002-SCORE-013&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;vocab-q032&quot;,
+        &quot;field&quot;: &quot;/options/3&quot;,
+        &quot;locator&quot;: &quot;Physical3&quot;,
+        &quot;evidence&quot;: &quot;Malformed non-key response may be intentional or a retype typo; all checked copies agree. Preserved with public uncertainty.&quot;
+      }
+    ]
+  },
+  &quot;evidence&quot;: []
+}</pre></details><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N4_2002.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span><ul></ul><div class="review-controls"><label>Show <select id="review-filter"><option value="all">All records</option><option value="difference">Principal differences</option><option value="unresolved">Unresolved cases</option><option value="provisional_fix">Provisional fixes</option></select></label><label>Find <input id="review-search" type="search" placeholder="Item, wording, evidence…"></label></div><p id="review-count" class="control-help" role="status"></p><section class="review-group" id="review-coverage" data-kinds="difference unresolved"><div class="review-group-heading"><h2>Paper coverage</h2><a href="../papers/N4_2002.html#content">Open in paper →</a></div><div class="review-record" id="unresolved_cases-H25-N4_2002-vocab-q019-missing-choices"><div class="review-label">Unresolved ·  · low</div><div class="comparison"><div><h4>Alternative</h4><pre>No alternative recorded</pre></div><div><h4>Editorial</h4><pre>Not recorded</pre></div></div><p>Literal stars replace unrecovered wrong-character forms in every local PDF and both focused external retypes. Key alone cannot recover the alternatives; retain the surviving fragment privately and omit the scored question.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>Exact historical distractor glyphs remain unknown;11 missing positions across four questions.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N4_2002.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Original vocabulary position19, targetがっこう, incomplete alternatives[1, 2, 3]. Omitted from practice; complete source context retained.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=2): <code>additional-assets/principals/N4_2002.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · VocabularyII original global19<p>がっこう; ＊＊ / ＊＊ / ＊＊ / 学校</p></li><li><a href="https://riyutool.com/article/1209/%E6%97%A5%E8%AF%AD%E8%83%BD%E5%8A%9B%E8%80%83%E8%AF%951991~2005%E5%B9%B4%E8%AF%95%E9%A2%98%E9%9B%86.1.2.3.4.%E7%BA%A7%28%E9%A1%B5%2B1%29%2B%2B/" target="_blank" rel="noopener">Riyutool archived forum transcription,2002年日语能力测试4级考试（全）</a> · VocabularyII targetがっこう<p>Same literal stars, no recovered glyphs.</p></li><li><a href="https://gaku.ru/download/jlpt/2002-4.pdf" target="_blank" rel="noopener">gaku2002-4.pdf</a> · Physical2, vocabularyII; matching incomplete target/choice row in H25-N4_2002-vocab-q019-missing-choices<p>Same star placeholders visually confirmed.</p></li></ul><details><summary>Full published record · unresolved_cases-H25-N4_2002-vocab-q019-missing-choices</summary><pre>{
+  &quot;case_id&quot;: &quot;H25-N4_2002-vocab-q019-missing-choices&quot;,
+  &quot;unit&quot;: &quot;N4_2002&quot;,
+  &quot;item_id&quot;: null,
+  &quot;field&quot;: &quot;&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;low&quot;,
+  &quot;decision_basis&quot;: &quot;source_comparison&quot;,
+  &quot;current_value&quot;: null,
+  &quot;context&quot;: &quot;Original vocabulary position19, targetがっこう, incomplete alternatives[1, 2, 3]. Omitted from practice; complete source context retained.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: null,
+      &quot;assessment&quot;: &quot;Keep omitted until every original choice is adequately recovered.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;2002年日本语能力考试4级真题+答案+听力原文.pdf — 一碌蔗 secondary retype&quot;,
+      &quot;sha256&quot;: &quot;8bc661d803c0a22e70a7057bdb52d97814ba9b0167162ba5b0ec84839f322701&quot;,
+      &quot;physical_pages&quot;: [
+        2
+      ],
+      &quot;locator&quot;: &quot;VocabularyII original global19&quot;,
+      &quot;reading&quot;: &quot;がっこう; ＊＊ / ＊＊ / ＊＊ / 学校&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;Riyutool archived forum transcription,2002年日语能力测试4级考试（全）&quot;,
+      &quot;url&quot;: &quot;https://riyutool.com/article/1209/%E6%97%A5%E8%AF%AD%E8%83%BD%E5%8A%9B%E8%80%83%E8%AF%951991~2005%E5%B9%B4%E8%AF%95%E9%A2%98%E9%9B%86.1.2.3.4.%E7%BA%A7%28%E9%A1%B5%2B1%29%2B%2B/&quot;,
+      &quot;sha256&quot;: &quot;3e3fe2111b20331193712b725b866498c5434fb53273baf32801f1ad65896b4a&quot;,
+      &quot;locator&quot;: &quot;VocabularyII targetがっこう&quot;,
+      &quot;reading&quot;: &quot;Same literal stars, no recovered glyphs.&quot;,
+      &quot;lineage&quot;: &quot;Related secondary transcription; same distinctive source defects. No original custody established.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;gaku2002-4.pdf&quot;,
+      &quot;url&quot;: &quot;https://gaku.ru/download/jlpt/2002-4.pdf&quot;,
+      &quot;sha256&quot;: &quot;0a02da8045ae59f32cec11bd01dea739138c9d855662f9cbb56da6fee9f1fad9&quot;,
+      &quot;physical_pages&quot;: [
+        2
+      ],
+      &quot;reading&quot;: &quot;Same star placeholders visually confirmed.&quot;,
+      &quot;locator&quot;: &quot;Physical2, vocabularyII; matching incomplete target/choice row in H25-N4_2002-vocab-q019-missing-choices&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Literal stars replace unrecovered wrong-character forms in every local PDF and both focused external retypes. Key alone cannot recover the alternatives; retain the surviving fragment privately and omit the scored question.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Read all three local written PDFs and keys.&quot;,
+    &quot;Focused gaku page2 and title-aligned forum text retain the stars.&quot;,
+    &quot;Exact-text and original-source searches found no recoverable wrong glyphs.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;Exact historical distractor glyphs remain unknown;11 missing positions across four questions.&quot;
+}</pre></details></div><div class="review-record" id="unresolved_cases-H25-N4_2002-vocab-q022-missing-choices"><div class="review-label">Unresolved ·  · low</div><div class="comparison"><div><h4>Alternative</h4><pre>No alternative recorded</pre></div><div><h4>Editorial</h4><pre>Not recorded</pre></div></div><p>Literal stars replace unrecovered wrong-character forms in every local PDF and both focused external retypes. Key alone cannot recover the alternatives; retain the surviving fragment privately and omit the scored question.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>Exact historical distractor glyphs remain unknown;11 missing positions across four questions.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N4_2002.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Original vocabulary position22, targetみせ, incomplete alternatives[4]. Omitted from practice; complete source context retained.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=2): <code>additional-assets/principals/N4_2002.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · VocabularyII original global22<p>みせ; 庄 / 床 / 店 / ＊</p></li><li><a href="https://riyutool.com/article/1209/%E6%97%A5%E8%AF%AD%E8%83%BD%E5%8A%9B%E8%80%83%E8%AF%951991~2005%E5%B9%B4%E8%AF%95%E9%A2%98%E9%9B%86.1.2.3.4.%E7%BA%A7%28%E9%A1%B5%2B1%29%2B%2B/" target="_blank" rel="noopener">Riyutool archived forum transcription,2002年日语能力测试4级考试（全）</a> · VocabularyII targetみせ<p>Same literal stars, no recovered glyphs.</p></li><li><a href="https://gaku.ru/download/jlpt/2002-4.pdf" target="_blank" rel="noopener">gaku2002-4.pdf</a> · Physical2, vocabularyII; matching incomplete target/choice row in H25-N4_2002-vocab-q022-missing-choices<p>Same star placeholders visually confirmed.</p></li></ul><details><summary>Full published record · unresolved_cases-H25-N4_2002-vocab-q022-missing-choices</summary><pre>{
+  &quot;case_id&quot;: &quot;H25-N4_2002-vocab-q022-missing-choices&quot;,
+  &quot;unit&quot;: &quot;N4_2002&quot;,
+  &quot;item_id&quot;: null,
+  &quot;field&quot;: &quot;&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;low&quot;,
+  &quot;decision_basis&quot;: &quot;source_comparison&quot;,
+  &quot;current_value&quot;: null,
+  &quot;context&quot;: &quot;Original vocabulary position22, targetみせ, incomplete alternatives[4]. Omitted from practice; complete source context retained.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: null,
+      &quot;assessment&quot;: &quot;Keep omitted until every original choice is adequately recovered.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;2002年日本语能力考试4级真题+答案+听力原文.pdf — 一碌蔗 secondary retype&quot;,
+      &quot;sha256&quot;: &quot;8bc661d803c0a22e70a7057bdb52d97814ba9b0167162ba5b0ec84839f322701&quot;,
+      &quot;physical_pages&quot;: [
+        2
+      ],
+      &quot;locator&quot;: &quot;VocabularyII original global22&quot;,
+      &quot;reading&quot;: &quot;みせ; 庄 / 床 / 店 / ＊&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;Riyutool archived forum transcription,2002年日语能力测试4级考试（全）&quot;,
+      &quot;url&quot;: &quot;https://riyutool.com/article/1209/%E6%97%A5%E8%AF%AD%E8%83%BD%E5%8A%9B%E8%80%83%E8%AF%951991~2005%E5%B9%B4%E8%AF%95%E9%A2%98%E9%9B%86.1.2.3.4.%E7%BA%A7%28%E9%A1%B5%2B1%29%2B%2B/&quot;,
+      &quot;sha256&quot;: &quot;3e3fe2111b20331193712b725b866498c5434fb53273baf32801f1ad65896b4a&quot;,
+      &quot;locator&quot;: &quot;VocabularyII targetみせ&quot;,
+      &quot;reading&quot;: &quot;Same literal stars, no recovered glyphs.&quot;,
+      &quot;lineage&quot;: &quot;Related secondary transcription; same distinctive source defects. No original custody established.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;gaku2002-4.pdf&quot;,
+      &quot;url&quot;: &quot;https://gaku.ru/download/jlpt/2002-4.pdf&quot;,
+      &quot;sha256&quot;: &quot;0a02da8045ae59f32cec11bd01dea739138c9d855662f9cbb56da6fee9f1fad9&quot;,
+      &quot;physical_pages&quot;: [
+        2
+      ],
+      &quot;reading&quot;: &quot;Same star placeholders visually confirmed.&quot;,
+      &quot;locator&quot;: &quot;Physical2, vocabularyII; matching incomplete target/choice row in H25-N4_2002-vocab-q022-missing-choices&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Literal stars replace unrecovered wrong-character forms in every local PDF and both focused external retypes. Key alone cannot recover the alternatives; retain the surviving fragment privately and omit the scored question.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Read all three local written PDFs and keys.&quot;,
+    &quot;Focused gaku page2 and title-aligned forum text retain the stars.&quot;,
+    &quot;Exact-text and original-source searches found no recoverable wrong glyphs.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;Exact historical distractor glyphs remain unknown;11 missing positions across four questions.&quot;
+}</pre></details></div><div class="review-record" id="unresolved_cases-H25-N4_2002-vocab-q023-missing-choices"><div class="review-label">Unresolved ·  · low</div><div class="comparison"><div><h4>Alternative</h4><pre>No alternative recorded</pre></div><div><h4>Editorial</h4><pre>Not recorded</pre></div></div><p>Literal stars replace unrecovered wrong-character forms in every local PDF and both focused external retypes. Key alone cannot recover the alternatives; retain the surviving fragment privately and omit the scored question.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>Exact historical distractor glyphs remain unknown;11 missing positions across four questions.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N4_2002.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Original vocabulary position23, targetひだり, incomplete alternatives[3]. Omitted from practice; complete source context retained.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=2): <code>additional-assets/principals/N4_2002.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · VocabularyII original global23<p>ひだり; 石 / 右 / ＊ / 左</p></li><li><a href="https://riyutool.com/article/1209/%E6%97%A5%E8%AF%AD%E8%83%BD%E5%8A%9B%E8%80%83%E8%AF%951991~2005%E5%B9%B4%E8%AF%95%E9%A2%98%E9%9B%86.1.2.3.4.%E7%BA%A7%28%E9%A1%B5%2B1%29%2B%2B/" target="_blank" rel="noopener">Riyutool archived forum transcription,2002年日语能力测试4级考试（全）</a> · VocabularyII targetひだり<p>Same literal stars, no recovered glyphs.</p></li><li><a href="https://gaku.ru/download/jlpt/2002-4.pdf" target="_blank" rel="noopener">gaku2002-4.pdf</a> · Physical2, vocabularyII; matching incomplete target/choice row in H25-N4_2002-vocab-q023-missing-choices<p>Same star placeholders visually confirmed.</p></li></ul><details><summary>Full published record · unresolved_cases-H25-N4_2002-vocab-q023-missing-choices</summary><pre>{
+  &quot;case_id&quot;: &quot;H25-N4_2002-vocab-q023-missing-choices&quot;,
+  &quot;unit&quot;: &quot;N4_2002&quot;,
+  &quot;item_id&quot;: null,
+  &quot;field&quot;: &quot;&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;low&quot;,
+  &quot;decision_basis&quot;: &quot;source_comparison&quot;,
+  &quot;current_value&quot;: null,
+  &quot;context&quot;: &quot;Original vocabulary position23, targetひだり, incomplete alternatives[3]. Omitted from practice; complete source context retained.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: null,
+      &quot;assessment&quot;: &quot;Keep omitted until every original choice is adequately recovered.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;2002年日本语能力考试4级真题+答案+听力原文.pdf — 一碌蔗 secondary retype&quot;,
+      &quot;sha256&quot;: &quot;8bc661d803c0a22e70a7057bdb52d97814ba9b0167162ba5b0ec84839f322701&quot;,
+      &quot;physical_pages&quot;: [
+        2
+      ],
+      &quot;locator&quot;: &quot;VocabularyII original global23&quot;,
+      &quot;reading&quot;: &quot;ひだり; 石 / 右 / ＊ / 左&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;Riyutool archived forum transcription,2002年日语能力测试4级考试（全）&quot;,
+      &quot;url&quot;: &quot;https://riyutool.com/article/1209/%E6%97%A5%E8%AF%AD%E8%83%BD%E5%8A%9B%E8%80%83%E8%AF%951991~2005%E5%B9%B4%E8%AF%95%E9%A2%98%E9%9B%86.1.2.3.4.%E7%BA%A7%28%E9%A1%B5%2B1%29%2B%2B/&quot;,
+      &quot;sha256&quot;: &quot;3e3fe2111b20331193712b725b866498c5434fb53273baf32801f1ad65896b4a&quot;,
+      &quot;locator&quot;: &quot;VocabularyII targetひだり&quot;,
+      &quot;reading&quot;: &quot;Same literal stars, no recovered glyphs.&quot;,
+      &quot;lineage&quot;: &quot;Related secondary transcription; same distinctive source defects. No original custody established.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;gaku2002-4.pdf&quot;,
+      &quot;url&quot;: &quot;https://gaku.ru/download/jlpt/2002-4.pdf&quot;,
+      &quot;sha256&quot;: &quot;0a02da8045ae59f32cec11bd01dea739138c9d855662f9cbb56da6fee9f1fad9&quot;,
+      &quot;physical_pages&quot;: [
+        2
+      ],
+      &quot;reading&quot;: &quot;Same star placeholders visually confirmed.&quot;,
+      &quot;locator&quot;: &quot;Physical2, vocabularyII; matching incomplete target/choice row in H25-N4_2002-vocab-q023-missing-choices&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Literal stars replace unrecovered wrong-character forms in every local PDF and both focused external retypes. Key alone cannot recover the alternatives; retain the surviving fragment privately and omit the scored question.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Read all three local written PDFs and keys.&quot;,
+    &quot;Focused gaku page2 and title-aligned forum text retain the stars.&quot;,
+    &quot;Exact-text and original-source searches found no recoverable wrong glyphs.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;Exact historical distractor glyphs remain unknown;11 missing positions across four questions.&quot;
+}</pre></details></div><div class="review-record" id="unresolved_cases-H25-N4_2002-vocab-q024-missing-choices"><div class="review-label">Unresolved ·  · low</div><div class="comparison"><div><h4>Alternative</h4><pre>No alternative recorded</pre></div><div><h4>Editorial</h4><pre>Not recorded</pre></div></div><p>Literal stars replace unrecovered wrong-character forms in every local PDF and both focused external retypes. Key alone cannot recover the alternatives; retain the surviving fragment privately and omit the scored question.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>Exact historical distractor glyphs remain unknown;11 missing positions across four questions.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N4_2002.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Original vocabulary position24, targetみなみ, incomplete alternatives[2, 3, 4]. Omitted from practice; complete source context retained.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=2): <code>additional-assets/principals/N4_2002.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · VocabularyII original global24<p>みなみ; 南 / ＊ / ＊ / ＊</p></li><li><a href="https://riyutool.com/article/1209/%E6%97%A5%E8%AF%AD%E8%83%BD%E5%8A%9B%E8%80%83%E8%AF%951991~2005%E5%B9%B4%E8%AF%95%E9%A2%98%E9%9B%86.1.2.3.4.%E7%BA%A7%28%E9%A1%B5%2B1%29%2B%2B/" target="_blank" rel="noopener">Riyutool archived forum transcription,2002年日语能力测试4级考试（全）</a> · VocabularyII targetみなみ<p>Same literal stars, no recovered glyphs.</p></li><li><a href="https://gaku.ru/download/jlpt/2002-4.pdf" target="_blank" rel="noopener">gaku2002-4.pdf</a> · Physical2, vocabularyII; matching incomplete target/choice row in H25-N4_2002-vocab-q024-missing-choices<p>Same star placeholders visually confirmed.</p></li></ul><details><summary>Full published record · unresolved_cases-H25-N4_2002-vocab-q024-missing-choices</summary><pre>{
+  &quot;case_id&quot;: &quot;H25-N4_2002-vocab-q024-missing-choices&quot;,
+  &quot;unit&quot;: &quot;N4_2002&quot;,
+  &quot;item_id&quot;: null,
+  &quot;field&quot;: &quot;&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;low&quot;,
+  &quot;decision_basis&quot;: &quot;source_comparison&quot;,
+  &quot;current_value&quot;: null,
+  &quot;context&quot;: &quot;Original vocabulary position24, targetみなみ, incomplete alternatives[2, 3, 4]. Omitted from practice; complete source context retained.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: null,
+      &quot;assessment&quot;: &quot;Keep omitted until every original choice is adequately recovered.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;2002年日本语能力考试4级真题+答案+听力原文.pdf — 一碌蔗 secondary retype&quot;,
+      &quot;sha256&quot;: &quot;8bc661d803c0a22e70a7057bdb52d97814ba9b0167162ba5b0ec84839f322701&quot;,
+      &quot;physical_pages&quot;: [
+        2
+      ],
+      &quot;locator&quot;: &quot;VocabularyII original global24&quot;,
+      &quot;reading&quot;: &quot;みなみ; 南 / ＊ / ＊ / ＊&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;Riyutool archived forum transcription,2002年日语能力测试4级考试（全）&quot;,
+      &quot;url&quot;: &quot;https://riyutool.com/article/1209/%E6%97%A5%E8%AF%AD%E8%83%BD%E5%8A%9B%E8%80%83%E8%AF%951991~2005%E5%B9%B4%E8%AF%95%E9%A2%98%E9%9B%86.1.2.3.4.%E7%BA%A7%28%E9%A1%B5%2B1%29%2B%2B/&quot;,
+      &quot;sha256&quot;: &quot;3e3fe2111b20331193712b725b866498c5434fb53273baf32801f1ad65896b4a&quot;,
+      &quot;locator&quot;: &quot;VocabularyII targetみなみ&quot;,
+      &quot;reading&quot;: &quot;Same literal stars, no recovered glyphs.&quot;,
+      &quot;lineage&quot;: &quot;Related secondary transcription; same distinctive source defects. No original custody established.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;gaku2002-4.pdf&quot;,
+      &quot;url&quot;: &quot;https://gaku.ru/download/jlpt/2002-4.pdf&quot;,
+      &quot;sha256&quot;: &quot;0a02da8045ae59f32cec11bd01dea739138c9d855662f9cbb56da6fee9f1fad9&quot;,
+      &quot;physical_pages&quot;: [
+        2
+      ],
+      &quot;reading&quot;: &quot;Same star placeholders visually confirmed.&quot;,
+      &quot;locator&quot;: &quot;Physical2, vocabularyII; matching incomplete target/choice row in H25-N4_2002-vocab-q024-missing-choices&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Literal stars replace unrecovered wrong-character forms in every local PDF and both focused external retypes. Key alone cannot recover the alternatives; retain the surviving fragment privately and omit the scored question.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Read all three local written PDFs and keys.&quot;,
+    &quot;Focused gaku page2 and title-aligned forum text retain the stars.&quot;,
+    &quot;Exact-text and original-source searches found no recoverable wrong glyphs.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;Exact historical distractor glyphs remain unknown;11 missing positions across four questions.&quot;
+}</pre></details></div><div class="review-record" id="unresolved_cases-H25-N4_2002-partial-coverage"><div class="review-label">Unresolved ·  · low</div><div class="comparison"><div><h4>Alternative</h4><pre>No alternative recorded</pre></div><div><h4>Editorial</h4><pre>Not recorded</pre></div></div><p>Distinct example-key columns identify five missing blocks. Complete contextvocab-b009 remains although both of its questions are absent; its two public cases explain the gap. This output is a shortened partial practice paper.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>Five example prompts/choices and four complete wrong-choice sets remain unrecovered.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N4_2002.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Partial practice:83 playable questions from87 scored positions,11 complete contexts. Four vocabulary questions omitted. Five unscored examples known only from keys: vocabularyI–IV and readingI.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=28): <code>additional-assets/principals/N4_2002.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Affected written region<p>Separate vocabularyれい keys4,2,1,1; no example prompts/choices in written questions.</p></li><li><span class="principal-repository-source">Principal source (page=29): <code>additional-assets/principals/N4_2002.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Affected written region<p>ReadingIれい key3; prompt/choices unavailable.</p></li><li><a href="https://riyutool.com/article/1209/%E6%97%A5%E8%AF%AD%E8%83%BD%E5%8A%9B%E8%80%83%E8%AF%951991~2005%E5%B9%B4%E8%AF%95%E9%A2%98%E9%9B%86.1.2.3.4.%E7%BA%A7%28%E9%A1%B5%2B1%29%2B%2B/" target="_blank" rel="noopener">Riyutool archived forum transcription,2002年日语能力测试4级考试（全）</a> · Title-bounded2002N4 text<p>Search for例/れい finds only lexical substrings inしつれい/きれい, no worked-example labels.</p></li></ul><details><summary>Full published record · unresolved_cases-H25-N4_2002-partial-coverage</summary><pre>{
+  &quot;case_id&quot;: &quot;H25-N4_2002-partial-coverage&quot;,
+  &quot;unit&quot;: &quot;N4_2002&quot;,
+  &quot;item_id&quot;: null,
+  &quot;field&quot;: &quot;&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;low&quot;,
+  &quot;decision_basis&quot;: &quot;source_comparison&quot;,
+  &quot;current_value&quot;: null,
+  &quot;context&quot;: &quot;Partial practice:83 playable questions from87 scored positions,11 complete contexts. Four vocabulary questions omitted. Five unscored examples known only from keys: vocabularyI–IV and readingI.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: null,
+      &quot;assessment&quot;: &quot;Keep all complete contexts and questions, original local-number gaps and explicit notices; never invent the missing examples or distractors.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;2002年日本语能力考试4级真题+答案+听力原文.pdf — 一碌蔗 secondary retype&quot;,
+      &quot;sha256&quot;: &quot;8bc661d803c0a22e70a7057bdb52d97814ba9b0167162ba5b0ec84839f322701&quot;,
+      &quot;physical_pages&quot;: [
+        28
+      ],
+      &quot;locator&quot;: &quot;Affected written region&quot;,
+      &quot;reading&quot;: &quot;Separate vocabularyれい keys4,2,1,1; no example prompts/choices in written questions.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2002年日本语能力考试4级真题+答案+听力原文.pdf — 一碌蔗 secondary retype&quot;,
+      &quot;sha256&quot;: &quot;8bc661d803c0a22e70a7057bdb52d97814ba9b0167162ba5b0ec84839f322701&quot;,
+      &quot;physical_pages&quot;: [
+        29
+      ],
+      &quot;locator&quot;: &quot;Affected written region&quot;,
+      &quot;reading&quot;: &quot;ReadingIれい key3; prompt/choices unavailable.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;Riyutool archived forum transcription,2002年日语能力测试4级考试（全）&quot;,
+      &quot;url&quot;: &quot;https://riyutool.com/article/1209/%E6%97%A5%E8%AF%AD%E8%83%BD%E5%8A%9B%E8%80%83%E8%AF%951991~2005%E5%B9%B4%E8%AF%95%E9%A2%98%E9%9B%86.1.2.3.4.%E7%BA%A7%28%E9%A1%B5%2B1%29%2B%2B/&quot;,
+      &quot;sha256&quot;: &quot;3e3fe2111b20331193712b725b866498c5434fb53273baf32801f1ad65896b4a&quot;,
+      &quot;locator&quot;: &quot;Title-bounded2002N4 text&quot;,
+      &quot;reading&quot;: &quot;Search for例/れい finds only lexical substrings inしつれい/きれい, no worked-example labels.&quot;,
+      &quot;lineage&quot;: &quot;Related secondary transcription; same distinctive source defects. No original custody established.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Distinct example-key columns identify five missing blocks. Complete contextvocab-b009 remains although both of its questions are absent; its two public cases explain the gap. This output is a shortened partial practice paper.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Read all local task starts, written bodies and keys.&quot;,
+    &quot;Checked focused external sources and bounded example-label search; no original example recovered.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;Five example prompts/choices and four complete wrong-choice sets remain unrecovered.&quot;
+}</pre></details></div><div class="review-record" id="unresolved_cases-H25-N4_2002-original-covers"><div class="review-label">Unresolved ·  · low</div><div class="comparison"><div><h4>Alternative</h4><pre>No alternative recorded</pre></div><div><h4>Editorial</h4><pre>Not recorded</pre></div></div><p>Retyped title blocks do not authenticate original cover wording, timing, typography or custody.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>Original cover wording, geometry and custody unverified.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N4_2002.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Original written booklet covers unavailable.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=1): <code>additional-assets/principals/N4_2002.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Affected written region<p>Secondary written title blocks; page21 inspected only from問題用紙 downward.</p></li><li><span class="principal-repository-source">Principal source (page=28): <code>additional-assets/principals/N4_2002.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Affected written region<p>Copied watermarked key panels with scaling formulas; not original covers.</p></li></ul><details><summary>Full published record · unresolved_cases-H25-N4_2002-original-covers</summary><pre>{
+  &quot;case_id&quot;: &quot;H25-N4_2002-original-covers&quot;,
+  &quot;unit&quot;: &quot;N4_2002&quot;,
+  &quot;item_id&quot;: null,
+  &quot;field&quot;: &quot;&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;low&quot;,
+  &quot;decision_basis&quot;: &quot;source_comparison&quot;,
+  &quot;current_value&quot;: null,
+  &quot;context&quot;: &quot;Original written booklet covers unavailable.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: null,
+      &quot;assessment&quot;: &quot;Leave covers unavailable and label partial practice.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;2002年日本语能力考试4级真题+答案+听力原文.pdf — 一碌蔗 secondary retype&quot;,
+      &quot;sha256&quot;: &quot;8bc661d803c0a22e70a7057bdb52d97814ba9b0167162ba5b0ec84839f322701&quot;,
+      &quot;physical_pages&quot;: [
+        1,
+        21,
+        22
+      ],
+      &quot;locator&quot;: &quot;Affected written region&quot;,
+      &quot;reading&quot;: &quot;Secondary written title blocks; page21 inspected only from問題用紙 downward.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2002年日本语能力考试4级真题+答案+听力原文.pdf — 一碌蔗 secondary retype&quot;,
+      &quot;sha256&quot;: &quot;8bc661d803c0a22e70a7057bdb52d97814ba9b0167162ba5b0ec84839f322701&quot;,
+      &quot;physical_pages&quot;: [
+        28,
+        29
+      ],
+      &quot;locator&quot;: &quot;Affected written region&quot;,
+      &quot;reading&quot;: &quot;Copied watermarked key panels with scaling formulas; not original covers.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Retyped title blocks do not authenticate original cover wording, timing, typography or custody.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Inspected written title blocks and metadata.&quot;,
+    &quot;Focused original-source search recovered retypes, not original cover pixels.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;Original cover wording, geometry and custody unverified.&quot;
+}</pre></details></div><div class="review-record" id="principal_differences-H25-N4_2002-OMIT-019"><div class="review-label">Principal difference ·  · high</div><div class="comparison"><div><h4>Principal</h4><pre><mark class="diff-old">がっこう;</mark> <mark class="diff-old">＊＊ / ＊＊ / ＊＊ / 学校</mark></pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">Not</mark> <mark class="diff-new">recorded</mark></pre></div></div><p>Literal stars replace unrecovered wrong-character forms in every local PDF and both focused external retypes. Key alone cannot recover the alternatives; retain the surviving fragment privately and omit the scored question.</p><span class="principal-repository-source">Principal source (page=2): <code>additional-assets/principals/N4_2002.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">VocabularyII global19, がっこう</span><details><summary>Full published record · principal_differences-H25-N4_2002-OMIT-019</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;H25-N4_2002-OMIT-019&quot;,
+  &quot;unit&quot;: &quot;N4_2002&quot;,
+  &quot;item_id&quot;: null,
+  &quot;field&quot;: &quot;&quot;,
+  &quot;current_value&quot;: null,
+  &quot;categories&quot;: [
+    &quot;missing_printed_content&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2002年日本语能力考试4级真题+答案+听力原文.pdf — 一碌蔗 secondary retype&quot;,
+    &quot;sha256&quot;: &quot;8bc661d803c0a22e70a7057bdb52d97814ba9b0167162ba5b0ec84839f322701&quot;,
+    &quot;physical_pages&quot;: [
+      2
+    ],
+    &quot;locator&quot;: &quot;VocabularyII global19, がっこう&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;がっこう; ＊＊ / ＊＊ / ＊＊ / 学校&quot;
+  },
+  &quot;editorial_reading&quot;: null,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;editorial_omission&quot;,
+  &quot;rationale&quot;: &quot;Literal stars replace unrecovered wrong-character forms in every local PDF and both focused external retypes. Key alone cannot recover the alternatives; retain the surviving fragment privately and omit the scored question.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;H25-N4_2002-vocab-q019-missing-choices&quot;
+  ]
+}</pre></details></div><div class="review-record" id="principal_differences-H25-N4_2002-OMIT-022"><div class="review-label">Principal difference ·  · high</div><div class="comparison"><div><h4>Principal</h4><pre><mark class="diff-old">みせ;</mark> <mark class="diff-old">庄 / 床 / 店 / ＊</mark></pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">Not</mark> <mark class="diff-new">recorded</mark></pre></div></div><p>Literal stars replace unrecovered wrong-character forms in every local PDF and both focused external retypes. Key alone cannot recover the alternatives; retain the surviving fragment privately and omit the scored question.</p><span class="principal-repository-source">Principal source (page=2): <code>additional-assets/principals/N4_2002.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">VocabularyII global22, みせ</span><details><summary>Full published record · principal_differences-H25-N4_2002-OMIT-022</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;H25-N4_2002-OMIT-022&quot;,
+  &quot;unit&quot;: &quot;N4_2002&quot;,
+  &quot;item_id&quot;: null,
+  &quot;field&quot;: &quot;&quot;,
+  &quot;current_value&quot;: null,
+  &quot;categories&quot;: [
+    &quot;missing_printed_content&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2002年日本语能力考试4级真题+答案+听力原文.pdf — 一碌蔗 secondary retype&quot;,
+    &quot;sha256&quot;: &quot;8bc661d803c0a22e70a7057bdb52d97814ba9b0167162ba5b0ec84839f322701&quot;,
+    &quot;physical_pages&quot;: [
+      2
+    ],
+    &quot;locator&quot;: &quot;VocabularyII global22, みせ&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;みせ; 庄 / 床 / 店 / ＊&quot;
+  },
+  &quot;editorial_reading&quot;: null,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;editorial_omission&quot;,
+  &quot;rationale&quot;: &quot;Literal stars replace unrecovered wrong-character forms in every local PDF and both focused external retypes. Key alone cannot recover the alternatives; retain the surviving fragment privately and omit the scored question.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;H25-N4_2002-vocab-q022-missing-choices&quot;
+  ]
+}</pre></details></div><div class="review-record" id="principal_differences-H25-N4_2002-OMIT-023"><div class="review-label">Principal difference ·  · high</div><div class="comparison"><div><h4>Principal</h4><pre><mark class="diff-old">ひだり;</mark> <mark class="diff-old">石 / 右 / ＊ / 左</mark></pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">Not</mark> <mark class="diff-new">recorded</mark></pre></div></div><p>Literal stars replace unrecovered wrong-character forms in every local PDF and both focused external retypes. Key alone cannot recover the alternatives; retain the surviving fragment privately and omit the scored question.</p><span class="principal-repository-source">Principal source (page=2): <code>additional-assets/principals/N4_2002.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">VocabularyII global23, ひだり</span><details><summary>Full published record · principal_differences-H25-N4_2002-OMIT-023</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;H25-N4_2002-OMIT-023&quot;,
+  &quot;unit&quot;: &quot;N4_2002&quot;,
+  &quot;item_id&quot;: null,
+  &quot;field&quot;: &quot;&quot;,
+  &quot;current_value&quot;: null,
+  &quot;categories&quot;: [
+    &quot;missing_printed_content&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2002年日本语能力考试4级真题+答案+听力原文.pdf — 一碌蔗 secondary retype&quot;,
+    &quot;sha256&quot;: &quot;8bc661d803c0a22e70a7057bdb52d97814ba9b0167162ba5b0ec84839f322701&quot;,
+    &quot;physical_pages&quot;: [
+      2
+    ],
+    &quot;locator&quot;: &quot;VocabularyII global23, ひだり&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;ひだり; 石 / 右 / ＊ / 左&quot;
+  },
+  &quot;editorial_reading&quot;: null,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;editorial_omission&quot;,
+  &quot;rationale&quot;: &quot;Literal stars replace unrecovered wrong-character forms in every local PDF and both focused external retypes. Key alone cannot recover the alternatives; retain the surviving fragment privately and omit the scored question.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;H25-N4_2002-vocab-q023-missing-choices&quot;
+  ]
+}</pre></details></div><div class="review-record" id="principal_differences-H25-N4_2002-OMIT-024"><div class="review-label">Principal difference ·  · high</div><div class="comparison"><div><h4>Principal</h4><pre><mark class="diff-old">みなみ;</mark> <mark class="diff-old">南 / ＊ / ＊ / ＊</mark></pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">Not</mark> <mark class="diff-new">recorded</mark></pre></div></div><p>Literal stars replace unrecovered wrong-character forms in every local PDF and both focused external retypes. Key alone cannot recover the alternatives; retain the surviving fragment privately and omit the scored question.</p><span class="principal-repository-source">Principal source (page=2): <code>additional-assets/principals/N4_2002.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">VocabularyII global24, みなみ</span><details><summary>Full published record · principal_differences-H25-N4_2002-OMIT-024</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;H25-N4_2002-OMIT-024&quot;,
+  &quot;unit&quot;: &quot;N4_2002&quot;,
+  &quot;item_id&quot;: null,
+  &quot;field&quot;: &quot;&quot;,
+  &quot;current_value&quot;: null,
+  &quot;categories&quot;: [
+    &quot;missing_printed_content&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2002年日本语能力考试4级真题+答案+听力原文.pdf — 一碌蔗 secondary retype&quot;,
+    &quot;sha256&quot;: &quot;8bc661d803c0a22e70a7057bdb52d97814ba9b0167162ba5b0ec84839f322701&quot;,
+    &quot;physical_pages&quot;: [
+      2
+    ],
+    &quot;locator&quot;: &quot;VocabularyII global24, みなみ&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;みなみ; 南 / ＊ / ＊ / ＊&quot;
+  },
+  &quot;editorial_reading&quot;: null,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;editorial_omission&quot;,
+  &quot;rationale&quot;: &quot;Literal stars replace unrecovered wrong-character forms in every local PDF and both focused external retypes. Key alone cannot recover the alternatives; retain the surviving fragment privately and omit the scored question.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;H25-N4_2002-vocab-q024-missing-choices&quot;
+  ]
+}</pre></details></div></section><section class="review-group" id="review-vocab-q032" data-kinds="unresolved"><div class="review-group-heading"><h2>vocab-q032</h2><a href="../papers/N4_2002.html#vocab-q032">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">「わたしが　そうじを　しましょうか。」「ええ。＿＿＿。」<ol><li>おねがいします</li><li>いただきます</li><li>しつれいします</li><li>どうしたしまして</li></ol><p>Editorial key: 1</p></div></details><div class="review-record" id="unresolved_cases-H25-N4_2002-vocab-q032-distractor"><div class="review-label">Unresolved · /options/3 · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>どうしたしまして</pre></div><div><h4>Editorial</h4><pre>どうしたしまして</pre></div></div><p>Do not regularize an unkeyed response without evidence that the malformed form was not intentional. Key1おねがいします remains uniquely appropriate.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>Whether the original had the standard phrase or the observed malformed distractor is unestablished.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N4_2002.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">VocabularyIII local7, non-key response option4.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=3): <code>additional-assets/principals/N4_2002.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Affected written region<p>どうしたしまして; native close-up confirmsし, notい.</p></li><li><a href="https://riyutool.com/article/1209/%E6%97%A5%E8%AF%AD%E8%83%BD%E5%8A%9B%E8%80%83%E8%AF%951991~2005%E5%B9%B4%E8%AF%95%E9%A2%98%E9%9B%86.1.2.3.4.%E7%BA%A7%28%E9%A1%B5%2B1%29%2B%2B/" target="_blank" rel="noopener">Riyutool archived forum transcription,2002年日语能力测试4级考试（全）</a> · VocabularyIII question7 option4<p>どうしたしまして</p></li><li><a href="https://gaku.ru/download/jlpt/2002-4.pdf" target="_blank" rel="noopener">gaku2002-4.pdf</a> · Physical3, vocabularyIII question7 choice4, focused crop<p>Focused option crop also showsどうしたしまして.</p></li></ul><details><summary>Full published record · unresolved_cases-H25-N4_2002-vocab-q032-distractor</summary><pre>{
+  &quot;case_id&quot;: &quot;H25-N4_2002-vocab-q032-distractor&quot;,
+  &quot;unit&quot;: &quot;N4_2002&quot;,
+  &quot;item_id&quot;: &quot;vocab-q032&quot;,
+  &quot;field&quot;: &quot;/options/3&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;source_comparison&quot;,
+  &quot;current_value&quot;: &quot;どうしたしまして&quot;,
+  &quot;context&quot;: &quot;VocabularyIII local7, non-key response option4.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;どうしたしまして&quot;,
+      &quot;assessment&quot;: &quot;Unanimous observed reading, preserved.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;どういたしまして&quot;,
+      &quot;assessment&quot;: &quot;Standard phrase, plausible retype correction, but not witnessed in the checked sources.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;2002年日本语能力考试4级真题+答案+听力原文.pdf — 一碌蔗 secondary retype&quot;,
+      &quot;sha256&quot;: &quot;8bc661d803c0a22e70a7057bdb52d97814ba9b0167162ba5b0ec84839f322701&quot;,
+      &quot;physical_pages&quot;: [
+        3
+      ],
+      &quot;locator&quot;: &quot;Affected written region&quot;,
+      &quot;reading&quot;: &quot;どうしたしまして; native close-up confirmsし, notい.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;Riyutool archived forum transcription,2002年日语能力测试4级考试（全）&quot;,
+      &quot;url&quot;: &quot;https://riyutool.com/article/1209/%E6%97%A5%E8%AF%AD%E8%83%BD%E5%8A%9B%E8%80%83%E8%AF%951991~2005%E5%B9%B4%E8%AF%95%E9%A2%98%E9%9B%86.1.2.3.4.%E7%BA%A7%28%E9%A1%B5%2B1%29%2B%2B/&quot;,
+      &quot;sha256&quot;: &quot;3e3fe2111b20331193712b725b866498c5434fb53273baf32801f1ad65896b4a&quot;,
+      &quot;locator&quot;: &quot;VocabularyIII question7 option4&quot;,
+      &quot;reading&quot;: &quot;どうしたしまして&quot;,
+      &quot;lineage&quot;: &quot;Related secondary transcription; same distinctive source defects. No original custody established.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;gaku2002-4.pdf&quot;,
+      &quot;url&quot;: &quot;https://gaku.ru/download/jlpt/2002-4.pdf&quot;,
+      &quot;physical_pages&quot;: [
+        3
+      ],
+      &quot;reading&quot;: &quot;Focused option crop also showsどうしたしまして.&quot;,
+      &quot;locator&quot;: &quot;Physical3, vocabularyIII question7 choice4, focused crop&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Do not regularize an unkeyed response without evidence that the malformed form was not intentional. Key1おねがいします remains uniquely appropriate.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Read local PDFs and native4x crop.&quot;,
+    &quot;Compared focused external PDF crop and aligned forum option.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;Whether the original had the standard phrase or the observed malformed distractor is unestablished.&quot;
+}</pre></details></div></section><section class="review-group" id="review-reading-q007" data-kinds="difference"><div class="review-group-heading"><h2>reading-q007</h2><a href="../papers/N4_2002.html#reading-q007">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><ruby data-rubi-id="rr4-b7db2096c8df3c02d4e2" data-rubi-origin="project_rubi_restore">駅<rt>えき</rt></ruby>で　<ruby data-rubi-id="rr4-a159e12255e9a1bd17ec" data-rubi-origin="project_rubi_restore">友<rt>とも</rt></ruby>だち＿＿＿<ruby data-rubi-id="rr4-75a9865bda9e05edb3ae" data-rubi-origin="project_rubi_restore">会<rt>あ</rt></ruby>いました。<ol><li>に</li><li>を</li><li>へ</li><li>で</li></ol><p>Editorial key: 1</p></div></details><div class="review-record" id="principal_differences-H25-N4_2002-D001"><div class="review-label">Principal difference · /stem · high</div><div class="comparison"><div><h4>Principal</h4><pre>友<mark class="diff-old">ど</mark>ち</pre></div><div><h4>Editorial</h4><pre>友<mark class="diff-new">だ</mark>ち</pre></div></div><p>Correct the unambiguous lexical typo友どち to友だち, also correctly printed elsewhere in this same paper. It is untested context; particleに and key1 remain unchanged.</p><span class="principal-repository-source">Principal source (page=22): <code>additional-assets/principals/N4_2002.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-q007 stem</span><details><summary>Full published record · principal_differences-H25-N4_2002-D001</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;H25-N4_2002-D001&quot;,
+  &quot;unit&quot;: &quot;N4_2002&quot;,
+  &quot;item_id&quot;: &quot;reading-q007&quot;,
+  &quot;field&quot;: &quot;/stem&quot;,
+  &quot;current_value&quot;: &quot;駅で　友だち＿＿＿会いました。&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2002年日本语能力考试4级真题+答案+听力原文.pdf — 一碌蔗 secondary retype&quot;,
+    &quot;sha256&quot;: &quot;8bc661d803c0a22e70a7057bdb52d97814ba9b0167162ba5b0ec84839f322701&quot;,
+    &quot;physical_pages&quot;: [
+      22
+    ],
+    &quot;locator&quot;: &quot;reading-q007 stem&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;友どち&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;友だち&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Correct the unambiguous lexical typo友どち to友だち, also correctly printed elsewhere in this same paper. It is untested context; particleに and key1 remain unchanged.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-q008" data-kinds="difference"><div class="review-group-heading"><h2>reading-q008</h2><a href="../papers/N4_2002.html#reading-q008">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">きのう、テレビ＿＿＿<ruby data-rubi-id="rr4-d97eabde9ae2d4223f61" data-rubi-origin="project_rubi_restore">見<rt>み</rt></ruby>ませんでした。<ol><li>へ</li><li>に</li><li>は</li><li>が</li></ol><p>Editorial key: 3</p></div></details><div class="review-record" id="principal_differences-H25-N4_2002-D002"><div class="review-label">Principal difference · /stem · high</div><div class="comparison"><div><h4>Principal</h4><pre>きのう、テレビ<mark class="diff-old"> </mark>見ませんでした。</pre></div><div><h4>Editorial</h4><pre>きのう、テレビ<mark class="diff-new">＿＿＿</mark>見ませんでした。</pre></div></div><p>Restore the missing response slot betweenテレビ and見ませんでした. All four particle choices and the section task require a slot, key3は fits this negative object/topic, and the aligned forum preserves a wide gap at exactly this boundary. The local PDF has only ordinary word spacing.</p><span class="principal-repository-source">Principal source (page=22): <code>additional-assets/principals/N4_2002.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-q008 stem</span><details><summary>Full published record · principal_differences-H25-N4_2002-D002</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;H25-N4_2002-D002&quot;,
+  &quot;unit&quot;: &quot;N4_2002&quot;,
+  &quot;item_id&quot;: &quot;reading-q008&quot;,
+  &quot;field&quot;: &quot;/stem&quot;,
+  &quot;current_value&quot;: &quot;きのう、テレビ＿＿＿見ませんでした。&quot;,
+  &quot;categories&quot;: [
+    &quot;boundaries&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2002年日本语能力考试4级真题+答案+听力原文.pdf — 一碌蔗 secondary retype&quot;,
+    &quot;sha256&quot;: &quot;8bc661d803c0a22e70a7057bdb52d97814ba9b0167162ba5b0ec84839f322701&quot;,
+    &quot;physical_pages&quot;: [
+      22
+    ],
+    &quot;locator&quot;: &quot;reading-q008 stem&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;きのう、テレビ 見ませんでした。&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;きのう、テレビ＿＿＿見ませんでした。&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Restore the missing response slot betweenテレビ and見ませんでした. All four particle choices and the section task require a slot, key3は fits this negative object/topic, and the aligned forum preserves a wide gap at exactly this boundary. The local PDF has only ordinary word spacing.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-q046" data-kinds="difference provisional_fix"><div class="review-group-heading"><h2>reading-q046</h2><a href="../papers/N4_2002.html#reading-q046">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><p>Ａ「雨ですね。かさを　もって　いますか。」</p><p>Ｂ「けさは　天気が　よかったから･･････。」</p><p>Ａ「じゃ、これを　どうぞ。」</p><ol><li>Ｂさんは　かさを　もって　いません。</li><li>Ｂさんは　かさを　もって　います。</li><li>Ａさんは　かさを　かります。</li><li>Ａさんは　かさを　かしません。</li></ol><p>Editorial key: 1</p></div></details><div class="review-record" id="unresolved_cases-H25-N4_2002-reading-q046-opening"><div class="review-label">Provisional fix · /stem · medium</div><div class="comparison"><div><h4>Before</h4><pre>&lt;p&gt;「けさは　天気が　よかったから･･････。」&lt;/p&gt;&lt;p&gt;Ａ「じゃ、これを　どうぞ。」&lt;/p&gt;</pre></div><div><h4>Editorial</h4><pre>&lt;p&gt;<mark class="diff-new">Ａ「雨ですね。かさを　もって　いますか。」&lt;/p&gt;&lt;p&gt;Ｂ</mark>「けさは　天気が　よかったから･･････。」&lt;/p&gt;&lt;p&gt;Ａ「じゃ、これを　どうぞ。」&lt;/p&gt;</pre></div></div><p>Restore the firstAutterance and the followingBspeaker label exactly from the aligned forum passage. The surviving two utterances, all four options and key1 agree. The added opening makes the umbrella inference supported; its exact historical wording remains provisional because no original image was recovered.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>The added opening is supported by one related secondary transcription, not authenticated original pixels.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N4_2002.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">ReadingVI second short passage, umbrella conversation; local PDFs begin in the middle of the exchange.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=27): <code>additional-assets/principals/N4_2002.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Affected written region<p>「けさは 天気が よかったから･･････。」Ａ「じゃ、これを どうぞ。」</p></li><li><a href="https://riyutool.com/article/1209/%E6%97%A5%E8%AF%AD%E8%83%BD%E5%8A%9B%E8%80%83%E8%AF%951991~2005%E5%B9%B4%E8%AF%95%E9%A2%98%E9%9B%86.1.2.3.4.%E7%BA%A7%28%E9%A1%B5%2B1%29%2B%2B/" target="_blank" rel="noopener">Riyutool archived forum transcription,2002年日语能力测试4级考试（全）</a> · ReadingVI question2<p>FirstAutterance asks whether B has an umbrella; B explains the fine morning, followed by A’s offer. Full exact excerpt saved inriyutool_focused_excerpts.json.</p></li></ul><details><summary>Full published record · unresolved_cases-H25-N4_2002-reading-q046-opening</summary><pre>{
+  &quot;case_id&quot;: &quot;H25-N4_2002-reading-q046-opening&quot;,
+  &quot;unit&quot;: &quot;N4_2002&quot;,
+  &quot;item_id&quot;: &quot;reading-q046&quot;,
+  &quot;field&quot;: &quot;/stem&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;source_comparison&quot;,
+  &quot;before&quot;: {
+    &quot;html&quot;: &quot;&lt;p&gt;「けさは　天気が　よかったから･･････。」&lt;/p&gt;&lt;p&gt;Ａ「じゃ、これを　どうぞ。」&lt;/p&gt;&quot;
+  },
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;&lt;p&gt;Ａ「雨ですね。かさを　もって　いますか。」&lt;/p&gt;&lt;p&gt;Ｂ「けさは　天気が　よかったから･･････。」&lt;/p&gt;&lt;p&gt;Ａ「じゃ、これを　どうぞ。」&lt;/p&gt;&quot;
+  },
+  &quot;context&quot;: &quot;ReadingVI second short passage, umbrella conversation; local PDFs begin in the middle of the exchange.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: {
+        &quot;html&quot;: &quot;&lt;p&gt;「けさは　天気が　よかったから･･････。」&lt;/p&gt;&lt;p&gt;Ａ「じゃ、これを　どうぞ。」&lt;/p&gt;&quot;
+      },
+      &quot;assessment&quot;: &quot;All local PDFs and gaku retype omit opening andBlabel; not sufficient as a complete question.&quot;
+    },
+    {
+      &quot;value&quot;: {
+        &quot;html&quot;: &quot;&lt;p&gt;Ａ「雨ですね。かさを　もって　いますか。」&lt;/p&gt;&lt;p&gt;Ｂ「けさは　天気が　よかったから･･････。」&lt;/p&gt;&lt;p&gt;Ａ「じゃ、これを　どうぞ。」&lt;/p&gt;&quot;
+      },
+      &quot;assessment&quot;: &quot;Preferred aligned forum reading; original image remains unavailable.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;2002年日本语能力考试4级真题+答案+听力原文.pdf — 一碌蔗 secondary retype&quot;,
+      &quot;sha256&quot;: &quot;8bc661d803c0a22e70a7057bdb52d97814ba9b0167162ba5b0ec84839f322701&quot;,
+      &quot;physical_pages&quot;: [
+        27
+      ],
+      &quot;locator&quot;: &quot;Affected written region&quot;,
+      &quot;reading&quot;: &quot;「けさは 天気が よかったから･･････。」Ａ「じゃ、これを どうぞ。」&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;Riyutool archived forum transcription,2002年日语能力测试4级考试（全）&quot;,
+      &quot;url&quot;: &quot;https://riyutool.com/article/1209/%E6%97%A5%E8%AF%AD%E8%83%BD%E5%8A%9B%E8%80%83%E8%AF%951991~2005%E5%B9%B4%E8%AF%95%E9%A2%98%E9%9B%86.1.2.3.4.%E7%BA%A7%28%E9%A1%B5%2B1%29%2B%2B/&quot;,
+      &quot;sha256&quot;: &quot;3e3fe2111b20331193712b725b866498c5434fb53273baf32801f1ad65896b4a&quot;,
+      &quot;locator&quot;: &quot;ReadingVI question2&quot;,
+      &quot;reading&quot;: &quot;FirstAutterance asks whether B has an umbrella; B explains the fine morning, followed by A’s offer. Full exact excerpt saved inriyutool_focused_excerpts.json.&quot;,
+      &quot;lineage&quot;: &quot;Related secondary transcription; same distinctive source defects. No original custody established.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Restore the firstAutterance and the followingBspeaker label exactly from the aligned forum passage. The surviving two utterances, all four options and key1 agree. The added opening makes the umbrella inference supported; its exact historical wording remains provisional because no original image was recovered.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Compared every local written region, then focused gaku14 and the exact2002forum passage.&quot;,
+    &quot;Matched the surviving turns, all four alternatives and key1.&quot;,
+    &quot;Focused original-page searches yielded no discriminating image.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;The added opening is supported by one related secondary transcription, not authenticated original pixels.&quot;
+}</pre></details></div><div class="review-record" id="principal_differences-H25-N4_2002-D003"><div class="review-label">Principal difference · /stem · high</div><div class="comparison"><div><h4>Principal</h4><pre>「けさは 天気が よかったから･･････。」Ａ「じゃ、これを どうぞ。」</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">Ａ「雨ですね。かさを もって いますか。」Ｂ</mark>「けさは 天気が よかったから･･････。」Ａ「じゃ、これを どうぞ。」</pre></div></div><p>Restore the firstAutterance and the followingBspeaker label exactly from the aligned forum passage. The surviving two utterances, all four options and key1 agree. The added opening makes the umbrella inference supported; its exact historical wording remains provisional because no original image was recovered.</p><span class="principal-repository-source">Principal source (page=27): <code>additional-assets/principals/N4_2002.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-q046 stem</span><details><summary>Full published record · principal_differences-H25-N4_2002-D003</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;H25-N4_2002-D003&quot;,
+  &quot;unit&quot;: &quot;N4_2002&quot;,
+  &quot;item_id&quot;: &quot;reading-q046&quot;,
+  &quot;field&quot;: &quot;/stem&quot;,
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;&lt;p&gt;Ａ「雨ですね。かさを　もって　いますか。」&lt;/p&gt;&lt;p&gt;Ｂ「けさは　天気が　よかったから･･････。」&lt;/p&gt;&lt;p&gt;Ａ「じゃ、これを　どうぞ。」&lt;/p&gt;&quot;
+  },
+  &quot;categories&quot;: [
+    &quot;missing_printed_content&quot;,
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;2002年日本语能力考试4级真题+答案+听力原文.pdf — 一碌蔗 secondary retype&quot;,
+    &quot;sha256&quot;: &quot;8bc661d803c0a22e70a7057bdb52d97814ba9b0167162ba5b0ec84839f322701&quot;,
+    &quot;physical_pages&quot;: [
+      27
+    ],
+    &quot;locator&quot;: &quot;reading-q046 stem&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;「けさは 天気が よかったから･･････。」Ａ「じゃ、これを どうぞ。」&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;Ａ「雨ですね。かさを もって いますか。」Ｂ「けさは 天気が よかったから･･････。」Ａ「じゃ、これを どうぞ。」&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Restore the firstAutterance and the followingBspeaker label exactly from the aligned forum passage. The surviving two utterances, all four options and key1 agree. The added opening makes the umbrella inference supported; its exact historical wording remains provisional because no original image was recovered.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;H25-N4_2002-reading-q046-opening&quot;
+  ]
+}</pre></details></div></section></div></main><footer class="site-footer"><span class="developer-only">Developer mode</span></footer><div id="toast" role="status" class="toast" hidden></div><script id="page-data" type="application/json">{"review":true}</script><script id="theme-data" src="../assets/theme-data.js?v=f06ad9e2434b" defer></script><script src="../assets/app.js?v=0d75deb05ae3" defer></script></body></html>

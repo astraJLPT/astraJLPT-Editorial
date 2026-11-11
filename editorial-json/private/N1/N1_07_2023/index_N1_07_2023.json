@@ -1,0 +1,238 @@
+{
+  "unit": "N1_07_2023",
+  "sources": [
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\2016.12\\N1能力考试计算方法.xlsx",
+      "sha256": "509844a08048d2cb05c14dd4645d8a885a027af4caa2cc5f4f4b0fcf640e092b",
+      "Tier": "unranked",
+      "bytes": 9627,
+      "aliases": [
+        "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\N1能力考试计算方法.xlsx",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\N1能力考试计算方法.xlsx",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\N1能力考试计算方法.xlsx"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N1\\N1答题卡.pdf",
+      "sha256": "99d0ff9ea60c01b3c211c680c0c527a1604e0c91a52ece360e2873186b8dcef9",
+      "Tier": "unranked",
+      "bytes": 683222,
+      "aliases": [
+        "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\N1答题卡.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\N1答题卡.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\N1答题卡.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N1\\N1_multiple\\PaddleOCR\\pdf_2",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N1\\2023-07_N1\\2023-07_N1.json",
+      "sha256": "6fdc6a52e4906d696c5e3740c5fe20e18b75e9d2395b93c488f6ae5d3bce8781",
+      "Tier": "unranked",
+      "bytes": 207052,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N1 các năm Yuuki Bùi\\N1 7-2023\\Script Nghe N1 T7-2023.pdf",
+      "sha256": "0d6444438fad719f097bce5cd854ca534c0a424bfea68ec39780c1906ad9facc",
+      "Tier": "unranked",
+      "bytes": 1186685,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2023\\PaddleOCR\\pdf_2",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N1 các năm Yuuki Bùi\\N1 7-2023\\Đáp án N1 T7-2023.pdf",
+      "sha256": "817cd8f3272e56f833716d6fef7e5f829d3f6c90f9720df861719b82b92e4b82",
+      "Tier": "unranked",
+      "bytes": 861585,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2023\\PaddleOCR\\pdf_3",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N1 các năm Yuuki Bùi\\N1 7-2023\\Đề N1 T7-2023 (230711).pdf",
+      "sha256": "9bab7b30b71a5ee2d14ed843c3884db81f1a755958ac873342c5128e901b9650",
+      "Tier": 2,
+      "bytes": 3786085,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2023\\PaddleOCR\\pdf_4",
+      "VisionOCR": "preprocess\\N1\\N1_07_2023\\VisionOCR\\pdf_4"
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N1\\listening\\N1_07_2023_listening.html",
+      "sha256": "a9ae02693d0a0e48beaf93656886d23f565dcf820fcae5e2fb27f9c427394b53",
+      "Tier": "unranked",
+      "bytes": 105830,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N1\\reading\\N1_07_2023_reading.html",
+      "sha256": "f4b72eb3fe8d9991418da91a07a175448870f77faeed19bfeeb58b87b85c234b",
+      "Tier": "unranked",
+      "bytes": 110123,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N1\\vocab\\N1_07_2023_vocab.html",
+      "sha256": "b993da1ba8d37105a3a47f23dc095a38f315157a57c2c8c3345e1f720567f297",
+      "Tier": "unranked",
+      "bytes": 117090,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\2023\\2023.07\\2023年07月N1真题.pdf",
+      "sha256": "e3bb65c5359f428134f80bba55f548c1c4039470f13f749633236a471c890ba5",
+      "Tier": 3,
+      "bytes": 6561637,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2023\\PaddleOCR\\pdf_5",
+      "VisionOCR": "preprocess\\N1\\N1_07_2023\\VisionOCR\\pdf_5"
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\2023\\2023.07\\答案解析和听力原文\\2023年07月N1听力原文.pdf",
+      "sha256": "3eef5723c1ada909534d6263bd1acf868619ef65b68662c96b8ff3dc469eda8d",
+      "Tier": "unranked",
+      "bytes": 441402,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2023\\PaddleOCR\\pdf_6",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\2023\\2023.07\\答案解析和听力原文\\2023年07月N1答案解析.pdf",
+      "sha256": "45cde7fb6089b98c34e59ba7c4620a462eaa0f0436cf90f839dfa819655e675f",
+      "Tier": "unranked",
+      "bytes": 588658,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2023\\PaddleOCR\\pdf_7",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\2023\\2023.07\\答案解析和听力原文\\2023年07月N1阅读译文.pdf",
+      "sha256": "63761adfcb9c95e85452bedcd5ad3e27d9f405e5dbede0134671f0279933ee44",
+      "Tier": "unranked",
+      "bytes": 11963192,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2023\\PaddleOCR\\pdf_8",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N1真题（2010-2026.07）\\2023\\2023.07\\答案解析和听力原文\\2023年07月听力译文.pdf",
+      "sha256": "1d3eb7d881423e892ab951d461cd4e89b4f7a10cd0ed6d491f4c47a75da57ee7",
+      "Tier": "unranked",
+      "bytes": 5073498,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2023\\PaddleOCR\\pdf_9",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2023年7月\\【1】2023年07月N1 真题.pdf",
+      "sha256": "caa2bba5ab36ab1b8b1279798a5d772b396b551fed02493e823048b4759c5339",
+      "Tier": 2,
+      "bytes": 12795671,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2023\\PaddleOCR\\pdf_10",
+      "VisionOCR": "preprocess\\N1\\N1_07_2023\\VisionOCR\\pdf_10"
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2023年7月\\【1】2023年07月N1答案解析+听力原文.pdf",
+      "sha256": "8b9152eaf7a2e477061e89d0ea3c9bf444f94e041c1dda8f6b99e5c9e0e86d31",
+      "Tier": "unranked",
+      "bytes": 2787431,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2023\\PaddleOCR\\pdf_11",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2023年7月\\【2】2023年07月N1 真题.pdf",
+      "sha256": "f8dc1e4d14c645fa9fed777d49d28b210d312b3a80bb8a66e4816efd1fe5fc2b",
+      "Tier": 1,
+      "bytes": 7459248,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2023\\PaddleOCR\\pdf_12",
+      "VisionOCR": "preprocess\\N1\\N1_07_2023\\VisionOCR\\pdf_12"
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2023年7月\\【3】2023年07月N1 真题.pdf",
+      "sha256": "21237f6b51b4a48323451d50e3b2f59712e22c9f5e74c95028b5ff2eb9473078",
+      "Tier": 2,
+      "bytes": 1137777,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2023\\PaddleOCR\\pdf_13",
+      "VisionOCR": "preprocess\\N1\\N1_07_2023\\VisionOCR\\pdf_13"
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2023年7月\\【3】2023年07月N1答案解析+听力原文+译文.pdf",
+      "sha256": "4ab2977921a33e05b2356739d4268be03e590ce8940b75c3cf441b941aa36c1b",
+      "Tier": "unranked",
+      "bytes": 607560,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2023\\PaddleOCR\\pdf_14",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\2023年7月\\2023年7月N1听力原文.pdf",
+      "sha256": "04df5d61be16a6b9eb0cce1a11b50a946a1e3f21adf5aa9615163c807d9eb5ab",
+      "Tier": "unranked",
+      "bytes": 7761256,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2023\\PaddleOCR\\pdf_15",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\2023年7月\\2023年7月N1听力题及答案解析.pdf",
+      "sha256": "4c51bc4d7234ababc6e24a13ccc3bb1216fda0b430792dce345672b690a939cd",
+      "Tier": "unranked",
+      "bytes": 7762508,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2023\\PaddleOCR\\pdf_16",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\2023年7月\\2023年7月N1真题 （13页）.pdf",
+      "sha256": "86e4e68cf76f63c41ed5c5541fe725afc242e97fff51890a3ef9a28d9cadb7f5",
+      "Tier": 2,
+      "bytes": 620261,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N1\\N1_07_2023\\PaddleOCR\\pdf_17",
+      "VisionOCR": "preprocess\\N1\\N1_07_2023\\VisionOCR\\pdf_17"
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N1历年真题\\2023年7月\\2023年7月N1答案及解析.docx",
+      "sha256": "ecdb10cb70ee1ee365bd600cf2d0f3a598528d435bb09459adb4a4734b8c179c",
+      "Tier": "unranked",
+      "bytes": 16901,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N1\\2023-07_N1\\images\\2023-07_N1_s13-q01-img01.jpg",
+      "sha256": "344720e0cd155dab4006c6ad92bbd7cfd176c5d83eeddd38ed2ea1503fa3b8fb",
+      "Tier": "unranked",
+      "bytes": 472447,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N1\\2023-07_N1\\images\\2023-07_N1_s13-q01-img02.jpg",
+      "sha256": "9eddd168223cbd021027056a80aab2b4a4d23b45f97ca1c1ed10d638249e3a2d",
+      "Tier": "unranked",
+      "bytes": 155311,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    }
+  ]
+}

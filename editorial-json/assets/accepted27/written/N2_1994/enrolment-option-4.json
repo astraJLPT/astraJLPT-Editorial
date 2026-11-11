@@ -1,0 +1,89 @@
+{
+  "contract": "historical-artwork-1.0",
+  "id": "N2_1994-enrolment-4",
+  "kind": "university_enrolment_option",
+  "unit": "N2_1994",
+  "item_id": "reading-q021",
+  "source": {
+    "source_path": "src/CodexDownloads/UserApprovedReferenceScans/日本語能力1991～1999年試験問題集2級.pdf",
+    "source_sha256": "0a6634758dce0a258ffaf92c6c8ea1a738a4b8ceb52cd75cb44a4d8d340dfa64",
+    "physical_page": 161
+  },
+  "raw_crop": {
+    "path": "preprocess/assets/handoff27/written/N2_1994/enrolment-option-4-source.png",
+    "sha256": "1be9de9b699f14b73526c3cac9a4ac36b6a04db0dccea91a5de4f0b6b466d06a"
+  },
+  "selection_note": "Native TeX lines and Japanese labels preserve the independently inspected source option relationships; original one-bit crop stays canonical.",
+  "limits": "Original font and small scan-mark outlines unverified. Rounded category borders regularized; enrolment vertices are approximate image-coordinate traces, never precise historical percentage claims. No added data labels.",
+  "data": {
+    "option": 4,
+    "coordinate_status": "approximate_digitization_not_exact_historical_data",
+    "years": [
+      1965,
+      1970,
+      1975,
+      1980,
+      1985,
+      1990
+    ],
+    "x_pixels": [
+      59,
+      103,
+      147,
+      191,
+      236,
+      281
+    ],
+    "baseline_pixel": 273,
+    "tick_pixels_per_ten": 43.25,
+    "printed_y_ticks": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ],
+    "y_axis_top_pixel": 12,
+    "series": [
+      {
+        "label": "男子",
+        "line": "short_dashed",
+        "marker": "diamond",
+        "y_pixels": [
+          177,
+          170,
+          165,
+          117,
+          96,
+          77
+        ]
+      },
+      {
+        "label": "全体",
+        "line": "solid",
+        "marker": "circle",
+        "y_pixels": [
+          203,
+          197,
+          189,
+          144,
+          110,
+          88
+        ]
+      },
+      {
+        "label": "女子",
+        "line": "dash_dot",
+        "marker": "square",
+        "y_pixels": [
+          225,
+          221,
+          213,
+          173,
+          132,
+          99
+        ]
+      }
+    ]
+  }
+}

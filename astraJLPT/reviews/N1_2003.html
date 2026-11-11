@@ -1,0 +1,621 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark light"><title>Developer review · N1_2003 · astraJLPT</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../assets/fonts-d5ec573601f1e419.css?v=a5af70136d5d"><link rel="stylesheet" href="../assets/themes.css?v=7ad0820747dc"><link rel="stylesheet" href="../assets/answer-marking.css?v=bec6b4920050"><link rel="stylesheet" href="../assets/site.css?v=7ae9ae7c768b"><link rel="stylesheet" href="../assets/pdf-typography.css?v=ba55af25606f"><link rel="stylesheet" href="../assets/paper-shared.css?v=8f3ca38dca80"></head><body class="catalog-page"><a class="skip-link" href="#content">Skip to content</a><header class="topbar" id="page-top" tabindex="-1"><a class="wordmark" id="brand" href="../index.html">astra<span>JLPT</span></a><details id="settings" class="settings"><summary aria-label="Open settings" title="Settings"><span aria-hidden="true">⚙</span><span class="sr-only">Settings</span></summary><div class="settings-panel"><div class="settings-title"><h2>settings</h2><button type="button" id="close-settings" class="js-only" aria-label="Close settings">×</button></div><div class="settings-tabs" role="group" aria-label="Settings categories"><label><input type="radio" name="settings-view" value="appearance" checked><span>theme</span></label><label><input type="radio" name="settings-view" value="browser"><span>browser</span></label></div><section data-settings="appearance"><div class="theme-workspace"><div class="theme-picker"><div class="setting-heading"><h3>theme</h3></div><div class="theme-grid originals"><label class="theme-card ps-gh"><input type="radio" name="theme" id="theme-jlpt_paper" value="jlpt_paper"><span>jlpt_paper</span></label><label class="theme-card ps-ck"><input type="radio" name="theme" id="theme-astraJLPT_dark" value="astraJLPT_dark" checked><span>astraJLPT_dark</span></label><label class="theme-card ps-ga"><input type="radio" name="theme" id="theme-astraJLPT_sepia" value="astraJLPT_sepia"><span>astraJLPT_sepia</span></label></div><div class="js-only"><p class="settings-label">three random picks</p><div class="theme-grid" id="quick-picks"></div></div><details><summary>all 187 Monkeytype palettes</summary><label class="theme-search js-only">find a palette<input id="theme-search" type="search" placeholder="search themes" autocomplete="off"></label><div class="theme-grid theme-catalog"><label class="theme-card ps-e9"><input type="radio" name="theme" id="theme-8008" value="8008"><span>8008</span></label><label class="theme-card ps-cw"><input type="radio" name="theme" id="theme-80s_after_dark" value="80s_after_dark"><span>80s after dark</span></label><label class="theme-card ps-fq"><input type="radio" name="theme" id="theme-9009" value="9009"><span>9009</span></label><label class="theme-card ps-cc"><input type="radio" name="theme" id="theme-aether" value="aether"><span>aether</span></label><label class="theme-card ps-cz"><input type="radio" name="theme" id="theme-alduin" value="alduin"><span>alduin</span></label><label class="theme-card ps-el"><input type="radio" name="theme" id="theme-alpine" value="alpine"><span>alpine</span></label><label class="theme-card ps-bg"><input type="radio" name="theme" id="theme-anti_hero" value="anti_hero"><span>anti hero</span></label><label class="theme-card ps-c3"><input type="radio" name="theme" id="theme-arch" value="arch"><span>arch</span></label><label class="theme-card ps-bt"><input type="radio" name="theme" id="theme-aurora" value="aurora"><span>aurora</span></label><label class="theme-card ps-g8"><input type="radio" name="theme" id="theme-beach" value="beach"><span>beach</span></label><label class="theme-card ps-dz"><input type="radio" name="theme" id="theme-bento" value="bento"><span>bento</span></label><label class="theme-card ps-f1"><input type="radio" name="theme" id="theme-bingsu" value="bingsu"><span>bingsu</span></label><label class="theme-card ps-dl"><input type="radio" name="theme" id="theme-bliss" value="bliss"><span>bliss</span></label><label class="theme-card ps-bn"><input type="radio" name="theme" id="theme-blue_dolphin" value="blue_dolphin"><span>blue dolphin</span></label><label class="theme-card ps-dd"><input type="radio" name="theme" id="theme-blueberry_dark" value="blueberry_dark"><span>blueberry dark</span></label><label class="theme-card ps-fd"><input type="radio" name="theme" id="theme-blueberry_light" value="blueberry_light"><span>blueberry light</span></label><label class="theme-card ps-ep"><input type="radio" name="theme" id="theme-botanical" value="botanical"><span>botanical</span></label><label class="theme-card ps-cl"><input type="radio" name="theme" id="theme-bouquet" value="bouquet"><span>bouquet</span></label><label class="theme-card ps-fk"><input type="radio" name="theme" id="theme-breeze" value="breeze"><span>breeze</span></label><label class="theme-card ps-dk"><input type="radio" name="theme" id="theme-bushido" value="bushido"><span>bushido</span></label><label class="theme-card ps-f5"><input type="radio" name="theme" id="theme-cafe" value="cafe"><span>cafe</span></label><label class="theme-card ps-g1"><input type="radio" name="theme" id="theme-camping" value="camping"><span>camping</span></label><label class="theme-card ps-e4"><input type="radio" name="theme" id="theme-carbon" value="carbon"><span>carbon</span></label><label class="theme-card ps-d3"><input type="radio" name="theme" id="theme-catppuccin" value="catppuccin"><span>catppuccin</span></label><label class="theme-card ps-ch"><input type="radio" name="theme" id="theme-chaos_theory" value="chaos_theory"><span>chaos theory</span></label><label class="theme-card ps-g3"><input type="radio" name="theme" id="theme-cheesecake" value="cheesecake"><span>cheesecake</span></label><label class="theme-card ps-e7"><input type="radio" name="theme" id="theme-cherry_blossom" value="cherry_blossom"><span>cherry blossom</span></label><label class="theme-card ps-eh"><input type="radio" name="theme" id="theme-comfy" value="comfy"><span>comfy</span></label><label class="theme-card ps-ef"><input type="radio" name="theme" id="theme-copper" value="copper"><span>copper</span></label><label class="theme-card ps-g6"><input type="radio" name="theme" id="theme-creamsicle" value="creamsicle"><span>creamsicle</span></label><label class="theme-card ps-em"><input type="radio" name="theme" id="theme-cy_red" value="cy_red"><span>cy red</span></label><label class="theme-card ps-co"><input type="radio" name="theme" id="theme-cyberspace" value="cyberspace"><span>cyberspace</span></label><label class="theme-card ps-cd"><input type="radio" name="theme" id="theme-dark" value="dark"><span>dark</span></label><label class="theme-card ps-bz"><input type="radio" name="theme" id="theme-dark_magic_girl" value="dark_magic_girl"><span>dark magic girl</span></label><label class="theme-card ps-d6"><input type="radio" name="theme" id="theme-dark_note" value="dark_note"><span>dark note</span></label><label class="theme-card ps-g5"><input type="radio" name="theme" id="theme-darling" value="darling"><span>darling</span></label><label class="theme-card ps-bw"><input type="radio" name="theme" id="theme-deku" value="deku"><span>deku</span></label><label class="theme-card ps-g9"><input type="radio" name="theme" id="theme-desert_oasis" value="desert_oasis"><span>desert oasis</span></label><label class="theme-card ps-cx"><input type="radio" name="theme" id="theme-dev" value="dev"><span>dev</span></label><label class="theme-card ps-ek"><input type="radio" name="theme" id="theme-diner" value="diner"><span>diner</span></label><label class="theme-card ps-gi"><input type="radio" name="theme" id="theme-dino" value="dino"><span>dino</span></label><label class="theme-card ps-e6"><input type="radio" name="theme" id="theme-discord" value="discord"><span>discord</span></label><label class="theme-card ps-fc"><input type="radio" name="theme" id="theme-dmg" value="dmg"><span>dmg</span></label><label class="theme-card ps-fj"><input type="radio" name="theme" id="theme-dollar" value="dollar"><span>dollar</span></label><label class="theme-card ps-ce"><input type="radio" name="theme" id="theme-dots" value="dots"><span>dots</span></label><label class="theme-card ps-dq"><input type="radio" name="theme" id="theme-dracula" value="dracula"><span>dracula</span></label><label class="theme-card ps-cq"><input type="radio" name="theme" id="theme-drowning" value="drowning"><span>drowning</span></label><label class="theme-card ps-eo"><input type="radio" name="theme" id="theme-dualshot" value="dualshot"><span>dualshot</span></label><label class="theme-card ps-dr"><input type="radio" name="theme" id="theme-earthsong" value="earthsong"><span>earthsong</span></label><label class="theme-card ps-ci"><input type="radio" name="theme" id="theme-everblush" value="everblush"><span>everblush</span></label><label class="theme-card ps-bq"><input type="radio" name="theme" id="theme-evil_eye" value="evil_eye"><span>evil eye</span></label><label class="theme-card ps-bp"><input type="radio" name="theme" id="theme-ez_mode" value="ez_mode"><span>ez mode</span></label><label class="theme-card ps-c8"><input type="radio" name="theme" id="theme-fire" value="fire"><span>fire</span></label><label class="theme-card ps-eb"><input type="radio" name="theme" id="theme-fledgling" value="fledgling"><span>fledgling</span></label><label class="theme-card ps-f3"><input type="radio" name="theme" id="theme-fleuriste" value="fleuriste"><span>fleuriste</span></label><label class="theme-card ps-bl"><input type="radio" name="theme" id="theme-floret" value="floret"><span>floret</span></label><label class="theme-card ps-fh"><input type="radio" name="theme" id="theme-froyo" value="froyo"><span>froyo</span></label><label class="theme-card ps-et"><input type="radio" name="theme" id="theme-frozen_llama" value="frozen_llama"><span>frozen llama</span></label><label class="theme-card ps-f9"><input type="radio" name="theme" id="theme-fruit_chew" value="fruit_chew"><span>fruit chew</span></label><label class="theme-card ps-en"><input type="radio" name="theme" id="theme-fundamentals" value="fundamentals"><span>fundamentals</span></label><label class="theme-card ps-e0"><input type="radio" name="theme" id="theme-future_funk" value="future_funk"><span>future funk</span></label><label class="theme-card ps-dc"><input type="radio" name="theme" id="theme-github" value="github"><span>github</span></label><label class="theme-card ps-fn"><input type="radio" name="theme" id="theme-godspeed" value="godspeed"><span>godspeed</span></label><label class="theme-card ps-e3"><input type="radio" name="theme" id="theme-graen" value="graen"><span>graen</span></label><label class="theme-card ps-ea"><input type="radio" name="theme" id="theme-grand_prix" value="grand_prix"><span>grand prix</span></label><label class="theme-card ps-dv"><input type="radio" name="theme" id="theme-grape" value="grape"><span>grape</span></label><label class="theme-card ps-dp"><input type="radio" name="theme" id="theme-gruvbox_dark" value="gruvbox_dark"><span>gruvbox dark</span></label><label class="theme-card ps-g2"><input type="radio" name="theme" id="theme-gruvbox_light" value="gruvbox_light"><span>gruvbox light</span></label><label class="theme-card ps-bu"><input type="radio" name="theme" id="theme-hammerhead" value="hammerhead"><span>hammerhead</span></label><label class="theme-card ps-fa"><input type="radio" name="theme" id="theme-hanok" value="hanok"><span>hanok</span></label><label class="theme-card ps-ed"><input type="radio" name="theme" id="theme-hedge" value="hedge"><span>hedge</span></label><label class="theme-card ps-fu"><input type="radio" name="theme" id="theme-honey" value="honey"><span>honey</span></label><label class="theme-card ps-d0"><input type="radio" name="theme" id="theme-horizon" value="horizon"><span>horizon</span></label><label class="theme-card ps-bf"><input type="radio" name="theme" id="theme-husqy" value="husqy"><span>husqy</span></label><label class="theme-card ps-cj"><input type="radio" name="theme" id="theme-iceberg_dark" value="iceberg_dark"><span>iceberg dark</span></label><label class="theme-card ps-fl"><input type="radio" name="theme" id="theme-iceberg_light" value="iceberg_light"><span>iceberg light</span></label><label class="theme-card ps-c7"><input type="radio" name="theme" id="theme-incognito" value="incognito"><span>incognito</span></label><label class="theme-card ps-d8"><input type="radio" name="theme" id="theme-ishtar" value="ishtar"><span>ishtar</span></label><label class="theme-card ps-eu"><input type="radio" name="theme" id="theme-iv_clover" value="iv_clover"><span>iv clover</span></label><label class="theme-card ps-c2"><input type="radio" name="theme" id="theme-iv_spade" value="iv_spade"><span>iv spade</span></label><label class="theme-card ps-cu"><input type="radio" name="theme" id="theme-joker" value="joker"><span>joker</span></label><label class="theme-card ps-de"><input type="radio" name="theme" id="theme-laser" value="laser"><span>laser</span></label><label class="theme-card ps-ex"><input type="radio" name="theme" id="theme-lavender" value="lavender"><span>lavender</span></label><label class="theme-card ps-ew"><input type="radio" name="theme" id="theme-leather" value="leather"><span>leather</span></label><label class="theme-card ps-fo"><input type="radio" name="theme" id="theme-lil_dragon" value="lil_dragon"><span>lil dragon</span></label><label class="theme-card ps-gd"><input type="radio" name="theme" id="theme-lilac_mist" value="lilac_mist"><span>lilac mist</span></label><label class="theme-card ps-er"><input type="radio" name="theme" id="theme-lime" value="lime"><span>lime</span></label><label class="theme-card ps-df"><input type="radio" name="theme" id="theme-luna" value="luna"><span>luna</span></label><label class="theme-card ps-ez"><input type="radio" name="theme" id="theme-macroblank" value="macroblank"><span>macroblank</span></label><label class="theme-card ps-gk"><input type="radio" name="theme" id="theme-magic_girl" value="magic_girl"><span>magic girl</span></label><label class="theme-card ps-du"><input type="radio" name="theme" id="theme-mashu" value="mashu"><span>mashu</span></label><label class="theme-card ps-ei"><input type="radio" name="theme" id="theme-matcha_moccha" value="matcha_moccha"><span>matcha moccha</span></label><label class="theme-card ps-dn"><input type="radio" name="theme" id="theme-material" value="material"><span>material</span></label><label class="theme-card ps-be"><input type="radio" name="theme" id="theme-matrix" value="matrix"><span>matrix</span></label><label class="theme-card ps-br"><input type="radio" name="theme" id="theme-menthol" value="menthol"><span>menthol</span></label><label class="theme-card ps-dg"><input type="radio" name="theme" id="theme-metaverse" value="metaverse"><span>metaverse</span></label><label class="theme-card ps-ca"><input type="radio" name="theme" id="theme-metropolis" value="metropolis"><span>metropolis</span></label><label class="theme-card ps-g0"><input type="radio" name="theme" id="theme-mexican" value="mexican"><span>mexican</span></label><label class="theme-card ps-fv"><input type="radio" name="theme" id="theme-miami" value="miami"><span>miami</span></label><label class="theme-card ps-cn"><input type="radio" name="theme" id="theme-miami_nights" value="miami_nights"><span>miami nights</span></label><label class="theme-card ps-c0"><input type="radio" name="theme" id="theme-midnight" value="midnight"><span>midnight</span></label><label class="theme-card ps-gf"><input type="radio" name="theme" id="theme-milkshake" value="milkshake"><span>milkshake</span></label><label class="theme-card ps-bv"><input type="radio" name="theme" id="theme-mint" value="mint"><span>mint</span></label><label class="theme-card ps-ey"><input type="radio" name="theme" id="theme-mizu" value="mizu"><span>mizu</span></label><label class="theme-card ps-dy"><input type="radio" name="theme" id="theme-modern_dolch" value="modern_dolch"><span>modern dolch</span></label><label class="theme-card ps-fe"><input type="radio" name="theme" id="theme-modern_dolch_light" value="modern_dolch_light"><span>modern dolch light</span></label><label class="theme-card ps-gm"><input type="radio" name="theme" id="theme-modern_ink" value="modern_ink"><span>modern ink</span></label><label class="theme-card ps-do"><input type="radio" name="theme" id="theme-monokai" value="monokai"><span>monokai</span></label><label class="theme-card ps-cs"><input type="radio" name="theme" id="theme-moonlight" value="moonlight"><span>moonlight</span></label><label class="theme-card ps-c9"><input type="radio" name="theme" id="theme-mountain" value="mountain"><span>mountain</span></label><label class="theme-card ps-f8"><input type="radio" name="theme" id="theme-mr_sleeves" value="mr_sleeves"><span>mr sleeves</span></label><label class="theme-card ps-gj"><input type="radio" name="theme" id="theme-ms_cupcakes" value="ms_cupcakes"><span>ms cupcakes</span></label><label class="theme-card ps-ej"><input type="radio" name="theme" id="theme-muted" value="muted"><span>muted</span></label><label class="theme-card ps-cg"><input type="radio" name="theme" id="theme-nautilus" value="nautilus"><span>nautilus</span></label><label class="theme-card ps-db"><input type="radio" name="theme" id="theme-nebula" value="nebula"><span>nebula</span></label><label class="theme-card ps-da"><input type="radio" name="theme" id="theme-night_runner" value="night_runner"><span>night runner</span></label><label class="theme-card ps-dj"><input type="radio" name="theme" id="theme-nord" value="nord"><span>nord</span></label><label class="theme-card ps-fp"><input type="radio" name="theme" id="theme-nord_light" value="nord_light"><span>nord light</span></label><label class="theme-card ps-di"><input type="radio" name="theme" id="theme-norse" value="norse"><span>norse</span></label><label class="theme-card ps-e5"><input type="radio" name="theme" id="theme-oblivion" value="oblivion"><span>oblivion</span></label><label class="theme-card ps-fm"><input type="radio" name="theme" id="theme-olive" value="olive"><span>olive</span></label><label class="theme-card ps-cy"><input type="radio" name="theme" id="theme-olivia" value="olivia"><span>olivia</span></label><label class="theme-card ps-e2"><input type="radio" name="theme" id="theme-onedark" value="onedark"><span>onedark</span></label><label class="theme-card ps-f4"><input type="radio" name="theme" id="theme-our_theme" value="our_theme"><span>our theme</span></label><label class="theme-card ps-ee"><input type="radio" name="theme" id="theme-pale_nimbus" value="pale_nimbus"><span>pale nimbus</span></label><label class="theme-card ps-fr"><input type="radio" name="theme" id="theme-paper" value="paper"><span>paper</span></label><label class="theme-card ps-eq"><input type="radio" name="theme" id="theme-passion_fruit" value="passion_fruit"><span>passion fruit</span></label><label class="theme-card ps-ff"><input type="radio" name="theme" id="theme-pastel" value="pastel"><span>pastel</span></label><label class="theme-card ps-ds"><input type="radio" name="theme" id="theme-peach_blossom" value="peach_blossom"><span>peach blossom</span></label><label class="theme-card ps-fg"><input type="radio" name="theme" id="theme-peaches" value="peaches"><span>peaches</span></label><label class="theme-card ps-bk"><input type="radio" name="theme" id="theme-phantom" value="phantom"><span>phantom</span></label><label class="theme-card ps-fz"><input type="radio" name="theme" id="theme-pink_lemonade" value="pink_lemonade"><span>pink lemonade</span></label><label class="theme-card ps-cm"><input type="radio" name="theme" id="theme-pulse" value="pulse"><span>pulse</span></label><label class="theme-card ps-d4"><input type="radio" name="theme" id="theme-purpleish" value="purpleish"><span>purpleish</span></label><label class="theme-card ps-fy"><input type="radio" name="theme" id="theme-rainbow_trail" value="rainbow_trail"><span>rainbow trail</span></label><label class="theme-card ps-ct"><input type="radio" name="theme" id="theme-red_dragon" value="red_dragon"><span>red dragon</span></label><label class="theme-card ps-es"><input type="radio" name="theme" id="theme-red_samurai" value="red_samurai"><span>red samurai</span></label><label class="theme-card ps-e1"><input type="radio" name="theme" id="theme-repose_dark" value="repose_dark"><span>repose dark</span></label><label class="theme-card ps-fs"><input type="radio" name="theme" id="theme-repose_light" value="repose_light"><span>repose light</span></label><label class="theme-card ps-fb"><input type="radio" name="theme" id="theme-retro" value="retro"><span>retro</span></label><label class="theme-card ps-bx"><input type="radio" name="theme" id="theme-retrocast" value="retrocast"><span>retrocast</span></label><label class="theme-card ps-cd"><input type="radio" name="theme" id="theme-rgb" value="rgb"><span>rgb</span></label><label class="theme-card ps-d5"><input type="radio" name="theme" id="theme-rose_pine" value="rose_pine"><span>rose pine</span></label><label class="theme-card ps-gc"><input type="radio" name="theme" id="theme-rose_pine_dawn" value="rose_pine_dawn"><span>rose pine dawn</span></label><label class="theme-card ps-dt"><input type="radio" name="theme" id="theme-rose_pine_moon" value="rose_pine_moon"><span>rose pine moon</span></label><label class="theme-card ps-cv"><input type="radio" name="theme" id="theme-rudy" value="rudy"><span>rudy</span></label><label class="theme-card ps-by"><input type="radio" name="theme" id="theme-ryujinscales" value="ryujinscales"><span>ryujinscales</span></label><label class="theme-card ps-fi"><input type="radio" name="theme" id="theme-serika" value="serika"><span>serika</span></label><label class="theme-card ps-e8"><input type="radio" name="theme" id="theme-serika_dark" value="serika_dark"><span>serika dark</span></label><label class="theme-card ps-dh"><input type="radio" name="theme" id="theme-sewing_tin" value="sewing_tin"><span>sewing tin</span></label><label class="theme-card ps-gg"><input type="radio" name="theme" id="theme-sewing_tin_light" value="sewing_tin_light"><span>sewing tin light</span></label><label class="theme-card ps-bi"><input type="radio" name="theme" id="theme-shadow" value="shadow"><span>shadow</span></label><label class="theme-card ps-f6"><input type="radio" name="theme" id="theme-shoko" value="shoko"><span>shoko</span></label><label class="theme-card ps-ge"><input type="radio" name="theme" id="theme-slambook" value="slambook"><span>slambook</span></label><label class="theme-card ps-f2"><input type="radio" name="theme" id="theme-snes" value="snes"><span>snes</span></label><label class="theme-card ps-gb"><input type="radio" name="theme" id="theme-soaring_skies" value="soaring_skies"><span>soaring skies</span></label><label class="theme-card ps-bm"><input type="radio" name="theme" id="theme-solarized_dark" value="solarized_dark"><span>solarized dark</span></label><label class="theme-card ps-g4"><input type="radio" name="theme" id="theme-solarized_light" value="solarized_light"><span>solarized light</span></label><label class="theme-card ps-bj"><input type="radio" name="theme" id="theme-solarized_osaka" value="solarized_osaka"><span>solarized osaka</span></label><label class="theme-card ps-dw"><input type="radio" name="theme" id="theme-sonokai" value="sonokai"><span>sonokai</span></label><label class="theme-card ps-c5"><input type="radio" name="theme" id="theme-spiderman" value="spiderman"><span>spiderman</span></label><label class="theme-card ps-bs"><input type="radio" name="theme" id="theme-stealth" value="stealth"><span>stealth</span></label><label class="theme-card ps-fw"><input type="radio" name="theme" id="theme-strawberry" value="strawberry"><span>strawberry</span></label><label class="theme-card ps-cf"><input type="radio" name="theme" id="theme-striker" value="striker"><span>striker</span></label><label class="theme-card ps-ec"><input type="radio" name="theme" id="theme-suisei" value="suisei"><span>suisei</span></label><label class="theme-card ps-d9"><input type="radio" name="theme" id="theme-sunset" value="sunset"><span>sunset</span></label><label class="theme-card ps-dm"><input type="radio" name="theme" id="theme-superuser" value="superuser"><span>superuser</span></label><label class="theme-card ps-bo"><input type="radio" name="theme" id="theme-sweden" value="sweden"><span>sweden</span></label><label class="theme-card ps-g7"><input type="radio" name="theme" id="theme-tangerine" value="tangerine"><span>tangerine</span></label><label class="theme-card ps-f0"><input type="radio" name="theme" id="theme-taro" value="taro"><span>taro</span></label><label class="theme-card ps-cr"><input type="radio" name="theme" id="theme-terminal" value="terminal"><span>terminal</span></label><label class="theme-card ps-c4"><input type="radio" name="theme" id="theme-terra" value="terra"><span>terra</span></label><label class="theme-card ps-ft"><input type="radio" name="theme" id="theme-terrazzo" value="terrazzo"><span>terrazzo</span></label><label class="theme-card ps-c1"><input type="radio" name="theme" id="theme-terror_below" value="terror_below"><span>terror below</span></label><label class="theme-card ps-f7"><input type="radio" name="theme" id="theme-tiramisu" value="tiramisu"><span>tiramisu</span></label><label class="theme-card ps-eg"><input type="radio" name="theme" id="theme-trackday" value="trackday"><span>trackday</span></label><label class="theme-card ps-bh"><input type="radio" name="theme" id="theme-trance" value="trance"><span>trance</span></label><label class="theme-card ps-c6"><input type="radio" name="theme" id="theme-tron_orange" value="tron_orange"><span>tron orange</span></label><label class="theme-card ps-ev"><input type="radio" name="theme" id="theme-vaporwave" value="vaporwave"><span>vaporwave</span></label><label class="theme-card ps-cb"><input type="radio" name="theme" id="theme-vesper" value="vesper"><span>vesper</span></label><label class="theme-card ps-gl"><input type="radio" name="theme" id="theme-vesper_light" value="vesper_light"><span>vesper light</span></label><label class="theme-card ps-dx"><input type="radio" name="theme" id="theme-viridescent" value="viridescent"><span>viridescent</span></label><label class="theme-card ps-cp"><input type="radio" name="theme" id="theme-voc" value="voc"><span>voc</span></label><label class="theme-card ps-d2"><input type="radio" name="theme" id="theme-vscode" value="vscode"><span>vscode</span></label><label class="theme-card ps-d7"><input type="radio" name="theme" id="theme-watermelon" value="watermelon"><span>watermelon</span></label><label class="theme-card ps-d1"><input type="radio" name="theme" id="theme-wavez" value="wavez"><span>wavez</span></label><label class="theme-card ps-fx"><input type="radio" name="theme" id="theme-witch_girl" value="witch_girl"><span>witch girl</span></label></div></details><div class="js-only ps-14h" id="monkeytype-text-source">
+<h3>reading text color</h3>
+<p class="control-help">Auto chooses the more readable palette color. Choose sub or text to set it yourself; answer colors adapt.</p>
+<div aria-label="Monkeytype reading text color" class="segmented" role="group">
+<label><input checked="" name="text-source" type="radio" value="auto"/><span>auto</span></label>
+<label><input name="text-source" type="radio" value="sub"/><span>sub</span></label>
+<label><input name="text-source" type="radio" value="text"/><span>text</span></label>
+</div>
+<p aria-live="polite" class="control-help ps-14i" id="monkeytype-text-status" role="status"></p>
+</div></div><aside class="theme-editor js-only" aria-label="Customize theme colors"><div class="color-editor-heading"><h3>colors</h3><button type="button" id="reset-theme-colors" aria-label="Reset this theme">reset</button></div><span class="sr-only" id="color-format-help">Choose a swatch or enter hex. Transparent borders accept #RRGGBBAA. Reset restores the theme color.</span><span class="sr-only" id="color-edit-status" role="status" aria-live="polite"></span><div class="main-colors"><div class="color-row" data-color-row="bg">
+<label for="color-bg">background</label>
+<div class="color-inputs"><input type="color" id="swatch-bg" aria-label="background swatch" data-color-swatch="bg">
+<input type="text" id="color-bg" data-color-hex="bg" aria-label="background hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="bg" aria-label="Reset background" title="Reset background">↺</button></div></div><div class="color-row" data-color-row="text">
+<label for="color-text">reading text</label>
+<div class="color-inputs"><input type="color" id="swatch-text" aria-label="reading text swatch" data-color-swatch="text">
+<input type="text" id="color-text" data-color-hex="text" aria-label="reading text hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="text" aria-label="Reset reading text" title="Reset reading text">↺</button></div></div><div class="color-row" data-color-row="muted">
+<label for="color-muted">secondary text</label>
+<div class="color-inputs"><input type="color" id="swatch-muted" aria-label="secondary text swatch" data-color-swatch="muted">
+<input type="text" id="color-muted" data-color-hex="muted" aria-label="secondary text hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="muted" aria-label="Reset secondary text" title="Reset secondary text">↺</button></div></div><div class="color-row" data-color-row="accent">
+<label for="color-accent">interface accent</label>
+<div class="color-inputs"><input type="color" id="swatch-accent" aria-label="interface accent swatch" data-color-swatch="accent">
+<input type="text" id="color-accent" data-color-hex="accent" aria-label="interface accent hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="accent" aria-label="Reset interface accent" title="Reset interface accent">↺</button></div></div><div class="color-row" data-color-row="correct">
+<label for="color-correct">correct</label>
+<div class="color-inputs"><input type="color" id="swatch-correct" aria-label="correct swatch" data-color-swatch="correct">
+<input type="text" id="color-correct" data-color-hex="correct" aria-label="correct hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="correct" aria-label="Reset correct" title="Reset correct">↺</button></div></div><div class="color-row" data-color-row="wrong">
+<label for="color-wrong">wrong</label>
+<div class="color-inputs"><input type="color" id="swatch-wrong" aria-label="wrong swatch" data-color-swatch="wrong">
+<input type="text" id="color-wrong" data-color-hex="wrong" aria-label="wrong hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="wrong" aria-label="Reset wrong" title="Reset wrong">↺</button></div></div></div><details class="advanced-colors"><summary>more colors</summary><div class="advanced-color-grid"><div class="color-row" data-color-row="raised">
+<label for="color-raised">buttons &amp; controls</label>
+<div class="color-inputs"><input type="color" id="swatch-raised" aria-label="buttons &amp; controls swatch" data-color-swatch="raised">
+<input type="text" id="color-raised" data-color-hex="raised" aria-label="buttons &amp; controls hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="raised" aria-label="Reset buttons &amp; controls" title="Reset buttons &amp; controls">↺</button></div></div><div class="color-row" data-color-row="correct-ink">
+<label for="color-correct-ink">correct text &amp; numbers</label>
+<div class="color-inputs"><input type="color" id="swatch-correct-ink" aria-label="correct text &amp; numbers swatch" data-color-swatch="correct-ink">
+<input type="text" id="color-correct-ink" data-color-hex="correct-ink" aria-label="correct text &amp; numbers hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="correct-ink" aria-label="Reset correct text &amp; numbers" title="Reset correct text &amp; numbers">↺</button></div></div><div class="color-row" data-color-row="edge">
+<label for="color-edge">paper outline</label>
+<div class="color-inputs"><input type="color" id="swatch-edge" aria-label="paper outline swatch" data-color-swatch="edge">
+<input type="text" id="color-edge" data-color-hex="edge" aria-label="paper outline hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge" aria-label="Reset paper outline" title="Reset paper outline">↺</button></div></div><div class="color-row" data-color-row="edge-soft">
+<label for="color-edge-soft">soft dividers</label>
+<div class="color-inputs"><input type="color" id="swatch-edge-soft" aria-label="soft dividers swatch" data-color-swatch="edge-soft">
+<input type="text" id="color-edge-soft" data-color-hex="edge-soft" aria-label="soft dividers hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge-soft" aria-label="Reset soft dividers" title="Reset soft dividers">↺</button></div><label class="color-opacity">opacity<input type="range" min="0" max="100" step="0.1" data-color-alpha="edge-soft" aria-label="soft dividers opacity"><output></output></label></div><div class="color-row" data-color-row="edge-strong">
+<label for="color-edge-strong">strong borders</label>
+<div class="color-inputs"><input type="color" id="swatch-edge-strong" aria-label="strong borders swatch" data-color-swatch="edge-strong">
+<input type="text" id="color-edge-strong" data-color-hex="edge-strong" aria-label="strong borders hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge-strong" aria-label="Reset strong borders" title="Reset strong borders">↺</button></div><label class="color-opacity">opacity<input type="range" min="0" max="100" step="0.1" data-color-alpha="edge-strong" aria-label="strong borders opacity"><output></output></label></div><div class="color-row" data-color-row="logo-secondary">
+<label for="color-logo-secondary">wordmark · JLPT</label>
+<div class="color-inputs"><input type="color" id="swatch-logo-secondary" aria-label="wordmark · JLPT swatch" data-color-swatch="logo-secondary">
+<input type="text" id="color-logo-secondary" data-color-hex="logo-secondary" aria-label="wordmark · JLPT hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="logo-secondary" aria-label="Reset wordmark · JLPT" title="Reset wordmark · JLPT">↺</button></div></div></div><div class="fill-opacity-controls"><h4>fill opacity</h4><p>Applies to correct and wrong answers.</p><div class="fill-opacity-row"><label for="opacity-cell-fill">cell fill<output id="opacity-cell-fill-output">11%</output></label><div><input id="opacity-cell-fill" type="range" min="0" max="100" step="1" value="11" data-fill-opacity="cell-fill" aria-label="cell fill opacity"><button type="button" data-fill-reset="cell-fill" aria-label="Reset cell fill opacity" title="Reset cell fill opacity">↺</button></div></div><div class="fill-opacity-row"><label for="opacity-fill">fill style<output id="opacity-fill-output">30%</output></label><div><input id="opacity-fill" type="range" min="0" max="100" step="1" value="30" data-fill-opacity="fill" aria-label="fill style opacity"><button type="button" data-fill-reset="fill" aria-label="Reset fill style opacity" title="Reset fill style opacity">↺</button></div></div></div></details></aside></div></section><section data-settings="browser"><div class="setting-row js-only"><div><h3>remember this browser</h3><p id="save-status">Saving is on by default. No account required.</p></div><label class="switch"><input id="remember" type="checkbox" checked>save preferences, answers and position</label></div><div class="button-row browser-actions js-only"><button id="reset-preferences" type="button">reset preferences</button><button id="forget" type="button">forget saved data</button></div><div class="developer-only developer-settings"><h3>developer mode</h3><p>Principal differences and editorial cases are visible. This local switch is not authentication.</p><button id="disable-dev" type="button">hide developer tools</button></div><div class="settings-about"><button type="button" id="developer-unlock" class="js-only" title="astraJLPT build information">astraJLPT · 2020–2026 collection</button><span id="developer-hint" role="status"></span></div></section></div></details></header><main id="content" class="review-page"><div class="review-content"><a href="../levels/old-1.html">← 1級 papers</a><h1>1級 · December 2003</h1><p>Uncertainty index: <strong>1013</strong> · 5 differences · 3 unresolved · 4 provisional fixes</p><p>Evidence base 1000 + source concerns 13 = 1013. Concerns are uncapped; browsing order uses evidence tier before concern points.</p><p>This is an editorial evidence assessment, not a probability, an error rate or a practice score.</p><details><summary>Assessment evidence and original source scores</summary><pre>{
+  &quot;unit&quot;: &quot;N1_2003&quot;,
+  &quot;sample&quot;: false,
+  &quot;year&quot;: 2003,
+  &quot;month&quot;: 12,
+  &quot;evidence_base&quot;: 1000,
+  &quot;evidence_tier&quot;: 3,
+  &quot;concern_points&quot;: 13,
+  &quot;index&quot;: 1013,
+  &quot;concern_counts&quot;: {
+    &quot;metadata_flags&quot;: 0,
+    &quot;missing_units&quot;: 0,
+    &quot;major_defects&quot;: 1,
+    &quot;minor_defects&quot;: 2,
+    &quot;uncertain_fields&quot;: 4
+  },
+  &quot;principal_history&quot;: {
+    &quot;unit&quot;: &quot;N1_2003&quot;,
+    &quot;level&quot;: &quot;N1&quot;,
+    &quot;year&quot;: 2003,
+    &quot;month&quot;: 12,
+    &quot;historical_level&quot;: &quot;1級&quot;,
+    &quot;sitting_attribution&quot;: {
+      &quot;basis&quot;: &quot;2003 and 1級 are visible at the collection written heading and DOC title. Official JLPT guide states that through 2008 the test was held once annually in December; the month is not inferred from the year-only owner ID.&quot;,
+      &quot;source_url&quot;: &quot;https://www.jlpt.jp/reference/pdf/guide2011.pdf&quot;,
+      &quot;locator&quot;: &quot;Guide 2011, physical page 2, printed 01–02 footnote&quot;
+    },
+    &quot;content_kind&quot;: &quot;exam&quot;,
+    &quot;method_version&quot;: 1,
+    &quot;principal_path&quot;: &quot;src/JLPT N1-N5, Past papers/N1/1995-2009.12日本语能力测试真题详解N1.pdf&quot;,
+    &quot;principal_sha256&quot;: &quot;e3555741c8f14b855a32e7d09b42eb790492e3818a85a875f99d84703c752e00&quot;,
+    &quot;initial_tier&quot;: 3,
+    &quot;written_physical_pages&quot;: &quot;289-293,296-310,311-319&quot;,
+    &quot;review_status&quot;: &quot;complete_written_review&quot;,
+    &quot;review_date&quot;: &quot;2026-10-26&quot;,
+    &quot;scope_note&quot;: &quot;All written questions 289–293 and 296–305, written keys 305–306, vocabulary explanations 307–310 top, reading/grammar explanations 311 bottom–319. Mixed listening regions excluded. Publication front matter 1–3 also examined for provenance. Original booklet covers absent. Full review of available content does not authenticate original layout.&quot;,
+    &quot;provenance_status&quot;: &quot;unverified&quot;,
+    &quot;provenance_points&quot;: 100,
+    &quot;provenance_basis&quot;: &quot;The 2011 China Aerospace Press compilation credits the exam bodies and claims authorization. No issuer-hosted exact file or verified chain of custody ties these bytes to the sitting. Secondary typesetting alone is not positive evidence of reconstruction from recollection.&quot;,
+    &quot;metadata_flags&quot;: 0,
+    &quot;missing_units&quot;: 0,
+    &quot;major_defects&quot;: 1,
+    &quot;minor_defects&quot;: 2,
+    &quot;uncertain_fields&quot;: 4,
+    &quot;uncertainty_index&quot;: 113,
+    &quot;score_evidence&quot;: [
+      {
+        &quot;id&quot;: &quot;H25-N1_2003-SCORE-001&quot;,
+        &quot;kind&quot;: &quot;major_defects&quot;,
+        &quot;locator&quot;: &quot;Physical [296, 297]; reading-b001&quot;,
+        &quot;item_id&quot;: &quot;reading-b001&quot;,
+        &quot;field&quot;: &quot;/content/html&quot;,
+        &quot;evidence&quot;: &quot;Victim/offender substitution reverses substantive passage meaning; three occurrences count as one content field.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;H25-N1_2003-SCORE-002&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;locator&quot;: &quot;Physical [300]; reading-b004&quot;,
+        &quot;item_id&quot;: &quot;reading-b004&quot;,
+        &quot;field&quot;: &quot;/content/html&quot;,
+        &quot;evidence&quot;: &quot;Single note is misnumbered 3 in text.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;H25-N1_2003-SCORE-003&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;locator&quot;: &quot;Physical [302, 303]; reading-b008&quot;,
+        &quot;item_id&quot;: &quot;reading-b008&quot;,
+        &quot;field&quot;: &quot;/content/html&quot;,
+        &quot;evidence&quot;: &quot;Confirmed duplicated ん and erroneous author surname. The same field also has unresolved wording; only the highest applicable category counts.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;H25-N1_2003-SCORE-004&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;locator&quot;: &quot;Physical [297]; reading-q001&quot;,
+        &quot;item_id&quot;: &quot;reading-q001&quot;,
+        &quot;field&quot;: &quot;/options/2&quot;,
+        &quot;evidence&quot;: &quot;Missing interrogative particle in wrong option; exact original repair uncertain.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;H25-N1_2003-SCORE-005&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;locator&quot;: &quot;Physical [305]; reading-q056&quot;,
+        &quot;item_id&quot;: &quot;reading-q056&quot;,
+        &quot;field&quot;: &quot;/options/2&quot;,
+        &quot;evidence&quot;: &quot;規則 versus 規制 in a wrong option remains historically unverified.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;H25-N1_2003-SCORE-006&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;locator&quot;: &quot;Physical 299; question 10 option 3&quot;,
+        &quot;item_id&quot;: &quot;reading-q010&quot;,
+        &quot;field&quot;: &quot;/options/2&quot;,
+        &quot;evidence&quot;: &quot;Retained anomalous distractor wording conflicts with a plausible shorter reading in the focused secondary retype; original wording remains unverified.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;H25-N1_2003-SCORE-007&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;locator&quot;: &quot;Physical 301; question 15 option 3&quot;,
+        &quot;item_id&quot;: &quot;reading-q015&quot;,
+        &quot;field&quot;: &quot;/options/2&quot;,
+        &quot;evidence&quot;: &quot;Retained anomalous distractor wording conflicts with a plausible shorter reading in the focused secondary retype; original wording remains unverified.&quot;
+      }
+    ]
+  },
+  &quot;evidence&quot;: []
+}</pre></details><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span><ul></ul><div class="review-controls"><label>Show <select id="review-filter"><option value="all">All records</option><option value="difference">Principal differences</option><option value="unresolved">Unresolved cases</option><option value="provisional_fix">Provisional fixes</option></select></label><label>Find <input id="review-search" type="search" placeholder="Item, wording, evidence…"></label></div><p id="review-count" class="control-help" role="status"></p><section class="review-group" id="review-coverage" data-kinds="unresolved"><div class="review-group-heading"><h2>Paper coverage</h2><a href="../papers/N1_2003.html#content">Open in paper →</a></div><div class="review-record" id="unresolved_cases-H25-N1_2003-original-covers"><div class="review-label">Unresolved ·  · low</div><div class="comparison"><div><h4>Alternative</h4><pre>No alternative recorded</pre></div><div><h4>Editorial</h4><pre>Not recorded</pre></div></div><p>A secondary web template is not adequate cover evidence under the frozen Old cover contract.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>Original cover wording, timing, score and page count are unestablished.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Original written booklet covers are absent from the indexed written sources.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=289): <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Physical 289,296; affected written span<p>The collection begins each written part with questions, without an original booklet cover.</p></li><li><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Title, first written section and reading heading; full written conversion<p>Retyped headings and questions; no original booklet cover image.</p></li></ul><details><summary>Full published record · unresolved_cases-H25-N1_2003-original-covers</summary><pre>{
+  &quot;case_id&quot;: &quot;H25-N1_2003-original-covers&quot;,
+  &quot;unit&quot;: &quot;N1_2003&quot;,
+  &quot;item_id&quot;: null,
+  &quot;field&quot;: &quot;&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;low&quot;,
+  &quot;decision_basis&quot;: &quot;source_comparison&quot;,
+  &quot;current_value&quot;: null,
+  &quot;context&quot;: &quot;Original written booklet covers are absent from the indexed written sources.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: null,
+      &quot;assessment&quot;: &quot;Keep both covers unavailable; no timing, score or original page-count facts are invented.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;1995–2009.12 N1 question-and-explanation collection, 2003 section&quot;,
+      &quot;sha256&quot;: &quot;e3555741c8f14b855a32e7d09b42eb790492e3818a85a875f99d84703c752e00&quot;,
+      &quot;physical_pages&quot;: [
+        289,
+        296
+      ],
+      &quot;locator&quot;: &quot;Physical 289,296; affected written span&quot;,
+      &quot;reading&quot;: &quot;The collection begins each written part with questions, without an original booklet cover.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2003 N1 DOC question-and-answer comparator&quot;,
+      &quot;sha256&quot;: &quot;c24b0d9d48d2865a46a9695230d5292ab00e08617a008882a19d044bb0ed6f00&quot;,
+      &quot;locator&quot;: &quot;Title, first written section and reading heading; full written conversion&quot;,
+      &quot;reading&quot;: &quot;Retyped headings and questions; no original booklet cover image.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;A secondary web template is not adequate cover evidence under the frozen Old cover contract.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Inspected collection written starts and publication front matter.&quot;,
+    &quot;Inspected the full DOC and the written regions of the translation PDF.&quot;,
+    &quot;Checked the focused secondary public retype; its template lacks verified original-page authority.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;Original cover wording, timing, score and page count are unestablished.&quot;
+}</pre></details></div></section><section class="review-group" id="review-reading-b001" data-kinds="difference provisional_fix"><div class="review-group-heading"><h2>reading-b001</h2><a href="../papers/N1_2003.html#reading-b001">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><p>教育の現場に携わるものとして①<u>以前から気になることがあった</u>。学生たちと何を議論していても、たいていだれかが「私はこう思うけれど、人それぞれ、いろいろな考えがあると思うし、それでいい」という趣旨の意見を述べ、そのとたん、議論が成り立たなくなることである。</p><p>「人それぞれ」で「何でもあり」となれば、社会問題の大半が個人の好みと選択の問題に矮小化<sup>（注1）</sup>されてしまう。ゼミでは②<u>「人それぞれ」を禁句</u><sup>（注2）</sup>にするなどの対策をとってはみたものの、私は学生の間に蔓延<sup>（注3）</sup>する個人志向的考え方にきちんと対峙<sup>（注4）</sup>できずにいた。そのようなとき、ある授業で学生たちが書いたレポートを読んで、頭を殴られたようなショックを受けた。</p><p>このところ過失とはとうてい思えないような悲惨な交通事故のニュースが相次いでいる。そこで交通事故や被害者の人権について、これから免許を取得する若い人に考えてもらいたくて、二木雄策氏の『交通死』という本の読書リポートを課した。</p><p>大学生だった二木氏のお嬢さんは、自転車で交差点を横断中、赤信号を無視して突入してきた自動車にはねられて亡くなった。加害者<sup>（注5）</sup>の女性は執行猶予<sup>（注6）</sup>付きの判決で刑務所<sup>（注7）</sup>に入ることもなく、また、損害賠償の交渉も支払いも保険会社が代行した。</p><p>加害者の信号無視で被害者は命を奪われたのに、加害者は（少なくとも形の上では）以前と変わらぬ生活を送ることができるのだ。加害者に手厚い<sup>（注8）</sup>現行の諸制度は、③<u>人の命よりも車（イコール企業）を重んじる社会だ</u>との筆者の主張には説得力があると私は思っていた。</p><p>ところが少なからぬ学生の反応は予想をしないものだった。「加害者がかわいそう」だと言うのである。被害者の立場からの主張のみが述べられているのは「客観性に欠ける」という。私は④<u>頭を抱えてしまった</u>。二木氏の文章は、娘を失った父親の沈痛な思いがせつせつと<sup>（注9）</sup>伝わってくるものの、決して激情に駆られて<sup>（注10）</sup>書かれたものではない。むしろよくここまで冷静に書けるものだと感心するくらいなのだ。</p><p>もちろん加害者には加害者の人生がある。しかし学生たちは、その人生に豊かな社会的想像力を動かせるわけでもなく、単に、被害者側の見解だけでは一方的だと主張する。杓子定規に<sup>（注11）</sup>客観的・中立的立場を求めなければいけないと思い込んでいるようなのだ。まるで立場の異なる二者の間で意見の対立が見られた場合には、足して二で割ればちょうどよいとでも言わんばかりに。</p><p>なぜ学生たちは、加害者と被害者の対立図式にこだわり、著者が訴える問題の社会的広がりに気づかないのか。もどかしい<sup>（注12）</sup>思いでリポートを読むうちに合点がいった<sup>（注13）</sup>。例の「人それぞれ」である。</p><p>あらゆる意見が私的なものであれば、娘の交通事故死を経験して「くるま社会」の異常さを訴える父親の主張も一つの個人的立場に過ぎず、その意味では加害者の立場と等価なのだ。主張の対立のなかから、あるべき社会の姿を模索する努力を放棄したとき、社会正義は足して二で割るというような手続き上の公平さに求めざるを得ない。</p><p>（小笠原祐子「『何でもあり個人主義』の退廃」2000年7月11日付朝日新聞朝刊による）</p><p>（注1）矮小化する：重要でない、小さいことにする</p><p>（注2）禁句：避けて使わないようにする言葉</p><p>（注3）蔓延する：大きく広がる</p><p>（注4）対峙する：向き合って立つ</p><p>（注5）加害者：他人に危害を加えた人</p><p>（注6）執行猶予：刑を一定の期間実行しないで、その期間を事故なく過ごした時には、刑を受けずにすむ制度</p><p>（注7）刑務所：刑が決まった人を収容するところ</p><p>（注8）～に手厚い：～を大事にする</p><p>（注9）せつせつと：人の心を動かすほど強く</p><p>（注10）激情にかられて：激しい感情に動かされて</p><p>（注11）杓子定規に：一つの標準、形式ですべてを決めようとする融通のきかないやり方で</p><p>（注12）もどかしい：思うようにならなくてイライラする</p><p>（注13）合点がいく：意味がよく分かる</p></div></details><div class="review-record" id="unresolved_cases-H25-N1_2003-reading-b001-wording"><div class="review-label">Provisional fix · /content/html · medium</div><div class="comparison"><div><h4>Before</h4><pre>…up&gt;付きの判決で刑務所&lt;sup&gt;（注7）&lt;/sup&gt;に入ることもなく、また、損害賠償の交渉も支払いも保険会社が代行した。&lt;/p&gt;&lt;p&gt;加害者の信号無視で被害者は命を奪われたのに、<mark class="diff-old">被</mark>害者は（少なくとも形の上では）以前と変わらぬ生活を送ることができるのだ。加害者に手厚い&lt;sup&gt;（注8）&lt;/sup&gt;現行の諸制度は、③&lt;u&gt;人の命よりも車（イコール企業）を重んじる社会だ&lt;/u&gt;との筆者の主張には説得力があると私は思っていた。&lt;/p&gt;&lt;p&gt;ところが少なからぬ学生の…</pre></div><div><h4>Editorial</h4><pre>…up&gt;付きの判決で刑務所&lt;sup&gt;（注7）&lt;/sup&gt;に入ることもなく、また、損害賠償の交渉も支払いも保険会社が代行した。&lt;/p&gt;&lt;p&gt;加害者の信号無視で被害者は命を奪われたのに、<mark class="diff-new">加</mark>害者は（少なくとも形の上では）以前と変わらぬ生活を送ることができるのだ。加害者に手厚い&lt;sup&gt;（注8）&lt;/sup&gt;現行の諸制度は、③&lt;u&gt;人の命よりも車（イコール企業）を重んじる社会だ&lt;/u&gt;との筆者の主張には説得力があると私は思っていた。&lt;/p&gt;&lt;p&gt;ところが少なからぬ学生の…</pre></div></div><p>Victim/offender substitutions reverse the accident account; restore the offender in the three occurrences. Delete the stray の in 個人的の立場 provisionally, supported by the distinct retype. Retain plausible レポート, 筆者 and 動かせる variants.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>The issuer text or original newspaper page is unavailable. The particle repair is provisional; 動かせる versus 働かせる is also not settled, so the principal form is retained.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Victim/offender substitutions reverse the accident account; restore the offender in the three occurrences. Delete the stray の in 個人的の立場 provisionally, supported by the distinct retype. Retain plausible レポート, 筆者 and 動かせる variants.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=296): <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Physical 296,297; affected written span<p>被害者は（少なくとも…）; もちろん被害者には被害者の人生; 個人的の立場</p></li><li><a href="https://www.scribd.com/doc/23637089/2003" target="_blank" rel="noopener">User-uploaded secondary 2003 retype, focused public text lookup</a> · Reading passages/questions 1, 21 and grammar 56, as applicable<p>加害者は（少なくとも…）; もちろん加害者には加害者の人生; 個人的立場</p></li></ul><details><summary>Full published record · unresolved_cases-H25-N1_2003-reading-b001-wording</summary><pre>{
+  &quot;case_id&quot;: &quot;H25-N1_2003-reading-b001-wording&quot;,
+  &quot;unit&quot;: &quot;N1_2003&quot;,
+  &quot;item_id&quot;: &quot;reading-b001&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;before&quot;: &quot;&lt;p&gt;教育の現場に携わるものとして①&lt;u&gt;以前から気になることがあった&lt;/u&gt;。学生たちと何を議論していても、たいていだれかが「私はこう思うけれど、人それぞれ、いろいろな考えがあると思うし、それでいい」という趣旨の意見を述べ、そのとたん、議論が成り立たなくなることである。&lt;/p&gt;&lt;p&gt;「人それぞれ」で「何でもあり」となれば、社会問題の大半が個人の好みと選択の問題に矮小化&lt;sup&gt;（注1）&lt;/sup&gt;されてしまう。ゼミでは②&lt;u&gt;「人それぞれ」を禁句&lt;/u&gt;&lt;sup&gt;（注2）&lt;/sup&gt;にするなどの対策をとってはみたものの、私は学生の間に蔓延&lt;sup&gt;（注3）&lt;/sup&gt;する個人志向的考え方にきちんと対峙&lt;sup&gt;（注4）&lt;/sup&gt;できずにいた。そのようなとき、ある授業で学生たちが書いたレポートを読んで、頭を殴られたようなショックを受けた。&lt;/p&gt;&lt;p&gt;このところ過失とはとうてい思えないような悲惨な交通事故のニュースが相次いでいる。そこで交通事故や被害者の人権について、これから免許を取得する若い人に考えてもらいたくて、二木雄策氏の『交通死』という本の読書リポートを課した。&lt;/p&gt;&lt;p&gt;大学生だった二木氏のお嬢さんは、自転車で交差点を横断中、赤信号を無視して突入してきた自動車にはねられて亡くなった。加害者&lt;sup&gt;（注5）&lt;/sup&gt;の女性は執行猶予&lt;sup&gt;（注6）&lt;/sup&gt;付きの判決で刑務所&lt;sup&gt;（注7）&lt;/sup&gt;に入ることもなく、また、損害賠償の交渉も支払いも保険会社が代行した。&lt;/p&gt;&lt;p&gt;加害者の信号無視で被害者は命を奪われたのに、被害者は（少なくとも形の上では）以前と変わらぬ生活を送ることができるのだ。加害者に手厚い&lt;sup&gt;（注8）&lt;/sup&gt;現行の諸制度は、③&lt;u&gt;人の命よりも車（イコール企業）を重んじる社会だ&lt;/u&gt;との筆者の主張には説得力があると私は思っていた。&lt;/p&gt;&lt;p&gt;ところが少なからぬ学生の反応は予想をしないものだった。「加害者がかわいそう」だと言うのである。被害者の立場からの主張のみが述べられているのは「客観性に欠ける」という。私は④&lt;u&gt;頭を抱えてしまった&lt;/u&gt;。二木氏の文章は、娘を失った父親の沈痛な思いがせつせつと&lt;sup&gt;（注9）&lt;/sup&gt;伝わってくるものの、決して激情に駆られて&lt;sup&gt;（注10）&lt;/sup&gt;書かれたものではない。むしろよくここまで冷静に書けるものだと感心するくらいなのだ。&lt;/p&gt;&lt;p&gt;もちろん被害者には被害者の人生がある。しかし学生たちは、その人生に豊かな社会的想像力を動かせるわけでもなく、単に、被害者側の見解だけでは一方的だと主張する。杓子定規に&lt;sup&gt;（注11）&lt;/sup&gt;客観的・中立的立場を求めなければいけないと思い込んでいるようなのだ。まるで立場の異なる二者の間で意見の対立が見られた場合には、足して二で割ればちょうどよいとでも言わんばかりに。&lt;/p&gt;&lt;p&gt;なぜ学生たちは、加害者と被害者の対立図式にこだわり、著者が訴える問題の社会的広がりに気づかないのか。もどかしい&lt;sup&gt;（注12）&lt;/sup&gt;思いでリポートを読むうちに合点がいった&lt;sup&gt;（注13）&lt;/sup&gt;。例の「人それぞれ」である。&lt;/p&gt;&lt;p&gt;あらゆる意見が私的なものであれば、娘の交通事故死を経験して「くるま社会」の異常さを訴える父親の主張も一つの個人的の立場に過ぎず、その意味では加害者の立場と等価なのだ。主張の対立のなかから、あるべき社会の姿を模索する努力を放棄したとき、社会正義は足して二で割るというような手続き上の公平さに求めざるを得ない。&lt;/p&gt;&lt;p&gt;（小笠原祐子「『何でもあり個人主義』の退廃」2000年7月11日付朝日新聞朝刊による）&lt;/p&gt;&lt;p&gt;（注1）矮小化する：重要でない、小さいことにする&lt;br&gt;（注2）禁句：避けて使わないようにする言葉&lt;br&gt;（注3）蔓延する：大きく広がる&lt;br&gt;（注4）対峙する：向き合って立つ&lt;br&gt;（注5）加害者：他人に危害を加えた人&lt;br&gt;（注6）執行猶予：刑を一定の期間実行しないで、その期間を事故なく過ごした時には、刑を受けずにすむ制度&lt;br&gt;（注7）刑務所：刑が決まった人を収容するところ&lt;br&gt;（注8）～に手厚い：～を大事にする&lt;br&gt;（注9）せつせつと：人の心を動かすほど強く&lt;br&gt;（注10）激情にかられて：激しい感情に動かされて&lt;br&gt;（注11）杓子定規に：一つの標準、形式ですべてを決めようとする融通のきかないやり方で&lt;br&gt;（注12）もどかしい：思うようにならなくてイライラする&lt;br&gt;（注13）合点がいく：意味がよく分かる&lt;/p&gt;&quot;,
+  &quot;current_value&quot;: &quot;&lt;p&gt;教育の現場に携わるものとして①&lt;u&gt;以前から気になることがあった&lt;/u&gt;。学生たちと何を議論していても、たいていだれかが「私はこう思うけれど、人それぞれ、いろいろな考えがあると思うし、それでいい」という趣旨の意見を述べ、そのとたん、議論が成り立たなくなることである。&lt;/p&gt;&lt;p&gt;「人それぞれ」で「何でもあり」となれば、社会問題の大半が個人の好みと選択の問題に矮小化&lt;sup&gt;（注1）&lt;/sup&gt;されてしまう。ゼミでは②&lt;u&gt;「人それぞれ」を禁句&lt;/u&gt;&lt;sup&gt;（注2）&lt;/sup&gt;にするなどの対策をとってはみたものの、私は学生の間に蔓延&lt;sup&gt;（注3）&lt;/sup&gt;する個人志向的考え方にきちんと対峙&lt;sup&gt;（注4）&lt;/sup&gt;できずにいた。そのようなとき、ある授業で学生たちが書いたレポートを読んで、頭を殴られたようなショックを受けた。&lt;/p&gt;&lt;p&gt;このところ過失とはとうてい思えないような悲惨な交通事故のニュースが相次いでいる。そこで交通事故や被害者の人権について、これから免許を取得する若い人に考えてもらいたくて、二木雄策氏の『交通死』という本の読書リポートを課した。&lt;/p&gt;&lt;p&gt;大学生だった二木氏のお嬢さんは、自転車で交差点を横断中、赤信号を無視して突入してきた自動車にはねられて亡くなった。加害者&lt;sup&gt;（注5）&lt;/sup&gt;の女性は執行猶予&lt;sup&gt;（注6）&lt;/sup&gt;付きの判決で刑務所&lt;sup&gt;（注7）&lt;/sup&gt;に入ることもなく、また、損害賠償の交渉も支払いも保険会社が代行した。&lt;/p&gt;&lt;p&gt;加害者の信号無視で被害者は命を奪われたのに、加害者は（少なくとも形の上では）以前と変わらぬ生活を送ることができるのだ。加害者に手厚い&lt;sup&gt;（注8）&lt;/sup&gt;現行の諸制度は、③&lt;u&gt;人の命よりも車（イコール企業）を重んじる社会だ&lt;/u&gt;との筆者の主張には説得力があると私は思っていた。&lt;/p&gt;&lt;p&gt;ところが少なからぬ学生の反応は予想をしないものだった。「加害者がかわいそう」だと言うのである。被害者の立場からの主張のみが述べられているのは「客観性に欠ける」という。私は④&lt;u&gt;頭を抱えてしまった&lt;/u&gt;。二木氏の文章は、娘を失った父親の沈痛な思いがせつせつと&lt;sup&gt;（注9）&lt;/sup&gt;伝わってくるものの、決して激情に駆られて&lt;sup&gt;（注10）&lt;/sup&gt;書かれたものではない。むしろよくここまで冷静に書けるものだと感心するくらいなのだ。&lt;/p&gt;&lt;p&gt;もちろん加害者には加害者の人生がある。しかし学生たちは、その人生に豊かな社会的想像力を動かせるわけでもなく、単に、被害者側の見解だけでは一方的だと主張する。杓子定規に&lt;sup&gt;（注11）&lt;/sup&gt;客観的・中立的立場を求めなければいけないと思い込んでいるようなのだ。まるで立場の異なる二者の間で意見の対立が見られた場合には、足して二で割ればちょうどよいとでも言わんばかりに。&lt;/p&gt;&lt;p&gt;なぜ学生たちは、加害者と被害者の対立図式にこだわり、著者が訴える問題の社会的広がりに気づかないのか。もどかしい&lt;sup&gt;（注12）&lt;/sup&gt;思いでリポートを読むうちに合点がいった&lt;sup&gt;（注13）&lt;/sup&gt;。例の「人それぞれ」である。&lt;/p&gt;&lt;p&gt;あらゆる意見が私的なものであれば、娘の交通事故死を経験して「くるま社会」の異常さを訴える父親の主張も一つの個人的立場に過ぎず、その意味では加害者の立場と等価なのだ。主張の対立のなかから、あるべき社会の姿を模索する努力を放棄したとき、社会正義は足して二で割るというような手続き上の公平さに求めざるを得ない。&lt;/p&gt;&lt;p&gt;（小笠原祐子「『何でもあり個人主義』の退廃」2000年7月11日付朝日新聞朝刊による）&lt;/p&gt;&lt;p&gt;（注1）矮小化する：重要でない、小さいことにする&lt;/p&gt;&lt;p&gt;（注2）禁句：避けて使わないようにする言葉&lt;/p&gt;&lt;p&gt;（注3）蔓延する：大きく広がる&lt;/p&gt;&lt;p&gt;（注4）対峙する：向き合って立つ&lt;/p&gt;&lt;p&gt;（注5）加害者：他人に危害を加えた人&lt;/p&gt;&lt;p&gt;（注6）執行猶予：刑を一定の期間実行しないで、その期間を事故なく過ごした時には、刑を受けずにすむ制度&lt;/p&gt;&lt;p&gt;（注7）刑務所：刑が決まった人を収容するところ&lt;/p&gt;&lt;p&gt;（注8）～に手厚い：～を大事にする&lt;/p&gt;&lt;p&gt;（注9）せつせつと：人の心を動かすほど強く&lt;/p&gt;&lt;p&gt;（注10）激情にかられて：激しい感情に動かされて&lt;/p&gt;&lt;p&gt;（注11）杓子定規に：一つの標準、形式ですべてを決めようとする融通のきかないやり方で&lt;/p&gt;&lt;p&gt;（注12）もどかしい：思うようにならなくてイライラする&lt;/p&gt;&lt;p&gt;（注13）合点がいく：意味がよく分かる&lt;/p&gt;&quot;,
+  &quot;context&quot;: &quot;Victim/offender substitutions reverse the accident account; restore the offender in the three occurrences. Delete the stray の in 個人的の立場 provisionally, supported by the distinct retype. Retain plausible レポート, 筆者 and 動かせる variants.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;&lt;p&gt;教育の現場に携わるものとして①&lt;u&gt;以前から気になることがあった&lt;/u&gt;。学生たちと何を議論していても、たいていだれかが「私はこう思うけれど、人それぞれ、いろいろな考えがあると思うし、それでいい」という趣旨の意見を述べ、そのとたん、議論が成り立たなくなることである。&lt;/p&gt;&lt;p&gt;「人それぞれ」で「何でもあり」となれば、社会問題の大半が個人の好みと選択の問題に矮小化&lt;sup&gt;（注1）&lt;/sup&gt;されてしまう。ゼミでは②&lt;u&gt;「人それぞれ」を禁句&lt;/u&gt;&lt;sup&gt;（注2）&lt;/sup&gt;にするなどの対策をとってはみたものの、私は学生の間に蔓延&lt;sup&gt;（注3）&lt;/sup&gt;する個人志向的考え方にきちんと対峙&lt;sup&gt;（注4）&lt;/sup&gt;できずにいた。そのようなとき、ある授業で学生たちが書いたレポートを読んで、頭を殴られたようなショックを受けた。&lt;/p&gt;&lt;p&gt;このところ過失とはとうてい思えないような悲惨な交通事故のニュースが相次いでいる。そこで交通事故や被害者の人権について、これから免許を取得する若い人に考えてもらいたくて、二木雄策氏の『交通死』という本の読書リポートを課した。&lt;/p&gt;&lt;p&gt;大学生だった二木氏のお嬢さんは、自転車で交差点を横断中、赤信号を無視して突入してきた自動車にはねられて亡くなった。加害者&lt;sup&gt;（注5）&lt;/sup&gt;の女性は執行猶予&lt;sup&gt;（注6）&lt;/sup&gt;付きの判決で刑務所&lt;sup&gt;（注7）&lt;/sup&gt;に入ることもなく、また、損害賠償の交渉も支払いも保険会社が代行した。&lt;/p&gt;&lt;p&gt;加害者の信号無視で被害者は命を奪われたのに、被害者は（少なくとも形の上では）以前と変わらぬ生活を送ることができるのだ。加害者に手厚い&lt;sup&gt;（注8）&lt;/sup&gt;現行の諸制度は、③&lt;u&gt;人の命よりも車（イコール企業）を重んじる社会だ&lt;/u&gt;との筆者の主張には説得力があると私は思っていた。&lt;/p&gt;&lt;p&gt;ところが少なからぬ学生の反応は予想をしないものだった。「加害者がかわいそう」だと言うのである。被害者の立場からの主張のみが述べられているのは「客観性に欠ける」という。私は④&lt;u&gt;頭を抱えてしまった&lt;/u&gt;。二木氏の文章は、娘を失った父親の沈痛な思いがせつせつと&lt;sup&gt;（注9）&lt;/sup&gt;伝わってくるものの、決して激情に駆られて&lt;sup&gt;（注10）&lt;/sup&gt;書かれたものではない。むしろよくここまで冷静に書けるものだと感心するくらいなのだ。&lt;/p&gt;&lt;p&gt;もちろん被害者には被害者の人生がある。しかし学生たちは、その人生に豊かな社会的想像力を動かせるわけでもなく、単に、被害者側の見解だけでは一方的だと主張する。杓子定規に&lt;sup&gt;（注11）&lt;/sup&gt;客観的・中立的立場を求めなければいけないと思い込んでいるようなのだ。まるで立場の異なる二者の間で意見の対立が見られた場合には、足して二で割ればちょうどよいとでも言わんばかりに。&lt;/p&gt;&lt;p&gt;なぜ学生たちは、加害者と被害者の対立図式にこだわり、著者が訴える問題の社会的広がりに気づかないのか。もどかしい&lt;sup&gt;（注12）&lt;/sup&gt;思いでリポートを読むうちに合点がいった&lt;sup&gt;（注13）&lt;/sup&gt;。例の「人それぞれ」である。&lt;/p&gt;&lt;p&gt;あらゆる意見が私的なものであれば、娘の交通事故死を経験して「くるま社会」の異常さを訴える父親の主張も一つの個人的の立場に過ぎず、その意味では加害者の立場と等価なのだ。主張の対立のなかから、あるべき社会の姿を模索する努力を放棄したとき、社会正義は足して二で割るというような手続き上の公平さに求めざるを得ない。&lt;/p&gt;&lt;p&gt;（小笠原祐子「『何でもあり個人主義』の退廃」2000年7月11日付朝日新聞朝刊による）&lt;/p&gt;&lt;p&gt;（注1）矮小化する：重要でない、小さいことにする&lt;br&gt;（注2）禁句：避けて使わないようにする言葉&lt;br&gt;（注3）蔓延する：大きく広がる&lt;br&gt;（注4）対峙する：向き合って立つ&lt;br&gt;（注5）加害者：他人に危害を加えた人&lt;br&gt;（注6）執行猶予：刑を一定の期間実行しないで、その期間を事故なく過ごした時には、刑を受けずにすむ制度&lt;br&gt;（注7）刑務所：刑が決まった人を収容するところ&lt;br&gt;（注8）～に手厚い：～を大事にする&lt;br&gt;（注9）せつせつと：人の心を動かすほど強く&lt;br&gt;（注10）激情にかられて：激しい感情に動かされて&lt;br&gt;（注11）杓子定規に：一つの標準、形式ですべてを決めようとする融通のきかないやり方で&lt;br&gt;（注12）もどかしい：思うようにならなくてイライラする&lt;br&gt;（注13）合点がいく：意味がよく分かる&lt;/p&gt;&quot;,
+      &quot;assessment&quot;: &quot;Inspected principal reading; retainable for documentary fidelity but contains the stated defect or doubt.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;&lt;p&gt;教育の現場に携わるものとして①&lt;u&gt;以前から気になることがあった&lt;/u&gt;。学生たちと何を議論していても、たいていだれかが「私はこう思うけれど、人それぞれ、いろいろな考えがあると思うし、それでいい」という趣旨の意見を述べ、そのとたん、議論が成り立たなくなることである。&lt;/p&gt;&lt;p&gt;「人それぞれ」で「何でもあり」となれば、社会問題の大半が個人の好みと選択の問題に矮小化&lt;sup&gt;（注1）&lt;/sup&gt;されてしまう。ゼミでは②&lt;u&gt;「人それぞれ」を禁句&lt;/u&gt;&lt;sup&gt;（注2）&lt;/sup&gt;にするなどの対策をとってはみたものの、私は学生の間に蔓延&lt;sup&gt;（注3）&lt;/sup&gt;する個人志向的考え方にきちんと対峙&lt;sup&gt;（注4）&lt;/sup&gt;できずにいた。そのようなとき、ある授業で学生たちが書いたレポートを読んで、頭を殴られたようなショックを受けた。&lt;/p&gt;&lt;p&gt;このところ過失とはとうてい思えないような悲惨な交通事故のニュースが相次いでいる。そこで交通事故や被害者の人権について、これから免許を取得する若い人に考えてもらいたくて、二木雄策氏の『交通死』という本の読書リポートを課した。&lt;/p&gt;&lt;p&gt;大学生だった二木氏のお嬢さんは、自転車で交差点を横断中、赤信号を無視して突入してきた自動車にはねられて亡くなった。加害者&lt;sup&gt;（注5）&lt;/sup&gt;の女性は執行猶予&lt;sup&gt;（注6）&lt;/sup&gt;付きの判決で刑務所&lt;sup&gt;（注7）&lt;/sup&gt;に入ることもなく、また、損害賠償の交渉も支払いも保険会社が代行した。&lt;/p&gt;&lt;p&gt;加害者の信号無視で被害者は命を奪われたのに、加害者は（少なくとも形の上では）以前と変わらぬ生活を送ることができるのだ。加害者に手厚い&lt;sup&gt;（注8）&lt;/sup&gt;現行の諸制度は、③&lt;u&gt;人の命よりも車（イコール企業）を重んじる社会だ&lt;/u&gt;との筆者の主張には説得力があると私は思っていた。&lt;/p&gt;&lt;p&gt;ところが少なからぬ学生の反応は予想をしないものだった。「加害者がかわいそう」だと言うのである。被害者の立場からの主張のみが述べられているのは「客観性に欠ける」という。私は④&lt;u&gt;頭を抱えてしまった&lt;/u&gt;。二木氏の文章は、娘を失った父親の沈痛な思いがせつせつと&lt;sup&gt;（注9）&lt;/sup&gt;伝わってくるものの、決して激情に駆られて&lt;sup&gt;（注10）&lt;/sup&gt;書かれたものではない。むしろよくここまで冷静に書けるものだと感心するくらいなのだ。&lt;/p&gt;&lt;p&gt;もちろん加害者には加害者の人生がある。しかし学生たちは、その人生に豊かな社会的想像力を動かせるわけでもなく、単に、被害者側の見解だけでは一方的だと主張する。杓子定規に&lt;sup&gt;（注11）&lt;/sup&gt;客観的・中立的立場を求めなければいけないと思い込んでいるようなのだ。まるで立場の異なる二者の間で意見の対立が見られた場合には、足して二で割ればちょうどよいとでも言わんばかりに。&lt;/p&gt;&lt;p&gt;なぜ学生たちは、加害者と被害者の対立図式にこだわり、著者が訴える問題の社会的広がりに気づかないのか。もどかしい&lt;sup&gt;（注12）&lt;/sup&gt;思いでリポートを読むうちに合点がいった&lt;sup&gt;（注13）&lt;/sup&gt;。例の「人それぞれ」である。&lt;/p&gt;&lt;p&gt;あらゆる意見が私的なものであれば、娘の交通事故死を経験して「くるま社会」の異常さを訴える父親の主張も一つの個人的立場に過ぎず、その意味では加害者の立場と等価なのだ。主張の対立のなかから、あるべき社会の姿を模索する努力を放棄したとき、社会正義は足して二で割るというような手続き上の公平さに求めざるを得ない。&lt;/p&gt;&lt;p&gt;（小笠原祐子「『何でもあり個人主義』の退廃」2000年7月11日付朝日新聞朝刊による）&lt;/p&gt;&lt;p&gt;（注1）矮小化する：重要でない、小さいことにする&lt;br&gt;（注2）禁句：避けて使わないようにする言葉&lt;br&gt;（注3）蔓延する：大きく広がる&lt;br&gt;（注4）対峙する：向き合って立つ&lt;br&gt;（注5）加害者：他人に危害を加えた人&lt;br&gt;（注6）執行猶予：刑を一定の期間実行しないで、その期間を事故なく過ごした時には、刑を受けずにすむ制度&lt;br&gt;（注7）刑務所：刑が決まった人を収容するところ&lt;br&gt;（注8）～に手厚い：～を大事にする&lt;br&gt;（注9）せつせつと：人の心を動かすほど強く&lt;br&gt;（注10）激情にかられて：激しい感情に動かされて&lt;br&gt;（注11）杓子定規に：一つの標準、形式ですべてを決めようとする融通のきかないやり方で&lt;br&gt;（注12）もどかしい：思うようにならなくてイライラする&lt;br&gt;（注13）合点がいく：意味がよく分かる&lt;/p&gt;&quot;,
+      &quot;assessment&quot;: &quot;Current bounded repair; uncertainty remains as described.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;1995–2009.12 N1 question-and-explanation collection, 2003 section&quot;,
+      &quot;sha256&quot;: &quot;e3555741c8f14b855a32e7d09b42eb790492e3818a85a875f99d84703c752e00&quot;,
+      &quot;physical_pages&quot;: [
+        296,
+        297
+      ],
+      &quot;locator&quot;: &quot;Physical 296,297; affected written span&quot;,
+      &quot;reading&quot;: &quot;被害者は（少なくとも…）; もちろん被害者には被害者の人生; 個人的の立場&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;User-uploaded secondary 2003 retype, focused public text lookup&quot;,
+      &quot;url&quot;: &quot;https://www.scribd.com/doc/23637089/2003&quot;,
+      &quot;locator&quot;: &quot;Reading passages/questions 1, 21 and grammar 56, as applicable&quot;,
+      &quot;reading&quot;: &quot;加害者は（少なくとも…）; もちろん加害者には加害者の人生; 個人的立場&quot;,
+      &quot;lineage&quot;: &quot;No issuer custody or independence established; related secondary ancestry remains possible.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Victim/offender substitutions reverse the accident account; restore the offender in the three occurrences. Delete the stray の in 個人的の立場 provisionally, supported by the distinct retype. Retain plausible レポート, 筆者 and 動かせる variants.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Read the complete principal written span and related printed key/explanation.&quot;,
+    &quot;Compared the full DOC written component after poor initial alignment.&quot;,
+    &quot;Inspected relevant Chinese translation where available and performed focused public text/bibliographic lookup.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;The issuer text or original newspaper page is unavailable. The particle repair is provisional; 動かせる versus 働かせる is also not settled, so the principal form is retained.&quot;
+}</pre></details></div><div class="review-record" id="principal_differences-H25-N1_2003-D001"><div class="review-label">Principal difference · /content/html · high</div><div class="comparison"><div><h4>Principal</h4><pre><mark class="diff-old">被</mark>害者は（少なくとも…）; もちろん<mark class="diff-old">被</mark>害者には<mark class="diff-old">被</mark>害者の人生; 個人的<mark class="diff-old">の</mark>立場</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">加</mark>害者は（少なくとも…）; もちろん<mark class="diff-new">加</mark>害者には<mark class="diff-new">加</mark>害者の人生; 個人的立場</pre></div></div><p>Victim/offender substitutions reverse the accident account; restore the offender in the three occurrences. Delete the stray の in 個人的の立場 provisionally, supported by the distinct retype. Retain plausible レポート, 筆者 and 動かせる variants.</p><span class="principal-repository-source">Principal source (page=296): <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Physical [296, 297]; reading-b001 affected text</span><details><summary>Full published record · principal_differences-H25-N1_2003-D001</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;H25-N1_2003-D001&quot;,
+  &quot;unit&quot;: &quot;N1_2003&quot;,
+  &quot;item_id&quot;: &quot;reading-b001&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;current_value&quot;: &quot;&lt;p&gt;教育の現場に携わるものとして①&lt;u&gt;以前から気になることがあった&lt;/u&gt;。学生たちと何を議論していても、たいていだれかが「私はこう思うけれど、人それぞれ、いろいろな考えがあると思うし、それでいい」という趣旨の意見を述べ、そのとたん、議論が成り立たなくなることである。&lt;/p&gt;&lt;p&gt;「人それぞれ」で「何でもあり」となれば、社会問題の大半が個人の好みと選択の問題に矮小化&lt;sup&gt;（注1）&lt;/sup&gt;されてしまう。ゼミでは②&lt;u&gt;「人それぞれ」を禁句&lt;/u&gt;&lt;sup&gt;（注2）&lt;/sup&gt;にするなどの対策をとってはみたものの、私は学生の間に蔓延&lt;sup&gt;（注3）&lt;/sup&gt;する個人志向的考え方にきちんと対峙&lt;sup&gt;（注4）&lt;/sup&gt;できずにいた。そのようなとき、ある授業で学生たちが書いたレポートを読んで、頭を殴られたようなショックを受けた。&lt;/p&gt;&lt;p&gt;このところ過失とはとうてい思えないような悲惨な交通事故のニュースが相次いでいる。そこで交通事故や被害者の人権について、これから免許を取得する若い人に考えてもらいたくて、二木雄策氏の『交通死』という本の読書リポートを課した。&lt;/p&gt;&lt;p&gt;大学生だった二木氏のお嬢さんは、自転車で交差点を横断中、赤信号を無視して突入してきた自動車にはねられて亡くなった。加害者&lt;sup&gt;（注5）&lt;/sup&gt;の女性は執行猶予&lt;sup&gt;（注6）&lt;/sup&gt;付きの判決で刑務所&lt;sup&gt;（注7）&lt;/sup&gt;に入ることもなく、また、損害賠償の交渉も支払いも保険会社が代行した。&lt;/p&gt;&lt;p&gt;加害者の信号無視で被害者は命を奪われたのに、加害者は（少なくとも形の上では）以前と変わらぬ生活を送ることができるのだ。加害者に手厚い&lt;sup&gt;（注8）&lt;/sup&gt;現行の諸制度は、③&lt;u&gt;人の命よりも車（イコール企業）を重んじる社会だ&lt;/u&gt;との筆者の主張には説得力があると私は思っていた。&lt;/p&gt;&lt;p&gt;ところが少なからぬ学生の反応は予想をしないものだった。「加害者がかわいそう」だと言うのである。被害者の立場からの主張のみが述べられているのは「客観性に欠ける」という。私は④&lt;u&gt;頭を抱えてしまった&lt;/u&gt;。二木氏の文章は、娘を失った父親の沈痛な思いがせつせつと&lt;sup&gt;（注9）&lt;/sup&gt;伝わってくるものの、決して激情に駆られて&lt;sup&gt;（注10）&lt;/sup&gt;書かれたものではない。むしろよくここまで冷静に書けるものだと感心するくらいなのだ。&lt;/p&gt;&lt;p&gt;もちろん加害者には加害者の人生がある。しかし学生たちは、その人生に豊かな社会的想像力を動かせるわけでもなく、単に、被害者側の見解だけでは一方的だと主張する。杓子定規に&lt;sup&gt;（注11）&lt;/sup&gt;客観的・中立的立場を求めなければいけないと思い込んでいるようなのだ。まるで立場の異なる二者の間で意見の対立が見られた場合には、足して二で割ればちょうどよいとでも言わんばかりに。&lt;/p&gt;&lt;p&gt;なぜ学生たちは、加害者と被害者の対立図式にこだわり、著者が訴える問題の社会的広がりに気づかないのか。もどかしい&lt;sup&gt;（注12）&lt;/sup&gt;思いでリポートを読むうちに合点がいった&lt;sup&gt;（注13）&lt;/sup&gt;。例の「人それぞれ」である。&lt;/p&gt;&lt;p&gt;あらゆる意見が私的なものであれば、娘の交通事故死を経験して「くるま社会」の異常さを訴える父親の主張も一つの個人的立場に過ぎず、その意味では加害者の立場と等価なのだ。主張の対立のなかから、あるべき社会の姿を模索する努力を放棄したとき、社会正義は足して二で割るというような手続き上の公平さに求めざるを得ない。&lt;/p&gt;&lt;p&gt;（小笠原祐子「『何でもあり個人主義』の退廃」2000年7月11日付朝日新聞朝刊による）&lt;/p&gt;&lt;p&gt;（注1）矮小化する：重要でない、小さいことにする&lt;/p&gt;&lt;p&gt;（注2）禁句：避けて使わないようにする言葉&lt;/p&gt;&lt;p&gt;（注3）蔓延する：大きく広がる&lt;/p&gt;&lt;p&gt;（注4）対峙する：向き合って立つ&lt;/p&gt;&lt;p&gt;（注5）加害者：他人に危害を加えた人&lt;/p&gt;&lt;p&gt;（注6）執行猶予：刑を一定の期間実行しないで、その期間を事故なく過ごした時には、刑を受けずにすむ制度&lt;/p&gt;&lt;p&gt;（注7）刑務所：刑が決まった人を収容するところ&lt;/p&gt;&lt;p&gt;（注8）～に手厚い：～を大事にする&lt;/p&gt;&lt;p&gt;（注9）せつせつと：人の心を動かすほど強く&lt;/p&gt;&lt;p&gt;（注10）激情にかられて：激しい感情に動かされて&lt;/p&gt;&lt;p&gt;（注11）杓子定規に：一つの標準、形式ですべてを決めようとする融通のきかないやり方で&lt;/p&gt;&lt;p&gt;（注12）もどかしい：思うようにならなくてイライラする&lt;/p&gt;&lt;p&gt;（注13）合点がいく：意味がよく分かる&lt;/p&gt;&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;1995–2009.12 N1 question-and-explanation collection, 2003 section&quot;,
+    &quot;sha256&quot;: &quot;e3555741c8f14b855a32e7d09b42eb790492e3818a85a875f99d84703c752e00&quot;,
+    &quot;physical_pages&quot;: [
+      296,
+      297
+    ],
+    &quot;locator&quot;: &quot;Physical [296, 297]; reading-b001 affected text&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;被害者は（少なくとも…）; もちろん被害者には被害者の人生; 個人的の立場&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;加害者は（少なくとも…）; もちろん加害者には加害者の人生; 個人的立場&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;conjectural_repair&quot;,
+  &quot;rationale&quot;: &quot;Victim/offender substitutions reverse the accident account; restore the offender in the three occurrences. Delete the stray の in 個人的の立場 provisionally, supported by the distinct retype. Retain plausible レポート, 筆者 and 動かせる variants.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;H25-N1_2003-reading-b001-wording&quot;
+  ]
+}</pre></details></div></section><section class="review-group" id="review-reading-q001" data-kinds="difference provisional_fix"><div class="review-group-heading"><h2>reading-q001</h2><a href="../papers/N1_2003.html#reading-q001">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">問1　筆者は学生について①「<u>以前から気になることがあった</u>」としているが、それはどのようなことか。<ol><li>自分とは考えの違う人の意見を無視して議論を進めようとすること</li><li>正しい議論にまとめるために、たくさんの人の意見を聞きすぎること</li><li>いろいろな意見を出し合うが、お互いが理解しているか気にしないこと</li><li>それぞれが自分の意見を言うが、一つの結論を導く姿勢を持たないこと</li></ol><p>Editorial key: 4</p></div></details><div class="review-record" id="unresolved_cases-H25-N1_2003-reading-q001-wording"><div class="review-label">Provisional fix · /options/2 · medium</div><div class="comparison"><div><h4>Before</h4><pre>いろいろな意見を出し合うが、お互いが理解している気にしないこと</pre></div><div><h4>Editorial</h4><pre>いろいろな意見を出し合うが、お互いが理解している<mark class="diff-new">か</mark>気にしないこと</pre></div></div><p>Insert the interrogative か in the complete wrong option; the focused retype supports this repair. The selected answer remains option 4.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>The secondary retype is not authenticated; か is supported but an original booklet is unavailable.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Insert the interrogative か in the complete wrong option; the focused retype supports this repair. The selected answer remains option 4.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=297): <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Physical 297; affected written span<p>理解している気にしない</p></li><li><a href="https://www.scribd.com/doc/23637089/2003" target="_blank" rel="noopener">User-uploaded secondary 2003 retype, focused public text lookup</a> · Reading passages/questions 1, 21 and grammar 56, as applicable<p>理解しているか気にしない</p></li></ul><details><summary>Full published record · unresolved_cases-H25-N1_2003-reading-q001-wording</summary><pre>{
+  &quot;case_id&quot;: &quot;H25-N1_2003-reading-q001-wording&quot;,
+  &quot;unit&quot;: &quot;N1_2003&quot;,
+  &quot;item_id&quot;: &quot;reading-q001&quot;,
+  &quot;field&quot;: &quot;/options/2&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;before&quot;: &quot;いろいろな意見を出し合うが、お互いが理解している気にしないこと&quot;,
+  &quot;current_value&quot;: &quot;いろいろな意見を出し合うが、お互いが理解しているか気にしないこと&quot;,
+  &quot;context&quot;: &quot;Insert the interrogative か in the complete wrong option; the focused retype supports this repair. The selected answer remains option 4.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;いろいろな意見を出し合うが、お互いが理解している気にしないこと&quot;,
+      &quot;assessment&quot;: &quot;Inspected principal reading; retainable for documentary fidelity but contains the stated defect or doubt.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;いろいろな意見を出し合うが、お互いが理解しているか気にしないこと&quot;,
+      &quot;assessment&quot;: &quot;Current bounded repair; uncertainty remains as described.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;1995–2009.12 N1 question-and-explanation collection, 2003 section&quot;,
+      &quot;sha256&quot;: &quot;e3555741c8f14b855a32e7d09b42eb790492e3818a85a875f99d84703c752e00&quot;,
+      &quot;physical_pages&quot;: [
+        297
+      ],
+      &quot;locator&quot;: &quot;Physical 297; affected written span&quot;,
+      &quot;reading&quot;: &quot;理解している気にしない&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;User-uploaded secondary 2003 retype, focused public text lookup&quot;,
+      &quot;url&quot;: &quot;https://www.scribd.com/doc/23637089/2003&quot;,
+      &quot;locator&quot;: &quot;Reading passages/questions 1, 21 and grammar 56, as applicable&quot;,
+      &quot;reading&quot;: &quot;理解しているか気にしない&quot;,
+      &quot;lineage&quot;: &quot;No issuer custody or independence established; related secondary ancestry remains possible.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Insert the interrogative か in the complete wrong option; the focused retype supports this repair. The selected answer remains option 4.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Read the complete principal written span and related printed key/explanation.&quot;,
+    &quot;Compared the full DOC written component after poor initial alignment.&quot;,
+    &quot;Inspected relevant Chinese translation where available and performed focused public text/bibliographic lookup.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;The secondary retype is not authenticated; か is supported but an original booklet is unavailable.&quot;
+}</pre></details></div><div class="review-record" id="principal_differences-H25-N1_2003-D004"><div class="review-label">Principal difference · /options/2 · high</div><div class="comparison"><div><h4>Principal</h4><pre>理解している気にしない</pre></div><div><h4>Editorial</h4><pre>理解している<mark class="diff-new">か</mark>気にしない</pre></div></div><p>Insert the interrogative か in the complete wrong option; the focused retype supports this repair. The selected answer remains option 4.</p><span class="principal-repository-source">Principal source (page=297): <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Physical [297]; reading-q001 affected text</span><details><summary>Full published record · principal_differences-H25-N1_2003-D004</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;H25-N1_2003-D004&quot;,
+  &quot;unit&quot;: &quot;N1_2003&quot;,
+  &quot;item_id&quot;: &quot;reading-q001&quot;,
+  &quot;field&quot;: &quot;/options/2&quot;,
+  &quot;current_value&quot;: &quot;いろいろな意見を出し合うが、お互いが理解しているか気にしないこと&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;1995–2009.12 N1 question-and-explanation collection, 2003 section&quot;,
+    &quot;sha256&quot;: &quot;e3555741c8f14b855a32e7d09b42eb790492e3818a85a875f99d84703c752e00&quot;,
+    &quot;physical_pages&quot;: [
+      297
+    ],
+    &quot;locator&quot;: &quot;Physical [297]; reading-q001 affected text&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;理解している気にしない&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;理解しているか気にしない&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;conjectural_repair&quot;,
+  &quot;rationale&quot;: &quot;Insert the interrogative か in the complete wrong option; the focused retype supports this repair. The selected answer remains option 4.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;H25-N1_2003-reading-q001-wording&quot;
+  ]
+}</pre></details></div></section><section class="review-group" id="review-reading-q010" data-kinds="unresolved"><div class="review-group-heading"><h2>reading-q010</h2><a href="../papers/N1_2003.html#reading-q010">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">問3　筆者は手紙の形式についてどのように考えているか。<ol><li>形式はないと不便だが、現在の形式は手紙を書く意欲を奪うものだ。</li><li>手紙の形式のもともとの意味を知れば、よい手紙が書けるようになる。</li><li>相手に対して失礼な手紙を書きたくならないなら、形式は無視した方がよい。</li><li>形式があるからこそ、自由に好きなように相手に手紙を書くことができる。</li></ol><p>Editorial key: 1</p></div></details><div class="review-record" id="unresolved_cases-H25-N1_2003-reading-q010-retained-option"><div class="review-label">Unresolved · /options/2 · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>相手に対して失礼な手紙を書きたくならないなら、形式は無視した方がよい。</pre></div><div><h4>Editorial</h4><pre>相手に対して失礼な手紙を書きたくならないなら、形式は無視した方がよい。</pre></div></div><p>The repeated negative/conditional sequence is awkward, but can be read as a deliberately convoluted wrong alternative. The external retype omits なら. Its ancestry is unestablished, so the local principal reading is retained.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>Exact original distractor wording is unestablished; the option remains incorrect under either reading.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Wrong reading-comprehension option; the keyed answer remains 1.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=299): <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Physical 299, question 10, option 3<p>書きたくならないなら</p></li><li><a href="https://www.scribd.com/doc/23637089/2003" target="_blank" rel="noopener">User-uploaded secondary 2003 retype, focused lookup</a> · Reading question 10, option 3<p>書きたくないなら</p></li></ul><details><summary>Full published record · unresolved_cases-H25-N1_2003-reading-q010-retained-option</summary><pre>{
+  &quot;case_id&quot;: &quot;H25-N1_2003-reading-q010-retained-option&quot;,
+  &quot;unit&quot;: &quot;N1_2003&quot;,
+  &quot;item_id&quot;: &quot;reading-q010&quot;,
+  &quot;field&quot;: &quot;/options/2&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;相手に対して失礼な手紙を書きたくならないなら、形式は無視した方がよい。&quot;,
+  &quot;context&quot;: &quot;Wrong reading-comprehension option; the keyed answer remains 1.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;相手に対して失礼な手紙を書きたくならないなら、形式は無視した方がよい。&quot;,
+      &quot;assessment&quot;: &quot;Retained principal reading; the historical wording is not settled.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;相手に対して失礼な手紙を書きたくないなら、形式は無視した方がよい。&quot;,
+      &quot;assessment&quot;: &quot;Plausible shorter rival found in the focused secondary retype; not authenticated.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;1995–2009.12 N1 question-and-explanation collection, 2003 section&quot;,
+      &quot;sha256&quot;: &quot;e3555741c8f14b855a32e7d09b42eb790492e3818a85a875f99d84703c752e00&quot;,
+      &quot;physical_pages&quot;: [
+        299
+      ],
+      &quot;locator&quot;: &quot;Physical 299, question 10, option 3&quot;,
+      &quot;reading&quot;: &quot;書きたくならないなら&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;User-uploaded secondary 2003 retype, focused lookup&quot;,
+      &quot;url&quot;: &quot;https://www.scribd.com/doc/23637089/2003&quot;,
+      &quot;locator&quot;: &quot;Reading question 10, option 3&quot;,
+      &quot;reading&quot;: &quot;書きたくないなら&quot;,
+      &quot;lineage&quot;: &quot;Unverified secondary ancestry; not an independent official original.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;The repeated negative/conditional sequence is awkward, but can be read as a deliberately convoluted wrong alternative. The external retype omits なら. Its ancestry is unestablished, so the local principal reading is retained.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Re-read the principal pixels and complete option.&quot;,
+    &quot;Compared the full local DOC and related explanation.&quot;,
+    &quot;Checked the focused secondary public text; no original booklet or underlying article page was available.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;Exact original distractor wording is unestablished; the option remains incorrect under either reading.&quot;
+}</pre></details></div></section><section class="review-group" id="review-reading-b004" data-kinds="difference"><div class="review-group-heading"><h2>reading-b004</h2><a href="../papers/N1_2003.html#reading-b004">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><p>（3）大人のことばと子どものことばの場合も、大人のことばが「中心」で、子どものことばは「中心」ではありません。だから、普通は、私たちは、「中心」であるところの大人のことばを<ruby data-rubi-id="rr4-85753e915833e144b493" data-rubi-origin="project_rubi_restore">維持<rt>いじ</rt></ruby>しなければならないと思っており、子どもが何か変わった言い方をしますと、（　①　）。</p><p>しかし、その反面<sup>（注）</sup>、子どものことばというのは、必ずしも全部大人のことばに合わせて直されてしまうわけではありません。それは、ことばというのが、時代とともに変わるということをみればすぐわかることです。「ことばが変わる」という場合、それは世代から世代への移り変わりで、②<u>ずれが起こっている</u>ということですし、そのずれというのは、子どものことばに始まったのが、それを直そうとする試みにも関わらず、しきれなくて、それが大人のことばの中に入り込み、言語を変えるのだと考えることができます。こんなふうに考えていますと、③<u>「中心」でないもの</u>も、最近のことばを使いますと、文化というものを「活性化」する、つまり、それに活力を与える――そういう意味を持っているものとしてとらえなおすことができるわけです。</p><p>（池上嘉彦『ふしぎなことば　ことばのふしぎ』による）</p><p>（注）反面：ほかの面から見ると</p></div></details><div class="review-record" id="principal_differences-H25-N1_2003-D002"><div class="review-label">Principal difference · /content/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>反面（注<mark class="diff-old">3</mark>） with definition （注）</pre></div><div><h4>Editorial</h4><pre>反面（注） with definition （注）</pre></div></div><p>The only gloss is labelled 注, so remove the spurious 3 from its in-text reference. Both available translation/context and the distinct retype confirm there is one note.</p><span class="principal-repository-source">Principal source (page=300): <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Physical [300]; reading-b004 affected text</span><details><summary>Full published record · principal_differences-H25-N1_2003-D002</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;H25-N1_2003-D002&quot;,
+  &quot;unit&quot;: &quot;N1_2003&quot;,
+  &quot;item_id&quot;: &quot;reading-b004&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;current_value&quot;: &quot;&lt;p&gt;（3）大人のことばと子どものことばの場合も、大人のことばが「中心」で、子どものことばは「中心」ではありません。だから、普通は、私たちは、「中心」であるところの大人のことばを維持しなければならないと思っており、子どもが何か変わった言い方をしますと、（　①　）。&lt;/p&gt;&lt;p&gt;しかし、その反面&lt;sup&gt;（注）&lt;/sup&gt;、子どものことばというのは、必ずしも全部大人のことばに合わせて直されてしまうわけではありません。それは、ことばというのが、時代とともに変わるということをみればすぐわかることです。「ことばが変わる」という場合、それは世代から世代への移り変わりで、②&lt;u&gt;ずれが起こっている&lt;/u&gt;ということですし、そのずれというのは、子どものことばに始まったのが、それを直そうとする試みにも関わらず、しきれなくて、それが大人のことばの中に入り込み、言語を変えるのだと考えることができます。こんなふうに考えていますと、③&lt;u&gt;「中心」でないもの&lt;/u&gt;も、最近のことばを使いますと、文化というものを「活性化」する、つまり、それに活力を与える――そういう意味を持っているものとしてとらえなおすことができるわけです。&lt;/p&gt;&lt;p&gt;（池上嘉彦『ふしぎなことば　ことばのふしぎ』による）&lt;/p&gt;&lt;p&gt;（注）反面：ほかの面から見ると&lt;/p&gt;&quot;,
+  &quot;categories&quot;: [
+    &quot;numbers&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;1995–2009.12 N1 question-and-explanation collection, 2003 section&quot;,
+    &quot;sha256&quot;: &quot;e3555741c8f14b855a32e7d09b42eb790492e3818a85a875f99d84703c752e00&quot;,
+    &quot;physical_pages&quot;: [
+      300
+    ],
+    &quot;locator&quot;: &quot;Physical [300]; reading-b004 affected text&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;反面（注3） with definition （注）&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;反面（注） with definition （注）&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;The only gloss is labelled 注, so remove the spurious 3 from its in-text reference. Both available translation/context and the distinct retype confirm there is one note.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-q015" data-kinds="unresolved"><div class="review-group-heading"><h2>reading-q015</h2><a href="../papers/N1_2003.html#reading-q015">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">問1　（　①　）に入るものとして最も適当なものはどれか。<ol><li>それはおかしいと言って直すことをやります</li><li>それはいいと言って大人の言葉に取り入れます</li><li>無理に直そうとしないうちでしばらく様子を見ます</li><li>全く直そうとしないでそのまま放っておきます</li></ol><p>Editorial key: 1</p></div></details><div class="review-record" id="unresolved_cases-H25-N1_2003-reading-q015-retained-option"><div class="review-label">Unresolved · /options/2 · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>無理に直そうとしないうちでしばらく様子を見ます</pre></div><div><h4>Editorial</h4><pre>無理に直そうとしないうちでしばらく様子を見ます</pre></div></div><p>The うちで clause in a reading distractor is unusual. A shorter grammatical form appears in the external retype, but both local witnesses preserve the longer wording. The principal is retained without asserting an intentional typo.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>Exact original distractor wording is unestablished; the option remains incorrect under either reading.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Wrong reading-comprehension option; the keyed answer remains 1.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=301): <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Physical 301, question 15, option 3<p>直そうとしないうちで</p></li><li><a href="https://www.scribd.com/doc/23637089/2003" target="_blank" rel="noopener">User-uploaded secondary 2003 retype, focused lookup</a> · Reading question 15, option 3<p>直そうとしないで</p></li></ul><details><summary>Full published record · unresolved_cases-H25-N1_2003-reading-q015-retained-option</summary><pre>{
+  &quot;case_id&quot;: &quot;H25-N1_2003-reading-q015-retained-option&quot;,
+  &quot;unit&quot;: &quot;N1_2003&quot;,
+  &quot;item_id&quot;: &quot;reading-q015&quot;,
+  &quot;field&quot;: &quot;/options/2&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;無理に直そうとしないうちでしばらく様子を見ます&quot;,
+  &quot;context&quot;: &quot;Wrong reading-comprehension option; the keyed answer remains 1.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;無理に直そうとしないうちでしばらく様子を見ます&quot;,
+      &quot;assessment&quot;: &quot;Retained principal reading; the historical wording is not settled.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;無理に直そうとしないでしばらく様子を見ます&quot;,
+      &quot;assessment&quot;: &quot;Plausible shorter rival found in the focused secondary retype; not authenticated.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;1995–2009.12 N1 question-and-explanation collection, 2003 section&quot;,
+      &quot;sha256&quot;: &quot;e3555741c8f14b855a32e7d09b42eb790492e3818a85a875f99d84703c752e00&quot;,
+      &quot;physical_pages&quot;: [
+        301
+      ],
+      &quot;locator&quot;: &quot;Physical 301, question 15, option 3&quot;,
+      &quot;reading&quot;: &quot;直そうとしないうちで&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;User-uploaded secondary 2003 retype, focused lookup&quot;,
+      &quot;url&quot;: &quot;https://www.scribd.com/doc/23637089/2003&quot;,
+      &quot;locator&quot;: &quot;Reading question 15, option 3&quot;,
+      &quot;reading&quot;: &quot;直そうとしないで&quot;,
+      &quot;lineage&quot;: &quot;Unverified secondary ancestry; not an independent official original.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;The うちで clause in a reading distractor is unusual. A shorter grammatical form appears in the external retype, but both local witnesses preserve the longer wording. The principal is retained without asserting an intentional typo.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Re-read the principal pixels and complete option.&quot;,
+    &quot;Compared the full local DOC and related explanation.&quot;,
+    &quot;Checked the focused secondary public text; no original booklet or underlying article page was available.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;Exact original distractor wording is unestablished; the option remains incorrect under either reading.&quot;
+}</pre></details></div></section><section class="review-group" id="review-reading-b008" data-kinds="difference provisional_fix"><div class="review-group-heading"><h2>reading-b008</h2><a href="../papers/N1_2003.html#reading-b008">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><p>（4）アメリカの青年男女が日本の青年達より服装に金をかけず、豪華なレストランなどへもあまり行かないのは、18歳以降は親から独立して生活するべきだという社会規範が強く、経済的に貧しいからである。アパート代はアメリカでも高く、独立して生活している青年たちは堅実<sup>（注1）</sup>で、贅沢は中年以降の男女か、あるいは法律家やビジネススクール出のコンサルタント<sup>（注2）</sup>など高収入の専門職についている人々である。（中略）</p><p>それに対して日本の親がかり<sup>（注3）</sup>の大学生やOL<sup>（注4）</sup>は、自分のアルバイト収入や給料をすべてこづかいとして自由にできるが、いうまでもなくこのような栄華は期限付きである。いつかは親のかわりに扶養してくれる男性、身の回りを世話してくれる女性と結婚しなければならず、とうてい自立しているとはいえない。</p><p>（菅原真理子『新・家族の時代』による）</p><p>（注1）堅実：考え方が確実でしっかりしていること</p><p>（注2）コンサルタント：企業経営に関する助言や指導を与える専門家</p><p>（注3）親がかり：経済的に親に依存していること</p><p>（注4）OL：会社や事務所で働く女性</p></div></details><div class="review-record" id="unresolved_cases-H25-N1_2003-reading-b008-wording"><div class="review-label">Provisional fix · /content/html · medium</div><div class="comparison"><div><h4>Before</h4><pre>&lt;p&gt;（4）アメリカの青年男女が日本の青年達より服装に金をかけず、豪華なレストラン<mark class="diff-old">ん</mark>などへもあまり行かないのは、18歳以降は親から独立して生活するべきだという社会規範が強く、経済的に貧しいからである。アパート代はアメリカでも高く、独立して生活している青年たちは堅実&lt;sup&gt;（注1）&lt;/sup&gt;で、贅沢は中年以降の男女か、あるいは法律家やビジネススクール出のコンサ…</pre></div><div><h4>Editorial</h4><pre>&lt;p&gt;（4）アメリカの青年男女が日本の青年達より服装に金をかけず、豪華なレストランなどへもあまり行かないのは、18歳以降は親から独立して生活するべきだという社会規範が強く、経済的に貧しいからである。アパート代はアメリカでも高く、独立して生活している青年たちは堅実&lt;sup&gt;（注1）&lt;/sup&gt;で、贅沢は中年以降の男女か、あるいは法律家やビジネススクール出のコンサ…</pre></div></div><p>Delete duplicated ん and repair the author surname from the matching national-library book record. Provisionally remove the second を in 身の回りを世話をして, supported by the focused secondary retype. Retain unresolved 贅沢は…人々である wording.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>The source 贅沢は…人々である is incomplete or unusually elliptical; all checked secondary texts preserve it. The original book passage was not openly available. The double-particle repair remains provisional.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Delete duplicated ん and repair the author surname from the matching national-library book record. Provisionally remove the second を in 身の回りを世話をして, supported by the focused secondary retype. Retain unresolved 贅沢は…人々である wording.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=302): <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Physical 302,303; affected written span<p>レストランん; 萱原真理子; 身の回りを世話をして</p></li><li><a href="https://www.scribd.com/doc/23637089/2003" target="_blank" rel="noopener">User-uploaded secondary 2003 retype, focused public text lookup</a> · Reading passages/questions 1, 21 and grammar 56, as applicable<p>レストラン; 菅原真理子; 身の回りを世話して</p></li><li><a href="https://ndlsearch.ndl.go.jp/books/R100000002-I000001893884" target="_blank" rel="noopener">National Diet Library bibliography for 新・家族の時代</a> · Author and publication record I000001893884<p>菅原真理子; 中央公論社; 1987.11</p></li></ul><details><summary>Full published record · unresolved_cases-H25-N1_2003-reading-b008-wording</summary><pre>{
+  &quot;case_id&quot;: &quot;H25-N1_2003-reading-b008-wording&quot;,
+  &quot;unit&quot;: &quot;N1_2003&quot;,
+  &quot;item_id&quot;: &quot;reading-b008&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;before&quot;: &quot;&lt;p&gt;（4）アメリカの青年男女が日本の青年達より服装に金をかけず、豪華なレストランんなどへもあまり行かないのは、18歳以降は親から独立して生活するべきだという社会規範が強く、経済的に貧しいからである。アパート代はアメリカでも高く、独立して生活している青年たちは堅実&lt;sup&gt;（注1）&lt;/sup&gt;で、贅沢は中年以降の男女か、あるいは法律家やビジネススクール出のコンサルタント&lt;sup&gt;（注2）&lt;/sup&gt;など高収入の専門職についている人々である。（中略）&lt;/p&gt;&lt;p&gt;それに対して日本の親がかり&lt;sup&gt;（注3）&lt;/sup&gt;の大学生やOL&lt;sup&gt;（注4）&lt;/sup&gt;は、自分のアルバイト収入や給料をすべてこづかいとして自由にできるが、いうまでもなくこのような栄華は期限付きである。いつかは親のかわりに扶養してくれる男性、身の回りを世話をしてくれる女性と結婚しなければならず、とうてい自立しているとはいえない。&lt;/p&gt;&lt;p&gt;（萱原真理子『新・家族の時代』による）&lt;/p&gt;&lt;p&gt;（注1）堅実：考え方が確実でしっかりしていること&lt;br&gt;（注2）コンサルタント：企業経営に関する助言や指導を与える専門家&lt;br&gt;（注3）親がかり：経済的に親に依存していること&lt;br&gt;（注4）OL：会社や事務所で働く女性&lt;/p&gt;&quot;,
+  &quot;current_value&quot;: &quot;&lt;p&gt;（4）アメリカの青年男女が日本の青年達より服装に金をかけず、豪華なレストランなどへもあまり行かないのは、18歳以降は親から独立して生活するべきだという社会規範が強く、経済的に貧しいからである。アパート代はアメリカでも高く、独立して生活している青年たちは堅実&lt;sup&gt;（注1）&lt;/sup&gt;で、贅沢は中年以降の男女か、あるいは法律家やビジネススクール出のコンサルタント&lt;sup&gt;（注2）&lt;/sup&gt;など高収入の専門職についている人々である。（中略）&lt;/p&gt;&lt;p&gt;それに対して日本の親がかり&lt;sup&gt;（注3）&lt;/sup&gt;の大学生やOL&lt;sup&gt;（注4）&lt;/sup&gt;は、自分のアルバイト収入や給料をすべてこづかいとして自由にできるが、いうまでもなくこのような栄華は期限付きである。いつかは親のかわりに扶養してくれる男性、身の回りを世話してくれる女性と結婚しなければならず、とうてい自立しているとはいえない。&lt;/p&gt;&lt;p&gt;（菅原真理子『新・家族の時代』による）&lt;/p&gt;&lt;p&gt;（注1）堅実：考え方が確実でしっかりしていること&lt;/p&gt;&lt;p&gt;（注2）コンサルタント：企業経営に関する助言や指導を与える専門家&lt;/p&gt;&lt;p&gt;（注3）親がかり：経済的に親に依存していること&lt;/p&gt;&lt;p&gt;（注4）OL：会社や事務所で働く女性&lt;/p&gt;&quot;,
+  &quot;context&quot;: &quot;Delete duplicated ん and repair the author surname from the matching national-library book record. Provisionally remove the second を in 身の回りを世話をして, supported by the focused secondary retype. Retain unresolved 贅沢は…人々である wording.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;&lt;p&gt;（4）アメリカの青年男女が日本の青年達より服装に金をかけず、豪華なレストランんなどへもあまり行かないのは、18歳以降は親から独立して生活するべきだという社会規範が強く、経済的に貧しいからである。アパート代はアメリカでも高く、独立して生活している青年たちは堅実&lt;sup&gt;（注1）&lt;/sup&gt;で、贅沢は中年以降の男女か、あるいは法律家やビジネススクール出のコンサルタント&lt;sup&gt;（注2）&lt;/sup&gt;など高収入の専門職についている人々である。（中略）&lt;/p&gt;&lt;p&gt;それに対して日本の親がかり&lt;sup&gt;（注3）&lt;/sup&gt;の大学生やOL&lt;sup&gt;（注4）&lt;/sup&gt;は、自分のアルバイト収入や給料をすべてこづかいとして自由にできるが、いうまでもなくこのような栄華は期限付きである。いつかは親のかわりに扶養してくれる男性、身の回りを世話をしてくれる女性と結婚しなければならず、とうてい自立しているとはいえない。&lt;/p&gt;&lt;p&gt;（萱原真理子『新・家族の時代』による）&lt;/p&gt;&lt;p&gt;（注1）堅実：考え方が確実でしっかりしていること&lt;br&gt;（注2）コンサルタント：企業経営に関する助言や指導を与える専門家&lt;br&gt;（注3）親がかり：経済的に親に依存していること&lt;br&gt;（注4）OL：会社や事務所で働く女性&lt;/p&gt;&quot;,
+      &quot;assessment&quot;: &quot;Inspected principal reading; retainable for documentary fidelity but contains the stated defect or doubt.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;&lt;p&gt;（4）アメリカの青年男女が日本の青年達より服装に金をかけず、豪華なレストランなどへもあまり行かないのは、18歳以降は親から独立して生活するべきだという社会規範が強く、経済的に貧しいからである。アパート代はアメリカでも高く、独立して生活している青年たちは堅実&lt;sup&gt;（注1）&lt;/sup&gt;で、贅沢は中年以降の男女か、あるいは法律家やビジネススクール出のコンサルタント&lt;sup&gt;（注2）&lt;/sup&gt;など高収入の専門職についている人々である。（中略）&lt;/p&gt;&lt;p&gt;それに対して日本の親がかり&lt;sup&gt;（注3）&lt;/sup&gt;の大学生やOL&lt;sup&gt;（注4）&lt;/sup&gt;は、自分のアルバイト収入や給料をすべてこづかいとして自由にできるが、いうまでもなくこのような栄華は期限付きである。いつかは親のかわりに扶養してくれる男性、身の回りを世話してくれる女性と結婚しなければならず、とうてい自立しているとはいえない。&lt;/p&gt;&lt;p&gt;（菅原真理子『新・家族の時代』による）&lt;/p&gt;&lt;p&gt;（注1）堅実：考え方が確実でしっかりしていること&lt;br&gt;（注2）コンサルタント：企業経営に関する助言や指導を与える専門家&lt;br&gt;（注3）親がかり：経済的に親に依存していること&lt;br&gt;（注4）OL：会社や事務所で働く女性&lt;/p&gt;&quot;,
+      &quot;assessment&quot;: &quot;Current bounded repair; uncertainty remains as described.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;1995–2009.12 N1 question-and-explanation collection, 2003 section&quot;,
+      &quot;sha256&quot;: &quot;e3555741c8f14b855a32e7d09b42eb790492e3818a85a875f99d84703c752e00&quot;,
+      &quot;physical_pages&quot;: [
+        302,
+        303
+      ],
+      &quot;locator&quot;: &quot;Physical 302,303; affected written span&quot;,
+      &quot;reading&quot;: &quot;レストランん; 萱原真理子; 身の回りを世話をして&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;User-uploaded secondary 2003 retype, focused public text lookup&quot;,
+      &quot;url&quot;: &quot;https://www.scribd.com/doc/23637089/2003&quot;,
+      &quot;locator&quot;: &quot;Reading passages/questions 1, 21 and grammar 56, as applicable&quot;,
+      &quot;reading&quot;: &quot;レストラン; 菅原真理子; 身の回りを世話して&quot;,
+      &quot;lineage&quot;: &quot;No issuer custody or independence established; related secondary ancestry remains possible.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;National Diet Library bibliography for 新・家族の時代&quot;,
+      &quot;url&quot;: &quot;https://ndlsearch.ndl.go.jp/books/R100000002-I000001893884&quot;,
+      &quot;locator&quot;: &quot;Author and publication record I000001893884&quot;,
+      &quot;reading&quot;: &quot;菅原真理子; 中央公論社; 1987.11&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Delete duplicated ん and repair the author surname from the matching national-library book record. Provisionally remove the second を in 身の回りを世話をして, supported by the focused secondary retype. Retain unresolved 贅沢は…人々である wording.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Read the complete principal written span and related printed key/explanation.&quot;,
+    &quot;Compared the full DOC written component after poor initial alignment.&quot;,
+    &quot;Inspected relevant Chinese translation where available and performed focused public text/bibliographic lookup.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;The source 贅沢は…人々である is incomplete or unusually elliptical; all checked secondary texts preserve it. The original book passage was not openly available. The double-particle repair remains provisional.&quot;
+}</pre></details></div><div class="review-record" id="principal_differences-H25-N1_2003-D003"><div class="review-label">Principal difference · /content/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>レストラン<mark class="diff-old">ん</mark>; <mark class="diff-old">萱</mark>原真理子; 身の回りを世話<mark class="diff-old">を</mark>して</pre></div><div><h4>Editorial</h4><pre>レストラン; <mark class="diff-new">菅</mark>原真理子; 身の回りを世話して</pre></div></div><p>Delete duplicated ん and repair the author surname from the matching national-library book record. Provisionally remove the second を in 身の回りを世話をして, supported by the focused secondary retype. Retain unresolved 贅沢は…人々である wording.</p><span class="principal-repository-source">Principal source (page=302): <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Physical [302, 303]; reading-b008 affected text</span><details><summary>Full published record · principal_differences-H25-N1_2003-D003</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;H25-N1_2003-D003&quot;,
+  &quot;unit&quot;: &quot;N1_2003&quot;,
+  &quot;item_id&quot;: &quot;reading-b008&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;current_value&quot;: &quot;&lt;p&gt;（4）アメリカの青年男女が日本の青年達より服装に金をかけず、豪華なレストランなどへもあまり行かないのは、18歳以降は親から独立して生活するべきだという社会規範が強く、経済的に貧しいからである。アパート代はアメリカでも高く、独立して生活している青年たちは堅実&lt;sup&gt;（注1）&lt;/sup&gt;で、贅沢は中年以降の男女か、あるいは法律家やビジネススクール出のコンサルタント&lt;sup&gt;（注2）&lt;/sup&gt;など高収入の専門職についている人々である。（中略）&lt;/p&gt;&lt;p&gt;それに対して日本の親がかり&lt;sup&gt;（注3）&lt;/sup&gt;の大学生やOL&lt;sup&gt;（注4）&lt;/sup&gt;は、自分のアルバイト収入や給料をすべてこづかいとして自由にできるが、いうまでもなくこのような栄華は期限付きである。いつかは親のかわりに扶養してくれる男性、身の回りを世話してくれる女性と結婚しなければならず、とうてい自立しているとはいえない。&lt;/p&gt;&lt;p&gt;（菅原真理子『新・家族の時代』による）&lt;/p&gt;&lt;p&gt;（注1）堅実：考え方が確実でしっかりしていること&lt;/p&gt;&lt;p&gt;（注2）コンサルタント：企業経営に関する助言や指導を与える専門家&lt;/p&gt;&lt;p&gt;（注3）親がかり：経済的に親に依存していること&lt;/p&gt;&lt;p&gt;（注4）OL：会社や事務所で働く女性&lt;/p&gt;&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;1995–2009.12 N1 question-and-explanation collection, 2003 section&quot;,
+    &quot;sha256&quot;: &quot;e3555741c8f14b855a32e7d09b42eb790492e3818a85a875f99d84703c752e00&quot;,
+    &quot;physical_pages&quot;: [
+      302,
+      303
+    ],
+    &quot;locator&quot;: &quot;Physical [302, 303]; reading-b008 affected text&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;レストランん; 萱原真理子; 身の回りを世話をして&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;レストラン; 菅原真理子; 身の回りを世話して&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;conjectural_repair&quot;,
+  &quot;rationale&quot;: &quot;Delete duplicated ん and repair the author surname from the matching national-library book record. Provisionally remove the second を in 身の回りを世話をして, supported by the focused secondary retype. Retain unresolved 贅沢は…人々である wording.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;H25-N1_2003-reading-b008-wording&quot;
+  ]
+}</pre></details></div></section><section class="review-group" id="review-reading-q056" data-kinds="difference provisional_fix"><div class="review-group-heading"><h2>reading-q056</h2><a href="../papers/N1_2003.html#reading-q056">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">私の家のまわりは、歴史のある神社やお寺が多く、海にも近いため、有名な観光地になっている。休日ともなると、＿＿＿。<ol><li>ぜひ多くの人に遊びに来てほしい</li><li>一日中人通りも少なく静かになる</li><li>訪ねる観光客の数を規制するべきだ</li><li>朝から観光客の車で道路が渋滞する</li></ol><p>Editorial key: 4</p></div></details><div class="review-record" id="unresolved_cases-H25-N1_2003-reading-q056-wording"><div class="review-label">Provisional fix · /options/2 · medium</div><div class="comparison"><div><h4>Before</h4><pre>訪ねる観光客の数を規<mark class="diff-old">則</mark>するべきだ</pre></div><div><h4>Editorial</h4><pre>訪ねる観光客の数を規<mark class="diff-new">制</mark>するべきだ</pre></div></div><p>規制 matches the act of limiting tourist numbers and is witnessed in the focused retype. This option remains wrong because a prescription does not satisfy ともなると. Retain the plausible principal 訪ねる rather than rewriting it to the rival 訪れる.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>Both local witnesses print 規則. The external retype prints 規制; historical fidelity of this wrong option is not established.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">規制 matches the act of limiting tourist numbers and is witnessed in the focused retype. This option remains wrong because a prescription does not satisfy ともなると. Retain the plausible principal 訪ねる rather than rewriting it to the rival 訪れる.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=305): <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Physical 305; affected written span<p>訪ねる観光客の数を規則するべきだ</p></li><li><a href="https://www.scribd.com/doc/23637089/2003" target="_blank" rel="noopener">User-uploaded secondary 2003 retype, focused public text lookup</a> · Reading passages/questions 1, 21 and grammar 56, as applicable<p>訪ねる観光客の数を規制するべきだ</p></li></ul><details><summary>Full published record · unresolved_cases-H25-N1_2003-reading-q056-wording</summary><pre>{
+  &quot;case_id&quot;: &quot;H25-N1_2003-reading-q056-wording&quot;,
+  &quot;unit&quot;: &quot;N1_2003&quot;,
+  &quot;item_id&quot;: &quot;reading-q056&quot;,
+  &quot;field&quot;: &quot;/options/2&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;before&quot;: &quot;訪ねる観光客の数を規則するべきだ&quot;,
+  &quot;current_value&quot;: &quot;訪ねる観光客の数を規制するべきだ&quot;,
+  &quot;context&quot;: &quot;規制 matches the act of limiting tourist numbers and is witnessed in the focused retype. This option remains wrong because a prescription does not satisfy ともなると. Retain the plausible principal 訪ねる rather than rewriting it to the rival 訪れる.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;訪ねる観光客の数を規則するべきだ&quot;,
+      &quot;assessment&quot;: &quot;Inspected principal reading; retainable for documentary fidelity but contains the stated defect or doubt.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;訪ねる観光客の数を規制するべきだ&quot;,
+      &quot;assessment&quot;: &quot;Current bounded repair; uncertainty remains as described.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;1995–2009.12 N1 question-and-explanation collection, 2003 section&quot;,
+      &quot;sha256&quot;: &quot;e3555741c8f14b855a32e7d09b42eb790492e3818a85a875f99d84703c752e00&quot;,
+      &quot;physical_pages&quot;: [
+        305
+      ],
+      &quot;locator&quot;: &quot;Physical 305; affected written span&quot;,
+      &quot;reading&quot;: &quot;訪ねる観光客の数を規則するべきだ&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;User-uploaded secondary 2003 retype, focused public text lookup&quot;,
+      &quot;url&quot;: &quot;https://www.scribd.com/doc/23637089/2003&quot;,
+      &quot;locator&quot;: &quot;Reading passages/questions 1, 21 and grammar 56, as applicable&quot;,
+      &quot;reading&quot;: &quot;訪ねる観光客の数を規制するべきだ&quot;,
+      &quot;lineage&quot;: &quot;No issuer custody or independence established; related secondary ancestry remains possible.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;規制 matches the act of limiting tourist numbers and is witnessed in the focused retype. This option remains wrong because a prescription does not satisfy ともなると. Retain the plausible principal 訪ねる rather than rewriting it to the rival 訪れる.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Read the complete principal written span and related printed key/explanation.&quot;,
+    &quot;Compared the full DOC written component after poor initial alignment.&quot;,
+    &quot;Inspected relevant Chinese translation where available and performed focused public text/bibliographic lookup.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;Both local witnesses print 規則. The external retype prints 規制; historical fidelity of this wrong option is not established.&quot;
+}</pre></details></div><div class="review-record" id="principal_differences-H25-N1_2003-D005"><div class="review-label">Principal difference · /options/2 · high</div><div class="comparison"><div><h4>Principal</h4><pre>訪ねる観光客の数を規<mark class="diff-old">則</mark>するべきだ</pre></div><div><h4>Editorial</h4><pre>訪ねる観光客の数を規<mark class="diff-new">制</mark>するべきだ</pre></div></div><p>規制 matches the act of limiting tourist numbers and is witnessed in the focused retype. This option remains wrong because a prescription does not satisfy ともなると. Retain the plausible principal 訪ねる rather than rewriting it to the rival 訪れる.</p><span class="principal-repository-source">Principal source (page=305): <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Physical [305]; reading-q056 affected text</span><details><summary>Full published record · principal_differences-H25-N1_2003-D005</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;H25-N1_2003-D005&quot;,
+  &quot;unit&quot;: &quot;N1_2003&quot;,
+  &quot;item_id&quot;: &quot;reading-q056&quot;,
+  &quot;field&quot;: &quot;/options/2&quot;,
+  &quot;current_value&quot;: &quot;訪ねる観光客の数を規制するべきだ&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;1995–2009.12 N1 question-and-explanation collection, 2003 section&quot;,
+    &quot;sha256&quot;: &quot;e3555741c8f14b855a32e7d09b42eb790492e3818a85a875f99d84703c752e00&quot;,
+    &quot;physical_pages&quot;: [
+      305
+    ],
+    &quot;locator&quot;: &quot;Physical [305]; reading-q056 affected text&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;訪ねる観光客の数を規則するべきだ&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;訪ねる観光客の数を規制するべきだ&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;conjectural_repair&quot;,
+  &quot;rationale&quot;: &quot;規制 matches the act of limiting tourist numbers and is witnessed in the focused retype. This option remains wrong because a prescription does not satisfy ともなると. Retain the plausible principal 訪ねる rather than rewriting it to the rival 訪れる.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;H25-N1_2003-reading-q056-wording&quot;
+  ]
+}</pre></details></div></section></div></main><footer class="site-footer"><span class="developer-only">Developer mode</span></footer><div id="toast" role="status" class="toast" hidden></div><script id="page-data" type="application/json">{"review":true}</script><script id="theme-data" src="../assets/theme-data.js?v=f06ad9e2434b" defer></script><script src="../assets/app.js?v=0d75deb05ae3" defer></script></body></html>

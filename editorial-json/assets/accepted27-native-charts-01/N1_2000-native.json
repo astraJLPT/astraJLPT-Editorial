@@ -1,0 +1,128 @@
+{
+  "contract": "historical-artwork-1.0",
+  "id": "H27-N1_2000-life_goals_lines",
+  "kind": "life_goals_lines",
+  "unit": "N1_2000",
+  "item_id": "reading-b006",
+  "source": {
+    "source_path": "src/JLPT N1-N5, Past papers/N1/1995-2009.12日本语能力测试真题详解N1.pdf",
+    "source_sha256": "e3555741c8f14b855a32e7d09b42eb790492e3818a85a875f99d84703c752e00",
+    "physical_page": 416
+  },
+  "raw_crop": {
+    "path": "preprocess/assets/handoff27-native-charts-01/N1_2000-raw.png",
+    "sha256": "bb32cf3d747a07b3e64b83510cbb002b88a877956c5d9cbaf96234eff30f1d17"
+  },
+  "selection_note": "Directly inspected full source page and retained unscaled canonical crop. Native TeX lines, markers and searchable labels replace only this bound graphic. Original source pixels remain recoverable.",
+  "limits": [
+    "Exact UARS is unavailable; appearance is an evidence-backed reconstruction from the identified secondary witness.",
+    "Life-goals values are literal printed integers, without normalization.",
+    "Original font identity is not asserted."
+  ],
+  "data": {
+    "coordinate_status": "printed_integer_values_no_normalization",
+    "ages": [
+      "16～",
+      "20～",
+      "25～",
+      "30～",
+      "35～",
+      "40～",
+      "45～",
+      "50～",
+      "55～",
+      "60～",
+      "65～",
+      "70歳以上"
+    ],
+    "series": [
+      {
+        "label": "現在中心",
+        "year": 1993,
+        "line": "solid",
+        "marker": "filled_circle",
+        "values": [
+          81,
+          73,
+          55,
+          60,
+          58,
+          57,
+          57,
+          55,
+          59,
+          62,
+          69,
+          73
+        ]
+      },
+      {
+        "label": "現在中心",
+        "year": 1973,
+        "line": "dashed",
+        "marker": "filled_circle",
+        "values": [
+          71,
+          62,
+          52,
+          48,
+          46,
+          38,
+          44,
+          52,
+          51,
+          54,
+          59,
+          61
+        ]
+      },
+      {
+        "label": "未来中心",
+        "year": 1973,
+        "line": "dashed",
+        "marker": "hollow_triangle",
+        "values": [
+          26,
+          37,
+          47,
+          51,
+          53,
+          60,
+          55,
+          44,
+          48,
+          44,
+          37,
+          31
+        ]
+      },
+      {
+        "label": "未来中心",
+        "year": 1993,
+        "line": "solid",
+        "marker": "hollow_triangle",
+        "values": [
+          18,
+          27,
+          43,
+          39,
+          40,
+          40,
+          41,
+          43,
+          40,
+          35,
+          28,
+          23
+        ]
+      }
+    ],
+    "axis": {
+      "minimum": 0,
+      "maximum": 90,
+      "tick": 10,
+      "unit": "%"
+    },
+    "caption": "1－2図　生活目標―「現在中心」・「未来中心」（年層別）"
+  }
+}

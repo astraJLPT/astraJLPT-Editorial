@@ -1,0 +1,895 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark light"><title>Developer review · N1_2000 · astraJLPT</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../assets/fonts-d5ec573601f1e419.css?v=a5af70136d5d"><link rel="stylesheet" href="../assets/themes.css?v=7ad0820747dc"><link rel="stylesheet" href="../assets/answer-marking.css?v=bec6b4920050"><link rel="stylesheet" href="../assets/site.css?v=7ae9ae7c768b"><link rel="stylesheet" href="../assets/pdf-typography.css?v=ba55af25606f"><link rel="stylesheet" href="../assets/paper-shared.css?v=8f3ca38dca80"></head><body class="catalog-page"><a class="skip-link" href="#content">Skip to content</a><header class="topbar" id="page-top" tabindex="-1"><a class="wordmark" id="brand" href="../index.html">astra<span>JLPT</span></a><details id="settings" class="settings"><summary aria-label="Open settings" title="Settings"><span aria-hidden="true">⚙</span><span class="sr-only">Settings</span></summary><div class="settings-panel"><div class="settings-title"><h2>settings</h2><button type="button" id="close-settings" class="js-only" aria-label="Close settings">×</button></div><div class="settings-tabs" role="group" aria-label="Settings categories"><label><input type="radio" name="settings-view" value="appearance" checked><span>theme</span></label><label><input type="radio" name="settings-view" value="browser"><span>browser</span></label></div><section data-settings="appearance"><div class="theme-workspace"><div class="theme-picker"><div class="setting-heading"><h3>theme</h3></div><div class="theme-grid originals"><label class="theme-card ps-gh"><input type="radio" name="theme" id="theme-jlpt_paper" value="jlpt_paper"><span>jlpt_paper</span></label><label class="theme-card ps-ck"><input type="radio" name="theme" id="theme-astraJLPT_dark" value="astraJLPT_dark" checked><span>astraJLPT_dark</span></label><label class="theme-card ps-ga"><input type="radio" name="theme" id="theme-astraJLPT_sepia" value="astraJLPT_sepia"><span>astraJLPT_sepia</span></label></div><div class="js-only"><p class="settings-label">three random picks</p><div class="theme-grid" id="quick-picks"></div></div><details><summary>all 187 Monkeytype palettes</summary><label class="theme-search js-only">find a palette<input id="theme-search" type="search" placeholder="search themes" autocomplete="off"></label><div class="theme-grid theme-catalog"><label class="theme-card ps-e9"><input type="radio" name="theme" id="theme-8008" value="8008"><span>8008</span></label><label class="theme-card ps-cw"><input type="radio" name="theme" id="theme-80s_after_dark" value="80s_after_dark"><span>80s after dark</span></label><label class="theme-card ps-fq"><input type="radio" name="theme" id="theme-9009" value="9009"><span>9009</span></label><label class="theme-card ps-cc"><input type="radio" name="theme" id="theme-aether" value="aether"><span>aether</span></label><label class="theme-card ps-cz"><input type="radio" name="theme" id="theme-alduin" value="alduin"><span>alduin</span></label><label class="theme-card ps-el"><input type="radio" name="theme" id="theme-alpine" value="alpine"><span>alpine</span></label><label class="theme-card ps-bg"><input type="radio" name="theme" id="theme-anti_hero" value="anti_hero"><span>anti hero</span></label><label class="theme-card ps-c3"><input type="radio" name="theme" id="theme-arch" value="arch"><span>arch</span></label><label class="theme-card ps-bt"><input type="radio" name="theme" id="theme-aurora" value="aurora"><span>aurora</span></label><label class="theme-card ps-g8"><input type="radio" name="theme" id="theme-beach" value="beach"><span>beach</span></label><label class="theme-card ps-dz"><input type="radio" name="theme" id="theme-bento" value="bento"><span>bento</span></label><label class="theme-card ps-f1"><input type="radio" name="theme" id="theme-bingsu" value="bingsu"><span>bingsu</span></label><label class="theme-card ps-dl"><input type="radio" name="theme" id="theme-bliss" value="bliss"><span>bliss</span></label><label class="theme-card ps-bn"><input type="radio" name="theme" id="theme-blue_dolphin" value="blue_dolphin"><span>blue dolphin</span></label><label class="theme-card ps-dd"><input type="radio" name="theme" id="theme-blueberry_dark" value="blueberry_dark"><span>blueberry dark</span></label><label class="theme-card ps-fd"><input type="radio" name="theme" id="theme-blueberry_light" value="blueberry_light"><span>blueberry light</span></label><label class="theme-card ps-ep"><input type="radio" name="theme" id="theme-botanical" value="botanical"><span>botanical</span></label><label class="theme-card ps-cl"><input type="radio" name="theme" id="theme-bouquet" value="bouquet"><span>bouquet</span></label><label class="theme-card ps-fk"><input type="radio" name="theme" id="theme-breeze" value="breeze"><span>breeze</span></label><label class="theme-card ps-dk"><input type="radio" name="theme" id="theme-bushido" value="bushido"><span>bushido</span></label><label class="theme-card ps-f5"><input type="radio" name="theme" id="theme-cafe" value="cafe"><span>cafe</span></label><label class="theme-card ps-g1"><input type="radio" name="theme" id="theme-camping" value="camping"><span>camping</span></label><label class="theme-card ps-e4"><input type="radio" name="theme" id="theme-carbon" value="carbon"><span>carbon</span></label><label class="theme-card ps-d3"><input type="radio" name="theme" id="theme-catppuccin" value="catppuccin"><span>catppuccin</span></label><label class="theme-card ps-ch"><input type="radio" name="theme" id="theme-chaos_theory" value="chaos_theory"><span>chaos theory</span></label><label class="theme-card ps-g3"><input type="radio" name="theme" id="theme-cheesecake" value="cheesecake"><span>cheesecake</span></label><label class="theme-card ps-e7"><input type="radio" name="theme" id="theme-cherry_blossom" value="cherry_blossom"><span>cherry blossom</span></label><label class="theme-card ps-eh"><input type="radio" name="theme" id="theme-comfy" value="comfy"><span>comfy</span></label><label class="theme-card ps-ef"><input type="radio" name="theme" id="theme-copper" value="copper"><span>copper</span></label><label class="theme-card ps-g6"><input type="radio" name="theme" id="theme-creamsicle" value="creamsicle"><span>creamsicle</span></label><label class="theme-card ps-em"><input type="radio" name="theme" id="theme-cy_red" value="cy_red"><span>cy red</span></label><label class="theme-card ps-co"><input type="radio" name="theme" id="theme-cyberspace" value="cyberspace"><span>cyberspace</span></label><label class="theme-card ps-cd"><input type="radio" name="theme" id="theme-dark" value="dark"><span>dark</span></label><label class="theme-card ps-bz"><input type="radio" name="theme" id="theme-dark_magic_girl" value="dark_magic_girl"><span>dark magic girl</span></label><label class="theme-card ps-d6"><input type="radio" name="theme" id="theme-dark_note" value="dark_note"><span>dark note</span></label><label class="theme-card ps-g5"><input type="radio" name="theme" id="theme-darling" value="darling"><span>darling</span></label><label class="theme-card ps-bw"><input type="radio" name="theme" id="theme-deku" value="deku"><span>deku</span></label><label class="theme-card ps-g9"><input type="radio" name="theme" id="theme-desert_oasis" value="desert_oasis"><span>desert oasis</span></label><label class="theme-card ps-cx"><input type="radio" name="theme" id="theme-dev" value="dev"><span>dev</span></label><label class="theme-card ps-ek"><input type="radio" name="theme" id="theme-diner" value="diner"><span>diner</span></label><label class="theme-card ps-gi"><input type="radio" name="theme" id="theme-dino" value="dino"><span>dino</span></label><label class="theme-card ps-e6"><input type="radio" name="theme" id="theme-discord" value="discord"><span>discord</span></label><label class="theme-card ps-fc"><input type="radio" name="theme" id="theme-dmg" value="dmg"><span>dmg</span></label><label class="theme-card ps-fj"><input type="radio" name="theme" id="theme-dollar" value="dollar"><span>dollar</span></label><label class="theme-card ps-ce"><input type="radio" name="theme" id="theme-dots" value="dots"><span>dots</span></label><label class="theme-card ps-dq"><input type="radio" name="theme" id="theme-dracula" value="dracula"><span>dracula</span></label><label class="theme-card ps-cq"><input type="radio" name="theme" id="theme-drowning" value="drowning"><span>drowning</span></label><label class="theme-card ps-eo"><input type="radio" name="theme" id="theme-dualshot" value="dualshot"><span>dualshot</span></label><label class="theme-card ps-dr"><input type="radio" name="theme" id="theme-earthsong" value="earthsong"><span>earthsong</span></label><label class="theme-card ps-ci"><input type="radio" name="theme" id="theme-everblush" value="everblush"><span>everblush</span></label><label class="theme-card ps-bq"><input type="radio" name="theme" id="theme-evil_eye" value="evil_eye"><span>evil eye</span></label><label class="theme-card ps-bp"><input type="radio" name="theme" id="theme-ez_mode" value="ez_mode"><span>ez mode</span></label><label class="theme-card ps-c8"><input type="radio" name="theme" id="theme-fire" value="fire"><span>fire</span></label><label class="theme-card ps-eb"><input type="radio" name="theme" id="theme-fledgling" value="fledgling"><span>fledgling</span></label><label class="theme-card ps-f3"><input type="radio" name="theme" id="theme-fleuriste" value="fleuriste"><span>fleuriste</span></label><label class="theme-card ps-bl"><input type="radio" name="theme" id="theme-floret" value="floret"><span>floret</span></label><label class="theme-card ps-fh"><input type="radio" name="theme" id="theme-froyo" value="froyo"><span>froyo</span></label><label class="theme-card ps-et"><input type="radio" name="theme" id="theme-frozen_llama" value="frozen_llama"><span>frozen llama</span></label><label class="theme-card ps-f9"><input type="radio" name="theme" id="theme-fruit_chew" value="fruit_chew"><span>fruit chew</span></label><label class="theme-card ps-en"><input type="radio" name="theme" id="theme-fundamentals" value="fundamentals"><span>fundamentals</span></label><label class="theme-card ps-e0"><input type="radio" name="theme" id="theme-future_funk" value="future_funk"><span>future funk</span></label><label class="theme-card ps-dc"><input type="radio" name="theme" id="theme-github" value="github"><span>github</span></label><label class="theme-card ps-fn"><input type="radio" name="theme" id="theme-godspeed" value="godspeed"><span>godspeed</span></label><label class="theme-card ps-e3"><input type="radio" name="theme" id="theme-graen" value="graen"><span>graen</span></label><label class="theme-card ps-ea"><input type="radio" name="theme" id="theme-grand_prix" value="grand_prix"><span>grand prix</span></label><label class="theme-card ps-dv"><input type="radio" name="theme" id="theme-grape" value="grape"><span>grape</span></label><label class="theme-card ps-dp"><input type="radio" name="theme" id="theme-gruvbox_dark" value="gruvbox_dark"><span>gruvbox dark</span></label><label class="theme-card ps-g2"><input type="radio" name="theme" id="theme-gruvbox_light" value="gruvbox_light"><span>gruvbox light</span></label><label class="theme-card ps-bu"><input type="radio" name="theme" id="theme-hammerhead" value="hammerhead"><span>hammerhead</span></label><label class="theme-card ps-fa"><input type="radio" name="theme" id="theme-hanok" value="hanok"><span>hanok</span></label><label class="theme-card ps-ed"><input type="radio" name="theme" id="theme-hedge" value="hedge"><span>hedge</span></label><label class="theme-card ps-fu"><input type="radio" name="theme" id="theme-honey" value="honey"><span>honey</span></label><label class="theme-card ps-d0"><input type="radio" name="theme" id="theme-horizon" value="horizon"><span>horizon</span></label><label class="theme-card ps-bf"><input type="radio" name="theme" id="theme-husqy" value="husqy"><span>husqy</span></label><label class="theme-card ps-cj"><input type="radio" name="theme" id="theme-iceberg_dark" value="iceberg_dark"><span>iceberg dark</span></label><label class="theme-card ps-fl"><input type="radio" name="theme" id="theme-iceberg_light" value="iceberg_light"><span>iceberg light</span></label><label class="theme-card ps-c7"><input type="radio" name="theme" id="theme-incognito" value="incognito"><span>incognito</span></label><label class="theme-card ps-d8"><input type="radio" name="theme" id="theme-ishtar" value="ishtar"><span>ishtar</span></label><label class="theme-card ps-eu"><input type="radio" name="theme" id="theme-iv_clover" value="iv_clover"><span>iv clover</span></label><label class="theme-card ps-c2"><input type="radio" name="theme" id="theme-iv_spade" value="iv_spade"><span>iv spade</span></label><label class="theme-card ps-cu"><input type="radio" name="theme" id="theme-joker" value="joker"><span>joker</span></label><label class="theme-card ps-de"><input type="radio" name="theme" id="theme-laser" value="laser"><span>laser</span></label><label class="theme-card ps-ex"><input type="radio" name="theme" id="theme-lavender" value="lavender"><span>lavender</span></label><label class="theme-card ps-ew"><input type="radio" name="theme" id="theme-leather" value="leather"><span>leather</span></label><label class="theme-card ps-fo"><input type="radio" name="theme" id="theme-lil_dragon" value="lil_dragon"><span>lil dragon</span></label><label class="theme-card ps-gd"><input type="radio" name="theme" id="theme-lilac_mist" value="lilac_mist"><span>lilac mist</span></label><label class="theme-card ps-er"><input type="radio" name="theme" id="theme-lime" value="lime"><span>lime</span></label><label class="theme-card ps-df"><input type="radio" name="theme" id="theme-luna" value="luna"><span>luna</span></label><label class="theme-card ps-ez"><input type="radio" name="theme" id="theme-macroblank" value="macroblank"><span>macroblank</span></label><label class="theme-card ps-gk"><input type="radio" name="theme" id="theme-magic_girl" value="magic_girl"><span>magic girl</span></label><label class="theme-card ps-du"><input type="radio" name="theme" id="theme-mashu" value="mashu"><span>mashu</span></label><label class="theme-card ps-ei"><input type="radio" name="theme" id="theme-matcha_moccha" value="matcha_moccha"><span>matcha moccha</span></label><label class="theme-card ps-dn"><input type="radio" name="theme" id="theme-material" value="material"><span>material</span></label><label class="theme-card ps-be"><input type="radio" name="theme" id="theme-matrix" value="matrix"><span>matrix</span></label><label class="theme-card ps-br"><input type="radio" name="theme" id="theme-menthol" value="menthol"><span>menthol</span></label><label class="theme-card ps-dg"><input type="radio" name="theme" id="theme-metaverse" value="metaverse"><span>metaverse</span></label><label class="theme-card ps-ca"><input type="radio" name="theme" id="theme-metropolis" value="metropolis"><span>metropolis</span></label><label class="theme-card ps-g0"><input type="radio" name="theme" id="theme-mexican" value="mexican"><span>mexican</span></label><label class="theme-card ps-fv"><input type="radio" name="theme" id="theme-miami" value="miami"><span>miami</span></label><label class="theme-card ps-cn"><input type="radio" name="theme" id="theme-miami_nights" value="miami_nights"><span>miami nights</span></label><label class="theme-card ps-c0"><input type="radio" name="theme" id="theme-midnight" value="midnight"><span>midnight</span></label><label class="theme-card ps-gf"><input type="radio" name="theme" id="theme-milkshake" value="milkshake"><span>milkshake</span></label><label class="theme-card ps-bv"><input type="radio" name="theme" id="theme-mint" value="mint"><span>mint</span></label><label class="theme-card ps-ey"><input type="radio" name="theme" id="theme-mizu" value="mizu"><span>mizu</span></label><label class="theme-card ps-dy"><input type="radio" name="theme" id="theme-modern_dolch" value="modern_dolch"><span>modern dolch</span></label><label class="theme-card ps-fe"><input type="radio" name="theme" id="theme-modern_dolch_light" value="modern_dolch_light"><span>modern dolch light</span></label><label class="theme-card ps-gm"><input type="radio" name="theme" id="theme-modern_ink" value="modern_ink"><span>modern ink</span></label><label class="theme-card ps-do"><input type="radio" name="theme" id="theme-monokai" value="monokai"><span>monokai</span></label><label class="theme-card ps-cs"><input type="radio" name="theme" id="theme-moonlight" value="moonlight"><span>moonlight</span></label><label class="theme-card ps-c9"><input type="radio" name="theme" id="theme-mountain" value="mountain"><span>mountain</span></label><label class="theme-card ps-f8"><input type="radio" name="theme" id="theme-mr_sleeves" value="mr_sleeves"><span>mr sleeves</span></label><label class="theme-card ps-gj"><input type="radio" name="theme" id="theme-ms_cupcakes" value="ms_cupcakes"><span>ms cupcakes</span></label><label class="theme-card ps-ej"><input type="radio" name="theme" id="theme-muted" value="muted"><span>muted</span></label><label class="theme-card ps-cg"><input type="radio" name="theme" id="theme-nautilus" value="nautilus"><span>nautilus</span></label><label class="theme-card ps-db"><input type="radio" name="theme" id="theme-nebula" value="nebula"><span>nebula</span></label><label class="theme-card ps-da"><input type="radio" name="theme" id="theme-night_runner" value="night_runner"><span>night runner</span></label><label class="theme-card ps-dj"><input type="radio" name="theme" id="theme-nord" value="nord"><span>nord</span></label><label class="theme-card ps-fp"><input type="radio" name="theme" id="theme-nord_light" value="nord_light"><span>nord light</span></label><label class="theme-card ps-di"><input type="radio" name="theme" id="theme-norse" value="norse"><span>norse</span></label><label class="theme-card ps-e5"><input type="radio" name="theme" id="theme-oblivion" value="oblivion"><span>oblivion</span></label><label class="theme-card ps-fm"><input type="radio" name="theme" id="theme-olive" value="olive"><span>olive</span></label><label class="theme-card ps-cy"><input type="radio" name="theme" id="theme-olivia" value="olivia"><span>olivia</span></label><label class="theme-card ps-e2"><input type="radio" name="theme" id="theme-onedark" value="onedark"><span>onedark</span></label><label class="theme-card ps-f4"><input type="radio" name="theme" id="theme-our_theme" value="our_theme"><span>our theme</span></label><label class="theme-card ps-ee"><input type="radio" name="theme" id="theme-pale_nimbus" value="pale_nimbus"><span>pale nimbus</span></label><label class="theme-card ps-fr"><input type="radio" name="theme" id="theme-paper" value="paper"><span>paper</span></label><label class="theme-card ps-eq"><input type="radio" name="theme" id="theme-passion_fruit" value="passion_fruit"><span>passion fruit</span></label><label class="theme-card ps-ff"><input type="radio" name="theme" id="theme-pastel" value="pastel"><span>pastel</span></label><label class="theme-card ps-ds"><input type="radio" name="theme" id="theme-peach_blossom" value="peach_blossom"><span>peach blossom</span></label><label class="theme-card ps-fg"><input type="radio" name="theme" id="theme-peaches" value="peaches"><span>peaches</span></label><label class="theme-card ps-bk"><input type="radio" name="theme" id="theme-phantom" value="phantom"><span>phantom</span></label><label class="theme-card ps-fz"><input type="radio" name="theme" id="theme-pink_lemonade" value="pink_lemonade"><span>pink lemonade</span></label><label class="theme-card ps-cm"><input type="radio" name="theme" id="theme-pulse" value="pulse"><span>pulse</span></label><label class="theme-card ps-d4"><input type="radio" name="theme" id="theme-purpleish" value="purpleish"><span>purpleish</span></label><label class="theme-card ps-fy"><input type="radio" name="theme" id="theme-rainbow_trail" value="rainbow_trail"><span>rainbow trail</span></label><label class="theme-card ps-ct"><input type="radio" name="theme" id="theme-red_dragon" value="red_dragon"><span>red dragon</span></label><label class="theme-card ps-es"><input type="radio" name="theme" id="theme-red_samurai" value="red_samurai"><span>red samurai</span></label><label class="theme-card ps-e1"><input type="radio" name="theme" id="theme-repose_dark" value="repose_dark"><span>repose dark</span></label><label class="theme-card ps-fs"><input type="radio" name="theme" id="theme-repose_light" value="repose_light"><span>repose light</span></label><label class="theme-card ps-fb"><input type="radio" name="theme" id="theme-retro" value="retro"><span>retro</span></label><label class="theme-card ps-bx"><input type="radio" name="theme" id="theme-retrocast" value="retrocast"><span>retrocast</span></label><label class="theme-card ps-cd"><input type="radio" name="theme" id="theme-rgb" value="rgb"><span>rgb</span></label><label class="theme-card ps-d5"><input type="radio" name="theme" id="theme-rose_pine" value="rose_pine"><span>rose pine</span></label><label class="theme-card ps-gc"><input type="radio" name="theme" id="theme-rose_pine_dawn" value="rose_pine_dawn"><span>rose pine dawn</span></label><label class="theme-card ps-dt"><input type="radio" name="theme" id="theme-rose_pine_moon" value="rose_pine_moon"><span>rose pine moon</span></label><label class="theme-card ps-cv"><input type="radio" name="theme" id="theme-rudy" value="rudy"><span>rudy</span></label><label class="theme-card ps-by"><input type="radio" name="theme" id="theme-ryujinscales" value="ryujinscales"><span>ryujinscales</span></label><label class="theme-card ps-fi"><input type="radio" name="theme" id="theme-serika" value="serika"><span>serika</span></label><label class="theme-card ps-e8"><input type="radio" name="theme" id="theme-serika_dark" value="serika_dark"><span>serika dark</span></label><label class="theme-card ps-dh"><input type="radio" name="theme" id="theme-sewing_tin" value="sewing_tin"><span>sewing tin</span></label><label class="theme-card ps-gg"><input type="radio" name="theme" id="theme-sewing_tin_light" value="sewing_tin_light"><span>sewing tin light</span></label><label class="theme-card ps-bi"><input type="radio" name="theme" id="theme-shadow" value="shadow"><span>shadow</span></label><label class="theme-card ps-f6"><input type="radio" name="theme" id="theme-shoko" value="shoko"><span>shoko</span></label><label class="theme-card ps-ge"><input type="radio" name="theme" id="theme-slambook" value="slambook"><span>slambook</span></label><label class="theme-card ps-f2"><input type="radio" name="theme" id="theme-snes" value="snes"><span>snes</span></label><label class="theme-card ps-gb"><input type="radio" name="theme" id="theme-soaring_skies" value="soaring_skies"><span>soaring skies</span></label><label class="theme-card ps-bm"><input type="radio" name="theme" id="theme-solarized_dark" value="solarized_dark"><span>solarized dark</span></label><label class="theme-card ps-g4"><input type="radio" name="theme" id="theme-solarized_light" value="solarized_light"><span>solarized light</span></label><label class="theme-card ps-bj"><input type="radio" name="theme" id="theme-solarized_osaka" value="solarized_osaka"><span>solarized osaka</span></label><label class="theme-card ps-dw"><input type="radio" name="theme" id="theme-sonokai" value="sonokai"><span>sonokai</span></label><label class="theme-card ps-c5"><input type="radio" name="theme" id="theme-spiderman" value="spiderman"><span>spiderman</span></label><label class="theme-card ps-bs"><input type="radio" name="theme" id="theme-stealth" value="stealth"><span>stealth</span></label><label class="theme-card ps-fw"><input type="radio" name="theme" id="theme-strawberry" value="strawberry"><span>strawberry</span></label><label class="theme-card ps-cf"><input type="radio" name="theme" id="theme-striker" value="striker"><span>striker</span></label><label class="theme-card ps-ec"><input type="radio" name="theme" id="theme-suisei" value="suisei"><span>suisei</span></label><label class="theme-card ps-d9"><input type="radio" name="theme" id="theme-sunset" value="sunset"><span>sunset</span></label><label class="theme-card ps-dm"><input type="radio" name="theme" id="theme-superuser" value="superuser"><span>superuser</span></label><label class="theme-card ps-bo"><input type="radio" name="theme" id="theme-sweden" value="sweden"><span>sweden</span></label><label class="theme-card ps-g7"><input type="radio" name="theme" id="theme-tangerine" value="tangerine"><span>tangerine</span></label><label class="theme-card ps-f0"><input type="radio" name="theme" id="theme-taro" value="taro"><span>taro</span></label><label class="theme-card ps-cr"><input type="radio" name="theme" id="theme-terminal" value="terminal"><span>terminal</span></label><label class="theme-card ps-c4"><input type="radio" name="theme" id="theme-terra" value="terra"><span>terra</span></label><label class="theme-card ps-ft"><input type="radio" name="theme" id="theme-terrazzo" value="terrazzo"><span>terrazzo</span></label><label class="theme-card ps-c1"><input type="radio" name="theme" id="theme-terror_below" value="terror_below"><span>terror below</span></label><label class="theme-card ps-f7"><input type="radio" name="theme" id="theme-tiramisu" value="tiramisu"><span>tiramisu</span></label><label class="theme-card ps-eg"><input type="radio" name="theme" id="theme-trackday" value="trackday"><span>trackday</span></label><label class="theme-card ps-bh"><input type="radio" name="theme" id="theme-trance" value="trance"><span>trance</span></label><label class="theme-card ps-c6"><input type="radio" name="theme" id="theme-tron_orange" value="tron_orange"><span>tron orange</span></label><label class="theme-card ps-ev"><input type="radio" name="theme" id="theme-vaporwave" value="vaporwave"><span>vaporwave</span></label><label class="theme-card ps-cb"><input type="radio" name="theme" id="theme-vesper" value="vesper"><span>vesper</span></label><label class="theme-card ps-gl"><input type="radio" name="theme" id="theme-vesper_light" value="vesper_light"><span>vesper light</span></label><label class="theme-card ps-dx"><input type="radio" name="theme" id="theme-viridescent" value="viridescent"><span>viridescent</span></label><label class="theme-card ps-cp"><input type="radio" name="theme" id="theme-voc" value="voc"><span>voc</span></label><label class="theme-card ps-d2"><input type="radio" name="theme" id="theme-vscode" value="vscode"><span>vscode</span></label><label class="theme-card ps-d7"><input type="radio" name="theme" id="theme-watermelon" value="watermelon"><span>watermelon</span></label><label class="theme-card ps-d1"><input type="radio" name="theme" id="theme-wavez" value="wavez"><span>wavez</span></label><label class="theme-card ps-fx"><input type="radio" name="theme" id="theme-witch_girl" value="witch_girl"><span>witch girl</span></label></div></details><div class="js-only ps-14h" id="monkeytype-text-source">
+<h3>reading text color</h3>
+<p class="control-help">Auto chooses the more readable palette color. Choose sub or text to set it yourself; answer colors adapt.</p>
+<div aria-label="Monkeytype reading text color" class="segmented" role="group">
+<label><input checked="" name="text-source" type="radio" value="auto"/><span>auto</span></label>
+<label><input name="text-source" type="radio" value="sub"/><span>sub</span></label>
+<label><input name="text-source" type="radio" value="text"/><span>text</span></label>
+</div>
+<p aria-live="polite" class="control-help ps-14i" id="monkeytype-text-status" role="status"></p>
+</div></div><aside class="theme-editor js-only" aria-label="Customize theme colors"><div class="color-editor-heading"><h3>colors</h3><button type="button" id="reset-theme-colors" aria-label="Reset this theme">reset</button></div><span class="sr-only" id="color-format-help">Choose a swatch or enter hex. Transparent borders accept #RRGGBBAA. Reset restores the theme color.</span><span class="sr-only" id="color-edit-status" role="status" aria-live="polite"></span><div class="main-colors"><div class="color-row" data-color-row="bg">
+<label for="color-bg">background</label>
+<div class="color-inputs"><input type="color" id="swatch-bg" aria-label="background swatch" data-color-swatch="bg">
+<input type="text" id="color-bg" data-color-hex="bg" aria-label="background hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="bg" aria-label="Reset background" title="Reset background">↺</button></div></div><div class="color-row" data-color-row="text">
+<label for="color-text">reading text</label>
+<div class="color-inputs"><input type="color" id="swatch-text" aria-label="reading text swatch" data-color-swatch="text">
+<input type="text" id="color-text" data-color-hex="text" aria-label="reading text hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="text" aria-label="Reset reading text" title="Reset reading text">↺</button></div></div><div class="color-row" data-color-row="muted">
+<label for="color-muted">secondary text</label>
+<div class="color-inputs"><input type="color" id="swatch-muted" aria-label="secondary text swatch" data-color-swatch="muted">
+<input type="text" id="color-muted" data-color-hex="muted" aria-label="secondary text hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="muted" aria-label="Reset secondary text" title="Reset secondary text">↺</button></div></div><div class="color-row" data-color-row="accent">
+<label for="color-accent">interface accent</label>
+<div class="color-inputs"><input type="color" id="swatch-accent" aria-label="interface accent swatch" data-color-swatch="accent">
+<input type="text" id="color-accent" data-color-hex="accent" aria-label="interface accent hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="accent" aria-label="Reset interface accent" title="Reset interface accent">↺</button></div></div><div class="color-row" data-color-row="correct">
+<label for="color-correct">correct</label>
+<div class="color-inputs"><input type="color" id="swatch-correct" aria-label="correct swatch" data-color-swatch="correct">
+<input type="text" id="color-correct" data-color-hex="correct" aria-label="correct hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="correct" aria-label="Reset correct" title="Reset correct">↺</button></div></div><div class="color-row" data-color-row="wrong">
+<label for="color-wrong">wrong</label>
+<div class="color-inputs"><input type="color" id="swatch-wrong" aria-label="wrong swatch" data-color-swatch="wrong">
+<input type="text" id="color-wrong" data-color-hex="wrong" aria-label="wrong hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="wrong" aria-label="Reset wrong" title="Reset wrong">↺</button></div></div></div><details class="advanced-colors"><summary>more colors</summary><div class="advanced-color-grid"><div class="color-row" data-color-row="raised">
+<label for="color-raised">buttons &amp; controls</label>
+<div class="color-inputs"><input type="color" id="swatch-raised" aria-label="buttons &amp; controls swatch" data-color-swatch="raised">
+<input type="text" id="color-raised" data-color-hex="raised" aria-label="buttons &amp; controls hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="raised" aria-label="Reset buttons &amp; controls" title="Reset buttons &amp; controls">↺</button></div></div><div class="color-row" data-color-row="correct-ink">
+<label for="color-correct-ink">correct text &amp; numbers</label>
+<div class="color-inputs"><input type="color" id="swatch-correct-ink" aria-label="correct text &amp; numbers swatch" data-color-swatch="correct-ink">
+<input type="text" id="color-correct-ink" data-color-hex="correct-ink" aria-label="correct text &amp; numbers hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="correct-ink" aria-label="Reset correct text &amp; numbers" title="Reset correct text &amp; numbers">↺</button></div></div><div class="color-row" data-color-row="edge">
+<label for="color-edge">paper outline</label>
+<div class="color-inputs"><input type="color" id="swatch-edge" aria-label="paper outline swatch" data-color-swatch="edge">
+<input type="text" id="color-edge" data-color-hex="edge" aria-label="paper outline hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge" aria-label="Reset paper outline" title="Reset paper outline">↺</button></div></div><div class="color-row" data-color-row="edge-soft">
+<label for="color-edge-soft">soft dividers</label>
+<div class="color-inputs"><input type="color" id="swatch-edge-soft" aria-label="soft dividers swatch" data-color-swatch="edge-soft">
+<input type="text" id="color-edge-soft" data-color-hex="edge-soft" aria-label="soft dividers hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge-soft" aria-label="Reset soft dividers" title="Reset soft dividers">↺</button></div><label class="color-opacity">opacity<input type="range" min="0" max="100" step="0.1" data-color-alpha="edge-soft" aria-label="soft dividers opacity"><output></output></label></div><div class="color-row" data-color-row="edge-strong">
+<label for="color-edge-strong">strong borders</label>
+<div class="color-inputs"><input type="color" id="swatch-edge-strong" aria-label="strong borders swatch" data-color-swatch="edge-strong">
+<input type="text" id="color-edge-strong" data-color-hex="edge-strong" aria-label="strong borders hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge-strong" aria-label="Reset strong borders" title="Reset strong borders">↺</button></div><label class="color-opacity">opacity<input type="range" min="0" max="100" step="0.1" data-color-alpha="edge-strong" aria-label="strong borders opacity"><output></output></label></div><div class="color-row" data-color-row="logo-secondary">
+<label for="color-logo-secondary">wordmark · JLPT</label>
+<div class="color-inputs"><input type="color" id="swatch-logo-secondary" aria-label="wordmark · JLPT swatch" data-color-swatch="logo-secondary">
+<input type="text" id="color-logo-secondary" data-color-hex="logo-secondary" aria-label="wordmark · JLPT hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="logo-secondary" aria-label="Reset wordmark · JLPT" title="Reset wordmark · JLPT">↺</button></div></div></div><div class="fill-opacity-controls"><h4>fill opacity</h4><p>Applies to correct and wrong answers.</p><div class="fill-opacity-row"><label for="opacity-cell-fill">cell fill<output id="opacity-cell-fill-output">11%</output></label><div><input id="opacity-cell-fill" type="range" min="0" max="100" step="1" value="11" data-fill-opacity="cell-fill" aria-label="cell fill opacity"><button type="button" data-fill-reset="cell-fill" aria-label="Reset cell fill opacity" title="Reset cell fill opacity">↺</button></div></div><div class="fill-opacity-row"><label for="opacity-fill">fill style<output id="opacity-fill-output">30%</output></label><div><input id="opacity-fill" type="range" min="0" max="100" step="1" value="30" data-fill-opacity="fill" aria-label="fill style opacity"><button type="button" data-fill-reset="fill" aria-label="Reset fill style opacity" title="Reset fill style opacity">↺</button></div></div></div></details></aside></div></section><section data-settings="browser"><div class="setting-row js-only"><div><h3>remember this browser</h3><p id="save-status">Saving is on by default. No account required.</p></div><label class="switch"><input id="remember" type="checkbox" checked>save preferences, answers and position</label></div><div class="button-row browser-actions js-only"><button id="reset-preferences" type="button">reset preferences</button><button id="forget" type="button">forget saved data</button></div><div class="developer-only developer-settings"><h3>developer mode</h3><p>Principal differences and editorial cases are visible. This local switch is not authentication.</p><button id="disable-dev" type="button">hide developer tools</button></div><div class="settings-about"><button type="button" id="developer-unlock" class="js-only" title="astraJLPT build information">astraJLPT · 2020–2026 collection</button><span id="developer-hint" role="status"></span></div></section></div></details></header><main id="content" class="review-page"><div class="review-content"><a href="../levels/old-1.html">← 1級 papers</a><h1>1級 · December 2000</h1><p>Uncertainty index: <strong>1025</strong> · 8 differences · 6 unresolved · 3 provisional fixes</p><p>Evidence base 1000 + source concerns 25 = 1025. Concerns are uncapped; browsing order uses evidence tier before concern points.</p><p>This is an editorial evidence assessment, not a probability, an error rate or a practice score.</p><details><summary>Assessment evidence and original source scores</summary><pre>{
+  &quot;unit&quot;: &quot;N1_2000&quot;,
+  &quot;sample&quot;: false,
+  &quot;year&quot;: 2000,
+  &quot;month&quot;: 12,
+  &quot;evidence_base&quot;: 1000,
+  &quot;evidence_tier&quot;: 3,
+  &quot;concern_points&quot;: 25,
+  &quot;index&quot;: 1025,
+  &quot;concern_counts&quot;: {
+    &quot;metadata_flags&quot;: 0,
+    &quot;missing_units&quot;: 0,
+    &quot;major_defects&quot;: 2,
+    &quot;minor_defects&quot;: 4,
+    &quot;uncertain_fields&quot;: 7
+  },
+  &quot;principal_history&quot;: {
+    &quot;unit&quot;: &quot;N1_2000&quot;,
+    &quot;level&quot;: &quot;N1&quot;,
+    &quot;year&quot;: 2000,
+    &quot;month&quot;: 12,
+    &quot;historical_level&quot;: &quot;1級&quot;,
+    &quot;sitting_attribution&quot;: {
+      &quot;basis&quot;: &quot;Printed2000 and1級; official guide establishes annual December sittings through2008.&quot;,
+      &quot;source_url&quot;: &quot;https://www.jlpt.jp/reference/pdf/guide2011.pdf&quot;,
+      &quot;locator&quot;: &quot;Guide2011 physical2 footnote; inspected in this run for N1_2003.&quot;
+    },
+    &quot;content_kind&quot;: &quot;exam&quot;,
+    &quot;method_version&quot;: 1,
+    &quot;principal_path&quot;: &quot;src/JLPT N1-N5, Past papers/N1/1995-2009.12日本语能力测试真题详解N1.pdf&quot;,
+    &quot;principal_sha256&quot;: &quot;e3555741c8f14b855a32e7d09b42eb790492e3818a85a875f99d84703c752e00&quot;,
+    &quot;initial_tier&quot;: 3,
+    &quot;written_physical_pages&quot;: &quot;402-406,410-424,426-435&quot;,
+    &quot;review_status&quot;: &quot;complete_written_review&quot;,
+    &quot;review_date&quot;: &quot;2026-10-26&quot;,
+    &quot;scope_note&quot;: &quot;Questions402–406above listening,410reading heading–419;420/421written keys excluding listening middle;421–424vocabulary explanations;426reading heading–435above listening script. Same-file front matter1–3 reused. Supplementary explanation/translation defects separately recorded and excluded from printed exam-field score. No listening audit.&quot;,
+    &quot;provenance_status&quot;: &quot;unverified&quot;,
+    &quot;provenance_points&quot;: 100,
+    &quot;provenance_basis&quot;: &quot;2011 commercial compilation lacks exact issuer chain of custody; typesetting alone does not prove recollection reconstruction.&quot;,
+    &quot;metadata_flags&quot;: 0,
+    &quot;missing_units&quot;: 0,
+    &quot;major_defects&quot;: 2,
+    &quot;minor_defects&quot;: 4,
+    &quot;uncertain_fields&quot;: 7,
+    &quot;uncertainty_index&quot;: 125,
+    &quot;score_evidence&quot;: [
+      {
+        &quot;id&quot;: &quot;H25-N1_2000-SCORE-001&quot;,
+        &quot;kind&quot;: &quot;major_defects&quot;,
+        &quot;item_id&quot;: &quot;vocab-q003&quot;,
+        &quot;field&quot;: &quot;/options/3&quot;,
+        &quot;locator&quot;: &quot;Physical402&quot;,
+        &quot;evidence&quot;: &quot;The tested word is 悲惨な including な. Restore the missing suffix in correct option4; all other choices include な and both complete comparator witnesses have ひさんな. No option order or key change.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;H25-N1_2000-SCORE-002&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;vocab-q037&quot;,
+        &quot;field&quot;: &quot;/options/3&quot;,
+        &quot;locator&quot;: &quot;Physical403&quot;,
+        &quot;evidence&quot;: &quot;The keyed 索引 example asks where a word appears. どこかづ is malformed; どこに is the preferred minimal readable reconstruction, not recovered original wording. The related DOC has malformed どこの. Preserve rivals and key4.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;H25-N1_2000-SCORE-003&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;vocab-q047&quot;,
+        &quot;field&quot;: &quot;/stem&quot;,
+        &quot;locator&quot;: &quot;Physical404&quot;,
+        &quot;evidence&quot;: &quot;初めて denotes the first occasion of meeting; 始めて is the continuative of beginning. Correct the orthography without changing the blank, options or key4.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;H25-N1_2000-SCORE-004&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-b001&quot;,
+        &quot;field&quot;: &quot;/content&quot;,
+        &quot;locator&quot;: &quot;Physical410&quot;,
+        &quot;evidence&quot;: &quot;The paragraph describes concern about population decline. 警戒心 is the lexical term for vigilance or apprehension; 警備心 incorrectly combines security-guarding with 心. Minimal spelling repair; no inference about factual population figures.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;H25-N1_2000-SCORE-005&quot;,
+        &quot;kind&quot;: &quot;major_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-b002&quot;,
+        &quot;field&quot;: &quot;/content&quot;,
+        &quot;locator&quot;: &quot;Physical411,412&quot;,
+        &quot;evidence&quot;: &quot;Question10 explicitly identifies reference④, and the earlier sequence①②③ is intact: reference repair is high confidence. The age-related title is restored by conjecture to 年齢は堂々と口にしよう from malformed 隼齢/1コ. Original1999 magazine article was not recovered, so the combined field remains provisional. Citation conjecture is not charged again beside the same-field reference defect.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;H25-N1_2000-SCORE-006&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-b003&quot;,
+        &quot;field&quot;: &quot;/content&quot;,
+        &quot;locator&quot;: &quot;Physical413&quot;,
+        &quot;evidence&quot;: &quot;Firewood is the direct object of gathering. The transitive continuation 集め agrees with を; intransitive 集まり does not. The printed focus confirms this is a source error, not OCR.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;H25-N1_2000-SCORE-007&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-b004&quot;,
+        &quot;field&quot;: &quot;/content&quot;,
+        &quot;locator&quot;: &quot;Physical413,414&quot;,
+        &quot;evidence&quot;: &quot;Three minimal grammatical/lexical repairs in one source field: supply copular だ before が, use 段階 for the rehabilitation stage, and restore the contrast construction どころか. Preserve note3 リハビリ, historical claims and all keys.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;H25-N1_2000-SCORE-008&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;reading-b007&quot;,
+        &quot;field&quot;: &quot;/content&quot;,
+        &quot;locator&quot;: &quot;Physical416&quot;,
+        &quot;evidence&quot;: &quot;The body consistently discusses 化学物質 and 化学物質過敏症. Correct the citation’s first character to 化学, also present in the related indexed web transcription. Exact original1999 article title remains unrecovered.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;H25-N1_2000-SCORE-009&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;vocab-q056&quot;,
+        &quot;field&quot;: &quot;/options/3&quot;,
+        &quot;locator&quot;: &quot;See public case H25-N1_2000-vocab56-distractor&quot;,
+        &quot;evidence&quot;: &quot;Exact original wording of option4 unresolved.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;H25-N1_2000-SCORE-010&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;reading-q027&quot;,
+        &quot;field&quot;: &quot;/stem&quot;,
+        &quot;locator&quot;: &quot;See public case H25-N1_2000-reading27-noun&quot;,
+        &quot;evidence&quot;: &quot;Exact original field unresolved.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;H25-N1_2000-SCORE-011&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;reading-q031&quot;,
+        &quot;field&quot;: &quot;/options/3&quot;,
+        &quot;locator&quot;: &quot;See public case H25-N1_2000-reading31-distractor&quot;,
+        &quot;evidence&quot;: &quot;Exact original field unresolved.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;H25-N1_2000-SCORE-012&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;reading-q034&quot;,
+        &quot;field&quot;: &quot;/options/2&quot;,
+        &quot;locator&quot;: &quot;See public case H25-N1_2000-reading34-distractor&quot;,
+        &quot;evidence&quot;: &quot;Exact original field unresolved.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;H25-N1_2000-SCORE-013&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;reading-q050&quot;,
+        &quot;field&quot;: &quot;/options/2&quot;,
+        &quot;locator&quot;: &quot;See public case H25-N1_2000-reading50-distractor&quot;,
+        &quot;evidence&quot;: &quot;Exact original field unresolved.&quot;
+      }
+    ]
+  },
+  &quot;evidence&quot;: []
+}</pre></details><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span><ul></ul><div class="review-controls"><label>Show <select id="review-filter"><option value="all">All records</option><option value="difference">Principal differences</option><option value="unresolved">Unresolved cases</option><option value="provisional_fix">Provisional fixes</option></select></label><label>Find <input id="review-search" type="search" placeholder="Item, wording, evidence…"></label></div><p id="review-count" class="control-help" role="status"></p><section class="review-group" id="review-coverage" data-kinds="unresolved"><div class="review-group-heading"><h2>Paper coverage</h2><a href="../papers/N1_2000.html#content">Open in paper →</a></div><div class="review-record" id="unresolved_cases-H25-N1_2000-original-cover-scoring"><div class="review-label">Unresolved ·  · low</div><div class="comparison"><div><h4>Alternative</h4><pre>No alternative recorded</pre></div><div><h4>Editorial</h4><pre>Not recorded</pre></div></div><p>Preserve unknowns. No worked examples were observed in the available written witnesses.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>Original cover and complete scoring remain unrecovered.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Original covers, timing, pagination and full point weights.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=402): <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Written region physical402,410,420,421<p>Retyped headings and written keys; no authenticated original cover or complete scoring.</p></li></ul><details><summary>Full published record · unresolved_cases-H25-N1_2000-original-cover-scoring</summary><pre>{
+  &quot;case_id&quot;: &quot;H25-N1_2000-original-cover-scoring&quot;,
+  &quot;unit&quot;: &quot;N1_2000&quot;,
+  &quot;item_id&quot;: null,
+  &quot;field&quot;: &quot;&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;low&quot;,
+  &quot;decision_basis&quot;: &quot;source_comparison&quot;,
+  &quot;current_value&quot;: null,
+  &quot;context&quot;: &quot;Original covers, timing, pagination and full point weights.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: null,
+      &quot;assessment&quot;: &quot;Cover unavailable; no invented points.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;1995–2009.12 N1 question-and-explanation collection,2000 section&quot;,
+      &quot;sha256&quot;: &quot;e3555741c8f14b855a32e7d09b42eb790492e3818a85a875f99d84703c752e00&quot;,
+      &quot;physical_pages&quot;: [
+        402,
+        410,
+        420,
+        421
+      ],
+      &quot;locator&quot;: &quot;Written region physical402,410,420,421&quot;,
+      &quot;reading&quot;: &quot;Retyped headings and written keys; no authenticated original cover or complete scoring.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Preserve unknowns. No worked examples were observed in the available written witnesses.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Complete principal and indexed written DOC/key comparison.&quot;,
+    &quot;Focused language review and bounded external checks where material.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;Original cover and complete scoring remain unrecovered.&quot;
+}</pre></details></div></section><section class="review-group" id="review-vocab-q003" data-kinds="difference"><div class="review-group-heading"><h2>vocab-q003</h2><a href="../papers/N1_2000.html#vocab-q003">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">悲惨な<ol><li>びざんな</li><li>びさんな</li><li>ひざんな</li><li>ひさんな</li></ol><p>Editorial key: 4</p></div></details><div class="review-record" id="principal_differences-H25-N1_2000-D001"><div class="review-label">Principal difference · /options/3 · high</div><div class="comparison"><div><h4>Principal</h4><pre>ひさん</pre></div><div><h4>Editorial</h4><pre>ひさん<mark class="diff-new">な</mark></pre></div></div><p>The tested word is 悲惨な including な. Restore the missing suffix in correct option4; all other choices include な and both complete comparator witnesses have ひさんな. No option order or key change.</p><span class="principal-repository-source">Principal source (page=402): <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">vocab-q003 affected field</span><details><summary>Full published record · principal_differences-H25-N1_2000-D001</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;H25-N1_2000-D001&quot;,
+  &quot;unit&quot;: &quot;N1_2000&quot;,
+  &quot;item_id&quot;: &quot;vocab-q003&quot;,
+  &quot;field&quot;: &quot;/options/3&quot;,
+  &quot;current_value&quot;: &quot;ひさんな&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;1995–2009.12 N1 question-and-explanation collection,2000 section&quot;,
+    &quot;sha256&quot;: &quot;e3555741c8f14b855a32e7d09b42eb790492e3818a85a875f99d84703c752e00&quot;,
+    &quot;physical_pages&quot;: [
+      402
+    ],
+    &quot;locator&quot;: &quot;vocab-q003 affected field&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;ひさん&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;ひさんな&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;The tested word is 悲惨な including な. Restore the missing suffix in correct option4; all other choices include な and both complete comparator witnesses have ひさんな. No option order or key change.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-vocab-q037" data-kinds="difference provisional_fix"><div class="review-group-heading"><h2>vocab-q037</h2><a href="../papers/N1_2000.html#vocab-q037">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><u><span>（いん）</span>りょく</u>とは、物体が互いにひっぱりあう力である。<ol><li>映画館が<u>まん<span>（いん）</span></u>で入れなかった。</li><li>二国間の条約がまとまり、後は<u>ちょう<span>（いん）</span></u>しきを待つばかりだ。</li><li>経済が悪化するのには、いろいろな<u>よう<span>（いん）</span></u>が考えられる。</li><li>この言葉がどこに出ているか、<u>さく<span>（いん）</span></u>で調べなさい。</li></ol><p>Editorial key: 4</p></div></details><div class="review-record" id="unresolved_cases-H25-N1_2000-P002"><div class="review-label">Provisional fix · /options/3 · medium</div><div class="comparison"><div><h4>Before</h4><pre>この言葉がどこ<mark class="diff-old">かづ</mark>出ているか、&lt;u&gt;さく&lt;span data-extra-underline=&quot;true&quot;&gt;（いん）&lt;/span&gt;&lt;/u&gt;で調べなさい。</pre></div><div><h4>Editorial</h4><pre>この言葉がどこ<mark class="diff-new">に</mark>出ているか、&lt;u&gt;さく&lt;span data-extra-underline=&quot;true&quot;&gt;（いん）&lt;/span&gt;&lt;/u&gt;で調べなさい。</pre></div></div><p>The keyed 索引 example asks where a word appears. どこかづ is malformed; どこに is the preferred minimal readable reconstruction, not recovered original wording. The related DOC has malformed どこの. Preserve rivals and key4.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>Exact original wording/mark placement remains unrecovered; related transcriptions may share errors.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Complete source field and dependent questions reviewed.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=403): <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Written region physical403<p>どこかづ出ているか</p></li><li><span class="principal-repository-source">Principal source (page=3): <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Derivative pages; full written comparison completed<p>この言葉がどこの出ているか</p></li></ul><details><summary>Full published record · unresolved_cases-H25-N1_2000-P002</summary><pre>{
+  &quot;case_id&quot;: &quot;H25-N1_2000-P002&quot;,
+  &quot;unit&quot;: &quot;N1_2000&quot;,
+  &quot;item_id&quot;: &quot;vocab-q037&quot;,
+  &quot;field&quot;: &quot;/options/3&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;source_comparison&quot;,
+  &quot;before&quot;: {
+    &quot;html&quot;: &quot;この言葉がどこかづ出ているか、&lt;u&gt;さく&lt;span data-extra-underline=\&quot;true\&quot;&gt;（いん）&lt;/span&gt;&lt;/u&gt;で調べなさい。&quot;
+  },
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;この言葉がどこに出ているか、&lt;u&gt;さく&lt;span data-extra-underline=\&quot;true\&quot;&gt;（いん）&lt;/span&gt;&lt;/u&gt;で調べなさい。&quot;
+  },
+  &quot;context&quot;: &quot;Complete source field and dependent questions reviewed.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: {
+        &quot;html&quot;: &quot;この言葉がどこかづ出ているか、&lt;u&gt;さく&lt;span data-extra-underline=\&quot;true\&quot;&gt;（いん）&lt;/span&gt;&lt;/u&gt;で調べなさい。&quot;
+      },
+      &quot;assessment&quot;: &quot;Literal principal field.&quot;
+    },
+    {
+      &quot;value&quot;: {
+        &quot;html&quot;: &quot;この言葉がどこに出ているか、&lt;u&gt;さく&lt;span data-extra-underline=\&quot;true\&quot;&gt;（いん）&lt;/span&gt;&lt;/u&gt;で調べなさい。&quot;
+      },
+      &quot;assessment&quot;: &quot;Preferred supported reconstruction; not authenticated original.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;どこかに出ているか: replace づ with に but indefinite どこか followed by interrogative か is less natural here.&quot;,
+      &quot;assessment&quot;: &quot;Considered rival.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;どこで出ているか: grammatical but not independently witnessed.&quot;,
+      &quot;assessment&quot;: &quot;Considered rival.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;1995–2009.12 N1 question-and-explanation collection,2000 section&quot;,
+      &quot;sha256&quot;: &quot;e3555741c8f14b855a32e7d09b42eb790492e3818a85a875f99d84703c752e00&quot;,
+      &quot;physical_pages&quot;: [
+        403
+      ],
+      &quot;locator&quot;: &quot;Written region physical403&quot;,
+      &quot;reading&quot;: &quot;どこかづ出ているか&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2000 written Level1 DOC; private45-page conversion&quot;,
+      &quot;sha256&quot;: &quot;da95e55c61fc62850bc572e43ac7b2ea5270995694ca6f5174b8547894f7a14c&quot;,
+      &quot;physical_pages&quot;: [
+        3
+      ],
+      &quot;locator&quot;: &quot;Derivative pages; full written comparison completed&quot;,
+      &quot;reading&quot;: &quot;この言葉がどこの出ているか&quot;,
+      &quot;lineage&quot;: &quot;Substantial shared defects; not an independent original vote.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;The keyed 索引 example asks where a word appears. どこかづ is malformed; どこに is the preferred minimal readable reconstruction, not recovered original wording. The related DOC has malformed どこの. Preserve rivals and key4.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Full indexed written source comparison including all explanations and keys.&quot;,
+    &quot;Focused crops and bounded language/source checks.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;Exact original wording/mark placement remains unrecovered; related transcriptions may share errors.&quot;
+}</pre></details></div><div class="review-record" id="principal_differences-H25-N1_2000-D002"><div class="review-label">Principal difference · /options/3 · high</div><div class="comparison"><div><h4>Principal</h4><pre>どこ<mark class="diff-old">かづ</mark>出ているか</pre></div><div><h4>Editorial</h4><pre>どこ<mark class="diff-new">に</mark>出ているか</pre></div></div><p>The keyed 索引 example asks where a word appears. どこかづ is malformed; どこに is the preferred minimal readable reconstruction, not recovered original wording. The related DOC has malformed どこの. Preserve rivals and key4.</p><span class="principal-repository-source">Principal source (page=403): <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">vocab-q037 affected field</span><details><summary>Full published record · principal_differences-H25-N1_2000-D002</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;H25-N1_2000-D002&quot;,
+  &quot;unit&quot;: &quot;N1_2000&quot;,
+  &quot;item_id&quot;: &quot;vocab-q037&quot;,
+  &quot;field&quot;: &quot;/options/3&quot;,
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;この言葉がどこに出ているか、&lt;u&gt;さく&lt;span data-extra-underline=\&quot;true\&quot;&gt;（いん）&lt;/span&gt;&lt;/u&gt;で調べなさい。&quot;
+  },
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;1995–2009.12 N1 question-and-explanation collection,2000 section&quot;,
+    &quot;sha256&quot;: &quot;e3555741c8f14b855a32e7d09b42eb790492e3818a85a875f99d84703c752e00&quot;,
+    &quot;physical_pages&quot;: [
+      403
+    ],
+    &quot;locator&quot;: &quot;vocab-q037 affected field&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;どこかづ出ているか&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;どこに出ているか&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;conjectural_repair&quot;,
+  &quot;rationale&quot;: &quot;The keyed 索引 example asks where a word appears. どこかづ is malformed; どこに is the preferred minimal readable reconstruction, not recovered original wording. The related DOC has malformed どこの. Preserve rivals and key4.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;H25-N1_2000-P002&quot;
+  ]
+}</pre></details></div></section><section class="review-group" id="review-vocab-q047" data-kinds="difference"><div class="review-group-heading"><h2>vocab-q047</h2><a href="../papers/N1_2000.html#vocab-q047">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">初めて会った瞬間、＿＿＿的にこの人とはうまくいくと思った<ol><li>主観</li><li>悲観</li><li>予感</li><li>直感</li></ol><p>Editorial key: 4</p></div></details><div class="review-record" id="principal_differences-H25-N1_2000-D003"><div class="review-label">Principal difference · /stem · high</div><div class="comparison"><div><h4>Principal</h4><pre><mark class="diff-old">始</mark>めて会った瞬間</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">初</mark>めて会った瞬間</pre></div></div><p>初めて denotes the first occasion of meeting; 始めて is the continuative of beginning. Correct the orthography without changing the blank, options or key4.</p><span class="principal-repository-source">Principal source (page=404): <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">vocab-q047 affected field</span><details><summary>Full published record · principal_differences-H25-N1_2000-D003</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;H25-N1_2000-D003&quot;,
+  &quot;unit&quot;: &quot;N1_2000&quot;,
+  &quot;item_id&quot;: &quot;vocab-q047&quot;,
+  &quot;field&quot;: &quot;/stem&quot;,
+  &quot;current_value&quot;: &quot;初めて会った瞬間、＿＿＿的にこの人とはうまくいくと思った&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;1995–2009.12 N1 question-and-explanation collection,2000 section&quot;,
+    &quot;sha256&quot;: &quot;e3555741c8f14b855a32e7d09b42eb790492e3818a85a875f99d84703c752e00&quot;,
+    &quot;physical_pages&quot;: [
+      404
+    ],
+    &quot;locator&quot;: &quot;vocab-q047 affected field&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;始めて会った瞬間&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;初めて会った瞬間&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;初めて denotes the first occasion of meeting; 始めて is the continuative of beginning. Correct the orthography without changing the blank, options or key4.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-vocab-q056" data-kinds="unresolved"><div class="review-group-heading"><h2>vocab-q056</h2><a href="../papers/N1_2000.html#vocab-q056">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><span>せかい</span>……悩んでいるのは自分だけではないと知って、<u>せかい</u>がひらけた感じがした。<ol><li>まだまだ我々の知らない<u>せかい</u>がたくさんある。</li><li>日本のニュースに続いて<u>せかい</u>のニュースが放送される。</li><li>どんなすばらしい選手でも必ずおとろえる。勝負の<u>せかい</u>はきびしい。</li><li>定年になったら、夫婦で<u>せかい</u>一周の船をしようと計画している。</li></ol><p>Editorial key: 1</p></div></details><div class="review-record" id="unresolved_cases-H25-N1_2000-vocab56-distractor"><div class="review-label">Unresolved · /options/3 · low</div><div class="comparison"><div><h4>Alternative</h4><pre>船をしよう</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">定年になったら、夫婦で&lt;u&gt;せかい&lt;/u&gt;一周の</mark>船をしよう<mark class="diff-new">と計画している。</mark></pre></div></div><p>Do not fabricate the original wrong option from a plausible phrase. Key1 tests a different sense of 世界 and remains sound.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>Exact original wording of option4 unresolved.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Non-key usage example containing せかい一周の船をしよう.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=405): <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Written region physical405<p>夫婦でせかい一周の船をしよう</p></li><li><span class="principal-repository-source">Principal source (page=7): <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Derivative pages; full written comparison completed<p>定年の and 一週 are additional comparator defects; same 船をしよう.</p></li></ul><details><summary>Full published record · unresolved_cases-H25-N1_2000-vocab56-distractor</summary><pre>{
+  &quot;case_id&quot;: &quot;H25-N1_2000-vocab56-distractor&quot;,
+  &quot;unit&quot;: &quot;N1_2000&quot;,
+  &quot;item_id&quot;: &quot;vocab-q056&quot;,
+  &quot;field&quot;: &quot;/options/3&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;low&quot;,
+  &quot;decision_basis&quot;: &quot;source_comparison&quot;,
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;定年になったら、夫婦で&lt;u&gt;せかい&lt;/u&gt;一周の船をしようと計画している。&quot;
+  },
+  &quot;context&quot;: &quot;Non-key usage example containing せかい一周の船をしよう.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;船をしよう&quot;,
+      &quot;assessment&quot;: &quot;Retained literal principal; related DOC repeats it.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;船旅をしよう&quot;,
+      &quot;assessment&quot;: &quot;Plausible missing-character repair, not independently recovered.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;1995–2009.12 N1 question-and-explanation collection,2000 section&quot;,
+      &quot;sha256&quot;: &quot;e3555741c8f14b855a32e7d09b42eb790492e3818a85a875f99d84703c752e00&quot;,
+      &quot;physical_pages&quot;: [
+        405
+      ],
+      &quot;locator&quot;: &quot;Written region physical405&quot;,
+      &quot;reading&quot;: &quot;夫婦でせかい一周の船をしよう&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2000 written Level1 DOC; private45-page conversion&quot;,
+      &quot;sha256&quot;: &quot;da95e55c61fc62850bc572e43ac7b2ea5270995694ca6f5174b8547894f7a14c&quot;,
+      &quot;physical_pages&quot;: [
+        7
+      ],
+      &quot;locator&quot;: &quot;Derivative pages; full written comparison completed&quot;,
+      &quot;reading&quot;: &quot;定年の and 一週 are additional comparator defects; same 船をしよう.&quot;,
+      &quot;lineage&quot;: &quot;Substantial shared defects; not an independent original vote.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Do not fabricate the original wrong option from a plausible phrase. Key1 tests a different sense of 世界 and remains sound.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Complete principal and indexed written DOC/key comparison.&quot;,
+    &quot;Focused language review and bounded external checks where material.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;Exact original wording of option4 unresolved.&quot;
+}</pre></details></div></section><section class="review-group" id="review-reading-b001" data-kinds="difference"><div class="review-group-heading"><h2>reading-b001</h2><a href="../papers/N1_2000.html#reading-b001">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><p>100年ほど前にあたる1900年のとき、地球上の人口はおよそ16億人であった。それが現在、55億人になっている。私たちが金魚鉢の金魚だと思えばよい。3<ruby data-rubi-id="rr4-28da0e323c141603e7ba" data-rubi-origin="project_rubi_restore">匹<rt>びき</rt></ruby>の金魚が突然3.5倍の11匹に増えれば水が濁るように、3.5倍も人口が増えれば<ruby data-rubi-id="rr4-25fdc9985fda8b86238a" data-rubi-origin="project_rubi_restore">環境<rt>かんきょう</rt></ruby>に何らかの悪い<ruby data-rubi-id="rr4-14cdc58f2530e5174e3f" data-rubi-origin="project_rubi_restore">影響<rt>えいきょう</rt></ruby>が出るのは当然であろう。<u>この人口のまま止まればまだよい</u>のだが、（中略）たいへんな勢いでまだ増え続けている。1991年での世界人口の増加率は1.7％と推定されているが、それで計算すると、人口は40年間で倍増することになる。この増大傾向の修正のためには、地球上の私たち全員の<u>ライフスタイル<sup>（注1）</sup>の見直しが急務である</u>。それにはどのような課題があるのだろうか。（中略）1つは私たち全員の<ruby data-rubi-id="rr4-49e2748fa4898a20dbf1" data-rubi-origin="project_rubi_restore">価値観<rt>かちかん</rt></ruby>の問題である。<ruby data-rubi-id="rr4-c1f03b4703820cbf1785" data-rubi-origin="project_rubi_restore">伝統的<rt>でんとうてき</rt></ruby>価値観として「<ruby data-rubi-id="rr4-cdc052b01440934c8a45" data-rubi-origin="project_rubi_restore">子沢山<rt>こだくさん</rt></ruby>」<sup>（注2）</sup>が望ましいと見なす民族は世界でも少なくない。私たちの民族もそうである。子沢山を祝福する気持ちが私たちの国では現在でもあり、にぎやかな家庭の幸福像を描きがちである。1989年に、1人の女性が一生の間に平均して何人の子供を産むかという合計特殊出生率が1.57になったときに、1.57ショックといって大騒ぎになった。<u>その騒ぎも、この価値観と関連している</u>。そのときに、子供が1人ではかわいそうだ、日本の将来の労働力の<ruby data-rubi-id="rr4-f8e3a914e552bc14e183" data-rubi-origin="project_rubi_restore">減少<rt>げんしょう</rt></ruby>をどうするのか、というような<ruby data-rubi-id="rr4-ae155ce9c864a867ec0c" data-rubi-origin="project_rubi_restore">指摘<rt>してき</rt></ruby>があった。自民族の人口の減少に対する<ruby data-rubi-id="rr4-9cacec8e886c5a0b2516" data-rubi-origin="project_rubi_restore">警戒心<rt>けいかいしん</rt></ruby>はたいへん強いのである。もちろん、ここでは国や民族レベルでの議論をしているのであって、個別の家族の子沢山の是非を論じているのではない。</p><p>2つ目の問題は社会システムの問題である。とくに貧困と差別について考える必要がある。国の経済力不足などで国の<ruby data-rubi-id="rr4-ec0a48dc170265b95534" data-rubi-origin="project_rubi_restore">社会保障<rt>しゃかいほしょう</rt></ruby>が十分でないと、老後などを心配して<u>国民はある人数の子供をつくろうとする</u>。また、貧しい家族は子供に家族の労働力を期待して子沢山になる傾向が見られる。</p><p>さまざまな差別が人口に関わるライフスタイルに影響を与えるが、とくに男女差別は直接的な影響を与える。環境と開発に関わる世界委員会がまとめた『地球の未来を守るために』（Our Common Future）は女性の地位の向上が子供数の減少につながると指摘したが、これは大切な指摘であろう。女性の地位が向上すれば、家族内での子供を産むかどうかということについて女性の発言権が増大し、<u>そのような社会</u>においては子供の数が減少する。また、女性の雇用機会が十分に与えられている社会では、<ruby data-rubi-id="rr4-3706cdbaefd16519de11" data-rubi-origin="project_rubi_restore">婚姻<rt>こんいん</rt></ruby><sup>（注3）</sup>年齢が上昇し、そのことが子供数の減少につながっているという。</p><p>（鳥越皓之「環境とライフスタイル」有斐閣アルマによる）</p><p>（注1）ライフスタイル：生活する上での価値観や考え方、生活様式</p><p>（注2）子沢山：子供の数が多いこと</p><p>（注3）婚姻：結婚</p></div></details><div class="review-record" id="principal_differences-H25-N1_2000-D004"><div class="review-label">Principal difference · /content · high</div><div class="comparison"><div><h4>Principal</h4><pre>減少に対する警<mark class="diff-old">備</mark>心</pre></div><div><h4>Editorial</h4><pre>減少に対する警<mark class="diff-new">戒</mark>心</pre></div></div><p>The paragraph describes concern about population decline. 警戒心 is the lexical term for vigilance or apprehension; 警備心 incorrectly combines security-guarding with 心. Minimal spelling repair; no inference about factual population figures.</p><span class="principal-repository-source">Principal source (page=410): <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-b001 affected field</span><details><summary>Full published record · principal_differences-H25-N1_2000-D004</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;H25-N1_2000-D004&quot;,
+  &quot;unit&quot;: &quot;N1_2000&quot;,
+  &quot;item_id&quot;: &quot;reading-b001&quot;,
+  &quot;field&quot;: &quot;/content&quot;,
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;&lt;p&gt;100年ほど前にあたる1900年のとき、地球上の人口はおよそ16億人であった。それが現在、55億人になっている。私たちが金魚鉢の金魚だと思えばよい。3匹の金魚が突然3.5倍の11匹に増えれば水が濁るように、3.5倍も人口が増えれば環境に何らかの悪い影響が出るのは当然であろう。&lt;u data-reference-label=\&quot;①\&quot;&gt;この人口のまま止まればまだよい&lt;/u&gt;のだが、（中略）たいへんな勢いでまだ増え続けている。1991年での世界人口の増加率は1.7％と推定されているが、それで計算すると、人口は40年間で倍増することになる。この増大傾向の修正のためには、地球上の私たち全員の&lt;u data-reference-label=\&quot;②\&quot;&gt;ライフスタイル&lt;sup&gt;（注1）&lt;/sup&gt;の見直しが急務である&lt;/u&gt;。それにはどのような課題があるのだろうか。（中略）1つは私たち全員の価値観の問題である。伝統的価値観として「子沢山」&lt;sup&gt;（注2）&lt;/sup&gt;が望ましいと見なす民族は世界でも少なくない。私たちの民族もそうである。子沢山を祝福する気持ちが私たちの国では現在でもあり、にぎやかな家庭の幸福像を描きがちである。1989年に、1人の女性が一生の間に平均して何人の子供を産むかという合計特殊出生率が1.57になったときに、1.57ショックといって大騒ぎになった。&lt;u data-reference-label=\&quot;③\&quot;&gt;その騒ぎも、この価値観と関連している&lt;/u&gt;。そのときに、子供が1人ではかわいそうだ、日本の将来の労働力の減少をどうするのか、というような指摘があった。自民族の人口の減少に対する警戒心はたいへん強いのである。もちろん、ここでは国や民族レベルでの議論をしているのであって、個別の家族の子沢山の是非を論じているのではない。&lt;/p&gt;&lt;p&gt;2つ目の問題は社会システムの問題である。とくに貧困と差別について考える必要がある。国の経済力不足などで国の社会保障が十分でないと、老後などを心配して&lt;u data-reference-label=\&quot;④\&quot;&gt;国民はある人数の子供をつくろうとする&lt;/u&gt;。また、貧しい家族は子供に家族の労働力を期待して子沢山になる傾向が見られる。&lt;/p&gt;&lt;p&gt;さまざまな差別が人口に関わるライフスタイルに影響を与えるが、とくに男女差別は直接的な影響を与える。環境と開発に関わる世界委員会がまとめた『地球の未来を守るために』（Our Common Future）は女性の地位の向上が子供数の減少につながると指摘したが、これは大切な指摘であろう。女性の地位が向上すれば、家族内での子供を産むかどうかということについて女性の発言権が増大し、&lt;u data-reference-label=\&quot;⑤\&quot;&gt;そのような社会&lt;/u&gt;においては子供の数が減少する。また、女性の雇用機会が十分に与えられている社会では、婚姻&lt;sup&gt;（注3）&lt;/sup&gt;年齢が上昇し、そのことが子供数の減少につながっているという。&lt;/p&gt;&lt;p&gt;（鳥越皓之「環境とライフスタイル」有斐閣アルマによる）&lt;/p&gt;&lt;p&gt;（注1）ライフスタイル：生活する上での価値観や考え方、生活様式&lt;/p&gt;&lt;p&gt;（注2）子沢山：子供の数が多いこと&lt;/p&gt;&lt;p&gt;（注3）婚姻：結婚&lt;/p&gt;&quot;
+  },
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;1995–2009.12 N1 question-and-explanation collection,2000 section&quot;,
+    &quot;sha256&quot;: &quot;e3555741c8f14b855a32e7d09b42eb790492e3818a85a875f99d84703c752e00&quot;,
+    &quot;physical_pages&quot;: [
+      410
+    ],
+    &quot;locator&quot;: &quot;reading-b001 affected field&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;減少に対する警備心&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;減少に対する警戒心&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;The paragraph describes concern about population decline. 警戒心 is the lexical term for vigilance or apprehension; 警備心 incorrectly combines security-guarding with 心. Minimal spelling repair; no inference about factual population figures.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-b002" data-kinds="difference provisional_fix"><div class="review-group-heading"><h2>reading-b002</h2><a href="../papers/N1_2000.html#reading-b002">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><p>（1）年齢というのは、相手を理解する上での<u>重要なキーワードだ</u>と、わたしは思っている。同じく、自分を理解してもらう上での重要なキーワードでもある。</p><p>「同じ世代だったんですね。じゃあ、あれ、ご存じでしょう」ということもあれば、「へえ、十歳違うと、やっぱり考え方が異なってくるものですねえ」ということもあるだろう。</p><p>それにわたしは、<u>自分の年齢を恥じたりしていない</u>。若くして亡くなる人もいるというのに、わたしはいま現在で半世紀もの年月を生きることができた。いやなこともいいこともいっぱいあったが、そのどれもが、かけがえのない<sup>（注1）</sup>私の人生、一年たりとも否定したりごまかしたりしたくはない。</p><p>しかし、かなりの文化人ではあっても、女性の中には年齢を公にしたがらない方がけっこういらっしゃるようだ。あるシンポジウム<sup>（注2）</sup>に参加した時、パンフレットのパネラー<sup>（注3）</sup>紹介で、私のところだけ年齢がなかった。他のパネラーは男性で、全員、ちゃんと年齢が記されている。どうしてでしょうと問い合わせると、<u>女性の方は年齢を入れないでほしいとおっしゃる方が多いので、と言われた</u>。つまり、勝手に気遣って<sup>（注4）</sup>、私だけ年齢を伏せて<sup>（注5）</sup>くださったというわけだ。よけいなお世話である。ひとこと、どうしますかと尋ねてほしかったのにと、<u>かえって腹がたった</u>。</p><p>（山崎洋子「年齢は堂々と口にしよう」『笑顔』1999年2月号　保健同人社による）</p><p>（注1）かけがえのない：他に代えられない、大切な</p><p>（注2）シンポジウム：ある問題についての意見や研究結果の発表会</p><p>（注3）パネラー：シンポジウムなどの講師・発言者</p><p>（注4）気遣う：相手のためを思って、いろいろ配慮する</p><p>（注5）伏せる：人に知られないようにする。知らせない</p></div></details><div class="review-record" id="unresolved_cases-H25-N1_2000-P005"><div class="review-label">Provisional fix · /content · medium</div><div class="comparison"><div><h4>Before</h4><pre>…伏せて&lt;sup&gt;（注5）&lt;/sup&gt;くださったというわけだ。よけいなお世話である。ひとこと、どうしますかと尋ねてほしかったのにと、&lt;u data-reference-label=&quot;<mark class="diff-old">②</mark>&quot;&gt;かえって腹がたった&lt;/u&gt;。&lt;/p&gt;&lt;p&gt;（山崎洋子「<mark class="diff-old">隼</mark>齢は堂々と<mark class="diff-old">1コ</mark>にしよう」『笑顔』1999年2月号　保健同人社による）&lt;/p&gt;&lt;p&gt;（注1）かけがえのない：他に代えられない、大切な&lt;/p&gt;&lt;p&gt;（注2）シンポジウム：ある問題についての意見や研究結果の発表会&lt;/p&gt;&lt;p&gt;…</pre></div><div><h4>Editorial</h4><pre>…伏せて&lt;sup&gt;（注5）&lt;/sup&gt;くださったというわけだ。よけいなお世話である。ひとこと、どうしますかと尋ねてほしかったのにと、&lt;u data-reference-label=&quot;<mark class="diff-new">④</mark>&quot;&gt;かえって腹がたった&lt;/u&gt;。&lt;/p&gt;&lt;p&gt;（山崎洋子「<mark class="diff-new">年</mark>齢は堂々と<mark class="diff-new">口</mark>にしよう」『笑顔』1999年2月号　保健同人社による）&lt;/p&gt;&lt;p&gt;（注1）かけがえのない：他に代えられない、大切な&lt;/p&gt;&lt;p&gt;（注2）シンポジウム：ある問題についての意見や研究結果の発表会&lt;/p&gt;&lt;p&gt;（…</pre></div></div><p>Question10 explicitly identifies reference④, and the earlier sequence①②③ is intact: reference repair is high confidence. The age-related title is restored by conjecture to 年齢は堂々と口にしよう from malformed 隼齢/1コ. Original1999 magazine article was not recovered, so the combined field remains provisional.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>Exact original wording/mark placement remains unrecovered; related transcriptions may share errors.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Complete source field and dependent questions reviewed.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=412): <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Written region physical412<p>Question10④, passage final② and malformed citation.</p></li><li><span class="principal-repository-source">Principal source (page=18): <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Derivative pages; full written comparison completed<p>Age passage without source reference marks or citation.</p></li><li><a href="https://y.saromalang.com/kỳ-thi-nô-jlpt/1996-2000/level-1-2000" target="_blank" rel="noopener">Related indexed web transcription</a> · Focused search excerpt only<p>Repeats 隼齢は堂々と1コにしよう; not an independent original witness.</p></li></ul><details><summary>Full published record · unresolved_cases-H25-N1_2000-P005</summary><pre>{
+  &quot;case_id&quot;: &quot;H25-N1_2000-P005&quot;,
+  &quot;unit&quot;: &quot;N1_2000&quot;,
+  &quot;item_id&quot;: &quot;reading-b002&quot;,
+  &quot;field&quot;: &quot;/content&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;source_comparison&quot;,
+  &quot;before&quot;: {
+    &quot;html&quot;: &quot;&lt;p&gt;（1）年齢というのは、相手を理解する上での&lt;u data-reference-label=\&quot;①\&quot;&gt;重要なキーワードだ&lt;/u&gt;と、わたしは思っている。同じく、自分を理解してもらう上での重要なキーワードでもある。&lt;/p&gt;&lt;p&gt;「同じ世代だったんですね。じゃあ、あれ、ご存じでしょう」ということもあれば、「へえ、十歳違うと、やっぱり考え方が異なってくるものですねえ」ということもあるだろう。&lt;/p&gt;&lt;p&gt;それにわたしは、&lt;u data-reference-label=\&quot;②\&quot;&gt;自分の年齢を恥じたりしていない&lt;/u&gt;。若くして亡くなる人もいるというのに、わたしはいま現在で半世紀もの年月を生きることができた。いやなこともいいこともいっぱいあったが、そのどれもが、かけがえのない&lt;sup&gt;（注1）&lt;/sup&gt;私の人生、一年たりとも否定したりごまかしたりしたくはない。&lt;/p&gt;&lt;p&gt;しかし、かなりの文化人ではあっても、女性の中には年齢を公にしたがらない方がけっこういらっしゃるようだ。あるシンポジウム&lt;sup&gt;（注2）&lt;/sup&gt;に参加した時、パンフレットのパネラー&lt;sup&gt;（注3）&lt;/sup&gt;紹介で、私のところだけ年齢がなかった。他のパネラーは男性で、全員、ちゃんと年齢が記されている。どうしてでしょうと問い合わせると、&lt;u data-reference-label=\&quot;③\&quot;&gt;女性の方は年齢を入れないでほしいとおっしゃる方が多いので、と言われた&lt;/u&gt;。つまり、勝手に気遣って&lt;sup&gt;（注4）&lt;/sup&gt;、私だけ年齢を伏せて&lt;sup&gt;（注5）&lt;/sup&gt;くださったというわけだ。よけいなお世話である。ひとこと、どうしますかと尋ねてほしかったのにと、&lt;u data-reference-label=\&quot;②\&quot;&gt;かえって腹がたった&lt;/u&gt;。&lt;/p&gt;&lt;p&gt;（山崎洋子「隼齢は堂々と1コにしよう」『笑顔』1999年2月号　保健同人社による）&lt;/p&gt;&lt;p&gt;（注1）かけがえのない：他に代えられない、大切な&lt;/p&gt;&lt;p&gt;（注2）シンポジウム：ある問題についての意見や研究結果の発表会&lt;/p&gt;&lt;p&gt;（注3）パネラー：シンポジウムなどの講師・発言者&lt;/p&gt;&lt;p&gt;（注4）気遣う：相手のためを思って、いろいろ配慮する&lt;/p&gt;&lt;p&gt;（注5）伏せる：人に知られないようにする。知らせない&lt;/p&gt;&quot;
+  },
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;&lt;p&gt;（1）年齢というのは、相手を理解する上での&lt;u data-reference-label=\&quot;①\&quot;&gt;重要なキーワードだ&lt;/u&gt;と、わたしは思っている。同じく、自分を理解してもらう上での重要なキーワードでもある。&lt;/p&gt;&lt;p&gt;「同じ世代だったんですね。じゃあ、あれ、ご存じでしょう」ということもあれば、「へえ、十歳違うと、やっぱり考え方が異なってくるものですねえ」ということもあるだろう。&lt;/p&gt;&lt;p&gt;それにわたしは、&lt;u data-reference-label=\&quot;②\&quot;&gt;自分の年齢を恥じたりしていない&lt;/u&gt;。若くして亡くなる人もいるというのに、わたしはいま現在で半世紀もの年月を生きることができた。いやなこともいいこともいっぱいあったが、そのどれもが、かけがえのない&lt;sup&gt;（注1）&lt;/sup&gt;私の人生、一年たりとも否定したりごまかしたりしたくはない。&lt;/p&gt;&lt;p&gt;しかし、かなりの文化人ではあっても、女性の中には年齢を公にしたがらない方がけっこういらっしゃるようだ。あるシンポジウム&lt;sup&gt;（注2）&lt;/sup&gt;に参加した時、パンフレットのパネラー&lt;sup&gt;（注3）&lt;/sup&gt;紹介で、私のところだけ年齢がなかった。他のパネラーは男性で、全員、ちゃんと年齢が記されている。どうしてでしょうと問い合わせると、&lt;u data-reference-label=\&quot;③\&quot;&gt;女性の方は年齢を入れないでほしいとおっしゃる方が多いので、と言われた&lt;/u&gt;。つまり、勝手に気遣って&lt;sup&gt;（注4）&lt;/sup&gt;、私だけ年齢を伏せて&lt;sup&gt;（注5）&lt;/sup&gt;くださったというわけだ。よけいなお世話である。ひとこと、どうしますかと尋ねてほしかったのにと、&lt;u data-reference-label=\&quot;④\&quot;&gt;かえって腹がたった&lt;/u&gt;。&lt;/p&gt;&lt;p&gt;（山崎洋子「年齢は堂々と口にしよう」『笑顔』1999年2月号　保健同人社による）&lt;/p&gt;&lt;p&gt;（注1）かけがえのない：他に代えられない、大切な&lt;/p&gt;&lt;p&gt;（注2）シンポジウム：ある問題についての意見や研究結果の発表会&lt;/p&gt;&lt;p&gt;（注3）パネラー：シンポジウムなどの講師・発言者&lt;/p&gt;&lt;p&gt;（注4）気遣う：相手のためを思って、いろいろ配慮する&lt;/p&gt;&lt;p&gt;（注5）伏せる：人に知られないようにする。知らせない&lt;/p&gt;&quot;
+  },
+  &quot;context&quot;: &quot;Complete source field and dependent questions reviewed.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: {
+        &quot;html&quot;: &quot;&lt;p&gt;（1）年齢というのは、相手を理解する上での&lt;u data-reference-label=\&quot;①\&quot;&gt;重要なキーワードだ&lt;/u&gt;と、わたしは思っている。同じく、自分を理解してもらう上での重要なキーワードでもある。&lt;/p&gt;&lt;p&gt;「同じ世代だったんですね。じゃあ、あれ、ご存じでしょう」ということもあれば、「へえ、十歳違うと、やっぱり考え方が異なってくるものですねえ」ということもあるだろう。&lt;/p&gt;&lt;p&gt;それにわたしは、&lt;u data-reference-label=\&quot;②\&quot;&gt;自分の年齢を恥じたりしていない&lt;/u&gt;。若くして亡くなる人もいるというのに、わたしはいま現在で半世紀もの年月を生きることができた。いやなこともいいこともいっぱいあったが、そのどれもが、かけがえのない&lt;sup&gt;（注1）&lt;/sup&gt;私の人生、一年たりとも否定したりごまかしたりしたくはない。&lt;/p&gt;&lt;p&gt;しかし、かなりの文化人ではあっても、女性の中には年齢を公にしたがらない方がけっこういらっしゃるようだ。あるシンポジウム&lt;sup&gt;（注2）&lt;/sup&gt;に参加した時、パンフレットのパネラー&lt;sup&gt;（注3）&lt;/sup&gt;紹介で、私のところだけ年齢がなかった。他のパネラーは男性で、全員、ちゃんと年齢が記されている。どうしてでしょうと問い合わせると、&lt;u data-reference-label=\&quot;③\&quot;&gt;女性の方は年齢を入れないでほしいとおっしゃる方が多いので、と言われた&lt;/u&gt;。つまり、勝手に気遣って&lt;sup&gt;（注4）&lt;/sup&gt;、私だけ年齢を伏せて&lt;sup&gt;（注5）&lt;/sup&gt;くださったというわけだ。よけいなお世話である。ひとこと、どうしますかと尋ねてほしかったのにと、&lt;u data-reference-label=\&quot;②\&quot;&gt;かえって腹がたった&lt;/u&gt;。&lt;/p&gt;&lt;p&gt;（山崎洋子「隼齢は堂々と1コにしよう」『笑顔』1999年2月号　保健同人社による）&lt;/p&gt;&lt;p&gt;（注1）かけがえのない：他に代えられない、大切な&lt;/p&gt;&lt;p&gt;（注2）シンポジウム：ある問題についての意見や研究結果の発表会&lt;/p&gt;&lt;p&gt;（注3）パネラー：シンポジウムなどの講師・発言者&lt;/p&gt;&lt;p&gt;（注4）気遣う：相手のためを思って、いろいろ配慮する&lt;/p&gt;&lt;p&gt;（注5）伏せる：人に知られないようにする。知らせない&lt;/p&gt;&quot;
+      },
+      &quot;assessment&quot;: &quot;Literal principal field.&quot;
+    },
+    {
+      &quot;value&quot;: {
+        &quot;html&quot;: &quot;&lt;p&gt;（1）年齢というのは、相手を理解する上での&lt;u data-reference-label=\&quot;①\&quot;&gt;重要なキーワードだ&lt;/u&gt;と、わたしは思っている。同じく、自分を理解してもらう上での重要なキーワードでもある。&lt;/p&gt;&lt;p&gt;「同じ世代だったんですね。じゃあ、あれ、ご存じでしょう」ということもあれば、「へえ、十歳違うと、やっぱり考え方が異なってくるものですねえ」ということもあるだろう。&lt;/p&gt;&lt;p&gt;それにわたしは、&lt;u data-reference-label=\&quot;②\&quot;&gt;自分の年齢を恥じたりしていない&lt;/u&gt;。若くして亡くなる人もいるというのに、わたしはいま現在で半世紀もの年月を生きることができた。いやなこともいいこともいっぱいあったが、そのどれもが、かけがえのない&lt;sup&gt;（注1）&lt;/sup&gt;私の人生、一年たりとも否定したりごまかしたりしたくはない。&lt;/p&gt;&lt;p&gt;しかし、かなりの文化人ではあっても、女性の中には年齢を公にしたがらない方がけっこういらっしゃるようだ。あるシンポジウム&lt;sup&gt;（注2）&lt;/sup&gt;に参加した時、パンフレットのパネラー&lt;sup&gt;（注3）&lt;/sup&gt;紹介で、私のところだけ年齢がなかった。他のパネラーは男性で、全員、ちゃんと年齢が記されている。どうしてでしょうと問い合わせると、&lt;u data-reference-label=\&quot;③\&quot;&gt;女性の方は年齢を入れないでほしいとおっしゃる方が多いので、と言われた&lt;/u&gt;。つまり、勝手に気遣って&lt;sup&gt;（注4）&lt;/sup&gt;、私だけ年齢を伏せて&lt;sup&gt;（注5）&lt;/sup&gt;くださったというわけだ。よけいなお世話である。ひとこと、どうしますかと尋ねてほしかったのにと、&lt;u data-reference-label=\&quot;④\&quot;&gt;かえって腹がたった&lt;/u&gt;。&lt;/p&gt;&lt;p&gt;（山崎洋子「年齢は堂々と口にしよう」『笑顔』1999年2月号　保健同人社による）&lt;/p&gt;&lt;p&gt;（注1）かけがえのない：他に代えられない、大切な&lt;/p&gt;&lt;p&gt;（注2）シンポジウム：ある問題についての意見や研究結果の発表会&lt;/p&gt;&lt;p&gt;（注3）パネラー：シンポジウムなどの講師・発言者&lt;/p&gt;&lt;p&gt;（注4）気遣う：相手のためを思って、いろいろ配慮する&lt;/p&gt;&lt;p&gt;（注5）伏せる：人に知られないようにする。知らせない&lt;/p&gt;&quot;
+      },
+      &quot;assessment&quot;: &quot;Preferred supported reconstruction; not authenticated original.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;Retain literal malformed title; preserves source but not a meaningful Japanese title.&quot;,
+      &quot;assessment&quot;: &quot;Considered rival.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;Correct only reference④ and leave title visibly uncertain.&quot;,
+      &quot;assessment&quot;: &quot;Considered rival.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;1995–2009.12 N1 question-and-explanation collection,2000 section&quot;,
+      &quot;sha256&quot;: &quot;e3555741c8f14b855a32e7d09b42eb790492e3818a85a875f99d84703c752e00&quot;,
+      &quot;physical_pages&quot;: [
+        412
+      ],
+      &quot;locator&quot;: &quot;Written region physical412&quot;,
+      &quot;reading&quot;: &quot;Question10④, passage final② and malformed citation.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2000 written Level1 DOC; private45-page conversion&quot;,
+      &quot;sha256&quot;: &quot;da95e55c61fc62850bc572e43ac7b2ea5270995694ca6f5174b8547894f7a14c&quot;,
+      &quot;physical_pages&quot;: [
+        18,
+        19
+      ],
+      &quot;locator&quot;: &quot;Derivative pages; full written comparison completed&quot;,
+      &quot;reading&quot;: &quot;Age passage without source reference marks or citation.&quot;,
+      &quot;lineage&quot;: &quot;Substantial shared defects; not an independent original vote.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;Related indexed web transcription&quot;,
+      &quot;url&quot;: &quot;https://y.saromalang.com/kỳ-thi-nô-jlpt/1996-2000/level-1-2000&quot;,
+      &quot;locator&quot;: &quot;Focused search excerpt only&quot;,
+      &quot;reading&quot;: &quot;Repeats 隼齢は堂々と1コにしよう; not an independent original witness.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Question10 explicitly identifies reference④, and the earlier sequence①②③ is intact: reference repair is high confidence. The age-related title is restored by conjecture to 年齢は堂々と口にしよう from malformed 隼齢/1コ. Original1999 magazine article was not recovered, so the combined field remains provisional.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Full indexed written source comparison including all explanations and keys.&quot;,
+    &quot;Focused crops and bounded language/source checks.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;Exact original wording/mark placement remains unrecovered; related transcriptions may share errors.&quot;
+}</pre></details></div><div class="review-record" id="principal_differences-H25-N1_2000-D005"><div class="review-label">Principal difference · /content · high</div><div class="comparison"><div><h4>Principal</h4><pre>Final reference<mark class="diff-old">②</mark> かえって腹がたった; citation <mark class="diff-old">隼</mark>齢は堂々と<mark class="diff-old">1コ</mark>にしよう.</pre></div><div><h4>Editorial</h4><pre>Final reference<mark class="diff-new">④</mark> かえって腹がたった; citation <mark class="diff-new">年</mark>齢は堂々と<mark class="diff-new">口</mark>にしよう.</pre></div></div><p>Question10 explicitly identifies reference④, and the earlier sequence①②③ is intact: reference repair is high confidence. The age-related title is restored by conjecture to 年齢は堂々と口にしよう from malformed 隼齢/1コ. Original1999 magazine article was not recovered, so the combined field remains provisional.</p><span class="principal-repository-source">Principal source (page=411): <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-b002 affected field</span><details><summary>Full published record · principal_differences-H25-N1_2000-D005</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;H25-N1_2000-D005&quot;,
+  &quot;unit&quot;: &quot;N1_2000&quot;,
+  &quot;item_id&quot;: &quot;reading-b002&quot;,
+  &quot;field&quot;: &quot;/content&quot;,
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;&lt;p&gt;（1）年齢というのは、相手を理解する上での&lt;u data-reference-label=\&quot;①\&quot;&gt;重要なキーワードだ&lt;/u&gt;と、わたしは思っている。同じく、自分を理解してもらう上での重要なキーワードでもある。&lt;/p&gt;&lt;p&gt;「同じ世代だったんですね。じゃあ、あれ、ご存じでしょう」ということもあれば、「へえ、十歳違うと、やっぱり考え方が異なってくるものですねえ」ということもあるだろう。&lt;/p&gt;&lt;p&gt;それにわたしは、&lt;u data-reference-label=\&quot;②\&quot;&gt;自分の年齢を恥じたりしていない&lt;/u&gt;。若くして亡くなる人もいるというのに、わたしはいま現在で半世紀もの年月を生きることができた。いやなこともいいこともいっぱいあったが、そのどれもが、かけがえのない&lt;sup&gt;（注1）&lt;/sup&gt;私の人生、一年たりとも否定したりごまかしたりしたくはない。&lt;/p&gt;&lt;p&gt;しかし、かなりの文化人ではあっても、女性の中には年齢を公にしたがらない方がけっこういらっしゃるようだ。あるシンポジウム&lt;sup&gt;（注2）&lt;/sup&gt;に参加した時、パンフレットのパネラー&lt;sup&gt;（注3）&lt;/sup&gt;紹介で、私のところだけ年齢がなかった。他のパネラーは男性で、全員、ちゃんと年齢が記されている。どうしてでしょうと問い合わせると、&lt;u data-reference-label=\&quot;③\&quot;&gt;女性の方は年齢を入れないでほしいとおっしゃる方が多いので、と言われた&lt;/u&gt;。つまり、勝手に気遣って&lt;sup&gt;（注4）&lt;/sup&gt;、私だけ年齢を伏せて&lt;sup&gt;（注5）&lt;/sup&gt;くださったというわけだ。よけいなお世話である。ひとこと、どうしますかと尋ねてほしかったのにと、&lt;u data-reference-label=\&quot;④\&quot;&gt;かえって腹がたった&lt;/u&gt;。&lt;/p&gt;&lt;p&gt;（山崎洋子「年齢は堂々と口にしよう」『笑顔』1999年2月号　保健同人社による）&lt;/p&gt;&lt;p&gt;（注1）かけがえのない：他に代えられない、大切な&lt;/p&gt;&lt;p&gt;（注2）シンポジウム：ある問題についての意見や研究結果の発表会&lt;/p&gt;&lt;p&gt;（注3）パネラー：シンポジウムなどの講師・発言者&lt;/p&gt;&lt;p&gt;（注4）気遣う：相手のためを思って、いろいろ配慮する&lt;/p&gt;&lt;p&gt;（注5）伏せる：人に知られないようにする。知らせない&lt;/p&gt;&quot;
+  },
+  &quot;categories&quot;: [
+    &quot;underline&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;1995–2009.12 N1 question-and-explanation collection,2000 section&quot;,
+    &quot;sha256&quot;: &quot;e3555741c8f14b855a32e7d09b42eb790492e3818a85a875f99d84703c752e00&quot;,
+    &quot;physical_pages&quot;: [
+      411,
+      412
+    ],
+    &quot;locator&quot;: &quot;reading-b002 affected field&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;Final reference② かえって腹がたった; citation 隼齢は堂々と1コにしよう.&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;Final reference④ かえって腹がたった; citation 年齢は堂々と口にしよう.&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;conjectural_repair&quot;,
+  &quot;rationale&quot;: &quot;Question10 explicitly identifies reference④, and the earlier sequence①②③ is intact: reference repair is high confidence. The age-related title is restored by conjecture to 年齢は堂々と口にしよう from malformed 隼齢/1コ. Original1999 magazine article was not recovered, so the combined field remains provisional.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;H25-N1_2000-P005&quot;
+  ]
+}</pre></details></div></section><section class="review-group" id="review-reading-b003" data-kinds="difference"><div class="review-group-heading"><h2>reading-b003</h2><a href="../papers/N1_2000.html#reading-b003">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><p>（2）「ごちそう」は、もともと、<ruby data-rubi-id="rr4-9f1d5c110c4b807360ee" data-rubi-origin="project_rubi_restore">馳走<rt>ちそう</rt></ruby>、という漢語から出た言葉です。「<ruby data-rubi-id="rr4-bfc5be76a28c023d063f" data-rubi-origin="project_rubi_restore">馳走<rt>ちそう</rt></ruby>」は「走りまわる」「かけめぐる」という意味ですが、つまり、食事を作るために、その材料を集めるのに、あるいは煮たり焼いたりするのに、身体を忙しく動かさなければならず、その労苦へのねぎらい<sup>（注1）</sup>と感謝から発せられる「あいさつ」のことばで、「ご苦労<ruby data-rubi-id="rr4-87765a1fa0c46b805808" data-rubi-origin="project_rubi_restore">様<rt>さま</rt></ruby>でした」「お疲れ様でした」「お造作<sup>（注2）</sup>をかけました」「ありがとうございました」といったニュアンスのことばであるわけです。</p><p>だから、なにも料理にかぎったことではなく、たとえばとなりの家へもらい<ruby data-rubi-id="rr4-731f326e930a52ec7d82" data-rubi-origin="project_rubi_restore">風呂<rt>ぶろ</rt></ruby><sup>（注3）</sup>に行ったとき、風呂に入った帰りがけに、<u>「ごちそうさまでした」</u>というあいさつは、今でも使われる場合があるのではないかと思います。</p><p>ことにむかしは、風呂ひとつたてる<sup>（注4）</sup>にしても、風呂おけに水を<ruby data-rubi-id="rr4-34ae22ec5de000557717" data-rubi-origin="project_rubi_restore">汲<rt>く</rt></ruby>み入れ、たきぎ<sup>（注5）</sup>を集め、つきっきりで火を燃やしたり、大変な労働をともなう仕事であったわけですから、なおさら、「ごちそうさまでした」というあいさつが使われても、少しも変ではなく、また、そこにこめられた気持ちには深いものがあったと言えるでしょう。（中略）</p><p>「ごちそうさま」は、料理そのものより、むしろ人間の心に向けて発せられる「あいさつ」なのです。ついでに言うと、料理屋で食事をしての帰りに、店の人に、「ごちそうさま」という人がいますが、わたしはそれはあまりそぐわない<sup>（注6）</sup>と思っていて、<u>つかいません</u>。「お世話さま」というのを使います。</p><p>もらい風呂をして、「ごちそうさまでした」といっても、お<ruby data-rubi-id="rr4-601e3138c04d42c32e06" data-rubi-origin="project_rubi_restore">風呂屋<rt>ふろや</rt></ruby>さんでは、そうは言わない。お風呂屋さんも料理屋さんも、それが商売であり、そこで、「ごちそうさま」というのは、度をすぎたお世辞になり、いやらしいと感じるのです。「あいさつ」のことばにも、それを使う場合の<ruby data-rubi-id="rr4-8c3524f513ceb7172d66" data-rubi-origin="project_rubi_restore">節度<rt>せつど</rt></ruby><sup>（注7）</sup>があるべきだと思います。</p><p>（川崎洋「ことばの力」岩波ジュニア新書による）</p><p>（注1）ねぎらい：ご苦労様と思う気持ちを表す言葉や行為</p><p>（注2）造作：面倒、手数</p><p>（注3）もらい風呂：自分の家に風呂がないので、近所の家の風呂に入らせてもらうこと</p><p>（注4）たてる：わかす</p><p>（注5）たきぎ：燃料にする木</p><p>（注6）そぐわない：ふさわしくない</p><p>（注7）節度がある：適度で、行き過ぎがない</p></div></details><div class="review-record" id="principal_differences-H25-N1_2000-D006"><div class="review-label">Principal difference · /content · high</div><div class="comparison"><div><h4>Principal</h4><pre>を集<mark class="diff-old">まり</mark></pre></div><div><h4>Editorial</h4><pre>を集<mark class="diff-new">め</mark></pre></div></div><p>Firewood is the direct object of gathering. The transitive continuation 集め agrees with を; intransitive 集まり does not. The printed focus confirms this is a source error, not OCR.</p><span class="principal-repository-source">Principal source (page=413): <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-b003 affected field</span><details><summary>Full published record · principal_differences-H25-N1_2000-D006</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;H25-N1_2000-D006&quot;,
+  &quot;unit&quot;: &quot;N1_2000&quot;,
+  &quot;item_id&quot;: &quot;reading-b003&quot;,
+  &quot;field&quot;: &quot;/content&quot;,
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;&lt;p&gt;（2）「ごちそう」は、もともと、馳走、という漢語から出た言葉です。「馳走」は「走りまわる」「かけめぐる」という意味ですが、つまり、食事を作るために、その材料を集めるのに、あるいは煮たり焼いたりするのに、身体を忙しく動かさなければならず、その労苦へのねぎらい&lt;sup&gt;（注1）&lt;/sup&gt;と感謝から発せられる「あいさつ」のことばで、「ご苦労様でした」「お疲れ様でした」「お造作&lt;sup&gt;（注2）&lt;/sup&gt;をかけました」「ありがとうございました」といったニュアンスのことばであるわけです。&lt;/p&gt;&lt;p&gt;だから、なにも料理にかぎったことではなく、たとえばとなりの家へもらい風呂&lt;sup&gt;（注3）&lt;/sup&gt;に行ったとき、風呂に入った帰りがけに、&lt;u data-reference-label=\&quot;①\&quot;&gt;「ごちそうさまでした」&lt;/u&gt;というあいさつは、今でも使われる場合があるのではないかと思います。&lt;/p&gt;&lt;p&gt;ことにむかしは、風呂ひとつたてる&lt;sup&gt;（注4）&lt;/sup&gt;にしても、風呂おけに水を汲み入れ、たきぎ&lt;sup&gt;（注5）&lt;/sup&gt;を集め、つきっきりで火を燃やしたり、大変な労働をともなう仕事であったわけですから、なおさら、「ごちそうさまでした」というあいさつが使われても、少しも変ではなく、また、そこにこめられた気持ちには深いものがあったと言えるでしょう。（中略）&lt;/p&gt;&lt;p&gt;「ごちそうさま」は、料理そのものより、むしろ人間の心に向けて発せられる「あいさつ」なのです。ついでに言うと、料理屋で食事をしての帰りに、店の人に、「ごちそうさま」という人がいますが、わたしはそれはあまりそぐわない&lt;sup&gt;（注6）&lt;/sup&gt;と思っていて、&lt;u data-reference-label=\&quot;②\&quot;&gt;つかいません&lt;/u&gt;。「お世話さま」というのを使います。&lt;/p&gt;&lt;p&gt;もらい風呂をして、「ごちそうさまでした」といっても、お風呂屋さんでは、そうは言わない。お風呂屋さんも料理屋さんも、それが商売であり、そこで、「ごちそうさま」というのは、度をすぎたお世辞になり、いやらしいと感じるのです。「あいさつ」のことばにも、それを使う場合の節度&lt;sup&gt;（注7）&lt;/sup&gt;があるべきだと思います。&lt;/p&gt;&lt;p&gt;（川崎洋「ことばの力」岩波ジュニア新書による）&lt;/p&gt;&lt;p&gt;（注1）ねぎらい：ご苦労様と思う気持ちを表す言葉や行為&lt;/p&gt;&lt;p&gt;（注2）造作：面倒、手数&lt;/p&gt;&lt;p&gt;（注3）もらい風呂：自分の家に風呂がないので、近所の家の風呂に入らせてもらうこと&lt;/p&gt;&lt;p&gt;（注4）たてる：わかす&lt;/p&gt;&lt;p&gt;（注5）たきぎ：燃料にする木&lt;/p&gt;&lt;p&gt;（注6）そぐわない：ふさわしくない&lt;/p&gt;&lt;p&gt;（注7）節度がある：適度で、行き過ぎがない&lt;/p&gt;&quot;
+  },
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;1995–2009.12 N1 question-and-explanation collection,2000 section&quot;,
+    &quot;sha256&quot;: &quot;e3555741c8f14b855a32e7d09b42eb790492e3818a85a875f99d84703c752e00&quot;,
+    &quot;physical_pages&quot;: [
+      413
+    ],
+    &quot;locator&quot;: &quot;reading-b003 affected field&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;を集まり&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;を集め&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Firewood is the direct object of gathering. The transitive continuation 集め agrees with を; intransitive 集まり does not. The printed focus confirms this is a source error, not OCR.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-b004" data-kinds="difference"><div class="review-group-heading"><h2>reading-b004</h2><a href="../papers/N1_2000.html#reading-b004">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><p>（3）その<ruby data-rubi-id="rr4-020e870ca16589d6427b" data-rubi-origin="project_rubi_restore">教授<rt>きょうじゅ</rt></ruby>は、人間の脳がどのような作用によって活性化<sup>（注1）</sup>されるのか、という問題について話を進め、<ruby data-rubi-id="rr4-805a644adfa8618d4fca" data-rubi-origin="project_rubi_restore">交通事故<rt>こうつうじこ</rt></ruby>によって脳の一部をひどく損傷してしまった少年の実例を挙げた。（中略）</p><p>少年の脳の損傷具合はかなりひどいものだったので、医師は両親にその旨<sup>（注2）</sup>を告げ、たとえ手術がうまくいっても植物人間になることは免れないと宣告。<u>その上で手術をした</u>わけだが、リハビリ<sup>（注3）</sup>の段階で少年に対してできるかぎりの愛情を注ぐことを、両親に勧めたらしい。たとえ寝たきりで反応がなくても、一日じゅう手や足をさすってやり、優しく励ましてやるようにと指示したのである。両親は<ruby data-rubi-id="rr4-057b42634a4801e842e5" data-rubi-origin="project_rubi_restore">愚直<rt>ぐちょく</rt></ruby>なまでに<sup>（注4）</sup>この指示を守り、来る日も来る日も少年の手足をさすり、励まし続けたという。②＿＿＿、本来なら障害が起きてしかるべきであるはずの少年の脳は活発に働き始め、植物人間どころか、退院の日にはジョギングをしても<ruby data-rubi-id="rr4-c31c888bee741f691849" data-rubi-origin="project_rubi_restore">大丈夫<rt>だいじょうぶ</rt></ruby>なほど回復したのだそうである。</p><p>「少年の退院の日は、<u>まさに感動的でありました</u>」と教授は瞳を潤ませながら語っていたが、この実例から彼が引き出した結論（というか未だ仮定なのかもしれないが）は、人間の脳は“<ruby data-rubi-id="rr4-f6550de81a4c2b970934" data-rubi-origin="project_rubi_restore">誰<rt>だれ</rt></ruby>かに受け入れられる”という前提のもとに、活発に働くということであった。受け入れられるというのはどういうことかというと、これは取りも直さず愛されるということである。要するに愛し、愛されるという刺激がなければ、人間の脳は活発に働かないし、<ruby data-rubi-id="rr4-c1e5afebb55c2f8ddc43" data-rubi-origin="project_rubi_restore">創造性<rt>そうぞうせい</rt></ruby>も高まらないのである。</p><p>（原田宗典「幸福らしきもの」集英社による）</p><p>（注1）活性化する：刺激を与えて、働きを活発にする</p><p>（注2）その旨：その内容</p><p>（注3）リハビリ：体が不自由になった人が社会生活に戻れるようにする訓練</p><p>（注4）愚直なまでに：愚かだと思われるほどまじめに</p></div></details><div class="review-record" id="principal_differences-H25-N1_2000-D007"><div class="review-label">Principal difference · /content · high</div><div class="comparison"><div><h4>Principal</h4><pre>わけが；リハビリの階<mark class="diff-old">段</mark>で；植物人間どころ<mark class="diff-old">が</mark></pre></div><div><h4>Editorial</h4><pre>わけ<mark class="diff-new">だ</mark>が；リハビリの<mark class="diff-new">段</mark>階で；植物人間どころ<mark class="diff-new">か</mark></pre></div></div><p>Three minimal grammatical/lexical repairs in one source field: supply copular だ before が, use 段階 for the rehabilitation stage, and restore the contrast construction どころか. Preserve note3 リハビリ, historical claims and all keys.</p><span class="principal-repository-source">Principal source (page=413): <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-b004 affected field</span><details><summary>Full published record · principal_differences-H25-N1_2000-D007</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;H25-N1_2000-D007&quot;,
+  &quot;unit&quot;: &quot;N1_2000&quot;,
+  &quot;item_id&quot;: &quot;reading-b004&quot;,
+  &quot;field&quot;: &quot;/content&quot;,
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;&lt;p&gt;（3）その教授は、人間の脳がどのような作用によって活性化&lt;sup&gt;（注1）&lt;/sup&gt;されるのか、という問題について話を進め、交通事故によって脳の一部をひどく損傷してしまった少年の実例を挙げた。（中略）&lt;/p&gt;&lt;p&gt;少年の脳の損傷具合はかなりひどいものだったので、医師は両親にその旨&lt;sup&gt;（注2）&lt;/sup&gt;を告げ、たとえ手術がうまくいっても植物人間になることは免れないと宣告。&lt;u data-reference-label=\&quot;①\&quot;&gt;その上で手術をした&lt;/u&gt;わけだが、リハビリ&lt;sup&gt;（注3）&lt;/sup&gt;の段階で少年に対してできるかぎりの愛情を注ぐことを、両親に勧めたらしい。たとえ寝たきりで反応がなくても、一日じゅう手や足をさすってやり、優しく励ましてやるようにと指示したのである。両親は愚直なまでに&lt;sup&gt;（注4）&lt;/sup&gt;この指示を守り、来る日も来る日も少年の手足をさすり、励まし続けたという。②＿＿＿、本来なら障害が起きてしかるべきであるはずの少年の脳は活発に働き始め、植物人間どころか、退院の日にはジョギングをしても大丈夫なほど回復したのだそうである。&lt;/p&gt;&lt;p&gt;「少年の退院の日は、&lt;u data-reference-label=\&quot;③\&quot;&gt;まさに感動的でありました&lt;/u&gt;」と教授は瞳を潤ませながら語っていたが、この実例から彼が引き出した結論（というか未だ仮定なのかもしれないが）は、人間の脳は“誰かに受け入れられる”という前提のもとに、活発に働くということであった。受け入れられるというのはどういうことかというと、これは取りも直さず愛されるということである。要するに愛し、愛されるという刺激がなければ、人間の脳は活発に働かないし、創造性も高まらないのである。&lt;/p&gt;&lt;p&gt;（原田宗典「幸福らしきもの」集英社による）&lt;/p&gt;&lt;p&gt;（注1）活性化する：刺激を与えて、働きを活発にする&lt;/p&gt;&lt;p&gt;（注2）その旨：その内容&lt;/p&gt;&lt;p&gt;（注3）リハビリ：体が不自由になった人が社会生活に戻れるようにする訓練&lt;/p&gt;&lt;p&gt;（注4）愚直なまでに：愚かだと思われるほどまじめに&lt;/p&gt;&quot;
+  },
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;1995–2009.12 N1 question-and-explanation collection,2000 section&quot;,
+    &quot;sha256&quot;: &quot;e3555741c8f14b855a32e7d09b42eb790492e3818a85a875f99d84703c752e00&quot;,
+    &quot;physical_pages&quot;: [
+      413,
+      414
+    ],
+    &quot;locator&quot;: &quot;reading-b004 affected field&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;わけが；リハビリの階段で；植物人間どころが&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;わけだが；リハビリの段階で；植物人間どころか&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Three minimal grammatical/lexical repairs in one source field: supply copular だ before が, use 段階 for the rehabilitation stage, and restore the contrast construction どころか. Preserve note3 リハビリ, historical claims and all keys.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-b007" data-kinds="difference provisional_fix"><div class="review-group-heading"><h2>reading-b007</h2><a href="../papers/N1_2000.html#reading-b007">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja"><p>（2）化学物質過敏症<sup>（注1）</sup>は、アレルギー<sup>（注2）</sup>と中毒の要素を兼ね備えていますが、明らかな違いは、今までの概念では考えられない極めて微量な物質に反応するということです。少量を徐々に、あるいは一度に多量にその物質を浴びるとその後、ごく微量でも反応するようになります。</p><p>例えば中毒なら100万分の1グラム（ppm）の単位で発症しますが、これは10億分の1（ppb）とか、1兆分の1グラム（ppt）の単位で症状が現れるのです。中毒ではほとんどの場合、摂取<sup>（注3）</sup>量と症状の現れ方に個人差がなく、量が増えるに従って重くなり、一定量を超えると死に至ります（致死量）。ところが、化学物質過敏症の場合は、同じ環境にあっても症状が出たり出なかったりと個人差が大きく、スギ花粉症で苦しんでいる人の隣に平気な人がいるというアレルギーに似ています。</p><p>（難波龍人「家が原因で起こることが多い化学物質過敏症」「婦人之友」第93巻第2号　婦人之友社による）</p><p>（注1）過敏：敏感すぎること</p><p>（注2）アレルギー：ある物質に対して敏感に反応すること</p><p>（注3）摂取：体の中に取り入れること</p></div></details><div class="review-record" id="unresolved_cases-H25-N1_2000-P008"><div class="review-label">Provisional fix · /content · medium</div><div class="comparison"><div><h4>Before</h4><pre>…にあっても症状が出たり出なかったりと個人差が大きく、スギ花粉症で苦しんでいる人の隣に平気な人がいるというアレルギーに似ています。&lt;/p&gt;&lt;p&gt;（難波龍人「家が原因で起こることが多い<mark class="diff-old">科</mark>学物質過敏症」「婦人之友」第93巻第2号　婦人之友社による）&lt;/p&gt;&lt;p&gt;（注1）過敏：敏感すぎること&lt;/p&gt;&lt;p&gt;（注2）アレルギー：ある物質に対して敏感に反応すること&lt;/p&gt;&lt;p&gt;（注3）摂取：体の中に取り入れること&lt;/p&gt;</pre></div><div><h4>Editorial</h4><pre>…にあっても症状が出たり出なかったりと個人差が大きく、スギ花粉症で苦しんでいる人の隣に平気な人がいるというアレルギーに似ています。&lt;/p&gt;&lt;p&gt;（難波龍人「家が原因で起こることが多い<mark class="diff-new">化</mark>学物質過敏症」「婦人之友」第93巻第2号　婦人之友社による）&lt;/p&gt;&lt;p&gt;（注1）過敏：敏感すぎること&lt;/p&gt;&lt;p&gt;（注2）アレルギー：ある物質に対して敏感に反応すること&lt;/p&gt;&lt;p&gt;（注3）摂取：体の中に取り入れること&lt;/p&gt;</pre></div></div><p>The body consistently discusses 化学物質 and 化学物質過敏症. Correct the citation’s first character to 化学, also present in the related indexed web transcription. Exact original1999 article title remains unrecovered.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>Exact original wording/mark placement remains unrecovered; related transcriptions may share errors.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Complete source field and dependent questions reviewed.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=416): <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Written region physical416<p>科学物質過敏症</p></li><li><a href="https://y.saromalang.com/kỳ-thi-nô-jlpt/1996-2000/level-1-2000" target="_blank" rel="noopener">Related indexed web transcription</a> · Focused search excerpt only; No independent original custody or complete web-document review.<p>化学物質過敏症</p></li></ul><details><summary>Full published record · unresolved_cases-H25-N1_2000-P008</summary><pre>{
+  &quot;case_id&quot;: &quot;H25-N1_2000-P008&quot;,
+  &quot;unit&quot;: &quot;N1_2000&quot;,
+  &quot;item_id&quot;: &quot;reading-b007&quot;,
+  &quot;field&quot;: &quot;/content&quot;,
+  &quot;status&quot;: &quot;provisional_fix&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;source_comparison&quot;,
+  &quot;before&quot;: {
+    &quot;html&quot;: &quot;&lt;p&gt;（2）化学物質過敏症&lt;sup&gt;（注1）&lt;/sup&gt;は、アレルギー&lt;sup&gt;（注2）&lt;/sup&gt;と中毒の要素を兼ね備えていますが、明らかな違いは、今までの概念では考えられない極めて微量な物質に反応するということです。少量を徐々に、あるいは一度に多量にその物質を浴びるとその後、ごく微量でも反応するようになります。&lt;/p&gt;&lt;p&gt;例えば中毒なら100万分の1グラム（ppm）の単位で発症しますが、これは10億分の1（ppb）とか、1兆分の1グラム（ppt）の単位で症状が現れるのです。中毒ではほとんどの場合、摂取&lt;sup&gt;（注3）&lt;/sup&gt;量と症状の現れ方に個人差がなく、量が増えるに従って重くなり、一定量を超えると死に至ります（致死量）。ところが、化学物質過敏症の場合は、同じ環境にあっても症状が出たり出なかったりと個人差が大きく、スギ花粉症で苦しんでいる人の隣に平気な人がいるというアレルギーに似ています。&lt;/p&gt;&lt;p&gt;（難波龍人「家が原因で起こることが多い科学物質過敏症」「婦人之友」第93巻第2号　婦人之友社による）&lt;/p&gt;&lt;p&gt;（注1）過敏：敏感すぎること&lt;/p&gt;&lt;p&gt;（注2）アレルギー：ある物質に対して敏感に反応すること&lt;/p&gt;&lt;p&gt;（注3）摂取：体の中に取り入れること&lt;/p&gt;&quot;
+  },
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;&lt;p&gt;（2）化学物質過敏症&lt;sup&gt;（注1）&lt;/sup&gt;は、アレルギー&lt;sup&gt;（注2）&lt;/sup&gt;と中毒の要素を兼ね備えていますが、明らかな違いは、今までの概念では考えられない極めて微量な物質に反応するということです。少量を徐々に、あるいは一度に多量にその物質を浴びるとその後、ごく微量でも反応するようになります。&lt;/p&gt;&lt;p&gt;例えば中毒なら100万分の1グラム（ppm）の単位で発症しますが、これは10億分の1（ppb）とか、1兆分の1グラム（ppt）の単位で症状が現れるのです。中毒ではほとんどの場合、摂取&lt;sup&gt;（注3）&lt;/sup&gt;量と症状の現れ方に個人差がなく、量が増えるに従って重くなり、一定量を超えると死に至ります（致死量）。ところが、化学物質過敏症の場合は、同じ環境にあっても症状が出たり出なかったりと個人差が大きく、スギ花粉症で苦しんでいる人の隣に平気な人がいるというアレルギーに似ています。&lt;/p&gt;&lt;p&gt;（難波龍人「家が原因で起こることが多い化学物質過敏症」「婦人之友」第93巻第2号　婦人之友社による）&lt;/p&gt;&lt;p&gt;（注1）過敏：敏感すぎること&lt;/p&gt;&lt;p&gt;（注2）アレルギー：ある物質に対して敏感に反応すること&lt;/p&gt;&lt;p&gt;（注3）摂取：体の中に取り入れること&lt;/p&gt;&quot;
+  },
+  &quot;context&quot;: &quot;Complete source field and dependent questions reviewed.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: {
+        &quot;html&quot;: &quot;&lt;p&gt;（2）化学物質過敏症&lt;sup&gt;（注1）&lt;/sup&gt;は、アレルギー&lt;sup&gt;（注2）&lt;/sup&gt;と中毒の要素を兼ね備えていますが、明らかな違いは、今までの概念では考えられない極めて微量な物質に反応するということです。少量を徐々に、あるいは一度に多量にその物質を浴びるとその後、ごく微量でも反応するようになります。&lt;/p&gt;&lt;p&gt;例えば中毒なら100万分の1グラム（ppm）の単位で発症しますが、これは10億分の1（ppb）とか、1兆分の1グラム（ppt）の単位で症状が現れるのです。中毒ではほとんどの場合、摂取&lt;sup&gt;（注3）&lt;/sup&gt;量と症状の現れ方に個人差がなく、量が増えるに従って重くなり、一定量を超えると死に至ります（致死量）。ところが、化学物質過敏症の場合は、同じ環境にあっても症状が出たり出なかったりと個人差が大きく、スギ花粉症で苦しんでいる人の隣に平気な人がいるというアレルギーに似ています。&lt;/p&gt;&lt;p&gt;（難波龍人「家が原因で起こることが多い科学物質過敏症」「婦人之友」第93巻第2号　婦人之友社による）&lt;/p&gt;&lt;p&gt;（注1）過敏：敏感すぎること&lt;/p&gt;&lt;p&gt;（注2）アレルギー：ある物質に対して敏感に反応すること&lt;/p&gt;&lt;p&gt;（注3）摂取：体の中に取り入れること&lt;/p&gt;&quot;
+      },
+      &quot;assessment&quot;: &quot;Literal principal field.&quot;
+    },
+    {
+      &quot;value&quot;: {
+        &quot;html&quot;: &quot;&lt;p&gt;（2）化学物質過敏症&lt;sup&gt;（注1）&lt;/sup&gt;は、アレルギー&lt;sup&gt;（注2）&lt;/sup&gt;と中毒の要素を兼ね備えていますが、明らかな違いは、今までの概念では考えられない極めて微量な物質に反応するということです。少量を徐々に、あるいは一度に多量にその物質を浴びるとその後、ごく微量でも反応するようになります。&lt;/p&gt;&lt;p&gt;例えば中毒なら100万分の1グラム（ppm）の単位で発症しますが、これは10億分の1（ppb）とか、1兆分の1グラム（ppt）の単位で症状が現れるのです。中毒ではほとんどの場合、摂取&lt;sup&gt;（注3）&lt;/sup&gt;量と症状の現れ方に個人差がなく、量が増えるに従って重くなり、一定量を超えると死に至ります（致死量）。ところが、化学物質過敏症の場合は、同じ環境にあっても症状が出たり出なかったりと個人差が大きく、スギ花粉症で苦しんでいる人の隣に平気な人がいるというアレルギーに似ています。&lt;/p&gt;&lt;p&gt;（難波龍人「家が原因で起こることが多い化学物質過敏症」「婦人之友」第93巻第2号　婦人之友社による）&lt;/p&gt;&lt;p&gt;（注1）過敏：敏感すぎること&lt;/p&gt;&lt;p&gt;（注2）アレルギー：ある物質に対して敏感に反応すること&lt;/p&gt;&lt;p&gt;（注3）摂取：体の中に取り入れること&lt;/p&gt;&quot;
+      },
+      &quot;assessment&quot;: &quot;Preferred supported reconstruction; not authenticated original.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;Preserve 科学 as a literal printed citation anomaly.&quot;,
+      &quot;assessment&quot;: &quot;Considered rival.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;1995–2009.12 N1 question-and-explanation collection,2000 section&quot;,
+      &quot;sha256&quot;: &quot;e3555741c8f14b855a32e7d09b42eb790492e3818a85a875f99d84703c752e00&quot;,
+      &quot;physical_pages&quot;: [
+        416
+      ],
+      &quot;locator&quot;: &quot;Written region physical416&quot;,
+      &quot;reading&quot;: &quot;科学物質過敏症&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;Related indexed web transcription&quot;,
+      &quot;url&quot;: &quot;https://y.saromalang.com/kỳ-thi-nô-jlpt/1996-2000/level-1-2000&quot;,
+      &quot;locator&quot;: &quot;Focused search excerpt only; No independent original custody or complete web-document review.&quot;,
+      &quot;reading&quot;: &quot;化学物質過敏症&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;The body consistently discusses 化学物質 and 化学物質過敏症. Correct the citation’s first character to 化学, also present in the related indexed web transcription. Exact original1999 article title remains unrecovered.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Full indexed written source comparison including all explanations and keys.&quot;,
+    &quot;Focused crops and bounded language/source checks.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;Exact original wording/mark placement remains unrecovered; related transcriptions may share errors.&quot;
+}</pre></details></div><div class="review-record" id="principal_differences-H25-N1_2000-D008"><div class="review-label">Principal difference · /content · high</div><div class="comparison"><div><h4>Principal</h4><pre><mark class="diff-old">科</mark>学物質過敏症</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">化</mark>学物質過敏症</pre></div></div><p>The body consistently discusses 化学物質 and 化学物質過敏症. Correct the citation’s first character to 化学, also present in the related indexed web transcription. Exact original1999 article title remains unrecovered.</p><span class="principal-repository-source">Principal source (page=416): <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">reading-b007 affected field</span><details><summary>Full published record · principal_differences-H25-N1_2000-D008</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;H25-N1_2000-D008&quot;,
+  &quot;unit&quot;: &quot;N1_2000&quot;,
+  &quot;item_id&quot;: &quot;reading-b007&quot;,
+  &quot;field&quot;: &quot;/content&quot;,
+  &quot;current_value&quot;: {
+    &quot;html&quot;: &quot;&lt;p&gt;（2）化学物質過敏症&lt;sup&gt;（注1）&lt;/sup&gt;は、アレルギー&lt;sup&gt;（注2）&lt;/sup&gt;と中毒の要素を兼ね備えていますが、明らかな違いは、今までの概念では考えられない極めて微量な物質に反応するということです。少量を徐々に、あるいは一度に多量にその物質を浴びるとその後、ごく微量でも反応するようになります。&lt;/p&gt;&lt;p&gt;例えば中毒なら100万分の1グラム（ppm）の単位で発症しますが、これは10億分の1（ppb）とか、1兆分の1グラム（ppt）の単位で症状が現れるのです。中毒ではほとんどの場合、摂取&lt;sup&gt;（注3）&lt;/sup&gt;量と症状の現れ方に個人差がなく、量が増えるに従って重くなり、一定量を超えると死に至ります（致死量）。ところが、化学物質過敏症の場合は、同じ環境にあっても症状が出たり出なかったりと個人差が大きく、スギ花粉症で苦しんでいる人の隣に平気な人がいるというアレルギーに似ています。&lt;/p&gt;&lt;p&gt;（難波龍人「家が原因で起こることが多い化学物質過敏症」「婦人之友」第93巻第2号　婦人之友社による）&lt;/p&gt;&lt;p&gt;（注1）過敏：敏感すぎること&lt;/p&gt;&lt;p&gt;（注2）アレルギー：ある物質に対して敏感に反応すること&lt;/p&gt;&lt;p&gt;（注3）摂取：体の中に取り入れること&lt;/p&gt;&quot;
+  },
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;1995–2009.12 N1 question-and-explanation collection,2000 section&quot;,
+    &quot;sha256&quot;: &quot;e3555741c8f14b855a32e7d09b42eb790492e3818a85a875f99d84703c752e00&quot;,
+    &quot;physical_pages&quot;: [
+      416
+    ],
+    &quot;locator&quot;: &quot;reading-b007 affected field&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;科学物質過敏症&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;化学物質過敏症&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;conjectural_repair&quot;,
+  &quot;rationale&quot;: &quot;The body consistently discusses 化学物質 and 化学物質過敏症. Correct the citation’s first character to 化学, also present in the related indexed web transcription. Exact original1999 article title remains unrecovered.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;H25-N1_2000-P008&quot;
+  ]
+}</pre></details></div></section><section class="review-group" id="review-reading-q027" data-kinds="unresolved"><div class="review-group-heading"><h2>reading-q027</h2><a href="../papers/N1_2000.html#reading-q027">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">次の首相にふさわしい人物は、彼をおいて、ほか＿＿＿。<ol><li>にはいない</li><li>にすぎない</li><li>に考えられる</li><li>にはいるだろう</li></ol><p>Editorial key: 1</p></div></details><div class="review-record" id="unresolved_cases-H25-N1_2000-reading27-noun"><div class="review-label">Unresolved · /stem · low</div><div class="comparison"><div><h4>Alternative</h4><pre>次の首相</pre></div><div><h4>Editorial</h4><pre>次の首相<mark class="diff-new">にふさわしい人物は、彼をおいて、ほか＿＿＿。</mark></pre></div></div><p>Both political nouns fit the forecast construction and preserve key1. Prefer the legible principal without pretending the variants are independently authenticated.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>Exact original field unresolved.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Related-source disagreement in a complete inspected question.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=417): <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Written region physical417<p>次の首相</p></li><li><span class="principal-repository-source">Principal source (page=26): <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Derivative pages; full written comparison completed<p>次の首脳</p></li></ul><details><summary>Full published record · unresolved_cases-H25-N1_2000-reading27-noun</summary><pre>{
+  &quot;case_id&quot;: &quot;H25-N1_2000-reading27-noun&quot;,
+  &quot;unit&quot;: &quot;N1_2000&quot;,
+  &quot;item_id&quot;: &quot;reading-q027&quot;,
+  &quot;field&quot;: &quot;/stem&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;low&quot;,
+  &quot;decision_basis&quot;: &quot;source_comparison&quot;,
+  &quot;current_value&quot;: &quot;次の首相にふさわしい人物は、彼をおいて、ほか＿＿＿。&quot;,
+  &quot;context&quot;: &quot;Related-source disagreement in a complete inspected question.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;次の首相&quot;,
+      &quot;assessment&quot;: &quot;Clear principal retained.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;次の首脳&quot;,
+      &quot;assessment&quot;: &quot;Related DOC/individual alternative; no original custody.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;1995–2009.12 N1 question-and-explanation collection,2000 section&quot;,
+      &quot;sha256&quot;: &quot;e3555741c8f14b855a32e7d09b42eb790492e3818a85a875f99d84703c752e00&quot;,
+      &quot;physical_pages&quot;: [
+        417
+      ],
+      &quot;locator&quot;: &quot;Written region physical417&quot;,
+      &quot;reading&quot;: &quot;次の首相&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2000 written Level1 DOC; private45-page conversion&quot;,
+      &quot;sha256&quot;: &quot;da95e55c61fc62850bc572e43ac7b2ea5270995694ca6f5174b8547894f7a14c&quot;,
+      &quot;physical_pages&quot;: [
+        26
+      ],
+      &quot;locator&quot;: &quot;Derivative pages; full written comparison completed&quot;,
+      &quot;reading&quot;: &quot;次の首脳&quot;,
+      &quot;lineage&quot;: &quot;Substantial shared defects; not an independent original vote.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Both political nouns fit the forecast construction and preserve key1. Prefer the legible principal without pretending the variants are independently authenticated.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Complete principal and indexed written DOC/key comparison.&quot;,
+    &quot;Focused language review and bounded external checks where material.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;Exact original field unresolved.&quot;
+}</pre></details></div></section><section class="review-group" id="review-reading-q031" data-kinds="unresolved"><div class="review-group-heading"><h2>reading-q031</h2><a href="../papers/N1_2000.html#reading-q031">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">警官＿＿＿者、そのような犯罪にかかわってはいけない。<ol><li>なる</li><li>たる</li><li>なりの</li><li>ならではの</li></ol><p>Editorial key: 2</p></div></details><div class="review-record" id="unresolved_cases-H25-N1_2000-reading31-distractor"><div class="review-label">Unresolved · /options/3 · low</div><div class="comparison"><div><h4>Alternative</h4><pre>ならではの</pre></div><div><h4>Editorial</h4><pre>ならではの</pre></div></div><p>Either is a wrong alternative in this construction; key2 unaffected. Prefer the legible principal without pretending the variants are independently authenticated.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>Exact original field unresolved.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Related-source disagreement in a complete inspected question.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=417): <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Written region physical417<p>ならではの</p></li><li><span class="principal-repository-source">Principal source (page=27): <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Derivative pages; full written comparison completed<p>ならでは</p></li></ul><details><summary>Full published record · unresolved_cases-H25-N1_2000-reading31-distractor</summary><pre>{
+  &quot;case_id&quot;: &quot;H25-N1_2000-reading31-distractor&quot;,
+  &quot;unit&quot;: &quot;N1_2000&quot;,
+  &quot;item_id&quot;: &quot;reading-q031&quot;,
+  &quot;field&quot;: &quot;/options/3&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;low&quot;,
+  &quot;decision_basis&quot;: &quot;source_comparison&quot;,
+  &quot;current_value&quot;: &quot;ならではの&quot;,
+  &quot;context&quot;: &quot;Related-source disagreement in a complete inspected question.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;ならではの&quot;,
+      &quot;assessment&quot;: &quot;Clear principal retained.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;ならでは&quot;,
+      &quot;assessment&quot;: &quot;Related DOC/individual alternative; no original custody.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;1995–2009.12 N1 question-and-explanation collection,2000 section&quot;,
+      &quot;sha256&quot;: &quot;e3555741c8f14b855a32e7d09b42eb790492e3818a85a875f99d84703c752e00&quot;,
+      &quot;physical_pages&quot;: [
+        417
+      ],
+      &quot;locator&quot;: &quot;Written region physical417&quot;,
+      &quot;reading&quot;: &quot;ならではの&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2000 written Level1 DOC; private45-page conversion&quot;,
+      &quot;sha256&quot;: &quot;da95e55c61fc62850bc572e43ac7b2ea5270995694ca6f5174b8547894f7a14c&quot;,
+      &quot;physical_pages&quot;: [
+        27
+      ],
+      &quot;locator&quot;: &quot;Derivative pages; full written comparison completed&quot;,
+      &quot;reading&quot;: &quot;ならでは&quot;,
+      &quot;lineage&quot;: &quot;Substantial shared defects; not an independent original vote.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Either is a wrong alternative in this construction; key2 unaffected. Prefer the legible principal without pretending the variants are independently authenticated.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Complete principal and indexed written DOC/key comparison.&quot;,
+    &quot;Focused language review and bounded external checks where material.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;Exact original field unresolved.&quot;
+}</pre></details></div></section><section class="review-group" id="review-reading-q034" data-kinds="unresolved"><div class="review-group-heading"><h2>reading-q034</h2><a href="../papers/N1_2000.html#reading-q034">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">彼は、貧しい＿＿＿温かい家庭で育った。<ol><li>ことで</li><li>うえに</li><li>わけで</li><li>ながらも</li></ol><p>Editorial key: 4</p></div></details><div class="review-record" id="unresolved_cases-H25-N1_2000-reading34-distractor"><div class="review-label">Unresolved · /options/2 · low</div><div class="comparison"><div><h4>Alternative</h4><pre>わけで</pre></div><div><h4>Editorial</h4><pre>わけで</pre></div></div><p>Both are unsuitable alternatives here; key4 unaffected. Prefer the legible principal without pretending the variants are independently authenticated.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>Exact original field unresolved.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Related-source disagreement in a complete inspected question.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=418): <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Written region physical418<p>わけで</p></li><li><span class="principal-repository-source">Principal source (page=27): <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Derivative pages; full written comparison completed<p>わけに</p></li></ul><details><summary>Full published record · unresolved_cases-H25-N1_2000-reading34-distractor</summary><pre>{
+  &quot;case_id&quot;: &quot;H25-N1_2000-reading34-distractor&quot;,
+  &quot;unit&quot;: &quot;N1_2000&quot;,
+  &quot;item_id&quot;: &quot;reading-q034&quot;,
+  &quot;field&quot;: &quot;/options/2&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;low&quot;,
+  &quot;decision_basis&quot;: &quot;source_comparison&quot;,
+  &quot;current_value&quot;: &quot;わけで&quot;,
+  &quot;context&quot;: &quot;Related-source disagreement in a complete inspected question.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;わけで&quot;,
+      &quot;assessment&quot;: &quot;Clear principal retained.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;わけに&quot;,
+      &quot;assessment&quot;: &quot;Related DOC/individual alternative; no original custody.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;1995–2009.12 N1 question-and-explanation collection,2000 section&quot;,
+      &quot;sha256&quot;: &quot;e3555741c8f14b855a32e7d09b42eb790492e3818a85a875f99d84703c752e00&quot;,
+      &quot;physical_pages&quot;: [
+        418
+      ],
+      &quot;locator&quot;: &quot;Written region physical418&quot;,
+      &quot;reading&quot;: &quot;わけで&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2000 written Level1 DOC; private45-page conversion&quot;,
+      &quot;sha256&quot;: &quot;da95e55c61fc62850bc572e43ac7b2ea5270995694ca6f5174b8547894f7a14c&quot;,
+      &quot;physical_pages&quot;: [
+        27
+      ],
+      &quot;locator&quot;: &quot;Derivative pages; full written comparison completed&quot;,
+      &quot;reading&quot;: &quot;わけに&quot;,
+      &quot;lineage&quot;: &quot;Substantial shared defects; not an independent original vote.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Both are unsuitable alternatives here; key4 unaffected. Prefer the legible principal without pretending the variants are independently authenticated.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Complete principal and indexed written DOC/key comparison.&quot;,
+    &quot;Focused language review and bounded external checks where material.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;Exact original field unresolved.&quot;
+}</pre></details></div></section><section class="review-group" id="review-reading-q050" data-kinds="unresolved"><div class="review-group-heading"><h2>reading-q050</h2><a href="../papers/N1_2000.html#reading-q050">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">海辺の町で育ったと聞いていたので、さぞかし泳ぎがうまいだろうと思いきや、＿＿＿。<ol><li>ほどほどに泳ぐことができる</li><li>水に浮くこともできないらしい</li><li>とても速く泳げるということだ</li><li>泳ぐのは浮かぶのよりむずかしい</li></ol><p>Editorial key: 2</p></div></details><div class="review-record" id="unresolved_cases-H25-N1_2000-reading50-distractor"><div class="review-label">Unresolved · /options/2 · low</div><div class="comparison"><div><h4>Alternative</h4><pre>速く</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">とても</mark>速く<mark class="diff-new">泳げるということだ</mark></pre></div></div><p>Fast versus early spelling differs in a non-key alternative; key2 unaffected. Prefer the legible principal without pretending the variants are independently authenticated.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>Exact original field unresolved.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Related-source disagreement in a complete inspected question.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=419): <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Written region physical419<p>速く</p></li><li><span class="principal-repository-source">Principal source (page=29): <code>additional-assets/principals/N1_1995_2009.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Derivative pages; full written comparison completed<p>早く</p></li></ul><details><summary>Full published record · unresolved_cases-H25-N1_2000-reading50-distractor</summary><pre>{
+  &quot;case_id&quot;: &quot;H25-N1_2000-reading50-distractor&quot;,
+  &quot;unit&quot;: &quot;N1_2000&quot;,
+  &quot;item_id&quot;: &quot;reading-q050&quot;,
+  &quot;field&quot;: &quot;/options/2&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;low&quot;,
+  &quot;decision_basis&quot;: &quot;source_comparison&quot;,
+  &quot;current_value&quot;: &quot;とても速く泳げるということだ&quot;,
+  &quot;context&quot;: &quot;Related-source disagreement in a complete inspected question.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;速く&quot;,
+      &quot;assessment&quot;: &quot;Clear principal retained.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;早く&quot;,
+      &quot;assessment&quot;: &quot;Related DOC/individual alternative; no original custody.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;1995–2009.12 N1 question-and-explanation collection,2000 section&quot;,
+      &quot;sha256&quot;: &quot;e3555741c8f14b855a32e7d09b42eb790492e3818a85a875f99d84703c752e00&quot;,
+      &quot;physical_pages&quot;: [
+        419
+      ],
+      &quot;locator&quot;: &quot;Written region physical419&quot;,
+      &quot;reading&quot;: &quot;速く&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2000 written Level1 DOC; private45-page conversion&quot;,
+      &quot;sha256&quot;: &quot;da95e55c61fc62850bc572e43ac7b2ea5270995694ca6f5174b8547894f7a14c&quot;,
+      &quot;physical_pages&quot;: [
+        29
+      ],
+      &quot;locator&quot;: &quot;Derivative pages; full written comparison completed&quot;,
+      &quot;reading&quot;: &quot;早く&quot;,
+      &quot;lineage&quot;: &quot;Substantial shared defects; not an independent original vote.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Fast versus early spelling differs in a non-key alternative; key2 unaffected. Prefer the legible principal without pretending the variants are independently authenticated.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Complete principal and indexed written DOC/key comparison.&quot;,
+    &quot;Focused language review and bounded external checks where material.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;Exact original field unresolved.&quot;
+}</pre></details></div></section></div></main><footer class="site-footer"><span class="developer-only">Developer mode</span></footer><div id="toast" role="status" class="toast" hidden></div><script id="page-data" type="application/json">{"review":true}</script><script id="theme-data" src="../assets/theme-data.js?v=f06ad9e2434b" defer></script><script src="../assets/app.js?v=0d75deb05ae3" defer></script></body></html>

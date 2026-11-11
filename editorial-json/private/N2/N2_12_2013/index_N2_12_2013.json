@@ -1,0 +1,284 @@
+{
+  "unit": "N2_12_2013",
+  "sources": [
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N2\\N2-2013-12\\N2-2013-12-真题.pdf",
+      "sha256": "39d8346e0788b0b4b5b15e086b2b2d3c5e7bc8a081cef46e08f8c54f5e78c411",
+      "Tier": 2,
+      "bytes": 11252064,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N2\\N2_12_2013\\PaddleOCR\\pdf_1",
+      "VisionOCR": "preprocess\\N2\\N2_12_2013\\VisionOCR\\pdf_1"
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N2\\N2-2013-12\\N2-2013-12-答案.pdf",
+      "sha256": "7ee98a45f28f55638d0dc709399083e3f9a0efd3ade826dfb5f5a254984e70fb",
+      "Tier": "unranked",
+      "bytes": 8230489,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N2\\N2_12_2013\\PaddleOCR\\pdf_2",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N2\\2013-12_N2\\2013-12_N2.json",
+      "sha256": "68aafcd69c764c423cb946d26348b42cb51ec71242a05f2453eb4bdd8996d14b",
+      "Tier": "unranked",
+      "bytes": 228086,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N2 các năm Yuuki Bùi\\N2 12-2013\\Đáp án+Script N2 12-2013.pdf",
+      "sha256": "4fb9b9ddb806fea571fc53defdea5bd269d1c1c2d82541640211386b31253bc0",
+      "Tier": "unranked",
+      "bytes": 2334154,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N2\\N2_12_2013\\PaddleOCR\\pdf_3",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N2 các năm Yuuki Bùi\\N2 12-2013\\Đề N2 12-2013.pdf",
+      "sha256": "53eb3ae53041dbdbcce1e11a63882a7282079ee26297abebf59514184d820889",
+      "Tier": 1,
+      "bytes": 8033507,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N2\\N2_12_2013\\PaddleOCR\\pdf_4",
+      "VisionOCR": "preprocess\\N2\\N2_12_2013\\VisionOCR\\pdf_4"
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N2\\listening\\N2_12_2013_listening.html",
+      "sha256": "5b566bda47ce8c44570d44f4ad9f8fb343e3335d7eb274ec042c110ceb88bcdf",
+      "Tier": "unranked",
+      "bytes": 107553,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N2\\reading\\N2_12_2013_reading.html",
+      "sha256": "0107b293889af78413b53dcbc5136f7add441832f9563a28c8ee4b95c89749f2",
+      "Tier": "unranked",
+      "bytes": 103342,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N2\\vocab\\N2_12_2013_vocab.html",
+      "sha256": "106dde177dc59de5a524db81ab84e99c5073331a3e61fb0c0bbae4435064a8b7",
+      "Tier": "unranked",
+      "bytes": 134681,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N2真题（2010-2026.07）\\2013\\2013.12\\2013年12月N2真题.pdf",
+      "sha256": "f50912bf46fc08775438602a84691031eb0c18e1216666903c722c036a3456dd",
+      "Tier": 2,
+      "bytes": 1111698,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N2\\N2_12_2013\\PaddleOCR\\pdf_5",
+      "VisionOCR": "preprocess\\N2\\N2_12_2013\\VisionOCR\\pdf_5"
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N2真题（2010-2026.07）\\2013\\2013.12\\答案解析和听力原文\\2013年12月N2听力原文.pdf",
+      "sha256": "76dce8201ed8c5d257e80a4abbcfa67cc4cfbbcfca783f9143feb243729b7960",
+      "Tier": "unranked",
+      "bytes": 8111189,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N2\\N2_12_2013\\PaddleOCR\\pdf_6",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N2真题（2010-2026.07）\\2013\\2013.12\\答案解析和听力原文\\2013年12月N2听力译文.pdf",
+      "sha256": "e458ced38870ef26320bda90430a1d7f866f1cd92e5c154dcfa934d9810d5e53",
+      "Tier": "unranked",
+      "bytes": 1754270,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N2真题\\2010年-2020年\\2013年12月\\2013年12月N2听力译文.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N2\\N2_12_2013\\PaddleOCR\\pdf_7",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N2真题（2010-2026.07）\\2013\\2013.12\\答案解析和听力原文\\2013年12月N2答案解析.pdf",
+      "sha256": "e0c8e739330c64f56ade8c64a22e84f2e6cd136fc9e27d57df718f3c4fae1996",
+      "Tier": "unranked",
+      "bytes": 10804797,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N2\\N2_12_2013\\PaddleOCR\\pdf_8",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N2真题（2010-2026.07）\\2013\\2013.12\\答案解析和听力原文\\2013年12月N2阅读译文.pdf",
+      "sha256": "4fa7687af0ffa5f168a6c7534f947749dfc5256c15b535076062dcde1b50e9f4",
+      "Tier": "unranked",
+      "bytes": 2317157,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N2真题\\2010年-2020年\\2013年12月\\2013年12月N2阅读译文.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N2\\N2_12_2013\\PaddleOCR\\pdf_9",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N2真题（2010-2026.07）\\N2答题卡.pdf",
+      "sha256": "6b583e2fa2e820bd954eb6e7b287b230f51c5ed959407ef9c4dd09e7ddadda1d",
+      "Tier": "unranked",
+      "bytes": 706973,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N2历年真题\\N2答题卡.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N2\\N2_multiple\\PaddleOCR\\pdf_1",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N2真题（2010-2026.07）\\N2能力考试计算方法.xlsx",
+      "sha256": "2b980a522e7e6145d3e1d0a6da683190ea73c1515f0d2d7e78a601d304f9924e",
+      "Tier": "unranked",
+      "bytes": 12541,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N2真题\\N2能力考试计算方法.xlsx",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N2历年真题\\N2能力考试计算方法.xlsx"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N2真题\\2010年-2020年\\2013年12月\\【1】2013年12月N2 真题.pdf",
+      "sha256": "2b32d62f66d083daf969334599c21848a4b4a79cd1525691d27b9e95f4ead011",
+      "Tier": 3,
+      "bytes": 5517917,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N2\\N2_12_2013\\PaddleOCR\\pdf_11",
+      "VisionOCR": "preprocess\\N2\\N2_12_2013\\VisionOCR\\pdf_11"
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N2真题\\2010年-2020年\\2013年12月\\【1】2013年12月N2答案解析+听力原文.pdf",
+      "sha256": "b4da8ffdb1da13cc56050022da4a84c615e743e4f5ec104b53fe3c369f1ab014",
+      "Tier": "unranked",
+      "bytes": 2653341,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N2\\N2_12_2013\\PaddleOCR\\pdf_12",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N2真题\\2010年-2020年\\2013年12月\\【2】2013年12月N2 真题.pdf",
+      "sha256": "742266238992e0593ccd71eea0c1760ac9caf67508375dd4a68672d18569bd33",
+      "Tier": 2,
+      "bytes": 1291945,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N2\\N2_12_2013\\PaddleOCR\\pdf_13",
+      "VisionOCR": "preprocess\\N2\\N2_12_2013\\VisionOCR\\pdf_13"
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N2真题\\2010年-2020年\\2013年12月\\【2】2013年12月N2答案解析+听力原文.pdf",
+      "sha256": "ee2172e4a6b684e0fe8a98a316170aff2355ace6c7ebf1d005866bdc5e7f1b31",
+      "Tier": "unranked",
+      "bytes": 747632,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N2\\N2_12_2013\\PaddleOCR\\pdf_14",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N2真题\\2010年-2020年\\2013年12月\\【3】2013年12月N2 真题.pdf",
+      "sha256": "5645ec0a849c5ed9f50ab9726454d822c81fbba3ce805b3e3e04e877519e9755",
+      "Tier": 2,
+      "bytes": 1146513,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N2\\N2_12_2013\\PaddleOCR\\pdf_15",
+      "VisionOCR": "preprocess\\N2\\N2_12_2013\\VisionOCR\\pdf_15"
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N2真题\\2010年-2020年\\2013年12月\\【3】2013年12月N2答案解析+听力原文+译文.pdf",
+      "sha256": "635eeedb9691c7622c5fbaf7a80c7068c25723fdffea4c7a0d5869ac8c0fb249",
+      "Tier": "unranked",
+      "bytes": 993955,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N2\\N2_12_2013\\PaddleOCR\\pdf_16",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N2历年真题\\2010-2017.12高清无水印\\N2 2010.7-2017.12（真题试题）\\n2 2013.12真题.pdf",
+      "sha256": "45f498280ec2ce7e06bc7d1490f8b541e5d8bbf72aa80bb523650cb32622832b",
+      "Tier": 3,
+      "bytes": 23567086,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N2\\N2_12_2013\\PaddleOCR\\pdf_17",
+      "VisionOCR": "preprocess\\N2\\N2_12_2013\\VisionOCR\\pdf_17"
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N2历年真题\\2010-2017.12高清无水印\\N2 2010.7-2017.12（解析+听力原文+答案）\\n2 2013.12解析+听力原文+答案.pdf",
+      "sha256": "c706e7c6e3bf666930c166911dfe46847d3e11e1b35fd54d5ae3b89b058ceef0",
+      "Tier": "unranked",
+      "bytes": 12087121,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N2\\N2_12_2013\\PaddleOCR\\pdf_18",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N2历年真题\\2013.12\\2013年12月N2  全  蕴育教业.docx",
+      "sha256": "fed7185d4a208cc3a6b2c8834ba524d2c173b0540c21a0feb467ff57856be8cc",
+      "Tier": "unranked",
+      "bytes": 247635,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N2历年真题\\2013.12\\2013年12月日语二级听力原文.docx",
+      "sha256": "6585d9a437d517596aa25588a490fd2e041a280cfd8342c0cf7218263b800421",
+      "Tier": "unranked",
+      "bytes": 85689,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N2历年真题\\2013.12\\2013年12月日语能力2级答案.pdf",
+      "sha256": "e2afb89f8a532e7b303f81f1f8c5132cce0b6bb4eb35f4ec41beafe8ae885e43",
+      "Tier": "unranked",
+      "bytes": 114265,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N2\\N2_12_2013\\PaddleOCR\\pdf_19",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N2历年真题\\2013.12\\词汇语法阅读\\沪江日语N2讲解2013年12月语法.pdf",
+      "sha256": "b2c97fd00aa16c8720554cdde108c4897c2a25a4b4f08f0655551bfc445981c7",
+      "Tier": 3,
+      "bytes": 3863758,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N2\\N2_12_2013\\PaddleOCR\\pdf_20",
+      "VisionOCR": "preprocess\\N2\\N2_12_2013\\VisionOCR\\pdf_20"
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N2历年真题\\2013.12\\词汇语法阅读\\沪江日语N2讲解2013年12月阅读.pdf",
+      "sha256": "c7a5d2dd0531efcf5526a6d4d92aecf9b0095f700e90be0de9a02f6e90b42d06",
+      "Tier": 3,
+      "bytes": 5964269,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N2\\N2_12_2013\\PaddleOCR\\pdf_21",
+      "VisionOCR": "preprocess\\N2\\N2_12_2013\\VisionOCR\\pdf_21"
+    },
+    {
+      "path": "src\\munjaJLPT\\N2\\2013-12_N2\\images\\2013-12_N2_s14-q01-img01.jpg",
+      "sha256": "4a94772d08aa5926db6f95728e409d25291f7818f5e8fb86077e03146b5ea911",
+      "Tier": "unranked",
+      "bytes": 357609,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N2\\2013-12_N2\\images\\2013-12_N2_s14-q01-img02.jpg",
+      "sha256": "9b32f49f528941a9fabca64c1ac4af31f6bdafb469979b9d95e8eb670048bd54",
+      "Tier": "unranked",
+      "bytes": 34556,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    }
+  ]
+}

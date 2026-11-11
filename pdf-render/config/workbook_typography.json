@@ -1,0 +1,2607 @@
+{
+  "policy_id": "approved-workbook-typography-20261109-v1",
+  "authority": "pdf-render/handoffs/workbook-typography-20261109-v2/APPROVED_FONT_POLICY.json",
+  "numeral_xscale": 0.865,
+  "fonts": {
+    "futogo_b101_pr6n_bold": {
+      "path": "fonts_official/workbook-typography-20261109-pinned/futogo_b101_pr6n_bold.otf",
+      "sha256": "8563d912f7a9064079623c2497fbeefe89d4060f13346df56d667273a71d50dc",
+      "postscript_name": "FutoGoB101Pr6N-Bold"
+    },
+    "kyoka_ica_pro_regular": {
+      "path": "fonts_official/workbook-typography-20261109-pinned/kyoka_ica_pro_regular.otf",
+      "sha256": "1bca3052abd0e35599b8d9e466ef134c1fc90a768cb88a875a425d0b4d794c84",
+      "postscript_name": "KyokaICAPro-Regular"
+    },
+    "tw_cen_condensed_extra_bold": {
+      "path": "fonts_official/workbook-typography-20261109-pinned/tw_cen_condensed_extra_bold.ttf",
+      "sha256": "9e8a6af516706030b8536b2ea6535664cd9bea916fb15304556d8139a6945ff9",
+      "postscript_name": "TwCenMT-CondensedExtraBold"
+    },
+    "ryumin_pr5_regular": {
+      "path": "fonts_official/workbook-typography-20261109-pinned/ryumin_pr5_regular.otf",
+      "sha256": "86e2572e8b6916102c0a0e1738f9c0eb73538141f8e5c1ef8da9c2a754fb91b1",
+      "postscript_name": "RyuminPr5-Regular"
+    },
+    "ryumin_pro_light": {
+      "path": "fonts_official/workbook-typography-20261109-pinned/ryumin_pro_light.otf",
+      "sha256": "0bb6f1fb1084671345890f4464c9230ae1e05004f8c2c0c6814bf2a6fcc2e68f",
+      "postscript_name": "RyuminPro-Light"
+    },
+    "shingo_pro_regular_exact2012": {
+      "path": "fonts_official/workbook-typography-20261109-pinned/shingo_pro_regular_exact2012.otf",
+      "sha256": "7edc03446d857c7e5b1d1b924c7121f2fae6efabba81d0c57ab6ff0695beeced",
+      "postscript_name": "ShinGoPro-Regular"
+    },
+    "franklin_book_italic_exact2012": {
+      "path": "fonts_official/workbook-typography-20261109-pinned/franklin_book_italic_exact2012.ttf",
+      "sha256": "2fc6ff3c5253dca997c68d592e8cfa066b516a782d4b2747acf297c6523f9306",
+      "postscript_name": "FranklinGothic-BookItalic"
+    },
+    "shingo_pro_bold": {
+      "path": "fonts_official/workbook-typography-20261109-pinned/shingo_pro_bold.otf",
+      "sha256": "0a314d5e5f29d41a1c6633d6637a05b9c32e9d95abc79414541fb8eafa5f1bd7",
+      "postscript_name": "ShinGoPro-Bold"
+    },
+    "shingo_pr6_regular": {
+      "path": "fonts_official/workbook-typography-20261109-pinned/shingo_pr6_regular.otf",
+      "sha256": "209c0865e199cf3bb1d47da91c08b7c6f899ae3198733e2108f30610b1d922e0",
+      "postscript_name": "ShinGoPr6-Regular"
+    },
+    "shinmgo_pr6_regular": {
+      "path": "fonts_official/workbook-typography-20261109-pinned/shinmgo_pr6_regular.otf",
+      "sha256": "b298a5a5884e87d4eca081dfea5f8e0de21944688f5dccac6c6a4fa56cc4be46",
+      "postscript_name": "ShinMGoPr6-Regular"
+    },
+    "ryumin_pr6n_bold": {
+      "path": "fonts_official/workbook-typography-20261109-pinned/ryumin_pr6n_bold.otf",
+      "sha256": "9b7ef20fcf763648cab56e8bbae30b87aba6f42659d3f6c0fd511298ef8a9b6d",
+      "postscript_name": "RyuminPr6N-Bold"
+    },
+    "kyoka_ica_pro_medium_reviewed": {
+      "path": "fonts_official/workbook-typography-20261109-pinned/kyoka_ica_pro_medium_reviewed.otf",
+      "sha256": "4de9dcf655bbf9385817431d106c9051faa8e66deff6bcc1399c82c1c11f600c",
+      "postscript_name": "KyokaICAPro-Medium"
+    },
+    "jun201_pro_regular": {
+      "path": "fonts_official/workbook-typography-20261109-pinned/jun201_pro_regular.otf",
+      "sha256": "c8f5180d2b136338b3a3a0bb373a99aa85baad2256f73bb2033d6fa578f59d8b",
+      "postscript_name": "Jun201Pro-Regular"
+    },
+    "gothicbbb_pr6_medium": {
+      "path": "fonts_official/workbook-typography-20261109-pinned/gothicbbb_pr6_medium.otf",
+      "sha256": "6221621b838198c59f6b03cb1c7db18dcad323ec95ef81952130a90162268e99",
+      "postscript_name": "GothicBBBPr6-Medium"
+    },
+    "arial_bold_retained": {
+      "path": "fonts_official/workbook-typography-20261109-pinned/arial_bold_retained.ttf",
+      "sha256": "766f06ac8761f82f25d032a220e89438f6064591af9915061f20b949efdedf69",
+      "postscript_name": "Arial-BoldMT"
+    },
+    "heros_bold_retained": {
+      "path": "fonts_official/workbook-typography-20261109-pinned/heros_bold_retained.otf",
+      "sha256": "b170162835f4efc288886dd4231406dc47e19b614cf4416836635599d44a7d60",
+      "postscript_name": "TeXGyreHeros-Bold"
+    },
+    "handwriting_retained": {
+      "path": "fonts_official/workbook-typography-20261109-pinned/handwriting_retained.otf",
+      "sha256": "bc454d70b8f90662227cb202bd9202965de24c2d1bb05b153aa00ee643c5de4f",
+      "postscript_name": "DFTegakiMakotoStd-W3"
+    }
+  },
+  "owners": {
+    "N1_07_2010": {
+      "spans": [
+        {
+          "target": "reading-b001",
+          "text": "（小竹裕一『アジア人との正しい付き合い方―異文化へのまなざし』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b002",
+          "text": "（竹内薫・荒野健彦『「透明人間」の作り方』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b004",
+          "text": "（木通隆行『ネーミングの極意―日本語の魅力は音がつくる』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b005",
+          "text": "（斉藤茂太『どんなグズもなおる本―17タイプ別グズ解消法』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b006",
+          "text": "（七尾純『テクテク観察ツバメ日記』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b007",
+          "text": "（岸本重陳『経済のしくみ100話』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b008",
+          "text": "（佐藤静『こころサポート』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b009",
+          "text": "（和田寿栄子『子供を東大に入れる母親のちょっとした「習慣術」』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b009",
+          "text": "（盛田昭夫『学歴無用論』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b010",
+          "text": "（松永真理『シゴトのココロ』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        }
+      ]
+    },
+    "N1_set_2011_2012": {
+      "spans": [
+        {
+          "target": "reading-b001",
+          "text": "（江口滉『やきものの世界』岩波書店による）",
+          "font_id": "ryumin_pr5_regular",
+          "decision": "D09",
+          "source": {
+            "source": "src/OfficialWorkbooks/2012/N1/N1R.pdf",
+            "page": 1,
+            "font": "RyuminPro-Regular-90msp-",
+            "text": "（江口滉『やきものの世界』岩波書店による）",
+            "size": 7.739999771118164,
+            "bbox": [
+              280.6239929199219,
+              279.2775573730469,
+              450.9042663574219,
+              287.195556640625
+            ],
+            "origin": [
+              280.6239929199219,
+              285.0980224609375
+            ]
+          }
+        },
+        {
+          "target": "reading-b002",
+          "text": "（吉田脩二『ヒトとサルのあいだ――精神はいつ生まれたのか』文藝春秋による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b004",
+          "text": "（正高信男『父親力』中央公論新社による）",
+          "font_id": "ryumin_pr5_regular",
+          "decision": "D09",
+          "source": {
+            "source": "src/OfficialWorkbooks/2012/N1/N1R.pdf",
+            "page": 3,
+            "font": "RyuminPro-Regular-90msp-",
+            "text": "（正高信男『父親力』中央公論新社による）",
+            "size": 7.739999771118164,
+            "bbox": [
+              285.09100341796875,
+              184.4555206298828,
+              447.2442626953125,
+              192.37353515625
+            ],
+            "origin": [
+              285.09100341796875,
+              190.2760009765625
+            ]
+          }
+        },
+        {
+          "target": "reading-b005",
+          "text": "（酒井邦嘉『科学者という仕事』中央公論新社による）",
+          "font_id": "ryumin_pr5_regular",
+          "decision": "D09",
+          "source": {
+            "source": "src/OfficialWorkbooks/2012/N1/N1R.pdf",
+            "page": 5,
+            "font": "RyuminPro-Regular-90msp-",
+            "text": "（酒井邦嘉『科学者という仕事』中央公論新社による）",
+            "size": 7.739999771118164,
+            "bbox": [
+              243.18299865722656,
+              423.78155517578125,
+              445.9713134765625,
+              431.6995544433594
+            ],
+            "origin": [
+              243.18299865722656,
+              429.6020202636719
+            ]
+          }
+        },
+        {
+          "target": "reading-b006",
+          "text": "（山崎武也『シニアこそ都会に住もう——田舎暮らしは不安がいっぱい』PHP研究所による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b007",
+          "text": "（寺島実郎『世界を知る力』PHP研究所による）",
+          "font_id": "ryumin_pr5_regular",
+          "decision": "D09",
+          "source": {
+            "source": "src/OfficialWorkbooks/2012/N1/N1R.pdf",
+            "page": 9,
+            "font": "RyuminPro-Regular-90msp-",
+            "text": "（寺島実郎『世界を知る力』PHP研究所による）",
+            "size": 7.739999771118164,
+            "bbox": [
+              267.1050109863281,
+              453.5015563964844,
+              446.0463562011719,
+              461.4195556640625
+            ],
+            "origin": [
+              267.1050109863281,
+              459.322021484375
+            ]
+          }
+        },
+        {
+          "target": "reading-b008",
+          "text": "（前田英樹『独学の精神』筑摩書房による）",
+          "font_id": "ryumin_pr5_regular",
+          "decision": "D09",
+          "source": {
+            "source": "src/OfficialWorkbooks/2012/N1/N1R.pdf",
+            "page": 11,
+            "font": "RyuminPro-Regular-90msp-",
+            "text": "（前田英樹『独学の精神』筑摩書房による）",
+            "size": 7.739999771118164,
+            "bbox": [
+              283.75799560546875,
+              598.7885131835938,
+              445.9112548828125,
+              606.70654296875
+            ],
+            "origin": [
+              283.75799560546875,
+              604.6090087890625
+            ]
+          }
+        },
+        {
+          "target": "reading-b009",
+          "text": "（社団法人日本小児科医会 <http://jpa.umin.jp/download/media/proposal02.pdf> 2010年6月18日取得による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b009",
+          "text": "（小西行郎『早期教育と脳』光文社新書による）",
+          "font_id": "ryumin_pr5_regular",
+          "decision": "D09",
+          "source": {
+            "source": "src/OfficialWorkbooks/2012/N1/N1R.pdf",
+            "page": 13,
+            "font": "RyuminPro-Regular-90msp-",
+            "text": "（小西行郎『早期教育と脳』光文社新書による）",
+            "size": 7.739999771118164,
+            "bbox": [
+              263.0039978027344,
+              626.4835205078125,
+              441.4112854003906,
+              634.4015502929688
+            ],
+            "origin": [
+              263.0039978027344,
+              632.3040161132812
+            ]
+          }
+        },
+        {
+          "target": "reading-b010",
+          "text": "（内山節『「里」という思想』新潮社による）",
+          "font_id": "ryumin_pr5_regular",
+          "decision": "D09",
+          "source": {
+            "source": "src/OfficialWorkbooks/2012/N1/N1R.pdf",
+            "page": 16,
+            "font": "RyuminPro-Regular-90msp-",
+            "text": "（内山節『「里」という思想』新潮社による）",
+            "size": 7.739999771118164,
+            "bbox": [
+              275.5060119628906,
+              204.44056701660156,
+              445.7862854003906,
+              212.35858154296875
+            ],
+            "origin": [
+              275.5060119628906,
+              210.26104736328125
+            ]
+          }
+        }
+      ],
+      "native_2012_furniture": {
+        "sources": [
+          {
+            "path": "src/OfficialWorkbooks/2012/N1/N1V.pdf",
+            "sha256": "75842c9076e08724fc2bec4f0539796c1f9ca1b939e7e5d1c5958d15d3ebcfc7"
+          },
+          {
+            "path": "src/OfficialWorkbooks/2012/N1/N1G.pdf",
+            "sha256": "32ed971bda7ba60859125e2cc78a0e34f5b5f730410d63fd624a5cf2a15a2d89"
+          },
+          {
+            "path": "src/OfficialWorkbooks/2012/N1/N1R.pdf",
+            "sha256": "d8c79e9c8ac33e2e2ff860d0f49bd9c95b84719b51d6498f201eecc4b6698f02"
+          }
+        ],
+        "decisions": [
+          "D10",
+          "D11"
+        ],
+        "geometry": {
+          "width_pt": 24,
+          "height_pt": 73.7,
+          "outer_inset_pt": 0,
+          "gray": 0.51
+        },
+        "groups": {
+          "vocabulary": {
+            "label": "文字・語彙",
+            "top_pt": 85.04
+          },
+          "grammar": {
+            "label": "文法",
+            "top_pt": 158.74
+          },
+          "reading": {
+            "label": "読解",
+            "top_pt": 232.44
+          }
+        },
+        "folio_advance_em": 0.586,
+        "scope": "Generated workbook/contained-set task furniture from verified native 2012 sources; generated folios, no sitting-authentication claim."
+      }
+    },
+    "N1_07_2012": {
+      "spans": [
+        {
+          "target": "reading-b001",
+          "text": "（茂木健一郎『食のクオリア』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b002",
+          "text": "（川崎洋『ことばの力』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b003",
+          "text": "（奥本大三郎『虫の宇宙誌』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b004",
+          "text": "（日本経済新聞 2010年3月8日朝刊による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b005",
+          "text": "（近藤勝重「しあわせのトンボ：会社人間の『その後』」2007年11月14日付毎日新聞夕刊による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b006",
+          "text": "（田中詔一『ホンダの価値観―原点から守り続けるDNA』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b007",
+          "text": "（大江健三郎『新しい文学のために』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b008",
+          "text": "（三木光範『理系発想の文章術』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b009",
+          "text": "（花里孝幸『自然はそんなにヤワじゃない―誤解だらけの生態系』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b010",
+          "text": "（高柳敦『琵琶湖研究所所報』1996年第15号による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b011",
+          "text": "（猪瀬直樹「家」1999年9月26日付朝日新聞朝刊による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        }
+      ]
+    },
+    "N1_07_2013": {
+      "spans": [
+        {
+          "target": "reading-b001",
+          "text": "（草柳千早『AERA Mook』 1999年7月10日号による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b002",
+          "text": "（高山博『歴史学　未来へのまなざし―中世シチリアからグローバル・ヒストリーへ』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b003",
+          "text": "（高村薫『閑人生生―平成雑記帳二〇〇七―二〇〇九』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b004",
+          "text": "（むのたけじ『希望は絶望のど真ん中に』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b005",
+          "text": "（海保博之編著『瞬間情報処理の心理学』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b006",
+          "text": "（紀田順一郎『読書三到――新時代の「読む・引く・考える」』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b007",
+          "text": "（宇野重規『〈私〉時代のデモクラシー』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b008",
+          "text": "（レイチェル・カーソン著・青樹簗一訳『沈黙の春』筑波常治の「解説」による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b010",
+          "text": "（山田太一『誰かへの手紙のように』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        }
+      ]
+    },
+    "N1_07_2014": {
+      "spans": [
+        {
+          "target": "reading-b002",
+          "text": "（酒井順子『黒いマナー』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b003",
+          "text": "（著者代表森亘『異文化への理解』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b005",
+          "text": "（田中正躬監修・編著『氾濫するマーク―多様化する認証』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b006",
+          "text": "（柳井正『現実を視よ』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b007",
+          "text": "（阿久悠『清らかな厭世―言葉を失くした日本人へ』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b008",
+          "text": "（角田光代『トランヴェール』2012年3月号による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b009",
+          "text": "（若葉千佳子『子供の本棚』2007年12月号による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b010",
+          "text": "（渡部康夫『現代の図書館』第192号による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b011",
+          "text": "（池内了『生きのびるための科学』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b004",
+          "text": "（原研哉『白（しろ）』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        }
+      ]
+    },
+    "N1_07_2015": {
+      "spans": [
+        {
+          "target": "reading-b001",
+          "text": "（吉川美樹『半径1メートルの「売れる！」発想術』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b002",
+          "text": "（朝日新聞グローブ2013年8月18日付による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b003",
+          "text": "（司馬遼太郎『風塵抄』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b004",
+          "text": "（梅原猛『饗宴―梅原猛随想と対話』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b005",
+          "text": "（平野啓一郎『本の読み方 スロー・リーディングの実践』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b006",
+          "text": "（藤原正彦『週刊新潮』 2010年10月28日号による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b007",
+          "text": "（成田康昭『メディア空間文化論―いくつもの私との遭遇』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b008",
+          "text": "（近藤譲『〈音楽〉という謎』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b009",
+          "text": "（角屋重樹・森本信也編著『小学校・理科教育はこう変わる――ニューサイエンスを求めて』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b010",
+          "text": "（成毛眞『大人げない大人になれ!』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        }
+      ]
+    },
+    "N1_07_2016": {
+      "spans": [
+        {
+          "target": "reading-b002",
+          "text": "（和田秀樹「腹が立ったら怒りなさい」による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b003",
+          "text": "（マイク・モラスキー 日本経済新聞2014年3月25日付夕刊による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b004",
+          "text": "（鈴木孝夫「人にはどれだけの物が必要かーミニマム生活のすすめ」による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b005",
+          "text": "（内田樹「ぼくの住まい論」による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b006",
+          "text": "（徳川家広「自分を守る経済学」による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b007",
+          "text": "（木村俊介「暮しの手帖」2014 年6-7 月号による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b008",
+          "text": "（茂木健一郎「疾走する精神」による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b009",
+          "text": "（博報堂ブランドデザイン「チームのアイデア力。―アイデアが出るチームになるための5つのステップ」による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b011",
+          "text": "（佐倉統/古田ゆかり/リビング・サイエンス・ラボ「おはようからおやすみまでの科学」による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        }
+      ]
+    },
+    "N1_07_2017": {
+      "spans": [
+        {
+          "target": "reading-b002",
+          "text": "（小宮輝之『物語 上野動物園の歴史』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b003",
+          "text": "（佐渡裕・辻秀一『感じて動く』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b004",
+          "text": "（小川和也『デジタルは人間を奪うのか』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b006",
+          "text": "（平野啓一郎『小説の読み方―感想が語れる着眼点』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b007",
+          "text": "（井上昌次郎『睡眠の技術――今日からぐっすり眠れる本』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b008",
+          "text": "（青木奈緒『暮しの手帖』2014年10-11月号による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b009",
+          "text": "（文化庁2015年10月23日取得による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b010",
+          "text": "（池内了『科学の限界』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b005",
+          "text": "（榎本博明『（ほんとうの自分）のつくり方――自己物語の心理学』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        }
+      ]
+    },
+    "N1_07_2021": {
+      "spans": [
+        {
+          "target": "reading-b004",
+          "text": "（御代川貴久夫・関啓子『環境教育を学ぶ人のために』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        }
+      ]
+    },
+    "N1_12_2010": {
+      "spans": [
+        {
+          "target": "reading-b001",
+          "text": "（畑村洋太郎『失敗学のすすめ』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b003",
+          "text": "（藤沢晃治『「わかりやすい教え方」の技術―「教え上手」になるための13のポイント』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b004",
+          "text": "（田村秀「データの罠―世論はこうしてつくられる」による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b005",
+          "text": "（石川直樹『最後の冒険家』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b006",
+          "text": "（中村靖彦「コンビニ　ファミレス　回転寿司」による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b007",
+          "text": "（小西敏正『平成 日本らしさ宣言』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b008",
+          "text": "（金沢創「心体観測」2009年2月8日付朝日新聞日曜版による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b010",
+          "text": "（山田ズーニー『あなたの話はなぜ「通じない」のか』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        }
+      ]
+    },
+    "N1_12_2011": {
+      "spans": [
+        {
+          "target": "reading-b001",
+          "text": "（米山公啓『「頭がいい」とはどういうことか』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b003",
+          "text": "（御代川貴久夫・関啓子『環境教育を学ぶ人のために』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b004",
+          "text": "（山本文緒『結婚願望』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b005",
+          "text": "（若桑みどり『レット・イット・ビー』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b006",
+          "text": "（朝日新聞2010年8月17日付夕刊による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b007",
+          "text": "（梅田卓夫・清水良典・服部左右一・松川由博編『高校生のための文章読本』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b008",
+          "text": "（渡邊二郎『現代の哲学』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b009",
+          "text": "（宮津大輔『現代アートを買おう！』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b010",
+          "text": "（小山登美夫『その絵、いくら？ 現代アートの相場がわかる』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b011",
+          "text": "（日高敏隆『春の数えかた』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        }
+      ]
+    },
+    "N1_12_2012": {
+      "spans": [
+        {
+          "target": "reading-b001",
+          "text": "（浜野保樹『模倣される日本――映画、アニメから料理、ファッションまで』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b003",
+          "text": "（伊藤真『会社コンプライアンス――内部統制の条件』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b004",
+          "text": "（上田紀行「生きる意味」による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b005",
+          "text": "（池上彰『＜わかりやすさ＞の勉強法』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b006",
+          "text": "（ひこ・田中『大人のための児童文学講座』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b007",
+          "text": "（多木浩二『都市の政治学』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b008",
+          "text": "（苅谷剛彦・西研『考えあう技術――教育と社会を哲学する』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b009",
+          "text": "（廣瀬則仁　三省堂 Web Dictionary <http://www.sanseido.net/Main/Words/Patio/Article.aspx?ai=234cbd63-6ca4-4e06-9e77-1508b31a6493>2011年11月25日取得による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b009",
+          "text": "（植村八潮　三省堂Web Dictionary <http://www.sanseido.net/main/words/patio/essay/06.aspx>2011年11月25日取得による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b010",
+          "text": "（佐藤可士和『佐藤可士和の超整理術』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        }
+      ]
+    },
+    "N1_12_2013": {
+      "spans": [
+        {
+          "target": "reading-b001",
+          "text": "（野矢茂樹『はじめて考えるときのように、「わかる」ための哲学的道案内』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b003",
+          "text": "（梶田正巳『勉強力をつける―認識心理学からの発想』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b004",
+          "text": "（黒井千次『図書』2007年2月号による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b005",
+          "text": "（片岡鶴太郎『鶴太郎流　墨彩画入門』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b006",
+          "text": "（瀬戸一夫『科学的思考とは何だろうかーものつくりの視点から』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b007",
+          "text": "（小浜逸郎『この国はなぜ寂しいのか－「ものさし」を失った日本人』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b008",
+          "text": "（渡辺裕『音楽は社会を映す―考える耳「再論」』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b009",
+          "text": "（時子山ひろみ『安全で良質な食生活を手に入れる―フードシステム入門』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b010",
+          "text": "（松浦弥太郎『あたらしいあたりまえ。―暮らしのなかの工夫と発見ノート2』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        }
+      ]
+    },
+    "N1_12_2014": {
+      "spans": [
+        {
+          "target": "reading-b001",
+          "text": "（大宅映子『親の常識』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b003",
+          "text": "（串田孫一『考える葦』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b004",
+          "text": "（倉嶋厚『日和見の事典――倉嶋厚の人文気象学ノート』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b005",
+          "text": "（佐々木直彦『「仕事も人生もうまくいく人」の考え方』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b006",
+          "text": "（浜田寿美男『「私」とは何か』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b007",
+          "text": "（池田晶子『人間自身――考えることに終わりなく』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b008",
+          "text": "（岡本太郎『美しく怒れ』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b009",
+          "text": "（中村俊介『世界遺産が消えてゆく』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b009",
+          "text": "（五十嵐太郎『建築はいかに社会と回路をつなぐのか』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b010",
+          "text": "（樋口裕一『差がつく読書』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        }
+      ]
+    },
+    "N1_12_2015": {
+      "spans": [
+        {
+          "target": "reading-b001",
+          "text": "（高橋克徳『「上司がさっぱりわかってくれない」と思っているあなたへ』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b003",
+          "text": "（米原万里『心臓に毛が生えている理由』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b004",
+          "text": "（井上俊・船津衛編『自己と他者の社会学』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b005",
+          "text": "（押井守『凡人として生きるということ』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b006",
+          "text": "（一川誠『大人の時間はなぜ短いのか』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b007",
+          "text": "（朝倉敏夫編『火と食』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b008",
+          "text": "（山本博文『歴史をつかむ技法』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b010",
+          "text": "（久我尚子『若者は本当にお金がないのか?―統計データが語る意外な真実』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b011",
+          "text": "（志水哲也編『山と私の対話』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        }
+      ]
+    },
+    "N1_workbook_2018": {
+      "spans": [
+        {
+          "target": "reading-b001",
+          "text": "（徳井厚子『日本語教師の「衣」再考―多文化共生への課題』くろしお出版による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b003",
+          "text": "（ARCLE 編集委員会・田中茂範・アレン玉井光江・根岸雅史・吉田研作編著『幼児から成人まで一貫した英語教育のための枠組み―ECF-English Curriculum Framework』リーベル出版による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b004",
+          "text": "（小林賢太郎『僕がコントや演劇のために考えていること』幻冬舎による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b005",
+          "text": "（稲垣栄洋『弱者の戦略』新潮社による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b006",
+          "text": "（大林宣彦『父の失恋 娘の結婚―べそっかきの幸福そうな顔』フレーベル館による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b007",
+          "text": "（YOMIURI ONLINE <http://www.yomiuri.co.jp/column/science/20090513-OYT8T00319.htm> 2010年3月7日取得による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b008",
+          "text": "（加藤美浩『まちづくりのススメ』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b009",
+          "text": "（多湖輝『人の心をつかむ「雑談力」情報が集まる「雑談力」』新講社による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b011",
+          "text": "（内藤廣『建築のはじまりに向かって』王国社による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b012",
+          "text": "他大学の図書館の資料の利用について",
+          "font_id": "shingo_pro_bold",
+          "decision": "D12",
+          "source": {
+            "path": "src/OfficialWorkbooks/2018/N1/N1R.pdf",
+            "page": 20
+          }
+        },
+        {
+          "target": "reading-b012",
+          "text": "他大学の図書館に行く",
+          "font_id": "shingo_pro_bold",
+          "decision": "D12",
+          "source": {
+            "path": "src/OfficialWorkbooks/2018/N1/N1R.pdf",
+            "page": 20
+          }
+        },
+        {
+          "target": "reading-b012",
+          "text": "相互利用協定校を利用する",
+          "font_id": "shingo_pro_bold",
+          "decision": "D12",
+          "source": {
+            "path": "src/OfficialWorkbooks/2018/N1/N1R.pdf",
+            "page": 20
+          }
+        },
+        {
+          "target": "reading-b012",
+          "text": "相互利用協定校以外を利用する",
+          "font_id": "shingo_pro_bold",
+          "decision": "D12",
+          "source": {
+            "path": "src/OfficialWorkbooks/2018/N1/N1R.pdf",
+            "page": 20
+          }
+        },
+        {
+          "target": "reading-b012",
+          "text": "注意",
+          "font_id": "shingo_pro_bold",
+          "decision": "D12",
+          "source": {
+            "path": "src/OfficialWorkbooks/2018/N1/N1R.pdf",
+            "page": 20
+          }
+        },
+        {
+          "target": "reading-b012",
+          "text": "他大学の図書館に複写を依頼し、取り寄せる",
+          "font_id": "shingo_pro_bold",
+          "decision": "D12",
+          "source": {
+            "path": "src/OfficialWorkbooks/2018/N1/N1R.pdf",
+            "page": 20
+          },
+          "scope": "authored_emphasis"
+        },
+        {
+          "target": "reading-b012",
+          "text": "他大学の図書館から借用した資料を見る",
+          "font_id": "shingo_pro_bold",
+          "decision": "D12",
+          "source": {
+            "path": "src/OfficialWorkbooks/2018/N1/N1R.pdf",
+            "page": 20
+          }
+        },
+        {
+          "target": "reading-b012",
+          "text": "大森大学図書館",
+          "font_id": "shinmgo_pr6_regular",
+          "decision": "D14"
+        }
+      ]
+    },
+    "N1_12_2021": {
+      "spans": [
+        {
+          "target": "reading-b004",
+          "text": "（黒井千次『図書』2007年2月号による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b005",
+          "text": "（田中詔一『ホンダの価値観——原点から守り続けるDNA』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b008",
+          "text": "（渡邊二郎『現代の哲学』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        }
+      ]
+    },
+    "N1_12_2024": {
+      "spans": [
+        {
+          "target": "reading-b008",
+          "text": "（内山節 『戦争という仕事』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        }
+      ]
+    },
+    "N2_07_2010": {
+      "spans": [
+        {
+          "target": "reading-b001",
+          "text": "（岩下宣子「実践マナー塾」2009年4月18日付日本経済新聞による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b002",
+          "text": "（伊藤智章「窓」2008年2月20日付朝日新聞夕刊による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b005",
+          "text": "（伊藤進『ほめるな』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b006",
+          "text": "（斎藤孝「できる人」の極意！による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b007",
+          "text": "（光野有次『みんなでつくるバリアフリー』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b008",
+          "text": "（梅崎修『マンガに教わる仕事学』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b009",
+          "text": "（坂戸健司『メモの技術』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b010",
+          "text": "（外山滋比古『思考の整理学』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b011",
+          "text": "（勝間和代「勝間和代の人生を変えるコトバ」2009年4月11日付朝日新聞による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        }
+      ]
+    },
+    "N2_workbook_2012": {
+      "spans": [
+        {
+          "target": "reading-b003",
+          "text": "（広瀬弘忠『人はなぜ危険に近づくのか』講談社による）",
+          "font_id": "ryumin_pr5_regular",
+          "decision": "D09",
+          "source": {
+            "source": "src/OfficialWorkbooks/2012/N2/N2R.pdf",
+            "page": 3,
+            "font": "RyuminPro-Regular-90msp-",
+            "text": "（広瀬弘忠『人はなぜ危険に近づくのか』講談社による）",
+            "size": 7.739999771118164,
+            "bbox": [
+              234.98800659179688,
+              205.55043029785156,
+              445.9033203125,
+              213.46844482421875
+            ],
+            "origin": [
+              234.98800659179688,
+              211.37091064453125
+            ]
+          }
+        },
+        {
+          "target": "reading-b004",
+          "text": "（村田夏子『読書の心理学―読書で開く心の世界への扉』サイエンス社による）",
+          "font_id": "ryumin_pr5_regular",
+          "decision": "D09",
+          "source": {
+            "source": "src/OfficialWorkbooks/2012/N2/N2R.pdf",
+            "page": 4,
+            "font": "RyuminPro-Regular-90msp-",
+            "text": "（村田夏子『読書の心理学―読書で開く心の世界への扉』サイエンス社による）",
+            "size": 7.739999771118164,
+            "bbox": [
+              153.8159942626953,
+              205.80152893066406,
+              446.00128173828125,
+              213.71954345703125
+            ],
+            "origin": [
+              153.8159942626953,
+              211.62200927734375
+            ]
+          }
+        },
+        {
+          "target": "reading-b005",
+          "text": "（石本正『絵をかくよろこび』新潮社による）",
+          "font_id": "ryumin_pr5_regular",
+          "decision": "D09",
+          "source": {
+            "source": "src/OfficialWorkbooks/2012/N2/N2R.pdf",
+            "page": 5,
+            "font": "RyuminPro-Regular-90msp-",
+            "text": "（石本正『絵をかくよろこび』新潮社による）",
+            "size": 7.739999771118164,
+            "bbox": [
+              276.1419982910156,
+              204.97755432128906,
+              446.4222717285156,
+              212.89556884765625
+            ],
+            "origin": [
+              276.1419982910156,
+              210.79803466796875
+            ]
+          }
+        },
+        {
+          "target": "reading-b006",
+          "text": "（日本経済新聞2009年8月27日付朝刊による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b007",
+          "text": "（高城幸司『上司につける薬！―マネジメント入門』講談社による）",
+          "font_id": "ryumin_pr5_regular",
+          "decision": "D09",
+          "source": {
+            "source": "src/OfficialWorkbooks/2012/N2/N2R.pdf",
+            "page": 9,
+            "font": "RyuminPro-Regular-90msp-",
+            "text": "（高城幸司『上司につける薬！―マネジメント入門』講談社による）",
+            "size": 7.739999771118164,
+            "bbox": [
+              194.9250030517578,
+              433.4465637207031,
+              446.4753112792969,
+              441.36456298828125
+            ],
+            "origin": [
+              194.9250030517578,
+              439.26702880859375
+            ]
+          }
+        },
+        {
+          "target": "reading-b008",
+          "text": "（小林寛道『運動神経の科学―誰でも足は速くなる』講談社による）",
+          "font_id": "ryumin_pr5_regular",
+          "decision": "D09",
+          "source": {
+            "source": "src/OfficialWorkbooks/2012/N2/N2R.pdf",
+            "page": 11,
+            "font": "RyuminPro-Regular-90msp-",
+            "text": "（小林寛道『運動神経の科学―誰でも足は速くなる』講談社による）",
+            "size": 7.739999771118164,
+            "bbox": [
+              194.27499389648438,
+              453.5235595703125,
+              445.8252868652344,
+              461.4415588378906
+            ],
+            "origin": [
+              194.27499389648438,
+              459.3440246582031
+            ]
+          }
+        },
+        {
+          "target": "reading-b010",
+          "text": "（石黒浩『ロボットとは何か―人の心を映す鏡』講談社による）",
+          "font_id": "ryumin_pr5_regular",
+          "decision": "D09",
+          "source": {
+            "source": "src/OfficialWorkbooks/2012/N2/N2R.pdf",
+            "page": 15,
+            "font": "RyuminPro-Regular-90msp-",
+            "text": "（石黒浩『ロボットとは何か―人の心を映す鏡』講談社による）",
+            "size": 7.739999771118164,
+            "bbox": [
+              210.42799377441406,
+              619.3975219726562,
+              445.72430419921875,
+              627.3155517578125
+            ],
+            "origin": [
+              210.42799377441406,
+              625.218017578125
+            ]
+          }
+        }
+      ],
+      "native_2012_furniture": {
+        "sources": [
+          {
+            "path": "src/OfficialWorkbooks/2012/N2/N2V.pdf",
+            "sha256": "7e037f5e7380bc0db46e4b064785da44b81604b77e63c5a2a93b083ee52f3855"
+          },
+          {
+            "path": "src/OfficialWorkbooks/2012/N2/N2G.pdf",
+            "sha256": "54e8adda3364c0aa3f9c015c932abeb0ad2511d7d98a4d60134befdfb932b213"
+          },
+          {
+            "path": "src/OfficialWorkbooks/2012/N2/N2R.pdf",
+            "sha256": "c8a56a78a7996c426ffff0cf438162c1af1917a7d6927bce624c69c1e573e9fe"
+          }
+        ],
+        "decisions": [
+          "D10",
+          "D11"
+        ],
+        "geometry": {
+          "width_pt": 24,
+          "height_pt": 73.7,
+          "outer_inset_pt": 0,
+          "gray": 0.51
+        },
+        "groups": {
+          "vocabulary": {
+            "label": "文字・語彙",
+            "top_pt": 85.04
+          },
+          "grammar": {
+            "label": "文法",
+            "top_pt": 158.74
+          },
+          "reading": {
+            "label": "読解",
+            "top_pt": 232.44
+          }
+        },
+        "folio_advance_em": 0.586,
+        "scope": "Generated workbook/contained-set task furniture from verified native 2012 sources; generated folios, no sitting-authentication claim."
+      }
+    },
+    "N2_07_2012": {
+      "spans": [
+        {
+          "target": "reading-b003",
+          "text": "（森本哲郎『日本語　表と裏』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b004",
+          "text": "（外山知徳『家族の絆をつくる家―失敗しない住まいづくりのための30講』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b005",
+          "text": "（猪木武徳『自由と秩序―競争社会の二つの顔』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b006",
+          "text": "（辻仁成『そこに僕はいた』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b007",
+          "text": "（原島博『顔学への招待』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b008",
+          "text": "（「子育て休暇」2007年9月5日付日本経済新聞による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b009",
+          "text": "（河合薫　日経ビジネスONLINE\n〈http://business.nikkeibp.co.jp/article/manage/20110215/218446/?P=4&rt=nocnt〉\n2011年3月7日取得による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b011",
+          "text": "（奥山清行『ムーンショット　デザイン幸福論』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        }
+      ]
+    },
+    "N2_07_2013": {
+      "spans": [
+        {
+          "target": "reading-b001",
+          "text": "（山川学而『遊びと文化』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b004",
+          "text": "（石橋毅史『「本屋」は死なない』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b005",
+          "text": "（多田道太郎編『環境文化を学ぶ人のために』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b007",
+          "text": "（読売新聞2011年11月18日付朝刊による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b008",
+          "text": "（渡辺三枝子『キャリア教育――自立していく子どもたち』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b009",
+          "text": "（鈴木光司『なぜ勉強するのか？』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b011",
+          "text": "（高橋克徳『潰れない生き方』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        }
+      ]
+    },
+    "N2_07_2014": {
+      "spans": [
+        {
+          "target": "reading-b001",
+          "text": "（畑正憲『ムツゴロウの動物交際術』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b004",
+          "text": "（辛淑玉『怒りの方法』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b005",
+          "text": "（林望『知性の磨きかた』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b006",
+          "text": "（山本博『持続力』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b007",
+          "text": "（堀川紀年・石川雄二・前田弘編『国際観光学を学ぶ人のために』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b008",
+          "text": "（すがのたいぞう『こころがホッとする考え方』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b011",
+          "text": "（羽生善治『直感力』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        }
+      ]
+    },
+    "N2_07_2015": {
+      "spans": [
+        {
+          "target": "reading-b001",
+          "text": "（黒田龍之助『外国語の水曜日―学習法としての言語学入門』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b004",
+          "text": "（小池龍之介『平常心のレッスン』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b005",
+          "text": "（大竹文雄『競争と公平感』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b006",
+          "text": "（苅谷剛彦『知的複眼思考法―誰でも持っている創造力のスイッチ』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b008",
+          "text": "（和田秀樹『40代からの勉強法―やる気・集中力をどう高めるか』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b009",
+          "text": "（為末大『「遊ぶ」が勝ち―「ホモ・ルーデンス」で、君も跳べ！』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b011",
+          "text": "（山崎亮『コミュニティデザインの時代』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        }
+      ]
+    },
+    "N2_07_2016": {
+      "spans": [
+        {
+          "target": "reading-b002",
+          "text": "（青木仁志『一生折れない自信のつくり方』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b004",
+          "text": "（田名部雄一『人と犬のきずな―遺伝子からそのルーツを探る』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b005",
+          "text": "（辻仁成『代筆屋』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b006",
+          "text": "（松岡享子・東京子ども図書館『えほんのせかい こどものせかい』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b008",
+          "text": "（島田紳助『ご飯を大盛りにするオバチャンの店は必ず繁盛する―絶対に失敗しないビジネス経営哲学』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b011",
+          "text": "（本田宗一郎『得手に帆あげて』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        }
+      ]
+    },
+    "N2_07_2017": {
+      "spans": [
+        {
+          "target": "reading-b001",
+          "text": "（中川李枝子『絵本と私』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b004",
+          "text": "（大野裕 日本経済新聞2015年4月3日付夕刊による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b005",
+          "text": "（山藤賢『社会人になるということ』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b007",
+          "text": "（樋口裕一『「教養」を最強の武器にする読書術』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b008",
+          "text": "（東山紘久『悩みのコントロール術』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b010",
+          "text": "（立松和平『人生の現在地―まだまだ迷っているぞ、私は。』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b006",
+          "text": "（にへいひろし（二瓶裕史）『これだけは知っておきたい 人生に必要な法律』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        }
+      ]
+    },
+    "N2_12_2010": {
+      "spans": [
+        {
+          "target": "reading-b002",
+          "text": "（辻秀一『スラムダンク勝利学』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b005",
+          "text": "（野田知佑『旅へ―新・放浪記1』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b006",
+          "text": "（池内了『時間とは何か』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b007",
+          "text": "（清水義範『スラスラ書ける！ビジネス文書』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b011",
+          "text": "（金出武雄『素人のように考え、玄人として実行する―問題解決のメタ技術』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        }
+      ]
+    },
+    "N2_12_2011": {
+      "spans": [
+        {
+          "target": "reading-b001",
+          "text": "（正木健雄【新・いきいき体調――トレーニング】による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b004",
+          "text": "（増井光子「動物の赤ちゃんは、なぜ可愛い」による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b006",
+          "text": "（森博嗣『創るセンス 工作の思考』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b007",
+          "text": "（針山孝彦『生き物たちの情報戦略――生存をかけた静かなる戦い』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b008",
+          "text": "（石毛直道『食べるお仕事』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b010",
+          "text": "（石原千秋『未来形の読書術』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        }
+      ]
+    },
+    "N2_12_2012": {
+      "spans": [
+        {
+          "target": "reading-b001",
+          "text": "（秋田喜代美『読む心・書く心――文章の心理学入門』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b005",
+          "text": "（近江源太郎監修『色の名前』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b006",
+          "text": "（波多野誼余夫・稲垣佳世子『知的好奇心』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b007",
+          "text": "（吉田新一郎『会議の技法』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b009",
+          "text": "（野外活動研究会『目からウロコの日常物観察――無用物から転用物まで』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b012",
+          "text": "（榎本博明『社会人のための「本当の自分」づくり』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        }
+      ]
+    },
+    "N2_12_2013": {
+      "spans": [
+        {
+          "target": "reading-b001",
+          "text": "（小野正弘『オノマトペがあるから日本語は楽しい―擬音語・擬態語の豊かな世界』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b004",
+          "text": "（『ミルククラブ』93号による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b005",
+          "text": "（長谷川和廣「社長のノート」による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b006",
+          "text": "（黒岩祐治「メッセージ力を高める　黒岩の法則」による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b011",
+          "text": "（松本零士「未来創造―夢の発想法」による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b007",
+          "text": "（蓑豊『超（集客力）革命―人気美術館が知っているお客の呼び方』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        }
+      ]
+    },
+    "N2_12_2014": {
+      "spans": [
+        {
+          "target": "reading-b001",
+          "text": "（北島康介『前に進むチカラ―折れない心を作る7つの約束』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b004",
+          "text": "（河合雅雄『サルの目 ヒトの目』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b005",
+          "text": "（清水幾太郎『本はどう読むか』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b006",
+          "text": "（梅澤正・脇坂敦史『「働く」を考える』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b007",
+          "text": "（山本寛斎『熱き心―寛斎の熱血語10ヵ条』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b008",
+          "text": "（中村明『日本語の美―書くヒント』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b011",
+          "text": "（永島敏行『青空市場で会いましょう―日本の農と食はすばらしい』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        }
+      ]
+    },
+    "N2_12_2015": {
+      "spans": [
+        {
+          "target": "reading-b001",
+          "text": "（小菅正夫「文藝春秋」2006年11月臨時増刊号による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b003",
+          "text": "（栗原堅三「うま味って何だろう」による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b005",
+          "text": "（平木典子「アサーション入門―自分も相手も大切にする自己表現法」による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b006",
+          "text": "（羽生善治「大局観―自分と闘って負けない心」による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b008",
+          "text": "（森博嗣「科学的とはどういう意味か」による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b010",
+          "text": "（清水義範「小説家になる方法」による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b004",
+          "text": "（日本放送協会・日本放送出版協会（NHK出版）編「NHK仕事学のすすめ2010年10-11月号」による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        }
+      ]
+    },
+    "N2_workbook_2018": {
+      "spans": [
+        {
+          "target": "reading-b001",
+          "text": "（高峰修『スポーツ教養入門』岩波書店による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b003",
+          "text": "（榊原英資『榊原式スピード思考力』幻冬舎による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b005",
+          "text": "（大久保孝治『日常生活の探究―ライフスタイルの社会学』左右社による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b006",
+          "text": "（今北純一『自分力を高める』岩波書店による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b007",
+          "text": "（脇明子『読む力が未来をひらく―小学生への読書支援』岩波書店による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b008",
+          "text": "（近藤康生『なぜ、人は旅に出るのか』ダイヤモンド社による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b011",
+          "text": "（水戸岡鋭治『あと1％だけ、やってみよう―私の仕事哲学』集英社インターナショナルによる）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        },
+        {
+          "target": "reading-b012",
+          "text": "ランチ",
+          "font_id": "shinmgo_pr6_regular",
+          "decision": "D14",
+          "source": {
+            "path": "src/OfficialWorkbooks/2018/N2/N2R.pdf",
+            "page": 20
+          }
+        },
+        {
+          "target": "reading-b012",
+          "text": "デザート",
+          "font_id": "shinmgo_pr6_regular",
+          "decision": "D14",
+          "source": {
+            "path": "src/OfficialWorkbooks/2018/N2/N2R.pdf",
+            "page": 20
+          }
+        },
+        {
+          "target": "reading-b012",
+          "text": "夕食",
+          "font_id": "shinmgo_pr6_regular",
+          "decision": "D14",
+          "source": {
+            "path": "src/OfficialWorkbooks/2018/N2/N2R.pdf",
+            "page": 20
+          }
+        },
+        {
+          "target": "reading-b012",
+          "text": "ビュッフェのご案内",
+          "font_id": "shinmgo_pr6_regular",
+          "decision": "D14",
+          "source": {
+            "path": "src/OfficialWorkbooks/2018/N2/N2R.pdf",
+            "page": 20
+          }
+        },
+        {
+          "target": "reading-b012",
+          "text": "ベルン（洋食）",
+          "font_id": "shinmgo_pr6_regular",
+          "decision": "D14",
+          "source": {
+            "path": "src/OfficialWorkbooks/2018/N2/N2R.pdf",
+            "page": 20
+          }
+        },
+        {
+          "target": "reading-b012",
+          "text": "“窓際特別テーブル”のご案内",
+          "font_id": "shinmgo_pr6_regular",
+          "decision": "D14",
+          "source": {
+            "path": "src/OfficialWorkbooks/2018/N2/N2R.pdf",
+            "page": 20
+          }
+        },
+        {
+          "target": "reading-b012",
+          "text": "みよし（和食）",
+          "font_id": "shinmgo_pr6_regular",
+          "decision": "D14",
+          "source": {
+            "path": "src/OfficialWorkbooks/2018/N2/N2R.pdf",
+            "page": 20
+          }
+        },
+        {
+          "target": "reading-b012",
+          "text": "ご予約・お問い合わせ",
+          "font_id": "shinmgo_pr6_regular",
+          "decision": "D14",
+          "source": {
+            "path": "src/OfficialWorkbooks/2018/N2/N2R.pdf",
+            "page": 20
+          }
+        },
+        {
+          "target": "reading-b012",
+          "text": "ミハマホテル",
+          "font_id": "kyoka_ica_pro_medium_reviewed",
+          "decision": "D17"
+        },
+        {
+          "target": "reading-b002",
+          "text": "暖房使用についてのお願い",
+          "font_id": "ryumin_pr6n_bold",
+          "decision": "D15",
+          "source": {
+            "path": "src/OfficialWorkbooks/2018/N2/N2R.pdf",
+            "page": 2
+          }
+        },
+        {
+          "target": "reading-b004",
+          "text": "割引フェアのご案内",
+          "font_id": "shinmgo_pr6_regular",
+          "decision": "D14",
+          "source": {
+            "path": "src/OfficialWorkbooks/2018/N2/N2R.pdf",
+            "page": 5
+          }
+        }
+      ]
+    },
+    "N2_12_2020": {
+      "spans": [
+        {
+          "target": "reading-b005",
+          "text": "（林望「知性の磨きかた」による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        }
+      ]
+    },
+    "N3_07_2012": {
+      "spans": [
+        {
+          "target": "reading-b002",
+          "text": "（エディト編『学校で教えない職人の仕事』による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        }
+      ]
+    },
+    "N3_07_2015": {
+      "spans": [
+        {
+          "target": "reading-b005",
+          "text": "（古郡廷治「あなたの表現はなぜ伝わらないのか」による）",
+          "font_id": "ryumin_pro_light",
+          "decision": "D09"
+        }
+      ]
+    },
+    "N3_workbook_2018": {
+      "spans": [
+        {
+          "target": "reading-b010",
+          "text": "動物園案内",
+          "font_id": "shingo_pr6_regular",
+          "decision": "D13",
+          "source": {
+            "path": "src/OfficialWorkbooks/2018/N3/N3R.pdf",
+            "page": 12
+          }
+        },
+        {
+          "target": "reading-b010",
+          "text": "動物教室",
+          "font_id": "shingo_pr6_regular",
+          "decision": "D13",
+          "source": {
+            "path": "src/OfficialWorkbooks/2018/N3/N3R.pdf",
+            "page": 12
+          }
+        },
+        {
+          "target": "reading-b010",
+          "text": "台所見学",
+          "font_id": "shingo_pr6_regular",
+          "decision": "D13",
+          "source": {
+            "path": "src/OfficialWorkbooks/2018/N3/N3R.pdf",
+            "page": 12
+          }
+        },
+        {
+          "target": "reading-b010",
+          "text": "川の生き物教室",
+          "font_id": "shingo_pr6_regular",
+          "decision": "D13",
+          "source": {
+            "path": "src/OfficialWorkbooks/2018/N3/N3R.pdf",
+            "page": 12
+          }
+        },
+        {
+          "target": "reading-b009",
+          "text": "大原動物園をもっと楽しむために",
+          "font_id": "shingo_pr6_regular",
+          "decision": "D13",
+          "source": {
+            "path": "src/OfficialWorkbooks/2018/N3/N3R.pdf",
+            "page": 12
+          }
+        },
+        {
+          "target": "reading-b009",
+          "text": "昼のイベント",
+          "font_id": "shingo_pr6_regular",
+          "decision": "D13",
+          "source": {
+            "path": "src/OfficialWorkbooks/2018/N3/N3R.pdf",
+            "page": 12
+          }
+        },
+        {
+          "target": "reading-b010",
+          "text": "夜の動物園",
+          "font_id": "shingo_pr6_regular",
+          "decision": "D13",
+          "source": {
+            "path": "src/OfficialWorkbooks/2018/N3/N3R.pdf",
+            "page": 12
+          },
+          "scope": "authored_emphasis"
+        },
+        {
+          "target": "reading-b010",
+          "text": "申し込み、参加料金",
+          "font_id": "ryumin_pr6n_bold",
+          "decision": "D15",
+          "source": {
+            "path": "src/OfficialWorkbooks/2018/N3/N3R.pdf",
+            "page": 12
+          }
+        },
+        {
+          "target": "reading-b010",
+          "text": "集合場所",
+          "font_id": "ryumin_pr6n_bold",
+          "decision": "D15",
+          "source": {
+            "path": "src/OfficialWorkbooks/2018/N3/N3R.pdf",
+            "page": 12
+          }
+        },
+        {
+          "target": "reading-b010",
+          "text": "日　時",
+          "font_id": "ryumin_pr6n_bold",
+          "decision": "D15",
+          "source": {
+            "path": "src/OfficialWorkbooks/2018/N3/N3R.pdf",
+            "page": 12
+          }
+        },
+        {
+          "target": "reading-b010",
+          "text": "入園料",
+          "font_id": "ryumin_pr6n_bold",
+          "decision": "D15",
+          "source": {
+            "path": "src/OfficialWorkbooks/2018/N3/N3R.pdf",
+            "page": 12
+          },
+          "scope": "authored_emphasis"
+        },
+        {
+          "target": "reading-b010",
+          "text": "入り口",
+          "font_id": "ryumin_pr6n_bold",
+          "decision": "D15",
+          "source": {
+            "path": "src/OfficialWorkbooks/2018/N3/N3R.pdf",
+            "page": 12
+          }
+        },
+        {
+          "target": "reading-b010",
+          "text": "レストラン、売店",
+          "font_id": "ryumin_pr6n_bold",
+          "decision": "D15",
+          "source": {
+            "path": "src/OfficialWorkbooks/2018/N3/N3R.pdf",
+            "page": 12
+          }
+        }
+      ]
+    },
+    "N4_workbook_2018": {
+      "spans": [
+        {
+          "target": "reading-b014",
+          "text": "青野市ニュース",
+          "font_id": "jun201_pro_regular",
+          "decision": "D18",
+          "source": {
+            "path": "src/OfficialWorkbooks/2018/N4/N4R.pdf",
+            "page": 8
+          }
+        },
+        {
+          "target": "reading-b014",
+          "text": "「春を楽しもう」",
+          "font_id": "jun201_pro_regular",
+          "decision": "D18",
+          "source": {
+            "path": "src/OfficialWorkbooks/2018/N4/N4R.pdf",
+            "page": 8
+          }
+        },
+        {
+          "target": "reading-b014",
+          "text": "月と",
+          "font_id": "jun201_pro_regular",
+          "decision": "D18",
+          "source": {
+            "path": "src/OfficialWorkbooks/2018/N4/N4R.pdf",
+            "page": 8
+          }
+        },
+        {
+          "target": "reading-b014",
+          "text": "月の予定",
+          "font_id": "jun201_pro_regular",
+          "decision": "D18",
+          "source": {
+            "path": "src/OfficialWorkbooks/2018/N4/N4R.pdf",
+            "page": 8
+          }
+        },
+        {
+          "target": "reading-b014",
+          "text": "電話",
+          "font_id": "jun201_pro_regular",
+          "decision": "D18",
+          "source": {
+            "path": "src/OfficialWorkbooks/2018/N4/N4R.pdf",
+            "page": 8
+          }
+        },
+        {
+          "target": "reading-b014",
+          "text": "Eメール",
+          "font_id": "jun201_pro_regular",
+          "decision": "D18",
+          "source": {
+            "path": "src/OfficialWorkbooks/2018/N4/N4R.pdf",
+            "page": 8
+          }
+        },
+        {
+          "target": "reading-b014",
+          "text": "tanoshimo@aono.jp",
+          "font_id": "jun201_pro_regular",
+          "decision": "D18",
+          "source": {
+            "path": "src/OfficialWorkbooks/2018/N4/N4R.pdf",
+            "page": 8
+          }
+        }
+      ],
+      "section_styles": {
+        "reading-b001": {
+          "before_pt": 18
+        }
+      }
+    },
+    "N5_workbook_2018": {
+      "duration": {
+        "target": "reading-b010",
+        "font_id": "gothicbbb_pr6_medium",
+        "numeric_ink_scale": 0.775,
+        "two_digit_advances_em": [
+          0.4993,
+          0.7493
+        ],
+        "single_digit_advance_em": 1.0007,
+        "source": "src/OfficialWorkbooks/2018/N5/N5R.pdf",
+        "source_page": 8,
+        "source_composition": "14pt font; explicit 0.4993/0.7493 TD positioning; fullwidth selected glyphs centered and compressed separately from 分",
+        "suffix_offset_em": 0.1125
+      }
+    },
+    "N3_set_2011_2012": {
+      "native_2012_furniture": {
+        "sources": [
+          {
+            "path": "src/OfficialWorkbooks/2012/N3/N3V.pdf",
+            "sha256": "e80bfe5be25d1c06df901a6f1b0f590cd7927160e374c12ded18e8dfb0b4eb79"
+          },
+          {
+            "path": "src/OfficialWorkbooks/2012/N3/N3G.pdf",
+            "sha256": "2739ba38b98ba697f5a16a1a99eef59b25b9ac0cf573b7730a87c6d6f41e00e8"
+          },
+          {
+            "path": "src/OfficialWorkbooks/2012/N3/N3R.pdf",
+            "sha256": "64bab971e58cac59dfed6486ff6f8786336bd6a6693ff404fc2721cdb65fd35d"
+          }
+        ],
+        "decisions": [
+          "D10",
+          "D11"
+        ],
+        "geometry": {
+          "width_pt": 24,
+          "height_pt": 73.7,
+          "outer_inset_pt": 0,
+          "gray": 0.51
+        },
+        "groups": {
+          "vocabulary": {
+            "label": "文字・語彙",
+            "top_pt": 85.04
+          },
+          "grammar": {
+            "label": "文法",
+            "top_pt": 158.74
+          },
+          "reading": {
+            "label": "読解",
+            "top_pt": 232.44
+          }
+        },
+        "folio_advance_em": 0.586,
+        "scope": "Generated workbook/contained-set task furniture from verified native 2012 sources; generated folios, no sitting-authentication claim."
+      }
+    },
+    "N4_workbook_2012": {
+      "native_2012_furniture": {
+        "sources": [
+          {
+            "path": "src/OfficialWorkbooks/2012/N4/N4V.pdf",
+            "sha256": "57f23ae9022158d7ab19cd73d5034c0b4569381933856032f38bc25d9af3b10f"
+          },
+          {
+            "path": "src/OfficialWorkbooks/2012/N4/N4G.pdf",
+            "sha256": "26a1d87cd5292a64ed121d7db20fdd4ba1479eb70682e1f8e0d14f471ad664c3"
+          },
+          {
+            "path": "src/OfficialWorkbooks/2012/N4/N4R.pdf",
+            "sha256": "458d54165382fc24f81ceb9591e689e3a39316f3fe6684eef2a731a46f457c97"
+          }
+        ],
+        "decisions": [
+          "D10",
+          "D11"
+        ],
+        "geometry": {
+          "width_pt": 24,
+          "height_pt": 73.7,
+          "outer_inset_pt": 0,
+          "gray": 0.51
+        },
+        "groups": {
+          "vocabulary": {
+            "label": "文字・語彙",
+            "top_pt": 85.04
+          },
+          "grammar": {
+            "label": "文法",
+            "top_pt": 158.74
+          },
+          "reading": {
+            "label": "読解",
+            "top_pt": 232.44
+          }
+        },
+        "folio_advance_em": 0.586,
+        "scope": "Generated workbook/contained-set task furniture from verified native 2012 sources; generated folios, no sitting-authentication claim."
+      }
+    },
+    "N5_workbook_2012": {
+      "native_2012_furniture": {
+        "sources": [
+          {
+            "path": "src/OfficialWorkbooks/2012/N5/N5V.pdf",
+            "sha256": "33e5648fe40b1c3effb45205fc37f58887e991bd287b06c3c9104e1a6a1c93c4"
+          },
+          {
+            "path": "src/OfficialWorkbooks/2012/N5/N5G.pdf",
+            "sha256": "16fe39e16455c658a2095bfa44313b2259c8ea273bdd9660af7f12ea49bb5332"
+          },
+          {
+            "path": "src/OfficialWorkbooks/2012/N5/N5R.pdf",
+            "sha256": "a4caed63529eef176e052737f2d63a9b3c05d143ac919cc9399030c41d42c795"
+          }
+        ],
+        "decisions": [
+          "D10",
+          "D11"
+        ],
+        "geometry": {
+          "width_pt": 24,
+          "height_pt": 73.7,
+          "outer_inset_pt": 0,
+          "gray": 0.51
+        },
+        "groups": {
+          "vocabulary": {
+            "label": "文字・語彙",
+            "top_pt": 85.04
+          },
+          "grammar": {
+            "label": "文法",
+            "top_pt": 158.74
+          },
+          "reading": {
+            "label": "読解",
+            "top_pt": 232.44
+          }
+        },
+        "folio_advance_em": 0.586,
+        "scope": "Generated workbook/contained-set task furniture from verified native 2012 sources; generated folios, no sitting-authentication claim."
+      }
+    }
+  }
+}

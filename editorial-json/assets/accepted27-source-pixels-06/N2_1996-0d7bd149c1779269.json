@@ -1,0 +1,136 @@
+{
+  "contract": "historical-source-pixels-1.0",
+  "id": "H27-N2_1996-0d7bd149c1779269",
+  "unit": "N2_1996",
+  "canonical_image_sha256": "0d7bd149c17792693102757d0ad6e903e6a148b73703c02858900557e8974db2",
+  "canonical_pixels": [
+    40,
+    44
+  ],
+  "image": {
+    "path": "preprocess/assets/handoff27-source-pixels-06/N2_1996-0d7bd149c1779269.png",
+    "sha256": "edf4f1a9dec192ae0c00667c598716279cf0dd743ccab44a1ceaff43d76ba6bf"
+  },
+  "source": {
+    "source_path": "src/CodexDownloads/UserApprovedReferenceScans/Shiken mondai to seikai 1-2 kyuu 1996.pdf",
+    "source_sha256": "aca213ce192a5fcf80f598c624953a533d49aef1971c318316996c7112b20873",
+    "physical_page": 66
+  },
+  "evidence": {
+    "source_path": "src/CodexDownloads/UserApprovedReferenceScans/Shiken mondai to seikai 1-2 kyuu 1996.pdf",
+    "source_sha256": "aca213ce192a5fcf80f598c624953a533d49aef1971c318316996c7112b20873",
+    "physical_pages": [
+      66
+    ],
+    "state": "approved",
+    "historical_claim": false,
+    "region": "H27 original decoded source-pixel crop replacing the H19 300dpi derivative. Canonical image and all registered occurrences remain unchanged; see exact crop provenance in the bound asset.",
+    "reference_id": "1996_L1_L2",
+    "approval_registry_sha256": "c0fc4d24494a9569dd539d237018014213045d6224ae9035fa282ab610be0384",
+    "subject": "question_page_layout",
+    "exclusions_acknowledged": true
+  },
+  "occurrences": [
+    {
+      "owner": "reading-b002",
+      "pointer": "/sections/5/items/0/content",
+      "ordinal": 3,
+      "field_sha256": "49ca501d733d803d5b621fca10a6dcf5452d96f0e207bfb00f63a86c5465c2dd"
+    },
+    {
+      "owner": "reading-b002",
+      "pointer": "/sections/5/items/0/content",
+      "ordinal": 4,
+      "field_sha256": "49ca501d733d803d5b621fca10a6dcf5452d96f0e207bfb00f63a86c5465c2dd"
+    },
+    {
+      "owner": "reading-b002",
+      "pointer": "/sections/5/items/0/content",
+      "ordinal": 5,
+      "field_sha256": "49ca501d733d803d5b621fca10a6dcf5452d96f0e207bfb00f63a86c5465c2dd"
+    },
+    {
+      "owner": "reading-b002",
+      "pointer": "/sections/5/items/0/content",
+      "ordinal": 6,
+      "field_sha256": "49ca501d733d803d5b621fca10a6dcf5452d96f0e207bfb00f63a86c5465c2dd"
+    },
+    {
+      "owner": "reading-b002",
+      "pointer": "/sections/5/items/0/content",
+      "ordinal": 7,
+      "field_sha256": "49ca501d733d803d5b621fca10a6dcf5452d96f0e207bfb00f63a86c5465c2dd"
+    },
+    {
+      "owner": "reading-q010",
+      "pointer": "/sections/5/items/3/stem",
+      "ordinal": 1,
+      "field_sha256": "865a0c148549786a88b6ee2666269d3b2324134fe4d7d7ec991b1dcefb48de2b"
+    },
+    {
+      "owner": "reading-q012",
+      "pointer": "/sections/5/items/5/options/0",
+      "ordinal": 1,
+      "field_sha256": "aae20294d972e6b815d9962f23cdda3ee04a391778b4178d22e7169989187576"
+    },
+    {
+      "owner": "reading-q012",
+      "pointer": "/sections/5/items/5/options/1",
+      "ordinal": 1,
+      "field_sha256": "e9a37a3e58ed2f48ae7efa298ff251e095c58b35555b744461f6bb9f66266177"
+    },
+    {
+      "owner": "reading-q012",
+      "pointer": "/sections/5/items/5/options/2",
+      "ordinal": 1,
+      "field_sha256": "51c61f2fb6e57167c5710d2597b271f15472a0ae03d606ab112b39102f730d97"
+    },
+    {
+      "owner": "reading-q012",
+      "pointer": "/sections/5/items/5/options/3",
+      "ordinal": 1,
+      "field_sha256": "411f79aa5921fe40d6c51ea9bd25a59d39ff46fee410ecc9dc6deb866d727ac7"
+    },
+    {
+      "owner": "reading-q014",
+      "pointer": "/sections/5/items/7/options/2",
+      "ordinal": 1,
+      "field_sha256": "fe3000ad84c40338d05e06697d111538f68e08cd55895fe8874c83c70ef922ef"
+    }
+  ],
+  "source_pixels": {
+    "xref": 195,
+    "source_dimensions": [
+      1053,
+      1506
+    ],
+    "source_pixel_box": [
+      548,
+      857,
+      569,
+      880
+    ],
+    "dimensions": [
+      21,
+      23
+    ],
+    "mode": "L",
+    "filter": "/DCTDecode",
+    "image_transform": [
+      505.57000732421875,
+      0.0,
+      -0.0,
+      723.0700073242188,
+      0.0,
+      0.0
+    ],
+    "source_stream_sha256": "3ee36dbd9a6f3c27f9afbe1f04a79fbd3f32b3ebff4f4617bf287fcf8b0eec10",
+    "decoded_source_rgb_sha256": "2f6f19086f15ce95d4782d70d7063c4303f17ca7899e5db4ef0739866b981962",
+    "decoded_crop_rgb_sha256": "45fd359625fd9392c06f1fe914cfb99f4ac3c161ca649928e758573c64305409",
+    "polarity": "decoded source colours unchanged",
+    "resampling": false,
+    "lossy_steps": []
+  },
+  "selection_note": "Retain every decoded source pixel inside the outward-rounded original crop. Preserve prior displayed width and height using a PDF placement matrix; do not resize or recompress pixels. Original scan compression remains a source limitation.",
+  "limits": "Integer outward rounding may add less than one original pixel at each edge. The prior display aspect is retained, so tiny rounding differences do not repaginate the page. The source itself may contain JPEG or JBIG2 compression; this extraction adds none."
+}

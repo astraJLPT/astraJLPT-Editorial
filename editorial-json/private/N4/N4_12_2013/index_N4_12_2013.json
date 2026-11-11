@@ -1,0 +1,191 @@
+{
+  "unit": "N4_12_2013",
+  "sources": [
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N4\\N4-2010-2014年-高清打印版\\2013年12月.pdf",
+      "sha256": "36880896f7047f1f616e6411cbe7d6fada10c7a6f27f615661552111bef605f5",
+      "Tier": 3,
+      "bytes": 716023,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\2013年12月\\资源二\\2013年12月真题+解析+听力原文-高清打印版.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N4\\N4_12_2013\\PaddleOCR\\pdf_1",
+      "VisionOCR": "preprocess\\N4\\N4_12_2013\\VisionOCR\\pdf_1"
+    },
+    {
+      "path": "src\\munjaJLPT\\N4\\2013-12_N4\\2013-12_N4.json",
+      "sha256": "62d18f36f1311564425f193a4176c9c54569966803e81effa528d544acbcaa73",
+      "Tier": "unranked",
+      "bytes": 136742,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N4-N5 các năm Yuuki Bùi\\2013年12月\\N4-2013年12月.pdf",
+      "sha256": "f5ec606d82a90525c966abd4dfd19d40cc655bd8482e68e6384c336f58c71e52",
+      "Tier": 3,
+      "bytes": 59098324,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N4\\N4_12_2013\\PaddleOCR\\pdf_2",
+      "VisionOCR": "preprocess\\N4\\N4_12_2013\\VisionOCR\\pdf_2"
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N4真题（2010-2025.12）\\2013年12月N4\\2013年12月真题+答案+解析+原文.pdf",
+      "sha256": "dc8e96ac6824d4a77b0f89e6999bde308286a5cd099d31fd7bbcaecc6af5acda",
+      "Tier": 3,
+      "bytes": 1303013,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N4历年真题\\2013年12月N4\\2013年12月真题+答案+解析+原文.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N4\\N4_12_2013\\PaddleOCR\\pdf_3",
+      "VisionOCR": "preprocess\\N4\\N4_12_2013\\VisionOCR\\pdf_3"
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N4真题（2010-2025.12）\\N4-答题卡.pdf",
+      "sha256": "b0c14d3f8645d885a6ddc2ef4cc160271c0850ea5f1d18f7386a6662f95c2053",
+      "Tier": "unranked",
+      "bytes": 383135,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\N4-答题卡.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N4历年真题\\N4-答题卡.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N4\\N4_multiple\\PaddleOCR\\pdf_14",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\2013年12月\\2013年12月日语N4真题试卷.pdf",
+      "sha256": "1d43c3d3695d25d777a008f3362581a49929e3040820368b63c1c598f2b9f3a4",
+      "Tier": 1,
+      "bytes": 11425763,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N4\\N4_12_2013\\PaddleOCR\\pdf_5",
+      "VisionOCR": "preprocess\\N4\\N4_12_2013\\VisionOCR\\pdf_5"
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\2013年12月\\2013年12月日语N4答案解析+听力原文.pdf",
+      "sha256": "dd69a167e2313c04f08ba9f9e0dc36bc55bd65101e702bfe4a77245cb300531c",
+      "Tier": "unranked",
+      "bytes": 10709955,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N4\\N4_12_2013\\PaddleOCR\\pdf_6",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N4\\2013-12_N4\\images\\2013-12_N4_l-p1-q01-img01.jpg",
+      "sha256": "f2eadb6d29c3676b8e778b77f8fc413af75e5787194174ceca0c6f97dd004a08",
+      "Tier": "unranked",
+      "bytes": 622507,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N4\\2013-12_N4\\images\\2013-12_N4_l-p1-q02-img01.jpg",
+      "sha256": "50553ba78855f82624e47d2a2b85eaccd556d5ca3c92ec8b25d3105cf7824d03",
+      "Tier": "unranked",
+      "bytes": 578926,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N4\\2013-12_N4\\images\\2013-12_N4_l-p1-q04-img01.jpg",
+      "sha256": "bb471fec515826cafe61f7fc6a438f85aba7cf43fb75a7cb0a64f10a1e2c471a",
+      "Tier": "unranked",
+      "bytes": 979690,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N4\\2013-12_N4\\images\\2013-12_N4_l-p1-q06-img01.jpg",
+      "sha256": "c918ba4c84fb01f46daa09d8c80c55bc355e318455f401bd0f902fe544599efe",
+      "Tier": "unranked",
+      "bytes": 673192,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N4\\2013-12_N4\\images\\2013-12_N4_l-p1-q08-img01.jpg",
+      "sha256": "e19e957c71229733c3ec1962d65cf7368dd4e8df41e101798d53457fe49f59f7",
+      "Tier": "unranked",
+      "bytes": 127333,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N4\\2013-12_N4\\images\\2013-12_N4_l-p3-q01-img01.jpg",
+      "sha256": "d12c3b832a7a3f2485ea8b8b0bf029a82f24477a424f01c773fb6d579bfd753c",
+      "Tier": "unranked",
+      "bytes": 716665,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N4\\2013-12_N4\\images\\2013-12_N4_l-p3-q02-img01.jpg",
+      "sha256": "c000e0af8be15735511e554f88ba35ec0c4022acb2d430943e1ea0ea39c21594",
+      "Tier": "unranked",
+      "bytes": 495430,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N4\\2013-12_N4\\images\\2013-12_N4_l-p3-q03-img01.jpg",
+      "sha256": "e91c17e6146c8027e00485bb7bc0815e48b015d0504ecce1a63ffdc75b56b03d",
+      "Tier": "unranked",
+      "bytes": 534322,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N4\\2013-12_N4\\images\\2013-12_N4_l-p3-q04-img01.jpg",
+      "sha256": "f8778bedc9ab453a0b6f282449f5d5a7b3ba003f9c38269aa0c8f2076afbbc4b",
+      "Tier": "unranked",
+      "bytes": 734546,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N4\\2013-12_N4\\images\\2013-12_N4_l-p3-q05-img01.jpg",
+      "sha256": "bf27dd28e6c7d471dddfcedec2b97ac813157a8564436640be47d00022a854b1",
+      "Tier": "unranked",
+      "bytes": 285009,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\munjaJLPT\\N4\\2013-12_N4\\images\\2013-12_N4_s11-q01-img01.jpg",
+      "sha256": "5e1555fa42bc68f25f20461d879c569e827e6f8255745b22f72e894c79055909",
+      "Tier": "unranked",
+      "bytes": 502876,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2025年12月\\5分钱打印（首单免费1）(1).PNG",
+      "sha256": "ad77c1b1ca35d09b7bfd2b242a43b7b480e7dfb008ac914ae770d67ab386732f",
+      "Tier": "unranked",
+      "bytes": 627620,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2025年7月\\5分钱打印（首单免费1）(1).PNG",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N2真题\\2025年12月\\5分钱打印（首单免费1）(1).PNG",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N2真题\\2025年7月\\5分钱打印（首单免费1）(1).PNG",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\2013年12月\\5分钱打印（首单免费1）(1).PNG",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\2025年12月\\5分钱打印（首单免费1）(1).PNG",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N5真题\\2025年12月\\5分钱打印（首单免费1）(1).PNG",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N5真题\\2025年7月\\5分钱打印（首单免费1）(1).PNG"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    }
+  ]
+}

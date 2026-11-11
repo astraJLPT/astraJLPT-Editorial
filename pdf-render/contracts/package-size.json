@@ -1,0 +1,100 @@
+{
+  "format": "editorial-package-size-v4",
+  "files": 5093,
+  "payload_bytes": 2046960186,
+  "baseline_payload_bytes": 2049421946,
+  "payload_bytes_saved": 2461760,
+  "editorial_json_bytes_saved": 5688018,
+  "groups": {
+    ".gitattributes": 218,
+    ".github": 1163,
+    ".gitignore": 429,
+    "README.md": 10388,
+    "additional-assets": 684630696,
+    "astraJLPT": 977916720,
+    "editorial-json": 115582923,
+    "pdf-render": 214792355,
+    "rubi-restore": 54022116,
+    "serve.py": 632,
+    "verify.py": 2546
+  },
+  "preexisting_ignored_output_bytes_archived": 6548118,
+  "folder_bytes_saved_excluding_git": 9009878,
+  "website_bytes": 977916720,
+  "conservative_website_limit": 1000000000,
+  "full_fonts": 37,
+  "full_font_bytes": 200089056,
+  "full_fonts_unpacked": true,
+  "largest_files": [
+    {
+      "bytes": 95426834,
+      "path": "additional-assets/principals/N1_07_2015.pdf"
+    },
+    {
+      "bytes": 46633007,
+      "path": "astraJLPT/assets/principals/N_3-4_2004.pdf"
+    },
+    {
+      "bytes": 35648516,
+      "path": "additional-assets/principals/N1_12_2024.pdf"
+    },
+    {
+      "bytes": 25274630,
+      "path": "additional-assets/principals/N1_12_2019.pdf"
+    },
+    {
+      "bytes": 24073804,
+      "path": "astraJLPT/assets/principals/N2_12_2024.pdf"
+    },
+    {
+      "bytes": 23893435,
+      "path": "additional-assets/principals/N1_1995_2009.pdf"
+    },
+    {
+      "bytes": 23567086,
+      "path": "additional-assets/principals/N2_12_2013.pdf"
+    },
+    {
+      "bytes": 22176068,
+      "path": "astraJLPT/assets/principals/N3_12_2023.pdf"
+    },
+    {
+      "bytes": 22078227,
+      "path": "astraJLPT/assets/principals/N3_12_2024.pdf"
+    },
+    {
+      "bytes": 21197574,
+      "path": "astraJLPT/assets/principals/N4_12_2024.pdf"
+    },
+    {
+      "bytes": 20995387,
+      "path": "additional-assets/principals/N2_12_2012.pdf"
+    },
+    {
+      "bytes": 19736320,
+      "path": "astraJLPT/assets/principals/N2_07_2018.pdf"
+    }
+  ],
+  "excluded": "Git history, gitignored_docs, ignored regeneration outputs, environments and caches.",
+  "total_budget_decision": "Retained full fonts, source material, ruby research and private audit records; added documentation and a compressed README screenshot.",
+  "maintenance_baseline": "2ad81c5cdec0a52ae52ed7dbd3f42bcc01592146",
+  "maintenance_baseline_payload_bytes": 2043805380,
+  "maintenance_payload_bytes_saved": -3154806,
+  "unit_identity_documentation_baseline": "55fbf34",
+  "unit_identity_documentation_baseline_payload_bytes": 2043795198,
+  "unit_identity_documentation_payload_bytes_added": 3164988,
+  "star_solution_migration": {
+    "baseline_git": "171ada8",
+    "baseline_payload_bytes": 2045050514,
+    "payload_bytes_added": 1909672,
+    "verified_full_orders": 580,
+    "accepted_full_orders": 3,
+    "held_decisions": 0
+  },
+  "editorial_case_maintenance": {
+    "baseline_git": "3525c04646d643b105c5b89458e5a6d17839ce8b",
+    "baseline_payload_bytes": 2047000055,
+    "payload_bytes_added": -39869,
+    "resolved_case": "N1_07_2012-vocab-q039-star-order"
+  }
+}

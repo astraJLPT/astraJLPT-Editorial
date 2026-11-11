@@ -1,0 +1,103 @@
+{
+  "unit": "N4_2004",
+  "sources": [
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N4\\N4-1991-2009年\\（1991年-2009年）N4真题听力\\2004\\2004年N4听力原文.doc",
+      "sha256": "4907164d460b5ed4b571cdc8618827cb699227ad01da56cc9cfca4aa95baa42e",
+      "Tier": "unranked",
+      "bytes": 49664,
+      "aliases": [
+        "src\\日语JLPT历年真题\\N4真题（2010-2025.12）\\1991-2009年N4真题（改版前的题目，参考即可）\\2004\\2004年N4听力原文.doc",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\2000年-2009年\\2004年\\2004年N4听力原文.doc",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N4历年真题\\1991-2009年N4真题（改版前的题目，参考即可）\\2004\\2004年N4听力原文.doc"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT N1-N5, Past papers\\N4\\N4-1991-2009年\\（1991年-2009年）N4真题听力\\2004\\2004年日本语能力考试4级真题+答案.pdf",
+      "sha256": "2618c75f75fee5c5d735b12a1f63385a2b7bfaf98369da58a93a8d75e690cbaf",
+      "Tier": 2,
+      "bytes": 1141755,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N4\\N4_2004\\PaddleOCR\\pdf_1",
+      "VisionOCR": "preprocess\\N4\\N4_2004\\VisionOCR\\pdf_1"
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N4真题（2010-2025.12）\\1991-2009年N4真题（改版前的题目，参考即可）\\2004\\2004年N4真题+答案.pdf",
+      "sha256": "7ebc1e29b79841e286e0fb51ecad4e39f23da809675e58af4c737b256fe5eb61",
+      "Tier": 3,
+      "bytes": 1700777,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N4历年真题\\1991-2009年N4真题（改版前的题目，参考即可）\\2004\\2004年N4真题+答案.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N4\\N4_2004\\PaddleOCR\\pdf_2",
+      "VisionOCR": "preprocess\\N4\\N4_2004\\VisionOCR\\pdf_2"
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\2000年-2009年\\2000年~2009年日语4级真题及答案--打印版.doc",
+      "sha256": "ca13a364bac8a3718e65343e803ab4d46bb010ae7c4f452f9907966ce1f19bdc",
+      "Tier": "unranked",
+      "bytes": 816895,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\2000年-2009年\\2004年\\2004年日本语能力考试4级真题+答案.pdf",
+      "sha256": "81627caa1c2c809fcc45e15712f223eaae5f086eebc5f0ca11d4241351a89743",
+      "Tier": 2,
+      "bytes": 1177482,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N4\\N4_2004\\PaddleOCR\\pdf_3",
+      "VisionOCR": "preprocess\\N4\\N4_2004\\VisionOCR\\pdf_3"
+    },
+    {
+      "path": "src/CodexDownloads/UserApprovedReferenceScans/Nihongo nouryoku shiken shiken mondai to seikai  3-4 kyo (2004).pdf",
+      "sha256": "cecff06d3cd84c45aadc4dcc7b40c04af99261a8a09edc30f607806ef6d59cd8",
+      "Tier": "unranked",
+      "bytes": 46633007,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": "",
+      "scheduling_status": "not_scheduled",
+      "display_title": "2004, Levels 3-4",
+      "source_role": "historical_question_volume",
+      "acquisition_batch": "reference_scan_hunt_1984-2009_2026-10-23",
+      "provenance_records": [
+        "preprocess/audit_runs/2026-10-23_reference_scan_rc03_approvals/approvals.json",
+        "preprocess/reference_scan_hunt_rc03_work/new_sources.json"
+      ],
+      "source_urls": [
+        "https://www.mediafire.com/?yk4o7f3s8mg0vs2="
+      ],
+      "previous_paths": [
+        "src/CodexDownloads/UserApprovedReferenceScans/Originals/Nihongo nouryoku shiken shiken mondai to seikai  3-4 kyo (2004).pdf",
+        "src/CodexDownloads/reference_scan_rc03/2004_L3_L4_extracted/Nihongo nouryoku shiken shiken mondai to seikai  3-4 kyo (2004).pdf"
+      ],
+      "filename_at_acquisition": "Nihongo nouryoku shiken shiken mondai to seikai  3-4 kyo (2004).pdf",
+      "filename_note": "Filename at acquisition or archive extraction, preserved through this move.",
+      "pages": 120,
+      "reference_registry": "preprocess/user_approved_reference_scans.md",
+      "reference_id": "RC03_2004",
+      "historical_coverage": [
+        {
+          "level": 3,
+          "year": 2004
+        },
+        {
+          "level": 4,
+          "year": 2004
+        }
+      ],
+      "acquisition_containers": [
+        {
+          "path": "src/CodexDownloads/Hunts/1984-2009/2026-10-23_RC03/2004_L3_L4_original.rar",
+          "sha256": "81e74d848f9e6d28a664a7a3f535ee0714eb2683bd61643b5496e04e73c63a55",
+          "member_filename": "Nihongo nouryoku shiken shiken mondai to seikai  3-4 kyo (2004).pdf",
+          "note": "Retained downloaded archive; member hash verified separately. Archive membership does not establish independent custody."
+        }
+      ]
+    }
+  ]
+}

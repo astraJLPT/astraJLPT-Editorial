@@ -1,0 +1,76 @@
+{
+  "contract": "historical-source-pixels-1.0",
+  "id": "H27-N2_1996-10a6153c7c3ebeb2",
+  "unit": "N2_1996",
+  "canonical_image_sha256": "10a6153c7c3ebeb23a5faaeafc477da438765fa370fb25edeb3974020ed45ea6",
+  "canonical_pixels": [
+    426,
+    717
+  ],
+  "image": {
+    "path": "preprocess/assets/handoff27-source-pixels-06/N2_1996-10a6153c7c3ebeb2.png",
+    "sha256": "10405dd05209d8f84baa8875c2c32115fb85c9ee71fef92c1d74e4a463d5cb8b"
+  },
+  "source": {
+    "source_path": "src/CodexDownloads/UserApprovedReferenceScans/Shiken mondai to seikai 1-2 kyuu 1996.pdf",
+    "source_sha256": "aca213ce192a5fcf80f598c624953a533d49aef1971c318316996c7112b20873",
+    "physical_page": 68
+  },
+  "evidence": {
+    "source_path": "src/CodexDownloads/UserApprovedReferenceScans/Shiken mondai to seikai 1-2 kyuu 1996.pdf",
+    "source_sha256": "aca213ce192a5fcf80f598c624953a533d49aef1971c318316996c7112b20873",
+    "physical_pages": [
+      68
+    ],
+    "state": "approved",
+    "historical_claim": false,
+    "region": "H27 original decoded source-pixel crop replacing the H19 300dpi derivative. Canonical image and all registered occurrences remain unchanged; see exact crop provenance in the bound asset.",
+    "reference_id": "1996_L1_L2",
+    "approval_registry_sha256": "c0fc4d24494a9569dd539d237018014213045d6224ae9035fa282ab610be0384",
+    "subject": "question_page_layout",
+    "exclusions_acknowledged": true
+  },
+  "occurrences": [
+    {
+      "owner": "reading-q013",
+      "pointer": "/sections/5/items/6/options/2",
+      "ordinal": 1,
+      "field_sha256": "cbc9141f231b400488388b2b4944c67dae22802b5c9efe3a0edb3bdadce6b732"
+    }
+  ],
+  "source_pixels": {
+    "xref": 201,
+    "source_dimensions": [
+      1053,
+      1506
+    ],
+    "source_pixel_box": [
+      553,
+      593,
+      767,
+      953
+    ],
+    "dimensions": [
+      214,
+      360
+    ],
+    "mode": "L",
+    "filter": "/DCTDecode",
+    "image_transform": [
+      505.57000732421875,
+      0.0,
+      -0.0,
+      723.0700073242188,
+      0.0,
+      0.0
+    ],
+    "source_stream_sha256": "90adc963c55cf2780d733697ddf8ce5f1cbb112452932a1168716c1aacdc4e48",
+    "decoded_source_rgb_sha256": "97bad0d0e37207d27be6c6ccd99bbbbcab45d92961cc074534ba8fb53e2825a5",
+    "decoded_crop_rgb_sha256": "10be8c5ef27a50b58834a0d238f62bb0ee4c4de1f1a01d73a4423ead66d56248",
+    "polarity": "decoded source colours unchanged",
+    "resampling": false,
+    "lossy_steps": []
+  },
+  "selection_note": "Retain every decoded source pixel inside the outward-rounded original crop. Preserve prior displayed width and height using a PDF placement matrix; do not resize or recompress pixels. Original scan compression remains a source limitation.",
+  "limits": "Integer outward rounding may add less than one original pixel at each edge. The prior display aspect is retained, so tiny rounding differences do not repaginate the page. The source itself may contain JPEG or JBIG2 compression; this extraction adds none."
+}

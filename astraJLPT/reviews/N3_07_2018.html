@@ -1,0 +1,880 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark light"><title>Developer review · N3_07_2018 · astraJLPT</title><link rel="icon" href="data:,"><link rel="stylesheet" href="../assets/fonts.css?v=f9f44384a837"><link rel="stylesheet" href="../assets/themes.css?v=7ad0820747dc"><link rel="stylesheet" href="../assets/answer-marking.css?v=bec6b4920050"><link rel="stylesheet" href="../assets/site.css?v=7ae9ae7c768b"><link rel="stylesheet" href="../assets/pdf-typography.css?v=ba55af25606f"><link rel="stylesheet" href="../assets/paper-shared.css?v=8f3ca38dca80"></head><body class="catalog-page"><a class="skip-link" href="#content">Skip to content</a><header class="topbar" id="page-top" tabindex="-1"><a class="wordmark" id="brand" href="../index.html">astra<span>JLPT</span></a><details id="settings" class="settings"><summary aria-label="Open settings" title="Settings"><span aria-hidden="true">⚙</span><span class="sr-only">Settings</span></summary><div class="settings-panel"><div class="settings-title"><h2>settings</h2><button type="button" id="close-settings" class="js-only" aria-label="Close settings">×</button></div><div class="settings-tabs" role="group" aria-label="Settings categories"><label><input type="radio" name="settings-view" value="appearance" checked><span>theme</span></label><label><input type="radio" name="settings-view" value="browser"><span>browser</span></label></div><section data-settings="appearance"><div class="theme-workspace"><div class="theme-picker"><div class="setting-heading"><h3>theme</h3></div><div class="theme-grid originals"><label class="theme-card ps-gh"><input type="radio" name="theme" id="theme-jlpt_paper" value="jlpt_paper"><span>jlpt_paper</span></label><label class="theme-card ps-ck"><input type="radio" name="theme" id="theme-astraJLPT_dark" value="astraJLPT_dark" checked><span>astraJLPT_dark</span></label><label class="theme-card ps-ga"><input type="radio" name="theme" id="theme-astraJLPT_sepia" value="astraJLPT_sepia"><span>astraJLPT_sepia</span></label></div><div class="js-only"><p class="settings-label">three random picks</p><div class="theme-grid" id="quick-picks"></div></div><details><summary>all 187 Monkeytype palettes</summary><label class="theme-search js-only">find a palette<input id="theme-search" type="search" placeholder="search themes" autocomplete="off"></label><div class="theme-grid theme-catalog"><label class="theme-card ps-e9"><input type="radio" name="theme" id="theme-8008" value="8008"><span>8008</span></label><label class="theme-card ps-cw"><input type="radio" name="theme" id="theme-80s_after_dark" value="80s_after_dark"><span>80s after dark</span></label><label class="theme-card ps-fq"><input type="radio" name="theme" id="theme-9009" value="9009"><span>9009</span></label><label class="theme-card ps-cc"><input type="radio" name="theme" id="theme-aether" value="aether"><span>aether</span></label><label class="theme-card ps-cz"><input type="radio" name="theme" id="theme-alduin" value="alduin"><span>alduin</span></label><label class="theme-card ps-el"><input type="radio" name="theme" id="theme-alpine" value="alpine"><span>alpine</span></label><label class="theme-card ps-bg"><input type="radio" name="theme" id="theme-anti_hero" value="anti_hero"><span>anti hero</span></label><label class="theme-card ps-c3"><input type="radio" name="theme" id="theme-arch" value="arch"><span>arch</span></label><label class="theme-card ps-bt"><input type="radio" name="theme" id="theme-aurora" value="aurora"><span>aurora</span></label><label class="theme-card ps-g8"><input type="radio" name="theme" id="theme-beach" value="beach"><span>beach</span></label><label class="theme-card ps-dz"><input type="radio" name="theme" id="theme-bento" value="bento"><span>bento</span></label><label class="theme-card ps-f1"><input type="radio" name="theme" id="theme-bingsu" value="bingsu"><span>bingsu</span></label><label class="theme-card ps-dl"><input type="radio" name="theme" id="theme-bliss" value="bliss"><span>bliss</span></label><label class="theme-card ps-bn"><input type="radio" name="theme" id="theme-blue_dolphin" value="blue_dolphin"><span>blue dolphin</span></label><label class="theme-card ps-dd"><input type="radio" name="theme" id="theme-blueberry_dark" value="blueberry_dark"><span>blueberry dark</span></label><label class="theme-card ps-fd"><input type="radio" name="theme" id="theme-blueberry_light" value="blueberry_light"><span>blueberry light</span></label><label class="theme-card ps-ep"><input type="radio" name="theme" id="theme-botanical" value="botanical"><span>botanical</span></label><label class="theme-card ps-cl"><input type="radio" name="theme" id="theme-bouquet" value="bouquet"><span>bouquet</span></label><label class="theme-card ps-fk"><input type="radio" name="theme" id="theme-breeze" value="breeze"><span>breeze</span></label><label class="theme-card ps-dk"><input type="radio" name="theme" id="theme-bushido" value="bushido"><span>bushido</span></label><label class="theme-card ps-f5"><input type="radio" name="theme" id="theme-cafe" value="cafe"><span>cafe</span></label><label class="theme-card ps-g1"><input type="radio" name="theme" id="theme-camping" value="camping"><span>camping</span></label><label class="theme-card ps-e4"><input type="radio" name="theme" id="theme-carbon" value="carbon"><span>carbon</span></label><label class="theme-card ps-d3"><input type="radio" name="theme" id="theme-catppuccin" value="catppuccin"><span>catppuccin</span></label><label class="theme-card ps-ch"><input type="radio" name="theme" id="theme-chaos_theory" value="chaos_theory"><span>chaos theory</span></label><label class="theme-card ps-g3"><input type="radio" name="theme" id="theme-cheesecake" value="cheesecake"><span>cheesecake</span></label><label class="theme-card ps-e7"><input type="radio" name="theme" id="theme-cherry_blossom" value="cherry_blossom"><span>cherry blossom</span></label><label class="theme-card ps-eh"><input type="radio" name="theme" id="theme-comfy" value="comfy"><span>comfy</span></label><label class="theme-card ps-ef"><input type="radio" name="theme" id="theme-copper" value="copper"><span>copper</span></label><label class="theme-card ps-g6"><input type="radio" name="theme" id="theme-creamsicle" value="creamsicle"><span>creamsicle</span></label><label class="theme-card ps-em"><input type="radio" name="theme" id="theme-cy_red" value="cy_red"><span>cy red</span></label><label class="theme-card ps-co"><input type="radio" name="theme" id="theme-cyberspace" value="cyberspace"><span>cyberspace</span></label><label class="theme-card ps-cd"><input type="radio" name="theme" id="theme-dark" value="dark"><span>dark</span></label><label class="theme-card ps-bz"><input type="radio" name="theme" id="theme-dark_magic_girl" value="dark_magic_girl"><span>dark magic girl</span></label><label class="theme-card ps-d6"><input type="radio" name="theme" id="theme-dark_note" value="dark_note"><span>dark note</span></label><label class="theme-card ps-g5"><input type="radio" name="theme" id="theme-darling" value="darling"><span>darling</span></label><label class="theme-card ps-bw"><input type="radio" name="theme" id="theme-deku" value="deku"><span>deku</span></label><label class="theme-card ps-g9"><input type="radio" name="theme" id="theme-desert_oasis" value="desert_oasis"><span>desert oasis</span></label><label class="theme-card ps-cx"><input type="radio" name="theme" id="theme-dev" value="dev"><span>dev</span></label><label class="theme-card ps-ek"><input type="radio" name="theme" id="theme-diner" value="diner"><span>diner</span></label><label class="theme-card ps-gi"><input type="radio" name="theme" id="theme-dino" value="dino"><span>dino</span></label><label class="theme-card ps-e6"><input type="radio" name="theme" id="theme-discord" value="discord"><span>discord</span></label><label class="theme-card ps-fc"><input type="radio" name="theme" id="theme-dmg" value="dmg"><span>dmg</span></label><label class="theme-card ps-fj"><input type="radio" name="theme" id="theme-dollar" value="dollar"><span>dollar</span></label><label class="theme-card ps-ce"><input type="radio" name="theme" id="theme-dots" value="dots"><span>dots</span></label><label class="theme-card ps-dq"><input type="radio" name="theme" id="theme-dracula" value="dracula"><span>dracula</span></label><label class="theme-card ps-cq"><input type="radio" name="theme" id="theme-drowning" value="drowning"><span>drowning</span></label><label class="theme-card ps-eo"><input type="radio" name="theme" id="theme-dualshot" value="dualshot"><span>dualshot</span></label><label class="theme-card ps-dr"><input type="radio" name="theme" id="theme-earthsong" value="earthsong"><span>earthsong</span></label><label class="theme-card ps-ci"><input type="radio" name="theme" id="theme-everblush" value="everblush"><span>everblush</span></label><label class="theme-card ps-bq"><input type="radio" name="theme" id="theme-evil_eye" value="evil_eye"><span>evil eye</span></label><label class="theme-card ps-bp"><input type="radio" name="theme" id="theme-ez_mode" value="ez_mode"><span>ez mode</span></label><label class="theme-card ps-c8"><input type="radio" name="theme" id="theme-fire" value="fire"><span>fire</span></label><label class="theme-card ps-eb"><input type="radio" name="theme" id="theme-fledgling" value="fledgling"><span>fledgling</span></label><label class="theme-card ps-f3"><input type="radio" name="theme" id="theme-fleuriste" value="fleuriste"><span>fleuriste</span></label><label class="theme-card ps-bl"><input type="radio" name="theme" id="theme-floret" value="floret"><span>floret</span></label><label class="theme-card ps-fh"><input type="radio" name="theme" id="theme-froyo" value="froyo"><span>froyo</span></label><label class="theme-card ps-et"><input type="radio" name="theme" id="theme-frozen_llama" value="frozen_llama"><span>frozen llama</span></label><label class="theme-card ps-f9"><input type="radio" name="theme" id="theme-fruit_chew" value="fruit_chew"><span>fruit chew</span></label><label class="theme-card ps-en"><input type="radio" name="theme" id="theme-fundamentals" value="fundamentals"><span>fundamentals</span></label><label class="theme-card ps-e0"><input type="radio" name="theme" id="theme-future_funk" value="future_funk"><span>future funk</span></label><label class="theme-card ps-dc"><input type="radio" name="theme" id="theme-github" value="github"><span>github</span></label><label class="theme-card ps-fn"><input type="radio" name="theme" id="theme-godspeed" value="godspeed"><span>godspeed</span></label><label class="theme-card ps-e3"><input type="radio" name="theme" id="theme-graen" value="graen"><span>graen</span></label><label class="theme-card ps-ea"><input type="radio" name="theme" id="theme-grand_prix" value="grand_prix"><span>grand prix</span></label><label class="theme-card ps-dv"><input type="radio" name="theme" id="theme-grape" value="grape"><span>grape</span></label><label class="theme-card ps-dp"><input type="radio" name="theme" id="theme-gruvbox_dark" value="gruvbox_dark"><span>gruvbox dark</span></label><label class="theme-card ps-g2"><input type="radio" name="theme" id="theme-gruvbox_light" value="gruvbox_light"><span>gruvbox light</span></label><label class="theme-card ps-bu"><input type="radio" name="theme" id="theme-hammerhead" value="hammerhead"><span>hammerhead</span></label><label class="theme-card ps-fa"><input type="radio" name="theme" id="theme-hanok" value="hanok"><span>hanok</span></label><label class="theme-card ps-ed"><input type="radio" name="theme" id="theme-hedge" value="hedge"><span>hedge</span></label><label class="theme-card ps-fu"><input type="radio" name="theme" id="theme-honey" value="honey"><span>honey</span></label><label class="theme-card ps-d0"><input type="radio" name="theme" id="theme-horizon" value="horizon"><span>horizon</span></label><label class="theme-card ps-bf"><input type="radio" name="theme" id="theme-husqy" value="husqy"><span>husqy</span></label><label class="theme-card ps-cj"><input type="radio" name="theme" id="theme-iceberg_dark" value="iceberg_dark"><span>iceberg dark</span></label><label class="theme-card ps-fl"><input type="radio" name="theme" id="theme-iceberg_light" value="iceberg_light"><span>iceberg light</span></label><label class="theme-card ps-c7"><input type="radio" name="theme" id="theme-incognito" value="incognito"><span>incognito</span></label><label class="theme-card ps-d8"><input type="radio" name="theme" id="theme-ishtar" value="ishtar"><span>ishtar</span></label><label class="theme-card ps-eu"><input type="radio" name="theme" id="theme-iv_clover" value="iv_clover"><span>iv clover</span></label><label class="theme-card ps-c2"><input type="radio" name="theme" id="theme-iv_spade" value="iv_spade"><span>iv spade</span></label><label class="theme-card ps-cu"><input type="radio" name="theme" id="theme-joker" value="joker"><span>joker</span></label><label class="theme-card ps-de"><input type="radio" name="theme" id="theme-laser" value="laser"><span>laser</span></label><label class="theme-card ps-ex"><input type="radio" name="theme" id="theme-lavender" value="lavender"><span>lavender</span></label><label class="theme-card ps-ew"><input type="radio" name="theme" id="theme-leather" value="leather"><span>leather</span></label><label class="theme-card ps-fo"><input type="radio" name="theme" id="theme-lil_dragon" value="lil_dragon"><span>lil dragon</span></label><label class="theme-card ps-gd"><input type="radio" name="theme" id="theme-lilac_mist" value="lilac_mist"><span>lilac mist</span></label><label class="theme-card ps-er"><input type="radio" name="theme" id="theme-lime" value="lime"><span>lime</span></label><label class="theme-card ps-df"><input type="radio" name="theme" id="theme-luna" value="luna"><span>luna</span></label><label class="theme-card ps-ez"><input type="radio" name="theme" id="theme-macroblank" value="macroblank"><span>macroblank</span></label><label class="theme-card ps-gk"><input type="radio" name="theme" id="theme-magic_girl" value="magic_girl"><span>magic girl</span></label><label class="theme-card ps-du"><input type="radio" name="theme" id="theme-mashu" value="mashu"><span>mashu</span></label><label class="theme-card ps-ei"><input type="radio" name="theme" id="theme-matcha_moccha" value="matcha_moccha"><span>matcha moccha</span></label><label class="theme-card ps-dn"><input type="radio" name="theme" id="theme-material" value="material"><span>material</span></label><label class="theme-card ps-be"><input type="radio" name="theme" id="theme-matrix" value="matrix"><span>matrix</span></label><label class="theme-card ps-br"><input type="radio" name="theme" id="theme-menthol" value="menthol"><span>menthol</span></label><label class="theme-card ps-dg"><input type="radio" name="theme" id="theme-metaverse" value="metaverse"><span>metaverse</span></label><label class="theme-card ps-ca"><input type="radio" name="theme" id="theme-metropolis" value="metropolis"><span>metropolis</span></label><label class="theme-card ps-g0"><input type="radio" name="theme" id="theme-mexican" value="mexican"><span>mexican</span></label><label class="theme-card ps-fv"><input type="radio" name="theme" id="theme-miami" value="miami"><span>miami</span></label><label class="theme-card ps-cn"><input type="radio" name="theme" id="theme-miami_nights" value="miami_nights"><span>miami nights</span></label><label class="theme-card ps-c0"><input type="radio" name="theme" id="theme-midnight" value="midnight"><span>midnight</span></label><label class="theme-card ps-gf"><input type="radio" name="theme" id="theme-milkshake" value="milkshake"><span>milkshake</span></label><label class="theme-card ps-bv"><input type="radio" name="theme" id="theme-mint" value="mint"><span>mint</span></label><label class="theme-card ps-ey"><input type="radio" name="theme" id="theme-mizu" value="mizu"><span>mizu</span></label><label class="theme-card ps-dy"><input type="radio" name="theme" id="theme-modern_dolch" value="modern_dolch"><span>modern dolch</span></label><label class="theme-card ps-fe"><input type="radio" name="theme" id="theme-modern_dolch_light" value="modern_dolch_light"><span>modern dolch light</span></label><label class="theme-card ps-gm"><input type="radio" name="theme" id="theme-modern_ink" value="modern_ink"><span>modern ink</span></label><label class="theme-card ps-do"><input type="radio" name="theme" id="theme-monokai" value="monokai"><span>monokai</span></label><label class="theme-card ps-cs"><input type="radio" name="theme" id="theme-moonlight" value="moonlight"><span>moonlight</span></label><label class="theme-card ps-c9"><input type="radio" name="theme" id="theme-mountain" value="mountain"><span>mountain</span></label><label class="theme-card ps-f8"><input type="radio" name="theme" id="theme-mr_sleeves" value="mr_sleeves"><span>mr sleeves</span></label><label class="theme-card ps-gj"><input type="radio" name="theme" id="theme-ms_cupcakes" value="ms_cupcakes"><span>ms cupcakes</span></label><label class="theme-card ps-ej"><input type="radio" name="theme" id="theme-muted" value="muted"><span>muted</span></label><label class="theme-card ps-cg"><input type="radio" name="theme" id="theme-nautilus" value="nautilus"><span>nautilus</span></label><label class="theme-card ps-db"><input type="radio" name="theme" id="theme-nebula" value="nebula"><span>nebula</span></label><label class="theme-card ps-da"><input type="radio" name="theme" id="theme-night_runner" value="night_runner"><span>night runner</span></label><label class="theme-card ps-dj"><input type="radio" name="theme" id="theme-nord" value="nord"><span>nord</span></label><label class="theme-card ps-fp"><input type="radio" name="theme" id="theme-nord_light" value="nord_light"><span>nord light</span></label><label class="theme-card ps-di"><input type="radio" name="theme" id="theme-norse" value="norse"><span>norse</span></label><label class="theme-card ps-e5"><input type="radio" name="theme" id="theme-oblivion" value="oblivion"><span>oblivion</span></label><label class="theme-card ps-fm"><input type="radio" name="theme" id="theme-olive" value="olive"><span>olive</span></label><label class="theme-card ps-cy"><input type="radio" name="theme" id="theme-olivia" value="olivia"><span>olivia</span></label><label class="theme-card ps-e2"><input type="radio" name="theme" id="theme-onedark" value="onedark"><span>onedark</span></label><label class="theme-card ps-f4"><input type="radio" name="theme" id="theme-our_theme" value="our_theme"><span>our theme</span></label><label class="theme-card ps-ee"><input type="radio" name="theme" id="theme-pale_nimbus" value="pale_nimbus"><span>pale nimbus</span></label><label class="theme-card ps-fr"><input type="radio" name="theme" id="theme-paper" value="paper"><span>paper</span></label><label class="theme-card ps-eq"><input type="radio" name="theme" id="theme-passion_fruit" value="passion_fruit"><span>passion fruit</span></label><label class="theme-card ps-ff"><input type="radio" name="theme" id="theme-pastel" value="pastel"><span>pastel</span></label><label class="theme-card ps-ds"><input type="radio" name="theme" id="theme-peach_blossom" value="peach_blossom"><span>peach blossom</span></label><label class="theme-card ps-fg"><input type="radio" name="theme" id="theme-peaches" value="peaches"><span>peaches</span></label><label class="theme-card ps-bk"><input type="radio" name="theme" id="theme-phantom" value="phantom"><span>phantom</span></label><label class="theme-card ps-fz"><input type="radio" name="theme" id="theme-pink_lemonade" value="pink_lemonade"><span>pink lemonade</span></label><label class="theme-card ps-cm"><input type="radio" name="theme" id="theme-pulse" value="pulse"><span>pulse</span></label><label class="theme-card ps-d4"><input type="radio" name="theme" id="theme-purpleish" value="purpleish"><span>purpleish</span></label><label class="theme-card ps-fy"><input type="radio" name="theme" id="theme-rainbow_trail" value="rainbow_trail"><span>rainbow trail</span></label><label class="theme-card ps-ct"><input type="radio" name="theme" id="theme-red_dragon" value="red_dragon"><span>red dragon</span></label><label class="theme-card ps-es"><input type="radio" name="theme" id="theme-red_samurai" value="red_samurai"><span>red samurai</span></label><label class="theme-card ps-e1"><input type="radio" name="theme" id="theme-repose_dark" value="repose_dark"><span>repose dark</span></label><label class="theme-card ps-fs"><input type="radio" name="theme" id="theme-repose_light" value="repose_light"><span>repose light</span></label><label class="theme-card ps-fb"><input type="radio" name="theme" id="theme-retro" value="retro"><span>retro</span></label><label class="theme-card ps-bx"><input type="radio" name="theme" id="theme-retrocast" value="retrocast"><span>retrocast</span></label><label class="theme-card ps-cd"><input type="radio" name="theme" id="theme-rgb" value="rgb"><span>rgb</span></label><label class="theme-card ps-d5"><input type="radio" name="theme" id="theme-rose_pine" value="rose_pine"><span>rose pine</span></label><label class="theme-card ps-gc"><input type="radio" name="theme" id="theme-rose_pine_dawn" value="rose_pine_dawn"><span>rose pine dawn</span></label><label class="theme-card ps-dt"><input type="radio" name="theme" id="theme-rose_pine_moon" value="rose_pine_moon"><span>rose pine moon</span></label><label class="theme-card ps-cv"><input type="radio" name="theme" id="theme-rudy" value="rudy"><span>rudy</span></label><label class="theme-card ps-by"><input type="radio" name="theme" id="theme-ryujinscales" value="ryujinscales"><span>ryujinscales</span></label><label class="theme-card ps-fi"><input type="radio" name="theme" id="theme-serika" value="serika"><span>serika</span></label><label class="theme-card ps-e8"><input type="radio" name="theme" id="theme-serika_dark" value="serika_dark"><span>serika dark</span></label><label class="theme-card ps-dh"><input type="radio" name="theme" id="theme-sewing_tin" value="sewing_tin"><span>sewing tin</span></label><label class="theme-card ps-gg"><input type="radio" name="theme" id="theme-sewing_tin_light" value="sewing_tin_light"><span>sewing tin light</span></label><label class="theme-card ps-bi"><input type="radio" name="theme" id="theme-shadow" value="shadow"><span>shadow</span></label><label class="theme-card ps-f6"><input type="radio" name="theme" id="theme-shoko" value="shoko"><span>shoko</span></label><label class="theme-card ps-ge"><input type="radio" name="theme" id="theme-slambook" value="slambook"><span>slambook</span></label><label class="theme-card ps-f2"><input type="radio" name="theme" id="theme-snes" value="snes"><span>snes</span></label><label class="theme-card ps-gb"><input type="radio" name="theme" id="theme-soaring_skies" value="soaring_skies"><span>soaring skies</span></label><label class="theme-card ps-bm"><input type="radio" name="theme" id="theme-solarized_dark" value="solarized_dark"><span>solarized dark</span></label><label class="theme-card ps-g4"><input type="radio" name="theme" id="theme-solarized_light" value="solarized_light"><span>solarized light</span></label><label class="theme-card ps-bj"><input type="radio" name="theme" id="theme-solarized_osaka" value="solarized_osaka"><span>solarized osaka</span></label><label class="theme-card ps-dw"><input type="radio" name="theme" id="theme-sonokai" value="sonokai"><span>sonokai</span></label><label class="theme-card ps-c5"><input type="radio" name="theme" id="theme-spiderman" value="spiderman"><span>spiderman</span></label><label class="theme-card ps-bs"><input type="radio" name="theme" id="theme-stealth" value="stealth"><span>stealth</span></label><label class="theme-card ps-fw"><input type="radio" name="theme" id="theme-strawberry" value="strawberry"><span>strawberry</span></label><label class="theme-card ps-cf"><input type="radio" name="theme" id="theme-striker" value="striker"><span>striker</span></label><label class="theme-card ps-ec"><input type="radio" name="theme" id="theme-suisei" value="suisei"><span>suisei</span></label><label class="theme-card ps-d9"><input type="radio" name="theme" id="theme-sunset" value="sunset"><span>sunset</span></label><label class="theme-card ps-dm"><input type="radio" name="theme" id="theme-superuser" value="superuser"><span>superuser</span></label><label class="theme-card ps-bo"><input type="radio" name="theme" id="theme-sweden" value="sweden"><span>sweden</span></label><label class="theme-card ps-g7"><input type="radio" name="theme" id="theme-tangerine" value="tangerine"><span>tangerine</span></label><label class="theme-card ps-f0"><input type="radio" name="theme" id="theme-taro" value="taro"><span>taro</span></label><label class="theme-card ps-cr"><input type="radio" name="theme" id="theme-terminal" value="terminal"><span>terminal</span></label><label class="theme-card ps-c4"><input type="radio" name="theme" id="theme-terra" value="terra"><span>terra</span></label><label class="theme-card ps-ft"><input type="radio" name="theme" id="theme-terrazzo" value="terrazzo"><span>terrazzo</span></label><label class="theme-card ps-c1"><input type="radio" name="theme" id="theme-terror_below" value="terror_below"><span>terror below</span></label><label class="theme-card ps-f7"><input type="radio" name="theme" id="theme-tiramisu" value="tiramisu"><span>tiramisu</span></label><label class="theme-card ps-eg"><input type="radio" name="theme" id="theme-trackday" value="trackday"><span>trackday</span></label><label class="theme-card ps-bh"><input type="radio" name="theme" id="theme-trance" value="trance"><span>trance</span></label><label class="theme-card ps-c6"><input type="radio" name="theme" id="theme-tron_orange" value="tron_orange"><span>tron orange</span></label><label class="theme-card ps-ev"><input type="radio" name="theme" id="theme-vaporwave" value="vaporwave"><span>vaporwave</span></label><label class="theme-card ps-cb"><input type="radio" name="theme" id="theme-vesper" value="vesper"><span>vesper</span></label><label class="theme-card ps-gl"><input type="radio" name="theme" id="theme-vesper_light" value="vesper_light"><span>vesper light</span></label><label class="theme-card ps-dx"><input type="radio" name="theme" id="theme-viridescent" value="viridescent"><span>viridescent</span></label><label class="theme-card ps-cp"><input type="radio" name="theme" id="theme-voc" value="voc"><span>voc</span></label><label class="theme-card ps-d2"><input type="radio" name="theme" id="theme-vscode" value="vscode"><span>vscode</span></label><label class="theme-card ps-d7"><input type="radio" name="theme" id="theme-watermelon" value="watermelon"><span>watermelon</span></label><label class="theme-card ps-d1"><input type="radio" name="theme" id="theme-wavez" value="wavez"><span>wavez</span></label><label class="theme-card ps-fx"><input type="radio" name="theme" id="theme-witch_girl" value="witch_girl"><span>witch girl</span></label></div></details><div class="js-only ps-14h" id="monkeytype-text-source">
+<h3>reading text color</h3>
+<p class="control-help">Auto chooses the more readable palette color. Choose sub or text to set it yourself; answer colors adapt.</p>
+<div aria-label="Monkeytype reading text color" class="segmented" role="group">
+<label><input checked="" name="text-source" type="radio" value="auto"/><span>auto</span></label>
+<label><input name="text-source" type="radio" value="sub"/><span>sub</span></label>
+<label><input name="text-source" type="radio" value="text"/><span>text</span></label>
+</div>
+<p aria-live="polite" class="control-help ps-14i" id="monkeytype-text-status" role="status"></p>
+</div></div><aside class="theme-editor js-only" aria-label="Customize theme colors"><div class="color-editor-heading"><h3>colors</h3><button type="button" id="reset-theme-colors" aria-label="Reset this theme">reset</button></div><span class="sr-only" id="color-format-help">Choose a swatch or enter hex. Transparent borders accept #RRGGBBAA. Reset restores the theme color.</span><span class="sr-only" id="color-edit-status" role="status" aria-live="polite"></span><div class="main-colors"><div class="color-row" data-color-row="bg">
+<label for="color-bg">background</label>
+<div class="color-inputs"><input type="color" id="swatch-bg" aria-label="background swatch" data-color-swatch="bg">
+<input type="text" id="color-bg" data-color-hex="bg" aria-label="background hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="bg" aria-label="Reset background" title="Reset background">↺</button></div></div><div class="color-row" data-color-row="text">
+<label for="color-text">reading text</label>
+<div class="color-inputs"><input type="color" id="swatch-text" aria-label="reading text swatch" data-color-swatch="text">
+<input type="text" id="color-text" data-color-hex="text" aria-label="reading text hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="text" aria-label="Reset reading text" title="Reset reading text">↺</button></div></div><div class="color-row" data-color-row="muted">
+<label for="color-muted">secondary text</label>
+<div class="color-inputs"><input type="color" id="swatch-muted" aria-label="secondary text swatch" data-color-swatch="muted">
+<input type="text" id="color-muted" data-color-hex="muted" aria-label="secondary text hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="muted" aria-label="Reset secondary text" title="Reset secondary text">↺</button></div></div><div class="color-row" data-color-row="accent">
+<label for="color-accent">interface accent</label>
+<div class="color-inputs"><input type="color" id="swatch-accent" aria-label="interface accent swatch" data-color-swatch="accent">
+<input type="text" id="color-accent" data-color-hex="accent" aria-label="interface accent hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="accent" aria-label="Reset interface accent" title="Reset interface accent">↺</button></div></div><div class="color-row" data-color-row="correct">
+<label for="color-correct">correct</label>
+<div class="color-inputs"><input type="color" id="swatch-correct" aria-label="correct swatch" data-color-swatch="correct">
+<input type="text" id="color-correct" data-color-hex="correct" aria-label="correct hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="correct" aria-label="Reset correct" title="Reset correct">↺</button></div></div><div class="color-row" data-color-row="wrong">
+<label for="color-wrong">wrong</label>
+<div class="color-inputs"><input type="color" id="swatch-wrong" aria-label="wrong swatch" data-color-swatch="wrong">
+<input type="text" id="color-wrong" data-color-hex="wrong" aria-label="wrong hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="wrong" aria-label="Reset wrong" title="Reset wrong">↺</button></div></div></div><details class="advanced-colors"><summary>more colors</summary><div class="advanced-color-grid"><div class="color-row" data-color-row="raised">
+<label for="color-raised">buttons &amp; controls</label>
+<div class="color-inputs"><input type="color" id="swatch-raised" aria-label="buttons &amp; controls swatch" data-color-swatch="raised">
+<input type="text" id="color-raised" data-color-hex="raised" aria-label="buttons &amp; controls hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="raised" aria-label="Reset buttons &amp; controls" title="Reset buttons &amp; controls">↺</button></div></div><div class="color-row" data-color-row="correct-ink">
+<label for="color-correct-ink">correct text &amp; numbers</label>
+<div class="color-inputs"><input type="color" id="swatch-correct-ink" aria-label="correct text &amp; numbers swatch" data-color-swatch="correct-ink">
+<input type="text" id="color-correct-ink" data-color-hex="correct-ink" aria-label="correct text &amp; numbers hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="correct-ink" aria-label="Reset correct text &amp; numbers" title="Reset correct text &amp; numbers">↺</button></div></div><div class="color-row" data-color-row="edge">
+<label for="color-edge">paper outline</label>
+<div class="color-inputs"><input type="color" id="swatch-edge" aria-label="paper outline swatch" data-color-swatch="edge">
+<input type="text" id="color-edge" data-color-hex="edge" aria-label="paper outline hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge" aria-label="Reset paper outline" title="Reset paper outline">↺</button></div></div><div class="color-row" data-color-row="edge-soft">
+<label for="color-edge-soft">soft dividers</label>
+<div class="color-inputs"><input type="color" id="swatch-edge-soft" aria-label="soft dividers swatch" data-color-swatch="edge-soft">
+<input type="text" id="color-edge-soft" data-color-hex="edge-soft" aria-label="soft dividers hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge-soft" aria-label="Reset soft dividers" title="Reset soft dividers">↺</button></div><label class="color-opacity">opacity<input type="range" min="0" max="100" step="0.1" data-color-alpha="edge-soft" aria-label="soft dividers opacity"><output></output></label></div><div class="color-row" data-color-row="edge-strong">
+<label for="color-edge-strong">strong borders</label>
+<div class="color-inputs"><input type="color" id="swatch-edge-strong" aria-label="strong borders swatch" data-color-swatch="edge-strong">
+<input type="text" id="color-edge-strong" data-color-hex="edge-strong" aria-label="strong borders hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="edge-strong" aria-label="Reset strong borders" title="Reset strong borders">↺</button></div><label class="color-opacity">opacity<input type="range" min="0" max="100" step="0.1" data-color-alpha="edge-strong" aria-label="strong borders opacity"><output></output></label></div><div class="color-row" data-color-row="logo-secondary">
+<label for="color-logo-secondary">wordmark · JLPT</label>
+<div class="color-inputs"><input type="color" id="swatch-logo-secondary" aria-label="wordmark · JLPT swatch" data-color-swatch="logo-secondary">
+<input type="text" id="color-logo-secondary" data-color-hex="logo-secondary" aria-label="wordmark · JLPT hex" spellcheck="false" autocomplete="off" maxlength="9" aria-describedby="color-format-help">
+<button type="button" data-color-reset="logo-secondary" aria-label="Reset wordmark · JLPT" title="Reset wordmark · JLPT">↺</button></div></div></div><div class="fill-opacity-controls"><h4>fill opacity</h4><p>Applies to correct and wrong answers.</p><div class="fill-opacity-row"><label for="opacity-cell-fill">cell fill<output id="opacity-cell-fill-output">11%</output></label><div><input id="opacity-cell-fill" type="range" min="0" max="100" step="1" value="11" data-fill-opacity="cell-fill" aria-label="cell fill opacity"><button type="button" data-fill-reset="cell-fill" aria-label="Reset cell fill opacity" title="Reset cell fill opacity">↺</button></div></div><div class="fill-opacity-row"><label for="opacity-fill">fill style<output id="opacity-fill-output">30%</output></label><div><input id="opacity-fill" type="range" min="0" max="100" step="1" value="30" data-fill-opacity="fill" aria-label="fill style opacity"><button type="button" data-fill-reset="fill" aria-label="Reset fill style opacity" title="Reset fill style opacity">↺</button></div></div></div></details></aside></div></section><section data-settings="browser"><div class="setting-row js-only"><div><h3>remember this browser</h3><p id="save-status">Saving is on by default. No account required.</p></div><label class="switch"><input id="remember" type="checkbox" checked>save preferences, answers and position</label></div><div class="button-row browser-actions js-only"><button id="reset-preferences" type="button">reset preferences</button><button id="forget" type="button">forget saved data</button></div><div class="developer-only developer-settings"><h3>developer mode</h3><p>Principal differences and editorial cases are visible. This local switch is not authentication.</p><button id="disable-dev" type="button">hide developer tools</button></div><div class="settings-about"><button type="button" id="developer-unlock" class="js-only" title="astraJLPT build information">astraJLPT · 2020–2026 collection</button><span id="developer-hint" role="status"></span></div></section></div></details></header><main id="content" class="review-page"><div class="review-content"><a href="../levels/N3.html">← N3 papers</a><h1>N3 · July 2018</h1><p>Uncertainty index: <strong>2026</strong> · 8 differences · 7 unresolved · 0 provisional fixes</p><p>Evidence base 2000 + source concerns 26 = 2026. Concerns are uncapped; browsing order uses evidence tier before concern points.</p><p>This is an editorial evidence assessment, not a probability, an error rate or a practice score.</p><details><summary>Assessment evidence and original source scores</summary><pre>{
+  &quot;unit&quot;: &quot;N3_07_2018&quot;,
+  &quot;sample&quot;: false,
+  &quot;year&quot;: 2018,
+  &quot;month&quot;: 7,
+  &quot;evidence_base&quot;: 2000,
+  &quot;evidence_tier&quot;: 4,
+  &quot;concern_points&quot;: 26,
+  &quot;index&quot;: 2026,
+  &quot;concern_counts&quot;: {
+    &quot;metadata_flags&quot;: 1,
+    &quot;missing_units&quot;: 1,
+    &quot;major_defects&quot;: 0,
+    &quot;minor_defects&quot;: 5,
+    &quot;uncertain_fields&quot;: 4
+  },
+  &quot;principal_history&quot;: {
+    &quot;unit&quot;: &quot;N3_07_2018&quot;,
+    &quot;level&quot;: &quot;N3&quot;,
+    &quot;year&quot;: 2018,
+    &quot;month&quot;: 7,
+    &quot;principal_path&quot;: &quot;src/Yuuki Bui/Đề thi N3 các năm Yuuki Bùi/N3 7-2018/Đề N3 7-2018.pdf&quot;,
+    &quot;principal_sha256&quot;: &quot;7f7773f91857c143ffddd131dfc99e7178239effcba23a6c23f2ca0ab54b54ef&quot;,
+    &quot;initial_tier&quot;: 1,
+    &quot;written_physical_pages&quot;: &quot;2-11&quot;,
+    &quot;review_status&quot;: &quot;complete_written_review&quot;,
+    &quot;provenance_status&quot;: &quot;known_reconstruction&quot;,
+    &quot;provenance_points&quot;: 200,
+    &quot;metadata_flags&quot;: 1,
+    &quot;missing_units&quot;: 1,
+    &quot;major_defects&quot;: 0,
+    &quot;minor_defects&quot;: 5,
+    &quot;uncertain_fields&quot;: 4,
+    &quot;uncertainty_index&quot;: 226,
+    &quot;score_evidence&quot;: [
+      {
+        &quot;id&quot;: &quot;N3_07_2018-S-001&quot;,
+        &quot;kind&quot;: &quot;metadata_flags&quot;,
+        &quot;item_id&quot;: null,
+        &quot;field&quot;: &quot;&quot;,
+        &quot;locator&quot;: &quot;Cover p1&quot;,
+        &quot;evidence&quot;: &quot;One inconsistent cover-template group: Japanese and English claimed page counts differ and exceed the actual fourteen pages; cover timing is not a reliable section allocation.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N3_07_2018-S-002&quot;,
+        &quot;kind&quot;: &quot;missing_units&quot;,
+        &quot;item_id&quot;: null,
+        &quot;field&quot;: &quot;&quot;,
+        &quot;locator&quot;: &quot;p5 before STAR Q14&quot;,
+        &quot;evidence&quot;: &quot;One absent original worked-example/answer-sheet demonstration block; scored questions and necessary contexts are present.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N3_07_2018-S-003&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-q011&quot;,
+        &quot;field&quot;: &quot;/stem&quot;,
+        &quot;locator&quot;: &quot;p5 Q11&quot;,
+        &quot;evidence&quot;: &quot;聞きたいとこ is a transposition; corroborated こと restores the intended wording.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N3_07_2018-S-004&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-b001&quot;,
+        &quot;field&quot;: &quot;/content&quot;,
+        &quot;locator&quot;: &quot;p6 cloze&quot;,
+        &quot;evidence&quot;: &quot;日本に来で is a voicing typo; both comparison layouts have 来て. Author disagreement shares this field and is not counted again.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N3_07_2018-S-005&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-b002&quot;,
+        &quot;field&quot;: &quot;/content&quot;,
+        &quot;locator&quot;: &quot;p7 letter&quot;,
+        &quot;evidence&quot;: &quot;Greeting こぶさた lacks voicing; both comparison layouts have ごぶさた. Uncertain email separator shares this field and is not counted again.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N3_07_2018-S-006&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-q026&quot;,
+        &quot;field&quot;: &quot;/options/3&quot;,
+        &quot;locator&quot;: &quot;p7 Q26 option4&quot;,
+        &quot;evidence&quot;: &quot;分に関係のある数字 lacks 自, visibly present in the alternate/book and native choices; spelling repair leaves the intended wrong arithmetic choice intact.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N3_07_2018-S-007&quot;,
+        &quot;kind&quot;: &quot;minor_defects&quot;,
+        &quot;item_id&quot;: &quot;reading-b008&quot;,
+        &quot;field&quot;: &quot;/content/html&quot;,
+        &quot;locator&quot;: &quot;p10 garden passage&quot;,
+        &quot;evidence&quot;: &quot;子とも has lost voicing in a children’s-education clause; inherited 子ども repairs spelling without changing the task.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N3_07_2018-S-008&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;vocab-q001&quot;,
+        &quot;field&quot;: &quot;/stem/html&quot;,
+        &quot;locator&quot;: &quot;p2 V1&quot;,
+        &quot;evidence&quot;: &quot;ありました versus ありますよ; both coherent sentences.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N3_07_2018-S-009&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;reading-q006&quot;,
+        &quot;field&quot;: &quot;/options/3&quot;,
+        &quot;locator&quot;: &quot;p5 Q6&quot;,
+        &quot;evidence&quot;: &quot;Positive versus negative adjective inside an intentionally wrong distractor.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N3_07_2018-S-010&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;reading-q012&quot;,
+        &quot;field&quot;: &quot;/stem&quot;,
+        &quot;locator&quot;: &quot;p5 Q12&quot;,
+        &quot;evidence&quot;: &quot;林 versus 森, arbitrary speaker name.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;N3_07_2018-S-011&quot;,
+        &quot;kind&quot;: &quot;uncertain_fields&quot;,
+        &quot;item_id&quot;: &quot;reading-q021&quot;,
+        &quot;field&quot;: &quot;/options/2&quot;,
+        &quot;locator&quot;: &quot;p6 Q21&quot;,
+        &quot;evidence&quot;: &quot;使うようになっています versus 使うことになっています; native explanation also conflicts with its option.&quot;
+      }
+    ],
+    &quot;assessed_on&quot;: &quot;2026-10-05&quot;,
+    &quot;method_version&quot;: 1,
+    &quot;provenance_basis&quot;: &quot;Positive recomposition evidence: Chinese vocabulary/reading part labels, compressed distributor-pagination replacing booklet divisions, missing STAR worked example, and a mismatched cover template. This is not inferred merely from sharp fonts or an uploader name. All available witnesses are secondary and no issuer custody is established.&quot;
+  },
+  &quot;evidence&quot;: []
+}</pre></details><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N3_07_2018.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span><ul></ul><div class="review-controls"><label>Show <select id="review-filter"><option value="all">All records</option><option value="difference">Principal differences</option><option value="unresolved">Unresolved cases</option><option value="provisional_fix">Provisional fixes</option></select></label><label>Find <input id="review-search" type="search" placeholder="Item, wording, evidence…"></label></div><p id="review-count" class="control-help" role="status"></p><section class="review-group" id="review-coverage" data-kinds="unresolved"><div class="review-group-heading"><h2>Paper coverage</h2><a href="../papers/N3_07_2018.html#content">Open in paper →</a></div><div class="review-record" id="unresolved_cases-N3_07_2018-unit-gap"><div class="review-label">Unresolved ·  · low</div><div class="comparison"><div><h4>Alternative</h4><pre>No alternative recorded</pre></div><div><h4>Editorial</h4><pre>Not recorded</pre></div></div><p>The compilation is a relevant recovery lead, not a recovered original example. Its malformed worked sequence and unestablished insertion history do not justify manufacturing the missing block. The user classified practice coverage by scored questions and required contexts on 9 October 2026. This example gap remains an open source-preservation case; it does not make the practice paper partial. No example was inserted into schema-v2 editorial content.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>A preserved original worked-example page, or an adequately sourced complete reproduction, could settle the missing coverage.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N3_07_2018.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">All 74 scored written questions, their choices and required contexts are available and gradable. The original STAR worked example and answer-sheet demonstration before grammar Q14 remain unrecovered. No scored question is omitted.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=5): <code>additional-assets/principals/N3_07_2018.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Before STAR Q14<p>Instruction followed directly by Q14, without a worked example.</p></li><li><span class="principal-repository-source">Principal source (page=5): <code>additional-assets/principals/N3_07_2018.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Before STAR Q14<p>No example block.</p></li><li><span class="principal-repository-source">Principal source (page=7): <code>additional-assets/principals/N3_07_2018.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Before STAR Q14<p>No example block.</p></li><li><a href="https://www.scribd.com/document/803893085/%C4%90%E1%BB%81-thi-N3#page=318" target="_blank" rel="noopener">TUYỂN TẬP ĐỀ THI JLPT N3 — Nhật Ngữ Shin compilation, Scribd 803893085</a> · July 2018 title at viewer p314; worked example before Q14 at p318, printed p5<p>Retyped example: choices テレビ / 見ている / を / 人; step1 repeats the four unassembled choices below empty slots; the answer-sheet illustration marks 2. The following page continues Q15–18.</p></li></ul><details><summary>Full published record · unresolved_cases-N3_07_2018-unit-gap</summary><pre>{
+  &quot;case_id&quot;: &quot;N3_07_2018-unit-gap&quot;,
+  &quot;unit&quot;: &quot;N3_07_2018&quot;,
+  &quot;item_id&quot;: null,
+  &quot;field&quot;: &quot;&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;low&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: null,
+  &quot;context&quot;: &quot;All 74 scored written questions, their choices and required contexts are available and gradable. The original STAR worked example and answer-sheet demonstration before grammar Q14 remain unrecovered. No scored question is omitted.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: null,
+      &quot;assessment&quot;: &quot;The original worked sequence and demonstration are unavailable.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;あそこで _ _ ★ _ は山田さんです。 / テレビ・見ている・を・人&quot;,
+      &quot;assessment&quot;: &quot;A secondary compilation places this generic example here, but its worked solution repeats the unsorted choices and does not recover the original layout.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;Đề N3 7-2018.pdf — Yuuki Bùi copy&quot;,
+      &quot;sha256&quot;: &quot;7f7773f91857c143ffddd131dfc99e7178239effcba23a6c23f2ca0ab54b54ef&quot;,
+      &quot;physical_pages&quot;: [
+        5
+      ],
+      &quot;locator&quot;: &quot;Before STAR Q14&quot;,
+      &quot;reading&quot;: &quot;Instruction followed directly by Q14, without a worked example.&quot;,
+      &quot;lineage&quot;: &quot;Secondary reproduction; shared ancestry is possible and issuer custody is unestablished.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2018年07月N3.pdf — 14-page compilation&quot;,
+      &quot;sha256&quot;: &quot;87a24e023f67a1f64ab8c0b44eeabf6c59f146b274c0db950f3ad8dc08a67302&quot;,
+      &quot;physical_pages&quot;: [
+        5
+      ],
+      &quot;locator&quot;: &quot;Before STAR Q14&quot;,
+      &quot;reading&quot;: &quot;No example block.&quot;,
+      &quot;lineage&quot;: &quot;Secondary reproduction; shared ancestry is possible and issuer custody is unestablished.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2018年7月N3试卷_解析_听力原文_高清扫描.PDF — 32-page book compilation&quot;,
+      &quot;sha256&quot;: &quot;80c838294b0b62631b44f1142eb49df99d72460bdbc4dc5623670566b37fb397&quot;,
+      &quot;physical_pages&quot;: [
+        7
+      ],
+      &quot;locator&quot;: &quot;Before STAR Q14&quot;,
+      &quot;reading&quot;: &quot;No example block.&quot;,
+      &quot;lineage&quot;: &quot;Secondary reproduction; shared ancestry is possible and issuer custody is unestablished.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;TUYỂN TẬP ĐỀ THI JLPT N3 — Nhật Ngữ Shin compilation, Scribd 803893085&quot;,
+      &quot;url&quot;: &quot;https://www.scribd.com/document/803893085/%C4%90%E1%BB%81-thi-N3#page=318&quot;,
+      &quot;physical_pages&quot;: [
+        314,
+        318,
+        319
+      ],
+      &quot;locator&quot;: &quot;July 2018 title at viewer p314; worked example before Q14 at p318, printed p5&quot;,
+      &quot;reading&quot;: &quot;Retyped example: choices テレビ / 見ている / を / 人; step1 repeats the four unassembled choices below empty slots; the answer-sheet illustration marks 2. The following page continues Q15–18.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;The compilation is a relevant recovery lead, not a recovered original example. Its malformed worked sequence and unestablished insertion history do not justify manufacturing the missing block. The user classified practice coverage by scored questions and required contexts on 9 October 2026. This example gap remains an open source-preservation case; it does not make the practice paper partial. No example was inserted into schema-v2 editorial content.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Reviewed every available principal written page and materially different complete comparison.&quot;,
+    &quot;Checked local STAR pages in three layouts, native and archived content; no complete original example found.&quot;,
+    &quot;Focused web search and browser inspection located the secondary example at viewer pp314/318/319 and verified its malformed worked sequence.&quot;,
+    &quot;JSMORI linked PDF was found, but web screenshot retrieval failed; its unseen contents are not claimed absent.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;A preserved original worked-example page, or an adequately sourced complete reproduction, could settle the missing coverage.&quot;
+}</pre></details></div></section><section class="review-group" id="review-vocab-q001" data-kinds="unresolved"><div class="review-group-heading"><h2>vocab-q001</h2><a href="../papers/N3_07_2018.html#vocab-q001">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">1. <u>塩</u>は台所にありました。<ol><li>あぶら</li><li>まめ</li><li>しお</li><li>こめ</li></ol><p>Editorial key: 3</p></div></details><div class="review-record" id="unresolved_cases-N3_07_2018-vocab-q001-stem-html"><div class="review-label">Unresolved · /stem/html · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>塩は台所にありま<mark class="diff-old">すよ</mark>。</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">1. &lt;u&gt;</mark>塩<mark class="diff-new">&lt;/u&gt;</mark>は台所にありま<mark class="diff-new">した</mark>。</pre></div></div><p>Retain the current coherent wording supported by the selected source and the book transcription; tense cannot be established by answer logic.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>An original sitting page is needed to distinguish the two coherent sentence forms.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N3_07_2018.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Vocabulary reading item about salt in the kitchen.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=2): <code>additional-assets/principals/N3_07_2018.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Vocabulary Q1<p>塩は台所にありました。</p></li><li><span class="principal-repository-source">Principal source (page=2): <code>additional-assets/principals/N3_07_2018.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Vocabulary Q1<p>塩は台所にありますよ。</p></li><li><span class="principal-repository-source">Principal source (page=3): <code>additional-assets/principals/N3_07_2018.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Vocabulary Q1<p>塩は台所にありました。</p></li></ul><details><summary>Full published record · unresolved_cases-N3_07_2018-vocab-q001-stem-html</summary><pre>{
+  &quot;case_id&quot;: &quot;N3_07_2018-vocab-q001-stem-html&quot;,
+  &quot;unit&quot;: &quot;N3_07_2018&quot;,
+  &quot;item_id&quot;: &quot;vocab-q001&quot;,
+  &quot;field&quot;: &quot;/stem/html&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;1. &lt;u&gt;塩&lt;/u&gt;は台所にありました。&quot;,
+  &quot;context&quot;: &quot;Vocabulary reading item about salt in the kitchen.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;塩は台所にありますよ。&quot;,
+      &quot;assessment&quot;: &quot;The 14-page compilation uses this present-tense version; the tested reading is unchanged.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;Đề N3 7-2018.pdf — Yuuki Bùi copy&quot;,
+      &quot;sha256&quot;: &quot;7f7773f91857c143ffddd131dfc99e7178239effcba23a6c23f2ca0ab54b54ef&quot;,
+      &quot;physical_pages&quot;: [
+        2
+      ],
+      &quot;locator&quot;: &quot;Vocabulary Q1&quot;,
+      &quot;reading&quot;: &quot;塩は台所にありました。&quot;,
+      &quot;lineage&quot;: &quot;Secondary reproduction; shared ancestry is possible and issuer custody is unestablished.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2018年07月N3.pdf — 14-page compilation&quot;,
+      &quot;sha256&quot;: &quot;87a24e023f67a1f64ab8c0b44eeabf6c59f146b274c0db950f3ad8dc08a67302&quot;,
+      &quot;physical_pages&quot;: [
+        2
+      ],
+      &quot;locator&quot;: &quot;Vocabulary Q1&quot;,
+      &quot;reading&quot;: &quot;塩は台所にありますよ。&quot;,
+      &quot;lineage&quot;: &quot;Secondary reproduction; shared ancestry is possible and issuer custody is unestablished.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2018年7月N3试卷_解析_听力原文_高清扫描.PDF — 32-page book compilation&quot;,
+      &quot;sha256&quot;: &quot;80c838294b0b62631b44f1142eb49df99d72460bdbc4dc5623670566b37fb397&quot;,
+      &quot;physical_pages&quot;: [
+        3
+      ],
+      &quot;locator&quot;: &quot;Vocabulary Q1&quot;,
+      &quot;reading&quot;: &quot;塩は台所にありました。&quot;,
+      &quot;lineage&quot;: &quot;Secondary reproduction; shared ancestry is possible and issuer custody is unestablished.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Retain the current coherent wording supported by the selected source and the book transcription; tense cannot be established by answer logic.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Compared all three complete question settings and the native item; all choices test 塩.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;An original sitting page is needed to distinguish the two coherent sentence forms.&quot;
+}</pre></details></div></section><section class="review-group" id="review-reading-q006" data-kinds="unresolved"><div class="review-group-heading"><h2>reading-q006</h2><a href="../papers/N3_07_2018.html#reading-q006">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">6. 自分の会社をつくったと言うとよく<ruby data-rubi-id="rr4-4853731a27902211e29f" data-rubi-origin="project_rubi_restore">驚<rt>おどろ</rt></ruby>かれるが、会社をつくることは<ruby data-rubi-id="rr4-1015167bf78c722e5c91" data-rubi-origin="project_rubi_restore">必<rt>かなら</rt></ruby>ずしも（ ）。<ol><li><ruby data-rubi-id="rr4-108766a0c7455c6b9a2f" data-rubi-origin="project_rubi_restore">難<rt>むずか</rt></ruby>しいに<ruby data-rubi-id="rr4-1f6c5b48f6ecb8f874df" data-rubi-origin="project_rubi_restore">違<rt>ちが</rt></ruby>いない</li><li><ruby data-rubi-id="rr4-350538b013378ff322db" data-rubi-origin="project_rubi_restore">難<rt>むずか</rt></ruby>しいはずがない</li><li><ruby data-rubi-id="rr4-4954b3307f9cae136f88" data-rubi-origin="project_rubi_restore">難<rt>むずか</rt></ruby>しいことではない</li><li>難しいかもしれない</li></ol><p>Editorial key: 3</p></div></details><div class="review-record" id="unresolved_cases-N3_07_2018-reading-q006-options-3"><div class="review-label">Unresolved · /options/3 · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>難し<mark class="diff-old">くな</mark>いかもしれない</pre></div><div><h4>Editorial</h4><pre>難しいかもしれない</pre></div></div><p>Retain the positive-adjective distractor. Option3 remains the direct 必ずしも…ではない completion, but that does not prove the historic distractor.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>The exact distractor polarity in the original remains unverified.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N3_07_2018.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Grammar Q6: 必ずしも before a judgment about forming a company.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=5): <code>additional-assets/principals/N3_07_2018.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q6 option4<p>難しいかもしれない</p></li><li><span class="principal-repository-source">Principal source (page=4): <code>additional-assets/principals/N3_07_2018.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q6 option4<p>難しくないかもしれない</p></li><li><span class="principal-repository-source">Principal source (page=6): <code>additional-assets/principals/N3_07_2018.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q6 option4<p>難しいかもしれない</p></li></ul><details><summary>Full published record · unresolved_cases-N3_07_2018-reading-q006-options-3</summary><pre>{
+  &quot;case_id&quot;: &quot;N3_07_2018-reading-q006-options-3&quot;,
+  &quot;unit&quot;: &quot;N3_07_2018&quot;,
+  &quot;item_id&quot;: &quot;reading-q006&quot;,
+  &quot;field&quot;: &quot;/options/3&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;難しいかもしれない&quot;,
+  &quot;context&quot;: &quot;Grammar Q6: 必ずしも before a judgment about forming a company.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;難しくないかもしれない&quot;,
+      &quot;assessment&quot;: &quot;Printed in the 14-page compilation; also an intentionally incorrect answer after 必ずしも in this item.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;Đề N3 7-2018.pdf — Yuuki Bùi copy&quot;,
+      &quot;sha256&quot;: &quot;7f7773f91857c143ffddd131dfc99e7178239effcba23a6c23f2ca0ab54b54ef&quot;,
+      &quot;physical_pages&quot;: [
+        5
+      ],
+      &quot;locator&quot;: &quot;Q6 option4&quot;,
+      &quot;reading&quot;: &quot;難しいかもしれない&quot;,
+      &quot;lineage&quot;: &quot;Secondary reproduction; shared ancestry is possible and issuer custody is unestablished.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2018年07月N3.pdf — 14-page compilation&quot;,
+      &quot;sha256&quot;: &quot;87a24e023f67a1f64ab8c0b44eeabf6c59f146b274c0db950f3ad8dc08a67302&quot;,
+      &quot;physical_pages&quot;: [
+        4
+      ],
+      &quot;locator&quot;: &quot;Q6 option4&quot;,
+      &quot;reading&quot;: &quot;難しくないかもしれない&quot;,
+      &quot;lineage&quot;: &quot;Secondary reproduction; shared ancestry is possible and issuer custody is unestablished.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2018年7月N3试卷_解析_听力原文_高清扫描.PDF — 32-page book compilation&quot;,
+      &quot;sha256&quot;: &quot;80c838294b0b62631b44f1142eb49df99d72460bdbc4dc5623670566b37fb397&quot;,
+      &quot;physical_pages&quot;: [
+        6
+      ],
+      &quot;locator&quot;: &quot;Q6 option4&quot;,
+      &quot;reading&quot;: &quot;難しいかもしれない&quot;,
+      &quot;lineage&quot;: &quot;Secondary reproduction; shared ancestry is possible and issuer custody is unestablished.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Retain the positive-adjective distractor. Option3 remains the direct 必ずしも…ではない completion, but that does not prove the historic distractor.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Compared all four choices and the three settings; verified key3 and negative-construction logic.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;The exact distractor polarity in the original remains unverified.&quot;
+}</pre></details></div></section><section class="review-group" id="review-reading-q011" data-kinds="difference"><div class="review-group-heading"><h2>reading-q011</h2><a href="../papers/N3_07_2018.html#reading-q011">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">11. 今日の夕方、聞きたいことがあって<ruby data-rubi-id="rr1-3a89bf051d2aae051216" data-rubi-origin="project_rubi_restore">営業部<rt>えいぎょうぶ</rt></ruby>の南さんのところに行ったが、もう（ ）いなかった。<ol><li>帰っていく前に</li><li>帰っている間は</li><li>帰ってきたまま</li><li>帰ってしまっていて</li></ol><p>Editorial key: 4</p></div></details><div class="review-record" id="principal_differences-N3_07_2018-PD-001"><div class="review-label">Principal difference · /stem · high</div><div class="comparison"><div><h4>Principal</h4><pre>聞きたいと<mark class="diff-old">こ</mark>があって</pre></div><div><h4>Editorial</h4><pre>聞きたい<mark class="diff-new">こ</mark>とがあって</pre></div></div><p>Repair of a transposition: the 14-page and book witnesses both have こと, agreeing with the meaning of asking a question.</p><span class="principal-repository-source">Principal source (page=5): <code>additional-assets/principals/N3_07_2018.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Q11 first clause</span><details><summary>Full published record · principal_differences-N3_07_2018-PD-001</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N3_07_2018-PD-001&quot;,
+  &quot;unit&quot;: &quot;N3_07_2018&quot;,
+  &quot;item_id&quot;: &quot;reading-q011&quot;,
+  &quot;field&quot;: &quot;/stem&quot;,
+  &quot;current_value&quot;: &quot;11. 今日の夕方、聞きたいことがあって営業部の南さんのところに行ったが、もう（ ）いなかった。&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;Đề N3 7-2018.pdf — Yuuki Bùi copy&quot;,
+    &quot;sha256&quot;: &quot;7f7773f91857c143ffddd131dfc99e7178239effcba23a6c23f2ca0ab54b54ef&quot;,
+    &quot;physical_pages&quot;: [
+      5
+    ],
+    &quot;locator&quot;: &quot;Q11 first clause&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;聞きたいとこがあって&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;聞きたいことがあって&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Repair of a transposition: the 14-page and book witnesses both have こと, agreeing with the meaning of asking a question.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-q012" data-kinds="unresolved"><div class="review-group-heading"><h2>reading-q012</h2><a href="../papers/N3_07_2018.html#reading-q012">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">12. （公園で）<br/>山下「この木は本当に大きいですね。」<br/><br/>林「そうですね。ここまで（ ） 20年ぐらいかかったそうですよ。」<ol><li>大きくなるのに</li><li>大きいようだし</li><li>大きくできて</li><li>大きいほうがよければ</li></ol><p>Editorial key: 1</p></div></details><div class="review-record" id="unresolved_cases-N3_07_2018-reading-q012-stem"><div class="review-label">Unresolved · /stem · medium</div><div class="comparison"><div><h4>Alternative</h4><pre><mark class="diff-old">森</mark>「そうですね。ここまで<mark class="diff-old">(</mark> <mark class="diff-old">)</mark>20年ぐらいかかったそうですよ。」</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">12. （公園で）
+山下「この木は本当に大きいですね。」
+
+林</mark>「そうですね。ここまで<mark class="diff-new">（</mark> <mark class="diff-new">） </mark>20年ぐらいかかったそうですよ。」</pre></div></div><p>Retain 林 from the selected source and book setting; the speaker name is arbitrary and grammar cannot discriminate.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>No original page establishes 林 versus 森.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N3_07_2018.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">The park dialogue naming the second speaker.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=5): <code>additional-assets/principals/N3_07_2018.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q12 second speaker<p>林</p></li><li><span class="principal-repository-source">Principal source (page=5): <code>additional-assets/principals/N3_07_2018.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q12 second speaker<p>森</p></li><li><span class="principal-repository-source">Principal source (page=6): <code>additional-assets/principals/N3_07_2018.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q12 second speaker<p>林</p></li></ul><details><summary>Full published record · unresolved_cases-N3_07_2018-reading-q012-stem</summary><pre>{
+  &quot;case_id&quot;: &quot;N3_07_2018-reading-q012-stem&quot;,
+  &quot;unit&quot;: &quot;N3_07_2018&quot;,
+  &quot;item_id&quot;: &quot;reading-q012&quot;,
+  &quot;field&quot;: &quot;/stem&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;12. （公園で）\n山下「この木は本当に大きいですね。」\n\n林「そうですね。ここまで（ ） 20年ぐらいかかったそうですよ。」&quot;,
+  &quot;context&quot;: &quot;The park dialogue naming the second speaker.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;森「そうですね。ここまで( )20年ぐらいかかったそうですよ。」&quot;,
+      &quot;assessment&quot;: &quot;The 14-page compilation names 森 instead of 林.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;Đề N3 7-2018.pdf — Yuuki Bùi copy&quot;,
+      &quot;sha256&quot;: &quot;7f7773f91857c143ffddd131dfc99e7178239effcba23a6c23f2ca0ab54b54ef&quot;,
+      &quot;physical_pages&quot;: [
+        5
+      ],
+      &quot;locator&quot;: &quot;Q12 second speaker&quot;,
+      &quot;reading&quot;: &quot;林&quot;,
+      &quot;lineage&quot;: &quot;Secondary reproduction; shared ancestry is possible and issuer custody is unestablished.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2018年07月N3.pdf — 14-page compilation&quot;,
+      &quot;sha256&quot;: &quot;87a24e023f67a1f64ab8c0b44eeabf6c59f146b274c0db950f3ad8dc08a67302&quot;,
+      &quot;physical_pages&quot;: [
+        5
+      ],
+      &quot;locator&quot;: &quot;Q12 second speaker&quot;,
+      &quot;reading&quot;: &quot;森&quot;,
+      &quot;lineage&quot;: &quot;Secondary reproduction; shared ancestry is possible and issuer custody is unestablished.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2018年7月N3试卷_解析_听力原文_高清扫描.PDF — 32-page book compilation&quot;,
+      &quot;sha256&quot;: &quot;80c838294b0b62631b44f1142eb49df99d72460bdbc4dc5623670566b37fb397&quot;,
+      &quot;physical_pages&quot;: [
+        6
+      ],
+      &quot;locator&quot;: &quot;Q12 second speaker&quot;,
+      &quot;reading&quot;: &quot;林&quot;,
+      &quot;lineage&quot;: &quot;Secondary reproduction; shared ancestry is possible and issuer custody is unestablished.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Retain 林 from the selected source and book setting; the speaker name is arbitrary and grammar cannot discriminate.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Compared the complete dialogue in three sources and confirmed all choices/key1.&quot;,
+    &quot;5 November 2026: Public snapshot rebound to the earlier, verified current field. Only the historical presentation edit is replayed; this snapshot repair does not change the original witness or its confidence.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;No original page establishes 林 versus 森.&quot;
+}</pre></details></div></section><section class="review-group" id="review-reading-b001" data-kinds="difference unresolved"><div class="review-group-heading"><h2>reading-b001</h2><a href="../papers/N3_07_2018.html#reading-b001">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">以下は、<ruby data-rubi-id="rr4-ffca5ecd829ee3f5e8ca" data-rubi-origin="project_rubi_restore">留学生<rt>りゅうがくせい</rt></ruby>の作文である。
+
+<ruby data-rubi-id="rr4-c5cabc18a10cc742a1cf" data-rubi-origin="project_rubi_restore">箸<rt>はし</rt></ruby>
+ハーバート マーテイン
+
+私は<ruby data-rubi-id="rr4-3c02e0a4a0e700006f5d" data-rubi-origin="project_rubi_restore">箸<rt>はし</rt></ruby>を使うのが<ruby data-rubi-id="rr4-bcac04380faac2f3e8c6" data-rubi-origin="project_rubi_restore">苦手<rt>にがて</rt></ruby>でした。<ruby data-rubi-id="rr4-e37501d56e79e9e3f371" data-rubi-origin="project_rubi_restore">大好<rt>だいす</rt></ruby>きなラーメンもフォークで食べていました。でも、日本のラーメン<ruby data-rubi-id="rr4-5f019ac35eb723b726b3" data-rubi-origin="project_rubi_restore">屋<rt>や</rt></ruby>には<ruby data-rubi-id="rr4-515da007169fd826b064" data-rubi-origin="project_rubi_restore">箸<rt>はし</rt></ruby> 【19】 ないことが多く、食べるのが<ruby data-rubi-id="rr4-c66ea418b8b8cf9b9378" data-rubi-origin="project_rubi_restore">大変<rt>たいへん</rt></ruby>でした。
+
+日本に来て2か月ぐらいたったころ、<ruby data-rubi-id="rr4-b1caf051b78ec429d0a1" data-rubi-origin="project_rubi_restore">箸<rt>はし</rt></ruby>の<ruby data-rubi-id="rr4-241e2f4ab3104b81caa3" data-rubi-origin="project_rubi_restore">専門店<rt>せんもんてん</rt></ruby>を見つけました。店に入ると、長さや太さ、<ruby data-rubi-id="rr4-94308df3dfa42896cc24" data-rubi-origin="project_rubi_restore">材料<rt>ざいりょう</rt></ruby>や色の違う<ruby data-rubi-id="rr4-11ae69990e6b5843a24a" data-rubi-origin="project_rubi_restore">箸<rt>はし</rt></ruby>が何百<ruby data-rubi-id="rr4-c62b67555de36d87486d" data-rubi-origin="project_rubi_restore">種類<rt>しゅるい</rt></ruby>もありました。その数に<ruby data-rubi-id="rr4-70f6f7a35581ab58c742" data-rubi-origin="project_rubi_restore">驚<rt>おどろ</rt></ruby>いていたら、店の人に、「どれでも<ruby data-rubi-id="rr4-f04c36b7633e3508125d" data-rubi-origin="project_rubi_restore">自由<rt>じゆう</rt></ruby>に持ってみてください。」と言われました。【20】、いくつか実際に持ってみました。その中に持ちやすい<ruby data-rubi-id="rr4-3213a30b30710f1cdc09" data-rubi-origin="project_rubi_restore">箸<rt>はし</rt></ruby>がありました。
+
+それまで、<ruby data-rubi-id="rr4-48287cb546c745ffa101" data-rubi-origin="project_rubi_restore">箸<rt>はし</rt></ruby>を使うのはめんどうくさいと思っていましたが、そのときは、「これで<ruby data-rubi-id="rr4-044e97c278cf104b1898" data-rubi-origin="project_rubi_restore">練習<rt>れんしゅう</rt></ruby>したら、<ruby data-rubi-id="rr4-5ad3678bc9d8277e0914" data-rubi-origin="project_rubi_restore">箸<rt>はし</rt></ruby>が上手に使えるようになるかもしれない」と思いました。私はその<ruby data-rubi-id="rr4-1ba6a9fba3fad1de6f51" data-rubi-origin="project_rubi_restore">箸<rt>はし</rt></ruby>を買って帰りました。
+
+それから毎日、家でその<ruby data-rubi-id="rr4-005ffe69999bea67c058" data-rubi-origin="project_rubi_restore">箸<rt>はし</rt></ruby>を【21】。
+1か月ぐらいたって慣れたところ、ラーメンを食べに行きました。すると、【22】<ruby data-rubi-id="rr4-4acbabe8b25648ceec00" data-rubi-origin="project_rubi_restore">箸<rt>はし</rt></ruby>も楽に使えるようになっていました。
+
+私はずっと、<ruby data-rubi-id="rr4-8f2db9f87c8c8bbdb628" data-rubi-origin="project_rubi_restore">箸<rt>はし</rt></ruby>をうまく使うことはあきらめていました。うまく使えるようになったのは、<ruby data-rubi-id="rr4-432ca075a9d7461065e1" data-rubi-origin="project_rubi_restore">専門店<rt>せんもんてん</rt></ruby>で買った【23】。今は前よりもラーメン屋に行くのが楽しみになりました。</div></details><div class="review-record" id="unresolved_cases-N3_07_2018-reading-b001-content"><div class="review-label">Unresolved · /content · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>ハーバート マーテ<mark class="diff-old">ィ</mark>ン</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">以下は、留学生の作文である。
+
+箸
+</mark>ハーバート マーテ<mark class="diff-new">イ</mark>ン<mark class="diff-new">
+
+私は箸を使うのが苦手でした。大好きなラーメンもフォークで食べていました。でも、日本のラーメン屋には箸 【19】 ないことが多く、食べるのが大変でした。
+
+日本に来て2か月ぐらいたったころ、箸の専門店を見つけました。店に入ると、長さや太さ、材料や色の違う箸</mark>…</pre></div></div><p>Preserve the principal’s full-size イ instead of normalizing a person’s name to a familiar romanization. Independent body repairs do not resolve the author spelling.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>Identity evidence or original print is needed to establish the name spelling.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N3_07_2018.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Title/author of the chopsticks cloze essay.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=6): <code>additional-assets/principals/N3_07_2018.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Author line<p>ハーバート マーテイン</p></li><li><span class="principal-repository-source">Principal source (page=5): <code>additional-assets/principals/N3_07_2018.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Author line<p>ハーバート マーティン</p></li><li><span class="principal-repository-source">Principal source (page=7): <code>additional-assets/principals/N3_07_2018.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Author line<p>ハーバート マーライン</p></li><li><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N3_07_2018.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · /sections/7/questions/0/title<p>ハーバート マーテイン</p></li></ul><details><summary>Full published record · unresolved_cases-N3_07_2018-reading-b001-content</summary><pre>{
+  &quot;case_id&quot;: &quot;N3_07_2018-reading-b001-content&quot;,
+  &quot;unit&quot;: &quot;N3_07_2018&quot;,
+  &quot;item_id&quot;: &quot;reading-b001&quot;,
+  &quot;field&quot;: &quot;/content&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;以下は、留学生の作文である。\n\n箸\nハーバート マーテイン\n\n私は箸を使うのが苦手でした。大好きなラーメンもフォークで食べていました。でも、日本のラーメン屋には箸 【19】 ないことが多く、食べるのが大変でした。\n\n日本に来て2か月ぐらいたったころ、箸の専門店を見つけました。店に入ると、長さや太さ、材料や色の違う箸が何百種類もありました。その数に驚いていたら、店の人に、「どれでも自由に持ってみてください。」と言われました。【20】、いくつか実際に持ってみました。その中に持ちやすい箸がありました。\n\nそれまで、箸を使うのはめんどうくさいと思っていましたが、そのときは、「これで練習したら、箸が上手に使えるようになるかもしれない」と思いました。私はその箸を買って帰りました。\n\nそれから毎日、家でその箸を【21】。\n1か月ぐらいたって慣れたところ、ラーメンを食べに行きました。すると、【22】箸も楽に使えるようになっていました。\n\n私はずっと、箸をうまく使うことはあきらめていました。うまく使えるようになったのは、専門店で買った【23】。今は前よりもラーメン屋に行くのが楽しみになりました。&quot;,
+  &quot;context&quot;: &quot;Title/author of the chopsticks cloze essay.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;ハーバート マーティン&quot;,
+      &quot;assessment&quot;: &quot;The 14-page compilation uses small ィ.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;ハーバート マーライン&quot;,
+      &quot;assessment&quot;: &quot;The book compilation has ラ rather than テ.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;Đề N3 7-2018.pdf — Yuuki Bùi copy&quot;,
+      &quot;sha256&quot;: &quot;7f7773f91857c143ffddd131dfc99e7178239effcba23a6c23f2ca0ab54b54ef&quot;,
+      &quot;physical_pages&quot;: [
+        6
+      ],
+      &quot;locator&quot;: &quot;Author line&quot;,
+      &quot;reading&quot;: &quot;ハーバート マーテイン&quot;,
+      &quot;lineage&quot;: &quot;Secondary reproduction; shared ancestry is possible and issuer custody is unestablished.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2018年07月N3.pdf — 14-page compilation&quot;,
+      &quot;sha256&quot;: &quot;87a24e023f67a1f64ab8c0b44eeabf6c59f146b274c0db950f3ad8dc08a67302&quot;,
+      &quot;physical_pages&quot;: [
+        5
+      ],
+      &quot;locator&quot;: &quot;Author line&quot;,
+      &quot;reading&quot;: &quot;ハーバート マーティン&quot;,
+      &quot;lineage&quot;: &quot;Secondary reproduction; shared ancestry is possible and issuer custody is unestablished.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2018年7月N3试卷_解析_听力原文_高清扫描.PDF — 32-page book compilation&quot;,
+      &quot;sha256&quot;: &quot;80c838294b0b62631b44f1142eb49df99d72460bdbc4dc5623670566b37fb397&quot;,
+      &quot;physical_pages&quot;: [
+        7
+      ],
+      &quot;locator&quot;: &quot;Author line&quot;,
+      &quot;reading&quot;: &quot;ハーバート マーライン&quot;,
+      &quot;lineage&quot;: &quot;Secondary reproduction; shared ancestry is possible and issuer custody is unestablished.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;munjaJLPT July 2018 N3 native question data&quot;,
+      &quot;sha256&quot;: &quot;379be9af77a934f5f9717eb5e8765fd0de3b876c48972435f37ebbf2c7378df0&quot;,
+      &quot;locator&quot;: &quot;/sections/7/questions/0/title&quot;,
+      &quot;reading&quot;: &quot;ハーバート マーテイン&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Preserve the principal’s full-size イ instead of normalizing a person’s name to a familiar romanization. Independent body repairs do not resolve the author spelling.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Enlarged author lines and the native passage compared; title and cloze punctuation also checked.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;Identity evidence or original print is needed to establish the name spelling.&quot;
+}</pre></details></div><div class="review-record" id="principal_differences-N3_07_2018-PD-002"><div class="review-label">Principal difference · /content · high</div><div class="comparison"><div><h4>Principal</h4><pre>日本に来<mark class="diff-old">で</mark>2か月</pre></div><div><h4>Editorial</h4><pre>日本に来<mark class="diff-new">て</mark>2か月</pre></div></div><p>The source has a spurious voiced consonant; 来て is explicitly corroborated by both distinct comparison settings. Author uncertainty is separate.</p><span class="principal-repository-source">Principal source (page=6): <code>additional-assets/principals/N3_07_2018.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Cloze second paragraph</span><details><summary>Full published record · principal_differences-N3_07_2018-PD-002</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N3_07_2018-PD-002&quot;,
+  &quot;unit&quot;: &quot;N3_07_2018&quot;,
+  &quot;item_id&quot;: &quot;reading-b001&quot;,
+  &quot;field&quot;: &quot;/content&quot;,
+  &quot;current_value&quot;: &quot;以下は、留学生の作文である。\n\n箸\nハーバート マーテイン\n\n私は箸を使うのが苦手でした。大好きなラーメンもフォークで食べていました。でも、日本のラーメン屋には箸 【19】 ないことが多く、食べるのが大変でした。\n\n日本に来て2か月ぐらいたったころ、箸の専門店を見つけました。店に入ると、長さや太さ、材料や色の違う箸が何百種類もありました。その数に驚いていたら、店の人に、「どれでも自由に持ってみてください。」と言われました。【20】、いくつか実際に持ってみました。その中に持ちやすい箸がありました。\n\nそれまで、箸を使うのはめんどうくさいと思っていましたが、そのときは、「これで練習したら、箸が上手に使えるようになるかもしれない」と思いました。私はその箸を買って帰りました。\n\nそれから毎日、家でその箸を【21】。\n1か月ぐらいたって慣れたところ、ラーメンを食べに行きました。すると、【22】箸も楽に使えるようになっていました。\n\n私はずっと、箸をうまく使うことはあきらめていました。うまく使えるようになったのは、専門店で買った【23】。今は前よりもラーメン屋に行くのが楽しみになりました。&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;Đề N3 7-2018.pdf — Yuuki Bùi copy&quot;,
+    &quot;sha256&quot;: &quot;7f7773f91857c143ffddd131dfc99e7178239effcba23a6c23f2ca0ab54b54ef&quot;,
+    &quot;physical_pages&quot;: [
+      6
+    ],
+    &quot;locator&quot;: &quot;Cloze second paragraph&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;日本に来で2か月&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;日本に来て2か月&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;The source has a spurious voiced consonant; 来て is explicitly corroborated by both distinct comparison settings. Author uncertainty is separate.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;N3_07_2018-reading-b001-content&quot;
+  ]
+}</pre></details></div></section><section class="review-group" id="review-reading-q021" data-kinds="unresolved"><div class="review-group-heading"><h2>reading-q021</h2><a href="../papers/N3_07_2018.html#reading-q021">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">【21】<ol><li>使うようにしました</li><li>使ってもいいです</li><li>使うようになっています</li><li>使ってほしかったです</li></ol><p>Editorial key: 1</p></div></details><div class="review-record" id="unresolved_cases-N3_07_2018-reading-q021-options-2"><div class="review-label">Unresolved · /options/2 · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>使う<mark class="diff-old">こと</mark>になっています</pre></div><div><h4>Editorial</h4><pre>使う<mark class="diff-new">よう</mark>になっています</pre></div></div><p>Both present-tense alternatives fail to express the writer’s deliberate past practice as clearly as option1. Retain the witnessed current distractor without claiming language reasoning proves it.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>An original page or demonstrably earlier reliable transcription is needed for the distractor wording.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N3_07_2018.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Cloze Q21: what the writer did with the chopsticks after buying them.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=6): <code>additional-assets/principals/N3_07_2018.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q21 option3<p>使うようになっています</p></li><li><span class="principal-repository-source">Principal source (page=6): <code>additional-assets/principals/N3_07_2018.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q21 option3<p>使うことになっています</p></li><li><span class="principal-repository-source">Principal source (page=8): <code>additional-assets/principals/N3_07_2018.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Q21 option3<p>使うようになっています</p></li><li><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N3_07_2018.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · /sections/7/questions/0/questions/2<p>Option3 使うようになっています; explanation discusses ことになる.</p></li></ul><details><summary>Full published record · unresolved_cases-N3_07_2018-reading-q021-options-2</summary><pre>{
+  &quot;case_id&quot;: &quot;N3_07_2018-reading-q021-options-2&quot;,
+  &quot;unit&quot;: &quot;N3_07_2018&quot;,
+  &quot;item_id&quot;: &quot;reading-q021&quot;,
+  &quot;field&quot;: &quot;/options/2&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;使うようになっています&quot;,
+  &quot;context&quot;: &quot;Cloze Q21: what the writer did with the chopsticks after buying them.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;使うことになっています&quot;,
+      &quot;assessment&quot;: &quot;Printed in the 14-page compilation and described by the native explanation, although its option text reads よう.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;Đề N3 7-2018.pdf — Yuuki Bùi copy&quot;,
+      &quot;sha256&quot;: &quot;7f7773f91857c143ffddd131dfc99e7178239effcba23a6c23f2ca0ab54b54ef&quot;,
+      &quot;physical_pages&quot;: [
+        6
+      ],
+      &quot;locator&quot;: &quot;Q21 option3&quot;,
+      &quot;reading&quot;: &quot;使うようになっています&quot;,
+      &quot;lineage&quot;: &quot;Secondary reproduction; shared ancestry is possible and issuer custody is unestablished.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2018年07月N3.pdf — 14-page compilation&quot;,
+      &quot;sha256&quot;: &quot;87a24e023f67a1f64ab8c0b44eeabf6c59f146b274c0db950f3ad8dc08a67302&quot;,
+      &quot;physical_pages&quot;: [
+        6
+      ],
+      &quot;locator&quot;: &quot;Q21 option3&quot;,
+      &quot;reading&quot;: &quot;使うことになっています&quot;,
+      &quot;lineage&quot;: &quot;Secondary reproduction; shared ancestry is possible and issuer custody is unestablished.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2018年7月N3试卷_解析_听力原文_高清扫描.PDF — 32-page book compilation&quot;,
+      &quot;sha256&quot;: &quot;80c838294b0b62631b44f1142eb49df99d72460bdbc4dc5623670566b37fb397&quot;,
+      &quot;physical_pages&quot;: [
+        8
+      ],
+      &quot;locator&quot;: &quot;Q21 option3&quot;,
+      &quot;reading&quot;: &quot;使うようになっています&quot;,
+      &quot;lineage&quot;: &quot;Secondary reproduction; shared ancestry is possible and issuer custody is unestablished.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;munjaJLPT July 2018 N3 native question data&quot;,
+      &quot;sha256&quot;: &quot;379be9af77a934f5f9717eb5e8765fd0de3b876c48972435f37ebbf2c7378df0&quot;,
+      &quot;locator&quot;: &quot;/sections/7/questions/0/questions/2&quot;,
+      &quot;reading&quot;: &quot;Option3 使うようになっています; explanation discusses ことになる.&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Both present-tense alternatives fail to express the writer’s deliberate past practice as clearly as option1. Retain the witnessed current distractor without claiming language reasoning proves it.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Compared complete cloze and all four choices; checked native explanation and three printed settings.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;An original page or demonstrably earlier reliable transcription is needed for the distractor wording.&quot;
+}</pre></details></div></section><section class="review-group" id="review-reading-b002" data-kinds="difference unresolved"><div class="review-group-heading"><h2>reading-b002</h2><a href="../papers/N3_07_2018.html#reading-b002">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">（1） これはカレンさんが田中先生に書いた手紙である。<br/>田中先生<br/>ごぶさたしております。お元気ですか。<br/><br/>帰国してから、もう半年が過ぎましたが、日本語クラスで勉強していたころのことを、いつもなつかしく思い出しています。<br/>7月から大学が休みになるので、2週間くらい、姉と日本を旅行します。京都や広島を回る予定ですが、13日から15日の間は東京にいます。東京にいる間に大学に伺って、ぜひ先生にお目にかかりたいと思っています。もしご都合のいい日がありましたら、メールでお返事をいただけないでしょうか。<br/>よろしくお願いいたします。<br/>4月10日<br/>カレン・コルベイ<br/>Karen<span class="answer-slot"><span class="slot-glyph">_</span></span>beil@xxmail.com</div></details><div class="review-record" id="unresolved_cases-N3_07_2018-reading-b002-content"><div class="review-label">Unresolved · /content · medium</div><div class="comparison"><div><h4>Alternative</h4><pre>Karen<mark class="diff-old">_</mark>_beil@xxmail.com</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">（1） これはカレンさんが田中先生に書いた手紙である。
+田中先生
+ごぶさたしております。お元気ですか。
+
+帰国してから、もう半年が過ぎましたが、日本語クラスで勉強していたころのことを、いつもなつかしく思い出しています。
+7月から大学が休みになるので、2週間くらい、姉と日本を旅行します。京都や広島を回る予定ですが、13日から15日の間は東京にいます。東京にいる間に大学に伺って、ぜひ先生にお目にかかりたいと思っています。もしご都合のいい日がありましたら、メールでお返事をいただけないでしょうか。
+よろしくお願いいたします。
+4月10日
+カレン・コルベイ
+</mark>Karen_beil@xxmail.com</pre></div></div><p>Retain the inherited single separator, supported by the book and archived transcription. Do not convert ambiguous linework into an asserted double underscore.</p><p class="remaining"><strong>Remaining uncertainty</strong><br>A legible original contact line is needed; neither linguistic reasoning nor the question’s answer can determine the address.</p><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N3_07_2018.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Karen’s letter: separator in the reply email address.</span><ul class="evidence-list"><li><span class="principal-repository-source">Principal source (page=7): <code>additional-assets/principals/N3_07_2018.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Letter signature email<p>Karen followed by a long continuous low bar and beil@xxmail.com; exact underscore count is not separable.</p></li><li><span class="principal-repository-source">Principal source (page=8): <code>additional-assets/principals/N3_07_2018.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Letter signature email<p>Karen_beil@xxmail.com</p></li><li><span class="principal-repository-source">Principal source: <code>additional-assets/principals/N3_07_2018.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> · Reading passage (1), signature/email<p>Karen_beil@xxmail.com</p></li></ul><details><summary>Full published record · unresolved_cases-N3_07_2018-reading-b002-content</summary><pre>{
+  &quot;case_id&quot;: &quot;N3_07_2018-reading-b002-content&quot;,
+  &quot;unit&quot;: &quot;N3_07_2018&quot;,
+  &quot;item_id&quot;: &quot;reading-b002&quot;,
+  &quot;field&quot;: &quot;/content&quot;,
+  &quot;status&quot;: &quot;unresolved&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;decision_basis&quot;: &quot;combined&quot;,
+  &quot;current_value&quot;: &quot;（1） これはカレンさんが田中先生に書いた手紙である。\n田中先生\nごぶさたしております。お元気ですか。\n\n帰国してから、もう半年が過ぎましたが、日本語クラスで勉強していたころのことを、いつもなつかしく思い出しています。\n7月から大学が休みになるので、2週間くらい、姉と日本を旅行します。京都や広島を回る予定ですが、13日から15日の間は東京にいます。東京にいる間に大学に伺って、ぜひ先生にお目にかかりたいと思っています。もしご都合のいい日がありましたら、メールでお返事をいただけないでしょうか。\nよろしくお願いいたします。\n4月10日\nカレン・コルベイ\nKaren_beil@xxmail.com&quot;,
+  &quot;context&quot;: &quot;Karen’s letter: separator in the reply email address.&quot;,
+  &quot;alternatives&quot;: [
+    {
+      &quot;value&quot;: &quot;Karen__beil@xxmail.com&quot;,
+      &quot;assessment&quot;: &quot;The selected source shows a continuous long low bar, compatible with two joined underscores.&quot;
+    },
+    {
+      &quot;value&quot;: &quot;Karen_beil@xxmail.com&quot;,
+      &quot;assessment&quot;: &quot;The retained archive and book transcription have a single underscore.&quot;
+    }
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;source_label&quot;: &quot;Đề N3 7-2018.pdf — Yuuki Bùi copy&quot;,
+      &quot;sha256&quot;: &quot;7f7773f91857c143ffddd131dfc99e7178239effcba23a6c23f2ca0ab54b54ef&quot;,
+      &quot;physical_pages&quot;: [
+        7
+      ],
+      &quot;locator&quot;: &quot;Letter signature email&quot;,
+      &quot;reading&quot;: &quot;Karen followed by a long continuous low bar and beil@xxmail.com; exact underscore count is not separable.&quot;,
+      &quot;lineage&quot;: &quot;Secondary reproduction; shared ancestry is possible and issuer custody is unestablished.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;2018年7月N3试卷_解析_听力原文_高清扫描.PDF — 32-page book compilation&quot;,
+      &quot;sha256&quot;: &quot;80c838294b0b62631b44f1142eb49df99d72460bdbc4dc5623670566b37fb397&quot;,
+      &quot;physical_pages&quot;: [
+        8
+      ],
+      &quot;locator&quot;: &quot;Letter signature email&quot;,
+      &quot;reading&quot;: &quot;Karen_beil@xxmail.com&quot;,
+      &quot;lineage&quot;: &quot;Secondary reproduction; shared ancestry is possible and issuer custody is unestablished.&quot;
+    },
+    {
+      &quot;source_label&quot;: &quot;De Thi Tieng Nhat — archived July 2018 N3 reading page&quot;,
+      &quot;sha256&quot;: &quot;cd5182c80c64f30c9f69ebcdafc504a2933aade7adc691063518ccdec4f99e07&quot;,
+      &quot;locator&quot;: &quot;Reading passage (1), signature/email&quot;,
+      &quot;reading&quot;: &quot;Karen_beil@xxmail.com&quot;
+    }
+  ],
+  &quot;rationale&quot;: &quot;Retain the inherited single separator, supported by the book and archived transcription. Do not convert ambiguous linework into an asserted double underscore.&quot;,
+  &quot;resolution_attempts&quot;: [
+    &quot;Enlarged selected-source email and companion setting; compared book p8, native transcription and immutable archived letter.&quot;,
+    &quot;5 November 2026: Public snapshot rebound to the earlier, verified current field. Only the historical presentation edit is replayed; this snapshot repair does not change the original witness or its confidence.&quot;
+  ],
+  &quot;remaining_uncertainty&quot;: &quot;A legible original contact line is needed; neither linguistic reasoning nor the question’s answer can determine the address.&quot;
+}</pre></details></div><div class="review-record" id="principal_differences-N3_07_2018-PD-003"><div class="review-label">Principal difference · /content · high</div><div class="comparison"><div><h4>Principal</h4><pre><mark class="diff-old">こ</mark>ぶさたしております。</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">ご</mark>ぶさたしております。</pre></div></div><p>Retain the inherited spelling repair, supported by both the 14-page and book copies; no courtesy-form change was made.</p><span class="principal-repository-source">Principal source (page=7): <code>additional-assets/principals/N3_07_2018.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Letter greeting</span><details><summary>Full published record · principal_differences-N3_07_2018-PD-003</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N3_07_2018-PD-003&quot;,
+  &quot;unit&quot;: &quot;N3_07_2018&quot;,
+  &quot;item_id&quot;: &quot;reading-b002&quot;,
+  &quot;field&quot;: &quot;/content&quot;,
+  &quot;current_value&quot;: &quot;（1） これはカレンさんが田中先生に書いた手紙である。\n田中先生\nごぶさたしております。お元気ですか。\n\n帰国してから、もう半年が過ぎましたが、日本語クラスで勉強していたころのことを、いつもなつかしく思い出しています。\n7月から大学が休みになるので、2週間くらい、姉と日本を旅行します。京都や広島を回る予定ですが、13日から15日の間は東京にいます。東京にいる間に大学に伺って、ぜひ先生にお目にかかりたいと思っています。もしご都合のいい日がありましたら、メールでお返事をいただけないでしょうか。\nよろしくお願いいたします。\n4月10日\nカレン・コルベイ\nKaren_beil@xxmail.com&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;Đề N3 7-2018.pdf — Yuuki Bùi copy&quot;,
+    &quot;sha256&quot;: &quot;7f7773f91857c143ffddd131dfc99e7178239effcba23a6c23f2ca0ab54b54ef&quot;,
+    &quot;physical_pages&quot;: [
+      7
+    ],
+    &quot;locator&quot;: &quot;Letter greeting&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;こぶさたしております。&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;ごぶさたしております。&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Retain the inherited spelling repair, supported by both the 14-page and book copies; no courtesy-form change was made.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;N3_07_2018-reading-b002-content&quot;
+  ]
+}</pre></details></div><div class="review-record" id="principal_differences-N3_07_2018-PD-004"><div class="review-label">Principal difference · /content · low</div><div class="comparison"><div><h4>Principal</h4><pre>No alternative recorded</pre></div><div><h4>Editorial</h4><pre>Karen_beil@xxmail.com</pre></div></div><p>The continuous low bar does not establish a character count. This flags an unsettled comparison rather than asserting a literal double underscore.</p><span class="principal-repository-source">Principal source (page=7): <code>additional-assets/principals/N3_07_2018.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Email separator between Karen and beil</span><details><summary>Full published record · principal_differences-N3_07_2018-PD-004</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N3_07_2018-PD-004&quot;,
+  &quot;unit&quot;: &quot;N3_07_2018&quot;,
+  &quot;item_id&quot;: &quot;reading-b002&quot;,
+  &quot;field&quot;: &quot;/content&quot;,
+  &quot;current_value&quot;: &quot;（1） これはカレンさんが田中先生に書いた手紙である。\n田中先生\nごぶさたしております。お元気ですか。\n\n帰国してから、もう半年が過ぎましたが、日本語クラスで勉強していたころのことを、いつもなつかしく思い出しています。\n7月から大学が休みになるので、2週間くらい、姉と日本を旅行します。京都や広島を回る予定ですが、13日から15日の間は東京にいます。東京にいる間に大学に伺って、ぜひ先生にお目にかかりたいと思っています。もしご都合のいい日がありましたら、メールでお返事をいただけないでしょうか。\nよろしくお願いいたします。\n4月10日\nカレン・コルベイ\nKaren_beil@xxmail.com&quot;,
+  &quot;categories&quot;: [
+    &quot;unreadable_source&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;Đề N3 7-2018.pdf — Yuuki Bùi copy&quot;,
+    &quot;sha256&quot;: &quot;7f7773f91857c143ffddd131dfc99e7178239effcba23a6c23f2ca0ab54b54ef&quot;,
+    &quot;physical_pages&quot;: [
+      7
+    ],
+    &quot;locator&quot;: &quot;Email separator between Karen and beil&quot;,
+    &quot;reading_status&quot;: &quot;unreadable&quot;,
+    &quot;reading&quot;: null
+  },
+  &quot;editorial_reading&quot;: &quot;Karen_beil@xxmail.com&quot;,
+  &quot;comparison_confidence&quot;: &quot;low&quot;,
+  &quot;disposition&quot;: &quot;unreadable_source&quot;,
+  &quot;rationale&quot;: &quot;The continuous low bar does not establish a character count. This flags an unsettled comparison rather than asserting a literal double underscore.&quot;,
+  &quot;linked_case_ids&quot;: [
+    &quot;N3_07_2018-reading-b002-content&quot;
+  ]
+}</pre></details></div></section><section class="review-group" id="review-reading-q026" data-kinds="difference"><div class="review-group-heading"><h2>reading-q026</h2><a href="../papers/N3_07_2018.html#reading-q026">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">26. この<ruby data-rubi-id="rr4-c6e00867bd31c2e23587" data-rubi-origin="project_rubi_restore">文章<rt>ぶんしょう</rt></ruby>を書いた人は、どのように<ruby data-rubi-id="rr4-b6a2d98c49ee679249de" data-rubi-origin="project_rubi_restore">暗証番号<rt>あんしょうばんごう</rt></ruby>を決めるのがよいと言っているか。<ol><li>自分に関係のある数字や<ruby data-rubi-id="rr4-42970e08783088a786ac" data-rubi-origin="project_rubi_restore">単純<rt>たんじゅん</rt></ruby>な数字にする</li><li>自分に関係のある数字に<ruby data-rubi-id="rr4-3046c5828fa44baeff1f" data-rubi-origin="project_rubi_restore">単純<rt>たんじゅん</rt></ruby>な数字を足す</li><li>自分に関係のない数字や<ruby data-rubi-id="rr4-6e43668e46a39164bcbb" data-rubi-origin="project_rubi_restore">不規則<rt>ふきそく</rt></ruby>に並んだ数字にする</li><li>自分に関係のある数字に<ruby data-rubi-id="rr4-2b5174eeac899d9e2eb5" data-rubi-origin="project_rubi_restore">不規則<rt>ふきそく</rt></ruby>に並んだ数字を足す</li></ol><p>Editorial key: 2</p></div></details><div class="review-record" id="principal_differences-N3_07_2018-PD-005"><div class="review-label">Principal difference · /options · high</div><div class="comparison"><div><h4>Principal</h4><pre>自分に関係のある数字や単純な数字にする<mark class="diff-old">。</mark>
+自分に関係のある数字に単純な数字を足す<mark class="diff-old">。</mark>
+自分に関係のない数字や不規則に並んだ数字にする<mark class="diff-old">。</mark>
+分に関係のある数字に不規則に並んだ数字を足す<mark class="diff-old">。</mark></pre></div><div><h4>Editorial</h4><pre>自分に関係のある数字や単純な数字にする
+自分に関係のある数字に単純な数字を足す
+自分に関係のない数字や不規則に並んだ数字にする
+<mark class="diff-new">自</mark>分に関係のある数字に不規則に並んだ数字を足す</pre></div></div><p>Retain inherited 自分, corroborated by the 14-page/book/native versions. Retained stop-free choice endings agree with the 14-page version; this punctuation is a variant, not claimed superior to the principal.</p><span class="principal-repository-source">Principal source (page=7): <code>additional-assets/principals/N3_07_2018.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Q26 all choices; fourth opening</span><details><summary>Full published record · principal_differences-N3_07_2018-PD-005</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N3_07_2018-PD-005&quot;,
+  &quot;unit&quot;: &quot;N3_07_2018&quot;,
+  &quot;item_id&quot;: &quot;reading-q026&quot;,
+  &quot;field&quot;: &quot;/options&quot;,
+  &quot;current_value&quot;: [
+    &quot;自分に関係のある数字や単純な数字にする&quot;,
+    &quot;自分に関係のある数字に単純な数字を足す&quot;,
+    &quot;自分に関係のない数字や不規則に並んだ数字にする&quot;,
+    &quot;自分に関係のある数字に不規則に並んだ数字を足す&quot;
+  ],
+  &quot;categories&quot;: [
+    &quot;wording&quot;,
+    &quot;punctuation&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;Đề N3 7-2018.pdf — Yuuki Bùi copy&quot;,
+    &quot;sha256&quot;: &quot;7f7773f91857c143ffddd131dfc99e7178239effcba23a6c23f2ca0ab54b54ef&quot;,
+    &quot;physical_pages&quot;: [
+      7
+    ],
+    &quot;locator&quot;: &quot;Q26 all choices; fourth opening&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;自分に関係のある数字や単純な数字にする。\n自分に関係のある数字に単純な数字を足す。\n自分に関係のない数字や不規則に並んだ数字にする。\n分に関係のある数字に不規則に並んだ数字を足す。&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;自分に関係のある数字や単純な数字にする\n自分に関係のある数字に単純な数字を足す\n自分に関係のない数字や不規則に並んだ数字にする\n自分に関係のある数字に不規則に並んだ数字を足す&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Retain inherited 自分, corroborated by the 14-page/book/native versions. Retained stop-free choice endings agree with the 14-page version; this punctuation is a variant, not claimed superior to the principal.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-b008" data-kinds="difference"><div class="review-group-heading"><h2>reading-b008</h2><a href="../papers/N3_07_2018.html#reading-b008">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">川村さんは<ruby data-rubi-id="rr4-a47888a124c13011ace0" data-rubi-origin="project_rubi_restore">都会<rt>とかい</rt></ruby>のマンションに住んでいる。<ruby data-rubi-id="rr4-71a87157be561b281df9" data-rubi-origin="project_rubi_restore">野菜<rt>やさい</rt></ruby>や花を<ruby data-rubi-id="rr4-ea5786eb95cafe0378e4" data-rubi-origin="project_rubi_restore">育<rt>そだ</rt></ruby>てることが好きなのだが、マンションのベランダでは十分に楽しむことができない。広い<ruby data-rubi-id="rr4-c127fe6cc1f31cc32819" data-rubi-origin="project_rubi_restore">庭<rt>にわ</rt></ruby>のある家で、<ruby data-rubi-id="rr4-08d28adb652e35988f02" data-rubi-origin="project_rubi_restore">野菜<rt>やさい</rt></ruby>や花を育てることが、川村さんの長い間の夢だった。
+<br/><br/>川村さんは、今、広い「庭」で<ruby data-rubi-id="rr4-1df3cdef66bc9293cee6" data-rubi-origin="project_rubi_restore">野菜<rt>やさい</rt></ruby>や花を育てている。近くに「みんなの庭」ができたのだ。「みんなの庭」は、市の土地を市民が借りて、<ruby data-rubi-id="rr4-b813d6440a0503954082" data-rubi-origin="project_rubi_restore">共同<rt>きょうどう</rt></ruby>の「庭」を作っていくものである。<ruby data-rubi-id="rr4-edf8327a0f8bdee69e1d" data-rubi-origin="project_rubi_restore">利用<rt>りよう</rt></ruby>する人たちが話し<ruby data-rubi-id="rr4-3b4a4ce255abf60d21f0" data-rubi-origin="project_rubi_restore">合<rt>あ</rt></ruby>って、みんなで野菜や花を育てて楽しむ。
+<br/><br/>「みんなの庭」で野菜や花を作るようになって、川村さんは<ruby data-rubi-id="rr4-1c2c01888026a3b1e69e" data-rubi-origin="project_rubi_restore">友達<rt>ともだち</rt></ruby>がたくさんできたそうだ。それまでは、<ruby data-rubi-id="rr4-0148e6a3552da8601de4" data-rubi-origin="project_rubi_restore">近所<rt>きんじょ</rt></ruby>の人にあいさつはしても、なかなか友達になるのは難しかった。しかし、<u>①「みんなの庭」では違う</u>。同じようにこの庭を利用して野菜や花を作っている人に、「きれいに<ruby data-rubi-id="rr4-d35c9c22988417507f71" data-rubi-origin="project_rubi_restore">咲<rt>さ</rt></ruby>きましたね。」とか「りっぱなトマトになりましたね。」と話しかけたりする。また、<ruby data-rubi-id="rr4-9972a732d73cbfc22370" data-rubi-origin="project_rubi_restore">普段<rt>ふだん</rt></ruby>あまり<ruby data-rubi-id="rr4-a215a30718df0a69a0bc" data-rubi-origin="project_rubi_restore">付<rt>つ</rt></ruby>き合うことがない人とお茶を飲んだり、おしゃべりをしたりすることも、ここなら自然にできるそうだ。都会では少なくなった近所の人との交流の<ruby data-rubi-id="rr4-c0bd61f3e3d526fe05cd" data-rubi-origin="project_rubi_restore">機会<rt>きかい</rt></ruby>が生まれているのだ。
+<br/><br/>川村さんたちは、「みんなの庭」で近所の人と付き合っているうちに、子どもの<ruby data-rubi-id="rr4-31d1940006c352a2e952" data-rubi-origin="project_rubi_restore">教育<rt>きょういく</rt></ruby>や町の<ruby data-rubi-id="rr4-4450d5746b107d481fde" data-rubi-origin="project_rubi_restore">安全<rt>あんぜん</rt></ruby>など、<ruby data-rubi-id="rr4-73a078ec493c028e2f80" data-rubi-origin="project_rubi_restore">生活<rt>せいかつ</rt></ruby>のこともいろいろ話すようになった。このような付き合いが続いていけば、<ruby data-rubi-id="rr4-b58ac6d7f8985d62dbd9" data-rubi-origin="project_rubi_restore">将来<rt>しょうらい</rt></ruby>は、自分たちの町をもっと住みやすくしていこうという話し合いができるようになるかもしれない。川村さんは、「みんなの庭」で<ruby data-rubi-id="rr4-e038ae3b094f04e5c44e" data-rubi-origin="project_rubi_restore">汗<rt>あせ</rt></ruby>を流しながら、<u>②そう感じている</u>。</div></details><div class="review-record" id="principal_differences-N3_07_2018-PD-007"><div class="review-label">Principal difference · /content/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>子<mark class="diff-old">と</mark>もの教育</pre></div><div><h4>Editorial</h4><pre>子<mark class="diff-new">ど</mark>もの教育</pre></div></div><p>Retain the inherited missing-voicing repair. The clause concerns children’s education; the distinct book uses 子供. This is spelling repair, not wholesale 子供/子ども normalization.</p><span class="principal-repository-source">Principal source (page=10): <code>additional-assets/principals/N3_07_2018.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Garden passage, education clause</span><details><summary>Full published record · principal_differences-N3_07_2018-PD-007</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N3_07_2018-PD-007&quot;,
+  &quot;unit&quot;: &quot;N3_07_2018&quot;,
+  &quot;item_id&quot;: &quot;reading-b008&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;current_value&quot;: &quot;川村さんは都会のマンションに住んでいる。野菜や花を育てることが好きなのだが、マンションのベランダでは十分に楽しむことができない。広い庭のある家で、野菜や花を育てることが、川村さんの長い間の夢だった。\n&lt;br&gt;&lt;br&gt;川村さんは、今、広い「庭」で野菜や花を育てている。近くに「みんなの庭」ができたのだ。「みんなの庭」は、市の土地を市民が借りて、共同の「庭」を作っていくものである。利用する人たちが話し合って、みんなで野菜や花を育てて楽しむ。\n&lt;br&gt;&lt;br&gt;「みんなの庭」で野菜や花を作るようになって、川村さんは友達がたくさんできたそうだ。それまでは、近所の人にあいさつはしても、なかなか友達になるのは難しかった。しかし、&lt;u&gt;①「みんなの庭」では違う&lt;/u&gt;。同じようにこの庭を利用して野菜や花を作っている人に、「きれいに咲きましたね。」とか「りっぱなトマトになりましたね。」と話しかけたりする。また、普段あまり付き合うことがない人とお茶を飲んだり、おしゃべりをしたりすることも、ここなら自然にできるそうだ。都会では少なくなった近所の人との交流の機会が生まれているのだ。\n&lt;br&gt;&lt;br&gt;川村さんたちは、「みんなの庭」で近所の人と付き合っているうちに、子どもの教育や町の安全など、生活のこともいろいろ話すようになった。このような付き合いが続いていけば、将来は、自分たちの町をもっと住みやすくしていこうという話し合いができるようになるかもしれない。川村さんは、「みんなの庭」で汗を流しながら、&lt;u&gt;②そう感じている&lt;/u&gt;。&quot;,
+  &quot;categories&quot;: [
+    &quot;wording&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;Đề N3 7-2018.pdf — Yuuki Bùi copy&quot;,
+    &quot;sha256&quot;: &quot;7f7773f91857c143ffddd131dfc99e7178239effcba23a6c23f2ca0ab54b54ef&quot;,
+    &quot;physical_pages&quot;: [
+      10
+    ],
+    &quot;locator&quot;: &quot;Garden passage, education clause&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;子ともの教育&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;子どもの教育&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;supported_repair&quot;,
+  &quot;rationale&quot;: &quot;Retain the inherited missing-voicing repair. The clause concerns children’s education; the distinct book uses 子供. This is spelling repair, not wholesale 子供/子ども normalization.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-q037" data-kinds="difference"><div class="review-group-heading"><h2>reading-q037</h2><a href="../papers/N3_07_2018.html#reading-q037">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">37. <u>②そう感じている</u>とあるが、どのように感じているのか。<ol><li>もっとたくさんの野菜や花が作れるようになるかもしれない</li><li>近所の人ともっと交流することができるようになるかもしれない</li><li>町をもっとよくするための話し合いもできるようになるかもしれない</li><li>「みんなの庭」をもっとよくすることができるようになるかもしれない</li></ol><p>Editorial key: 3</p></div></details><div class="review-record" id="principal_differences-N3_07_2018-PD-006"><div class="review-label">Principal difference · /options · high</div><div class="comparison"><div><h4>Principal</h4><pre>もっとたくさんの野菜や花が作れるようになるかもしれない<mark class="diff-old">。</mark>
+近所の人ともっと交流することができるようになるかもしれない
+町をもっとよくするための話し合いもできるようになるかもしれない<mark class="diff-old">。</mark>
+「みんなの庭」をもっとよくすることができるようになるかもしれない<mark class="diff-old">。</mark></pre></div><div><h4>Editorial</h4><pre>もっとたくさんの野菜や花が作れるようになるかもしれない
+近所の人ともっと交流することができるようになるかもしれない
+町をもっとよくするための話し合いもできるようになるかもしれない
+「みんなの庭」をもっとよくすることができるようになるかもしれない</pre></div></div><p>Retain inherited stop-free choices as in the 14-page setting. The principal prints stops on choices1,3,4; the variant does not affect answer logic.</p><span class="principal-repository-source">Principal source (page=10): <code>additional-assets/principals/N3_07_2018.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Q37 choice endings</span><details><summary>Full published record · principal_differences-N3_07_2018-PD-006</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N3_07_2018-PD-006&quot;,
+  &quot;unit&quot;: &quot;N3_07_2018&quot;,
+  &quot;item_id&quot;: &quot;reading-q037&quot;,
+  &quot;field&quot;: &quot;/options&quot;,
+  &quot;current_value&quot;: [
+    &quot;もっとたくさんの野菜や花が作れるようになるかもしれない&quot;,
+    &quot;近所の人ともっと交流することができるようになるかもしれない&quot;,
+    &quot;町をもっとよくするための話し合いもできるようになるかもしれない&quot;,
+    &quot;「みんなの庭」をもっとよくすることができるようになるかもしれない&quot;
+  ],
+  &quot;categories&quot;: [
+    &quot;punctuation&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;Đề N3 7-2018.pdf — Yuuki Bùi copy&quot;,
+    &quot;sha256&quot;: &quot;7f7773f91857c143ffddd131dfc99e7178239effcba23a6c23f2ca0ab54b54ef&quot;,
+    &quot;physical_pages&quot;: [
+      10
+    ],
+    &quot;locator&quot;: &quot;Q37 choice endings&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;もっとたくさんの野菜や花が作れるようになるかもしれない。\n近所の人ともっと交流することができるようになるかもしれない\n町をもっとよくするための話し合いもできるようになるかもしれない。\n「みんなの庭」をもっとよくすることができるようになるかもしれない。&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;もっとたくさんの野菜や花が作れるようになるかもしれない\n近所の人ともっと交流することができるようになるかもしれない\n町をもっとよくするための話し合いもできるようになるかもしれない\n「みんなの庭」をもっとよくすることができるようになるかもしれない&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;retained_variant&quot;,
+  &quot;rationale&quot;: &quot;Retain inherited stop-free choices as in the 14-page setting. The principal prints stops on choices1,3,4; the variant does not affect answer logic.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section><section class="review-group" id="review-reading-b009" data-kinds="difference"><div class="review-group-heading"><h2>reading-b009</h2><a href="../papers/N3_07_2018.html#reading-b009">Open in paper →</a></div><details class="review-context"><summary>Current editorial context</summary><div lang="ja">A<br/>
+<center>はらクリーニング特別セール<br/>
+3月24日（土）～4月10日（火）<br/><br/>セール期間中、会員の方はクリーニング料金が基本料金の40%割引になります！</center>
+<br/><br/>〈料金の例〉<br/>
+<table><tr><td></td><td>基本料金</td><td>40%割引後の料金</td></tr>
+<tr><td>ブラウス</td><td>180円</td><td>108円</td></tr>
+<tr><td>セーター</td><td>400円</td><td>240円</td></tr>
+<tr><td>ズボン</td><td>480円</td><td>288円</td></tr>
+<tr><td>スーツ</td><td>1100円</td><td>660円</td></tr>
+<tr><td>コート</td><td>1300円</td><td>780円</td></tr>
+</table><br/><br/>・会員ではない方でも、店で申し込めば、すぐに会員になっていただけます。お申し込みには、会費300円が必要です。 
+<br/><br/>・会員になると、いつでも5%割引の会員料金になります。（特別セール期間以外）
+<br/><br/>営業日・時間:月曜日～土曜日 10:00～18:00　休み:日曜・祝日
+<br/><br/>電話:077-133-4646　住所:山上区緑町3-1
+<br/><br/>B<br/>
+<center><u>訪問サービスを始めました</u></center><br/><br/>
+はらクリーニングの店員が、お客様のご自宅を訪問してお洋服をお預かりし、クリーニング後に、ご自宅までお届けするサービスです。<br/><br/>
+〈申し込み〉営業時間内に、お電話でお申し込みください。翌日以降、お客様が指定された日の訪問時間内に、ご自宅まで取りに伺います。<br/><br/>
+〈お届け日〉お預かりした日の約1週間後から、ご自宅へのお届けができます。お申し込みのときに、営業日の中からお届けの日と時間をご指定ください。<br/><br/>
+〈訪問時間〉営業日の午後6時から午後10時の間で、自由に選べます。<br/><br/>
+ご自宅の住所によっては、お引き受けできないこともございます。詳しいことは、店員にご確認ください。<br/>
+はらクリーニング</div></details><div class="review-record" id="principal_differences-N3_07_2018-PD-008"><div class="review-label">Principal difference · /content/html · high</div><div class="comparison"><div><h4>Principal</h4><pre>料金の例 / 申し込み / お届け日 / 訪問時間 / 営業日・時間 / 休み / 電話 / 住所</pre></div><div><h4>Editorial</h4><pre><mark class="diff-new">＜</mark>料金の例<mark class="diff-new">＞</mark> / <mark class="diff-new">＜</mark>申し込み<mark class="diff-new">＞</mark> / <mark class="diff-new">＜</mark>お届け日<mark class="diff-new">＞</mark> / <mark class="diff-new">＜</mark>訪問時間<mark class="diff-new">＞</mark> / 営業日・時間<mark class="diff-new">:</mark> / 休み<mark class="diff-new">:</mark> / 電話<mark class="diff-new">:</mark> / 住所<mark class="diff-new">:</mark></pre></div></div><p>Retain inherited bracket/colon label styling supported by the 14-page notice and native notice image. All wording, rows, fees, hours and contact values agree; styling is not evidence of original punctuation.</p><span class="principal-repository-source">Principal source (page=11): <code>additional-assets/principals/N3_07_2018.pdf</code> — open this file from the GitHub repository; it is not hosted on this website.</span> <span class="control-help">Notice labels and contact separators</span><details><summary>Full published record · principal_differences-N3_07_2018-PD-008</summary><pre>{
+  &quot;format&quot;: &quot;principal_difference_v1&quot;,
+  &quot;difference_id&quot;: &quot;N3_07_2018-PD-008&quot;,
+  &quot;unit&quot;: &quot;N3_07_2018&quot;,
+  &quot;item_id&quot;: &quot;reading-b009&quot;,
+  &quot;field&quot;: &quot;/content/html&quot;,
+  &quot;current_value&quot;: &quot;A&lt;br&gt;\n&lt;center&gt;はらクリーニング特別セール&lt;br&gt;\n3月24日（土）～4月10日（火）&lt;br&gt;&lt;br&gt;セール期間中、会員の方はクリーニング料金が基本料金の40%割引になります！&lt;/center&gt;\n&lt;br&gt;&lt;br&gt;〈料金の例〉&lt;br&gt;\n&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;基本料金&lt;/td&gt;&lt;td&gt;40%割引後の料金&lt;/td&gt;&lt;/tr&gt;\n&lt;tr&gt;&lt;td&gt;ブラウス&lt;/td&gt;&lt;td&gt;180円&lt;/td&gt;&lt;td&gt;108円&lt;/td&gt;&lt;/tr&gt;\n&lt;tr&gt;&lt;td&gt;セーター&lt;/td&gt;&lt;td&gt;400円&lt;/td&gt;&lt;td&gt;240円&lt;/td&gt;&lt;/tr&gt;\n&lt;tr&gt;&lt;td&gt;ズボン&lt;/td&gt;&lt;td&gt;480円&lt;/td&gt;&lt;td&gt;288円&lt;/td&gt;&lt;/tr&gt;\n&lt;tr&gt;&lt;td&gt;スーツ&lt;/td&gt;&lt;td&gt;1100円&lt;/td&gt;&lt;td&gt;660円&lt;/td&gt;&lt;/tr&gt;\n&lt;tr&gt;&lt;td&gt;コート&lt;/td&gt;&lt;td&gt;1300円&lt;/td&gt;&lt;td&gt;780円&lt;/td&gt;&lt;/tr&gt; \n&lt;/table&gt;&lt;br&gt;&lt;br&gt;・会員ではない方でも、店で申し込めば、すぐに会員になっていただけます。お申し込みには、会費300円が必要です。 \n&lt;br&gt;&lt;br&gt;・会員になると、いつでも5%割引の会員料金になります。（特別セール期間以外）\n&lt;br&gt;&lt;br&gt;営業日・時間:月曜日～土曜日 10:00～18:00　休み:日曜・祝日\n&lt;br&gt;&lt;br&gt;電話:077-133-4646　住所:山上区緑町3-1\n&lt;br&gt;&lt;br&gt;B&lt;br&gt;\n&lt;center&gt;&lt;u&gt;訪問サービスを始めました&lt;/u&gt;&lt;/center&gt;&lt;br&gt;&lt;br&gt;\nはらクリーニングの店員が、お客様のご自宅を訪問してお洋服をお預かりし、クリーニング後に、ご自宅までお届けするサービスです。&lt;br&gt;&lt;br&gt;\n〈申し込み〉営業時間内に、お電話でお申し込みください。翌日以降、お客様が指定された日の訪問時間内に、ご自宅まで取りに伺います。&lt;br&gt;&lt;br&gt;\n〈お届け日〉お預かりした日の約1週間後から、ご自宅へのお届けができます。お申し込みのときに、営業日の中からお届けの日と時間をご指定ください。&lt;br&gt;&lt;br&gt;\n〈訪問時間〉営業日の午後6時から午後10時の間で、自由に選べます。&lt;br&gt;&lt;br&gt;\nご自宅の住所によっては、お引き受けできないこともございます。詳しいことは、店員にご確認ください。&lt;br&gt;\nはらクリーニング&quot;,
+  &quot;categories&quot;: [
+    &quot;punctuation&quot;
+  ],
+  &quot;principal&quot;: {
+    &quot;source_label&quot;: &quot;Đề N3 7-2018.pdf — Yuuki Bùi copy&quot;,
+    &quot;sha256&quot;: &quot;7f7773f91857c143ffddd131dfc99e7178239effcba23a6c23f2ca0ab54b54ef&quot;,
+    &quot;physical_pages&quot;: [
+      11
+    ],
+    &quot;locator&quot;: &quot;Notice labels and contact separators&quot;,
+    &quot;reading_status&quot;: &quot;legible&quot;,
+    &quot;reading&quot;: &quot;料金の例 / 申し込み / お届け日 / 訪問時間 / 営業日・時間 / 休み / 電話 / 住所&quot;
+  },
+  &quot;editorial_reading&quot;: &quot;＜料金の例＞ / ＜申し込み＞ / ＜お届け日＞ / ＜訪問時間＞ / 営業日・時間: / 休み: / 電話: / 住所:&quot;,
+  &quot;comparison_confidence&quot;: &quot;high&quot;,
+  &quot;disposition&quot;: &quot;retained_variant&quot;,
+  &quot;rationale&quot;: &quot;Retain inherited bracket/colon label styling supported by the 14-page notice and native notice image. All wording, rows, fees, hours and contact values agree; styling is not evidence of original punctuation.&quot;,
+  &quot;linked_case_ids&quot;: []
+}</pre></details></div></section></div></main><footer class="site-footer"><span class="developer-only">Developer mode</span></footer><div id="toast" role="status" class="toast" hidden></div><script id="page-data" type="application/json">{"review":true}</script><script id="theme-data" src="../assets/theme-data.js?v=f06ad9e2434b" defer></script><script src="../assets/app.js?v=0d75deb05ae3" defer></script></body></html>

@@ -1,0 +1,95 @@
+{
+  "unit": "N4_07_2023",
+  "sources": [
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N4-N5 các năm Yuuki Bùi\\2023年7月\\Đáp án đề N4 T7-2023.pdf",
+      "sha256": "ac3c1113b165a012e319b080d0bc924e7e72beda806ed61dfa3758d19306b0bd",
+      "Tier": "unranked",
+      "bytes": 720760,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N4\\N4_07_2023\\PaddleOCR\\pdf_1",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\Yuuki Bui\\Đề thi N4-N5 các năm Yuuki Bùi\\2023年7月\\Đề N4 T7-2023.pdf",
+      "sha256": "244132b0c5b0f03d195bb2e135aa6aedb44a1e8634c9f913addb1387b594911f",
+      "Tier": 2,
+      "bytes": 2586662,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N4\\N4_07_2023\\PaddleOCR\\pdf_2",
+      "VisionOCR": "preprocess\\N4\\N4_07_2023\\VisionOCR\\pdf_2"
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N4\\listening\\N4_07_2023_listening_DEAD.html",
+      "sha256": "655c664beb82a9d2a7aa56d7032ab95a711bc7b665f6bb713d8e1dfb57f22d8a",
+      "Tier": "unranked",
+      "bytes": 34541,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N4\\reading\\N4_07_2023_reading.html",
+      "sha256": "8e1b36cd50f727b83207769377ca5ee336c91d1be432afc4d9cb7d345697c055",
+      "Tier": "unranked",
+      "bytes": 92548,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\zzClassic_ArchiveOnly De Thi Tieng Nhat\\dethitiengnhat_N4\\vocab\\N4_07_2023_vocab.html",
+      "sha256": "837b875296bec343ec0f8e1cd7c88e00787219553ee103ac25742955303de951",
+      "Tier": "unranked",
+      "bytes": 82373,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N4真题（2010-2025.12）\\2023年07月N4（无听力MP3）\\2023.7 N4真题.pdf",
+      "sha256": "9412cfb10ac64c432cafb2a9d60bb621df55a2b0d993ddb6b966eb5829ba0e9b",
+      "Tier": 1,
+      "bytes": 1451491,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\2023年7月\\2023.7 N4真题.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N4历年真题\\2023年07月N4（无听力MP3）\\2023.7 N4真题.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N4\\N4_07_2023\\PaddleOCR\\pdf_3",
+      "VisionOCR": "preprocess\\N4\\N4_07_2023\\VisionOCR\\pdf_3"
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N4真题（2010-2025.12）\\2023年07月N4（无听力MP3）\\2023年7月日语N4答案及解析（含听力原文）.pdf",
+      "sha256": "9bd8ecae13fd5fc2397c80e4c9dd5f5d88d0e19317c6fdae2f8ea493d76b49d8",
+      "Tier": "unranked",
+      "bytes": 391505,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\2023年7月\\2023年7月日语N4答案及解析（含听力原文）.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N4历年真题\\2023年07月N4（无听力MP3）\\2023年7月日语N4答案及解析（含听力原文）.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N4\\N4_07_2023\\PaddleOCR\\pdf_4",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N4真题（2010-2025.12）\\N4-答题卡.pdf",
+      "sha256": "b0c14d3f8645d885a6ddc2ef4cc160271c0850ea5f1d18f7386a6662f95c2053",
+      "Tier": "unranked",
+      "bytes": 383135,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\N4-答题卡.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N4历年真题\\N4-答题卡.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N4\\N4_multiple\\PaddleOCR\\pdf_14",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\2023年7月\\2023年7月日语N4真题.pdf",
+      "sha256": "52e4cce69aa7c1cf4fa45cd8296a7ac1b0574217b62bd8d86120726e66b76591",
+      "Tier": 2,
+      "bytes": 902750,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N4\\N4_07_2023\\PaddleOCR\\pdf_6",
+      "VisionOCR": "preprocess\\N4\\N4_07_2023\\VisionOCR\\pdf_6"
+    }
+  ]
+}

@@ -1,0 +1,765 @@
+{
+  "format": "rubi-research-source-catalog-v1",
+  "snapshot": "2026-10-09",
+  "purpose": "Upstream acquisition metadata copied from the historical workspace inventories; current usage and packaging status are documented in ../SOURCES.md. This does not download or admit newer bytes.",
+  "sources": [
+    {
+      "id": "bccwj_suw",
+      "filename": "BCCWJ_frequencylist_suw_ver1_1.zip",
+      "url": "https://repository.ninjal.ac.jp/record/3235/files/BCCWJ_frequencylist_suw_ver1_1.zip",
+      "landing_page": "https://repository.ninjal.ac.jp/records/3235",
+      "provider": "NINJAL",
+      "version": "1.1",
+      "workspace_catalog": "rubi-restore/sources.json"
+    },
+    {
+      "id": "bccwj_luw",
+      "filename": "BCCWJ_frequencylist_luw_ver1_1.zip",
+      "url": "https://repository.ninjal.ac.jp/record/3229/files/BCCWJ_frequencylist_luw_ver1_1.zip",
+      "landing_page": "https://repository.ninjal.ac.jp/records/3229",
+      "provider": "NINJAL",
+      "version": "1.1",
+      "workspace_catalog": "rubi-restore/sources.json"
+    },
+    {
+      "id": "bccwj_manual",
+      "filename": "BCCWJ_frequencylist_manual_1_1.pdf",
+      "url": "https://repository.ninjal.ac.jp/record/3299/files/BCCWJ_frequencylist_manual_1_1.pdf",
+      "landing_page": "https://repository.ninjal.ac.jp/records/3299",
+      "provider": "NINJAL",
+      "version": "1.1",
+      "workspace_catalog": "rubi-restore/sources.json"
+    },
+    {
+      "id": "jiten_global",
+      "filename": "jiten_global_yomitan.zip",
+      "url": "https://api.jiten.moe/api/frequency-list/download?downloadType=yomitan",
+      "landing_page": "https://jiten.moe/frequency-dictionaries",
+      "provider": "Jiten",
+      "version": "Live endpoint; pin bytes and embedded revision",
+      "workspace_catalog": "rubi-restore/sources.json"
+    },
+    {
+      "id": "jiten_global_csv",
+      "filename": "jiten_global.csv",
+      "url": "https://api.jiten.moe/api/frequency-list/download?downloadType=csv",
+      "landing_page": "https://jiten.moe/frequency-dictionaries",
+      "provider": "Jiten",
+      "version": "Live endpoint; pin bytes",
+      "workspace_catalog": "rubi-restore/sources.json"
+    },
+    {
+      "id": "cc100",
+      "filename": "Freq_CC100.zip",
+      "landing_page": "https://data.statmt.org/cc-100/",
+      "provider": "xydustc (embedded metadata); existing local MarvNC collection copy",
+      "version": "1 (embedded metadata)",
+      "workspace_catalog": "rubi-restore/sources.json"
+    },
+    {
+      "id": "kanjigrid_kuuube",
+      "provider": "Kuuuube/kanjigrid",
+      "landing_page": "https://github.com/Kuuuube/kanjigrid",
+      "git_commit": "d235cae7bc8d6ad66c7b363fb5a4234b3dd66400",
+      "commit_date": "2026-06-16T01:02:52Z",
+      "notes": [
+        "Kanji Grid Kuuube 2.5.6; local Anki installation remains untouched.",
+        "official_kanji.json retains the complete pinned upstream file, including the 1850-character Touyou group and its Aozora source URL, for historical comparison. The user reversed the earlier exclusion.",
+        "School grades, official membership and Jinmeiyou overlap by design; use them as named views, not independent evidence.",
+        "Modern JLPT N1-N5 is a third-party study grid, not an issuer-published syllabus.",
+        "JPDB frequency is media-specific, not exam-corpus frequency. Curricula and JIS are auxiliary features, not furigana policy.",
+        "Upstream sources embedded in each grid remain authoritative for provenance; repository license does not establish rights over third-party book/list contents."
+      ],
+      "files": [
+        {
+          "filename": "grade.json",
+          "url": "https://raw.githubusercontent.com/Kuuuube/kanjigrid/d235cae7bc8d6ad66c7b363fb5a4234b3dd66400/data/grade.json",
+          "kind": "grid",
+          "expected_git_blob_sha1": "f9a38b0b8f03a61048d9268c271312e1683fcc9e",
+          "upstream_path": "data/grade.json"
+        },
+        {
+          "filename": "jpdbv2_kanji_frequency_list.json",
+          "url": "https://raw.githubusercontent.com/Kuuuube/kanjigrid/d235cae7bc8d6ad66c7b363fb5a4234b3dd66400/data/jpdbv2_kanji_frequency_list.json",
+          "kind": "grid",
+          "expected_git_blob_sha1": "977aeab3490c46a07f869966c777a6b618915dda",
+          "upstream_path": "data/jpdbv2_kanji_frequency_list.json"
+        },
+        {
+          "filename": "jpdb_kanji_frequency_list.json",
+          "url": "https://raw.githubusercontent.com/Kuuuube/kanjigrid/d235cae7bc8d6ad66c7b363fb5a4234b3dd66400/data/jpdb_kanji_frequency_list.json",
+          "kind": "grid",
+          "expected_git_blob_sha1": "34d3da311a80a261bc65ca31b22feb8c1e038875",
+          "upstream_path": "data/jpdb_kanji_frequency_list.json"
+        },
+        {
+          "filename": "kanji_in_context_revised_edition.json",
+          "url": "https://raw.githubusercontent.com/Kuuuube/kanjigrid/d235cae7bc8d6ad66c7b363fb5a4234b3dd66400/data/kanji_in_context_revised_edition.json",
+          "kind": "grid",
+          "expected_git_blob_sha1": "78872a6c10b58863a00283ff29048980a8a8f13a",
+          "upstream_path": "data/kanji_in_context_revised_edition.json"
+        },
+        {
+          "filename": "basic_kanji_book_bkb_v1_v2.json",
+          "url": "https://raw.githubusercontent.com/Kuuuube/kanjigrid/d235cae7bc8d6ad66c7b363fb5a4234b3dd66400/data/basic_kanji_book_bkb_v1_v2.json",
+          "kind": "grid",
+          "expected_git_blob_sha1": "266851696e1865a5feda76d4e118eeb8ad4d210f",
+          "upstream_path": "data/basic_kanji_book_bkb_v1_v2.json"
+        },
+        {
+          "filename": "the_kodansha_kanji_learners_course_klc.json",
+          "url": "https://raw.githubusercontent.com/Kuuuube/kanjigrid/d235cae7bc8d6ad66c7b363fb5a4234b3dd66400/data/the_kodansha_kanji_learners_course_klc.json",
+          "kind": "grid",
+          "expected_git_blob_sha1": "3ab37a22e072bd4e755371c383917fbd4ae1720c",
+          "upstream_path": "data/the_kodansha_kanji_learners_course_klc.json"
+        },
+        {
+          "filename": "wanikani_levels.json",
+          "url": "https://raw.githubusercontent.com/Kuuuube/kanjigrid/d235cae7bc8d6ad66c7b363fb5a4234b3dd66400/data/wanikani_levels.json",
+          "kind": "grid",
+          "expected_git_blob_sha1": "9d76eefbfbf045031fd7b489ea3ff621448024be",
+          "upstream_path": "data/wanikani_levels.json"
+        },
+        {
+          "filename": "remembering_the_kanji.json",
+          "url": "https://raw.githubusercontent.com/Kuuuube/kanjigrid/d235cae7bc8d6ad66c7b363fb5a4234b3dd66400/data/remembering_the_kanji.json",
+          "kind": "grid",
+          "expected_git_blob_sha1": "18a2d0dfe9ccc60272032d0a969a3d1d40b08a34",
+          "upstream_path": "data/remembering_the_kanji.json"
+        },
+        {
+          "filename": "jis_levels.json",
+          "url": "https://raw.githubusercontent.com/Kuuuube/kanjigrid/d235cae7bc8d6ad66c7b363fb5a4234b3dd66400/data/jis_levels.json",
+          "kind": "grid",
+          "expected_git_blob_sha1": "b9502959f9fbf57a942f33ec32112bb575df10ea",
+          "upstream_path": "data/jis_levels.json"
+        },
+        {
+          "filename": "jlpt_level.json",
+          "url": "https://raw.githubusercontent.com/Kuuuube/kanjigrid/d235cae7bc8d6ad66c7b363fb5a4234b3dd66400/data/jlpt_level.json",
+          "kind": "grid",
+          "expected_git_blob_sha1": "1f7ed0e87e5b00d99236a2a16eeb6e4ae4101bb9",
+          "upstream_path": "data/jlpt_level.json"
+        },
+        {
+          "filename": "kanji_kentei_level.json",
+          "url": "https://raw.githubusercontent.com/Kuuuube/kanjigrid/d235cae7bc8d6ad66c7b363fb5a4234b3dd66400/data/kanji_kentei_level.json",
+          "kind": "grid",
+          "expected_git_blob_sha1": "d31f56d72d57163402aa248f43d32be99e2de990",
+          "upstream_path": "data/kanji_kentei_level.json"
+        },
+        {
+          "filename": "official_kanji.json",
+          "url": "https://raw.githubusercontent.com/Kuuuube/kanjigrid/d235cae7bc8d6ad66c7b363fb5a4234b3dd66400/data/official_kanji.json",
+          "kind": "grid",
+          "expected_git_blob_sha1": "b4aafa72c40e3eb91a0e3558f1008232eac51efa",
+          "upstream_path": "data/official_kanji.json"
+        },
+        {
+          "filename": "kanjidic2_stroke_count.json",
+          "url": "https://raw.githubusercontent.com/Kuuuube/kanjigrid/d235cae7bc8d6ad66c7b363fb5a4234b3dd66400/data/kanjidic2_stroke_count.json",
+          "kind": "grid",
+          "expected_git_blob_sha1": "fd00321823ce980916f7afc25d66dd31de7f3ea4",
+          "upstream_path": "data/kanjidic2_stroke_count.json"
+        },
+        {
+          "filename": "README.md",
+          "url": "https://raw.githubusercontent.com/Kuuuube/kanjigrid/d235cae7bc8d6ad66c7b363fb5a4234b3dd66400/README.md",
+          "kind": "text",
+          "expected_git_blob_sha1": "353d40b39ae9cc41cd81926802322b6250b32eca",
+          "upstream_path": "README.md"
+        },
+        {
+          "filename": "LICENSE",
+          "url": "https://raw.githubusercontent.com/Kuuuube/kanjigrid/d235cae7bc8d6ad66c7b363fb5a4234b3dd66400/LICENSE",
+          "kind": "text",
+          "expected_git_blob_sha1": "dba13ed2ddf783ee8118c6a581dbf75305f816a3",
+          "upstream_path": "LICENSE"
+        }
+      ],
+      "workspace_catalog": "rubi-restore/added_sources.json"
+    },
+    {
+      "id": "onkun",
+      "provider": "marmooo/onkun",
+      "landing_page": "https://github.com/marmooo/onkun",
+      "git_commit": "d73b01c5c45f9035bdac8c6e34d493d3b176cd4c",
+      "commit_date": "2026-09-28T13:14:50Z",
+      "notes": [
+        "Headerless joyo-2017.csv: character, elementary readings, junior-high readings, senior-high readings.",
+        "Both Joyo CSVs include 叱 beside 𠮟, giving 2137 rows for the 2136 official characters; preserve the alias.",
+        "Joyo 2017 converts MEXT stage data; it omits whole-word appendices. This is not independent corroboration of MEXT.",
+        "Unihan is a broad reading-candidate source. Reading inventories do not establish contextual word readings or familiarity."
+      ],
+      "files": [
+        {
+          "filename": "joyo-2010.csv",
+          "url": "https://raw.githubusercontent.com/marmooo/onkun/d73b01c5c45f9035bdac8c6e34d493d3b176cd4c/data/joyo-2010.csv",
+          "kind": "csv_no_header",
+          "expected_git_blob_sha1": "6dd70ba7b9bd85447f3d68992f236201f375c568",
+          "upstream_path": "data/joyo-2010.csv"
+        },
+        {
+          "filename": "joyo-2017.csv",
+          "url": "https://raw.githubusercontent.com/marmooo/onkun/d73b01c5c45f9035bdac8c6e34d493d3b176cd4c/data/joyo-2017.csv",
+          "kind": "csv_no_header",
+          "expected_git_blob_sha1": "7d39cf667cdeda5a36fc0785aa0510ba91b58717",
+          "upstream_path": "data/joyo-2017.csv"
+        },
+        {
+          "filename": "Unihan-2026-07-31.csv",
+          "url": "https://raw.githubusercontent.com/marmooo/onkun/d73b01c5c45f9035bdac8c6e34d493d3b176cd4c/data/Unihan-2026-07-31.csv",
+          "kind": "csv_no_header",
+          "expected_git_blob_sha1": "771c276f7f583151ac5879985129d1ac36c837ba",
+          "upstream_path": "data/Unihan-2026-07-31.csv"
+        },
+        {
+          "filename": "README.md",
+          "url": "https://raw.githubusercontent.com/marmooo/onkun/d73b01c5c45f9035bdac8c6e34d493d3b176cd4c/README.md",
+          "kind": "text",
+          "expected_git_blob_sha1": "f809ae353af2083e03d2412f3b213f401ba76b1b",
+          "upstream_path": "README.md"
+        },
+        {
+          "filename": "LICENSE",
+          "url": "https://raw.githubusercontent.com/marmooo/onkun/d73b01c5c45f9035bdac8c6e34d493d3b176cd4c/LICENSE",
+          "kind": "text",
+          "expected_git_blob_sha1": "733e2958ba9bedef0580a3426787b262739a21f6",
+          "upstream_path": "LICENSE"
+        }
+      ],
+      "workspace_catalog": "rubi-restore/added_sources.json"
+    },
+    {
+      "id": "mimneko_kanji_data",
+      "provider": "mimneko/kanji-data",
+      "landing_page": "https://github.com/mimneko/kanji-data",
+      "git_commit": "0be3577f7939ec85d2b4e373a7a94262e7449e13",
+      "commit_date": "2026-06-26T10:33:07Z",
+      "notes": [
+        "Selected Joyo main table (readings, examples, notes, glyph relationships), whole-word appendix, and Kanken dictionary glyph/level mapping.",
+        "This is an unofficial conversion; it does not supply MEXT reading-stage assignments.",
+        "README documents omissions/flattening in the Joyo conversion. Preserve variants, examples and dictionary-edition scope.",
+        "The Kanken CSV is not a replacement for the other Kanken grid; retain its 2014 dictionary lineage."
+      ],
+      "files": [
+        {
+          "filename": "常用漢字表本表.json",
+          "url": "https://raw.githubusercontent.com/mimneko/kanji-data/0be3577f7939ec85d2b4e373a7a94262e7449e13/%E5%B8%B8%E7%94%A8%E6%BC%A2%E5%AD%97%E8%A1%A8%E6%9C%AC%E8%A1%A8.json",
+          "kind": "json",
+          "expected_git_blob_sha1": "db27908006de1a462ce0f165f43ef1719e882c7a",
+          "upstream_path": "常用漢字表本表.json"
+        },
+        {
+          "filename": "常用漢字表付表.json",
+          "url": "https://raw.githubusercontent.com/mimneko/kanji-data/0be3577f7939ec85d2b4e373a7a94262e7449e13/%E5%B8%B8%E7%94%A8%E6%BC%A2%E5%AD%97%E8%A1%A8%E4%BB%98%E8%A1%A8.json",
+          "kind": "json",
+          "expected_git_blob_sha1": "34c24c8f2fe1d9d9f90c3acb06d03b981c0718d5",
+          "upstream_path": "常用漢字表付表.json"
+        },
+        {
+          "filename": "漢検漢字辞典漢字.csv",
+          "url": "https://raw.githubusercontent.com/mimneko/kanji-data/0be3577f7939ec85d2b4e373a7a94262e7449e13/%E6%BC%A2%E6%A4%9C%E6%BC%A2%E5%AD%97%E8%BE%9E%E5%85%B8%E6%BC%A2%E5%AD%97.csv",
+          "kind": "csv",
+          "expected_git_blob_sha1": "f297d58e502bd53c3ba035c49f8d123a091aa7fd",
+          "upstream_path": "漢検漢字辞典漢字.csv"
+        },
+        {
+          "filename": "README.md",
+          "url": "https://raw.githubusercontent.com/mimneko/kanji-data/0be3577f7939ec85d2b4e373a7a94262e7449e13/README.md",
+          "kind": "text",
+          "expected_git_blob_sha1": "a8a3788075290a8ba594ae3f1ab9cb0377d82d62",
+          "upstream_path": "README.md"
+        },
+        {
+          "filename": "LICENSE",
+          "url": "https://raw.githubusercontent.com/mimneko/kanji-data/0be3577f7939ec85d2b4e373a7a94262e7449e13/LICENSE",
+          "kind": "text",
+          "expected_git_blob_sha1": "0e259d42c996742e9e3cba14c677129b2c1b6311",
+          "upstream_path": "LICENSE"
+        }
+      ],
+      "workspace_catalog": "rubi-restore/added_sources.json"
+    },
+    {
+      "id": "kyoiku_historical_transcription",
+      "provider": "fnshr/kyo-kan",
+      "landing_page": "https://github.com/fnshr/kyo-kan",
+      "git_commit": "a1cdafd62a500381a2d5ef4e112b0598cbc37f1b",
+      "commit_date": "2017-02-18T02:40:24Z",
+      "notes": [
+        "A named third-party transcription of the 1989 and 2017 school-grade tables. Compare against the saved official MEXT historical HTML.",
+        "Do not count this and the corresponding MEXT/Anki conversions as independent evidence."
+      ],
+      "files": [
+        {
+          "filename": "kyoiku-kanji-1989.csv",
+          "url": "https://raw.githubusercontent.com/fnshr/kyo-kan/a1cdafd62a500381a2d5ef4e112b0598cbc37f1b/kyoiku-kanji-1989.csv",
+          "kind": "csv",
+          "expected_git_blob_sha1": "458aa082bafb65f2996ac3453a1a428f3ff78d0a",
+          "upstream_path": "kyoiku-kanji-1989.csv"
+        },
+        {
+          "filename": "kyoiku-kanji-2017.csv",
+          "url": "https://raw.githubusercontent.com/fnshr/kyo-kan/a1cdafd62a500381a2d5ef4e112b0598cbc37f1b/kyoiku-kanji-2017.csv",
+          "kind": "csv",
+          "expected_git_blob_sha1": "d895b21e941c84b4a35abac26d3bb071fb53e484",
+          "upstream_path": "kyoiku-kanji-2017.csv"
+        },
+        {
+          "filename": "README.md",
+          "url": "https://raw.githubusercontent.com/fnshr/kyo-kan/a1cdafd62a500381a2d5ef4e112b0598cbc37f1b/README.md",
+          "kind": "text",
+          "expected_git_blob_sha1": "de9039ec9d2e25c6262d3b350cd5f55fdac55004",
+          "upstream_path": "README.md"
+        },
+        {
+          "filename": "LICENSE",
+          "url": "https://raw.githubusercontent.com/fnshr/kyo-kan/a1cdafd62a500381a2d5ef4e112b0598cbc37f1b/LICENSE",
+          "kind": "text",
+          "expected_git_blob_sha1": "670154e3538863b2d9891fd5483160fbdfc89164",
+          "upstream_path": "LICENSE"
+        }
+      ],
+      "workspace_catalog": "rubi-restore/added_sources.json"
+    },
+    {
+      "id": "jmdict_furigana",
+      "provider": "Doublevil/JmdictFurigana",
+      "landing_page": "https://github.com/Doublevil/JmdictFurigana",
+      "git_commit": "8ab94725bedd23f5a566556519a892f78127fffb",
+      "commit_date": "2025-10-11T16:16:30Z",
+      "notes": [
+        "Generated word-reading-to-ruby alignment, not observed exam ruby or a sentence parser.",
+        "Release 2.3.1+2026-09-25 is older than the live 2026-10-09 JMdict/JMnedict snapshot; join by exact spelling and reading, handle alternatives/missing entries.",
+        "The JMnedict companion supplies name alignments; names remain ambiguous."
+      ],
+      "files": [
+        {
+          "filename": "JmnedictFurigana.json.zip",
+          "url": "https://github.com/Doublevil/JmdictFurigana/releases/download/2.3.1%2B2026-09-25/JmnedictFurigana.json.zip",
+          "kind": "zip_furigana",
+          "expected_sha256": "2463fd1619b405e7d18329cd364cccf72cc182cea5d698352f87c60762f45714",
+          "expected_bytes": 9332321
+        },
+        {
+          "filename": "JmdictFurigana.json.zip",
+          "url": "https://github.com/Doublevil/JmdictFurigana/releases/download/2.3.1%2B2026-09-25/JmdictFurigana.json.zip",
+          "kind": "zip_furigana",
+          "expected_sha256": "b4c27a835767e9b8bd87bd5a30c9691ad3d1d5100d4a131590628c2d547ce5d8",
+          "expected_bytes": 5270870
+        },
+        {
+          "filename": "README.md",
+          "url": "https://raw.githubusercontent.com/Doublevil/JmdictFurigana/8ab94725bedd23f5a566556519a892f78127fffb/README.md",
+          "kind": "text",
+          "expected_git_blob_sha1": "979f44dd935fbf2d9b95ee980e24239eef3bd9ee",
+          "upstream_path": "README.md"
+        },
+        {
+          "filename": "LICENSE",
+          "url": "https://raw.githubusercontent.com/Doublevil/JmdictFurigana/8ab94725bedd23f5a566556519a892f78127fffb/LICENSE",
+          "kind": "text",
+          "expected_git_blob_sha1": "7e5310acd70550882be3c06d2e91012e7318b6fa",
+          "upstream_path": "LICENSE"
+        }
+      ],
+      "version": "2.3.1+2026-09-25",
+      "workspace_catalog": "rubi-restore/added_sources.json"
+    },
+    {
+      "id": "mext_reading_stage",
+      "provider": "MEXT",
+      "landing_page": "https://www.mext.go.jp/a_menu/shotou/new-cs/1385768.htm",
+      "version": "March 2017 reading-stage allocation",
+      "notes": [
+        "Save the authoritative PDF including whole-word appendix 1 and prefecture-name appendix 2.",
+        "Reading-stage allocations are instructional guidance, not an exam furigana rule.",
+        "The table references earlier 1991/2011 guidance; this 2017 edition must not be projected unchanged over 1991-2026."
+      ],
+      "files": [
+        {
+          "filename": "mext_reading_stage_2017.html",
+          "url": "https://www.mext.go.jp/a_menu/shotou/new-cs/1385768.htm",
+          "kind": "html"
+        },
+        {
+          "filename": "mext_reading_stage_2017.pdf",
+          "url": "https://www.mext.go.jp/a_menu/shotou/new-cs/__icsFiles/afieldfile/2017/05/15/1385768.pdf",
+          "kind": "pdf"
+        }
+      ],
+      "workspace_catalog": "rubi-restore/added_sources.json"
+    },
+    {
+      "id": "mext_school_grades",
+      "provider": "MEXT",
+      "landing_page": "https://www.mext.go.jp/a_menu/shotou/old-cs/",
+      "notes": [
+        "Keep announcement dates and implementation dates separate. The 1989 edition took full effect in April 1992; 1990-1991 transition rules matter.",
+        "The 1998, 2003 amended, and 2008 grade allocations should be compared and content-deduplicated, not inferred from their equal total counts.",
+        "Official HTML warns that displayed glyphs can differ from the printed guidelines."
+      ],
+      "files": [
+        {
+          "filename": "school_1989_index.html",
+          "url": "https://www.mext.go.jp/a_menu/shotou/old-cs/1322235.htm",
+          "kind": "html"
+        },
+        {
+          "filename": "school_1989_kokugo.html",
+          "url": "https://www.mext.go.jp/a_menu/shotou/old-cs/1322319.htm",
+          "kind": "html"
+        },
+        {
+          "filename": "school_1990_1991_transition.html",
+          "url": "https://www.mext.go.jp/a_menu/shotou/old-cs/1322454.htm",
+          "kind": "html"
+        },
+        {
+          "filename": "school_1998_index.html",
+          "url": "https://www.mext.go.jp/a_menu/shotou/cs/1319941.htm",
+          "kind": "html"
+        },
+        {
+          "filename": "school_1998_kokugo.html",
+          "url": "https://www.mext.go.jp/a_menu/shotou/cs/1319951.htm",
+          "kind": "html"
+        },
+        {
+          "filename": "school_2003_amended_index.html",
+          "url": "https://www.mext.go.jp/a_menu/shotou/cs/1320008.htm",
+          "kind": "html"
+        },
+        {
+          "filename": "school_2003_amended_kokugo.html",
+          "url": "https://www.mext.go.jp/a_menu/shotou/cs/1320015.htm",
+          "kind": "html"
+        },
+        {
+          "filename": "school_2008_kokugo.html",
+          "url": "https://www.mext.go.jp/a_menu/shotou/new-cs/youryou/syo/koku.htm",
+          "kind": "html"
+        },
+        {
+          "filename": "school_2008_table.pdf",
+          "url": "https://www.mext.go.jp/a_menu/shotou/new-cs/youryou/syo/koku/__icsFiles/afieldfile/2016/10/27/1234920.pdf",
+          "kind": "pdf"
+        },
+        {
+          "filename": "school_2017_curriculum.pdf",
+          "url": "https://www.mext.go.jp/content/1413522_001.pdf",
+          "kind": "pdf"
+        },
+        {
+          "filename": "school_grade_revision_counts_2016.pdf",
+          "url": "https://www.mext.go.jp/b_menu/shingi/chukyo/chukyo3/068/siryo/__icsFiles/afieldfile/2016/06/08/1371886_2.pdf",
+          "kind": "pdf"
+        }
+      ],
+      "workspace_catalog": "rubi-restore/added_sources.json"
+    },
+    {
+      "id": "edrdg",
+      "provider": "Electronic Dictionary Research and Development Group",
+      "landing_page": "https://www.edrdg.org/",
+      "version": "Daily files retrieved 2026-10-09; see embedded creation dates and HTTP Last-Modified",
+      "notes": [
+        "JMdict full multilingual XML, JMnedict names XML, KANJIDIC2 kanji XML; one copy of the shared license.",
+        "Keep spelling/reading/sense restrictions, POS, priorities and variants. Character readings cannot substitute for word readings.",
+        "KANJIDIC2 jlpt values are former pre-2010 levels 1-4, never N1-N5.",
+        "Official ftp.edrdg.org had a hostname certificate error; the equivalent www.edrdg.org/pub/Nihongo HTTPS URLs work with normal TLS verification."
+      ],
+      "files": [
+        {
+          "filename": "JMdict.gz",
+          "url": "https://www.edrdg.org/pub/Nihongo/JMdict.gz",
+          "kind": "xml_gzip"
+        },
+        {
+          "filename": "JMnedict.xml.gz",
+          "url": "https://www.edrdg.org/pub/Nihongo/JMnedict.xml.gz",
+          "kind": "xml_gzip"
+        },
+        {
+          "filename": "kanjidic2.xml.gz",
+          "url": "https://www.edrdg.org/kanjidic/kanjidic2.xml.gz",
+          "kind": "xml_gzip"
+        },
+        {
+          "filename": "licence.html",
+          "url": "https://www.edrdg.org/edrdg/licence.html",
+          "kind": "html"
+        },
+        {
+          "filename": "jmdict_documentation.html",
+          "url": "https://www.edrdg.org/jmdict/edict.html",
+          "kind": "html"
+        },
+        {
+          "filename": "jmnedict_documentation.html",
+          "url": "https://www.edrdg.org/enamdict/enamdict_doc.html",
+          "kind": "html"
+        },
+        {
+          "filename": "kanjidic2_dtd.html",
+          "url": "https://www.edrdg.org/kanjidic/kanjidic2_dtdh.html",
+          "kind": "html"
+        }
+      ],
+      "workspace_catalog": "rubi-restore/added_sources.json"
+    },
+    {
+      "id": "jev",
+      "provider": "Japanese Education Vocabulary / 学習者辞書グループ",
+      "landing_page": "https://jhlee.sakura.ne.jp/JEV/",
+      "version": "1.1 (published-sheet snapshot)",
+      "notes": [
+        "Official page embeds a publicly published Google Sheet. Its public CSV endpoint is used; no registration form was submitted.",
+        "This is the eight-column public sheet, not the extended password-protected Excel download. Do not invent missing old-JLPT, accent, meaning or example fields.",
+        "Teacher-rated word difficulty is useful alongside frequency and kanji grids. The shared BCCWJ lineage is not independent frequency evidence."
+      ],
+      "files": [
+        {
+          "filename": "jev_terms_and_description.html",
+          "url": "https://jhlee.sakura.ne.jp/JEV/",
+          "kind": "html"
+        },
+        {
+          "filename": "JEV_v1.1_public.csv",
+          "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vT4PrRDwKEWbA5BFzB2RMPuva3NIMRZD8BIB7jJjDjH0pJ2PLbudaAYRQ83xomPYSB8_WIaSyNb643l/pub?output=csv",
+          "kind": "csv"
+        }
+      ],
+      "workspace_catalog": "rubi-restore/added_sources.json"
+    },
+    {
+      "id": "unicode_terms",
+      "provider": "Unicode Consortium",
+      "landing_page": "https://www.unicode.org/license.txt",
+      "files": [
+        {
+          "filename": "Unicode_License.txt",
+          "url": "https://www.unicode.org/license.txt",
+          "kind": "text"
+        }
+      ],
+      "workspace_catalog": "rubi-restore/added_sources.json"
+    },
+    {
+      "id": "kanjidic_legacy_2004_03_10",
+      "provider": "EDRDG / archived Debian source package",
+      "landing_page": "https://archive.debian.org/debian/pool/main/k/kanjidic/",
+      "version": "2004.03.10",
+      "notes": [
+        "Archive is genuinely dated before 2010, but inspection found no J1-J4 tags in these files.",
+        "Use the G1-G6/G8 fields for historical 1006 school-grade and 1945 Joyo membership; not as a JLPT list.",
+        "Original data are EUC-JP and compressed inside the tar archive. Preserve all archived documentation/license.",
+        "The .dsc publishes an MD5 which is checked; PGP signature was not independently verified. SHA-256 pins this copy."
+      ],
+      "files": [
+        {
+          "filename": "kanjidic_2004.03.10.orig.tar.gz",
+          "url": "https://archive.debian.org/debian/pool/main/k/kanjidic/kanjidic_2004.03.10.orig.tar.gz",
+          "kind": "tar_gzip",
+          "expected_md5": "9818d55ccc369c1b98fec1f3b5544c4b"
+        },
+        {
+          "filename": "kanjidic_2004.03.10-1.dsc",
+          "url": "https://archive.debian.org/debian/pool/main/k/kanjidic/kanjidic_2004.03.10-1.dsc",
+          "kind": "text"
+        }
+      ],
+      "workspace_catalog": "rubi-restore/added_sources.json"
+    },
+    {
+      "id": "kanjidic_legacy_2008_02_13",
+      "provider": "EDRDG / archived Debian source package",
+      "landing_page": "https://archive.debian.org/debian/pool/main/k/kanjidic/",
+      "version": "2008.02.13",
+      "notes": [
+        "Archive is genuinely dated before 2010, but inspection found no J1-J4 tags in these files.",
+        "Use the G1-G6/G8 fields for historical 1006 school-grade and 1945 Joyo membership; not as a JLPT list.",
+        "Original data are EUC-JP and compressed inside the tar archive. Preserve all archived documentation/license.",
+        "The .dsc publishes an MD5 which is checked; PGP signature was not independently verified. SHA-256 pins this copy."
+      ],
+      "files": [
+        {
+          "filename": "kanjidic_2008.02.13.orig.tar.gz",
+          "url": "https://archive.debian.org/debian/pool/main/k/kanjidic/kanjidic_2008.02.13.orig.tar.gz",
+          "kind": "tar_gzip",
+          "expected_md5": "d6060851ec4beb9e6a1b0aa0f72c65b9"
+        },
+        {
+          "filename": "kanjidic_2008.02.13-1.dsc",
+          "url": "https://archive.debian.org/debian/pool/main/k/kanjidic/kanjidic_2008.02.13-1.dsc",
+          "kind": "text"
+        }
+      ],
+      "workspace_catalog": "rubi-restore/added_sources.json"
+    },
+    {
+      "id": "nier_historical_school_grades",
+      "provider": "National Institute for Educational Policy Research (NIER)",
+      "landing_page": "https://erid.nier.go.jp/files/COFS/",
+      "notes": [
+        "1977 (Showa 52) and 1989 (Heisei 1) elementary Japanese curriculum tables in the NIER archive.",
+        "The 1977 996-character allocation supplies the preceding historical baseline; 1991 has transition rules, not a simple current-grid substitution.",
+        "The 1989 HTML appears to have 咋 where later official MEXT editions and the comparison CSV have 昨. Retain raw bytes; any correction belongs in a documented derivative."
+      ],
+      "files": [
+        {
+          "filename": "school_1977_kokugo.html",
+          "url": "https://erid.nier.go.jp/files/COFS/s52e/chap2-1.htm",
+          "kind": "html"
+        },
+        {
+          "filename": "school_1989_kokugo.html",
+          "url": "https://erid.nier.go.jp/files/COFS/h01e/chap2-1.htm",
+          "kind": "html"
+        }
+      ],
+      "workspace_catalog": "rubi-restore/added_sources.json"
+    },
+    {
+      "id": "bunka_joyo_editions",
+      "provider": "Agency for Cultural Affairs (Bunka)",
+      "landing_page": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/",
+      "notes": [
+        "Historical Joyo 1981 council table and modern Joyo 2010 Cabinet notice. No Toyo grid is included.",
+        "The 1981 table supplies the relevant 1945-character baseline preceding the 2010 change to 2136.",
+        "Historical readings/grade membership must retain the edition date; current lists do not prove historical familiarity."
+      ],
+      "files": [
+        {
+          "filename": "joyo_1981_index.html",
+          "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kakuki/14/tosin02/",
+          "kind": "html",
+          "encoding": "cp932"
+        },
+        {
+          "filename": "joyo_1981_table.pdf",
+          "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kakuki/14/pdf/jyouyou_kanjihyou.pdf",
+          "kind": "pdf"
+        },
+        {
+          "filename": "joyo_1981_explanation.html",
+          "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kakuki/14/tosin02/01.html",
+          "kind": "html",
+          "encoding": "cp932"
+        },
+        {
+          "filename": "joyo_2010_index.html",
+          "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/",
+          "kind": "html",
+          "encoding": "cp932"
+        },
+        {
+          "filename": "joyo_2010_table.pdf",
+          "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/pdf/joyokanjihyo_20101130.pdf",
+          "kind": "pdf"
+        }
+      ],
+      "workspace_catalog": "rubi-restore/added_sources.json"
+    },
+    {
+      "id": "jlpt_legacy_study_2006",
+      "provider": "Peter van der Woude / JLPT Study, via Internet Archive",
+      "landing_page": "http://www.jlptstudy.com",
+      "version": "2006 archived lists citing 2004 Test Content Specifications",
+      "notes": [
+        "Actually captured in 2006, unlike a current N1-N5 list relabeled with old names.",
+        "Level 4 lists 103 characters; Level 3 lists 181 additional (284 cumulative); Level 2 lists 739 additional (1023 cumulative).",
+        "Level 2 page says its double-check against the 2004 official content book is in progress; do not label these pages issuer-published.",
+        "This author did not provide an archived Level 1 page in the discovered inventory. Use the separately labeled KANJIDIC2 retrospective old levels as an auxiliary source."
+      ],
+      "files": [
+        {
+          "filename": "jlpt_old_level_2_2006.html",
+          "url": "https://web.archive.org/web/20061026230217id_/http://www.jlptstudy.com/2/jlpt2_kanji-list.html",
+          "kind": "html",
+          "archive_capture_timestamp": "20061026230217",
+          "original_url": "http://www.jlptstudy.com/2/jlpt2_kanji-list.html",
+          "archive_cdx_digest_sha1_base32": "NKOSZPDLXWHDL4ORU5SAVMH6IZ367N3U"
+        },
+        {
+          "filename": "jlpt_old_level_3_2006.html",
+          "url": "https://web.archive.org/web/20061026230557id_/http://www.jlptstudy.com/3/jlpt3_kanji-list.html",
+          "kind": "html",
+          "archive_capture_timestamp": "20061026230557",
+          "original_url": "http://www.jlptstudy.com/3/jlpt3_kanji-list.html",
+          "archive_cdx_digest_sha1_base32": "U7L3PI7JYDMLQU7VPBYUDC2IEEMSYZ7U"
+        },
+        {
+          "filename": "jlpt_old_level_4_2006.html",
+          "url": "https://web.archive.org/web/20060818190355id_/http://www.jlptstudy.com:80/4/jlpt4_kanji-list.html",
+          "kind": "html",
+          "archive_capture_timestamp": "20060818190355",
+          "original_url": "http://www.jlptstudy.com:80/4/jlpt4_kanji-list.html",
+          "archive_cdx_digest_sha1_base32": "3VC3C25DL4HAH5JFWHXEIQZM2Y6X7TW2"
+        }
+      ],
+      "workspace_catalog": "rubi-restore/added_sources.json"
+    },
+    {
+      "id": "tanos_jlpt_2006",
+      "provider": "Jonathan Waller / Tanos, via Internet Archive",
+      "landing_page": "http://www.tanos.co.uk/jlpt/",
+      "version": "May 2006 archived old JLPT levels 1-4, original-order base files",
+      "notes": [
+        "Actual pre-2010 archived files; do not relabel them modern N1-N5.",
+        "Selected one original-order base file per old level; no duplicate cumulative or alternative-order archives.",
+        "Level membership and readings are community data, not an issuer-published syllabus or original exam ruby.",
+        "The public Wayback availability API did not return every existing capture; CDX inventory provides the exact capture URLs and payload digests.",
+        "JIS-order variants were screened out: their counts 482/294/111/57 were incomplete compared with the original-order base lists 1244/740/166/80. They are not retained."
+      ],
+      "files": [
+        {
+          "filename": "jlpt_kanji_level_1_base.zip",
+          "url": "https://web.archive.org/web/20060516220054id_/http://www.tanos.co.uk:80/jlpt/utf8/kanji/jlpt_kanji_level_1_base.zip",
+          "kind": "zip_text",
+          "archive_capture_timestamp": "20060516220054",
+          "original_url": "http://www.tanos.co.uk:80/jlpt/utf8/kanji/jlpt_kanji_level_1_base.zip",
+          "archive_cdx_digest_sha1_base32": "2JTWMBRKZVNN7M2LZAIDZULNNOLOOWIT"
+        },
+        {
+          "filename": "jlpt_kanji_level_2_base.zip",
+          "url": "https://web.archive.org/web/20060516220108id_/http://www.tanos.co.uk:80/jlpt/utf8/kanji/jlpt_kanji_level_2_base.zip",
+          "kind": "zip_text",
+          "archive_capture_timestamp": "20060516220108",
+          "original_url": "http://www.tanos.co.uk:80/jlpt/utf8/kanji/jlpt_kanji_level_2_base.zip",
+          "archive_cdx_digest_sha1_base32": "LDL42LQVUDRHX4UBKFVNBIS5JECUS4WJ"
+        },
+        {
+          "filename": "jlpt_kanji_level_3_base.zip",
+          "url": "https://web.archive.org/web/20060516220120id_/http://www.tanos.co.uk:80/jlpt/utf8/kanji/jlpt_kanji_level_3_base.zip",
+          "kind": "zip_text",
+          "archive_capture_timestamp": "20060516220120",
+          "original_url": "http://www.tanos.co.uk:80/jlpt/utf8/kanji/jlpt_kanji_level_3_base.zip",
+          "archive_cdx_digest_sha1_base32": "YSEXC2AY3XLPE2ASYXOWGBJ2UWOBZPF4"
+        },
+        {
+          "filename": "jlpt_kanji_level_4_base.zip",
+          "url": "https://web.archive.org/web/20060516220132id_/http://www.tanos.co.uk:80/jlpt/utf8/kanji/jlpt_kanji_level_4_base.zip",
+          "kind": "zip_text",
+          "archive_capture_timestamp": "20060516220132",
+          "original_url": "http://www.tanos.co.uk:80/jlpt/utf8/kanji/jlpt_kanji_level_4_base.zip",
+          "archive_cdx_digest_sha1_base32": "EH3HUS744LN5EEJC5O53WRVYEA5RH4BM"
+        },
+        {
+          "filename": "tanos_old_level_1_index_2007.html",
+          "url": "https://web.archive.org/web/20071012095839id_/http://www.tanos.co.uk:80/jlpt/jlpt1/",
+          "kind": "html",
+          "archive_capture_timestamp": "20071012095839",
+          "original_url": "http://www.tanos.co.uk:80/jlpt/jlpt1/"
+        },
+        {
+          "filename": "archive_cdx_inventory_2006.json",
+          "url": "https://web.archive.org/cdx/search/cdx?url=www.tanos.co.uk%2Fjlpt%2Futf8%2Fkanji%2F%2A&output=json&filter=statuscode%3A200&to=2006&collapse=urlkey&limit=30",
+          "kind": "json"
+        }
+      ],
+      "workspace_catalog": "rubi-restore/added_sources.json"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "format": "astraJLPT-unit-aliases-v1",
+  "version": 1,
+  "migration_date": "2026-11-10",
+  "baseline_git_commit": "55fbf34",
+  "aliases": {
+    "N1_12_2016": "N1_workbook_2018",
+    "N2_07_2011": "N2_workbook_2012",
+    "N2_12_2016": "N2_workbook_2018",
+    "N3_12_2016": "N3_workbook_2018",
+    "N4_07_2012": "N4_workbook_2012",
+    "N4_07_2018": "N4_workbook_2018",
+    "N5_07_2010": "N5_workbook_2012",
+    "N5_07_2018": "N5_workbook_2018",
+    "N1_07_2011": "N1_set_2011_2012",
+    "N3_07_2011": "N3_set_2011_2012"
+  },
+  "scope": "Canonical release IDs. Historical audit/research records, source identities, annotation IDs and public case/difference IDs retain their original spelling.",
+  "browser_storage": "Renamed readers retain paper:<legacy ID> and the existing :norubi suffix; answer tokens are unchanged."
+}

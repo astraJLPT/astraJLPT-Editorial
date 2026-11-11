@@ -1,0 +1,90 @@
+{
+  "unit": "N4_12_2025",
+  "sources": [
+    {
+      "path": "src\\JLPT_N1_N5_202512\\25年12月N4\\25年12月N4真题.pdf",
+      "sha256": "38525b613a28dbec20003f7d2a2cbda6a4a5fc7ca96d0a9788b6955cc294ea1c",
+      "Tier": 1,
+      "bytes": 3799607,
+      "aliases": [
+        "src\\日语JLPT历年真题\\N4真题（2010-2025.12）\\25年12月N4\\25年12月N4真题.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\2025年12月\\25年12月N4真题.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N4历年真题\\25年12月N4\\25年12月N4真题.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N4\\N4_12_2025\\PaddleOCR\\pdf_1",
+      "VisionOCR": "preprocess\\N4\\N4_12_2025\\VisionOCR\\pdf_1"
+    },
+    {
+      "path": "src\\日语JLPT历年真题\\N4真题（2010-2025.12）\\N4-答题卡.pdf",
+      "sha256": "b0c14d3f8645d885a6ddc2ef4cc160271c0850ea5f1d18f7386a6662f95c2053",
+      "Tier": "unranked",
+      "bytes": 383135,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\N4-答题卡.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N4历年真题\\N4-答题卡.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N4\\N4_multiple\\PaddleOCR\\pdf_14",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT_N1_N5_202512\\25年12月N4\\答案1.png",
+      "sha256": "5baca156aa3966f3dd5330c94588192fe795484f233147a58b1cfcce44b8a9e0",
+      "Tier": "unranked",
+      "bytes": 140138,
+      "aliases": [
+        "src\\日语JLPT历年真题\\N4真题（2010-2025.12）\\25年12月N4\\答案1.png",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N4历年真题\\25年12月N4\\答案1.png"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\JLPT_N1_N5_202512\\25年12月N4\\答案2.png",
+      "sha256": "9079d26fda6d255c5f5ede9e9c45f1385f0e0b128b201bbe14d4c2fc2c773af0",
+      "Tier": "unranked",
+      "bytes": 96687,
+      "aliases": [
+        "src\\日语JLPT历年真题\\N4真题（2010-2025.12）\\25年12月N4\\答案2.png",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N4历年真题\\25年12月N4\\答案2.png"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2025年12月\\5分钱打印（首单免费1）(1).PNG",
+      "sha256": "ad77c1b1ca35d09b7bfd2b242a43b7b480e7dfb008ac914ae770d67ab386732f",
+      "Tier": "unranked",
+      "bytes": 627620,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N1真题\\2025年7月\\5分钱打印（首单免费1）(1).PNG",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N2真题\\2025年12月\\5分钱打印（首单免费1）(1).PNG",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N2真题\\2025年7月\\5分钱打印（首单免费1）(1).PNG",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\2013年12月\\5分钱打印（首单免费1）(1).PNG",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\2025年12月\\5分钱打印（首单免费1）(1).PNG",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N5真题\\2025年12月\\5分钱打印（首单免费1）(1).PNG",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N5真题\\2025年7月\\5分钱打印（首单免费1）(1).PNG"
+      ],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\2025年12月\\25年12月N4答案.jpg",
+      "sha256": "22ddb4c7ea2352c0788b90f29529404d90d4c2e66c5a1bd76c12a9b6a7aed331",
+      "Tier": "unranked",
+      "bytes": 220316,
+      "aliases": [],
+      "PaddleOCR": "",
+      "VisionOCR": ""
+    }
+  ],
+  "current_editorial": {
+    "path": "preprocess/N4/N4_12_2025/editorial_N4_12_2025.json",
+    "sha256": "aa99ac0713e53ffa9e8aa87ac7548d3cb71c75d2c2ea0ec652be16757f976d4f",
+    "bytes": 48313
+  },
+  "current_audit_snapshot": {
+    "path": "preprocess/N4/N4_12_2025/audit_work/handoff11_current.json",
+    "sha256": "cfa97736ee6250a308aee4774fda7ffb8bbfbd22a129b15495acefc218f97d75",
+    "bytes": 3590
+  }
+}

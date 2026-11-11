@@ -1,0 +1,84 @@
+{
+  "contract": "historical-artwork-1.0",
+  "id": "H27-N1_2006-career_preparation_bars",
+  "kind": "career_preparation_bars",
+  "unit": "N1_2006",
+  "item_id": "reading-b009",
+  "source": {
+    "source_path": "src/JLPT N1-N5, Past papers/N1/1995-2009.12日本语能力测试真题详解N1.pdf",
+    "source_sha256": "e3555741c8f14b855a32e7d09b42eb790492e3818a85a875f99d84703c752e00",
+    "physical_page": 187
+  },
+  "raw_crop": {
+    "path": "preprocess/assets/handoff27-late-statistical-04/N1_2006-raw.jpg",
+    "sha256": "8def703f183ae39d950c0823b16b52fe7690f6c4b7aa84216c545dcec7f96120"
+  },
+  "selection_note": "Direct full-page and canonical-image comparison recorded in H27 late-statistical-families-04/SOURCE_REVIEW-01; preserve canonical image and all question associations.",
+  "limits": "Values follow the retained own-year DOCgraph, with existing principal departures disclosed. Exact original appearance is unavailable. Printed row sums are not normalized; final boundary follows observed100percent geometry.",
+  "data": {
+    "coordinate_status": "literal_printed_one_decimal_values_no_normalization",
+    "titles": [
+      "質問1「どうしたらその職業につくことができるのかを調べること」",
+      "質問2「その職業につくために努力していること」"
+    ],
+    "groups": [
+      "小学生",
+      "中学生",
+      "高校生"
+    ],
+    "categories": [
+      "ある",
+      "ない",
+      "無回答・不明"
+    ],
+    "patterns": [
+      "north east lines",
+      "white",
+      "dots"
+    ],
+    "rows": [
+      [
+        "48.7",
+        "45.7",
+        "5.7"
+      ],
+      [
+        "60.7",
+        "34.6",
+        "4.6"
+      ],
+      [
+        "82.6",
+        "14.2",
+        "3.3"
+      ],
+      [
+        "67.5",
+        "27.6",
+        "4.9"
+      ],
+      [
+        "61.2",
+        "34.1",
+        "4.8"
+      ],
+      [
+        "59.6",
+        "36.7",
+        "3.7"
+      ]
+    ],
+    "axis": {
+      "minimum": 0,
+      "maximum": 100,
+      "tick": 10,
+      "unit": "%"
+    },
+    "geometry": "printed_first_two_segments_final_boundary_at_observed_100_percent_endpoint",
+    "caption": "（グラフはBenesse教育研究開発センター「第1回子ども生活実態基本調査」による）",
+    "document_witness": {
+      "source_sha256": "527ab2b0e6019ef9556622890ccbfb7cde9eca04d9f53be035f1081492bc4b59",
+      "image_sha256": "8def703f183ae39d950c0823b16b52fe7690f6c4b7aa84216c545dcec7f96120"
+    }
+  }
+}

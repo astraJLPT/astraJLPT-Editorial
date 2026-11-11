@@ -1,0 +1,44 @@
+"""Settings markup; preview samples use the reader's marking rules."""
+from html import escape
+from theme_editor import editor_markup
+
+MARKS=[('cell','Cell'),('rounded-cell','Rounded Cell'),('hollow-cell','Hollow Cell'),
+       ('fill','Fill'),('rounded-fill','Rounded Fill'),('hollow-rounded-cell','Hollow Rounded Cell'),
+       ('neon','Neon'),('flame','Flame'),('great-flame','Great Flame'),
+       ('bold','Bold'),('number','Number'),('margin','Margin')]
+
+def settings(themes,reader=False,labelled=False):
+    def cards(ts):
+        result=[]
+        for t in ts:
+            c=t['colors']; accent=c.get('main',c.get('accent'))
+            result.append(f'<label class="theme-card" style="--preview-bg:{c["bg"]};--preview-text:{accent}"><input type="radio" name="theme" id="theme-{t["id"]}" value="{t["id"]}"'+(' checked'if t['id']=='astraJLPT_dark'else '')+f'><span>{escape(t["name"])}</span></label>')
+        return ''.join(result)
+    tabs=([('reading','paper'),('marking','answer behavior')] if reader else [])+[('appearance','theme'),('browser','browser')]
+    content='<div class="settings-tabs" role="group" aria-label="Settings categories">'+''.join(f'<label><input type="radio" name="settings-view" value="{v}"'+(' checked'if n==0 else '')+f'><span>{label}</span></label>' for n,(v,label) in enumerate(tabs))+'</div>'
+    content+='<section data-settings="appearance"><div class="setting-heading"><h3>theme</h3></div><div class="theme-grid originals">'+cards(themes['originals'])+'</div><div class="js-only"><p class="settings-label">three random picks</p><div class="theme-grid" id="quick-picks"></div></div><details><summary>all 187 Monkeytype palettes</summary><label class="theme-search js-only">find a palette<input id="theme-search" type="search" placeholder="search themes" autocomplete="off"></label><div class="theme-grid theme-catalog">'+cards(themes['monkeytype'])+'</div></details></section>'
+    # Palette text source is separate from paper text sizing.
+    content=content[:-len('</section>')]+'<div class="js-only" id="monkeytype-text-source" style="margin-top:20px">\n<h3>reading text color</h3>\n<p class="control-help">Auto chooses the more readable palette color. Choose sub or text to set it yourself; answer colors adapt.</p>\n<div aria-label="Monkeytype reading text color" class="segmented" role="group">\n<label><input checked="" name="text-source" type="radio" value="auto"/><span>auto</span></label>\n<label><input name="text-source" type="radio" value="sub"/><span>sub</span></label>\n<label><input name="text-source" type="radio" value="text"/><span>text</span></label>\n</div>\n<p aria-live="polite" class="control-help" id="monkeytype-text-status" role="status" style="margin-top:8px"></p>\n</div></section>'
+    content=content.replace('<section data-settings="appearance">', '<section data-settings="appearance"><div class="theme-workspace"><div class="theme-picker">', 1)
+    content=content[:-len('</section>')]+'</div>'+editor_markup()+'</div></section>'
+    if reader:
+        spacing='''<div class="setting-row spacing-setting"><div><h3>spacing</h3><p>Adjust line spacing and gaps between blocks.</p></div><div class="segmented">'''
+        for value,label,ratio in [('original','original PDF','100% line · 100% gap'),('standard','standard','90% line · 75% gap'),('compact','compact','80% line · 50% gap')]:
+            spacing+=f'<label><input type="radio" name="spacing" value="{value}"'+(' checked'if value=='standard'else '')+f'><span>{label}<small>{ratio}</small></span></label>'
+        spacing+='''</div></div>
+'''
+        content+='''<section data-settings="reading"><div class="setting-row"><div><h3>text size</h3><p>100% uses the PDF’s type size. Auto uses larger text on narrow screens and returns to 100% as space allows. Changing text size reflows words, independently of paper zoom.</p></div><div><label class="range-label">text size <output id="text-output">auto</output><input id="text-size" type="range" min="25" max="500" value="100"></label><div class="button-row"><button type="button" id="auto-text">auto</button><button type="button" id="source-text">100%</button></div></div></div>
+<div class="setting-row"><div><h3>paper zoom</h3><p>Auto adapts to your screen, enlarging up to 140%. Adjusting its slider uses spare side margins before scrolling becomes necessary. Choose 100% for the PDF’s fixed A4 size, or fit width to fit A4 to your screen.</p></div><div><label class="range-label">paper zoom <output id="zoom-output">auto</output><input id="paper-zoom" type="range" min="25" max="500" value="100"></label><div class="button-row"><button type="button" data-zoom="auto">auto</button><button type="button" data-zoom="fit">fit width</button><button type="button" data-zoom="reference">100%</button></div></div></div>
+<div class="setting-row"><div><h3>paper border</h3><p>Show an outline around the paper.</p></div><label class="switch"><input id="visible-paper" type="checkbox">show paper border</label></div>
+'''+spacing+'''<details class="fine-adjustment"><summary>fine spacing adjustments</summary><p class="control-help">100% matches the PDF spacing. Adjusting either slider creates custom spacing.</p><label class="range-label">line spacing <output id="line-output">90%</output><input id="line-adjust" type="range" min="10" max="200" value="90"></label><label class="range-label">block gaps <output id="block-output">75%</output><input id="block-adjust" type="range" min="10" max="200" value="75"></label></details></section>
+<section data-settings="marking"><div class="setting-row"><div><h3>STAR behavior</h3><p>Show the correct order for STAR questions only when you choose the correct answer.</p></div><div class="segmented star-behavior"><label><input id="show-star-order" type="radio" name="star-behavior" value="show" checked><span>show<small class="star-sample">4 → 3 → 2 → 1</small></span></label><label><input type="radio" name="star-behavior" value="hide"><span>hide<small>keep the order hidden</small></span></label></div></div><div class="setting-heading marking-heading"><h3>answer marking</h3></div><div class="marking-grid">'''
+        for key,label in MARKS:
+            samples=''
+            for correct,number,word in [('true','1','正しい'),('false','2','まちがい')]:
+                symbol='✓' if correct=='true' else '✕'
+                samples+=f'<span class="sample-question" data-correct="{correct}"><span class="sample-margin">{number}<small>{symbol}</small></span><span class="sample-option" data-correct="{correct}"><span class="option-number">{number}</span><span class="option-text">{word}</span><span class="option-feedback">{symbol}</span></span></span>'
+            content+=f'<label class="mark-choice" data-marking="{key}"><input type="radio" name="marking" value="{key}"'+(' checked'if key=='cell'else '')+f'><span class="mark-name">{label.lower()}</span><span class="mark-preview" data-style="{key}" lang="ja" aria-hidden="true">{samples}</span></label>'
+        content+='</div></section>'
+    content+='''<section data-settings="browser"><div class="setting-row js-only"><div><h3>remember this browser</h3><p id="save-status">Saving is on by default. No account required.</p></div><label class="switch"><input id="remember" type="checkbox" checked>save preferences, answers and position</label></div><div class="button-row browser-actions js-only"><button id="reset-preferences" type="button">reset preferences</button><button id="forget" type="button">forget saved data</button></div><div class="developer-only developer-settings"><h3>developer mode</h3><p>Principal differences and editorial cases are visible. This local switch is not authentication.</p><button id="disable-dev" type="button">hide developer tools</button></div><div class="settings-about"><button type="button" id="developer-unlock" class="js-only" title="astraJLPT build information">astraJLPT · 2020–2026 collection</button><span id="developer-hint" role="status"></span></div></section>'''
+    label='<span class="settings-label-text">settings</span>' if reader or labelled else '<span class="sr-only">Settings</span>'
+    return '<details id="settings" class="settings"><summary aria-label="Open settings" title="Settings"><span aria-hidden="true">⚙</span>'+label+'</summary><div class="settings-panel"><div class="settings-title"><h2>settings</h2><button type="button" id="close-settings" class="js-only" aria-label="Close settings">×</button></div>'+content+'</div></details>'

@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "profiles": {
+    "compact": {
+      "inner_width_em": 1.7
+    },
+    "medium": {
+      "inner_width_em": 2.7
+    },
+    "wide": {
+      "inner_width_em": 5.1
+    }
+  },
+  "evidence": "H27 defaults/kana-context-followup-22: directly inspected fourteen approved source pages. Widths are native substitutes, not recovered original font metrics. Compact:1995-1999 controls; medium:1993-1994; wide:2001. Explicit source bindings select a profile; no year heuristic."
+}

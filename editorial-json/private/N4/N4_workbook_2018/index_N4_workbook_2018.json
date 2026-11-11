@@ -1,0 +1,26 @@
+{
+  "unit": "N4_07_2018",
+  "sources": [
+    {
+      "path": "src\\日语JLPT历年真题\\N4真题（2010-2025.12）\\N4-答题卡.pdf",
+      "sha256": "b0c14d3f8645d885a6ddc2ef4cc160271c0850ea5f1d18f7386a6662f95c2053",
+      "Tier": "unranked",
+      "bytes": 383135,
+      "aliases": [
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\N4-答题卡.pdf",
+        "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道二\\N4历年真题\\N4-答题卡.pdf"
+      ],
+      "PaddleOCR": "preprocess\\N4\\N4_multiple\\PaddleOCR\\pdf_14",
+      "VisionOCR": ""
+    },
+    {
+      "path": "src\\日语JLPT真题1992～2025.12（及时转存，避免丢失）\\渠道一\\日语N4真题\\2018年\\2018年07月日语N4答案解析+听力原文.pdf",
+      "sha256": "072fdd20969278e15e51415d380fbe9b033eb4d54b60e1626d7377ddbc43b27c",
+      "Tier": "unranked",
+      "bytes": 10639266,
+      "aliases": [],
+      "PaddleOCR": "preprocess\\N4\\N4_07_2018\\PaddleOCR\\pdf_6",
+      "VisionOCR": ""
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+# N3_2000 written audit — H25
+
+Status: **incomplete source content; available investigation complete**. The maintained Old schema3.9.0 partial practice paper contains **100 playable questions** (50 vocabulary,50 reading/grammar), **400 options**, **13 complete contexts** (11 vocabulary,2 reading), and11sections. Five vocabulary questions lack eight original wrong-character shapes and are omitted. No worked examples, ordinary ruby, body figures, lexical notes or citations were observed. Listening/audio and exam-PDF integration remain deferred.
+
+## Actual source coverage
+
+No indexed single file covers both written booklets. The principal is the actual eight-page 昂立新日语 vocabularyPDF, SHA-256 `0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845`. Its55original question positions and11contexts were fully read. Its byte-identical inspection copy retains its original name. The separate ten-page readingPDF, SHA-256 `c870b073caba6326e73ff56ea119ffa66c448b075b05ef84974b8a87711106db`, supplies all50reading questions and both contexts. Every page was inspected and compared with the entire ten-page private conversion of 分析.doc, including all Chinese explanations. The DOC has shared retype errors and is not independent original custody. Private conversion pages are derivative locators, not intrinsic DOC pagination.
+
+The one-page separate vocabulary answerPDF supplies55keys and raw section weights1/1/2/2/2. Only its upper written panel was audited; lower listening was excluded. The complete617×635reading-keyJPG supplies50keys, all agreeing with the DOC explanations. Each key was checked in actual option order and against full context. Vocabulary raw total75 becomes70for included questions. Reading weights are absent; the right-clipped vocabulary scaling formula is not reconstructed. Secondary100点35分/200点70分 headings do not authenticate original covers or timing. Both covers remain unavailable. The listening-only16-pagePDF was classified from first/last pages, without auditing its content. The local written candidate file has zero rows.
+
+The source title and historical3級identity support the2000sitting; the previously inspected official guide establishes annual December sittings through2008. No modern level substitution or original-cover claim is made.
+
+## Missing content and exact decisions
+
+Vocabulary original positions21,22,23,25,31 are omitted. V21choices2/3 are風中正字/風中虫字; V22choices2/4 are月日るく/赤字上面三行るく; V23choice3 is separate彳主 without所; V25choice2 is丈帯一点; V31choices2/3 are双人傍加乍りました/提手傍加乍りました. These descriptions or separated components cannot recover the original wrong glyphs. The fragments and all observed keys remain private. Stable IDs and printed numbering gaps remain; context7is retained even though both dependent questions21/22are omitted. No guessed glyph is presented as a playable option.
+
+Six exact fields change from their source transcription. VocabularyQ9悪 becomes悪く, matching the visibly underlined complete context and all four readings. Q43じじょ becomesじしょ for the dictionary used to look up words. The truncated usage heading gains一つえらびなさい。 under audit-orderO1 and matching same-level local commands; this is a medium-confidence provisional instruction with a public case, not recovered historical wording. ReadingQ15もそもし becomesもしもし; Q29keyedにしょう becomesにしよう, explicitly witnessed in the DOC; Q37英悟 becomes英語. Other five repairs are high confidence. Keys do not change.
+
+VocabularyQ42retains5時にあう___したのに with key4やくそく. A possible omittedを is unresolved because約束する can also be particle-free in ordinary speech. The case records both readings without manufacturing an original. Deliberately wrong choices, including readingQ18食べなしで, remain literal. ReadingQ49のまさなければ remains as printed; a causative variant is not an error to normalize. Incidental日本underlines in vocabularycontext8,Q48choices1–4andQ51choice1remain, along with all tested marks, circled labels, full paraphrase underlines and usage targets. The initial review-note labelV47was corrected toV48; authored content was already in the correct position.
+
+The auxiliary explanations have their own defects. R13overstates the effect of embedded-questionか onどこ; R28states an overbroad first-person-only rule forほしい; R48translates数日前 as one week. Correct keys are unaffected. These are recorded separately and are not charged as printed principal-question defects.
+
+## Focused outside checks and principal reporting
+
+After completing all indexed written comparisons, focused public checks sought the missing glyphs and disputed vocabulary spans. The [Qingsuyun first40questions](https://www.qingsuyun.com/lib/d/60012039000600030022/) repeat the descriptions and isolated悪; V23substitutesX所 without original pixels. SavedHTML SHA-256 is `b891e6b8f9d0974dad86e382517285df7519a8ab9448b0a688a17ba4ff53bff1`. Two plausible publicPDF paths returned404. Slideshare/Scribd search excerpts identified further retypes, not original glyph evidence; no restricted content was accessed. No external text or image was adopted. Acquisition receipts and the source-selection tracker record the bounded scope.
+
+Method1 score **199** describes the actual vocabulary-only principal, not a composite. Its57missing units comprise five incomplete vocabulary questions plus50reading questions and2reading contexts absent from that file. The52reading absences are fully supplied by the separate reading witness in the editorial; they are not final editorial omissions. The other counts are1major field(V9),2minor fields(V43and truncated heading),1uncertain field(V42),and0metadata flags. Thus100+min(99,570+5+4+1)=199. Provenance remains unverified. Separate reading repairs and key/explanation evidence do not become vocabulary-principal defects. This limited assessment is unsuitable as an unqualified comparison of whole-paper error rates.
+
+The66current principal departures comprise3vocabulary repairs,5omitted incomplete questions,52supplemented reading items and6supplemented reading headings. All reading additions explicitly say that the vocabulary principal lacks them and identify the actual supplementary source. No concatenated principal or unsupported OfficialWorkbooks source-set entry was created. Eight public cases comprise five glyph gaps, the provisional command, possibleV42particle and unavailable covers/scoring.
+
+## Structure and validation
+
+Old shared/level3revision6 supplies ordinary presentation. All12contexts with available questions have exact content/question digest bindings; context7has an explicit all-questions-omitted declaration. Reading bindings use the admitted presentation witness for the readingPDF. Primary provenance and both unavailable covers retain the primary admitted vocabulary identity. No retype page break, font choice or margin is copied into overrides.
+
+All available canonical content/schema,case,principal-index/departure,identity/admission/profile/style/source-binding,source-hash and dependency checks pass. Exact replay covers146ledger rows:27section fields,113items and6repairs. Root creation and one source-provenance metadata compatibility edit replay exactly. The complete assembled text and audit record were read after validation. Original source bytes and frozen dependencies remain unchanged within the verified scope.
+
+Two pinned-runtime checks remain unavailable: composition imports missing frozen`rubi-restore/tools/ruby_core.py`,and publication identity rejects the immutable registry's absolute live-source paths outside the isolated root. No dependency,registry or validator was substituted or changed. Detailed receipts are under`preprocess/audit_runs/2026-10-26_handoff25_non_uars/validation/N3_2000/`. All available required written investigation is complete; five genuinely incomplete source questions remain visible as gaps. PDF integration is`pending_after_h23`.
+
+## Indexed identities
+
+- Index0: `src/JLPT N1-N5, Past papers/N3/2000/2000年日语能力考试3级真题-听力.pdf`. SHA-256 `c21b741f12b5b39ede6a678faf57490a5b1719b71d0f828ecb7678240797c427`. listening_only: First1/last16classified;no listening audit.
+- Index1: `src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-文字词汇.pdf`. SHA-256 `0f52d79d908e2812f742a55cebc8db18729c93cc40064523b30c48e5541ca845`. principal_vocabulary_component: All8pages,55questions11contexts;five questions have8unrecovered wrong glyphs.
+- Index2: `src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000年日语能力考试3级真题-读解文法.pdf`. SHA-256 `c870b073caba6326e73ff56ea119ffa66c448b075b05ef84974b8a87711106db`. supplementary_reading_component: All10pages,50questions2contexts;fullmarks and choices.
+- Index3: `src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/2000能力考3级答案.pdf`. SHA-256 `76b6f111b1a88b1920ce4e8dfdb4c5fc626ba7bdb12c7ebb5cf77f648a4e337f`. separate_vocabulary_key: Page1upper55written keys and1/2point weights;lower listening excluded.
+- Index4: `src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/分析.doc`. SHA-256 `d7eacdd4ebccc97727797b38198bc59219c9e4a01ea7886525f93e826cb0cd37`. reading_comparator_and_explanations: Entire10-page privatePDF and HTML;all50questions2contexts and Chinese explanations. Shared retype errors.
+- Index5: `src/JLPT N1-N5, Past papers/N3/2000/2000年真题加答案/读解文法.jpg`. SHA-256 `ec45f7ec2bb1592e05a9485cb6db19544b3c98aa4793febafc8f05c447d36e26`. separate_reading_key: Complete617x635JPG,all50keys.
