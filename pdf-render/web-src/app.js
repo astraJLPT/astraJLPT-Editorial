@@ -15,10 +15,16 @@
   });
   let effectiveColors={};
   const spacingPresets={original:{line:100,block:100},standard:{line:90,block:75},compact:{line:80,block:50}};
-  const defaults = {theme:'astraJLPT_dark', spacing:'standard', marking:'cell', star:true, border:false, text:'auto', textSource:'auto', zoom:'auto', line:90, block:75, spacingVersion:2};
+  const defaults = {theme:'astraJLPT_dark', spacing:'standard', marking:'cell', star:true, border:false, text:'auto', textSource:'auto', zoom:'auto', line:90, block:75, spacingVersion:2,autoGrade:true,timerEnabled:true,timerControls:false,timerDirection:'down',timerDisabledTotal:0,timerDisabledAt:null,catalogSort:'recommended'};
+  let practiceUI=null;
   const storage = new AstraBrowserMemory(()=>localStorage,prefix);
   function normalizePreferences(values={}) {
     const next={...defaults,...values};
+    for(const key of ['autoGrade','timerEnabled','timerControls'])if(typeof next[key]!=='boolean')next[key]=defaults[key];
+    if(!['down','up'].includes(next.timerDirection))next.timerDirection='down';
+    if(!['recommended','newest','oldest'].includes(next.catalogSort))next.catalogSort='recommended';
+    if(!Number.isFinite(next.timerDisabledTotal)||next.timerDisabledTotal<0)next.timerDisabledTotal=0;
+    if(!next.timerEnabled&&(!Number.isFinite(next.timerDisabledAt)||next.timerDisabledAt<=0))next.timerDisabledAt=Date.now();
     if(values.spacingVersion!==2){
       const preset=spacingPresets[next.spacing]||spacingPresets.standard;
       next.line=Math.round(preset.line*(Number(values.line)||100)/100);
@@ -176,8 +182,6 @@
   $('#brand')?.addEventListener('pointerdown',()=>{held=false;hold=setTimeout(()=>{held=true;setDev(!document.body.classList.contains('developer'));},1800);});
   for(const ev of ['pointerup','pointercancel','pointerleave'])$('#brand')?.addEventListener(ev,()=>clearTimeout(hold));
   $('#brand')?.addEventListener('click',e=>{clearTimeout(hold);if(held){e.preventDefault();held=false;}else if(e.shiftKey){e.preventDefault();setDev(!document.body.classList.contains('developer'));}});
-  let unlockCount=0;
-  $('#developer-unlock')?.addEventListener('click',()=>{unlockCount++;if(unlockCount===7){unlockCount=0;setDev(!document.body.classList.contains('developer'));$('#developer-hint').textContent='Developer switch toggled.';}else if(unlockCount>=3)$('#developer-hint').textContent=(7-unlockCount)+' more taps for developer tools.';});
   $('#boar')?.addEventListener('click',()=>{setDev(!document.body.classList.contains('developer'));const target=$('#historical');if(target&&!target.hidden)target.scrollIntoView({behavior:'instant',block:'nearest'});});
   // Suggestions vary, selected theme does not. Never shuffle paper or option order.
   const quick=$('#quick-picks');
@@ -404,7 +408,7 @@
     cancelAnimationFrame(sizingFrame);
     sizingFrame=requestAnimationFrame(()=>{fitHeadings();fitTables();fitOptions();fitAnnotations();sizePaperFrame();});
   }
-  function apply(){for(const name of ['theme','spacing','marking'])select(name,preferences[name]);select('text-source',preferences.textSource||'auto');select('star-behavior',preferences.star?'show':'hide');for(const i of $$('[name=spacing]'))i.checked=i.value===preferences.spacing;brightness();if($('#visible-paper'))$('#visible-paper').checked=preferences.border;$('#remember').checked=remember;for(const [id,key]of[['line-adjust','line'],['block-adjust','block']])if($('#'+id))$('#'+id).value=preferences[key];if($('#text-size'))$('#text-size').value=preferences.text==='auto'?100:preferences.text;if($('#paper-zoom'))$('#paper-zoom').value=isNaN(Number(preferences.zoom))?100:preferences.zoom;sizing();status();}
+  function apply(){for(const name of ['theme','spacing','marking'])select(name,preferences[name]);select('text-source',preferences.textSource||'auto');select('star-behavior',preferences.star?'show':'hide');for(const i of $$('[name=spacing]'))i.checked=i.value===preferences.spacing;brightness();if($('#visible-paper'))$('#visible-paper').checked=preferences.border;$('#remember').checked=remember;for(const [id,key]of[['line-adjust','line'],['block-adjust','block']])if($('#'+id))$('#'+id).value=preferences[key];if($('#text-size'))$('#text-size').value=preferences.text==='auto'?100:preferences.text;if($('#paper-zoom'))$('#paper-zoom').value=isNaN(Number(preferences.zoom))?100:preferences.zoom;sizing();status();practiceUI?.apply();}
   for(const name of ['theme','spacing','marking'])for(const input of $$('input[name="'+name+'"]'))input.addEventListener('change',()=>{preferences[name]=input.value;if(name==='spacing')Object.assign(preferences,spacingPresets[input.value]);brightness();persist();if(name==='spacing')sizing();});
   for(const i of $$('input[name="text-source"]'))i.addEventListener('change',()=>{preferences.textSource=i.value;brightness();persist();});
   for(const i of $$('[name=star-behavior]'))i.addEventListener('change',()=>{preferences.star=i.value==='show';persist();});
@@ -432,26 +436,39 @@
     if(edited)sessionEpoch=storage.preferences().epoch;
     storage.savePaper(sessionKey,{answers,position,bindings},sessionEpoch);status();
   }
-  function progress(){if(!data.paper)return;const rows=Object.values(answers);const complete=rows.filter(a=>a.completed).length,attempts=rows.length,first=rows.filter(a=>a.firstCorrect).length;const count=complete+' / '+gradableQuestions.length,detail=attempts?'First try '+first+'/'+attempts:'';$('#progress-count').textContent=count;$('#progress-detail').textContent=detail;const label=count+' completed'+(detail?' · '+detail:'');$('#progress').setAttribute('aria-label',label);$('#progress').title=label;}
+  function progress(){
+    if(!data.paper)return;
+    const rows=gradableQuestions.map(q=>answers[q.id]).filter(Boolean),total=gradableQuestions.length;
+    const firstRows=rows.filter(a=>typeof a.firstCorrect==='boolean');
+    const correct=gradableQuestions.filter(q=>answers[q.id]?.selected===q.key).length;
+    const count=preferences.autoGrade?rows.filter(a=>a.completed).length+' / '+total:(practiceUI?.revealed?correct:'?')+' / '+total;
+    const detail=preferences.autoGrade?(firstRows.length?'First try '+firstRows.filter(a=>a.firstCorrect).length+'/'+firstRows.length:''):'Answered '+rows.length+'/'+total;
+    $('#progress-count').textContent=count;$('#progress-detail').textContent=detail;
+    $('.progress-completed').hidden=!preferences.autoGrade;
+    const label=count+(preferences.autoGrade?' completed':practiceUI?.revealed?' correct':' grade hidden')+(detail?' · '+detail:'');
+    $('#progress').setAttribute('aria-label',label);$('#progress').title=label;
+    if($('#score-dialog')?.open)practiceUI?.refreshScore();
+  }
   for(const input of $$('.answer-radio'))input.addEventListener('change',()=>{
     if(input.disabled)return;
     const q=input.closest('.question'),id=q.id,correct=input.dataset.correct==='true';
-    const previous=answers[id];answers[id]={selected:Number(input.value),firstCorrect:previous?previous.firstCorrect:correct,completed:Boolean(previous?.completed||correct),attempts:(previous?.attempts||0)+1};
-    $('.answer-announcement',q).textContent=correct?'Correct.':'Incorrect. Try again.';
+    answers[id]=AstraPractice.answer(answers[id],Number(input.value),data.questions.find(q=>q.id===id).key,preferences.autoGrade);
+    $('.answer-announcement',q).textContent=preferences.autoGrade||practiceUI?.revealed?(correct?'Correct.':'Incorrect. Try again.'):'Answer selected.';
     progress();saveAnswers(true);
   });
   if(remember&&sessionKey){const session=storage.read(sessionKey);if(session){for(const [id,a]of Object.entries(session.answers||{})){if(!bindings[id]||session.bindings?.[id]!==bindings[id])continue;const input=$('#'+id+'-'+a.selected);if(input&&!input.disabled){answers[id]=a;input.checked=true;}}position=Number.isFinite(Number(session.position))?Math.max(0,Number(session.position)):0;if(position&&!location.hash){restoring=true;const resume=position;document.fonts.ready.then(()=>requestAnimationFrame(()=>requestAnimationFrame(()=>{window.scrollTo(0,resume);position=window.scrollY;restoring=false;})));}}}
-  let saveTimer;
-  window.addEventListener('scroll',()=>{if(restoring)return;position=window.scrollY;clearTimeout(saveTimer);saveTimer=setTimeout(saveAnswers,250);},{passive:true});
+  let scrollSaveTimer;
+  window.addEventListener('scroll',()=>{if(restoring)return;position=window.scrollY;clearTimeout(scrollSaveTimer);scrollSaveTimer=setTimeout(saveAnswers,250);},{passive:true});
   window.addEventListener('pagehide',()=>saveAnswers());
   window.addEventListener('storage',e=>{if(e.key===null||e.key===prefix+'preferences')syncPreferences();});
   window.addEventListener('focus',syncPreferences);
   document.addEventListener('visibilitychange',()=>{if(!document.hidden)syncPreferences();});
   function forget(){remember=false;storage.forget();observedPreferences=JSON.stringify(storage.preferences());$('#remember').checked=false;status();}
-  $('#remember').addEventListener('change',e=>{if(e.target.checked){remember=true;persist(true);saveAnswers(true);status();}else forget();});
+  $('#remember').addEventListener('change',e=>{if(e.target.checked){remember=true;persist(true);saveAnswers(true);practiceUI?.save();status();}else forget();});
   $('#forget').addEventListener('click',()=>{forget();toast('Saved data removed. Current answers remain until you leave.');});
-  $('#reset-preferences').addEventListener('click',()=>{preferences=normalizePreferences();previousPreferences=null;apply();persist();});
+  $('#reset-preferences').addEventListener('click',()=>{AstraPractice.setEnabled(preferences,true);const disabledTotal=preferences.timerDisabledTotal;preferences=normalizePreferences({timerDisabledTotal:disabledTotal});previousPreferences=null;apply();persist();});
   $('#clear-answers')?.addEventListener('click',()=>{if(!Object.keys(answers).length)return;if(!confirm('Clear this paper’s answers and practice counts?'))return;answers={};for(const i of $$('.answer-radio'))i.checked=false;for(const i of $$('.margin-answer,.answer-announcement'))i.textContent='';progress();saveAnswers();});
+  practiceUI=AstraPracticeUI({$,$$,data,storage,prefix,prefs:()=>preferences,persist,progress,answers:()=>answers,remember:()=>remember,epoch:()=>sessionEpoch,editEpoch:()=>{sessionEpoch=storage.preferences().epoch;}});
   apply();progress();persist();
   if(paper){
     document.fonts.ready.then(sizing);

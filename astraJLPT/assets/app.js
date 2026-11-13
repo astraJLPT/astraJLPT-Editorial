@@ -198,6 +198,289 @@ globalThis.AstraBrowserMemory = class {
   }
 };
 
+/* Deterministic practice rules, shared with the regression checks. */
+globalThis.AstraPractice = (() => {
+  'use strict';
+  const finite = (v, fallback=0) => typeof v==='number'&&Number.isFinite(v)&&v>=0?v:fallback;
+  const direction = value => value==='up'?'up':'down';
+  // A shared stopped clock pauses even papers which are not currently open.
+  function clock(preferences, now=Date.now()) {
+    return now-finite(preferences.timerDisabledTotal)-(preferences.timerEnabled===false?
+      Math.max(0,now-finite(preferences.timerDisabledAt,now)):0);
+  }
+  function setEnabled(preferences, enabled, now=Date.now()) {
+    if(enabled===(preferences.timerEnabled!==false))return;
+    if(enabled){
+      preferences.timerDisabledTotal=finite(preferences.timerDisabledTotal)+Math.max(0,now-finite(preferences.timerDisabledAt,now));
+      preferences.timerDisabledAt=null;
+    }else preferences.timerDisabledAt=now;
+    preferences.timerEnabled=enabled;
+  }
+  class Timer {
+    constructor(saved, limitSeconds, now, mode='down') {
+      const valid=saved?.version===1;
+      this.state={version:1,limit:finite(valid?saved.limit:null,limitSeconds*1000),
+        elapsed:finite(valid?saved.elapsed:null),startedAt:finite(valid?saved.startedAt:null,now),
+        running:valid?saved.running===true:true,direction:valid?direction(saved.direction):direction(mode),
+        expired:valid&&saved.expired===true,notified:valid&&saved.notified===true,
+        revision:finite(valid?saved.revision:null)};
+      this.tick(now,mode);
+    }
+    tick(now, mode=this.state.direction) {
+      const s=this.state;
+      if(s.running){
+        s.elapsed+=Math.max(0,now-s.startedAt);
+        if(s.direction==='down'&&s.elapsed>=s.limit){s.elapsed=s.limit;s.running=false;s.expired=true;}
+      }
+      s.startedAt=now;s.direction=direction(mode);
+      if(s.direction==='down'&&s.elapsed>=s.limit){s.running=false;s.expired=true;}
+      return this.seconds();
+    }
+    seconds() {
+      const s=this.state;
+      return s.direction==='up'?Math.floor(s.elapsed/1000):Math.max(0,Math.ceil((s.limit-s.elapsed)/1000));
+    }
+    pause(now){this.tick(now);this.state.running=false;}
+    resume(now){this.tick(now);if(this.state.direction==='up'||this.state.elapsed<this.state.limit)this.state.running=true;}
+    reset(now){const s=this.state;s.elapsed=0;s.startedAt=now;s.expired=false;s.notified=false;}
+    setLimit(seconds, now){this.tick(now);const s=this.state;s.limit=seconds*1000;s.expired=false;s.notified=false;this.tick(now);}
+    setCurrent(seconds, now){
+      this.tick(now);const s=this.state;
+      if(s.direction==='down'){s.limit=Math.max(s.limit,seconds*1000);s.elapsed=s.limit-seconds*1000;}
+      else s.elapsed=seconds*1000;
+      s.startedAt=now;s.expired=false;s.notified=false;this.tick(now);
+    }
+  }
+  function format(seconds) {
+    seconds=Math.max(0,Math.floor(seconds));
+    return Math.floor(seconds/3600)+':'+String(Math.floor(seconds/60)%60).padStart(2,'0')+':'+String(seconds%60).padStart(2,'0');
+  }
+  function parse(value) {
+    const match=/^(\d{1,6}):([0-5]\d):([0-5]\d)$/.exec(value.trim());
+    return match?Number(match[1])*3600+Number(match[2])*60+Number(match[3]):null;
+  }
+  function answer(previous, selected, key, autoGrade) {
+    const next={...previous,selected};
+    if(autoGrade){
+      const correct=selected===key;
+      if(typeof next.firstCorrect!=='boolean')next.firstCorrect=correct;
+      next.completed=Boolean(next.completed||correct);
+      next.attempts=finite(next.attempts)+1;
+    }
+    return next;
+  }
+  const gradable=q=>Number.isInteger(q.key)&&q.key>=1&&q.key<=4;
+  function score(questions, answers, paper) {
+    const old=paper.generation?.startsWith('historical');
+    const combined=!old&&['N4','N5'].includes(paper.level);
+    const definitions=old?[
+      ['vocabulary','文字・語彙',100,q=>q.domain==='vocab'],
+      ['reading_grammar','読解・文法',200,q=>q.domain!=='vocab']
+    ]:combined?[
+      ['written','語彙・文法・読解',120,()=>true]
+    ]:[
+      ['knowledge','語彙・文法',60,q=>q.domain!=='reading'],
+      ['reading','読解',60,q=>q.domain==='reading']
+    ];
+    const sections=definitions.map(([id,label,maximum,belongs])=>{
+      const all=questions.filter(belongs),rows=all.filter(gradable);
+      const profile=paper.scoring?.sections?.[id];
+      const weighted=Boolean(profile&&all.every(q=>finite(profile.weights[q.id])>0));
+      const weight=q=>weighted?profile.weights[q.id]:1;
+      const denominator=rows.reduce((n,q)=>n+weight(q),0);
+      const correct=rows.filter(q=>answers[q.id]?.selected===q.key);
+      const earned=correct.reduce((n,q)=>n+weight(q),0);
+      return {id,label,maximum,total:rows.length,correct:correct.length,
+        answered:rows.filter(q=>answers[q.id]?.selected>=1&&answers[q.id]?.selected<=4).length,
+        excluded:all.length-rows.length,weighted,denominator,earned,
+        exact:weighted&&all.length===rows.length&&!paper.partial&&denominator===profile.raw_maximum,
+        score:denominator?Math.round(earned/denominator*maximum):null};
+    });
+    const available=sections.filter(s=>s.score!==null);
+    return {sections,old,combined,total:available.reduce((n,s)=>n+s.score,0),
+      maximum:available.reduce((n,s)=>n+s.maximum,0),expectedMaximum:sections.reduce((n,s)=>n+s.maximum,0),
+      correct:available.reduce((n,s)=>n+s.correct,0),answered:available.reduce((n,s)=>n+s.answered,0),
+      questions:available.reduce((n,s)=>n+s.total,0),excluded:sections.reduce((n,s)=>n+s.excluded,0),
+      exact:available.length===sections.length&&available.every(s=>s.exact)};
+  }
+  function compare(a,b,mode) {
+    if(mode==='newest'||mode==='oldest'){
+      const order=(Number(a.year)-Number(b.year))||(Number(a.month||0)-Number(b.month||0));
+      if(order)return mode==='newest'?-order:order;
+    }
+    return Number(a.rank)-Number(b.rank);
+  }
+  return {Timer,clock,setEnabled,format,parse,answer,score,gradable,compare};
+})();
+
+/* Practice controls use the same browser-memory contract as the reader. */
+globalThis.AstraPracticeUI = function(context) {
+  'use strict';
+  const {$,$$,data,storage,prefix,prefs,persist,progress,remember,epoch,editEpoch}=context;
+  const model=AstraPractice, paper=data.paper;
+  let revealed=false,lastAuto=prefs().autoGrade;
+  const banner=$('.reader-subbar');
+  if(banner){
+    const start=$('.reader-start',banner),nav=$('.section-nav',banner),actions=$('.reader-actions',banner);
+    let frame;
+    const fit=()=>{
+      cancelAnimationFrame(frame);
+      frame=requestAnimationFrame(()=>{
+        // Keep the section links at the viewport center while the two sides
+        // fit equally. Then compress by measured content, including counters.
+        for(const layout of ['wide','labels','compact','stacked','wrap']){
+          banner.dataset.layout=layout;
+          const style=getComputedStyle(banner),space=banner.clientWidth-parseFloat(style.paddingLeft)-parseFloat(style.paddingRight);
+          const left=start.getBoundingClientRect().width,right=actions.getBoundingClientRect().width;
+          const sides=layout==='wide'||layout==='labels'?2*Math.max(left,right):left+right;
+          if(sides+nav.getBoundingClientRect().width+2*parseFloat(style.columnGap)<=space+.5)break;
+        }
+      });
+    };
+    const observer=new ResizeObserver(fit);
+    for(const node of [banner,start,nav,actions])observer.observe(node);
+    document.fonts.ready.then(fit);
+  }
+  function showDialog(id){
+    const dialog=$(id);if(!dialog||dialog.open)return;
+    $('#settings').open=false;
+    dialog.showModal();
+  }
+  for(const button of $$('[data-dialog-close]'))button.addEventListener('click',()=>button.closest('dialog').close());
+  function refreshScore(){
+    if(!paper)return;
+    const score=model.score(data.questions,context.answers(),paper);
+    const target=$('#score-sections');target.replaceChildren();
+    for(const section of score.sections){
+      const row=document.createElement('tr');
+      const values=[section.label,section.score===null?'Unavailable':section.score+' / '+section.maximum,
+        section.score===null?'—':section.correct+' correct · '+(section.answered-section.correct)+' wrong · '+(section.total-section.answered)+' unanswered',
+        section.score===null?'':section.exact?'Verified historical weights':section.weighted?'Adjusted practice estimate':score.old?'Historical-scale estimate':'Practice estimate'];
+      values.forEach((value,i)=>{const cell=document.createElement(i===0?'th':'td');if(i===0)cell.scope='row';cell.textContent=value;row.append(cell);});target.append(row);
+    }
+    $('#score-total').textContent=score.questions?'Written subtotal: '+score.total+' / '+score.maximum:'Written subtotal: Unavailable';
+    $('#score-explanation').textContent=score.old?
+      'Historical scores use vocabulary /100 and reading + grammar /200. Verified sections use the original question weights, normalized to the section maximum and rounded to the nearest whole number. Other sections estimate correct answers ÷ scored questions × the section maximum.':
+      'Practice estimate: correct answers ÷ scored questions × the section maximum, rounded to the nearest whole number. This is a simple estimate, not the official JLPT scaled score.';
+    $('#score-coverage').textContent=[
+      score.excluded?score.excluded+' question'+(score.excluded===1?' is':'s are')+' excluded because the answer key is unconfirmed.':'',
+      paper.partial?'This paper is partial; available questions are scored as a practice estimate.':''
+    ].filter(Boolean).join(' ');
+    const source=$('#score-source');source.replaceChildren();
+    if(paper.scoring?.source_path){const link=document.createElement('a');link.href='../'+paper.scoring.source_path;link.target='_blank';link.rel='noopener';link.textContent='Original point-allocation tables ↗';source.append(link);}
+    return score;
+  }
+  function grading(){
+    const auto=prefs().autoGrade;
+    if(auto!==lastAuto){revealed=false;lastAuto=auto;$('#score-dialog')?.close();}
+    document.body.dataset.gradesHidden=String(!auto&&!revealed);
+    for(const row of $$('[data-color-row=neutral]'))row.hidden=auto;
+    for(const button of $$('[data-grade]')){button.hidden=auto;button.textContent=revealed?'Hide grade':'Grade now';button.setAttribute('aria-pressed',String(revealed));}
+    for(const live of $$('.answer-announcement'))live.textContent='';
+    progress();
+  }
+  for(const input of $$('[name=auto-grade]'))input.addEventListener('change',()=>{prefs().autoGrade=input.value==='show';grading();persist();});
+  for(const button of $$('[data-grade]'))button.addEventListener('click',()=>{revealed=!revealed;grading();if(revealed){refreshScore();showDialog('#score-dialog');}});
+
+  const timerKey=paper?'timer:'+(paper.storage_unit||paper.unit)+(paper.variant==='norubi'?':norubi':''):null;
+  const timer=paper?new model.Timer(remember()?storage.read(timerKey):null,paper.timer.seconds,model.clock(prefs()),prefs().timerDirection):null;
+  let clockState=timer?JSON.stringify(timer.state):'',timerRevision=timer?.state.revision||0;
+  function saveTimer(edited=false){
+    if(!timer||!remember())return;
+    if(edited)editEpoch();
+    // An older background tab must not overwrite a newer pause/reset/edit.
+    const existing=storage.read(timerKey);
+    if(existing?.revision>timerRevision&&!edited){adoptTimer(existing);return;}
+    timer.state.revision=timerRevision=Math.max(Date.now(),timerRevision+1);
+    storage.savePaper(timerKey,{...timer.state},epoch());
+  }
+  function adoptTimer(record){
+    if(record?.version!==1||record.revision<=timerRevision)return;
+    const next=new model.Timer(record,paper.timer.seconds,model.clock(prefs()),prefs().timerDirection);
+    timer.state=next.state;timerRevision=record.revision;
+  }
+  function renderTimer(){
+    if(!timer)return;
+    timer.tick(model.clock(prefs()),prefs().timerDirection);
+    const value=model.format(timer.seconds());
+    $('#timer-display').textContent=value;
+    $('#timer-display').setAttribute('aria-label',(prefs().timerDirection==='up'?'Elapsed time: ':'Time remaining: ')+value+(timer.state.running?'':' (paused)'));
+    $('#timer-banner').dataset.paused=String(!timer.state.running);
+    for(const button of $$('[data-timer-action=pause]')){
+      const label=timer.state.running?'pause':'resume';
+      button.setAttribute('aria-label',label+' timer');button.title=label+' timer';
+      const text=$('.timer-action-label',button),icon=$('.timer-action-icon',button);
+      if(text){text.textContent=label;icon.textContent=timer.state.running?'Ⅱ':'▶';}else button.textContent=label;
+    }
+    for(const [id,seconds]of[['timer-limit',timer.state.limit/1000],['timer-current',timer.seconds()]]){
+      const field=$('#'+id);if(document.activeElement!==field&&!field.dataset.dirty)field.value=model.format(seconds);
+    }
+    if(timer.state.expired&&!timer.state.notified&&prefs().timerEnabled&&prefs().timerDirection==='down'&&!document.hidden){
+      timer.state.notified=true;saveTimer();showDialog('#time-up-dialog');
+    }
+  }
+  function timerAction(action){
+    if(!timer)return;
+    adoptTimer(remember()?storage.read(timerKey):null);
+    const now=model.clock(prefs());
+    timer.tick(now,prefs().timerDirection);
+    if(action==='pause')timer.state.running?timer.pause(now):timer.resume(now);
+    if(action==='reset')timer.reset(now);
+    if(action==='exam')timer.setLimit(paper.timer.seconds,now);
+    for(const field of $$('#timer-settings input[type=text]'))delete field.dataset.dirty;
+    saveTimer(true);renderTimer();
+    $('#timer-edit-status').textContent=action==='exam'?'Exam time limit restored.':action==='reset'?'Timer reset.':'';
+  }
+  for(const button of $$('[data-timer-action]'))button.addEventListener('click',()=>timerAction(button.dataset.timerAction));
+  for(const name of ['limit','current']){
+    $('#timer-'+name)?.addEventListener('input',e=>{e.target.dataset.dirty='true';e.target.setCustomValidity('');});
+    $('#timer-'+name+'-form')?.addEventListener('submit',e=>{
+      e.preventDefault();const field=$('#timer-'+name),seconds=model.parse(field.value);
+      if(seconds===null||name==='limit'&&seconds===0){field.setCustomValidity('Enter hours:minutes:seconds'+(name==='limit'?' with a time limit greater than zero.':'.'));field.reportValidity();return;}
+      adoptTimer(remember()?storage.read(timerKey):null);
+      timer[name==='limit'?'setLimit':'setCurrent'](seconds,model.clock(prefs()));
+      delete field.dataset.dirty;saveTimer(true);renderTimer();$('#timer-edit-status').textContent=(name==='limit'?'Time limit':'Current time')+' updated.';
+    });
+  }
+  for(const input of $$('[name=timer-enabled]'))input.addEventListener('change',()=>{
+    model.setEnabled(prefs(),input.value==='yes');persist();apply();saveTimer(true);
+  });
+  for(const [name,key]of[['timer-controls','timerControls'],['timer-direction','timerDirection']])for(const input of $$('[name='+name+']'))input.addEventListener('change',()=>{
+    if(timer)timer.tick(model.clock(prefs()),prefs().timerDirection);
+    prefs()[key]=name==='timer-controls'?input.value==='show':input.value;
+    persist();apply();saveTimer(true);
+  });
+  function sortCatalog(){
+    const select=$('#catalog-sort');if(!select)return;
+    select.value=prefs().catalogSort;
+    const cards=$$('.paper-grid>.paper-card');cards.sort((a,b)=>model.compare(a.dataset,b.dataset,select.value));
+    for(const card of cards)card.parentElement.append(card);
+    const note=$('#catalog-order-note');note.textContent=select.value==='recommended'?'Ordered with higher quality papers presented first.':select.value==='newest'?'Ordered from newest to oldest.':'Ordered from oldest to newest.';
+  }
+  $('#catalog-sort')?.addEventListener('change',e=>{prefs().catalogSort=e.target.value;sortCatalog();persist();});
+  function apply(){
+    for(const [name,value]of[['auto-grade',prefs().autoGrade?'show':'hide'],['timer-enabled',prefs().timerEnabled?'yes':'no'],['timer-controls',prefs().timerControls?'show':'hide'],['timer-direction',prefs().timerDirection]]){
+      const input=$$('[name='+name+']').find(n=>n.value===value);if(input)input.checked=true;
+    }
+    if($('#timer-settings'))$('#timer-settings').hidden=!prefs().timerEnabled;
+    if(timer){
+      $('#timer-banner').hidden=!prefs().timerEnabled;
+      $('#timer-banner-controls').hidden=!prefs().timerControls;
+      renderTimer();
+    }
+    grading();sortCatalog();
+  }
+  if(timer){
+    setInterval(renderTimer,500);
+    window.addEventListener('storage',e=>{if(e.key===prefix+timerKey&&remember()){adoptTimer(storage.read(timerKey));renderTimer();}});
+    window.addEventListener('pagehide',()=>{timer.tick(model.clock(prefs()),prefs().timerDirection);saveTimer();});
+    window.addEventListener('focus',()=>{if(remember())adoptTimer(storage.read(timerKey));renderTimer();});
+    document.addEventListener('visibilitychange',()=>{if(!document.hidden){if(remember())adoptTimer(storage.read(timerKey));renderTimer();}});
+    if(clockState!==JSON.stringify(timer.state)||!storage.read(timerKey))saveTimer();
+  }
+  return {apply,refreshScore,get revealed(){return revealed;},save:()=>saveTimer(true)};
+};
+
 /* Local progressive enhancement. No network, account, or model dependency. */
 (() => {
   'use strict';
@@ -215,10 +498,16 @@ globalThis.AstraBrowserMemory = class {
   });
   let effectiveColors={};
   const spacingPresets={original:{line:100,block:100},standard:{line:90,block:75},compact:{line:80,block:50}};
-  const defaults = {theme:'astraJLPT_dark', spacing:'standard', marking:'cell', star:true, border:false, text:'auto', textSource:'auto', zoom:'auto', line:90, block:75, spacingVersion:2};
+  const defaults = {theme:'astraJLPT_dark', spacing:'standard', marking:'cell', star:true, border:false, text:'auto', textSource:'auto', zoom:'auto', line:90, block:75, spacingVersion:2,autoGrade:true,timerEnabled:true,timerControls:false,timerDirection:'down',timerDisabledTotal:0,timerDisabledAt:null,catalogSort:'recommended'};
+  let practiceUI=null;
   const storage = new AstraBrowserMemory(()=>localStorage,prefix);
   function normalizePreferences(values={}) {
     const next={...defaults,...values};
+    for(const key of ['autoGrade','timerEnabled','timerControls'])if(typeof next[key]!=='boolean')next[key]=defaults[key];
+    if(!['down','up'].includes(next.timerDirection))next.timerDirection='down';
+    if(!['recommended','newest','oldest'].includes(next.catalogSort))next.catalogSort='recommended';
+    if(!Number.isFinite(next.timerDisabledTotal)||next.timerDisabledTotal<0)next.timerDisabledTotal=0;
+    if(!next.timerEnabled&&(!Number.isFinite(next.timerDisabledAt)||next.timerDisabledAt<=0))next.timerDisabledAt=Date.now();
     if(values.spacingVersion!==2){
       const preset=spacingPresets[next.spacing]||spacingPresets.standard;
       next.line=Math.round(preset.line*(Number(values.line)||100)/100);
@@ -376,8 +665,6 @@ globalThis.AstraBrowserMemory = class {
   $('#brand')?.addEventListener('pointerdown',()=>{held=false;hold=setTimeout(()=>{held=true;setDev(!document.body.classList.contains('developer'));},1800);});
   for(const ev of ['pointerup','pointercancel','pointerleave'])$('#brand')?.addEventListener(ev,()=>clearTimeout(hold));
   $('#brand')?.addEventListener('click',e=>{clearTimeout(hold);if(held){e.preventDefault();held=false;}else if(e.shiftKey){e.preventDefault();setDev(!document.body.classList.contains('developer'));}});
-  let unlockCount=0;
-  $('#developer-unlock')?.addEventListener('click',()=>{unlockCount++;if(unlockCount===7){unlockCount=0;setDev(!document.body.classList.contains('developer'));$('#developer-hint').textContent='Developer switch toggled.';}else if(unlockCount>=3)$('#developer-hint').textContent=(7-unlockCount)+' more taps for developer tools.';});
   $('#boar')?.addEventListener('click',()=>{setDev(!document.body.classList.contains('developer'));const target=$('#historical');if(target&&!target.hidden)target.scrollIntoView({behavior:'instant',block:'nearest'});});
   // Suggestions vary, selected theme does not. Never shuffle paper or option order.
   const quick=$('#quick-picks');
@@ -604,7 +891,7 @@ globalThis.AstraBrowserMemory = class {
     cancelAnimationFrame(sizingFrame);
     sizingFrame=requestAnimationFrame(()=>{fitHeadings();fitTables();fitOptions();fitAnnotations();sizePaperFrame();});
   }
-  function apply(){for(const name of ['theme','spacing','marking'])select(name,preferences[name]);select('text-source',preferences.textSource||'auto');select('star-behavior',preferences.star?'show':'hide');for(const i of $$('[name=spacing]'))i.checked=i.value===preferences.spacing;brightness();if($('#visible-paper'))$('#visible-paper').checked=preferences.border;$('#remember').checked=remember;for(const [id,key]of[['line-adjust','line'],['block-adjust','block']])if($('#'+id))$('#'+id).value=preferences[key];if($('#text-size'))$('#text-size').value=preferences.text==='auto'?100:preferences.text;if($('#paper-zoom'))$('#paper-zoom').value=isNaN(Number(preferences.zoom))?100:preferences.zoom;sizing();status();}
+  function apply(){for(const name of ['theme','spacing','marking'])select(name,preferences[name]);select('text-source',preferences.textSource||'auto');select('star-behavior',preferences.star?'show':'hide');for(const i of $$('[name=spacing]'))i.checked=i.value===preferences.spacing;brightness();if($('#visible-paper'))$('#visible-paper').checked=preferences.border;$('#remember').checked=remember;for(const [id,key]of[['line-adjust','line'],['block-adjust','block']])if($('#'+id))$('#'+id).value=preferences[key];if($('#text-size'))$('#text-size').value=preferences.text==='auto'?100:preferences.text;if($('#paper-zoom'))$('#paper-zoom').value=isNaN(Number(preferences.zoom))?100:preferences.zoom;sizing();status();practiceUI?.apply();}
   for(const name of ['theme','spacing','marking'])for(const input of $$('input[name="'+name+'"]'))input.addEventListener('change',()=>{preferences[name]=input.value;if(name==='spacing')Object.assign(preferences,spacingPresets[input.value]);brightness();persist();if(name==='spacing')sizing();});
   for(const i of $$('input[name="text-source"]'))i.addEventListener('change',()=>{preferences.textSource=i.value;brightness();persist();});
   for(const i of $$('[name=star-behavior]'))i.addEventListener('change',()=>{preferences.star=i.value==='show';persist();});
@@ -632,26 +919,39 @@ globalThis.AstraBrowserMemory = class {
     if(edited)sessionEpoch=storage.preferences().epoch;
     storage.savePaper(sessionKey,{answers,position,bindings},sessionEpoch);status();
   }
-  function progress(){if(!data.paper)return;const rows=Object.values(answers);const complete=rows.filter(a=>a.completed).length,attempts=rows.length,first=rows.filter(a=>a.firstCorrect).length;const count=complete+' / '+gradableQuestions.length,detail=attempts?'First try '+first+'/'+attempts:'';$('#progress-count').textContent=count;$('#progress-detail').textContent=detail;const label=count+' completed'+(detail?' · '+detail:'');$('#progress').setAttribute('aria-label',label);$('#progress').title=label;}
+  function progress(){
+    if(!data.paper)return;
+    const rows=gradableQuestions.map(q=>answers[q.id]).filter(Boolean),total=gradableQuestions.length;
+    const firstRows=rows.filter(a=>typeof a.firstCorrect==='boolean');
+    const correct=gradableQuestions.filter(q=>answers[q.id]?.selected===q.key).length;
+    const count=preferences.autoGrade?rows.filter(a=>a.completed).length+' / '+total:(practiceUI?.revealed?correct:'?')+' / '+total;
+    const detail=preferences.autoGrade?(firstRows.length?'First try '+firstRows.filter(a=>a.firstCorrect).length+'/'+firstRows.length:''):'Answered '+rows.length+'/'+total;
+    $('#progress-count').textContent=count;$('#progress-detail').textContent=detail;
+    $('.progress-completed').hidden=!preferences.autoGrade;
+    const label=count+(preferences.autoGrade?' completed':practiceUI?.revealed?' correct':' grade hidden')+(detail?' · '+detail:'');
+    $('#progress').setAttribute('aria-label',label);$('#progress').title=label;
+    if($('#score-dialog')?.open)practiceUI?.refreshScore();
+  }
   for(const input of $$('.answer-radio'))input.addEventListener('change',()=>{
     if(input.disabled)return;
     const q=input.closest('.question'),id=q.id,correct=input.dataset.correct==='true';
-    const previous=answers[id];answers[id]={selected:Number(input.value),firstCorrect:previous?previous.firstCorrect:correct,completed:Boolean(previous?.completed||correct),attempts:(previous?.attempts||0)+1};
-    $('.answer-announcement',q).textContent=correct?'Correct.':'Incorrect. Try again.';
+    answers[id]=AstraPractice.answer(answers[id],Number(input.value),data.questions.find(q=>q.id===id).key,preferences.autoGrade);
+    $('.answer-announcement',q).textContent=preferences.autoGrade||practiceUI?.revealed?(correct?'Correct.':'Incorrect. Try again.'):'Answer selected.';
     progress();saveAnswers(true);
   });
   if(remember&&sessionKey){const session=storage.read(sessionKey);if(session){for(const [id,a]of Object.entries(session.answers||{})){if(!bindings[id]||session.bindings?.[id]!==bindings[id])continue;const input=$('#'+id+'-'+a.selected);if(input&&!input.disabled){answers[id]=a;input.checked=true;}}position=Number.isFinite(Number(session.position))?Math.max(0,Number(session.position)):0;if(position&&!location.hash){restoring=true;const resume=position;document.fonts.ready.then(()=>requestAnimationFrame(()=>requestAnimationFrame(()=>{window.scrollTo(0,resume);position=window.scrollY;restoring=false;})));}}}
-  let saveTimer;
-  window.addEventListener('scroll',()=>{if(restoring)return;position=window.scrollY;clearTimeout(saveTimer);saveTimer=setTimeout(saveAnswers,250);},{passive:true});
+  let scrollSaveTimer;
+  window.addEventListener('scroll',()=>{if(restoring)return;position=window.scrollY;clearTimeout(scrollSaveTimer);scrollSaveTimer=setTimeout(saveAnswers,250);},{passive:true});
   window.addEventListener('pagehide',()=>saveAnswers());
   window.addEventListener('storage',e=>{if(e.key===null||e.key===prefix+'preferences')syncPreferences();});
   window.addEventListener('focus',syncPreferences);
   document.addEventListener('visibilitychange',()=>{if(!document.hidden)syncPreferences();});
   function forget(){remember=false;storage.forget();observedPreferences=JSON.stringify(storage.preferences());$('#remember').checked=false;status();}
-  $('#remember').addEventListener('change',e=>{if(e.target.checked){remember=true;persist(true);saveAnswers(true);status();}else forget();});
+  $('#remember').addEventListener('change',e=>{if(e.target.checked){remember=true;persist(true);saveAnswers(true);practiceUI?.save();status();}else forget();});
   $('#forget').addEventListener('click',()=>{forget();toast('Saved data removed. Current answers remain until you leave.');});
-  $('#reset-preferences').addEventListener('click',()=>{preferences=normalizePreferences();previousPreferences=null;apply();persist();});
+  $('#reset-preferences').addEventListener('click',()=>{AstraPractice.setEnabled(preferences,true);const disabledTotal=preferences.timerDisabledTotal;preferences=normalizePreferences({timerDisabledTotal:disabledTotal});previousPreferences=null;apply();persist();});
   $('#clear-answers')?.addEventListener('click',()=>{if(!Object.keys(answers).length)return;if(!confirm('Clear this paper’s answers and practice counts?'))return;answers={};for(const i of $$('.answer-radio'))i.checked=false;for(const i of $$('.margin-answer,.answer-announcement'))i.textContent='';progress();saveAnswers();});
+  practiceUI=AstraPracticeUI({$,$$,data,storage,prefix,prefs:()=>preferences,persist,progress,answers:()=>answers,remember:()=>remember,epoch:()=>sessionEpoch,editEpoch:()=>{sessionEpoch=storage.preferences().epoch;}});
   apply();progress();persist();
   if(paper){
     document.fonts.ready.then(sizing);

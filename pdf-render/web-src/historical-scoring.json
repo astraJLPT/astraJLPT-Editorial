@@ -1,0 +1,2619 @@
+{
+  "version": 1,
+  "description": "Verified point allocations for the pre-2010 JLPT, transcribed from the local official question-book scans. Canonical N3/N4 unit names in this file refer to old Levels 3/4, not modern N3/N4.",
+  "formula": "round(sum(correct confirmed-key question weights) / sum(all confirmed-key question weights) * section maximum)",
+  "rounding": "nearest-integer",
+  "fallback_policy": "Use the labelled historical-scale estimate for a paper or section absent from profiles. Do not extrapolate allocations across years. Questions without confirmed keys must be excluded from both numerator and denominator. A missing section is unavailable.",
+  "sources": {
+    "old1_2_1996": {
+      "path": "astraJLPT/assets/principals/N_1-2_1996.pdf",
+      "sha256": "aca213ce192a5fcf80f598c624953a533d49aef1971c318316996c7112b20873",
+      "physical_pages": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "printed_pages": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "description": "Official historical JLPT question book: answer and point-allocation tables. Page numbers are one-based."
+    },
+    "old3_4_2001": {
+      "path": "astraJLPT/assets/principals/N_3-4_2001.pdf",
+      "sha256": "da4f4bb4349572963e4a6c6413370ce8c62c287202b06fc6a701b57b91e12084",
+      "physical_pages": [
+        75,
+        76,
+        77,
+        78
+      ],
+      "printed_pages": [
+        76,
+        77,
+        78,
+        79
+      ],
+      "description": "Official historical JLPT question book: answer and point-allocation tables. Page numbers are one-based."
+    },
+    "old3_4_2003": {
+      "path": "astraJLPT/assets/principals/N_3-4_2003.pdf",
+      "sha256": "2d6ad4834484c596d11bf48b4d529797d82d2800282d8e7a85d07f63d9913899",
+      "physical_pages": [
+        85,
+        86,
+        87,
+        88
+      ],
+      "printed_pages": [
+        76,
+        77,
+        78,
+        79
+      ],
+      "description": "Official historical JLPT question book: answer and point-allocation tables. Page numbers are one-based."
+    },
+    "old3_4_2004": {
+      "path": "astraJLPT/assets/principals/N_3-4_2004.pdf",
+      "sha256": "cecff06d3cd84c45aadc4dcc7b40c04af99261a8a09edc30f607806ef6d59cd8",
+      "physical_pages": [
+        75,
+        76,
+        77,
+        78
+      ],
+      "printed_pages": [
+        78,
+        79,
+        80,
+        81
+      ],
+      "description": "Official historical JLPT question book: answer and point-allocation tables. Page numbers are one-based."
+    },
+    "old3_4_2005": {
+      "path": "astraJLPT/assets/principals/N_3-4_2005.pdf",
+      "sha256": "070da4fbe5bbaccbd606d160b0920e23251c4162332b7cbe4f9bdb3b1535449d",
+      "physical_pages": [
+        74,
+        75,
+        76,
+        77
+      ],
+      "printed_pages": [
+        74,
+        75,
+        76,
+        77
+      ],
+      "description": "Official historical JLPT question book: answer and point-allocation tables. Page numbers are one-based."
+    },
+    "old3_4_2007": {
+      "path": "astraJLPT/assets/principals/N_3-4_2007.pdf",
+      "sha256": "6902181b1ced1babb1aa2eb9ae4f9bc58bb96aa1780141628ff13ed7c03d03f6",
+      "physical_pages": [
+        79,
+        80,
+        81,
+        82
+      ],
+      "printed_pages": [
+        76,
+        77,
+        78,
+        79
+      ],
+      "description": "Official historical JLPT question book: answer and point-allocation tables. Page numbers are one-based."
+    },
+    "old3_4_2008": {
+      "path": "astraJLPT/assets/principals/N_3-4_2008.pdf",
+      "sha256": "90f934091cf24e333a6a05e58e8c047fc1562793aa07265245562882e0bc6d0f",
+      "physical_pages": [
+        82,
+        83,
+        84,
+        85
+      ],
+      "printed_pages": [
+        78,
+        79,
+        80,
+        81
+      ],
+      "description": "Official historical JLPT question book: answer and point-allocation tables. Page numbers are one-based."
+    }
+  },
+  "profiles": {
+    "N1_1996": {
+      "source": "old1_2_1996",
+      "historical_level": 1,
+      "rounding": "nearest-integer",
+      "editorial_path": "editorial-json/N1/N1_1996/editorial_N1_1996.json",
+      "editorial_sha256": "062509fe3a4892bdfb2caf995397e00d607adb5bf3b8b42ae20358bad6d4690b",
+      "sections": {
+        "vocabulary": {
+          "maximum": 100,
+          "raw_maximum": 90,
+          "question_count": 65,
+          "physical_page": 86,
+          "printed_page": 86,
+          "groups": [
+            {
+              "editorial_section": "vocab-s01",
+              "question_count": 15,
+              "weight": 1
+            },
+            {
+              "editorial_section": "vocab-s02",
+              "question_count": 5,
+              "weight": 1
+            },
+            {
+              "editorial_section": "vocab-s03",
+              "question_count": 15,
+              "weight": 1
+            },
+            {
+              "editorial_section": "vocab-s04",
+              "question_count": 5,
+              "weight": 1
+            },
+            {
+              "editorial_section": "vocab-s05",
+              "question_count": 15,
+              "weight": 2
+            },
+            {
+              "editorial_section": "vocab-s06",
+              "question_count": 10,
+              "weight": 2
+            }
+          ],
+          "weights": {
+            "vocab-q001": 1,
+            "vocab-q002": 1,
+            "vocab-q003": 1,
+            "vocab-q004": 1,
+            "vocab-q005": 1,
+            "vocab-q006": 1,
+            "vocab-q007": 1,
+            "vocab-q008": 1,
+            "vocab-q009": 1,
+            "vocab-q010": 1,
+            "vocab-q011": 1,
+            "vocab-q012": 1,
+            "vocab-q013": 1,
+            "vocab-q014": 1,
+            "vocab-q015": 1,
+            "vocab-q016": 1,
+            "vocab-q017": 1,
+            "vocab-q018": 1,
+            "vocab-q019": 1,
+            "vocab-q020": 1,
+            "vocab-q021": 1,
+            "vocab-q022": 1,
+            "vocab-q023": 1,
+            "vocab-q024": 1,
+            "vocab-q025": 1,
+            "vocab-q026": 1,
+            "vocab-q027": 1,
+            "vocab-q028": 1,
+            "vocab-q029": 1,
+            "vocab-q030": 1,
+            "vocab-q031": 1,
+            "vocab-q032": 1,
+            "vocab-q033": 1,
+            "vocab-q034": 1,
+            "vocab-q035": 1,
+            "vocab-q036": 1,
+            "vocab-q037": 1,
+            "vocab-q038": 1,
+            "vocab-q039": 1,
+            "vocab-q040": 1,
+            "vocab-q041": 2,
+            "vocab-q042": 2,
+            "vocab-q043": 2,
+            "vocab-q044": 2,
+            "vocab-q045": 2,
+            "vocab-q046": 2,
+            "vocab-q047": 2,
+            "vocab-q048": 2,
+            "vocab-q049": 2,
+            "vocab-q050": 2,
+            "vocab-q051": 2,
+            "vocab-q052": 2,
+            "vocab-q053": 2,
+            "vocab-q054": 2,
+            "vocab-q055": 2,
+            "vocab-q056": 2,
+            "vocab-q057": 2,
+            "vocab-q058": 2,
+            "vocab-q059": 2,
+            "vocab-q060": 2,
+            "vocab-q061": 2,
+            "vocab-q062": 2,
+            "vocab-q063": 2,
+            "vocab-q064": 2,
+            "vocab-q065": 2
+          }
+        },
+        "reading_grammar": {
+          "maximum": 200,
+          "raw_maximum": 175,
+          "question_count": 56,
+          "physical_page": 87,
+          "printed_page": 87,
+          "groups": [
+            {
+              "editorial_section": "reading-s01",
+              "question_count": 7,
+              "weight": 5
+            },
+            {
+              "editorial_section": "reading-s02",
+              "question_count": 7,
+              "weight": 5
+            },
+            {
+              "editorial_section": "reading-s03",
+              "question_count": 7,
+              "weight": 5
+            },
+            {
+              "editorial_section": "reading-s04",
+              "question_count": 22,
+              "weight": 2
+            },
+            {
+              "editorial_section": "reading-s05",
+              "question_count": 7,
+              "weight": 2
+            },
+            {
+              "editorial_section": "reading-s06",
+              "question_count": 6,
+              "weight": 2
+            }
+          ],
+          "weights": {
+            "reading-q001": 5,
+            "reading-q002": 5,
+            "reading-q003": 5,
+            "reading-q004": 5,
+            "reading-q005": 5,
+            "reading-q006": 5,
+            "reading-q007": 5,
+            "reading-q008": 5,
+            "reading-q009": 5,
+            "reading-q010": 5,
+            "reading-q011": 5,
+            "reading-q012": 5,
+            "reading-q013": 5,
+            "reading-q014": 5,
+            "reading-q015": 5,
+            "reading-q016": 5,
+            "reading-q017": 5,
+            "reading-q018": 5,
+            "reading-q019": 5,
+            "reading-q020": 5,
+            "reading-q021": 5,
+            "reading-q022": 2,
+            "reading-q023": 2,
+            "reading-q024": 2,
+            "reading-q025": 2,
+            "reading-q026": 2,
+            "reading-q027": 2,
+            "reading-q028": 2,
+            "reading-q029": 2,
+            "reading-q030": 2,
+            "reading-q031": 2,
+            "reading-q032": 2,
+            "reading-q033": 2,
+            "reading-q034": 2,
+            "reading-q035": 2,
+            "reading-q036": 2,
+            "reading-q037": 2,
+            "reading-q038": 2,
+            "reading-q039": 2,
+            "reading-q040": 2,
+            "reading-q041": 2,
+            "reading-q042": 2,
+            "reading-q043": 2,
+            "reading-q044": 2,
+            "reading-q045": 2,
+            "reading-q046": 2,
+            "reading-q047": 2,
+            "reading-q048": 2,
+            "reading-q049": 2,
+            "reading-q050": 2,
+            "reading-q051": 2,
+            "reading-q052": 2,
+            "reading-q053": 2,
+            "reading-q054": 2,
+            "reading-q055": 2,
+            "reading-q056": 2
+          }
+        }
+      }
+    },
+    "N2_1996": {
+      "source": "old1_2_1996",
+      "historical_level": 2,
+      "rounding": "nearest-integer",
+      "editorial_path": "editorial-json/N2/N2_1996/editorial_N2_1996.json",
+      "editorial_sha256": "ac5a1f9919f0afd567501988a94791d490b1cd2de74a70be42a4fbae7cf2f280",
+      "sections": {
+        "vocabulary": {
+          "maximum": 100,
+          "raw_maximum": 90,
+          "question_count": 65,
+          "physical_page": 88,
+          "printed_page": 88,
+          "groups": [
+            {
+              "editorial_section": "vocab-s01",
+              "question_count": 20,
+              "weight": 1
+            },
+            {
+              "editorial_section": "vocab-s02",
+              "question_count": 20,
+              "weight": 1
+            },
+            {
+              "editorial_section": "vocab-s03",
+              "question_count": 15,
+              "weight": 2
+            },
+            {
+              "editorial_section": "vocab-s04",
+              "question_count": 10,
+              "weight": 2
+            }
+          ],
+          "weights": {
+            "vocab-q001": 1,
+            "vocab-q002": 1,
+            "vocab-q003": 1,
+            "vocab-q004": 1,
+            "vocab-q005": 1,
+            "vocab-q006": 1,
+            "vocab-q007": 1,
+            "vocab-q008": 1,
+            "vocab-q009": 1,
+            "vocab-q010": 1,
+            "vocab-q011": 1,
+            "vocab-q012": 1,
+            "vocab-q013": 1,
+            "vocab-q014": 1,
+            "vocab-q015": 1,
+            "vocab-q016": 1,
+            "vocab-q017": 1,
+            "vocab-q018": 1,
+            "vocab-q019": 1,
+            "vocab-q020": 1,
+            "vocab-q021": 1,
+            "vocab-q022": 1,
+            "vocab-q023": 1,
+            "vocab-q024": 1,
+            "vocab-q025": 1,
+            "vocab-q026": 1,
+            "vocab-q027": 1,
+            "vocab-q028": 1,
+            "vocab-q029": 1,
+            "vocab-q030": 1,
+            "vocab-q031": 1,
+            "vocab-q032": 1,
+            "vocab-q033": 1,
+            "vocab-q034": 1,
+            "vocab-q035": 1,
+            "vocab-q036": 1,
+            "vocab-q037": 1,
+            "vocab-q038": 1,
+            "vocab-q039": 1,
+            "vocab-q040": 1,
+            "vocab-q041": 2,
+            "vocab-q042": 2,
+            "vocab-q043": 2,
+            "vocab-q044": 2,
+            "vocab-q045": 2,
+            "vocab-q046": 2,
+            "vocab-q047": 2,
+            "vocab-q048": 2,
+            "vocab-q049": 2,
+            "vocab-q050": 2,
+            "vocab-q051": 2,
+            "vocab-q052": 2,
+            "vocab-q053": 2,
+            "vocab-q054": 2,
+            "vocab-q055": 2,
+            "vocab-q056": 2,
+            "vocab-q057": 2,
+            "vocab-q058": 2,
+            "vocab-q059": 2,
+            "vocab-q060": 2,
+            "vocab-q061": 2,
+            "vocab-q062": 2,
+            "vocab-q063": 2,
+            "vocab-q064": 2,
+            "vocab-q065": 2
+          }
+        },
+        "reading_grammar": {
+          "maximum": 200,
+          "raw_maximum": 176,
+          "question_count": 54,
+          "physical_page": 89,
+          "printed_page": 89,
+          "groups": [
+            {
+              "editorial_section": "reading-s01",
+              "question_count": 7,
+              "weight": 5
+            },
+            {
+              "editorial_section": "reading-s02",
+              "question_count": 7,
+              "weight": 5
+            },
+            {
+              "editorial_section": "reading-s03",
+              "question_count": 7,
+              "weight": 5
+            },
+            {
+              "editorial_section": "reading-s04",
+              "question_count": 22,
+              "weight": 2
+            },
+            {
+              "editorial_section": "reading-s05",
+              "question_count": 6,
+              "weight": 2
+            },
+            {
+              "editorial_section": "reading-s06",
+              "question_count": 5,
+              "weight": 3
+            }
+          ],
+          "weights": {
+            "reading-q001": 5,
+            "reading-q002": 5,
+            "reading-q003": 5,
+            "reading-q004": 5,
+            "reading-q005": 5,
+            "reading-q006": 5,
+            "reading-q007": 5,
+            "reading-q008": 5,
+            "reading-q009": 5,
+            "reading-q010": 5,
+            "reading-q011": 5,
+            "reading-q012": 5,
+            "reading-q013": 5,
+            "reading-q014": 5,
+            "reading-q015": 5,
+            "reading-q016": 5,
+            "reading-q017": 5,
+            "reading-q018": 5,
+            "reading-q019": 5,
+            "reading-q020": 5,
+            "reading-q021": 5,
+            "reading-q022": 2,
+            "reading-q023": 2,
+            "reading-q024": 2,
+            "reading-q025": 2,
+            "reading-q026": 2,
+            "reading-q027": 2,
+            "reading-q028": 2,
+            "reading-q029": 2,
+            "reading-q030": 2,
+            "reading-q031": 2,
+            "reading-q032": 2,
+            "reading-q033": 2,
+            "reading-q034": 2,
+            "reading-q035": 2,
+            "reading-q036": 2,
+            "reading-q037": 2,
+            "reading-q038": 2,
+            "reading-q039": 2,
+            "reading-q040": 2,
+            "reading-q041": 2,
+            "reading-q042": 2,
+            "reading-q043": 2,
+            "reading-q044": 2,
+            "reading-q045": 2,
+            "reading-q046": 2,
+            "reading-q047": 2,
+            "reading-q048": 2,
+            "reading-q049": 2,
+            "reading-q050": 3,
+            "reading-q051": 3,
+            "reading-q052": 3,
+            "reading-q053": 3,
+            "reading-q054": 3
+          }
+        }
+      }
+    },
+    "N3_2001": {
+      "source": "old3_4_2001",
+      "historical_level": 3,
+      "rounding": "nearest-integer",
+      "editorial_path": "editorial-json/N3/N3_2001/editorial_N3_2001.json",
+      "editorial_sha256": "3ccef77b72979c055a477d69b5146fb7c1e2506b5dbd660f6ac2d57f87302aba",
+      "sections": {
+        "vocabulary": {
+          "maximum": 100,
+          "raw_maximum": 75,
+          "question_count": 55,
+          "physical_page": 75,
+          "printed_page": 76,
+          "groups": [
+            {
+              "editorial_section": "vocab-s01",
+              "question_count": 20,
+              "weight": 1
+            },
+            {
+              "editorial_section": "vocab-s02",
+              "question_count": 15,
+              "weight": 1
+            },
+            {
+              "editorial_section": "vocab-s03",
+              "question_count": 10,
+              "weight": 2
+            },
+            {
+              "editorial_section": "vocab-s04",
+              "question_count": 5,
+              "weight": 2
+            },
+            {
+              "editorial_section": "vocab-s05",
+              "question_count": 5,
+              "weight": 2
+            }
+          ],
+          "weights": {
+            "vocab-q001": 1,
+            "vocab-q002": 1,
+            "vocab-q003": 1,
+            "vocab-q004": 1,
+            "vocab-q005": 1,
+            "vocab-q006": 1,
+            "vocab-q007": 1,
+            "vocab-q008": 1,
+            "vocab-q009": 1,
+            "vocab-q010": 1,
+            "vocab-q011": 1,
+            "vocab-q012": 1,
+            "vocab-q013": 1,
+            "vocab-q014": 1,
+            "vocab-q015": 1,
+            "vocab-q016": 1,
+            "vocab-q017": 1,
+            "vocab-q018": 1,
+            "vocab-q019": 1,
+            "vocab-q020": 1,
+            "vocab-q021": 1,
+            "vocab-q022": 1,
+            "vocab-q023": 1,
+            "vocab-q024": 1,
+            "vocab-q025": 1,
+            "vocab-q026": 1,
+            "vocab-q027": 1,
+            "vocab-q028": 1,
+            "vocab-q029": 1,
+            "vocab-q030": 1,
+            "vocab-q031": 1,
+            "vocab-q032": 1,
+            "vocab-q033": 1,
+            "vocab-q034": 1,
+            "vocab-q035": 1,
+            "vocab-q036": 2,
+            "vocab-q037": 2,
+            "vocab-q038": 2,
+            "vocab-q039": 2,
+            "vocab-q040": 2,
+            "vocab-q041": 2,
+            "vocab-q042": 2,
+            "vocab-q043": 2,
+            "vocab-q044": 2,
+            "vocab-q045": 2,
+            "vocab-q046": 2,
+            "vocab-q047": 2,
+            "vocab-q048": 2,
+            "vocab-q049": 2,
+            "vocab-q050": 2,
+            "vocab-q051": 2,
+            "vocab-q052": 2,
+            "vocab-q053": 2,
+            "vocab-q054": 2,
+            "vocab-q055": 2
+          }
+        },
+        "reading_grammar": {
+          "maximum": 200,
+          "raw_maximum": 119,
+          "question_count": 50,
+          "physical_page": 76,
+          "printed_page": 77,
+          "groups": [
+            {
+              "editorial_section": "reading-s01",
+              "question_count": 15,
+              "weight": 2
+            },
+            {
+              "editorial_section": "reading-s02",
+              "question_count": 15,
+              "weight": 2
+            },
+            {
+              "editorial_section": "reading-s03",
+              "question_count": 8,
+              "weight": 2
+            },
+            {
+              "editorial_section": "reading-s04",
+              "question_count": 5,
+              "weight": 3
+            },
+            {
+              "editorial_section": "reading-s05",
+              "question_count": 4,
+              "weight": 4
+            },
+            {
+              "editorial_section": "reading-s06",
+              "question_count": 3,
+              "weight": 4
+            }
+          ],
+          "weights": {
+            "reading-q001": 2,
+            "reading-q002": 2,
+            "reading-q003": 2,
+            "reading-q004": 2,
+            "reading-q005": 2,
+            "reading-q006": 2,
+            "reading-q007": 2,
+            "reading-q008": 2,
+            "reading-q009": 2,
+            "reading-q010": 2,
+            "reading-q011": 2,
+            "reading-q012": 2,
+            "reading-q013": 2,
+            "reading-q014": 2,
+            "reading-q015": 2,
+            "reading-q016": 2,
+            "reading-q017": 2,
+            "reading-q018": 2,
+            "reading-q019": 2,
+            "reading-q020": 2,
+            "reading-q021": 2,
+            "reading-q022": 2,
+            "reading-q023": 2,
+            "reading-q024": 2,
+            "reading-q025": 2,
+            "reading-q026": 2,
+            "reading-q027": 2,
+            "reading-q028": 2,
+            "reading-q029": 2,
+            "reading-q030": 2,
+            "reading-q031": 2,
+            "reading-q032": 2,
+            "reading-q033": 2,
+            "reading-q034": 2,
+            "reading-q035": 2,
+            "reading-q036": 2,
+            "reading-q037": 2,
+            "reading-q038": 2,
+            "reading-q039": 3,
+            "reading-q040": 3,
+            "reading-q041": 3,
+            "reading-q042": 3,
+            "reading-q043": 3,
+            "reading-q044": 4,
+            "reading-q045": 4,
+            "reading-q046": 4,
+            "reading-q047": 4,
+            "reading-q048": 4,
+            "reading-q049": 4,
+            "reading-q050": 4
+          }
+        }
+      }
+    },
+    "N4_2001": {
+      "source": "old3_4_2001",
+      "historical_level": 4,
+      "rounding": "nearest-integer",
+      "editorial_path": "editorial-json/N4/N4_2001/editorial_N4_2001.json",
+      "editorial_sha256": "6f4c331d37ce2f040ab76ebab08d723cc69e48223b1716548bc83be838d34ae1",
+      "sections": {
+        "vocabulary": {
+          "maximum": 100,
+          "raw_maximum": 55,
+          "question_count": 40,
+          "physical_page": 77,
+          "printed_page": 78,
+          "groups": [
+            {
+              "editorial_section": "vocab-s01",
+              "question_count": 15,
+              "weight": 1
+            },
+            {
+              "editorial_section": "vocab-s02",
+              "question_count": 10,
+              "weight": 1
+            },
+            {
+              "editorial_section": "vocab-s03",
+              "question_count": 10,
+              "weight": 2
+            },
+            {
+              "editorial_section": "vocab-s04",
+              "question_count": 5,
+              "weight": 2
+            }
+          ],
+          "weights": {
+            "vocab-q001": 1,
+            "vocab-q002": 1,
+            "vocab-q003": 1,
+            "vocab-q004": 1,
+            "vocab-q005": 1,
+            "vocab-q006": 1,
+            "vocab-q007": 1,
+            "vocab-q008": 1,
+            "vocab-q009": 1,
+            "vocab-q010": 1,
+            "vocab-q011": 1,
+            "vocab-q012": 1,
+            "vocab-q013": 1,
+            "vocab-q014": 1,
+            "vocab-q015": 1,
+            "vocab-q016": 1,
+            "vocab-q017": 1,
+            "vocab-q018": 1,
+            "vocab-q019": 1,
+            "vocab-q020": 1,
+            "vocab-q021": 1,
+            "vocab-q022": 1,
+            "vocab-q023": 1,
+            "vocab-q024": 1,
+            "vocab-q025": 1,
+            "vocab-q026": 2,
+            "vocab-q027": 2,
+            "vocab-q028": 2,
+            "vocab-q029": 2,
+            "vocab-q030": 2,
+            "vocab-q031": 2,
+            "vocab-q032": 2,
+            "vocab-q033": 2,
+            "vocab-q034": 2,
+            "vocab-q035": 2,
+            "vocab-q036": 2,
+            "vocab-q037": 2,
+            "vocab-q038": 2,
+            "vocab-q039": 2,
+            "vocab-q040": 2
+          }
+        }
+      },
+      "unverified_sections": {
+        "reading_grammar": {
+          "fallback_eligible": true,
+          "reason": "The official table prints a raw maximum of 114, but its 46 answer entries and stated group weights sum to 110. The original denominator cannot be reconciled, so this section must use the labelled estimate instead.",
+          "physical_page": 78,
+          "printed_page": 79,
+          "printed_raw_maximum": 114,
+          "sum_of_printed_weights": 110,
+          "question_count": 46
+        }
+      }
+    },
+    "N3_2003": {
+      "source": "old3_4_2003",
+      "historical_level": 3,
+      "rounding": "nearest-integer",
+      "editorial_path": "editorial-json/N3/N3_2003/editorial_N3_2003.json",
+      "editorial_sha256": "4ad8df122819736047ea033397be6bbbe60dc387f5f7eb9ebe56980636430fe6",
+      "sections": {
+        "vocabulary": {
+          "maximum": 100,
+          "raw_maximum": 75,
+          "question_count": 55,
+          "physical_page": 85,
+          "printed_page": 76,
+          "groups": [
+            {
+              "editorial_section": "vocab-s01",
+              "question_count": 20,
+              "weight": 1
+            },
+            {
+              "editorial_section": "vocab-s02",
+              "question_count": 15,
+              "weight": 1
+            },
+            {
+              "editorial_section": "vocab-s03",
+              "question_count": 10,
+              "weight": 2
+            },
+            {
+              "editorial_section": "vocab-s04",
+              "question_count": 5,
+              "weight": 2
+            },
+            {
+              "editorial_section": "vocab-s05",
+              "question_count": 5,
+              "weight": 2
+            }
+          ],
+          "weights": {
+            "vocab-q001": 1,
+            "vocab-q002": 1,
+            "vocab-q003": 1,
+            "vocab-q004": 1,
+            "vocab-q005": 1,
+            "vocab-q006": 1,
+            "vocab-q007": 1,
+            "vocab-q008": 1,
+            "vocab-q009": 1,
+            "vocab-q010": 1,
+            "vocab-q011": 1,
+            "vocab-q012": 1,
+            "vocab-q013": 1,
+            "vocab-q014": 1,
+            "vocab-q015": 1,
+            "vocab-q016": 1,
+            "vocab-q017": 1,
+            "vocab-q018": 1,
+            "vocab-q019": 1,
+            "vocab-q020": 1,
+            "vocab-q021": 1,
+            "vocab-q022": 1,
+            "vocab-q023": 1,
+            "vocab-q024": 1,
+            "vocab-q025": 1,
+            "vocab-q026": 1,
+            "vocab-q027": 1,
+            "vocab-q028": 1,
+            "vocab-q029": 1,
+            "vocab-q030": 1,
+            "vocab-q031": 1,
+            "vocab-q032": 1,
+            "vocab-q033": 1,
+            "vocab-q034": 1,
+            "vocab-q035": 1,
+            "vocab-q036": 2,
+            "vocab-q037": 2,
+            "vocab-q038": 2,
+            "vocab-q039": 2,
+            "vocab-q040": 2,
+            "vocab-q041": 2,
+            "vocab-q042": 2,
+            "vocab-q043": 2,
+            "vocab-q044": 2,
+            "vocab-q045": 2,
+            "vocab-q046": 2,
+            "vocab-q047": 2,
+            "vocab-q048": 2,
+            "vocab-q049": 2,
+            "vocab-q050": 2,
+            "vocab-q051": 2,
+            "vocab-q052": 2,
+            "vocab-q053": 2,
+            "vocab-q054": 2,
+            "vocab-q055": 2
+          }
+        },
+        "reading_grammar": {
+          "maximum": 200,
+          "raw_maximum": 119,
+          "question_count": 50,
+          "physical_page": 86,
+          "printed_page": 77,
+          "groups": [
+            {
+              "editorial_section": "reading-s01",
+              "question_count": 15,
+              "weight": 2
+            },
+            {
+              "editorial_section": "reading-s02",
+              "question_count": 15,
+              "weight": 2
+            },
+            {
+              "editorial_section": "reading-s03",
+              "question_count": 8,
+              "weight": 2
+            },
+            {
+              "editorial_section": "reading-s04",
+              "question_count": 5,
+              "weight": 3
+            },
+            {
+              "editorial_section": "reading-s05",
+              "question_count": 4,
+              "weight": 4
+            },
+            {
+              "editorial_section": "reading-s06",
+              "question_count": 3,
+              "weight": 4
+            }
+          ],
+          "weights": {
+            "reading-q001": 2,
+            "reading-q002": 2,
+            "reading-q003": 2,
+            "reading-q004": 2,
+            "reading-q005": 2,
+            "reading-q006": 2,
+            "reading-q007": 2,
+            "reading-q008": 2,
+            "reading-q009": 2,
+            "reading-q010": 2,
+            "reading-q011": 2,
+            "reading-q012": 2,
+            "reading-q013": 2,
+            "reading-q014": 2,
+            "reading-q015": 2,
+            "reading-q016": 2,
+            "reading-q017": 2,
+            "reading-q018": 2,
+            "reading-q019": 2,
+            "reading-q020": 2,
+            "reading-q021": 2,
+            "reading-q022": 2,
+            "reading-q023": 2,
+            "reading-q024": 2,
+            "reading-q025": 2,
+            "reading-q026": 2,
+            "reading-q027": 2,
+            "reading-q028": 2,
+            "reading-q029": 2,
+            "reading-q030": 2,
+            "reading-q031": 2,
+            "reading-q032": 2,
+            "reading-q033": 2,
+            "reading-q034": 2,
+            "reading-q035": 2,
+            "reading-q036": 2,
+            "reading-q037": 2,
+            "reading-q038": 2,
+            "reading-q039": 3,
+            "reading-q040": 3,
+            "reading-q041": 3,
+            "reading-q042": 3,
+            "reading-q043": 3,
+            "reading-q044": 4,
+            "reading-q045": 4,
+            "reading-q046": 4,
+            "reading-q047": 4,
+            "reading-q048": 4,
+            "reading-q049": 4,
+            "reading-q050": 4
+          }
+        }
+      }
+    },
+    "N4_2003": {
+      "source": "old3_4_2003",
+      "historical_level": 4,
+      "rounding": "nearest-integer",
+      "editorial_path": "editorial-json/N4/N4_2003/editorial_N4_2003.json",
+      "editorial_sha256": "dca08925004ec535a89e33180bc854f31878b4f6b01373afdff31c8545085af2",
+      "sections": {
+        "vocabulary": {
+          "maximum": 100,
+          "raw_maximum": 55,
+          "question_count": 40,
+          "physical_page": 87,
+          "printed_page": 78,
+          "groups": [
+            {
+              "editorial_section": "vocab-s01",
+              "question_count": 15,
+              "weight": 1
+            },
+            {
+              "editorial_section": "vocab-s02",
+              "question_count": 10,
+              "weight": 1
+            },
+            {
+              "editorial_section": "vocab-s03",
+              "question_count": 10,
+              "weight": 2
+            },
+            {
+              "editorial_section": "vocab-s04",
+              "question_count": 5,
+              "weight": 2
+            }
+          ],
+          "weights": {
+            "vocab-q001": 1,
+            "vocab-q002": 1,
+            "vocab-q003": 1,
+            "vocab-q004": 1,
+            "vocab-q005": 1,
+            "vocab-q006": 1,
+            "vocab-q007": 1,
+            "vocab-q008": 1,
+            "vocab-q009": 1,
+            "vocab-q010": 1,
+            "vocab-q011": 1,
+            "vocab-q012": 1,
+            "vocab-q013": 1,
+            "vocab-q014": 1,
+            "vocab-q015": 1,
+            "vocab-q016": 1,
+            "vocab-q017": 1,
+            "vocab-q018": 1,
+            "vocab-q019": 1,
+            "vocab-q020": 1,
+            "vocab-q021": 1,
+            "vocab-q022": 1,
+            "vocab-q023": 1,
+            "vocab-q024": 1,
+            "vocab-q025": 1,
+            "vocab-q026": 2,
+            "vocab-q027": 2,
+            "vocab-q028": 2,
+            "vocab-q029": 2,
+            "vocab-q030": 2,
+            "vocab-q031": 2,
+            "vocab-q032": 2,
+            "vocab-q033": 2,
+            "vocab-q034": 2,
+            "vocab-q035": 2,
+            "vocab-q036": 2,
+            "vocab-q037": 2,
+            "vocab-q038": 2,
+            "vocab-q039": 2,
+            "vocab-q040": 2
+          }
+        },
+        "reading_grammar": {
+          "maximum": 200,
+          "raw_maximum": 112,
+          "question_count": 47,
+          "physical_page": 88,
+          "printed_page": 79,
+          "groups": [
+            {
+              "editorial_section": "reading-s01",
+              "question_count": 15,
+              "weight": 2
+            },
+            {
+              "editorial_section": "reading-s02",
+              "question_count": 15,
+              "weight": 2
+            },
+            {
+              "editorial_section": "reading-s03",
+              "question_count": 6,
+              "weight": 2
+            },
+            {
+              "editorial_section": "reading-s04",
+              "question_count": 4,
+              "weight": 3
+            },
+            {
+              "editorial_section": "reading-s05",
+              "question_count": 4,
+              "weight": 4
+            },
+            {
+              "editorial_section": "reading-s06",
+              "question_count": 3,
+              "weight": 4
+            }
+          ],
+          "weights": {
+            "reading-q001": 2,
+            "reading-q002": 2,
+            "reading-q003": 2,
+            "reading-q004": 2,
+            "reading-q005": 2,
+            "reading-q006": 2,
+            "reading-q007": 2,
+            "reading-q008": 2,
+            "reading-q009": 2,
+            "reading-q010": 2,
+            "reading-q011": 2,
+            "reading-q012": 2,
+            "reading-q013": 2,
+            "reading-q014": 2,
+            "reading-q015": 2,
+            "reading-q016": 2,
+            "reading-q017": 2,
+            "reading-q018": 2,
+            "reading-q019": 2,
+            "reading-q020": 2,
+            "reading-q021": 2,
+            "reading-q022": 2,
+            "reading-q023": 2,
+            "reading-q024": 2,
+            "reading-q025": 2,
+            "reading-q026": 2,
+            "reading-q027": 2,
+            "reading-q028": 2,
+            "reading-q029": 2,
+            "reading-q030": 2,
+            "reading-q031": 2,
+            "reading-q032": 2,
+            "reading-q033": 2,
+            "reading-q034": 2,
+            "reading-q035": 2,
+            "reading-q036": 2,
+            "reading-q037": 3,
+            "reading-q038": 3,
+            "reading-q039": 3,
+            "reading-q040": 3,
+            "reading-q041": 4,
+            "reading-q042": 4,
+            "reading-q043": 4,
+            "reading-q044": 4,
+            "reading-q045": 4,
+            "reading-q046": 4,
+            "reading-q047": 4
+          }
+        }
+      }
+    },
+    "N3_2004": {
+      "source": "old3_4_2004",
+      "historical_level": 3,
+      "rounding": "nearest-integer",
+      "editorial_path": "editorial-json/N3/N3_2004/editorial_N3_2004.json",
+      "editorial_sha256": "35766c7d47486f9eaae093ab31c6e99128064795a36d735b9105301a7f2ee4ff",
+      "sections": {
+        "vocabulary": {
+          "maximum": 100,
+          "raw_maximum": 75,
+          "question_count": 55,
+          "physical_page": 75,
+          "printed_page": 78,
+          "groups": [
+            {
+              "editorial_section": "vocab-s01",
+              "question_count": 20,
+              "weight": 1
+            },
+            {
+              "editorial_section": "vocab-s02",
+              "question_count": 15,
+              "weight": 1
+            },
+            {
+              "editorial_section": "vocab-s03",
+              "question_count": 10,
+              "weight": 2
+            },
+            {
+              "editorial_section": "vocab-s04",
+              "question_count": 5,
+              "weight": 2
+            },
+            {
+              "editorial_section": "vocab-s05",
+              "question_count": 5,
+              "weight": 2
+            }
+          ],
+          "weights": {
+            "vocab-q001": 1,
+            "vocab-q002": 1,
+            "vocab-q003": 1,
+            "vocab-q004": 1,
+            "vocab-q005": 1,
+            "vocab-q006": 1,
+            "vocab-q007": 1,
+            "vocab-q008": 1,
+            "vocab-q009": 1,
+            "vocab-q010": 1,
+            "vocab-q011": 1,
+            "vocab-q012": 1,
+            "vocab-q013": 1,
+            "vocab-q014": 1,
+            "vocab-q015": 1,
+            "vocab-q016": 1,
+            "vocab-q017": 1,
+            "vocab-q018": 1,
+            "vocab-q019": 1,
+            "vocab-q020": 1,
+            "vocab-q021": 1,
+            "vocab-q022": 1,
+            "vocab-q023": 1,
+            "vocab-q024": 1,
+            "vocab-q025": 1,
+            "vocab-q026": 1,
+            "vocab-q027": 1,
+            "vocab-q028": 1,
+            "vocab-q029": 1,
+            "vocab-q030": 1,
+            "vocab-q031": 1,
+            "vocab-q032": 1,
+            "vocab-q033": 1,
+            "vocab-q034": 1,
+            "vocab-q035": 1,
+            "vocab-q036": 2,
+            "vocab-q037": 2,
+            "vocab-q038": 2,
+            "vocab-q039": 2,
+            "vocab-q040": 2,
+            "vocab-q041": 2,
+            "vocab-q042": 2,
+            "vocab-q043": 2,
+            "vocab-q044": 2,
+            "vocab-q045": 2,
+            "vocab-q046": 2,
+            "vocab-q047": 2,
+            "vocab-q048": 2,
+            "vocab-q049": 2,
+            "vocab-q050": 2,
+            "vocab-q051": 2,
+            "vocab-q052": 2,
+            "vocab-q053": 2,
+            "vocab-q054": 2,
+            "vocab-q055": 2
+          }
+        },
+        "reading_grammar": {
+          "maximum": 200,
+          "raw_maximum": 119,
+          "question_count": 50,
+          "physical_page": 76,
+          "printed_page": 79,
+          "groups": [
+            {
+              "editorial_section": "reading-s01",
+              "question_count": 15,
+              "weight": 2
+            },
+            {
+              "editorial_section": "reading-s02",
+              "question_count": 15,
+              "weight": 2
+            },
+            {
+              "editorial_section": "reading-s03",
+              "question_count": 8,
+              "weight": 2
+            },
+            {
+              "editorial_section": "reading-s04",
+              "question_count": 5,
+              "weight": 3
+            },
+            {
+              "editorial_section": "reading-s05",
+              "question_count": 4,
+              "weight": 4
+            },
+            {
+              "editorial_section": "reading-s06",
+              "question_count": 3,
+              "weight": 4
+            }
+          ],
+          "weights": {
+            "reading-q001": 2,
+            "reading-q002": 2,
+            "reading-q003": 2,
+            "reading-q004": 2,
+            "reading-q005": 2,
+            "reading-q006": 2,
+            "reading-q007": 2,
+            "reading-q008": 2,
+            "reading-q009": 2,
+            "reading-q010": 2,
+            "reading-q011": 2,
+            "reading-q012": 2,
+            "reading-q013": 2,
+            "reading-q014": 2,
+            "reading-q015": 2,
+            "reading-q016": 2,
+            "reading-q017": 2,
+            "reading-q018": 2,
+            "reading-q019": 2,
+            "reading-q020": 2,
+            "reading-q021": 2,
+            "reading-q022": 2,
+            "reading-q023": 2,
+            "reading-q024": 2,
+            "reading-q025": 2,
+            "reading-q026": 2,
+            "reading-q027": 2,
+            "reading-q028": 2,
+            "reading-q029": 2,
+            "reading-q030": 2,
+            "reading-q031": 2,
+            "reading-q032": 2,
+            "reading-q033": 2,
+            "reading-q034": 2,
+            "reading-q035": 2,
+            "reading-q036": 2,
+            "reading-q037": 2,
+            "reading-q038": 2,
+            "reading-q039": 3,
+            "reading-q040": 3,
+            "reading-q041": 3,
+            "reading-q042": 3,
+            "reading-q043": 3,
+            "reading-q044": 4,
+            "reading-q045": 4,
+            "reading-q046": 4,
+            "reading-q047": 4,
+            "reading-q048": 4,
+            "reading-q049": 4,
+            "reading-q050": 4
+          }
+        }
+      }
+    },
+    "N4_2004": {
+      "source": "old3_4_2004",
+      "historical_level": 4,
+      "rounding": "nearest-integer",
+      "editorial_path": "editorial-json/N4/N4_2004/editorial_N4_2004.json",
+      "editorial_sha256": "29ce2858fbf16b053b18bd799974cc427bb5247c69c3b5edfab08f468f0454df",
+      "sections": {
+        "vocabulary": {
+          "maximum": 100,
+          "raw_maximum": 55,
+          "question_count": 40,
+          "physical_page": 77,
+          "printed_page": 80,
+          "groups": [
+            {
+              "editorial_section": "vocab-s01",
+              "question_count": 15,
+              "weight": 1
+            },
+            {
+              "editorial_section": "vocab-s02",
+              "question_count": 10,
+              "weight": 1
+            },
+            {
+              "editorial_section": "vocab-s03",
+              "question_count": 10,
+              "weight": 2
+            },
+            {
+              "editorial_section": "vocab-s04",
+              "question_count": 5,
+              "weight": 2
+            }
+          ],
+          "weights": {
+            "vocab-q001": 1,
+            "vocab-q002": 1,
+            "vocab-q003": 1,
+            "vocab-q004": 1,
+            "vocab-q005": 1,
+            "vocab-q006": 1,
+            "vocab-q007": 1,
+            "vocab-q008": 1,
+            "vocab-q009": 1,
+            "vocab-q010": 1,
+            "vocab-q011": 1,
+            "vocab-q012": 1,
+            "vocab-q013": 1,
+            "vocab-q014": 1,
+            "vocab-q015": 1,
+            "vocab-q016": 1,
+            "vocab-q017": 1,
+            "vocab-q018": 1,
+            "vocab-q019": 1,
+            "vocab-q020": 1,
+            "vocab-q021": 1,
+            "vocab-q022": 1,
+            "vocab-q023": 1,
+            "vocab-q024": 1,
+            "vocab-q025": 1,
+            "vocab-q026": 2,
+            "vocab-q027": 2,
+            "vocab-q028": 2,
+            "vocab-q029": 2,
+            "vocab-q030": 2,
+            "vocab-q031": 2,
+            "vocab-q032": 2,
+            "vocab-q033": 2,
+            "vocab-q034": 2,
+            "vocab-q035": 2,
+            "vocab-q036": 2,
+            "vocab-q037": 2,
+            "vocab-q038": 2,
+            "vocab-q039": 2,
+            "vocab-q040": 2
+          }
+        },
+        "reading_grammar": {
+          "maximum": 200,
+          "raw_maximum": 112,
+          "question_count": 47,
+          "physical_page": 78,
+          "printed_page": 81,
+          "groups": [
+            {
+              "editorial_section": "reading-s01",
+              "question_count": 15,
+              "weight": 2
+            },
+            {
+              "editorial_section": "reading-s02",
+              "question_count": 15,
+              "weight": 2
+            },
+            {
+              "editorial_section": "reading-s03",
+              "question_count": 6,
+              "weight": 2
+            },
+            {
+              "editorial_section": "reading-s04",
+              "question_count": 4,
+              "weight": 3
+            },
+            {
+              "editorial_section": "reading-s05",
+              "question_count": 4,
+              "weight": 4
+            },
+            {
+              "editorial_section": "reading-s06",
+              "question_count": 3,
+              "weight": 4
+            }
+          ],
+          "weights": {
+            "reading-q001": 2,
+            "reading-q002": 2,
+            "reading-q003": 2,
+            "reading-q004": 2,
+            "reading-q005": 2,
+            "reading-q006": 2,
+            "reading-q007": 2,
+            "reading-q008": 2,
+            "reading-q009": 2,
+            "reading-q010": 2,
+            "reading-q011": 2,
+            "reading-q012": 2,
+            "reading-q013": 2,
+            "reading-q014": 2,
+            "reading-q015": 2,
+            "reading-q016": 2,
+            "reading-q017": 2,
+            "reading-q018": 2,
+            "reading-q019": 2,
+            "reading-q020": 2,
+            "reading-q021": 2,
+            "reading-q022": 2,
+            "reading-q023": 2,
+            "reading-q024": 2,
+            "reading-q025": 2,
+            "reading-q026": 2,
+            "reading-q027": 2,
+            "reading-q028": 2,
+            "reading-q029": 2,
+            "reading-q030": 2,
+            "reading-q031": 2,
+            "reading-q032": 2,
+            "reading-q033": 2,
+            "reading-q034": 2,
+            "reading-q035": 2,
+            "reading-q036": 2,
+            "reading-q037": 3,
+            "reading-q038": 3,
+            "reading-q039": 3,
+            "reading-q040": 3,
+            "reading-q041": 4,
+            "reading-q042": 4,
+            "reading-q043": 4,
+            "reading-q044": 4,
+            "reading-q045": 4,
+            "reading-q046": 4,
+            "reading-q047": 4
+          }
+        }
+      }
+    },
+    "N3_2005": {
+      "source": "old3_4_2005",
+      "historical_level": 3,
+      "rounding": "nearest-integer",
+      "editorial_path": "editorial-json/N3/N3_2005/editorial_N3_2005.json",
+      "editorial_sha256": "ad2e3956cb1dd3a76d367dff7148d3a2045ed228dd0322b3452bc7177aca41b8",
+      "sections": {
+        "vocabulary": {
+          "maximum": 100,
+          "raw_maximum": 75,
+          "question_count": 55,
+          "physical_page": 74,
+          "printed_page": 74,
+          "groups": [
+            {
+              "editorial_section": "vocab-s01",
+              "question_count": 20,
+              "weight": 1
+            },
+            {
+              "editorial_section": "vocab-s02",
+              "question_count": 15,
+              "weight": 1
+            },
+            {
+              "editorial_section": "vocab-s03",
+              "question_count": 10,
+              "weight": 2
+            },
+            {
+              "editorial_section": "vocab-s04",
+              "question_count": 5,
+              "weight": 2
+            },
+            {
+              "editorial_section": "vocab-s05",
+              "question_count": 5,
+              "weight": 2
+            }
+          ],
+          "weights": {
+            "vocab-q001": 1,
+            "vocab-q002": 1,
+            "vocab-q003": 1,
+            "vocab-q004": 1,
+            "vocab-q005": 1,
+            "vocab-q006": 1,
+            "vocab-q007": 1,
+            "vocab-q008": 1,
+            "vocab-q009": 1,
+            "vocab-q010": 1,
+            "vocab-q011": 1,
+            "vocab-q012": 1,
+            "vocab-q013": 1,
+            "vocab-q014": 1,
+            "vocab-q015": 1,
+            "vocab-q016": 1,
+            "vocab-q017": 1,
+            "vocab-q018": 1,
+            "vocab-q019": 1,
+            "vocab-q020": 1,
+            "vocab-q021": 1,
+            "vocab-q022": 1,
+            "vocab-q023": 1,
+            "vocab-q024": 1,
+            "vocab-q025": 1,
+            "vocab-q026": 1,
+            "vocab-q027": 1,
+            "vocab-q028": 1,
+            "vocab-q029": 1,
+            "vocab-q030": 1,
+            "vocab-q031": 1,
+            "vocab-q032": 1,
+            "vocab-q033": 1,
+            "vocab-q034": 1,
+            "vocab-q035": 1,
+            "vocab-q036": 2,
+            "vocab-q037": 2,
+            "vocab-q038": 2,
+            "vocab-q039": 2,
+            "vocab-q040": 2,
+            "vocab-q041": 2,
+            "vocab-q042": 2,
+            "vocab-q043": 2,
+            "vocab-q044": 2,
+            "vocab-q045": 2,
+            "vocab-q046": 2,
+            "vocab-q047": 2,
+            "vocab-q048": 2,
+            "vocab-q049": 2,
+            "vocab-q050": 2,
+            "vocab-q051": 2,
+            "vocab-q052": 2,
+            "vocab-q053": 2,
+            "vocab-q054": 2,
+            "vocab-q055": 2
+          }
+        },
+        "reading_grammar": {
+          "maximum": 200,
+          "raw_maximum": 119,
+          "question_count": 50,
+          "physical_page": 75,
+          "printed_page": 75,
+          "groups": [
+            {
+              "editorial_section": "reading-s01",
+              "question_count": 15,
+              "weight": 2
+            },
+            {
+              "editorial_section": "reading-s02",
+              "question_count": 15,
+              "weight": 2
+            },
+            {
+              "editorial_section": "reading-s03",
+              "question_count": 8,
+              "weight": 2
+            },
+            {
+              "editorial_section": "reading-s04",
+              "question_count": 5,
+              "weight": 3
+            },
+            {
+              "editorial_section": "reading-s05",
+              "question_count": 4,
+              "weight": 4
+            },
+            {
+              "editorial_section": "reading-s06",
+              "question_count": 3,
+              "weight": 4
+            }
+          ],
+          "weights": {
+            "reading-q001": 2,
+            "reading-q002": 2,
+            "reading-q003": 2,
+            "reading-q004": 2,
+            "reading-q005": 2,
+            "reading-q006": 2,
+            "reading-q007": 2,
+            "reading-q008": 2,
+            "reading-q009": 2,
+            "reading-q010": 2,
+            "reading-q011": 2,
+            "reading-q012": 2,
+            "reading-q013": 2,
+            "reading-q014": 2,
+            "reading-q015": 2,
+            "reading-q016": 2,
+            "reading-q017": 2,
+            "reading-q018": 2,
+            "reading-q019": 2,
+            "reading-q020": 2,
+            "reading-q021": 2,
+            "reading-q022": 2,
+            "reading-q023": 2,
+            "reading-q024": 2,
+            "reading-q025": 2,
+            "reading-q026": 2,
+            "reading-q027": 2,
+            "reading-q028": 2,
+            "reading-q029": 2,
+            "reading-q030": 2,
+            "reading-q031": 2,
+            "reading-q032": 2,
+            "reading-q033": 2,
+            "reading-q034": 2,
+            "reading-q035": 2,
+            "reading-q036": 2,
+            "reading-q037": 2,
+            "reading-q038": 2,
+            "reading-q039": 3,
+            "reading-q040": 3,
+            "reading-q041": 3,
+            "reading-q042": 3,
+            "reading-q043": 3,
+            "reading-q044": 4,
+            "reading-q045": 4,
+            "reading-q046": 4,
+            "reading-q047": 4,
+            "reading-q048": 4,
+            "reading-q049": 4,
+            "reading-q050": 4
+          }
+        }
+      }
+    },
+    "N4_2005": {
+      "source": "old3_4_2005",
+      "historical_level": 4,
+      "rounding": "nearest-integer",
+      "editorial_path": "editorial-json/N4/N4_2005/editorial_N4_2005.json",
+      "editorial_sha256": "94d71320bc2fdc29fbca4300e51bfa1e194f75e9a489be4dee5e86ee351f442e",
+      "sections": {
+        "vocabulary": {
+          "maximum": 100,
+          "raw_maximum": 55,
+          "question_count": 40,
+          "physical_page": 76,
+          "printed_page": 76,
+          "groups": [
+            {
+              "editorial_section": "vocab-s01",
+              "question_count": 15,
+              "weight": 1
+            },
+            {
+              "editorial_section": "vocab-s02",
+              "question_count": 10,
+              "weight": 1
+            },
+            {
+              "editorial_section": "vocab-s03",
+              "question_count": 10,
+              "weight": 2
+            },
+            {
+              "editorial_section": "vocab-s04",
+              "question_count": 5,
+              "weight": 2
+            }
+          ],
+          "weights": {
+            "vocab-q001": 1,
+            "vocab-q002": 1,
+            "vocab-q003": 1,
+            "vocab-q004": 1,
+            "vocab-q005": 1,
+            "vocab-q006": 1,
+            "vocab-q007": 1,
+            "vocab-q008": 1,
+            "vocab-q009": 1,
+            "vocab-q010": 1,
+            "vocab-q011": 1,
+            "vocab-q012": 1,
+            "vocab-q013": 1,
+            "vocab-q014": 1,
+            "vocab-q015": 1,
+            "vocab-q016": 1,
+            "vocab-q017": 1,
+            "vocab-q018": 1,
+            "vocab-q019": 1,
+            "vocab-q020": 1,
+            "vocab-q021": 1,
+            "vocab-q022": 1,
+            "vocab-q023": 1,
+            "vocab-q024": 1,
+            "vocab-q025": 1,
+            "vocab-q026": 2,
+            "vocab-q027": 2,
+            "vocab-q028": 2,
+            "vocab-q029": 2,
+            "vocab-q030": 2,
+            "vocab-q031": 2,
+            "vocab-q032": 2,
+            "vocab-q033": 2,
+            "vocab-q034": 2,
+            "vocab-q035": 2,
+            "vocab-q036": 2,
+            "vocab-q037": 2,
+            "vocab-q038": 2,
+            "vocab-q039": 2,
+            "vocab-q040": 2
+          }
+        },
+        "reading_grammar": {
+          "maximum": 200,
+          "raw_maximum": 112,
+          "question_count": 47,
+          "physical_page": 77,
+          "printed_page": 77,
+          "groups": [
+            {
+              "editorial_section": "reading-s01",
+              "question_count": 15,
+              "weight": 2
+            },
+            {
+              "editorial_section": "reading-s02",
+              "question_count": 15,
+              "weight": 2
+            },
+            {
+              "editorial_section": "reading-s03",
+              "question_count": 6,
+              "weight": 2
+            },
+            {
+              "editorial_section": "reading-s04",
+              "question_count": 4,
+              "weight": 3
+            },
+            {
+              "editorial_section": "reading-s05",
+              "question_count": 4,
+              "weight": 4
+            },
+            {
+              "editorial_section": "reading-s06",
+              "question_count": 3,
+              "weight": 4
+            }
+          ],
+          "weights": {
+            "reading-q001": 2,
+            "reading-q002": 2,
+            "reading-q003": 2,
+            "reading-q004": 2,
+            "reading-q005": 2,
+            "reading-q006": 2,
+            "reading-q007": 2,
+            "reading-q008": 2,
+            "reading-q009": 2,
+            "reading-q010": 2,
+            "reading-q011": 2,
+            "reading-q012": 2,
+            "reading-q013": 2,
+            "reading-q014": 2,
+            "reading-q015": 2,
+            "reading-q016": 2,
+            "reading-q017": 2,
+            "reading-q018": 2,
+            "reading-q019": 2,
+            "reading-q020": 2,
+            "reading-q021": 2,
+            "reading-q022": 2,
+            "reading-q023": 2,
+            "reading-q024": 2,
+            "reading-q025": 2,
+            "reading-q026": 2,
+            "reading-q027": 2,
+            "reading-q028": 2,
+            "reading-q029": 2,
+            "reading-q030": 2,
+            "reading-q031": 2,
+            "reading-q032": 2,
+            "reading-q033": 2,
+            "reading-q034": 2,
+            "reading-q035": 2,
+            "reading-q036": 2,
+            "reading-q037": 3,
+            "reading-q038": 3,
+            "reading-q039": 3,
+            "reading-q040": 3,
+            "reading-q041": 4,
+            "reading-q042": 4,
+            "reading-q043": 4,
+            "reading-q044": 4,
+            "reading-q045": 4,
+            "reading-q046": 4,
+            "reading-q047": 4
+          }
+        }
+      }
+    },
+    "N3_2007": {
+      "source": "old3_4_2007",
+      "historical_level": 3,
+      "rounding": "nearest-integer",
+      "editorial_path": "editorial-json/N3/N3_2007/editorial_N3_2007.json",
+      "editorial_sha256": "28e3a4e04ad13f7245a67b6618c9f1eded3165f243a04d367596cef8ef3b9265",
+      "sections": {
+        "vocabulary": {
+          "maximum": 100,
+          "raw_maximum": 75,
+          "question_count": 55,
+          "physical_page": 79,
+          "printed_page": 76,
+          "groups": [
+            {
+              "editorial_section": "vocab-s01",
+              "question_count": 20,
+              "weight": 1
+            },
+            {
+              "editorial_section": "vocab-s02",
+              "question_count": 15,
+              "weight": 1
+            },
+            {
+              "editorial_section": "vocab-s03",
+              "question_count": 10,
+              "weight": 2
+            },
+            {
+              "editorial_section": "vocab-s04",
+              "question_count": 5,
+              "weight": 2
+            },
+            {
+              "editorial_section": "vocab-s05",
+              "question_count": 5,
+              "weight": 2
+            }
+          ],
+          "weights": {
+            "vocab-q001": 1,
+            "vocab-q002": 1,
+            "vocab-q003": 1,
+            "vocab-q004": 1,
+            "vocab-q005": 1,
+            "vocab-q006": 1,
+            "vocab-q007": 1,
+            "vocab-q008": 1,
+            "vocab-q009": 1,
+            "vocab-q010": 1,
+            "vocab-q011": 1,
+            "vocab-q012": 1,
+            "vocab-q013": 1,
+            "vocab-q014": 1,
+            "vocab-q015": 1,
+            "vocab-q016": 1,
+            "vocab-q017": 1,
+            "vocab-q018": 1,
+            "vocab-q019": 1,
+            "vocab-q020": 1,
+            "vocab-q021": 1,
+            "vocab-q022": 1,
+            "vocab-q023": 1,
+            "vocab-q024": 1,
+            "vocab-q025": 1,
+            "vocab-q026": 1,
+            "vocab-q027": 1,
+            "vocab-q028": 1,
+            "vocab-q029": 1,
+            "vocab-q030": 1,
+            "vocab-q031": 1,
+            "vocab-q032": 1,
+            "vocab-q033": 1,
+            "vocab-q034": 1,
+            "vocab-q035": 1,
+            "vocab-q036": 2,
+            "vocab-q037": 2,
+            "vocab-q038": 2,
+            "vocab-q039": 2,
+            "vocab-q040": 2,
+            "vocab-q041": 2,
+            "vocab-q042": 2,
+            "vocab-q043": 2,
+            "vocab-q044": 2,
+            "vocab-q045": 2,
+            "vocab-q046": 2,
+            "vocab-q047": 2,
+            "vocab-q048": 2,
+            "vocab-q049": 2,
+            "vocab-q050": 2,
+            "vocab-q051": 2,
+            "vocab-q052": 2,
+            "vocab-q053": 2,
+            "vocab-q054": 2,
+            "vocab-q055": 2
+          }
+        },
+        "reading_grammar": {
+          "maximum": 200,
+          "raw_maximum": 119,
+          "question_count": 50,
+          "physical_page": 80,
+          "printed_page": 77,
+          "groups": [
+            {
+              "editorial_section": "reading-s01",
+              "question_count": 15,
+              "weight": 2
+            },
+            {
+              "editorial_section": "reading-s02",
+              "question_count": 15,
+              "weight": 2
+            },
+            {
+              "editorial_section": "reading-s03",
+              "question_count": 8,
+              "weight": 2
+            },
+            {
+              "editorial_section": "reading-s04",
+              "question_count": 5,
+              "weight": 3
+            },
+            {
+              "editorial_section": "reading-s05",
+              "question_count": 4,
+              "weight": 4
+            },
+            {
+              "editorial_section": "reading-s06",
+              "question_count": 3,
+              "weight": 4
+            }
+          ],
+          "weights": {
+            "reading-q001": 2,
+            "reading-q002": 2,
+            "reading-q003": 2,
+            "reading-q004": 2,
+            "reading-q005": 2,
+            "reading-q006": 2,
+            "reading-q007": 2,
+            "reading-q008": 2,
+            "reading-q009": 2,
+            "reading-q010": 2,
+            "reading-q011": 2,
+            "reading-q012": 2,
+            "reading-q013": 2,
+            "reading-q014": 2,
+            "reading-q015": 2,
+            "reading-q016": 2,
+            "reading-q017": 2,
+            "reading-q018": 2,
+            "reading-q019": 2,
+            "reading-q020": 2,
+            "reading-q021": 2,
+            "reading-q022": 2,
+            "reading-q023": 2,
+            "reading-q024": 2,
+            "reading-q025": 2,
+            "reading-q026": 2,
+            "reading-q027": 2,
+            "reading-q028": 2,
+            "reading-q029": 2,
+            "reading-q030": 2,
+            "reading-q031": 2,
+            "reading-q032": 2,
+            "reading-q033": 2,
+            "reading-q034": 2,
+            "reading-q035": 2,
+            "reading-q036": 2,
+            "reading-q037": 2,
+            "reading-q038": 2,
+            "reading-q039": 3,
+            "reading-q040": 3,
+            "reading-q041": 3,
+            "reading-q042": 3,
+            "reading-q043": 3,
+            "reading-q044": 4,
+            "reading-q045": 4,
+            "reading-q046": 4,
+            "reading-q047": 4,
+            "reading-q048": 4,
+            "reading-q049": 4,
+            "reading-q050": 4
+          }
+        }
+      }
+    },
+    "N4_2007": {
+      "source": "old3_4_2007",
+      "historical_level": 4,
+      "rounding": "nearest-integer",
+      "editorial_path": "editorial-json/N4/N4_2007/editorial_N4_2007.json",
+      "editorial_sha256": "ba4107abe878c665987ac23cd1d231eb62bcdbb4b2673e8f79db726462a1d2fe",
+      "sections": {
+        "vocabulary": {
+          "maximum": 100,
+          "raw_maximum": 55,
+          "question_count": 40,
+          "physical_page": 81,
+          "printed_page": 78,
+          "groups": [
+            {
+              "editorial_section": "vocab-s01",
+              "question_count": 15,
+              "weight": 1
+            },
+            {
+              "editorial_section": "vocab-s02",
+              "question_count": 10,
+              "weight": 1
+            },
+            {
+              "editorial_section": "vocab-s03",
+              "question_count": 10,
+              "weight": 2
+            },
+            {
+              "editorial_section": "vocab-s04",
+              "question_count": 5,
+              "weight": 2
+            }
+          ],
+          "weights": {
+            "vocab-q001": 1,
+            "vocab-q002": 1,
+            "vocab-q003": 1,
+            "vocab-q004": 1,
+            "vocab-q005": 1,
+            "vocab-q006": 1,
+            "vocab-q007": 1,
+            "vocab-q008": 1,
+            "vocab-q009": 1,
+            "vocab-q010": 1,
+            "vocab-q011": 1,
+            "vocab-q012": 1,
+            "vocab-q013": 1,
+            "vocab-q014": 1,
+            "vocab-q015": 1,
+            "vocab-q016": 1,
+            "vocab-q017": 1,
+            "vocab-q018": 1,
+            "vocab-q019": 1,
+            "vocab-q020": 1,
+            "vocab-q021": 1,
+            "vocab-q022": 1,
+            "vocab-q023": 1,
+            "vocab-q024": 1,
+            "vocab-q025": 1,
+            "vocab-q026": 2,
+            "vocab-q027": 2,
+            "vocab-q028": 2,
+            "vocab-q029": 2,
+            "vocab-q030": 2,
+            "vocab-q031": 2,
+            "vocab-q032": 2,
+            "vocab-q033": 2,
+            "vocab-q034": 2,
+            "vocab-q035": 2,
+            "vocab-q036": 2,
+            "vocab-q037": 2,
+            "vocab-q038": 2,
+            "vocab-q039": 2,
+            "vocab-q040": 2
+          }
+        },
+        "reading_grammar": {
+          "maximum": 200,
+          "raw_maximum": 112,
+          "question_count": 47,
+          "physical_page": 82,
+          "printed_page": 79,
+          "groups": [
+            {
+              "editorial_section": "reading-s01",
+              "question_count": 15,
+              "weight": 2
+            },
+            {
+              "editorial_section": "reading-s02",
+              "question_count": 15,
+              "weight": 2
+            },
+            {
+              "editorial_section": "reading-s03",
+              "question_count": 6,
+              "weight": 2
+            },
+            {
+              "editorial_section": "reading-s04",
+              "question_count": 4,
+              "weight": 3
+            },
+            {
+              "editorial_section": "reading-s05",
+              "question_count": 4,
+              "weight": 4
+            },
+            {
+              "editorial_section": "reading-s06",
+              "question_count": 3,
+              "weight": 4
+            }
+          ],
+          "weights": {
+            "reading-q001": 2,
+            "reading-q002": 2,
+            "reading-q003": 2,
+            "reading-q004": 2,
+            "reading-q005": 2,
+            "reading-q006": 2,
+            "reading-q007": 2,
+            "reading-q008": 2,
+            "reading-q009": 2,
+            "reading-q010": 2,
+            "reading-q011": 2,
+            "reading-q012": 2,
+            "reading-q013": 2,
+            "reading-q014": 2,
+            "reading-q015": 2,
+            "reading-q016": 2,
+            "reading-q017": 2,
+            "reading-q018": 2,
+            "reading-q019": 2,
+            "reading-q020": 2,
+            "reading-q021": 2,
+            "reading-q022": 2,
+            "reading-q023": 2,
+            "reading-q024": 2,
+            "reading-q025": 2,
+            "reading-q026": 2,
+            "reading-q027": 2,
+            "reading-q028": 2,
+            "reading-q029": 2,
+            "reading-q030": 2,
+            "reading-q031": 2,
+            "reading-q032": 2,
+            "reading-q033": 2,
+            "reading-q034": 2,
+            "reading-q035": 2,
+            "reading-q036": 2,
+            "reading-q037": 3,
+            "reading-q038": 3,
+            "reading-q039": 3,
+            "reading-q040": 3,
+            "reading-q041": 4,
+            "reading-q042": 4,
+            "reading-q043": 4,
+            "reading-q044": 4,
+            "reading-q045": 4,
+            "reading-q046": 4,
+            "reading-q047": 4
+          }
+        }
+      }
+    },
+    "N3_2008": {
+      "source": "old3_4_2008",
+      "historical_level": 3,
+      "rounding": "nearest-integer",
+      "editorial_path": "editorial-json/N3/N3_2008/editorial_N3_2008.json",
+      "editorial_sha256": "6b48c697aa9804e2e0a721aa6cb4e54ba0b318e81537c221c869ae048eb08701",
+      "sections": {
+        "vocabulary": {
+          "maximum": 100,
+          "raw_maximum": 75,
+          "question_count": 55,
+          "physical_page": 82,
+          "printed_page": 78,
+          "groups": [
+            {
+              "editorial_section": "vocab-s01",
+              "question_count": 20,
+              "weight": 1
+            },
+            {
+              "editorial_section": "vocab-s02",
+              "question_count": 15,
+              "weight": 1
+            },
+            {
+              "editorial_section": "vocab-s03",
+              "question_count": 10,
+              "weight": 2
+            },
+            {
+              "editorial_section": "vocab-s04",
+              "question_count": 5,
+              "weight": 2
+            },
+            {
+              "editorial_section": "vocab-s05",
+              "question_count": 5,
+              "weight": 2
+            }
+          ],
+          "weights": {
+            "vocab-q001": 1,
+            "vocab-q002": 1,
+            "vocab-q003": 1,
+            "vocab-q004": 1,
+            "vocab-q005": 1,
+            "vocab-q006": 1,
+            "vocab-q007": 1,
+            "vocab-q008": 1,
+            "vocab-q009": 1,
+            "vocab-q010": 1,
+            "vocab-q011": 1,
+            "vocab-q012": 1,
+            "vocab-q013": 1,
+            "vocab-q014": 1,
+            "vocab-q015": 1,
+            "vocab-q016": 1,
+            "vocab-q017": 1,
+            "vocab-q018": 1,
+            "vocab-q019": 1,
+            "vocab-q020": 1,
+            "vocab-q021": 1,
+            "vocab-q022": 1,
+            "vocab-q023": 1,
+            "vocab-q024": 1,
+            "vocab-q025": 1,
+            "vocab-q026": 1,
+            "vocab-q027": 1,
+            "vocab-q028": 1,
+            "vocab-q029": 1,
+            "vocab-q030": 1,
+            "vocab-q031": 1,
+            "vocab-q032": 1,
+            "vocab-q033": 1,
+            "vocab-q034": 1,
+            "vocab-q035": 1,
+            "vocab-q036": 2,
+            "vocab-q037": 2,
+            "vocab-q038": 2,
+            "vocab-q039": 2,
+            "vocab-q040": 2,
+            "vocab-q041": 2,
+            "vocab-q042": 2,
+            "vocab-q043": 2,
+            "vocab-q044": 2,
+            "vocab-q045": 2,
+            "vocab-q046": 2,
+            "vocab-q047": 2,
+            "vocab-q048": 2,
+            "vocab-q049": 2,
+            "vocab-q050": 2,
+            "vocab-q051": 2,
+            "vocab-q052": 2,
+            "vocab-q053": 2,
+            "vocab-q054": 2,
+            "vocab-q055": 2
+          }
+        },
+        "reading_grammar": {
+          "maximum": 200,
+          "raw_maximum": 119,
+          "question_count": 50,
+          "physical_page": 83,
+          "printed_page": 79,
+          "groups": [
+            {
+              "editorial_section": "reading-s01",
+              "question_count": 15,
+              "weight": 2
+            },
+            {
+              "editorial_section": "reading-s02",
+              "question_count": 15,
+              "weight": 2
+            },
+            {
+              "editorial_section": "reading-s03",
+              "question_count": 8,
+              "weight": 2
+            },
+            {
+              "editorial_section": "reading-s04",
+              "question_count": 5,
+              "weight": 3
+            },
+            {
+              "editorial_section": "reading-s05",
+              "question_count": 4,
+              "weight": 4
+            },
+            {
+              "editorial_section": "reading-s06",
+              "question_count": 3,
+              "weight": 4
+            }
+          ],
+          "weights": {
+            "reading-q001": 2,
+            "reading-q002": 2,
+            "reading-q003": 2,
+            "reading-q004": 2,
+            "reading-q005": 2,
+            "reading-q006": 2,
+            "reading-q007": 2,
+            "reading-q008": 2,
+            "reading-q009": 2,
+            "reading-q010": 2,
+            "reading-q011": 2,
+            "reading-q012": 2,
+            "reading-q013": 2,
+            "reading-q014": 2,
+            "reading-q015": 2,
+            "reading-q016": 2,
+            "reading-q017": 2,
+            "reading-q018": 2,
+            "reading-q019": 2,
+            "reading-q020": 2,
+            "reading-q021": 2,
+            "reading-q022": 2,
+            "reading-q023": 2,
+            "reading-q024": 2,
+            "reading-q025": 2,
+            "reading-q026": 2,
+            "reading-q027": 2,
+            "reading-q028": 2,
+            "reading-q029": 2,
+            "reading-q030": 2,
+            "reading-q031": 2,
+            "reading-q032": 2,
+            "reading-q033": 2,
+            "reading-q034": 2,
+            "reading-q035": 2,
+            "reading-q036": 2,
+            "reading-q037": 2,
+            "reading-q038": 2,
+            "reading-q039": 3,
+            "reading-q040": 3,
+            "reading-q041": 3,
+            "reading-q042": 3,
+            "reading-q043": 3,
+            "reading-q044": 4,
+            "reading-q045": 4,
+            "reading-q046": 4,
+            "reading-q047": 4,
+            "reading-q048": 4,
+            "reading-q049": 4,
+            "reading-q050": 4
+          }
+        }
+      }
+    },
+    "N4_2008": {
+      "source": "old3_4_2008",
+      "historical_level": 4,
+      "rounding": "nearest-integer",
+      "editorial_path": "editorial-json/N4/N4_2008/editorial_N4_2008.json",
+      "editorial_sha256": "d6a9271e64c082d105448c37cb7312f217f6c9561d6a80f276ec1f0a128777aa",
+      "sections": {
+        "vocabulary": {
+          "maximum": 100,
+          "raw_maximum": 55,
+          "question_count": 40,
+          "physical_page": 84,
+          "printed_page": 80,
+          "groups": [
+            {
+              "editorial_section": "vocab-s01",
+              "question_count": 15,
+              "weight": 1
+            },
+            {
+              "editorial_section": "vocab-s02",
+              "question_count": 10,
+              "weight": 1
+            },
+            {
+              "editorial_section": "vocab-s03",
+              "question_count": 10,
+              "weight": 2
+            },
+            {
+              "editorial_section": "vocab-s04",
+              "question_count": 5,
+              "weight": 2
+            }
+          ],
+          "weights": {
+            "vocab-q001": 1,
+            "vocab-q002": 1,
+            "vocab-q003": 1,
+            "vocab-q004": 1,
+            "vocab-q005": 1,
+            "vocab-q006": 1,
+            "vocab-q007": 1,
+            "vocab-q008": 1,
+            "vocab-q009": 1,
+            "vocab-q010": 1,
+            "vocab-q011": 1,
+            "vocab-q012": 1,
+            "vocab-q013": 1,
+            "vocab-q014": 1,
+            "vocab-q015": 1,
+            "vocab-q016": 1,
+            "vocab-q017": 1,
+            "vocab-q018": 1,
+            "vocab-q019": 1,
+            "vocab-q020": 1,
+            "vocab-q021": 1,
+            "vocab-q022": 1,
+            "vocab-q023": 1,
+            "vocab-q024": 1,
+            "vocab-q025": 1,
+            "vocab-q026": 2,
+            "vocab-q027": 2,
+            "vocab-q028": 2,
+            "vocab-q029": 2,
+            "vocab-q030": 2,
+            "vocab-q031": 2,
+            "vocab-q032": 2,
+            "vocab-q033": 2,
+            "vocab-q034": 2,
+            "vocab-q035": 2,
+            "vocab-q036": 2,
+            "vocab-q037": 2,
+            "vocab-q038": 2,
+            "vocab-q039": 2,
+            "vocab-q040": 2
+          }
+        },
+        "reading_grammar": {
+          "maximum": 200,
+          "raw_maximum": 112,
+          "question_count": 47,
+          "physical_page": 85,
+          "printed_page": 81,
+          "groups": [
+            {
+              "editorial_section": "reading-s01",
+              "question_count": 15,
+              "weight": 2
+            },
+            {
+              "editorial_section": "reading-s02",
+              "question_count": 15,
+              "weight": 2
+            },
+            {
+              "editorial_section": "reading-s03",
+              "question_count": 6,
+              "weight": 2
+            },
+            {
+              "editorial_section": "reading-s04",
+              "question_count": 4,
+              "weight": 3
+            },
+            {
+              "editorial_section": "reading-s05",
+              "question_count": 4,
+              "weight": 4
+            },
+            {
+              "editorial_section": "reading-s06",
+              "question_count": 3,
+              "weight": 4
+            }
+          ],
+          "weights": {
+            "reading-q001": 2,
+            "reading-q002": 2,
+            "reading-q003": 2,
+            "reading-q004": 2,
+            "reading-q005": 2,
+            "reading-q006": 2,
+            "reading-q007": 2,
+            "reading-q008": 2,
+            "reading-q009": 2,
+            "reading-q010": 2,
+            "reading-q011": 2,
+            "reading-q012": 2,
+            "reading-q013": 2,
+            "reading-q014": 2,
+            "reading-q015": 2,
+            "reading-q016": 2,
+            "reading-q017": 2,
+            "reading-q018": 2,
+            "reading-q019": 2,
+            "reading-q020": 2,
+            "reading-q021": 2,
+            "reading-q022": 2,
+            "reading-q023": 2,
+            "reading-q024": 2,
+            "reading-q025": 2,
+            "reading-q026": 2,
+            "reading-q027": 2,
+            "reading-q028": 2,
+            "reading-q029": 2,
+            "reading-q030": 2,
+            "reading-q031": 2,
+            "reading-q032": 2,
+            "reading-q033": 2,
+            "reading-q034": 2,
+            "reading-q035": 2,
+            "reading-q036": 2,
+            "reading-q037": 3,
+            "reading-q038": 3,
+            "reading-q039": 3,
+            "reading-q040": 3,
+            "reading-q041": 4,
+            "reading-q042": 4,
+            "reading-q043": 4,
+            "reading-q044": 4,
+            "reading-q045": 4,
+            "reading-q046": 4,
+            "reading-q047": 4
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,26 +1,26 @@
 {
   "format": "editorial-package-size-v4",
-  "files": 5093,
-  "payload_bytes": 2046960186,
+  "files": 5103,
+  "payload_bytes": 2050473265,
   "baseline_payload_bytes": 2049421946,
-  "payload_bytes_saved": 2461760,
+  "payload_bytes_saved": -1051319,
   "editorial_json_bytes_saved": 5688018,
   "groups": {
     ".gitattributes": 218,
     ".github": 1163,
     ".gitignore": 429,
-    "README.md": 10388,
-    "additional-assets": 684630696,
-    "astraJLPT": 977916720,
+    "README.md": 10777,
+    "additional-assets": 684679488,
+    "astraJLPT": 981245304,
     "editorial-json": 115582923,
-    "pdf-render": 214792355,
+    "pdf-render": 214927669,
     "rubi-restore": 54022116,
     "serve.py": 632,
     "verify.py": 2546
   },
   "preexisting_ignored_output_bytes_archived": 6548118,
-  "folder_bytes_saved_excluding_git": 9009878,
-  "website_bytes": 977916720,
+  "folder_bytes_saved_excluding_git": 14159983,
+  "website_bytes": 981245304,
   "conservative_website_limit": 1000000000,
   "full_fonts": 37,
   "full_font_bytes": 200089056,
@@ -79,10 +79,10 @@
   "total_budget_decision": "Retained full fonts, source material, ruby research and private audit records; added documentation and a compressed README screenshot.",
   "maintenance_baseline": "2ad81c5cdec0a52ae52ed7dbd3f42bcc01592146",
   "maintenance_baseline_payload_bytes": 2043805380,
-  "maintenance_payload_bytes_saved": -3154806,
+  "maintenance_payload_bytes_saved": -6667885,
   "unit_identity_documentation_baseline": "55fbf34",
   "unit_identity_documentation_baseline_payload_bytes": 2043795198,
-  "unit_identity_documentation_payload_bytes_added": 3164988,
+  "unit_identity_documentation_payload_bytes_added": 6678067,
   "star_solution_migration": {
     "baseline_git": "171ada8",
     "baseline_payload_bytes": 2045050514,
@@ -96,5 +96,28 @@
     "baseline_payload_bytes": 2047000055,
     "payload_bytes_added": -39869,
     "resolved_case": "N1_07_2012-vocab-q039-star-order"
+  },
+  "reader_practice_features": {
+    "baseline_git": "a04f87f",
+    "baseline_payload_bytes": 2046960186,
+    "payload_bytes_added": 3513079,
+    "reader_pages": 402,
+    "level_catalogs": 9,
+    "verified_historical_profiles": 14,
+    "verified_historical_sections": 27,
+    "authored_bodies_and_answer_bindings_unchanged": true
+  },
+  "reader_interface_corrections": {
+    "baseline_git": "c56230c",
+    "website_bytes_before": 986398731,
+    "website_bytes_saved": 5153427,
+    "vertical_layout_baseline": "a04f87f",
+    "authored_bodies_and_answer_bindings_unchanged": true,
+    "shared_palette_previews": 117420
+  },
+  "timer_interface_refinements": {
+    "baseline_git": "a8d7c12",
+    "website_bytes_added": 107001,
+    "authored_bodies_and_answer_bindings_unchanged": true
   }
 }

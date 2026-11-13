@@ -10,6 +10,17 @@ The present collection has 201 units covering vocabulary, grammar, and reading: 
 
 Mistakes were fixed by the LLM, GPT-6 Astra, at max reasoning effort. That means it compared available evidence and made editorial corrections; it does not mean every mistake was found or every reconstruction is certain. The public review records explain provisional fixes, alternatives, and remaining gaps.
 
+## I want to print the PDFs
+
+Download the [PDFs](astraJLPT/assets/pdfs/) or [PDFs without rubi](astraJLPT/assets/pdfs-norubi/).
+
+<details>
+<summary>Explain pdfs vs Principal PDF</summary>
+
+The PDFs in `pdfs/` and `pdfs-norubi/` are typeset editions generated using `pdf-render/`. Principal PDFs are reference scans from the separately maintained `src/` collection.
+
+</details>
+
 ## Jargons
 
 <details>

@@ -1,0 +1,79 @@
+/* Shared practice controls. Reader bodies retain their baseline layout. */
+[hidden]{display:none!important}
+.settings-panel:has([name=settings-view][value=timer]:checked) section:not([data-settings=timer]){display:none}
+.js .settings-panel section[data-settings=timer]{display:block}
+#timer-settings>.setting-row:first-child{padding-top:22px}
+.timer-adjust-controls{container-type:inline-size}
+.timer-field{display:grid;grid-template-columns:12ch minmax(0,16ch) 14ch;gap:12px;align-items:center;width:100%;margin:0 0 16px;font:12px/1.5 var(--settings-font)}
+.timer-field label{font:inherit}
+.timer-field input{min-width:0;width:100%;padding:8px;font:13px var(--settings-font);font-variant-numeric:tabular-nums;background:var(--bg);color:var(--text);border:1px solid var(--edge-strong);border-radius:3px}
+.timer-field button{width:100%;font:11px var(--settings-font);padding:8px 10px;white-space:nowrap}
+.timer-adjust .button-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:16px}
+.timer-adjust .button-row button{display:flex;align-items:center;justify-content:center;gap:6px;min-width:0}
+@container(max-width:340px){.timer-field{grid-template-columns:minmax(0,16ch) 14ch;gap:8px 12px}.timer-field label{grid-column:1/-1}}
+.settings-panel .grade-behavior small{font:12px/1.5 var(--settings-font)}
+.grade-sample b{display:inline-block;vertical-align:top;padding:1px 5px;border:1px solid var(--correct);background:var(--correct-cell-fill);color:var(--correct);font:14px/14px system-ui}
+.grade-sample b+b{border-color:var(--wrong);background:var(--wrong-cell-fill);color:var(--wrong)}
+.js .theme-picker .theme-search{display:flex;gap:18px}
+[data-settings=browser] .switch{margin:6px 0 8px}
+.reader-subbar{--reader-control-gap:clamp(8px,1.8vw,28px);display:grid;grid-template-columns:minmax(0,1fr) max-content minmax(0,1fr);column-gap:clamp(6px,1.8vw,26px)}
+.reader-start{display:flex;align-items:center;gap:var(--reader-control-gap);width:max-content;justify-self:start}
+.reader-subbar .section-nav{width:max-content;justify-self:center;margin:0}
+.reader-subbar .reader-actions{width:max-content;gap:var(--reader-control-gap);margin:0;justify-self:end}
+.timer-banner{display:flex;align-items:center;gap:8px;font:12px/1.4 "Roboto Mono",ui-monospace,monospace;white-space:nowrap}
+.js .timer-banner{display:flex}
+#timer-display{font-variant-numeric:tabular-nums;color:var(--text)}
+.timer-banner[data-paused=true] #timer-display{color:var(--muted)}
+#timer-banner-controls{display:flex;gap:4px}
+.timer-banner button{font:inherit;display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:5px;min-height:32px;border:0;background:transparent;color:var(--muted)}
+.timer-banner button:hover{background:var(--raised);color:var(--text)}
+.timer-action-icon{min-width:1em;text-align:center}
+.reader-subbar[data-layout=labels] .timer-action-label{display:none}
+.reader-subbar:is([data-layout=compact],[data-layout=stacked],[data-layout=wrap]){--reader-control-gap:8px;grid-template-columns:max-content minmax(0,1fr) max-content;column-gap:8px}
+.reader-subbar:is([data-layout=compact],[data-layout=stacked],[data-layout=wrap]) :is(.timer-action-label,.return-top-label,.settings-label-text,.progress-completed){display:none}
+.reader-subbar:is([data-layout=stacked],[data-layout=wrap]){--reader-control-gap:6px;column-gap:6px}
+.reader-subbar:is([data-layout=stacked],[data-layout=wrap]) #timer-banner-controls{display:grid;gap:0}
+.reader-subbar:is([data-layout=stacked],[data-layout=wrap]) .timer-banner button{min-height:24px;min-width:28px;padding:2px 4px}
+.reader-subbar:is([data-layout=stacked],[data-layout=wrap]) #progress-detail{display:block;font-size:10px;line-height:1.3}
+.reader-subbar:is([data-layout=stacked],[data-layout=wrap]) #progress-detail:before{content:none}
+.reader-subbar[data-layout=wrap]{display:flex;flex-wrap:wrap;justify-content:space-between}
+.grade-toolbar{max-width:794px;margin:12px auto;padding:0 16px;display:flex;justify-content:center}
+.js .grade-toolbar{display:flex}
+.grade-toolbar:not(:has(button:not([hidden]))){display:none}
+.grade-button,.practice-dialog [data-dialog-close]{border:1px solid var(--accent);border-radius:3px;padding:10px 18px;background:var(--accent);color:var(--bg);font:12px "Roboto Mono",ui-monospace,monospace;cursor:pointer}
+.grade-button:hover,.practice-dialog [data-dialog-close]:hover{filter:brightness(1.12)}
+.practice-dialog{max-width:min(760px,calc(100vw - 32px));max-height:calc(100dvh - 40px);overflow:auto;border:1px solid var(--edge-strong);border-radius:3px;padding:24px;background:var(--bg);color:var(--text);font:13px/1.65 "Roboto Mono",ui-monospace,monospace}
+.practice-dialog::backdrop{background:#0009}
+.practice-dialog h2{font-size:22px;margin:0 0 18px;color:var(--accent);text-align:center}
+.practice-dialog [data-dialog-close]{display:block;margin:20px auto 0}
+.practice-dialog p{margin:14px 0}.practice-dialog table{border-collapse:collapse;width:100%;font-size:12px}.practice-dialog th,.practice-dialog td{padding:10px 8px;text-align:left;border-bottom:1px solid var(--edge-soft)}
+.practice-dialog p:empty{display:none}
+.practice-dialog th{font-weight:500;white-space:nowrap}.score-table-wrap{overflow:auto}.practice-dialog .score-note{color:var(--muted)}
+body[data-grades-hidden=true] .paper :is(.option-feedback,.result-text,.star-solution,.star-unavailable){display:none!important}
+body[data-grades-hidden=true]:has(input[name=marking][value=number]:checked) .paper .answer-radio:checked+.option .option-number::before{content:"";inset:-.22em -.28em;border:1px solid var(--neutral);border-radius:50%;transform:none;width:auto;height:auto;background:transparent}
+body[data-grades-hidden=true]:has(input[name=marking][value=number]:checked) .paper .answer-radio:checked+.option .option-number::after{display:none}
+.catalog-navigation{position:relative;line-height:inherit}
+.catalog-navigation .back-link{margin:0}
+.catalog-sort{position:absolute;right:0;top:50%;transform:translateY(-50%);align-items:center;gap:10px;font-size:12px;color:var(--muted)}
+.js .catalog-sort{display:flex}
+.catalog-sort select{max-width:100%;padding:8px;border:1px solid var(--edge-strong);border-radius:3px;background:var(--bg);color:var(--text);font:inherit}
+@media(max-width:650px){
+ .reader-subbar{padding-left:8px;padding-right:8px;column-gap:6px;min-height:48px}
+ .reader-start{gap:2px}.reader-start .return-top{min-width:24px;padding:0 4px}
+ .timer-banner{font-size:11px;gap:3px}.reader-subbar .section-nav{gap:8px;font-size:11px}
+ .reader-subbar .reader-actions{gap:6px}.reader-subbar #progress{font-size:10px;min-width:62px}
+ .reader-subbar .settings summary{padding:4px;min-width:28px}
+ .timer-banner button{padding:3px;min-width:28px;min-height:32px}
+ .practice-dialog{padding:18px}.practice-dialog td,.practice-dialog th{padding:8px 5px}
+ .catalog-sort{gap:5px;font-size:11px}.catalog-sort select{padding:5px;max-width:160px}
+}
+@media(max-width:360px){
+ .reader-subbar{padding-left:6px;padding-right:6px;column-gap:4px!important}
+ .reader-subbar .section-nav{gap:6px}.reader-subbar .reader-actions{gap:4px}
+ .reader-subbar:is([data-layout=stacked],[data-layout=wrap]){column-gap:2px!important}
+ .reader-subbar:is([data-layout=stacked],[data-layout=wrap]) .section-nav{gap:5px}
+ .reader-start .return-top{min-width:20px;padding:0 2px}
+ .reader-subbar #timer-banner-controls button{min-width:24px;padding-left:2px;padding-right:2px}
+ .catalog-sort{position:static;transform:none;float:right}.catalog-sort select{max-width:140px}
+}
+@media(prefers-reduced-motion:reduce){.grade-button{transition:none}}

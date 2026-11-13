@@ -15,11 +15,13 @@ from public_paths import html_path,site_pdf
 
 def install_runtime_assets():
     # Reader shells load one bundle; these helpers must precede app.js.
-    scripts=('theme-colors.js','reader-sizing.js','browser-memory.js','app.js')
+    scripts=('theme-colors.js','reader-sizing.js','browser-memory.js','practice-model.js','practice-ui.js','app.js')
     (web.SITE/'assets/app.js').write_bytes(b'\n'.join(
         (web.WEB/'web-src'/name).read_bytes() for name in scripts))
     (web.SITE/'assets/pdf-typography.css').write_bytes(
         (web.WEB/'web-src/pdf-typography.css').read_bytes())
+    (web.SITE/'assets/site.css').write_bytes(b'\n'.join(
+        (web.WEB/'web-src'/name).read_bytes() for name in ('site.css','practice.css')))
 
 def refresh_asset_versions():
     from web_assets import version_resources
@@ -88,6 +90,8 @@ def main():
         share_site_styles(web.SITE,files,web.write)
         from package_sources import rewrite_site
         rewrite_site()
+        from practice_pages import refresh
+        refresh()
         refresh_asset_versions()
     print(json.dumps({'owners':len(units),'paired_bodies':len(results),'written':args.write,'result':'pass'}),flush=True)
 if __name__=='__main__':main()

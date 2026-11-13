@@ -8,6 +8,7 @@ BASE = [
     ('accent', 'interface accent', 'Main colors', False),
     ('correct', 'correct', 'Main colors', False),
     ('wrong', 'wrong', 'Main colors', False),
+    ('neutral', 'gradeless answer', 'Main colors', False),
     ('raised', 'buttons & controls', 'Advanced colors', False),
     ('correct-ink', 'correct text & numbers', 'Advanced colors', False),
     ('edge', 'paper outline', 'Advanced colors', False),
@@ -37,18 +38,19 @@ for effect, group, values in [
     for value in values:
         STATE_ROLES.append((f'{effect}-glow-{value}', f'Glow · {value}%', group, value))
 for key, label, group, value in STATE_ROLES:
-    for state in ('correct', 'wrong'):
+    for state in ('correct', 'wrong', 'neutral'):
         DERIVED.append((f'{state}-{key}', state.title() + ' · ' + label, group, state, value))
 
 
 def color_roles():
     roles = [dict(id=k, label=label, group=group, alpha=alpha, editable=True) for k, label, group, alpha in BASE]
+    next(r for r in roles if r['id'] == 'neutral')['formula'] = 'var(--text)'
     roles.append(dict(id='logo-primary', formula='var(--accent)'))
     for k, label, group, source, percentage in DERIVED:
         target = 'var(--text)' if k.endswith('flame-core') else 'transparent'
         roles.append(dict(id=k, label=label, group=group, alpha=target == 'transparent',
                           formula=f'color-mix(in srgb, var(--{source}) {percentage}%, {target})'))
-        if k in ('correct-cell-fill', 'wrong-cell-fill', 'correct-fill', 'wrong-fill'):
+        if any(k == f'{state}-{effect}' for state in ('correct', 'wrong', 'neutral') for effect in ('cell-fill', 'fill')):
             roles[-1]['fillControl'] = k.split('-', 1)[1]
     for key, label, color in [('shadow-soft', 'Soft shadows', '#00000033'),
                               ('shadow-medium', 'Toast shadow', '#00000044'),
@@ -66,6 +68,7 @@ def editor_css():
         if correct == 'true':
             selectors.append('.marking-grid .mark-icon')
         rules.append(','.join(selectors)+'{'+''.join(f'--state-{key}:var(--{state}-{key});' for key, *_ in STATE_ROLES)+'}')
+    rules.append('body[data-grades-hidden="true"] .paper :is(.answer-radio:checked+.option,.question:has(.answer-radio:checked)){--state:var(--neutral);--state-ink:var(--neutral);--margin-state:var(--neutral);--margin-symbol:"•";'+''.join(f'--state-{key}:var(--neutral-{key});' for key, *_ in STATE_ROLES)+'}')
     return '\n'.join(rules)
 
 
@@ -85,7 +88,7 @@ def editor_markup():
     result += ''.join(row(r) for r in roles if r['group'] == 'Main colors')
     result += '</div><details class="advanced-colors"><summary>more colors</summary><div class="advanced-color-grid">'
     result += ''.join(row(r) for r in roles if r['group'] == 'Advanced colors')
-    result += '</div><div class="fill-opacity-controls"><h4>fill opacity</h4><p>Applies to correct and wrong answers.</p>'
+    result += '</div><div class="fill-opacity-controls"><h4>fill opacity</h4><p>Applies to correct, wrong and gradeless answers.</p>'
     for control in FILL_CONTROLS:
         key, label = control['id'], control['label']
         result += f'''<div class="fill-opacity-row"><label for="opacity-{key}">{label}<output id="opacity-{key}-output">{control['default']}%</output></label><div><input id="opacity-{key}" type="range" min="0" max="100" step="1" value="{control['default']}" data-fill-opacity="{key}" aria-label="{label} opacity"><button type="button" data-fill-reset="{key}" aria-label="Reset {label} opacity" title="Reset {label} opacity">↺</button></div></div>'''
