@@ -472,7 +472,7 @@ def paper(m,orders):
 def shell(title,body,themes,prefix='',reader=False,data=None,nav='',catalog=False,font_stylesheet='assets/fonts.css'):
     attrs='class="reader-page"'if reader else 'class="catalog-page"'
     header_settings='' if reader else settings_markup(themes,labelled=catalog)
-    result=f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark light"><title>{esc(title)} · astraJLPT</title><link rel="icon" href="{prefix}assets/boar.png" type="image/png"><link rel="stylesheet" href="{prefix}{font_stylesheet}"><link rel="stylesheet" href="{prefix}assets/themes.css"><link rel="stylesheet" href="{prefix}assets/answer-marking.css"><link rel="stylesheet" href="{prefix}assets/site.css"></head><body {attrs}><a class="skip-link" href="#content">Skip to content</a><header class="topbar" id="page-top" tabindex="-1"><a class="wordmark" id="brand" href="{prefix}index.html">astra<span>JLPT</span></a>{nav}{header_settings}</header>{body}<footer class="site-footer"><button class="boar-unlock js-only" id="boar" aria-label="Toggle developer mode and older chapters" aria-pressed="false"><img src="{prefix}assets/boar.png" alt="" width="66" height="44"></button><span class="developer-only">Developer mode</span></footer><div id="toast" role="status" class="toast" hidden></div><script id="page-data" type="application/json">{safe_json(data or {})}</script><script id="theme-data" src="{prefix}assets/theme-data.js" defer></script><script src="{prefix}assets/app.js" defer></script></body></html>'''
+    result=f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark light"><title>{esc(title)} · astraJLPT</title><link rel="icon" href="{prefix}assets/favicon.png" type="image/png"><link rel="stylesheet" href="{prefix}{font_stylesheet}"><link rel="stylesheet" href="{prefix}assets/themes.css"><noscript><link rel="stylesheet" href="{prefix}assets/themes-no-script.css"></noscript><link rel="stylesheet" href="{prefix}assets/answer-marking.css"><link rel="stylesheet" href="{prefix}assets/site.css"></head><body data-theme="astraJLPT_dark" {attrs}><a class="skip-link" href="#content">Skip to content</a><header class="topbar" id="page-top" tabindex="-1"><a class="wordmark" id="brand" href="{prefix}index.html">astra<span>JLPT</span></a>{nav}{header_settings}</header>{body}<footer class="site-footer"><button class="boar-unlock js-only" id="boar" aria-label="Toggle developer mode and older chapters" aria-pressed="false"><img src="{prefix}assets/boar.png" alt="" width="66" height="44"></button><span class="developer-only">Developer mode</span></footer><div id="toast" role="status" class="toast" hidden></div><script id="page-data" type="application/json">{safe_json(data or {})}</script><script id="theme-data" src="{prefix}assets/theme-data.js" defer></script><script src="{prefix}assets/app.js" defer></script></body></html>'''
     result=result.replace('</head>','<link rel="stylesheet" href="'+prefix+'assets/pdf-typography.css"></head>')
     if not catalog:
         result=re.sub(r'<button class="boar-unlock.*?</button>','',result)
@@ -491,29 +491,22 @@ def font_assets(models):
     cache=json.loads(cachepath.read_text()) if cachepath.exists() else {}
     charsha=hashlib.sha256(''.join(sorted(set(text))).encode()).hexdigest()
     for m in models:
-        styles=m['style'];roles={'Body':{'source':'body'},'BodyBold':{'source':'bold'},'Heading':styles['font_roles']['instruction_japanese'],'Label':styles['font_roles']['boxed_numeral'],'Choice':styles['font_roles']['choice_numeral'],'Annotation':styles['font_roles']['annotation']}
-        roles.update({name:styles['font_roles'][role] for name,role in [('InstructionLatin','instruction_latin'),('TaskLabelLatin','task_label'),('AsciiParen','ascii_parenthesis'),('NoticeHeading','notice_heading'),('ContactLatin','contact_latin'),('PairedLabel','paired_label'),('AnswerBubble','answer_bubble_numeral'),('Memo','memo'),('Letter','letter')]})
-        roles['TaskLabelJapanese']=styles['font_roles'].get('task_label_japanese',styles['font_roles']['task_label'])
-        if 'instruction_selector' in styles['font_roles']:roles['SelectorDigits']=styles['font_roles']['instruction_selector']
-        if 'instruction_numeral' in styles['font_roles']:roles['AdministrativeNumerals']=styles['font_roles']['instruction_numeral']
-        from workbook_typography import macro as workbook_font_macro
-        roles.update({workbook_font_macro(role.removeprefix('workbook_')):spec for role,spec in styles['font_roles'].items() if role.startswith('workbook_')})
-        roles.update({name:styles['font_roles'][role] for name,role in [('BodyLatin','body_latin'),('DocumentLatin','document_latin'),('NoticeLatin','notice_latin'),('NoticeLabel','notice_label'),('BodyNumeral','body_numeral'),('OptionNumeral','option_content_numeral'),('NoticeNumeral','notice_numeral')] if role in styles['font_roles']})
-        roles.update({name:styles['font_roles'][role] for name,role in [('OldQuestion','historical_question_japanese'),('OldDigit','historical_question_digit'),('OldSelector','historical_instruction_digit')] if role in styles['font_roles']})
+        from font_profiles import role_specs,logical_font_target,font_face
+        styles=m['style'];roles=role_specs(m)
         bindings={};source_bindings={}
         for name,spec in roles.items():
             p=Path(spec.get('path',styles['fonts'].get(spec.get('source',''),'')))
             p=__import__('package_paths').resource(p)
             track(p);digest=sha(p);key=(digest,spec.get('font_index',0))
             if spec.get('sha256') and spec['sha256']!=digest:raise ValueError('Font binding changed: '+name)
-            source_target='assets/fonts/'+digest[:16]+'-'+str(key[1])+'.woff'
+            source_target=logical_font_target(digest,key[1])
             if key not in specs:
-                target=source_target;dst=SITE/target
-                cachekey=digest+':'+str(key[1])+':'+charsha+':all-layout-v1'
+                target=source_target+'2';dst=SITE/target
+                cachekey=digest+':'+str(key[1])+':'+charsha+':all-layout-woff2-v1'
                 if not(dst.exists() and cache.get(cachekey)==sha(dst)):
                     f=TTFont(p,fontNumber=key[1],recalcTimestamp=False)
-                    options=subset.Options();options.flavor='woff';options.layout_features=['*'];options.recalc_timestamp=False
-                    sub=subset.Subsetter(options=options);sub.populate(text=text);sub.subset(f);f.flavor='woff'
+                    options=subset.Options();options.flavor='woff2';options.layout_features=['*'];options.recalc_timestamp=False
+                    sub=subset.Subsetter(options=options);sub.populate(text=text);sub.subset(f);f.flavor='woff2'
                     dst.parent.mkdir(parents=True,exist_ok=True);f.save(dst);cache[cachekey]=sha(dst)
                 subset_sha=sha(dst)
                 derived={'source_sha256':digest,'font_index':key[1],'subset_sha256':subset_sha}
@@ -545,13 +538,13 @@ def font_assets(models):
     from fontTools.varLib.instancer import instantiateVariableFont
     ui_font=TTFont(track(__import__('package_paths').resource('astraJLPT/vendor/roboto-mono/RobotoMono.ttf')),recalcTimestamp=False)
     instantiateVariableFont(ui_font,{'wght':400},inplace=True)
-    ui_font.flavor='woff'
-    target='assets/fonts/RobotoMono-Regular.woff'
+    ui_font.flavor='woff2'
+    target='assets/fonts/RobotoMono-Regular.woff2'
     ui_font.save(SITE/target);GENERATED.append(target)
     copy(WEB/'web-vendor/roboto-mono/OFL.txt','assets/fonts/RobotoMono-OFL.txt')
     for target,bindings in profiles.values():
-        rules=['@font-face{font-family:"'+name+'";src:url("'+font.removeprefix('assets/')+'?v='+sha(SITE/font)[:12]+'");font-display:swap;font-weight:400;}' for name,font in bindings.items()]
-        rules.append('@font-face{font-family:"Roboto Mono";src:url("fonts/RobotoMono-Regular.woff?v='+sha(SITE/'assets/fonts/RobotoMono-Regular.woff')[:12]+'") format("woff");font-display:swap;font-weight:400;}')
+        rules=[font_face(name,font,SITE) for name,font in bindings.items()]
+        rules.append(font_face('Roboto Mono','assets/fonts/RobotoMono-Regular.woff2',SITE))
         write(target,'\n'.join(rules))
     write('data/font-assets.json',json.dumps({'fonts':registry,'profiles':{target:bindings for target,bindings in profiles.values()},'profile_source_targets':derivations,'units':unit_profiles},ensure_ascii=False,indent=2)+'\n')
     cachepath.write_text(json.dumps(cache,sort_keys=True),encoding='utf8')

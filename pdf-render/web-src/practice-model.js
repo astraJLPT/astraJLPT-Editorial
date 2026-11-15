@@ -59,17 +59,35 @@ globalThis.AstraPractice = (() => {
     const match=/^(\d{1,6}):([0-5]\d):([0-5]\d)$/.exec(value.trim());
     return match?Number(match[1])*3600+Number(match[2])*60+Number(match[3]):null;
   }
-  function answer(previous, selected, key, autoGrade) {
-    const next={...previous,selected};
-    if(autoGrade){
-      const correct=selected===key;
-      if(typeof next.firstCorrect!=='boolean')next.firstCorrect=correct;
-      next.completed=Boolean(next.completed||correct);
-      next.attempts=finite(next.attempts)+1;
-    }
+  const option=value=>Number.isInteger(value)&&value>=1&&value<=4;
+  const gradable=q=>option(q.key);
+  function restoreAnswer(saved) {
+    const next={selected:saved.selected};
+    if(typeof saved.firstCorrect==='boolean')next.firstCorrect=saved.firstCorrect;
     return next;
   }
-  const gradable=q=>Number.isInteger(q.key)&&q.key>=1&&q.key<=4;
+  function firstFeedback(record, key) {
+    if(!record||typeof record.firstCorrect==='boolean'||!option(record.selected)||!option(key))return false;
+    record.firstCorrect=record.selected===key;
+    return true;
+  }
+  function answer(previous, selected, key, feedbackVisible) {
+    const next=previous?restoreAnswer(previous):{};
+    next.selected=selected;
+    if(feedbackVisible)firstFeedback(next,key);
+    return next;
+  }
+  function recordFirstFeedback(questions, answers) {
+    let changed=false;
+    for(const q of questions)if(firstFeedback(answers[q.id],q.key))changed=true;
+    return changed;
+  }
+  function progress(questions, answers) {
+    const rows=questions.filter(gradable),selected=rows.filter(q=>option(answers[q.id]?.selected));
+    const tracked=selected.map(q=>answers[q.id]).filter(a=>typeof a.firstCorrect==='boolean');
+    return {total:rows.length,answered:selected.length,correct:selected.filter(q=>answers[q.id].selected===q.key).length,
+      firstCorrect:tracked.filter(a=>a.firstCorrect).length,firstTotal:tracked.length};
+  }
   function score(questions, answers, paper) {
     const old=paper.generation?.startsWith('historical');
     const combined=!old&&['N4','N5'].includes(paper.level);
@@ -91,7 +109,7 @@ globalThis.AstraPractice = (() => {
       const correct=rows.filter(q=>answers[q.id]?.selected===q.key);
       const earned=correct.reduce((n,q)=>n+weight(q),0);
       return {id,label,maximum,total:rows.length,correct:correct.length,
-        answered:rows.filter(q=>answers[q.id]?.selected>=1&&answers[q.id]?.selected<=4).length,
+        answered:rows.filter(q=>option(answers[q.id]?.selected)).length,
         excluded:all.length-rows.length,weighted,denominator,earned,
         exact:weighted&&all.length===rows.length&&!paper.partial&&denominator===profile.raw_maximum,
         score:denominator?Math.round(earned/denominator*maximum):null};
@@ -110,5 +128,5 @@ globalThis.AstraPractice = (() => {
     }
     return Number(a.rank)-Number(b.rank);
   }
-  return {Timer,clock,setEnabled,format,parse,answer,score,gradable,compare};
+  return {Timer,clock,setEnabled,format,parse,answer,restoreAnswer,recordFirstFeedback,progress,score,gradable,compare};
 })();

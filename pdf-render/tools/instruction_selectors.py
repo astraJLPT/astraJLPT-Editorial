@@ -41,6 +41,16 @@ def resolve(model):
     from era_registry import for_unit
     if for_unit(model['unit']).GENERATION=='historical-1991-2009' or model['unit'][:2] not in ('N4','N5'):return
     style=model['style'];horizontal=style.get('heading_horizontal_scale',1)
+    if model['unit'] in ('N4_sample_2009','N5_sample_2009'):
+        from workbook_typography import font, NUMERAL_SCALE
+        style['font_roles']['instruction_selector']=font('futogo_b101_pr6n_bold')
+        style['instruction_selector']={
+            'role':'instruction_selector','cell_em':1/horizontal,
+            'digit_horizontal_scale':NUMERAL_SCALE/horizontal,
+            'dot_horizontal_scale':1/horizontal,'suffix_gap_em':0,
+            'display_digits':'ascii',
+            'basis':'Approved sample selector parity: FutoGo ASCII ink at 0.865, full-em cells and unsqueezed dots; inherited heading typography retained'}
+        return
     style['font_roles']['instruction_selector']={
         'path':'fonts_official/A-OTF-GothicMB101Pr6N-Bold.otf',
         'sha256':'cf33366000ee2314947c0fae2d25798c71c24fe584c7fa0be615d667642965ea',

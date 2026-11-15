@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / 'pdf-render/web-tools'))
-from shared_styles import ASSET, restore_styles, share_site_styles
+from shared_styles import ASSET, PRIORITY, restore_styles, share_site_styles, reuse_site_styles
 
 
 class SharedStyles(unittest.TestCase):
@@ -38,6 +38,21 @@ class SharedStyles(unittest.TestCase):
                 self.assertEqual(len(result.select('link[rel="stylesheet"]')), 1)
                 self.assertEqual(str(result.body), str(original.body))
                 self.assertEqual((site / ASSET).read_bytes(), original_css)
+
+    def test_scoped_reuse_keeps_class_ids_and_new_styles_inline(self):
+        work=ROOT/'pdf-render/work';work.mkdir(exist_ok=True)
+        with TemporaryDirectory(dir=work) as directory:
+            site=Path(directory);(site/'assets').mkdir()
+            css='.ps-z'+PRIORITY+'{text-align:center}\n'
+            (site/ASSET).write_text(css,encoding='utf-8')
+            markup='<html><head><link rel="stylesheet" href="../assets/paper-shared.css"></head><body><p class="ps-z">one</p><p style="text-align:center">two</p><p style="letter-spacing:.37em">three</p></body></html>'
+            result=reuse_site_styles(site,'papers/test.html',markup)
+            soup=BeautifulSoup(result,'html.parser')
+            self.assertEqual(len(soup.select('.ps-z')),2)
+            self.assertEqual(soup.find_all('p')[2]['style'],'letter-spacing:.37em')
+            self.assertEqual(len(soup.select('link')),1)
+            self.assertEqual((site/ASSET).read_text(),css)
+            self.assertEqual(reuse_site_styles(site,'papers/test.html',result),result)
 
     def test_restoration_preserves_other_stylesheet_dependencies(self):
         unrelated = ('<link href="https://example.com/assets/paper-shared.css?v=abcdef" rel="stylesheet"/>'

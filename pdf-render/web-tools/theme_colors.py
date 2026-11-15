@@ -7,7 +7,7 @@ import copy
 import importlib.util
 import math
 import re
-from theme_editor import color_roles, editor_css, FILL_CONTROLS
+from theme_editor import color_roles, editor_css, editor_markup, FILL_CONTROLS
 
 MODES = ('auto', 'sub', 'text')
 FALLBACK = {
@@ -167,6 +167,7 @@ def prepare(themes, vendor, track):
         theme['adaptedColors'] = {mode: adapt(theme, mode) for mode in MODES}
     themes['colorRoles'] = color_roles()
     themes['fillControls'] = FILL_CONTROLS
+    themes['editorMarkup'] = editor_markup()
     for theme in themes['originals'] + themes['monkeytype']:
         theme['editorColors'] = {mode: editor_values(theme, mode) for mode in MODES}
     return themes
@@ -197,11 +198,23 @@ def editor_values(theme, mode):
     return vals
 
 
-def theme_css(themes):
-    rules = [editor_css()]
+def theme_css(themes, no_script=False):
+    # A page-wide :has() for every palette makes Chromium reconsider the whole
+    # reader when fitting probes are inserted. JS reflects the selected ID on
+    # body; the original radio-driven rules remain available without scripting.
+    rules = [] if no_script else [editor_css()]
     for theme in themes['originals'] + themes['monkeytype']:
         vals = theme_values(theme)
         name = theme['name'].replace('"', '\\"')
         scheme = 'dark' if theme.get('dark', theme['id'] == 'astraJLPT_dark') else 'light'
-        rules.append('body:has(#theme-' + theme['id'] + ':checked){' + ''.join('--' + k + ':' + v + ';' for k, v in vals.items()) + '--theme-label:"' + name + '";color-scheme:' + scheme + '}')
+        selector = 'body:has(#theme-' + theme['id'] + ':checked)' if no_script else 'body[data-theme="' + theme['id'] + '"]'
+        rules.append(selector + '{' + ''.join('--' + k + ':' + v + ';' for k, v in vals.items()) + '--theme-label:"' + name + '";color-scheme:' + scheme + '}')
     return '\n'.join(rules)
+
+
+def install_theme_assets(site):
+    import json
+    source = (site/'assets/theme-data.js').read_text(encoding='utf-8')
+    themes = json.loads(source.removeprefix('globalThis.AstraThemes = ').rstrip().removesuffix(';'))
+    for name, no_script in [('themes.css', False), ('themes-no-script.css', True)]:
+        (site/'assets'/name).write_text(theme_css(themes, no_script), encoding='utf-8', newline='\n')

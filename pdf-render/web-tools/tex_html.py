@@ -80,10 +80,44 @@ def native_ascii_space(m,context,target,node):
     return role_metrics(m,role,' ')['advance']*spec.get('scale',1),role
 
 
+def prepare_heading_boxes(value,m,target,source):
+    """Consume the native modern range binding without editing canonical text."""
+    from historical_html import enabled
+    bound=m['style'].get('heading_number_boxes',{}).get(target)
+    if not bound or enabled(m):return value
+    from model import digest
+    from presentation import source_binding
+    source_binding(m['unit'],bound['evidence'])
+    if digest(source)!=bound['content_sha256']:
+        raise ValueError('Stale heading range binding')
+    if m['tasks'].get(target)!='cloze':raise ValueError('Heading boxes require a cloze section')
+    first,last=bound['labels']
+    def number(label):
+        digit=re.escape(label)
+        return r'(?:\[\s*'+digit+r'\s*\]|［\s*'+digit+r'\s*］|[（(]\s*'+digit+r'\s*[）)]|'+digit+')'
+    pattern=re.compile(r'(?<![0-9０-９])('+number(first)+r')(\s*から\s*)('+number(last)+r')(?![0-9０-９])')
+    soup=BeautifulSoup(source_html(value),'html.parser')
+    hits=[(node,match) for node in soup.find_all(string=True)
+          if not any(p.name in ('ruby','rt','rp') or p.has_attr('data-cloze-label') for p in node.parents)
+          for match in pattern.finditer(str(node))]
+    if len(hits)!=1:raise ValueError('Heading range must occur exactly once in an intact text run')
+    node,match=hits[0];raw=str(node);parts=[NavigableString(raw[:match.start()])]
+    for group,label in ((1,first),(3,last)):
+        if group==3:parts.append(NavigableString(match[2]))
+        box=span(soup,'',match[group],**{'data-cloze-label':label,'data-cloze-display':label})
+        parts.append(box)
+    parts.append(NavigableString(raw[match.end():]));node.replace_with(*parts)
+    result={'html':str(soup)}
+    a,b=Projection(value),Projection(result)
+    if a.text!=b.text or a.ruby!=b.ruby:raise ValueError('Heading boxes changed source text/ruby')
+    return result
+
+
 def prepare_bound_inline(value,m,context='body',target=None,source_value=None):
     """Resolve whole-field bindings before a semantic layout splits the field."""
     style=m['style']
     original=value if source_value is None else source_value
+    if context=='heading' and target:value=prepare_heading_boxes(value,m,target,original)
     if target:
         from historical_html import prepare_field
         value=prepare_field(value,m,target)

@@ -4,6 +4,7 @@ globalThis.AstraPracticeUI = function(context) {
   const {$,$$,data,storage,prefix,prefs,persist,progress,remember,epoch,editEpoch}=context;
   const model=AstraPractice, paper=data.paper;
   let revealed=false,lastAuto=prefs().autoGrade;
+  const feedbackVisible=()=>prefs().autoGrade||revealed;
   const banner=$('.reader-subbar');
   if(banner){
     const start=$('.reader-start',banner),nav=$('.section-nav',banner),actions=$('.reader-actions',banner);
@@ -58,7 +59,8 @@ globalThis.AstraPracticeUI = function(context) {
   function grading(){
     const auto=prefs().autoGrade;
     if(auto!==lastAuto){revealed=false;lastAuto=auto;$('#score-dialog')?.close();}
-    document.body.dataset.gradesHidden=String(!auto&&!revealed);
+    if(paper&&feedbackVisible()&&model.recordFirstFeedback(data.questions,context.answers()))context.saveAnswers();
+    document.body.dataset.gradesHidden=String(!feedbackVisible());
     for(const row of $$('[data-color-row=neutral]'))row.hidden=auto;
     for(const button of $$('[data-grade]')){button.hidden=auto;button.textContent=revealed?'Hide grade':'Grade now';button.setAttribute('aria-pressed',String(revealed));}
     for(const live of $$('.answer-announcement'))live.textContent='';
@@ -70,6 +72,10 @@ globalThis.AstraPracticeUI = function(context) {
   const timerKey=paper?'timer:'+(paper.storage_unit||paper.unit)+(paper.variant==='norubi'?':norubi':''):null;
   const timer=paper?new model.Timer(remember()?storage.read(timerKey):null,paper.timer.seconds,model.clock(prefs()),prefs().timerDirection):null;
   let clockState=timer?JSON.stringify(timer.state):'',timerRevision=timer?.state.revision||0;
+  let timerWake=0,displayedTime='',displayedLabel='',displayedRunning;
+  const timerDisplay=timer?$('#timer-display'):null,timerBanner=timer?$('#timer-banner'):null;
+  const pauseControls=timer?$$('[data-timer-action=pause]').map(button=>({button,text:$('.timer-action-label',button),icon:$('.timer-action-icon',button)})):[];
+  const timerFields=timer?[['timer-limit',$('#timer-limit')],['timer-current',$('#timer-current')]]:[];
   function saveTimer(edited=false){
     if(!timer||!remember())return;
     if(edited)editEpoch();
@@ -85,23 +91,35 @@ globalThis.AstraPracticeUI = function(context) {
     timer.state=next.state;timerRevision=record.revision;
   }
   function renderTimer(){
+    clearTimeout(timerWake);timerWake=0;
     if(!timer)return;
     timer.tick(model.clock(prefs()),prefs().timerDirection);
+    // Timestamps keep time while hidden. Only visible, changing values need
+    // DOM work; a paused/disabled timer has no recurring wake-up at all.
+    if(document.hidden||!prefs().timerEnabled)return;
     const value=model.format(timer.seconds());
-    $('#timer-display').textContent=value;
-    $('#timer-display').setAttribute('aria-label',(prefs().timerDirection==='up'?'Elapsed time: ':'Time remaining: ')+value+(timer.state.running?'':' (paused)'));
-    $('#timer-banner').dataset.paused=String(!timer.state.running);
-    for(const button of $$('[data-timer-action=pause]')){
-      const label=timer.state.running?'pause':'resume';
-      button.setAttribute('aria-label',label+' timer');button.title=label+' timer';
-      const text=$('.timer-action-label',button),icon=$('.timer-action-icon',button);
-      if(text){text.textContent=label;icon.textContent=timer.state.running?'Ⅱ':'▶';}else button.textContent=label;
+    if(value!==displayedTime){timerDisplay.textContent=value;displayedTime=value;}
+    const description=(prefs().timerDirection==='up'?'Elapsed time: ':'Time remaining: ')+value+(timer.state.running?'':' (paused)');
+    if(description!==displayedLabel){timerDisplay.setAttribute('aria-label',description);displayedLabel=description;}
+    if(timer.state.running!==displayedRunning){
+      displayedRunning=timer.state.running;timerBanner.dataset.paused=String(!displayedRunning);
+      for(const {button,text,icon} of pauseControls){
+        const label=displayedRunning?'pause':'resume';
+        button.setAttribute('aria-label',label+' timer');button.title=label+' timer';
+        if(text){text.textContent=label;icon.textContent=displayedRunning?'Ⅱ':'▶';}else button.textContent=label;
+      }
     }
-    for(const [id,seconds]of[['timer-limit',timer.state.limit/1000],['timer-current',timer.seconds()]]){
-      const field=$('#'+id);if(document.activeElement!==field&&!field.dataset.dirty)field.value=model.format(seconds);
+    for(const [id,field] of timerFields){
+      const next=id==='timer-limit'?model.format(timer.state.limit/1000):value;
+      if(document.activeElement!==field&&!field.dataset.dirty&&field.value!==next)field.value=next;
     }
     if(timer.state.expired&&!timer.state.notified&&prefs().timerEnabled&&prefs().timerDirection==='down'&&!document.hidden){
       timer.state.notified=true;saveTimer();showDialog('#time-up-dialog');
+    }
+    if(timer.state.running){
+      const remainder=(prefs().timerDirection==='up'?timer.state.elapsed:timer.state.limit-timer.state.elapsed)%1000;
+      const delay=prefs().timerDirection==='up'?1000-remainder:remainder||1000;
+      timerWake=setTimeout(renderTimer,Math.max(16,Math.ceil(delay)));
     }
   }
   function timerAction(action){
@@ -156,12 +174,13 @@ globalThis.AstraPracticeUI = function(context) {
     grading();sortCatalog();
   }
   if(timer){
-    setInterval(renderTimer,500);
     window.addEventListener('storage',e=>{if(e.key===prefix+timerKey&&remember()){adoptTimer(storage.read(timerKey));renderTimer();}});
-    window.addEventListener('pagehide',()=>{timer.tick(model.clock(prefs()),prefs().timerDirection);saveTimer();});
-    window.addEventListener('focus',()=>{if(remember())adoptTimer(storage.read(timerKey));renderTimer();});
-    document.addEventListener('visibilitychange',()=>{if(!document.hidden){if(remember())adoptTimer(storage.read(timerKey));renderTimer();}});
+    window.addEventListener('pagehide',()=>{clearTimeout(timerWake);timer.tick(model.clock(prefs()),prefs().timerDirection);saveTimer();});
+    const wakeTimer=()=>{if(remember())adoptTimer(storage.read(timerKey));renderTimer();};
+    window.addEventListener('focus',wakeTimer);
+    window.addEventListener('pageshow',wakeTimer);
+    document.addEventListener('visibilitychange',()=>{if(document.hidden){clearTimeout(timerWake);timerWake=0;}else wakeTimer();});
     if(clockState!==JSON.stringify(timer.state)||!storage.read(timerKey))saveTimer();
   }
-  return {apply,refreshScore,get revealed(){return revealed;},save:()=>saveTimer(true)};
+  return {apply,refreshScore,get revealed(){return revealed;},get feedbackVisible(){return feedbackVisible();},save:()=>saveTimer(true)};
 };

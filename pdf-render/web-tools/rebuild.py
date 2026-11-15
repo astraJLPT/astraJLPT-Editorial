@@ -4,7 +4,7 @@ The installed HTML pages are the maintained presentation shells. This command
 reprojects their question bodies; it does not recreate old release histories.
 """
 from pathlib import Path
-import argparse,copy,json,sys
+import argparse,copy,hashlib,json,re,sys
 ROOT=Path(__file__).resolve().parents[2]
 sys.path[:0]=[str(Path(__file__).resolve().parent),str(ROOT/'pdf-render/tools')]
 import build as web
@@ -22,6 +22,10 @@ def install_runtime_assets():
         (web.WEB/'web-src/pdf-typography.css').read_bytes())
     (web.SITE/'assets/site.css').write_bytes(b'\n'.join(
         (web.WEB/'web-src'/name).read_bytes() for name in ('site.css','practice.css')))
+    from interface_assets import refresh
+    refresh(web.SITE)
+    from theme_colors import install_theme_assets
+    install_theme_assets(web.SITE)
 
 def refresh_asset_versions():
     from web_assets import version_resources
@@ -34,64 +38,133 @@ def refresh_asset_versions():
             changed+=1
     return changed
 
+def parse_html(markup):
+    """Keep HTML void elements empty across parser chunk boundaries."""
+    from shared_styles import VOID
+    soup=BeautifulSoup(markup,'html.parser')
+    # Some html.parser versions can retain following siblings inside a void
+    # element when parsing long documents. Match browser HTML semantics and
+    # serialize a stable shell without losing or reordering those siblings.
+    for node in soup.find_all(VOID):
+        for child in reversed(list(node.contents)):node.insert_after(child.extract())
+    return soup
+
+
+def content(node):
+    """Compare authored text/ruby once, excluding generated visual duplicates."""
+    clone=copy.copy(node)
+    for element in list(clone.select('a.developer-note, .star-solution, .star-unavailable, .visual-only')):
+        if element.parent is not None:element.decompose()
+    return ''.join(clone.stripped_strings)
+
+
+def changed_outputs(outputs):
+    return {name:data for name,data in outputs.items()
+            if not (web.SITE/name).is_file() or (web.SITE/name).read_bytes()!=data}
+
+
+def version_selected(markup,outputs):
+    def version(match):
+        name=match[2];data=outputs[name] if name in outputs else (web.SITE/name).read_bytes()
+        return match[1]+name+'?v='+hashlib.sha256(data).hexdigest()[:12]+'"'
+    return re.sub(r'((?:href|src)="(?:\.\./)*)(assets/[^"?#]+\.(?:css|js))(?:\?v=[0-9a-fA-F]+)?"',version,markup)
+
+
+def prepare(units,refresh_reviews=False):
+    """Prepare every selected output in memory before any installation."""
+    from font_profiles import installed_profile
+    from shared_styles import reuse_site_styles
+    from review_refresh import prepare as prepare_review, reader as refresh_reader, page as refresh_review
+    from renditions import select
+    from image_html import inventory
+    outputs={};results=[]
+    for unit in units:
+        model=web.compose(unit);orders=web.star_data([model])
+        font_name,font_data=installed_profile(model,web.SITE)
+        if font_name in outputs and outputs[font_name]!=font_data:raise ValueError('Conflicting font profile')
+        outputs[font_name]=font_data
+        review=prepare_review(model,web) if refresh_reviews else None
+        for variant in ('regular','norubi'):
+            m=select(copy.deepcopy(model),variant)
+            pdf=ROOT/'astraJLPT'/site_pdf(unit,variant)
+            m['web_metrics']=web.resolve_metrics(m,pdf)
+            for artwork in inventory(m).values():
+                target=web.SITE/artwork['path']
+                if not target.is_file() or target.read_bytes()!=artwork['data']:
+                    raise ValueError('Installed illustration differs: '+str(target))
+            markup,nav,questions=web.paper(m,orders)
+            name=html_path(unit,variant);page=web.SITE/name
+            soup=parse_html(page.read_text('utf-8'));old=soup.select_one('.paper.editorial')
+            fresh=parse_html(markup)
+            if old is None:raise ValueError('Missing installed reader body: '+name)
+            for note in old.select('a.developer-note'):
+                parent=note.parent
+                if parent.get('id') and (target:=fresh.find(id=parent['id'])):target.append(copy.copy(note))
+            if content(old)!=content(fresh):raise ValueError('Reader text changed: '+unit+'/'+variant)
+            if [n['id'] for n in old.select('[id]')]!=[n['id'] for n in fresh.select('[id]')]:
+                raise ValueError('Reader IDs changed: '+unit+'/'+variant)
+            old.clear()
+            for child in list(fresh.contents):old.append(child.extract())
+            if review:refresh_reader(soup,unit,review,web.safe_json)
+            profiles=[n for n in soup.select('link[rel="stylesheet"]')
+                      if re.search(r'/assets/fonts(?:-[0-9a-f]+)?\.css(?:\?|$)',n.get('href',''))]
+            if len(profiles)!=1:raise ValueError('Expected one reader font profile: '+name)
+            profiles[0]['href']='../'+font_name
+            node=soup.select_one('#page-data');data=json.loads(node.get_text())
+            # This is the unit's selected regular release in both reader shells.
+            data['paper']['release_sha256']=web.sha(web.SITE/site_pdf(unit,'regular'))
+            node.string=web.safe_json(data)
+            result=reuse_site_styles(web.SITE,name,str(soup))
+            outputs[name]=version_selected(result,outputs).encode('utf-8')
+            results.append({'unit':unit,'variant':variant,'questions':len(questions),'status':'pass'})
+        if review:
+            name='reviews/'+unit+'.html';page=web.SITE/name
+            soup=parse_html(page.read_text('utf-8'));refresh_review(soup,review)
+            outputs[name]=version_selected(reuse_site_styles(web.SITE,name,str(soup)),outputs).encode('utf-8')
+        print(unit,'paired HTML bodies verified',flush=True)
+    return changed_outputs(outputs),results
+
+
+def install(outputs):
+    """Install a fully prepared batch; restore original bytes on a write failure."""
+    targets={name:(web.SITE/name).resolve() for name in outputs}
+    for name,path in targets.items():
+        if not path.is_relative_to(web.SITE.resolve()):raise ValueError('Output escapes site: '+name)
+        if not path.parent.is_dir():raise ValueError('Missing installed output directory: '+name)
+    previous={name:path.read_bytes() if path.exists() else None for name,path in targets.items()}
+    attempted=[]
+    try:
+        for name,path in targets.items():
+            attempted.append(name);path.write_bytes(outputs[name])
+    except BaseException:
+        for name in reversed(attempted):
+            if previous[name] is None:targets[name].unlink(missing_ok=True)
+            else:targets[name].write_bytes(previous[name])
+        raise
+
+
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     from unit_identity import ALIASES,canonical_unit
     parser.add_argument('--unit',action='append',choices=tuple(contract()['owners'])+tuple(ALIASES))
-    parser.add_argument('--write',action='store_true',help='Replace validated reader bodies; otherwise check only')
-    args=parser.parse_args();units=list(dict.fromkeys(canonical_unit(u) for u in args.unit)) if args.unit else list(contract()['owners'])
-    results=[]
-    for unit in units:
-        model=web.compose(unit);orders=web.star_data([model])
-        from review_refresh import prepare as prepare_review, reader as refresh_reader, page as refresh_review
-        review=prepare_review(model,web)
-        for variant in ('regular','norubi'):
-            from renditions import select
-            m=select(copy.deepcopy(model),variant)
-            pdf=ROOT/'astraJLPT'/site_pdf(unit,variant)
-            m['web_metrics']=web.resolve_metrics(m,pdf)
-            from image_html import inventory
-            for image in inventory(m).values():
-                target=ROOT/'astraJLPT'/image['path']
-                if not target.is_file() or target.read_bytes()!=image['data']:
-                    raise ValueError('Installed illustration differs: '+str(target))
-            markup,nav,questions=web.paper(m,orders)
-            page=ROOT/'astraJLPT'/html_path(unit,variant)
-            soup=BeautifulSoup(page.read_text('utf-8'),'html.parser');old=soup.select_one('.paper.editorial')
-            fresh=BeautifulSoup(markup,'html.parser')
-            for note in old.select('a.developer-note'):
-                parent=note.parent
-                if parent.get('id') and (target:=fresh.find(id=parent['id'])):target.append(copy.copy(note))
-            def content(node):
-                clone=copy.copy(node)
-                # Answer help is regenerated from separately validated canonical
-                # STAR metadata. The authored question/passage text remains exact.
-                for element in clone.select('a.developer-note, .star-solution, .star-unavailable'):element.decompose()
-                return ''.join(clone.stripped_strings)
-            if content(old)!=content(fresh):raise ValueError('Reader text changed: '+unit+'/'+variant)
-            old_ids=[n['id'] for n in old.select('[id]')];new_ids=[n['id'] for n in fresh.select('[id]')]
-            if old_ids!=new_ids:raise ValueError('Reader IDs changed: '+unit+'/'+variant)
-            if args.write:
-                old.clear()
-                for child in list(fresh.contents):old.append(child.extract())
-                refresh_reader(soup,unit,review,web.safe_json)
-                page.write_text(str(soup),encoding='utf-8',newline='\n')
-            results.append({'unit':unit,'variant':variant,'questions':len(questions),'status':'pass'})
-        if args.write:
-            review_path=web.SITE/'reviews'/f'{unit}.html'
-            review_page=BeautifulSoup(review_path.read_text('utf-8'),'html.parser')
-            refresh_review(review_page,review)
-            review_path.write_text(str(review_page),encoding='utf-8',newline='\n')
-        print(unit,'paired HTML bodies verified',flush=True)
-    if args.write:
+    parser.add_argument('--write',action='store_true',help='Install the fully validated selected batch; otherwise report changes without writing')
+    parser.add_argument('--refresh-reviews',action='store_true',help='Also refresh the selected public review registers')
+    parser.add_argument('--refresh-shared-assets',action='store_true',help='Explicit full-site runtime/practice/style refresh; requires --write and no --unit')
+    args=parser.parse_args()
+    if args.refresh_shared_assets and (not args.write or args.unit):
+        parser.error('--refresh-shared-assets requires --write without --unit')
+    units=list(dict.fromkeys(canonical_unit(u) for u in args.unit)) if args.unit else list(contract()['owners'])
+    outputs,results=prepare(units,args.refresh_reviews)
+    if args.write:install(outputs)
+    if args.refresh_shared_assets:
         install_runtime_assets()
         from shared_styles import share_site_styles
-        files=[p.relative_to(web.SITE).as_posix() for p in web.SITE.rglob('*.html')]
-        share_site_styles(web.SITE,files,web.write)
+        share_site_styles(web.SITE,[p.relative_to(web.SITE).as_posix() for p in web.SITE.rglob('*.html')],web.write)
         from package_sources import rewrite_site
         rewrite_site()
         from practice_pages import refresh
         refresh()
         refresh_asset_versions()
-    print(json.dumps({'owners':len(units),'paired_bodies':len(results),'written':args.write,'result':'pass'}),flush=True)
+    print(json.dumps({'owners':len(units),'paired_bodies':len(results),'written':args.write,
+                      'changed_files':sorted(outputs),'result':'pass'}),flush=True)
 if __name__=='__main__':main()

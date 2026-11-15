@@ -160,3 +160,19 @@ def share_site_styles(site, generated, write):
     return {'rules':len(classes), 'occurrences':occurrences,
             'html_before_bytes':before, 'html_and_shared_css_after_bytes':after,
             'saved_bytes':before-after, 'shared_css_bytes':len(css.encode('utf8'))}
+
+
+def reuse_site_styles(site,name,markup):
+    """Reuse installed class identities without changing the shared stylesheet."""
+    sheet=site/ASSET
+    if not sheet.is_file():raise ValueError('Missing installed shared stylesheet')
+    css=sheet.read_text(encoding='utf-8');rules=dict(RULE.findall(css))
+    markup=restore_styles(markup,rules)
+    result,_=replace_styles(markup,Tags(markup).rows,{value:key for key,value in rules.items()})
+    if re.search(r'\bps-[0-9a-z]+\b',result):
+        depth=len(PurePosixPath(name).parts)-1
+        digest=hashlib.sha256(sheet.read_bytes()).hexdigest()[:12]
+        link='<link rel="stylesheet" href="'+('../'*depth)+ASSET+'?v='+digest+'">'
+        if result.count('</head>')!=1:raise ValueError('Missing final head: '+name)
+        result=result.replace('</head>',link+'</head>')
+    return result

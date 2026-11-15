@@ -23,7 +23,7 @@ def preserve_answer_bindings(m, questions):
     per rendition, without duplicating a per-question compatibility archive.
     A later content change must explicitly establish new reader bindings.
     """
-    from bs4 import BeautifulSoup
+    from question_data import read_page_data
     from model import digest
     from package_paths import ROOT
     from public_paths import html_path
@@ -36,8 +36,10 @@ def preserve_answer_bindings(m, questions):
     if digest(semantic)!=binding['questions_sha256']:
         raise ValueError('Reader question content changed; review answer-binding migration')
     path=ROOT/'astraJLPT'/html_path(m['unit'],mode)
-    saved=json.loads(BeautifulSoup(path.read_text('utf-8'),'html.parser').select_one('#page-data').string)['questions']
-    if digest(saved)!=binding['answer_tokens_sha256']:
+    saved=read_page_data(path.read_text('utf-8'))['questions']
+    # Practice domains are derived from sections after the answer tokens are bound.
+    tokens=[{k:v for k,v in q.items() if k!='domain'} for q in saved]
+    if digest(tokens)!=binding['answer_tokens_sha256']:
         raise ValueError('Installed answer tokens changed; review answer-binding migration')
     if [(q['id'],q['key'])for q in saved]!=[(q['id'],q['key'])for q in questions]:
         raise ValueError('Installed answer identities, order or keys changed')

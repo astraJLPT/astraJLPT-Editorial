@@ -1157,6 +1157,95 @@
           "before_pt": 0
         }
       }
+    },
+    "content_frames": {
+      "vocab-b003": "none"
+    },
+    "heading_number_boxes": {
+      "vocab-s07": {
+        "content_sha256": "cfcfeaba4c67e23ed5f58b6cc89a4ab0795c60ca27a610a4f6d2ae3b35e47560",
+        "labels": [
+          "5",
+          "9"
+        ],
+        "evidence": {
+          "source_path": "src/OfficialWorkbooks/2009/N5/N5-mondai.pdf",
+          "source_sha256": "df1bcb6e16629c68dba059b71a9f8b3dc7d4fc40dadb53f2b562fc8274b8f95f",
+          "physical_pages": [
+            9
+          ],
+          "basis": "Visually verified principal: unboxed shared introduction and separately boxed range endpoints.",
+          "state": "inferred",
+          "historical_claim": false,
+          "region": "vocab-s07; complete heading range"
+        }
+      }
+    },
+    "section_styles": {
+      "vocab-b004": {
+        "content_sha256": "0ba79a385a3b51c56a66d1a292dca40e6b07443fe5a7c3dfb7c96afab5913561",
+        "evidence": {
+          "source_path": "src/OfficialWorkbooks/2009/N5/N5-mondai.pdf",
+          "source_sha256": "df1bcb6e16629c68dba059b71a9f8b3dc7d4fc40dadb53f2b562fc8274b8f95f",
+          "physical_pages": [
+            9
+          ],
+          "basis": "Principal physical page 9 (printed 107) places the complete (1)/(2) paragraph above its own composition frame.",
+          "state": "inferred",
+          "historical_claim": false,
+          "region": "vocab-b004; complete note or composition and its exterior label"
+        },
+        "selector": "after_first_paragraph",
+        "section_count": 1,
+        "frame_style": "cloze",
+        "paragraph_indent_em": 1,
+        "title_placement": "preserve"
+      },
+      "vocab-b005": {
+        "content_sha256": "23fbea66c19dbf2b70315ca00ae4b5abfb8df620550c00716a13fee1048ae43a",
+        "evidence": {
+          "source_path": "src/OfficialWorkbooks/2009/N5/N5-mondai.pdf",
+          "source_sha256": "df1bcb6e16629c68dba059b71a9f8b3dc7d4fc40dadb53f2b562fc8274b8f95f",
+          "physical_pages": [
+            9
+          ],
+          "basis": "Principal physical page 9 (printed 107) places the complete (1)/(2) paragraph above its own composition frame.",
+          "state": "inferred",
+          "historical_claim": false,
+          "region": "vocab-b005; complete note or composition and its exterior label"
+        },
+        "selector": "after_first_paragraph",
+        "section_count": 1,
+        "frame_style": "cloze",
+        "paragraph_indent_em": 1,
+        "title_placement": "preserve"
+      },
+      "reading-b002": {
+        "content_sha256": "5ac8e31dd53dfb1746f2d7c9d767c83b5b08d1ad23358908e73d5d204b382d5f",
+        "evidence": {
+          "source_path": "src/OfficialWorkbooks/2009/N5/N5-mondai.pdf",
+          "source_sha256": "df1bcb6e16629c68dba059b71a9f8b3dc7d4fc40dadb53f2b562fc8274b8f95f",
+          "physical_pages": [
+            11
+          ],
+          "basis": "Principal printed 109 encloses the Anna note with a curved-bottom paper outline. User explicitly selected the existing folded-corner style as a simpler presentation; text, source ruby and body font remain unchanged.",
+          "state": "inferred",
+          "historical_claim": false,
+          "region": "reading-b002; complete note or composition and its exterior label"
+        },
+        "selector": "whole_content",
+        "section_count": 1,
+        "frame_style": "folded_corner",
+        "padding_pt": 16,
+        "paragraph_indent_em": 0,
+        "before_pt": 10,
+        "following_question_gap_pt": 9,
+        "title_placement": "preserve",
+        "fold_size_pdf_pt": {
+          "width": 20,
+          "height": 21
+        }
+      }
     }
   },
   "provenance": {

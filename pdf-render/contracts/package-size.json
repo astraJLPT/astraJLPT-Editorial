@@ -1,29 +1,29 @@
 {
   "format": "editorial-package-size-v4",
-  "files": 5103,
-  "payload_bytes": 2050473265,
+  "files": 5307,
+  "payload_bytes": 2025882452,
   "baseline_payload_bytes": 2049421946,
-  "payload_bytes_saved": -1051319,
+  "payload_bytes_saved": 23539494,
   "editorial_json_bytes_saved": 5688018,
   "groups": {
     ".gitattributes": 218,
     ".github": 1163,
     ".gitignore": 429,
     "README.md": 10777,
-    "additional-assets": 684679488,
-    "astraJLPT": 981245304,
-    "editorial-json": 115582923,
-    "pdf-render": 214927669,
+    "additional-assets": 686682334,
+    "astraJLPT": 954349414,
+    "editorial-json": 115586987,
+    "pdf-render": 215225836,
     "rubi-restore": 54022116,
     "serve.py": 632,
     "verify.py": 2546
   },
   "preexisting_ignored_output_bytes_archived": 6548118,
-  "folder_bytes_saved_excluding_git": 14159983,
-  "website_bytes": 981245304,
+  "folder_bytes_saved_excluding_git": 30087612,
+  "website_bytes": 954349414,
   "conservative_website_limit": 1000000000,
-  "full_fonts": 37,
-  "full_font_bytes": 200089056,
+  "full_fonts": 39,
+  "full_font_bytes": 200129901,
   "full_fonts_unpacked": true,
   "largest_files": [
     {
@@ -79,10 +79,10 @@
   "total_budget_decision": "Retained full fonts, source material, ruby research and private audit records; added documentation and a compressed README screenshot.",
   "maintenance_baseline": "2ad81c5cdec0a52ae52ed7dbd3f42bcc01592146",
   "maintenance_baseline_payload_bytes": 2043805380,
-  "maintenance_payload_bytes_saved": -6667885,
+  "maintenance_payload_bytes_saved": 16060890,
   "unit_identity_documentation_baseline": "55fbf34",
   "unit_identity_documentation_baseline_payload_bytes": 2043795198,
-  "unit_identity_documentation_payload_bytes_added": 6678067,
+  "unit_identity_documentation_payload_bytes_added": -16050708,
   "star_solution_migration": {
     "baseline_git": "171ada8",
     "baseline_payload_bytes": 2045050514,
@@ -119,5 +119,80 @@
     "baseline_git": "a8d7c12",
     "website_bytes_added": 107001,
     "authored_bodies_and_answer_bindings_unchanged": true
+  },
+  "sample_and_heading_presentation_repair": {
+    "date": "2026-11-15",
+    "baseline_payload_bytes": 2027744490,
+    "baseline_website_bytes": 958464708,
+    "approved_files": 50,
+    "new_files": 5,
+    "payload_bytes_added": 79902,
+    "website_bytes_added": 44622,
+    "ignored_regeneration_outputs_and_runtime_excluded": true
+  },
+  "font_asset_maintenance": {
+    "date": "2026-11-15",
+    "baseline_payload_bytes": 2027824392,
+    "baseline_website_bytes": 958509330,
+    "approved_paths": 733,
+    "payload_bytes_saved": 5807541,
+    "website_bytes_saved": 5860264,
+    "ignored_runtime_and_verification_artifacts_excluded": true
+  },
+  "offline_export_and_font_subsets": {
+    "date": "2026-11-15",
+    "baseline_payload_bytes": 2022016851,
+    "baseline_website_bytes": 952649066,
+    "changed_paths": 79,
+    "website_bytes_saved": 7547700,
+    "payload_bytes_saved": 7512416,
+    "ignored_verification_artifacts_excluded": true,
+    "cache_cleanup_performed": false
+  },
+  "reader_initialization_and_font_subsets": {
+    "date": "2026-11-15",
+    "baseline_payload_bytes": 2014504435,
+    "baseline_website_bytes": 945101366,
+    "changed_paths": 666,
+    "font_bytes_saved": 4173436,
+    "website_bytes_saved": 4172903,
+    "payload_bytes_saved": 4121330,
+    "verification_artifacts_outside_repository": true,
+    "cache_cleanup_performed": false
+  },
+  "reader_runtime_and_storage": {
+    "date": "2026-11-15",
+    "checkpoint_git": "3050a2b",
+    "baseline_payload_bytes": 2010383105,
+    "baseline_website_bytes": 940928463,
+    "boar_original_preserved_outside_website": true,
+    "font_delivery_unchanged": true,
+    "payload_bytes_saved": -110029,
+    "website_bytes_saved": 1931755
+  },
+  "firefox_palette_and_settings": {
+    "date": "2026-11-15",
+    "checkpoint_git": "247db24",
+    "baseline_payload_bytes": 2010493134,
+    "baseline_website_bytes": 938996708,
+    "palette_catalogs_restored": 618,
+    "palette_preview_styles_still_shared": true,
+    "other_optimizations_preserved": true,
+    "html_gzip_bytes_added_in_sample": {
+      "min": 3296,
+      "max": 3522
+    },
+    "payload_bytes_added": 15207136,
+    "website_bytes_added": 15197029
+  },
+  "reader_sizing_controls": {
+    "date": "2026-11-16",
+    "checkpoint_git": "5a073ba",
+    "baseline_payload_bytes": 2025700270,
+    "baseline_website_bytes": 954193737,
+    "no_script_palette_bytes": 75232,
+    "font_delivery_unchanged": true,
+    "payload_bytes_added": 182182,
+    "website_bytes_added": 155677
   }
 }

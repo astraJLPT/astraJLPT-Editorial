@@ -30,7 +30,7 @@
 .timer-action-icon{min-width:1em;text-align:center}
 .reader-subbar[data-layout=labels] .timer-action-label{display:none}
 .reader-subbar:is([data-layout=compact],[data-layout=stacked],[data-layout=wrap]){--reader-control-gap:8px;grid-template-columns:max-content minmax(0,1fr) max-content;column-gap:8px}
-.reader-subbar:is([data-layout=compact],[data-layout=stacked],[data-layout=wrap]) :is(.timer-action-label,.return-top-label,.settings-label-text,.progress-completed){display:none}
+.reader-subbar:is([data-layout=compact],[data-layout=stacked],[data-layout=wrap]) :is(.timer-action-label,.return-top-label,.settings-label-text,.progress-correct){display:none}
 .reader-subbar:is([data-layout=stacked],[data-layout=wrap]){--reader-control-gap:6px;column-gap:6px}
 .reader-subbar:is([data-layout=stacked],[data-layout=wrap]) #timer-banner-controls{display:grid;gap:0}
 .reader-subbar:is([data-layout=stacked],[data-layout=wrap]) .timer-banner button{min-height:24px;min-width:28px;padding:2px 4px}
@@ -45,6 +45,9 @@
 .practice-dialog{max-width:min(760px,calc(100vw - 32px));max-height:calc(100dvh - 40px);overflow:auto;border:1px solid var(--edge-strong);border-radius:3px;padding:24px;background:var(--bg);color:var(--text);font:13px/1.65 "Roboto Mono",ui-monospace,monospace}
 .practice-dialog::backdrop{background:#0009}
 .practice-dialog h2{font-size:22px;margin:0 0 18px;color:var(--accent);text-align:center}
+#score-title{font-size:clamp(18px,4vw,22px);line-height:1.4;text-wrap:balance;overflow-wrap:anywhere}
+.score-title-subtitle{display:block;margin-top:.35em;font-size:.8em;font-weight:500}
+.score-title-volume{white-space:nowrap}
 .practice-dialog [data-dialog-close]{display:block;margin:20px auto 0}
 .practice-dialog p{margin:14px 0}.practice-dialog table{border-collapse:collapse;width:100%;font-size:12px}.practice-dialog th,.practice-dialog td{padding:10px 8px;text-align:left;border-bottom:1px solid var(--edge-soft)}
 .practice-dialog p:empty{display:none}

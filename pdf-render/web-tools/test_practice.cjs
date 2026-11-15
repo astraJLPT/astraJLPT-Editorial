@@ -38,14 +38,66 @@ check('time parsing rejects ambiguous/invalid fields without restricting exam ex
   assert.equal(P.parse('12:34:56'),45296);assert.equal(P.format(45296),'12:34:56');
   for(const value of ['-1:00:00','1:60:00','1:00:60','1:2:3','Infinity'])assert.equal(P.parse(value),null);
 });
-check('hidden answers remain editable without altering first-try or completion history',()=>{
-  let a=P.answer(undefined,2,1,false);assert.deepEqual(a,{selected:2});
-  a=P.answer(a,1,1,false);assert.deepEqual(a,{selected:1});
-  a=P.answer(a,2,1,true);assert.equal(a.firstCorrect,false);assert.equal(a.completed,false);
-  a=P.answer(a,1,1,true);assert.equal(a.completed,true);assert.equal(a.attempts,2);
-  const hidden=P.answer(a,3,1,false);assert.deepEqual(hidden,{...a,selected:3});
-});
 const q=[{id:'v',domain:'vocab',key:1},{id:'g',domain:'grammar',key:2},{id:'r',domain:'reading',key:3},{id:'x',domain:'reading',key:null}];
+check('current correctness falls after a wrong revision while answered and first try remain stable',()=>{
+  const answers={v:P.answer(undefined,1,1,true),g:P.answer(undefined,2,2,true)};
+  assert.deepEqual(P.progress(q,answers),{total:3,answered:2,correct:2,firstCorrect:2,firstTotal:2});
+  answers.v=P.answer(answers.v,2,1,true);
+  assert.deepEqual(P.progress(q,answers),{total:3,answered:2,correct:1,firstCorrect:2,firstTotal:2});
+  assert.equal(P.score(q,answers,{level:'N1'}).correct,1);
+});
+check('hidden revisions count only when feedback is first shown',()=>{
+  const answers={v:P.answer(undefined,2,1,false)};
+  answers.v=P.answer(answers.v,1,1,false);
+  assert.equal(P.progress(q,answers).firstTotal,0);
+  assert.equal(P.recordFirstFeedback(q,answers),true);
+  assert.equal(answers.v.firstCorrect,true);
+  answers.v=P.answer(answers.v,2,1,false);
+  assert.equal(P.recordFirstFeedback(q,answers),false);
+  assert.equal(answers.v.firstCorrect,true);
+  assert.equal(P.progress(q,answers).correct,0);
+});
+check('feedback for a wrong answer stays a failed first try after hidden or visible corrections',()=>{
+  const answers={v:P.answer(undefined,2,1,false)};
+  P.recordFirstFeedback(q,answers);
+  answers.v=P.answer(answers.v,1,1,true);
+  const counts=P.progress(q,answers);
+  assert.equal(counts.correct,1);assert.equal(counts.firstCorrect,0);assert.equal(counts.firstTotal,1);
+});
+check('reload preserves both pending answers and frozen first results',()=>{
+  const answers={v:P.answer(undefined,2,1,false),g:P.answer(undefined,1,2,true)};
+  const loaded=Object.fromEntries(Object.entries(JSON.parse(JSON.stringify(answers))).map(([id,a])=>[id,P.restoreAnswer(a)]));
+  loaded.v=P.answer(loaded.v,1,1,false);loaded.g=P.answer(loaded.g,2,2,false);
+  assert.equal(P.recordFirstFeedback(q,loaded),true);
+  assert.equal(loaded.v.firstCorrect,true);assert.equal(loaded.g.firstCorrect,false);
+  const snapshot=JSON.stringify(loaded);
+  assert.equal(P.recordFirstFeedback(q,loaded),false);assert.equal(JSON.stringify(loaded),snapshot);
+});
+check('saved first-try booleans survive restoration and later corrections',()=>{
+  for(const result of [true,false]){
+    const saved={selected:1,firstCorrect:result,completed:true,attempts:2};
+    const answers={v:P.restoreAnswer(saved)};
+    assert.equal(answers.v.selected,1);assert.equal(P.recordFirstFeedback(q,answers),false);
+    answers.v=P.answer(answers.v,2,1,true);answers.v=P.answer(answers.v,1,1,true);
+    assert.deepEqual(P.progress(q,answers),{total:3,answered:1,correct:1,firstCorrect:Number(result),firstTotal:1});
+    assert.deepEqual(P.restoreAnswer(JSON.parse(JSON.stringify(answers.v))),{selected:1,firstCorrect:result});
+  }
+});
+check('missing or null first results remain pending until feedback appears',()=>{
+  for(const saved of [{selected:1},{selected:1,firstCorrect:null},{selected:1,firstFeedbackVersion:1}]){
+    const answers={v:P.restoreAnswer(saved)};
+    assert.deepEqual(answers.v,{selected:1});
+    assert.equal(P.progress(q,answers).firstTotal,0);
+    assert.equal(P.recordFirstFeedback(q,answers),true);
+    assert.deepEqual(answers.v,{selected:1,firstCorrect:true});
+  }
+});
+check('unconfirmed keys and invalid selections do not enter progress or first try',()=>{
+  const answers={v:P.answer(undefined,1,1,false),g:P.answer(undefined,5,2,false),x:P.answer(undefined,1,null,true)};
+  P.recordFirstFeedback(q,answers);
+  assert.deepEqual(P.progress(q,answers),{total:3,answered:1,correct:1,firstCorrect:1,firstTotal:1});
+  assert.equal(Object.hasOwn(answers.x,'firstCorrect'),false);
+});
 check('modern scores use current selection and exclude unconfirmed keys',()=>{
   const score=P.score(q,{v:{selected:1},g:{selected:1,completed:true},r:{selected:3}},{level:'N1',generation:'modern-2010'});
   assert.equal(score.total,90);assert.equal(score.excluded,1);assert.equal(score.questions,3);
@@ -61,6 +113,9 @@ check('all verified historical tables cover stable question IDs and reproduce th
   for(const [unit,profile]of Object.entries(registry.profiles)){
     const html=fs.readFileSync(path.join(__dirname,'../../astraJLPT/papers',unit+'.html'),'utf8');
     const data=JSON.parse(/<script[^>]*id="page-data"[^>]*>(.*?)<\/script>/s.exec(html)[1]);
+    const source=fs.readFileSync(path.join(__dirname,'../../astraJLPT/assets/questions',unit+'.js'),'utf8');
+    const shared=JSON.parse(source.replace(/^globalThis.AstraQuestions = /,'').trim().replace(/;$/,''));
+    assert.equal(shared.unit,unit);data.questions=shared.questions;
     const all=Object.fromEntries(data.questions.filter(P.gradable).map(q=>[q.id,{selected:q.key}]));
     const score=P.score(data.questions,all,data.paper);
     for(const [id,section]of Object.entries(profile.sections)){

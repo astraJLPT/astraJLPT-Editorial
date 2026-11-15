@@ -4,9 +4,48 @@
   document.documentElement.classList.add('js');
   const $ = (s, root=document) => root.querySelector(s);
   const $$ = (s, root=document) => [...root.querySelectorAll(s)];
+  // Retain text nodes: replacing them invalidates ancestor :has() selectors in
+  // Chromium, even when a settings readout has no effect on the paper.
+  function setText(node,value){
+    if(!node||node.textContent===value)return;
+    if(node.childNodes.length===1&&node.firstChild.nodeType===Node.TEXT_NODE)node.firstChild.data=value;
+    else node.textContent=value;
+  }
   const data = JSON.parse($('#page-data').textContent);
   const themeData = globalThis.AstraThemes;
   const themes = [...themeData.originals, ...themeData.monkeytype];
+  if(data.paper&&!data.questions){
+    const shared=globalThis.AstraQuestions;
+    if(shared?.unit!==data.paper.unit||!Array.isArray(shared.questions))throw new Error('Missing question data for '+data.paper.unit);
+    data.questions=shared.questions;
+  }
+  // Shared controls must exist before saved preferences and event handlers bind.
+  const editor=$('#theme-editor-template');
+  if(editor){editor.innerHTML=themeData.editorMarkup;editor.replaceWith(editor.content);}
+  // Normalize cached shells before grading restores answers or updates labels.
+  const progressRoot=$('#progress');
+  if(progressRoot&&!$('.progress-correct',progressRoot)){
+    const count=$('#progress-count',progressRoot),detail=$('#progress-detail',progressRoot);
+    const correct=document.createElement('span');
+    correct.className='progress-correct';correct.textContent='correct';
+    progressRoot.replaceChildren(count,correct,detail);
+  }
+  const catalog=$('.theme-catalog');
+  const catalogInputs=catalog?$$('input[name=theme]',catalog):[];
+  // Keep parser-created radios: inserting 187 of them into a finished reader
+  // is expensive in Firefox. Rebuild only empty/outdated cached shells.
+  if(catalog&&(catalogInputs.length!==themeData.monkeytype.length||catalogInputs.some((input,i)=>input.value!==themeData.monkeytype[i].id))){
+    const cards=document.createDocumentFragment();
+    for(const theme of themeData.monkeytype){
+      const card=document.createElement('label'),input=document.createElement('input'),name=document.createElement('span');
+      card.className='theme-card';
+      card.style.setProperty('--preview-bg',theme.colors.bg);
+      card.style.setProperty('--preview-text',theme.colors.main);
+      input.type='radio';input.name='theme';input.id='theme-'+theme.id;input.value=theme.id;
+      name.textContent=theme.name;card.append(input,name);cards.append(card);
+    }
+    catalog.replaceChildren(cards);
+  }
   const prefix = 'astraJLPT:web:v1:';
   const colorMath=AstraThemeColors, sizingPolicy=AstraReaderSizing, colorRoles=themeData.colorRoles, fillControls=themeData.fillControls;
   const editableColors=colorRoles.filter(r=>r.editable).map(role=>{
@@ -39,7 +78,7 @@
   let preferences=normalizePreferences(saved.values),remember=saved.remember,answers={},restoring=false;
   let previousPreferences=null,observedPreferences=JSON.stringify(saved),sessionEpoch=saved.epoch;
   function status() {
-    const s=$('#save-status'); if(s) s.textContent=!storage.available?'Browser storage is unavailable. You can still read and answer.':remember?'Saved on this browser. Preferences are shared across pages; answers and position belong to each paper.':'Saving is off. This visit stays in memory.';
+    setText($('#save-status'),!storage.available?'Browser storage is unavailable. You can still read and answer.':remember?'Saved on this browser. Preferences are shared across pages; answers and position belong to each paper.':'Saving is off. This visit stays in memory.');
   }
   function persist(enable=false) {
     if(!remember&&!enable)return;
@@ -102,6 +141,7 @@
   }
   function brightness() {
     const id=$('input[name="theme"]:checked')?.value;
+    if(id)document.body.dataset.theme=id;
     updateThemeTextColor(themes.find(t=>t.id===id));
   }
   function setCustomColor(key,value){
@@ -190,7 +230,46 @@
   function filterReview(){const kind=$('#review-filter')?.value||'all',term=($('#review-search')?.value||'').trim().toLowerCase();const groups=$$('.review-group');let shown=0;for(const group of groups){group.hidden=!(kind==='all'||group.dataset.kinds.split(' ').includes(kind))||!group.textContent.toLowerCase().includes(term);if(!group.hidden)shown++;}if($('#review-count'))$('#review-count').textContent=shown+' / '+groups.length+' item groups';}
   $('#review-filter')?.addEventListener('change',filterReview);$('#review-search')?.addEventListener('input',filterReview);filterReview();
   const paper=$('.paper'), stage=$('.paper-stage');
-  let paperZoom=1, sizingFrame=0, paperFrame, currentLayout;
+  const sizingContainers=paper?[$('.exam-section',paper),...$$('.cloze-frame',paper)].filter(Boolean):[];
+  let paperZoom=1, sizingFrame=0, paperFrame, currentLayout,lastSizingKey='',fittedLayoutKey='',fontGeneration=0;
+  const tableMetrics=new WeakMap(),optionMetrics=new WeakMap();
+  const percentageControls=new Map();
+  // Enhance the existing shell, including pages cached before these fields
+  // existed. Each slider keeps its own label; the textbox has a separate name.
+  for(const [id,key,outputId,label]of[['text-size','text','text-output','Text size'],['paper-zoom','zoom','zoom-output','Paper zoom']]){
+    const slider=$('#'+id);if(!slider)continue;
+    const wrapper=document.createElement('div'),caption=document.createElement('label'),readout=document.createElement('span');
+    const mode=document.createElement('span'),field=document.createElement('input');
+    wrapper.className='range-label sizing-control';caption.htmlFor=id;caption.textContent=label.toLowerCase();
+    readout.id=outputId;readout.className='percentage-readout';mode.append(document.createTextNode(''));
+    field.id=key+'-percent';field.type='text';field.inputMode='decimal';field.autocomplete='off';field.spellcheck=false;
+    field.setAttribute('aria-label',label+' percentage');field.title='Enter a percentage; press Enter or leave the field to apply.';
+    const control={slider,mode,field,value:'100',dirty:false};percentageControls.set(key,control);
+    readout.append(mode,field,document.createTextNode('%'));
+    slider.closest('.range-label').replaceWith(wrapper);wrapper.append(caption,readout,slider);
+    field.addEventListener('input',()=>{control.dirty=true;});
+    field.addEventListener('blur',()=>{
+      if(!control.dirty)return;control.dirty=false;
+      const raw=field.value.trim(),number=Number(raw.replace(/%$/,'').trim());
+      if(/^[+-]?(?:\d+(?:\.\d*)?|\.\d+)\s*%?$/.test(raw)&&Number.isFinite(number)){
+        const value=Math.max(Number(slider.min),Math.min(Number(slider.max),Math.round(number)));
+        field.value=String(value);changeSizing(key,value);
+      }else field.value=control.value;
+    });
+    field.addEventListener('keydown',event=>{
+      if(event.key==='Enter'){event.preventDefault();field.blur();}
+      if(event.key==='Escape'){event.preventDefault();event.stopPropagation();control.dirty=false;field.value=control.value;field.blur();}
+    });
+  }
+  function percentage(key,value,mode){
+    const control=percentageControls.get(key);if(!control)return;
+    control.value=String(value);if(!control.dirty)control.field.value=control.value;
+    setText(control.mode,mode);
+  }
+  function sizing(){
+    if(!sizingFrame)sizingFrame=requestAnimationFrame(()=>applySizing());
+  }
+  let headingMetricsKey='';
   if(paper){
     paperFrame=document.createElement('div');paperFrame.className='paper-frame';
     paper.before(paperFrame);paperFrame.append(paper);
@@ -199,9 +278,11 @@
     // A transform scales text and hitboxes together without CSS zoom's
     // browser-dependent font sizing. Reserve exactly the painted page size.
     const rect=paper.getBoundingClientRect();
-    paperFrame.style.width=rect.width+'px';paperFrame.style.height=rect.height+'px';
+    const width=rect.width+'px',height=rect.height+'px';
+    if(paperFrame.style.width!==width)paperFrame.style.width=width;
+    if(paperFrame.style.height!==height)paperFrame.style.height=height;
   }
-  function fitTables(){
+  function fitTables(metricsKey){
     // TeX weights divide the measure after padding and rules. Native table
     // columns ignore mixed percent/length calc values, so resolve those source
     // weights against the current untransformed CSS measure. Percent widths
@@ -216,6 +297,10 @@
     // Resolve descendants first. A parent's minimum must depend on a nested
     // table's intrinsic minimum, never its width from the preceding resize.
     for(const row of [...rows].sort((a,b)=>b.depth-a.depth)){
+      const cached=tableMetrics.get(row.table);
+      if(cached?.key===metricsKey){
+        Object.assign(row,cached);row.table.style.minWidth=row.minimum+'px';continue;
+      }
       const occupied=[];
       for(const [r,tr] of [...row.table.rows].entries()){
         let c=0;
@@ -252,6 +337,7 @@
       // Retain source column proportions. If a cell cannot fit, the existing
       // scroll wrapper exposes the wider table instead of overlapping cells.
       row.minimum=Math.ceil(minTextWidth+row.cols.length*row.cellSpace+rule);
+      tableMetrics.set(row.table,{key:metricsKey,minimum:row.minimum,cellSpace:row.cellSpace,rule:row.rule});
       row.samples.forEach(({clone})=>clone.remove());row.table.style.minWidth=row.minimum+'px';
     }
     for(const row of rows){
@@ -263,19 +349,23 @@
       row.table.parentElement.scrollLeft=row.scrollLeft;
     }
   }
-  function fitOptions(){
+  function fitOptions(metricsKey){
     if(!paper)return;
     const px=value=>parseFloat(value)||0;
     const rows=$$('.question').filter(q=>!q.hasAttribute('data-image-panels')).map(q=>({q,grid:$('.options-grid',q),wanted:Number(q.dataset.nativeCols)||1,samples:[]}));
     // Batch DOM writes before measurements; do not force layout per answer.
-    for(const row of rows)for(const el of $$('.option-text',row.q)){
+    for(const row of rows){
+      const cached=optionMetrics.get(row.grid);
+      if(cached?.key===metricsKey){row.requirements=cached.requirements;continue;}
+      for(const el of $$('.option-text',row.q)){
       const clone=el.cloneNode(true);clone.style.cssText='position:absolute;visibility:hidden;white-space:nowrap;width:max-content;max-width:none';
       clone.setAttribute('aria-hidden','true');el.parentNode.append(clone);row.samples.push({el,clone});
+      }
     }
     for(const row of rows){
       row.width=row.grid.getBoundingClientRect().width/paperZoom;
       row.gap=px(getComputedStyle(row.grid).columnGap);
-      row.requirements=row.samples.map(({el,clone})=>{
+      row.requirements??=row.samples.map(({el,clone})=>{
         const cell=getComputedStyle(el.parentElement),text=getComputedStyle(el);
         const tracks=cell.gridTemplateColumns.split(/\s+/).map(px);
         // The middle track holds the answer. Account for the real number and
@@ -285,6 +375,7 @@
           +px(text.marginLeft)+px(text.marginRight);
         return clone.getBoundingClientRect().width/paperZoom+fixed;
       });
+      optionMetrics.set(row.grid,{key:metricsKey,requirements:row.requirements});
       row.required=Math.max(...row.requirements);
       row.weights=row.grid.dataset.columnWeights?.split(',').map(Number);
     }
@@ -306,13 +397,18 @@
     // measured four/two/one-column fitting as answer choices. Explicit source
     // vertical layouts retain their inline one-column rule.
     const examples=$$('.example-options,.example-native-options,.example-source-options').filter(grid=>!grid.hasAttribute('data-image-panels')).map(grid=>({grid,wanted:Number(grid.dataset.nativeCols)||4,samples:[]}));
-    for(const row of examples)for(const el of [...row.grid.children]){
+    for(const row of examples){
+      const cached=optionMetrics.get(row.grid);
+      if(cached?.key===metricsKey){row.required=cached.required;continue;}
+      for(const el of [...row.grid.children]){
       const clone=el.cloneNode(true);clone.style.cssText='position:absolute;visibility:hidden;white-space:nowrap;width:max-content;max-width:none';
       clone.setAttribute('aria-hidden','true');row.grid.append(clone);row.samples.push(clone);
+      }
     }
     for(const row of examples){
       row.width=row.grid.getBoundingClientRect().width/paperZoom;
-      row.required=Math.max(...row.samples.map(el=>el.getBoundingClientRect().width/paperZoom));
+      row.required??=Math.max(...row.samples.map(el=>el.getBoundingClientRect().width/paperZoom));
+      optionMetrics.set(row.grid,{key:metricsKey,required:row.required});
     }
     for(const row of examples){
       row.samples.forEach(el=>el.remove());let cols=row.wanted;
@@ -320,19 +416,24 @@
       row.grid.style.setProperty('--example-columns',String(cols));
     }
   }
-  function fitHeadings(){
-    if(!paper)return;
+  function fitHeadings(metricsKey){
+    if(!paper||headingMetricsKey===metricsKey)return;
     const zoom=paperZoom;
+    const rows=[];
     for(const heading of $$('.section-heading')){
       const label=$('.heading-label',heading);if(!label)continue;
       const cs=getComputedStyle(heading),ls=getComputedStyle(label);
       const em=parseFloat(cs.fontSize)/(parseFloat(cs.getPropertyValue('--glyph-scale'))||1);
       const horizontal=parseFloat(cs.getPropertyValue('--heading-horizontal-scale'))||1;
       const visual=$('.heading-label-visual',label);
-      if(visual)label.style.setProperty('--heading-label-width',visual.getBoundingClientRect().width/zoom/horizontal+'px');
       const pullback=parseFloat(cs.getPropertyValue('--heading-continuation-pullback-em'));
-      heading.style.setProperty('--heading-hang',Math.max(0,label.getBoundingClientRect().width/zoom/horizontal+parseFloat(ls.marginRight)-em*(Number.isFinite(pullback)?pullback:1))+'px');
+      rows.push({heading,label,horizontal,em,pullback,margin:parseFloat(ls.marginRight),width:visual?visual.getBoundingClientRect().width/zoom/horizontal:null});
     }
+    // Two measurement phases keep each heading from forcing a document layout.
+    for(const row of rows)if(row.width!==null)row.label.style.setProperty('--heading-label-width',row.width+'px');
+    for(const row of rows)row.hang=Math.max(0,row.label.getBoundingClientRect().width/zoom/row.horizontal+row.margin-row.em*(Number.isFinite(row.pullback)?row.pullback:1));
+    for(const row of rows)row.heading.style.setProperty('--heading-hang',row.hang+'px');
+    headingMetricsKey=metricsKey;
   }
   function fitAnnotations(){
     const terms=$$('.annotated-term').filter(term=>!term.closest('.vertical-frame'));
@@ -368,9 +469,14 @@
       term.classList.add('annotation-breakable');
     }
   }
-  function sizing(){
+  function applySizing(layoutOnly=false){
+    cancelAnimationFrame(sizingFrame);sizingFrame=0;
     if(!paper)return;
     const width=sizingPolicy.A4,available=Math.max(1,stage.clientWidth-parseFloat(getComputedStyle(stage).paddingLeft)-parseFloat(getComputedStyle(stage).paddingRight));
+    const mobile=window.innerWidth<=650;
+    const key=JSON.stringify([available,mobile,preferences.text,preferences.zoom,preferences.zoomWidth,preferences.zoomMargins,preferences.line,preferences.block,fontGeneration]);
+    if(key===lastSizingKey)return;
+    lastSizingKey=key;
     const cs=getComputedStyle(paper),bodyPt=parseFloat(cs.getPropertyValue('--body-pt'))||11.3,glyphScale=parseFloat(cs.getPropertyValue('--glyph-scale'))||1;
     const sourceMargins=['top','right','bottom','left'].map(side=>parseFloat(cs.getPropertyValue('--margin-'+side))||0);
     const sourcePx=bodyPt*96/72.27*glyphScale;
@@ -386,44 +492,57 @@
     paperZoom=zoom;
     paper.dataset.layout=responsive?'responsive':'fixed';
     paper.dataset.narrow=String(responsive&&currentLayout.baseWidth<=650);
+    // Intrinsic text widths survive a container resize or magnification change.
+    // Font completion, text size, spacing and responsive CSS invalidate them.
+    const metricsKey=JSON.stringify([scale,preferences.line,preferences.block,mobile,paper.dataset.narrow,fontGeneration]);
     paper.style.width=layout+'px';paper.style.maxWidth='none';paper.style.transform=zoom===1?'none':'scale('+zoom+')';
     const margins=currentLayout.margins;
     ['Right','Bottom','Left'].forEach((side,i)=>{paper.style['padding'+side]=margins[i+1]+'px';});
     paper.style.setProperty('--reader-left',margins[3]+'px');paper.style.setProperty('--reader-right',margins[1]+'px');
-    $('#text-output').textContent=preferences.text==='auto'?'auto · '+Math.round(scale*100)+'%':preferences.text+'%';
-    if(preferences.text==='auto')$('#text-size').value=Math.round(scale*100);
+    percentage('text',preferences.text==='auto'?Math.round(scale*100):preferences.text,preferences.text==='auto'?'auto · ':'');
+    $('#text-size').value=preferences.text==='auto'?Math.round(scale*100):preferences.text;
     const percent=Math.round(zoom*100),zoomControl=$('#paper-zoom');
     // Fit width is a shortcut, not a lower bound on manual magnification.
     zoomControl.min=Math.max(1,Math.min(25,Math.floor(available/width*100),percent));
     zoomControl.max=Math.max(500,Math.ceil(available/width*100),percent);
     zoomControl.value=percent;
     const mode=responsive?'screen':'A4';
-    $('#zoom-output').textContent=(preferences.zoom==='auto'?'auto · ':preferences.zoom==='fit'?'fit · ':'')+mode+' · '+percent+'%';
+    percentage('zoom',percent,(preferences.zoom==='auto'?'auto · ':preferences.zoom==='fit'?'fit · ':'')+mode+' · ');
     zoomControl.setAttribute('aria-valuetext',(preferences.zoom==='auto'?'Auto, ':'')+percent+'% of '+(responsive?'screen layout':'A4')+(preferences.zoom==='fit'?', fit to screen width':''));
     for(const button of $$('[data-zoom]'))button.setAttribute('aria-pressed',String(button.dataset.zoom===preferences.zoom||(button.dataset.zoom==='reference'&&!responsive&&Math.abs(layout-width)<.01&&Number(preferences.zoom)===100)));
     $('#auto-text').setAttribute('aria-pressed',String(preferences.text==='auto'));
     $('#source-text').setAttribute('aria-pressed',String(Number(preferences.text)===100));
     $('#line-adjust').value=preferences.line;$('#block-adjust').value=preferences.block;
-    $('#line-output').textContent=preferences.line+'%';$('#block-output').textContent=preferences.block+'%';
-    cancelAnimationFrame(sizingFrame);
-    sizingFrame=requestAnimationFrame(()=>{fitHeadings();fitTables();fitOptions();fitAnnotations();sizePaperFrame();});
+    setText($('#line-output'),preferences.line+'%');setText($('#block-output'),preferences.block+'%');
+    if(layoutOnly)return;
+    // Magnification trims spare margins without changing the text measure.
+    // Refit only after typography, responsive rules or that measure change.
+    // Cloze frames can extend into trimmed margins. Include their resolved
+    // widths, and the browser's rounded column width, before reusing a fit.
+    const layoutKey=JSON.stringify([metricsKey,responsive,Math.round((layout-margins[1]-margins[3])*64),...sizingContainers.map(node=>getComputedStyle(node).width)]);
+    if(layoutKey!==fittedLayoutKey){fitHeadings(metricsKey);fitTables(metricsKey);fitOptions(metricsKey);fitAnnotations();fittedLayoutKey=layoutKey;}
+    sizePaperFrame();
   }
-  function apply(){for(const name of ['theme','spacing','marking'])select(name,preferences[name]);select('text-source',preferences.textSource||'auto');select('star-behavior',preferences.star?'show':'hide');for(const i of $$('[name=spacing]'))i.checked=i.value===preferences.spacing;brightness();if($('#visible-paper'))$('#visible-paper').checked=preferences.border;$('#remember').checked=remember;for(const [id,key]of[['line-adjust','line'],['block-adjust','block']])if($('#'+id))$('#'+id).value=preferences[key];if($('#text-size'))$('#text-size').value=preferences.text==='auto'?100:preferences.text;if($('#paper-zoom'))$('#paper-zoom').value=isNaN(Number(preferences.zoom))?100:preferences.zoom;sizing();status();practiceUI?.apply();}
+  function apply(){for(const name of ['theme','spacing','marking'])select(name,preferences[name]);select('text-source',preferences.textSource||'auto');select('star-behavior',preferences.star?'show':'hide');for(const i of $$('[name=spacing]'))i.checked=i.value===preferences.spacing;brightness();if($('#visible-paper'))$('#visible-paper').checked=preferences.border;$('#remember').checked=remember;for(const [id,key]of[['line-adjust','line'],['block-adjust','block']])if($('#'+id))$('#'+id).value=preferences[key];sizing();status();practiceUI?.apply();}
   for(const name of ['theme','spacing','marking'])for(const input of $$('input[name="'+name+'"]'))input.addEventListener('change',()=>{preferences[name]=input.value;if(name==='spacing')Object.assign(preferences,spacingPresets[input.value]);brightness();persist();if(name==='spacing')sizing();});
   for(const i of $$('input[name="text-source"]'))i.addEventListener('change',()=>{preferences.textSource=i.value;brightness();persist();});
   for(const i of $$('[name=star-behavior]'))i.addEventListener('change',()=>{preferences.star=i.value==='show';persist();});
   $('#visible-paper')?.addEventListener('change',e=>{preferences.border=e.target.checked;persist();});
-  for(const [id,key]of[['text-size','text'],['paper-zoom','zoom'],['line-adjust','line'],['block-adjust','block']])$('#'+id)?.addEventListener('input',e=>{
+  function changeSizing(key,value){
     // Detach Auto from the layout already on screen. Never make the first
     // slider movement replace a narrow page with a full A4 sheet.
     if(key==='zoom'&&preferences.zoom==='auto'){
+      // Resolve a pending Auto layout before detaching, but measure text only
+      // once, at the final magnification, to retain identical glyph placement.
+      if(!currentLayout||sizingFrame)applySizing(true);
       preferences.zoomWidth=currentLayout.baseWidth;
       preferences.zoomMargins=[...currentLayout.baseMargins];
     }
-    preferences[key]=Number(e.target.value);
+    preferences[key]=value;
     if(key==='line'||key==='block'){preferences.spacing=Object.keys(spacingPresets).find(k=>spacingPresets[k].line===preferences.line&&spacingPresets[k].block===preferences.block)||'custom';for(const i of $$('[name=spacing]'))i.checked=i.value===preferences.spacing;}
     sizing();persist();
-  });
+  }
+  for(const [id,key]of[['text-size','text'],['paper-zoom','zoom'],['line-adjust','line'],['block-adjust','block']])$('#'+id)?.addEventListener('input',e=>changeSizing(key,Number(e.target.value)));
   $('#auto-text')?.addEventListener('click',()=>{preferences.text='auto';apply();persist();});
   $('#source-text')?.addEventListener('click',()=>{preferences.text=100;apply();persist();});
   for(const b of $$('[data-zoom]'))b.addEventListener('click',()=>{preferences.zoom=b.dataset.zoom;delete preferences.zoomWidth;delete preferences.zoomMargins;apply();persist();});
@@ -432,31 +551,31 @@
   const gradableQuestions=(data.questions||[]).filter(q=>Number.isInteger(q.key)&&q.key>=1&&q.key<=4);
   const bindings=Object.fromEntries(gradableQuestions.map(q=>[q.id,q.binding]));
   function saveAnswers(edited=false){
-    if(!remember||!sessionKey||restoring)return;
+    if(!remember||!sessionKey)return;
     if(edited)sessionEpoch=storage.preferences().epoch;
-    storage.savePaper(sessionKey,{answers,position,bindings},sessionEpoch);status();
+    const savedBindings=Object.fromEntries(Object.keys(answers).map(id=>[id,bindings[id]]));
+    storage.savePaper(sessionKey,{answers,position,bindings:savedBindings},sessionEpoch);status();
   }
   function progress(){
     if(!data.paper)return;
-    const rows=gradableQuestions.map(q=>answers[q.id]).filter(Boolean),total=gradableQuestions.length;
-    const firstRows=rows.filter(a=>typeof a.firstCorrect==='boolean');
-    const correct=gradableQuestions.filter(q=>answers[q.id]?.selected===q.key).length;
-    const count=preferences.autoGrade?rows.filter(a=>a.completed).length+' / '+total:(practiceUI?.revealed?correct:'?')+' / '+total;
-    const detail=preferences.autoGrade?(firstRows.length?'First try '+firstRows.filter(a=>a.firstCorrect).length+'/'+firstRows.length:''):'Answered '+rows.length+'/'+total;
+    const counts=AstraPractice.progress(gradableQuestions,answers),visible=practiceUI?.feedbackVisible??preferences.autoGrade;
+    const count=(visible?counts.correct:'?')+' / '+counts.total;
+    const detail=preferences.autoGrade?(counts.firstTotal?'First try '+counts.firstCorrect+'/'+counts.firstTotal:''):'Answered '+counts.answered+'/'+counts.total;
     $('#progress-count').textContent=count;$('#progress-detail').textContent=detail;
-    $('.progress-completed').hidden=!preferences.autoGrade;
-    const label=count+(preferences.autoGrade?' completed':practiceUI?.revealed?' correct':' grade hidden')+(detail?' · '+detail:'');
+    $('.progress-correct').hidden=!visible;
+    const label=count+(visible?' correct':' grade hidden')+(detail?' · '+detail:'');
     $('#progress').setAttribute('aria-label',label);$('#progress').title=label;
     if($('#score-dialog')?.open)practiceUI?.refreshScore();
   }
   for(const input of $$('.answer-radio'))input.addEventListener('change',()=>{
     if(input.disabled)return;
     const q=input.closest('.question'),id=q.id,correct=input.dataset.correct==='true';
-    answers[id]=AstraPractice.answer(answers[id],Number(input.value),data.questions.find(q=>q.id===id).key,preferences.autoGrade);
-    $('.answer-announcement',q).textContent=preferences.autoGrade||practiceUI?.revealed?(correct?'Correct.':'Incorrect. Try again.'):'Answer selected.';
+    const visible=practiceUI.feedbackVisible;
+    answers[id]=AstraPractice.answer(answers[id],Number(input.value),data.questions.find(q=>q.id===id).key,visible);
+    $('.answer-announcement',q).textContent=visible?(correct?'Correct.':'Incorrect. Try again.'):'Answer selected.';
     progress();saveAnswers(true);
   });
-  if(remember&&sessionKey){const session=storage.read(sessionKey);if(session){for(const [id,a]of Object.entries(session.answers||{})){if(!bindings[id]||session.bindings?.[id]!==bindings[id])continue;const input=$('#'+id+'-'+a.selected);if(input&&!input.disabled){answers[id]=a;input.checked=true;}}position=Number.isFinite(Number(session.position))?Math.max(0,Number(session.position)):0;if(position&&!location.hash){restoring=true;const resume=position;document.fonts.ready.then(()=>requestAnimationFrame(()=>requestAnimationFrame(()=>{window.scrollTo(0,resume);position=window.scrollY;restoring=false;})));}}}
+  if(remember&&sessionKey){const session=storage.read(sessionKey);if(session){for(const [id,a]of Object.entries(session.answers||{})){if(!bindings[id]||session.bindings?.[id]!==bindings[id]||!a||!Number.isInteger(a.selected))continue;const input=$('#'+id+'-'+a.selected);if(input&&!input.disabled){answers[id]=AstraPractice.restoreAnswer(a);input.checked=true;}}position=Number.isFinite(Number(session.position))?Math.max(0,Number(session.position)):0;if(position&&!location.hash){restoring=true;const resume=position;document.fonts.ready.then(()=>requestAnimationFrame(()=>requestAnimationFrame(()=>{window.scrollTo(0,resume);position=window.scrollY;restoring=false;})));}}}
   let scrollSaveTimer;
   window.addEventListener('scroll',()=>{if(restoring)return;position=window.scrollY;clearTimeout(scrollSaveTimer);scrollSaveTimer=setTimeout(saveAnswers,250);},{passive:true});
   window.addEventListener('pagehide',()=>saveAnswers());
@@ -468,10 +587,10 @@
   $('#forget').addEventListener('click',()=>{forget();toast('Saved data removed. Current answers remain until you leave.');});
   $('#reset-preferences').addEventListener('click',()=>{AstraPractice.setEnabled(preferences,true);const disabledTotal=preferences.timerDisabledTotal;preferences=normalizePreferences({timerDisabledTotal:disabledTotal});previousPreferences=null;apply();persist();});
   $('#clear-answers')?.addEventListener('click',()=>{if(!Object.keys(answers).length)return;if(!confirm('Clear this paper’s answers and practice counts?'))return;answers={};for(const i of $$('.answer-radio'))i.checked=false;for(const i of $$('.margin-answer,.answer-announcement'))i.textContent='';progress();saveAnswers();});
-  practiceUI=AstraPracticeUI({$,$$,data,storage,prefix,prefs:()=>preferences,persist,progress,answers:()=>answers,remember:()=>remember,epoch:()=>sessionEpoch,editEpoch:()=>{sessionEpoch=storage.preferences().epoch;}});
+  practiceUI=AstraPracticeUI({$,$$,data,storage,prefix,prefs:()=>preferences,persist,progress,saveAnswers,answers:()=>answers,remember:()=>remember,epoch:()=>sessionEpoch,editEpoch:()=>{sessionEpoch=storage.preferences().epoch;}});
   apply();progress();persist();
   if(paper){
-    document.fonts.ready.then(sizing);
+    document.fonts.ready.then(()=>{fontGeneration++;sizing();});
     new ResizeObserver(sizePaperFrame).observe(paper);
     let frame;window.addEventListener('resize',()=>{cancelAnimationFrame(frame);frame=requestAnimationFrame(sizing);});
   }

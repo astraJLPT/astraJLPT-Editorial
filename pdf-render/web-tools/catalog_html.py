@@ -16,6 +16,11 @@ CARD_RECTS={
     'light':[(31,107,373,659),(417,107,375,659),(805,107,376,659),(1194,107,375,659),(1581,107,375,659)],
 }
 
+def card_fallback(level):
+    return ('<svg class="card-label" viewBox="0 0 370 650" preserveAspectRatio="none" aria-hidden="true" focusable="false">'
+            f'<text x="185" y="75">N{level}</text></svg>')
+
+
 def homepage(catalog):
     art=[]
     for index,n in enumerate([5,4,3,2,1]):
@@ -25,8 +30,9 @@ def homepage(catalog):
             variables.extend([f'--card-{theme}-ratio:{w}/{h}',
                 f'--card-{theme}-size:{1983/w*100:.8f}% {793/h*100:.8f}%',
                 f'--card-{theme}-position:{x/(1983-w)*100:.8f}% {y/(793-h)*100:.8f}%'])
-        art.append(f'<a class="level-card level-n{n}" href="levels/N{n}.html" aria-label="Choose N{n}"><span class="card-art" style="'+ ';'.join(variables)+f'" role="img" aria-label="N{n} hanafuda"></span><span class="level-card-caption">Explore N{n} <span aria-hidden="true">↗</span></span></a>')
-    return ('<main id="content" class="entrance"><div class="entrance-title"><span class="ornament" aria-hidden="true">✧</span><h1>Choose your level.</h1></div><div class="level-grid">'+''.join(art)+'</div><div class="entrance-foot"><span>WRITTEN COLLECTION</span><p>'+COLLECTION_NOTE+'</p></div>'+historical_section(catalog)+'</main>')
+        art.append(f'<a class="level-card level-n{n}" href="levels/N{n}.html" aria-label="Choose N{n}"><span class="card-art" style="'+ ';'.join(variables)+f'" role="img" aria-label="N{n} hanafuda">'+card_fallback(n)+f'</span><span class="level-card-caption">Explore N{n} <span aria-hidden="true">↗</span></span></a>')
+    from interface_assets import maintenance_script
+    return ('<main id="content" class="entrance"><div class="entrance-title"><span class="ornament" aria-hidden="true">✧</span><h1>Choose your level.</h1></div><div class="level-grid">'+''.join(art)+'</div><div class="entrance-foot"><span>WRITTEN COLLECTION</span><p>'+COLLECTION_NOTE+'</p></div>'+historical_section(catalog)+'</main>'+maintenance_script())
 
 
 def sort_key(row):

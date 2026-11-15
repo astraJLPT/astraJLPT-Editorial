@@ -183,5 +183,135 @@
       "path": "gitignored_docs/q39-resolution-20261111/audit-report.json",
       "sha256": "f7c78d4ef81327b7a98d4a38a4b93a4553b7d54fc2ee24cc01a6a01f7f76b932"
     }
+  },
+  "sample_and_heading_presentation_repair": {
+    "date": "2026-11-15",
+    "result": "pass",
+    "approved_files": 50,
+    "reader_html_files": 22,
+    "sample_pdf_files": 4,
+    "regular_and_norubi": true,
+    "authored_content_and_answer_bindings_unchanged": true,
+    "historical_audit_prefixes_preserved": true,
+    "historical_renderer_unchanged": true,
+    "rebuild_idempotent": true,
+    "validation_record": "pdf-render/contracts/package-validation.json#sample_and_heading_presentation_repair"
+  },
+  "font_asset_maintenance": {
+    "date": "2026-11-15",
+    "migration_result": "pass",
+    "approved_paths": 733,
+    "font_format": "WOFF2",
+    "full_fonts": 39,
+    "all_existing_full_fonts_preserved": true,
+    "heros_retained": true,
+    "installed_pdfs_unchanged": 402,
+    "historical_renderer_untouched": true,
+    "validation_record": "pdf-render/contracts/package-validation.json#font_asset_maintenance",
+    "preexisting_followups": [],
+    "followups_resolved_by": "offline_export_and_font_subsets"
+  },
+  "offline_export_and_font_subsets": {
+    "date": "2026-11-15",
+    "result": "pass",
+    "changed_paths": 79,
+    "reader_exports_verified": 402,
+    "web_fonts_subsetted": 10,
+    "website_bytes_saved": 7547700,
+    "website_bytes": 945101366,
+    "full_fonts_unchanged": 39,
+    "installed_pdfs_unchanged": 402,
+    "historical_renderer_untouched": true,
+    "cache_cleanup_performed": false,
+    "new_git_snapshot_created": false,
+    "validation_record": "pdf-render/contracts/package-validation.json#offline_export_and_font_subsets"
+  },
+  "reader_initialization_and_font_subsets": {
+    "date": "2026-11-15",
+    "result": "pass",
+    "changed_paths": 666,
+    "progress_and_theme_initialization": "Current structure only; cached shells normalized without clearing stored answers or preferences.",
+    "web_fonts_subsetted": 13,
+    "font_bytes_saved": 4173436,
+    "website_bytes_saved": 4172903,
+    "website_bytes": 940928463,
+    "full_fonts_unchanged": 39,
+    "installed_pdfs_unchanged": 402,
+    "historical_renderer_untouched": true,
+    "cache_cleanup_performed": false,
+    "new_git_snapshot_created": false,
+    "validation_record": "pdf-render/contracts/package-validation.json#reader_initialization_and_font_subsets"
+  },
+  "reader_runtime_and_storage": {
+    "date": "2026-11-15",
+    "result": "pass",
+    "checkpoint_git": "3050a2b",
+    "first_try": "Preserve saved booleans; record pending results when feedback appears.",
+    "storage_cleanup": {
+      "page": "index.html",
+      "once_per_browser": true,
+      "all_reader_records": 402,
+      "plain_bytes": 2489,
+      "gzip_bytes": 1124,
+      "removal_comment_included": true
+    },
+    "timer": {
+      "unchanged_values_not_rewritten": true,
+      "recurring_work_stops_when": [
+        "paused",
+        "disabled",
+        "document hidden"
+      ],
+      "timestamp_clock_and_cross_tab_revisions_preserved": true
+    },
+    "interface_assets": {
+      "original_boar": "additional-assets/boar-original.png",
+      "original_boar_sha256": "e094cde86f58ce987c42d6b44f0932355335bddd692a73bc474fd231d2fd6109",
+      "footer_pixels": [
+        264,
+        176
+      ],
+      "footer_css_pixels": [
+        66,
+        44
+      ],
+      "footer_png_bytes": 59639,
+      "favicon_pixels": [
+        64,
+        64
+      ],
+      "favicon_png_bytes": 4775,
+      "level_fallback_font": "system-ui, sans-serif",
+      "loaded_level_artwork_pixel_identical": true
+    },
+    "preservation": {
+      "non_home_html_unchanged_except_resource_urls": 617,
+      "question_data_fonts_pdfs_editorials_unchanged": true,
+      "answer_marking_animations_unchanged": true,
+      "original_level_pngs_unchanged": true,
+      "installed_pdfs": 402
+    },
+    "validation_record": "pdf-render/contracts/package-validation.json#reader_runtime_and_storage"
+  },
+  "firefox_palette_and_settings": {
+    "date": "2026-11-15",
+    "result": "pass",
+    "checkpoint_git": "247db24",
+    "palette_loading": "Palette radios parsed with the page; complete cached catalogs retained; empty/outdated cached catalogs rebuilt. Preview declarations and color editor remain shared.",
+    "text_size": "Manual slider value synchronized after restoration, 100%, reset and cross-tab preference changes; Auto sizing retained.",
+    "palette_gap_px": 18,
+    "preserved": "WOFF2 and font subsets; shared questions/styles/editor; timer scheduling, reader measurement caches and storage maintenance; all paper contents and PDFs.",
+    "build_contract_repair": "Updated the resource-map checksum for the existing original-boar mapping after verifying the original image matches the pre-optimization bytes.",
+    "validation_record": "pdf-render/contracts/package-validation.json#firefox_palette_and_settings"
+  },
+  "reader_sizing_controls": {
+    "date": "2026-11-16",
+    "result": "pass",
+    "checkpoint_git": "5a073ba",
+    "controls": "Matching text-size and paper-zoom percentage fields; apply on Enter or blur, integer rounding, current slider bounds, Escape cancels drafts.",
+    "performance": "Coalesce sizing per animation frame; retain readout text nodes; reuse fitting only when typography and resolved content widths match; reflect theme selection on body.",
+    "no_script": "Original radio-driven palette declarations retained in themes-no-script.css, loaded only through noscript.",
+    "preserved": "Paper markup, fonts, questions, PDFs, editorial sources, storage keys, answer bindings, first feedback, timers and saved reading positions.",
+    "validation_record": "pdf-render/contracts/package-validation.json#reader_sizing_controls"
   }
 }

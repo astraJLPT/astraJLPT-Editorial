@@ -8,16 +8,19 @@ https://www.jlpt.jp/reference/pdf/guidebook_s_e.pdf (original modern format).
 https://ftp.jlpt.jp/tw/reference/pdf/guidebook1.pdf (old-test comparison).
 """
 from pathlib import Path
+from html import escape
 from html.parser import HTMLParser
-import copy,json,re,statistics
+import copy,json,re,statistics,sys
 from bs4 import BeautifulSoup
 from settings_ui import settings
-from theme_editor import color_roles,FILL_CONTROLS
+from theme_editor import color_roles,editor_markup,FILL_CONTROLS
 from theme_colors import theme_css
+from question_data import PAGE_DATA,read_page_data,shared_page_data,asset_path,question_script
 
 ROOT=Path(__file__).resolve().parents[2]
+sys.path.insert(0,str(ROOT/'pdf-render/tools'))
+from collection import date_info
 SITE=ROOT/'astraJLPT'
-PAGE_DATA=re.compile(r'(<script\b[^>]*\bid="page-data"[^>]*>)(.*?)(</script>)',re.S)
 READING={'reading','paired_reading','information_retrieval'}
 GRAMMAR={'grammar','sentence_composition','cloze'}
 
@@ -91,6 +94,18 @@ DIALOGS='''<dialog id="time-up-dialog" class="practice-dialog" aria-labelledby="
 
 SORT='''<label class="catalog-sort js-only" for="catalog-sort">Sort by: <select id="catalog-sort"><option value="recommended">Recommended first</option><option value="newest">Newest first</option><option value="oldest">Oldest first</option></select></label>'''
 
+def dialogs(unit):
+    # Use the catalog identity: some retained reader metadata has legacy dates.
+    identity=date_info(unit)
+    title=identity['level']+' '+identity['sitting']
+    lead,separator,subtitle=title.partition(' · ')
+    heading=escape(title)
+    if separator:
+        subtitle=re.sub(r'Vol\. \d+$',lambda m:'<span class="score-title-volume">'+m[0]+'</span>',escape(subtitle))
+        heading=('<span class="score-title-main">'+escape(lead)+'</span>'
+                 '<span class="sr-only"> · </span><span class="score-title-subtitle">'+subtitle+'</span>')
+    return DIALOGS.replace('Your practice score',heading)
+
 def reader(markup,data,timing,registry):
     paper=data['paper'];paper['timer']=timing
     content=Content(markup)
@@ -107,9 +122,10 @@ def reader(markup,data,timing,registry):
     markup=re.sub(r'(<main\b[^>]*class="paper-stage"[^>]*>)',lambda m:m[1]+grade_bar('top'),markup,count=1)
     markup=markup.replace('<div class="paper-end">',grade_bar('bottom')+'<div class="paper-end">',1)
     markup=re.sub(r'\s*<dialog\b[^>]*data-practice="[^"]+"[^>]*>.*?</dialog>\s*','',markup,flags=re.S)
-    markup=markup.replace('</body>',DIALOGS+'</body>')
-    encoded=json.dumps(data,ensure_ascii=False,separators=(',',':')).replace('</','<\\/')
-    return PAGE_DATA.sub(lambda m:m[1]+encoded+m[3],markup)
+    markup=markup.replace('</body>',dialogs(paper['unit'])+'</body>')
+    markup=re.sub(r'<span class="progress-(?:completed|correct)">.*?</span>',
+                  '<span class="progress-correct">correct</span>',markup)
+    return shared_page_data(markup,data)
 
 def catalog(markup,reference):
     soup=BeautifulSoup(markup,'html.parser');back=soup.select_one('.back-link')
@@ -138,8 +154,10 @@ def refresh():
     themes_path=SITE/'assets/theme-data.js'
     themes=json.loads(themes_path.read_text('utf8').removeprefix('globalThis.AstraThemes = ').rstrip().removesuffix(';'))
     themes['colorRoles']=color_roles();themes['fillControls']=FILL_CONTROLS
+    themes['editorMarkup']=editor_markup()
     themes_path.write_text('globalThis.AstraThemes = '+json.dumps(themes,ensure_ascii=False,separators=(',',':'))+';\n',encoding='utf8',newline='\n')
     (SITE/'assets/themes.css').write_text(theme_css(themes),encoding='utf8',newline='\n')
+    (SITE/'assets/themes-no-script.css').write_text(theme_css(themes,no_script=True),encoding='utf8',newline='\n')
     registry=json.loads((ROOT/'pdf-render/web-src/historical-scoring.json').read_text('utf8'))
     reference={}
     for path in sorted((SITE/'papers').glob('*.html')):
@@ -156,15 +174,24 @@ def refresh():
     for is_reader in (True,False):
         fresh=settings(themes,reader=is_reader,labelled=True)
         settings_cache[is_reader]=replace_styles(fresh,Tags(fresh).rows,classes)[0]
-    changed=0
+    changed=0;shared_questions={};updates={}
     for path in sorted(SITE.rglob('*.html')):
         markup=path.read_text('utf8');match=PAGE_DATA.search(markup)
         if not match:continue
-        data=json.loads(match[2]);is_reader='paper' in data
+        data=read_page_data(markup);is_reader='paper' in data
         new=replace_settings(markup,settings_cache[is_reader])
-        if is_reader:new=reader(new,data,timings[data['paper']['unit']],registry)
+        if is_reader:
+            unit=data['paper']['unit']
+            new=reader(new,data,timings[unit],registry)
+            if shared_questions.setdefault(unit,data['questions'])!=data['questions']:
+                raise ValueError('Reader editions have different question data: '+unit)
         elif path.parent.name=='levels':new=catalog(new,reference)
-        if new!=markup:path.write_text(new,encoding='utf8',newline='\n');changed+=1
+        if new!=markup:updates[path]=new
+    for unit,questions in shared_questions.items():
+        target=SITE/asset_path(unit);target.parent.mkdir(parents=True,exist_ok=True)
+        target.write_text(question_script(unit,questions),encoding='utf8',newline='\n')
+    for path,new in updates.items():
+        path.write_text(new,encoding='utf8',newline='\n');changed+=1
     from rebuild import install_runtime_assets,refresh_asset_versions
     install_runtime_assets();refresh_asset_versions()
     print(json.dumps({'practice_pages_refreshed':changed,'papers':len(reference),'sample_minutes':{u:t['seconds']//60 for u,t in timings.items() if t['basis']=='sample-moji-estimate'}},ensure_ascii=False),flush=True)

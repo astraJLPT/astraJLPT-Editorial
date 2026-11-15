@@ -1,7 +1,7 @@
 {
   "format": "astra-size-budgets-v1",
-  "scope_note": "All 201 released written owners, retaining the existing 121. Fixed before intake: 1 MiB paper HTML, 160 MiB shared assets, 2 GiB total runtime. Measured conservative projection 1,894,371,400 bytes includes retained runtime, 187,915,282 new principal bytes after exact-hash reuse, 36,287,473 new PDF bytes, all 129,923,988 raw font bytes, 201 MiB HTML and 160 MiB reviews/metadata/artwork allowance. See work/complete-written/storage-plan.json. No automatic budget increases or asset deletion.",
+  "scope_note": "All 201 released written owners. Limits: 1 MiB per paper HTML, 160 MiB shared assets, and 1,000,000,000 bytes total runtime, matching the published website budget enforced by verify.py and deployment. No automatic budget increases or asset deletion.",
   "max_paper_html_bytes": 1048576,
   "max_shared_assets_bytes": 167772160,
-  "max_runtime_bundle_bytes": 2147483648
+  "max_runtime_bundle_bytes": 1000000000
 }

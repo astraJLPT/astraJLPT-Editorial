@@ -1,6 +1,5 @@
 """Settings markup; preview samples use the reader's marking rules."""
 from html import escape
-from theme_editor import editor_markup
 
 MARKS=[('cell','Cell'),('rounded-cell','Rounded Cell'),('hollow-cell','Hollow Cell'),
        ('fill','Fill'),('rounded-fill','Rounded Fill'),('hollow-rounded-cell','Hollow Rounded Cell'),
@@ -14,13 +13,14 @@ def settings(themes,reader=False,labelled=False):
             c=t['colors']; accent=c.get('main',c.get('accent'))
             result.append(f'<label class="theme-card" style="--preview-bg:{c["bg"]};--preview-text:{accent}"><input type="radio" name="theme" id="theme-{t["id"]}" value="{t["id"]}"'+(' checked'if t['id']=='astraJLPT_dark'else '')+f'><span>{escape(t["name"])}</span></label>')
         return ''.join(result)
+    # Parse palette radios with the page; late insertion is costly in Firefox.
     tabs=([('reading','paper'),('marking','answer behavior')] if reader else [])+[('appearance','theme'),('timer','timer'),('browser','browser')]
     content='<div class="settings-tabs" role="group" aria-label="Settings categories">'+''.join(f'<label><input type="radio" name="settings-view" value="{v}"'+(' checked'if n==0 else '')+f'><span>{label}</span></label>' for n,(v,label) in enumerate(tabs))+'</div>'
-    content+='<section data-settings="appearance"><div class="setting-heading"><h3>theme</h3></div><div class="theme-grid originals">'+cards(themes['originals'])+'</div><div class="js-only"><p class="settings-label">three random picks</p><div class="theme-grid" id="quick-picks"></div></div><details><summary>all 187 Monkeytype palettes</summary><label class="theme-search js-only">find a palette<input id="theme-search" type="search" placeholder="search themes" autocomplete="off"></label><div class="theme-grid theme-catalog">'+cards(themes['monkeytype'])+'</div></details></section>'
+    content+='<section data-settings="appearance"><div class="setting-heading"><h3>theme</h3></div><div class="theme-grid originals">'+cards(themes['originals'])+'</div><div class="js-only"><p class="settings-label">three random picks</p><div class="theme-grid" id="quick-picks"></div></div><details class="js-only"><summary>all 187 Monkeytype palettes</summary><label class="theme-search">find a palette<input id="theme-search" type="search" placeholder="search themes" autocomplete="off"></label><div class="theme-grid theme-catalog">'+cards(themes['monkeytype'])+'</div></details></section>'
     # Palette text source is separate from paper text sizing.
-    content=content[:-len('</section>')]+'<div class="js-only" id="monkeytype-text-source" style="margin-top:20px">\n<h3>reading text color</h3>\n<p class="control-help">Auto chooses the more readable palette color. Choose sub or text to set it yourself; answer colors adapt.</p>\n<div aria-label="Monkeytype reading text color" class="segmented" role="group">\n<label><input checked="" name="text-source" type="radio" value="auto"/><span>auto</span></label>\n<label><input name="text-source" type="radio" value="sub"/><span>sub</span></label>\n<label><input name="text-source" type="radio" value="text"/><span>text</span></label>\n</div>\n<p aria-live="polite" class="control-help" id="monkeytype-text-status" role="status" style="margin-top:8px"></p>\n</div></section>'
+    content=content[:-len('</section>')]+'<div class="js-only" id="monkeytype-text-source">\n<h3>reading text color</h3>\n<p class="control-help">Auto chooses the more readable palette color. Choose sub or text to set it yourself; answer colors adapt.</p>\n<div aria-label="Monkeytype reading text color" class="segmented" role="group">\n<label><input checked="" name="text-source" type="radio" value="auto"/><span>auto</span></label>\n<label><input name="text-source" type="radio" value="sub"/><span>sub</span></label>\n<label><input name="text-source" type="radio" value="text"/><span>text</span></label>\n</div>\n<p aria-live="polite" class="control-help" id="monkeytype-text-status" role="status" style="margin-top:8px"></p>\n</div></section>'
     content=content.replace('<section data-settings="appearance">', '<section data-settings="appearance"><div class="theme-workspace"><div class="theme-picker">', 1)
-    content=content[:-len('</section>')]+'</div>'+editor_markup()+'</div></section>'
+    content=content[:-len('</section>')]+'</div><template id="theme-editor-template"></template></div></section>'
     if reader:
         spacing='''<div class="setting-row spacing-setting"><div><h3>spacing</h3><p>Adjust line spacing and gaps between blocks.</p></div><div class="segmented">'''
         for value,label,ratio in [('original','original PDF','100% line · 100% gap'),('standard','standard','90% line · 75% gap'),('compact','compact','80% line · 50% gap')]:

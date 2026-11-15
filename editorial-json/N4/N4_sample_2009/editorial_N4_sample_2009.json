@@ -1261,6 +1261,29 @@
           "before_pt": 0
         }
       }
+    },
+    "content_frames": {
+      "vocab-b003": "none"
+    },
+    "heading_number_boxes": {
+      "vocab-s08": {
+        "content_sha256": "f7f25120f401fa76c1be40b33397ed29c59cf6c31124d1f0a729f066453ab93e",
+        "labels": [
+          "5",
+          "9"
+        ],
+        "evidence": {
+          "source_path": "src/OfficialWorkbooks/2009/N4/N4-mondai.pdf",
+          "source_sha256": "b2528ecf75af9f023fb9ce7250be88c93493e006cc96c40b3dffefc5b50bc423",
+          "physical_pages": [
+            9
+          ],
+          "basis": "Visually verified principal: unboxed shared introduction and separately boxed range endpoints.",
+          "state": "inferred",
+          "historical_claim": false,
+          "region": "vocab-s08; complete heading range"
+        }
+      }
     }
   },
   "provenance": {

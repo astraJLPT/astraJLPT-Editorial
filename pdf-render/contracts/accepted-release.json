@@ -37039,8 +37039,8 @@
         "unit": "N4_sample_2009",
         "editorial": {
           "path": "editorial-json/N4/N4_sample_2009/editorial_N4_sample_2009.json",
-          "sha256": "f163a7a3bd888414e3b19da9f4ca2a260f2c0908302d77f23a998e9a4f45ee4a",
-          "bytes": 132705
+          "sha256": "ded51cd53beeac74b26a2c5fad77cd1de01fc34b7546e0c69aa6c891e7de6ea3",
+          "bytes": 132177
         },
         "sidecar": {
           "path": "editorial-json/N4/N4_sample_2009/ruby_N4_sample_2009.json",
@@ -37153,8 +37153,8 @@
         "unit": "N5_sample_2009",
         "editorial": {
           "path": "editorial-json/N5/N5_sample_2009/editorial_N5_sample_2009.json",
-          "sha256": "29c5c486d74072378c769483eb58510b0b719e2c7af6be3bad64178f1ab8ca44",
-          "bytes": 178844
+          "sha256": "b4065b0f0bfa4d719fa9f6bf0b535aaa489a3dc5c51824d27f33acef2236df9a",
+          "bytes": 181276
         },
         "sidecar": {
           "path": "editorial-json/N5/N5_sample_2009/ruby_N5_sample_2009.json",
@@ -46860,7 +46860,7 @@
     "pdf-render/config/typography_policy.json": "40cba8b0de9151f94ba9a79b45f0ed70b308d1dc09a8ea1b40c94f81ab8e3cbf",
     "pdf-render/config/workbook_typography.json": "20f35528f9aaa3f9eff5ec71d7cf47fa509b5528d0496e2d70912ef6a097667d",
     "pdf-render/contracts/reference-approvals.json": "70ed8d41a9ca84eaffe039789b551cf8c1cd2d10cba48260a4f448b27dce3cb6",
-    "pdf-render/contracts/resource-map.json": "87e77165047b01d83d4297ce839faa238daa31f86528cceb24b5d754c1215c8a",
+    "pdf-render/contracts/resource-map.json": "f88a36e7462368ff76b8e29fe3f1f6a66ad339facab14f4832c0bd3f7f9ce4e7",
     "pdf-render/editorial-tools/workbook_transition.py": "e3961f5314187697754cbb88a40a094d5c424dcb81840cea4d325259ceacf701",
     "pdf-render/fonts/05817e8ecde2-NotoSansJP-Regular.ttf": "05817e8ecde2662112f922ec6c4d9f49f417ec70b631f04a46b1b6392a64fbdb",
     "pdf-render/fonts/0a314d5e5f29-shingo_pro_bold.otf": "0a314d5e5f29d41a1c6633d6637a05b9c32e9d95abc79414541fb8eafa5f1bd7",
@@ -46899,7 +46899,7 @@
     "pdf-render/fonts/d2f8326a3544-seguisym.ttf": "d2f8326a354456d93e78b0537c58793e7072c3617af7d9ee187f10d6d595f510",
     "pdf-render/fonts/d4ef2ab502c0-A-OTF-ShinMGoPr6N-Light.otf": "d4ef2ab502c057c662cbcc7fa427318c35ebb744b4f60ae793bd8e9618e95b09",
     "pdf-render/fonts/dc7ceb728c25-NotoSansJP-Black.ttf": "dc7ceb728c25ed15ef315105edd9aa47defcdf17a3cc62c40c1f0b3dd53e5ec8",
-    "pdf-render/fonts/manifest.json": "1d98338d706480be8587abc685d8b1b490d5e4bbbb285f75adb87e8a3e9287c1",
+    "pdf-render/fonts/manifest.json": "1df06a8496536f398e942e222857f4ea602c89f75bf2569addcccc5f299aa45a",
     "pdf-render/schema/N1/defaults.json": "a2411ff02791f9a5ab3e72935ac081a0fe0fb0c9c494ef56ef7e27d2da0b5fce",
     "pdf-render/schema/N1/evidence/block-observations.json": "bd9d98e78f4cc956be52e7601d9c38bc9019a0328d77ab7c8da2c73b31bf6b83",
     "pdf-render/schema/N1/evidence/reference-survey/N1_07_2025/manifest.json": "08812ab22d4c820d6fc43c8cca289dde4bec107ca80824d6ed0972ffc9654859",
@@ -47053,7 +47053,7 @@
     "pdf-render/tools/horizontal_frames.py": "baf08b22eaf571b9aaaf1bf2cea269acbf973fcedbfcfc41d29fc08425415caa",
     "pdf-render/tools/inline_layout.py": "26f5227813002b1955df8b3a925066bcc69cfa32e284ae05759bfb2b06b727f3",
     "pdf-render/tools/inline_text_roles.py": "e7cacdb742a6abf756ea5e09c44bce2c0cd2d323b636d657581f6930008605e8",
-    "pdf-render/tools/instruction_selectors.py": "9ff420b4f5f430ea82345e57d57b913af00d45c207bda38f6c2af191b65eae40",
+    "pdf-render/tools/instruction_selectors.py": "0571f8c63a0632d182cfe62be04ff2edd1626f4f622a3fe36d18eae1efcec210",
     "pdf-render/tools/instruction_spacing.py": "604361b1b3669d887342ae140fe9ae421cf2936f2026278c0adf5972b3093ca1",
     "pdf-render/tools/intake_roles.py": "3914b9cc8a2f5df79603bf9493407764bb25bbe291e79ed5294d249474fc52a0",
     "pdf-render/tools/label_separators.py": "873e64ba010bf7a2dff59aeaff74b0db92d010209a6510ae7ed8e29afa72a4fd",
@@ -47128,7 +47128,10 @@
     "pdf-render/tools/unit_identity.py": "d8727df3b836dae3f5f725285fe78b91af89e95f4693a079adbbc205525432c0",
     "editorial-json/unit_aliases.json": "5177fedfe16dc914a536cf705cb78817092ce2c5b91073c3b72a284b3c286619",
     "pdf-render/schema/star-answer.schema.json": "6904fe9319ae6ed537cf5a4880c7cc459045787e318adc120f6c0e42792bbbd3",
-    "pdf-render/tools/star_answers.py": "42c736b10de14babf33beab50e8aebc9adce36c2b495a53e5a53e1f21fdff6cd"
+    "pdf-render/tools/star_answers.py": "42c736b10de14babf33beab50e8aebc9adce36c2b495a53e5a53e1f21fdff6cd",
+    "pdf-render/fonts/791b31aa1db8-cmex10.pfb": "791b31aa1db8608d0144b3a40fc0fe53383a60f6b00d0e8fd9f06ac4a11df8cb",
+    "pdf-render/fonts/503d59829700-lcircle1.pfb": "503d59829700006b46d6ddf4f90b045ee7f08350f89544b302e7d73711c4b68f",
+    "pdf-render/fonts/AMS-OFL.txt": "a2875081d2e54c189dd204d857fb02d5250fcc77c9c1138ecc13e8d07c36fa15"
   },
   "editorial_schema_version": "4.1.0",
   "schema_migration_baseline": "321b9a3dcb39ba995131b77605c40411dd71d69e",
