@@ -23,12 +23,12 @@
   const editor=$('#theme-editor-template');
   if(editor){editor.innerHTML=themeData.editorMarkup;editor.replaceWith(editor.content);}
   // Normalize cached shells before grading restores answers or updates labels.
-  const progressRoot=$('#progress');
-  if(progressRoot&&!$('.progress-correct',progressRoot)){
-    const count=$('#progress-count',progressRoot),detail=$('#progress-detail',progressRoot);
-    const correct=document.createElement('span');
-    correct.className='progress-correct';correct.textContent='correct';
-    progressRoot.replaceChildren(count,correct,detail);
+  const progressRoot=$('#progress'),progressCount=$('#progress-count'),progressDetail=$('#progress-detail');
+  let progressCorrect=progressRoot?.querySelector('.progress-correct');
+  if(progressRoot&&!progressCorrect){
+    progressCorrect=document.createElement('span');
+    progressCorrect.className='progress-correct';progressCorrect.textContent='correct';
+    progressRoot.replaceChildren(progressCount,progressCorrect,progressDetail);
   }
   const catalog=$('.theme-catalog');
   const catalogInputs=catalog?$$('input[name=theme]',catalog):[];
@@ -54,16 +54,26 @@
   });
   let effectiveColors={};
   const spacingPresets={original:{line:100,block:100},standard:{line:90,block:75},compact:{line:80,block:50}};
-  const defaults = {theme:'astraJLPT_dark', spacing:'standard', marking:'cell', star:true, border:false, text:'auto', textSource:'auto', zoom:'auto', line:90, block:75, spacingVersion:2,autoGrade:true,timerEnabled:true,timerControls:false,timerDirection:'down',timerDisabledTotal:0,timerDisabledAt:null,catalogSort:'recommended'};
+  const defaults = {theme:'astraJLPT_dark', rubi:'show', spacing:'standard', marking:'cell', star:true, border:false, text:'auto', textSource:'auto', zoom:'auto', line:90, block:75, spacingVersion:2,autoGrade:true,allowUnclick:true,timerEnabled:true,timerDirection:'down',catalogSort:'recommended'};
   let practiceUI=null;
   const storage = new AstraBrowserMemory(()=>localStorage,prefix);
   function normalizePreferences(values={}) {
     const next={...defaults,...values};
-    for(const key of ['autoGrade','timerEnabled','timerControls'])if(typeof next[key]!=='boolean')next[key]=defaults[key];
+    if(next.rubi!=='hide')next.rubi='show';
+    for(const key of ['autoGrade','allowUnclick','timerEnabled'])if(typeof next[key]!=='boolean')next[key]=defaults[key];
+    // Old saves wrote timerControls=false even when untouched. Both controls
+    // now default to show. Only an explicit hide needs space in the record.
+    delete next.timerControls;
+    for(const key of ['bannerTimerControls','timerResetWarning','clearSpoilWarning'])if(next[key]!==false)delete next[key];
+    for(const key of ['autoSpoil','spoilAll'])if(next[key]!==true)delete next[key];
     if(!['down','up'].includes(next.timerDirection))next.timerDirection='down';
     if(!['recommended','newest','oldest'].includes(next.catalogSort))next.catalogSort='recommended';
-    if(!Number.isFinite(next.timerDisabledTotal)||next.timerDisabledTotal<0)next.timerDisabledTotal=0;
-    if(!next.timerEnabled&&(!Number.isFinite(next.timerDisabledAt)||next.timerDisabledAt<=0))next.timerDisabledAt=Date.now();
+    // Older timer records used a clock offset shared by all papers. Preserve
+    // that offset for unopened saves; new timers use wall-clock timestamps.
+    if(!(Number.isFinite(next.timerDisabledTotal)&&next.timerDisabledTotal>0))delete next.timerDisabledTotal;
+    if(!next.timerEnabled&&Number.isFinite(next.timerDisabledAt)&&next.timerDisabledAt>0)
+      next.timerDisabledTotal=(next.timerDisabledTotal||0)+Math.max(0,Date.now()-next.timerDisabledAt);
+    delete next.timerDisabledAt;
     if(values.spacingVersion!==2){
       const preset=spacingPresets[next.spacing]||spacingPresets.standard;
       next.line=Math.round(preset.line*(Number(values.line)||100)/100);
@@ -77,8 +87,23 @@
   const saved = storage.preferences();
   let preferences=normalizePreferences(saved.values),remember=saved.remember,answers={},restoring=false;
   let previousPreferences=null,observedPreferences=JSON.stringify(saved),sessionEpoch=saved.epoch;
+  const rubiControls=data.paper?$$('[name=rubi]'):[],readerTitle=document.title;
+  // The native reader uses sibling selectors. In the enhanced reader keep
+  // the radios in the settings panel's normal tab order and focus trap.
+  for(const input of rubiControls){
+    if(input.parentElement===document.body&&input.labels[0]){
+      input.labels[0].prepend(input);
+      input.removeAttribute('tabindex');
+    }
+  }
+  function displayRubi(mode){
+    document.body.dataset.rubi=mode;
+    const title=mode==='hide'?readerTitle.replace(/ · astraJLPT$/,' · no rubi · astraJLPT'):readerTitle;
+    if(document.title!==title)document.title=title;
+  }
+  if(data.paper)displayRubi(rubiControls.length?preferences.rubi:'show');
   function status() {
-    setText($('#save-status'),!storage.available?'Browser storage is unavailable. You can still read and answer.':remember?'Saved on this browser. Preferences are shared across pages; answers and position belong to each paper.':'Saving is off. This visit stays in memory.');
+    setText($('#save-status'),!storage.available?'Browser storage is unavailable. You can still read and answer.':remember?'Saved on this browser. Settings are shared across pages. Your answers and position are saved in each paper.':'Saving is off. This visit stays in memory.');
   }
   function persist(enable=false) {
     if(!remember&&!enable)return;
@@ -90,14 +115,23 @@
     } else if(storage.available){remember=false;$('#remember').checked=false;}
     status();
   }
-  function syncPreferences() {
-    const record=storage.preferences(),serialized=JSON.stringify(record);
+  function syncPreferences(record=storage.preferences()) {
+    const serialized=JSON.stringify(record);
     if(!storage.available){status();return;}
-    if(serialized===observedPreferences)return;
+    const newSession=record.remember&&(!remember||record.epoch!==sessionEpoch);
+    if(serialized===observedPreferences&&!newSession)return;
     observedPreferences=serialized;remember=record.remember;
     if(remember){
       preferences=normalizePreferences(record.values);
-      previousPreferences=JSON.parse(JSON.stringify(preferences));apply();
+      previousPreferences=JSON.parse(JSON.stringify(preferences));
+      if(newSession){
+        sessionEpoch=record.epoch;
+        pendingBookmark=null;
+        observedAnswers='';
+        if(paperRecord)restoreSelections(paperRecord.read());
+        practiceUI?.restoreTimer();
+      }
+      apply();
     }else{$('#remember').checked=false;status();}
   }
   function toast(message) {const t=$('#toast');t.textContent=message;t.hidden=false;clearTimeout(toast.timer);toast.timer=setTimeout(()=>t.hidden=true,4200);}
@@ -142,6 +176,7 @@
   function brightness() {
     const id=$('input[name="theme"]:checked')?.value;
     if(id)document.body.dataset.theme=id;
+    for(const button of $$('#quick-picks button'))button.setAttribute('aria-pressed',String(button.dataset.theme===id));
     updateThemeTextColor(themes.find(t=>t.id===id));
   }
   function setCustomColor(key,value){
@@ -190,18 +225,24 @@
     const node=nodes.find(n=>n.getBoundingClientRect().bottom>edge);
     return node?{node,top:node.getBoundingClientRect().top}:null;
   }
+  function alignReading(anchor){
+    if(anchor.node?.isConnected)window.scrollBy(0,anchor.node.getBoundingClientRect().top-anchor.top);
+    // Automatic scrolling must not claim a newer bookmark from another tab.
+    lastScrollY=window.scrollY;
+  }
   function startSettingsVisit(){settingsGeneration++;readingAnchor=captureReading();}
   settings.querySelector('summary').addEventListener('pointerdown',()=>{if(!settings.open)startSettingsVisit();});
   settings.querySelector('summary').addEventListener('keydown',e=>{if(!settings.open&&(e.key==='Enter'||e.key===' '))startSettingsVisit();});
   settings.addEventListener('toggle',()=>{
     if(settings.open){if(!readingAnchor)startSettingsVisit();sizing();return;}
     const anchor=readingAnchor,generation=settingsGeneration;readingAnchor=null;
-    requestAnimationFrame(()=>requestAnimationFrame(()=>{if(!settings.open&&generation===settingsGeneration&&anchor?.node.isConnected)window.scrollBy(0,anchor.node.getBoundingClientRect().top-anchor.top);}));
+    requestAnimationFrame(()=>requestAnimationFrame(()=>{if(!settings.open&&generation===settingsGeneration&&anchor)alignReading(anchor);}));
   });
   const closeSettings=()=>{settings.open=false;settings.querySelector('summary').focus({preventScroll:true});};
   $('#close-settings')?.addEventListener('click',closeSettings);
-  document.addEventListener('click',e=>{if(settings.open&&!settings.contains(e.target))settings.open=false;});
+  document.addEventListener('click',e=>{if(settings.open&&!settings.contains(e.target)&&!e.target.closest?.('dialog'))settings.open=false;});
   document.addEventListener('keydown',e=>{
+    if(e.target.closest?.('dialog'))return;
     if(e.key==='Escape'&&settings.open){e.preventDefault();closeSettings();}
     if((e.altKey||e.ctrlKey)&&e.shiftKey&&e.key.toLowerCase()==='d'){e.preventDefault();setDev(!document.body.classList.contains('developer'));}
     if(e.key==='Tab'&&settings.open){const focus=$$('a,button,input,summary,[tabindex="0"]',settings).filter(x=>x.getClientRects().length);if(e.shiftKey&&document.activeElement===focus[0]){e.preventDefault();focus.at(-1).focus();}else if(!e.shiftKey&&document.activeElement===focus.at(-1)){e.preventDefault();focus[0].focus();}}
@@ -225,14 +266,41 @@
   $('#boar')?.addEventListener('click',()=>{setDev(!document.body.classList.contains('developer'));const target=$('#historical');if(target&&!target.hidden)target.scrollIntoView({behavior:'instant',block:'nearest'});});
   // Suggestions vary, selected theme does not. Never shuffle paper or option order.
   const quick=$('#quick-picks');
-  if(quick){const pool=[...themeData.monkeytype];for(let n=0;n<3;n++){const a=new Uint32Array(1);crypto.getRandomValues(a);const index=a[0]%pool.length,t=pool.splice(index,1)[0];const button=document.createElement('button');button.type='button';button.className='theme-card';button.textContent=t.name;button.dataset.theme=t.id;button.style.setProperty('--preview-bg',t.colors.bg);button.style.setProperty('--preview-text',t.colors.main);button.addEventListener('click',()=>{select('theme',t.id);preferences.theme=t.id;brightness();persist();});quick.append(button);}}
+  if(quick){
+    const pool=[...themeData.monkeytype];
+    for(let n=0;n<3;n++){
+      const random=crypto.getRandomValues(new Uint32Array(1))[0];
+      const theme=pool.splice(random%pool.length,1)[0];
+      const input=$('input[name="theme"][value="'+CSS.escape(theme.id)+'"]');
+      const button=document.createElement('button');
+      button.type='button';button.className='theme-card';button.textContent=theme.name;button.dataset.theme=theme.id;
+      button.style.setProperty('--preview-bg',theme.colors.bg);button.style.setProperty('--preview-text',theme.colors.main);
+      button.addEventListener('click',()=>input.click());quick.append(button);
+    }
+  }
   $('#theme-search')?.addEventListener('input',e=>{const term=e.target.value.trim().toLowerCase();for(const card of $$('.theme-catalog .theme-card'))card.hidden=!card.textContent.toLowerCase().includes(term);});
   function filterReview(){const kind=$('#review-filter')?.value||'all',term=($('#review-search')?.value||'').trim().toLowerCase();const groups=$$('.review-group');let shown=0;for(const group of groups){group.hidden=!(kind==='all'||group.dataset.kinds.split(' ').includes(kind))||!group.textContent.toLowerCase().includes(term);if(!group.hidden)shown++;}if($('#review-count'))$('#review-count').textContent=shown+' / '+groups.length+' item groups';}
   $('#review-filter')?.addEventListener('change',filterReview);$('#review-search')?.addEventListener('input',filterReview);filterReview();
   const paper=$('.paper'), stage=$('.paper-stage');
+  let rubiAnchor=null;
   const sizingContainers=paper?[$('.exam-section',paper),...$$('.cloze-frame',paper)].filter(Boolean):[];
-  let paperZoom=1, sizingFrame=0, paperFrame, currentLayout,lastSizingKey='',fittedLayoutKey='',fontGeneration=0;
-  const tableMetrics=new WeakMap(),optionMetrics=new WeakMap();
+  let paperZoom=1, sizingFrame=0, paperFrame, currentLayout,lastSizingKey='',fittedLayoutKey='',fittedRubi,fontGeneration=0;
+  // Keep one set of intrinsic widths per mode. Typography changes still
+  // invalidate measurements through metricsKey, and each element has at most two entries.
+  const rubiMetrics={
+    show:{tables:new WeakMap(),options:new WeakMap()},
+    hide:{tables:new WeakMap(),options:new WeakMap()}
+  };
+  const annotationOriginals=new WeakMap();
+  const wordColumns=new Map();
+  for(const word of paper?$$('.wakachi',paper):[]){
+    const column=word.closest('.option-text,.example-options>span,.example-native-options>span,.example-source-options>span,p,h2,h3,h4,li,td,th,div');
+    if(!column)continue;
+    if(!wordColumns.has(column))wordColumns.set(column,[]);
+    wordColumns.get(column).push(word);
+  }
+  const wrappedWords=[],wordBreaks=[],tightColumns=new Set();
+  const originalHeadingRuby=new Map();
   const percentageControls=new Map();
   // Enhance the existing shell, including pages cached before these fields
   // existed. Each slider keeps its own label; the textbox has a separate name.
@@ -282,7 +350,7 @@
     if(paperFrame.style.width!==width)paperFrame.style.width=width;
     if(paperFrame.style.height!==height)paperFrame.style.height=height;
   }
-  function fitTables(metricsKey){
+  function fitTables(metricsKey,tableMetrics){
     // TeX weights divide the measure after padding and rules. Native table
     // columns ignore mixed percent/length calc values, so resolve those source
     // weights against the current untransformed CSS measure. Percent widths
@@ -349,7 +417,7 @@
       row.table.parentElement.scrollLeft=row.scrollLeft;
     }
   }
-  function fitOptions(metricsKey){
+  function fitOptions(metricsKey,optionMetrics){
     if(!paper)return;
     const px=value=>parseFloat(value)||0;
     const rows=$$('.question').filter(q=>!q.hasAttribute('data-image-panels')).map(q=>({q,grid:$('.options-grid',q),wanted:Number(q.dataset.nativeCols)||1,samples:[]}));
@@ -407,12 +475,13 @@
     }
     for(const row of examples){
       row.width=row.grid.getBoundingClientRect().width/paperZoom;
+      row.gap=px(getComputedStyle(row.grid).columnGap);
       row.required??=Math.max(...row.samples.map(el=>el.getBoundingClientRect().width/paperZoom));
       optionMetrics.set(row.grid,{key:metricsKey,required:row.required});
     }
     for(const row of examples){
       row.samples.forEach(el=>el.remove());let cols=row.wanted;
-      while(cols>1&&Math.floor(row.width/cols*64)/64<row.required)cols=cols===4?2:1;
+      while(cols>1&&Math.floor((row.width-(cols-1)*row.gap)/cols*64)/64<row.required)cols=cols>2?2:1;
       row.grid.style.setProperty('--example-columns',String(cols));
     }
   }
@@ -435,15 +504,89 @@
     for(const row of rows)row.heading.style.setProperty('--heading-hang',row.hang+'px');
     headingMetricsKey=metricsKey;
   }
-  function fitAnnotations(){
-    const terms=$$('.annotated-term').filter(term=>!term.closest('.vertical-frame'));
+  function fitLongWords(){
+    // Keep ordinary Japanese groups intact. Only measure individual words
+    // when their column actually overflows, then apply all breaks together.
+    const overflowing=[],breakBefore=[],splitRuby=[];
+    // A long task label can leave too little room for an instruction word
+    // or its choice sequence. Reclaim the hanging indent only on overflow.
+    for(const heading of $$('.section-heading',paper)){
+      if(heading.scrollWidth>heading.clientWidth+1)tightColumns.add(heading);
+    }
+    for(const entry of wordColumns){
+      const [column,words]=entry;
+      if(column.scrollWidth<=column.clientWidth+1)continue;
+      overflowing.push(entry);
+      // A glyph or a whole ruby needs a wider line when it cannot break.
+      const style=getComputedStyle(column);
+      const line=column.clientWidth-parseFloat(style.paddingLeft)-parseFloat(style.paddingRight);
+      const box=column.getBoundingClientRect(),scale=box.width/(column.offsetWidth||1);
+      const indented=parseFloat(style.textIndent)>0&&words[0].getBoundingClientRect().right>box.right+.5;
+      if(indented&&column.matches('p,li'))tightColumns.add(column);
+      const container=column.closest('.section-heading,.options-grid,.dialogue,.question-content,.reading-passage,.notice-frame');
+      if(container&&(indented||line+.5<parseFloat(style.fontSize)||(preferences.rubi==='show'&&$$('ruby',column).some(ruby=>ruby.getBoundingClientRect().width>line*scale+.5)))){
+        tightColumns.add(container);
+      }
+    }
+    for(const column of tightColumns)column.classList.add('wide-word-column');
+    if(preferences.rubi==='show'){
+      for(const heading of tightColumns){
+        if(!heading.matches('.section-heading')||heading.scrollWidth<=heading.clientWidth+1)continue;
+        const line=heading.getBoundingClientRect();
+        for(const ruby of $$('ruby',heading)){
+          if(ruby.textContent==='文章全体ぶんしょうぜんたい'&&ruby.getBoundingClientRect().width>line.width+.5)splitRuby.push(ruby);
+          const next=ruby.nextSibling;
+          if(next?.nodeName!=='RUBY')continue;
+          const end=next.getBoundingClientRect();
+          if(end.right>line.right+.5&&ruby.getBoundingClientRect().width+end.width>line.width+.5)breakBefore.push(next);
+        }
+      }
+    }
+    // Changing a grid can also resize children that originally fit their tracks.
+    for(const [column,words] of tightColumns.size?wordColumns:overflowing){
+      const width=column.clientWidth;
+      if(!width||column.scrollWidth<=width+1)continue;
+      const box=column.getBoundingClientRect(),style=getComputedStyle(column);
+      const scale=box.width/column.offsetWidth;
+      const line=(width-parseFloat(style.paddingLeft)-parseFloat(style.paddingRight))*scale;
+      const right=box.right-(parseFloat(style.borderRightWidth)+parseFloat(style.paddingRight))*scale;
+      for(const word of words){
+        const rect=word.getBoundingClientRect();
+        if(rect.right<=right+.5)continue;
+        if(rect.width>line+.5)wrappedWords.push(word);
+        else if(word.previousSibling?.matches?.('.wakachi'))breakBefore.push(word);
+      }
+    }
+    for(const word of wrappedWords)word.classList.add('wakachi-wrap');
+    for(const word of breakBefore){
+      const br=document.createElement('wbr');word.before(br);wordBreaks.push(br);
+    }
+    // The workbooks supply the reading for each half of this compound.
+    for(const ruby of splitRuby){
+      const parts=document.createElement('span');
+      parts.innerHTML='<ruby>文章<rt>ぶんしょう</rt></ruby><wbr><ruby>全体<rt>ぜんたい</rt></ruby>';
+      originalHeadingRuby.set(parts,ruby);
+      ruby.replaceWith(parts);
+    }
+  }
+  function fitAnnotations(modeOnly){
+    const terms=$$('.annotated-term',paper).filter(term=>!term.closest('.vertical-frame'));
     const probes=[];
     for(const term of terms){
       const base=$(':scope>.annotation-base',term),initial=$('.annotation-initial',base);
       if(initial){
         const label=$('.annotation-label',initial),first=$('.annotation-initial-base',initial);
-        while(first.firstChild)initial.before(first.firstChild);
-        term.append(label);initial.remove();
+        const splitRuby=initial.closest('ruby');
+        term.append(label);
+        const original=modeOnly?annotationOriginals.get(base):null;
+        annotationOriginals.delete(base);
+        if(original){
+          base.replaceChildren(...original.childNodes);
+        }else{
+          while(first.firstChild)initial.before(first.firstChild);
+          initial.remove();
+        }
+        splitRuby?.normalize();
       }
       term.classList.remove('annotation-breakable');
       const probe=base.cloneNode(true);
@@ -461,11 +604,19 @@
       const first=walker.nextNode();if(!first)continue;
       const range=document.createRange();range.setStart(base,0);
       const ruby=first.parentElement.closest('ruby');
-      if(ruby&&base.contains(ruby))range.setEndAfter(ruby);
+      // With the reading hidden, anchor the note to one glyph in place.
+      // Extracting across its ruby wrapper would split the reading on Show.
+      const insideRuby=ruby&&base.contains(ruby)&&preferences.rubi==='hide';
+      if(insideRuby)range.setStart(first,0);
+      if(ruby&&base.contains(ruby)&&!insideRuby)range.setEndAfter(ruby);
       else range.setEnd(first,[...first.data][0].length);
+      // A range ending inside a styled prefix splits its wrapper. Reuse the
+      // intact measurement copy so switching modes cannot accumulate spacers.
+      if(!insideRuby&&first.parentElement!==base&&range.endContainer!==base)annotationOriginals.set(base,probe);
       const anchor=document.createElement('span'),content=document.createElement('span');
       anchor.className='annotation-initial';content.className='annotation-initial-base';
-      content.append(range.extractContents());anchor.append(content,$(':scope>.annotation-label',term));base.prepend(anchor);
+      content.append(range.extractContents());anchor.append(content,$(':scope>.annotation-label',term));
+      if(insideRuby)first.before(anchor);else base.prepend(anchor);
       term.classList.add('annotation-breakable');
     }
   }
@@ -474,8 +625,8 @@
     if(!paper)return;
     const width=sizingPolicy.A4,available=Math.max(1,stage.clientWidth-parseFloat(getComputedStyle(stage).paddingLeft)-parseFloat(getComputedStyle(stage).paddingRight));
     const mobile=window.innerWidth<=650;
-    const key=JSON.stringify([available,mobile,preferences.text,preferences.zoom,preferences.zoomWidth,preferences.zoomMargins,preferences.line,preferences.block,fontGeneration]);
-    if(key===lastSizingKey)return;
+    const key=JSON.stringify([available,mobile,preferences.rubi,preferences.marking==='margin',preferences.text,preferences.zoom,preferences.zoomWidth,preferences.zoomMargins,preferences.line,preferences.block,fontGeneration]);
+    if(key===lastSizingKey){rubiAnchor=null;return;}
     lastSizingKey=key;
     const cs=getComputedStyle(paper),bodyPt=parseFloat(cs.getPropertyValue('--body-pt'))||11.3,glyphScale=parseFloat(cs.getPropertyValue('--glyph-scale'))||1;
     const sourceMargins=['top','right','bottom','left'].map(side=>parseFloat(cs.getPropertyValue('--margin-'+side))||0);
@@ -519,15 +670,64 @@
     // Refit only after typography, responsive rules or that measure change.
     // Cloze frames can extend into trimmed margins. Include their resolved
     // widths, and the browser's rounded column width, before reusing a fit.
-    const layoutKey=JSON.stringify([metricsKey,responsive,Math.round((layout-margins[1]-margins[3])*64),...sizingContainers.map(node=>getComputedStyle(node).width)]);
-    if(layoutKey!==fittedLayoutKey){fitHeadings(metricsKey);fitTables(metricsKey);fitOptions(metricsKey);fitAnnotations();fittedLayoutKey=layoutKey;}
+    const layoutKey=JSON.stringify([metricsKey,responsive,preferences.marking==='margin',Math.round((layout-margins[1]-margins[3])*64),...sizingContainers.map(node=>getComputedStyle(node).width)]);
+    if(layoutKey!==fittedLayoutKey||preferences.rubi!==fittedRubi){
+      for(const word of wrappedWords)word.classList.remove('wakachi-wrap');
+      for(const br of wordBreaks)br.remove();
+      for(const [parts,ruby] of originalHeadingRuby)parts.replaceWith(ruby);
+      originalHeadingRuby.clear();
+      for(const column of tightColumns)column.classList.remove('wide-word-column');
+      wrappedWords.length=0;wordBreaks.length=0;tightColumns.clear();
+      const metrics=rubiMetrics[preferences.rubi];
+      fitHeadings(metricsKey+preferences.rubi);fitTables(metricsKey,metrics.tables);fitOptions(metricsKey,metrics.options);
+      fitAnnotations(layoutKey===fittedLayoutKey);fitLongWords();
+      fittedLayoutKey=layoutKey;fittedRubi=preferences.rubi;
+    }
     sizePaperFrame();
+    if(rubiAnchor){
+      alignReading(rubiAnchor);
+      rubiAnchor=null;
+    }
   }
-  function apply(){for(const name of ['theme','spacing','marking'])select(name,preferences[name]);select('text-source',preferences.textSource||'auto');select('star-behavior',preferences.star?'show':'hide');for(const i of $$('[name=spacing]'))i.checked=i.value===preferences.spacing;brightness();if($('#visible-paper'))$('#visible-paper').checked=preferences.border;$('#remember').checked=remember;for(const [id,key]of[['line-adjust','line'],['block-adjust','block']])if($('#'+id))$('#'+id).value=preferences[key];sizing();status();practiceUI?.apply();}
-  for(const name of ['theme','spacing','marking'])for(const input of $$('input[name="'+name+'"]'))input.addEventListener('change',()=>{preferences[name]=input.value;if(name==='spacing')Object.assign(preferences,spacingPresets[input.value]);brightness();persist();if(name==='spacing')sizing();});
+  function reflectReaderOptions(){
+    if(!paper)return;
+    const body=document.body;
+    const mode=rubiControls.length?preferences.rubi:'show';
+    if(body.dataset.rubi!==mode){
+      if(body.dataset.rubi&&window.scrollY>0&&!rubiAnchor){
+        const node=readingNode(readerEdge());
+        rubiAnchor={node,top:node?.getBoundingClientRect().top};
+      }
+      displayRubi(mode);
+    }
+    body.dataset.marking=$('[name=marking]:checked')?.value||'cell';
+    body.dataset.spacing=preferences.spacing;
+    body.toggleAttribute('data-show-star-order',Boolean(preferences.star));
+    body.toggleAttribute('data-visible-paper',Boolean(preferences.border));
+  }
+  function apply(){
+    for(const input of rubiControls)input.checked=input.value===preferences.rubi;
+    for(const name of ['theme','marking'])select(name,preferences[name]);
+    select('text-source',preferences.textSource||'auto');
+    select('star-behavior',preferences.star?'show':'hide');
+    for(const i of $$('[name=spacing]'))i.checked=i.value===preferences.spacing;
+    if($('#visible-paper'))$('#visible-paper').checked=preferences.border;
+    $('#remember').checked=remember;
+    for(const [id,key] of [['line-adjust','line'],['block-adjust','block']])if($('#'+id))$('#'+id).value=preferences[key];
+    reflectReaderOptions();brightness();sizing();status();practiceUI?.apply();
+  }
+  for(const name of ['theme','spacing','marking','rubi'])for(const input of $$('input[name="'+name+'"]'))input.addEventListener('change',()=>{
+    preferences[name]=input.value;
+    if(name==='theme')brightness();
+    else{
+      if(name==='spacing')Object.assign(preferences,spacingPresets[input.value]);
+      reflectReaderOptions();sizing();
+    }
+    persist();
+  });
   for(const i of $$('input[name="text-source"]'))i.addEventListener('change',()=>{preferences.textSource=i.value;brightness();persist();});
-  for(const i of $$('[name=star-behavior]'))i.addEventListener('change',()=>{preferences.star=i.value==='show';persist();});
-  $('#visible-paper')?.addEventListener('change',e=>{preferences.border=e.target.checked;persist();});
+  for(const i of $$('[name=star-behavior]'))i.addEventListener('change',()=>{preferences.star=i.value==='show';reflectReaderOptions();persist();});
+  $('#visible-paper')?.addEventListener('change',e=>{preferences.border=e.target.checked;reflectReaderOptions();persist();});
   function changeSizing(key,value){
     // Detach Auto from the layout already on screen. Never make the first
     // slider movement replace a narrow page with a full A4 sheet.
@@ -539,55 +739,236 @@
       preferences.zoomMargins=[...currentLayout.baseMargins];
     }
     preferences[key]=value;
-    if(key==='line'||key==='block'){preferences.spacing=Object.keys(spacingPresets).find(k=>spacingPresets[k].line===preferences.line&&spacingPresets[k].block===preferences.block)||'custom';for(const i of $$('[name=spacing]'))i.checked=i.value===preferences.spacing;}
+    if(key==='line'||key==='block'){preferences.spacing=Object.keys(spacingPresets).find(k=>spacingPresets[k].line===preferences.line&&spacingPresets[k].block===preferences.block)||'custom';for(const i of $$('[name=spacing]'))i.checked=i.value===preferences.spacing;reflectReaderOptions();}
     sizing();persist();
   }
   for(const [id,key]of[['text-size','text'],['paper-zoom','zoom'],['line-adjust','line'],['block-adjust','block']])$('#'+id)?.addEventListener('input',e=>changeSizing(key,Number(e.target.value)));
   $('#auto-text')?.addEventListener('click',()=>{preferences.text='auto';apply();persist();});
   $('#source-text')?.addEventListener('click',()=>{preferences.text=100;apply();persist();});
   for(const b of $$('[data-zoom]'))b.addEventListener('click',()=>{preferences.zoom=b.dataset.zoom;delete preferences.zoomWidth;delete preferences.zoomMargins;apply();persist();});
-  let position=0;
-  const sessionKey=data.paper?'paper:'+(data.paper.storage_unit||data.paper.unit)+(data.paper.variant==='norubi'?':norubi':''):null;
-  const gradableQuestions=(data.questions||[]).filter(q=>Number.isInteger(q.key)&&q.key>=1&&q.key<=4);
+  let lastScrollY=window.scrollY,pendingBookmark=null,scrollSaveTimer;
+  const paperRecord=storage.openPractice('paper',data.paper,remember,()=>sessionEpoch);
+  const gradableQuestions=(data.questions||[]).filter(AstraPractice.gradable);
   const bindings=Object.fromEntries(gradableQuestions.map(q=>[q.id,q.binding]));
-  function saveAnswers(edited=false){
-    if(!remember||!sessionKey)return;
-    if(edited)sessionEpoch=storage.preferences().epoch;
-    const savedBindings=Object.fromEntries(Object.keys(answers).map(id=>[id,bindings[id]]));
-    storage.savePaper(sessionKey,{answers,position,bindings:savedBindings},sessionEpoch);status();
+  let observedAnswers='';
+  let autoSpoil=preferences.autoSpoil===true;
+  function markSpoiledChoice(question,selected){
+    const key=Number(question.dataset.key);
+    const correct=document.getElementById(question.id+'-'+key);
+    const show=autoSpoil&&selected!==undefined&&selected!==key;
+    if(!correct||correct.hasAttribute('data-spoiled')===show)return;
+    correct.toggleAttribute('data-spoiled',show);
+    if(show){
+      const mark=document.createElement('span');
+      mark.className='margin-answer spoiled-margin';
+      mark.dataset.choice=String(key);
+      mark.setAttribute('aria-hidden','true');
+      $('.margin-answer',question).after(mark);
+    }else $('.spoiled-margin',question)?.remove();
   }
-  function progress(){
+  function applyAutoSpoil(){
+    const enabled=preferences.autoSpoil===true;
+    if(autoSpoil===enabled)return;
+    autoSpoil=enabled;
+    for(const [id,record] of Object.entries(answers))markSpoiledChoice(document.getElementById(id),record.selected);
+  }
+  function replaceSelections(next){
+    for(const id of new Set([...Object.keys(answers),...Object.keys(next)])){
+      const selected=next[id]?.selected,previous=answers[id]?.selected;
+      if(selected===previous)continue;
+      const input=document.getElementById(id+'-'+(selected??previous));
+      input.checked=selected!==undefined;
+      const question=input.closest('.question');
+      markSpoiledChoice(question,selected);
+      $('.answer-announcement',question).textContent='';
+    }
+    answers=next;
+  }
+  function restoreSelections(session){
+    const saved=session?.answers||{},signature=JSON.stringify(saved);
+    if(signature===observedAnswers)return false;
+    observedAnswers=signature;
+    const restored={};
+    for(const [id,record] of Object.entries(saved)){
+      if(!bindings[id]||session.bindings?.[id]!==bindings[id]||!Number.isInteger(record?.selected))continue;
+      const input=document.getElementById(id+'-'+record.selected);
+      if(input&&!input.disabled)restored[id]=AstraPractice.restoreAnswer(record);
+    }
+    replaceSelections(restored);
+    return true;
+  }
+  function syncPaper(){
+    if(!paperRecord)return;
+    const current=storage.preferences();
+    if(current.epoch!==sessionEpoch||current.remember!==remember)syncPreferences(current);
+    if(!remember||!storage.available)return;
+    const record=paperRecord.read();
+    if(record&&restoreSelections(record)){
+      if(practiceUI?.feedbackVisible&&AstraPractice.recordFirstFeedback(gradableQuestions,answers))saveAnswers();
+      progress();
+    }
+  }
+  function saveAnswers(){
+    if(!remember||!paperRecord)return;
+    const saved=paperRecord.read();
+    const record={answers,position:saved?.position??0,bindings:Object.fromEntries(Object.keys(answers).map(id=>[id,bindings[id]]))};
+    if(Number.isFinite(saved?.positionUpdatedAt))record.positionUpdatedAt=saved.positionUpdatedAt;
+    if(saved?.anchor)record.anchor=saved.anchor;
+    if(paperRecord.save(record,sessionEpoch))observedAnswers=JSON.stringify(answers);
+    status();
+  }
+  function progress(now=Date.now()){
     if(!data.paper)return;
     const counts=AstraPractice.progress(gradableQuestions,answers),visible=practiceUI?.feedbackVisible??preferences.autoGrade;
     const count=(visible?counts.correct:'?')+' / '+counts.total;
     const detail=preferences.autoGrade?(counts.firstTotal?'First try '+counts.firstCorrect+'/'+counts.firstTotal:''):'Answered '+counts.answered+'/'+counts.total;
-    $('#progress-count').textContent=count;$('#progress-detail').textContent=detail;
-    $('.progress-correct').hidden=!visible;
+    setText(progressCount,count);setText(progressDetail,detail);
+    progressCorrect.toggleAttribute('hidden',!visible);
     const label=count+(visible?' correct':' grade hidden')+(detail?' · '+detail:'');
-    $('#progress').setAttribute('aria-label',label);$('#progress').title=label;
+    if(progressRoot.getAttribute('aria-label')!==label)progressRoot.setAttribute('aria-label',label);
+    if(progressRoot.title!==label)progressRoot.title=label;
+    practiceUI?.setComplete(counts.total>0&&counts.answered===counts.total,now);
     if($('#score-dialog')?.open)practiceUI?.refreshScore();
   }
-  for(const input of $$('.answer-radio'))input.addEventListener('change',()=>{
-    if(input.disabled)return;
+  function clearSelected(input){
+    if(!preferences.allowUnclick||!input.matches('.answer-radio:enabled:checked'))return;
+    const now=Date.now();
+    const id=input.name;
+    if(answers[id]?.selected!==Number(input.value))return;
+    syncPaper();
+    if(answers[id]?.selected!==Number(input.value))return;
+    delete answers[id];input.checked=false;
+    const question=input.closest('.question');
+    markSpoiledChoice(question);
+    $('.answer-announcement',question).textContent='Answer cleared.';
+    saveAnswers();progress(now);
+  }
+  paper?.addEventListener('click',event=>clearSelected(event.target));
+  // Browsers differ on whether Space clicks an already-checked radio.
+  // Own that activation only; new choices and arrow keys stay native.
+  let spaceSelection=null;
+  paper?.addEventListener('keydown',event=>{
+    if(event.key!==' ')return;
+    if(!event.repeat)spaceSelection=preferences.allowUnclick&&event.target.matches('.answer-radio:enabled:checked')?event.target:null;
+    if(spaceSelection===event.target)event.preventDefault();
+  });
+  paper?.addEventListener('keyup',event=>{
+    if(event.key!==' '||spaceSelection!==event.target)return;
+    event.preventDefault();spaceSelection=null;clearSelected(event.target);
+  });
+  paper?.addEventListener('change',event=>{
+    const input=event.target;
+    if(!input.matches('.answer-radio:enabled:checked'))return;
+    const now=Date.now();
+    syncPaper();
     const q=input.closest('.question'),id=q.id,correct=input.dataset.correct==='true';
     const visible=practiceUI.feedbackVisible;
-    answers[id]=AstraPractice.answer(answers[id],Number(input.value),data.questions.find(q=>q.id===id).key,visible);
-    $('.answer-announcement',q).textContent=visible?(correct?'Correct.':'Incorrect. Try again.'):'Answer selected.';
-    progress();saveAnswers(true);
+    input.checked=true;
+    answers[id]=AstraPractice.answer(answers[id],Number(input.value),Number(q.dataset.key),visible);
+    markSpoiledChoice(q,Number(input.value));
+    let announcement=visible?(correct?'Correct.':'Incorrect. Try again.'):'Answer selected.';
+    if(autoSpoil&&!correct)announcement=visible?'Incorrect. The correct answer is '+q.dataset.key+'.':'Answer selected. Options '+[Number(input.value),Number(q.dataset.key)].sort().join(' and ')+' are marked.';
+    $('.answer-announcement',q).textContent=announcement;
+    saveAnswers();progress(now);
   });
-  if(remember&&sessionKey){const session=storage.read(sessionKey);if(session){for(const [id,a]of Object.entries(session.answers||{})){if(!bindings[id]||session.bindings?.[id]!==bindings[id]||!a||!Number.isInteger(a.selected))continue;const input=$('#'+id+'-'+a.selected);if(input&&!input.disabled){answers[id]=AstraPractice.restoreAnswer(a);input.checked=true;}}position=Number.isFinite(Number(session.position))?Math.max(0,Number(session.position)):0;if(position&&!location.hash){restoring=true;const resume=position;document.fonts.ready.then(()=>requestAnimationFrame(()=>requestAnimationFrame(()=>{window.scrollTo(0,resume);position=window.scrollY;restoring=false;})));}}}
-  let scrollSaveTimer;
-  window.addEventListener('scroll',()=>{if(restoring)return;position=window.scrollY;clearTimeout(scrollSaveTimer);scrollSaveTimer=setTimeout(saveAnswers,250);},{passive:true});
-  window.addEventListener('pagehide',()=>saveAnswers());
-  window.addEventListener('storage',e=>{if(e.key===null||e.key===prefix+'preferences')syncPreferences();});
-  window.addEventListener('focus',syncPreferences);
+  if(remember&&paperRecord){
+    const session=paperRecord.read();restoreSelections(session);
+    const savedPosition=Number(session?.position);
+    if(Number.isFinite(savedPosition)&&savedPosition>0&&!location.hash){
+      restoring=true;
+      document.fonts.ready.then(()=>requestAnimationFrame(()=>requestAnimationFrame(()=>{
+        window.scrollTo(0,savedPosition);
+        const anchor=session.anchor,node=anchor&&document.getElementById(anchor.id);
+        if(node&&paper.contains(node)&&Number.isFinite(anchor.offset)){
+          window.scrollBy(0,node.getBoundingClientRect().top-readerEdge()-anchor.offset);
+        }
+        lastScrollY=window.scrollY;restoring=false;
+      })));
+    }
+  }
+  function readerEdge(){return Math.max(0,$('.reader-subbar').getBoundingClientRect().bottom);}
+  function readingNode(edge){
+    const hit=document.elementsFromPoint(document.documentElement.clientWidth/2,edge+12).find(el=>paper.contains(el));
+    if(!hit)return settings.open?readingAnchor?.node.closest('[id]'):null;
+    return hit.closest('.question[id],.source-block[id],.source-heading[id]')||captureReading()?.node.closest('[id]');
+  }
+  function savePosition(){
+    const bookmark=pendingBookmark;pendingBookmark=null;
+    if(!bookmark||!remember||!paperRecord)return;
+    const saved=paperRecord.read()||{answers:{},bindings:{}};
+    if(saved.positionUpdatedAt>bookmark.positionUpdatedAt)return;
+    const edge=readerEdge(),node=bookmark.position>0&&readingNode(edge);
+    bookmark.anchor=node?{id:node.id,offset:node.getBoundingClientRect().top-edge}:null;
+    paperRecord.save({...saved,...bookmark},sessionEpoch);
+  }
+  window.addEventListener('scroll',()=>{
+    if(restoring||rubiAnchor||lastScrollY===window.scrollY)return;
+    lastScrollY=window.scrollY;
+    if(!remember||!paperRecord)return;
+    pendingBookmark={position:lastScrollY,positionUpdatedAt:Date.now()};
+    clearTimeout(scrollSaveTimer);scrollSaveTimer=setTimeout(savePosition,250);
+  },{passive:true});
+  window.addEventListener('pagehide',savePosition);
+  window.addEventListener('storage',e=>{if(e.key===null||e.key===prefix+'preferences')syncPreferences();else if(paperRecord&&e.key===prefix+paperRecord.key)syncPaper();});
+  window.addEventListener('focus',()=>syncPreferences());
   document.addEventListener('visibilitychange',()=>{if(!document.hidden)syncPreferences();});
-  function forget(){remember=false;storage.forget();observedPreferences=JSON.stringify(storage.preferences());$('#remember').checked=false;status();}
-  $('#remember').addEventListener('change',e=>{if(e.target.checked){remember=true;persist(true);saveAnswers(true);practiceUI?.save();status();}else forget();});
-  $('#forget').addEventListener('click',()=>{forget();toast('Saved data removed. Current answers remain until you leave.');});
-  $('#reset-preferences').addEventListener('click',()=>{AstraPractice.setEnabled(preferences,true);const disabledTotal=preferences.timerDisabledTotal;preferences=normalizePreferences({timerDisabledTotal:disabledTotal});previousPreferences=null;apply();persist();});
-  $('#clear-answers')?.addEventListener('click',()=>{if(!Object.keys(answers).length)return;if(!confirm('Clear this paper’s answers and practice counts?'))return;answers={};for(const i of $$('.answer-radio'))i.checked=false;for(const i of $$('.margin-answer,.answer-announcement'))i.textContent='';progress();saveAnswers();});
-  practiceUI=AstraPracticeUI({$,$$,data,storage,prefix,prefs:()=>preferences,persist,progress,saveAnswers,answers:()=>answers,remember:()=>remember,epoch:()=>sessionEpoch,editEpoch:()=>{sessionEpoch=storage.preferences().epoch;}});
+  function forget(){remember=false;pendingBookmark=null;storage.forget();observedPreferences=JSON.stringify(storage.preferences());$('#remember').checked=false;status();}
+  $('#remember').addEventListener('change',e=>{
+    if(!e.target.checked){forget();return;}
+    const current=storage.preferences();
+    if(current.remember&&storage.available){syncPreferences(current);return;}
+    // Re-enabling in this tab explicitly saves the visit that is on screen.
+    sessionEpoch=current.epoch;remember=true;persist(true);
+    saveAnswers();
+    if(paperRecord){
+      pendingBookmark={position:window.scrollY,positionUpdatedAt:Date.now()};savePosition();
+      practiceUI?.save();
+    }
+    status();
+  });
+  function confirmBrowserAction(trigger,description,action){
+    const id=trigger.id+'-dialog';
+    document.body.insertAdjacentHTML('beforeend',`<dialog id="${id}" class="practice-dialog practice-confirm" aria-labelledby="${id}-title" aria-describedby="${id}-description">
+      <h2 id="${id}-title">are you sure?</h2><p id="${id}-description"></p>
+      <div class="button-row"><button type="button" class="warning-cancel" data-dialog-close autofocus>cancel</button>
+      <button type="button" class="warning-confirm"></button></div></dialog>`);
+    const dialog=document.getElementById(id);
+    $('p',dialog).textContent=description;
+    const confirm=$('.warning-confirm',dialog);
+    confirm.textContent=trigger.textContent;
+    trigger.addEventListener('click',()=>{
+      trigger.focus({preventScroll:true});
+      dialog.showModal();
+    });
+    confirm.addEventListener('click',()=>{
+      if(!dialog.open)return;
+      action();
+      dialog.close();
+    });
+  }
+  confirmBrowserAction($('#reset-preferences'),'This will restore your settings for this site to their defaults on this browser. This action cannot be undone.',()=>{
+    preferences=normalizePreferences({timerDisabledTotal:preferences.timerDisabledTotal});
+    previousPreferences=null;
+    apply();
+    persist();
+  });
+  confirmBrowserAction($('#forget'),'This will turn off saving and delete all saved data for this site on this browser, including your settings, answers, practice counts, timers, and reading positions. This action cannot be undone.',()=>{
+    forget();
+    toast('Saved data removed. Current answers remain until you leave.');
+  });
+  function applyPaperAction(action){
+    if(action!=='clear'&&!(action==='spoil'&&preferences.spoilAll))return;
+    syncPaper();
+    const now=Date.now();
+    const next={};
+    if(action==='spoil'){
+      for(const q of gradableQuestions)next[q.id]=AstraPractice.answer(answers[q.id],q.key,q.key,practiceUI.feedbackVisible);
+    }
+    replaceSelections(next);
+    saveAnswers();
+    progress(now);
+  }
+  practiceUI=AstraPracticeUI({$,$$,data,storage,prefix,prefs:()=>preferences,persist,progress,saveAnswers,syncPaper,applyAutoSpoil,applyPaperAction,answers:()=>answers,remember:()=>remember,epoch:()=>sessionEpoch});
   apply();progress();persist();
   if(paper){
     document.fonts.ready.then(()=>{fontGeneration++;sizing();});

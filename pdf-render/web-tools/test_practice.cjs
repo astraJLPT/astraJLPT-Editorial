@@ -9,22 +9,58 @@ check('reload and a throttled background clock preserve real elapsed time',()=>{
   reloaded.pause(901000);reloaded.tick(1901000);assert.equal(reloaded.seconds(),5700);
   reloaded.resume(1901000);reloaded.tick(1961000);assert.equal(reloaded.seconds(),5640);
 });
-check('disabling the shared clock also pauses closed papers',()=>{
-  const p={timerEnabled:true,timerDisabledTotal:0};const t=new P.Timer(null,600,P.clock(p,1000));
-  P.setEnabled(p,false,61000);t.tick(P.clock(p,361000));assert.equal(t.seconds(),540);
-  P.setEnabled(p,true,361000);t.tick(P.clock(p,421000));assert.equal(t.seconds(),480);
+check('v1-compatible saves retain overtime and the manual choice while frozen',()=>{
+  const saved={version:1,limit:10000,elapsed:15000,startedAt:23000,running:false,expired:true,
+    wallStartedAt:35000,manualRunning:true,direction:'down'};
+  const restored=new P.Timer(saved,10,40000,'down',false,12000);
+  assert.equal(restored.state.elapsed,20000);assert.equal(restored.advancing,true);
+  for(const manualRunning of [true,false]){
+    const reopened=new P.Timer({...saved,frozen:true,manualRunning},10,70000,'down',true,12000);
+    assert.equal(reopened.state.elapsed,15000);reopened.setFrozen(false,70000);assert.equal(reopened.advancing,manualRunning);
+  }
+});
+check('in-place timer records restore the same pause, overtime, and frozen state as current records',()=>{
+  const timer=new P.Timer(null,10,1000);
+  function roundTrip(now,offset=0){
+    const saved=timer.legacyRecord(offset);
+    assert.equal(saved.version,1);
+    const read=record=>new P.Timer(record,10,now,'down',timer.state.frozen,offset).state;
+    assert.deepEqual(read(saved),read(timer.state));
+    return saved;
+  }
+  assert.equal(roundTrip(21000).running,true); // Countdown passes its limit while the page is closed.
+  const offsetClock=roundTrip(21000,500);
+  assert.equal(offsetClock.wallStartedAt,1000);assert.equal(offsetClock.startedAt,500);
+  timer.pause(5000);assert.equal(roundTrip(21000,54000).running,false);
+  timer.resume(6000);timer.setFrozen(true,8000);
+  const frozen=roundTrip(21000,1000);
+  assert.equal(frozen.running,false);assert.equal(frozen.manualRunning,true);
+  assert.equal(frozen.startedAt,7000);assert.equal(frozen.wallStartedAt,8000);
+  timer.setFrozen(false,22000);timer.tick(30000);
+  const overtime=roundTrip(32000);assert.equal(overtime.expired,true);assert.equal(overtime.manualRunning,true);
+});
+check('previous timers retain elapsed time, historical offsets and completed results',()=>{
+  const old={version:1,limit:600000,elapsed:5000,startedAt:1000,running:true,direction:'down'};
+  assert.equal(new P.Timer(old,600,91000,'down',false,80000).state.elapsed,15000);
+  const complete=new P.Timer(old,600,990000,'down',true);
+  complete.tick(1000000);assert.equal(complete.state.elapsed,5000);
+  complete.setFrozen(false,1001000);complete.tick(1003000);assert.equal(complete.state.elapsed,7000);
+  const expired=new P.Timer({...old,expired:true,running:false,elapsed:600000},600,1000000);
+  expired.tick(1010000);assert.equal(expired.state.elapsed,610000);
+  const paused=new P.Timer({...old,direction:'up',expired:true,running:false,elapsed:610000},600,1000000,'up');
+  paused.tick(1010000);assert.equal(paused.state.elapsed,610000);
 });
 check('direction preserves elapsed time; count-up is unrestricted',()=>{
   const t=new P.Timer(null,600,1000);t.tick(61000,'up');assert.equal(t.seconds(),60);
-  t.tick(601000,'up');assert.equal(t.seconds(),600);assert.equal(t.state.expired,false);
+  t.tick(601000,'up');assert.equal(t.seconds(),600);assert.equal(t.expired,false);
   t.tick(661000,'up');assert.equal(t.seconds(),660);assert.equal(t.state.running,true);
-  t.tick(661000,'down');assert.equal(t.seconds(),0);assert.equal(t.state.expired,true);
+  t.tick(661000,'down');assert.equal(t.seconds(),0);assert.equal(t.expired,true);
   t.tick(661000,'up');assert.equal(t.seconds(),660);
 });
 check('countdown expires once and cannot become negative',()=>{
   const t=new P.Timer(null,60,1000);t.tick(120000);assert.equal(t.seconds(),0);
-  assert.equal(t.state.expired,true);assert.equal(t.state.running,false);
-  t.state.notified=true;t.tick(900000);assert.equal(t.state.notified,true);
+  assert.equal(t.expired,true);assert.equal(t.advancing,true);assert.equal(t.state.elapsed,119000);
+  t.state.notified=true;t.tick(900000);assert.equal(t.state.notified,true);assert.equal(t.state.elapsed,899000);
 });
 check('time limit and current time can both be raised or shortened',()=>{
   const t=new P.Timer(null,600,1000);t.pause(61000);

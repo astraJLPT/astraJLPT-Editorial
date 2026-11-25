@@ -31,8 +31,7 @@ def homepage(catalog):
                 f'--card-{theme}-size:{1983/w*100:.8f}% {793/h*100:.8f}%',
                 f'--card-{theme}-position:{x/(1983-w)*100:.8f}% {y/(793-h)*100:.8f}%'])
         art.append(f'<a class="level-card level-n{n}" href="levels/N{n}.html" aria-label="Choose N{n}"><span class="card-art" style="'+ ';'.join(variables)+f'" role="img" aria-label="N{n} hanafuda">'+card_fallback(n)+f'</span><span class="level-card-caption">Explore N{n} <span aria-hidden="true">↗</span></span></a>')
-    from interface_assets import maintenance_script
-    return ('<main id="content" class="entrance"><div class="entrance-title"><span class="ornament" aria-hidden="true">✧</span><h1>Choose your level.</h1></div><div class="level-grid">'+''.join(art)+'</div><div class="entrance-foot"><span>WRITTEN COLLECTION</span><p>'+COLLECTION_NOTE+'</p></div>'+historical_section(catalog)+'</main>'+maintenance_script())
+    return ('<main id="content" class="entrance"><div class="entrance-title"><span class="ornament" aria-hidden="true">✧</span><h1>Choose your level.</h1></div><div class="level-grid">'+''.join(art)+'</div><div class="entrance-foot"><span>WRITTEN COLLECTION</span><p>'+COLLECTION_NOTE+'</p></div>'+historical_section(catalog)+'</main>')
 
 
 def sort_key(row):
@@ -63,7 +62,7 @@ def cards(rows, level, principal_assets):
     ordered += sorted((c for c in rows if c['content_kind'] == 'sample'), key=lambda c:c['unit'])
     for rank,c in enumerate(ordered):
         u = c['unit']
-        regular=html_path(u);norubi=html_path(u,'norubi')
+        regular=html_path(u)
         title = (c['level'] + ' · ' if c['content_kind'] == 'sample' else '') + c['sitting']
         badge = 'Partial practice' if c['partial'] else 'Modern sample' if c['content_kind'] == 'sample' else 'Old written paper' if c['generation'] == HISTORICAL else 'Written paper'
         uncertainty = c['uncertainty'] if c['uncertainty'] is not None else 'Unassessed'
@@ -85,12 +84,12 @@ def cards(rows, level, principal_assets):
                    + f'<div class="developer-only"><p>Uncertainty index: {uncertainty}</p>{diagnostics}<a href="../reviews/{u}.html">Cases & principal differences →</a></div>'
                    f'<div class="paper-launch-links"><a class="start-link" href="../{regular}">Start paper →</a>'
                    + source_links +
-                   f'<a class="start-link developer-only" href="../{norubi}">Start no rubi paper →</a></div></div></article>')
+                   '</div></div></article>')
     return result
 
 
 def level_pages(catalog, themes, shell, write, principal_assets):
-    from practice_pages import SORT
+    from practice_pages import SORT,catalog_timer_example
     for group, level, scope in [(f'N{n}', f'N{n}', f'{CONFIG["first_year"]}–{CONFIG["last_year"]} collection') for n in range(1, 6)] + [
             (f'old-{n}', f'Old {n}級', '1990–2009 historical collection') for n in range(1, 5)]:
         rows = [c for c in catalog if c['catalog_level'] == group]
@@ -100,4 +99,4 @@ def level_pages(catalog, themes, shell, write, principal_assets):
         body = (f'<main id="content" class="catalog"><div class="catalog-navigation"><a class="back-link" href="../index.html">← All levels</a>'+SORT+f'</div><div class="catalog-heading"><div><h1>{level}</h1></div><p>{scope}</p></div>'
                 + '<p class="collection-note"><span id="catalog-order-note">Ordered with higher quality papers presented first.</span><br>'+html.escape(OLD_NOTE if group.startswith('old-') else QUALITY_NOTE.split('\n',1)[1]).replace('\n','<br>')+'</p>'
                 + f'<div class="paper-grid">{content}</div>' + historical_section(catalog, '../') + '</main>')
-        write(f'levels/{group}.html', shell(level + ' papers', body, themes, '../', catalog=True))
+        write(f'levels/{group}.html', shell(level + ' papers', body, themes, '../', catalog=True, data=catalog_timer_example(rows)))

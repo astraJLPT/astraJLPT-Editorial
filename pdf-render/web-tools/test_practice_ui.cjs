@@ -5,6 +5,8 @@ const P=AstraPractice,questions=[{id:'v',key:1,domain:'vocab'},{id:'g',key:2,dom
 class Element {
   constructor(){this.listeners={};this.dataset={};this.children=[];this.open=false;}
   addEventListener(name,fn){this.listeners[name]=fn;}
+  closest(){return this;}
+  insertAdjacentHTML(){}
   click(){this.listeners.click?.({target:this});}
   change(){this.listeners.change?.({target:this});}
   setAttribute(name,value){this[name]=value;}
@@ -24,8 +26,8 @@ function reader(autoGrade=false,saved={}){
   vm.createContext(context);vm.runInContext(fs.readFileSync(path.join(__dirname,'../web-src/practice-ui.js'),'utf8'),context);
   const saveAnswers=()=>snapshots.push(JSON.parse(JSON.stringify(answers)));
   const ui=context.AstraPracticeUI({$,$$,data:{paper:{unit:'test',level:'N1',timer:{seconds:600}},questions},
-    storage:{read(){return null;},savePaper(){}},prefix:'test:',prefs:()=>preferences,persist(){},progress(){},saveAnswers,
-    answers:()=>answers,remember:()=>false,epoch:()=>0,editEpoch(){}});
+    storage:{openPractice(){return {read:()=>null};},savePaper(){}},prefix:'test:',prefs:()=>preferences,persist(){},progress(){},syncPaper(){},applyAutoSpoil(){},saveAnswers,
+    answers:()=>answers,remember:()=>false,epoch:()=>0});
   ui.apply();
   return {ui,answers,snapshots,preferences,document,get,buttons,
     auto(value){inputs[value?0:1].change();},

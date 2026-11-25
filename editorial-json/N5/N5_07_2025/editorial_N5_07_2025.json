@@ -898,13 +898,13 @@
           "id": "reading-b006",
           "type": "passage",
           "content": {
-            "html": "<p>マルタさんは <ruby>先月<rt>せんげつ</rt></ruby>まで レストラン「<ruby>花<rt>はな</rt></ruby>」で はたらいて いました。これは、マルタさんが レストラン「<ruby>花<rt>はな</rt></ruby>」の みなさんに <ruby>書<rt>か</rt></ruby>いた <ruby>手紙<rt>てがみ</rt></ruby>です。</p><p>「<ruby>花<rt>はな</rt></ruby>」の みなさんへ</p><p>こんにちは。<br><ruby>日本<rt>にほん</rt></ruby>では さくらが さいて いますか。わたしが <ruby>国<rt>くに</rt></ruby>に <ruby>帰<rt>かえ</rt></ruby>ってから もう 2<ruby>週間<rt>しゅうかん</rt></ruby>です。</p><p>みなさん、2<ruby>年間<rt>ねんかん</rt></ruby> ありがとうございました。わたしは <ruby>日本<rt>にほん</rt></ruby>で とても <ruby>楽<rt>たの</rt></ruby>しかったです。みなさんと いっしょに はたらいて、いろいろな ことを べんきょうしました。</p><p><ruby>来月<rt>らいげつ</rt></ruby>からは <ruby>国<rt>くに</rt></ruby>の パークホテルの レストランで はたらきます。そして、9<ruby>月<rt>がつ</rt></ruby>に けっこんします。けっこんパーティーは パークホテルで します。</p><p>それでは また <ruby>手紙<rt>てがみ</rt></ruby>を <ruby>書<rt>か</rt></ruby>きますね。<ruby>少<rt>すこ</rt></ruby>し <ruby>遠<rt>とお</rt></ruby>いですが、わたしの <ruby>国<rt>くに</rt></ruby>へも あそびに <ruby>来<rt>き</rt></ruby>て ください。</p><p>みなさん、ほんとうに ありがとうございました。</p><p>4<ruby>月<rt>がつ</rt></ruby>15<ruby>日<rt>にち</rt></ruby><br>マルタ</p>"
+            "html": "<p>マルタさんは <ruby>先月<rt>せんげつ</rt></ruby>まで レストラン「<ruby>花<rt>はな</rt></ruby>」で はたらいて いました。これは、マルタさんが レストラン「<ruby>花<rt>はな</rt></ruby>」の みなさんに <ruby>書<rt>か</rt></ruby>いた <ruby>手紙<rt>てがみ</rt></ruby>です。</p><p>「<ruby>花<rt>はな</rt></ruby>」のみなさんへ</p><p>こんにちは。<br><ruby>日本<rt>にほん</rt></ruby>では さくらが さいて いますか。わたしが <ruby>国<rt>くに</rt></ruby>に <ruby>帰<rt>かえ</rt></ruby>ってから もう 2<ruby>週間<rt>しゅうかん</rt></ruby>です。</p><p>みなさん、2<ruby>年間<rt>ねんかん</rt></ruby> ありがとうございました。わたしは <ruby>日本<rt>にほん</rt></ruby>で とても <ruby>楽<rt>たの</rt></ruby>しかったです。みなさんと いっしょに はたらいて、いろいろな ことを べんきょうしました。</p><p><ruby>来月<rt>らいげつ</rt></ruby>からは <ruby>国<rt>くに</rt></ruby>の パークホテルの レストランで はたらきます。そして、9<ruby>月<rt>がつ</rt></ruby>に けっこんします。けっこんパーティーは パークホテルで します。</p><p>それでは また <ruby>手紙<rt>てがみ</rt></ruby>を <ruby>書<rt>か</rt></ruby>きますね。<ruby>少<rt>すこ</rt></ruby>し <ruby>遠<rt>とお</rt></ruby>いですが、わたしの <ruby>国<rt>くに</rt></ruby>へも あそびに <ruby>来<rt>き</rt></ruby>て ください。</p><p>みなさん、ほんとうに ありがとうございました。</p><p>4<ruby>月<rt>がつ</rt></ruby>15<ruby>日<rt>にち</rt></ruby><br>マルタ</p>"
           }
         },
         {
           "id": "reading-q020",
           "stem": {
-            "html": "20 <ruby>手紙<rt>てがみ</rt></ruby>を <ruby>書<rt>か</rt></ruby>いた <ruby>後<rt>あと</rt></ruby>、マルタさんは どうしますか。"
+            "html": "20 <ruby>手紙<rt>てがみ</rt></ruby>を <ruby>書<rt>か</rt></ruby>いた<ruby>後<rt>あと</rt></ruby>、マルタさんは どうしますか。"
           },
           "options": [
             {
@@ -925,7 +925,7 @@
         {
           "id": "reading-q021",
           "stem": {
-            "html": "21 この <ruby>手紙<rt>てがみ</rt></ruby>で マルタさんは <ruby>何<rt>なに</rt></ruby>が いちばん <ruby>言<rt>い</rt></ruby>いたいですか。"
+            "html": "21 この<ruby>手紙<rt>てがみ</rt></ruby>で マルタさんは <ruby>何<rt>なに</rt></ruby>が いちばん <ruby>言<rt>い</rt></ruby>いたいですか。"
           },
           "options": [
             {
@@ -1110,7 +1110,7 @@
         }
       },
       "reading-b006": {
-        "content_sha256": "5fa5d630d6e11f223c6a4c9fc558fe2b66234e6995fdefecc266fef23036896f",
+        "content_sha256": "8b6b82bad2971d600414b6905c7f499a5140082cd90cc7e2036763f7f8651a89",
         "evidence": {
           "source_path": "src/日语JLPT历年真题/N5真题（2010-2025.12）/【N5真题】2025年7月/【试题】2025年7月JLPT日语N5真题.pdf",
           "source_sha256": "de138087b9ab4d78e993f8c3360981e9bf7f61f6d1e286b777ef96dccd074a2a",
@@ -5692,13 +5692,13 @@
         "slot": "content",
         "task": "reading",
         "role": "passage_or_notice",
-        "canonical_sha256": "5fa5d630d6e11f223c6a4c9fc558fe2b66234e6995fdefecc266fef23036896f",
-        "rendered_sha256": "5fa5d630d6e11f223c6a4c9fc558fe2b66234e6995fdefecc266fef23036896f",
-        "projection_sha256": "76fa84574d5f344aeecd05f44a9ba5d9b1407e033d127090d1cc857cf0bda073",
+        "canonical_sha256": "8b6b82bad2971d600414b6905c7f499a5140082cd90cc7e2036763f7f8651a89",
+        "rendered_sha256": "8b6b82bad2971d600414b6905c7f499a5140082cd90cc7e2036763f7f8651a89",
+        "projection_sha256": "69731b4ccda4189b648f8fe1c8d7fab3e18b902d92a692134bce1c2df995d468",
         "basis": "retain_audited_groups",
-        "rationale": "Retain existing audited groups and separate structural spacing. No missing boundary authored for this field; labels, blanks, choice fragments, titles, numeric/contact/Latin and table geometry retain their existing roles.",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
         "boundaries": [],
-        "author": "main_llm_h11"
+        "author": "editorial-20261125"
       },
       {
         "unit": "N5_07_2025",
@@ -5708,13 +5708,13 @@
         "slot": "stem",
         "task": "reading",
         "role": "question",
-        "canonical_sha256": "389ed64c7a1bfd7edc53eca6d239a99c87927f3916b8d4867c75930a74c477ca",
-        "rendered_sha256": "389ed64c7a1bfd7edc53eca6d239a99c87927f3916b8d4867c75930a74c477ca",
-        "projection_sha256": "8ec3890b1f3d1e30a1a5374c737a1630bb2bdcfeadf527a4925933bea6157d7c",
+        "canonical_sha256": "3e5220ef6ab6e64283893a4f193e4837bbbbdb9d965f7c40ae6bf9098b7dbbcb",
+        "rendered_sha256": "3e5220ef6ab6e64283893a4f193e4837bbbbdb9d965f7c40ae6bf9098b7dbbcb",
+        "projection_sha256": "e10c5bdaa675926c671c20583060c57c3142915a479e2bb815787dd76f7d9c6f",
         "basis": "retain_audited_groups",
-        "rationale": "Retain existing audited groups and separate structural spacing. No missing boundary authored for this field; labels, blanks, choice fragments, titles, numeric/contact/Latin and table geometry retain their existing roles.",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
         "boundaries": [],
-        "author": "main_llm_h11"
+        "author": "editorial-20261125"
       },
       {
         "unit": "N5_07_2025",
@@ -5788,13 +5788,13 @@
         "slot": "stem",
         "task": "reading",
         "role": "question",
-        "canonical_sha256": "5e769baee34b74d63f222a6cd45924e0b63be692789dfb8f3dcbb7b5d1b18354",
-        "rendered_sha256": "5e769baee34b74d63f222a6cd45924e0b63be692789dfb8f3dcbb7b5d1b18354",
-        "projection_sha256": "31fc09f947e8a8703c104680663c12afb60e4dd282652e6d5062ecc2dbf3b742",
+        "canonical_sha256": "20348e65c9b9d3990d59fbb248d15d32cda79df2bb8dcfde9423faa7efbdba05",
+        "rendered_sha256": "20348e65c9b9d3990d59fbb248d15d32cda79df2bb8dcfde9423faa7efbdba05",
+        "projection_sha256": "24e0847757b07729666430f47ab3e6cc80a2cecb51d61fbb34b655f3dc614946",
         "basis": "retain_audited_groups",
-        "rationale": "Retain existing audited groups and separate structural spacing. No missing boundary authored for this field; labels, blanks, choice fragments, titles, numeric/contact/Latin and table geometry retain their existing roles.",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
         "boundaries": [],
-        "author": "main_llm_h11"
+        "author": "editorial-20261125"
       },
       {
         "unit": "N5_07_2025",

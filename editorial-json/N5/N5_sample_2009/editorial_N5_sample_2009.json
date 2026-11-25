@@ -124,9 +124,9 @@
             "html": "7. <u>わたしは　デパートに　つとめて　います。</u>"
           },
           "options": [
-            "わたしは　デパートで　かいものを　しています。",
-            "わたしは　デパートで　さんぽを　しています。",
-            "わたしは　デパートで　しごとを　しています。",
+            "わたしは　デパートで　かいものを　して　います。",
+            "わたしは　デパートで　さんぽを　して　います。",
+            "わたしは　デパートで　しごとを　して　います。",
             "わたしは　デパートで　やすんで　います。"
           ],
           "key": 3
@@ -199,7 +199,7 @@
           "id": "vocab-b002",
           "type": "example",
           "content": {
-            "html": "<p>（もんだいれい）</p><p>A「_ _ <u>★</u> _ か。」<br>B「<ruby>山田<rt>やまだ</rt></ruby>さんです。」</p><p>1 です　　2 は　　3 あの<ruby>人<rt>ひと</rt></ruby>　　4 だれ</p><p>（こたえかた）</p><p>1．ただしい　<ruby>文<rt>ぶん</rt></ruby>をつくります。</p><table><tr><td>A「</td><td>_</td><td>_</td><td><u>★</u></td><td>_</td><td>か。」</td></tr><tr><td></td><td>3 あの<ruby>人<rt>ひと</rt></ruby></td><td>2 は</td><td>4 だれ</td><td>1 です</td><td></td></tr><tr><td colspan=\"6\">B「<ruby>山田<rt>やまだ</rt></ruby>さんです。」</td></tr></table><p>2．<u>★</u>に　<ruby>入<rt>はい</rt></ruby>る　ばんごうを　くろく　ぬります。</p><p>（かいとうようし）　（れい）　①　②　③　●</p>"
+            "html": "<p>（もんだいれい）</p><p>A「_ _ <u>★</u> _ か。」<br>B「<ruby>山田<rt>やまだ</rt></ruby>さんです。」</p><p>1 です　　2 は　　3 あの　<ruby>人<rt>ひと</rt></ruby>　　4 だれ</p><p>（こたえかた）</p><p>1．ただしい　<ruby>文<rt>ぶん</rt></ruby>を　つくります。</p><table><tr><td>A「</td><td>_</td><td>_</td><td><u>★</u></td><td>_</td><td>か。」</td></tr><tr><td></td><td>3 あの<ruby>人<rt>ひと</rt></ruby></td><td>2 は</td><td>4 だれ</td><td>1 です</td><td></td></tr><tr><td colspan=\"6\">B「<ruby>山田<rt>やまだ</rt></ruby>さんです。」</td></tr></table><p>2．<u>★</u>に　<ruby>入<rt>はい</rt></ruby>る　ばんごうを　くろく　ぬります。</p><p>（かいとうようし）　（れい）　①　②　③　●</p>"
           }
         },
         {
@@ -365,7 +365,7 @@
           "id": "vocab-b005",
           "type": "passage",
           "content": {
-            "html": "<p>（2）</p><p>みなさん、こんにちは。ヤンです。</p><p>わたしは　<ruby>日本語学校<rt>にほんごがっこう</rt></ruby>で　<ruby>毎日<rt>まいにち</rt></ruby>　べんきょうしています。<ruby>今<rt>いま</rt></ruby>は　<ruby>学校<rt>がっこう</rt></ruby>の　ちかくに　<ruby>姉<rt>あね</rt></ruby>と　<ruby>住<rt>す</rt></ruby>んで　います。<ruby>姉<rt>あね</rt></ruby>が　いるから、［8］。</p><p>わたしは　<ruby>日本<rt>にほん</rt></ruby>で　たくさん　<ruby>友<rt>とも</rt></ruby>だちが　ほしいです。みなさん、［9］。</p><p>どうぞ　よろしく　おねがいします。</p>"
+            "html": "<p>（2）</p><p>みなさん、こんにちは。ヤンです。</p><p>わたしは　<ruby>日本語学校<rt>にほんごがっこう</rt></ruby>で　<ruby>毎日<rt>まいにち</rt></ruby>　べんきょうして　います。<ruby>今<rt>いま</rt></ruby>は　<ruby>学校<rt>がっこう</rt></ruby>の　ちかくに　<ruby>姉<rt>あね</rt></ruby>と　<ruby>住<rt>す</rt></ruby>んで　います。<ruby>姉<rt>あね</rt></ruby>が　いるから、［8］。</p><p>わたしは　<ruby>日本<rt>にほん</rt></ruby>で　たくさん　<ruby>友<rt>とも</rt></ruby>だちが　ほしいです。みなさん、［9］。</p><p>どうぞ　よろしく　おねがいします。</p>"
           }
         },
         {
@@ -442,7 +442,7 @@
               "html": "うちに　あそびに　<ruby>来<rt>き</rt></ruby>て　ください"
             },
             {
-              "html": "うちで　<ruby>姉<rt>あね</rt></ruby>とあそびたいです"
+              "html": "うちで　<ruby>姉<rt>あね</rt></ruby>と　あそびたいです"
             }
           ],
           "key": 3
@@ -504,13 +504,13 @@
           "id": "reading-b003",
           "type": "passage",
           "content": {
-            "html": "<p>ヤンさんの　うちは　<ruby>町<rt>まち</rt></ruby>の　<ruby>中<rt>なか</rt></ruby>の　べんりな　ところに　あります。</p><p>となりに　パンやがあります。<ruby>前<rt>まえ</rt></ruby>は　はなやで、はなやの　となりはさかなやです。<ruby>近<rt>ちか</rt></ruby>くに　くすりやと　にくやも　あります。ゆうびんきょくと　びょういんも　あります。</p><p><ruby>今日<rt>きょう</rt></ruby>の　ゆうがた、ヤンさんの　<ruby>友<rt>とも</rt></ruby>だちが　あそびに　<ruby>来<rt>き</rt></ruby>ます。ヤンさんは　とりにくの　りょうりと　さかなの　りょうりを　<ruby>作<rt>つく</rt></ruby>ります。れいぞうこの　<ruby>中<rt>なか</rt></ruby>に　とりにくと　さかなが　ありませんから、ヤンさんは　これから　<ruby>買<rt>か</rt></ruby>いものに　でかけます。それから、ゆうびんきょくへ　<ruby>行<rt>い</rt></ruby>って　きってを　<ruby>買<rt>か</rt></ruby>います。</p>"
+            "html": "<p>ヤンさんの　うちは　<ruby>町<rt>まち</rt></ruby>の　<ruby>中<rt>なか</rt></ruby>の　べんりな　ところに　あります。</p><p>となりに　パンやが　あります。<ruby>前<rt>まえ</rt></ruby>は　はなやで、はなやの　となりは　さかなやです。<ruby>近<rt>ちか</rt></ruby>くに　くすりやと　にくやも　あります。ゆうびんきょくと　びょういんも　あります。</p><p><ruby>今日<rt>きょう</rt></ruby>の　ゆうがた、ヤンさんの　<ruby>友<rt>とも</rt></ruby>だちが　あそびに　<ruby>来<rt>き</rt></ruby>ます。ヤンさんは　とりにくの　りょうりと　さかなの　りょうりを　<ruby>作<rt>つく</rt></ruby>ります。れいぞうこの　<ruby>中<rt>なか</rt></ruby>に　とりにくと　さかなが　ありませんから、ヤンさんは　これから　<ruby>買<rt>か</rt></ruby>いものに　でかけます。それから、ゆうびんきょくへ　<ruby>行<rt>い</rt></ruby>って　きってを　<ruby>買<rt>か</rt></ruby>います。</p>"
           }
         },
         {
           "id": "reading-q002",
           "stem": {
-            "html": "11. つぎの　<ruby>中<rt>なか</rt></ruby>で、ヤンさんの　うちから　いちばん　<ruby>近<rt>ちか</rt></ruby>い　<ruby>店<rt>みせ</rt></ruby>は　どれですか。"
+            "html": "11. つぎの　<ruby>中<rt>なか</rt></ruby>で、ヤンさんの　うちから　いちばん　<ruby>近<rt>ちか</rt></ruby>い　<ruby>店<rt>みせ</rt></ruby>は　どれ　ですか。"
           },
           "options": [
             "にくや",
@@ -546,7 +546,7 @@
           "id": "reading-b004",
           "type": "passage",
           "content": {
-            "html": "<p>あした　いちご<ruby>山<rt>やま</rt></ruby>へ　<ruby>行<rt>い</rt></ruby>きます。<ruby>東京駅<rt>とうきょうえき</rt></ruby>から　<ruby>中川駅<rt>なかがわえき</rt></ruby>まで　<ruby>電車<rt>でんしゃ</rt></ruby>で　<ruby>行<rt>い</rt></ruby>って、<ruby>中川駅<rt>なかがわえき</rt></ruby>から　いちご<ruby>山<rt>やま</rt></ruby>まで　バスで　<ruby>行<rt>い</rt></ruby>きます。<br>いちご<ruby>山<rt>やま</rt></ruby>に　<ruby>午前<rt>ごぜん</rt></ruby>11<ruby>時<rt>じ</rt></ruby>　ごろ　<ruby>着<rt>つ</rt></ruby>きたいです。<br>そして、<ruby>電車<rt>でんしゃ</rt></ruby>は　<ruby>安<rt>やす</rt></ruby>いほうが　いいです。</p>"
+            "html": "<p>あした　いちご<ruby>山<rt>やま</rt></ruby>へ　<ruby>行<rt>い</rt></ruby>きます。<ruby>東京駅<rt>とうきょうえき</rt></ruby>から　<ruby>中川駅<rt>なかがわえき</rt></ruby>まで　<ruby>電車<rt>でんしゃ</rt></ruby>で　<ruby>行<rt>い</rt></ruby>って、<ruby>中川駅<rt>なかがわえき</rt></ruby>から　いちご<ruby>山<rt>やま</rt></ruby>まで　バスで　<ruby>行<rt>い</rt></ruby>きます。<br>いちご<ruby>山<rt>やま</rt></ruby>に　<ruby>午前<rt>ごぜん</rt></ruby>　11<ruby>時<rt>じ</rt></ruby>　ごろ　<ruby>着<rt>つ</rt></ruby>きたいです。<br>そして、<ruby>電車<rt>でんしゃ</rt></ruby>は　<ruby>安<rt>やす</rt></ruby>いほうが　いいです。</p>"
           }
         },
         {
@@ -1118,7 +1118,7 @@
       },
       "vocab-b005": {
         "field": "content",
-        "content_sha256": "23fbea66c19dbf2b70315ca00ae4b5abfb8df620550c00716a13fee1048ae43a",
+        "content_sha256": "001c466c5fd0873cfacd67c67a8f5be5339b14d637f0f42e516d78595b9692c9",
         "replace_inline_box_wrappers": true,
         "markers": [
           {
@@ -1202,7 +1202,7 @@
         "title_placement": "preserve"
       },
       "vocab-b005": {
-        "content_sha256": "23fbea66c19dbf2b70315ca00ae4b5abfb8df620550c00716a13fee1048ae43a",
+        "content_sha256": "001c466c5fd0873cfacd67c67a8f5be5339b14d637f0f42e516d78595b9692c9",
         "evidence": {
           "source_path": "src/OfficialWorkbooks/2009/N5/N5-mondai.pdf",
           "source_sha256": "df1bcb6e16629c68dba059b71a9f8b3dc7d4fc40dadb53f2b562fc8274b8f95f",

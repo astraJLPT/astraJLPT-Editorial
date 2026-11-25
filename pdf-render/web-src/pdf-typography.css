@@ -8,6 +8,26 @@
 .tex-latin{font-size:calc(1em / var(--glyph-scale));font-family:BodyLatin,Body,serif;line-height:0}
 .content-digits,.content-digits>span{text-indent:0;white-space:nowrap;line-height:1;vertical-align:baseline}
 .authored-word-gap,.tex-word-space{display:inline-block;width:calc(var(--nominal-em) * var(--word-space-em,0));height:0;overflow:hidden;vertical-align:baseline}
+/* Word and sentence spaces leave the line height to the heading. */
+.section-heading .authored-word-gap{display:inline}
+.section-heading .authored-word-gap::after{content:" "}
+.heading-word-space,.section-heading .authored-word-gap::after{font-size:0;line-height:0;word-spacing:var(--heading-space-width,calc(var(--local-em) * var(--word-space-em,0)))}
+.heading-wide-space{font-size:var(--local-em);line-height:0}
+.wakachi{white-space:nowrap}
+:is(.example-options,.example-native-options,.example-source-options)>span:has(.wakachi){min-width:0}
+.wakachi-wrap,.wakachi-wrap .heading-no-break{white-space:normal;overflow-wrap:anywhere}
+@media(max-width:650px){
+  html:not(.js) .wakachi,html:not(.js) .wakachi .heading-no-break{white-space:normal;word-break:keep-all;overflow-wrap:break-word;overflow-wrap:anywhere}
+}
+:is(.tex-word-space,.mixed-word-space,.authored-word-gap):is(.wakachi-gap,.wakachi-wide-gap){display:inline;height:auto;overflow:visible;line-height:0}
+.wakachi-gap{font-size:0;word-spacing:var(--source-space-width,calc(var(--nominal-em) * var(--word-space-em,0)))}
+.wakachi-gap.authored-word-gap::after{content:" "}
+.wakachi-wide-gap{font-size:var(--nominal-em)}
+@supports (-webkit-ruby-position:before) and (not (ruby-position:inter-character)){
+  @property --heading-ruby-pitch{syntax:"<length>";inherits:true;initial-value:0px}
+  .heading-wide-space::after{margin-inline-start:-1px}
+  .heading-wide-space::before{margin-inline-end:-1px}
+}
 .section-heading{--nominal-em:var(--local-em);--word-space-em:var(--heading-word-space-em,0)}
 .booklet-title{--nominal-em:calc(var(--point) * var(--heading-pt));font-family:Body,serif;font-size:calc(var(--glyph-point) * var(--heading-pt));font-weight:400;line-height:max(1.5em,calc(var(--point) * var(--heading-baseline-pt) * var(--line-preset) * var(--line-adjust)));text-align:center;text-indent:0;margin:0 0 calc(var(--point) * var(--booklet-title-after-pt,12) * var(--block-preset) * var(--block-adjust))}
 .paper .heading-introduction{font-family:Body,serif;font-size:calc(var(--glyph-point) * var(--body-pt));font-weight:400;text-indent:calc(var(--point) * var(--body-pt));margin:0 0 calc(var(--point) * var(--heading-intro-after-pt) * var(--block-preset) * var(--block-adjust))}
@@ -31,7 +51,7 @@
 .heading-no-break{white-space:nowrap}
 .heading-dot{display:inline-block;width:.5em;text-indent:-.25em;margin:0 calc(var(--local-em) * var(--heading-choice-gap-em,.5) / 2)}
 .selector-last{margin-right:.3em}
-.instruction-boundary{margin-right:.5em}
+.instruction-boundary::after{content:" ";font-size:0;line-height:0;word-spacing:calc(var(--glyph-point) * var(--heading-pt) * .5)}
 .answer-slot,.star-slot{position:relative;display:inline-grid;grid-template-columns:minmax(0,1fr);align-items:baseline;vertical-align:baseline;width:calc(var(--nominal-em) * var(--slot-width-em,2.7));height:1em;line-height:1;white-space:nowrap;overflow:visible;margin:0 calc(var(--nominal-em) * .4);border:0;color:transparent}
 /* TeX places every slot rule .25ex below the text baseline. Share that
    baseline with the glyph instead of measuring from a font-dependent box. */
@@ -42,8 +62,8 @@
 .section-heading .star-slot{--nominal-em:var(--local-em)}
 .section-heading .answer-slot{margin:0 calc(var(--local-em) * var(--heading-slot-side-em,.4));text-indent:0}
 .section-heading .star-slot{text-indent:0}
-.context-blank{display:inline-block;white-space:nowrap;text-indent:0;margin-left:calc(var(--blank-left) * 1em / var(--glyph-scale));margin-right:calc(var(--blank-right) * 1em / var(--glyph-scale))}
-.context-blank .visual-only{display:inline-flex;align-items:baseline}
+.context-blank{display:inline-block;white-space:nowrap;text-indent:0;margin-left:calc(var(--blank-left) * 1em / var(--glyph-scale))}
+.context-blank .visual-only{display:inline-flex;align-items:baseline;margin-right:calc(var(--blank-right) * 1em / var(--glyph-scale))}
 .blank-open,.blank-close{display:inline-block;width:.5em}
 .blank-open{text-indent:-.5em}
 .blank-inner{display:inline-block;width:calc(var(--blank-inner) * 1em / var(--glyph-scale))}
@@ -67,6 +87,8 @@
 .star-solution{position:absolute;bottom:0;right:0;min-height:0;margin:0;line-height:1;transform:translateY(100%);padding-top:.2em}
 .question{position:relative}
 .source-block{--nominal-em:calc(var(--point) * var(--passage-body-pt,var(--body-pt)));text-align:justify;text-justify:inter-character}
+/* Native spaced passages keep the unused width at the end of each line. */
+.source-block:where(.paragraph-flow:has(.wakachi)){text-align:start}
 .paragraph-flow p{text-indent:calc(var(--nominal-em) * var(--paragraph-indent-em,1))}
 .paragraph-flow :is(.notice-frame,.email-frame) p,.paragraph-flow .reading-notes p{ text-indent:0 }
 [data-note-definition-colon],[data-japanese-label-colon]{margin-inline:.12em;white-space:nowrap}
@@ -81,7 +103,7 @@
 .notice-title-line .tex-latin{font-family:inherit!important}
 .paper[data-narrow=true] [data-page-frame-policy]{width:100%!important;margin-left:0!important}
 .fine-adjustment{margin-top:24px}.marking-heading{padding-top:28px}
-.segmented span{color:var(--accent)}
+.segmented label>span{color:var(--accent)}
 .star-behavior{display:grid;grid-template-columns:1fr 1fr}
 .star-behavior .star-sample{color:var(--correct);font:14px/1.4 ui-monospace,Consolas,monospace}
 /* Keep historical source-sized labels and their matching hanging indents together. */
@@ -102,6 +124,30 @@
 .dialogue-utterance{min-width:0;margin-left:calc(-1 * var(--nominal-em) * var(--dialogue-continuation-pullback-em,.5));text-indent:calc(var(--nominal-em) * var(--dialogue-continuation-pullback-em,.5))}
 .dialogue-quote{display:inline-block;width:.5em;text-indent:-.5em;white-space:nowrap}
 .dialogue-scene{grid-column:1/-1;text-indent:0}
+.paper :is(p,li).wide-word-column{text-indent:0!important}
+.section-heading.wide-word-column{padding-left:0;text-indent:0}
+.section-heading.wide-word-column .heading-wide-space{display:inline-block}
+.section-heading.wide-word-column :is(.heading-label,.heading-label-visual,.wakachi,.heading-no-break,[data-bounded-word]:not(:has(*))){max-width:100%;white-space:normal;overflow-wrap:anywhere}
+.section-heading.wide-word-column>:is(.wakachi,.heading-no-break,[data-bounded-word]:not(:has(*))){display:inline-block}
+.section-heading.wide-word-column .context-blank{max-width:100%}
+.section-heading.wide-word-column .context-blank .visual-only{max-width:calc(100% - .5em)}
+.section-heading.wide-word-column .context-blank :is(.blank-open,.blank-close){flex-shrink:0}
+/* The printed choice sequence may itself be wider than a full mobile line. */
+.section-heading.wide-word-column :is(.heading-selector,.selector-source-calibrated){white-space:normal!important}
+.dialogue.wide-word-column{display:block}
+.dialogue.wide-word-column .dialogue-speaker{text-align:start}
+.dialogue.wide-word-column .dialogue-utterance{margin-left:0;text-indent:0}
+.paper .q-stem:has(.wide-word-column)>.question-content{padding-left:0;text-indent:0}
+.q-stem:has(.wide-word-column){padding-top:var(--word-label-height,1.8em);padding-top:max(var(--word-label-height,1.8em),1lh)}
+.question:has(.options-grid.wide-word-column)>.q-stem{min-height:var(--word-label-height,0px)}
+body[data-marking=margin] .question{--word-column-gutter:2.15em;--word-label-height:2.1em}
+body[data-marking=margin][data-auto-spoil=true] .question{--word-label-height:4.1em}
+.q-stem:has(.wide-word-column)>.question-content,.question .options-grid.wide-word-column{margin-left:calc(-1 * var(--word-column-gutter,0px))}
+.question .options-grid.wide-word-column{width:calc(100% + var(--word-column-gutter,0px))}
+.options-grid.wide-word-column .option-text{grid-column:1/-1;grid-row:2;margin-left:0}
+.options-grid.wide-word-column .option-feedback{grid-column:3;grid-row:1}
+/* Override printed frame padding set inline only when a whole ruby needs the room. */
+.paper :is(.reading-passage,.notice-frame).wide-word-column{padding-inline:min(.4em,4%)!important}
 /* Semantic document frames exclude their introductions, labels and notes. */
 .source-block.document-email{font-size:calc(var(--glyph-point) * var(--passage-body-pt))}
 .source-block .document-group{margin:0;text-indent:0;text-align:left}
@@ -123,9 +169,10 @@
 .worked-example:has(.star-worked-table) .table-scroll{max-width:100%}
 .worked-example{--nominal-em:calc(var(--point) * var(--example-body-pt,var(--body-pt)));border:0;border-block:calc(var(--point) * .4) solid currentColor;padding:calc(var(--point) * var(--example-top-pt,9) * var(--block-preset) * var(--block-adjust)) calc(var(--point) * 6) calc(var(--point) * var(--example-ordinary-padding-pt,9) * var(--block-preset) * var(--block-adjust));font-size:calc(var(--glyph-point) * var(--example-body-pt,var(--body-pt)));line-height:calc(var(--point) * var(--example-baseline-pt,var(--baseline-pt)) * var(--line-preset) * var(--line-adjust));text-align:left}
 .worked-example.example-without-rules{border-block:0}
-.example-source-options{padding:0;column-gap:1.5em;row-gap:0;list-style-position:inside;margin-block:calc(var(--point) * var(--example-ordinary-choices-before-pt,3)) 0}
+.example-source-options{padding:0;column-gap:1.5em;row-gap:0;list-style:none;margin-block:calc(var(--point) * var(--example-ordinary-choices-before-pt,3)) 0}
+@media(max-width:650px){.example-source-options{--example-columns:2}}
+@media(max-width:380px){.example-source-options{--example-columns:1}}
 .example-source-options>li{padding:0;min-width:0;text-indent:0}
-.example-source-options>li::marker{font-family:Choice,Body,serif}
 .worked-example p.example-explanation{text-indent:1em}
 .annotated-term,.annotation-base,.annotation-label{text-indent:0}
 .paper .annotated-term,.paper .annotation-initial{display:inline-grid;grid-template-columns:max-content;grid-template-rows:auto auto;position:relative;padding:0;white-space:nowrap;vertical-align:baseline;line-height:1.2;text-indent:0}
@@ -142,13 +189,15 @@
 .paper .example-answer-table:not([data-answer-label=false]) :is(td,th):first-child{border-right:calc(var(--point) * .4) solid currentColor}
 .worked-example .example-inline-answer-line{column-gap:calc(var(--nominal-em) * .6)}
 .worked-example .example-inline-answer-line>span:last-child{margin-left:calc(var(--nominal-em) * -.3)}
-.answer-example-label{display:inline-block;width:calc(var(--nominal-em) * var(--example-answer-label-width-em,2.8));text-align:center;text-indent:0;white-space:nowrap}
+.answer-example-label{--printed-label-width:calc(var(--nominal-em) * var(--example-answer-label-width-em,2.8));display:inline-block;width:var(--printed-label-width);text-align:center;text-indent:0;white-space:nowrap}
+.answer-example-label:has(>.wakachi){width:max-content;min-width:var(--printed-label-width)}
 .example-answer-line .answer-label-parenthesis{display:inline-block;width:.5em;text-indent:0}
 .example-answer-line .answer-label-parenthesis.open{text-indent:-.5em}
 .answer-bubble{position:relative;display:inline-flex;align-items:center;justify-content:center;width:calc(var(--nominal-em) * var(--example-bubble-width-em,.62));height:calc(var(--nominal-em) * var(--example-bubble-height-em,.92));border:0;border-radius:50%;margin:0 calc(var(--point) * var(--example-answer-colsep-pt,5));font-family:AnswerBubble,Choice,serif;font-size:var(--nominal-em);line-height:1;vertical-align:calc(var(--nominal-em) * -.12)}
 .answer-bubble:before{content:'';position:absolute;inset:calc(var(--point) * -.175);border:calc(var(--point) * .35) solid currentColor;border-radius:50%}
 .answer-bubble.filled:before{display:none}
 .answer-bubble:only-child,.answer-bubble-cell .answer-bubble{margin:0}
+.centered-bubbles .answer-bubble{display:flex}
 .inline-answer-demo .answer-bubble{margin-left:calc(var(--nominal-em) * .3);margin-right:0}
 .inline-answer-demo .answer-bubble:first-of-type{margin-left:calc(var(--nominal-em) * .4)}
 /* fontspec resolves the glyph's em after switching to the FakeStretch font;
@@ -174,7 +223,7 @@
 .old-glossary-caption>.old-note-label{white-space:nowrap}
 .old-connected-sequence>p{line-height:calc(var(--point) * 15)!important}
 .star-unavailable{display:none;position:absolute;bottom:0;right:0;transform:translateY(100%);margin:0;font-size:10px;line-height:1.3;color:var(--muted)}
-body:has(#show-star-order:checked) .question:has(.answer-radio[data-correct="true"]:checked) .star-unavailable{display:block}
+
 .native-arrow{color:transparent;position:relative}.native-arrow:after{content:'';display:block;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:var(--arrow-width);height:var(--arrow-height);background:var(--text);clip-path:polygon(35% 0,65% 0,65% 60%,100% 60%,50% 100%,0 60%,35% 60%)}
 /* Authored document roles share the same typography and reader controls. */
 .document-metadata-row,.notice-label-row{display:grid;align-items:baseline;text-indent:0;text-align:left}
@@ -247,5 +296,4 @@ rt{padding-bottom:var(--ruby-intergap,0)}
 .old-pie-legend{display:flex;flex-wrap:wrap;justify-content:center;gap:1em;font-size:calc(var(--glyph-point) * 9.5);line-height:calc(var(--point) * 14)}
 .old-pie-legend i{display:inline-block;width:calc(var(--point) * 10);height:calc(var(--point) * 7);border:calc(var(--point) * .35) solid currentColor;margin-right:.35em}
 .pie-fill-0{background:currentColor}.pie-fill-1{background:radial-gradient(currentColor 12%,transparent 16%) 0 0 / calc(var(--point) * 2) calc(var(--point) * 2)}
-.example-source-options>li::marker{content:""}
 .example-source-options>li::before{content:counter(list-item);display:inline-block;width:1em;margin-right:1em;font-family:Choice,Body,serif;font-size:var(--nominal-em);font-feature-settings:var(--choice-features);transform:scaleX(var(--choice-scale,1));transform-origin:center}

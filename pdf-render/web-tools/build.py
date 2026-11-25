@@ -26,7 +26,7 @@ from tex_html import render_inline, render_heading, render_section_heading, labe
 from semantic_html import (render_dialogue, prepare_semantic_value, mark_introduction,
                            wrap_tail, paired_frames, email_frame,
                            present_tables, prepare_table_values, has_printed_options, audit_layout, add_style, pt, gap)
-from settings_ui import settings as settings_markup, MARKS
+from settings_ui import settings as settings_markup, install_rubi_controls, MARKS
 from review_ui import registers as review_registers
 from theme_colors import prepare as prepare_themes, theme_css
 from size_report import measure_site
@@ -346,7 +346,8 @@ def prepare_block(m, item, task):
         opts=''
     if item.get('type')=='example':
         from example_html import present as present_example
-        custom+=present_example(soup,style,meta,task)+';'
+        center_bubbles=date_info(m['unit'])['catalog_level'] in {'N4','N5','old-3','old-4'}
+        custom+=present_example(soup,style,meta,task,center_bubbles=center_bubbles)+';'
         if item.get('options') and has_printed_options(value,item['options']):
             from example_html import bind_printed_options
             bind_printed_options(soup,item,m)
@@ -440,6 +441,8 @@ def question(m,q,task,orders):
     return present_question(markup,m,q,task,kind)+figure(m,qid)
 
 def paper(m,orders):
+    from wakachi import spaced_task
+    spaced_model={**m,'modern_wakachi':True}
     parts=[];nav=[];questions=[];current=''
     for s in m['document']['sections']:
         if not s['items'] and not plain(s['heading']).strip():
@@ -450,9 +453,10 @@ def paper(m,orders):
         style=model.merge_defaults(m['style'],m['style']['task_overrides'].get(task,{}))
         style.update(m['web_metrics']['sections'][s['id']])
         section=[f'<section id="{s["id"]}" class="exam-section" data-task="{task}" style="{ptvars(style)}">{render_section_heading(s["heading"],m,s["id"])}']
+        field_model=spaced_model if spaced_task(m,task) else m
         for it in physical_items(s,task):
-            if 'stem'in it:section.append(question(m,it,task,orders));questions.append({'id':it['id'],'key':it['key'],'binding':model.digest(it)})
-            else:section.append(prepare_block(m,it,task))
+            if 'stem'in it:section.append(question(field_model,it,task,orders));questions.append({'id':it['id'],'key':it['key'],'binding':model.digest(it)})
+            else:section.append(prepare_block(field_model,it,task))
         section.append('</section>')
         from historical_flow_html import group_figures
         parts.append(group_figures(''.join(section),m))
@@ -473,6 +477,8 @@ def shell(title,body,themes,prefix='',reader=False,data=None,nav='',catalog=Fals
     attrs='class="reader-page"'if reader else 'class="catalog-page"'
     header_settings='' if reader else settings_markup(themes,labelled=catalog)
     result=f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark light"><title>{esc(title)} · astraJLPT</title><link rel="icon" href="{prefix}assets/favicon.png" type="image/png"><link rel="stylesheet" href="{prefix}{font_stylesheet}"><link rel="stylesheet" href="{prefix}assets/themes.css"><noscript><link rel="stylesheet" href="{prefix}assets/themes-no-script.css"></noscript><link rel="stylesheet" href="{prefix}assets/answer-marking.css"><link rel="stylesheet" href="{prefix}assets/site.css"></head><body data-theme="astraJLPT_dark" {attrs}><a class="skip-link" href="#content">Skip to content</a><header class="topbar" id="page-top" tabindex="-1"><a class="wordmark" id="brand" href="{prefix}index.html">astra<span>JLPT</span></a>{nav}{header_settings}</header>{body}<footer class="site-footer"><button class="boar-unlock js-only" id="boar" aria-label="Toggle developer mode and older chapters" aria-pressed="false"><img src="{prefix}assets/boar.png" alt="" width="66" height="44"></button><span class="developer-only">Developer mode</span></footer><div id="toast" role="status" class="toast" hidden></div><script id="page-data" type="application/json">{safe_json(data or {})}</script><script id="theme-data" src="{prefix}assets/theme-data.js" defer></script><script src="{prefix}assets/app.js" defer></script></body></html>'''
+    if reader:
+        result=install_rubi_controls(result)
     result=result.replace('</head>','<link rel="stylesheet" href="'+prefix+'assets/pdf-typography.css"></head>')
     if not catalog:
         result=re.sub(r'<button class="boar-unlock.*?</button>','',result)
@@ -483,7 +489,7 @@ def shell(title,body,themes,prefix='',reader=False,data=None,nav='',catalog=Fals
 def font_assets(models):
     from fontTools import subset
     from fontTools.ttLib import TTFont
-    text=''.join(json.dumps(m['document'],ensure_ascii=False) for m in models)+'注0123456789（）１２３４例答正しい★_ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
+    text=''.join(json.dumps(m['document'],ensure_ascii=False) for m in models)+'見みせるない注0123456789（）１２３４例答正しい★_ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
     from image_html import artwork
     text+=''.join(a.get('text','')for m in models for a in artwork(m).values())
     specs={};profiles={};unit_profiles={};registry={};subset_targets={};derivations={}
@@ -565,14 +571,13 @@ def reviews(m,entry,themes,font_stylesheet,assessment):
     body=f'<main id="content" class="review-page"><div class="review-content"><a href="../levels/{date['catalog_level']}.html">← {date['level']} papers</a><h1>{date['level']} · {date['sitting']}</h1><p>Uncertainty index: <strong>{score}</strong> · {counts["principal_differences"]} differences · {statuses["unresolved"]} unresolved · {statuses["provisional_fix"]} provisional fixes</p>{breakdown}<p>This is an editorial evidence assessment, not a probability, an error rate or a practice score.</p>{history}<a href="../{target}" target="_blank" rel="noopener">Open principal source ↗</a>{source_list}{content}</div></main>'
     write(f'reviews/{unit}.html',shell('Developer review · '+unit,body,themes,'../',data={'review':True},font_stylesheet=font_stylesheet));return counts
 
-def paper_navigation(unit,date,variant='regular'):
+def paper_navigation(unit,date):
     from source_links import official_link
-    if variant not in ('regular','norubi'):raise ValueError('Unknown reader variant')
-    directory='pdfs-norubi' if variant=='norubi' else 'pdfs'
-    label=' <span class="rendition-label">· no rubi</span>' if variant=='norubi' else ''
+    label='<span class="rendition-label" data-rubi-only="hide"> · no rubi</span>'
     return ('<div class="paper-nav"><a href="../levels/'+date['catalog_level']+'.html">← '+date['level']+' papers</a><span>'
             +date['level']+' <span class="muted">/</span> '+date['sitting']+label+'</span>'
-            +f'<a href="../{site_pdf(unit,variant)}" target="_blank" rel="noopener">PDF ↗</a>'
+            +f'<a data-rubi-only="show" href="../{site_pdf(unit)}" target="_blank" rel="noopener">PDF ↗</a>'
+            +f'<a data-rubi-only="hide" href="../{site_pdf(unit,"norubi")}" target="_blank" rel="noopener">PDF ↗</a>'
             +(official_link(unit) if unit in RENAMED else '')+f'<a class="developer-only" href="../reviews/{unit}.html">Review</a></div>')
 
 def main():

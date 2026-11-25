@@ -35,7 +35,7 @@ def preserve_answer_bindings(m, questions):
               for q in physical_items(s,m['tasks'][s['id']]) if 'stem' in q]
     if digest(semantic)!=binding['questions_sha256']:
         raise ValueError('Reader question content changed; review answer-binding migration')
-    path=ROOT/'astraJLPT'/html_path(m['unit'],mode)
+    path=ROOT/'astraJLPT'/html_path(m['unit'])
     saved=read_page_data(path.read_text('utf-8'))['questions']
     # Practice domains are derived from sections after the answer tokens are bound.
     tokens=[{k:v for k,v in q.items() if k!='domain'} for q in saved]
@@ -108,7 +108,7 @@ def physical_items(section, task):
     return ([i for i in items if 'stem' in i]+[i for i in items if 'content' in i]) if task=='information_retrieval' else items
 
 def resolve_metrics(m, pdf):
-    style=m['style']; sections={}; items={}
+    style=m['style']
     # LuaTeX-ja's Japanese scale is visible in the released PDF. Measure that
     # release, rather than borrowing the design lab's sample font size.
     face=font_name(m)
@@ -121,7 +121,12 @@ def resolve_metrics(m, pdf):
     candidates=[size for size in sizes if .9 < size/expected < 1.05]
     if not candidates:raise ValueError('No bound body-font size found in PDF: '+m['unit']+' '+face)
     body_bp=min(candidates,key=lambda x:abs(x-expected*.9622))
-    scale=body_bp/expected
+    return {**layout_metrics(m,body_bp/expected),'measured_body_bp':body_bp,'measured_body_font':face}
+
+
+def layout_metrics(m,scale):
+    """Resolve reader geometry with the Japanese glyph scale for this rendition."""
+    style=m['style']; sections={}; items={}
     groups,_,_=question_groups(m)
     gaps={qid:g['question_gap_pt'] for g in groups.values() for qid in g['items']}
     seen_section=False
@@ -178,7 +183,7 @@ def resolve_metrics(m, pdf):
                 vals.update({k:bs[k] for k in ['paragraph_skip_pt'] if k in bs})
                 items[iid]=vals
                 pending=boundary.get('following_question_gap_pt',ss.get('following_question_gap_pt'))
-    return {'tex_pt_to_css_px':96/72.27,'japanese_glyph_scale':round(scale,8),'measured_body_bp':body_bp,'measured_body_font':face,
+    return {'tex_pt_to_css_px':96/72.27,'japanese_glyph_scale':round(scale,8),
             'presets':PRESETS,'sections':sections,'items':items,
             'page_break_policy':{'automatic_extra_pt':0,'structural_start_baselines':2,
                 'standalone_notice_baselines':2,

@@ -193,6 +193,20 @@ def prepare_inline(value, binding, source_value=None):
         for index,(base,node) in enumerate(atoms):
             if index==at:parent.append(marker)
             parent.append(node)
+    for quote in binding.get('fullwidth_corner_quotes', []):
+        if not isinstance(quote, str) or not re.fullmatch(r'「[^「」\n]+」', quote):
+            raise ValueError('Expected one corner-quoted expression')
+        parent, atoms, offsets, start = exact_inline_atoms(soup, quote)
+        brackets = {offsets.index(start), offsets.index(start + len(quote) - 1)}
+        parent.clear()
+        for index, (base, node) in enumerate(atoms):
+            if index in brackets:
+                if not isinstance(node, NavigableString) or base not in ('「', '」'):
+                    raise ValueError('A corner bracket must be a plain punctuation character')
+                bracket = soup.new_tag('span', attrs={'data-fullwidth-bracket': 'true'})
+                bracket.append(node)
+                node = bracket
+            parent.append(node)
     if binding.get('range_tokens'):
         from range_tokens import prepare
         prepare(soup,binding['range_tokens'])

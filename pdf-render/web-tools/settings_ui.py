@@ -1,10 +1,37 @@
 """Settings markup; preview samples use the reader's marking rules."""
 from html import escape
+import re
 
 MARKS=[('cell','Cell'),('rounded-cell','Rounded Cell'),('hollow-cell','Hollow Cell'),
        ('fill','Fill'),('rounded-fill','Rounded Fill'),('hollow-rounded-cell','Hollow Rounded Cell'),
        ('neon','Neon'),('flame','Flame'),('great-flame','Great Flame'),
        ('bold','Bold'),('number','Number'),('margin','Margin')]
+
+RUBI_INPUTS=('<input class="sr-only" id="rubi-show" type="radio" name="rubi" value="show" aria-label="Show furigana" tabindex="-1" checked>'
+             '<input class="sr-only" id="rubi-hide" type="radio" name="rubi" value="hide" aria-label="Hide furigana" tabindex="-1">')
+
+# Run before the reader header and paper can paint, including in standalone HTML.
+RUBI_STARTUP = """<script id="rubi-startup">try{const p=JSON.parse(localStorage.getItem('astraJLPT:web:v1:preferences'));if(p?.remember===true&&p.values?.rubi==='hide'){document.body.dataset.rubi='hide';document.getElementById('rubi-hide').checked=true}}catch{}</script>"""
+
+
+def install_rubi_controls(markup):
+    before, header, after = markup.partition('<header')
+    if not header:
+        return markup
+    before = re.sub(r'<input\b[^>]*\bid="rubi-(?:show|hide)"[^>]*>', '', before)
+    before = re.sub(r'<script id="rubi-startup">.*?</script>', '', before, flags=re.S)
+    return before + RUBI_INPUTS + RUBI_STARTUP + header + after
+
+
+RUBI_ROW='''<div class="setting-row rubi-setting"><div><h3 id="rubi-heading">rubi</h3><p>display furigana</p><noscript><a class="skip-link" href="#rubi-show">Set furigana with the arrow keys</a></noscript></div>
+<div class="segmented" role="group" aria-labelledby="rubi-heading">
+<label for="rubi-show"><span>show<small lang="ja" aria-hidden="true"><ruby>見<rt>み</rt></ruby>せる</small></span></label>
+<label for="rubi-hide"><span>hide<small lang="ja" aria-hidden="true">見せない</small></span></label></div></div>'''
+
+ANSWER_MODE_ROW='''<div class="setting-row"><div><h3>answer mode</h3><p>auto-grade immediately shows whether your answer is correct or wrong. exam mode hides them and you can check your answers with “Grade now”.</p></div>
+<div class="segmented grade-behavior" role="group" aria-label="answer mode">
+<label><input type="radio" name="auto-grade" value="show" checked><span>auto-grade<small aria-hidden="true"><b>✓</b> <b class="wrong-badge">✕</b></small></span></label>
+<label><input type="radio" name="auto-grade" value="hide"><span>exam mode<small aria-hidden="true"><i class="grade-button sample-button">Grade now</i> ⟶ <b>✓</b> <b class="wrong-badge">✕</b></small></span></label></div></div>'''
 
 def settings(themes,reader=False,labelled=False):
     def cards(ts):
@@ -27,11 +54,11 @@ def settings(themes,reader=False,labelled=False):
             spacing+=f'<label><input type="radio" name="spacing" value="{value}"'+(' checked'if value=='standard'else '')+f'><span>{label}<small>{ratio}</small></span></label>'
         spacing+='''</div></div>
 '''
-        content+='''<section data-settings="reading"><div class="setting-row"><div><h3>text size</h3><p>100% uses the PDF’s type size. Auto uses larger text on narrow screens and returns to 100% as space allows. Changing text size reflows words, independently of paper zoom.</p></div><div><label class="range-label">text size <output id="text-output">auto</output><input id="text-size" type="range" min="25" max="500" value="100"></label><div class="button-row"><button type="button" id="auto-text">auto</button><button type="button" id="source-text">100%</button></div></div></div>
+        content+='<section data-settings="reading">'+RUBI_ROW+'''<div class="setting-row"><div><h3>text size</h3><p>100% uses the PDF’s type size. Auto uses larger text on narrow screens and returns to 100% as space allows. Changing text size reflows words, independently of paper zoom.</p></div><div><label class="range-label">text size <output id="text-output">auto</output><input id="text-size" type="range" min="25" max="500" value="100"></label><div class="button-row"><button type="button" id="auto-text">auto</button><button type="button" id="source-text">100%</button></div></div></div>
 <div class="setting-row"><div><h3>paper zoom</h3><p>Auto adapts to your screen, enlarging up to 140%. Adjusting its slider uses spare side margins before scrolling becomes necessary. Choose 100% for the PDF’s fixed A4 size, or fit width to fit A4 to your screen.</p></div><div><label class="range-label">paper zoom <output id="zoom-output">auto</output><input id="paper-zoom" type="range" min="25" max="500" value="100"></label><div class="button-row"><button type="button" data-zoom="auto">auto</button><button type="button" data-zoom="fit">fit width</button><button type="button" data-zoom="reference">100%</button></div></div></div>
 <div class="setting-row"><div><h3>paper border</h3><p>Show an outline around the paper.</p></div><label class="switch"><input id="visible-paper" type="checkbox">show paper border</label></div>
 '''+spacing+'''<details class="fine-adjustment"><summary>fine spacing adjustments</summary><p class="control-help">100% matches the PDF spacing. Adjusting either slider creates custom spacing.</p><label class="range-label">line spacing <output id="line-output">90%</output><input id="line-adjust" type="range" min="10" max="200" value="90"></label><label class="range-label">block gaps <output id="block-output">75%</output><input id="block-adjust" type="range" min="10" max="200" value="75"></label></details></section>
-<section data-settings="marking"><div class="setting-row"><div><h3>STAR behavior</h3><p>Show the correct order for STAR questions only when you choose the correct answer.</p></div><div class="segmented star-behavior"><label><input id="show-star-order" type="radio" name="star-behavior" value="show" checked><span>show<small class="star-sample">4 → 3 → 2 → 1</small></span></label><label><input type="radio" name="star-behavior" value="hide"><span>hide<small>keep the order hidden</small></span></label></div></div><div class="setting-heading marking-heading"><h3>answer marking</h3></div><div class="marking-grid">'''
+<section data-settings="marking"><div class="setting-row"><div><h3>STAR behavior</h3><p>Show the full order when you choose the correct answer or auto-spoil reveals it.</p></div><div class="segmented star-behavior"><label><input id="show-star-order" type="radio" name="star-behavior" value="show" checked><span>show<small class="star-sample">4 → 3 → 2 → 1</small></span></label><label><input type="radio" name="star-behavior" value="hide"><span>hide<small>keep the order hidden</small></span></label></div></div><div class="setting-heading marking-heading"><h3>answer marking</h3></div><div class="marking-grid">'''
         for key,label in MARKS:
             samples=''
             for correct,number,word in [('true','1','正しい'),('false','2','まちがい')]:
@@ -39,16 +66,16 @@ def settings(themes,reader=False,labelled=False):
                 samples+=f'<span class="sample-question" data-correct="{correct}"><span class="sample-margin">{number}<small>{symbol}</small></span><span class="sample-option" data-correct="{correct}"><span class="option-number">{number}</span><span class="option-text">{word}</span><span class="option-feedback">{symbol}</span></span></span>'
             content+=f'<label class="mark-choice" data-marking="{key}"><input type="radio" name="marking" value="{key}"'+(' checked'if key=='cell'else '')+f'><span class="mark-name">{label.lower()}</span><span class="mark-preview" data-style="{key}" lang="ja" aria-hidden="true">{samples}</span></label>'
         content+='</div></section>'
-        content=content.replace('<section data-settings="marking">', '''<section data-settings="marking"><div class="setting-row"><div><h3>auto-grade</h3><p>Immediately show whether your answer is correct or wrong. When hidden, you can check your answers with “Grade now”.</p></div><div class="segmented grade-behavior"><label><input type="radio" name="auto-grade" value="show" checked><span>show<small class="grade-sample" aria-hidden="true"><b>✓</b> <b>✕</b></small></span></label><label><input type="radio" name="auto-grade" value="hide"><span>hide<small>keep the grade hidden</small></span></label></div></div>''')
+        content=content.replace('<section data-settings="marking">','<section data-settings="marking">'+ANSWER_MODE_ROW)
     content+=timer_settings(reader)
-    content+='''<section data-settings="browser"><div class="setting-row js-only"><div><h3>remember this browser</h3><p id="save-status">Saving is on by default. No account required.</p></div><label class="switch"><input id="remember" type="checkbox" checked>save preferences, answers, timers and position</label></div><div class="button-row browser-actions js-only"><button id="reset-preferences" type="button">reset preferences</button><button id="forget" type="button">forget saved data</button></div><div class="developer-only developer-settings"><h3>developer mode</h3><p>Principal differences and editorial cases are visible. This local switch is not authentication.</p><button id="disable-dev" type="button">hide developer tools</button></div></section>'''
+    content+='''<section data-settings="browser"><div class="setting-row js-only"><div><h3>(danger zone) remember this browser</h3><p id="save-status">Saving is on by default. No account required.</p></div><label class="switch"><input id="remember" type="checkbox" checked>save settings, answers, timers and position</label></div><div class="button-row browser-actions js-only"><button id="reset-preferences" type="button">reset settings</button><button id="forget" type="button">forget all saved data</button></div><div class="developer-only developer-settings"><h3>developer mode</h3><p>Principal differences and editorial cases are visible. This local switch is not authentication.</p><button id="disable-dev" type="button">hide developer tools</button></div></section>'''
     label='<span class="settings-label-text">settings</span>' if reader or labelled else '<span class="sr-only">Settings</span>'
     return '<details id="settings" class="settings"><summary aria-label="Open settings" title="Settings"><span aria-hidden="true">⚙</span>'+label+'</summary><div class="settings-panel"><div class="settings-title"><h2>settings</h2><button type="button" id="close-settings" class="js-only" aria-label="Close settings">×</button></div>'+content+'</div></details>'
 
 
 def timer_settings(reader):
-    content='''<section data-settings="timer" class="js-only"><div class="setting-row"><div><h3>timer</h3><p>Start a timer when you open a paper.</p></div><div class="segmented"><label><input type="radio" name="timer-enabled" value="yes" checked><span>enabled</span></label><label><input type="radio" name="timer-enabled" value="no"><span>disabled</span></label></div></div>
-<div id="timer-settings"><div class="setting-row"><div><h3>banner controls</h3><p>Show pause/resume and reset beside the timer.</p></div><div class="segmented"><label><input type="radio" name="timer-controls" value="show"><span>show</span></label><label><input type="radio" name="timer-controls" value="hide" checked><span>hide</span></label></div></div>
+    content='''<section data-settings="timer" class="js-only"><div class="setting-row"><div><h3>timer</h3><p>Show the paper timer. Time used is recorded even when the timer is hidden.</p></div><div class="segmented"><label><input type="radio" name="timer-enabled" value="yes" checked><span>enabled</span></label><label><input type="radio" name="timer-enabled" value="no"><span>disabled</span></label></div></div>
+<div id="timer-settings"><div class="setting-row"><div><h3>banner controls</h3><p>Show pause/resume and reset beside the timer.</p></div><div class="segmented"><label><input type="radio" name="timer-controls" value="show" checked><span>show</span></label><label><input type="radio" name="timer-controls" value="hide"><span>hide</span></label></div></div>
 <div class="setting-row"><div><h3>timer behavior</h3><p>Count down from the time limit or count up from zero. Switching preserves your elapsed time.</p></div><div class="segmented"><label><input type="radio" name="timer-direction" value="down" checked><span>count down</span></label><label><input type="radio" name="timer-direction" value="up"><span>count up</span></label></div></div>'''
     if reader:
         content+='''<div class="setting-row timer-adjust"><div><h3>adjust timer</h3><p>Set a shorter challenge or adjust your current time.</p></div><div class="timer-adjust-controls"><span class="sr-only" id="timer-format-help">Enter hours:minutes:seconds.</span>

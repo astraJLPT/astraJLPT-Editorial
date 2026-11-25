@@ -858,7 +858,7 @@
         {
           "id": "reading-q017",
           "stem": {
-            "html": "（会社で）<br><ruby>山下<rt>やました</rt></ruby>「<ruby>森<rt>もり</rt></ruby>さん、ちょっと そうだんしたい ことが あるんですが、あした 時間が ありますか。」<br><ruby>森<rt>もり</rt></ruby>「ええ。4時まで _ _ ★ _ ですよ。」"
+            "html": "（会社で）<br><ruby>山下<rt>やました</rt></ruby>「<ruby>森<rt>もり</rt></ruby>さん、ちょっと そうだんしたいことが あるんですが、あした 時間が ありますか。」<br><ruby>森<rt>もり</rt></ruby>「ええ。4時まで _ _ ★ _ ですよ。」"
           },
           "options": [
             "だいじょうぶ",
@@ -876,7 +876,7 @@
               1
             ],
             "star_position": 3,
-            "question_sha256": "b362060b63dce943e611ee76a0823de46a1eba3f84fdea63868ad5c1ca240587",
+            "question_sha256": "10622911b147a46239331d1ba52348929476e818e7c61277ef600a76909c224a",
             "order_evidence": [
               {
                 "method": "independent_linguistic_review",
@@ -891,7 +891,20 @@
                 ],
                 "reviewed_question_sha256": "b362060b63dce943e611ee76a0823de46a1eba3f84fdea63868ad5c1ca240587",
                 "basis": "Blind initial judgment; high confidence. 4時までだったらいつでもだいじょうぶ.",
-                "review_binding_sha256": "3c8c820166ada3e33561c9b0347c90f852d40d9db7c64d0a6f85e6daa931814d"
+                "review_binding_sha256": "3c8c820166ada3e33561c9b0347c90f852d40d9db7c64d0a6f85e6daa931814d",
+                "reviewed_question": {
+                  "id": "reading-q017",
+                  "stem": {
+                    "html": "（会社で）<br><ruby>山下<rt>やました</rt></ruby>「<ruby>森<rt>もり</rt></ruby>さん、ちょっと そうだんしたい ことが あるんですが、あした 時間が ありますか。」<br><ruby>森<rt>もり</rt></ruby>「ええ。4時まで _ _ ★ _ ですよ。」"
+                  },
+                  "options": [
+                    "だいじょうぶ",
+                    "でも",
+                    "だったら",
+                    "いつ"
+                  ],
+                  "key": 2
+                }
               },
               {
                 "method": "independent_linguistic_review",
@@ -906,7 +919,20 @@
                 ],
                 "reviewed_question_sha256": "b362060b63dce943e611ee76a0823de46a1eba3f84fdea63868ad5c1ca240587",
                 "basis": "Blind initial judgment; high confidence. 4時までだったらいつでもだいじょうぶ expresses availability.",
-                "review_binding_sha256": "c0237776d356c6a3a06d8c5e1df16923f1b34f1a31de15eb59b8d967ea9ab146"
+                "review_binding_sha256": "c0237776d356c6a3a06d8c5e1df16923f1b34f1a31de15eb59b8d967ea9ab146",
+                "reviewed_question": {
+                  "id": "reading-q017",
+                  "stem": {
+                    "html": "（会社で）<br><ruby>山下<rt>やました</rt></ruby>「<ruby>森<rt>もり</rt></ruby>さん、ちょっと そうだんしたい ことが あるんですが、あした 時間が ありますか。」<br><ruby>森<rt>もり</rt></ruby>「ええ。4時まで _ _ ★ _ ですよ。」"
+                  },
+                  "options": [
+                    "だいじょうぶ",
+                    "でも",
+                    "だったら",
+                    "いつ"
+                  ],
+                  "key": 2
+                }
               }
             ],
             "position_evidence": [
@@ -1003,7 +1029,7 @@
       "id": "reading-s04",
       "part": "reading",
       "heading": {
-        "html": "もんだい4　つぎの（1）から（3）の <ruby>文章<rt>ぶんしょう</rt></ruby>を 読んで、質問に 答えて ください。答えは 1・2・3・4から、いちばん いい ものを 一つ えらんで ください。"
+        "html": "もんだい4　つぎの（1）から（3）の<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えてください。答えは、1・2・3・4から、いちばんいいものを一つえらんでください。"
       },
       "items": [
         {
@@ -1088,7 +1114,7 @@
       "id": "reading-s05",
       "part": "reading",
       "heading": {
-        "html": "もんだい5　つぎの <ruby>文章<rt>ぶんしょう</rt></ruby>を 読んで、質問に 答えて ください。答えは 1・2・3・4から、いちばん いい ものを 一つ えらんで ください。"
+        "html": "もんだい5　つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えてください。答えは、1・2・3・4から、いちばんいいものを一つえらんでください。"
       },
       "items": [
         {
@@ -1155,7 +1181,7 @@
       "id": "reading-s06",
       "part": "reading",
       "heading": {
-        "html": "もんだい6　右のページの <ruby>絵<rt>え</rt></ruby>の 教室の <ruby>案内<rt>あんない</rt></ruby>を 見て、下の 質問に 答えて ください。答えは 1・2・3・4から、いちばん いい ものを 一つ えらんで ください。"
+        "html": "もんだい6　右のページの<ruby>絵<rt>え</rt></ruby>の教室の<ruby>案内<rt>あんない</rt></ruby>を見て、下の質問に答えてください。答えは、1・2・3・4から、いちばんいいものを一つえらんでください。"
       },
       "items": [
         {
@@ -2035,7 +2061,7 @@
           "basis": "inferred_complete_booklet_order"
         },
         "dialogue": {
-          "projection_sha256": "a9798f3bfdecf4cb95f1fa7cb9f2c613dafbe0c05e1109b63f5b5c2d1bd380f1",
+          "projection_sha256": "8a009f6e9ee768cb42ee6498b5a8076f893dff293166392e1bd1e9e84f09d0fb",
           "turns": [
             {
               "line": 1,
@@ -6170,13 +6196,13 @@
         "slot": "stem",
         "task": "sentence_composition",
         "role": "question",
-        "canonical_sha256": "60b5f0a9a8c1cf9d39e95cdb7c56dbb25240fa20fc7a1700cef4d583b313c444",
-        "rendered_sha256": "60b5f0a9a8c1cf9d39e95cdb7c56dbb25240fa20fc7a1700cef4d583b313c444",
-        "projection_sha256": "a9798f3bfdecf4cb95f1fa7cb9f2c613dafbe0c05e1109b63f5b5c2d1bd380f1",
+        "canonical_sha256": "43857a88dd938b4897cbe170e5df89c30720db48b4d0505bb874d8c36fa852fe",
+        "rendered_sha256": "43857a88dd938b4897cbe170e5df89c30720db48b4d0505bb874d8c36fa852fe",
+        "projection_sha256": "8a009f6e9ee768cb42ee6498b5a8076f893dff293166392e1bd1e9e84f09d0fb",
         "basis": "retain_audited_groups",
-        "rationale": "Retain existing audited groups and separate structural spacing. No missing boundary authored for this field; labels, blanks, choice fragments, titles, numeric/contact/Latin and table geometry retain their existing roles.",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
         "boundaries": [],
-        "author": "main_llm_h11"
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_12_2025",

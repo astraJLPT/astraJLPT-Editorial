@@ -4159,7 +4159,7 @@
         "rendered_sha256": "8b56cb93a79ee44b680c02c2213c642bc12137e57e1a20885df6a3af3b57a430",
         "projection_sha256": "f4fc04237ecce3c8c2b232d3d53b114cb61338175e5ef1caee6a0a4d27e55bea",
         "basis": "declared_llm_restoration",
-        "rationale": "Primary read this exact field and authored the listed phrase boundaries; preserve original separators, lexical content, ruby, mistakes, blanks and STAR slots.",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
         "boundaries": [
           {
             "offset": 10,
@@ -4178,9 +4178,15 @@
             "left": "ずきさんはあおいシャツを",
             "right": "きています。",
             "id": "7c8fdd85a9b0420e1f95"
+          },
+          {
+            "id": "b56f1ade0c97dd9ffd8d",
+            "offset": 19,
+            "left": "さんはあおいシャツをきて",
+            "right": "います。"
           }
         ],
-        "author": "main_llm_h15"
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_workbook_2012",
@@ -4654,7 +4660,7 @@
         "rendered_sha256": "84be993f1b025df41764aa3b5ce75e355808805275256df16a2dc3145b9030a3",
         "projection_sha256": "b2158ef19ea67b8b7a69fe33004da8ab3bf2c645a7b0432fd7c0cc00bab78ce9",
         "basis": "declared_llm_restoration",
-        "rationale": "Primary read this exact field and authored the listed phrase boundaries; preserve original separators, lexical content, ruby, mistakes, blanks and STAR slots.",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
         "boundaries": [
           {
             "offset": 8,
@@ -4667,9 +4673,15 @@
             "left": "15. きょうはゆきが",
             "right": "ふっています。",
             "id": "3b56a4264f13bd79e05a"
+          },
+          {
+            "id": "638c18a616552f1e46c8",
+            "offset": 14,
+            "left": ". きょうはゆきがふって",
+            "right": "います。"
           }
         ],
-        "author": "main_llm_h15"
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_workbook_2012",
@@ -5035,7 +5047,7 @@
         "rendered_sha256": "d9b3fb73a9e9eb23531d56fdc16f2cd2219d27dad9140b6def891bba2fb57690",
         "projection_sha256": "2e09cdb23804ef3de62fa64bac2fda0d6ab31e85a29de7a37b23f4972c6c5cd3",
         "basis": "declared_llm_restoration",
-        "rationale": "Primary read this exact field and authored the listed phrase boundaries; preserve original separators, lexical content, ruby, mistakes, blanks and STAR slots.",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
         "boundaries": [
           {
             "offset": 8,
@@ -5048,9 +5060,15 @@
             "left": "18. わたしはにほんの",
             "right": "まんがに（　）があります",
             "id": "c7acbe095bda0a31d9db"
+          },
+          {
+            "id": "451b159e31db96365267",
+            "offset": 20,
+            "left": "にほんのまんがに（　）が",
+            "right": "あります。"
           }
         ],
-        "author": "main_llm_h15"
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_workbook_2012",
@@ -8217,7 +8235,7 @@
         "rendered_sha256": "9adb2bf75e0c32229257e74560aa46a2f665bbda5430238d8a504ab02bb58b26",
         "projection_sha256": "477089d47d388f46ef9ac2ea362566b85feaeb4673eb63e1b7ca94898493e209",
         "basis": "declared_llm_restoration",
-        "rationale": "Primary read this exact field and authored the listed phrase boundaries; preserve original separators, lexical content, ruby, mistakes, blanks and STAR slots.",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
         "boundaries": [
           {
             "offset": 11,
@@ -8226,13 +8244,19 @@
             "id": "5406b1961bdeddc364a7"
           },
           {
+            "id": "2d04aeaea06776dd37e2",
+            "offset": 35,
+            "left": "」\n先生「『やさしい』と",
+            "right": "いう意味です。」"
+          },
+          {
             "offset": 37,
             "left": "先生「『やさしい』という",
             "right": "意味です。」",
             "id": "a7a63331312d084363c0"
           }
         ],
-        "author": "main_llm_h15"
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_workbook_2012",
@@ -9079,17 +9103,10 @@
         "canonical_sha256": "2b881bc97d79e69750e4203b40b4e2dac3d5a21ba49d510e4cfcb77711eff90f",
         "rendered_sha256": "2b881bc97d79e69750e4203b40b4e2dac3d5a21ba49d510e4cfcb77711eff90f",
         "projection_sha256": "22fdd72bc8c29ab2afa8a775bf786c57758d7fd5d5e316f44a4e64b9ae2dba4c",
-        "basis": "declared_llm_restoration",
-        "rationale": "Primary read this exact field and authored the listed phrase boundaries; preserve original separators, lexical content, ruby, mistakes, blanks and STAR slots.",
-        "boundaries": [
-          {
-            "offset": 3,
-            "left": "買った",
-            "right": "まま",
-            "id": "6bb9164f331e5428c8c6"
-          }
-        ],
-        "author": "main_llm_h15"
+        "basis": "retain_audited_groups",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
+        "boundaries": [],
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_workbook_2012",
@@ -9298,17 +9315,10 @@
         "canonical_sha256": "1e087e141866f36c422e4e9730e5088366f4b7335f5e27b14cdc62ac73de6345",
         "rendered_sha256": "1e087e141866f36c422e4e9730e5088366f4b7335f5e27b14cdc62ac73de6345",
         "projection_sha256": "bd4e979242b4ce7c774ac2d3d34ac5807ad6ba9d1862af6e5c2d66b12009339f",
-        "basis": "declared_llm_restoration",
-        "rationale": "Primary read this exact field and authored the listed phrase boundaries; preserve original separators, lexical content, ruby, mistakes, blanks and STAR slots.",
-        "boundaries": [
-          {
-            "offset": 4,
-            "left": "間に合う",
-            "right": "かもしれないから",
-            "id": "dc91e9e675d54f5e1b30"
-          }
-        ],
-        "author": "main_llm_h15"
+        "basis": "retain_audited_groups",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
+        "boundaries": [],
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_workbook_2012",
@@ -9767,7 +9777,7 @@
         "rendered_sha256": "5731bc9f683a72920d2b465a7b3e44155d4f02f714abac94a11e88a3d18c715e",
         "projection_sha256": "3876fe1fb4d892a8055d0506282152124cb45276dddbf5032ecf259271ae5590",
         "basis": "declared_llm_restoration",
-        "rationale": "Primary read this exact field and authored the listed phrase boundaries; preserve original separators, lexical content, ruby, mistakes, blanks and STAR slots.",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
         "boundaries": [
           {
             "offset": 38,
@@ -9900,6 +9910,12 @@
             "left": "すが、何でもかむので少し",
             "right": "こまっています。先週は本",
             "id": "f7620f56175b26a588ad"
+          },
+          {
+            "id": "9eb4ee35b1caa8726d95",
+            "offset": 140,
+            "left": "でもかむので少しこまって",
+            "right": "います。先週は本当にこま"
           },
           {
             "offset": 147,
@@ -10046,7 +10062,7 @@
             "id": "ee4f0a365bd1d8ad7bf5"
           }
         ],
-        "author": "main_llm_h15"
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_workbook_2012",

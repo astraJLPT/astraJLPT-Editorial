@@ -38,6 +38,49 @@ check('paper and rendition records remain independent',()=>{
   assert.equal(a.read('paper:N3_07_2011').position,42);
   assert.deepEqual(a.read('paper:N1_07_2011:norubi').answers,{});
 });
+check('current readers import the active old unit and ignore stale writes and forgotten epochs',()=>{
+  let epoch=0;
+  const unit={unit:'new-name',storage_unit:'N1_07_2011'},open=variant=>a.openPractice('paper',{...unit,variant},true,()=>epoch);
+  const before=store.writes,ruby=open('rubi'),plain=open('norubi');
+  assert.equal(store.writes,before);assert.deepEqual(ruby.read(),paper);assert.deepEqual(plain.read().answers,{});
+  a.savePaper(ruby.key,{answers:{}},epoch);
+  b.savePaper('paper:N1_07_2011',paper,epoch);assert.deepEqual(open('rubi').read(),{answers:{}});
+  epoch++;assert.equal(plain.read(),null);
+});
+check('a failed in-place save or stale import preserves the last good paper',()=>{
+  const store=new Store(),m=new Memory(()=>store,prefix),unit={unit:'test'},key=prefix+'paper:test';
+  m.savePaper('paper:test',paper,0);
+  const imported=m.openPractice('paper',unit,true,()=>0);
+  store.setItem=()=>{throw new DOMException('Storage full','QuotaExceededError');};
+  assert.equal(imported.save({...paper,position:50},0),false);
+  assert.deepEqual(JSON.parse(store.getItem(key)),paper);
+  const other={...paper,position:99};store.rows.set(key,JSON.stringify(other));
+  store.setItem=(name,value)=>{
+    if(name!==key)throw new DOMException('Storage full','QuotaExceededError');
+    store.rows.set(name,value);
+  };
+  assert.equal(imported.save({...paper,position:10},0),false);
+  assert.deepEqual(JSON.parse(store.getItem(key)),other);
+});
+check('a quota retry that still fails restores the superseded copy and retains the current save',()=>{
+  const store=new Store(),memory=new Memory(()=>store,prefix);
+  const older=prefix+'paper:test',current=prefix+'paper2:test',original=JSON.stringify(paper,null,2);
+  const migrated=JSON.stringify({...paper,position:600});
+  store.setItem(older,original);store.setItem(current,migrated);
+  const removed=[];
+  store.removeItem=key=>{removed.push(key);store.rows.delete(key);};
+  store.setItem=(key,value)=>{
+    if(key===current)throw new DOMException('Storage full','QuotaExceededError');
+    store.rows.set(key,value);
+  };
+  const record=memory.openPractice('paper',{unit:'test'},true,()=>0);
+  assert.equal(record.save({...paper,position:700},0),false);
+  assert.deepEqual(removed,[older]);assert.equal(store.getItem(older),original);assert.equal(store.getItem(current),migrated);
+  // A corrupt current copy must never authorize removing the only readable save.
+  store.rows.set(current,'{invalid');removed.length=0;
+  assert.equal(memory.openPractice('paper',{unit:'test'},true,()=>0).save(paper,0),false);
+  assert.deepEqual(removed,[]);assert.equal(store.getItem(older),original);
+});
 check('forget keeps unrelated storage and prevents stale writes',()=>{
   store.setItem('unrelated','keep');a.forget();
   assert.equal(store.getItem('unrelated'),'keep');

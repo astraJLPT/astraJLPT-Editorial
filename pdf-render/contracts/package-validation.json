@@ -355,10 +355,10 @@
   },
   "final_package_verification": {
     "result": "pass",
-    "packaged_files": 5294,
+    "packaged_files": 5007,
     "paired_pdf_files": 402,
-    "local_html_links": 19360,
-    "website_bytes": 940928463,
+    "local_html_links": 16086,
+    "website_bytes": 878442481,
     "failures": []
   },
   "documentation_and_unit_identity_migration": {
@@ -2609,5 +2609,344 @@
       "failures": []
     },
     "repository_clutter": "Only a reusable reader-controls regression test and the required no-script palette asset were added. Benchmark code, raw timing results and screenshots are outside the repository."
+  },
+  "answer_selection_and_timing": {
+    "date": "2026-11-23",
+    "checkpoint_git": "7b03a1f",
+    "result": "pass",
+    "browser_engines": [
+      "Chromium",
+      "Firefox"
+    ],
+    "reader_runtime_checks_per_engine": 79,
+    "reader_runtime_layout_baseline": "7b03a1f",
+    "percentage_and_palette_checks_per_engine": 9,
+    "palette_baseline": "5a073ba",
+    "themes_checked_with_and_without_scripting": 190,
+    "cached_shell_test_groups_per_engine": 8,
+    "legacy_answer_test_groups_per_engine": 4,
+    "practice_and_browser_storage_checks": 41,
+    "reader_sizing_checks": 557,
+    "python_tests": 84,
+    "generated_html_pages_compared": 618,
+    "reader_bodies_byte_identical": 402,
+    "previously_completed_timer_and_browser_opt_out": "pass",
+    "package_verification": {
+      "result": "pass",
+      "packaged_files": 5301,
+      "paired_pdf_files": 402,
+      "local_html_links": 19978,
+      "website_bytes": 954376536,
+      "failures": []
+    }
+  },
+  "timer_controls_and_score_details": {
+    "date": "2026-11-24",
+    "checkpoint_git": "296ba30",
+    "result": "pass",
+    "engines": [
+      "chromium",
+      "firefox"
+    ],
+    "reader_runtime_checks_per_engine": 82,
+    "banner_widths_per_edition_and_engine": 30,
+    "banner_width_range_css_px": [
+      265,
+      1280
+    ],
+    "banner_height_css_px": 48,
+    "reset_warning_cases": "Both reset buttons, unchecked confirmation, cancellation and Escape with a checked box, confirmed opt-out, settings re-enable, count-up, hidden storage, frozen time and deferred expiry.",
+    "preference_cases": "Old saved hide switches to show. A new hide survives reloads. Settings synchronize between the homepage and reader. Saving off keeps changes in memory.",
+    "cached_shell_test_groups_per_engine": 8,
+    "legacy_answer_test_groups_per_engine": 4,
+    "reader_control_checks_per_engine": 6,
+    "practice_and_browser_storage_checks": 42,
+    "reader_sizing_checks": 557,
+    "python_tests": 84,
+    "generated_html_pages_compared": 618,
+    "reader_bodies_byte_identical": 402,
+    "package_verification": {
+      "result": "pass",
+      "packaged_files": 5301,
+      "paired_pdf_files": 402,
+      "local_html_links": 19978,
+      "website_bytes": 954381460,
+      "failures": []
+    }
+  },
+  "visual_repairs_20261124": {
+    "date": "2026-11-24",
+    "baseline_git": "ce27cb7f440ef92b509a230e63387681aaa110de",
+    "papers_audited": 201,
+    "questions_inventoried": 16788,
+    "context_fields_checked": 2602,
+    "textual_source_underlines_checked": 3734,
+    "html_files": 402,
+    "pdf_files": 154,
+    "affected_papers": 199,
+    "duplicate_frames": 16,
+    "frame_papers": 14,
+    "html_headings": 1708,
+    "html_heading_commas": 2627,
+    "html_comma_papers": 199,
+    "pdf_heading_commas": 83,
+    "pdf_body_commas": 646,
+    "pdf_comma_papers": 74,
+    "underline_passages_added": 2,
+    "underline_passages_extended": 2,
+    "review_pages": 4
+  },
+  "heading_wrap_20261124": {
+    "date": "2026-11-24",
+    "baseline_git": "15cc19c5829f0e9acaa0c05df922d752e168728c",
+    "units_audited": 201,
+    "html_files": 618,
+    "reader_files_with_heading_changes": 400,
+    "stylesheet_only_html_files": 218,
+    "headings_changed_per_edition": 2288,
+    "html_break_opportunities": 1747,
+    "html_discardable_word_gaps": 4803,
+    "redundant_empty_markers_removed": 1129,
+    "native_units_with_new_glue": 16,
+    "native_headings_with_new_glue": 121,
+    "native_gaps_per_edition": 1112,
+    "pdf_files": 32,
+    "pdf_units": 16,
+    "browser_wrap_cases_per_engine": 1140,
+    "website_bytes": 954177438,
+    "website_bytes_delta": -75115
+  },
+  "heading_spacing_20261125": {
+    "date": "2026-11-25",
+    "baseline_git": "a4da1233480b7a83dc565087e1a2b2a029f45254",
+    "html_files": 618,
+    "pdf_files": 0,
+    "papers": 201,
+    "reader_editions": 402,
+    "browser_checks": {
+      "Chromium": {
+        "regular_headings": 2393,
+        "heading_preset_comparisons": 14358,
+        "horizontal_changes": 0,
+        "same_breaks_as_15cc19c": 14280,
+        "historical_vertical_differences_over_half_pixel": 0,
+        "affected_regular": {
+          "original": {
+            "headings": 1148,
+            "units": 195
+          },
+          "standard": {
+            "headings": 1144,
+            "units": 195
+          },
+          "compact": {
+            "headings": 1148,
+            "units": 195
+          }
+        }
+      },
+      "Firefox": {
+        "regular_headings": 2393,
+        "heading_preset_comparisons": 14358,
+        "horizontal_changes": 0,
+        "same_breaks_as_15cc19c": 10908,
+        "historical_vertical_differences_over_half_pixel": 0,
+        "affected_regular": {
+          "original": {
+            "headings": 1148,
+            "units": 195
+          },
+          "standard": {
+            "headings": 1148,
+            "units": 195
+          },
+          "compact": {
+            "headings": 1148,
+            "units": 195
+          }
+        }
+      }
+    },
+    "responsive_checks": {
+      "Chromium": {
+        "comparisons": 3672,
+        "word_starts": 6804,
+        "arimasu_starts": 414,
+        "horizontal_changes": 0,
+        "extra_indents": 0
+      },
+      "Firefox": {
+        "comparisons": 3672,
+        "word_starts": 6882,
+        "arimasu_starts": 378,
+        "horizontal_changes": 0,
+        "extra_indents": 0
+      }
+    },
+    "webkit_layouts": 279,
+    "chromium_workbook_and_sample_layouts": 1116,
+    "website_bytes": 954178356,
+    "website_bytes_delta": 918,
+    "slider_medians_ms": {
+      "Chromium": {
+        "before": 0.2,
+        "after": 0.2
+      },
+      "Firefox": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    "slider_two_frames_ms": {
+      "Chromium": {
+        "before": 139.9,
+        "after": 142.4
+      },
+      "Firefox": {
+        "before": 90,
+        "after": 89
+      }
+    }
+  },
+  "wakachi_20261125": {
+    "baseline_git": "c0851dc96ccb00f8b8d576c4d16633265df288e0",
+    "modern_papers": 24,
+    "reader_editions": 48,
+    "html_files": 618,
+    "updated_pdf_files": 48,
+    "pdfs_compared": 48,
+    "website_bytes": 955426263,
+    "browser_heading_checks": 540
+  },
+  "uars_instructions_20261125": {
+    "baseline_git": "35d9a7760cbe5669eff788f62f3b94de971f2ce6",
+    "restored_papers": 6,
+    "instructions_checked": 63,
+    "instructions_changed": 52,
+    "spelling_or_wording": 15,
+    "inferred_reading_aids": 27,
+    "scored_questions": 300,
+    "appended_ledger_rows": 165,
+    "reading_html": 12,
+    "review_html": 5,
+    "pdfs": 12,
+    "pdf_pages_compared": 255,
+    "visibly_changed_pdf_pages": 96,
+    "browser_heading_checks": 2268,
+    "website_bytes": 955397081
+  },
+  "uars_modern_instructions_20261125": {
+    "baseline_git": "eac99d414edbd77f9bafc065e103007d8c02050e",
+    "dated_sittings": 9,
+    "official_samples": 1,
+    "instructions_reviewed": 108,
+    "instructions_changed": 71,
+    "inferred_reading_aids": 53,
+    "scored_questions": 611,
+    "appended_ledger_rows": 224,
+    "retired_principal_differences": 25,
+    "reader_html": 20,
+    "review_html": 8,
+    "pdfs": 20,
+    "pdf_pages_compared": 458,
+    "visibly_changed_pdf_pages": 126,
+    "browser_heading_checks": 3888,
+    "historical_papers": 39,
+    "website_bytes": 955339036
+  },
+  "modern_body_spacing_20261125": {
+    "baseline_git": "17521c352147c03f2b1444bd58632646fa9f2b55",
+    "screened_papers": 24,
+    "body_fields": 7211,
+    "field_inventory": {
+      "scored stems": 1346,
+      "scored choices": 5384,
+      "passage": 122,
+      "table": 11,
+      "example": 98,
+      "example choice": 236,
+      "notice": 11,
+      "note": 3
+    },
+    "written_source_pages": 375,
+    "changed_papers": 22,
+    "changed_fields": 275,
+    "boundaries": 366,
+    "directions": {
+      "added": 268,
+      "removed": 98
+    },
+    "boundary_roles": {
+      "answer choices": 176,
+      "question stems": 93,
+      "passages": 73,
+      "notices and worked examples": 24
+    },
+    "ledger_entries": 448,
+    "reader_html": 44,
+    "review_html": 4,
+    "pdfs": 44,
+    "pdf_pages": 999,
+    "visibly_changed_pdf_pages": 240,
+    "html_boundaries": 732,
+    "browser_field_checks": 6600,
+    "short_group_measurements": 51648,
+    "heading_indent_measurements": 8124,
+    "historical_papers": 39,
+    "historical_files": 554,
+    "website_bytes": 955381763
+  },
+  "numeral_spacing_and_layout_20261125": {
+    "baseline_git": "9a814622f6620333bcef26c97544dc67f68b9d68",
+    "modern_papers": 24,
+    "body_fields": 7211,
+    "numeral_edges": 8777,
+    "matched_numeral_edges": 5278,
+    "counter_edges": 1788,
+    "matched_counter_edges": 1362,
+    "numeral_boundaries": 10,
+    "numeral_fields": 9,
+    "numeral_papers": 8,
+    "spacing_markers_reviewed": 24,
+    "retained_layout_gaps": 19,
+    "framed_documents": 44,
+    "framed_document_papers": 20,
+    "corrected_worked_choice_grids": 4,
+    "removed_booklet_titles": 2,
+    "updated_editorials": 9,
+    "fixlog_entries": 59,
+    "reader_html": 54,
+    "review_html": 1,
+    "pdfs": 18,
+    "pdfs_compared": 26,
+    "pages_compared": 621,
+    "changed_pdf_pages": 26,
+    "html_boundary_checks": 240,
+    "html_gap_measurements": 456,
+    "html_short_group_measurements": 70032,
+    "html_heading_indent_checks": 8946,
+    "historical_papers": 39,
+    "historical_files": 554,
+    "website_bytes": 955447799,
+    "existing_mixed_script_separators": 367,
+    "mixed_spacing_papers": 16,
+    "visible_mixed_script_separators": 365,
+    "directly_numeral_adjacent": 340,
+    "browser_mixed_space_measurements": 8760
+  },
+  "paper_rubi_setting": {
+    "archived_papers_compared_per_mode": 201,
+    "canonical_aliases_preserved": 18,
+    "catalog_links_removed": 201,
+    "browsers": [
+      "Chromium",
+      "Firefox",
+      "WebKit"
+    ],
+    "preview_minimum_tested_label_gap_px_at_320": 4,
+    "layout_comparisons_per_browser": 78,
+    "diagram_image_comparisons_per_browser": 30,
+    "standalone_reader": "Both modes passed with and without JavaScript in all three browsers.",
+    "workbook_interaction": "No requests on switch, one layout fit per switch, zero additional fits when answering or scrolling."
   }
 }

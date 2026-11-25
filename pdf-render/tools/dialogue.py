@@ -102,7 +102,11 @@ def render(conv, value, structure, source_value=None, scene_lines=(), turn_style
                 utterance_tex = conv.value({'html': quote + utterance})
             finally:
                 conv.word_space_em = saved_word_space
-        speakers.append('{' + turn_font + speaker_tex + '}' if turn_font else speaker_tex)
+        # The speaker is typeset twice, once off-page to measure the column.
+        # Keep the same glue in the measurement and identify only the visible copy.
+        measured = re.sub(r'\\AuthoredWordGap\{([0-9.]+)\}\{[0-9a-f]{20}\}',
+                          r'\\AuthoredWordGap{\1}{}', speaker_tex)
+        speakers.append('{' + turn_font + measured + '}' if turn_font else measured)
         turn_tex = r'\DialogueTurn{' + speaker_tex + '}{' + utterance_tex + '}'
         body.append('{' + turn_font + turn_tex + '}' if turn_font else turn_tex)
     if set(turns) - set(range(len(raw_lines))):

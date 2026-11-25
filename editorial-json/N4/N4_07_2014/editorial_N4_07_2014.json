@@ -515,7 +515,7 @@
     {
       "id": "reading-s01",
       "part": "reading",
-      "heading": "もんだい 1 （　　）に何を入れますか。1・2・3・4 から いちばん いいものを一つえらんでください。",
+      "heading": "もんだい 1 （　　）に 何を 入れますか。1・2・3・4から いちばん いい ものを 一つ えらんで ください。",
       "items": [
         {
           "id": "reading-q001",
@@ -1029,7 +1029,7 @@
     {
       "id": "reading-s03",
       "part": "reading",
-      "heading": "もんだい3 21から 25 になにを入れますか。 文章の意味を考えて、1・2・3・4から いちばんいいものを 一つえらんでください。",
+      "heading": "もんだい3 21から25に 何を 入れますか。文章の 意味を 考えて、1・2・3・4から いちばん いい ものを 一つ えらんで ください。",
       "items": [
         {
           "id": "reading-b001",
@@ -1168,7 +1168,7 @@
     {
       "id": "reading-s05",
       "part": "reading",
-      "heading": "もんだい 5 つぎの文章を読んで、 質問に答えてください。 答えは、\n1・2・3・4から、いちばんいいものを一つえらんでください。",
+      "heading": "もんだい 5 つぎの文章を読んで、質問に答えてください。答えは、1・2・3・4から、いちばんいいものを一つえらんでください。",
       "items": [
         {
           "id": "reading-b005",
@@ -1232,7 +1232,7 @@
     {
       "id": "reading-s06",
       "part": "reading",
-      "heading": "もんだい 6 右のページを見て、下の質問に答えてください。答えは、1・2・3・4 から いちばん いいものを一つえらんでください。",
+      "heading": "もんだい 6 右のページを見て、下の質問に答えてください。答えは、1・2・3・4からいちばんいいものを一つえらんでください。",
       "items": [
         {
           "id": "reading-q034",
@@ -1280,7 +1280,7 @@
     "inline_cloze_boxes": {
       "reading-s03": {
         "field": "heading",
-        "content_sha256": "4488133ce1da43d5bd515170f5048b4ec05469db19c28914e1a0c1cec0730b05",
+        "content_sha256": "3d687af0572e50266f200275c1e18a6749248cd0d8a800a0d55750e6649369fc",
         "markers": [
           {
             "token": "21",
@@ -4289,16 +4289,22 @@
         "rendered_sha256": "0b8d701107da89ca1418039f50fd79e7d0baf277798578547950aadd6aa47c0a",
         "projection_sha256": "61f1a385a3dfdfda2a1c5545629934f78f7346b190845e8105222af3a12f2db7",
         "basis": "declared_llm_restoration",
-        "rationale": "Primary read this exact field and authored the listed phrase boundaries; preserve original separators, lexical content, ruby, mistakes, blanks and STAR slots.",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
         "boundaries": [
           {
             "offset": 15,
             "left": " この みちは（　　）を",
             "right": "しているので、とおれませ",
             "id": "4d367669fb9279eacf8c"
+          },
+          {
+            "id": "95c026ee100e47ba0387",
+            "offset": 19,
+            "left": "みちは（　　）をしている",
+            "right": "ので、とおれません。"
           }
         ],
-        "author": "main_llm_h15"
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_07_2014",
@@ -4475,7 +4481,7 @@
         "rendered_sha256": "b73dde62ac11a7ea3a4e08e73aa949067e4af4a5829aecfc16d83436b5b3a494",
         "projection_sha256": "673f4cc469f6e0c721f99d8b4fa698e66045f583ad84d3c8893b2f421f9c1eea",
         "basis": "declared_llm_restoration",
-        "rationale": "Primary read this exact field and authored the listed phrase boundaries; preserve original separators, lexical content, ruby, mistakes, blanks and STAR slots.",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
         "boundaries": [
           {
             "offset": 8,
@@ -4484,10 +4490,10 @@
             "id": "3c3d18be1e7801c07b93"
           },
           {
-            "offset": 13,
-            "left": "1) 日本語がただしいか",
-            "right": "どうか、もういちど （　",
-            "id": "8d7c338e5da9ec32ce18"
+            "id": "f18f8275ab1ecebeeb8a",
+            "offset": 12,
+            "left": "21) 日本語がただしい",
+            "right": "かどうか、もういちど （"
           },
           {
             "offset": 30,
@@ -4496,7 +4502,7 @@
             "id": "eda23cacd4e238f365bb"
           }
         ],
-        "author": "main_llm_h15"
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_07_2014",
@@ -4574,7 +4580,7 @@
         "rendered_sha256": "dd8fbfcab0cb6d520e414527af77fc5f928cd9082e22317131c33aceb0eb9bfd",
         "projection_sha256": "ea3f71af50c47101a38024bd966ffcc90c36fe450658ba007eb9b02104da4e56",
         "basis": "declared_llm_restoration",
-        "rationale": "Primary read this exact field and authored the listed phrase boundaries; preserve original separators, lexical content, ruby, mistakes, blanks and STAR slots.",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
         "boundaries": [
           {
             "offset": 13,
@@ -4587,9 +4593,15 @@
             "left": "ょこうに行くか、クラスの",
             "right": "みんなに （　　）を聞い",
             "id": "23a8364bda3d49a1990c"
+          },
+          {
+            "id": "b1539fcc28ed60b4272c",
+            "offset": 31,
+            "left": "スのみんなに （　　）を",
+            "right": "聞いて、きめました。"
           }
         ],
-        "author": "main_llm_h15"
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_07_2014",
@@ -6385,7 +6397,7 @@
         "rendered_sha256": "98cc800b06f07fe692d5196f740d7583b81e356118da992754e88d228264d71a",
         "projection_sha256": "cd25af2bc7a3f3b7a9e365af9fd0b324027c0c66b45761d5c9e125de10a1716c",
         "basis": "declared_llm_restoration",
-        "rationale": "Primary read this exact field and authored the listed phrase boundaries; preserve original separators, lexical content, ruby, mistakes, blanks and STAR slots.",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
         "boundaries": [
           {
             "offset": 3,
@@ -6410,9 +6422,15 @@
             "left": "もりの中の空気はいつも",
             "right": "ぬれています。",
             "id": "62f4786f5c9732aff953"
+          },
+          {
+            "id": "f7c90fdc3531423e58a1",
+            "offset": 14,
+            "left": "の中の空気はいつもぬれて",
+            "right": "います。"
           }
         ],
-        "author": "main_llm_h15"
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_07_2014",
@@ -6461,7 +6479,7 @@
         "rendered_sha256": "adfe052ad5ba0fae0581afeb408e956ba29339c0a3ceea9ecf60dc8e19eb4334",
         "projection_sha256": "9becdd4bae8ba115344b6d646d6883643e08f931cb4f9d33b45a854a7a43d583",
         "basis": "declared_llm_restoration",
-        "rationale": "Primary read this exact field and authored the listed phrase boundaries; preserve original separators, lexical content, ruby, mistakes, blanks and STAR slots.",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
         "boundaries": [
           {
             "offset": 2,
@@ -6474,9 +6492,15 @@
             "left": "このメロンは",
             "right": "ぬれていて、おいしいです",
             "id": "6812918ef88dc9662a64"
+          },
+          {
+            "id": "967e29d97b55b2b9ffb7",
+            "offset": 9,
+            "left": "このメロンはぬれて",
+            "right": "いて、おいしいですね。"
           }
         ],
-        "author": "main_llm_h15"
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_07_2014",
@@ -6642,50 +6666,13 @@
         "slot": "heading",
         "task": "grammar",
         "role": "heading",
-        "canonical_sha256": "ef8525c1ede8aee034b38fe0832a262a37e4f388a630597c2043282385c3185b",
-        "rendered_sha256": "ef8525c1ede8aee034b38fe0832a262a37e4f388a630597c2043282385c3185b",
-        "projection_sha256": "b04157a0030f8cb87a3c732e876605f71f141b19febcc60ed2063084919c2946",
-        "basis": "declared_llm_restoration",
-        "rationale": "Primary read this exact field and authored the listed phrase boundaries; preserve original separators, lexical content, ruby, mistakes, blanks and STAR slots.",
-        "boundaries": [
-          {
-            "offset": 12,
-            "left": "もんだい 1 （　　）に",
-            "right": "何を入れますか。1・2・",
-            "id": "4342df83bf77ac10a0ca"
-          },
-          {
-            "offset": 14,
-            "left": "だい 1 （　　）に何を",
-            "right": "入れますか。1・2・3・",
-            "id": "a57d77488d7c4118dfdf"
-          },
-          {
-            "offset": 38,
-            "left": "4 から いちばん いい",
-            "right": "ものを一つえらんでくださ",
-            "id": "2ca0bb9d5b90d3716348"
-          },
-          {
-            "offset": 41,
-            "left": "ら いちばん いいものを",
-            "right": "一つえらんでください。",
-            "id": "34ebd34a269538fc1d31"
-          },
-          {
-            "offset": 43,
-            "left": "いちばん いいものを一つ",
-            "right": "えらんでください。",
-            "id": "16c079e44aabba94ae86"
-          },
-          {
-            "offset": 47,
-            "left": " いいものを一つえらんで",
-            "right": "ください。",
-            "id": "995a9ea59a40dd842774"
-          }
-        ],
-        "author": "main_llm_h15"
+        "canonical_sha256": "1ea31bec50f9a76dd591592763e29f81c833696506619f13745cca887fb42508",
+        "rendered_sha256": "1ea31bec50f9a76dd591592763e29f81c833696506619f13745cca887fb42508",
+        "projection_sha256": "a8c9e7f48bf1b29725ad4bd58c044dee2603512bc4f99aed51fcaa56afdc9fb8",
+        "basis": "retain_audited_groups",
+        "rationale": "The reviewed instruction encodes its word groups directly in the canonical text.",
+        "boundaries": [],
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_07_2014",
@@ -7281,7 +7268,7 @@
         "rendered_sha256": "3a90e64e47bce0328aa87b62d571a57417deb5b99cb1ffd84b71837375c82a4d",
         "projection_sha256": "38f7d40c8a6c54e76d15a3428eca7bc145bb7d6f63334e16384cd53d625e813d",
         "basis": "declared_llm_restoration",
-        "rationale": "Primary read this exact field and authored the listed phrase boundaries; preserve original separators, lexical content, ruby, mistakes, blanks and STAR slots.",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
         "boundaries": [
           {
             "offset": 15,
@@ -7294,9 +7281,15 @@
             "left": "から 三日間 京都へ行く",
             "right": "予定だが、泊まる ホテル",
             "id": "6d70530a855b95fcc39a"
+          },
+          {
+            "id": "7be9b291c2b588e57b27",
+            "offset": 38,
+            "left": "ホテルが（　　）決まって",
+            "right": "いない。"
           }
         ],
-        "author": "main_llm_h15"
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_07_2014",
@@ -8759,62 +8752,13 @@
         "slot": "heading",
         "task": "cloze",
         "role": "heading",
-        "canonical_sha256": "4488133ce1da43d5bd515170f5048b4ec05469db19c28914e1a0c1cec0730b05",
-        "rendered_sha256": "4488133ce1da43d5bd515170f5048b4ec05469db19c28914e1a0c1cec0730b05",
-        "projection_sha256": "839cebde60a88653ff489aed0e059115a87692e2f4345014365af6d5dc555b3c",
-        "basis": "declared_llm_restoration",
-        "rationale": "Primary read this exact field and authored the listed phrase boundaries; preserve original separators, lexical content, ruby, mistakes, blanks and STAR slots.",
-        "boundaries": [
-          {
-            "offset": 15,
-            "left": "い3 21から 25 に",
-            "right": "なにを入れますか。 文章",
-            "id": "e19dcec6614de07bfbd1"
-          },
-          {
-            "offset": 18,
-            "left": "21から 25 になにを",
-            "right": "入れますか。 文章の意味",
-            "id": "18631cf2b7ea435b35de"
-          },
-          {
-            "offset": 28,
-            "left": "にを入れますか。 文章の",
-            "right": "意味を考えて、1・2・3",
-            "id": "4771c98144379b3f8452"
-          },
-          {
-            "offset": 31,
-            "left": "れますか。 文章の意味を",
-            "right": "考えて、1・2・3・4か",
-            "id": "6c3c81f552081e2c0a67"
-          },
-          {
-            "offset": 49,
-            "left": "2・3・4から いちばん",
-            "right": "いいものを 一つえらんで",
-            "id": "9cca4ccdd8e53c671015"
-          },
-          {
-            "offset": 51,
-            "left": "3・4から いちばんいい",
-            "right": "ものを 一つえらんでくだ",
-            "id": "c34770bcff2d41a086db"
-          },
-          {
-            "offset": 57,
-            "left": "いちばんいいものを 一つ",
-            "right": "えらんでください。",
-            "id": "ab842224b0466a5ec0b8"
-          },
-          {
-            "offset": 61,
-            "left": "いいものを 一つえらんで",
-            "right": "ください。",
-            "id": "a3fea1d5f8131b92e7f4"
-          }
-        ],
-        "author": "main_llm_h15"
+        "canonical_sha256": "3d687af0572e50266f200275c1e18a6749248cd0d8a800a0d55750e6649369fc",
+        "rendered_sha256": "3d687af0572e50266f200275c1e18a6749248cd0d8a800a0d55750e6649369fc",
+        "projection_sha256": "fc175671c1a041bef22dacaab32df084075e48fa2fe9fd0c40d86140f056c018",
+        "basis": "retain_audited_groups",
+        "rationale": "The reviewed instruction encodes its word groups directly in the canonical text.",
+        "boundaries": [],
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_07_2014",
@@ -8828,7 +8772,7 @@
         "rendered_sha256": "9c839efb889c22bdcda29f45cfd5589abb12b7a9950aaa7cb6ee10c9b937a564",
         "projection_sha256": "f9e3e95bc7396c06321454320e0f0f30e3e3c7015da6be7c46ba141ca3b0d092",
         "basis": "declared_llm_restoration",
-        "rationale": "Primary read this exact field and authored the listed phrase boundaries; preserve original separators, lexical content, ruby, mistakes, blanks and STAR slots.",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
         "boundaries": [
           {
             "offset": 2,
@@ -8889,6 +8833,12 @@
             "left": "でした。今は日本の大学で",
             "right": "勉強しています。\n田中さ",
             "id": "a0d2d572a86714d3d3e5"
+          },
+          {
+            "id": "cf051dbc648f701edbf2",
+            "offset": 56,
+            "left": "今は日本の大学で勉強して",
+            "right": "います。\n田中さん\nお元"
           },
           {
             "offset": 75,
@@ -8969,10 +8919,22 @@
             "id": "e0d9de5e28487a06aec5"
           },
           {
+            "id": "88d35ee792c7e51be399",
+            "offset": 197,
+            "left": "易の仕事がしたいと思って",
+            "right": "いました。それで、貿易会"
+          },
+          {
             "offset": 241,
             "left": "楽しいです。\n田中さんは",
             "right": "もうすぐ 夏休みですね。",
             "id": "39b194173cce43ce2afc"
+          },
+          {
+            "id": "41b1bcd60c0459a69df2",
+            "offset": 243,
+            "left": "いです。\n田中さんはもう",
+            "right": "すぐ 夏休みですね。私は"
           },
           {
             "offset": 255,
@@ -9071,7 +9033,7 @@
             "id": "913cfda7166136504253"
           }
         ],
-        "author": "main_llm_h15"
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_07_2014",

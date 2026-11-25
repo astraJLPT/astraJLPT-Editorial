@@ -6,7 +6,8 @@ from model import BASE,ROOT,CAL,compose,read,write,digest,file_hash,Projection
 from notice import render_notice
 from pagination import reading_start
 from presentation import task_tabs, source_binding
-from richtex import RichTeX,remove_number,escape,text_tex,context_frames,OPEN_PAREN_TEX,CLOSE_PAREN_TEX,literal_parens
+from wakachi import spaced_task
+from richtex import heading_word_glue,RichTeX,remove_number,escape,text_tex,context_frames,OPEN_PAREN_TEX,CLOSE_PAREN_TEX,literal_parens
 from numeral_roles import token as numeric_token,literal_digits,exceptions as numeral_exceptions
 
 def environment():
@@ -565,8 +566,8 @@ def generate(model,work):
   if prose_metrics:conv.features.append(dict(kind='historical_passage_spacing',target=i['id'],task=task,parameters=prose_metrics,canonical_changed=False))
   is_notice=notice or section_styles.get(i['id'],{}).get('frame_style')=='pinned_corners'
   conv.numeric_role=number_role(i['id']+'/content','notice_numeral' if is_notice else 'body_numeral')
-  conv.keep_spaced_words=style.get('passage_word_groups',False) and task in style.get('passage_word_group_tasks',['cloze','reading']) and i['type']!='example'
-  conv.passage_word_flow=conv.keep_spaced_words
+  conv.passage_word_flow=style.get('passage_word_groups',False) and task in style.get('passage_word_group_tasks',['cloze','reading']) and i['type']!='example'
+  conv.keep_spaced_words=conv.passage_word_flow or (conv.modern_wakachi and i['type']!='example')
   start=len(lines)
   try:
    result=emit_block_content(i,task,notice)
@@ -805,7 +806,7 @@ def generate(model,work):
    if variant!='star_worked':conv.word_space_em=style['examples'].get('ordinary_word_space_em',conv.word_space_em)
    ordinary_groups=style['examples'].get('ordinary_word_groups',False)
    if type(ordinary_groups)is not bool:raise ValueError('Ordinary example word grouping must be boolean')
-   conv.keep_spaced_words=bool(source_targets and variant!='star_worked' and ordinary_groups)
+   conv.keep_spaced_words=variant!='star_worked' and (conv.modern_wakachi or bool(source_targets and ordinary_groups))
    conv.passage_word_flow=conv.keep_spaced_words
    conv.example_choice_numerals=style['examples'].get('choice_numeral_role','literal')=='choice'
    conv.example_label_gap_em=style['examples'].get('ordinary_label_gap_em',None) if variant!='star_worked' else None
@@ -1109,6 +1110,7 @@ def generate(model,work):
  for si,section in enumerate(doc['sections']):
   pending_document_question_gap=None
   sm=model['layout']['sections'][section['id']];task=sm['task'];items=section['items'];info=task=='information_retrieval'
+  conv.modern_wakachi=spaced_task(model,task)
   from section_flow import start_tex
   section_start=start_tex(sm,si,booklet)
   if section_start:lines.append(section_start)
@@ -1145,7 +1147,7 @@ def generate(model,work):
   conv.heading_choice_gap_em=task_style.get('heading_choice_gap_em',style.get('heading_choice_gap_em',0))
   conv.selector_presentation=style.get('instruction_selector')
   saved_keep=getattr(conv,'keep_spaced_words',False)
-  conv.keep_spaced_words=task_style.get('heading_word_groups',style.get('heading_word_groups',False))
+  conv.keep_spaced_words=conv.modern_wakachi or task_style.get('heading_word_groups',style.get('heading_word_groups',False))
   conv.heading_selector_boundary=style.get('heading_selector_boundary',False)
   conv.heading_selector_suffix_break=task_style.get('heading_selector_suffix_break',style.get('heading_selector_suffix_break',False))
   heading_intro=None;booklet_title=None
@@ -1199,6 +1201,7 @@ def generate(model,work):
    else:heading_tex=re.sub(pattern,lambda m:heading_range_label(conv,first)+(m[1]if source_targets else'')+'から'+(m[2]if source_targets else'')+heading_range_label(conv,last),heading_tex)
    conv.features.append({'kind':'heading_number_boxes','labels':bound['labels'],'section_id':section['id']})
   heading_tex=re.sub(OPEN_PAREN_TEX+r'(?:\{\\AdministrativeNumerals )?([0-9０-９]{1,2})\}?'+CLOSE_PAREN_TEX,lambda m:r'\InstructionPassageNumber{'+m[1]+'}',heading_tex)
+  heading_tex=heading_word_glue(heading_tex)
   heading_after=task_style.get('heading_after_pt',style.get('heading_after_pt',6))
   first_context=next((i for i in items if 'content'in i and i['type']!='example'),None)
   labeled_context=task=='reading' and first_context is not None and re.match(r'^[（(][0-9０-９]{1,2}[）)](?:\s|$)',Projection(first_context['content']).text.strip()) is not None
@@ -1397,5 +1400,6 @@ def generate(model,work):
  model['render_coverage']['intake_role_candidates']=intake_candidates(model)
  model['render_assumptions'].append({'unit':unit,'kind':'renderer_convention','evidence_state':'calibrated_profile','chosen_render_value':style['version'],'style_sha256':model['style_sha256'],'choice_basis':'versioned level defaults plus explicit editorial overrides','historical_claim':False})
  from renditions import emit_tex
- return emit_tex('\n'.join(lines)+'\n',model,'body')
+ from richtex import unbox_adjacent_commas
+ return unbox_adjacent_commas(emit_tex('\n'.join(lines)+'\n',model,'body'))
 

@@ -1,6 +1,7 @@
 """Conservative rich-HTML to LuaTeX-ja translation with explicit unsupported failures."""
 import re, math, base64, hashlib, copy, html
 from pathlib import Path
+from wakachi import bind_groups,short_group
 from bs4 import BeautifulSoup, NavigableString, Tag
 from model import Projection
 from numeral_roles import render as numeric_text, token as numeric_token, literal_digits
@@ -68,6 +69,54 @@ def remove_number(value, prefix_binding=None):
     number=m.group(1)or m.group(2);n.replace_with(str(n)[m.end():]);return number,{'html':str(soup)}
    break
  return None,value
+
+def heading_word_glue(body):
+    """Keep the JFM cell width in a line and discard its space at a wrap."""
+    if '　' not in body:
+        return body
+    depth = 0
+
+    def convert(match):
+        nonlocal depth
+        token = match[0]
+        if token == '{':
+            depth += 1
+        elif token == '}':
+            depth -= 1
+        elif depth == 0 and token.startswith('　'):
+            return rf'\hskip {len(token)}\zw\relax '
+        return token
+
+    # Braced arguments include ruled samples, ruby and protected choice groups.
+    return re.sub(r'\\[{}\\]|[{}]|　+', convert, body)
+
+
+def unbox_adjacent_commas(tex):
+    """Let LuaTeX-ja space a word-final comma against the following inline text."""
+    from renditions import balanced
+
+    # Kinsoku keeps the comma with the preceding word. Outside its box the JFM
+    # can choose the advance for kana, kanji, numerals or a bracket.
+    following = re.compile(
+        r'(?:\\allowbreak\{\})?(?:[\w「『（【」』）】]|\\(?:mbox|ruby|underLine|makebox)\b)'
+    )
+    edits = []
+    for box in re.finditer(r'\\mbox\{', tex):
+        word, end = balanced(tex, box.end() - 1)
+        if word.endswith('、') and following.match(tex, end):
+            if word == '、':
+                edits.append((box.start(), end, '、'))
+            else:
+                edits.append((end - 2, end, '}、'))
+
+    parts = []
+    start = 0
+    for at, end, replacement in sorted(edits):
+        parts.extend((tex[start:at], replacement))
+        start = end
+    parts.append(tex[start:])
+    return ''.join(parts)
+
 
 def bind_ruby_word_groups(soup):
  """Keep bounded existing Japanese space groups across inline ruby markup."""
@@ -148,10 +197,13 @@ class RichTeX:
      parts.append(render(x[cursor:]));return ''.join(parts)
     if not self.word_space_em:out.append(content(piece));continue
     chunks=re.split(r'([ \u3000]+|(?<=[、。？！])(?![」』）]))',piece)
-    def word(x):
+    def word(x,internal):
      if x and x.isspace() and '\n'not in x:
-      # Fullwidth pedagogical spaces retain their original glyph/width. Only
-      # the existing ASCII-space convention uses the configurable glue.
+      # Use discardable glue for lexical gaps. A fixed slot or worked table
+      # owns its own padding and still receives the original source character.
+      if (x=='　' and internal and getattr(self,'modern_wakachi',False)
+          and getattr(self,'keep_spaced_words',False) and not getattr(self,'passage_word_flow',False)):
+       return r'\hskip 1\zw\relax '
       if '\u3000'in x and getattr(self,'passage_word_flow',False):
        # Preserve in-line advance, discarding separators at wrapped line starts.
        width=x.count('\u3000')+sum(c!='\u3000'for c in x)*self.word_space_em
@@ -159,11 +211,12 @@ class RichTeX:
        return r'\hskip '+str(width)+r'em\relax '
       return content(x) if '\u3000' in x else r'\hskip '+str(self.word_space_em)+r'em\relax '
      t=content(x)
-     if getattr(self,'keep_spaced_words',False) and bounded_word(x):
+     if getattr(self,'keep_spaced_words',False) and (bounded_word(x) or
+             getattr(self,'modern_wakachi',False) and short_group(x)):
       self.features.append({'kind':'bounded_spaced_word','text':x,'basis':'Existing text-node word group, at most 12 characters; no inserted source line break'})
       return r'\mbox{'+t+'}'+(r'\allowbreak{}' if getattr(self,'passage_word_flow',False) and x[-1] in '、。？！' else '')
      return t
-    out.append(''.join(word(x)for x in chunks))
+    out.append(''.join(word(x,0 < j < len(chunks)-1 and chunks[j-1] and chunks[j+1]) for j,x in enumerate(chunks)))
   return ''.join(out)
  def pedagogical_groups(self,node,context):
   """Prefer existing space boundaries inside a tested N5 phrase, preserving ruby."""
@@ -222,7 +275,9 @@ class RichTeX:
   if soup.select('span[data-inline-omission-after]'):
    from paragraph_layout import join_inline_omissions
    join_inline_omissions(soup)
-  if self.word_space_em and getattr(self,'keep_spaced_words',False):bind_ruby_word_groups(soup)
+  if self.word_space_em and getattr(self,'keep_spaced_words',False):
+   if getattr(self,'modern_wakachi',False):bind_groups(soup,web=False)
+   else:bind_ruby_word_groups(soup)
   # Duplicate serialized example options are handled upstream only with exact equality.
   s=''.join(self.node(n,context) for n in soup.children)
   s=re.sub(r'(?:\s*\\Para\s*){2,}',lambda m:r'\Para ',s)
@@ -316,6 +371,8 @@ class RichTeX:
    return self.text(raw)
   if not isinstance(n,Tag):return ''
   tag=n.name
+  if tag=='span' and n.has_attr('data-wakachi-wide-gap'):
+   return r'\hskip 1em\relax ' if getattr(self,'passage_word_flow',False) else r'\hskip 1\zw\relax '
   if tag=='span' and n.has_attr('data-workbook-font'):
    from workbook_typography import macro
    name=macro(n['data-workbook-font'])
@@ -370,6 +427,9 @@ class RichTeX:
   if n.has_attr('data-embedded-document'):
    from embedded_documents import render
    return render(self,n,self.embedded_document_binding,self.memo_defaults)
+  if n.has_attr('data-fullwidth-bracket'):
+   if n.string not in ('「','」'):raise ValueError('Invalid fullwidth corner bracket')
+   return r'{\addjfontfeatures{RawFeature={-palt}}'+str(n.string)+'}'
   if n.has_attr('data-inline-gap-em'):
    gap=float(n['data-inline-gap-em'])
    if n.contents or not 0<gap<=3:raise ValueError('Invalid measured inline gap')
@@ -987,9 +1047,11 @@ class RichTeX:
    # Numbered options already exist in the accepted content. Reflow, do not add.
    starts=list(re.finditer(r'(?<!\S)([1-4])[)）]?\s+',obj))
    if len(starts)==4 and sorted(m[1]for m in starts)==list('1234'):
-    opts=[obj[m.start():starts[k+1].start()if k<3 else len(obj)]for k,m in enumerate(starts)]
     rendered=[]
-    for x in opts:
+    for k,m in enumerate(starts):
+     end=starts[k+1].start() if k+1<len(starts) else len(obj)
+     # The row supplies its own column gaps; only spaces inside a choice belong to it.
+     x=obj[m.start():end].rstrip()
      if structure and structure.get('bare_choice_labels'):
       x=re.sub(r'^([1-4])[)）]\s+',r'\1 ',x,count=1)
      opt=self.value({'html':x},'option')

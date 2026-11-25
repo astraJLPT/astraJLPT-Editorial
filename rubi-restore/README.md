@@ -4,7 +4,7 @@ Rubi-restore was developed using ruby observed in approved scans, workbooks, and
 
 I gave the agent a collection of datasets—JLPT kanji grids, school levels, Jōyō kanji, Jiten frequency lists, BCCWJ frequency lists, and more—and asked it to investigate what correlated with the observed ruby, with minimal steering. I also suggested hypotheses: separating vocabulary, grammar, and reading; treating （注） notes differently; and expecting less ruby on later occurrences of the same word. The research tested those ideas rather than assuming they were all true.
 
-I don’t claim the restored ruby matches the actual JLPT 100%. The aim is to provide roughly comparable reading help and bring the difficulty closer to the original. That is a practical aim, not a measured claim of equal difficulty. No-rubi PDFs and HTML are also available.
+I don’t claim the restored ruby matches the actual JLPT 100%. The aim is to provide roughly comparable reading help and bring the difficulty closer to the original. That is a practical aim, not a measured claim of equal difficulty. The paper reader has a **Settings → Paper → rubi** control. Selecting **hide** also selects the no-rubi PDF download.
 
 The [research history](RESEARCH.md) explains what survived and what failed. In brief:
 
@@ -43,4 +43,4 @@ The frozen model’s retained families are `core`, `era`, `modern_jlpt`, and `pr
 
 Historical queues and ledgers retain the old sitting-like IDs. Join them to current workbook/set IDs through [unit_aliases.json](../editorial-json/unit_aliases.json). The installed sidecars use current `unit_id` values while preserving every annotation ID, reading, span, and evidence record. Replay validates the frozen decisions and then the current installed sidecars against the accepted release contract.
 
-Source ruby remains in the editorial and inferred ruby in the sidecar. No-rubi renditions strip textual ruby through the shared rendition layer. The explicitly accepted original-image exceptions remain documented in [the raster policy](../pdf-render/config/norubi-raster-assets.json); some images retain their original printed ruby. This does not alter the regular edition’s source or inferred annotations.
+Source ruby remains in the editorial and inferred ruby in the sidecar. The no-rubi PDF strips textual ruby during rendering. The HTML reader can hide those readings in place. The explicitly accepted original-image exceptions remain documented in [the raster policy](../pdf-render/config/norubi-raster-assets.json); some images retain their original printed ruby. This does not alter the regular edition’s source or inferred annotations.

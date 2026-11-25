@@ -11,7 +11,8 @@ const themes=JSON.parse(JSON.stringify(shared.AstraThemes.monkeytype));
 function cachedShell(markup,kind){
   const catalog=/<div class="theme-grid theme-catalog">.*?<\/div>/s;
   assert.ok(catalog.test(markup),'Expected the parser-created theme catalog');
-  if(kind==='empty')markup=markup.replace(catalog,'<div class="theme-grid theme-catalog"></div>');
+  if(kind==='empty')markup=markup.replace(catalog,'<div class="theme-grid theme-catalog"></div>')
+    .replace(/\{"catalog_timer_seconds":\d+\}/,'{}');
   return markup.replace('<template id="theme-editor-template"></template>',shared.AstraThemes.editorMarkup)
     .replace('<span class="progress-correct">correct</span>','<span class="progress-completed">completed</span>');
 }
@@ -38,7 +39,7 @@ async function snapshot(page){
     currentLabels:document.querySelectorAll('.progress-correct').length,
     selected:[...document.querySelectorAll('.answer-radio:checked')].map(e=>e.id),
     autoGrade:document.querySelector('[name=auto-grade]:checked')?.value,
-    answers:Object.fromEntries(Object.keys(localStorage).filter(k=>k.includes(':paper:')).map(k=>[k,JSON.parse(localStorage[k]).answers]))
+    answers:Object.fromEntries(Object.keys(localStorage).filter(k=>k.includes(':paper2:')).map(k=>[k,JSON.parse(localStorage[k]).answers]))
   }));
 }
 function checkShell(state,reader){
@@ -56,6 +57,27 @@ async function checkPalette(page,kind){
   });
   assert.equal(state.parsed,kind==='empty'?0:187);assert.ok(state.retained,'Parsed palette radios must not be rebuilt');
   assert.deepEqual(state.palettes,themes.map(t=>({id:t.id,bg:t.colors.bg,text:t.colors.main})));
+  const picks=page.locator('#quick-picks button'),ids=await picks.evaluateAll(nodes=>nodes.map(n=>n.dataset.theme));
+  assert.equal(new Set(ids).size,3);
+  const initial=await page.locator('[name=theme]:checked').inputValue();
+  async function checkSelected(id){
+    assert.equal(await page.locator('[name=theme]:checked').inputValue(),id);
+    const pressed=picks.and(page.locator('[aria-pressed=true]'));
+    assert.deepEqual(await pressed.evaluateAll(nodes=>nodes.map(n=>n.dataset.theme)),ids.includes(id)?[id]:[]);
+    if(ids.includes(id)){
+      const style=node=>{const s=getComputedStyle(node.closest('.theme-card'));return [s.borderTopColor,s.boxShadow];};
+      const active=await pressed.evaluate(style);
+      assert.deepEqual(active,await page.locator('[name=theme][value="'+id+'"]').evaluate(style));
+      assert.notEqual(active[1],'none');
+    }
+  }
+  await checkSelected(initial);
+  for(const [index,id] of ids.entries()){
+    await picks.nth(index).evaluate(button=>button.click());await checkSelected(id);
+  }
+  for(const id of [ids[0],'jlpt_paper','astraJLPT_dark','astraJLPT_sepia',initial]){
+    await page.locator('[name=theme][value="'+id+'"]').evaluate(radio=>radio.click());await checkSelected(id);
+  }
 }
 async function checkAppearance(page){
   await page.evaluate(()=>{document.querySelector('#settings').open=true;document.querySelector('[name=settings-view][value=appearance]').click();});
@@ -96,13 +118,114 @@ async function checkTextControls(page,context,width,crossTab){
     await other.evaluate(()=>document.querySelector('#source-text').click());await page.waitForFunction(()=>document.querySelector('#text-size').value==='100');await checkText(page,100);
     assert.deepEqual(errors,[]);await other.close();
   }
-  await setText(page,175);await page.evaluate(()=>document.querySelector('#reset-preferences').click());await checkText(page,'auto');
+  await setText(page,175);
+  await page.evaluate(()=>document.querySelector('#reset-preferences').click());
+  await checkText(page,175);
+  await page.locator('#reset-preferences-dialog').getByRole('button',{name:'reset settings',exact:true}).click();
+  await checkText(page,'auto');
+}
+async function checkCatalogTimers(browser){
+  const context=await browser.newContext(),page=await context.newPage(),errors=[];
+  page.on('pageerror',error=>errors.push(error.message));await routePage(page,()=>false);
+  const siteData=file=>{
+    const source=fs.readFileSync(path.resolve(site,file),'utf8');
+    return JSON.parse(/<script\b[^>]*\bid="page-data"[^>]*>(.*?)<\/script>/s.exec(source)[1]);
+  };
+  try{
+    for(const level of ['N1','N2','N3','N4','N5','old-1','old-2','old-3','old-4']){
+      await page.goto(origin+'/levels/'+level+'.html');
+      const files=await page.locator('.paper-grid>.paper-card .paper-cover').evaluateAll(links=>links.map(link=>new URL(link.href).pathname.slice(1)));
+      const dated=files.map(file=>siteData(file).paper).filter(p=>['calendar','historical'].includes(p.content_kind));
+      const latest=dated.sort((a,b)=>b.year-a.year||(b.month||0)-(a.month||0))[0];
+      const clock=new Date(latest.timer.seconds*1000).toISOString().slice(11,19).replace(/^0/,'');
+      if(level==='N4'){assert.equal(latest.unit,'N4_12_2025');assert.equal(clock,'1:20:00');}
+      for(const sort of ['recommended','oldest','newest']){
+        await page.locator('#catalog-sort').selectOption(sort);
+        assert.equal(await page.locator('#timer-limit-preview').textContent(),clock,level);
+        for(const [name,value,time] of [['timer-enabled','yes',clock],['timer-direction','down',clock],['timer-direction','up','0:00:00']]){
+          const caption=await page.locator('[name='+name+'][value='+value+']+span small').textContent();
+          assert.equal(caption,time,level+' '+name+' '+value);
+        }
+      }
+      await page.locator('#settings>summary').click();
+      await page.locator('[name=settings-view][value=timer]+span').click();
+      assert.ok(await page.locator('#timer-limit-preview').isVisible(),level);
+      assert.equal(await page.locator('#timer-limit-preview').innerText(),clock,level);
+    }
+    assert.deepEqual(errors,[]);
+  }finally{await context.close();}
+}
+async function checkBrowserWarnings(browser){
+  const context=await browser.newContext({viewport:{width:390,height:780}});
+  const page=await context.newPage(),errors=[];
+  page.on('pageerror',error=>errors.push(error.message));
+  const prefix='astraJLPT:web:v1:',settingsKey=prefix+'preferences';
+  const stored=()=>page.evaluate(()=>Object.fromEntries(Object.entries(localStorage)));
+  try{
+    await routePage(page,()=>false);
+    await page.goto(origin+'/index.html');
+    await page.evaluate(prefix=>{
+      document.querySelector('[name=theme][value=jlpt_paper]').click();
+      document.querySelector('[name=timer-reset-warning][value=hide]').click();
+      localStorage.setItem(prefix+'paper:test',JSON.stringify({answers:{q:{selected:2,firstCorrect:false}},position:120}));
+      localStorage.setItem(prefix+'timer:test:norubi',JSON.stringify({version:2,elapsed:10000}));
+      for(const kind of ['paper','timer']){
+        const suffix=kind==='paper'?':test':':test:norubi';
+        localStorage.setItem(prefix+kind+'2'+suffix,localStorage.getItem(prefix+kind+suffix));
+      }
+      localStorage.setItem('unrelated','keep');
+    },prefix);
+    await page.locator('#settings>summary').click();
+    await page.locator('[name=settings-view][value=browser]+span').click();
+    const browserSection=page.locator('[data-settings=browser]');
+    assert.equal(await browserSection.getByRole('heading',{name:'(danger zone) remember this browser'}).isVisible(),true);
+    assert.equal(await browserSection.getByLabel('save settings, answers, timers and position').isChecked(),true);
+    assert.equal(await page.locator('#save-status').textContent(),'Saved on this browser. Settings are shared across pages. Your answers and position are saved in each paper.');
+    const before=await stored();
+    for(const [id,label] of [['reset-preferences','reset settings'],['forget','forget all saved data']]){
+      const trigger=browserSection.getByRole('button',{name:label,exact:true}),dialog=page.locator('#'+id+'-dialog');
+      const pending=await stored();
+      for(const escape of [true,false]){
+        await trigger.click();
+        assert.equal(await dialog.getByRole('heading').textContent(),'are you sure?');
+        assert.match(await dialog.locator('p').textContent(),/This action cannot be undone\./);
+        if(id==='forget')assert.match(await dialog.locator('p').textContent(),/turn off saving.*settings, answers, practice counts, timers, and reading positions/);
+        assert.equal(await dialog.getByRole('button',{name:'cancel'}).evaluate(el=>el===document.activeElement),true);
+        assert.deepEqual(await stored(),pending);
+        if(escape)await page.keyboard.press('Escape');
+        else await dialog.getByRole('button',{name:'cancel'}).click();
+        await dialog.waitFor({state:'hidden'});
+        assert.deepEqual(await stored(),pending);
+        assert.equal(await trigger.evaluate(el=>el===document.activeElement),true);
+      }
+      await trigger.click();
+      await dialog.getByRole('button',{name:label,exact:true}).click();
+      await dialog.waitFor({state:'hidden'});
+      assert.equal(await trigger.evaluate(el=>el===document.activeElement),true);
+      if(id==='reset-preferences'){
+        const after=await stored();
+        assert.equal(JSON.parse(after[settingsKey]).values.theme,'astraJLPT_dark');
+        for(const key of Object.keys(before).filter(key=>key!==settingsKey))assert.equal(after[key],before[key]);
+      }
+    }
+    const remaining=await stored();
+    assert.deepEqual(Object.keys(remaining).sort(),[settingsKey,'unrelated'].sort());
+    assert.deepEqual(JSON.parse(remaining[settingsKey]),{remember:false,epoch:1});
+    assert.equal(remaining.unrelated,'keep');
+    await page.reload();
+    assert.equal(await page.locator('#remember').isChecked(),false);
+    assert.deepEqual(errors,[]);
+  }finally{await context.close();}
 }
 (async()=>{
   const browser=await browsers[engine].launch({headless:true,...(process.env.ASTRA_BROWSER?{executablePath:process.env.ASTRA_BROWSER}:{})});
   let pageCases=0,legacyAnswerCases=0;
   try{
-    for(const width of [1280,390])for(const file of ['index.html','levels/N5.html','papers/N5_sample_2009.html','papers-norubi/N5_sample_2009.html']){
+    await checkCatalogTimers(browser);
+    console.log('PASS latest paper timer durations on nine catalogs in every sort order');
+    await checkBrowserWarnings(browser);
+    console.log('PASS browser confirmations, reset scope, and full wipe');
+    for(const width of [1280,390])for(const file of ['index.html','levels/N5.html','papers/N5_sample_2009.html','papers/N4_sample_2009.html']){
       const reader=file.startsWith('papers'),context=await browser.newContext({viewport:{width,height:900}}),page=await context.newPage(),errors=[];
       let cached=false;page.on('pageerror',error=>errors.push(error.message));await routePage(page,()=>cached);
       await page.goto(origin+'/'+file);
@@ -120,6 +243,7 @@ async function checkTextControls(page,context,width,crossTab){
       const before=await snapshot(page);checkShell(before,reader);
       for(const kind of ['inline','empty']){
         cached=kind;await page.reload();const after=await snapshot(page);checkShell(after,reader);await checkPalette(page,kind);
+        if(kind==='empty'&&file==='levels/N5.html')assert.equal(await page.locator('#timer-limit-preview').textContent(),'paper limit');
         assert.deepEqual(after,before,'Cached '+kind+' shells must preserve saved choices, preferences, and first feedback');
       }
       if(reader){
@@ -131,7 +255,8 @@ async function checkTextControls(page,context,width,crossTab){
       if(reader){
         // Seed a fresh context: unloading an active page would otherwise save
         // its current records over a fixture written directly to localStorage.
-        for(const savedOrigin of storageState.origins)for(const entry of savedOrigin.localStorage)if(entry.name.includes(':paper:')){
+        for(const savedOrigin of storageState.origins)for(const entry of savedOrigin.localStorage)if(entry.name.includes(':paper2:')){
+          entry.name=entry.name.replace(':paper2:',':paper:');
           const record=JSON.parse(entry.value);
           for(const answer of Object.values(record.answers)){delete answer.firstFeedbackVersion;answer.completed=true;answer.firstCorrect=true;}
           entry.value=JSON.stringify(record);

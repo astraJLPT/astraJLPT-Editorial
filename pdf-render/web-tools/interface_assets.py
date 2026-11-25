@@ -8,11 +8,6 @@ ROOT=Path(__file__).resolve().parents[2]
 SITE=ROOT/'astraJLPT'
 
 
-def maintenance_script():
-    source=(ROOT/'pdf-render/web-src/home-maintenance.js').read_text('utf8')
-    return '<script id="browser-storage-maintenance">\n'+source+'</script>'
-
-
 def install_images(site=SITE):
     original=ROOT/'additional-assets/boar-original.png'
     with Image.open(original) as image:
@@ -38,8 +33,6 @@ def refresh(site=SITE):
         if page==site/'index.html':
             markup=re.sub(r'(<a class="level-card level-n([1-5])"[^>]*><span class="card-art"[^>]*>).*?(</span>)',
                           lambda m:m[1]+card_fallback(int(m[2]))+m[3],markup,flags=re.S)
-            markup=re.sub(r'<script id="browser-storage-maintenance">.*?</script>','',markup,flags=re.S)
-            markup=markup.replace('</body>',maintenance_script()+'</body>')
         if markup!=before:
             page.write_text(markup,encoding='utf8',newline='\n');changed+=1
     return changed

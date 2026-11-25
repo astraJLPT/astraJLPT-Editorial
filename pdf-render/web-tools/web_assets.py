@@ -39,6 +39,25 @@ def local_resource(page, url):
     return path
 
 
+def native_reader_options():
+    """Use native settings radios for the same reader rules when scripts are disabled."""
+    source=(Path(__file__).resolve().parents[1]/'web-src/reader-options.css').read_text(encoding='utf-8')
+    # Sibling selectors reach the paper and both PDF links without CSS :has().
+    for mode in ('show','hide'):
+        source=source.replace(f'body[data-rubi={mode}]',f'#rubi-{mode}:checked ~ *')
+    source=re.sub(r"""body\[data-(marking|spacing)\s*=\s*(["\x27]?)([\w-]+)\2\s*\]""",
+                  r'body:has(input[name=\1][value=\3]:checked)',source)
+    for control in ('show-star-order','visible-paper'):
+        source=source.replace(f'body[data-{control}]',f'body:has(#{control}:checked)')
+    return source+'''
+body>input[name=rubi]{position:fixed;top:0;left:0}
+#rubi-show:checked ~ .reader-subbar label[for=rubi-show],
+#rubi-hide:checked ~ .reader-subbar label[for=rubi-hide]{color:var(--accent);box-shadow:inset 0 -2px var(--accent)}
+#rubi-show:focus ~ .reader-subbar label[for=rubi-show],
+#rubi-hide:focus ~ .reader-subbar label[for=rubi-hide]{outline:2px solid var(--accent)}
+'''
+
+
 def page_css(soup, page):
     return '\n'.join([s.get_text() for s in soup.select('style')] + [
         local_resource(page, s['href']).read_text(encoding='utf-8')

@@ -331,7 +331,7 @@ def prepare_ordinary_choices(value, indexes):
             or not 0<=indexes[0]<=indexes[-1]<len(lines)):
         raise ValueError('Ordinary choices require four consecutive complete lines')
     chosen=[lines[n] for n in indexes]
-    table='<table><tr>'+''.join('<td>'+line+'</td>' for line in chosen)+'</tr></table>'
+    table='<table data-ordinary-choice-row="true"><tr>'+''.join('<td>'+line+'</td>' for line in chosen)+'</tr></table>'
     choices=numbered_table_choices(BeautifulSoup(table,'html.parser').table)
     if [c['number'] for c in choices]!=[1,2,3,4]:
         raise ValueError('Ordinary choice lines must retain order1–4')

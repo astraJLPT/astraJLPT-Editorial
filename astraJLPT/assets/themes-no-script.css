@@ -188,3 +188,214 @@ body:has(#theme-vscode:checked){--bg:#1e1e1e;--raised:#191919;--muted:#4d4d4d;--
 body:has(#theme-watermelon:checked){--bg:#1f4437;--raised:#244d3f;--muted:#3e7a65;--accent:#d6686f;--text:#cdc6bc;--correct:#d6686f;--correct-ink:#d6686f;--wrong:#c82931;--edge:#3e7a65;--edge-soft:color-mix(in srgb, #3e7a65 33.65%, transparent);--edge-strong:color-mix(in srgb, #3e7a65 75.84%, transparent);--logo-primary:#d6686f;--logo-secondary:#cdc6bc;--theme-label:"watermelon";color-scheme:dark}
 body:has(#theme-wavez:checked){--bg:#1c292f;--raised:#1b3238;--muted:#1f5e6b;--accent:#6bde3b;--text:#e9efe6;--correct:#6bde3b;--correct-ink:#6bde3b;--wrong:#ca4754;--edge:#1f5e6b;--edge-soft:color-mix(in srgb, #1f5e6b 39.44%, transparent);--edge-strong:color-mix(in srgb, #1f5e6b 83.32%, transparent);--logo-primary:#6bde3b;--logo-secondary:#e9efe6;--theme-label:"wavez";color-scheme:dark}
 body:has(#theme-witch_girl:checked){--bg:#f3dbda;--raised:#e7c8be;--muted:#ddb4a7;--accent:#56786a;--text:#56786a;--correct:#56786a;--correct-ink:#56786a;--wrong:#b29a91;--edge:#56786a;--edge-soft:color-mix(in srgb, #56786a 23.39%, transparent);--edge-strong:color-mix(in srgb, #56786a 49.65%, transparent);--logo-primary:#56786a;--logo-secondary:#ddb4a7;--theme-label:"witch girl";color-scheme:light}
+/* Both PDF destinations are real links so native controls and offline exports
+   can use the same navigation as the scripted reader. */
+.paper-nav [data-rubi-only=hide]{display:none}
+#rubi-hide:checked ~ * .paper-nav [data-rubi-only=hide]{display:inline}
+#rubi-hide:checked ~ * .paper-nav [data-rubi-only=show],
+#rubi-hide:checked ~ * .paper rt,
+#rubi-hide:checked ~ * .paper rp,
+#rubi-hide:checked ~ * .paper .rubi-reading{display:none}
+#rubi-hide:checked ~ * .paper .developer-note:not([data-rubi-both]){display:none!important}
+#rubi-hide:checked ~ * .paper ruby{
+  display:contents;white-space:inherit;
+  /* Some source ruby wrappers have a high-specificity stroke override. */
+  -webkit-text-stroke-width:inherit!important;
+}
+
+/* Blink measures the preceding line when placing ruby. The zero-advance
+   strut preserves its pitch and leaves the adjacent reading room to overhang. */
+@supports (-webkit-ruby-position:before) and (not (ruby-position:inter-character)){
+  :where(#rubi-show:checked ~ *) .section-heading:has(ruby):has(.heading-wide-space){--heading-ruby-pitch:1lh}
+  :where(#rubi-show:checked ~ *) .section-heading:has(ruby) .heading-wide-space:not(:has(+ ruby,+ .wakachi > ruby:first-child))::after,
+  :where(#rubi-show:checked ~ *) .section-heading:has(ruby) .heading-wide-space:has(+ ruby,+ .wakachi > ruby:first-child)::before{
+    content:"　";display:inline-block;width:1px;height:0;overflow:hidden;
+    vertical-align:baseline;line-height:var(--heading-ruby-pitch)
+  }
+}
+/* Gecko can join adjacent ruby runs across a styled word space. */
+@supports (-moz-appearance:none){
+  :where(#rubi-show:checked ~ *) :is(.heading-word-space,.heading-wide-space,.wakachi-gap,.wakachi-wide-gap):has(+ .wakachi ruby)::after{content:"\200b";font-size:0;line-height:0}
+  :where(#rubi-show:checked ~ *) :is(.instruction-boundary,.authored-word-gap):has(+ .wakachi ruby)::after{content:" \200b"}
+}
+
+/* Cell and Rounded Cell use 11%; hollow cells have no fill; borderless fills use 30%.
+   Every alternative is an experiment. Decoration never changes the hitbox. */
+body:has(input[name=marking][value=cell]:checked) .answer-radio:is(:checked,[data-spoiled]) + .option,
+.mark-preview[data-style="cell"] .sample-option,
+body:has(input[name=marking][value=rounded-cell]:checked) .answer-radio:is(:checked,[data-spoiled]) + .option,
+.mark-preview[data-style="rounded-cell"] .sample-option {
+  border-color: var(--state);
+  background: var(--state-cell-fill);
+}
+body:has(input[name=marking][value=hollow-cell]:checked) .answer-radio:is(:checked,[data-spoiled]) + .option,
+.mark-preview[data-style="hollow-cell"] .sample-option,
+body:has(input[name=marking][value=hollow-rounded-cell]:checked) .answer-radio:is(:checked,[data-spoiled]) + .option,
+.mark-preview[data-style="hollow-rounded-cell"] .sample-option {
+  border-color: var(--state);
+  background: transparent;
+}
+body:has(input[name=marking][value=fill]:checked) .answer-radio:is(:checked,[data-spoiled]) + .option,
+.mark-preview[data-style="fill"] .sample-option,
+body:has(input[name=marking][value=rounded-fill]:checked) .answer-radio:is(:checked,[data-spoiled]) + .option,
+.mark-preview[data-style="rounded-fill"] .sample-option {
+  background: var(--state-fill);
+}
+body:has(input[name=marking][value=rounded-cell]:checked) .answer-radio:is(:checked,[data-spoiled]) + .option,
+.mark-preview[data-style="rounded-cell"] .sample-option,
+body:has(input[name=marking][value=hollow-rounded-cell]:checked) .answer-radio:is(:checked,[data-spoiled]) + .option,
+.mark-preview[data-style="hollow-rounded-cell"] .sample-option,
+body:has(input[name=marking][value=rounded-fill]:checked) .answer-radio:is(:checked,[data-spoiled]) + .option,
+.mark-preview[data-style="rounded-fill"] .sample-option {
+  border-radius: .6em;
+}
+
+/* Neon light follows the glyphs, with an unfilled, undecorated answer cell. */
+body:has(input[name=marking][value=neon]:checked) .answer-radio:is(:checked,[data-spoiled]) + .option :is(.option-number, .option-text),
+.mark-preview[data-style="neon"] .sample-option :is(.option-number, .option-text),
+.marking-grid label[data-marking="neon"] .mark-icon {
+  color: var(--state-ink, var(--state));
+  text-shadow: 0 0 .035em var(--state), 0 0 .13em var(--state),
+    0 0 .3em var(--state-neon-glow-70),
+    0 0 .6em var(--state-neon-glow-38);
+  animation: neon-text-breathe 2.8s ease-in-out infinite;
+}
+
+/* A moving hot core and upward trails belong to the text, never to a box.
+   All colors are derived from the current theme's feedback and text roles. */
+body:has(input[name=marking][value=flame]:checked) .answer-radio:is(:checked,[data-spoiled]) + .option :is(.option-number, .option-text),
+.mark-preview[data-style="flame"] .sample-option :is(.option-number, .option-text),
+.marking-grid label[data-marking="flame"] .mark-icon {
+  color: var(--state-ink, var(--state));
+  text-shadow: 0 -.02em .025em var(--state), -.035em -.13em .07em var(--state),
+    .025em -.27em .1em var(--state-flame-glow-70),
+    -.02em -.46em .18em var(--state-flame-glow-35);
+  animation: flame-text-rise 1.35s ease-in-out infinite;
+}
+@supports ((background-clip: text) or (-webkit-background-clip: text)) {
+  body:has(input[name=marking][value=flame]:checked) .answer-radio:is(:checked,[data-spoiled]) + .option :is(.option-number, .option-text),
+.mark-preview[data-style="flame"] .sample-option :is(.option-number, .option-text),
+  body:has(input[name=marking][value=great-flame]:checked) .answer-radio:is(:checked,[data-spoiled]) + .option :is(.option-number, .option-text),
+.mark-preview[data-style="great-flame"] .sample-option :is(.option-number, .option-text),
+  .marking-grid label[data-marking="flame"] .mark-icon,
+  .marking-grid label[data-marking="great-flame"] .mark-icon {
+    background-image: linear-gradient(0deg, var(--state) 0%,
+      var(--state-flame-core) 32%,
+      var(--state-ink, var(--state)) 55%, var(--state) 74%, var(--state) 100%);
+    background-size: 100% 220%;
+    background-position: 0 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+/* Great Flame deliberately rises much farther than Flame. The letter shapes
+   retain a bright core while broad, shifting plumes climb roughly 1.8em.
+   No box is painted and neither the text nor its hitbox changes position. */
+body:has(input[name=marking][value=great-flame]:checked) .answer-radio:is(:checked,[data-spoiled]) + .option :is(.option-number, .option-text),
+.mark-preview[data-style="great-flame"] .sample-option :is(.option-number, .option-text),
+.marking-grid label[data-marking="great-flame"] .mark-icon {
+  color: var(--state);
+  background-size: 100% 320%;
+  text-shadow: 0 0 .025em var(--text), 0 -.045em .055em var(--state),
+    -.05em -.2em .09em var(--state), .08em -.4em .14em var(--state),
+    -.12em -.68em .2em var(--state-great-glow-90),
+    .14em -1em .3em var(--state-great-glow-80),
+    -.08em -1.38em .42em var(--state-great-glow-60),
+    .12em -1.8em .55em var(--state-great-glow-40),
+    0 0 .55em var(--state-great-glow-65);
+  filter: drop-shadow(0 0 .12em var(--state-great-glow-50));
+  animation: great-flame-surge 1.05s ease-in-out infinite;
+}
+
+body:has(input[name=marking][value=bold]:checked) .answer-radio:is(:checked,[data-spoiled]) + .option :is(.option-number, .option-text),
+.mark-preview[data-style="bold"] .sample-option :is(.option-number, .option-text) {
+  color: var(--state-ink, var(--state));
+  font-weight: 400;
+  -webkit-text-stroke: .025em var(--state-ink, var(--state));
+}
+/* Retained .jp fragments use a canonical normal face. In this one experiment
+   they inherit the text mark's weight; this also preserves bold measurement. */
+body:has(input[name=marking][value=bold]:checked) .option-text .jp {
+  font-weight: inherit;
+}
+
+/* Number marks live on the numeral alone. No answer-cell fill or border. */
+body:has(input[name=marking][value=number]:checked) .answer-radio:is(:checked,[data-spoiled]) + .option .option-number,
+.mark-preview[data-style="number"] .sample-option .option-number {
+  color: var(--state-ink, var(--state));
+}
+body:has(input[name=marking][value=number]:checked) .answer-radio[data-correct="true"]:is(:checked,[data-spoiled]) + .option .option-number::before,
+.mark-preview[data-style="number"] .sample-option[data-correct="true"] .option-number::before {
+  content: "";
+  position: absolute;
+  left: 50%; top: 50%;
+  width: 1.65em; height: 1.65em;
+  border: 1.8px solid var(--state);
+  border-radius: 46% 54% 50% 48%;
+  transform: translate(-50%, -50%) rotate(-11deg);
+  pointer-events: none;
+}
+body:has(input[name=marking][value=number]:checked) .answer-radio[data-correct="false"]:is(:checked,[data-spoiled]) + .option .option-number::before,
+.mark-preview[data-style="number"] .sample-option[data-correct="false"] .option-number::before,
+body:has(input[name=marking][value=number]:checked) .answer-radio[data-correct="false"]:is(:checked,[data-spoiled]) + .option .option-number::after,
+.mark-preview[data-style="number"] .sample-option[data-correct="false"] .option-number::after {
+  content: "";
+  position: absolute;
+  left: 50%; top: 50%;
+  width: 1.7em;
+  border-top: 1.8px solid var(--state);
+  transform: translate(-50%, -50%) rotate(48deg);
+  pointer-events: none;
+}
+body:has(input[name=marking][value=number]:checked) .answer-radio[data-correct="false"]:is(:checked,[data-spoiled]) + .option .option-number::after,
+.mark-preview[data-style="number"] .sample-option[data-correct="false"] .option-number::after {
+  transform: translate(-50%, -50%) rotate(-48deg);
+}
+
+body:has(input[name=marking][value=margin]:checked) .question {
+  padding-inline-start: 2.15em;
+}
+body:has(input[name=marking][value=margin]:checked) .margin-answer {
+  display: block;
+  place-items: center;
+  position: absolute;
+  inset-inline-start: 0;
+  inset-block-start: var(--margin-mark-offset, .05em);
+  inline-size: 1.4em;
+  block-size: 1.5em;
+  font: italic 700 1.25em/1.5 Georgia, serif;
+  font-variant-numeric: tabular-nums;
+  color: var(--margin-state, transparent);
+  transform: rotate(-8deg);
+  transform-origin: center;
+  pointer-events: none;
+}
+
+/* These styles supply their own non-color cue. Keep its original space so
+   selecting an answer never changes its hitbox or text width. */
+body:has(input[name=marking][value=number]:checked) .option-feedback,
+body:has(input[name=marking][value=margin]:checked) .option-feedback {
+  visibility: hidden;
+}
+
+body:has(input[name=spacing][value=original]:checked){--line-preset:1;--block-preset:1}
+body:has(input[name=spacing][value=standard]:checked){--line-preset:.9;--block-preset:.75}
+body:has(input[name=spacing][value=compact]:checked){--line-preset:.8;--block-preset:.5}
+body:has(#visible-paper:checked) .paper{outline:1px solid var(--edge)}
+body:has(input[name=marking][value=cell]:checked) .answer-radio:is(:checked,[data-spoiled]) + .option,
+body:has(input[name=marking][value=rounded-cell]:checked) .answer-radio:is(:checked,[data-spoiled]) + .option,
+body:has(input[name=marking][value=hollow-cell]:checked) .answer-radio:is(:checked,[data-spoiled]) + .option,
+body:has(input[name=marking][value=hollow-rounded-cell]:checked) .answer-radio:is(:checked,[data-spoiled]) + .option {
+  outline-color: var(--state);
+}
+body:has(#show-star-order:checked) .question:has(.answer-radio[data-correct=true]:checked) .star-solution{display:block;visibility:visible}
+
+body:has(#show-star-order:checked) .question:has(.answer-radio[data-correct="true"]:checked) .star-unavailable{display:block}
+
+body>input[name=rubi]{position:fixed;top:0;left:0}
+#rubi-show:checked ~ .reader-subbar label[for=rubi-show],
+#rubi-hide:checked ~ .reader-subbar label[for=rubi-hide]{color:var(--accent);box-shadow:inset 0 -2px var(--accent)}
+#rubi-show:focus ~ .reader-subbar label[for=rubi-show],
+#rubi-hide:focus ~ .reader-subbar label[for=rubi-hide]{outline:2px solid var(--accent)}

@@ -12,10 +12,10 @@ from html import escape
 from html.parser import HTMLParser
 import copy,json,re,statistics,sys
 from bs4 import BeautifulSoup
-from settings_ui import settings
+from settings_ui import install_rubi_controls,settings
 from theme_editor import color_roles,editor_markup,FILL_CONTROLS
-from theme_colors import theme_css
-from question_data import PAGE_DATA,read_page_data,shared_page_data,asset_path,question_script
+from theme_colors import install_theme_assets
+from question_data import PAGE_DATA,encode,read_page_data,shared_page_data,asset_path,question_script
 
 ROOT=Path(__file__).resolve().parents[2]
 sys.path.insert(0,str(ROOT/'pdf-render/tools'))
@@ -108,6 +108,7 @@ def dialogs(unit):
 
 def reader(markup,data,timing,registry):
     paper=data['paper'];paper['timer']=timing
+    markup=install_rubi_controls(markup)
     content=Content(markup)
     for question in data['questions']:question['domain']=content.questions[question['id']]
     profile=registry['profiles'].get(paper['unit'])
@@ -121,22 +122,39 @@ def reader(markup,data,timing,registry):
     markup=re.sub(r'<div class="grade-toolbar js-only" data-practice="[^"]+">.*?</div>','',markup,flags=re.S)
     markup=re.sub(r'(<main\b[^>]*class="paper-stage"[^>]*>)',lambda m:m[1]+grade_bar('top'),markup,count=1)
     markup=markup.replace('<div class="paper-end">',grade_bar('bottom')+'<div class="paper-end">',1)
+    markup=markup.replace('<span>End of available questions</span>','',1)
     markup=re.sub(r'\s*<dialog\b[^>]*data-practice="[^"]+"[^>]*>.*?</dialog>\s*','',markup,flags=re.S)
     markup=markup.replace('</body>',dialogs(paper['unit'])+'</body>')
     markup=re.sub(r'<span class="progress-(?:completed|correct)">.*?</span>',
                   '<span class="progress-correct">correct</span>',markup)
     return shared_page_data(markup,data)
 
-def catalog(markup,reference):
+def catalog_timer_example(papers,timings=None):
+    sittings=(p for p in papers if p['content_kind'] in ('calendar','historical'))
+    latest=max(sittings,key=lambda p:(p['year'],p.get('month') or 0),default=None)
+    if latest is None:return {}
+    timing=(timings or {}).get(latest['unit']) or latest.get('timer')
+    seconds=timing['seconds'] if timing else sum(minutes(latest))*60
+    return {'catalog_timer_seconds':seconds}
+
+def catalog(markup,reference,timings=None):
     soup=BeautifulSoup(markup,'html.parser');back=soup.select_one('.back-link')
     if not soup.select_one('#catalog-sort'):
         row=soup.new_tag('div',attrs={'class':'catalog-navigation'});back.wrap(row)
         row.append(BeautifulSoup(SORT,'html.parser'))
+    papers=[]
     for rank,card in enumerate(soup.select('.paper-grid>.paper-card')):
         unit=Path(card.select_one('.paper-cover')['href']).stem
         p=reference[unit]['paper']
+        papers.append(p)
         card['data-rank']=str(rank) if not card.has_attr('data-rank') else card['data-rank']
         card['data-year']=str(p['year']);card['data-month']=str(p.get('month') or 0)
+    script=soup.find('script',id='page-data')
+    if script is not None:
+        data=json.loads(script.string or '{}')
+        data.pop('catalog_timer_seconds',None)
+        data.update(catalog_timer_example(papers,timings))
+        script.string=encode(data)
     note=soup.select_one('.collection-note')
     if not soup.select_one('#catalog-order-note'):
         for text in list(note.find_all(string=True)):
@@ -156,8 +174,7 @@ def refresh():
     themes['colorRoles']=color_roles();themes['fillControls']=FILL_CONTROLS
     themes['editorMarkup']=editor_markup()
     themes_path.write_text('globalThis.AstraThemes = '+json.dumps(themes,ensure_ascii=False,separators=(',',':'))+';\n',encoding='utf8',newline='\n')
-    (SITE/'assets/themes.css').write_text(theme_css(themes),encoding='utf8',newline='\n')
-    (SITE/'assets/themes-no-script.css').write_text(theme_css(themes,no_script=True),encoding='utf8',newline='\n')
+    install_theme_assets(SITE)
     registry=json.loads((ROOT/'pdf-render/web-src/historical-scoring.json').read_text('utf8'))
     reference={}
     for path in sorted((SITE/'papers').glob('*.html')):
@@ -185,7 +202,7 @@ def refresh():
             new=reader(new,data,timings[unit],registry)
             if shared_questions.setdefault(unit,data['questions'])!=data['questions']:
                 raise ValueError('Reader editions have different question data: '+unit)
-        elif path.parent.name=='levels':new=catalog(new,reference)
+        elif path.parent.name=='levels':new=catalog(new,reference,timings)
         if new!=markup:updates[path]=new
     for unit,questions in shared_questions.items():
         target=SITE/asset_path(unit);target.parent.mkdir(parents=True,exist_ok=True)

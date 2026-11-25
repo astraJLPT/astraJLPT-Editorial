@@ -214,7 +214,10 @@ def theme_css(themes, no_script=False):
 
 def install_theme_assets(site):
     import json
+    from web_assets import native_reader_options
     source = (site/'assets/theme-data.js').read_text(encoding='utf-8')
     themes = json.loads(source.removeprefix('globalThis.AstraThemes = ').rstrip().removesuffix(';'))
     for name, no_script in [('themes.css', False), ('themes-no-script.css', True)]:
-        (site/'assets'/name).write_text(theme_css(themes, no_script), encoding='utf-8', newline='\n')
+        css=theme_css(themes,no_script)
+        if no_script:css+='\n'+native_reader_options()
+        (site/'assets'/name).write_text(css, encoding='utf-8', newline='\n')

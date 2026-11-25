@@ -818,7 +818,7 @@
       "id": "reading-s04",
       "part": "reading",
       "heading": {
-        "html": "もんだい4　つぎの（1）と（2）の ぶんしょうを <ruby>読<rt>よ</rt></ruby>んで、しつもんに こたえてください。こたえは、1・2・3・4から いちばん いい ものを <ruby>一<rt>ひと</rt></ruby>つ えらんで ください。"
+        "html": "もんだい4　つぎの（1）と（2）の ぶんしょうを <ruby>読<rt>よ</rt></ruby>んで、しつもんに こたえて ください。こたえは、1・2・3・4から いちばん いい ものを <ruby>一<rt>ひと</rt></ruby>つ えらんで ください。"
       },
       "items": [
         {
@@ -881,7 +881,7 @@
       "id": "reading-s05",
       "part": "reading",
       "heading": {
-        "html": "もんだい5　つぎの ぶんしょうを <ruby>読<rt>よ</rt></ruby>んで、しつもんに こたえてください。こたえは、1・2・3・4から いちばん いい ものを <ruby>一<rt>ひと</rt></ruby>つ えらんで ください。"
+        "html": "もんだい5　つぎの ぶんしょうを <ruby>読<rt>よ</rt></ruby>んで、しつもんに こたえて ください。こたえは、1・2・3・4から いちばん いい ものを <ruby>一<rt>ひと</rt></ruby>つ えらんで ください。"
       },
       "items": [
         {
@@ -5180,13 +5180,13 @@
         "slot": "heading",
         "task": "reading",
         "role": "heading",
-        "canonical_sha256": "bfd0b90d71354d8e08791fc1ccebd3f7fd53add427988163c59f284eb82ba0c0",
-        "rendered_sha256": "bfd0b90d71354d8e08791fc1ccebd3f7fd53add427988163c59f284eb82ba0c0",
-        "projection_sha256": "9d42d05949937d18f73fb2a8e3e967cdbe848635dd3503b7b030166693f80e77",
+        "canonical_sha256": "977530821fc879daea2123241255a007d293678a65e9f0d295044616e333e281",
+        "rendered_sha256": "977530821fc879daea2123241255a007d293678a65e9f0d295044616e333e281",
+        "projection_sha256": "5f6f17647009698653c0c7ed05e234556a2707591b7cf2a5337478d1ea4ede60",
         "basis": "retain_audited_groups",
-        "rationale": "Retain existing audited groups and separate structural spacing. No missing boundary authored for this field; labels, blanks, choice fragments, titles, numeric/contact/Latin and table geometry retain their existing roles.",
+        "rationale": "This heading encodes its verified word groups directly in the editorial text.",
         "boundaries": [],
-        "author": "main_llm_h11"
+        "author": "editorial-20261125"
       },
       {
         "unit": "N5_07_2024",
@@ -5388,13 +5388,13 @@
         "slot": "heading",
         "task": "reading",
         "role": "heading",
-        "canonical_sha256": "4465d8aab5ac9f2b14c298354d3cf9cf84e8cc23b35ff110ed2523788163b29f",
-        "rendered_sha256": "4465d8aab5ac9f2b14c298354d3cf9cf84e8cc23b35ff110ed2523788163b29f",
-        "projection_sha256": "fbde39e852d6752636a2019e54fa9667c35f46ed676499628a4067c13e172b6f",
+        "canonical_sha256": "2a1935bcd6717b63ce0780d8165893ade67483c0165efdb8a8309a6f5c73746c",
+        "rendered_sha256": "2a1935bcd6717b63ce0780d8165893ade67483c0165efdb8a8309a6f5c73746c",
+        "projection_sha256": "8663f6b83920f47ff8861e8b83fd93069377d79b662e92691a64c13f5bd95c5a",
         "basis": "retain_audited_groups",
-        "rationale": "Retain existing audited groups and separate structural spacing. No missing boundary authored for this field; labels, blanks, choice fragments, titles, numeric/contact/Latin and table geometry retain their existing roles.",
+        "rationale": "This heading encodes its verified word groups directly in the editorial text.",
         "boundaries": [],
-        "author": "main_llm_h11"
+        "author": "editorial-20261125"
       },
       {
         "unit": "N5_07_2024",

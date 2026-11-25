@@ -439,7 +439,7 @@
     {
       "id": "vocab-s05",
       "part": "vocab",
-      "heading": "もんだい5: つぎの　ことばの　つかいかたで　いちばん　いいものを　1・2・3・4から　ひとつ　えらんで　ください。",
+      "heading": "もんだい5: つぎの　ことばの　つかいかたで　いちばん　いい　ものを　1・2・3・4から　ひとつ　えらんで　ください。",
       "items": [
         {
           "id": "vocab-q031",
@@ -1153,7 +1153,7 @@
     {
       "id": "reading-s01",
       "part": "reading",
-      "heading": "もんだい4: つぎの（1）から（3）の文章を　読んで、質問に　答えて　ください。答えは、1・2・3・4から　いちばん　いい　ものを　一つ　えらんで　ください。",
+      "heading": "もんだい4: つぎの（1）から（3）の文章を読んで、質問に答えてください。答えは、1・2・3・4からいちばんいいものを一つえらんでください。",
       "items": [
         {
           "id": "reading-b001",
@@ -1227,7 +1227,7 @@
     {
       "id": "reading-s02",
       "part": "reading",
-      "heading": "もんだい5: つぎの　文章を　読んで、質問に　答えて　ください。答えは、1・2・3・4から　いちばん　いい　ものを　一つ　えらんで　ください。",
+      "heading": "もんだい5: つぎの文章を読んで、質問に答えてください。答えは、1・2・3・4からいちばんいいものを一つえらんでください。",
       "items": [
         {
           "id": "reading-b008",
@@ -1295,7 +1295,7 @@
     {
       "id": "reading-s03",
       "part": "reading",
-      "heading": "もんだい6: 右のページの日本文化教室の案内を　見て、下の質問に　答えて　ください。答えは、1・2・3・4から　いちばん　いい　ものを　一つ　えらんで　ください。",
+      "heading": "もんだい6: 右のページの日本文化教室の案内を見て、下の質問に答えてください。答えは、1・2・3・4からいちばんいいものを一つえらんでください。",
       "items": [
         {
           "id": "reading-b013",
@@ -3690,7 +3690,7 @@
         "rendered_sha256": "f75f87b124d939352350ba6ca598337712a3d75146675b96bb25cebb18814bc4",
         "projection_sha256": "59df09c222d260c648424c3a0bae4cf0a8351b6e2c847a9be252ab86fc6b0cd5",
         "basis": "declared_llm_restoration",
-        "rationale": "Main LLM read the exact field and authored pedagogical phrase boundaries. Existing separators, lexical content, ruby bases/readings, underlines, blank padding and STAR slots are preserved.",
+        "rationale": "Printed lexical groups verified at the numeral boundary. See the compressed fixlog.",
         "boundaries": [
           {
             "offset": 8,
@@ -3705,13 +3705,19 @@
             "id": "eea47f0d05f74f4bdf7f"
           },
           {
+            "id": "f07f12de413c04973ac1",
+            "offset": 13,
+            "left": "1. わたしはいつもあさ",
+            "right": "7時におきます。"
+          },
+          {
             "offset": 16,
             "left": "わたしはいつもあさ7時に",
             "right": "おきます。",
             "id": "54828b35d9d602488942"
           }
         ],
-        "author": "main_llm_h11"
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_07_2010",
@@ -5229,10 +5235,17 @@
         "canonical_sha256": "4938c0c9047c2023bf646f28eb6fed7443f47ae58ac3d6f45001e2d821b67e54",
         "rendered_sha256": "4938c0c9047c2023bf646f28eb6fed7443f47ae58ac3d6f45001e2d821b67e54",
         "projection_sha256": "e013dbe7d8c4630fc829a50c476613b7f50f8e8f8531ec7e438042f121e134aa",
-        "basis": "retain_audited_groups",
-        "rationale": "Retain existing audited groups and separate structural spacing. No missing boundary authored for this field; labels, blanks, choice fragments, titles, numeric/contact/Latin and table geometry retain their existing roles.",
-        "boundaries": [],
-        "author": "main_llm_h11"
+        "basis": "declared_llm_restoration",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
+        "boundaries": [
+          {
+            "id": "a96d63980a427d05d3b8",
+            "offset": 30,
+            "left": "いものに　いけません」と",
+            "right": "言いました。"
+          }
+        ],
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_07_2010",
@@ -5245,10 +5258,17 @@
         "canonical_sha256": "c26d98eae74d2cb03de7605dc389b0b5ec42e1dc4c02553583a9c90817147f8c",
         "rendered_sha256": "c26d98eae74d2cb03de7605dc389b0b5ec42e1dc4c02553583a9c90817147f8c",
         "projection_sha256": "d01a96222d02d45f330ffdd3a4f38d8ccb358c01ddec7699a900a441a6f381f6",
-        "basis": "retain_audited_groups",
-        "rationale": "Retain existing audited groups and separate structural spacing. No missing boundary authored for this field; labels, blanks, choice fragments, titles, numeric/contact/Latin and table geometry retain their existing roles.",
-        "boundaries": [],
-        "author": "main_llm_h11"
+        "basis": "declared_llm_restoration",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
+        "boundaries": [
+          {
+            "id": "749be77c2d86bd0cfeb5",
+            "offset": 33,
+            "left": "のに　行って　きます」と",
+            "right": "言いました。"
+          }
+        ],
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_07_2010",
@@ -5277,10 +5297,17 @@
         "canonical_sha256": "f242dbeed6c3f2521e934f8263b933788212131685b9208c8dd44311e9d3fa71",
         "rendered_sha256": "f242dbeed6c3f2521e934f8263b933788212131685b9208c8dd44311e9d3fa71",
         "projection_sha256": "cdb085684d57349b505644c69438c64a1c79d8a0df8a92b6ffd66111fbf197b8",
-        "basis": "retain_audited_groups",
-        "rationale": "Retain existing audited groups and separate structural spacing. No missing boundary authored for this field; labels, blanks, choice fragments, titles, numeric/contact/Latin and table geometry retain their existing roles.",
-        "boundaries": [],
-        "author": "main_llm_h11"
+        "basis": "declared_llm_restoration",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
+        "boundaries": [
+          {
+            "id": "aed128378a9f582a358c",
+            "offset": 32,
+            "left": "ものに　いきませんか」と",
+            "right": "言いました。"
+          }
+        ],
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_07_2010",
@@ -5962,13 +5989,13 @@
         "slot": "heading",
         "task": "usage",
         "role": "heading",
-        "canonical_sha256": "9078ef40d081bdd7a42c0f5c136a688a9a8831bad400b0b49f1a761d9ce8b34d",
-        "rendered_sha256": "9078ef40d081bdd7a42c0f5c136a688a9a8831bad400b0b49f1a761d9ce8b34d",
-        "projection_sha256": "87310eb5e8938c2081f3790c48000d275ebc726ca34ca3147973cee683aa2d98",
+        "canonical_sha256": "50e195798890c752f223651747c3cccfa0b568024a1e9df32c44f3daf903a32f",
+        "rendered_sha256": "50e195798890c752f223651747c3cccfa0b568024a1e9df32c44f3daf903a32f",
+        "projection_sha256": "60e9621b57344e2682f2a8c7b4bb2ea215bfdec2fc550474a58b94026ef8ce23",
         "basis": "retain_audited_groups",
-        "rationale": "Retain existing audited groups and separate structural spacing. No missing boundary authored for this field; labels, blanks, choice fragments, titles, numeric/contact/Latin and table geometry retain their existing roles.",
+        "rationale": "The reviewed instruction encodes its word groups directly in the canonical text.",
         "boundaries": [],
-        "author": "main_llm_h11"
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_07_2010",
@@ -7279,16 +7306,22 @@
         "rendered_sha256": "cb89fd590de5f88b9d43ff1c467db82ca6bd4ac7627f2a899d06d5f14947f9d7",
         "projection_sha256": "977b55c42533e3ff56af48b635bb6f11f14fc26e7de5f880a548ee5c6d6ce54d",
         "basis": "declared_llm_restoration",
-        "rationale": "Main LLM read the exact field and authored pedagogical phrase boundaries. Existing separators, lexical content, ruby bases/readings, underlines, blank padding and STAR slots are preserved.",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
         "boundaries": [
           {
             "offset": 43,
             "left": "「今　わたしが　着ている",
             "right": "シャツのような、（　）色",
             "id": "6b9926558d1537971963"
+          },
+          {
+            "id": "a9205aae4303c80d10ce",
+            "offset": 47,
+            "left": "たしが　着ているシャツの",
+            "right": "ような、（　）色です。」"
           }
         ],
-        "author": "main_llm_h11"
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_07_2010",
@@ -7406,10 +7439,17 @@
         "canonical_sha256": "b6a0011ae5396244b7b7fc9918502ba72c8abe7da5a4edbcbbef6292b4cd35ce",
         "rendered_sha256": "b6a0011ae5396244b7b7fc9918502ba72c8abe7da5a4edbcbbef6292b4cd35ce",
         "projection_sha256": "875dff4e2ced24b276e5f116a43bcf09c5292385b6a04736bc60f356e6664fe1",
-        "basis": "atomic_or_structural",
-        "rationale": "Retain this atomic choice, short phrase, label or structural content without internal pedagogical division.",
-        "boundaries": [],
-        "author": "main_llm_h11"
+        "basis": "declared_llm_restoration",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
+        "boundaries": [
+          {
+            "id": "7d985c25d4a5ae494f87",
+            "offset": 3,
+            "left": "言って",
+            "right": "いる"
+          }
+        ],
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_07_2010",
@@ -7422,10 +7462,17 @@
         "canonical_sha256": "70bb7a50e4823cb93abef7e6f6737729419f93ecb7b990e9daa683041c90b88c",
         "rendered_sha256": "70bb7a50e4823cb93abef7e6f6737729419f93ecb7b990e9daa683041c90b88c",
         "projection_sha256": "e3916c4c983309592f00751e03de6eecdca91f16bd920b0c6c559c1e215f1b31",
-        "basis": "atomic_or_structural",
-        "rationale": "Retain this atomic choice, short phrase, label or structural content without internal pedagogical division.",
-        "boundaries": [],
-        "author": "main_llm_h11"
+        "basis": "declared_llm_restoration",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
+        "boundaries": [
+          {
+            "id": "6dc63a156321f90089b6",
+            "offset": 3,
+            "left": "言って",
+            "right": "いるの"
+          }
+        ],
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_07_2010",
@@ -7438,10 +7485,17 @@
         "canonical_sha256": "95d6fe6291081148ee7be5749a41e5dd3d8f79e238e723f4d52b4ca3989518ec",
         "rendered_sha256": "95d6fe6291081148ee7be5749a41e5dd3d8f79e238e723f4d52b4ca3989518ec",
         "projection_sha256": "b1f6297fdc42f12419dc24b8e0194405a913f2c2d8ee760c2f3ef31df8b4ec53",
-        "basis": "atomic_or_structural",
-        "rationale": "Retain this atomic choice, short phrase, label or structural content without internal pedagogical division.",
-        "boundaries": [],
-        "author": "main_llm_h11"
+        "basis": "declared_llm_restoration",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
+        "boundaries": [
+          {
+            "id": "58736db991fb285519cf",
+            "offset": 3,
+            "left": "言って",
+            "right": "いること"
+          }
+        ],
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_07_2010",
@@ -7454,10 +7508,17 @@
         "canonical_sha256": "28f548a376ee54b8789c0f0230a2a5515808fdef6e8e8750fa39758023b83991",
         "rendered_sha256": "28f548a376ee54b8789c0f0230a2a5515808fdef6e8e8750fa39758023b83991",
         "projection_sha256": "3bc81e2a99babf758fef26079fba0a3c32c85e2f1cab343a9917502be0890298",
-        "basis": "atomic_or_structural",
-        "rationale": "Retain this atomic choice, short phrase, label or structural content without internal pedagogical division.",
-        "boundaries": [],
-        "author": "main_llm_h11"
+        "basis": "declared_llm_restoration",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
+        "boundaries": [
+          {
+            "id": "8075147580e79e278197",
+            "offset": 3,
+            "left": "言って",
+            "right": "いるもの"
+          }
+        ],
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_07_2010",
@@ -7731,10 +7792,17 @@
         "canonical_sha256": "d3fd013310907f1b412e9ea509c365e9cc099928387847daaa88856dc85504af",
         "rendered_sha256": "d3fd013310907f1b412e9ea509c365e9cc099928387847daaa88856dc85504af",
         "projection_sha256": "d5d4b9b777ffe7c011f75d1e90730fef513668a08ab18fcb0a02ed8bacdbfa51",
-        "basis": "atomic_or_structural",
-        "rationale": "Retain this atomic choice, short phrase, label or structural content without internal pedagogical division.",
-        "boundaries": [],
-        "author": "main_llm_h11"
+        "basis": "declared_llm_restoration",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
+        "boundaries": [
+          {
+            "id": "d8a58c6569261173afae",
+            "offset": 3,
+            "left": "売って",
+            "right": "いきます"
+          }
+        ],
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_07_2010",
@@ -7763,10 +7831,17 @@
         "canonical_sha256": "11228728ec0d7d0e5d029dd7fb5a0113317c34246ed13c9f8a55a7fa7f3e3967",
         "rendered_sha256": "11228728ec0d7d0e5d029dd7fb5a0113317c34246ed13c9f8a55a7fa7f3e3967",
         "projection_sha256": "155a0ac3ec38f16d23f18b60de326a47cf54d3edc35234ef7e3d24573b5723de",
-        "basis": "atomic_or_structural",
-        "rationale": "Retain this atomic choice, short phrase, label or structural content without internal pedagogical division.",
-        "boundaries": [],
-        "author": "main_llm_h11"
+        "basis": "declared_llm_restoration",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
+        "boundaries": [
+          {
+            "id": "0947d67f8c35e9fa3c08",
+            "offset": 4,
+            "left": "売られて",
+            "right": "います"
+          }
+        ],
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_07_2010",
@@ -7780,7 +7855,7 @@
         "rendered_sha256": "744fbb1ffc306eb00ac866024787f01de1561c5002573b634602e7b75f51a8a6",
         "projection_sha256": "defc48d7cb997b4d070c0d2e37bae187e9bf18f5d5ffe4245e91a8629515d739",
         "basis": "declared_llm_restoration",
-        "rationale": "Main LLM read the exact field and authored pedagogical phrase boundaries. Existing separators, lexical content, ruby bases/readings, underlines, blank padding and STAR slots are preserved.",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
         "boundaries": [
           {
             "offset": 13,
@@ -7805,9 +7880,15 @@
             "left": "先生「はい。では、見せて",
             "right": "ください。」\n　　学生「",
             "id": "e63461732f841084782d"
+          },
+          {
+            "id": "570010cb1f4b3e77c187",
+            "offset": 81,
+            "left": "」\n　　先生「ええ。よく",
+            "right": "なりましたね。」"
           }
         ],
-        "author": "main_llm_h11"
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_07_2010",
@@ -8167,10 +8248,17 @@
         "canonical_sha256": "8ae56ebdf579a38d6b3015b85d928360f2e2c90d444a9f192a828f4e74bf26b9",
         "rendered_sha256": "8ae56ebdf579a38d6b3015b85d928360f2e2c90d444a9f192a828f4e74bf26b9",
         "projection_sha256": "ac6b6037ca3e05ebef21933e292fe6dd963a8cfdebbeeeac2aba8ca76e86751b",
-        "basis": "atomic_or_structural",
-        "rationale": "Retain this atomic choice, short phrase, label or structural content without internal pedagogical division.",
-        "boundaries": [],
-        "author": "main_llm_h11"
+        "basis": "declared_llm_restoration",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
+        "boundaries": [
+          {
+            "id": "3332a1cb55baece3907d",
+            "offset": 4,
+            "left": "飲まれて",
+            "right": "しまいました"
+          }
+        ],
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_07_2010",
@@ -8183,10 +8271,17 @@
         "canonical_sha256": "1b52a58d905660bbf0f3941919ac8aeb58789a51f5d7f1d64307792afe41a478",
         "rendered_sha256": "1b52a58d905660bbf0f3941919ac8aeb58789a51f5d7f1d64307792afe41a478",
         "projection_sha256": "3b613834ea829dc8a14b7593b2dab334b55bdaf4dc4dab7bd3913795fa59147d",
-        "basis": "atomic_or_structural",
-        "rationale": "Retain this atomic choice, short phrase, label or structural content without internal pedagogical division.",
-        "boundaries": [],
-        "author": "main_llm_h11"
+        "basis": "declared_llm_restoration",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
+        "boundaries": [
+          {
+            "id": "7d8dba4e2b475ecc77a0",
+            "offset": 3,
+            "left": "飲んで",
+            "right": "みました"
+          }
+        ],
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_07_2010",
@@ -8258,10 +8353,17 @@
         "canonical_sha256": "519aa46cf63bc88652e72b9887fa35a16f3764e102c9e482e113f3722f45bcfe",
         "rendered_sha256": "519aa46cf63bc88652e72b9887fa35a16f3764e102c9e482e113f3722f45bcfe",
         "projection_sha256": "ef6f961f28d60f5fa21691c1591269375b81c0c9ad9edbbb6dc65ce14c33eac3",
-        "basis": "atomic_or_structural",
-        "rationale": "Retain this atomic choice, short phrase, label or structural content without internal pedagogical division.",
-        "boundaries": [],
-        "author": "main_llm_h11"
+        "basis": "declared_llm_restoration",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
+        "boundaries": [
+          {
+            "id": "88d3a23f6fbfc29ebea9",
+            "offset": 3,
+            "left": "聞いて",
+            "right": "みたのですが"
+          }
+        ],
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_07_2010",
@@ -8290,10 +8392,17 @@
         "canonical_sha256": "63a26382a917c1b0b58d8657c7a4409b325aaac258f36331431778d948754a36",
         "rendered_sha256": "63a26382a917c1b0b58d8657c7a4409b325aaac258f36331431778d948754a36",
         "projection_sha256": "178d76b9f954e40c00c4214420476fc2d6cea812a1e9ca208b60ab9f49e14d5f",
-        "basis": "atomic_or_structural",
-        "rationale": "Retain this atomic choice, short phrase, label or structural content without internal pedagogical division.",
-        "boundaries": [],
-        "author": "main_llm_h11"
+        "basis": "declared_llm_restoration",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
+        "boundaries": [
+          {
+            "id": "401afccb0430804057e0",
+            "offset": 4,
+            "left": "聞こうと",
+            "right": "思いますか"
+          }
+        ],
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_07_2010",
@@ -8306,10 +8415,17 @@
         "canonical_sha256": "32d06b24e5bead5ffdd54b27fd8fa2216a7618fbcf90d26c7f4792dedf3981d3",
         "rendered_sha256": "32d06b24e5bead5ffdd54b27fd8fa2216a7618fbcf90d26c7f4792dedf3981d3",
         "projection_sha256": "b11a5cebfd3dd6004443e6fed45b0c0252c7a600bf08244ffabcf2b534b41540",
-        "basis": "atomic_or_structural",
-        "rationale": "Retain this atomic choice, short phrase, label or structural content without internal pedagogical division.",
-        "boundaries": [],
-        "author": "main_llm_h11"
+        "basis": "declared_llm_restoration",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
+        "boundaries": [
+          {
+            "id": "bba6e10229188c80e686",
+            "offset": 3,
+            "left": "聞いて",
+            "right": "もらえますか"
+          }
+        ],
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_07_2010",
@@ -8832,7 +8948,7 @@
         "rendered_sha256": "b44ae7d365502418142382b5630f59fa91948826222fb1038449a004c782054c",
         "projection_sha256": "9331a62f5ff777168a7aa6272343d235ab9de77881d6280d7a356f81be8557ee",
         "basis": "declared_llm_restoration",
-        "rationale": "Main LLM read the exact field and authored pedagogical phrase boundaries. Existing separators, lexical content, ruby bases/readings, underlines, blank padding and STAR slots are preserved.",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
         "boundaries": [
           {
             "offset": 3,
@@ -8845,6 +8961,12 @@
             "left": "これは「料理と",
             "right": "わたし」についての作文で",
             "id": "69dab49022cceca1f9d2"
+          },
+          {
+            "id": "03aa8ef5d74d3f0b8ffd",
+            "offset": 12,
+            "left": "これは「料理とわたし」に",
+            "right": "ついての作文です。\n　私"
           },
           {
             "offset": 16,
@@ -9135,7 +9257,7 @@
             "id": "8eca51acd312020b87ea"
           }
         ],
-        "author": "main_llm_h11"
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_07_2010",
@@ -9244,10 +9366,17 @@
         "canonical_sha256": "a98bb87e5b3a78712c5ea0c64a450809a10f1437fdfa0c61f18e40a155ae63c1",
         "rendered_sha256": "a98bb87e5b3a78712c5ea0c64a450809a10f1437fdfa0c61f18e40a155ae63c1",
         "projection_sha256": "1b920a6a3164ed856af17c85898bd1c0cf0bdaa0e93249ac849fbcbd75ca2d9e",
-        "basis": "atomic_or_structural",
-        "rationale": "Retain this atomic choice, short phrase, label or structural content without internal pedagogical division.",
-        "boundaries": [],
-        "author": "main_llm_h11"
+        "basis": "declared_llm_restoration",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
+        "boundaries": [
+          {
+            "id": "242f272e7c758bb151dc",
+            "offset": 3,
+            "left": "しなく",
+            "right": "なります"
+          }
+        ],
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_07_2010",
@@ -9260,10 +9389,17 @@
         "canonical_sha256": "34b283f211eb188c8c06e2410aa925436efdd1fa87fa3cfd31a44405fe8d0420",
         "rendered_sha256": "34b283f211eb188c8c06e2410aa925436efdd1fa87fa3cfd31a44405fe8d0420",
         "projection_sha256": "12738fbf11a2fd98c944f17bf05ed0be374f9d9935f87c4d46d0a0c9d2107e6a",
-        "basis": "atomic_or_structural",
-        "rationale": "Retain this atomic choice, short phrase, label or structural content without internal pedagogical division.",
-        "boundaries": [],
-        "author": "main_llm_h11"
+        "basis": "declared_llm_restoration",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
+        "boundaries": [
+          {
+            "id": "1d0268f0e4b48c76d876",
+            "offset": 3,
+            "left": "しなく",
+            "right": "なりました"
+          }
+        ],
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_07_2010",
@@ -9276,10 +9412,17 @@
         "canonical_sha256": "1f60182435ab082c7c671518a3bfbc0abf7202cf5e3ce94b30bb0c08d00d5f9b",
         "rendered_sha256": "1f60182435ab082c7c671518a3bfbc0abf7202cf5e3ce94b30bb0c08d00d5f9b",
         "projection_sha256": "7384fbf56e8895ab2094cd9893fe28ed4961aa60ea80d78466b83b1878dff250",
-        "basis": "atomic_or_structural",
-        "rationale": "Retain this atomic choice, short phrase, label or structural content without internal pedagogical division.",
-        "boundaries": [],
-        "author": "main_llm_h11"
+        "basis": "declared_llm_restoration",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
+        "boundaries": [
+          {
+            "id": "cd3623375f365d2d2eef",
+            "offset": 5,
+            "left": "するように",
+            "right": "なります"
+          }
+        ],
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_07_2010",
@@ -9292,10 +9435,17 @@
         "canonical_sha256": "f0b1961f8aeb67ad7217166e2dc7924f967d5c32e6d6b4d1785cc153ab93a0f9",
         "rendered_sha256": "f0b1961f8aeb67ad7217166e2dc7924f967d5c32e6d6b4d1785cc153ab93a0f9",
         "projection_sha256": "eef5e2de04dc5b4d6350f4ee88cca2c74ebf406ce9d00cca6859ea0b91f043f6",
-        "basis": "atomic_or_structural",
-        "rationale": "Retain this atomic choice, short phrase, label or structural content without internal pedagogical division.",
-        "boundaries": [],
-        "author": "main_llm_h11"
+        "basis": "declared_llm_restoration",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
+        "boundaries": [
+          {
+            "id": "288c03951c86d25f6f65",
+            "offset": 5,
+            "left": "するように",
+            "right": "なりました"
+          }
+        ],
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_07_2010",
@@ -9324,10 +9474,17 @@
         "canonical_sha256": "fa92fa2da8f55b422fc2d0023c9d01adbd5126153685cb934f5c2789249d5c83",
         "rendered_sha256": "fa92fa2da8f55b422fc2d0023c9d01adbd5126153685cb934f5c2789249d5c83",
         "projection_sha256": "2a3e0a98eb07a9841e8b586230b57d4db416f022ada12c8cf116b18d1f9d85d1",
-        "basis": "atomic_or_structural",
-        "rationale": "Retain this atomic choice, short phrase, label or structural content without internal pedagogical division.",
-        "boundaries": [],
-        "author": "main_llm_h11"
+        "basis": "declared_llm_restoration",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
+        "boundaries": [
+          {
+            "id": "616d2c0493e903eede80",
+            "offset": 3,
+            "left": "教えて",
+            "right": "もらいます"
+          }
+        ],
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_07_2010",
@@ -9340,10 +9497,17 @@
         "canonical_sha256": "461bf2f6f9565d4593c9fdc9af266340bc39468dcf9dc4cc705808af3acb2449",
         "rendered_sha256": "461bf2f6f9565d4593c9fdc9af266340bc39468dcf9dc4cc705808af3acb2449",
         "projection_sha256": "e5ea4a58d15665e61c2609464ad22d38ec0ac1f90f694bf3e9cee33566409b33",
-        "basis": "atomic_or_structural",
-        "rationale": "Retain this atomic choice, short phrase, label or structural content without internal pedagogical division.",
-        "boundaries": [],
-        "author": "main_llm_h11"
+        "basis": "declared_llm_restoration",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
+        "boundaries": [
+          {
+            "id": "5d146c10b00ac72e9efe",
+            "offset": 3,
+            "left": "教えて",
+            "right": "くれます"
+          }
+        ],
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_07_2010",
@@ -9356,10 +9520,17 @@
         "canonical_sha256": "5e9c89891eb5869d7120fb78b29320c1ebb02c32be43ae914770b6757af88c9f",
         "rendered_sha256": "5e9c89891eb5869d7120fb78b29320c1ebb02c32be43ae914770b6757af88c9f",
         "projection_sha256": "aafc9b31f94153643f7473a35a19d03cd364574bed57d0a0d938ac83ec51b330",
-        "basis": "atomic_or_structural",
-        "rationale": "Retain this atomic choice, short phrase, label or structural content without internal pedagogical division.",
-        "boundaries": [],
-        "author": "main_llm_h11"
+        "basis": "declared_llm_restoration",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
+        "boundaries": [
+          {
+            "id": "eba52f8c3c156b6a0adc",
+            "offset": 3,
+            "left": "習って",
+            "right": "もらいます"
+          }
+        ],
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_07_2010",
@@ -9372,10 +9543,17 @@
         "canonical_sha256": "31b052d65e6006ccf1462261c01ae84e03ff51d2a8d9b5f80382912282c74c46",
         "rendered_sha256": "31b052d65e6006ccf1462261c01ae84e03ff51d2a8d9b5f80382912282c74c46",
         "projection_sha256": "f2b1b6adab72ae6a5786bf935b947e91f9598b50a50c9d044a16810503ad299a",
-        "basis": "atomic_or_structural",
-        "rationale": "Retain this atomic choice, short phrase, label or structural content without internal pedagogical division.",
-        "boundaries": [],
-        "author": "main_llm_h11"
+        "basis": "declared_llm_restoration",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
+        "boundaries": [
+          {
+            "id": "56a6ae74699929a3437c",
+            "offset": 3,
+            "left": "習って",
+            "right": "くれます"
+          }
+        ],
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_07_2010",
@@ -9532,10 +9710,17 @@
         "canonical_sha256": "2d704dee903f172226588ca85d9b87b536fa827acff50c225f470179e324a466",
         "rendered_sha256": "2d704dee903f172226588ca85d9b87b536fa827acff50c225f470179e324a466",
         "projection_sha256": "a008fd5908d2456aa7fae2195a6a34b8f9526fdb1aa7a3ffebc6ae1a5eb537b3",
-        "basis": "atomic_or_structural",
-        "rationale": "Retain this atomic choice, short phrase, label or structural content without internal pedagogical division.",
-        "boundaries": [],
-        "author": "main_llm_h11"
+        "basis": "declared_llm_restoration",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
+        "boundaries": [
+          {
+            "id": "78e6788ca2c2540dae8b",
+            "offset": 3,
+            "left": "思って",
+            "right": "いました"
+          }
+        ],
+        "author": "editorial-20261125"
       }
     ]
   },

@@ -6,12 +6,13 @@ No editorial, schema, or renderer file is written by this adapter.
 """
 import html
 import re
-from bs4 import BeautifulSoup, NavigableString
+from bs4 import BeautifulSoup, NavigableString, Tag
 from model import Projection
 from answer_blanks import prepare as prepare_blanks
 from inline_layout import prepare_inline, prepare_clozes
 from instruction_spacing import prepare as instruction_boundaries
 from richtex import remove_number
+from wakachi import bind_groups, classes, spaced_task
 
 
 def source_html(value):
@@ -52,8 +53,35 @@ def visual_atom(soup,node,cls,display):
     node.append(src);node.append(span(soup,'visual-only',display,**{'aria-hidden':'true'}))
 
 
+def keep_blank_punctuation(blank):
+    """Keep closing punctuation on the blank's line and in its reading order."""
+    tail = blank.next_sibling
+    padding = []
+    while isinstance(tail, Tag) and tail.get('data-blank-padding') == 'ascii':
+        padding.append(tail)
+        tail = tail.next_sibling
+    if not isinstance(tail, NavigableString):
+        return
+    marks = re.match(r'[、。，．,.！？!?：:；;）)\]］｝」』｣】〉》〕〗〙〛]+', tail)
+    if not marks:
+        return
+    for space in padding:
+        blank.append(space.extract())
+    blank.append(marks[0])
+    if marks.end() < len(tail):
+        tail.replace_with(tail[marks.end():])
+    else:
+        tail.extract()
+
+
 def native_ascii_space(m,context,target,node):
     """Resolve the explicit ASCII glue; it replaces automatic script glue."""
+    if (context == 'example' and node.parent.name == 'span'
+            and node.parent.parent.has_attr('data-ordinary-choice-row')
+            and node.find_previous_sibling() is None
+            and node.get_text() in ('1', '2', '3', '4')):
+        # The native ordinary choice row sets a .4em skip after its label.
+        return .4, 'example_choice_label'
     style=m['style'];owner=(target or '').split('/')[0]
     if '_web_space_tasks' not in m:
         m['_web_space_tasks']={k:m['tasks'][s['id']] for s in m['document']['sections']
@@ -158,6 +186,16 @@ def render_inline(value,m,context='body',target=None,*,font_target=None):
     from historical_html import enabled as old_enabled
     value,_=prepare_blanks(value,role,dimensions,compact_question=context=='question',historical_underline_samples=old_enabled(m))
     soup=BeautifulSoup(source_html(value),'html.parser')
+    for table in soup.select('table[data-ordinary-choice-row]'):
+        grid = soup.new_tag('div', attrs={'class': 'example-native-options', 'data-ordinary-choice-row': 'true'})
+        for cell in table.find_all('td'):
+            cell.name = 'span'
+            grid.append(cell.extract())
+        table.replace_with(grid)
+    for marker in soup.select('[data-inline-gap-em]'):
+        marker['style'] = f'display:inline-block;width:{float(marker["data-inline-gap-em"]):g}em;height:0'
+    for bracket in soup.select('[data-fullwidth-bracket]'):
+        bracket['style'] = 'font-feature-settings:"palt" 0;text-spacing-trim:space-all'
     for padding in soup.select('[data-email-paragraph-padding]'):
         if padding['data-email-paragraph-padding']!='zero':raise ValueError('Unsupported email paragraph padding')
         # Preserve the canonical space without adding ink, indent or line depth.
@@ -233,6 +271,7 @@ def render_inline(value,m,context='body',target=None,*,font_target=None):
         node['style']=';'.join('--blank-'+key+':'+node['data-blank-'+key] for key in ['inner','left','right'])
         visual_atom(soup,node,'context-blank','')
         visual=node.select_one('.visual-only');visual.append(span(soup,'blank-open','（'));visual.append(span(soup,'blank-inner'));visual.append(span(soup,'blank-close','）'))
+        keep_blank_punctuation(node)
     for node in soup.select('[data-blank-padding]'):node['class']='source-literal sr-only'
     for node in soup.select('[data-instruction-boundary]'):node['class']='instruction-boundary'
     for node in soup.select('[data-authored-word-gap]'):node['class']='authored-word-gap'
@@ -345,7 +384,86 @@ def render_inline(value,m,context='body',target=None,*,font_target=None):
     present_inline(soup,m)
     from workbook_typography import html_fonts
     html_fonts(soup)
+    if context!='heading' and m.get('modern_wakachi'):
+        bind_groups(soup,web=True)
+        for gap in soup.select('.tex-word-space,.mixed-word-space,.authored-word-gap'):
+            if gap.previous_sibling is None or gap.next_sibling is None:
+                continue
+            raw=gap.get_text()
+            if raw not in ('',' ','　') or gap.find_parent(['rt','rp']):
+                continue
+            gap['class']=[*classes(gap),'wakachi-wide-gap' if raw=='　' else 'wakachi-gap']
+            if raw == ' ' and gap.has_attr('data-native-space-em'):
+                # A discardable separator uses font-size:0. Its own em has zero advance.
+                width = gap['data-native-space-em']
+                gap['style'] = f'--source-space-width:calc(var(--nominal-em) * {width});'
     return str(soup)
+
+
+HEADING_PHRASES = '選びなさい。|えらびなさい。|えらんで|ください。|いちばん|最もよい|あります|答えは|いい|から'.split('|')
+HEADING_PHRASE_PATTERN = re.compile('(' + '|'.join(map(re.escape, HEADING_PHRASES)) + ')')
+
+
+def heading_flow(soup):
+    """Give the browser discardable separators and breaks outside protected groups."""
+    protected = ('ruby,rt,rp,u,[data-double-underline],[data-bounded-word],'
+                 '.heading-label,.source-literal,.visual-only,.answer-slot,.star-slot,'
+                 '.context-blank,.cloze-slot,.heading-selector,.instruction-number-sequence')
+    import soupsieve
+    blocked = soupsieve.compile(protected)
+
+    for gap in soup.select('.tex-word-space,.mixed-word-space'):
+        if any(blocked.match(parent) for parent in gap.parents):
+            continue
+        raw = gap.get_text()
+        if not re.fullmatch(r'[ 　]+', raw):
+            continue
+        parts = []
+        for spaces in re.findall(r' +|　+', raw):
+            wide = spaces.startswith('　')
+            kind = 'heading-wide-space' if wide else 'heading-word-space'
+            part = span(soup, kind, spaces, **{'data-preserved-space':'true'})
+            if not wide and gap.has_attr('data-native-space-em'):
+                width = gap['data-native-space-em']
+                part['style'] = f'--heading-space-width:calc(var(--local-em) * {width})'
+                for key in ('data-native-space-em','data-native-space-role'):
+                    part[key] = gap[key]
+            parts.append(part)
+        gap.replace_with(*parts)
+
+    # Work with rendered siblings. An authored space already has a break, and
+    # a historical selector can own a separate, intentional break before から.
+    def previous(node):
+        for sibling in node.previous_siblings:
+            if isinstance(sibling, NavigableString):
+                if sibling:
+                    return str(sibling)
+            elif sibling.name in ('br','wbr') or set(sibling.get('class',[])) & {'heading-label','instruction-boundary'}:
+                return ''
+            else:
+                text = sibling.get_text()
+                if text:
+                    return text
+        return ''
+
+    for group in soup.select('.heading-selector,.heading-no-break'):
+        if 'heading-selector' in group.get('class',[]):
+            if 'instruction-number-sequence' in group.parent.get('class',[]):
+                group = group.parent
+            if any(blocked.match(parent) for parent in group.parents):
+                continue
+            left = previous(group)
+            if left:
+                last = left[-1]
+                if (last.isalpha() and not last.isascii()) or last in '、。）」』】〉》］':
+                    group.insert_before(soup.new_tag('wbr'))
+        elif group.get_text() in HEADING_PHRASES:
+            sibling = group.previous_sibling
+            if (getattr(sibling, 'name', None) == 'span'
+                    and 'heading-no-break' in sibling.get('class',[])
+                    and sibling.get_text() in HEADING_PHRASES
+                    and not any(blocked.match(parent) or 'heading-no-break' in parent.get('class',[]) for parent in group.parents)):
+                group.insert_before(soup.new_tag('wbr'))
 
 
 def render_section_heading(value,m,target):
@@ -393,7 +511,6 @@ def render_heading(value,m,target,*,prepared=False):
     task=m.get('tasks',{}).get(target)
     heading_model={**m,'style':{**m['style'],**m['style'].get('task_overrides',{}).get(task,{})}}
     rendered=BeautifulSoup(render_inline({'html':str(soup)},heading_model,'heading'),'html.parser')
-    instruction_boundaries(rendered)
     # RichTeX turns the administrative _★_ sample into one starred rule.
     # Its original three characters remain canonical; scored rows keep all
     # their independent slots and this never supplies a rearrangement order.
@@ -432,7 +549,7 @@ def render_heading(value,m,target,*,prepared=False):
     for br in rendered.find_all('br'):br.replace_with(' ')
     for node in list(rendered.find_all(string=True)):
         if any(p.name in ('rt','rp') or set(p.get('class',[]))&{'source-literal','visual-only','heading-label'} for p in node.parents):continue
-        pieces=re.split(r'(選びなさい。|えらびなさい。|えらんで|ください。|いちばん|最もよい|あります|答えは|いい|から)',str(node))
+        pieces=HEADING_PHRASE_PATTERN.split(str(node))
         if len(pieces)>1:node.replace_with(*[span(rendered,'heading-no-break',part) if j%2 else NavigableString(part) for j,part in enumerate(pieces) if part])
     # JFM's middle dot is a half-width cell; each side gets the explicitly
     # authored HeadingChoiceGap/2, as in RichTeX.heading.finish.
@@ -455,6 +572,15 @@ def render_heading(value,m,target,*,prepared=False):
             group.append(NavigableString(text[-1]));node.wrap(group)
         elif getattr(previous,'name',None)=='span' and set(previous.get('class',[])) & {'tex-latin','instruction-digit'}:
             previous.wrap(group);group.append(node.extract())
+        if node.string == '、':
+            following = node.string.find_next(string=lambda t: t and t.parent.name not in ('rt', 'rp'))
+            if following and following[0].isalnum():
+                # In running text the comma owns a normal Japanese cell.
+                # Keep authored word gaps and adjacent punctuation as composed.
+                node.unwrap()
     from historical_html import heading as old_heading
     old_heading(rendered,m,target)
+    heading_flow(rendered)
+    if spaced_task(m,task):
+        bind_groups(rendered,web=True)
     return str(rendered)

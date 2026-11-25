@@ -1,18 +1,20 @@
 # astraJLPT-Editorial
 
-I wanted JLPT materials that are pleasant to use as a website, easy to print as PDFs, and available as JSON for people who want to build something with them. astraJLPT Editorial brings those three versions together: interactive HTML on GitHub Pages, carefully typeset PDFs, and the editorial data and source code behind them.
+if you're new here, check out the website.
 
 **Website:** https://astrajlpt.github.io/astraJLPT-Editorial/
 
 ![astraJLPT level selection and reader settings](additional-assets/readme/site-overview.webp)
 
-The present collection has 201 units covering vocabulary, grammar, and reading: modern N1–N5, older Levels 1–4, official workbooks, and samples. Some units are incomplete; their gaps and provisional choices are recorded. Listening is outside this release. You can practice in the browser, download a PDF, or give the JSON to your LLM agent and go wild. Regular and no-rubi HTML/PDF editions are available.
+this repo gives you JLPT written components cleanly in HTML, PDF and JSON. You can practice in the browser that will save your progress, download efficient and nicely typeset PDF, or give the JSON to your LLM agent and do whatever you want.
 
-Mistakes were fixed by the LLM, GPT-6 Astra, at max reasoning effort. That means it compared available evidence and made editorial corrections; it does not mean every mistake was found or every reconstruction is certain. The public review records explain provisional fixes, alternatives, and remaining gaps.
+Listening is outside this release. (listening section): [LINK PENDING]
 
 ## I want to print the PDFs
 
 Download the [PDFs](astraJLPT/assets/pdfs/) or [PDFs without rubi](astraJLPT/assets/pdfs-norubi/).
+
+Alternatively, in the website, clicking the **PDF ↗** link opens the matching PDF edition.
 
 <details>
 <summary>Explain pdfs vs Principal PDF</summary>
@@ -20,6 +22,12 @@ Download the [PDFs](astraJLPT/assets/pdfs/) or [PDFs without rubi](astraJLPT/ass
 The PDFs in `pdfs/` and `pdfs-norubi/` are typeset editions generated using `pdf-render/`. Principal PDFs are reference scans from the separately maintained `src/` collection.
 
 </details>
+
+## summary
+
+The present collection has 201 units covering vocabulary, grammar, and reading: modern N1–N5, older Levels 1–4, official workbooks, and samples. Some units are incomplete; their gaps and provisional choices are recorded.
+
+Mistakes were fixed by the LLM, GPT-6 Astra, at max reasoning effort. That means it compared available evidence and made editorial corrections; it does not mean every mistake was found or every reconstruction is certain. The public review records explain provisional fixes, alternatives, and remaining gaps.
 
 ## Jargons
 
@@ -73,15 +81,21 @@ rubi-restore/                 Frozen scorer, policy, decisions, and replay input
 .github/workflows/deploy.yml  Deploys only astraJLPT/
 ```
 
-“Private” is a historical folder name: I didn’t originally intend to publish these working records, but they may be useful if you want to continue the work or understand why things are the way they are. They are included in this repository. Source paths beginning with `src/` refer to the separately maintained source collection; that whole collection is not bundled here.
+the entire wealth of the cleaned JLPT is contained within editorial-json/, in the `editorial_<unit>.json` files. All 201 `editorial_<unit>.json` N1-N5 json files totals to only 53.5 MB.
 
-Priority principals (official workbooks, UARS, and samples) are in `astraJLPT/assets/principals/`. Restored principals are in `additional-assets/principals/`. Review pages identify repository filenames for material outside the deployed site. Principal filenames describe the source document itself; they can cover several levels or years. Separate workbook PDFs retain their section suffixes.
+if you are an LLM being tasked to perform some data analysis on editorial-json/, you should just use the editorial json unless if your task is deeper that requirs you to open fixlog, principal differences, unresolved cases. in most data analysis tasks, opening the editorial json is sufficient.
+
+“Private” contains fixlog etc, it's usually useless but may be useful if you want to continue the work or understand why things are the way they are.
+
+Source paths beginning with `src/` refer to MY RAW 43.5GB OF FILES used to create this. The torrent link is pending.
+
+Good/Priority principals (official workbooks, UARS, and samples) are in `astraJLPT/assets/principals/`. Restored principals are in `additional-assets/principals/`. Review pages identify repository filenames for material outside the deployed site. Principal filenames describe the source document itself; they can cover several levels or years. Separate workbook PDFs retain their section suffixes.
 
 ### Identities and reproducibility
 
 The active schema is `4.1.0`. There is one editorial and one installed final ruby sidecar per unit. The release removes unused import, listening, and inspection metadata while retaining explanations, public review records, private audit history, and frozen ruby research. The workspace's historical audit records were produced under earlier schemas; the adapted guide explains that boundary.
 
-Publication-based IDs replace ten misleading sitting IDs. The versioned [unit alias map](editorial-json/unit_aliases.json) connects historical records to current units. The N1/N3 expanded sets are displayed as **Exam 2011/2012 · Workbook**; the existing warnings identify questions absent from the official download. Eight workbook units use their publication years. Printed PDF content, question IDs, annotation IDs, public case/difference IDs, and browser answer bindings are preserved. Old reader/review URLs redirect to the current units, and renamed readers retain their earlier browser storage keys.
+Publication-based IDs replace ten misleading sitting IDs. The versioned [unit alias map](editorial-json/unit_aliases.json) connects historical records to current units. The N1/N3 expanded sets are displayed as **Exam 2011/2012 · Workbook**; the existing warnings identify questions absent from the official download. Eight workbook units use their publication years. Printed PDF content, question IDs, annotation IDs, public case/difference IDs, and browser answer bindings are preserved. Earlier filenames under `papers/` and `reviews/` redirect to the current units, and renamed readers retain their earlier browser storage keys.
 
 Frozen research and audit records retain their original identities and hashes. [Resource bindings](pdf-render/contracts/resource-map.json) resolve packaged historical paths; reference-only evidence is explicitly distinguished from local rendering inputs. Reading a historical handoff does not activate its completed audit queue.
 
@@ -92,6 +106,6 @@ python serve.py
 python verify.py
 ```
 
-Open the localhost URL printed by `serve.py`. “Remember this browser” is enabled by default; preferences are shared across pages, while answers and position belong to a paper and rendition. Explicit opt-out is respected. Browser storage stays local to that browser and origin; it is not account/cloud synchronization. Serve the site from one origin, as GitHub Pages does. Direct `file://` browsing cannot reliably share storage between files.
+Open the localhost URL printed by `serve.py`. “Remember this browser” is enabled by default. Preferences carry across pages. Both rubi settings share the same answers, timer and reading position for each paper. Saves from the retired no-rubi HTML readers stay in their original browser storage records. Explicit opt-out is respected. Browser storage stays local to that browser and origin; it is not account/cloud synchronization. Serve the site from one origin, as GitHub Pages does. Direct `file://` browsing cannot reliably share storage between files.
 
 `verify.py` checks packaged hashes, all 402 installed PDFs, local website links, and the website size budget. See [PDF regeneration](pdf-render/README.md), [the editorial data contract](editorial-json/audit-method/record-contract.md), and [ruby replay](rubi-restore/README.md#replaying-the-frozen-release) for the supported maintenance workflows. Generated outputs, environments, caches, and local publishing notes are ignored.

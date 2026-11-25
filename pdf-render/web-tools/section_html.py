@@ -19,6 +19,8 @@ def present(soup, spec, style, *, native_glyph_scale=1):
     for section in sections:
         section.name = 'div'
         add_class(section, 'document-section')
+        if section.find(class_='wakachi'):
+            add_style(section, text_align='start')
         frame = spec['frame_style']
         if frame not in ('box', 'cloze', 'folded_corner', 'pinned_corners'):
             raise ValueError('Unsupported semantic frame: ' + frame)

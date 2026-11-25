@@ -4352,6 +4352,15 @@
                   ]
                 }
               },
+              "fullwidth_corner_quotes": {
+                "type": "array",
+                "minItems": 1,
+                "uniqueItems": true,
+                "items": {
+                  "type": "string",
+                  "pattern": "^「[^「」\\n]+」(?![\\s\\S])"
+                }
+              },
               "measured_gaps": {
                 "type": "array",
                 "minItems": 1,
@@ -8285,7 +8294,8 @@
                   "main_llm_h11_and_h12",
                   "main_llm_h12",
                   "main_llm_h13",
-                  "main_llm_h15"
+                  "main_llm_h15",
+                  "editorial-20261125"
                 ]
               }
             }

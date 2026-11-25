@@ -123,12 +123,12 @@ def source_options(soup,item,style,task):
     if len(matches)>1:raise ValueError('Ambiguous repeated source option lists')
     for listing in matches:
         add_class(listing,'example-source-options')
-        columns=1 if task in ('usage','paraphrase') else 4
+        columns='1' if task in ('usage','paraphrase') else 'var(--example-columns,4)'
         add_style(listing,display='grid',grid_template_columns=f'repeat({columns},minmax(0,1fr))',
                   margin_left=f'calc(var(--nominal-em) * {style["examples"].get("ordinary_choice_indent_em",style["examples"].get("choice_indent_em",1.8))})')
 
 
-def present(soup, style, meta, task):
+def present(soup, style, meta, task, *, center_bubbles=False):
     ex=style['examples'];star=meta.get('example_variant')=='star_worked'
     native_answer_rows(soup,meta)
     for slot in list(soup.select('.star-slot')):
@@ -187,6 +187,7 @@ def present(soup, style, meta, task):
                     prev.extract();prev.name='span';wrap.insert(0,prev)
             first_cell=rows[0].find(['td','th'],recursive=False)
             if first_cell and re.fullmatch(r'\s*[（(](?:例|れい)[）)]\s*',Projection({'html':str(first_cell)}).text):
+                if center_bubbles:add_class(table,'centered-bubbles')
                 for border in list(first_cell.find_all('span')):
                     if 'border:' in border.get('style',''):border.unwrap()
                 label=soup.new_tag('span',attrs={'class':'answer-example-label'})

@@ -107,15 +107,15 @@ class FontSubsets(unittest.TestCase):
         self.assertEqual(set(optimize.TARGETS),installed-{'RobotoMono-Regular.woff2'})
         self.assertNotIn('RobotoMono-Regular.woff2',optimize.TARGETS)
 
-    def test_corpus_includes_linked_scripts_css_and_both_renditions(self):
+    def test_corpus_includes_linked_scripts_css_and_all_declaring_pages(self):
         import font_subsets as optimize
         work=ROOT/'pdf-render/work';work.mkdir(exist_ok=True)
         with tempfile.TemporaryDirectory(dir=work) as folder:
-            site=Path(folder);(site/'assets').mkdir();(site/'papers').mkdir();(site/'papers-norubi').mkdir()
+            site=Path(folder);(site/'assets').mkdir();(site/'papers').mkdir()
             (site/'assets/fonts.css').write_text('@font-face{src:url("fonts/fixture.woff2")} .mark::before{content:"\\4E09"}','utf-8')
             (site/'assets/questions.js').write_text('const text="\\u4e8c";','utf-8')
             markup='<link href="../assets/fonts.css" rel="stylesheet"/><script src="../assets/questions.js"></script>'
-            (site/'papers/a.html').write_text(markup+'一','utf-8');(site/'papers-norubi/a.html').write_text(markup+'四&#x4e94;','utf-8')
+            (site/'papers/a.html').write_text(markup+'一','utf-8');(site/'papers/b.html').write_text(markup+'四&#x4e94;','utf-8')
             (site/'unrelated.html').write_text('🧬','utf-8')
             result=optimize.corpora(site,['fixture.woff2'])['fixture.woff2']
             self.assertTrue(set(map(ord,'一二三四五'))<=result['characters'])

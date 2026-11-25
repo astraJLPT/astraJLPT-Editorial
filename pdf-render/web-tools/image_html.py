@@ -147,7 +147,10 @@ def present(soup, m):
                 visual['style']=image['style'];visual['data-native-artwork']=native.get('art',{}).get('kind',native.get('kind'))
                 visual['data-native-source-sha256']=native['source_sha256'];visual['class']+=['source-image','source-image-illustration']
                 visual['data-source-sha256']=digest
-                literal=soup.new_tag('span',attrs={'class':'source-literal sr-only'});image.wrap(literal);literal.insert_after(visual)
+                if image.get('alt'):
+                    label=soup.new_tag('span',attrs={'class':'source-literal sr-only','role':'img','aria-label':image['alt']})
+                    image.insert_before(label)
+                image.replace_with(visual)
                 image=visual
             if native.get('left_inset_fraction'):image['style']+=f'margin-left:{native["left_inset_fraction"]*100}%;'
             if native.get('block_spacing'):

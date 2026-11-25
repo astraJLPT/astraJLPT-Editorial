@@ -3,52 +3,70 @@ globalThis.AstraPractice = (() => {
   'use strict';
   const finite = (v, fallback=0) => typeof v==='number'&&Number.isFinite(v)&&v>=0?v:fallback;
   const direction = value => value==='up'?'up':'down';
-  // A shared stopped clock pauses even papers which are not currently open.
-  function clock(preferences, now=Date.now()) {
-    return now-finite(preferences.timerDisabledTotal)-(preferences.timerEnabled===false?
-      Math.max(0,now-finite(preferences.timerDisabledAt,now)):0);
-  }
-  function setEnabled(preferences, enabled, now=Date.now()) {
-    if(enabled===(preferences.timerEnabled!==false))return;
-    if(enabled){
-      preferences.timerDisabledTotal=finite(preferences.timerDisabledTotal)+Math.max(0,now-finite(preferences.timerDisabledAt,now));
-      preferences.timerDisabledAt=null;
-    }else preferences.timerDisabledAt=now;
-    preferences.timerEnabled=enabled;
-  }
   class Timer {
-    constructor(saved, limitSeconds, now, mode='down') {
-      const valid=saved?.version===1;
-      this.state={version:1,limit:finite(valid?saved.limit:null,limitSeconds*1000),
-        elapsed:finite(valid?saved.elapsed:null),startedAt:finite(valid?saved.startedAt:null,now),
-        running:valid?saved.running===true:true,direction:valid?direction(saved.direction):direction(mode),
-        expired:valid&&saved.expired===true,notified:valid&&saved.notified===true,
-        revision:finite(valid?saved.revision:null)};
-      this.tick(now,mode);
+    constructor(saved, limitSeconds, now, mode='down', frozen=saved?.frozen===true, legacyOffset=0) {
+      // The frozen flag identifies a current timer saved in the old slot.
+      // Earlier compatible saves also supplied the wall clock and pause flag.
+      if(saved?.version===1&&(typeof saved.frozen==='boolean'||
+        (Number.isFinite(saved.wallStartedAt)&&typeof saved.manualRunning==='boolean'))){
+        saved={...saved,version:2,startedAt:saved.wallStartedAt??saved.startedAt,running:saved.manualRunning??saved.running};
+      }
+      const legacy=saved?.version===1;
+      if(!legacy&&saved?.version!==2)saved=null;
+      const limit=finite(saved?.limit,limitSeconds*1000);
+      let elapsed=finite(saved?.elapsed);
+      if(saved?.running&&!frozen&&!saved.frozen){
+        // Old timestamps excluded intervals when the timer was disabled.
+        const clockNow=legacy?now-legacyOffset:now;
+        const away=Math.max(0,clockNow-finite(saved.startedAt,clockNow));
+        elapsed+=legacy&&saved.direction==='down'?Math.min(away,Math.max(0,limit-elapsed)):away;
+      }
+      const stoppedAtDeadline=legacy&&saved.direction==='down'&&saved.expired===true&&elapsed>=limit;
+      this.state={version:2,limit,elapsed,startedAt:now,direction:direction(mode),frozen,
+        running:!saved||saved.running===true||stoppedAtDeadline,
+        notified:saved?.notified===true,revision:finite(saved?.revision)};
     }
+    legacyRecord(offset=0){
+      const record={...this.state,version:1};
+      // Both readers default to countdown and an unannounced deadline.
+      if(record.direction==='down')delete record.direction;
+      if(!record.notified)delete record.notified;
+      const running=this.advancing&&!this.expired;
+      if(running!==record.running||this.expired){
+        record.manualRunning=record.running;
+        record.running=running;
+        if(this.expired)record.expired=true;
+      }
+      // A paused clock needs no offset. When the two clocks or their running
+      // states differ, older readers use startedAt and the new reader uses wallStartedAt.
+      if((running&&offset)||record.manualRunning!==undefined){
+        record.wallStartedAt=record.startedAt;
+        record.startedAt-=offset;
+      }
+      return record;
+    }
+    get advancing(){return this.state.running&&!this.state.frozen;}
+    get expired(){return this.state.direction==='down'&&this.state.elapsed>=this.state.limit;}
     tick(now, mode=this.state.direction) {
       const s=this.state;
-      if(s.running){
-        s.elapsed+=Math.max(0,now-s.startedAt);
-        if(s.direction==='down'&&s.elapsed>=s.limit){s.elapsed=s.limit;s.running=false;s.expired=true;}
-      }
+      if(this.advancing)s.elapsed+=Math.max(0,now-s.startedAt);
       s.startedAt=now;s.direction=direction(mode);
-      if(s.direction==='down'&&s.elapsed>=s.limit){s.running=false;s.expired=true;}
       return this.seconds();
     }
     seconds() {
       const s=this.state;
       return s.direction==='up'?Math.floor(s.elapsed/1000):Math.max(0,Math.ceil((s.limit-s.elapsed)/1000));
     }
-    pause(now){this.tick(now);this.state.running=false;}
-    resume(now){this.tick(now);if(this.state.direction==='up'||this.state.elapsed<this.state.limit)this.state.running=true;}
-    reset(now){const s=this.state;s.elapsed=0;s.startedAt=now;s.expired=false;s.notified=false;}
-    setLimit(seconds, now){this.tick(now);const s=this.state;s.limit=seconds*1000;s.expired=false;s.notified=false;this.tick(now);}
+    setFrozen(frozen,now){this.tick(now);this.state.frozen=frozen;}
+    pause(now){if(!this.state.frozen){this.tick(now);this.state.running=false;}}
+    resume(now){if(!this.state.frozen){this.tick(now);this.state.running=true;}}
+    reset(now){const s=this.state;s.elapsed=0;s.startedAt=now;s.notified=false;}
+    setLimit(seconds, now){this.tick(now);this.state.limit=seconds*1000;this.state.notified=false;}
     setCurrent(seconds, now){
       this.tick(now);const s=this.state;
       if(s.direction==='down'){s.limit=Math.max(s.limit,seconds*1000);s.elapsed=s.limit-seconds*1000;}
       else s.elapsed=seconds*1000;
-      s.startedAt=now;s.expired=false;s.notified=false;this.tick(now);
+      s.notified=false;
     }
   }
   function format(seconds) {
@@ -83,10 +101,20 @@ globalThis.AstraPractice = (() => {
     return changed;
   }
   function progress(questions, answers) {
-    const rows=questions.filter(gradable),selected=rows.filter(q=>option(answers[q.id]?.selected));
-    const tracked=selected.map(q=>answers[q.id]).filter(a=>typeof a.firstCorrect==='boolean');
-    return {total:rows.length,answered:selected.length,correct:selected.filter(q=>answers[q.id].selected===q.key).length,
-      firstCorrect:tracked.filter(a=>a.firstCorrect).length,firstTotal:tracked.length};
+    const counts={total:0,answered:0,correct:0,firstCorrect:0,firstTotal:0};
+    for(const q of questions){
+      if(!gradable(q))continue;
+      counts.total++;
+      const record=answers[q.id];
+      if(!option(record?.selected))continue;
+      counts.answered++;
+      if(record.selected===q.key)counts.correct++;
+      if(typeof record.firstCorrect==='boolean'){
+        counts.firstTotal++;
+        if(record.firstCorrect)counts.firstCorrect++;
+      }
+    }
+    return counts;
   }
   function score(questions, answers, paper) {
     const old=paper.generation?.startsWith('historical');
@@ -128,5 +156,5 @@ globalThis.AstraPractice = (() => {
     }
     return Number(a.rank)-Number(b.rank);
   }
-  return {Timer,clock,setEnabled,format,parse,answer,restoreAnswer,recordFirstFeedback,progress,score,gradable,compare};
+  return {Timer,format,parse,answer,restoreAnswer,recordFirstFeedback,progress,score,gradable,compare};
 })();

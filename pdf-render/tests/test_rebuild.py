@@ -1,6 +1,6 @@
 """Selected rebuilding is read-only until validated installation and stays scoped."""
 from pathlib import Path
-import copy,io,sys,tempfile,unittest
+import copy,io,json,sys,tempfile,unittest
 from contextlib import redirect_stdout
 from unittest.mock import patch
 from bs4 import BeautifulSoup
@@ -8,6 +8,7 @@ ROOT=Path(__file__).resolve().parents[2]
 sys.path[:0]=[str(ROOT/'pdf-render/web-tools'),str(ROOT/'pdf-render/tools')]
 import rebuild
 from font_profiles import installed_profile
+from question_data import PAGE_DATA
 
 UNITS=('N3_07_2025','N3_12_2023','N3_12_2024','N3_12_2025',
        'N4_sample_2009','N5_sample_2009','N4_07_2025','N4_12_2024',
@@ -31,18 +32,24 @@ class ScopedRebuild(unittest.TestCase):
         self.assertEqual(str(rebuild.parse_html(str(soup))),str(soup))
 
     def test_complete_selected_batch_has_no_writes_or_unrelated_outputs(self):
-        allowed={f'{folder}/{unit}.html' for unit in UNITS for folder in ['papers','papers-norubi']}
+        allowed={rebuild.html_path(unit) for unit in UNITS}
         allowed|={'assets/fonts-f4eee5aa5250fb09.css','assets/fonts-8f5b8b92d80fa170.css'}
         with patch.object(Path,'write_bytes',side_effect=AssertionError('Unexpected write')),patch.object(Path,'write_text',side_effect=AssertionError('Unexpected write')),redirect_stdout(io.StringIO()):
             outputs,results=rebuild.prepare(UNITS)
-        self.assertEqual(len(results),22)
+        self.assertEqual(len(results),len(UNITS))
         self.assertLessEqual(set(outputs),allowed)
+        for unit in UNITS:
+            name=rebuild.html_path(unit)
+            markup=outputs[name] if name in outputs else (rebuild.web.SITE/name).read_bytes()
+            paper=json.loads(PAGE_DATA.search(markup.decode())[2])['paper']
+            for variant,field in [('regular','release_sha256'),('norubi','norubi_pdf_sha256')]:
+                self.assertEqual(paper[field],rebuild.web.sha(rebuild.web.SITE/rebuild.site_pdf(unit,variant)),name)
 
-    def test_reviewed_n2_workbook_rebuilds_both_renditions_without_writes(self):
+    def test_reviewed_n2_workbook_rebuilds_one_reader_without_writes(self):
         with patch.object(Path,'write_bytes',side_effect=AssertionError('Unexpected write')),patch.object(Path,'write_text',side_effect=AssertionError('Unexpected write')),redirect_stdout(io.StringIO()):
             outputs,results=rebuild.prepare(['N2_workbook_2018'])
-        self.assertEqual({r['variant'] for r in results},{'regular','norubi'})
-        self.assertLessEqual(set(outputs),{'papers/N2_workbook_2018.html','papers-norubi/N2_workbook_2018.html','assets/fonts-ee4ad3289fbbce9b.css'})
+        self.assertEqual([r['unit'] for r in results],['N2_workbook_2018'])
+        self.assertLessEqual(set(outputs),{'papers/N2_workbook_2018.html','assets/fonts-ee4ad3289fbbce9b.css'})
         self.assertNotIn('assets/fonts-ee4ad3289fbbce9b.css',set(outputs))
 
     def test_late_validation_failure_does_not_write_an_earlier_unit(self):

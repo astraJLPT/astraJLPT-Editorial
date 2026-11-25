@@ -827,7 +827,7 @@
           "id": "reading-b004",
           "type": "notice",
           "content": {
-            "html": "<p>（1）（<ruby>会社<rt>かいしゃ</rt></ruby>で）エミさんの <ruby>机<rt>つくえ</rt></ruby>の <ruby>上<rt>うえ</rt></ruby>に、この メモと <ruby>電車<rt>でんしゃ</rt></ruby>の きっぷが あります。</p><section class=\"reading-passage\" aria-label=\"エミさんへのメモ\"><p>エミさん</p><p><ruby>電車<rt>でんしゃ</rt></ruby>の きっぷを <ruby>買<rt>か</rt></ruby>って きました。<br>1<ruby>枚<rt>まい</rt></ruby>は エミさんの です。もう 1<ruby>枚<rt>まい</rt></ruby>は、<ruby>高木<rt>たかぎ</rt></ruby>さんに わたして ください。アリさんには、わたしが わたします。</p><p>よろしく おねがいします。</p><p class=\"passage-author\"><ruby>大西<rt>おおにし</rt></ruby></p></section>"
+            "html": "<p>（1）（<ruby>会社<rt>かいしゃ</rt></ruby>で）エミさんの <ruby>机<rt>つくえ</rt></ruby>の <ruby>上<rt>うえ</rt></ruby>に、この メモと <ruby>電車<rt>でんしゃ</rt></ruby>の きっぷが あります。</p><section class=\"reading-passage\" aria-label=\"エミさんへのメモ\"><p>エミさん</p><p><ruby>電車<rt>でんしゃ</rt></ruby>の きっぷを <ruby>買<rt>か</rt></ruby>って きました。<br>1<ruby>枚<rt>まい</rt></ruby>は エミさんのです。もう 1<ruby>枚<rt>まい</rt></ruby>は、<ruby>高木<rt>たかぎ</rt></ruby>さんに わたして ください。アリさんには、わたしが わたします。</p><p>よろしく おねがいします。</p><p class=\"passage-author\"><ruby>大西<rt>おおにし</rt></ruby></p></section>"
           }
         },
         {
@@ -1000,7 +1000,7 @@
         "first_paragraph_indent_em": 1
       },
       "reading-b004": {
-        "content_sha256": "2600db63a7385418c7d4d2eaca0e4e863360d9cbb8289022b59f80c9c6e45a0a",
+        "content_sha256": "c10dd1079d5cacd956439b2aa9c0aafa64985e4579dd8b1f74e94f28b28e0e39",
         "evidence": {
           "source_path": "src/JLPT_N1_N5_202512/25年12月N5/25年12月N5真题.pdf",
           "source_sha256": "44d6e0e98ca8cff64a0ee987ff4b153f4259129c86a4285dc5e3458961bd790b",
@@ -1211,7 +1211,7 @@
         }
       },
       "reading-b004": {
-        "content_sha256": "2600db63a7385418c7d4d2eaca0e4e863360d9cbb8289022b59f80c9c6e45a0a",
+        "content_sha256": "c10dd1079d5cacd956439b2aa9c0aafa64985e4579dd8b1f74e94f28b28e0e39",
         "evidence": {
           "source_path": "src/JLPT_N1_N5_202512/25年12月N5/25年12月N5真题.pdf",
           "source_sha256": "44d6e0e98ca8cff64a0ee987ff4b153f4259129c86a4285dc5e3458961bd790b",
@@ -1701,7 +1701,7 @@
         },
         "document_role": {
           "role": "memo",
-          "content_sha256": "2600db63a7385418c7d4d2eaca0e4e863360d9cbb8289022b59f80c9c6e45a0a",
+          "content_sha256": "c10dd1079d5cacd956439b2aa9c0aafa64985e4579dd8b1f74e94f28b28e0e39",
           "basis": "H12-C28 explicit handwritten memo; accepted existing DF Tegaki route. Workbook/restored appearance is user restoration policy, not original-font authentication."
         }
       },
@@ -5272,13 +5272,13 @@
         "slot": "content",
         "task": "reading",
         "role": "passage_or_notice",
-        "canonical_sha256": "2600db63a7385418c7d4d2eaca0e4e863360d9cbb8289022b59f80c9c6e45a0a",
-        "rendered_sha256": "2600db63a7385418c7d4d2eaca0e4e863360d9cbb8289022b59f80c9c6e45a0a",
-        "projection_sha256": "74709750ed903b9fce8ab8db8f4a86bc2bd50f91152b5db362afe02b10e7300c",
+        "canonical_sha256": "c10dd1079d5cacd956439b2aa9c0aafa64985e4579dd8b1f74e94f28b28e0e39",
+        "rendered_sha256": "c10dd1079d5cacd956439b2aa9c0aafa64985e4579dd8b1f74e94f28b28e0e39",
+        "projection_sha256": "0a2205a1955481aba2377c1dd28376977d7a61cc0002dd88e07bb35413910abc",
         "basis": "retain_audited_groups",
-        "rationale": "Retain existing audited groups and separate structural spacing. No missing boundary authored for this field; labels, blanks, choice fragments, titles, numeric/contact/Latin and table geometry retain their existing roles.",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
         "boundaries": [],
-        "author": "main_llm_h11"
+        "author": "editorial-20261125"
       },
       {
         "unit": "N5_12_2025",

@@ -24,13 +24,17 @@ def prepare(model, web):
 
 def reader(soup, unit, review, safe_json):
     paper = soup.select_one('.paper.editorial')
-    for note in paper.select('a.developer-note'):
+    notes = paper.select('a.developer-note')
+    show_only = {note.parent.get('id') for note in notes if not note.has_attr('data-rubi-both')}
+    for note in notes:
         note.decompose()
     for item, anchor in review['mapping'].items():
         target = paper.find(id=item) if item else None
         if target is not None:
             note = soup.new_tag('a', href=f'../reviews/{unit}.html#{anchor}')
             note['class'] = ['developer-only', 'developer-note']
+            if item not in show_only:
+                note['data-rubi-both'] = ''
             note.string = 'Cases & principal differences →'
             target.append(note)
     node = soup.select_one('#page-data')

@@ -11,9 +11,8 @@ def stem(unit):
     unit = canonical_unit(unit)
     return RENAMED.get(unit, unit)
 
-def html_path(unit, variant='regular'):
-    assert variant in ('regular','norubi')
-    return ('papers' if variant=='regular' else 'papers-norubi')+'/'+canonical_unit(unit)+'.html'
+def html_path(unit):
+    return 'papers/'+canonical_unit(unit)+'.html'
 
 def site_pdf(unit, variant='regular'):
     unit = canonical_unit(unit)

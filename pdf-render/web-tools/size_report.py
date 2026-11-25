@@ -8,14 +8,14 @@ from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[2]/'pdf-render/tools'))
 from public_paths import html_path,site_pdf
 
-ROOTS = ('assets', 'data', 'levels', 'papers', 'papers-norubi', 'reviews', 'sources')
+ROOTS = ('assets', 'data', 'levels', 'papers', 'reviews', 'sources')
 EXCLUDED = {'data/size-report.json', 'build-manifest.json'}
 
 
 def category(name):
     for prefix, label in [('assets/fonts/', 'fonts'), ('assets/pdfs/', 'released_pdfs'),('assets/pdfs-norubi/','norubi_pdfs'),
                           ('assets/principals/', 'principal_sources'), ('assets/covers/', 'covers'),
-                          ('assets/', 'other_shared_assets'), ('papers/', 'paper_html'),('papers-norubi/','norubi_html'),
+                          ('assets/', 'other_shared_assets'), ('papers/', 'paper_html'),
                           ('reviews/', 'review_html'), ('data/', 'metadata')]:
         if name.startswith(prefix):
             return label
@@ -56,10 +56,8 @@ def measure_site(site, generated, units, budgets):
         size = actual.get(name, 0)
         if size > budgets['max_paper_html_bytes']:
             failures.append(name + ' exceeds the paper HTML budget')
-        no_name=html_path(unit,'norubi')
-        if actual.get(no_name,0)>budgets['max_paper_html_bytes']:failures.append(no_name+' exceeds the paper HTML budget')
         papers[unit] = {'html_bytes': size,
-                       'norubi_html_bytes':actual.get(no_name,0),'norubi_pdf_bytes':actual.get(site_pdf(unit,'norubi'),0),
+                       'norubi_pdf_bytes':actual.get(site_pdf(unit,'norubi'),0),
                        'released_pdf_bytes': actual.get(site_pdf(unit), 0),
                        'principal_source_bytes': sum(actual.get(p,0) for p in {r['path'] for r in principal_bindings[unit]}) if unit in principal_bindings else sum(v for n, v in actual.items() if n.startswith(('assets/principals/' + unit + '.', 'assets/principals/' + unit + '-'))),
                        'principal_assets': principal_bindings.get(unit,[]),

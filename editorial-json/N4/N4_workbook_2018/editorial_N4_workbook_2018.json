@@ -1322,13 +1322,13 @@
               "html": "<ruby>泳<rt>およ</rt></ruby>いで　おきました"
             },
             {
-              "html": "<ruby>泳<rt>およ</rt></ruby>げる　ように　なりました"
+              "html": "<ruby>泳<rt>およ</rt></ruby>げるように　なりました"
             },
             {
               "html": "<ruby>泳<rt>およ</rt></ruby>いで　しまいました"
             },
             {
-              "html": "<ruby>泳<rt>およ</rt></ruby>げる　ことに　なりました"
+              "html": "<ruby>泳<rt>およ</rt></ruby>げることに　なりました"
             }
           ],
           "key": 2,
@@ -4642,10 +4642,17 @@
         "canonical_sha256": "a97b1e75fa8859a26b229c72c09380e57d13f2eeb27e01afa2d27ee55fce8147",
         "rendered_sha256": "a97b1e75fa8859a26b229c72c09380e57d13f2eeb27e01afa2d27ee55fce8147",
         "projection_sha256": "36a807c3914acd45e3dc3db8c812aca931e7e7dcebc742c9d2b85061d2d5c67d",
-        "basis": "retain_audited_groups",
-        "rationale": "Primary reviewed and retained this field's existing separators and lexical groups, including document, example, date and table roles. No additional boundary is needed.",
-        "boundaries": [],
-        "author": "main_llm_h15"
+        "basis": "declared_llm_restoration",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
+        "boundaries": [
+          {
+            "id": "16e7a442624000b7a27a",
+            "offset": 32,
+            "left": "に　なると　いう（　）が",
+            "right": "あります。"
+          }
+        ],
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_workbook_2018",
@@ -6569,17 +6576,10 @@
         "canonical_sha256": "5165bca8a04306c13dcb88f3b52b5d34340e757a15034db0498e481f7c192e2d",
         "rendered_sha256": "5165bca8a04306c13dcb88f3b52b5d34340e757a15034db0498e481f7c192e2d",
         "projection_sha256": "73c2f8c9c9e63a92d022a33fc6850a1fd03964ddd438a5433c76076f9a216077",
-        "basis": "declared_llm_restoration",
-        "rationale": "Primary read this exact field and authored the listed phrase boundaries; preserve original separators, lexical content, ruby, mistakes, blanks and STAR slots.",
-        "boundaries": [
-          {
-            "offset": 20,
-            "left": "ットは　人（　）会話する",
-            "right": "ことが　できます。",
-            "id": "4f1bdddf6f0c00a418b6"
-          }
-        ],
-        "author": "main_llm_h15"
+        "basis": "retain_audited_groups",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
+        "boundaries": [],
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_workbook_2018",
@@ -6656,17 +6656,10 @@
         "canonical_sha256": "3ed1c6677292b29f3a6e988a5ea39ecaf7fbf4321f8ebe9bafa2cfc9c1fd2230",
         "rendered_sha256": "3ed1c6677292b29f3a6e988a5ea39ecaf7fbf4321f8ebe9bafa2cfc9c1fd2230",
         "projection_sha256": "7157f0ba07a611d71eec5796d2925d5c03153e66fc1170fd1b74e6ac699765f0",
-        "basis": "declared_llm_restoration",
-        "rationale": "Primary read this exact field and authored the listed phrase boundaries; preserve original separators, lexical content, ruby, mistakes, blanks and STAR slots.",
-        "boundaries": [
-          {
-            "offset": 9,
-            "left": "3. 弟は　小さい",
-            "right": "とき　よく　けがを　して",
-            "id": "a95109f4f10726a96bf5"
-          }
-        ],
-        "author": "main_llm_h15"
+        "basis": "retain_audited_groups",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
+        "boundaries": [],
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_workbook_2018",
@@ -6983,17 +6976,10 @@
         "canonical_sha256": "d2ccc7bbc39dfa99c5a1edb0ba673500c27261085c2d3d18604ec2cd2c1e10ab",
         "rendered_sha256": "d2ccc7bbc39dfa99c5a1edb0ba673500c27261085c2d3d18604ec2cd2c1e10ab",
         "projection_sha256": "e724da4b5d292163c8c9a667b8638fc428cdaf3cf2ef4d8fed52c5f5d57754f6",
-        "basis": "declared_llm_restoration",
-        "rationale": "Primary read this exact field and authored the listed phrase boundaries; preserve original separators, lexical content, ruby, mistakes, blanks and STAR slots.",
-        "boundaries": [
-          {
-            "offset": 46,
-            "left": "」\nリー「メールを　書く",
-            "right": "ことが　多いです。」",
-            "id": "18dc455a685a4a8f19ed"
-          }
-        ],
-        "author": "main_llm_h15"
+        "basis": "retain_audited_groups",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
+        "boundaries": [],
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_workbook_2018",
@@ -8514,13 +8500,13 @@
         "slot": "options/1",
         "task": "cloze",
         "role": "option",
-        "canonical_sha256": "5eab1567a516e850c23e5e4e6903c6fe0b762b8be2afa77f4098fec0d7fd3c77",
-        "rendered_sha256": "5eab1567a516e850c23e5e4e6903c6fe0b762b8be2afa77f4098fec0d7fd3c77",
-        "projection_sha256": "460bac196bbe0684441031b06b21fc0b3ad46f0dc0f22fa8e4ad3eec676e9506",
+        "canonical_sha256": "fcc4f1cdd2beff7ce58a3c77c3e07f8d895a763437ecfc94b7e4952cde86b605",
+        "rendered_sha256": "fcc4f1cdd2beff7ce58a3c77c3e07f8d895a763437ecfc94b7e4952cde86b605",
+        "projection_sha256": "57f72489f3ae114f1fd16f7bd9cf20beed6d397431d0052890b685c5bbb03205",
         "basis": "retain_audited_groups",
-        "rationale": "Primary reviewed and retained this field's existing separators and lexical groups, including document, example, date and table roles. No additional boundary is needed.",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
         "boundaries": [],
-        "author": "main_llm_h15"
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_workbook_2018",
@@ -8546,13 +8532,13 @@
         "slot": "options/3",
         "task": "cloze",
         "role": "option",
-        "canonical_sha256": "7c0bdb45574f129458e99c06167d1beee3627c10ce6a95c6759fb93ef8a27862",
-        "rendered_sha256": "7c0bdb45574f129458e99c06167d1beee3627c10ce6a95c6759fb93ef8a27862",
-        "projection_sha256": "172670e26b160fd58bb1e165683e8007604a6e667970ed15a0e4eded5afdf0b7",
+        "canonical_sha256": "b97d340c1ab136410ac394a465b2d488b88649bc640d555f88c97db646b8e051",
+        "rendered_sha256": "b97d340c1ab136410ac394a465b2d488b88649bc640d555f88c97db646b8e051",
+        "projection_sha256": "56439c12b29cf5e65304a02af0157a049a6e01156369dd18cb8f203feb18ad58",
         "basis": "retain_audited_groups",
-        "rationale": "Primary reviewed and retained this field's existing separators and lexical groups, including document, example, date and table roles. No additional boundary is needed.",
+        "rationale": "Reviewed against the printed body field. The compressed fixlog identifies each corrected word boundary and source page.",
         "boundaries": [],
-        "author": "main_llm_h15"
+        "author": "editorial-20261125"
       },
       {
         "unit": "N4_workbook_2018",

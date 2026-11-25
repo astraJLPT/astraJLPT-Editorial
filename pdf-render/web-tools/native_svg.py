@@ -257,7 +257,7 @@ class Vector:
                 f=run['font'];yy=by+run['dy']
                 self.parts.append('<text '+attrs(x=cursor,y=yy,font_family=f['family'],font_size=f['size'],fill='black',stroke='none')+'>'+html.escape(run['text'])+'</text>')
                 if 'ruby'in run:
-                    self.parts.append('<text '+attrs(x=cursor+run['width']/2,y=yy-f['size'],font_family=f['family'],font_size=f['size']*.5,text_anchor='middle',fill='black',stroke='none')+'>'+html.escape(run['ruby'])+'</text>');self.text.append(run['ruby'])
+                    self.parts.append('<text class="rubi-reading" '+attrs(x=cursor+run['width']/2,y=yy-f['size'],font_family=f['family'],font_size=f['size']*.5,text_anchor='middle',fill='black',stroke='none')+'>'+html.escape(run['ruby'])+'</text>');self.text.append(run['ruby'])
                 cursor+=run['width']
         self.parts.append('</g>')
 

@@ -1,26 +1,26 @@
 {
   "format": "editorial-package-size-v4",
-  "files": 5307,
-  "payload_bytes": 2025882452,
+  "files": 5011,
+  "payload_bytes": 1950366738,
   "baseline_payload_bytes": 2049421946,
-  "payload_bytes_saved": 23539494,
+  "payload_bytes_saved": 99055208,
   "editorial_json_bytes_saved": 5688018,
   "groups": {
     ".gitattributes": 218,
     ".github": 1163,
     ".gitignore": 429,
-    "README.md": 10777,
+    "README.md": 11263,
     "additional-assets": 686682334,
-    "astraJLPT": 954349414,
-    "editorial-json": 115586987,
-    "pdf-render": 215225836,
-    "rubi-restore": 54022116,
+    "astraJLPT": 878442481,
+    "editorial-json": 115847818,
+    "pdf-render": 215355522,
+    "rubi-restore": 54022226,
     "serve.py": 632,
-    "verify.py": 2546
+    "verify.py": 2652
   },
   "preexisting_ignored_output_bytes_archived": 6548118,
-  "folder_bytes_saved_excluding_git": 30087612,
-  "website_bytes": 954349414,
+  "folder_bytes_saved_excluding_git": 105603326,
+  "website_bytes": 878442481,
   "conservative_website_limit": 1000000000,
   "full_fonts": 39,
   "full_font_bytes": 200129901,
@@ -79,7 +79,7 @@
   "total_budget_decision": "Retained full fonts, source material, ruby research and private audit records; added documentation and a compressed README screenshot.",
   "maintenance_baseline": "2ad81c5cdec0a52ae52ed7dbd3f42bcc01592146",
   "maintenance_baseline_payload_bytes": 2043805380,
-  "maintenance_payload_bytes_saved": 16060890,
+  "maintenance_payload_bytes_saved": 93438642,
   "unit_identity_documentation_baseline": "55fbf34",
   "unit_identity_documentation_baseline_payload_bytes": 2043795198,
   "unit_identity_documentation_payload_bytes_added": -16050708,
@@ -194,5 +194,90 @@
     "font_delivery_unchanged": true,
     "payload_bytes_added": 182182,
     "website_bytes_added": 155677
+  },
+  "answer_selection_and_timing": {
+    "date": "2026-11-23",
+    "checkpoint_git": "7b03a1f",
+    "baseline_payload_bytes": 2025882452,
+    "baseline_website_bytes": 954349414,
+    "website_bytes_added": 27122,
+    "payload_bytes_added": 33507
+  },
+  "timer_controls_and_score_details": {
+    "date": "2026-11-24",
+    "checkpoint_git": "296ba30",
+    "baseline_payload_bytes": 2025915959,
+    "baseline_website_bytes": 954376536,
+    "website_bytes_added": 4924,
+    "payload_bytes_added": 24142
+  },
+  "visual_repairs_20261124": {
+    "baseline_git": "ce27cb7f440ef92b509a230e63387681aaa110de",
+    "baseline_payload_bytes": 2026066142,
+    "baseline_website_bytes": 954473045,
+    "payload_bytes_added": -157853,
+    "website_bytes_added": -220492
+  },
+  "heading_wrap_20261124": {
+    "baseline_git": "15cc19c5829f0e9acaa0c05df922d752e168728c",
+    "baseline_payload_bytes": 2025908289,
+    "baseline_website_bytes": 954252553,
+    "payload_bytes_added": -21510,
+    "website_bytes_added": -75115
+  },
+  "heading_spacing_20261125": {
+    "baseline_git": "a4da1233480b7a83dc565087e1a2b2a029f45254",
+    "baseline_payload_bytes": 2025886779,
+    "baseline_website_bytes": 954177438,
+    "payload_bytes_added": 49760,
+    "website_bytes_added": 918
+  },
+  "wakachi_20261125": {
+    "baseline_git": "c0851dc96ccb00f8b8d576c4d16633265df288e0",
+    "baseline_website_bytes": 954178356,
+    "website_bytes_added": 1247907,
+    "payload_bytes_added": 1313000
+  },
+  "uars_instructions_20261125": {
+    "baseline_git": "35d9a7760cbe5669eff788f62f3b94de971f2ce6",
+    "baseline_website_bytes": 955426263,
+    "website_bytes_added": -29182,
+    "payload_bytes_added": -27313
+  },
+  "uars_modern_instructions_20261125": {
+    "baseline_git": "eac99d414edbd77f9bafc065e103007d8c02050e",
+    "baseline_website_bytes": 955397081,
+    "website_bytes_added": -58045,
+    "payload_bytes_added": 27646
+  },
+  "modern_body_spacing_20261125": {
+    "baseline_git": "17521c352147c03f2b1444bd58632646fa9f2b55",
+    "baseline_website_bytes": 955339036,
+    "website_bytes_added": 42727,
+    "payload_bytes_added": 219740
+  },
+  "numeral_spacing_and_layout_20261125": {
+    "baseline_git": "9a814622f6620333bcef26c97544dc67f68b9d68",
+    "baseline_website_bytes": 955381763,
+    "website_bytes_added": 66036,
+    "payload_bytes_added": 100364
+  },
+  "paper_rubi_setting": {
+    "previous_website_bytes": 955457195,
+    "retired_html_bytes": 74493338,
+    "website_bytes_saved": 77070795
+  },
+  "reader_save_and_layout_20261126": {
+    "previous_website_bytes": 878386400,
+    "website_bytes_added": 54695,
+    "previous_payload_bytes": 1950278667,
+    "payload_bytes_added": 76744
+  },
+  "heading_reflow_20261126": {
+    "baseline_git": "f44a08471b44069fbcceb340c7b24a48676cab94",
+    "baseline_website_bytes": 878441095,
+    "website_bytes_added": 1224,
+    "baseline_payload_bytes": 1950355411,
+    "payload_bytes_added": 6148
   }
 }

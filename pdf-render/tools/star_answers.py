@@ -59,6 +59,23 @@ def review_content(question):
             tuple(Projection(value).text for value in question['options']))
 
 
+# Only horizontal separators between Japanese letters are editorial word gaps.
+JAPANESE_LETTER = r'[ぁ-ゖァ-ヺー一-龯々〆ヶ]'
+WORD_GAP = re.compile(rf'(?<={JAPANESE_LETTER})[ 　]+(?={JAPANESE_LETTER})')
+
+
+def same_except_word_spacing(previous, current):
+    def unspace(value):
+        if isinstance(value, dict):
+            return {**value, 'html': WORD_GAP.sub('', value['html'])}
+        return WORD_GAP.sub('', value)
+
+    return (previous['id'] == current['id'] and previous['key'] == current['key']
+            and unspace(previous['stem']) == unspace(current['stem'])
+            and [unspace(v) for v in previous['options']]
+            == [unspace(v) for v in current['options']])
+
+
 def slot_sequence(stem):
     """Return exactly four source slots, supporting stars at any position."""
     text = Projection(stem).text
@@ -100,15 +117,15 @@ def validate(question, *, require=True):
         if evidence['method'] != 'independent_linguistic_review':
             continue
         snapshot = evidence.get('reviewed_question')
+        spacing_only = snapshot is not None and same_except_word_spacing(snapshot, question)
         if snapshot is not None:
             if (question_binding(snapshot) != evidence['reviewed_question_sha256'] or
-                    review_content(snapshot) != review_content(question)):
+                    (not spacing_only and review_content(snapshot) != review_content(question))):
                 raise ValueError('Stale STAR historical review snapshot: ' + question['id'])
         if evidence['reviewed_question_sha256'] != question_sha256:
-            # A key/slot-only editorial decision can reuse a blind language
-            # judgment. Retain the original reviewed bytes and original hash;
-            # never relabel that old judgment as a fresh review of the new key.
-            if status != 'accepted' or snapshot is None:
+            # Preserve the independently hashed original for a typesetting change
+            # or a separately accepted key/slot decision.
+            if snapshot is None or (status != 'accepted' and not spacing_only):
                 raise ValueError('Stale STAR independent review question binding: ' + question['id'])
         if evidence['review_binding_sha256'] != review_binding(evidence):
             raise ValueError('Stale STAR independent review binding: ' + question['id'])

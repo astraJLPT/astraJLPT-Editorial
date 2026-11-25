@@ -121,6 +121,86 @@
       "score_is_calibrated_probability": false,
       "release_id": "rubi-pass4-20261106-v1",
       "review_record_id": "P4-FINAL:rr4-60ed0493a634c7b97775"
+    },
+    {
+      "annotation_id": "inst-61c066701b263ef9f5ab",
+      "section_id": "reading-s02",
+      "owner_id": "reading-s02",
+      "field": "heading",
+      "pointer": "/sections/5/heading",
+      "field_sha256": "a36e75507838b83fea7deb24c73d55109cff15e29098eafb32448c42ec2b3e49",
+      "start": 44,
+      "end": 45,
+      "base": "一",
+      "reading": "ひと",
+      "origin": "project_rubi_restore",
+      "basis": "inferred",
+      "decision": "accepted",
+      "acceptance_route": "same_level_same_task_reference_review",
+      "rule": "Printed reading shared by the matched instruction references",
+      "score_is_calibrated_probability": false,
+      "release_id": "uars-instructions-20261125",
+      "review_record_id": "uars-instructions-20261125-N5_07_2023-reading-s02-aids"
+    },
+    {
+      "annotation_id": "inst-0bf7233328dce042838f",
+      "section_id": "reading-s03",
+      "owner_id": "reading-s03",
+      "field": "heading",
+      "pointer": "/sections/6/heading",
+      "field_sha256": "9643428d7e78daf63c7e4705cc203ee97beb7cc9e2861cb67163099d56017489",
+      "start": 62,
+      "end": 63,
+      "base": "一",
+      "reading": "ひと",
+      "origin": "project_rubi_restore",
+      "basis": "inferred",
+      "decision": "accepted",
+      "acceptance_route": "same_level_same_task_reference_review",
+      "rule": "Printed reading shared by the matched instruction references",
+      "score_is_calibrated_probability": false,
+      "release_id": "uars-instructions-20261125",
+      "review_record_id": "uars-instructions-20261125-N5_07_2023-reading-s03-aids"
+    },
+    {
+      "annotation_id": "inst-ea2abe44648ef65315be",
+      "section_id": "reading-s04",
+      "owner_id": "reading-s04",
+      "field": "heading",
+      "pointer": "/sections/7/heading",
+      "field_sha256": "96e84f89428be42fac7d6ca4ef4ad64de63c9f183b7a21bd973b3cff2d09d6f9",
+      "start": 26,
+      "end": 27,
+      "base": "読",
+      "reading": "よ",
+      "origin": "project_rubi_restore",
+      "basis": "inferred",
+      "decision": "accepted",
+      "acceptance_route": "same_level_same_task_reference_review",
+      "rule": "Printed reading shared by the matched instruction references",
+      "score_is_calibrated_probability": false,
+      "release_id": "uars-instructions-20261125",
+      "review_record_id": "uars-instructions-20261125-N5_07_2023-reading-s04-aids"
+    },
+    {
+      "annotation_id": "inst-08c521d678b8a9c86c23",
+      "section_id": "reading-s04",
+      "owner_id": "reading-s04",
+      "field": "heading",
+      "pointer": "/sections/7/heading",
+      "field_sha256": "96e84f89428be42fac7d6ca4ef4ad64de63c9f183b7a21bd973b3cff2d09d6f9",
+      "start": 73,
+      "end": 74,
+      "base": "一",
+      "reading": "ひと",
+      "origin": "project_rubi_restore",
+      "basis": "inferred",
+      "decision": "accepted",
+      "acceptance_route": "same_level_same_task_reference_review",
+      "rule": "Printed reading shared by the matched instruction references",
+      "score_is_calibrated_probability": false,
+      "release_id": "uars-instructions-20261125",
+      "review_record_id": "uars-instructions-20261125-N5_07_2023-reading-s04-aids"
     }
   ],
   "derivation": {
@@ -134,6 +214,11 @@
       "path": "rubi-restore/releases/rubi-typography-20261109-v1/authorization.json",
       "sha256": "3508327043a2724e1a100581860e6363e51bc2cdb6a5aaec8c3110d06d12c1d3",
       "bytes": 127215
+    },
+    "instruction_review": {
+      "release_id": "uars-instructions-20261125",
+      "accepted": 4,
+      "basis": "Same-level, same-task approved instruction review. See the referenced records in this unit’s compressed fixlog."
     }
   }
 }

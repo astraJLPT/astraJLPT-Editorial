@@ -120,8 +120,8 @@
         "unit": "N2_07_2026",
         "editorial": {
           "path": "editorial-json/N2/N2_07_2026/editorial_N2_07_2026.json",
-          "sha256": "6ff04f310797629bdd884493805a332879b30517e07361a1f1d30ca810589dd1",
-          "bytes": 125077
+          "sha256": "56a0aec856ae971fe69ab001b85d10742262d851808bf985d869694b224e6bf7",
+          "bytes": 125084
         },
         "sidecar": {
           "path": "editorial-json/N2/N2_07_2026/ruby_N2_07_2026.json",
@@ -140,7 +140,7 @@
         "unit": "N2_07_2026",
         "canonical_editorial": "preprocess/N2/N2_07_2026/editorial_N2_07_2026.json",
         "canonical_sha256": "fe5158f1c23ecbadda91b49bddb6caa5c78a7db7695505395a64b7593a28df0e",
-        "canonical_current_sha256": "6ff04f310797629bdd884493805a332879b30517e07361a1f1d30ca810589dd1",
+        "canonical_current_sha256": "56a0aec856ae971fe69ab001b85d10742262d851808bf985d869694b224e6bf7",
         "source_path": "src/日语JLPT历年真题/N2真题（2010-2026.07）/2026/2026.07/2026年7月N2 真题.pdf",
         "source_sha256": "62dbeac1cf0a3af6789fcc6d436bf6ebe2561390008f5d4f2c309be28c2a491c",
         "scored_questions": 71,
@@ -2335,8 +2335,8 @@
         "unit": "N2_07_2025",
         "editorial": {
           "path": "editorial-json/N2/N2_07_2025/editorial_N2_07_2025.json",
-          "sha256": "60f8104fa64e9ddc8b7e6b7ae0416cdd345565aa96944373ccb554ba5c71620b",
-          "bytes": 142802
+          "sha256": "c0b1d691fdd0767cf0b547ebcec30550b337a5a9e632d3acf9e6551b0d32e780",
+          "bytes": 142805
         },
         "sidecar": {
           "path": "editorial-json/N2/N2_07_2025/ruby_N2_07_2025.json",
@@ -2405,7 +2405,7 @@
           "registry_path": "preprocess/publication_registry.json",
           "registry_sha256": "ed25f07ddbdd86234420e14aa10fd25da7769f1f70d53ee2325b1663276af3fd"
         },
-        "canonical_current_sha256": "60f8104fa64e9ddc8b7e6b7ae0416cdd345565aa96944373ccb554ba5c71620b",
+        "canonical_current_sha256": "c0b1d691fdd0767cf0b547ebcec30550b337a5a9e632d3acf9e6551b0d32e780",
         "active_editorial": "editorial-json/N2/N2_07_2025/editorial_N2_07_2025.json"
       },
       "public_output": {
@@ -4741,13 +4741,13 @@
         "unit": "N4_07_2021",
         "editorial": {
           "path": "editorial-json/N4/N4_07_2021/editorial_N4_07_2021.json",
-          "sha256": "6ba1a5397ec7a5f421c81f37227867fd34df321164c9a5f421ebda100571c07f",
-          "bytes": 389049
+          "sha256": "d1b5b1526d24532a3ce153270ae0455a5904c6bd97b6574fe79692c61ed41544",
+          "bytes": 379889
         },
         "sidecar": {
           "path": "editorial-json/N4/N4_07_2021/ruby_N4_07_2021.json",
-          "sha256": "86a1c3d8a9a0f206d04717195a6f48269826a26a0f80b5accd684d54097e92cc",
-          "bytes": 149886
+          "sha256": "ecc8a0331d38f029e3aec1f31371b63eb50ffeed8e49f1c3aa841e82cf971dbb",
+          "bytes": 149881
         },
         "defaults": {
           "path": "pdf-render/schema/N4/defaults.json",
@@ -4761,7 +4761,7 @@
         "unit": "N4_07_2021",
         "canonical_editorial": "preprocess/N4/N4_07_2021/editorial_N4_07_2021.json",
         "canonical_sha256": "0cde26474a625237ad00ffde67705d9d6a51120b286e221262a9e1ba4d067a9e",
-        "canonical_current_sha256": "6ba1a5397ec7a5f421c81f37227867fd34df321164c9a5f421ebda100571c07f",
+        "canonical_current_sha256": "d1b5b1526d24532a3ce153270ae0455a5904c6bd97b6574fe79692c61ed41544",
         "source_path": "src/日语JLPT历年真题/N4真题（2010-2025.12）/2021年07月N4/2021年7月N4真题（含答案）.pdf",
         "source_sha256": "ee12664b0f7706fdfa6b043a62b9003a81ef5c09b4e00a507e45e175eb5cbe4b",
         "scored_questions": 57,
@@ -4842,18 +4842,18 @@
         "rubi-presentation-20261108-v1",
         "rubi-typography-20261109-v1"
       ],
-      "annotations_sha256": "04e634b652d8f3e5318736488e43f4d252bf3a887f01fbd95d598f98036faddd",
+      "annotations_sha256": "22151904a5bce2b7d1e6de61c02a9a34e0abb874880e8d7a7ef8b7591a8179f6",
       "annotation_count": 165,
       "question_count": 57,
       "source_ruby_groups": 39,
       "style_rebindings": [],
       "reader_semantics": {
         "regular": {
-          "questions_sha256": "0f66594cb9c7ed849363cf794a6390e52488346413db632240422d86feacd9c3",
+          "questions_sha256": "b20b4d81f936d5cbe828dff9b2b8d0da1292789cc0b0e8e1fa677ef62586d484",
           "answer_tokens_sha256": "19849df7a4fab7285c5d5629d2b40fb34f45a61f5bf677ec33ee415b63d16ad4"
         },
         "norubi": {
-          "questions_sha256": "0f66594cb9c7ed849363cf794a6390e52488346413db632240422d86feacd9c3",
+          "questions_sha256": "b20b4d81f936d5cbe828dff9b2b8d0da1292789cc0b0e8e1fa677ef62586d484",
           "answer_tokens_sha256": "19849df7a4fab7285c5d5629d2b40fb34f45a61f5bf677ec33ee415b63d16ad4"
         }
       }
@@ -4865,19 +4865,19 @@
         "unit": "N4_07_2023",
         "editorial": {
           "path": "editorial-json/N4/N4_07_2023/editorial_N4_07_2023.json",
-          "sha256": "516a61eda89f4280102885385751a630da3b29fe28476a7df8b4ac9346fda0ad",
-          "bytes": 386051
+          "sha256": "437353a6a5332104540f8c12e726dc816347ddc33a0552a8913bb24cf5ff8ea8",
+          "bytes": 373666
         },
         "sidecar": {
           "path": "editorial-json/N4/N4_07_2023/ruby_N4_07_2023.json",
-          "sha256": "d05e5ced2ff3466dc49ffafd06edca086da01e7b78e845e3cef98d1fd598026a",
-          "bytes": 180651
+          "sha256": "5f5281c065e117dd5db75ec7c7ba9150ed272015b06904f3b2796654ebb907d8",
+          "bytes": 185840
         },
         "defaults": {
           "path": "pdf-render/schema/N4/defaults.json",
           "sha256": "92624b8e129b6a9051a7a25d14075766459795f38e6de24d7f5f799fb09ff535"
         },
-        "accepted": 199,
+        "accepted": 205,
         "render_edition": "restored",
         "public_filename": "N4_07_2023.restored.pdf"
       },
@@ -4885,7 +4885,7 @@
         "unit": "N4_07_2023",
         "canonical_editorial": "preprocess/N4/N4_07_2023/editorial_N4_07_2023.json",
         "canonical_sha256": "0dd0c87166758a3a157fd7e735f69b63ce20f37417bf46ec48258a46e6fa981c",
-        "canonical_current_sha256": "516a61eda89f4280102885385751a630da3b29fe28476a7df8b4ac9346fda0ad",
+        "canonical_current_sha256": "437353a6a5332104540f8c12e726dc816347ddc33a0552a8913bb24cf5ff8ea8",
         "source_path": "src/日语JLPT真题1992～2025.12（及时转存，避免丢失）/渠道一/日语N4真题/2023年7月/2023年7月日语N4真题.pdf",
         "source_sha256": "52e4cce69aa7c1cf4fa45cd8296a7ac1b0574217b62bd8d86120726e66b76591",
         "scored_questions": 57,
@@ -4960,20 +4960,21 @@
       "allowed_annotation_releases": [
         "rubi-pass4-20261106-v1",
         "rubi-presentation-20261108-v1",
-        "rubi-typography-20261109-v1"
+        "rubi-typography-20261109-v1",
+        "uars-instructions-20261125"
       ],
-      "annotations_sha256": "957b173c83b0d894e496caee4569ad9ed2b26907ea9363989bd620d1f50466f4",
-      "annotation_count": 199,
+      "annotations_sha256": "4220595546d0b5b8cbe9fa29d764ebe1051a6caea7ef4167217814e11f2df896",
+      "annotation_count": 205,
       "question_count": 57,
       "source_ruby_groups": 0,
       "style_rebindings": [],
       "reader_semantics": {
         "regular": {
-          "questions_sha256": "2754c0a2095d2e8eb400d40dcc198cb6c70c26b2ea5292d38746900428492084",
+          "questions_sha256": "34a77580c00897f5492793e2347976f4fd29f1949a4fd7de24085d70165f754a",
           "answer_tokens_sha256": "da2957e80add52945c0d5a73f219e2a901f98fac922e65e9cac3e3b9ad8f925b"
         },
         "norubi": {
-          "questions_sha256": "2754c0a2095d2e8eb400d40dcc198cb6c70c26b2ea5292d38746900428492084",
+          "questions_sha256": "34a77580c00897f5492793e2347976f4fd29f1949a4fd7de24085d70165f754a",
           "answer_tokens_sha256": "da2957e80add52945c0d5a73f219e2a901f98fac922e65e9cac3e3b9ad8f925b"
         }
       }
@@ -4985,19 +4986,19 @@
         "unit": "N4_07_2024",
         "editorial": {
           "path": "editorial-json/N4/N4_07_2024/editorial_N4_07_2024.json",
-          "sha256": "5e18d49b04026f8327cf79a7fadd1ccb0a4ce9397ff92c332ddbc75fba8b02b9",
-          "bytes": 390819
+          "sha256": "824ad8254e4c1edf7afea3d9f9c3fef7ad3e3b6bad3efc4d05342ea1364b2eab",
+          "bytes": 384244
         },
         "sidecar": {
           "path": "editorial-json/N4/N4_07_2024/ruby_N4_07_2024.json",
-          "sha256": "770a8e2676dc6b0a3724bb0f45c0f2b73e2ca758a9a236a75915c3fd517cb9af",
-          "bytes": 170308
+          "sha256": "78227e89039bd60846760f320e3d578ec578c01b44ed28f4db8f91d26c721543",
+          "bytes": 174671
         },
         "defaults": {
           "path": "pdf-render/schema/N4/defaults.json",
           "sha256": "92624b8e129b6a9051a7a25d14075766459795f38e6de24d7f5f799fb09ff535"
         },
-        "accepted": 192,
+        "accepted": 197,
         "render_edition": "restored",
         "public_filename": "N4_07_2024.restored.pdf"
       },
@@ -5005,7 +5006,7 @@
         "unit": "N4_07_2024",
         "canonical_editorial": "preprocess/N4/N4_07_2024/editorial_N4_07_2024.json",
         "canonical_sha256": "e93307c6f616dfbb38f0f74d5db171ec94bc15003a77175a044f51c8b810c9e4",
-        "canonical_current_sha256": "5e18d49b04026f8327cf79a7fadd1ccb0a4ce9397ff92c332ddbc75fba8b02b9",
+        "canonical_current_sha256": "824ad8254e4c1edf7afea3d9f9c3fef7ad3e3b6bad3efc4d05342ea1364b2eab",
         "source_path": "src/日语JLPT历年真题/N4真题（2010-2025.12）/2024年7月N4/2024年7月(暂无解析，后续更新)/2024年7月能力考N4真题+答案.pdf",
         "source_sha256": "4a2bc6a6cdaea044a153851f0c5515f86dc635d3bf6c4832796392dfadd26cb3",
         "scored_questions": 57,
@@ -5054,10 +5055,11 @@
       "allowed_annotation_releases": [
         "rubi-pass4-20261106-v1",
         "rubi-presentation-20261108-v1",
-        "rubi-typography-20261109-v1"
+        "rubi-typography-20261109-v1",
+        "uars-instructions-20261125"
       ],
-      "annotations_sha256": "d271e16ca5d603143441e54473d78b6313a9c65c8413fc21d274c44c8c97dffd",
-      "annotation_count": 192,
+      "annotations_sha256": "240794c2238ffeccf1aaf0c9cb7986e18474608f983c08746a531658675ffdcc",
+      "annotation_count": 197,
       "question_count": 57,
       "source_ruby_groups": 0,
       "style_rebindings": [],
@@ -5079,8 +5081,8 @@
         "unit": "N4_07_2025",
         "editorial": {
           "path": "editorial-json/N4/N4_07_2025/editorial_N4_07_2025.json",
-          "sha256": "1733e7fc9066ccd4dd591c8045bdc4652bdbe6f04b399b87bf686e9e7b9fd19f",
-          "bytes": 328483
+          "sha256": "3fd161df1c5aeb032f34d303f3b191c2aa2e18ad22cc93600a8ea6a90478c7a3",
+          "bytes": 328261
         },
         "sidecar": {
           "path": "editorial-json/N4/N4_07_2025/ruby_N4_07_2025.json",
@@ -5140,7 +5142,7 @@
           "registry_path": "preprocess/publication_registry.json",
           "registry_sha256": "ed25f07ddbdd86234420e14aa10fd25da7769f1f70d53ee2325b1663276af3fd"
         },
-        "canonical_current_sha256": "1733e7fc9066ccd4dd591c8045bdc4652bdbe6f04b399b87bf686e9e7b9fd19f",
+        "canonical_current_sha256": "3fd161df1c5aeb032f34d303f3b191c2aa2e18ad22cc93600a8ea6a90478c7a3",
         "active_editorial": "editorial-json/N4/N4_07_2025/editorial_N4_07_2025.json"
       },
       "public_output": {
@@ -5200,11 +5202,11 @@
       "style_rebindings": [],
       "reader_semantics": {
         "regular": {
-          "questions_sha256": "edb5622aa4db4359a7b1b11ffc79d3270301319809d5110a308ee9d21866dc7e",
+          "questions_sha256": "e695969cb6aa7ee3ff58367e064c33d384a4eb194da925c613c391e7bca432c4",
           "answer_tokens_sha256": "4af937c603da4aaf5e50a620431943f24cd9b14922004cf5b8194811cfbad5ad"
         },
         "norubi": {
-          "questions_sha256": "edb5622aa4db4359a7b1b11ffc79d3270301319809d5110a308ee9d21866dc7e",
+          "questions_sha256": "e695969cb6aa7ee3ff58367e064c33d384a4eb194da925c613c391e7bca432c4",
           "answer_tokens_sha256": "4af937c603da4aaf5e50a620431943f24cd9b14922004cf5b8194811cfbad5ad"
         }
       }
@@ -5216,19 +5218,19 @@
         "unit": "N4_12_2021",
         "editorial": {
           "path": "editorial-json/N4/N4_12_2021/editorial_N4_12_2021.json",
-          "sha256": "0e375ca0ac4eb8090fb2308afccda87d629c1613ab40612df273278b16d0326b",
-          "bytes": 399142
+          "sha256": "043972fda3261ef07e99a5759e72eeee01ff92a777db35ea03528d06d9ae2cf8",
+          "bytes": 398637
         },
         "sidecar": {
           "path": "editorial-json/N4/N4_12_2021/ruby_N4_12_2021.json",
-          "sha256": "56b9154012bb4e0123c626ae272562a8bea0b503a8c9c51ebdb57667686b5100",
-          "bytes": 155728
+          "sha256": "253ca5afda4df930d7ead582d44c921f893cb367d41fc911450ffa48178182c0",
+          "bytes": 160917
         },
         "defaults": {
           "path": "pdf-render/schema/N4/defaults.json",
           "sha256": "92624b8e129b6a9051a7a25d14075766459795f38e6de24d7f5f799fb09ff535"
         },
-        "accepted": 175,
+        "accepted": 181,
         "render_edition": "restored",
         "public_filename": "N4_12_2021.restored.pdf"
       },
@@ -5269,7 +5271,7 @@
         "written_region_limits": "Written1–11; listening12–18 excluded. Seven existing examples, no inferred ruby. Modern timing25/55. Provisional めがね remains unchanged.",
         "intake_manifest": "pdf-render/evidence/handoff9/intake/N4_12_2021.json",
         "h11_ruby_route": "existing_frozen_sidecar",
-        "canonical_current_sha256": "0e375ca0ac4eb8090fb2308afccda87d629c1613ab40612df273278b16d0326b",
+        "canonical_current_sha256": "043972fda3261ef07e99a5759e72eeee01ff92a777db35ea03528d06d9ae2cf8",
         "active_editorial": "editorial-json/N4/N4_12_2021/editorial_N4_12_2021.json"
       },
       "public_output": {
@@ -5293,20 +5295,21 @@
       "allowed_annotation_releases": [
         "rubi-pass4-20261106-v1",
         "rubi-presentation-20261108-v1",
-        "rubi-typography-20261109-v1"
+        "rubi-typography-20261109-v1",
+        "uars-instructions-20261125"
       ],
-      "annotations_sha256": "3f52a3bb9ff5b32199f5a8fdbeef4ff2557fe90ec20cbcc3604dc25240224408",
-      "annotation_count": 175,
+      "annotations_sha256": "e98982670a3e20cb61adfb044d4e9017c1113ef9cfc87e38a2f8eca8a8de904c",
+      "annotation_count": 181,
       "question_count": 57,
       "source_ruby_groups": 0,
       "style_rebindings": [],
       "reader_semantics": {
         "regular": {
-          "questions_sha256": "febae3e842e9c1a0a61446b876cf0626a78bbbc427d061296fa86dc4ff70b926",
+          "questions_sha256": "f07770467d933adfce5171ee323f7c3f3fba559ff409145847e1b98cc4a20dd7",
           "answer_tokens_sha256": "4ef5f6e81c2c2c4cadc17f8d5506055114c4059bcc6963bc6d72f5db915aa877"
         },
         "norubi": {
-          "questions_sha256": "febae3e842e9c1a0a61446b876cf0626a78bbbc427d061296fa86dc4ff70b926",
+          "questions_sha256": "f07770467d933adfce5171ee323f7c3f3fba559ff409145847e1b98cc4a20dd7",
           "answer_tokens_sha256": "4ef5f6e81c2c2c4cadc17f8d5506055114c4059bcc6963bc6d72f5db915aa877"
         }
       }
@@ -5318,8 +5321,8 @@
         "unit": "N4_12_2024",
         "editorial": {
           "path": "editorial-json/N4/N4_12_2024/editorial_N4_12_2024.json",
-          "sha256": "6195b6e170bd8ca75c0338b7ccc3db248b727cda907ca5c3cd39dd07506e092c",
-          "bytes": 381684
+          "sha256": "0981dfe39320d7009056dab7cc0359c0164b3779b135dffdd3a8929c7a572a2e",
+          "bytes": 384747
         },
         "sidecar": {
           "path": "editorial-json/N4/N4_12_2024/ruby_N4_12_2024.json",
@@ -5380,7 +5383,7 @@
           "registry_path": "preprocess/publication_registry.json",
           "registry_sha256": "ed25f07ddbdd86234420e14aa10fd25da7769f1f70d53ee2325b1663276af3fd"
         },
-        "canonical_current_sha256": "6195b6e170bd8ca75c0338b7ccc3db248b727cda907ca5c3cd39dd07506e092c",
+        "canonical_current_sha256": "0981dfe39320d7009056dab7cc0359c0164b3779b135dffdd3a8929c7a572a2e",
         "active_editorial": "editorial-json/N4/N4_12_2024/editorial_N4_12_2024.json"
       },
       "public_output": {
@@ -5441,11 +5444,11 @@
       "style_rebindings": [],
       "reader_semantics": {
         "regular": {
-          "questions_sha256": "440716d3e776dc0dd35adb68a6530fdba8afb60a1e4ef8a90ff0c4bffb4d71d5",
+          "questions_sha256": "6dfd37ca120d3f6c7fe93f1cc529acee7eebd3dde1148e60b6560ad3dfc6403f",
           "answer_tokens_sha256": "233dc108f61ba50eafefb01f5f9606396109dc56d2aa153ba321931f538318a4"
         },
         "norubi": {
-          "questions_sha256": "440716d3e776dc0dd35adb68a6530fdba8afb60a1e4ef8a90ff0c4bffb4d71d5",
+          "questions_sha256": "6dfd37ca120d3f6c7fe93f1cc529acee7eebd3dde1148e60b6560ad3dfc6403f",
           "answer_tokens_sha256": "233dc108f61ba50eafefb01f5f9606396109dc56d2aa153ba321931f538318a4"
         }
       }
@@ -5457,8 +5460,8 @@
         "unit": "N4_12_2025",
         "editorial": {
           "path": "editorial-json/N4/N4_12_2025/editorial_N4_12_2025.json",
-          "sha256": "fac88222c9e837b749742503674fd44e3ef50446027511ee3364cce49ca8db3a",
-          "bytes": 315360
+          "sha256": "74a2e33b27d2f0cb0108819b64cb220a30f3a3a238d6f708643d4def736e6917",
+          "bytes": 316638
         },
         "sidecar": {
           "path": "editorial-json/N4/N4_12_2025/ruby_N4_12_2025.json",
@@ -5517,7 +5520,7 @@
           "registry_path": "preprocess/publication_registry.json",
           "registry_sha256": "ed25f07ddbdd86234420e14aa10fd25da7769f1f70d53ee2325b1663276af3fd"
         },
-        "canonical_current_sha256": "fac88222c9e837b749742503674fd44e3ef50446027511ee3364cce49ca8db3a",
+        "canonical_current_sha256": "74a2e33b27d2f0cb0108819b64cb220a30f3a3a238d6f708643d4def736e6917",
         "active_editorial": "editorial-json/N4/N4_12_2025/editorial_N4_12_2025.json"
       },
       "public_output": {
@@ -5576,11 +5579,11 @@
       "style_rebindings": [],
       "reader_semantics": {
         "regular": {
-          "questions_sha256": "4ecd8fb177294a741bce882d4c7210d4812d80fa704bb08f04d566e2110164c3",
+          "questions_sha256": "d46004d2ececee2819600e7dd375eeb8d37e9ae553c6620e85ee5967a889a43a",
           "answer_tokens_sha256": "675c1702c01f348359d42f489b7e52fd301eb3bb2dc5bac47d72b2abc54bf190"
         },
         "norubi": {
-          "questions_sha256": "4ecd8fb177294a741bce882d4c7210d4812d80fa704bb08f04d566e2110164c3",
+          "questions_sha256": "d46004d2ececee2819600e7dd375eeb8d37e9ae553c6620e85ee5967a889a43a",
           "answer_tokens_sha256": "675c1702c01f348359d42f489b7e52fd301eb3bb2dc5bac47d72b2abc54bf190"
         }
       }
@@ -5592,19 +5595,19 @@
         "unit": "N5_07_2023",
         "editorial": {
           "path": "editorial-json/N5/N5_07_2023/editorial_N5_07_2023.json",
-          "sha256": "ab2722d88bf79ebaad1626b48a05a49487528170ef9018f976bba52fd6e9d1a7",
-          "bytes": 370778
+          "sha256": "f2d4024ad86f3e567b3b6aed94a5376a3f670f7cae749d2c202f0d681b8d8a47",
+          "bytes": 354444
         },
         "sidecar": {
           "path": "editorial-json/N5/N5_07_2023/ruby_N5_07_2023.json",
-          "sha256": "536dd9a8ffb3ae304d9206c0ffa3e3d1701164da4944230ded29ed9d03347475",
-          "bytes": 5374
+          "sha256": "60ea3e491501ae4461c5815d7a96b90ed685ae9d4e4a7eca6e269290600e9197",
+          "bytes": 8877
         },
         "defaults": {
           "path": "pdf-render/schema/N5/defaults.json",
           "sha256": "b78818835936a4285d5986465d343356a2aa1adf8aace9318c44a515fecd58f0"
         },
-        "accepted": 5,
+        "accepted": 9,
         "render_edition": "base",
         "public_filename": "N5_07_2023.restored.pdf"
       },
@@ -5612,7 +5615,7 @@
         "unit": "N5_07_2023",
         "canonical_editorial": "preprocess/N5/N5_07_2023/editorial_N5_07_2023.json",
         "canonical_sha256": "0a7c4eea03dc45190b1880780afbc062af3af4d73ed151e34bb2c5e3b2049d68",
-        "canonical_current_sha256": "ab2722d88bf79ebaad1626b48a05a49487528170ef9018f976bba52fd6e9d1a7",
+        "canonical_current_sha256": "f2d4024ad86f3e567b3b6aed94a5376a3f670f7cae749d2c202f0d681b8d8a47",
         "source_path": "src/日语JLPT历年真题/N5真题（2010-2025.12）/2023年07月N5/2023年7月N5试题不含听力.pdf",
         "source_sha256": "05d287c536cebc5e1234317f2b3279b23d097188156610d4e20bcfb54e422cac",
         "scored_questions": 43,
@@ -5683,12 +5686,13 @@
       "allowed_annotation_releases": [
         "rubi-pass4-20261106-v1",
         "rubi-presentation-20261108-v1",
-        "rubi-typography-20261109-v1"
+        "rubi-typography-20261109-v1",
+        "uars-instructions-20261125"
       ],
-      "annotations_sha256": "85d8345b1aec4914a06ca5a2b80904c6a8301efef7e28e20c5afe95921145875",
-      "annotation_count": 5,
+      "annotations_sha256": "d3855172f67adc452a24df290b577dbeecd3f99911961ea63d6b461f27dc7222",
+      "annotation_count": 9,
       "question_count": 43,
-      "source_ruby_groups": 288,
+      "source_ruby_groups": 280,
       "style_rebindings": [],
       "reader_semantics": {
         "regular": {
@@ -5708,8 +5712,8 @@
         "unit": "N5_07_2024",
         "editorial": {
           "path": "editorial-json/N5/N5_07_2024/editorial_N5_07_2024.json",
-          "sha256": "d6a70d78a077c596f90a569bc77e691e6e1f6e11b2ebbc13f70f5d41e6c6f86b",
-          "bytes": 277685
+          "sha256": "85cfeb5adb02b4c9a9a6a97973469846519d3f5aa09b305512e2032e9724ba47",
+          "bytes": 277413
         },
         "sidecar": {
           "path": "editorial-json/N5/N5_07_2024/ruby_N5_07_2024.json",
@@ -5728,7 +5732,7 @@
         "unit": "N5_07_2024",
         "canonical_editorial": "preprocess/N5/N5_07_2024/editorial_N5_07_2024.json",
         "canonical_sha256": "b99fd03484a0b98ab395d7d8f8db5580c259e1ce3a0051cfd7846c01cb565df8",
-        "canonical_current_sha256": "d6a70d78a077c596f90a569bc77e691e6e1f6e11b2ebbc13f70f5d41e6c6f86b",
+        "canonical_current_sha256": "85cfeb5adb02b4c9a9a6a97973469846519d3f5aa09b305512e2032e9724ba47",
         "source_path": "src/日语JLPT历年真题/N5真题（2010-2025.12）/2024年7月N5/2024年7月能力考N5真题+答案.pdf",
         "source_sha256": "5e3cc2c32afe620391602014fdbb8be6d267273bc62eb1f8e7db7bd208f7927c",
         "scored_questions": 43,
@@ -5801,8 +5805,8 @@
         "unit": "N5_07_2025",
         "editorial": {
           "path": "editorial-json/N5/N5_07_2025/editorial_N5_07_2025.json",
-          "sha256": "75e1cf41c75466aa0aa61dc700872ff390857a07228ead54b40bbd6165115539",
-          "bytes": 289752
+          "sha256": "069c9c48b9bf5057ed66eef6a177fbdcbe9d583dd30b7303a57c26adfb1892ad",
+          "bytes": 289464
         },
         "sidecar": {
           "path": "editorial-json/N5/N5_07_2025/ruby_N5_07_2025.json",
@@ -5858,7 +5862,7 @@
           "registry_path": "preprocess/publication_registry.json",
           "registry_sha256": "ed25f07ddbdd86234420e14aa10fd25da7769f1f70d53ee2325b1663276af3fd"
         },
-        "canonical_current_sha256": "75e1cf41c75466aa0aa61dc700872ff390857a07228ead54b40bbd6165115539",
+        "canonical_current_sha256": "069c9c48b9bf5057ed66eef6a177fbdcbe9d583dd30b7303a57c26adfb1892ad",
         "active_editorial": "editorial-json/N5/N5_07_2025/editorial_N5_07_2025.json"
       },
       "public_output": {
@@ -5914,11 +5918,11 @@
       "style_rebindings": [],
       "reader_semantics": {
         "regular": {
-          "questions_sha256": "49a74a7e21fbd4e7f8d9a84312e7101c6830d2635f46f37d408af352bd6e6fea",
+          "questions_sha256": "b7c264e1e9e516df11edec41f9fe7dea405606388f7a9af4929f50d2b0e1b540",
           "answer_tokens_sha256": "bfaffeef29b110b39f114665d79675024e4760a2ba3a284febfe2c61213576bb"
         },
         "norubi": {
-          "questions_sha256": "49a74a7e21fbd4e7f8d9a84312e7101c6830d2635f46f37d408af352bd6e6fea",
+          "questions_sha256": "b7c264e1e9e516df11edec41f9fe7dea405606388f7a9af4929f50d2b0e1b540",
           "answer_tokens_sha256": "bfaffeef29b110b39f114665d79675024e4760a2ba3a284febfe2c61213576bb"
         }
       }
@@ -5930,19 +5934,19 @@
         "unit": "N5_12_2021",
         "editorial": {
           "path": "editorial-json/N5/N5_12_2021/editorial_N5_12_2021.json",
-          "sha256": "c04f0d5d81021d5fa3e38546056c24e32e7a7923cd60e90892e4db0a278cd781",
-          "bytes": 374310
+          "sha256": "af3dca3c4d1f1cf0c28ae8641b236be090d7710c945760ff5fee91aa4bdd8d76",
+          "bytes": 362063
         },
         "sidecar": {
           "path": "editorial-json/N5/N5_12_2021/ruby_N5_12_2021.json",
-          "sha256": "62e3c5c04239a68b8c3f32ebd4816db6dcc41c8101252cdd80ce67f906a424a9",
-          "bytes": 230113
+          "sha256": "369396041eec44971ea8fb1ff6c941df2ad6ded990436d903deba2970547dce0",
+          "bytes": 235249
         },
         "defaults": {
           "path": "pdf-render/schema/N5/defaults.json",
           "sha256": "b78818835936a4285d5986465d343356a2aa1adf8aace9318c44a515fecd58f0"
         },
-        "accepted": 220,
+        "accepted": 226,
         "render_edition": "restored",
         "public_filename": "N5_12_2021.restored.pdf"
       },
@@ -5980,7 +5984,7 @@
         "written_region_limits": "Physical11 ONLY lower written portion below listening; 12–18 written. Alternate Yuuki written1–8. Actual43 scored questions and six examples retained; continuous question labels cross booklets. Four existing ruby only.",
         "intake_manifest": "pdf-render/evidence/handoff9/intake/N5_12_2021.json",
         "h11_ruby_route": "existing_frozen_sidecar",
-        "canonical_current_sha256": "c04f0d5d81021d5fa3e38546056c24e32e7a7923cd60e90892e4db0a278cd781",
+        "canonical_current_sha256": "af3dca3c4d1f1cf0c28ae8641b236be090d7710c945760ff5fee91aa4bdd8d76",
         "active_editorial": "editorial-json/N5/N5_12_2021/editorial_N5_12_2021.json"
       },
       "public_output": {
@@ -6004,10 +6008,11 @@
       "allowed_annotation_releases": [
         "rubi-pass4-20261106-v1",
         "rubi-presentation-20261108-v1",
-        "rubi-typography-20261109-v1"
+        "rubi-typography-20261109-v1",
+        "uars-instructions-20261125"
       ],
-      "annotations_sha256": "1479a1bd070f474c01086654485eb8b22186618bbf6c564660796c425b76ca48",
-      "annotation_count": 220,
+      "annotations_sha256": "b60760db1a5dfd887b49e7dad1c6bc5dc4e3d37aed3f6aa5250544ba18023a92",
+      "annotation_count": 226,
       "question_count": 43,
       "source_ruby_groups": 4,
       "style_rebindings": [],
@@ -6029,8 +6034,8 @@
         "unit": "N5_12_2025",
         "editorial": {
           "path": "editorial-json/N5/N5_12_2025/editorial_N5_12_2025.json",
-          "sha256": "883da53ed818ac3f223a597d25ef8a870b705a2d400a1e41ac5751d4e170052a",
-          "bytes": 279077
+          "sha256": "1ee64d3ecdf5a12b30ad40f20322ae0223c119268f7717adfc50f985f321a2fa",
+          "bytes": 278981
         },
         "sidecar": {
           "path": "editorial-json/N5/N5_12_2025/ruby_N5_12_2025.json",
@@ -6086,7 +6091,7 @@
           "registry_path": "preprocess/publication_registry.json",
           "registry_sha256": "ed25f07ddbdd86234420e14aa10fd25da7769f1f70d53ee2325b1663276af3fd"
         },
-        "canonical_current_sha256": "883da53ed818ac3f223a597d25ef8a870b705a2d400a1e41ac5751d4e170052a",
+        "canonical_current_sha256": "1ee64d3ecdf5a12b30ad40f20322ae0223c119268f7717adfc50f985f321a2fa",
         "active_editorial": "editorial-json/N5/N5_12_2025/editorial_N5_12_2025.json"
       },
       "public_output": {
@@ -11086,12 +11091,12 @@
         "unit": "N2_12_2013",
         "editorial": {
           "path": "editorial-json/N2/N2_12_2013/editorial_N2_12_2013.json",
-          "sha256": "90ac544c848c2ba008710ba64e9ad322fa470a23e7d617e8bfe88d1665b380e9",
-          "bytes": 163335
+          "sha256": "af4e4833f421fb17185786b2336d68ec5ad38bf1d81044d99dad4e43369036e1",
+          "bytes": 163378
         },
         "sidecar": {
           "path": "editorial-json/N2/N2_12_2013/ruby_N2_12_2013.json",
-          "sha256": "6d73012fa70752f3b9be0dcd45d191f1b8209d85b001e927c73bb029b40a4466",
+          "sha256": "e135060a3541329499311e5e8d9ca43bfe1dc4a38d5f2e8ec35ece257d0e163b",
           "bytes": 111073
         },
         "defaults": {
@@ -11106,7 +11111,7 @@
         "unit": "N2_12_2013",
         "canonical_editorial": "preprocess/N2/N2_12_2013/editorial_N2_12_2013.json",
         "canonical_sha256": "30cbe1c84cf33e46a5884663a13d7c6e0acc85e6cedaae4d9760248c183a88e8",
-        "canonical_current_sha256": "90ac544c848c2ba008710ba64e9ad322fa470a23e7d617e8bfe88d1665b380e9",
+        "canonical_current_sha256": "af4e4833f421fb17185786b2336d68ec5ad38bf1d81044d99dad4e43369036e1",
         "source_path": "src/日语JLPT真题1992～2025.12（及时转存，避免丢失）/渠道二/N2历年真题/2010-2017.12高清无水印/N2 2010.7-2017.12（真题试题）/n2 2013.12真题.pdf",
         "source_sha256": "45f498280ec2ce7e06bc7d1490f8b541e5d8bbf72aa80bb523650cb32622832b",
         "scored_questions": 75,
@@ -11209,7 +11214,7 @@
         "rubi-presentation-20261108-v1",
         "rubi-typography-20261109-v1"
       ],
-      "annotations_sha256": "eef8d787e94530a99fb85757bdceb741d0870d6cfb3ffdfdbdf76542d2f5d70a",
+      "annotations_sha256": "8e54c0d05305a36e3ccf7a85823033cae5fd9ca2e2b80ae9e8a1a6415e468941",
       "annotation_count": 131,
       "question_count": 75,
       "source_ruby_groups": 0,
@@ -14232,8 +14237,8 @@
         "unit": "N3_12_2018",
         "editorial": {
           "path": "editorial-json/N3/N3_12_2018/editorial_N3_12_2018.json",
-          "sha256": "6c921560b45c353f2cf1c4b9bd75d477f2f15eaa8ccf755df7704d9c3ab8886c",
-          "bytes": 120414
+          "sha256": "a8aa14c2d98e779fdb4fa21efa1892160a5bed639c02d01732eff359b16003c1",
+          "bytes": 119898
         },
         "sidecar": {
           "path": "editorial-json/N3/N3_12_2018/ruby_N3_12_2018.json",
@@ -14252,7 +14257,7 @@
         "unit": "N3_12_2018",
         "canonical_editorial": "preprocess/N3/N3_12_2018/editorial_N3_12_2018.json",
         "canonical_sha256": "481253e7d8c8fa4018e81fce0023b7183249c8826304eabed57315fcff278694",
-        "canonical_current_sha256": "6c921560b45c353f2cf1c4b9bd75d477f2f15eaa8ccf755df7704d9c3ab8886c",
+        "canonical_current_sha256": "a8aa14c2d98e779fdb4fa21efa1892160a5bed639c02d01732eff359b16003c1",
         "source_path": "src/日语JLPT真题1992～2025.12（及时转存，避免丢失）/渠道二/N3历年真题/2018.12/2018年12月N3试卷_解析_听力原文_高清扫描.PDF",
         "source_sha256": "e0b268fc5472e48fca08d1fb8e75b9c06e8038f14cec335ef12d0d5a587a5941",
         "scored_questions": 74,
@@ -14455,19 +14460,19 @@
         "unit": "N4_07_2010",
         "editorial": {
           "path": "editorial-json/N4/N4_07_2010/editorial_N4_07_2010.json",
-          "sha256": "f579a1ac5acb56a852eeec5af30f2da402370d12eecc67b707ea0cba05804262",
-          "bytes": 447850
+          "sha256": "45fceece7968e3f685738daf6c8e42c503b4765bba39d9723cae8c06eda3f8c0",
+          "bytes": 452545
         },
         "sidecar": {
           "path": "editorial-json/N4/N4_07_2010/ruby_N4_07_2010.json",
-          "sha256": "e5fc48e6ac325d8a1a03cf35fd049ffaceedcbb2e3b2537e95a59d74d7e29d55",
-          "bytes": 154995
+          "sha256": "fbd3b65d22ef3b09ec67d27d27502b0b171f0c3cc752008a54c3320e7f53a146",
+          "bytes": 160268
         },
         "defaults": {
           "path": "pdf-render/schema/N4/defaults.json",
           "sha256": "92624b8e129b6a9051a7a25d14075766459795f38e6de24d7f5f799fb09ff535"
         },
-        "accepted": 180,
+        "accepted": 186,
         "render_edition": "restored",
         "public_filename": "N4_07_2010.restored.pdf"
       },
@@ -14505,7 +14510,7 @@
         "written_region_limits": "Written3–10; metadata1–2 and key14 written portion separate. Listening11–13/lower14/21–24 excluded. October9 amendment establishes complete scored paper. Missing unscored STAR does not make a partial cover. Older timing30/60.",
         "intake_manifest": "pdf-render/evidence/handoff9/intake/N4_07_2010.json",
         "h11_ruby_route": "existing_frozen_sidecar",
-        "canonical_current_sha256": "f579a1ac5acb56a852eeec5af30f2da402370d12eecc67b707ea0cba05804262",
+        "canonical_current_sha256": "45fceece7968e3f685738daf6c8e42c503b4765bba39d9723cae8c06eda3f8c0",
         "active_editorial": "editorial-json/N4/N4_07_2010/editorial_N4_07_2010.json"
       },
       "public_output": {
@@ -14529,10 +14534,11 @@
       "allowed_annotation_releases": [
         "rubi-pass4-20261106-v1",
         "rubi-presentation-20261108-v1",
-        "rubi-typography-20261109-v1"
+        "rubi-typography-20261109-v1",
+        "uars-modern-instructions-20261125"
       ],
-      "annotations_sha256": "1b6993008ba402e26f1e43d0320b71318dcc4d27f65b7a89047bad3d186f6d29",
-      "annotation_count": 180,
+      "annotations_sha256": "468fd1b5e3e78064c66766e347e73d2ec8989fc684108bcb59adfede44b3ee74",
+      "annotation_count": 186,
       "question_count": 70,
       "source_ruby_groups": 0,
       "style_rebindings": [],
@@ -14554,8 +14560,8 @@
         "unit": "N4_workbook_2012",
         "editorial": {
           "path": "editorial-json/N4/N4_workbook_2012/editorial_N4_workbook_2012.json",
-          "sha256": "58c3f1deedfad9e237bbdccfb72777af450658361e84198e95c2a72ff3bfce78",
-          "bytes": 561699
+          "sha256": "53c285d2d24df8f31fcbadb7abb2ef4d5717420e5302c84141e8f0fdcfd412a7",
+          "bytes": 562111
         },
         "sidecar": {
           "path": "editorial-json/N4/N4_workbook_2012/ruby_N4_workbook_2012.json",
@@ -14574,7 +14580,7 @@
         "unit": "N4_workbook_2012",
         "canonical_editorial": "preprocess/N4/N4_07_2012/editorial_N4_07_2012.json",
         "canonical_sha256": "16ecbd248330d0cc4f64f25a08a3890c7d0e23594f8729b3aa8df261ace42500",
-        "canonical_current_sha256": "58c3f1deedfad9e237bbdccfb72777af450658361e84198e95c2a72ff3bfce78",
+        "canonical_current_sha256": "53c285d2d24df8f31fcbadb7abb2ef4d5717420e5302c84141e8f0fdcfd412a7",
         "source_path": "src/Yuuki Bui/Đề thi N4-N5 các năm Yuuki Bùi/2017年7月/N4-2017年-7月.pdf",
         "source_sha256": "45cc992d3653474a7f940dbd68b6092a13f840c987edd5542299b48c958fee9f",
         "scored_questions": 69,
@@ -14716,19 +14722,19 @@
         "unit": "N4_07_2013",
         "editorial": {
           "path": "editorial-json/N4/N4_07_2013/editorial_N4_07_2013.json",
-          "sha256": "09db9d012eae31b4536a4ba03fa8645d19c85b7deaab42646ea0d4a62f59f4d0",
-          "bytes": 442962
+          "sha256": "376fe03b658ce937ab1c62f210a53234a301c82886c10b9cdb4816066251574e",
+          "bytes": 444099
         },
         "sidecar": {
           "path": "editorial-json/N4/N4_07_2013/ruby_N4_07_2013.json",
-          "sha256": "9735a28e62aa5048be94f5f7d6ace6e099b592e3434e7c947d8c5136b0000587",
-          "bytes": 167357
+          "sha256": "6f50c1c79a43943e3f2f3c2f02ba7ef57c9befd1923252ea49cb05f7624a0b93",
+          "bytes": 171784
         },
         "defaults": {
           "path": "pdf-render/schema/N4/defaults.json",
           "sha256": "92624b8e129b6a9051a7a25d14075766459795f38e6de24d7f5f799fb09ff535"
         },
-        "accepted": 190,
+        "accepted": 195,
         "render_edition": "restored",
         "public_filename": "N4_07_2013.restored.pdf"
       },
@@ -14736,7 +14742,7 @@
         "unit": "N4_07_2013",
         "canonical_editorial": "preprocess/N4/N4_07_2013/editorial_N4_07_2013.json",
         "canonical_sha256": "23a4d9da56cf904060af9f047cdb9c9d097617d242752bff21ad29d137fd3c70",
-        "canonical_current_sha256": "09db9d012eae31b4536a4ba03fa8645d19c85b7deaab42646ea0d4a62f59f4d0",
+        "canonical_current_sha256": "376fe03b658ce937ab1c62f210a53234a301c82886c10b9cdb4816066251574e",
         "source_path": "src/JLPT N1-N5, Past papers/N4/N4-2010-2014年-高清打印版/2013年7月.pdf",
         "source_sha256": "831bd8210bbd3f0e79285f135ab903844bc56e5ac1e022fd1778ca4713a89daa",
         "scored_questions": 70,
@@ -14812,10 +14818,11 @@
       "allowed_annotation_releases": [
         "rubi-pass4-20261106-v1",
         "rubi-presentation-20261108-v1",
-        "rubi-typography-20261109-v1"
+        "rubi-typography-20261109-v1",
+        "uars-modern-instructions-20261125"
       ],
-      "annotations_sha256": "3dfb32fc1e79edc80bc4a0e64e6fde235d43c4d13b9be0238170f0731897be37",
-      "annotation_count": 190,
+      "annotations_sha256": "06f7c73f2101b37d395fb79e39441a4e430eefab94fa6bf9b169ab5dfdf24f42",
+      "annotation_count": 195,
       "question_count": 70,
       "source_ruby_groups": 0,
       "style_rebindings": [],
@@ -14837,19 +14844,19 @@
         "unit": "N4_07_2014",
         "editorial": {
           "path": "editorial-json/N4/N4_07_2014/editorial_N4_07_2014.json",
-          "sha256": "2ca08fae65e8d7ca4b327c8a7e5737dc224073799f35112422a4260bdb7c2de4",
-          "bytes": 418254
+          "sha256": "9cad5bd36e7366b8d90cfcad5ebce17b81864c77747b58d15d4f233933abc8d5",
+          "bytes": 416634
         },
         "sidecar": {
           "path": "editorial-json/N4/N4_07_2014/ruby_N4_07_2014.json",
-          "sha256": "b37404ea5536ddba6e2d759c3d80b40be961b587eb0d3f07ac477c70d3a48d60",
-          "bytes": 202877
+          "sha256": "ea9b30dd6f73405341375f0347bda5c273221b74a5e141350c74c6a7e5f337a3",
+          "bytes": 207322
         },
         "defaults": {
           "path": "pdf-render/schema/N4/defaults.json",
           "sha256": "92624b8e129b6a9051a7a25d14075766459795f38e6de24d7f5f799fb09ff535"
         },
-        "accepted": 226,
+        "accepted": 231,
         "render_edition": "restored",
         "public_filename": "N4_07_2014.restored.pdf"
       },
@@ -14857,7 +14864,7 @@
         "unit": "N4_07_2014",
         "canonical_editorial": "preprocess/N4/N4_07_2014/editorial_N4_07_2014.json",
         "canonical_sha256": "f66f05261e6db92bf5376ae846a92aa4520f4ab5313d5e612b3c413832cb76e7",
-        "canonical_current_sha256": "2ca08fae65e8d7ca4b327c8a7e5737dc224073799f35112422a4260bdb7c2de4",
+        "canonical_current_sha256": "9cad5bd36e7366b8d90cfcad5ebce17b81864c77747b58d15d4f233933abc8d5",
         "source_path": "src/JLPT N1-N5, Past papers/N4/N4-2010-2014年-高清打印版/2014年7月.pdf",
         "source_sha256": "9368a7d21e045c0c5f989b753e281db940f06e1d9930e968e77260b58dd2e150",
         "scored_questions": 70,
@@ -14935,10 +14942,11 @@
       "allowed_annotation_releases": [
         "rubi-pass4-20261106-v1",
         "rubi-presentation-20261108-v1",
-        "rubi-typography-20261109-v1"
+        "rubi-typography-20261109-v1",
+        "uars-modern-instructions-20261125"
       ],
-      "annotations_sha256": "33da2593b2c2d2acdb121f3980ecf007e4b6b6e54c1b2126d38f02a7fca6cd2b",
-      "annotation_count": 226,
+      "annotations_sha256": "c2b220796277f9dad7c2b0930dbac397a82a1f2436608086a1fa80598d8bae41",
+      "annotation_count": 231,
       "question_count": 70,
       "source_ruby_groups": 0,
       "style_rebindings": [],
@@ -14960,8 +14968,8 @@
         "unit": "N4_workbook_2018",
         "editorial": {
           "path": "editorial-json/N4/N4_workbook_2018/editorial_N4_workbook_2018.json",
-          "sha256": "07e40d77a2f822659487c0d2a4506d51e4d0051d0e6bf4c8d0a2734b6da611ec",
-          "bytes": 439405
+          "sha256": "f6baae13f240312d7abe6e851cbd92b4f0974449e4582880c07bfa9cafbcb303",
+          "bytes": 438723
         },
         "sidecar": {
           "path": "editorial-json/N4/N4_workbook_2018/ruby_N4_workbook_2018.json",
@@ -14980,7 +14988,7 @@
         "unit": "N4_workbook_2018",
         "canonical_editorial": "preprocess/N4/N4_07_2018/editorial_N4_07_2018.json",
         "canonical_sha256": "ad54de2effd668177677daf68b69f2aea695896520f670cc3013ac5b57217e54",
-        "canonical_current_sha256": "07e40d77a2f822659487c0d2a4506d51e4d0051d0e6bf4c8d0a2734b6da611ec",
+        "canonical_current_sha256": "f6baae13f240312d7abe6e851cbd92b4f0974449e4582880c07bfa9cafbcb303",
         "source_path": "source-set:N4_07_2018",
         "source_sha256": "97b2f46bec0c9f8d459527424f6eda9269f859ec6ad6ac6593b0c66c0fe80232",
         "scored_questions": 70,
@@ -15106,11 +15114,11 @@
       "style_rebindings": [],
       "reader_semantics": {
         "regular": {
-          "questions_sha256": "fb439e1f152828159b08f6fd50512adab4862d0cdc5086912af6fbaca9924ee0",
+          "questions_sha256": "6afaf435817c55774e1723886256d75540e711758e9893715f05f0f39aadcf0b",
           "answer_tokens_sha256": "7ad84189266b89833355adc617b3a3f0e8e7528a9a7114c180dc1610dcc9d6aa"
         },
         "norubi": {
-          "questions_sha256": "fb439e1f152828159b08f6fd50512adab4862d0cdc5086912af6fbaca9924ee0",
+          "questions_sha256": "6afaf435817c55774e1723886256d75540e711758e9893715f05f0f39aadcf0b",
           "answer_tokens_sha256": "7ad84189266b89833355adc617b3a3f0e8e7528a9a7114c180dc1610dcc9d6aa"
         }
       },
@@ -15123,19 +15131,19 @@
         "unit": "N4_12_2013",
         "editorial": {
           "path": "editorial-json/N4/N4_12_2013/editorial_N4_12_2013.json",
-          "sha256": "532c669ac311be6c1e308755aff1092388248058e11461775c2843c319d66d46",
-          "bytes": 446383
+          "sha256": "80130aad37592357a0bd2643d215c04fff4596f0f27767eac0dee27343f0c1f2",
+          "bytes": 451352
         },
         "sidecar": {
           "path": "editorial-json/N4/N4_12_2013/ruby_N4_12_2013.json",
-          "sha256": "1e6f32cec940d3ef8a35f192d5445e5f34f8040b48cb145c0b806926a9dd11a6",
-          "bytes": 190065
+          "sha256": "92f2691dfcf4a7e46100ebc7c185fe7c814df2fe1d45cd5b274543109096f0a3",
+          "bytes": 195338
         },
         "defaults": {
           "path": "pdf-render/schema/N4/defaults.json",
           "sha256": "92624b8e129b6a9051a7a25d14075766459795f38e6de24d7f5f799fb09ff535"
         },
-        "accepted": 217,
+        "accepted": 223,
         "render_edition": "restored",
         "public_filename": "N4_12_2013.restored.pdf"
       },
@@ -15143,7 +15151,7 @@
         "unit": "N4_12_2013",
         "canonical_editorial": "preprocess/N4/N4_12_2013/editorial_N4_12_2013.json",
         "canonical_sha256": "f971a83342cff869e3c8a062d6e7409c7a4e0477fc66f9fd70111f5d4bf5a6c5",
-        "canonical_current_sha256": "532c669ac311be6c1e308755aff1092388248058e11461775c2843c319d66d46",
+        "canonical_current_sha256": "80130aad37592357a0bd2643d215c04fff4596f0f27767eac0dee27343f0c1f2",
         "source_path": "src/JLPT N1-N5, Past papers/N4/N4-2010-2014年-高清打印版/2013年12月.pdf",
         "source_sha256": "36880896f7047f1f616e6411cbe7d6fada10c7a6f27f615661552111bef605f5",
         "scored_questions": 70,
@@ -15219,10 +15227,11 @@
       "allowed_annotation_releases": [
         "rubi-pass4-20261106-v1",
         "rubi-presentation-20261108-v1",
-        "rubi-typography-20261109-v1"
+        "rubi-typography-20261109-v1",
+        "uars-modern-instructions-20261125"
       ],
-      "annotations_sha256": "d1053fd558194e5cba3ec68e64e0956e43eda8dfc2a1d71b65c16527f91fe5b1",
-      "annotation_count": 217,
+      "annotations_sha256": "612ef2a630223945b1e6785078373ea9b2612fe1c597015e63763ec0308a88ac",
+      "annotation_count": 223,
       "question_count": 70,
       "source_ruby_groups": 0,
       "style_rebindings": [],
@@ -15244,8 +15253,8 @@
         "unit": "N5_workbook_2012",
         "editorial": {
           "path": "editorial-json/N5/N5_workbook_2012/editorial_N5_workbook_2012.json",
-          "sha256": "8ef2cf0558260ea1057c5bfdf46aa39bfe086e28af01ed49ba80c4b89826be2e",
-          "bytes": 1410116
+          "sha256": "4c5994aa5e798116d2b0caab350338551111c09b6118d8c51579321104232ba7",
+          "bytes": 1412220
         },
         "sidecar": {
           "path": "editorial-json/N5/N5_workbook_2012/ruby_N5_workbook_2012.json",
@@ -15310,7 +15319,7 @@
         ],
         "written_region_limits": "Verified 2012 official workbook; internal ID retained, requested July2010 exam unrecovered. Written question pages3–10,13–22,24–27; covers1/11 and separators2/12/23 separate, listening28–43 excluded. All20 glyph crops and three illustrations retained; no new timing claim.",
         "intake_manifest": "pdf-render/evidence/handoff9/intake/N5_07_2010.json",
-        "canonical_current_sha256": "8ef2cf0558260ea1057c5bfdf46aa39bfe086e28af01ed49ba80c4b89826be2e",
+        "canonical_current_sha256": "4c5994aa5e798116d2b0caab350338551111c09b6118d8c51579321104232ba7",
         "active_editorial": "editorial-json/N5/N5_workbook_2012/editorial_N5_workbook_2012.json"
       },
       "public_output": {
@@ -15348,11 +15357,11 @@
       "style_rebindings": [],
       "reader_semantics": {
         "regular": {
-          "questions_sha256": "33f573f3d1253dab77ee017ce6a2c958a4d06e9fd8ee5046f8287645411afc61",
+          "questions_sha256": "62cc997f445e0d02784186959be3ff07756dee8790a024bee3663ef1b6dcdca7",
           "answer_tokens_sha256": "d84b92c710688fadf3676a88e5750e2bcccc08f6308eab060b2562535eb4f776"
         },
         "norubi": {
-          "questions_sha256": "33f573f3d1253dab77ee017ce6a2c958a4d06e9fd8ee5046f8287645411afc61",
+          "questions_sha256": "62cc997f445e0d02784186959be3ff07756dee8790a024bee3663ef1b6dcdca7",
           "answer_tokens_sha256": "d84b92c710688fadf3676a88e5750e2bcccc08f6308eab060b2562535eb4f776"
         }
       },
@@ -15365,19 +15374,19 @@
         "unit": "N5_07_2013",
         "editorial": {
           "path": "editorial-json/N5/N5_07_2013/editorial_N5_07_2013.json",
-          "sha256": "68ade4bc10f3a76d50d98bc6be32d6ce269fef9aeb0cc4451a46e23c653f9c37",
-          "bytes": 403194
+          "sha256": "5259125386d3d98b4527148d5db922c007ae9ab83c66f3f180afecdbf8e992d3",
+          "bytes": 402112
         },
         "sidecar": {
           "path": "editorial-json/N5/N5_07_2013/ruby_N5_07_2013.json",
-          "sha256": "276e2bb2cf386474ae7b692f1cd7e2393a12616315eb32860ad6ffffcaf31c50",
-          "bytes": 227561
+          "sha256": "0d0564fdb129b9b50a3470fad2f809ad2bd05287a9851dba5423ae3e8a097179",
+          "bytes": 241097
         },
         "defaults": {
           "path": "pdf-render/schema/N5/defaults.json",
           "sha256": "b78818835936a4285d5986465d343356a2aa1adf8aace9318c44a515fecd58f0"
         },
-        "accepted": 242,
+        "accepted": 258,
         "render_edition": "restored",
         "public_filename": "N5_07_2013.restored.pdf"
       },
@@ -15412,7 +15421,7 @@
           9,
           10
         ],
-        "canonical_current_sha256": "68ade4bc10f3a76d50d98bc6be32d6ce269fef9aeb0cc4451a46e23c653f9c37",
+        "canonical_current_sha256": "5259125386d3d98b4527148d5db922c007ae9ab83c66f3f180afecdbf8e992d3",
         "active_editorial": "editorial-json/N5/N5_07_2013/editorial_N5_07_2013.json"
       },
       "public_output": {
@@ -15436,10 +15445,11 @@
       "allowed_annotation_releases": [
         "rubi-pass4-20261106-v1",
         "rubi-presentation-20261108-v1",
-        "rubi-typography-20261109-v1"
+        "rubi-typography-20261109-v1",
+        "uars-modern-instructions-20261125"
       ],
-      "annotations_sha256": "22cf029a3067669c95ade8b963d32257999b69f18dfee6c1347c462d67c701ed",
-      "annotation_count": 242,
+      "annotations_sha256": "f0ba4dba49380985344911aeaaad4f0c4acd4cdecd654164e50f4bf36d08321b",
+      "annotation_count": 258,
       "question_count": 67,
       "source_ruby_groups": 0,
       "style_rebindings": [],
@@ -15461,8 +15471,8 @@
         "unit": "N5_workbook_2018",
         "editorial": {
           "path": "editorial-json/N5/N5_workbook_2018/editorial_N5_workbook_2018.json",
-          "sha256": "89561cf3e882a571786415c9debaf162e4ff5cfe0d27a75a763e9a45c62264a7",
-          "bytes": 449498
+          "sha256": "326bad59eafc58e6780310ab3ccf3d69452c4adbbec73e88cfb77b4aa0db6405",
+          "bytes": 449408
         },
         "sidecar": {
           "path": "editorial-json/N5/N5_workbook_2018/ruby_N5_workbook_2018.json",
@@ -15481,7 +15491,7 @@
         "unit": "N5_workbook_2018",
         "canonical_editorial": "preprocess/N5/N5_07_2018/editorial_N5_07_2018.json",
         "canonical_sha256": "576a92122b90305a96dd7027e4fbc55b0bb674a9c95237a3edae7ec334c26d6a",
-        "canonical_current_sha256": "89561cf3e882a571786415c9debaf162e4ff5cfe0d27a75a763e9a45c62264a7",
+        "canonical_current_sha256": "326bad59eafc58e6780310ab3ccf3d69452c4adbbec73e88cfb77b4aa0db6405",
         "source_path": "src/日语JLPT真题1992～2025.12（及时转存，避免丢失）/渠道一/日语N5真题/2018年/资源二/【打印版】N5真题＋译文＋解析.pdf",
         "source_sha256": "49e90837761c7f1f04ac445fd7790ff7ee2ea0937184ac8a41a2920d16f80e4e",
         "scored_questions": 67,
@@ -15619,19 +15629,19 @@
         "unit": "N5_12_2012",
         "editorial": {
           "path": "editorial-json/N5/N5_12_2012/editorial_N5_12_2012.json",
-          "sha256": "497238b2dc312af060ff071368a75f5295b72d64c3b6d95ad983fba4432b163e",
-          "bytes": 411614
+          "sha256": "55cb81722c356dde41dec2f268a4dbeb891321ec1f08062b5a6ae36b0fca1b7c",
+          "bytes": 416391
         },
         "sidecar": {
           "path": "editorial-json/N5/N5_12_2012/ruby_N5_12_2012.json",
-          "sha256": "f9671ab427328f6ceea09fc1333dd09ab2fe266fd3acba8c90f09486332d0f7d",
-          "bytes": 236037
+          "sha256": "d2f72f328af9eaf5a7404b36490ea93aa99b384c27039e2d42da6fa71d3d6cd1",
+          "bytes": 248739
         },
         "defaults": {
           "path": "pdf-render/schema/N5/defaults.json",
           "sha256": "b78818835936a4285d5986465d343356a2aa1adf8aace9318c44a515fecd58f0"
         },
-        "accepted": 253,
+        "accepted": 268,
         "render_edition": "restored",
         "public_filename": "N5_12_2012.restored.pdf"
       },
@@ -15639,7 +15649,7 @@
         "unit": "N5_12_2012",
         "canonical_editorial": "preprocess/N5/N5_12_2012/editorial_N5_12_2012.json",
         "canonical_sha256": "16af2613d84da940ad3b52973c9537962c37c9f70d5c3a7153105a488fcd5936",
-        "canonical_current_sha256": "497238b2dc312af060ff071368a75f5295b72d64c3b6d95ad983fba4432b163e",
+        "canonical_current_sha256": "55cb81722c356dde41dec2f268a4dbeb891321ec1f08062b5a6ae36b0fca1b7c",
         "source_path": "src/日语JLPT历年真题/N5真题（2010-2025.12）/2012年12月N5/2012年12月N5真题+解析+听力原文.pdf",
         "source_sha256": "f1b08dd9c40e8e2fce0260f860c7dbc9e4473550b98af3917c4e6ae09a51aa93",
         "scored_questions": 67,
@@ -15715,20 +15725,21 @@
       "allowed_annotation_releases": [
         "rubi-pass4-20261106-v1",
         "rubi-presentation-20261108-v1",
-        "rubi-typography-20261109-v1"
+        "rubi-typography-20261109-v1",
+        "uars-modern-instructions-20261125"
       ],
-      "annotations_sha256": "1aeed6a6478b4f208a4d29d9829ce883c38112128ff71d3efa427b3142401cf6",
-      "annotation_count": 253,
+      "annotations_sha256": "b874ac50f6ac526b20bbb2c9cf1c1af49e68b2daee3b38d9de0fa09b2a0fd48f",
+      "annotation_count": 268,
       "question_count": 67,
       "source_ruby_groups": 0,
       "style_rebindings": [],
       "reader_semantics": {
         "regular": {
-          "questions_sha256": "3c727ca65fabd4cdd7fd7699dee580a7c4e2a55864adbad1ce6ff004bbe1bd46",
+          "questions_sha256": "e8303692f69abd339232d49be14b0baf4414f521223cef2c533a1c3f43e130be",
           "answer_tokens_sha256": "1f7b37e3f234483b75e1438badafe8ff84beb4c5856451160f8b8950be8a48f8"
         },
         "norubi": {
-          "questions_sha256": "3c727ca65fabd4cdd7fd7699dee580a7c4e2a55864adbad1ce6ff004bbe1bd46",
+          "questions_sha256": "e8303692f69abd339232d49be14b0baf4414f521223cef2c533a1c3f43e130be",
           "answer_tokens_sha256": "1f7b37e3f234483b75e1438badafe8ff84beb4c5856451160f8b8950be8a48f8"
         }
       }
@@ -26785,7 +26796,7 @@
         "unit": "N1_2002",
         "editorial": {
           "path": "editorial-json/N1/N1_2002/editorial_N1_2002.json",
-          "sha256": "712994fd028be71ab288801a061abda22dbcfae87cce2da86d3d8188080f5feb",
+          "sha256": "662401afedec173521810c8947b5587ce53f06f642d371dc13a986dcae52a614",
           "bytes": 391382
         },
         "sidecar": {
@@ -26980,7 +26991,7 @@
           "known_missing_examples": 1,
           "integration_evidence": "pdf-render/evidence/handoff26/RUNTIME_MIGRATION.json"
         },
-        "canonical_current_sha256": "712994fd028be71ab288801a061abda22dbcfae87cce2da86d3d8188080f5feb"
+        "canonical_current_sha256": "662401afedec173521810c8947b5587ce53f06f642d371dc13a986dcae52a614"
       },
       "public_output": {
         "unit": "N1_2002",
@@ -37039,8 +37050,8 @@
         "unit": "N4_sample_2009",
         "editorial": {
           "path": "editorial-json/N4/N4_sample_2009/editorial_N4_sample_2009.json",
-          "sha256": "ded51cd53beeac74b26a2c5fad77cd1de01fc34b7546e0c69aa6c891e7de6ea3",
-          "bytes": 132177
+          "sha256": "accca97262411800a48f036262fce9cc136eb30f918aca76cb0f2976858184fd",
+          "bytes": 132210
         },
         "sidecar": {
           "path": "editorial-json/N4/N4_sample_2009/ruby_N4_sample_2009.json",
@@ -37061,7 +37072,7 @@
         "canonical_editorial": "preprocess/N4/N4_sample_2009/editorial_N4_sample_2009.json",
         "active_editorial": "editorial-json/N4/N4_sample_2009/editorial_N4_sample_2009.json",
         "canonical_sha256": "bc58c2ea5e3a0f53c17f38839f8029d4540112e7c98a3398e9f7640ec8bde8a9",
-        "canonical_current_sha256": "f163a7a3bd888414e3b19da9f4ca2a260f2c0908302d77f23a998e9a4f45ee4a",
+        "canonical_current_sha256": "accca97262411800a48f036262fce9cc136eb30f918aca76cb0f2976858184fd",
         "source_path": "src/OfficialWorkbooks/2009/N4/N4-mondai.pdf",
         "source_sha256": "b2528ecf75af9f023fb9ce7250be88c93493e006cc96c40b3dffefc5b50bc423",
         "approved_written_physical_pages": [],
@@ -37137,11 +37148,11 @@
       "style_rebindings": [],
       "reader_semantics": {
         "regular": {
-          "questions_sha256": "1a3c463eec6d3400b737da3aa1208f1b709d25c9b49a2513c98ab313341739b7",
+          "questions_sha256": "a28e832a54345df60ca673a91f0e6a2a2dbb570eb1ef2a369f9db05f1a0bb4ec",
           "answer_tokens_sha256": "a4043d06d06efd7a382a7fec5a8478c60a48381208aa28d8aa43445ba92128fb"
         },
         "norubi": {
-          "questions_sha256": "1a3c463eec6d3400b737da3aa1208f1b709d25c9b49a2513c98ab313341739b7",
+          "questions_sha256": "a28e832a54345df60ca673a91f0e6a2a2dbb570eb1ef2a369f9db05f1a0bb4ec",
           "answer_tokens_sha256": "a4043d06d06efd7a382a7fec5a8478c60a48381208aa28d8aa43445ba92128fb"
         }
       }
@@ -37153,8 +37164,8 @@
         "unit": "N5_sample_2009",
         "editorial": {
           "path": "editorial-json/N5/N5_sample_2009/editorial_N5_sample_2009.json",
-          "sha256": "b4065b0f0bfa4d719fa9f6bf0b535aaa489a3dc5c51824d27f33acef2236df9a",
-          "bytes": 181276
+          "sha256": "48470ebccd1af790b353b99426da321ae18145609d381aa466e107d40187c12f",
+          "bytes": 181309
         },
         "sidecar": {
           "path": "editorial-json/N5/N5_sample_2009/ruby_N5_sample_2009.json",
@@ -37175,7 +37186,7 @@
         "canonical_editorial": "preprocess/N5/N5_sample_2009/editorial_N5_sample_2009.json",
         "active_editorial": "editorial-json/N5/N5_sample_2009/editorial_N5_sample_2009.json",
         "canonical_sha256": "c3aa3a14a0329ec077ff4077790f673ad2dbc97ff295b7114f07edcaed988cfe",
-        "canonical_current_sha256": "29c5c486d74072378c769483eb58510b0b719e2c7af6be3bad64178f1ab8ca44",
+        "canonical_current_sha256": "48470ebccd1af790b353b99426da321ae18145609d381aa466e107d40187c12f",
         "source_path": "src/OfficialWorkbooks/2009/N5/N5-mondai.pdf",
         "source_sha256": "df1bcb6e16629c68dba059b71a9f8b3dc7d4fc40dadb53f2b562fc8274b8f95f",
         "approved_written_physical_pages": [],
@@ -37251,11 +37262,11 @@
       "style_rebindings": [],
       "reader_semantics": {
         "regular": {
-          "questions_sha256": "b190ebcea0235a07b47e7399db3194f9e6ca049e52e9874f955d077982f3cf5e",
+          "questions_sha256": "064aa77986eff782456c512ff3f25ed6c05143cc4d7c153128b51d36d933f448",
           "answer_tokens_sha256": "95658fba4dcd8287aa9695bda34dc11c8d0aa7a50ecc42101e66b9ca5fbbebb5"
         },
         "norubi": {
-          "questions_sha256": "b190ebcea0235a07b47e7399db3194f9e6ca049e52e9874f955d077982f3cf5e",
+          "questions_sha256": "064aa77986eff782456c512ff3f25ed6c05143cc4d7c153128b51d36d933f448",
           "answer_tokens_sha256": "95658fba4dcd8287aa9695bda34dc11c8d0aa7a50ecc42101e66b9ca5fbbebb5"
         }
       }
@@ -46860,7 +46871,7 @@
     "pdf-render/config/typography_policy.json": "40cba8b0de9151f94ba9a79b45f0ed70b308d1dc09a8ea1b40c94f81ab8e3cbf",
     "pdf-render/config/workbook_typography.json": "20f35528f9aaa3f9eff5ec71d7cf47fa509b5528d0496e2d70912ef6a097667d",
     "pdf-render/contracts/reference-approvals.json": "70ed8d41a9ca84eaffe039789b551cf8c1cd2d10cba48260a4f448b27dce3cb6",
-    "pdf-render/contracts/resource-map.json": "f88a36e7462368ff76b8e29fe3f1f6a66ad339facab14f4832c0bd3f7f9ce4e7",
+    "pdf-render/contracts/resource-map.json": "b73059efc44aee47eeb117261e26f0be1ab2a3cce67eab82936e45a677355728",
     "pdf-render/editorial-tools/workbook_transition.py": "e3961f5314187697754cbb88a40a094d5c424dcb81840cea4d325259ceacf701",
     "pdf-render/fonts/05817e8ecde2-NotoSansJP-Regular.ttf": "05817e8ecde2662112f922ec6c4d9f49f417ec70b631f04a46b1b6392a64fbdb",
     "pdf-render/fonts/0a314d5e5f29-shingo_pro_bold.otf": "0a314d5e5f29d41a1c6633d6637a05b9c32e9d95abc79414541fb8eafa5f1bd7",
@@ -46952,7 +46963,7 @@
     "pdf-render/schema/N5/evidence/schema_discovery.json": "117b3c44b16a0fc5eab9501ef654aaf67423b3c779c1a6012ec6c6798f7b3a6b",
     "pdf-render/schema/N5/evidence/shared-observations.json": "4a7d12f778a0b432e8dc3cf5edfc556300143358783af16226011759052c0409",
     "pdf-render/schema/defaults.schema.json": "b59585da93dbf63fd605895432dccf14c5c18e1e463c8bd6b89f7863b2453df4",
-    "pdf-render/schema/editorial.schema.json": "fce89cfab3d21f25adfeb787f364c9464ef842ab10df93d6130a4ff6cfde7771",
+    "pdf-render/schema/editorial.schema.json": "9e8977f69e21710d1b6835738159d9c8bb7876fe967540eeaa688cb3cde2d89f",
     "pdf-render/schema/historical-1991-2009/defaults.schema.json": "7e7fbba6a3595eb51e8352a19288f4e450d6c90888f8e02430a5c0c746f4df8d",
     "pdf-render/schema/historical-1991-2009/editorial.schema.json": "2f948d0b6a9d408e956eccbfdc3d9cfebdc385f6581b846e047e6f56e628a5ab",
     "pdf-render/schema/historical-1991-2009/level1/defaults.json": "a744fc605c68fd17e30a32123b6a2e4b553272402f9db370e7d395d346bbdd3d",
@@ -46971,7 +46982,7 @@
     "pdf-render/tools/answer_blanks.py": "e7fc19001891c03029a62cb5a9fc0c4e591c05ff39391eaa65ce7ee6570e2140",
     "pdf-render/tools/assemble.py": "59b293cdb8d480fac9e3f1e63da910d3623f910b38def7554b10b4bbafae2dbf",
     "pdf-render/tools/booklet_titles.py": "4824f3f04fdb495ff7020676b4585fbc222b556cae35e8851c31aa4701b2251f",
-    "pdf-render/tools/build.py": "c8a8431fc34d26f5afa4af3ba3f2530aba20d289d2540e4ff2522bb9cea17121",
+    "pdf-render/tools/build.py": "93564814c1d287c7d1742b2f7f02bb466618a3e9edaf5623847a6cd2279f91ac",
     "pdf-render/tools/canonical_presentation.py": "5c5c0917652714d6366229c0fc9a19e0a368c37fdf3da0f31a2ada9d798074a2",
     "pdf-render/tools/cloze_panels.py": "f8c22ad66b66f89d50417ef09039f5752bfd44a4767b56b4afcd608e8976679e",
     "pdf-render/tools/contact_lines.py": "ebb78ccde6f390b3d2cda1d4a983165779413b5572f2954daca78d14548764f2",
@@ -46982,7 +46993,7 @@
     "pdf-render/tools/current_editorial.py": "ff455fd6eed45e58b5b89e7ba51a55d59fcea6be3ded6545ed024e2cff4c193c",
     "pdf-render/tools/current_ruby.py": "4d45f1060508df3c23b6b4065de2bb5a84fe1641a7f513af7fd1190502493dc8",
     "pdf-render/tools/decision_trees.py": "644ae99339cbd647cfeb790e8f070b977a41db286166d22c387d572e4285a7ef",
-    "pdf-render/tools/dialogue.py": "8069339cad7cf0827273570208572e882d4245a1c898b43601b1af9ee62dc845",
+    "pdf-render/tools/dialogue.py": "e236382e9f3719395edf4a3ecc80a056de1808c73bad91b5b56f2384aff91e95",
     "pdf-render/tools/document_bullets.py": "2633214cb1a7a98adce2644a7912304dce102aa8dabc99820b766e9a3ff51d2b",
     "pdf-render/tools/document_fields.py": "e0cd0c05ea139735a4655983e892958c8d9e033b2b3954499a224b2b483b7c79",
     "pdf-render/tools/document_lines.py": "c043955280c1f80405e9236a8142e251ccbbc65372c835db78049dcd03b4cf19",
@@ -46993,7 +47004,7 @@
     "pdf-render/tools/embedded_email_lines.py": "9e287962a6c2f3bbb648687b9cd2dc909d8073b9e56924a1a2a1220aaa3b10d9",
     "pdf-render/tools/embedded_images.py": "92ecd70fb24347e9decb3844619c6ea6a51354e56ffca83f202fce43fa3bae06",
     "pdf-render/tools/era_registry.py": "ed3ca6c34751df5a178e05d1f517ea63727fd8568f330bbae8add274abb65de9",
-    "pdf-render/tools/example_layout.py": "db6437c36a6d7eed7ab65eeadd7c6f9e69461251bffa4aaa69e6cbd4f0fc05a8",
+    "pdf-render/tools/example_layout.py": "66edc6ab835e5b8557b6a706332ec4438dbdcd41d8dfc2c73ecbe0795b0b503d",
     "pdf-render/tools/example_policy.py": "dda6465d443afdb74ce3f6a1796f0fc2d198650486f23dc015a070a3d9f197d9",
     "pdf-render/tools/font_roles.py": "5d606444dc1bcbee451287d200d5b23b711cddbdd88681885474af2ba2720a24",
     "pdf-render/tools/h28_identity.py": "2b4f4d0b0c39481c2b2326cd0741689903d0ff67f11b25cb9b15ea282e71b169",
@@ -47051,7 +47062,7 @@
     "pdf-render/tools/historical_vertical_letter.py": "b623807df59f84ad8c376d56b99690da38fd12edb09069575e6b3c11b8d07274",
     "pdf-render/tools/historical_wrapped_illustration.py": "cd18a3b34ebc24d550fc30d3e1cd4ea7655e1de91cd4063dfa672d744afbc16e",
     "pdf-render/tools/horizontal_frames.py": "baf08b22eaf571b9aaaf1bf2cea269acbf973fcedbfcfc41d29fc08425415caa",
-    "pdf-render/tools/inline_layout.py": "26f5227813002b1955df8b3a925066bcc69cfa32e284ae05759bfb2b06b727f3",
+    "pdf-render/tools/inline_layout.py": "615fc8414f6b7f8f0c59e07e4aa3faad8816aa28d417578eb9207232c7ee9aaf",
     "pdf-render/tools/inline_text_roles.py": "e7cacdb742a6abf756ea5e09c44bce2c0cd2d323b636d657581f6930008605e8",
     "pdf-render/tools/instruction_selectors.py": "0571f8c63a0632d182cfe62be04ff2edd1626f4f622a3fe36d18eae1efcec210",
     "pdf-render/tools/instruction_spacing.py": "604361b1b3669d887342ae140fe9ae421cf2936f2026278c0adf5972b3093ca1",
@@ -47087,7 +47098,7 @@
     "pdf-render/tools/plain_rich_breaks.py": "116054609b312e5643f3f4d587f84e09423f28d5e99ed561cc8bfb7e9847b718",
     "pdf-render/tools/presentation.py": "b137b8e1bc345f712ae4096233e21ed86ae6402c8e46b5cc0d8b6275d4e46982",
     "pdf-render/tools/public_output.py": "4d190702b20803a901198cee6abda76ec09aeff14ef1a8e813cc0e24a616a208",
-    "pdf-render/tools/public_paths.py": "886bfa44d8f05e0a58a5c399a9dab7f011c9cac3d5c8acf489a717db78a9fca4",
+    "pdf-render/tools/public_paths.py": "4ff9a6d00bf13b87e0c01d660f847052fc6ebed34ec91d0871ef3481925a28a6",
     "pdf-render/tools/question_displays.py": "eafd6bd4e0cd4cc5585df9f3691d19def91ebdd84f9f5b5f1a3dda499f767282",
     "pdf-render/tools/question_tables.py": "7fdeb525b11c26ff9ad84b2bfa0531f2cc7ed4d1929c5e021e95d77e6f6b2ddc",
     "pdf-render/tools/range_tokens.py": "d12c1d56299e6845e4751cd2bcd8eafc5524539736c1c3f27b2e880cada16de1",
@@ -47097,7 +47108,7 @@
     "pdf-render/tools/render_scope.py": "065a85c550196c7d60e2e6e6500f6fff8a5a24ecfbdf2c33da650ca6879f8668",
     "pdf-render/tools/rendition_assets.py": "f5fa53ed5e13a3c7fa47ee9bcb4ae9f8a582fe065ee160418d6ed8eeb0e5447a",
     "pdf-render/tools/renditions.py": "2c3446bca859ea753ccda08332791a48b897c29be3d62cdbd6f4814430585055",
-    "pdf-render/tools/richtex.py": "73fbafc97e69369636e80b0057b1f41b2e37906d3652decb60dd568661bc1715",
+    "pdf-render/tools/richtex.py": "9368e26351a2c868a770a5e04e48eb1ab15d3b69903d3e42f5e06ca420a63e47",
     "pdf-render/tools/rules.py": "1aec33f7fdcf7a2ed203c997ac3bfc79fefcf4ebdc310f2a101846c699c45b98",
     "pdf-render/tools/running_matter.py": "91d391a4d2f87b67ea140fc9525857c0b1ec96cda7d36a0d019e3466aab5ec95",
     "pdf-render/tools/section_flow.py": "bee542639422813a0c0a62573f55790a7a9dc28cb2b6deddf289d8c028bc2584",
@@ -47128,10 +47139,11 @@
     "pdf-render/tools/unit_identity.py": "d8727df3b836dae3f5f725285fe78b91af89e95f4693a079adbbc205525432c0",
     "editorial-json/unit_aliases.json": "5177fedfe16dc914a536cf705cb78817092ce2c5b91073c3b72a284b3c286619",
     "pdf-render/schema/star-answer.schema.json": "6904fe9319ae6ed537cf5a4880c7cc459045787e318adc120f6c0e42792bbbd3",
-    "pdf-render/tools/star_answers.py": "42c736b10de14babf33beab50e8aebc9adce36c2b495a53e5a53e1f21fdff6cd",
+    "pdf-render/tools/star_answers.py": "a9997ffc100671f916dd998c05adabffd67d386e6a7134b0d4ebfeb8d26e707a",
     "pdf-render/fonts/791b31aa1db8-cmex10.pfb": "791b31aa1db8608d0144b3a40fc0fe53383a60f6b00d0e8fd9f06ac4a11df8cb",
     "pdf-render/fonts/503d59829700-lcircle1.pfb": "503d59829700006b46d6ddf4f90b045ee7f08350f89544b302e7d73711c4b68f",
-    "pdf-render/fonts/AMS-OFL.txt": "a2875081d2e54c189dd204d857fb02d5250fcc77c9c1138ecc13e8d07c36fa15"
+    "pdf-render/fonts/AMS-OFL.txt": "a2875081d2e54c189dd204d857fb02d5250fcc77c9c1138ecc13e8d07c36fa15",
+    "pdf-render/tools/wakachi.py": "41bde087fc6e738699cc3af7a45ef00fa76a794852c8be746297fb1bd0372cdd"
   },
   "editorial_schema_version": "4.1.0",
   "schema_migration_baseline": "321b9a3dcb39ba995131b77605c40411dd71d69e",

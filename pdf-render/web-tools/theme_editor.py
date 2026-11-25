@@ -62,13 +62,13 @@ def color_roles():
 def editor_css():
     rules = ['body{--paper:var(--bg);' + ''.join('--'+r['id']+':'+r['formula']+';' for r in color_roles() if 'formula' in r) + '}']
     for state, correct in [('correct', 'true'), ('wrong', 'false')]:
-        selectors = [f'.answer-radio[data-correct="{correct}"]:checked+.option',
+        selectors = [f'.answer-radio[data-correct="{correct}"]:is(:checked,[data-spoiled])+.option',
                      f'.question:has(.answer-radio[data-correct="{correct}"]:checked)',
                      f'.sample-option[data-correct="{correct}"]']
         if correct == 'true':
             selectors.append('.marking-grid .mark-icon')
         rules.append(','.join(selectors)+'{'+''.join(f'--state-{key}:var(--{state}-{key});' for key, *_ in STATE_ROLES)+'}')
-    rules.append('body[data-grades-hidden="true"] .paper :is(.answer-radio:checked+.option,.question:has(.answer-radio:checked)){--state:var(--neutral);--state-ink:var(--neutral);--margin-state:var(--neutral);--margin-symbol:"•";'+''.join(f'--state-{key}:var(--neutral-{key});' for key, *_ in STATE_ROLES)+'}')
+    rules.append('body[data-grades-hidden="true"] .paper :is(.answer-radio:is(:checked,[data-spoiled])+.option,.question:has(.answer-radio:checked)){--state:var(--neutral);--state-ink:var(--neutral);--margin-state:var(--neutral);--margin-symbol:"•";'+''.join(f'--state-{key}:var(--neutral-{key});' for key, *_ in STATE_ROLES)+'}')
     return '\n'.join(rules)
 
 

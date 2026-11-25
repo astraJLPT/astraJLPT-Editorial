@@ -114,6 +114,20 @@ class StarAnswers(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'historical review snapshot'):
             validate(q)
 
+    def test_spacing_only_preserves_the_original_blind_review(self):
+        q = question(3)
+        snapshot = {k: copy.deepcopy(q[k]) for k in ('id', 'stem', 'options', 'key')}
+        for review in q['star']['order_evidence']:
+            review['reviewed_question'] = copy.deepcopy(snapshot)
+        q['options'][3] = '人 だ'
+        q['star']['question_sha256'] = question_binding(q)
+        self.assertEqual(validate(q)['status'], 'verified')
+        for incorrect in ['別 だ', '人  だ ', '人\nだ']:
+            q['options'][3] = incorrect
+            q['star']['question_sha256'] = question_binding(q)
+            with self.assertRaisesRegex(ValueError, 'historical review snapshot'):
+                validate(q)
+
     def test_accepted_placement_conflict_is_explicit(self):
         q = accept(question(2))
         q['star']['decision']['authority'] = 'delegated_source_adjudication'

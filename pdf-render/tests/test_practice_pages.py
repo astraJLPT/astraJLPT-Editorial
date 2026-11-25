@@ -1,9 +1,9 @@
-"""Era boundaries, sample text counts, and paired reader metadata."""
+"""Era boundaries, sample text counts, and reader metadata and PDF bindings."""
 from pathlib import Path
 import hashlib,json,re,sys,unittest
 ROOT=Path(__file__).resolve().parents[2]
 sys.path.insert(0,str(ROOT/'pdf-render/web-tools'))
-from practice_pages import Content,PAGE_DATA,minutes,timer_metadata,reader,catalog,dialogs
+from practice_pages import Content,PAGE_DATA,minutes,timer_metadata,reader,catalog,catalog_timer_example,dialogs
 from question_data import read_page_data,asset_path
 from web_assets import inline_resources,theme_data
 from bs4 import BeautifulSoup
@@ -68,12 +68,42 @@ class PracticePages(unittest.TestCase):
                 titles[unit]=level+' '+label
         self.assertEqual(len(titles),201)
         for unit,title in titles.items():
-            for directory in ('papers','papers-norubi'):
-                markup=(ROOT/'astraJLPT'/directory/(unit+'.html')).read_text('utf8')
-                heading=re.search(r'<h2 id="score-title">(.*?)</h2>',markup,re.S)[1]
-                self.assertEqual(BeautifulSoup(heading,'html.parser').get_text(),title,(directory,unit))
-                self.assertIn('class="progress-correct">correct</span>',markup)
-                self.assertNotIn('progress-completed',markup)
+            markup=(ROOT/'astraJLPT/papers'/(unit+'.html')).read_text('utf8')
+            heading=re.search(r'<h2 id="score-title">(.*?)</h2>',markup,re.S)[1]
+            self.assertEqual(BeautifulSoup(heading,'html.parser').get_text(),title,unit)
+            self.assertIn('class="progress-correct">correct</span>',markup)
+            self.assertNotIn('progress-completed',markup)
+    def test_homepage_generator_links_to_all_modern_and_historical_levels(self):
+        from catalog_html import homepage
+        page=BeautifulSoup(homepage([]),'html.parser')
+        self.assertEqual([a['href'] for a in page.select('.level-card')],[f'levels/N{i}.html' for i in range(5,0,-1)])
+        self.assertEqual([a['href'] for a in page.select('#historical a')],[f'levels/old-{i}.html' for i in range(1,5)])
+        self.assertFalse(page.select('script'))
+    def test_native_reader_option_selectors_are_absent_from_the_scripted_stylesheets(self):
+        from settings_ui import MARKS
+        assets=ROOT/'astraJLPT/assets'
+        active='\n'.join((assets/name).read_text('utf8') for name in ('site.css','answer-marking.css','pdf-typography.css'))
+        native=(assets/'themes-no-script.css').read_text('utf8')
+        root_check=r'body(?:\[[^\]]+\])*:has\((?:input\[name=[\"\x27]?(?:marking|spacing|rubi)|#(?:visible-paper|show-star-order))'
+        self.assertNotRegex(active,root_check)
+        for group,values in [('marking',[key for key,_ in MARKS]),('spacing',['original','standard','compact']),('rubi',['show','hide'])]:
+            for value in values:
+                self.assertIn(f'body[data-{group}={value}]',active)
+                selector=f'#rubi-{value}:checked ~' if group=='rubi' else f'body:has(input[name={group}][value={value}]:checked)'
+                self.assertIn(selector,native)
+        for control in ('visible-paper','show-star-order'):
+            self.assertIn(f'body[data-{control}]',active)
+            self.assertIn(f'body:has(#{control}:checked)',native)
+
+    def test_catalog_timer_follows_latest_sitting_and_uses_its_actual_limit(self):
+        older = {'unit':'july','year':2025,'month':7,'content_kind':'calendar','timer':{'seconds':5400}}
+        latest = dict(older,unit='december',month=12,timer={'seconds':4800})
+        sample = dict(older,unit='sample',year=2026,content_kind='sample')
+        for papers in ([sample,older,latest], [latest,sample,older]):
+            self.assertEqual(catalog_timer_example(papers), {'catalog_timer_seconds':4800})
+            self.assertEqual(catalog_timer_example(papers,{'december':{'seconds':4500}}), {'catalog_timer_seconds':4500})
+        self.assertEqual(catalog_timer_example([sample]), {})
+
     def test_catalog_refresh_keeps_one_note_break_and_is_repeatable(self):
         markup='<main><a class="back-link" href="../index.html">All levels</a><p class="collection-note">Ordered with higher quality papers presented first.<br>Principal source PDF available here.</p></main>'
         once=catalog(markup,{})
@@ -99,8 +129,8 @@ class PracticePages(unittest.TestCase):
                 self.assertNotIn('style=',label,page.name)
                 self.assertRegex(label,r'\bps-[0-9a-z]+\b',page.name)
                 cards+=1
-        self.assertEqual(pages,618)
-        self.assertEqual(cards,618*(3+187))
+        self.assertEqual(pages,417)  # Home, nine levels, 201 papers, 201 reviews and five sources.
+        self.assertEqual(cards,pages*(3+187))
         themes=json.loads((ROOT/'astraJLPT/assets/theme-data.js').read_text('utf8').removeprefix('globalThis.AstraThemes = ').rstrip().removesuffix(';'))
         self.assertEqual(len(themes['monkeytype']),187)
         self.assertIn('data-color-row="neutral"',themes['editorMarkup'])
@@ -129,31 +159,31 @@ class PracticePages(unittest.TestCase):
         result=timer_metadata(paper,{'vocab':50,'grammar':50,'reading':100},reference)
         self.assertEqual(result['seconds'],50*60)
         self.assertEqual(result['ratios'],[.5,.5])
-    def test_all_402_readers_have_controls_and_paired_metadata(self):
-        records={}
-        accepted=json.loads((ROOT/'pdf-render/contracts/accepted-release.json').read_text('utf8'))['owners']
-        for directory in ('papers','papers-norubi'):
-            for page in (ROOT/'astraJLPT'/directory).glob('*.html'):
-                markup=page.read_text('utf8');match=PAGE_DATA.search(markup)
-                if not match:continue # Stable redirects for former unit IDs.
-                data=read_page_data(markup);paper=data['paper'];unit=paper['unit']
-                self.assertNotIn('questions',json.loads(match[2]),page.name)
-                self.assert_reader_controls(markup,unit,page.name)
-                self.assertGreater(paper['timer']['seconds'],0)
-                self.assertTrue(all(q['domain'] in {'vocab','grammar','reading'} for q in data['questions']))
-                tokens=[{k:v for k,v in q.items() if k!='domain'} for q in data['questions']]
-                digest=hashlib.sha256(json.dumps(tokens,ensure_ascii=False,sort_keys=True,separators=(',',':')).encode()).hexdigest()
-                variant='norubi' if directory=='papers-norubi' else 'regular'
-                self.assertEqual(digest,accepted[unit]['reader_semantics'][variant]['answer_tokens_sha256'],page.name)
-                self.assertNotIn('2020–2026 collection',markup.split('<main',1)[0])
-                records[directory,unit]=data
-        self.assertEqual(len(records),402)
-        self.assertEqual(len(list((ROOT/'astraJLPT/assets/questions').glob('*.js'))),201)
-        for (directory,unit),regular in records.items():
-            if directory!='papers':continue
-            other=records['papers-norubi',unit]
-            self.assertEqual(regular['paper']['timer'],other['paper']['timer'])
-            self.assertEqual(regular['questions'],other['questions'])
-            self.assertEqual(regular['paper'].get('scoring'),other['paper'].get('scoring'))
+    def test_all_readers_share_answer_bindings_and_link_both_pdfs(self):
+        from public_paths import html_path,site_pdf
+        owners=json.loads((ROOT/'pdf-render/contracts/accepted-release.json').read_text('utf8'))['owners']
+        site=ROOT/'astraJLPT'
+        readers=set()
+        for page in (site/'papers').glob('*.html'):
+            markup=page.read_text('utf8');match=PAGE_DATA.search(markup)
+            if not match:continue  # Redirect from a former unit ID.
+            data=read_page_data(markup);paper=data['paper'];unit=paper['unit']
+            self.assertNotIn('questions',json.loads(match[2]),page.name)
+            self.assert_reader_controls(markup,unit,page.name)
+            self.assertGreater(paper['timer']['seconds'],0)
+            self.assertTrue(all(q['domain'] in {'vocab','grammar','reading'} for q in data['questions']))
+            tokens=[{k:v for k,v in q.items() if k!='domain'} for q in data['questions']]
+            digest=hashlib.sha256(json.dumps(tokens,ensure_ascii=False,sort_keys=True,separators=(',',':')).encode()).hexdigest()
+            for variant,mode,field in [('regular','show','release_sha256'),('norubi','hide','norubi_pdf_sha256')]:
+                self.assertEqual(digest,owners[unit]['reader_semantics'][variant]['answer_tokens_sha256'],page.name)
+                pdf=site_pdf(unit,variant)
+                self.assertRegex(markup,rf'<a(?=[^>]*data-rubi-only="{mode}")(?=[^>]*href="../{re.escape(pdf)}")[^>]*>')
+                self.assertEqual(paper[field],hashlib.sha256((site/pdf).read_bytes()).hexdigest())
+            self.assertEqual(paper['public_path'],html_path(unit))
+            self.assertEqual(paper['pdf_path'],site_pdf(unit))
+            self.assertNotIn('2020–2026 collection',markup.split('<main',1)[0])
+            readers.add(unit)
+        self.assertEqual(readers,set(owners))
+        self.assertEqual(len(list((site/'assets/questions').glob('*.js'))),201)
 
 if __name__=='__main__':unittest.main()

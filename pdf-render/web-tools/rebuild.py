@@ -20,8 +20,10 @@ def install_runtime_assets():
         (web.WEB/'web-src'/name).read_bytes() for name in scripts))
     (web.SITE/'assets/pdf-typography.css').write_bytes(
         (web.WEB/'web-src/pdf-typography.css').read_bytes())
+    (web.SITE/'assets/answer-marking.css').write_text(
+        (web.WEB/'web-src/answer-marking.css').read_text('utf-8'),encoding='utf-8',newline='\n')
     (web.SITE/'assets/site.css').write_bytes(b'\n'.join(
-        (web.WEB/'web-src'/name).read_bytes() for name in ('site.css','practice.css')))
+        (web.WEB/'web-src'/name).read_bytes() for name in ('site.css','reader-options.css','practice.css')))
     from interface_assets import refresh
     refresh(web.SITE)
     from theme_colors import install_theme_assets
@@ -55,6 +57,9 @@ def content(node):
     clone=copy.copy(node)
     for element in list(clone.select('a.developer-note, .star-solution, .star-unavailable, .visual-only')):
         if element.parent is not None:element.decompose()
+    for word in clone.select('.wakachi'):
+        word.unwrap()
+    clone.smooth()
     return ''.join(clone.stripped_strings)
 
 
@@ -76,52 +81,59 @@ def prepare(units,refresh_reviews=False):
     from shared_styles import reuse_site_styles
     from review_refresh import prepare as prepare_review, reader as refresh_reader, page as refresh_review
     from renditions import select
-    from image_html import inventory
+    from image_html import artwork,inventory
     outputs={};results=[]
     for unit in units:
-        model=web.compose(unit);orders=web.star_data([model])
-        font_name,font_data=installed_profile(model,web.SITE)
+        m=select(web.compose(unit),'regular');orders=web.star_data([m])
+        font_name,font_data=installed_profile(m,web.SITE)
         if font_name in outputs and outputs[font_name]!=font_data:raise ValueError('Conflicting font profile')
         outputs[font_name]=font_data
-        review=prepare_review(model,web) if refresh_reviews else None
-        for variant in ('regular','norubi'):
-            m=select(copy.deepcopy(model),variant)
-            pdf=ROOT/'astraJLPT'/site_pdf(unit,variant)
-            m['web_metrics']=web.resolve_metrics(m,pdf)
-            for artwork in inventory(m).values():
-                target=web.SITE/artwork['path']
-                if not target.is_file() or target.read_bytes()!=artwork['data']:
-                    raise ValueError('Installed illustration differs: '+str(target))
-            markup,nav,questions=web.paper(m,orders)
-            name=html_path(unit,variant);page=web.SITE/name
-            soup=parse_html(page.read_text('utf-8'));old=soup.select_one('.paper.editorial')
-            fresh=parse_html(markup)
-            if old is None:raise ValueError('Missing installed reader body: '+name)
-            for note in old.select('a.developer-note'):
-                parent=note.parent
-                if parent.get('id') and (target:=fresh.find(id=parent['id'])):target.append(copy.copy(note))
-            if content(old)!=content(fresh):raise ValueError('Reader text changed: '+unit+'/'+variant)
-            if [n['id'] for n in old.select('[id]')]!=[n['id'] for n in fresh.select('[id]')]:
-                raise ValueError('Reader IDs changed: '+unit+'/'+variant)
-            old.clear()
-            for child in list(fresh.contents):old.append(child.extract())
-            if review:refresh_reader(soup,unit,review,web.safe_json)
-            profiles=[n for n in soup.select('link[rel="stylesheet"]')
-                      if re.search(r'/assets/fonts(?:-[0-9a-f]+)?\.css(?:\?|$)',n.get('href',''))]
-            if len(profiles)!=1:raise ValueError('Expected one reader font profile: '+name)
-            profiles[0]['href']='../'+font_name
-            node=soup.select_one('#page-data');data=json.loads(node.get_text())
-            # This is the unit's selected regular release in both reader shells.
-            data['paper']['release_sha256']=web.sha(web.SITE/site_pdf(unit,'regular'))
-            node.string=web.safe_json(data)
-            result=reuse_site_styles(web.SITE,name,str(soup))
-            outputs[name]=version_selected(result,outputs).encode('utf-8')
-            results.append({'unit':unit,'variant':variant,'questions':len(questions),'status':'pass'})
+        review=prepare_review(m,web) if refresh_reviews else None
+        pdf=web.SITE/site_pdf(unit)
+        m['web_metrics']=web.resolve_metrics(m,pdf)
+        markup,nav,questions=web.paper(m,orders)
+        fresh=parse_html(markup)
+        # The original for a native SVG remains embedded in its editorial.
+        # A bitmap reused in the drawing itself is still a published dependency.
+        vectors={key for key,row in artwork(m).items() if not row.get('raster')}
+        images={node.get('src') or node.get('href') for node in fresh.find_all(['img','image'])} if vectors else set()
+        for key,row in inventory(m).items():
+            if key in vectors and '../'+row['path'] not in images:continue
+            target=web.SITE/row['path']
+            if not target.is_file() or target.read_bytes()!=row['data']:
+                raise ValueError('Installed illustration differs: '+str(target))
+        name=html_path(unit);page=web.SITE/name
+        soup=parse_html(page.read_text('utf-8'));old=soup.select_one('.paper.editorial')
+        if old is None:raise ValueError('Missing installed reader body: '+name)
+        for note in old.select('a.developer-note'):
+            parent=note.parent
+            if parent.get('id') and (target:=fresh.find(id=parent['id'])):target.append(copy.copy(note))
+        if content(old)!=content(fresh):raise ValueError('Reader text changed: '+unit)
+        if [n['id'] for n in old.select('[id]')]!=[n['id'] for n in fresh.select('[id]')]:
+            raise ValueError('Reader IDs changed: '+unit)
+        old.clear()
+        for child in list(fresh.contents):old.append(child.extract())
+        if review:refresh_reader(soup,unit,review,web.safe_json)
+        profiles=[n for n in soup.select('link[rel="stylesheet"]')
+                  if re.search(r'/assets/fonts(?:-[0-9a-f]+)?\.css(?:\?|$)',n.get('href',''))]
+        if len(profiles)!=1:raise ValueError('Expected one reader font profile: '+name)
+        profiles[0]['href']='../'+font_name
+        node=soup.select_one('#page-data');data=json.loads(node.string)
+        data['paper']['public_path']=name
+        data['paper']['pdf_path']=site_pdf(unit)
+        data['paper']['release_sha256']=web.sha(pdf)
+        data['paper']['norubi_pdf_sha256']=web.sha(web.SITE/site_pdf(unit,'norubi'))
+        node.string=web.safe_json(data)
+        result=reuse_site_styles(web.SITE,name,str(soup))
+        outputs[name]=version_selected(result,outputs).encode('utf-8')
+        results.append({'unit':unit,'questions':len(questions),'status':'pass'})
         if review:
             name='reviews/'+unit+'.html';page=web.SITE/name
             soup=parse_html(page.read_text('utf-8'));refresh_review(soup,review)
-            outputs[name]=version_selected(reuse_site_styles(web.SITE,name,str(soup)),outputs).encode('utf-8')
-        print(unit,'paired HTML bodies verified',flush=True)
+            from package_sources import rewrite_review
+            packaged,_=rewrite_review(page,str(soup))
+            outputs[name]=version_selected(reuse_site_styles(web.SITE,name,packaged),outputs).encode('utf-8')
+        print(unit,'HTML reader verified',flush=True)
     return changed_outputs(outputs),results
 
 
@@ -165,6 +177,6 @@ def main():
         from practice_pages import refresh
         refresh()
         refresh_asset_versions()
-    print(json.dumps({'owners':len(units),'paired_bodies':len(results),'written':args.write,
+    print(json.dumps({'owners':len(units),'reader_bodies':len(results),'written':args.write,
                       'changed_files':sorted(outputs),'result':'pass'}),flush=True)
 if __name__=='__main__':main()

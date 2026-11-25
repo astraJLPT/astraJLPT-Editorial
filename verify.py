@@ -17,6 +17,7 @@ class Links(HTMLParser):
 def main():
     manifest=json.loads(MANIFEST.read_text('utf-8'))
     failures=[]
+    if (SITE/'papers-norubi').exists():failures.append('Retired papers-norubi HTML directory is present')
     for name,record in manifest['files'].items():
         target=ROOT/name
         if not target.is_file() or digest(target)!=record['sha256']:failures.append('Changed/missing package file: '+name)

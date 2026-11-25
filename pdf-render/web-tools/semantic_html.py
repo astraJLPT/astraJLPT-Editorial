@@ -226,9 +226,20 @@ def wrap_tail(soup, cls):
             break
     if start == len(nodes):
         raise ValueError('Empty document frame')
-    if len(nodes[start:])==1 and isinstance(nodes[start],Tag) and nodes[start].has_attr('data-native-frame'):
-        frame=nodes[start];frame.name='div';frame['class']=[c for c in frame.get('class',[]) if c!='source-native-frame'];add_class(frame,cls)
+    tail = nodes[start:]
+    frames = [n for n in tail if isinstance(n, Tag) and n.has_attr('data-native-frame')]
+    # These native environments replace the authored border in place. A
+    # citation, introduction, or empty note paragraph may sit beside it.
+    if len(frames) == 1 and (len(tail) == 1 or cls in ('cloze-frame', 'email-frame')):
+        frame = frames[0]
+        frame.name = 'div'
+        frame['class'] = [c for c in frame.get('class', []) if c != 'source-native-frame']
+        add_class(frame, cls)
         del frame['data-native-frame']
+        if cls == 'cloze-frame':
+            for sibling in tail:
+                if sibling is not frame and isinstance(sibling, Tag) and sibling.select_one('[data-paragraph-role=citation]'):
+                    add_style(sibling, text_align='right', text_indent='0')
         return frame
     frame = soup.new_tag('div', attrs={'class': cls})
     nodes[start].insert_before(frame)
@@ -263,12 +274,18 @@ def paired_frames(soup, style, frame_style='box'):
         selected=nodes[start+1:stop]
         citations=[n for n in selected if isinstance(n,Tag) and n.has_attr('data-paired-outside-citation')]
         selected=[n for n in selected if n not in citations]
-        if len(selected)==1 and isinstance(selected[0],Tag) and selected[0].has_attr('data-native-frame'):
-            original_frame=selected[0]
-            if original_frame['data-native-frame']=='rules':frame_style='horizontal_rules'
-            selected=list(original_frame.contents)
+        frame_shape = frame_style
+        # Note extraction can leave an empty paragraph after the source box.
+        # Only the original box's contents belong inside the paired frame.
+        body = [n for n in selected if not (isinstance(n, Tag) and n.name in ('p', 'div')
+                and not n.get_text(strip=True) and not n.find(['img', 'svg', 'table', 'hr']))]
+        if len(body) == 1 and isinstance(body[0], Tag) and body[0].has_attr('data-native-frame'):
+            original_frame = body[0]
+            if original_frame['data-native-frame'] == 'rules':
+                frame_shape = 'horizontal_rules'
+            selected = list(original_frame.contents)
             original_frame.unwrap()
-        frame = soup.new_tag('div', attrs={'class': 'paired-frame', 'data-frame-style': frame_style})
+        frame = soup.new_tag('div', attrs={'class': 'paired-frame', 'data-frame-style': frame_shape})
         add_style(frame, padding=f'{pt(cfg["frame_padding_pt"])} {pt(cfg["frame_side_padding_pt"])}', border_width=pt(cfg['rule_pt']))
         selected[0].insert_before(frame)
         for node in selected:
@@ -285,6 +302,11 @@ def email_frame(soup, source, style, target, m=None):
     if spec and digest(source) != spec['content_sha256']:
         raise ValueError('Stale email header binding')
     frame = wrap_tail(soup, 'email-frame')
+    if style.get('content_frames', {}).get(target) == 'box' and not spec:
+        # The native NoticeFrame encloses just the letter in a single box.
+        frame['class'].remove('email-frame')
+        add_class(frame, 'source-native-frame')
+        return
     rules = spec.get('rule_set', {})
     reject_unknown(rules, 'top bottom inner internal terminal_internal_as_bottom before_pt after_pt top_gap_pt bottom_gap_pt', 'email rules')
     for edge in ('top', 'bottom'):
